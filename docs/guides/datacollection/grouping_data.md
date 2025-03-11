@@ -1,43 +1,22 @@
 ---
-sidebar_label: group()
-title: JavaScript DataCollection - group Method 
-description: You can explore the group method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+sidebar_label: Grouping data
+title: JavaScript Guides - Grouping data 
+description: You can learn how to group data with DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# group()
+# Grouping data
 
-@short: groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration
+You can group the data of a component, ungroup data and check whether data in a collection is grouped via the DataCollection API.
 
 :::info important
 Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazydataproxy/)
 :::
 
-:::note
-Grouped data can be serialized. After serialization data is available for rendering and editing as a plain tree-like structure
-:::
+The DataCollection API can be used for working with [data grouping in Grid](grid/usage.md/#grouping-data). 
 
-## Usage
+## Grouping data 
 
-~~~jsx {16}
-type TGroupOrderFunc = (item: IDataItem) => string;
-type TAggregate = "sum" | "count" | "min" | "max" | "avg" | string;
-interface IGroupOrder {
-    by: string | TGroupOrderFunc;
-    map?: {
-        [field: string]: [string, TAggregate] | ((item: IDataItem[]) => string | number)
-    };
-    summary?: "top" | "bottom";
-}
-type TGroupOrder = string | TGroupOrderFunc | IGroupOrder;
-interface IGroupConfig {
-    showMissed?: boolean | string; // true by default
-    field?: string; // "group" by default
-}
-
-group(order: TGroupOrder[], config?: IGroupConfig): void;
-~~~
-
-## Parameters
+The [`group()`](data_collection/api/datacollection_group_method.md) method of DataCollection groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration. The method takes the following parameters:
 
 - `order` - an array that defines the order and configuration for data grouping. Each element in the array can be:
 	- a string that represents a grouping field
@@ -55,7 +34,7 @@ group(order: TGroupOrder[], config?: IGroupConfig): void;
         - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
     - `field` - (optional) the group field name, *"group"* by default
 
-## Examples
+There are several examples of grouping Grid data via the `group()` method of DataCollection:
 
 - simple grouping with the use of a callback function and a string field value
 
@@ -130,6 +109,20 @@ grid.data.group(["city"], {
 });
 ~~~
 
-@descr:
+## Ungrouping data
 
-@changelog: added in v9.0
+To ungroup the data of a component, use the [`ungroup()`](data_collection/api/datacollection_ungroup_method.md) method of DataCollection.
+
+~~~jsx
+grid.data.ungroup();
+~~~
+
+## Checking whether data is grouped
+
+To check whether the data of a component is grouped at the moment, use the [`isGrouped()`](data_collection/api/datacollection_isgrouped_method.md) method of DataCollection. The method returns *true* if the data in a collection is grouped at the moment and *false* if it isn't grouped.
+
+~~~jsx
+if (component.data.isGrouped()) {
+    console.log("The data is currently grouped");
+}
+~~~

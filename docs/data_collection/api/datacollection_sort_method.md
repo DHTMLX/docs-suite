@@ -17,7 +17,7 @@ description: You can explore the sort method of DataCollection in the documentat
     - `as: function` -  a function that specifies the type to sort data as
     - `rule: function` -  optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
 - `config: object` - defines the parameter of sorting. It may contain one property:
-    - `smartSorting: boolean` - specifies whether a sorting rule should be applied each time after changing the data set
+    - `smartSorting: boolean` - optional, specifies whether a sorting rule should be applied each time after changing the data set
 
 @example:
 grid.data.sort(

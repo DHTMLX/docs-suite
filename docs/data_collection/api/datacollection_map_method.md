@@ -6,7 +6,7 @@ description: You can explore the map method of DataCollection in the documentati
 
 # map()
 
-@short: iterates through all items of the component
+@short: iterates through all the items of the component
 
 @signature: {'map(callback: (item: object, index?: number, array?: object[]) => any): object[];'}
 

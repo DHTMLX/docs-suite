@@ -166,7 +166,9 @@ grid2.data.parse(state);
 
 ## Dynamic loading
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 To enable dynamic data loading in Grid you need to:
 

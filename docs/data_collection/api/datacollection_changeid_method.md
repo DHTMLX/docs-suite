@@ -13,7 +13,7 @@ description: You can explore the changeId method of DataCollection in the docume
 @params:
 - `id: string | number` - the old id of an item
 - `newId: string | number` - optional, the new id; auto-generated if not set
-- `silent: boolean` - true, to prevent changing the id; otherwise, false
+- `silent: boolean` - optional, *true*, to prevent changing the id; otherwise, *false*
 
 @example:
 component.data.changeId("1", "22");

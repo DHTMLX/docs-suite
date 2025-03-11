@@ -30,7 +30,7 @@ const items = component.data.findAll(function(items){
 });
 
 //searching for items by the attribute key
-const items = component.data.findAll({by:"text",match:"Manager"});
+const items = component.data.findAll({ by:"text",match:"Manager" });
 
 @descr:
 

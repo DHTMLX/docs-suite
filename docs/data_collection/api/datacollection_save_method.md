@@ -8,20 +8,20 @@ description: You can explore the save method of DataCollection in the documentat
 
 @short: saves changes made in a data collection to the server side
 
-@signature: {'save?: (url: string | IDataProxy) => void;'}
+@signature: {'save(url: IDataProxy | string): void;'}
 
 @params:
-- `url: string | IDataProxy` - the URL of a server side or DataProxy with the URL configured
+- `url: IDataProxy | string` - the URL of a server side or DataProxy with the URL configured
 
 @example:
 grid.data.save("http://userurl/");
 
 //or
-grid.data.save(new DataProxy({url:"http://userurl/"}));
+grid.data.save(new DataProxy({ url:"http://userurl/" }));
 
 @descr:
 
-Each time the user changes data of the component, the **save()** method will make an AJAX call and expect the remote URL to save data changes.
+Each time the user changes data of the component, the `save()` method will make an AJAX call and expect the remote URL to save data changes.
 The method will send one of the following requests to the backend:
 
 - `POST` - after adding new data into the component;

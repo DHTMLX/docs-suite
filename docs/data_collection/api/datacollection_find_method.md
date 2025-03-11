@@ -21,7 +21,7 @@ description: You can explore the find method of DataCollection in the documentat
         - `array` - (optional) an array with items
 
 @returns:
-An object of the matching item.
+The object of the matching item.
 
 @example:
 //searching for an item by the function
@@ -30,7 +30,7 @@ const item = component.data.find(function(item){
 });
 
 //searching for an item by the attribute key
-const item = component.data.find({by:"text",match:"Manager"});
+const item = component.data.find({ by:"text",match:"Manager" });
 
 @descr:
 
