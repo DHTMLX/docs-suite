@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1.2
+
+Released on February 17, 2025
+
+### Fixes
+
+- Chart. The default CSS classes aren't applied to the series of the `splineArea` chart type
+- Combobox. Incorrect calculation of the popup position on filtering options
+- Grid. Impossibility to set the left border for the first cells
+- Grid. Incorrect displaying of a row dragged by the frozen part 
+- Grid. The script error that occurred while hovering over a span in the "tree" mode 
+- TreeCollection. The `move` method doesn't move child elements of an item between collections
+- TreeCollection. After moving elements in `_order` there are duplicates of moved elements
+
+
 ## Version 9.1.1 
 
 Released on February 24, 2025
