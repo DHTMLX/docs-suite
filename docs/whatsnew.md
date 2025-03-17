@@ -10,7 +10,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.1.2
 
-Released on February 17, 2025
+Released on March 17, 2025
 
 ### Fixes
 
