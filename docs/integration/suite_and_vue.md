@@ -77,7 +77,7 @@ Open the ***Suite.vue*** file and import Suite source files. Note that:
 ~~~html title="Component.vue"
 <script>
 import { WidgetName } from 'dhx-suite-package';
-import 'dhx-suite-package/dist/suite.css';
+import 'dhx-suite-package/codebase/suite.css';
 </script>
 ~~~
 
@@ -88,7 +88,7 @@ Note that depending on the used package, the source files can be minified. In th
 ~~~html title="Component.vue"
 <script>
 import { WidgetName } from '@dhx/trial-suite';
-import '@dhx/trial-suite/dist/suite.css';
+import '@dhx/trial-suite/codebase/suite.css';
 </script>
 ~~~
 

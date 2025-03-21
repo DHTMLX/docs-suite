@@ -72,7 +72,7 @@ Open the ***ComponentName.jsx*** file and import widget source files. Note that:
 
 ~~~jsx title="Component.jsx"
 import { WidgetName } from 'dhx-suite-package';
-import 'dhx-suite-package/dist/suite.css';
+import 'dhx-suite-package/codebase/suite.css';
 ~~~
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as ***suite.min.css***.
@@ -80,8 +80,8 @@ Note that depending on the used package, the source files can be minified. In th
 - if you use the trial version of Suite, specify the following paths:
 
 ~~~jsx title="Component.jsx"
-import { ComponentName } from '@dhx/trial-suite';
-import "@dhx/trial-suite/dist/suite.css";
+import { WidgetName } from '@dhx/trial-suite';
+import "@dhx/trial-suite/codebase/suite.min.css";
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of Suite.
