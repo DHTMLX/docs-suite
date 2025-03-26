@@ -8,12 +8,12 @@ description: You can explore the load method of DataCollection in the documentat
 
 @short: loads data from an external file
 
-@signature: {'load?(url: string | DataProxy, driver?: object | string): Promise<any>;'}
+@signature: {'load(url: string | DataProxy, driver?: object | string): Promise<any>;'}
 
 @params:
 
 - `url: string | IDataProxy` - the URL of an external file or DataProxy with the URL configured
-- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @returns:
 A promise of data loading.
@@ -34,7 +34,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
 ~~~jsx
-component.data.load(url).then(function(){
+component.data.load(url).then(function () {
     //do something after load;
 });
 ~~~
@@ -43,7 +43,7 @@ or
 
 ~~~jsx
 component.data.load(url);
-component.data.loadData.then(function(){
+component.data.loadData.then(function () {
     //do something after load;
 });
 // loadData executes a callback function after an asynchronous

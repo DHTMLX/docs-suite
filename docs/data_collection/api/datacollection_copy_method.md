@@ -13,13 +13,13 @@ description: You can explore the copy method of DataCollection in the documentat
 @params:
 - `id: (string | number) | (string | number)[]` - the id of an item or an array with ids of items to copy
 - `index: number` - the index to create a copy at
-- `target: object` - optional, the target data collection object
+- `target?: object` - optional, the target data collection object
 
 @returns:
 The item's id or an array with ids of items.
 
 @example:
-component.data.copy("4",5); // copies the item with id:4 to the position with index 5
+component.data.copy("4", 5); // copies the item with id:4 to the position with index 5
 
 @descr:
 
