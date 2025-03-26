@@ -12,14 +12,14 @@ description: You can explore the add method of DataCollection in the documentati
 
 @params:
 - `new_item: object | array` - the object of a new item or an array of item objects
-- `index: number` - optional, the index of the position starting from which new items will be added
+- `index?: number` - optional, the index of the position starting from which new items will be added
 
 @returns:
 Either item's id or an array with ids of items.
 
 @example:
 // adding a new item into the beginning of a data collection 
-component.data.add({"value": 57.44787660011765, "id": "u1565340894584"},0);
+component.data.add({ "value": 57.44787660011765, "id": "u1565340894584" }, 0);
 
 // adding an array of new items into a data collection
 component.data.add([
