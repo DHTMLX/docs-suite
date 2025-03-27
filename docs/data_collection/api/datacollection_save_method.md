@@ -28,9 +28,9 @@ The method will send one of the following requests to the backend:
 - `PUT` - after editing data of the component;
 - `DELETE` - after deleting data.
 
-Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the **saveData** property that returns a "promise" object:
+Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the `saveData` property that returns a "promise" object:
 
-~~~js
+~~~jsx
 const data = new DataCollection();
 data.save(loader);
 return data.saveData.then(function () {
@@ -38,9 +38,9 @@ return data.saveData.then(function () {
 });
 ~~~
 
-Use the [isSaved](data_collection/api/datacollection_issaved_method.md) method to know whether the changes are saved:
+Use the [`isSaved`](data_collection/api/datacollection_issaved_method.md) method to know whether the changes are saved:
 
-~~~js
+~~~jsx
 grid.data.saveData.then(function () {
     console.log(grid.data.isSaved());
 });

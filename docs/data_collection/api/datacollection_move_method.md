@@ -13,13 +13,13 @@ description: You can explore the move method of DataCollection in the documentat
 @params:
 - `id: string | string[]` - the ids of items to move
 - `index: number` - the index to move items to
-- `target: object` - optional, the target data collection object
+- `target?: object` - optional, the target data collection object
 
 @returns:
 Either the item's id or an array with ids of items.
 
 @example:
-component.data.move("4",5); // moves the item with id:4 to the position with index 5
+component.data.move("4", 5); // moves the item with id:4 to the position with index 5
 
 @descr:
 

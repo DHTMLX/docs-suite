@@ -12,7 +12,7 @@ description: You can explore the add method of DataCollection in the documentati
 
 @params:
 - `new_item: object | array` - the object of a new item or an array of item objects
-- `index: number` - optional, the index of the position starting from which new items will be added
+- `index?: number` - optional, the index of the position starting from which new items will be added
 
 @returns:
 Either item's id or an array with ids of items.

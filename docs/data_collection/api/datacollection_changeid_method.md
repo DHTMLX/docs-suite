@@ -12,8 +12,8 @@ description: You can explore the changeId method of DataCollection in the docume
 
 @params:
 - `id: string | number` - the old id of an item
-- `newId: string | number` - optional, the new id; auto-generated if not set
-- `silent: boolean` - optional, *true*, to prevent changing the id; otherwise, *false*
+- `newId?: string | number` - optional, the new id; auto-generated if not set
+- `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events; otherwise, *false*
 
 @example:
 component.data.changeId("1", "22");

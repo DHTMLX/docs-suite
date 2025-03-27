@@ -8,21 +8,21 @@ description: You can explore the reduce method of DataCollection in the document
 
 @short: reduces the array to a single value
 
-@signature: {'reduce(callback: (acc: any, item: any, index?: number) => any, acc: any): any;'}
+@signature: {'reduce(callback: (acc: any, item: any, index: number) => any, acc: any): any;'}
 
 @params:
 
 - `callback: function` - a function that will be called for each item in the array. The function is called with the following parameters:
-    - `acc` - the *initialValue*, or the previously returned value of the function
-    - `item` - the current item of a data collection
-    - `index` - the index of the item 
+    - `acc: any` - the *initialValue*, or the previously returned value of the function
+    - `item: any` - the current item of a data collection
+    - `index: number` - the index of the item 
 - `acc: any` - a value to be passed to the function as the initial value
 
 @returns:
 A single output value.
 
 @example:
-const total = component.data.reduce(function(acc, item, index) {
+const total = component.data.reduce(function (acc, item, index) {
     return acc + item.value;
 }, 0);
 
