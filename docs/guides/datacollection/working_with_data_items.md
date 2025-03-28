@@ -6,7 +6,7 @@ description: You can learn how to work with DataCollection items in the document
 
 # Working with data items
 
-The DataCollection API provides a wide set of methods for working with data items. You can get the id/index of an item, add, update, delete, copy, move data items, find necessary items, iterate over items, etc.
+The [DataCollection API](data_collection.md) provides a wide set of methods for working with data items. You can get the id/index of an item, add, update, delete, copy, move data items, find necessary items, iterate over items, etc.
 
 ## Getting the id of an item
 
@@ -47,10 +47,10 @@ const text = item.text;
 
 ## Adding items
 
-To add new items into a component, use the [`add()`](data_collection/api/datacollection_add_method.md) method of [DataCollection](data_collection.md). The method takes two parameters:
+To add new items into a component, use the [`add()`](data_collection/api/datacollection_add_method.md) method of DataCollection. The method takes two parameters:
 
 - `new_item: object | array` - the object of a new item or an array of item objects
-- `index: number` - optional, the index of the position starting from which new items will be added
+- `index?: number` - optional, the index of the position starting from which new items will be added
 
 and returns either the item's id or an array with the ids of items.
 
@@ -83,19 +83,19 @@ component.data.add([
 
 ## Removing items
 
-To delete the specified item from the component, use the [`remove()`](data_collection/api/datacollection_remove_method.md) method. The method takes the following parameter:
+To delete the specified item from the component, use the [`remove()`](data_collection/api/datacollection_remove_method.md) method of DataCollection. The method takes the following parameter:
 
 - `id: string | string[]` - the ids of the items that should be deleted 
 
 ~~~jsx
 component.data.remove("2");
 //or
-component.data.remove([ "2", "4" ]);
+component.data.remove(["2", "4"]);
 ~~~
 
 **Related sample**: [Data. Remove](https://snippet.dhtmlx.com/ugdlqgp5)
 
-To delete all items from the component, use the [`removeAll()`](data_collection/api/datacollection_removeall_method.md) method.
+To delete all items from the component, use the [`removeAll()`](data_collection/api/datacollection_removeall_method.md) method of DataCollection.
 
 ~~~jsx
 component.data.removeAll();
@@ -105,24 +105,41 @@ component.data.removeAll();
 
 ## Updating items 
 
-You can update the properties of the item with the help of the [`update()`](data_collection/api/datacollection_update_method.md) method. The method takes two parameters:
+You can update the properties of the item with the help of the [`update()`](data_collection/api/datacollection_update_method.md) method of DataCollection. The method takes the following parameters:
 
 - `id: string | number` - the id of the item which needs to be updated
 - `newItem: object` - a hash of properties which need to be updated
+- `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
 
 ~~~jsx
 component.data.update(123, { text:"New text" });
+~~~
+
+:::info
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+:::
+
+For correct work of the method the last update of a data collection should be done with the `silent:false` setting applied, for example:
+
+~~~jsx
+const lastIndex = data.getLength() - 1;
+
+data.forEach((item, index) => {
+    data.update(item.id, {
+        param: "change param",
+    }, index != lastIndex); // the last update isn't silent, as the `silent:false` parameter is set
+});
 ~~~
 
 **Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)
 
 ## Copying items
 
-The [`copy()`](data_collection/api/datacollection_copy_method.md) method will help you to create a copy of an item at the defined position. The method takes the following parameters:
+The [`copy()`](data_collection/api/datacollection_copy_method.md) method of DataCollection will help you to create a copy of an item at the defined position. The method takes the following parameters:
 
 - `id: (string | number) | (string | number)[]` - the id of an item or an array with ids of items to copy
 - `index: number` - the index to create a copy at
-- `target: object` - optional, the target data collection object
+- `target?: object` - optional, the target data collection object
 
 and returns the item's id or an array with ids of items.
 
@@ -134,16 +151,16 @@ component.data.copy("4", 5); // copies the item with id:4 to the position with i
 
 ## Moving items 
 
-You can move an item/items to the defined position using the [`move()`](data_collection/api/datacollection_move_method.md) method. It takes the following parameters:
+You can move an item/items to the defined position using the [`move()`](data_collection/api/datacollection_move_method.md) method of DataCollection. It takes the following parameters:
 
 - `id: string | string[]` - the ids of items to move
 - `index: number` - the index to move items to
-- `target: object` - optional, the target data collection object
+- `target?: object` - optional, the target data collection object
 
 The method returns either an item's id or an array with the ids of items.
 
 ~~~jsx
-component.data.move("4",5); // moves the item with id:4 to the position with index 5
+component.data.move("4", 5); // moves the item with id:4 to the position with index 5
 ~~~
 
 **Related sample**: [Data. Move](https://snippet.dhtmlx.com/fi66bi8h)
@@ -153,8 +170,8 @@ component.data.move("4",5); // moves the item with id:4 to the position with ind
 You can change the id of the necessary element of a data collection, using the [`changeId()`](data_collection/api/datacollection_changeid_method.md) method. The method takes the following parameters:
 
 - `id: string | number` - the old id of an item
-- `newId: string | number` - optional, the new id; auto-generated if not set
-- `silent: boolean` - optional, *true* to prevent changing the id; otherwise, *false*
+- `newId?: string | number` - optional, the new id; auto-generated if not set
+- `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events; otherwise, *false*
 
 ~~~jsx
 component.data.changeId("1", "22");
@@ -179,8 +196,12 @@ const item = component.data.exists("1");
 You can get the number of items in a data collection via the [`getLength()`](data_collection/api/datacollection_getlength_method.md) method. 
 
 ~~~jsx
-const items = component.data.getLength();
+const dataLength = component.data.getLength();
 ~~~
+
+:::info note
+Note that for [TreeCollection](tree_collection.md) the [`getLength()`](tree_collection/api/treecollection_getlength_method.md) method will return the number of the child items of the component.
+:::
 
 **Related sample**: [Data. Get length](https://snippet.dhtmlx.com/4weiba8i)
 
@@ -190,54 +211,58 @@ You can find data items that match some criteria. The DataCollection API allows 
 
 ### Searching for a particular item
 
-The [`find()`](data_collection/api/datacollection_find_method.md) method finds the item that corresponds to the specified rule. It takes the following parameter:
+The [`find()`](data_collection/api/datacollection_find_method.md) method of DataCollection finds the item that corresponds to the specified rule. It takes the following parameter:
 
 - `rule: object | function` - the search criteria:
-    - if set as an *object*, the parameter contains the following attributes:
+    - if set as an object, the parameter contains the following attributes:
         - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
         - `match: string` - the value of the item attribute
-    - if set as a *function*, the search will be applied by the rule specified in the function. The function may take three parameters:
-        - `item` - (required) the object of an item
-        - `index` - (optional) the index of an item
-        - `array` - (optional) an array with items
+    - if set as a function, the search will be applied by the rule specified in the function. The function takes three parameters:
+        - `item: object` - the object of an item
+        - `index?: number` - optional, the index of an item
+        - `array?: object[]` - optional, an array of items the method was called upon
 
 The method returns the object of the matching item.
 
 ~~~jsx
-//searching for an item by the function
-const item = component.data.find(function(item){
-    if(item.text==="Manager"||item.text==="Marketer"){return true}
+// searching for an item by the function
+const item = component.data.find(function (item) {
+    if (item.text === "Manager" || item.text === "Marketer") {
+        return true
+    }
 });
 
-//searching for an item by the attribute key
-const item = component.data.find({ by:"text",match:"Manager" });
+// searching for an item by the attribute key
+const item = component.data.find({ by: "text", match: "Manager" });
 ~~~
 
 **Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)
 
 ### Searching for several items 
 
-The [`findAll()`](data_collection/api/datacollection_findall_method.md) method finds all the items that correspond to the specified rule. It takes the following parameter:
+The [`findAll()`](data_collection/api/datacollection_findall_method.md) method of DataCollection finds all the items that correspond to the specified rule. It takes the following parameter:
 
 - `rule: object | function` - the search criteria:
-    - if set as an *object*, the parameter contains the following attributes:
+    - if set as an object, the parameter contains the following attributes:
         - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
         - `match: string` - the value of the item attribute
-    - if set as a *function*, the search will be applied by the rule specified in the function. The function may take three parameters:
-        - `item` - (required) the object of an item
-        - `index` - (optional) the index of an item
-        - `array` - (optional) an array with items
+    - if set as a function, the search will be applied by the rule specified in the function. The function takes three parameters:
+        - `item: object` - the object of an item
+        - `index?: number` - optional, the index of an item
+        - `array?: object[]` - optional, an array of items the method was called upon
 
 The method returns an array of matching item objects.
 
-~~~js
-//searching for items by the function
-const items = component.data.findAll(function(items){
-    if(items.text==="Manager"||items.text==="Marketer"){return true}
+~~~jsx
+// searching for items by the function
+const items = component.data.findAll(function (items) {
+    if (items.text === "Manager" || items.text === "Marketer") {
+        return true
+    }
 });
 
-//searching for items by the attribute key
-const items = component.data.findAll({ by:"text",match:"Manager" });
+// searching for items by the attribute key
+const items = component.data.findAll({ by: "text", match: "Manager" });
 ~~~
 
 **Related sample**: [Data. Find all](https://snippet.dhtmlx.com/kvemrz93)
@@ -249,12 +274,12 @@ You can iterate through the items of a data collection, the items of a component
 ### Iterating through the items of a data collection
 
 The [`forEach()`](data_collection/api/datacollection_foreach_method.md) method iterates through all the items of a data collection. It takes as a parameter a callback function that will iterate over items of a data collection and is called with the following parameters:
-    - `item` - the object of an item
-    - `index` - the index of an item
-    - `array` - an array with items
+    - `item: object` - the object of an item
+    - `index?: number` - optional, the index of an item
+    - `array?: object[]` - optional, an array of items the method was called upon
 
 ~~~jsx
-component.data.forEach(function(item, index, array) {
+component.data.forEach(function (item, index, array) {
     console.log("This is an item of dataCollection: ", item);
     console.log("This is an index of the element: ", index);
     console.log("This is an array of the elements: ", array);
@@ -265,16 +290,16 @@ component.data.forEach(function(item, index, array) {
 
 ### Iterating through the items of a component
 
-The [`map()`](data_collection/api/datacollection_map_method.md) method iterates through all the items of the component. As a parameter it takes a callback function that will be called for each item of a component. The function is called with the following parameters:
-    - `item` - the object of an item
-    - `index` - the index of an item
-    - `array` - an array of items the method was called upon 
+The [`map()`](data_collection/api/datacollection_map_method.md) method of DataCollection iterates through all the items of the component. As a parameter it takes a callback function that will be called for each item of a component. The function is called with the following parameters:
+    - `item: object` - the object of an item
+    - `index?: number` - optional, the index of an item
+    - `array?: object[]` - optional, an array of items the method was called upon 
     
 and returns a new array of items where each item is the result of the callback function.
 
 ~~~jsx
 // getting the ids of all the items of the component
-component.data.map(function(item, index, array){
+component.data.map(function (item, index, array) {
     return item.id;
 });
 ~~~
@@ -283,37 +308,37 @@ component.data.map(function(item, index, array){
 
 ### Iterating through the items of a specified range 
 
-The [`mapRange()`](data_collection/api/datacollection_maprange_method.md) method returns a new array of the items corresponding to the specified parameters. The method takes the following parameters:
+The [`mapRange()`](data_collection/api/datacollection_maprange_method.md) method of DataCollection returns a new array of the items corresponding to the specified parameters. The method takes the following parameters:
 
 - `from: number` - the initial position of an item in the range
 - `to: number` - the final position of an item in the range
 - `callback: function` - a function that will be called for each item from the specified range. The function is called with the following parameters:
-    - `item` - the object of an item
-    - `index` - the index of an item
-    - `array` - an array of items the method was called upon
+    - `item: object` - the object of an item
+    - `index?: number` - optional, the index of an item
+    - `array?: object[]` - optional, an array of items the method was called upon
 
 and returns a new array of matching item objects.
 
 ~~~jsx
-const result = component.data.mapRange(0, 20, function(item, index, array) {
+const result = component.data.mapRange(0, 20, function (item, index, array) {
     console.log(item.id, index);
 });
 ~~~
 
 ## Reducing an array of items 
 
-You can reduce an array of items to a single value with the [`reduce()`](data_collection/api/datacollection_reduce_method.md) method. It takes the following parameters:
+You can reduce an array of items to a single value with the [`reduce()`](data_collection/api/datacollection_reduce_method.md) method of DataCollection. It takes the following parameters:
 
 - `callback: function` - a function that will be called for each item in the array. The function is called with the following parameters:
-    - `acc` - the *initialValue*, or the previously returned value of the function
-    - `item` - the current item of a data collection
-    - `index` - the index of the item 
+    - `acc: any` - the *initialValue*, or the previously returned value of the function
+    - `item: any` - the current item of a data collection
+    - `index: number` - the index of the item 
 - `acc: any` - a value to be passed to the function as the initial value
 
 and returns a single output value.
 
 ~~~jsx
-const total = component.data.reduce(function(acc, item, index) {
+const total = component.data.reduce(function (acc, item, index) {
     return acc + item.value;
 }, 0);
 ~~~

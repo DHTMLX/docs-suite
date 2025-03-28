@@ -1021,12 +1021,12 @@ The method takes the following parameters:
 
 - `order` - an array that defines the order and configuration for data grouping. Each element in the array can be:
     - a string that represents a grouping field
-    - a function `(i: IDataItem) => string` for dynamic defining of a group
+    - a function `(item: IDataItem) => string` for dynamic defining of a group
     - an `IGroupOrder` object that has the following properties:
         - `by` - the field name or a function for user-defined grouping
         - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
             - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the [`dhx.methods`](helpers/data_calculation_functions.md) helper
-            - a user-defined aggregation function `(i: IDataItem[]) => string | number`
+            - a user-defined aggregation function `(item: IDataItem[]) => string | number`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
 - `config` - (optional) the configuration of data grouping
     - `showMissed` - (optional) specifies whether the elements that don't have the field for grouping should be displayed, *true* by default

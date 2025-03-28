@@ -133,7 +133,7 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 - to enable dynamic rendering of List items, switch the [`virtual`](list/api/list_virtual_config.md) property on:
 
 ~~~jsx {2}
-const list = new dhx.list("list_container", {
+const list = new dhx.List("list_container", {
     virtual: true
 });
 ~~~
