@@ -16,7 +16,7 @@ description: You can explore the filter method of DataCollection in the document
     <tbody>
         <tr>
             <td><b>rule</b></td>
-            <td>(<i>function | object</i>) optional, the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item and returns <i>true/false</i></li><li>an object with the following attributes:<ul><li><b>`by?: string | number`</b> - optional, the id of a column</li><li><b>`match?: string`</b> - optional, a pattern to match </li><li><b>`compare?: function`</b> - optional, a function for extended filtering that takes the following parameters:<ul><li><b>value</b> - the value to compare </li><li><b>match</b> - a pattern to match </li><li><b>item</b> - a data item the values of which should be compared</li></ul></li></ul></li></ul></td>
+            <td>(<i>function | object</i>) optional, the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item and returns <i>true/false</i></li><li>an object with the following attributes:<ul><li><b>`by?: string | number`</b> - optional, the id of a column</li><li><b>`match?: string`</b> - optional, a pattern to match </li><li><b>`compare?: function`</b> - optional, a function for extended filtering that takes the following parameters:<ul><li><b>`value`</b> - the value to compare </li><li><b>`match`</b> - a pattern to match </li><li><b>`item`</b> - a data item the values of which should be compared</li></ul></li></ul></li></ul></td>
         </tr>
         <tr>
             <td><b>config</b></td>

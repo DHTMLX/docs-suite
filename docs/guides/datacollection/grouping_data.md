@@ -6,13 +6,13 @@ description: You can learn how to group data with DataCollection in the document
 
 # Grouping data
 
+Data grouping functionality allows grouping rows by the values of columns.
+
 You can group the data of a component, ungroup data and check whether data in a collection is grouped via the DataCollection API.
 
 :::info important
 Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazydataproxy/)
 :::
-
-The DataCollection API can be used for working with [data grouping in Grid](grid/usage.md/#grouping-data). 
 
 ## Grouping data 
 
@@ -32,9 +32,9 @@ The [`group()`](data_collection/api/datacollection_group_method.md) method of Da
     </tbody>
 </table>
 
-There are several examples of grouping Grid data via the `group()` method of DataCollection:
+### Simple grouping
 
-- simple grouping with the use of a callback function and a string field value
+The example below shows a simple grouping with the use of a callback function and a string field value:
 
 ~~~jsx {12-19}
 const grid = new dhx.Grid("grid_container", {
@@ -58,7 +58,9 @@ grid.data.group([
 ]);
 ~~~
 
-- grouping with the use of a configuration object and aggregation settings
+### Grouping with the use of aggregation settings 
+
+You can pass a configuration object with grouping settings to the `group()` method: specify a particular field or function for grouping, and, optionally, specify an object for data aggregation and the position of the total row:
 
 ~~~jsx {12-23}
 const grid = new dhx.Grid("grid_container", {
@@ -86,7 +88,11 @@ grid.data.group([{
 }]);
 ~~~
 
-- grouping with the use of the `showMissed` property
+**Related sample:** [Grouping and totals in the summary row via data collection](https://snippet.dhtmlx.com/ihd6gtpj)
+
+### Grouping with the use of the `showMissed` property
+
+The `showMissed` property specifies whether the elements that don't have the field for grouping should be displayed. In the example below this property is set to the string value that defines the name of the group where the rows that don't have values for grouping are rendered:
 
 ~~~jsx {12-16}
 const grid = new dhx.Grid("grid_container", {
@@ -106,6 +112,8 @@ grid.data.group(["city"], {
     showMissed: "Unknown City" 
 });
 ~~~
+
+**Related sample:** [Grid. Grouping missing data](https://snippet.dhtmlx.com/0geopa0v)
 
 ## Ungrouping data
 

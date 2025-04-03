@@ -349,7 +349,7 @@ You can sort Grid by multiple columns simultaneously.
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
-Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](data_collection.md) by several columns:
+ In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](data_collection.md) by several columns:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -373,7 +373,7 @@ grid.data.sort({ by: "animal_type", dir: "asc" });
 
 **Related sample**: [Grid. Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
 
-If you need to disable the multi-sorting ability, set the [`multiSort`](grid/api/grid_multisort_config.md) Grid property to *false*.
+Multi-sorting is enabled on initialization of the component. If you need to disable the multi-sorting ability, set the [`multiSort`](grid/api/grid_multisort_config.md) Grid property to *false*.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
