@@ -8,6 +8,19 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1.3 
+
+Released on April 3, 2025
+
+### Fixes
+
+- DataCollection. The issue with XMLDriver failing with string parameters
+- Form. Updating the input properties will set the default input width, if a different width value hasn't been specified 
+- Grid. Incorrect export of values containing CRLF, double quotes and commas to CSV 
+- Grid. Resizing of columns with the enabled `rightSplit` option hides the resized column
+- Grid. A script error that occurs on hovering over a group element after going outside the component while dragging a group
+- Grid. The column summary isn't calculated if the grid has been initialized in the collapsed mode
+
 ## Version 9.1.2
 
 Released on March 17, 2025
