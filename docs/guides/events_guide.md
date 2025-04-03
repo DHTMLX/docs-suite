@@ -30,51 +30,51 @@ The following approaches are used to work with events in DHTMLX Suite.
 
 ### Attaching event listeners
 
-To attach an event listener, use the **component.events.on()** method:
+To attach an event listener, use the `component.events.on()` method:
 
-```js
+~~~jsx
 component.events.on("eventName", function() {
     do_something();
 });
-```
+~~~
 
 where **component** is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
 
-The **component.events.on()** method takes two parameters:
+The `component.events.on()` method takes two parameters:
 
-- *eventName* – the name of the event of the component;
-- *eventHandler*  – a function to run.
+- *eventName* - the name of the event of the component;
+- *eventHandler*  - a function to run.
 
 Any user-defined event handler can be attached to the event of the component. The logic of the handler is defined in the function. You can also place any API method of the related widget inside the handler function of the event.
 
 ### Detaching event listeners
 
-To detach the event listener, use **component.events.detach()** method.
+To detach the event listener, use `component.events.detach()` method.
 
-```js
+~~~jsx
 component.events.detach("eventName");
-```
+~~~
 
 where **component** is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
 
-The **component.events.detach()** method takes one parameter:
+The `component.events.detach()` method takes one parameter:
 
-- *eventName* – the name of the event of the component.
+- *eventName* - the name of the event of the component.
 
 ### Calling events
 
-To call events, use **component.events.fire()** method:
+To call events, use the `component.events.fire()` method:
 
-```js
+~~~jsx
 component.events.fire("eventName", args);
-```
+~~~
 
-where **component**  is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
+where **component** is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
 
-The **component.events.fire()** method takes two parameters:
+The `component.events.fire()` method takes two parameters:
 
-- *eventName* – an event of the component;
-- *args* – an array of arguments.
+- *eventName* - an event of the component;
+- *args* - an array of arguments.
 
 ## The event usage sample
 
@@ -82,13 +82,13 @@ Let's consider a sample of the event usage. Please, use [the DHTMLX Snippet Tool
 
 First, create a form with a slider and a button.
 
-```html
+~~~html
 <!-- component container -->
-<form style="margin: 20px;" id="form"></form>
-```
+<form style="margin: 20px;" id="form_container"></form>
+~~~
 
-```js
-const form = new dhx.Form("form", {
+~~~jsx
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bg_white dhx_widget--bordered",
     padding: 40,
     rows: [
@@ -103,24 +103,24 @@ const form = new dhx.Form("form", {
         }
     ]
 }); 
-```
+~~~
 
-Now, we are to disable the form after the user clicks the button. For this, we will use the **"click"** event and add the **disable()** method of Form API to the event handler.
+Now, we are to disable the form after the user clicks the button. For this, we will use the `"click"` event and add the `disable()` method of Form API to the event handler.
 
-```js
+~~~jsx
 //attaching an event handler, which will make the form disabled, to the click event
 form.events.on ("click", function () {
     form.disable();
 });
-```
+~~~
 
-Pay attention,  usage of the disable() method of Form in the event handler is just an example. You may apply any other method or develop your logic if needed.
+Pay attention, the use of the `disable()` method of Form in the event handler is just an example. You may apply any other method or develop your logic if needed.
 
-For some reason, you may need to stop disabling the form. In this case, just use the **form.events.detach()** method.
+For some reason, you may need to stop disabling the form. In this case, just use the `form.events.detach()` method.
 
-```js
+~~~jsx
 form.events.detach("click");
-```
+~~~
 
 **You can look at the example we have just created.**
 

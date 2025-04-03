@@ -6,15 +6,17 @@ description: You can explore the isDataLoaded method of DataCollection in the do
 
 # isDataLoaded()
 
-{{pronote This functionality is available in the PRO edition only.}}
+:::tip pro version only
+The method works with the [Dynamic loading](helpers/lazydataproxy.md) functionality which is available in the PRO edition only.
+:::
 
 @short: checks whether the specified data range is loaded from the server
 
 @signature: {'isDataLoaded(from?: number, to?: number): boolean;'}
 
 @params:
-- `from: number` - optional, the index of the first element of the data range to be checked
-- `to: number` - optional, the index of the last element of the data range to be checked
+- `from?: number` - optional, the index of the first element of the data range to be checked
+- `to?: number` - optional, the index of the last element of the data range to be checked
 
 @returns:
 `true`, if a range of data is loaded; otherwise, `false`.

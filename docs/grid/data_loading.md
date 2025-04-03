@@ -73,7 +73,7 @@ const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
-    data: dataset
+    // more options
 });
 ~~~
 
@@ -91,7 +91,12 @@ There are two ways to load data into Grid after its initialization:
 To load data from an external file, make use of the **load()** method of [Data Collection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container");
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    // more options
+});
 grid.data.load("../common/dataset.json");
 ~~~
 
@@ -112,7 +117,12 @@ grid.data.load("/some/data").then(function(){
 To load data from a local data source, use the `parse()` method of [Data Collection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container");
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    // more options
+});
 grid.data.parse(dataset);
 ~~~
 
@@ -126,7 +136,7 @@ Note that for loading data from a **CSV file** into a grid, you need to:
 Check the example below:
 
 ~~~jsx
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 150, id: "country", header: [{ text: "Country" }] },
         { width: 150, id: "population", header: [{ text: "Population" }] },
@@ -148,7 +158,7 @@ grid.data.parse(csvData, csvDataDriver);
 
 ## Saving and restoring state
 
-To save the current state of a grid, use the **serialize()** method of [Data Collection](data_collection.md). It converts the data of a grid into an array of JSON objects.
+To save the current state of a grid, use the `serialize()` method of [Data Collection](data_collection.md). It converts the data of a grid into an array of JSON objects.
 Each JSON object contains the configuration of a separate row.
 
 ~~~jsx
@@ -159,14 +169,21 @@ Then you can parse the data stored in the saved state array to a different grid.
 
 ~~~jsx
 // creating a new grid
-const grid2 = new dhx.Grid(document.body);
+const grid2 = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    // more options
+});
 // parsing the state of grid1 into grid2
 grid2.data.parse(state);
 ~~~
 
 ## Dynamic loading
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 To enable dynamic data loading in Grid you need to:
 
@@ -184,7 +201,12 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 - load data into Grid via the `load()` method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container");
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    // more options
+});
 grid.data.load(lazyDataProxy);
 ~~~
 
