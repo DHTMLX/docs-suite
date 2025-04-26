@@ -1200,6 +1200,10 @@ grid.destructor();
 
 For information on using Selection API, read [Work with Selection Object](grid/usage_selection.md).
 
+## Using Range Selection API
+
+For information on using Range Selection API, read [Work with Range Selection Object](grid/usage_range_selection.md).
+
 ## Working with Grid in the TreeGrid mode
 
 For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.

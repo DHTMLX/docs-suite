@@ -2642,6 +2642,7 @@ module.exports = {
                     "grid/api/grid_leftsplit_config",
                     "grid/api/grid_multiselection_config",
                     "grid/api/grid_multisort_config",
+                    "grid/api/grid_rangeselection_config",
                     "grid/api/grid_resizable_config",
                     "grid/api/grid_rightsplit_config",
                     "grid/api/grid_rootparent_config",
@@ -2765,6 +2766,54 @@ module.exports = {
                 },
                 {
                   type: "category",
+                  label: "Range Selection API",
+                  link: {
+                    type: 'generated-index',
+                    title: "Range Selection API",
+                    keywords: ['range selection API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Grid Range Selection methods",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid Range Selection methods",
+                      keywords: ['grid range selection methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/rangeselection/rangeselection_disable_method",
+                      "grid/api/rangeselection/rangeselection_enable_method",
+                      "grid/api/rangeselection/rangeselection_getrange_method",
+                      "grid/api/rangeselection/rangeselection_getrangedcells_method",
+                      "grid/api/rangeselection/rangeselection_isdisabled_method",
+                      "grid/api/rangeselection/rangeselection_isranged_method",
+                      "grid/api/rangeselection/rangeselection_resetrange_method",
+                      "grid/api/rangeselection/rangeselection_setrange_method",
+                    ],
+                  },
+
+                  {
+                    type: "category",
+                    label: "Grid Range Selection events",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid Range Selection events",
+                      keywords: ['grid range selection events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/rangeselection/rangeselection_afterresetrange_event",
+                      "grid/api/rangeselection/rangeselection_aftersetrange_event",
+                      "grid/api/rangeselection/rangeselection_beforeresetrange_event",
+                      "grid/api/rangeselection/rangeselection_beforesetrange_event",
+                    ],
+                  },
+                  ],
+                },
+                {
+                  type: "category",
                   label: "Export methods",
                   collapsed: true,
                   link: {
@@ -2790,6 +2839,7 @@ module.exports = {
             "grid/usage",
             "grid/treegrid_mode",
             "grid/usage_selection",
+            "grid/usage_range_selection",
             "grid/customization",
             "grid/events",
           ],

@@ -203,6 +203,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_leftsplit_config.md)       | @getshort(grid/api/grid_leftsplit_config.md)       |
 | [](grid/api/grid_multiselection_config.md)  | @getshort(grid/api/grid_multiselection_config.md)  |
 | [](grid/api/grid_multisort_config.md)  	  | @getshort(grid/api/grid_multisort_config.md)       |
+| [](grid/api/grid_rangeselection_config.md)  | @getshort(grid/api/grid_rangeselection_config.md)  |
 | [](grid/api/grid_resizable_config.md)       | @getshort(grid/api/grid_resizable_config.md)       |
 | [](grid/api/grid_rightsplit_config.md)      | @getshort(grid/api/grid_rightsplit_config.md)      |
 | [](grid/api/grid_rootparent_config.md)      | @getshort(grid/api/grid_rootparent_config.md)      |
@@ -244,6 +245,25 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/selection/selection_afterunselect_event.md)  | @getshort(grid/api/selection/selection_afterunselect_event.md)  |
 | [](grid/api/selection/selection_beforeselect_event.md)   | @getshort(grid/api/selection/selection_beforeselect_event.md)   |
 | [](grid/api/selection/selection_beforeunselect_event.md) | @getshort(grid/api/selection/selection_beforeunselect_event.md) |
+
+## Range Selection API
+
+### Range Selection methods
+
+| Name                                                  | Description                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/rangeselection/rangeselection_disable_method.md)    | @getshort(grid/api/rangeselection/rangeselection_disable_method.md)    |
+| [](grid/api/rangeselection/rangeselection_enable_method.md)    | @getshort(grid/api/rangeselection/rangeselection_enable_method.md)    |
+| [](grid/api/rangeselection/rangeselection_getrange_method.md)    | @getshort(grid/api/rangeselection/rangeselection_getrange_method.md)    |
+| [](grid/api/rangeselection/rangeselection_getrangedcells_method.md)    | @getshort(grid/api/rangeselection/rangeselection_getrangedcells_method.md)    |
+| [](grid/api/rangeselection/rangeselection_isdisabled_method.md)    | @getshort(grid/api/rangeselection/rangeselection_isdisabled_method.md)    |
+| [](grid/api/rangeselection/rangeselection_isranged_method.md)    | @getshort(grid/api/rangeselection/rangeselection_isranged_method.md)    |
+| [](grid/api/rangeselection/rangeselection_resetrange_method.md)    | @getshort(grid/api/rangeselection/rangeselection_resetrange_method.md)    |
+| [](grid/api/rangeselection/rangeselection_setrange_method.md)    | @getshort(grid/api/rangeselection/rangeselection_setrange_method.md)    |
+
+
+### Range Selection events
+
 
 ## Export methods
 

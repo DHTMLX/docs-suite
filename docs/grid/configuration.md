@@ -2418,6 +2418,50 @@ const grid = new dhx.Grid("grid_container", {
 Since the `multiselection` configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
 A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select.
 
+## Range selection
+
+To enable [range selection management](grid/usage_range_selection.md) within a grid, you should use the Range module. To initialize the Range module, use the [rangeSelection](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    rangeSelection: true // enables the Range module
+});
+~~~
+
+The `rangeSelection` property can be set in two ways:
+
+- as a *boolean* value it enables or disables the range selection module upon the component initialization
+- as an *object* it enables the module and allows setting additional configuration options during the component initialization. The following options are available:
+    - **disabled** - makes the module inactive upon initialization of the component 
+
+The example below demonstrates interaction with the Range module's methods when range selection is configured to be inactive on the component initialization.
+
+~~~jsx {11,15}
+const grid = new dhx.Grid("grid_container", {
+    // other configuration
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    rangeSelection: { disabled: true }
+});
+
+console.log(grid.range.isDisabled()); // `true` - module is inactive
+grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
+~~~
+
 ## Spans
 
 The Grid component has the [spans](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
