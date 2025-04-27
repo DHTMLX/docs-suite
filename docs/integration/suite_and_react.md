@@ -10,42 +10,38 @@ description: You can explore how to use DHTMLX Suite Widgets with React. Browse 
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) before reading this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html).
 :::
 
-DHTMLX Suite widgets are compatible with **React**. We have prepared code examples on how to use DHTMLX Suite widgets with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-suite-demo).
+DHTMLX Suite widgets are compatible with [**React**](https://react.dev) and we prepared the corresponding examples. For more information, refer to the [**Example on GitHub**](https://github.com/DHTMLX/react-suite-demo).
 
-## Create a project
+## Create new React project
 
 :::info
-Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+Before you start to create a new React project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/). You can create a basic **React** project or use **React with Vite**.
 :::
 
-You can create a basic **React** project or use **React with Vite**. Let's name the project as ***my-react-suite-app***:
+Step 1. Create a project and name it as ***my-react-suite-app***:
 
-~~~json
-// Step 1
+~~~bash
 npx create-react-app my-react-suite-app
 ~~~
 
-Go to the new created app directory:
+Step 2. Go to the project directory:
 
-~~~json
-// Step 2
+~~~bash
 cd my-react-suite-app
 ~~~
 
-Install dependencies and start the dev server:
+Step 3. Install dependencies and start the dev server:
 
 - if you use [**yarn**](https://yarnpkg.com/), run the following commands:
 
-~~~json
-// Step 3
+~~~bash
 yarn
 yarn start
 ~~~
 
 - if you use [**npm**](https://www.npmjs.com/), run the following commands:
 
-~~~json
-// Step 3
+~~~bash
 npm install
 npm run dev
 ~~~
@@ -54,197 +50,201 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Install Suite sources
 
-Now you should get the DHTMLX Suite source code. First of all, stop the app and proceed with installing the Suite package.
+Install the DHTMLX Suite library to get access to Suite widgets.
 
-:::note
-Download the [**trial Suite package**](../../#installing-trial-dhtmlx-suite-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Suite is available 30 days only.
+:::important
+Download the [**trial Suite package**](../../#installing-trial-dhtmlx-suite-via-npm-and-yarn) and follow steps mentioned in the README file. Note that **trial** Suite is available 30 days only.
 :::
 
 ## Create component
 
-Now you can create corresponding React components based on Suite widgets. For each Suite widget you can create a new file in the ***src/*** directory.
+Now you can create React components (wrappers) based on Suite widgets. For each complex Suite widget you can create a separate file (for instance [***Grid.jsx***](https://github.com/DHTMLX/react-suite-demo/blob/master/src/Content/LeftPanel/Grid.jsx)) in the [***src/***](https://github.com/DHTMLX/react-suite-demo/blob/master/src) directory.
 
 ### Import source files
 
-Open the ***ComponentName.jsx*** file and import widget source files. Note that:
+Open the ***Grid.jsx*** file and import the corresponding Suite widget. Note that:
 
-- if you use PRO version and install the Suite package from a local folder, the import paths look like this:
+- if you use PRO version and install the Suite package from a local folder, the import paths look as follows:
 
-~~~jsx title="ComponentName.jsx"
-import { SuiteWidgetName } from 'dhx-suite-package';
-import 'dhx-suite-package/codebase/suite.css';
+~~~jsx title="Grid.jsx"
+import { SuiteWidgetName } from 'dhx-suite-package'; // import { Grid, Pagination, ... } from 'dhx-suite-package';
+import 'dhx-suite-package/codebase/suite.css'; // import Suite styles
 ~~~
 
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as ***suite.min.css***.
+Note that depending on the used package, the source files can be minified. In this case, make sure that you import the CSS file as ***suite.min.css***.
 
-- if you use the trial version of Suite, specify the following paths:
+- if you use the trial version of Suite, the import paths look as follows:
 
-~~~jsx title="ComponentName.jsx"
-import { SuiteWidgettName } from '@dhx/trial-suite';
+~~~jsx title="Grid.jsx"
+import { SuiteWidgetName } from '@dhx/trial-suite'; // import { Grid, Pagination, ... } from '@dhx/trial-suite';
 import "@dhx/trial-suite/codebase/suite.min.css";
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of Suite widgets.
+In this guide you can find basic concepts on how to utilize the **trial** version of Suite widgets.
 
-### Set container and add a Suite widget
+### Initialize Suite widget(s) within a container
 
-To display a Suite widget on the page, you need to create container and initialize the widget using the corresponding constructor:
+To display a Suite widget on the page, you need to create a container and initialize a widget through the corresponding constructor:
 
-~~~jsx {2,6-7,10-11,13-17} title="ComponentName.jsx"
+~~~jsx {3,8,12-14,22} title="Grid.jsx"
 import { useEffect, useRef } from "react";
-import { SuiteWidgetName } from '@dhx/trial-suite'; // import a Suite widget
-import "@dhx/trial-suite/codebase/suite.min.css"; // import Suite styles
-
-export default function ComponentName(props) {
-    let widget_container = useRef(); // initialize container for a Suite widget
+// import a Suite widget
+import { Grid } from '@dhx/trial-suite';
+// import Suite styles
+import "@dhx/trial-suite/codebase/suite.min.css"; 
+// create and export the React component
+export default function GridComponent() {
+    let grid_container = useRef(); // initialize container for a Suite widget
 
     useEffect(() => {
         // initialize a Suite widget
-        const suite_widget = new SuiteWidgetName(widget_container.current, {
-            // configuration properties
+        const grid_widget = new Grid(grid_container.current, {
+            // configuration properties here
         });
 
         return () => {
-            suite_widget.destructor(); // destruct a Suite widget
+            grid_widget.destructor(); // destruct a Suite widget
         };
     }, []);
 
     return  <div className="component_container">
-                <div ref={widget_container} className="widget"></div>
+                <div ref={grid_container} className="widget"></div>
             </div>
 }
 ~~~
 
-### Add styles
+### Load data
 
-To display Suite widgets correctly, you need to specify important styles a widget and its container in the main css file of the project:
+To add data into a Suite widget, you need to provide a data set. You can create the [***data.js***](https://github.com/DHTMLX/react-suite-demo/blob/master/src/data.js) file in the ***src/*** directory and add required data sets:
 
-~~~css title="index.css"
-/* specify styles for initial page */
-html,
-body,
-#root {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-/* specify styles for component container */
-.component_container {
-    height: 100%; 
-    margin: 0 auto;
-}
-
-/* specify styles for Suite widget container */
-.widget {
-    height: calc(100% - 56px);
-}
-~~~
-
-#### Load data
-
-To add data into a Suite widget, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
-
-~~~jsx {2,12,14} title="data.js"
+~~~jsx {2,27,29} title="data.js"
 export function getData() {
-    const widget_data_set = [
+    const gridData = [
         {
-            // ...
+            time: new Date("Jan 28, 2021"),
+            nights: 7,
+            price: 68,
+            contactPerson: "Yoshio Slater",
+            contactEmail: "phasellus.fermentum@yahoo.net"
         },
         {
-            // ...
+            time: new Date("Apr 13, 2021")
+            nights: 6,
+            price: 66,
+            contactPerson: "Christopher Kirk",
+            contactEmail: "posuere.vulputate.lacus@outlook.org"
         },
-        // other items
+        {
+            time: new Date("Jan 31, 2021"),
+            nights: 15,
+            price: 64,
+            contactPerson: "Jana Meyers",
+            contactEmail: "mollis@aol.edu"
+        }, 
+        // other data items
     ];
 
-    const data_set = [ /* ... */ ];
+    const sidebarData = [ /* ... */ ];
 
-    return { widget_data_set, data_set };
+    return { gridData, sidebarData };
 }
 ~~~
 
-Then open the ***ComponentName.jsx*** file and import data. After this you can pass data into a Suite widget:
+#### Specify data through the property
 
-~~~jsx {5,8,14} title="ComponentName.jsx"
+To load predefined data into a Suite widget, you need to perform the following steps:
+
+1. import predefined data
+2. initialize the required data set
+3. set the `data` property to the predefined data set within the Suite widget constructor
+
+~~~jsx {5,8,14} title="Grid.jsx"
 import { useEffect, useRef } from "react";
-import { SuiteWidgetName } from '@dhx/trial-suite';
+import { Grid } from '@dhx/trial-suite';
 import "@dhx/trial-suite/codebase/suite.min.css";
 
-import { getData } from "../../data"; // import data
+import { getData } from "../../data"; // 1. import predefined data
 
-export default function ComponentName(props) {
-    const { widget_data_set } = getData();
-    let widget_container = useRef(); // initialize required data
+export default function Grid() {
+    const { gridData } = getData(); // 2. initialize the required data set 
+    let grid_container = useRef(); 
 
     useEffect(() => {
-        // initialize a Suite widget
-        const suite_widget = new SuiteWidgetName(widget_container.current, {
-            data: widget_data_set,
-            // configuration properties
+        // initialize a Suite widget with data
+        const grid_widget = new Grid(grid_container.current, {
+            data: gridData, // 3. set the `data` property to the predefined data set
+            // other configuration properties
         });
 
         return () => {
-            suite_widget.destructor(); // destruct a Suite widget
+            grid_widget.destructor();
         };
     }, []);
 
     return  <div className="component_container">
-                <div ref={widget_container} className="widget"></div>
+                <div ref={grid_container} className="widget"></div>
             </div>
 }
 ~~~
 
-You can also use the `parse()` method within the `useEffect()` method of React to load data into a Suite widget:
+#### Specify data through the method
 
-~~~jsx {5,8,14} title="ComponentName.jsx"
+To load predefined data into a Suite widget, you can also call the `parse()` method:
+
+~~~jsx {5,8,17} title="Grid.jsx"
 import { useEffect, useRef } from "react";
-import { SuiteWidgetName } from '@dhx/trial-suite';
+import { Grid } from '@dhx/trial-suite';
 import "@dhx/trial-suite/codebase/suite.min.css";
 
-import { getData } from "../../data"; // import data
+import { getData } from "../../data"; // 1. import predefined data
 
-export default function ComponentName(props) {
-    const { widget_data_set } = getData(); // initialize required data
-    let widget_container = useRef(); 
+export default function Grid(props) {
+    const { gridData } = getData(); // 2. initialize the required data set
+    let grid_container = useRef(); 
 
     useEffect(() => {
-        // initialize a Suite widget
-        const suite_widget = new SuiteWidgetName(widget_container.current, {
-            data: widget_data_set
+        // initialize a Suite widget without data
+        const grid_widget = new Grid(grid_container.current, {
             // configuration properties
         });
 
+        grid_widget.data.parse(gridData); // call the parse() method and pass data as a parameter
+
         return () => {
-            suite_widget.destructor(); // destruct a Suite widget
+            grid_widget.destructor();
         };
     }, []);
 
     return  <div className="component_container">
-                <div ref={widget_container} className="widget"></div>
+                <div ref={grid_container} className="widget"></div>
             </div>
 }
 ~~~
+
+:::tip
+You can call any Suite widget method as follows: `suite_widget.someMethod()`
+:::
 
 ### Handle events
 
-When a user performs some action in a Suite widget, it invokes an event. You can use this event to detect the action and run the desired code for it.
+When a user performs some action in a Suite widget, the event is fired. You can use this event to detect the action and run the required code.
 
-Open ***ComponentName.jsx*** and complete the `useEffect()` method as follows:
-
-~~~jsx {5-7} title="ComponentName.jsx"
+~~~jsx {6-8} title="Grid.jsx"
 // ...
-useEffect(() => {
-    const widget_name = new SuiteWidgetName(widget_container.current, {});
 
-    widget_name.events.on("click", (obj) => {
-        console.log(obj);
+useEffect(() => {
+    const grid_widget = new Grid(grid_container.current, {});
+
+    grid_widget.events.on("scroll", function({top,left}){
+        console.log("The grid is scrolled to "+top,left);
     });
     
     return () => {
-        widget_name?.destructor();
+        grid_widget?.destructor();
     };
 }, []);
+
 // ...
 ~~~
 
-Now you know how to integrate DHTMLX Suite widgets with React. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/react-suite-demo).
+Now you know how to integrate and configure any Suite widget with React. You can customize the code according to your specific requirements. The extended example you can find on [**GitHub**](https://github.com/DHTMLX/react-suite-demo).
