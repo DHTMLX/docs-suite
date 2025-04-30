@@ -10,12 +10,12 @@ description: You can explore how to use DHTMLX Suite Widgets with React. Browse 
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) before reading this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html).
 :::
 
-DHTMLX Suite widgets are compatible with [**React**](https://react.dev) and we prepared the corresponding examples. For more information, refer to the [**Example on GitHub**](https://github.com/DHTMLX/react-suite-demo).
+DHTMLX Suite widgets are compatible with [**React**](https://react.dev). For more information, refer to the corresponding example on GitHub: [DHTMLX Suite with React Demo](https://github.com/DHTMLX/react-suite-demo). 
 
 ## Create new React project
 
 :::info
-Before you start to create a new React project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/). You can create a basic **React** project or use **React with Vite**.
+Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/). You can create a basic **React** project or use **React with Vite**.
 :::
 
 Step 1. Create a project and name it as ***my-react-suite-app***:
@@ -56,7 +56,7 @@ Install the DHTMLX Suite library to get access to Suite widgets.
 Download the [**trial Suite package**](../../#installing-trial-dhtmlx-suite-via-npm-and-yarn) and follow steps mentioned in the README file. Note that **trial** Suite is available 30 days only.
 :::
 
-## Create component
+## Create React component
 
 Now you can create React components (wrappers) based on Suite widgets. For each complex Suite widget you can create a separate file (for instance [***Grid.jsx***](https://github.com/DHTMLX/react-suite-demo/blob/master/src/Content/LeftPanel/Grid.jsx)) in the [***src/***](https://github.com/DHTMLX/react-suite-demo/blob/master/src) directory.
 
@@ -84,7 +84,7 @@ In this guide you can find basic concepts on how to utilize the **trial** versio
 
 ### Initialize Suite widget(s) within a container
 
-To display a Suite widget on the page, you need to create a container and initialize a widget through the corresponding constructor:
+To display a Suite widget on a page, you need to create a container and initialize a widget through the corresponding constructor:
 
 ~~~jsx {3,8,12-14,22} title="Grid.jsx"
 import { useEffect, useRef } from "react";
@@ -154,9 +154,9 @@ export function getData() {
 
 To load predefined data into a Suite widget, you need to perform the following steps:
 
-1. import predefined data
-2. initialize the required data set
-3. set the `data` property to the predefined data set within the Suite widget constructor
+1. Import predefined data
+2. Initialize the required data set
+3. Set the `data` property to the predefined data set within the Suite widget constructor
 
 ~~~jsx {5,8,14} title="Grid.jsx"
 import { useEffect, useRef } from "react";
