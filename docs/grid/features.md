@@ -283,6 +283,17 @@ In this section you will find the ways of working with selection functionality.
 | [Selection API](../../category/selection-api/)                                | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
 | [Keyboard navigation](../configuration/#arrow-shortcut-keys)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
 
+## How to work with range selection
+
+In this section you will get to know how to work with the range selection functionality.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring range selection](../configuration/#range-selection)               | Learn how to configure the mode of range selection within Grid                |
+| [Working with range selection](../usage_range_selection/)                     | Learn how to enable/disable range selection, set/reset range selection, get the range selection object, and check whether a cell is in the range  |
+| [Range Selection API](../../category/range-selection-api/)                    | Learn how to use the API of Range Selection to manage the range selection within Grid     |
+
+
 ## How to work with TreeGrid mode
 
 In this section you will find the ways of working with the TreeGrid mode of Grid.

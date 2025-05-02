@@ -24,15 +24,17 @@ setRange(
 
 @params:
 - `range: object` - defines the range to set:
-	- `xStart?: string | number` - sets the starting column id
-	- `xEnd?: string | number` - sets the ending column id
-	- `yStart?: string | number` - sets the starting row id
-	- `yEnd?: string | number` - sets the ending row id
+	- `xStart?: string | number` - the starting column id
+	- `xEnd?: string | number` - the ending column id
+	- `yStart?: string | number` - the starting row id
+	- `yEnd?: string | number` - the ending row id
 - `join?: boolean` - defines whether a new range is merged with the current one:
-    - when `join: true` is set, the method merges the new range with the current one. In this case only the ending ids are required
+    - if `join: true` is set, the method merges the new range with the current one. In this case, you can specify just the ending ids of the range, while the starting ids are optional
     - if the `join: false` setting is specified, the method resets the previous range 
 
-If not all coordinates are provided, the missing ones are automatically filled (e.g., the last visible column for xEnd). The starting id for at least one coordinate is required.
+:::note
+If not all coordinates are provided, the missing ones are automatically filled (e.g., the last visible column for `xEnd`). The starting id for at least one coordinate is required.
+:::
 
 @returns:
 `true` - on success, `false` - on error, event cancellation, or if the module is disabled.
@@ -41,7 +43,7 @@ If not all coordinates are provided, the missing ones are automatically filled (
 ### Example
 
 ~~~jsx
-// this example shows setting a range with omitted ending coordinates
+// this example shows setting of a range with omitted ending coordinates
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -60,7 +62,7 @@ console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1",
 ~~~
 
 ~~~jsx
-// this example demonstrates merging a range
+// this example demonstrates merging of a range
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -79,8 +81,10 @@ grid.range.setRange({ xEnd: "b", yEnd: "2" }, true); // merges with the current 
 console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1", yEnd: "2" }
 ~~~
 
+**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
 
-
+**Related API**: [`getRange()`](grid/api/rangeselection/rangeselection_getrange_method.md),
+[`resetRange()`](grid/api/rangeselection/rangeselection_resetrange_method.md)
 
 
 @changelog:

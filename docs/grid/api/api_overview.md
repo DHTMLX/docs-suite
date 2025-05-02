@@ -44,6 +44,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 :::info important
 - Use [the methods of DataCollection](data_collection.md) to work with data. 
 - Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manage the selection of Grid cells. 
+- Apply [the methods of Range Selection](grid/api/api_overview.md#range-selection-methods) to manage the range selection within Grid. 
 - Use [the methods of TreeCollection](tree_collection.md#methods) to work with data of Grid in the TreeGrid mode. 
 :::
 
@@ -165,6 +166,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 :::info important
 - Use [the events of DataCollection](data_collection.md#events) to work with data of Grid. 
 - Apply [the events of Selection](grid/api/api_overview.md#selection-events) to handle the selection of Grid cells. 
+- Apply [the events of Range Selection](grid/api/api_overview.md#range-selection-events) to handle the range selection within Grid.
 - Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
 :::
 
@@ -263,6 +265,14 @@ You will find the list of all the available configuration properties of a Grid c
 
 
 ### Range Selection events
+
+| Name                                                     | Description                                                     |
+| -------------------------------------------------------- | --------------------------------------------------------------- |
+| [](grid/api/rangeselection/rangeselection_afterresetrange_event.md)    | @getshort(grid/api/rangeselection/rangeselection_afterresetrange_event.md)    |
+| [](grid/api/rangeselection/rangeselection_aftersetrange_event.md)    | @getshort(grid/api/rangeselection/rangeselection_aftersetrange_event.md)    |
+| [](grid/api/rangeselection/rangeselection_beforeresetrange_event.md)    | @getshort(grid/api/rangeselection/rangeselection_beforeresetrange_event.md)    |
+| [](grid/api/rangeselection/rangeselection_beforesetrange_event.md)    | @getshort(grid/api/rangeselection/rangeselection_beforesetrange_event.md)    |
+
 
 
 ## Export methods

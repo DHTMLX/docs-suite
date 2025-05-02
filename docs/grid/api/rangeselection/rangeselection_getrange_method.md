@@ -30,6 +30,7 @@ getRange():
 - `null` if no range is set
 
 @example:
+// this example shows retrieving of the current range
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -44,9 +45,14 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.range.setRange({ xStart: "a", yStart: "1", xEnd: "b", yEnd: "2" });
-console.log(grid.range.getRange()); // { xStart: "a", xEnd: "b", yStart: "1", yEnd: "2" }
+console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1", yEnd: "2" }
 
 @descr:
+
+**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
+
+**Related API**: [`setRange()`](grid/api/rangeselection/rangeselection_setrange_method.md)
+
 
 @changelog:
 added in v9.2

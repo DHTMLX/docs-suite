@@ -2420,7 +2420,7 @@ A range of Grid cells/rows can be selected by clicking the first element to sele
 
 ## Range selection
 
-To enable [range selection management](grid/usage_range_selection.md) within a grid, you should use the Range module. To initialize the Range module, use the [rangeSelection](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
+To enable [range selection management](grid/usage_range_selection.md) within a grid, you should use the Range module. To initialize the Range module, use the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2461,6 +2461,8 @@ const grid = new dhx.Grid("grid_container", {
 console.log(grid.range.isDisabled()); // `true` - module is inactive
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 ~~~
+
+For information on using the Range Selection API, read the [Work with Range Selection object](grid/usage_range_selection.md) guide.
 
 ## Spans
 

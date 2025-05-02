@@ -27,7 +27,7 @@ You can specify just `x` or `y` to check a column or a row, correspondingly.
 `true`, if the cell is within the current range, `false` otherwise
 
 @example:
-// this example shows checking whether an ID belongs to the selected cell range
+// this example shows checking whether an ID belongs to the selected range of cells
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -42,8 +42,15 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.range.setRange({ xStart: "a", yStart: "1", xEnd: "b", yEnd: "2" });
-console.log(grid.range.isRanged({ x: "a", y: "1" })); // true
-console.log(grid.range.isRanged({ x: "a" })); // true
-console.log(grid.range.isRanged({ y: "3" })); // false
+console.log(grid.range.isRanged({ x: "a", y: "1" })); // -> true
+console.log(grid.range.isRanged({ x: "a" })); // -> true
+console.log(grid.range.isRanged({ y: "3" })); // -> false
 
 @descr:
+
+**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
+
+**Related API**: [`setRange()`](grid/api/rangeselection/rangeselection_setrange_method.md)
+
+@changelog:
+added in v9.2
