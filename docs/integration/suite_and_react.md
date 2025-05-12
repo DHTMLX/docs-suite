@@ -10,7 +10,7 @@ description: You can explore how to use DHTMLX Suite Widgets with React. Browse 
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) before reading this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html).
 :::
 
-DHTMLX Suite widgets are compatible with [**React**](https://react.dev). For more information, refer to the corresponding example on GitHub: [DHTMLX Suite with React Demo](https://github.com/DHTMLX/react-suite-demo). 
+DHTMLX Suite widgets are compatible with [**React**](https://react.dev). For more information, refer to the corresponding example on GitHub: [DHTMLX Suite with React Demo](https://github.com/DHTMLX/react-suite-demo).
 
 ## Create new React project
 
@@ -77,7 +77,7 @@ Note that depending on the used package, the source files can be minified. In th
 
 ~~~jsx title="Grid.jsx"
 import { SuiteWidgetName } from '@dhx/trial-suite'; // import { Grid, Pagination, ... } from '@dhx/trial-suite';
-import "@dhx/trial-suite/codebase/suite.min.css";
+import "@dhx/trial-suite/codebase/suite.min.css"; // import Suite styles
 ~~~
 
 In this guide you can find basic concepts on how to utilize the **trial** version of Suite widgets.
@@ -198,17 +198,17 @@ import "@dhx/trial-suite/codebase/suite.min.css";
 
 import { getData } from "../../data"; // 1. import predefined data
 
-export default function Grid(props) {
+export default function Grid() {
     const { gridData } = getData(); // 2. initialize the required data set
     let grid_container = useRef(); 
 
     useEffect(() => {
         // initialize a Suite widget without data
         const grid_widget = new Grid(grid_container.current, {
-            // configuration properties
+            // configuration properties here
         });
 
-        grid_widget.data.parse(gridData); // call the parse() method and pass data as a parameter
+        grid_widget.data.parse(gridData); // 3. call the parse() method and pass data as a parameter
 
         return () => {
             grid_widget.destructor();
@@ -227,7 +227,7 @@ You can call any Suite widget method as follows: `suite_widget.someMethod()`
 
 ### Handle events
 
-When a user performs some action in a Suite widget, the event is fired. You can use this event to detect the action and run the required code.
+When a user performs some action in a Suite widget, an event is fired. You can use this event to detect an action and run the required code.
 
 ~~~jsx {6-8} title="Grid.jsx"
 // ...
@@ -239,9 +239,7 @@ useEffect(() => {
         console.log("The grid is scrolled to "+top,left);
     });
     
-    return () => {
-        grid_widget?.destructor();
-    };
+    //...
 }, []);
 
 // ...
