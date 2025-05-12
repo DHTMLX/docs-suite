@@ -10,15 +10,17 @@ description: You can explore how to use DHTMLX Suite Widgets with Svelte. Browse
 You should be familiar with the basic concepts and patterns of **Svelte** before reading this documentation. To refresh your knowledge, please refer to the [**Svelte documentation**](https://svelte.dev/).
 :::
 
-DHTMLX Suite is compatible with **Svelte**. We have prepared code examples on how to use DHTMLX Suite with **Svelte**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/svelte-suite-demo).
+DHTMLX Suite is compatible with **Svelte**. For more information, refer to the corresponding example on GitHub: [DHTMLX Suite with Svelte Demo](https://github.com/DHTMLX/svelte-suite-demo).
 
-## Creating a project
+## Create new Svelte project
 
 :::info
 Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-There are several ways of creating a **Svelte** project:
+Step 1. Create a project and name it as ***my-svelte-suite-app***:
+
+There are several ways on how to create a **Svelte** project:
 
 - you can use the [**SvelteKit**](https://kit.svelte.dev/)
 
@@ -32,19 +34,17 @@ npm create vite@latest
 
 Check the details in the [related article](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit).
 
-### Installation of dependencies
+Step 2. Go to the project directory:
 
-Let's name the project as **my-svelte-suite-app** and go to the app directory:
-
-~~~json
+~~~bash
 cd my-svelte-suite-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+Step 3. Install dependencies and start the dev server:
 
 - if you use [**yarn**](https://yarnpkg.com/), run the following commands:
 
-~~~json
+~~~bash
 yarn
 yarn start
 ~~~
@@ -60,45 +60,202 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Install Suite sources
 
-Now you should get the DHTMLX Suite source code. First of all, stop the app and proceed with installing the Suite package.
+Install the DHTMLX Suite library to get access to Suite widgets.
 
-### Step 1. Install package
+:::important
+Download the [**trial Suite package**](../../#installing-trial-dhtmlx-suite-via-npm-and-yarn) and follow steps mentioned in the README file. Note that **trial** Suite is available 30 days only.
+:::
 
-Download the [**trial Suite package**](../../#installing-trial-dhtmlx-suite-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Suite is available 30 days only.
+## Create Svelte component
 
-### Step 2. Create components
+Now you can create Svelte components (wrappers) based on Suite widgets. For each complex Suite widget you can create a separate file (for instance [***Grid.svelte***](https://github.com/DHTMLX/svelte-suite-demo/blob/main/src/Content/LeftPanel/Grid.svelte)) in the [***src/***](https://github.com/DHTMLX/svelte-suite-demo/tree/main/src) directory.
 
-Now you need to create React components, to add Suite widgets into the application.
+### Import source files
 
-TODO!!! Add app structure
+Open the ***Grid.svelte*** file and import the corresponding Suite widget. Note that:
 
-#### Import source files
+- if you use PRO version and install the Suite package from a local folder, the import paths look as follows:
 
-Open the ***Suite.svelte*** file and import Suite source files. Note that:
+~~~jsx title="Grid.svelte"
+import { SuiteWidgetName } from 'dhx-suite-package'; // import { Grid, Pagination, ... } from 'dhx-suite-package';
+import 'dhx-suite-package/codebase/suite.css'; // import Suite styles
+~~~
 
-- if you use PRO version and install the Suite package from a local folder, the import paths look like this:
+Note that depending on the used package, the source files can be minified. In this case, make sure that you import the CSS file as ***suite.min.css***.
 
-~~~html title="Component.svelte"
+- if you use the trial version of Suite, the import paths look as follows:
+
+~~~jsx title="Grid.svelte"
+import { SuiteWidgetName } from '@dhx/trial-suite'; // import { Grid, Pagination, ... } from '@dhx/trial-suite';
+import "@dhx/trial-suite/codebase/suite.min.css"; // import Suite styles
+~~~
+
+In this guide you can find basic concepts on how to utilize the **trial** version of Suite widgets.
+
+### Initialize Suite widget(s) within a container
+
+To display a Suite widget on a page, you need to create a container and initialize a widget through the corresponding constructor:
+
+~~~html {4,8-9,13-15,24} title="Grid.svelte"
 <script>
-import { WidgetName } from 'dhx-suite-package';
-import 'dhx-suite-package/codebase/suite.css';
+import { onMount, onDestroy } from "svelte";
+// import a Suite widget
+import { Grid } from '@dhx/trial-suite';
+// import Suite styles
+import "@dhx/trial-suite/codebase/suite.min.css"; 
+
+let grid_container, // initialize container for a Suite widget
+    grid_widget;
+
+onMount(() => {
+    // initialize a Suite widget
+    grid_widget = new Grid(grid_container, {
+       // configuration properties here 
+    });
+});
+
+onDestroy(() => {
+    grid_widget?.destructor(); // destruct a Suite widget
+});
 </script>
+
+<div class="component_container">
+    <div bind:this={grid_container} class="widget"></div>
+</div>
 ~~~
 
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **suite.min.css**.
+### Load data
 
-- if you use the trial version of Suite, specify the following paths:
+To add data into a Suite widget, you need to provide a data set. You can create the [***data.js***](https://github.com/DHTMLX/svelte-suite-demo/blob/main/src/data.js) file in the ***src/*** directory and add required data sets:
 
-~~~html title="Component.svelte"
-<script>
-import { WidgetName } from '@dhx/trial-suite';
-import '@dhx/trial-suite/codebase/suite.css';
-<script>
+~~~jsx {2,27,29} title="data.js"
+export function getData() {
+    const gridData = [
+        {
+            time: new Date("Jan 28, 2021"),
+            nights: 7,
+            price: 68,
+            contactPerson: "Yoshio Slater",
+            contactEmail: "phasellus.fermentum@yahoo.net"
+        },
+        {
+            time: new Date("Apr 13, 2021")
+            nights: 6,
+            price: 66,
+            contactPerson: "Christopher Kirk",
+            contactEmail: "posuere.vulputate.lacus@outlook.org"
+        },
+        {
+            time: new Date("Jan 31, 2021"),
+            nights: 15,
+            price: 64,
+            contactPerson: "Jana Meyers",
+            contactEmail: "mollis@aol.edu"
+        }, 
+        // other data items
+    ];
+
+    const sidebarData = [ /* ... */ ];
+
+    return { gridData, sidebarData };
+}
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of Suite.
+#### Specify data through the property
 
-TODO!!! NEXT STEPS
+To load predefined data into a Suite widget, you need to perform the following steps:
 
-- To check online samples, please refer to the corresponding [Example on Replit](https://replit.com/@dhtmlx/dhtmlx-suite-with-svelte).
-- To download samples, please check our GitHub repository: [DHTMLX Widgets + Svelte](https://github.com/DHTMLX/svelte-suite-demo). The README.md file provides all the necessary information on how to run the app in the development mode.
+1. Import predefined data
+2. Initialize the required data set
+3. Set the `data` property to the predefined data set within the Suite widget constructor
+
+~~~html {6,8,16} title="Grid.svelte"
+<script>
+import { onMount, onDestroy } from "svelte";
+import { Grid } from '@dhx/trial-suite';
+import "@dhx/trial-suite/codebase/suite.min.css"; 
+
+import { getData } from "../../data"; // 1. import predefined data
+
+let { gridData } = getData(); // 2. initialize the required data set
+
+let grid_container,
+    grid_widget;
+
+onMount(() => {
+    // initialize a Suite widget with data
+    grid_widget = new Grid(grid_container, {
+        data: gridData, // 3. set the `data` property to the predefined data set
+        // other configuration properties here 
+    });
+});
+
+onDestroy(() => {
+    grid_widget?.destructor();
+});
+</script>
+
+<div class="component_container">
+    <div bind:this={grid_container} class="widget"></div>
+</div>
+~~~
+
+#### Specify data through the method
+
+To load predefined data into a Suite widget, you can also call the `parse()` method:
+
+~~~html {6,8,19} title="Grid.svelte"
+<script>
+import { onMount, onDestroy } from "svelte";
+import { Grid } from '@dhx/trial-suite';
+import "@dhx/trial-suite/codebase/suite.min.css"; 
+
+import { getData } from "../../data"; // 1. import predefined data
+
+let { gridData } = getData(); // 2. initialize the required data set
+
+let grid_container, 
+    grid_widget;
+
+onMount(() => {
+    // initialize a Suite widget without data
+    grid_widget = new Grid(grid_container, {
+       // configuration properties here 
+    });
+
+    grid_widget.data.parse(gridData); // 3. call the parse() method and pass data as a parameter
+});
+
+onDestroy(() => {
+    grid_widget?.destructor();
+});
+</script>
+
+<div class="component_container">
+    <div bind:this={grid_container} class="widget"></div>
+</div>
+~~~
+
+:::tip
+You can call any Suite widget method as follows: `suite_widget.someMethod()`
+:::
+
+### Handle events
+
+When a user performs some action in a Suite widget, an event is fired. You can use this event to detect an action and run the required code.
+
+~~~jsx {6-8} title="Grid.svelte"
+// ...
+
+onMount(() => {
+    grid_widget = new Grid(grid_container, {});
+
+    grid_widget.events.on("scroll", function({top,left}){
+        console.log("The grid is scrolled to "+top,left);
+    });
+});
+
+// ...
+~~~
+
+Now you know how to integrate and configure any Suite widget with Svelte. You can customize the code according to your specific requirements. The extended example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-suite-demo).
