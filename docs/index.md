@@ -83,7 +83,7 @@ If you want to use trial version of Suite, download the [**trial Suite package**
 #### Installing PRO DHTMLX Suite via npm and yarn
 
 :::info
-If you have already own Suite under the proprietary license, send your **license number** on the *contact@dhtmlx.com* email to receive *login* and *password* for private **npm** as well as detailed guide on how to install Suite. Note that private **npm** is available before the expiration of the proprietary Suite license.
+You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Suite license is active.
 :::
 
 ### Integration with any backend technologies
