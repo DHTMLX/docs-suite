@@ -2615,6 +2615,7 @@ module.exports = {
                     "grid/api/grid_autoemptyrow_config",
                     "grid/api/grid_autoheight_config",
                     "grid/api/grid_autowidth_config",
+                    "grid/api/grid_blockselection_config",
                     "grid/api/grid_bottomsplit_config",
                     "grid/api/grid_closable_config",
                     "grid/api/grid_collapsed_config",
@@ -2765,6 +2766,55 @@ module.exports = {
                 },
                 {
                   type: "category",
+                  label: "BlockSelection API",
+                  link: {
+                    type: 'generated-index',
+                    title: "BlockSelection API",
+                    keywords: ['block selection API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Grid BlockSelection methods",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid BlockSelection methods",
+                      keywords: ['grid block selection methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/blockselection/disable_method",
+                      "grid/api/blockselection/enable_method",
+                      "grid/api/blockselection/isdisabled_method"
+                    ],
+                  },
+
+                  {
+                    type: "category",
+                    label: "Grid BlockSelection events",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid BlockSelection events",
+                      keywords: ['grid block selection events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/blockselection/afterblockhandleapply_event",
+                      "grid/api/blockselection/afterblockselectionapply_event",
+                      "grid/api/blockselection/afterblockselectionmove_event",
+                      "grid/api/blockselection/beforeblockhandleapply_event",
+                      "grid/api/blockselection/beforeblockselectionapply_event",
+                      "grid/api/blockselection/beforeblockselectionmove_event",
+                      "grid/api/blockselection/blockhandlemousedown_event",
+                      "grid/api/blockselection/blockselectionend_event",
+                      "grid/api/blockselection/blockselectionstart_event",
+                      "grid/api/blockselection/blockselectionvalidate_event"
+                    ],
+                  }
+                  ],
+                },
+                {
+                  type: "category",
                   label: "Export methods",
                   collapsed: true,
                   link: {
@@ -2790,6 +2840,7 @@ module.exports = {
             "grid/usage",
             "grid/treegrid_mode",
             "grid/usage_selection",
+            "grid/usage_blockselection",
             "grid/customization",
             "grid/events",
           ],

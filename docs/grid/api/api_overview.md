@@ -176,6 +176,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_autoemptyrow_config.md)    | @getshort(grid/api/grid_autoemptyrow_config.md)    |
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
+| [](grid/api/grid_blockselection_config.md)  | @getshort(grid/api/grid_blockselection_config.md)  |
 | [](grid/api/grid_bottomsplit_config.md)     | @getshort(grid/api/grid_bottomsplit_config.md)     |
 | [](grid/api/grid_closable_config.md)        | @getshort(grid/api/grid_closable_config.md)        |
 | [](grid/api/grid_collapsed_config.md)       | @getshort(grid/api/grid_collapsed_config.md)       |
@@ -244,6 +245,32 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/selection/selection_afterunselect_event.md)  | @getshort(grid/api/selection/selection_afterunselect_event.md)  |
 | [](grid/api/selection/selection_beforeselect_event.md)   | @getshort(grid/api/selection/selection_beforeselect_event.md)   |
 | [](grid/api/selection/selection_beforeunselect_event.md) | @getshort(grid/api/selection/selection_beforeunselect_event.md) |
+
+## BlockSelection API
+
+### BlockSelection methods
+
+| Name                                                  | Description                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/blockselection/disable_method.md)    		| @getshort(grid/api/blockselection/disable_method.md)    	   |
+| [](grid/api/blockselection/enable_method.md)     		| @getshort(grid/api/blockselection/enable_method.md)          |
+| [](grid/api/blockselection/isdisabled_method.md)     	| @getshort(grid/api/blockselection/isdisabled_method.md)      |
+
+### BlockSelection events
+
+| Name                                                     	    | Description                                                     	    |
+| ------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [](grid/api/blockselection/afterblockhandleapply_event.md)    | @getshort(grid/api/blockselection/afterblockhandleapply_event.md)     |
+| [](grid/api/blockselection/afterblockselectionapply_event.md) | @getshort(grid/api/blockselection/afterblockselectionapply_event.md)  |
+| [](grid/api/blockselection/afterblockselectionmove_event.md)  | @getshort(grid/api/blockselection/afterblockselectionmove_event.md)   |
+| [](grid/api/blockselection/beforeblockhandleapply_event.md)   | @getshort(grid/api/blockselection/beforeblockhandleapply_event.md)    |
+| [](grid/api/blockselection/beforeblockselectionapply_event.md)| @getshort(grid/api/blockselection/beforeblockselectionapply_event.md) |
+| [](grid/api/blockselection/beforeblockselectionmove_event.md) | @getshort(grid/api/blockselection/beforeblockselectionmove_event.md)  |
+| [](grid/api/blockselection/blockhandlemousedown_event.md)   	| @getshort(grid/api/blockselection/blockhandlemousedown_event.md)    	|
+| [](grid/api/blockselection/blockselectionend_event.md)   		| @getshort(grid/api/blockselection/blockselectionend_event.md)    		|
+| [](grid/api/blockselection/blockselectionstart_event.md)   	| @getshort(grid/api/blockselection/blockselectionstart_event.md)  		|
+| [](grid/api/blockselection/blockselectionvalidate_event.md)   | @getshort(grid/api/blockselection/blockselectionvalidate_event.md)    |
+
 
 ## Export methods
 

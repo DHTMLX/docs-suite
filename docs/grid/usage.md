@@ -1198,7 +1198,11 @@ grid.destructor();
 
 ## Using Selection API
 
-For information on using Selection API, read [Work with Selection Object](grid/usage_selection.md).
+For information on using Selection API, read [Work with Selection object](grid/usage_selection.md).
+
+## Using BlockSelection API
+
+For information on using BlockSelection API, read [Work with BlockSelection module](grid/usage_blockselection.md).
 
 ## Working with Grid in the TreeGrid mode
 
