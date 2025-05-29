@@ -55,7 +55,7 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 Install the DHTMLX Suite library to get access to Suite widgets.
 
 :::important
-Download the [**trial Suite package**](../../#installing-trial-dhtmlx-suite-via-npm-and-yarn) and follow steps mentioned in the README file. Note that **trial** Suite is available 30 days only.
+Download the [**trial Suite package**](../../#installing-trial-dhtmlx-suite-via-npm-or-yarn) and follow steps mentioned in the README file. Note that **trial** Suite is available 30 days only.
 :::
 
 ## Create Vue component

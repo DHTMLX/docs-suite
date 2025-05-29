@@ -74,13 +74,13 @@ DHTMLX Suite is compatible with client-side frameworks. Refer to the following g
 
 You can import DHTMLX Suite into your project using `yarn` or `npm` package manager.
 
-#### Installing trial DHTMLX Suite via npm and yarn
+#### Installing trial DHTMLX Suite via npm or yarn
 
 :::info
 If you want to use trial version of Suite, download the [**trial Suite package**](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and follow steps mentioned in the *README* file. Note that trial Suite is available 30 days only.
 :::
 
-#### Installing PRO DHTMLX Suite via npm and yarn
+#### Installing PRO DHTMLX Suite via npm or yarn
 
 :::info
 You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Suite license is active.
