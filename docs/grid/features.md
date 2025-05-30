@@ -294,6 +294,16 @@ In this section you will get to know how to work with the range selection functi
 | [Range Selection API](../../category/range-selection-api/)                    | Learn how to use the API of Range Selection to manage the range selection within Grid     |
 
 
+### How to work with block selection
+
+In this section you will get to know how to work with the block selection functionality.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring block selection](../configuration/#managing-block-selection-in-grid) | Learn how to configure the block selection module within Grid ([Example](https://snippet.dhtmlx.com/8gx20g1d))             |
+| [Working with block selection](../usage_blockselection/)                     | Learn how to enable/disable block selection in Grid, check the main features of the BlockSelection module and explore it interacts with other modules  |
+| [BlockSelection API](../../category/blockselection-api/)                    | Learn how to use API of the BlockSelection module to manage the block selection within Grid     |
+
 ## How to work with TreeGrid mode
 
 In this section you will find the ways of working with the TreeGrid mode of Grid.
