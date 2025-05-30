@@ -114,21 +114,21 @@ The `BlockSelection` API interacts with other grid modules depending on the appl
 
 #### Range mode
 
-- The `BlockSelection` module uses the `Range` API to manage continuous rectangular ranges.
+- The `BlockSelection` module uses the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api) to manage continuous rectangular ranges.
 - The handle automatically fills data in the new range.
 - The selected range will be reset during data grouping or ungrouping.
 - The range will be reinstalled to a new one when moving columns or rows.
 
 #### Manual mode
 
-- The `BlockSelection` module does not use the `Range` API. The developer implements logic via the events such as [`blockSelectionValidate`](grid/api/blockselection/blockselectionvalidate_event.md), [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
+- The `BlockSelection` module does not use the `RangeSelection` API. The developer implements logic via the events such as [`blockSelectionValidate`](grid/api/blockselection/blockselectionvalidate_event.md), [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
 - The handle and built-in filling are unavailable.
 
 ### Usage examples
 
 #### Restricting selection in the Range mode
 
-This example shows how to control the start of a block selection and programmatically set a range using the `Range` API.
+This example shows how to control the start of a block selection and programmatically set a range using the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api).
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {

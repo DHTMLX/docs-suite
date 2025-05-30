@@ -2418,9 +2418,11 @@ const grid = new dhx.Grid("grid_container", {
 Since the `multiselection` configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
 A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select.
 
-## Range selection
+### Managing range selection in Grid
 
-To enable [range selection management](grid/usage_range_selection.md) within a grid, you should use the Range module. To initialize the Range module, use the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
+The Grid functionality provides the [range selection management](grid/usage_rangeselection.md) feature for setting/resetting a range of cells, retrieving information about the current range, and checking whether specific cells belong to the selected range.
+
+To enable [range selection management](grid/usage_rangeselection.md) within a grid, you should use the `RangeSelection` module. To initialize the module, enable the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2432,7 +2434,7 @@ const grid = new dhx.Grid("grid_container", {
         { id: "1", a: "A1", b: "B1" },
         { id: "2", a: "A2", b: "B2" },
     ],
-    rangeSelection: true // enables the Range module
+    rangeSelection: true // enables the RangeSelection module
 });
 ~~~
 
@@ -2462,11 +2464,13 @@ console.log(grid.range.isDisabled()); // `true` - module is inactive
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 ~~~
 
-For information on using the Range Selection API, read the [Work with Range Selection object](grid/usage_range_selection.md) guide.
+For information on using the Range Selection API, read the [Work with RangeSelection module](grid/usage_rangeselection.md) guide.
 
 ### Managing block selection in Grid
 
-You can manage selection of cells' ranges via the mouse pointer, touch input, and keyboard navigation. To enable [block selection management](grid/usage_blockselection_module.md) within a grid, you should use the `BlockSelection` module. To initialize the module, use the [`blockSelection`](grid/api/grid_blockselection_config.md) property in the Grid configuration: 
+The Grid functionality provides the [block selection management](grid/usage_blockselection.md) feature for selecting cells' ranges via the mouse pointer, touch input, and keyboard navigation, as well as adjusting the appearance of the selection and handlers, depending on the applied mode.
+
+To enable managing of the block selection within a grid, you should use the `BlockSelection` module. To initialize the module, enable the [`blockSelection`](grid/api/grid_blockselection_config.md) property in the Grid configuration: 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2509,7 +2513,7 @@ The `blockSelection` property can be set in two ways:
 </table>
 
 :::note
-By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the **Range** module is initialized.
+By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the [`RangeSelection`](grid/usage_rangeselection.md) module is initialized.
 :::
 
 The example below demonstrates configuring the module with the handle disabled and the "range" mode enabled:

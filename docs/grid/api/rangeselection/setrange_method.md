@@ -1,7 +1,7 @@
 ---
 sidebar_label: setRange()
 title: JavaScript Grid - setRange Method 
-description: You can explore the setRange method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the setRange method of Grid range selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # setRange()
@@ -23,14 +23,19 @@ setRange(
 ~~~
 
 @params:
-- `range: object` - defines the range to set:
-	- `xStart?: string | number` - the starting column id
-	- `xEnd?: string | number` - the ending column id
-	- `yStart?: string | number` - the starting row id
-	- `yEnd?: string | number` - the ending row id
-- `join?: boolean` - defines whether a new range is merged with the current one:
-    - if `join: true` is set, the method merges the new range with the current one. In this case, you can specify just the ending ids of the range, while the starting ids are optional
-    - if the `join: false` setting is specified, the method resets the previous range 
+<table>
+    <tbody>
+        <tr>
+            <td><b>range</b></td>
+            <td>(<i>object</i>) an object with the range coordinates that contains the following options:<ul><li><b>`xStart`</b> - (<i>string | number</i>) the starting column id</li><li><b>`xEnd`</b> - (<i>string | number</i>) the ending column id</li><li><b>`yStart`</b> - (<i>string | number</i>) the starting row id</li><li><b>`yEnd`</b> - (<i>string | number</i>) the ending row id</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>join</b></td>
+            <td>(<i>boolean</i>) defines whether a new range is merged with the current one:
+            <ul><li>if `join: true` is set, the method merges the new range with the current one. In this case, you can specify just the ending ids of the range, while the starting ids are optional</li><li>if the `join: false` setting is specified, the method resets the previous range</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 :::note
 If not all coordinates are provided, the missing ones are automatically filled (e.g., the last visible column for `xEnd`). The starting id for at least one coordinate is required.
@@ -81,10 +86,10 @@ grid.range.setRange({ xEnd: "b", yEnd: "2" }, true); // merges with the current 
 console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1", yEnd: "2" }
 ~~~
 
-**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
+**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
 
-**Related API**: [`getRange()`](grid/api/rangeselection/rangeselection_getrange_method.md),
-[`resetRange()`](grid/api/rangeselection/rangeselection_resetrange_method.md)
+**Related API**: [`getRange()`](grid/api/rangeselection/getrange_method.md),
+[`resetRange()`](grid/api/rangeselection/resetrange_method.md)
 
 
 @changelog:

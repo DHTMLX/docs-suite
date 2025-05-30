@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterResetRange
 title: JavaScript Grid - afterResetRange Event 
-description: You can explore the afterResetRange event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the afterResetRange event of Grid range selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # afterResetRange
@@ -45,11 +45,11 @@ grid.range.resetRange(); // logs the previous range
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
+**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/rangeselection_setrange_method.md),
-[`resetRange()`](grid/api/rangeselection/rangeselection_resetrange_method.md),
-[`beforeResetRange`](grid/api/rangeselection/rangeselection_beforeresetrange_event.md)
+**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md),
+[`resetRange()`](grid/api/rangeselection/resetrange_method.md),
+[`beforeResetRange`](grid/api/rangeselection/beforeresetrange_event.md)
 
 @changelog:
 added in v9.2

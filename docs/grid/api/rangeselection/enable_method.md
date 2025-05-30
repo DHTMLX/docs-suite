@@ -1,12 +1,12 @@
 ---
 sidebar_label: enable()
 title: JavaScript Grid - enable Method 
-description: You can explore the enable method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the enable method of Grid range selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # enable()
 
-@short: activates the Range Selection module
+@short: activates the `RangeSelection` module
 
 ### Usage
 
@@ -34,10 +34,10 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will be set
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
+**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
 
-**Related API**: [`disable()`](grid/api/rangeselection/rangeselection_disable_method.md), [`getRange()`](grid/api/rangeselection/rangeselection_getrange_method.md),
-[`setRange()`](grid/api/rangeselection/rangeselection_setrange_method.md)
+**Related API**: [`disable()`](grid/api/rangeselection/disable_method.md), [`getRange()`](grid/api/rangeselection/getrange_method.md),
+[`setRange()`](grid/api/rangeselection/setrange_method.md)
 
 @changelog:
 added in v9.2

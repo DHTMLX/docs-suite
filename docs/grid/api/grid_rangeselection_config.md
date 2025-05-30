@@ -6,7 +6,7 @@ description: You can explore the rangeSelection config of Grid in the documentat
 
 # rangeSelection
 
-@short: Optional. Enables range selection management within a grid
+@short: Optional. Enables/disables range selection management within a grid
 
 ### Usage
 
@@ -56,6 +56,6 @@ console.log(grid.range.isDisabled()); // `true` - module is inactive
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 ~~~
 
-**Related article:** [Range selection](grid/configuration.md/#range-selection)
+**Related article:** [Managing RangeSelection in Grid](grid/configuration.md/#managing-range-selection-in-grid)
 
 @changelog: added in v9.2

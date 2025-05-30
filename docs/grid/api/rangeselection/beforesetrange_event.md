@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSetRange
 title: JavaScript Grid - beforeSetRange Event 
-description: You can explore the beforeSetRange event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the beforeSetRange event of Grid range selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # beforeSetRange
@@ -50,10 +50,10 @@ grid.range.setRange({ xStart: "b", yStart: "1" }); // setting a new range is can
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
+**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/rangeselection_setrange_method.md),
-[`afterSetRange`](grid/api/rangeselection/rangeselection_aftersetrange_event.md)
+**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md),
+[`afterSetRange`](grid/api/rangeselection/aftersetrange_event.md)
 
 @changelog:
 added in v9.2

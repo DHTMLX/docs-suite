@@ -1,7 +1,7 @@
 ---
 sidebar_label: getRange()
 title: JavaScript Grid - getRange Method 
-description: You can explore the getRange method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the getRange method of Grid range selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # getRange()
@@ -49,9 +49,9 @@ console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1",
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_range_selection.md)
+**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/rangeselection_setrange_method.md)
+**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md)
 
 
 @changelog:
