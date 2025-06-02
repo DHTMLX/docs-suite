@@ -8,6 +8,42 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2 
+
+Released on June X, 2025
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-9-2/" target="_blank">Review of the release on the blog</a>
+
+### New functionality
+
+- Grid. The Range manager is added (PRO version)
+	- new methods of the `range` object: `disable()`, `enable()`, `getRange()`, `getRangedCells()`, `isDisabled()`, `isRanged()`, `resetRange()`, `setRange()`
+	- new events of the `range` object: `afterResetRange`, `afterSetRange`, `beforeResetRange`, `beforeSetRange`
+- Grid. The BlockSelection manager is added (PRO version)
+	- new methods of the `block` object: `disable()`, `enable()`, `isDisabled()`
+	- new events of the `block` object: `afterBlockHandleApply`, `afterBlockSelectionApply`, `afterBlockSelectionMove`, `beforeBlockHandleApply`, `beforeBlockSelectionApply`, `beforeBlockSelectionMove`, `blockHandleMouseDown`, `blockSelectionEnd`, `blockSelectionStart`, `blockSelectionValidate` 
+- Grid. The Clipboard functionality is added (PRO version)
+- Grid. The drag and drop handle (panel) for rows is added
+- Grid. Undo/Redo functionality
+
+### Updates
+
+- Context Menu. The `navigationType:"click"` is added
+- Grid. The drag-n-drop functionality is improved (The DropManager is added)
+- Grid. Updating / improving the export to Excel module
+
+### Fixes
+
+- DragManager. Incorrect detection of elements' drop location during drag-n-drop and other (Grid component) (?):
+	- Solving the problem of incorrectly determining the position for dropping an element during the Drag&Drop operation (child elements) in the TreeGrid mode;
+	- Solving the problem when moving a line to the header/footer area;
+	- Solving the problem of determining the position for dropping above the first element;
+	- Solving the problem associated with the absence or incorrect definition of the drop position for the default mode;
+	- Fixed the `dragIn` event (the previous reset state was transmitted);
+	- Optimization of the `dragIn/dragOut` events (removed false positives).
+- Grid. The issue with falsy selection of frozen cells while selecting unfrozen cells
+- Grid. The issue with dragging unselected items
+
 ## Version 9.1.3 
 
 Released on April 3, 2025
