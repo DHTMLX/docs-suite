@@ -304,6 +304,16 @@ In this section you will get to know how to work with the block selection functi
 | [Working with block selection](../usage_blockselection/)                     | Learn how to enable/disable block selection in Grid, check the main features of the BlockSelection module and explore how it interacts with other modules  |
 | [BlockSelection API](../../category/blockselection-api/)                    | Learn how to use API of the BlockSelection module to manage the block selection within Grid     |
 
+## How to work with clipboard
+
+In this section you will get to know how to work with the clipboard functionality.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring clipboard(../configuration/#clipboard) | Learn how to configure the Clipboard module within Grid  |
+| [Working with clipboard](../usage_clipboard/)        | Learn how to enable the clipboard in Grid, check the main features and explore the peculiarities of using the Clipboard module  |
+| [Clipboard API](../../category/clipboard-api/)       | Learn how to use API of the Clipboard module to manage the clipboard operations within Grid     |
+
 ## How to work with TreeGrid mode
 
 In this section you will find the ways of working with the TreeGrid mode of Grid.

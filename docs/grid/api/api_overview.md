@@ -46,6 +46,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 - Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manage the selection of Grid cells. 
 - Apply [the methods of RangeSelection](grid/api/api_overview.md#rangeselection-methods) to manage the range selection within Grid. 
 - Apply [the methods of BlockSelection](grid/api/api_overview.md#blockselection-methods) to manage the block selection within Grid. 
+- Use [the methods of Export](grid/api/api_overview.md#export-methods) to work with data export within Grid. 
 - Use [the methods of TreeCollection](tree_collection.md#methods) to work with data of Grid in the TreeGrid mode. 
 :::
 
@@ -169,6 +170,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 - Apply [the events of Selection](grid/api/api_overview.md#selection-events) to handle the selection of Grid cells. 
 - Apply [the events of RangeSelection](grid/api/api_overview.md#rangeselection-events) to handle the range selection within Grid.
 - Apply [the events of BlockSelection](grid/api/api_overview.md#blockselection-events) to handle the block selection within Grid.
+- Use [the events of Clipboard](grid/api/api_overview.md#clipboard-events) to work with clipboard within Grid. 
 - Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
 :::
 
@@ -182,6 +184,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
 | [](grid/api/grid_blockselection_config.md)  | @getshort(grid/api/grid_blockselection_config.md)  |
 | [](grid/api/grid_bottomsplit_config.md)     | @getshort(grid/api/grid_bottomsplit_config.md)     |
+| [](grid/api/grid_clipboard_config.md)       | @getshort(grid/api/grid_clipboard_config.md)       |
 | [](grid/api/grid_closable_config.md)        | @getshort(grid/api/grid_closable_config.md)        |
 | [](grid/api/grid_collapsed_config.md)       | @getshort(grid/api/grid_collapsed_config.md)       |
 | [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
@@ -303,8 +306,9 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/blockselection/blockselectionstart_event.md)   	| @getshort(grid/api/blockselection/blockselectionstart_event.md)  		|
 | [](grid/api/blockselection/blockselectionvalidate_event.md)   | @getshort(grid/api/blockselection/blockselectionvalidate_event.md)    |
 
+## Export API
 
-## Export methods
+### Export methods
 
 | Name                                    | Description                                    |
 | --------------------------------------- | ---------------------------------------------- |
@@ -313,3 +317,15 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/export/grid_png_method.md)  | @getshort(grid/api/export/grid_png_method.md)  |
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |
 
+## Clipboard API
+
+### Clipboard events
+
+| Name                                    	 | Description                                    	 |
+| ------------------------------------------ | ------------------------------------------------- |
+| [](grid/api/clipboard/aftercopy_event.md)  | @getshort(grid/api/clipboard/aftercopy_event.md)  |
+| [](grid/api/clipboard/afterpaste_event.md) | @getshort(grid/api/clipboard/afterpaste_event.md) |
+| [](grid/api/clipboard/beforecopy_event.md) | @getshort(grid/api/clipboard/beforecopy_event.md) |
+| [](grid/api/clipboard/beforepaste_event.md)| @getshort(grid/api/clipboard/beforepaste_event.md)|
+| [](grid/api/clipboard/copyerror_event.md)  | @getshort(grid/api/clipboard/copyerror_event.md)  |
+| [](grid/api/clipboard/pasteerror_event.md) | @getshort(grid/api/clipboard/pasteerror_event.md) |

@@ -2573,9 +2573,88 @@ const grid = new dhx.Grid("grid_container", {
 
 For information on using the Block Selection API, read the [Work with Block Selection object](grid/usage_blockselection.md) guide.
 
+## Clipboard 
+
+The Grid configuration includes the `Clipboard` module that allows working with the clipboard functionality in the component. 
+
+:::note
+The module requires the `RangeSelection` module to be enabled via one of the configuration properties: `rangeSelection: true` or `blockSelection: { mode: "range" }`.
+:::
+
+To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](grid/api/grid_clipboard_config.md) property in the Grid configuration. 
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    blockSelection: { mode: "range" }, // required for Clipboard to function (initializes automatically)
+    clipboard: true // enables the Clipboard module
+});
+~~~ 
+
+The `clipboard` property can be set in two ways:
+
+- as a *boolean* value it enables or disables the `clipboard` module upon the component initialization
+- as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md/#using-formatter-functions) for data processing. The following properties are available:
+    - `copyModifier` - modifies data before copying to the clipboard. Accepts as parameters the cell value, the cell object, and the `cut` flag (set to `true`, if it's a cut operation)
+    - `cutModifier` - modifies the cell data before cutting (before clearing the cell). Accepts as parameters the cell value and the cell object
+    - `pasteModifier` - modifies data from the clipboard before pasting into a cell. Accepts as parameters the cell value and the cell object
+
+The example below demonstrates the clipboard configuration with all the modifiers in use:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    rangeSelection: true, // required for the Clipboard module to function
+    clipboard: {
+        // adds a suffix based on the operation
+        copyModifier: (value, cell, cut) => `${value}${cut ? "-cut" : "-copied"}`, 
+        cutModifier: (value, cell) => `${value}-removed`, // before cutting a value
+        pasteModifier: (value, cell) => value.replace("-copied", "") // removes the suffix on data pasting
+    }
+});
+~~~
+
+For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
+
+### Interaction between Grids and external widgets
+
+The `Clipboard` module enables data exchange between multiple `dhx.Grid` instances or with external applications like Google Spreadsheets, Microsoft Excel, or similar widgets. Data is copied to the clipboard in a text format with tab separators (`\t`) between columns and newlines (`\n`) between rows, matching the standard table format.
+
+#### Integration with Google Spreadsheets
+
+Data from a grid can be copied to the clipboard and pasted directly into Google Spreadsheets. Similarly, data from Google Spreadsheets can be copied and pasted into the grid. Use `pasteModifier` to process data formats (e.g., converting strings to numbers).
+
+### Pasting from clipboard
+
+Data from the clipboard is pasted into the range defined by `rangeSelection`. The behavior depends on the size of the selected range and the number of copied elements:
+
+- **If the range is smaller than the copied elements**: all the copied elements will be pasted if there is enough space in the grid (i.e., sufficient rows and columns exist beyond the range's starting point). For example, if 4 cells (2 rows x 2 columns) are copied and the range is set to 1 row x 2 columns, the data will be fully pasted, expanding the range to 2 rows, if rows are available.
+
+- **If the range is larger than the copied elements**: the copied elements will repeat cyclically to fill the entire range. For example, if 2 cells ("A1", "A2") are copied and the range is 4 cells (2 rows x 2 columns), the result will be "A1", "A2", "A1", "A2".
+
+The repetition of elements follows the order of copying, starting from the first cell.
+
+### Recommendation for use with BlockSelection
+
+For convenient range selection via the UI, it is recommended to use the `BlockSelection` module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting.
+
 ## Spans
 
-The Grid component has the [spans](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
+The Grid component has the [`spans`](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {

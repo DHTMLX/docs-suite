@@ -1208,7 +1208,9 @@ For information on using RangeSelection API, read [Work with RangeSelection Modu
 
 For information on using BlockSelection API, read [Work with BlockSelection module](grid/usage_blockselection.md).
 
+## Working with Clipboard
 
+For information on using the Clipboard module in Grid, read [Work with Clipboard module](grid/usage_clipboard.md).
 
 ## Working with Grid in the TreeGrid mode
 

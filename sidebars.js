@@ -2617,6 +2617,7 @@ module.exports = {
                     "grid/api/grid_autowidth_config",
                     "grid/api/grid_blockselection_config",
                     "grid/api/grid_bottomsplit_config",
+                    "grid/api/grid_clipboard_config",
                     "grid/api/grid_closable_config",
                     "grid/api/grid_collapsed_config",
                     "grid/api/grid_columns_config",
@@ -2879,6 +2880,25 @@ module.exports = {
                     "grid/api/export/grid_xlsx_method"
                   ],
                 },
+                {
+                  type: "category",
+                  label: "Clipboard events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Clipboard events",
+                    keywords: ['clipboard events'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "grid/api/clipboard/aftercopy_event",
+                    "grid/api/clipboard/afterpaste_event",
+                    "grid/api/clipboard/beforecopy_event",
+                    "grid/api/clipboard/beforepaste_event",
+                    "grid/api/clipboard/copyerror_event",
+                    "grid/api/clipboard/pasteerror_event"
+                  ],
+                },
               ],
             },
             "grid/features",
@@ -2891,6 +2911,7 @@ module.exports = {
             "grid/usage_selection",
             "grid/usage_rangeselection",
             "grid/usage_blockselection",
+            "grid/usage_clipboard",
             "grid/customization",
             "grid/events",
           ],
