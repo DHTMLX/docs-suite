@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1.4 
+
+Released on June 3, 2025
+
+### Fixes
+
+- Grid. A critical error during cell re-editing after unmounting the component
+- Grid. The value is not saved during manual editing of DateEditor
+- Grid. The issue with group headers rendering the ids instead of values
+- Grid. The localization issue
+- Grid. Incorrect displaying of a Japanese (Kanji/Kana) text without spaces in a single cell 
+- Grid. Issues in the functionality of the `autoHeight` configuration property
+- Grid. Incorrect work of the `adjust` property of a column 
+- Layout. A console error on collapsing the first cell
+- TreeCollection. Reloading data after component initialization
+
 ## Version 9.1.3 
 
 Released on April 3, 2025
