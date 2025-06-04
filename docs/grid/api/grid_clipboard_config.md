@@ -61,7 +61,6 @@ const grid = new dhx.Grid("grid_container", {
         { id: "1", a: "A1", b: "B1" },
         { id: "2", a: "A2", b: "B2" },
     ],
-    rangeSelection: true, // required for the clipboard module to function
     clipboard: {
         // adds a suffix based on the operation
         copyModifier: (value, cell, cut) => `${value}${cut ? "-cut" : "-copied"}`, 

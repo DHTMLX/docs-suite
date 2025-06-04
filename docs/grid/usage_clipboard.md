@@ -6,14 +6,14 @@ description: You can explore how to work with Clipboard module of Grid in the do
 
 # Work with Clipboard module
 
-The `Clipboard` module provides functionality for interacting with the clipboard in the Grid component. It allows copying, cutting, and pasting data from a selected range of cells, as well as integrating with other grids or external applications like Google Spreadsheets. 
+You can manage the clipboard functionality within a grid via the API of the [`Clipboard`](grid/configuration.md/#clipboard) module. It enables copying, cutting, and pasting data from a selected range of cells. Besides, it allows integrating with other grids or external applications like Google Spreadsheets. 
 
 ## Initializing the Clipboard module
 
 To initialize the `Clipboard` module, use the [`clipboard`](grid/api/grid_clipboard_config.md) property in the **dhx.Grid** component configuration. After the Grid component is created, the module is accessible through the `grid.clipboard` property. 
 
 :::note
-The module requires the [`RangeSelection`](grid/usage_rangeselection.md) module to be enabled and is best used in conjunction with the [`BlockSelection`](grid/usage_blockselection.md) module in the `"range"` mode for convenient range selection via the UI.
+The module requires the [`RangeSelection`](grid/usage_rangeselection.md) module to be enabled and is best used in conjunction with the [`BlockSelection`](grid/usage_blockselection.md) module in the `"range"` mode (enabled on initialization of the `Clipboard` module) for convenient range selection via the UI.
 :::
 
 The `clipboard` property can be set:
@@ -30,13 +30,7 @@ const grid = new dhx.Grid("grid_container", {
         { id: "1", a: "A1", b: "B1" },
         { id: "2", a: "A2", b: "B2" },
     ],
-    rangeSelection: true, // required for the Clipboard module to function
-    clipboard: {
-        // adds a suffix based on the operation
-        copyModifier: (value, cell, cut) => `${value}${cut ? "-cut" : "-copied"}`, 
-        cutModifier: (value, cell) => `${value}-removed`, // before cutting a value
-        pasteModifier: (value, cell) => value.replace("-copied", "") // removes the suffix on pasting
-    }
+    clipboard: true
 });
 ~~~
 
@@ -100,7 +94,28 @@ For example, if the data contains `{ id: "1", value: "Option 1" }` and the cell 
 
 ## Using formatter functions
 
-If you need a specific data format during copying or pasting, the default behavior can be modified using the formatter functions (`copyModifier`, `cutModifier`, `pasteModifier`). These functions provide flexible control over how data is processed before copying, cutting, or pasting, which is particularly useful in the scenarios described below.
+If you need a specific data format during copying or pasting, the default behavior can be modified using the formatter functions (`copyModifier`, `cutModifier`, `pasteModifier`). Check the example below:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    clipboard: {
+        // adds a suffix based on the operation
+        copyModifier: (value, cell, cut) => `${value}${cut ? "-cut" : "-copied"}`, 
+        cutModifier: (value, cell) => `${value}-removed`, // before cutting a value
+        pasteModifier: (value, cell) => value.replace("-copied", "") // removes the suffix on pasting
+    }
+});
+~~~
+
+These functions provide flexible control over how data is processed before copying, cutting, or pasting, which is particularly useful in the scenarios described below.
 
 ### Why formatters are needed
 

@@ -2575,13 +2575,15 @@ For information on using the Block Selection API, read the [Work with Block Sele
 
 ## Clipboard 
 
-The Grid configuration includes the `Clipboard` module that allows working with the clipboard functionality in the component. 
-
-:::note
-The module requires the `RangeSelection` module to be enabled via one of the configuration properties: `rangeSelection: true` or `blockSelection: { mode: "range" }`.
-:::
+The Grid component provides the [functionality for interacting with the clipboard](grid/usage_clipboard.md), such as copying, cutting, and pasting data from a selected range of cells, as well as integrating with other grids or external applications like Google Spreadsheets. 
 
 To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](grid/api/grid_clipboard_config.md) property in the Grid configuration. 
+
+The `Clipboard` module requires the [`RangeSelection`](#managing-range-selection-in-grid) module to be enabled. For convenient range selection via the UI, it is recommended to use the [`BlockSelection`](#managing-block-selection-in-grid) module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting. 
+
+:::note
+The `blockSelection: { mode: "range" }` property is initialized in the Grid configuration when the `Clipboard` module is enabled.
+:::
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2618,7 +2620,6 @@ const grid = new dhx.Grid("grid_container", {
         { id: "1", a: "A1", b: "B1" },
         { id: "2", a: "A2", b: "B2" },
     ],
-    rangeSelection: true, // required for the Clipboard module to function
     clipboard: {
         // adds a suffix based on the operation
         copyModifier: (value, cell, cut) => `${value}${cut ? "-cut" : "-copied"}`, 
@@ -2627,8 +2628,6 @@ const grid = new dhx.Grid("grid_container", {
     }
 });
 ~~~
-
-For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
 
 ### Interaction between Grids and external widgets
 
@@ -2648,9 +2647,7 @@ Data from the clipboard is pasted into the range defined by `rangeSelection`. Th
 
 The repetition of elements follows the order of copying, starting from the first cell.
 
-### Recommendation for use with BlockSelection
-
-For convenient range selection via the UI, it is recommended to use the `BlockSelection` module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting.
+For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
 
 ## Spans
 

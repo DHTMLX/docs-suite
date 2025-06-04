@@ -23,6 +23,8 @@ Released on June X, 2025
 	- new methods of the `block` object: `disable()`, `enable()`, `isDisabled()`
 	- new events of the `block` object: `afterBlockHandleApply`, `afterBlockSelectionApply`, `afterBlockSelectionMove`, `beforeBlockHandleApply`, `beforeBlockSelectionApply`, `beforeBlockSelectionMove`, `blockHandleMouseDown`, `blockSelectionEnd`, `blockSelectionStart`, `blockSelectionValidate` 
 - Grid. The Clipboard functionality is added (PRO version)
+    - new Grid configuration property: [`clipboard`](grid/api/grid_clipboard_config.md)
+    - new events of the `clipboard` object: [`afterCopy`](grid/api/clipboard/aftercopy_event.md), [`afterPaste`](grid/api/clipboard/afterpaste_event.md), [`beforeCopy`](grid/api/clipboard/beforecopy_event.md), [`beforePaste`](grid/api/clipboard/beforepaste_event.md), [`copyError`](grid/api/clipboard/copyerror_event.md), [`pasteError`](grid/api/clipboard/pasteerror_event.md)
 - Grid. The drag and drop handle (panel) for rows is added
 - Grid. Undo/Redo functionality
 
