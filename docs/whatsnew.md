@@ -16,13 +16,15 @@ Released on June X, 2025
 
 ### New functionality
 
-- Grid. The Range manager is added (PRO version)
-	- new methods of the `range` object: `disable()`, `enable()`, `getRange()`, `getRangedCells()`, `isDisabled()`, `isRanged()`, `resetRange()`, `setRange()`
-	- new events of the `range` object: `afterResetRange`, `afterSetRange`, `beforeResetRange`, `beforeSetRange`
-- Grid. The BlockSelection manager is added (PRO version)
-	- new methods of the `block` object: `disable()`, `enable()`, `isDisabled()`
-	- new events of the `block` object: `afterBlockHandleApply`, `afterBlockSelectionApply`, `afterBlockSelectionMove`, `beforeBlockHandleApply`, `beforeBlockSelectionApply`, `beforeBlockSelectionMove`, `blockHandleMouseDown`, `blockSelectionEnd`, `blockSelectionStart`, `blockSelectionValidate` 
-- Grid. The Clipboard functionality is added (PRO version)
+- Grid. The `RangeSelection` manager is added (PRO version)
+    - new Grid configuration property: [`rangeSelection`](grid/api/grid_rangeselection_config.md)
+	- new methods of the `range` object: [`disable()`](grid/api/rangeselection/disable_method.md), [`enable()`](grid/api/rangeselection/enable_method.md), [`getRange()`](grid/api/rangeselection/getrange_method.md), [`getRangedCells()`](grid/api/rangeselection/getrangedcells_method.md), [`isDisabled()`](grid/api/rangeselection/isdisabled_method.md), [`isRanged()`](grid/api/rangeselection/isranged_method.md), [`resetRange()`](grid/api/rangeselection/resetrange_method.md), [`setRange()`](grid/api/rangeselection/setrange_method.md)
+	- new events of the `range` object: [`afterResetRange`](grid/api/rangeselection/afterresetrange_event.md), [`afterSetRange`](grid/api/rangeselection/aftersetrange_event.md), [`beforeResetRange`](grid/api/rangeselection/beforeresetrange_event.md), [`beforeSetRange`](grid/api/rangeselection/beforesetrange_event.md)
+- Grid. The `BlockSelection` manager is added (PRO version)
+	- new Grid configuration property: [`blockSelection`](grid/api/grid_blockselection_config.md)
+	- new methods of the `block` object: [`disable()`](grid/api/blockselection/disable_method.md), [`enable()`](grid/api/blockselection/enable_method.md), [`isDisabled()`](grid/api/blockselection/isdisabled_method.md)
+	- new events of the `block` object: [`afterBlockHandleApply`](grid/api/blockselection/afterblockhandleapply_event.md), [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md), [`afterBlockSelectionMove`](grid/api/blockselection/afterblockselectionmove_event.md), [`beforeBlockHandleApply`](grid/api/blockselection/beforeblockhandleapply_event.md), [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md), [`beforeBlockSelectionMove`](grid/api/blockselection/beforeblockselectionmove_event.md), [`blockHandleMouseDown`](grid/api/blockselection/blockhandlemousedown_event.md), [`blockSelectionEnd`](grid/api/blockselection/blockselectionend_event.md), [`blockSelectionStart`](grid/api/blockselection/blockselectionstart_event.md), [`blockSelectionValidate`](grid/api/blockselection/blockselectionvalidate_event.md) 
+- Grid. The `Clipboard` module is added (PRO version)
     - new Grid configuration property: [`clipboard`](grid/api/grid_clipboard_config.md)
     - new events of the `clipboard` object: [`afterCopy`](grid/api/clipboard/aftercopy_event.md), [`afterPaste`](grid/api/clipboard/afterpaste_event.md), [`beforeCopy`](grid/api/clipboard/beforecopy_event.md), [`beforePaste`](grid/api/clipboard/beforepaste_event.md), [`copyError`](grid/api/clipboard/copyerror_event.md), [`pasteError`](grid/api/clipboard/pasteerror_event.md)
 - Grid. The drag and drop handle (panel) for rows is added
@@ -33,10 +35,11 @@ Released on June X, 2025
 - Context Menu. The `navigationType:"click"` is added
 - Grid. The drag-n-drop functionality is improved (The DropManager is added)
 - Grid. Updating / improving the export to Excel module
+- Grid. The possibility to clear data while editing a cell by using the `Delete` shortcut key is added
 
 ### Fixes
 
-- DragManager. Incorrect detection of elements' drop location during drag-n-drop and other (Grid component) (?):
+- DragManager. Incorrect detection of elements' drop location during drag-n-drop and other (Grid component):
 	- Solving the problem of incorrectly determining the position for dropping an element during the Drag&Drop operation (child elements) in the TreeGrid mode;
 	- Solving the problem when moving a line to the header/footer area;
 	- Solving the problem of determining the position for dropping above the first element;
