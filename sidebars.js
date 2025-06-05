@@ -2627,6 +2627,7 @@ module.exports = {
                     "grid/api/grid_dragexpand_config",
                     "grid/api/grid_dragitem_config",
                     "grid/api/grid_dragmode_config",
+                    "grid/api/grid_dragpanel_config",
                     "grid/api/grid_editable_config",
                     "grid/api/grid_eventhandlers_config",
                     "grid/api/grid_exportstyles_config",
@@ -2899,6 +2900,21 @@ module.exports = {
                     "grid/api/clipboard/pasteerror_event"
                   ],
                 },
+                {
+                  type: "category",
+                  label: "DragPanel events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "DragPanel events",
+                    keywords: ['drag panel events'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "grid/api/dragpanel/dragpanelitemclick_event",
+                    "grid/api/dragpanel/dragpanelitemmousedown_event"
+                  ],
+                },
               ],
             },
             "grid/features",
@@ -2912,8 +2928,9 @@ module.exports = {
             "grid/usage_rangeselection",
             "grid/usage_blockselection",
             "grid/usage_clipboard",
+            "grid/usage_dragpanel",
             "grid/customization",
-            "grid/events",
+            "grid/events"
           ],
         },
         // end Grid

@@ -171,6 +171,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 - Apply [the events of RangeSelection](grid/api/api_overview.md#rangeselection-events) to handle the range selection within Grid.
 - Apply [the events of BlockSelection](grid/api/api_overview.md#blockselection-events) to handle the block selection within Grid.
 - Use [the events of Clipboard](grid/api/api_overview.md#clipboard-events) to work with clipboard within Grid. 
+- Use [the events of DragPanel](grid/api/api_overview.md#dragpanel-events) to work with drag panel within Grid. 
 - Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
 :::
 
@@ -194,6 +195,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_dragexpand_config.md)      | @getshort(grid/api/grid_dragexpand_config.md)      |
 | [](grid/api/grid_dragitem_config.md)        | @getshort(grid/api/grid_dragitem_config.md)        |
 | [](grid/api/grid_dragmode_config.md)        | @getshort(grid/api/grid_dragmode_config.md)        |
+| [](grid/api/grid_dragpanel_config.md)       | @getshort(grid/api/grid_dragpanel_config.md)       |
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
 | [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
 | [](grid/api/grid_exportstyles_config.md)    | @getshort(grid/api/grid_exportstyles_config.md)    |
@@ -329,3 +331,14 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/clipboard/beforepaste_event.md)| @getshort(grid/api/clipboard/beforepaste_event.md)|
 | [](grid/api/clipboard/copyerror_event.md)  | @getshort(grid/api/clipboard/copyerror_event.md)  |
 | [](grid/api/clipboard/pasteerror_event.md) | @getshort(grid/api/clipboard/pasteerror_event.md) |
+
+## DragPanel API
+
+### DragPanel events
+
+| Name                                    	 		  	| Description                                    	  		 	|
+| ----------------------------------------------------- | ------------------------------------------------------------- |
+| [](grid/api/dragpanel/dragpanelitemclick_event.md)  	| @getshort(grid/api/dragpanel/dragpanelitemclick_event.md)  	|
+| [](grid/api/dragpanel/dragpanelitemmousedown_event.md)| @getshort(grid/api/dragpanel/dragpanelitemmousedown_event.md) |
+
+

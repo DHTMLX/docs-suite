@@ -1,0 +1,38 @@
+---
+sidebar_label: Work with DragPanel module
+title: JavaScript Grid - Work with DragPanel module 
+description: You can explore how to work with DragPanel module of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+---
+
+# Work with DragPanel module
+
+The `DragPanel` module provides auxiliary functionality for moving rows in the dhx.Grid component. It is automatically activated when the [Drag-and-Drop functionality](grid/configuration.md/#drag-n-drop) for rows is enabled (e.g., via `dragItem: "both"`) and conflicting configurations, such as the `BlockSelection` or `Clipboard` modules, are used. 
+
+The module supports customization through configuration options to adjust its appearance and behavior.
+
+## Initializing the DragPanel module
+
+The `DragPanel` module is initialized via the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the configuration of the dhx.Grid component. The module is also automatically activated if:
+
+- The row Drag-and-Drop is enabled via `dragItem: "row"` or `dragItem: "both"`
+- The `BlockSelection` or `Clipboard` modules are enabled
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    dragItem: "both", // enables row Drag-and-Drop
+    blockSelection: true, // triggers `DragPanel` activation when `dragItem` is enabled
+    // or
+    dragPanel: true // enables the `DragPanel` module
+});
+~~~
+
+## Using the events of the dragPanel object
+

@@ -2181,6 +2181,66 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
+### Using the DragPanel module
+
+The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the appearance of the drag panel that appears when the drag-n-drop functionality is activated. 
+
+To initialize the `DragPanel` module, enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration. The module is automatically enabled if the [row Drag-and-Drop](grid/configuration.md/#drag-n-drop) is active (e.g., `dragItem: "row"` or `dragItem: "both"`) and either the `BlockSelection` or `Clipboard` modules are enabled.
+
+This example demonstrates enabling the `DragPanel` module with row Drag-and-Drop and the `BlockSelection` module:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    dragItem: "row", // enables row Drag-and-Drop
+    blockSelection: true, // triggers DragPanel activation
+});
+~~~
+
+The `dragPanel` property can be set in two ways:
+
+- as a *boolean* value it enables or disables the range selection module upon the component initialization
+- as an *object* it enables the module and allows setting additional configuration options during the component initialization. The following options are available:
+    - `css` - specifies a custom CSS class for styling the drag panel
+    - `icon` - defines a custom icon for the drag handle
+    - `width` - sets the width of the drag panel in pixels
+
+The following example demonstrates configuring the `DragPanel` module with custom styling and width:
+
+~~~html
+<style>
+    .custom-drag-panel {
+        background-color: var(--dhx-color-primary);
+        border: 1px solid var(--dhx-color-secondary);
+    }
+</style>
+
+<script>
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    dragPanel: {
+        css: "custom-drag-panel",
+        icon: "dxi dxi-drag",
+        width: 40
+    }
+});
+</script>
+~~~
+
 ## Keyboard Navigation
 
 DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. 
