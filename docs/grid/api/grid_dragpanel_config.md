@@ -6,7 +6,11 @@ description: You can explore the dragPanel config of Grid in the documentation o
 
 # dragPanel
 
-@short: Optional. Enables/disables the dragPanel module within a grid
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+@short: Optional. Enables/disables the [`dragPanel`](grid/usage_dragpanel.md) module within a grid
 
 ### Usage
 
@@ -23,7 +27,7 @@ dragPanel?:
 @default: false
 
 :::note
-The module is automatically enabled, if the row Drag-and-Drop is active (e.g., `dragItem: "row"` or `dragItem: "both"`), and either the `BlockSelection` or `Clipboard` modules are enabled.
+The module is automatically enabled, if the row Drag-and-Drop is active (e.g., `dragItem: "row"` or `dragItem: "both"`), and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
 :::
 
 @example:

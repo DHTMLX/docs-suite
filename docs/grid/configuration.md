@@ -2183,9 +2183,13 @@ const grid = new dhx.Grid("grid", {
 
 ### Using the DragPanel module
 
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the appearance of the drag panel that appears when the drag-n-drop functionality is activated. 
 
-To initialize the `DragPanel` module, enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration. The module is automatically enabled if the [row Drag-and-Drop](grid/configuration.md/#drag-n-drop) is active (e.g., `dragItem: "row"` or `dragItem: "both"`) and either the `BlockSelection` or `Clipboard` modules are enabled.
+To initialize the `DragPanel` module, enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration. The module is automatically enabled if the [row Drag-and-Drop](grid/configuration.md/#drag-n-drop) is active (e.g., `dragItem: "row"` or `dragItem: "both"`) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
 
 This example demonstrates enabling the `DragPanel` module with row Drag-and-Drop and the `BlockSelection` module:
 

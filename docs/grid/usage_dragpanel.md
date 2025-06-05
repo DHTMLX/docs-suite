@@ -6,7 +6,11 @@ description: You can explore how to work with DragPanel module of Grid in the do
 
 # Work with DragPanel module
 
-The `DragPanel` module provides auxiliary functionality for moving rows in the dhx.Grid component. It is automatically activated when the [Drag-and-Drop functionality](grid/configuration.md/#drag-n-drop) for rows is enabled (e.g., via `dragItem: "both"`) and conflicting configurations, such as the `BlockSelection` or `Clipboard` modules, are used. 
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+The `DragPanel` module provides auxiliary functionality for moving rows in the dhx.Grid component. It is automatically activated when the [Drag-and-Drop functionality](grid/configuration.md/#drag-n-drop) for rows is enabled (e.g., via `dragItem: "both"`) and conflicting configurations, such as the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules, are used. 
 
 The module supports customization through configuration options to adjust its appearance and behavior.
 
@@ -15,7 +19,7 @@ The module supports customization through configuration options to adjust its ap
 The `DragPanel` module is initialized via the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the configuration of the dhx.Grid component. The module is also automatically activated if:
 
 - The row Drag-and-Drop is enabled via `dragItem: "row"` or `dragItem: "both"`
-- The `BlockSelection` or `Clipboard` modules are enabled
+- The [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) are enabled
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -34,5 +38,9 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-## Using the events of the dragPanel object
+## Using the events of the DragPanel module
 
+To make the process of working with the drag panel more flexible, you can apply the related events of the `DragPanel` module:
+
+- [`dragPanelItemClick`](grid/api/dragpanel/dragpanelitemclick_event.md)
+- [`dragPanelItemMouseDown`](grid/api/dragpanel/dragpanelitemmousedown_event.md)
