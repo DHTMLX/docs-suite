@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1.5 
+
+Released on June 5, 2025
+
+### Fixes
+
+- DataCollection/TreeCollection. Fixed the [`sort()`](data_collection/api/datacollection_sort_method/) method in the `smartSorting` mode when sorting by more than three parameters
+- Grid. The `multiselect/select` editor passes the id instead of the value, while exporting data to an .xslx file
+- Grid. Sorting by the third column disregards the prior two-column sort order
+
 ## Version 9.1.4 
 
 Released on June 3, 2025
