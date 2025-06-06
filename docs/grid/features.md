@@ -124,6 +124,7 @@ In this section you will get to know how to configure the drag-n-drop functional
 | [Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)           | Learn how to configure drag-n-drop between grids ([Example](https://snippet.dhtmlx.com/qx9a86ax))       |
 | [Drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows) | Learn how to allow end users to drag-n-drop several rows at once                                        |
 | [Copying of rows during drag-n-drop](../api/grid_dragcopy_config/)                 | Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/23slivyz)) |
+| [Using the DragPanel module](../usage_dragpanel/)           | Learn how to use the DragPanel module that provides additional functionality for moving rows in the Grid |
 
 ## How to render custom statistics in the column header/footer and in the spans
 

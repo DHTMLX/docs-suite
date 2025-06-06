@@ -38,6 +38,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+Learn about configuration possibilities of the drag panel in the [Configuration](grid/configuration.md/#using-the-dragpanel-module) guide.
+
 ## Using the events of the DragPanel module
 
 To make the process of working with the drag panel more flexible, you can apply the related events of the `DragPanel` module:
