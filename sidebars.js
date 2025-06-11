@@ -2640,6 +2640,7 @@ module.exports = {
                     "grid/api/grid_headerrowheight_config",
                     "grid/api/grid_headertooltip_config",
                     "grid/api/grid_height_config",
+                    "grid/api/grid_history_config",
                     "grid/api/grid_htmlenable_config",
                     "grid/api/grid_keynavigation_config",
                     "grid/api/grid_leftsplit_config",
@@ -2915,6 +2916,58 @@ module.exports = {
                     "grid/api/dragpanel/dragpanelitemmousedown_event"
                   ],
                 },
+                {
+                  type: "category",
+                  label: "History API",
+                  link: {
+                    type: 'generated-index',
+                    title: "History API",
+                    keywords: ['history API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Grid History methods",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid History methods",
+                      keywords: ['grid history methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/history/add_method",
+                      "grid/api/history/canredo_method",
+                      "grid/api/history/canundo_method",
+                      "grid/api/history/disable_method",
+                      "grid/api/history/enable_method",
+                      "grid/api/history/isdisabled_method",
+                      "grid/api/history/gethistory_method",
+                      "grid/api/history/redo_method",
+                      "grid/api/history/remove_method",
+                      "grid/api/history/removeall_method",
+                      "grid/api/history/undo_method"
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Grid History events",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid History events",
+                      keywords: ['grid history events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/history/afteradd_event",
+                      "grid/api/history/afterredo_event",
+                      "grid/api/history/afterundo_event",
+                      "grid/api/history/beforeadd_event",
+                      "grid/api/history/beforeredo_event",
+                      "grid/api/history/beforeundo_event",
+                      "grid/api/history/error_event"
+                    ],
+                  }],
+                },
               ],
             },
             "grid/features",
@@ -2929,6 +2982,7 @@ module.exports = {
             "grid/usage_blockselection",
             "grid/usage_clipboard",
             "grid/usage_dragpanel",
+            "grid/usage_history",
             "grid/customization",
             "grid/events"
           ],

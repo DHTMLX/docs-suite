@@ -311,9 +311,20 @@ In this section you will get to know how to work with the clipboard functionalit
 
 | Topic                                                                         | Description                                                                                                                                                             |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuring clipboard(../configuration/#clipboard) | Learn how to configure the Clipboard module within Grid  |
+| [Configuring clipboard](../configuration/#clipboard) | Learn how to configure the Clipboard module within Grid  |
 | [Working with clipboard](../usage_clipboard/)        | Learn how to enable the clipboard in Grid, check the main features and explore the peculiarities of using the Clipboard module  |
-| [Clipboard API](../../category/clipboard-api/)       | Learn how to use API of the Clipboard module to manage the clipboard operations within Grid     |
+| [Clipboard API](../../category/clipboard-events/)       | Learn how to use API of the Clipboard module to manage the clipboard operations within Grid     |
+
+## How to work with history of Grid actions
+
+In this section you will get to know how to work with the history of Grid actions.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring history of Grid actions](../configuration/#history-of-grid-actions) | Learn how to configure the History module within Grid  |
+| [Working with history of actions](../usage_history/)        | Learn how to enable the history of actions in Grid, check the main features and explore the peculiarities of using the History module  |
+| [History API](../../category/history-api/)       | Learn how to use API of the History module to manage the history of operations within Grid     |
+
 
 ## How to work with TreeGrid mode
 
