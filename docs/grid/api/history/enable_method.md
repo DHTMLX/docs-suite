@@ -40,9 +40,9 @@ console.log(grid.history.getHistory().length); // -> 1
 
 @descr:
 
-**Related article**: 
+**Related article**: [Enabling/disabling History module](grid/usage_history.md/#enablingdisabling-history-module)
 
-**Related API**: [`disable()`](grid/api/history/disable_method.md)
+**Related API**: [`disable()`](grid/api/history/disable_method.md), [`isDisabled()`](grid/api/history/isdisabled_method.md)
 
 @changelog:
 added in v9.2

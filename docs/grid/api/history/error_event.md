@@ -17,7 +17,11 @@ The event is triggered when an error occurs, such as the module is disabled, the
 @params:
 The callback of the event is called with the following parameters:
 - `error` - the error message
-- `action` - the action object associated with the error, or `null`
+- `action: IAction` - the action object associated with the error, or `null`. The `action` object contains the following properties:
+    - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
+    - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
+    - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
+    - `timestamp?: number` - the timestamp of the action in milliseconds (set automatically, if not provided)
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -37,9 +41,8 @@ grid.history.events.on("error", (error, action) => {
 
 @descr:
 
-**Related article**: 
+**Related article**: [Work with History module](grid/usage_history.md)
 
-**Related API**: 
 
 @changelog:
 added in v9.2

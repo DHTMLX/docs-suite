@@ -44,9 +44,9 @@ console.log(grid.history.canRedo()); // -> true
 
 @descr:
 
-**Related article**: 
+**Related article**: [Applying undo/redo operations to Grid history actions](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions)
 
-**Related API**: [`add()`](grid/api/history/add_method.md)
+**Related API**: [`redo()`](grid/api/history/redo_method.md), [`canUndo()`](grid/api/history/canundo_method.md)
 
 @changelog:
 added in v9.2

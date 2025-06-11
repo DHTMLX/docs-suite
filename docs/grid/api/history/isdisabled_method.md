@@ -34,7 +34,7 @@ console.log(grid.history.isDisabled()); // -> false
 
 @descr:
 
-**Related article**: 
+**Related article**: [Enabling/disabling History module](grid/usage_history.md/#enablingdisabling-history-module)
 
 **Related API**: [`enable()`](grid/api/history/enable_method.md), [`disable()`](grid/api/history/disable_method.md)
 

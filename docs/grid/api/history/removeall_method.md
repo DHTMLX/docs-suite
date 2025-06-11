@@ -44,9 +44,9 @@ console.log(grid.history.canRedo()); // -> false
 
 @descr:
 
-**Related article**: 
+**Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
 
-**Related API**: [`add()`](grid/api/history/add_method.md)
+**Related API**: [`add()`](grid/api/history/add_method.md), [`remove()`](grid/api/history/remove_method.md), [`getHistory()`](grid/api/history/gethistory_method.md)
 
 @changelog:
 added in v9.2

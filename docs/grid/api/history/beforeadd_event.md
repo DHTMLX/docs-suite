@@ -12,7 +12,11 @@ description: You can explore the beforeAdd event of Grid history in the document
 
 @params:
 The callback of the event is called with the following parameters:
-- `action` - the action object to be added.
+- `action: IAction` - the action object to be added containing:
+    - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
+    - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
+    - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
+    - `timestamp?: number` - the timestamp of the action in milliseconds (set automatically, if not provided)
 
 @returns:
 Returning `false` cancels the addition.
@@ -38,9 +42,9 @@ grid.history.events.on("beforeAdd", (action) => {
 
 @descr:
 
-**Related article**: 
+**Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
 
-**Related API**: 
+**Related API**: [`add()`](grid/api/history/add_method.md), [`afterAdd()`](grid/api/history/afteradd_event.md)
 
 @changelog:
 added in v9.2

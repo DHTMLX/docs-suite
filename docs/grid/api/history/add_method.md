@@ -32,7 +32,7 @@ add(action: IAction): void;
     - `timestamp?: number` - the timestamp of the action in milliseconds (set automatically, if not provided)
 
 :::note
-The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing for a `change` action, the `error` event is triggered. The `timestamp` field is automatically added if not specified.
+The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing for a `change` action, the [`error`](grid/api/history/error_event.md) event is triggered. The `timestamp` field is automatically added if not specified.
 :::
 
 @example:
@@ -64,9 +64,9 @@ console.log(history.length); // ->1
 
 @descr:
 
-**Related article**: 
+**Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
 
-**Related API**: [`getHistory()`](grid/api/history/gethistory_method.md)
+**Related API**: [`remove()`](grid/api/history/remove_method.md), [`removeAll()`](grid/api/history/removeall_method.md), [`getHistory()`](grid/api/history/gethistory_method.md)
 
 @changelog:
 added in v9.2

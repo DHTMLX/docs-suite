@@ -2649,6 +2649,59 @@ The repetition of elements follows the order of copying, starting from the first
 
 For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
 
+## History of Grid actions 
+
+DHTMLX Grid provides the functionality for managing the history of actions in the component. 
+
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+To enable the history functionality within a grid, you should use the `History` module. To initialize the module, enable the [`history`](grid/api/grid_history_config.md) property in the Grid configuration. 
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    history: true // enables the History module
+});
+~~~
+
+The `history` property can be set in two ways:
+- as a *boolean* value it enables or disables the `History` module upon the component initialization
+- as an *object* it enables the module and allows setting additional parameters:
+    - `limit` - the maximum number of actions stored in the history. When the limit is exceeded, the oldest actions are removed
+    - `disabled` - if `true`, the module is disabled on initialization, and no actions are recorded in the history
+
+The example below demonstrates configuring the module with a history limit of 10 actions. The module is disabled on initialization:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    history: {
+        limit: 10, // limits history to 10 actions
+        disabled: true // the module is disabled on start
+    }
+});
+
+grid.history.enable(); // enabling the module
+~~~
+
+For information on working with the History API, read the [Work with History module](grid/usage_history.md) guide.
+
 ## Spans
 
 The Grid component has the [`spans`](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.

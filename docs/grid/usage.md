@@ -1212,6 +1212,10 @@ For information on using BlockSelection API, read [Work with BlockSelection modu
 
 For information on using the Clipboard module in Grid, read [Work with Clipboard module](grid/usage_clipboard.md).
 
+## Working with History API
+
+For information on using the History API in Grid, read [Work with History module](grid/usage_history.md).
+
 ## Working with Grid in the TreeGrid mode
 
 For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.

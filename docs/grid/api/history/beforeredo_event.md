@@ -12,7 +12,11 @@ description: You can explore the beforeRedo event of Grid history in the documen
 
 @params:
 The callback of the event is called with the following parameters:
-- `action` - the action object from the redo stack.
+- `action: IAction` - the action object from the redo stack containing:
+    - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
+    - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
+    - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
+    - `timestamp?: number` - the timestamp of the action in milliseconds (set automatically, if not provided)
 
 @returns:
 Returning `false` cancels the operation.
@@ -38,9 +42,9 @@ grid.history.events.on("beforeRedo", (action) => {
 
 @descr:
 
-**Related article**: 
+**Related article**: [Applying undo/redo operations to Grid history actions](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions)
 
-**Related API**: 
+**Related API**: [`redo()`](grid/api/history/redo_method.md), [`afterRedo()`](grid/api/history/afterredo_event.md)
 
 @changelog:
 added in v9.2

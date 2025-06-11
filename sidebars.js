@@ -2965,6 +2965,7 @@ module.exports = {
             "grid/usage_rangeselection",
             "grid/usage_blockselection",
             "grid/usage_clipboard",
+            "grid/usage_history",
             "grid/customization",
             "grid/events",
           ],

@@ -43,7 +43,7 @@ if (grid.history.canRedo()) {
 
 @descr:
 
-**Related article**: 
+**Related article**: [Applying undo/redo operations to Grid history actions](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions)
 
 **Related API**: [`redo()`](grid/api/history/redo_method.md)
 
