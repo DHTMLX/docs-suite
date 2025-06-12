@@ -2741,6 +2741,7 @@ module.exports = {
                       "grid/api/selection/selection_enable_method",
                       "grid/api/selection/selection_getcell_method",
                       "grid/api/selection/selection_getcells_method",
+                      "grid/api/selection/selection_isselectedcell_method",
                       "grid/api/selection/selection_removecell_method",
                       "grid/api/selection/selection_setcell_method",
                     ],

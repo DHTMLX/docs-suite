@@ -241,14 +241,15 @@ You will find the list of all the available configuration properties of a Grid c
 
 ### Selection methods
 
-| Name                                                  | Description                                                  |
-| ----------------------------------------------------- | ------------------------------------------------------------ |
-| [](grid/api/selection/selection_disable_method.md)    | @getshort(grid/api/selection/selection_disable_method.md)    |
-| [](grid/api/selection/selection_enable_method.md)     | @getshort(grid/api/selection/selection_enable_method.md)     |
-| [](grid/api/selection/selection_getcell_method.md)    | @getshort(grid/api/selection/selection_getcell_method.md)    |
-| [](grid/api/selection/selection_getcells_method.md)   | @getshort(grid/api/selection/selection_getcells_method.md)   |
-| [](grid/api/selection/selection_removecell_method.md) | @getshort(grid/api/selection/selection_removecell_method.md) |
-| [](grid/api/selection/selection_setcell_method.md)    | @getshort(grid/api/selection/selection_setcell_method.md)    |
+| Name                                                  	| Description                                                  	  |
+| --------------------------------------------------------- | --------------------------------------------------------------- |
+| [](grid/api/selection/selection_disable_method.md)    	| @getshort(grid/api/selection/selection_disable_method.md)       |
+| [](grid/api/selection/selection_enable_method.md)     	| @getshort(grid/api/selection/selection_enable_method.md)        |
+| [](grid/api/selection/selection_getcell_method.md)    	| @getshort(grid/api/selection/selection_getcell_method.md)       |
+| [](grid/api/selection/selection_getcells_method.md)   	| @getshort(grid/api/selection/selection_getcells_method.md)      |
+| [](grid/api/selection/selection_isselectedcell_method.md) | @getshort(grid/api/selection/selection_isselectedcell_method.md)|
+| [](grid/api/selection/selection_removecell_method.md) 	| @getshort(grid/api/selection/selection_removecell_method.md)    |
+| [](grid/api/selection/selection_setcell_method.md)    	| @getshort(grid/api/selection/selection_setcell_method.md)       |
 
 ### Selection events
 
