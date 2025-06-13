@@ -27,20 +27,19 @@ Released on June X, 2025
 - Grid. The [`Clipboard` module](grid/usage_clipboard.md) is added to provide functionality for interacting with the clipboard in Grid (PRO version)
     - new Grid configuration property: [`clipboard`](grid/api/grid_clipboard_config.md)
     - new events of the `clipboard` object: [`afterCopy`](grid/api/clipboard/aftercopy_event.md), [`afterPaste`](grid/api/clipboard/afterpaste_event.md), [`beforeCopy`](grid/api/clipboard/beforecopy_event.md), [`beforePaste`](grid/api/clipboard/beforepaste_event.md), [`copyError`](grid/api/clipboard/copyerror_event.md), [`pasteError`](grid/api/clipboard/pasteerror_event.md)
-- Grid. The [`DragPanel` module](grid/usage_dragpanel.md) is added to provide auxiliary functionality for moving rows in Grid (PRO version)
+- Grid. The [`DragPanel` module](grid/usage_dragpanel.md) is added to provide auxiliary functionality for moving rows in Grid and improve the drag-n-drop visualization (PRO version)
 	- new Grid configuration property: [`dragPanel`](grid/api/grid_dragpanel_config.md)
 	- new events: [`dragPanelItemClick`](grid/api/dragpanel/dragpanelitemclick_event.md), [`dragPanelItemMouseDown`](grid/api/dragpanel/dragpanelitemmousedown_event.md)
 - Grid. The [`History` module](grid/usage_history.md) is added to provide functionality for managing the history of actions in Grid, including the [Undo/Redo functionality](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions) (PRO version)
 	- new Grid configuration property: [`history`](grid/api/grid_history_config.md)
 	- new methods of the `history` object: [`add()`](grid/api/history/add_method.md), [`canRedo()`](grid/api/history/canredo_method.md), [`canUndo()`](grid/api/history/canundo_method.md), [`disable()`](grid/api/history/disable_method.md), [`enable()`](grid/api/history/enable_method.md), [`isDisabled()`](grid/api/history/isdisabled_method.md), [`getHistory()`](grid/api/history/gethistory_method.md), [`redo()`](grid/api/history/redo_method.md), [`remove()`](grid/api/history/remove_method.md), [`removeAll()`](grid/api/history/removeall_method.md), [`undo()`](grid/api/history/undo_method.md)
 	- new events of the `history` object: [`afterAdd`](grid/api/history/afteradd_event.md), [`afterRedo`](grid/api/history/afterredo_event.md), [`afterUndo`](grid/api/history/afterundo_event.md), [`beforeAdd`](grid/api/history/beforeadd_event.md), [`beforeRedo`](grid/api/history/beforeredo_event.md), [`beforeUndo`](grid/api/history/beforeundo_event.md), [`error`](grid/api/history/error_event.md)
+- Grid. The [`isSelected()`](grid/api/selection/selection_isselectedcell_method.md) method is added for the [`Selection` module](grid/usage_selection.md) to check whether the specified cell is selected
 
 ### Updates
 
-- Context Menu. The `navigationType:"click"` is added
-- Grid. The logic and appearance of the drag-n-drop functionality is improved (the `DropManager` module is added)
-- Grid. The [`isSelected()`](grid/api/selection/selection_isselectedcell_method.md) method is added for the [`Selection` module](grid/usage_selection.md) to check whether the specified cell is selected
-- Grid. Updating / improving the export to Excel module
+- Grid. The logic and appearance of the drag-n-drop functionality is improved 
+- Grid. Improving the export to Excel module
 - Grid. The possibility to clear data while editing a cell by using the `Delete` shortcut key is added
 
 ### Fixes

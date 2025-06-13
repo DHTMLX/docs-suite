@@ -39,5 +39,7 @@ grid.events.on("dragPanelItemClick", (id, event) => {
 
 @descr:
 
+**Related article**: [Work with DragPanel module](grid/usage_dragpanel.md)
+
 @changelog:
 added in v9.2
