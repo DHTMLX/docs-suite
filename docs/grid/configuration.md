@@ -2189,7 +2189,24 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the appearance of the drag panel that appears when the drag-n-drop functionality is activated. 
 
-To initialize the `DragPanel` module, enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration. The module is automatically enabled if the [row Drag-and-Drop](grid/configuration.md/#drag-n-drop) is active (e.g., `dragItem: "row"` or `dragItem: "both"`) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
+To initialize the `DragPanel` module, enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration. 
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    dragItem: "row", // enables row Drag-and-Drop
+    dragPanel: true // enables the DragPanel module
+});
+~~~
+
+The module is automatically enabled if the [row Drag-and-Drop](grid/configuration.md/#drag-n-drop) is active (e.g., `dragItem: "row"` or `dragItem: "both"`) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
 
 This example demonstrates enabling the `DragPanel` module with row Drag-and-Drop and the `BlockSelection` module:
 
@@ -2484,6 +2501,10 @@ A range of Grid cells/rows can be selected by clicking the first element to sele
 
 ### Managing range selection in Grid
 
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 The Grid functionality provides the [range selection management](grid/usage_rangeselection.md) feature for setting/resetting a range of cells, retrieving information about the current range, and checking whether specific cells belong to the selected range.
 
 To enable [range selection management](grid/usage_rangeselection.md) within a grid, you should use the `RangeSelection` module. To initialize the module, enable the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
@@ -2531,6 +2552,10 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 For information on using the Range Selection API, read the [Work with RangeSelection module](grid/usage_rangeselection.md) guide.
 
 ### Managing block selection in Grid
+
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 The Grid functionality provides the [block selection management](grid/usage_blockselection.md) feature for selecting cells' ranges via the mouse pointer, touch input, and keyboard navigation, as well as adjusting the appearance of the selection and handlers, depending on the applied mode.
 
@@ -2639,6 +2664,10 @@ For information on using the Block Selection API, read the [Work with Block Sele
 
 ## Clipboard 
 
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 The Grid component provides the [functionality for interacting with the clipboard](grid/usage_clipboard.md), such as copying, cutting, and pasting data from a selected range of cells, as well as integrating with other grids or external applications like Google Spreadsheets. 
 
 To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](grid/api/grid_clipboard_config.md) property in the Grid configuration. 
@@ -2715,11 +2744,11 @@ For information on working with Clipboard, read the [Work with Clipboard module]
 
 ## History of Grid actions 
 
-DHTMLX Grid provides the functionality for managing the history of actions in the component. 
-
 :::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
+
+DHTMLX Grid provides the functionality for managing the history of actions in the component. 
 
 To enable the history functionality within a grid, you should use the `History` module. To initialize the module, enable the [`history`](grid/api/grid_history_config.md) property in the Grid configuration. 
 

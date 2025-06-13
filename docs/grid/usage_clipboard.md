@@ -6,6 +6,10 @@ description: You can explore how to work with Clipboard module of Grid in the do
 
 # Work with Clipboard module
 
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 You can manage the clipboard functionality within a grid via the API of the [`Clipboard`](grid/configuration.md/#clipboard) module. It enables copying, cutting, and pasting data from a selected range of cells. Besides, it allows integrating with other grids or external applications like Google Spreadsheets. 
 
 ## Initializing the Clipboard module

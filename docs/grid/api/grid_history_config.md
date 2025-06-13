@@ -6,11 +6,11 @@ description: You can explore the history config of Grid in the documentation of 
 
 # history
 
-@short: Optional. Enables/disables the `History` module during the Grid initialization
-
 :::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
+
+@short: Optional. Enables/disables the `History` module during the Grid initialization
 
 ### Usage
 

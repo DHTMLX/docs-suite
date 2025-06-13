@@ -6,6 +6,10 @@ description: You can explore the rangeSelection config of Grid in the documentat
 
 # rangeSelection
 
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: Optional. Enables/disables range selection management within a grid
 
 ### Usage

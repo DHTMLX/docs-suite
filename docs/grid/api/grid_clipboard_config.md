@@ -6,10 +6,14 @@ description: You can explore the clipboard config of Grid in the documentation o
 
 # clipboard
 
-@short: Optional. Enables/disables the clipboard module within a grid
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+@short: Optional. Enables/disables the [`Clipboard`](grid/usage_clipboard.md) module within a grid
 
 :::note
-The module requires the `RangeSelection` module to be enabled via one of the configuration properties: `rangeSelection: true` or `blockSelection: { mode: "range" }`.
+The module requires the [`RangeSelection`](grid/usage_rangeselection.md) module to be enabled and is best used in conjunction with the [`BlockSelection`](grid/usage_blockselection.md) module in the `"range"` mode (enabled on initialization of the `Clipboard` module) for convenient range selection via the UI.
 :::
 
 ### Usage
