@@ -35,5 +35,7 @@ grid.clipboard.events.on("afterPaste", () => {
 
 **Related API**: [`beforePaste`](grid/api/clipboard/beforepaste_event.md)
 
+**Related article**: [Work with Clipboard module](grid/usage_clipboard.md)
+
 @changelog:
 added in v9.2

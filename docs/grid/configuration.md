@@ -2671,12 +2671,10 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 The Grid component provides the [functionality for interacting with the clipboard](grid/usage_clipboard.md), such as copying, cutting, and pasting data from a selected range of cells, as well as integrating with other grids or external applications like Google Spreadsheets. 
 
-To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](grid/api/grid_clipboard_config.md) property in the Grid configuration. 
-
-The `Clipboard` module requires the [`RangeSelection`](#managing-range-selection-in-grid) module to be enabled. For convenient range selection via the UI, it is recommended to use the [`BlockSelection`](#managing-block-selection-in-grid) module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting. 
+To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](grid/api/grid_clipboard_config.md) property in the Grid configuration. The `Clipboard` module requires the [`RangeSelection`](#managing-range-selection-in-grid) module to be enabled. For convenient range selection via the UI, it is recommended to use the [`BlockSelection`](#managing-block-selection-in-grid) module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting. 
 
 :::note
-The `blockSelection: { mode: "range" }` property is initialized in the Grid configuration when the `Clipboard` module is enabled.
+The `blockSelection: { mode: "range" }` property is automatically initialized in the Grid configuration when the `Clipboard` module is enabled.
 :::
 
 ~~~jsx
@@ -2722,24 +2720,6 @@ const grid = new dhx.Grid("grid_container", {
     }
 });
 ~~~
-
-### Interaction between Grids and external widgets
-
-The `Clipboard` module enables data exchange between multiple `dhx.Grid` instances or with external applications like Google Spreadsheets, Microsoft Excel, or similar widgets. Data is copied to the clipboard in a text format with tab separators (`\t`) between columns and newlines (`\n`) between rows, matching the standard table format.
-
-#### Integration with Google Spreadsheets
-
-Data from a grid can be copied to the clipboard and pasted directly into Google Spreadsheets. Similarly, data from Google Spreadsheets can be copied and pasted into the grid. Use `pasteModifier` to process data formats (e.g., converting strings to numbers).
-
-### Pasting from clipboard
-
-Data from the clipboard is pasted into the range defined by `rangeSelection`. The behavior depends on the size of the selected range and the number of copied elements:
-
-- **If the range is smaller than the copied elements**: all the copied elements will be pasted if there is enough space in the grid (i.e., sufficient rows and columns exist beyond the range's starting point). For example, if 4 cells (2 rows x 2 columns) are copied and the range is set to 1 row x 2 columns, the data will be fully pasted, expanding the range to 2 rows, if rows are available.
-
-- **If the range is larger than the copied elements**: the copied elements will repeat cyclically to fill the entire range. For example, if 2 cells ("A1", "A2") are copied and the range is 4 cells (2 rows x 2 columns), the result will be "A1", "A2", "A1", "A2".
-
-The repetition of elements follows the order of copying, starting from the first cell.
 
 For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
 

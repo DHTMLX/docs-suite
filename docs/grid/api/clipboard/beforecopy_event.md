@@ -45,5 +45,7 @@ grid.clipboard.events.on("beforeCopy", (isCut) => {
 
 **Related API**: [`afterCopy`](grid/api/clipboard/aftercopy_event.md)
 
+**Related article**: [Work with Clipboard module](grid/usage_clipboard.md)
+
 @changelog:
 added in v9.2

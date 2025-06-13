@@ -40,5 +40,7 @@ grid.clipboard.events.on("pasteError", (error) => {
 
 **Related API**: [`copyError`](grid/api/clipboard/copyerror_event.md)
 
+**Related article**: [Work with Clipboard module](grid/usage_clipboard.md)
+
 @changelog:
 added in v9.2
