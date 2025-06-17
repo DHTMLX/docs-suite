@@ -68,7 +68,7 @@ The `blockSelection` property can be set in two ways:
         </tr>
         <tr>
             <td><b>mode</b></td>
-            <td>the operating mode of the module:<ul><li><i>"range"</i> - managed through the Range module</li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
+            <td>the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
         </tr>
         <tr>
             <td><b>handle</b></td>
@@ -82,12 +82,12 @@ The `blockSelection` property can be set in two ways:
 </table>
 
 :::note
-By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the **Range** module is initialized.
+By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the [`RangeSelection`](grid/usage_rangeselection.md) module is initialized.
 :::
 
+This example demonstrates configuring the module with the handle disabled and the "range" mode enabled:
 
-~~~jsx
-// this example demonstrates configuring the module with the handle disabled and the "range" mode enabled
+~~~jsx {10-13}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "a", header: [{ text: "A" }] },
@@ -98,46 +98,105 @@ const grid = new dhx.Grid("grid_container", {
         { id: "2", a: "A2", b: "B2" },
     ],
     blockSelection: {
-        mode: "range",
-        handle: false,
+        mode: "range", // setting the "range" mode
+        handle: false // the handle is disabled
     }
 });
 ~~~
 
+This example demonstrates configuring the handle and its behavior:
+
 ~~~jsx
-// this example demonstrates configuring the handle and its behavior
+/* Define grid columns configuration */
+const columns = [
+    { id: "productId", header: [{ text: "Product ID" }] }, // Column for the unique product identifier
+    { id: "productName", header: [{ text: "Product Name" }] }, // Column for the product name
+    { id: "category", header: [{ text: "Category" }] }, // Column for the product category
+    { id: "receivedDate", header: [{ text: "Received Date" }], type: "date", dateFormat: "%d.%m.%Y" }, // Date column with the specified format
+    { id: "stock", header: [{ text: "Stock" }], type: "number" }, // Numeric column for the stock quantity
+    { id: "price", header: [{ text: "Price" }], type: "number", numberMask: { prefix: "$" } } // Numeric column for the price with the dollar prefix
+];
+
+/* Initialize DHTMLX Grid with the specified configuration */
 const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { id: "a", header: [{ text: "A" }] },
-        { id: "b", header: [{ text: "B" }] },
-    ],
-    data: [
-        { id: "1", a: "A1", b: "B1" },
-        { id: "2", a: "A2", b: "B2" },
-    ],
+    columns,
+    data,
+    autoWidth: true,
+    history: true, // Enable history tracking for undo/redo
     blockSelection: {
-        mode: "range",
         handle: {
-            allowAxis: "x", // the handle movement is restricted by the "x" axis
-            handler: ({ array, range, grid, cell, index }) => {
-                if (array.length <= 1) {
-                    return;
-                }
-                const firstCell = range[0];
-                // the copied cells will have the "-copied" suffix
-                const value = firstCell.row[firstCell.column.id] + (index ? "-copied" : ""); 
-                grid.data.update(
-                    cell.row.id,
-                    { [cell.column.id]: value },
-                    index < array.length - 1 // the silent mode for all the cells except for the last cell
-                );
-            }
-        }
-    }
+            allowAxis: "y", // Allow selection along the y-axis (rows)
+            handler: blockSelectionHandler, // Custom handler for block selection
+        },
+    },
 });
+
+/* Set initial selection range for the grid */
+grid.range.setRange({
+    xStart: "productId", // Start selection at the "productId" column
+    yEnd: grid.data.getId(0), // End selection at the first row
+});
+
+/* Initialize objects to store initial values and column indices */
+let initValues = {}; // Store initial values for each column
+let columnIndex = {}; // Track index increments for each column
+
+/* The handler function for block selection events */
+function blockSelectionHandler({ cell, array, index, grid }) {
+    // Reset tracking objects if this is the first cell in the selection
+    if (!index) {
+        initValues = {};
+        columnIndex = {};
+    }
+    const columnId = cell.column.id;
+    // Initialize values for a new column if not already set
+    if (!initValues[columnId]) {
+        initValues[columnId] = cell.row[columnId]; // Store the initial cell value
+        columnIndex[columnId] = 0; // Initialize the index counter
+        return { prev: initValues[columnId], current: initValues[columnId] }; // Return unchanged values
+    }
+
+    // Increment column index for the current column
+    const colIndex = columnIndex[columnId] += 1;
+    const initValue = initValues[columnId]; // Get the initial value for a column
+    let prev = current = cell.row[columnId]; // Set the default previous and current values
+
+    // Modify the current value based on the column type
+    switch (cell.column.type) {
+        case "number":
+            current = initValue + colIndex * 10; // Increment the number by 10 per row
+            break;
+        case "date":
+            // Parse ISO date and increment the day by colIndex
+            const [year, month, day] = initValue.split("-");
+            current = new Date(Number(year), Number(month) - 1, Number(day) + colIndex).toISOString();
+            break;
+        default:
+            current = initValue; // Keep the default value for other types
+            break;
+    }
+
+    // Custom formatting for specific columns
+    if (columnId === "productId") {
+        // Generate a new product ID with the format P00N
+        current = `P00${parseInt(initValue.replace(/\D/g, "")) + colIndex}`;
+    }
+    if (columnId === "category") {
+        // Append the index in parentheses to the category
+        current = `${current} (${colIndex})`;
+    }
+
+    // Create the history object for undo/redo
+    const history = { prev, current };
+    // Update grid data with the new value
+    grid.data.update(cell.row.id, { [columnId]: current },
+        index < array.length - 1 // Continue updating if it isn't the last cell in selection
+    );
+    return history; // Return the history for tracking
+}
 ~~~
 
-**Related sample:** [Grid. BlockSelection with handle configuration](https://snippet.dhtmlx.com/8gx20g1d)
+**Related sample:** [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/8kttktiy)
 
 **Related article:** [Managing block selection in Grid](grid/configuration.md/#managing-block-selection-in-grid)
 

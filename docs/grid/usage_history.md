@@ -54,12 +54,6 @@ If the module is disabled (via [`disabled: true`](grid/api/grid_history_config.m
 
 The `History` module is initialized via the [`history`](grid/api/grid_history_config.md) property in the configuration of the **dhx.Grid** component. After creating the Grid component, the module is accessible through the `grid.history` property.
 
-The `history` property can be set:
-- as a *boolean* value it enables or disables the `History` module upon the component initialization
-- as an *object* it enables the module and allows setting additional parameters:
-	- `limit` - the maximum number of actions stored in the history. When the limit is exceeded, the oldest actions are removed
-	- `disabled` - if `true`, the module is disabled on initialization, and no actions are recorded in the history
-
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
@@ -73,6 +67,9 @@ const grid = new dhx.Grid("grid_container", {
     history: true // enables the History module
 });
 ~~~
+
+The `history` property can also be set as an *object* to enable the module and provide additional configuration options.
+Learn about configuration possibilities of the `History` module in the [Configuration](grid/configuration.md/#history-of-grid-actions) guide.
 
 ## Enabling/disabling History module
 

@@ -6,7 +6,7 @@ description: You can explore the enable method of Grid block selection in the do
 
 # enable()
 
-@short: enables the BlockSelection module and activates the capabilities of block selection in Grid
+@short: enables the `BlockSelection` module and activates the capabilities of block selection in Grid
 
 @signature: {'enable(): void;'}
 

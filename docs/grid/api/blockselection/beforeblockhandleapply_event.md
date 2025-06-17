@@ -35,8 +35,8 @@ The callback of the event is called with the following parameters:
 Return `false` to cancel the action; otherwise, `true`.
 
 @example:
-grid.block.events.on("beforeBlockHandleApply", (startCell, endCell, dir) => {
-    if (dir === "right" | dir === "left") {
+grid.block.events.on("beforeBlockHandleApply", (startCell, endCell, dragDirection) => {
+    if (dragDirection === "right" | dragDirection === "left") {
         console.log("Horizontal change canceled");
         return false;
     }

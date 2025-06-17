@@ -32,7 +32,7 @@ The callback of the event is called with the following parameters:
 - `event` - the browser event: `MouseEvent` or `TouchEvent`
 
 @example:
-grid.block.events.on("afterBlockHandleApply", (startCell, endCell, dir) => {
+grid.block.events.on("afterBlockHandleApply", (startCell, endCell, dragDirection) => {
     console.log("Handle applied:");
 });
 

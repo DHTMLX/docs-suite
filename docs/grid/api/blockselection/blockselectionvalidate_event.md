@@ -43,7 +43,7 @@ const grid = new dhx.Grid("grid_container", {
     blockSelection: true
 });
 
-grid.block.events.on("blockSelectionValidate", (cell, handle, event) => {
+grid.block.events.on("blockSelectionValidate", (validateCell, handle, event) => {
     if (cell.column.id === "b") {
         console.log("Selection cannot start from column B");
         return false;

@@ -12,15 +12,33 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 You can manage range selection within a grid via the API of the [`RangeSelection`](grid/configuration.md/#managing-range-selection-in-grid) module. It provides methods for setting and resetting a range of cells, getting information about the current range, and checking whether specific cells belong to the selected range. It also supports an [event system](grid/api/api_overview.md/#rangeselection-events) to track changes.
 
+## Initializing the RangeSelection module
+
 To initialize the `RangeSelection` module, use the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration. Once the Grid is created, the module is accessible through the `grid.range` property.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    rangeSelection: true // enables the RangeSelection module
+});
+~~~
+
+The `rangeSelection` property can also be set as an *object* to enable the module and provide additional configuration options.
+Learn about configuration possibilities of the `RangeSelection` module in the [Configuration](grid/configuration.md/#managing-range-selection-in-grid) guide.
 
 ## Enabling/disabling RangeSelection module
 
 You can activate the range selection module via the [`enable()`](grid/api/rangeselection/enable_method.md) method of the `range` object.
-
 The following example shows how the module is enabled after deactivation on initialization:
 
-~~~jsx
+~~~jsx {14}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -38,11 +56,10 @@ grid.range.enable(); // activating the module
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will be set
 ~~~
 
-To disable the range selection in Grid, use the [`disable()`](grid/api/rangeselection/disable_method.md) method of the `range` object:
-
+To disable the range selection in Grid, use the [`disable()`](grid/api/rangeselection/disable_method.md) method of the `range` object.
 The example below shows disabling of the `range` module:
 
-~~~jsx
+~~~jsx {15}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -64,11 +81,9 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // the range won't be set
 
 ## Checking RangeSelection module state
 
-You can check whether the RangeSelection module is disabled, using the [`isDisabled()`](grid/api/rangeselection/isdisabled_method.md) method of the `range` object. It returns `true`, if the module is disabled and `false`, if it is enabled.
+You can check whether the RangeSelection module is disabled, using the [`isDisabled()`](grid/api/rangeselection/isdisabled_method.md) method of the `range` object. It returns `true`, if the module is disabled and `false`, if it is enabled. The following example shows checking of the module's activity status:
 
-The following example shows checking of the module's activity status:
-
-~~~jsx
+~~~jsx {15,17}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -110,7 +125,7 @@ If not all coordinates are provided, the missing ones are automatically filled (
 
 The following example shows setting of a range with omitted ending coordinates:
 
-~~~jsx
+~~~jsx {14}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -130,7 +145,7 @@ console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1",
 
 The example below demonstrates merging of a new range with the current one:
 
-~~~jsx
+~~~jsx {14,15}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -154,13 +169,15 @@ To make the process of selecting a range more flexible, you can apply the relate
 - [`afterSetRange`](grid/api/rangeselection/aftersetrange_event.md)
 - [`beforeSetRange`](grid/api/rangeselection/beforesetrange_event.md)
 
+**Related sample**: [Grid. BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+
 ## Resetting the range selection
 
 You can reset the applied range selection using the [`resetRange()`](grid/api/rangeselection/resetrange_method.md) method of the `range` object. The method returns `true` - on success, `false`, if the module is disabled, or if reset is canceled by an event.
 
 The following example shows resetting of the current range: 
 
-~~~jsx
+~~~jsx {15}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -186,11 +203,9 @@ To make the process of unselecting a range more flexible, you can apply the rela
 
 ## Getting the range selection
 
-You can get the current selection range. For this, use the [`getRange()`](grid/api/rangeselection/getrange_method.md) method of the `range` object. It returns the object of selection range or `null` if no range is set.
+You can get the current selection range. For this, use the [`getRange()`](grid/api/rangeselection/getrange_method.md) method of the `range` object. It returns the object of selection range or `null` if no range is set. The following example shows retrieving of the current range:
 
-The following example shows retrieving of the current range:
-
-~~~jsx
+~~~jsx {15}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -224,7 +239,7 @@ It is also possible to get an array of cells within the range selection by using
 
 This example shows retrieving of the range of selected cells:
 
-~~~jsx
+~~~jsx {15}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [
@@ -258,7 +273,7 @@ The method returns `true`, if the cell is within the current range and `false` i
 
 The example below shows checking whether an ID belongs to the selected range of cells:
 
-~~~jsx
+~~~jsx {15-17}
 const grid = new dhx.Grid("grid_container", {
     // other configuration
     columns: [

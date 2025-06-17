@@ -2189,7 +2189,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the look and feel of the drag panel that appears when the drag-n-drop functionality is activated. Check the details below.
 
-![](../assets/grid/drag_panel.png)
+![](../assets/grid/dragpanel_module.png)
 
 To initialize the `DragPanel` module, you should enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration together with the [row Drag-and-Drop](#drag-n-drop) functionality (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties). For example:
 
@@ -2210,7 +2210,8 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
 
-The module is automatically enabled if the [row Drag-and-Drop](#drag-n-drop) is activated (e.g., via `dragItem: "row"` or `dragItem: "both"`) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
+The module is also automatically enabled if the [row Drag-and-Drop](#drag-n-drop) functionality is activated 
+(e.g. via the `dragItem: "row"` or `dragItem: "both"` properties) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
 
 The following example demonstrates enabling the `DragPanel` module with row Drag-and-Drop and the `BlockSelection` module:
 
@@ -2530,7 +2531,7 @@ The `rangeSelection` property can be set in two ways:
 - as an *object* it enables the module and allows setting additional configuration options during the component initialization. The following options are available:
     - **disabled** - makes the module inactive upon initialization of the component 
 
-The example below demonstrates interaction with the Range module's methods when range selection is configured to be inactive on the component initialization.
+The example below demonstrates interaction with the RangeSelection module's API when range selection is configured to be inactive on the component initialization.
 
 ~~~jsx {11,15}
 const grid = new dhx.Grid("grid_container", {
@@ -2558,7 +2559,7 @@ For information on using the Range Selection API, read the [Work with RangeSelec
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-The Grid functionality provides the [block selection management](grid/usage_blockselection.md) feature for selecting cells' ranges via the mouse pointer, touch input, and keyboard navigation, as well as adjusting the appearance of the selection and handlers, depending on the applied mode.
+The Grid functionality provides the [block selection management](grid/usage_blockselection.md) feature for selecting cells' ranges via the mouse pointer, touch input, and keyboard navigation, as well as adjusting the appearance of the selection and managing the behavior of the module, depending on the applied mode.
 
 To enable managing of the block selection within a grid, you should use the `BlockSelection` module. To initialize the module, enable the [`blockSelection`](grid/api/grid_blockselection_config.md) property in the Grid configuration: 
 
@@ -2589,7 +2590,7 @@ The `blockSelection` property can be set in two ways:
         </tr>
         <tr>
             <td><b>mode</b></td>
-            <td>the operating mode of the module:<ul><li><i>"range"</i> - managed through the Range module</li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
+            <td>the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
         </tr>
         <tr>
             <td><b>handle</b></td>
@@ -2608,7 +2609,7 @@ By default, the `blockSelection` property is set to `false`. When `blockSelectio
 
 The example below demonstrates configuring the module with the handle disabled and the "range" mode enabled:
 
-~~~jsx
+~~~jsx {10-13}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "a", header: [{ text: "A" }] },
@@ -2619,15 +2620,15 @@ const grid = new dhx.Grid("grid_container", {
         { id: "2", a: "A2", b: "B2" },
     ],
     blockSelection: {
-        mode: "range",
-        handle: false
+        mode: "range", // setting the "range" mode
+        handle: false // the handle is disabled
     }
 });
 ~~~
 
-The following example demonstrates configuring the handle and its behavior:
+The following example demonstrates configuring the handle:
 
-~~~jsx
+~~~jsx {10-13}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "a", header: [{ text: "A" }] },
@@ -2638,30 +2639,13 @@ const grid = new dhx.Grid("grid_container", {
         { id: "2", a: "A2", b: "B2" },
     ],
     blockSelection: {
-        mode: "range",
-        handle: {
-            allowAxis: "x", // the handle movement is restricted by the "x" axis
-            handler: ({ array, range, grid, cell, index }) => {
-                if (array.length <= 1) {
-                    return;
-                }
-                const firstCell = range[0];
-                // the copied cells will have the "-copied" suffix
-                const value = firstCell.row[firstCell.column.id] + (index ? "-copied" : ""); 
-                grid.data.update(
-                    cell.row.id,
-                    { [cell.column.id]: value },
-                    index < array.length - 1 // the silent mode for all the cells except for the last cell
-                );
-            }
-        }
+        mode: "range", // setting the "range" mode
+        handle: { allowAxis: "y" } // restricts the handle movement to the vertical direction 
     }
 });
 ~~~
 
-**Related sample**: [Grid. BlockSelection with handle configuration](https://snippet.dhtmlx.com/8gx20g1d)
-
-For information on using the Block Selection API, read the [Work with Block Selection object](grid/usage_blockselection.md) guide.
+For information on using the Block Selection API, read the [Work with Block Selection module](grid/usage_blockselection.md) guide.
 
 ## Clipboard 
 
@@ -2720,6 +2704,8 @@ const grid = new dhx.Grid("grid_container", {
     }
 });
 ~~~
+
+**Related sample**: [Grid. Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
 
 For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
 

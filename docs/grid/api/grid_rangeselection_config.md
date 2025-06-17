@@ -56,7 +56,7 @@ const grid = new dhx.Grid("grid_container", {
     rangeSelection: { disabled: true }
 });
 
-console.log(grid.range.isDisabled()); // `true` - module is inactive
+console.log(grid.range.isDisabled()); // -> `true` - module is inactive
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 ~~~
 

@@ -76,4 +76,6 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related article:** [Clipboard](grid/configuration.md/#clipboard)
 
+**Related sample**: [Grid. Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
+
 @changelog: added in v9.2

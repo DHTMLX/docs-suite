@@ -87,4 +87,6 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related article:** [Using the DragPanel module](grid/configuration.md/#using-the-dragpanel-module)
 
+**Related sample:** [Grid. DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
+
 @changelog: added in v9.2

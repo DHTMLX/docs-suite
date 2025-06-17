@@ -91,6 +91,7 @@ console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1",
 **Related API**: [`getRange()`](grid/api/rangeselection/getrange_method.md),
 [`resetRange()`](grid/api/rangeselection/resetrange_method.md)
 
+**Related sample**: [Grid. BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
 @changelog:
 added in v9.2
