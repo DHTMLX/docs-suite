@@ -10,7 +10,7 @@ description: You can explore the blockSelection config of Grid in the documentat
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-@short: Optional. Enables/disables block selection management within a grid
+@short: Optional. Enables/disables the BlockSelection module during the Grid initialization
 
 ### Usage
 

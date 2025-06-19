@@ -10,7 +10,7 @@ description: You can explore the clipboard config of Grid in the documentation o
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-@short: Optional. Enables/disables the [`Clipboard`](grid/usage_clipboard.md) module within a grid
+@short: Optional. Enables/disables the Clipboard module during the Grid initialization
 
 :::note
 The module requires the [`RangeSelection`](grid/usage_rangeselection.md) module to be enabled and is best used in conjunction with the [`BlockSelection`](grid/usage_blockselection.md) module in the `"range"` mode (enabled on initialization of the `Clipboard` module) for convenient range selection via the UI.
@@ -74,8 +74,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article:** [Clipboard](grid/configuration.md/#clipboard)
-
 **Related sample**: [Grid. Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
+
+**Related article:** [Clipboard](grid/configuration.md/#clipboard)
 
 @changelog: added in v9.2

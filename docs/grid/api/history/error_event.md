@@ -9,7 +9,7 @@ description: You can explore the error event of Grid history in the documentatio
 @short: triggered when an error occurs
 
 :::note
-The event is triggered when an error occurs, such as the module is disabled, the history is empty, the action type is invalid, the inverse action is missing for `undo`
+The event is triggered when an error occurs, such as the module is disabled, the history is empty, the action type is invalid, or the inverse action is missing for the `undo` operation.
 :::
 
 @signature: {'error: (error: string, action: IAction | null) => void;'}
@@ -20,9 +20,8 @@ The callback of the event is called with the following parameters:
 - `action: IAction` - the action object associated with the error, or `null`. The `action` object contains the following properties:
     - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
     - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
-    - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
-    - `timestamp?: number` - the timestamp of the action in milliseconds (set automatically, if not provided)
-
+    - `inverse?: IAction` - the inverse action required for undoing (for the "change" and "removeAll" types)
+    
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [

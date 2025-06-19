@@ -16,7 +16,7 @@ You can manage block selection within a grid via the API of the [`BlockSelection
 
 ## Initializing the BlockSelection module
 
-To initialize the `BlockSelection` module, use the [`blockSelection`](grid/api/grid_blockselection_config.md) property in the Grid configuration. Once the Grid is created, the module is accessible through the `grid.block` property.
+To initialize the `BlockSelection` module, use the [`blockSelection`](grid/api/grid_blockselection_config.md) property in the configuration of the **dhx.Grid** component. Once the Grid is created, the module is accessible through the `grid.block` property.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {

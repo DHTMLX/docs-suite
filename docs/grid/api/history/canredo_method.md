@@ -6,7 +6,7 @@ description: You can explore the canRedo method of Grid history in the documenta
 
 # canRedo()
 
-@short: checks whether an action can be redone
+@short: checks whether an action within the Grid history can be redone
 
 @signature: {'canRedo(): boolean;'}
 

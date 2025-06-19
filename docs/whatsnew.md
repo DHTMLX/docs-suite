@@ -45,14 +45,31 @@ Released on June X, 2025
 ### Fixes
 
 - DragManager. Incorrect detection of elements' drop location during drag-n-drop and other (Grid component):
-	- Solving the problem of incorrectly determining the position for dropping an element during the Drag&Drop operation (child elements) in the TreeGrid mode;
-	- Solving the problem when moving a line to the header/footer area;
-	- Solving the problem of determining the position for dropping above the first element;
-	- Solving the problem associated with the absence or incorrect definition of the drop position for the default mode;
-	- Fixed the `dragIn` event (the previous reset state was transmitted);
-	- Optimization of the `dragIn/dragOut` events (removed false positives).
+	- Solving the problem of incorrectly determining the position for dropping an element during the Drag&Drop operation (child elements) in the TreeGrid mode
+	- Solving the problem when moving a line to the header/footer area
+	- Solving the problem of determining the position for dropping above the first element
+	- Solving the problem associated with the absence or incorrect definition of the drop position for the default mode
+	- Fixed the `dragIn` event (the previous reset state was transmitted)
+	- Optimization of the `dragIn/dragOut` events (removed false positives)
 - Grid. The issue with falsy selection of frozen cells while selecting unfrozen cells
 - Grid. The issue with dragging unselected items
+- Grid. Sorting of the Date string (ISO) values results in the invalid format error
+- Grid. The issue with displaying of the TreeMap with groups
+
+### New samples
+
+#### Grid
+
+- [Drag-and-Drop in the TreeGrid mode](https://snippet.dhtmlx.com/0tuk0y5f)
+- [BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+- [BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/8kttktiy)
+- [BlockSelection. Stylization of the area](https://snippet.dhtmlx.com/qr5xyqpu)
+- [Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
+- [Clipboard. Employee data transfer between Grids](https://snippet.dhtmlx.com/z2i033yq)
+- [Clipboard. Clipboard operations between Grid and Spreadsheet](https://snippet.dhtmlx.com/mfmvbbda)
+- [DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
+- [History. Configuration](https://snippet.dhtmlx.com/m88562wf)
+
 
 ## Version 9.1.3 
 

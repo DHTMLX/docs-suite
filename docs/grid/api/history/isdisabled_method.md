@@ -6,7 +6,7 @@ description: You can explore the isDisabled method of Grid history in the docume
 
 # isDisabled()
 
-@short: checks whether the module is disabled
+@short: returns the module's current state
 
 @signature: {'isDisabled(): boolean;'}
 

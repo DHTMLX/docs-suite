@@ -6,7 +6,7 @@ description: You can explore the add method of Grid history in the documentation
 
 # add()
 
-@short: adds a new action to the history
+@short: adds a new action into the history of actions within the Grid
 
 ### Usage
 
@@ -17,7 +17,6 @@ interface IAction {
     type: ActionType; 
     batch: IRow[];
     inverse?: IAction; 
-    timestamp?: number; 
 }
 
 add(action: IAction): void;
@@ -29,14 +28,13 @@ add(action: IAction): void;
     - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
     - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
     - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
-    - `timestamp?: number` - the timestamp of the action in milliseconds (set automatically, if not provided)
 
 :::note
-The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing for a `change` action, the [`error`](grid/api/history/error_event.md) event is triggered. The `timestamp` field is automatically added if not specified.
+The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered. 
 :::
 
 @example:
-// The example shows adding a new row via `DataCollection` with an explicitly specified timestamp
+// The example shows adding a new row via `DataCollection` 
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "name", header: [{ text: "Name" }] },
@@ -52,7 +50,7 @@ const grid = new dhx.Grid("grid_container", {
 const newItem = { id: "2", name: "New Item", value: 20 };
 grid.data.add(newItem);
 
-// recording the action in the history with a timestamp
+// recording the action in the history 
 grid.history.add({
     type: "add",
     batch: [{ ...newItem }],

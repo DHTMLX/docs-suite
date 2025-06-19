@@ -10,7 +10,7 @@ description: You can explore the history config of Grid in the documentation of 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-@short: Optional. Enables/disables the `History` module during the Grid initialization
+@short: Optional. Enables/disables the History module during the Grid initialization
 
 ### Usage
 
@@ -65,6 +65,8 @@ const grid = new dhx.Grid("grid_container", {
 
 grid.history.enable(); // enabling the module
 ~~~
+
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
 
 **Related article:** [History of Grid actions](grid/configuration.md/#history-of-grid-actions)
 

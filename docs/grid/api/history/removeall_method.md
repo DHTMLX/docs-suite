@@ -6,10 +6,10 @@ description: You can explore the removeAll method of Grid history in the documen
 
 # removeAll()
 
-@short: clears the entire history and the redo stack
+@short: clears the entire Grid history and the redo stack
 
 :::note
-If the module is disabled, the operation is ignored, and the `error` event is triggered.
+If the module is disabled, the operation is ignored, and the [`error`](grid/api/history/error_event.md) event is triggered.
 :::
 
 @signature: {'removeAll(): void;'}

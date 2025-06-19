@@ -6,7 +6,7 @@ description: You can explore the disable method of Grid history in the documenta
 
 # disable()
 
-@short: disables the module, preventing the addition of new actions to the history and the execution of any operations
+@short: disables the module, preventing the addition of new actions to the Grid history and the execution of any operations
 
 @signature: {'disable(): void;'}
 

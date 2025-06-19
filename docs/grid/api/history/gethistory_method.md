@@ -6,7 +6,7 @@ description: You can explore the getHistory method of Grid history in the docume
 
 # getHistory()
 
-@short: returns a copy of the array of all actions in the history to prevent accidental modification of the internal structure
+@short: returns a copy of the array of all actions in the Grid history to prevent accidental modification of the internal structure
 
 @signature: {'getHistory(): IAction[];'}
 
@@ -15,10 +15,9 @@ Returns a copy of the array of all actions in the history. Each `action` object 
     - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
     - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
     - `inverse?: IAction` - the inverse action required for undoing 
-    - `timestamp?: number` - the timestamp of the action in milliseconds 
 
 @example:
-// The example shows retrieving the history with timestamps
+// The example shows retrieving the history
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "name", header: [{ text: "Name" }] },

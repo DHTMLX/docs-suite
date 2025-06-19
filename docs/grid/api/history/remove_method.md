@@ -6,10 +6,10 @@ description: You can explore the remove method of Grid history in the documentat
 
 # remove()
 
-@short: removes the last action from the history
+@short: removes the last action from the Grid history
 
 :::note
-If the history is empty or the module is disabled, the operation is ignored, and an error event is triggered (for a disabled module).
+If the history is empty or the module is disabled, the operation is ignored, and the [`error`](grid/api/history/error_event.md) event is triggered (for a disabled module).
 :::
 
 @signature: {'remove(): void;'}

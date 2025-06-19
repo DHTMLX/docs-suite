@@ -2193,7 +2193,7 @@ The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-
 
 To initialize the `DragPanel` module, you should enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration together with the [row Drag-and-Drop](#drag-n-drop) functionality (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties). For example:
 
-~~~jsx
+~~~jsx {10-11}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "a", header: [{ text: "A" }] },
@@ -2215,7 +2215,7 @@ The module is also automatically enabled if the [row Drag-and-Drop](#drag-n-drop
 
 The following example demonstrates enabling the `DragPanel` module with row Drag-and-Drop and the `BlockSelection` module:
 
-~~~jsx
+~~~jsx {10-11}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "a", header: [{ text: "A" }] },
@@ -2226,7 +2226,7 @@ const grid = new dhx.Grid("grid_container", {
         { id: "2", a: "A2", b: "B2" },
     ],
     dragItem: "row", // enables row Drag-and-Drop
-    blockSelection: true, // triggers DragPanel activation
+    blockSelection: true // triggers DragPanel activation
 });
 ~~~
 
@@ -2645,6 +2645,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+**Related sample:** [Grid. BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+
 For information on using the Block Selection API, read the [Work with Block Selection module](grid/usage_blockselection.md) guide.
 
 ## Clipboard 
@@ -2686,7 +2688,7 @@ The `clipboard` property can be set in two ways:
 
 The example below demonstrates the clipboard configuration with all the modifiers in use:
 
-~~~jsx
+~~~jsx {10-15}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "a", header: [{ text: "A" }] },
@@ -2715,7 +2717,7 @@ For information on working with Clipboard, read the [Work with Clipboard module]
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-DHTMLX Grid provides the functionality for managing the history of actions in the component. 
+DHTMLX Grid provides the [functionality for managing the history of actions in the component](grid/usage_history.md). 
 
 To enable the history functionality within a grid, you should use the `History` module. To initialize the module, enable the [`history`](grid/api/grid_history_config.md) property in the Grid configuration. 
 
@@ -2741,7 +2743,7 @@ The `history` property can be set in two ways:
 
 The example below demonstrates configuring the module with a history limit of 10 actions. The module is disabled on initialization:
 
-~~~jsx
+~~~jsx {10-13}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "a", header: [{ text: "A" }] },
@@ -2759,6 +2761,8 @@ const grid = new dhx.Grid("grid_container", {
 
 grid.history.enable(); // enabling the module
 ~~~
+
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
 
 For information on working with the History API, read the [Work with History module](grid/usage_history.md) guide.
 

@@ -6,11 +6,12 @@ description: You can explore the enable method of Grid history in the documentat
 
 # enable()
 
-@short: enables the module, allowing the addition of new actions to the history
+@short: enables the module, allowing the addition of new actions to the Grid history
 
 @signature: {'enable(): void;'}
 
 @example:
+// The example shows how the module is enabled after deactivation on initialization
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "name", header: [{ text: "Name" }] },

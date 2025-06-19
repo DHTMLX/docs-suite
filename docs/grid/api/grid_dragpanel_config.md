@@ -10,7 +10,7 @@ description: You can explore the dragPanel config of Grid in the documentation o
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-@short: Optional. Enables/disables the [`dragPanel`](grid/usage_dragpanel.md) module within a grid
+@short: Optional. Enables/disables the DragPanel module during the Grid initialization
 
 ### Usage
 
@@ -27,7 +27,7 @@ dragPanel?:
 @default: false
 
 :::note
-The module is automatically enabled, if the row Drag-and-Drop is active (e.g., `dragItem: "row"` or `dragItem: "both"`), and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
+The module is automatically enabled, if the [row Drag-and-Drop](grid/configuration.md/#drag-n-drop) functionality is active (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties), and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
 :::
 
 @example:
@@ -85,8 +85,9 @@ const grid = new dhx.Grid("grid_container", {
 </script>
 ~~~
 
+**Related sample:** [Grid. DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
+
 **Related article:** [Using the DragPanel module](grid/configuration.md/#using-the-dragpanel-module)
 
-**Related sample:** [Grid. DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
 
 @changelog: added in v9.2

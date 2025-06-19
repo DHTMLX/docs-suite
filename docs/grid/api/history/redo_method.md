@@ -6,7 +6,7 @@ description: You can explore the redo method of Grid history in the documentatio
 
 # redo()
 
-@short: redoes the last undone action
+@short: reapplies the last undone action in the Grid history
 
 :::note
 If the redo stack is empty or the module is disabled, the `error` event is triggered.

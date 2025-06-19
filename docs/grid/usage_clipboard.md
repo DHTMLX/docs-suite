@@ -68,7 +68,7 @@ The `cut`/`paste` operations will be blocked in the [*grouping*](grid/usage.md/#
 
 The `Clipboard` module enables data exchange between multiple `dhx.Grid` instances or with external applications like Google Spreadsheets, Microsoft Excel, or similar widgets. Data is copied to the clipboard in a text format with tab separators (`\t`) between columns and newlines (`\n`) between rows, matching the standard table format.
 
-**Related sample**: [Grid. Clipboard. Employee data transfer between Grids](https://snippet.dhtmlx.com/qll7bcv5)
+**Related sample**: [Grid. Clipboard. Employee data transfer between Grids](https://snippet.dhtmlx.com/z2i033yq)
 
 ### Integration with Google Spreadsheets
 

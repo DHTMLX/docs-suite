@@ -22,7 +22,7 @@ You can also adjust the appearance and behavior of the `DragPanel` module via th
 
 ## Initializing the DragPanel module
 
-The `DragPanel` module is initialized via the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the configuration of the **dhx.Grid** component. The module is also automatically activated if:
+To initialize the `DragPanel` module, use the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the configuration of the **dhx.Grid** component. The module is also automatically activated if:
 
 - The row Drag-and-Drop is enabled, e.g. via `dragItem: "row"` or `dragItem: "both"`
 - The [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled

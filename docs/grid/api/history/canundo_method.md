@@ -6,7 +6,7 @@ description: You can explore the canUndo method of Grid history in the documenta
 
 # canUndo()
 
-@short: checks whether an action can be undone
+@short: checks whether an action within the Grid history can be undone
 
 @signature: {'canUndo(): boolean;'}
 

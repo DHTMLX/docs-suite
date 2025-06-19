@@ -15,8 +15,7 @@ The callback of the event is called with the following parameters:
 - `action: IAction` - the object of the executed action containing:
     - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
     - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
-    - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
-    - `timestamp?: number` - the timestamp of the action in milliseconds (set automatically, if not provided)
+    - `inverse?: IAction` - the inverse action required for undoing (for the "change" and "removeAll" types)
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -35,6 +34,8 @@ grid.history.events.on("afterRedo", (action) => {
 });
 
 @descr:
+
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
 
 **Related article**: [Applying undo/redo operations to Grid history actions](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions)
 

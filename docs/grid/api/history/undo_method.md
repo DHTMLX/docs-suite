@@ -6,10 +6,12 @@ description: You can explore the undo method of Grid history in the documentatio
 
 # undo()
 
-@short: undoes the last action in the history by applying the inverse action (for `change`, `removeAll`) or restoring data (for `add`, `remove`)
+@short: undoes the last action in the Grid history 
+
+Depending on the type of the action, the method either applies the inverse action (for the "change" and "removeAll" types) or restores data (for the "add" and "remove" types).
 
 :::note
-If the history is empty, the module is disabled, or no inverse action is available, the `error` event is triggered.
+If the history is empty, the module is disabled, or no inverse action is available (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered.
 :::
 
 @signature: {'undo(): void;'}
