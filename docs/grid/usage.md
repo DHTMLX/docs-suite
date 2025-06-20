@@ -473,14 +473,27 @@ You can easily export data of Grid into the Excel, CSV, PDF, or PNG format.
 
 #### Exporting data to Excel
 
-DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the Export module. The method takes an object with export settings as a parameter.
+DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. Thus, to have the possibility of exporting files you need to:
 
-~~~js
+- install the [Json2Excel](https://github.com/dhtmlx/json2excel) library
+- if you need to set a local path to the export module on your computer, specify the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method and set the path to the **worker.js** file like: `"../libs/json2excel/1.3/worker.js?vx"`. If the local path isn't set, the link to the file from CDN will be used
+- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module with the provided settings (all settings are optional)
+
+~~~jsx
 grid.export.xlsx({
-    name:"grid_data",
-    url: "//export.dhtmlx.com/excel"
+    // a local path to the `worker.js` file of the Json2Excel library 
+    url: "../libs/json2excel/1.3/worker.js?vx", 
+    name: "my_file", // the name of a ready Excel file
+    tableName: "grid", // the name of a sheet with grid data in the Excel file
+    dateFormatMask: "mm.dd.yy" // the mask used for dates formatting in Excel
 });
 ~~~
+
+:::note
+You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
+:::
+
+You can read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
 
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
@@ -488,7 +501,7 @@ grid.export.xlsx({
 
 You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. 
 
-~~~js
+~~~jsx
 grid.export.csv({
     name:"grid_data", // grid data will be exported to a CSV file named "grid_data"
     rowDelimiter: "\t", // the tab delimiter will be used to separate rows
@@ -504,7 +517,7 @@ The `csv()` method returns a CSV string with Grid data.
 
 The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
 
-~~~js
+~~~jsx
 grid.export.pdf({
     format: "A4",
     scale: 0.75,
@@ -519,7 +532,7 @@ grid.export.pdf({
 
 The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
 
-~~~js
+~~~jsx
 grid.export.png({
     theme: "dark",
 });

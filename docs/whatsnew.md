@@ -38,8 +38,8 @@ Released on June X, 2025
 
 ### Updates
 
-- Grid. The logic and appearance of the drag-n-drop functionality is improved 
-- Grid. Improving the export to Excel module
+- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved 
+- Grid. The [export to Excel](grid/usage.md/#exporting-data-to-excel) functionality is updated
 - Grid. The possibility to clear data while editing a cell by using the `Delete` shortcut key is added
 
 ### Fixes
