@@ -54,7 +54,6 @@ Released on June X, 2025
 - Grid. The issue with falsy selection of frozen cells while selecting unfrozen cells
 - Grid. The issue with dragging unselected items
 - Grid. Sorting of the Date string (ISO) values results in the invalid format error
-- Grid. The issue with displaying of the TreeMap with groups
 
 ### New samples
 

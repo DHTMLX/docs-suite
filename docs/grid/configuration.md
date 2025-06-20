@@ -2444,6 +2444,10 @@ The list of the shortcut keys for editing:
             <td><b>Escape</b></td>
             <td>close the editor of the selected cell without saving</td>
         </tr>
+        <tr>
+            <td><b>Delete</b></td>
+            <td>clears the data in the selected cells. Works only with the <a href="../usage_blockselection/#keyboard-navigation">`BlockSelection` module</a> in the "range" mode</td>
+        </tr>
     </tbody>
 </table>
 

@@ -119,14 +119,41 @@ The main points of cell selection while using the `BlockSelection` module are gi
 
 ### Keyboard navigation
 
-The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets:
+:::note
+Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
+:::
+
+- The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets:
 	- **Arrows** (`ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight`): moves the focus to the adjacent cell, setting the initially selected cell if no selection is active.
 	- **Shift + Arrows**: extends the selected range from the current initial cell in the direction of the pressed arrow.
 	- **Ctrl + Arrows**: extends the selected range to the last cell in the direction of the pressed arrow.
 
-The **Shift + click** combination is also available. It sets the end cell of the range, extending the selection from the current initial cell.
+- The **Shift + click** combination sets the end cell of the range, extending the selection from the current initial cell.
 
-Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
+- The **Delete** shortcut key allows clearing the selected cells when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode. 
+It is possible to cancel the cells clearing by using the [`beforeKeyDown`](grid/api/grid_beforekeydown_event.md) event:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }] },
+        // The data of the cells in the "population" column will not be cleared
+        { id: "population", header: [{ text: "Population" }], editable: false },
+        { id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+    ],
+    blockSelection: {
+        mode: "range"
+    },
+    editable: true,
+    // other configuration
+});
+
+grid.events.on("beforeKeyDown", (event) => {
+    if (event.key === "Delete") {
+        return false; // cancel clearing all selected cells
+    }
+});
+~~~
 
 ### Selection handle
 
