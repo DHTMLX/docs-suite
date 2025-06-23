@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1.6
+
+Released on June 23, 2025
+
+### Fixes
+
+- Chart. The issue with displaying of the Treemap chart with groups
+- Grid. The `cellValue` parameter of the column `template` property has different values depending on whether a column is editable
+- Grid. The issue with the tooltip showing in case of a custom HTML content taking the full cell's space
+- Grid. The `textarea` editor saves changes made in a cell on closing instead of rendering the initial value  
+
 ## Version 9.1.5 
 
 Released on June 5, 2025
