@@ -225,17 +225,43 @@ console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1",
 
 The returned object with the current selection range contains the following properties:
 
-- `xStart` - (*string | number*) the starting column id
-- `xEnd` - (*string | number*) the ending column id
-- `yStart` - (*string | number*) the starting row id
-- `yEnd` - (*string | number*) the ending row id
+<table>
+    <tbody>
+        <tr>
+            <td><b>xStart</b></td>
+            <td>(<i>string | number</i>) the starting column id</td>
+        </tr>
+        <tr>
+            <td><b>xEnd</b></td>
+            <td>(<i>string | number</i>) the ending column id</td>
+        </tr>
+        <tr>
+            <td><b>yStart</b></td>
+            <td>(<i>string | number</i>) the starting row id</td>
+        </tr>
+        <tr>
+            <td><b>yEnd</b></td>
+            <td>(<i>string | number</i>) the ending row id</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Getting an array of cells within the range
 
 It is also possible to get an array of cells within the range selection by using the [`getRangedCells()`](grid/api/rangeselection/getrangedcells_method.md) method of the `range` object. It returns an array of objects where:
 
-- `row` - (*object*) the row object
-- `column` - (*object*) the column object
+<table>
+    <tbody>
+        <tr>
+            <td><b>row</b></td>
+            <td>(<i>object</i>) the row object</td>
+        </tr>
+        <tr>
+            <td><b>column</b></td>
+            <td>(<i>object</i>) the column object</td>
+        </tr>
+    </tbody>
+</table>
 
 This example shows retrieving of the range of selected cells:
 
@@ -261,9 +287,14 @@ console.log(grid.range.getRangedCells()); // -> [{ row: { id: "1", ... }, column
 
 You can check whether a cell is within the current range using the [`isRanged()`](grid/api/rangeselection/isranged_method.md) method of the `range` object. The method takes the following parameter: 
 
-- `cell` - (*object*) - an object with the `x` and `y` coordinates of a cell, where:
-    - `x` - (*string | number*) - the column id
-    - `y` - (*string | number*) - the row id
+<table>
+    <tbody>
+        <tr>
+            <td><b>cell</b></td>
+            <td>(<i>object</i>) - an object with the `x` and `y` coordinates of a cell, where:<ul><li>`x` - (*string | number*) - the column id</li><li>`y` - (*string | number*) - the row id</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 :::note
 You can specify just `x` or `y` to check a column or a row, correspondingly.

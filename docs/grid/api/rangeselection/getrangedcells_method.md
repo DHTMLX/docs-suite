@@ -16,8 +16,18 @@ getRangedCells(): { row: object; column: object; }[];
 
 @returns:
 - an array of objects where:
-	- `row: object` - the row object
-	- `column: object` - the column object
+<table>
+    <tbody>
+        <tr>
+            <td><b>row</b></td>
+            <td>(<i>object</i>) the row object</td>
+        </tr>
+        <tr>
+            <td><b>column</b></td>
+            <td>(<i>object</i>) the column object</td>
+        </tr>
+    </tbody>
+</table>
 
 @example:
 // this example shows retrieving of the range of selected cells

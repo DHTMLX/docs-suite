@@ -24,11 +24,14 @@ afterResetRange: (
 @params:
 The callback of the event is called with the following parameters:
 
-- `range: object` - the object of the reset range:
-	- `xStart?: string | number` - the starting column id
-	- `xEnd?: string | number` - the ending column id
-	- `yStart?: string | number` - the starting row id
-	- `yEnd?: string | number` - the ending row id
+<table>
+    <tbody>
+        <tr>
+            <td><b>range</b></td>
+            <td>(<i>object</i>) the object with the reset range coordinates that contains the following options:<ul><li><b>`xStart`</b> - (<i>string | number</i>) the starting column id</li><li><b>`xEnd`</b> - (<i>string | number</i>) the ending column id</li><li><b>`yStart`</b> - (<i>string | number</i>) the starting row id</li><li><b>`yEnd`</b> - (<i>string | number</i>) the ending row id</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 @example:
 const grid = new dhx.Grid("grid_container", {

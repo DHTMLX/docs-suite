@@ -15,9 +15,14 @@ isRanged(cell: { x: string | number; y: string | number }): boolean;
 ~~~
 
 @params:
-- `cell: object` - an object with the `x` and `y` coordinates of a cell, where:
-	- `x: string | number` - the column id
-	- `y: string | number` - the row id
+<table>
+    <tbody>
+        <tr>
+            <td><b>cell</b></td>
+            <td>(<i>object</i>) - an object with the `x` and `y` coordinates of a cell, where:<ul><li>`x` - (*string | number*) - the column id</li><li>`y` - (*string | number*) - the row id</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 :::note
 You can specify just `x` or `y` to check a column or a row, correspondingly.

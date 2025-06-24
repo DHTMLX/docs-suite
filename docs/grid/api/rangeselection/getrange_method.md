@@ -23,10 +23,26 @@ getRange():
 
 @returns:
 - an object with the current selection range, where:
-    - `xStart?: string | number` - the starting column id
-    - `xEnd?: string | number` - the ending column id
-    - `yStart?: string | number` - the starting row id
-    - `yEnd?: string | number` - the ending row id
+<table>
+    <tbody>
+        <tr>
+            <td><b>xStart</b></td>
+            <td>(<i>string | number</i>) the starting column id</td>
+        </tr>
+        <tr>
+            <td><b>xEnd</b></td>
+            <td>(<i>string | number</i>) the ending column id</td>
+        </tr>
+        <tr>
+            <td><b>yStart</b></td>
+            <td>(<i>string | number</i>) the starting row id</td>
+        </tr>
+        <tr>
+            <td><b>yEnd</b></td>
+            <td>(<i>string | number</i>) the ending row id</td>
+        </tr>
+    </tbody>
+</table>
 - `null` if no range is set
 
 @example:
