@@ -2083,6 +2083,10 @@ If you use the GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to
 **Note**, to be able to drag-n-drop a column and (or) multiple rows, you need to use PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
+![](../assets/grid/dnd_treegrid_mode.png)
+
+**Related sample**: [Grid. Drag-and-Drop in TreeGrid mode](https://snippet.dhtmlx.com/0tuk0y5f)
+
 ### Drag-n-drop inside the grid
 
 It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"`](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
@@ -2446,7 +2450,7 @@ The list of the shortcut keys for editing:
         </tr>
         <tr>
             <td><b>Delete</b></td>
-            <td>clears the data in the selected cells. Works only with the <a href="../usage_blockselection/#keyboard-navigation">`BlockSelection` module</a> in the "range" mode</td>
+            <td>clears data in the selected cells. Works only with the <a href="../usage_blockselection/#keyboard-navigation">`BlockSelection` module</a> in the "range" mode</td>
         </tr>
     </tbody>
 </table>

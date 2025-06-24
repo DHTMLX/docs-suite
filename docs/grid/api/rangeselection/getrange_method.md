@@ -6,7 +6,7 @@ description: You can explore the getRange method of Grid range selection in the 
 
 # getRange()
 
-@short: returns the current selection range or `null` if no range is set
+@short: returns the current selection range 
 
 ### Usage
 

@@ -6,7 +6,7 @@ description: You can explore the disable method of Grid range selection in the d
 
 # disable()
 
-@short: disables the `RangeSelection` module and resets the current range
+@short: disables the RangeSelection module and resets the current range in Grid
 
 ### Usage
 

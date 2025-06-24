@@ -38,9 +38,9 @@ Released on June X, 2025
 
 ### Updates
 
-- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved 
+- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved. Check the [related sample](https://snippet.dhtmlx.com/0tuk0y5f) 
 - Grid. The [export to Excel](grid/usage.md/#exporting-data-to-excel) functionality is updated
-- Grid. The possibility to clear data while editing a cell by using the `Delete` shortcut key is added
+- Grid. The possibility to [clear data in selected cells by using the `Delete` shortcut key](grid/configuration.md/#shortcut-keys-for-editing) is added
 
 ### Fixes
 

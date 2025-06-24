@@ -43,12 +43,12 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 
 :::info important
 - Use [the methods of DataCollection](data_collection.md) to work with data. 
-- Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manage the selection of Grid cells. 
-- Apply [the methods of RangeSelection](grid/api/api_overview.md#rangeselection-methods) to manage the range selection within Grid. 
-- Apply [the methods of BlockSelection](grid/api/api_overview.md#blockselection-methods) to manage the block selection within Grid. 
-- Use [the methods of Export](grid/api/api_overview.md#export-methods) to work with data export within Grid. 
-- Use [the methods of History](grid/api/api_overview.md#history-methods) to manage the history of actions within Grid. 
 - Use [the methods of TreeCollection](tree_collection.md#methods) to work with data of Grid in the TreeGrid mode. 
+- Use [the methods of the Selection object](grid/api/api_overview.md#selection-methods) to work with the selection of Grid cells. 
+- Use [the methods of the RangeSelection module](grid/api/api_overview.md#rangeselection-methods) to work with the range selection within Grid. 
+- Use [the methods of the BlockSelection module](grid/api/api_overview.md#blockselection-methods) to work with the block selection within Grid.
+- Use [the methods of the Export module](grid/api/api_overview.md#export-methods) to work with data export within Grid.  
+- Use [the methods of the History module](grid/api/api_overview.md#history-methods) to work with the history of actions within Grid. 
 :::
 
 ## Grid events
@@ -167,14 +167,14 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_beforerowresize_event.md) | @getshort(grid/api/grid_beforerowresize_event.md) |
 
 :::info important
-- Use [the events of DataCollection](data_collection.md#events) to work with data of Grid. 
-- Apply [the events of Selection](grid/api/api_overview.md#selection-events) to handle the selection of Grid cells. 
-- Apply [the events of RangeSelection](grid/api/api_overview.md#rangeselection-events) to handle the range selection within Grid.
-- Apply [the events of BlockSelection](grid/api/api_overview.md#blockselection-events) to handle the block selection within Grid.
-- Use [the events of Clipboard](grid/api/api_overview.md#clipboard-events) to work with clipboard within Grid. 
-- Use [the events of DragPanel](grid/api/api_overview.md#dragpanel-events) to work with drag panel within Grid. 
-- Use [the events of History](grid/api/api_overview.md#history-events) to work with the history of actions within Grid. 
-- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
+- Use [the events of DataCollection](data_collection.md#events) to work with data of Grid.
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode.  
+- Use [the events of the Selection object](grid/api/api_overview.md#selection-events) to work with the selection of Grid cells. 
+- Use [the events of the RangeSelection module](grid/api/api_overview.md#rangeselection-events) to work with the range selection within Grid.
+- Use [the events of the BlockSelection module](grid/api/api_overview.md#blockselection-events) to work with the block selection within Grid.
+- Use [the events of the Clipboard module](grid/api/api_overview.md#clipboard-events) to work with clipboard within Grid. 
+- Use [the events of the DragPanel module](grid/api/api_overview.md#dragpanel-events) to work with drag panel within Grid. 
+- Use [the events of the History module](grid/api/api_overview.md#history-events) to work with the history of actions within Grid. 
 :::
 
 ## Grid properties

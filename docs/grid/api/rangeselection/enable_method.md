@@ -6,7 +6,7 @@ description: You can explore the enable method of Grid range selection in the do
 
 # enable()
 
-@short: activates the `RangeSelection` module
+@short: enables the RangeSelection module and activates the capabilities of range selection in Grid
 
 ### Usage
 
