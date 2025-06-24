@@ -86,7 +86,7 @@ Data from the clipboard is pasted into the range defined by `rangeSelection`. Th
 
 The repetition of elements follows the order of copying, starting from the first cell.
 
-### Copying cells depending on the column type
+### Copying/pasting cells depending on the column type
 
 Below you'll find the details on copying/pasting data depending on the type of a column.
 
@@ -163,7 +163,7 @@ These functions provide flexible control over how data is processed before copyi
 
 ### Examples
 
-**Numbers with a mask**
+**Copying numbers with a mask**
 
 This example demonstrates how to copy numbers while preserving the mask (e.g., `"1,234.56"` instead of `1234.56`).
 
@@ -178,7 +178,7 @@ copyModifier: (value, cell, cut) => {
 }
 ~~~
 
-**Combobox with displayed text**
+**Copying the displayed text of the Combobox option**
 
 This example shows how to copy the combobox option text (`"Option 1"`) instead of the `id` (`"1"`).
 
@@ -193,7 +193,7 @@ copyModifier: (value, cell, cut) => {
 }
 ~~~
 
-**Dates with validation**
+**Pasting dates with validation**
 
 This example demonstrates how to transform a date from `"11/04/2025"` to `"2025-04-11"` during pasting and ensure it is valid.
     
@@ -215,7 +215,7 @@ pasteModifier: (value, cell) => {
 }
 ~~~
 
-**PatternMask during copying**
+**Removing `patternMask` during copying**
 
 This example shows how to remove mask formatting (e.g., copy `"1234567890"` instead of `"+1 (234) 567-89-0"`).
 
