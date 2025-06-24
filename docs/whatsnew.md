@@ -70,6 +70,43 @@ Released on June X, 2025
 - [History. Configuration](https://snippet.dhtmlx.com/m88562wf)
 
 
+## Version 9.1.6
+
+Released on June 23, 2025
+
+### Fixes
+
+- Chart. The issue with displaying of the Treemap chart with groups
+- Grid. The `cellValue` parameter of the column `template` property has different values depending on whether a column is editable
+- Grid. The issue with the tooltip showing in case of a custom HTML content taking the full cell's space
+- Grid. The `textarea` editor saves changes made in a cell on closing instead of rendering the initial value  
+
+## Version 9.1.5 
+
+Released on June 5, 2025
+
+### Fixes
+
+- DataCollection/TreeCollection. Fixed the [`sort()`](data_collection/api/datacollection_sort_method.md) method in the `smartSorting` mode when sorting by more than three parameters
+- Grid. The `multiselect/select` editor passes the id instead of the value, while exporting data to an .xslx file
+- Grid. Sorting by the third column disregards the prior two-column sort order
+
+## Version 9.1.4 
+
+Released on June 3, 2025
+
+### Fixes
+
+- Grid. A critical error during cell re-editing after unmounting the component
+- Grid. The value is not saved during manual editing of DateEditor
+- Grid. The issue with group headers rendering the ids instead of values
+- Grid. The localization issue
+- Grid. Incorrect displaying of a Japanese (Kanji/Kana) text without spaces in a single cell 
+- Grid. Issues in the functionality of the `autoHeight` configuration property
+- Grid. Incorrect work of the `adjust` property of a column 
+- Layout. A console error on collapsing the first cell
+- TreeCollection. Reloading data after component initialization
+
 ## Version 9.1.3 
 
 Released on April 3, 2025
