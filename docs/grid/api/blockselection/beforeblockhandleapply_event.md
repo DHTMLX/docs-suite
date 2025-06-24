@@ -22,21 +22,33 @@ beforeBlockHandleApply: (
 @params:
 The callback of the event is called with the following parameters:
 
-- `startCell` - an object that contains the initial cell of the selection, includes the following properties: 
-    - `row` - the row configuration object 
-    - `column`- the column configuration object 
-- `endCell` - an object that contains the end cell of the selection, includes the following properties: 
-    - `row` - the row configuration object 
-    - `column`- the column configuration object 
-- `dragDirection` - determines the direction of movement of the focused cell
-- `event` - the browser event: `MouseEvent` or `TouchEvent`
+<table>
+    <tbody>
+        <tr>
+            <td><b>startCell</b></td>
+            <td>(<i>object</i>) an object that contains the initial cell of the selection, includes the following properties:<ul><li><b>`row`</b> - (<i>object</i>) the row configuration object </li><li><b>`column`</b> - (<i>object</i>) the column configuration object</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>endCell</b></td>
+            <td>(<i>object</i>) an object that contains the end cell of the selection, includes the following properties:<ul><li><b>`row`</b> - (<i>object</i>) the row configuration object </li><li><b>`column`</b> - (<i>object</i>) the column configuration object</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>dragDirection</b></td>
+            <td>(<i>string</i>) determines the direction of movement of the focused cell: `"up"` | `"down"` | `"left"` | `"right"` | `null`</td>
+        </tr>
+        <tr>
+            <td><b>event</b></td>
+            <td>(<i>Event</i>) the browser event: `MouseEvent` or `TouchEvent`</td>
+        </tr>
+    </tbody>
+</table>
 
 @returns:
 Return `false` to cancel the action; otherwise, `true`.
 
 @example:
-grid.block.events.on("beforeBlockHandleApply", (startCell, endCell, dragDirection) => {
-    if (dragDirection === "right" | dragDirection === "left") {
+grid.block.events.on("beforeBlockHandleApply", (startCell, endCell, dir) => {
+    if (dir === "right" | dir === "left") {
         console.log("Horizontal change canceled");
         return false;
     }

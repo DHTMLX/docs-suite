@@ -15,7 +15,7 @@ blockHandleMouseDown: (event: MouseEvent | TouchEvent) => void;
 ~~~
 
 @params:
-The callback of the event is called with the following parameters:
+The callback of the event is called with the following parameter:
 
 - `event` - the browser event: `MouseEvent` or `TouchEvent`
 

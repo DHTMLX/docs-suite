@@ -23,17 +23,31 @@ beforeBlockSelectionMove: (
 @params:
 The callback of the event is called with the following parameters:
 
-- `startCell` - an object that contains the initial cell of the selection, includes the following properties: 
-    - `row` - the row configuration object 
-    - `column`- the column configuration object 
-- `nextCell` - an object that contains the next cell to which the boundary is moving or the end cell of the previously selected boundary during the handle movement, includes the following properties: 
-    - `row` - the row configuration object 
-    - `column`- the column configuration object 
-- `focusCell` - an object that contains the last focus cell (if the handle is used) or `null`. The cell object includes the following properties: 
-    - `row` - the row configuration object 
-    - `column`- the column configuration object 
-- `dragDirection` - determines the direction of movement of the focused cell
-- `event` - the browser event: `MouseEvent` or `TouchEvent`
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>startCell</b></td>
+            <td>(<i>object</i>) an object that contains the initial cell of the selection, includes the following properties:<ul><li><b>`row`</b> - (<i>object</i>) the row configuration object </li><li><b>`column`</b> - (<i>object</i>) the column configuration object</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>nextCell</b></td>
+            <td>(<i>object</i>) an object that contains the next cell to which the boundary is moving or the end cell of the previously selected boundary during the handle movement, includes the following properties: <ul><li><b>`row`</b> - (<i>object</i>) the row configuration object </li><li><b>`column`</b> - (<i>object</i>) the column configuration object</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>focusCell</b></td>
+            <td>(<i>object</i>) an object that contains the last focus cell (if the handle is used) or `null`, includes the following properties: <ul><li><b>`row`</b> - (<i>object</i>) the row configuration object </li><li><b>`column`</b> - (<i>object</i>) the column configuration object</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>dragDirection</b></td>
+            <td>(<i>string</i>) determines the direction of movement of the focused cell: `"up"` | `"down"` | `"left"` | `"right"` | `null`</td>
+        </tr>
+        <tr>
+            <td><b>event</b></td>
+            <td>(<i>Event</i>) the browser event: `MouseEvent` or `TouchEvent`</td>
+        </tr>
+    </tbody>
+</table>
 
 @returns:
 Return `false` to cancel the action; otherwise, `true`.
