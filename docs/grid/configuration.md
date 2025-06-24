@@ -2509,7 +2509,7 @@ const grid = new dhx.Grid("grid_container", {
 Since the `multiselection` configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
 A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select.
 
-### Managing range selection in Grid
+## Managing range selection in Grid
 
 :::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
@@ -2561,7 +2561,7 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 
 For information on using the Range Selection API, read the [Work with RangeSelection module](grid/usage_rangeselection.md) guide.
 
-### Managing block selection in Grid
+## Managing block selection in Grid
 
 :::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.

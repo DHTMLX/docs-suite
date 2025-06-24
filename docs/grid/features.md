@@ -295,7 +295,7 @@ In this section you will find the ways of working with selection functionality.
 | [Selection API](../../category/selection-api/)                                | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
 | [Keyboard navigation](../configuration/#arrow-shortcut-keys)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
 
-### How to work with range selection
+## How to work with range selection
 
 In this section you will get to know how to work with the range selection functionality.
 
@@ -306,7 +306,7 @@ In this section you will get to know how to work with the range selection functi
 | [Range Selection API](../../category/rangeselection-api/)                    | Learn how to use the API of the RangeSelection module to manage the range selection within Grid     |
 
 
-### How to work with block selection
+## How to work with block selection
 
 In this section you will get to know how to work with the block selection functionality.
 
