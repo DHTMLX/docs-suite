@@ -6,6 +6,10 @@ description: You can explore how to work with Grid in the documentation of the D
 
 # Work with Grid
 
+## Working with Grid in the TreeGrid mode
+
+For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.
+
 ## Working with columns and cells
 
 The API of DHTMLX Grid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
@@ -1213,7 +1217,7 @@ grid.destructor();
 
 For information on using Selection API, read [Work with Selection object](grid/usage_selection.md).
 
-## Using Range Selection API
+## Using RangeSelection API
 
 For information on using RangeSelection API, read [Work with RangeSelection Module](grid/usage_rangeselection.md).
 
@@ -1225,10 +1229,11 @@ For information on using BlockSelection API, read [Work with BlockSelection modu
 
 For information on using the Clipboard module in Grid, read [Work with Clipboard module](grid/usage_clipboard.md).
 
+## Working with DragPanel
+
+For information on using the DragPanel module in Grid, read [Work with DragPanel module](grid/usage_dragpanel.md).
+
 ## Working with History API
 
 For information on using the History API in Grid, read [Work with History module](grid/usage_history.md).
 
-## Working with Grid in the TreeGrid mode
-
-For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.
