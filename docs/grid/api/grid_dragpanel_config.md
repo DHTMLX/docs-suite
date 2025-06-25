@@ -52,9 +52,9 @@ The `dragPanel` property can be set in two ways:
 
 - as a *boolean* value it enables or disables the `dragPanel` module upon the component initialization
 - as an *object* it enables the module and allows defining additional configuration during initialization:
-	- `css` - specifies a custom CSS class for styling the drag panel
-	- `icon` - defines a custom icon for the drag handle
-	- `width` - sets the width of the drag panel in pixels
+	- `css` - (*string*) specifies a custom CSS class for styling the drag panel
+	- `icon` - (*string*) defines a custom icon for the drag handle
+	- `width` - (*number*) sets the width of the drag panel in pixels
 
 The following example demonstrates configuring the `DragPanel` module with custom styling and width:
 
@@ -87,7 +87,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid. DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
 
-**Related article:** [Using the DragPanel module](grid/configuration.md/#using-the-dragpanel-module)
+**Related articles:** 
+- [Adjusting DragPanel module](grid/configuration.md/#adjusting-dragpanel-module)
+- [Work with DragPanel module](grid/usage_dragpanel.md)
 
 
 @changelog: added in v9.2

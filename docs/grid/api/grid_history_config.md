@@ -42,8 +42,8 @@ const grid = new dhx.Grid("grid_container", {
 The `history` property can be set in two ways:
 - as a *boolean* value it enables or disables the `History` module upon the component initialization
 - as an *object* it enables the module and allows setting additional parameters:
-	- `limit` - the maximum number of actions stored in the history. When the limit is exceeded, the oldest actions are removed
-	- `disabled` - if `true`, the module is disabled on initialization, and no actions are recorded in the history
+	- `limit` - (*number*) the maximum number of actions stored in the history. When the limit is exceeded, the oldest actions are removed
+	- `disabled` - (*boolean*) if `true`, the module is disabled on initialization, and no actions are recorded in the history
 
 The example below demonstrates configuring the module with a history limit of 10 actions. The module is disabled on initialization:
 
@@ -68,6 +68,8 @@ grid.history.enable(); // enabling the module
 
 **Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
 
-**Related article:** [History of Grid actions](grid/configuration.md/#history-of-grid-actions)
+**Related articles:** 
+- [History of Grid actions](grid/configuration.md/#history-of-grid-actions)
+- [Work with History module](grid/usage_history.md)
 
 @changelog: added in v9.2

@@ -40,7 +40,7 @@ const grid = new dhx.Grid("grid_container", {
 @descr:
 The `rangeSelection` configuration object can have the following properties:
 
-- **disabled** - makes the module inactive upon initialization of the component
+- `disabled` - (*boolean*) makes the module inactive upon initialization of the component
 
 ~~~jsx {11,15}
 const grid = new dhx.Grid("grid_container", {
@@ -60,6 +60,8 @@ console.log(grid.range.isDisabled()); // -> `true` - module is inactive
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 ~~~
 
-**Related article:** [Managing RangeSelection in Grid](grid/configuration.md/#managing-range-selection-in-grid)
+**Related articles:** 
+- [Managing RangeSelection in Grid](grid/configuration.md/#managing-range-selection-in-grid)
+- [Work with RangeSelection module](grid/usage_rangeselection.md)
 
 @changelog: added in v9.2

@@ -44,12 +44,12 @@ Released on June X, 2025
 
 ### Fixes
 
-- DragManager. Solving the problem of incorrectly determining the position for dropping an element during the Drag&Drop operation (child elements) in the TreeGrid mode
-- DragManager. Solving the problem when moving a line to the header/footer area
-- DragManager. Solving the problem of determining the position for dropping above the first element
-- DragManager. Solving the problem associated with the absence or incorrect definition of the drop position for the default mode
-- DragManager. Fixed the `dragIn` event (the previous reset state was transmitted)
-- DragManager. Optimization of the `dragIn/dragOut` events (removed false positives)
+- DragManager. Incorrect determining the position for dropping an element during the Drag&Drop operation (child elements) in the TreeGrid mode
+- DragManager. The issue with moving a line to the header/footer area
+- DragManager. The problem with determining the position for dropping above the first element
+- DragManager. The issue associated with the absence or incorrect definition of the drop position for the default mode
+- DragManager. The issue with the `dragIn` event (the previous reset state was transmitted)
+- DragManager. The `dragIn/dragOut` events are optimized (false positives are removed)
 - Grid. The issue with falsy selection of frozen cells while selecting unfrozen cells
 - Grid. The issue with dragging unselected items
 - Grid. Sorting of the Date string (ISO) values results in the invalid format error

@@ -2185,7 +2185,7 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-### Adjusting the DragPanel module
+### Adjusting DragPanel module
 
 :::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
@@ -2234,10 +2234,10 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-You can specify additional configuration options for the `DragPanel` module while initializing the component. For this, you need to set the `dragPanel` property as an object. The following options are available:
-    - `css` - specifies a custom CSS class for styling the drag panel
-    - `icon` - defines a custom icon for the drag handle
-    - `width` - sets the width of the drag panel in pixels
+You can specify additional configuration options for the `DragPanel` module while initializing the component. For this, you need to set the `dragPanel` property as an *object*. The following options are available:
+    - `css` - (*string*) specifies a custom CSS class for styling the drag panel
+    - `icon` - (*string*) defines a custom icon for the drag handle
+    - `width` - (*number*) sets the width of the drag panel in pixels
 
 The following example demonstrates configuring the `DragPanel` module with custom styling and width:
 
@@ -2537,7 +2537,7 @@ The `rangeSelection` property can be set in two ways:
 
 - as a *boolean* value it enables or disables the range selection module upon the component initialization
 - as an *object* it enables the module and allows setting additional configuration options during the component initialization. The following options are available:
-    - **disabled** - makes the module inactive upon initialization of the component 
+    - `disabled` - (*boolean*) makes the module inactive upon initialization of the component 
 
 The example below demonstrates interaction with the RangeSelection module's API when range selection is configured to be inactive on the component initialization.
 
@@ -2594,19 +2594,19 @@ The `blockSelection` property can be set in two ways:
     <tbody>
         <tr>
             <td><b>disabled</b></td>
-            <td>disables the module on startup, `false` by default</td>
+            <td>(<i>boolean</i>) disables the module on startup, `false` by default</td>
         </tr>
         <tr>
             <td><b>mode</b></td>
-            <td>the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
+            <td>(<i>string</i>) the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
         </tr>
         <tr>
             <td><b>handle</b></td>
-            <td>enables the handle for resizing. Can be set as a *boolean* value or as an *object*, `true` by default. <br>As an *object* can contain the following properties:<ul><li><b>allowAxis</b> - restricts the handle movement: `"x"` (horizontal), `"y"` (vertical), `"xy"` (both directions). `"xy"` by default</li><li><b>handler</b> - a *function* to process the handle actions or *boolean* to enable/disable. As a *function*, the property takes the following parameters:</li><ul><li><b>cell</b> - the object of the current cell. Contains the following properties:</li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>array</b> - an array of all selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>range</b> - an array of pre-selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>dir</b> - the direction of cells selection: "up" | "down" | "right" | "left"</li></ul><ul><li><b>index</b> - the index of the iterated cell</li></ul><ul><li><b>grid</b> - the `dhx.Grid` component object</li></ul></ul></td>
+            <td>(<i>boolean | object</i>) enables the handle for resizing or provides additional configuration options, `true` by default. As an *object* can contain the following properties:<ul><li><b>allowAxis</b> - (<i>string</i>) restricts the handle movement: `"x"` (horizontal), `"y"` (vertical), `"xy"` (both directions). `"xy"` by default</li><li><b>handler</b> - (<i>function | boolean</i>) a *function* to process the handle actions or *boolean* to enable/disable. As a *function*, the property takes the following parameters:</li><ul><li><b>cell</b> - (<i>object</i>) the object of the current cell. Contains the following properties:</li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>array</b> - (<i>array</i>) an array of all selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>range</b> - (<i>array</i>) an array of pre-selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>dir</b> - (<i>string</i>) the direction of cells selection: "up" | "down" | "right" | "left"</li></ul><ul><li><b>index</b> - (<i>number</i>) the index of the iterated cell</li></ul><ul><li><b>grid</b> - (<i>object</i>) the `dhx.Grid` component object</li></ul>The <b>handler</b> function may return an <i>object with the history of Grid actions</i>. The returned object contains the following properties:<ul><li><b>prev</b> - the previous cell value</li><li><b>current</b> - the new cell value</li></ul></ul></td>
         </tr>
         <tr>
             <td><b>area</b></td>
-            <td>enables the display of the selection area, `true` by default</td>
+            <td>(<i>boolean</i>) enables the display of the selection area, `true` by default</td>
         </tr>
     </tbody>
 </table>
@@ -2690,9 +2690,9 @@ The `clipboard` property can be set in two ways:
 
 - as a *boolean* value it enables or disables the `clipboard` module upon the component initialization
 - as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md/#using-formatter-functions) for data processing. The following properties are available:
-    - `copyModifier` - modifies data before copying to the clipboard. Accepts as parameters the cell value, the cell object, and the `cut` flag (set to `true`, if it's a cut operation)
-    - `cutModifier` - modifies the cell data before cutting (before clearing the cell). Accepts as parameters the cell value and the cell object
-    - `pasteModifier` - modifies data from the clipboard before pasting into a cell. Accepts as parameters the cell value and the cell object
+    - `copyModifier` - (*function*) modifies data before copying to the clipboard. Accepts as parameters the cell value, the cell object, and the `cut` flag (set to `true`, if it's a cut operation)
+    - `cutModifier` - (*function*) modifies the cell data before cutting (before clearing the cell). Accepts as parameters the cell value and the cell object
+    - `pasteModifier` - (*function*) modifies data from the clipboard before pasting into a cell. Accepts as parameters the cell value and the cell object
 
 The example below demonstrates the clipboard configuration with all the modifiers in use:
 
@@ -2746,8 +2746,8 @@ const grid = new dhx.Grid("grid_container", {
 The `history` property can be set in two ways:
 - as a *boolean* value it enables or disables the `History` module upon the component initialization
 - as an *object* it enables the module and allows setting additional parameters:
-    - `limit` - the maximum number of actions stored in the history. When the limit is exceeded, the oldest actions are removed
-    - `disabled` - if `true`, the module is disabled on initialization, and no actions are recorded in the history
+    - `limit` - (*number*) the maximum number of actions stored in the history. When the limit is exceeded, the oldest actions are removed
+    - `disabled` - (*boolean*) if `true`, the module is disabled on initialization, and no actions are recorded in the history
 
 The example below demonstrates configuring the module with a history limit of 10 actions. The module is disabled on initialization:
 

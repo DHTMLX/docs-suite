@@ -434,14 +434,7 @@ The `History` module records actions performed through the user interface, inclu
 
 - cells editing: changes made using the cell editor
 - cells clearing: clearing the contents of cells using keyboard navigation
-- handle modifications: if the handle is used in the [`BlockSelection` mode](grid/configuration.md/#managing-block-selection-in-grid) and the `handler` function returns an object with the `prev` (previous value) and `current` (current value) fields, these changes are added to the history:
-
-~~~jsx
-interface IHandleHistory {
-    prev: any; // the previous value
-    current: any; // the current value
-}
-~~~
+- handle modifications: if the handle is used in the [`BlockSelection` mode](grid/configuration.md/#managing-block-selection-in-grid) and the [`handler`](grid/api/grid_blockselection_config.md/#parameters) function returns an object with the `prev` (the previous cell value) and `current` (the new cell value) fields, these changes are added to the history
 
 The actions not related to the UI (e.g., programmatic changes via `grid.data`) are not automatically recorded, but can be manually added using the [`add()`](grid/api/history/add_method.md) method.
 

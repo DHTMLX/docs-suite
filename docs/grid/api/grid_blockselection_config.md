@@ -31,7 +31,7 @@ blockSelection?:
                     dir: "up" | "down" | "right" | "left";
                     index: number;
                     grid: IProGrid;
-                }) => void);
+                }) => { prev: any; current: any } | void);
         };
         area?: boolean;
     };
@@ -64,19 +64,19 @@ The `blockSelection` property can be set in two ways:
     <tbody>
         <tr>
             <td><b>disabled</b></td>
-            <td>disables the module on startup, `false` by default</td>
+            <td>(<i>boolean</i>) disables the module on startup, `false` by default</td>
         </tr>
         <tr>
             <td><b>mode</b></td>
-            <td>the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
+            <td>(<i>string</i>) the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
         </tr>
         <tr>
             <td><b>handle</b></td>
-            <td>enables the handle for resizing. Can be set as a *boolean* value or as an *object*, `true` by default. <br>As an *object* can contain the following properties:<ul><li><b>allowAxis</b> - restricts the handle movement: `"x"` (horizontal), `"y"` (vertical), `"xy"` (both directions). `"xy"` by default</li><li><b>handler</b> - a *function* to process the handle actions or *boolean* to enable/disable. As a *function*, the property takes the following parameters:</li><ul><li><b>cell</b> - the object of the current cell. Contains the following properties:</li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>array</b> - an array of all selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>range</b> - an array of pre-selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>dir</b> - the direction of cells selection: "up" | "down" | "right" | "left"</li></ul><ul><li><b>index</b> - the index of the iterated cell</li></ul><ul><li><b>grid</b> - the `dhx.Grid` component object</li></ul></ul></td>
+            <td>(<i>boolean | object</i>) enables the handle for resizing or provides additional configuration options, `true` by default. As an *object* can contain the following properties:<ul><li><b>allowAxis</b> - (<i>string</i>) restricts the handle movement: `"x"` (horizontal), `"y"` (vertical), `"xy"` (both directions). `"xy"` by default</li><li><b>handler</b> - (<i>function | boolean</i>) a *function* to process the handle actions or *boolean* to enable/disable. As a *function*, the property takes the following parameters:</li><ul><li><b>cell</b> - (<i>object</i>) the object of the current cell. Contains the following properties:</li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>array</b> - (<i>array</i>) an array of all selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>range</b> - (<i>array</i>) an array of pre-selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>dir</b> - (<i>string</i>) the direction of cells selection: "up" | "down" | "right" | "left"</li></ul><ul><li><b>index</b> - (<i>number</i>) the index of the iterated cell</li></ul><ul><li><b>grid</b> - (<i>object</i>) the `dhx.Grid` component object</li></ul>The <b>handler</b> function may return an <i>object with the history of Grid actions</i>. The returned object contains the following properties:<ul><li><b>prev</b> - the previous cell value</li><li><b>current</b> - the new cell value</li></ul></ul></td>
         </tr>
         <tr>
             <td><b>area</b></td>
-            <td>enables the display of the selection area, `true` by default</td>
+            <td>(<i>boolean</i>) enables the display of the selection area, `true` by default</td>
         </tr>
     </tbody>
 </table>
@@ -198,7 +198,9 @@ function blockSelectionHandler({ cell, array, index, grid }) {
 
 **Related sample:** [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/8kttktiy)
 
-**Related article:** [Managing block selection in Grid](grid/configuration.md/#managing-block-selection-in-grid)
+**Related articles:** 
+- [Managing block selection in Grid](grid/configuration.md/#managing-block-selection-in-grid)
+- [Work with BlockSelection module](grid/usage_blockselection.md)
 
 @changelog: added in v9.2
 
