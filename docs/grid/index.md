@@ -28,6 +28,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Gr
 - To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid)
 - To work with data of Grid check [DataCollection API](data_collection.md)
+- To work with data of Grid in the TreeGrid mode check [TreeCollection API](tree_collection.md)
 
 ## Guides
 
@@ -35,10 +36,16 @@ Says how to build a standard grid on a page and bring it to life: configure with
 
 - [](grid/initialization.md)
 - [](grid/configuration.md)
+- [](grid/localization.md)
 - [](grid/data_loading.md)
 - [](grid/usage.md)
 - [](grid/treegrid_mode.md) 
 - [](grid/usage_selection.md)
+- [](grid/usage_rangeselection.md)
+- [](grid/usage_blockselection.md)
+- [](grid/usage_clipboard.md)
+- [](grid/usage_dragpanel.md)
+- [](grid/usage_history.md)
 - [](grid/customization.md)
 - [](grid/events.md)
 

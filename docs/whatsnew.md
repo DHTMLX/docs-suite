@@ -50,9 +50,10 @@ Released on June X, 2025
 - DragManager. The issue associated with the absence or incorrect definition of the drop position for the default mode
 - DragManager. The issue with the `dragIn` event (the previous reset state was transmitted)
 - DragManager. The `dragIn/dragOut` events are optimized (false positives are removed)
-- Grid. The issue with falsy selection of frozen cells while selecting unfrozen cells
+- Grid. The issue with falsy selection of fixed cells while selecting unfrozen cells
 - Grid. The issue with dragging unselected items
 - Grid. Sorting of the Date string (ISO) values results in the invalid format error
+- Grid. Export. Grid. Double quotes in the cell value are escaped in the exported Excel
 
 ### New samples
 
