@@ -2980,25 +2980,25 @@ DHTMLX Grid provides the keyboard navigation that will help you manipulate your 
 
 ### Default shortcut keys
 
-There are four navigation keys that Grid enables by default:
+The navigation shortcut keys and keys combinations that Grid enables by default are provided below:
 
 <table>
     <tbody>
         <tr>
             <td><b>PageUp</b></td>
-            <td>scroll Grid up to the height of the visible content (without change of the selected cell)</td>
+            <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
         </tr>
         <tr>
             <td><b>PageDown</b></td>
-            <td>scroll Grid down to the height of the visible content (without change of the selected cell)</td>
+            <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
         </tr>
         <tr>
             <td><b>Home</b></td>
-            <td>navigate to the beginning of the Grid content (without change of the selected cell)</td>
+            <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
         </tr>
         <tr>
             <td><b>End</b></td>
-            <td>navigate to the end of the Grid content (without change of the selected cell)</td>
+            <td>navigates to the end of the Grid content (without change of the selected cell)</td>
         </tr>
         <tr>
             <td><b>Ctrl+Enter</b></td>
@@ -3021,9 +3021,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-### Arrow shortcut keys
+### Shortcut keys for moving selection between cells
 
-In case you want to enable the arrow keys that allow moving the selection between cells, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
+In case you want to enable the shortcut keys that allow moving the selection between cells, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
 
 ~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
@@ -3038,95 +3038,95 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-The list of the arrow shortcut keys:
+The list of the shortcut keys and their combinations used for moving selection between cells is the following:
 
 <table>
     <tbody>
         <tr>
             <td><b>ArrowUp</b></td>
-            <td>move selection to the previous vertical cell</td>
+            <td>moves selection to the previous vertical cell</td>
         </tr>
         <tr>
             <td><b>ArrowDown</b></td>
-            <td>move selection to the next vertical cell</td>
+            <td>moves selection to the next vertical cell</td>
         </tr>
         <tr>
             <td><b>ArrowLeft</b></td>
-            <td>move selection to the previous horizontal cell</td>
+            <td>moves selection to the previous horizontal cell</td>
         </tr>
         <tr>
             <td><b>ArrowRight</b></td>
-            <td>move selection to the next horizontal cell</td>
+            <td>moves selection to the next horizontal cell</td>
         </tr>
         <tr>
             <td><b>Ctrl+ArrowUp</b></td>
-            <td>move selection to the first vertical cell</td>
+            <td>moves selection to the first vertical cell</td>
         </tr>
         <tr>
             <td><b>Ctrl+ArrowDown</b></td>
-            <td>move selection to the last vertical cell</td>
+            <td>moves selection to the last vertical cell</td>
         </tr>
         <tr>
             <td><b>Ctrl+ArrowLeft</b></td>
-            <td> move selection to the first horizontal cell</td>
+            <td> moves selection to the first horizontal cell</td>
         </tr>
         <tr>
             <td><b>Ctrl+ArrowRight</b></td>
-            <td> move selection to the last horizontal cell</td>
+            <td> moves selection to the last horizontal cell</td>
         </tr>
         <tr>
             <td><b>Tab</b></td>
-            <td> move selection to the next horizontal cell or the first cell of the next row</td>
+            <td> moves selection to the next horizontal cell or the first cell of the next row</td>
         </tr>
         <tr>
             <td><b>Shit+Tab</b></td>
-            <td> move selection to the previous horizontal cell or to the first cell of the previous row</td>
+            <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
         </tr>
     </tbody>
 </table>
 
-The arrow shortcut keys listed below do not work when the `selection` property is set to *"complex"*. Use another mode (*"cell" or "row"*) in case you want to activate these navigation keys:
+The combinations of the shortcut keys listed below do not work when the `selection` property is set to *"complex"*. Use another mode (*"cell" or "row"*) in case you want to activate these navigation keys:
 
 <table>
     <tbody>
         <tr>
             <td><b>Shift+ArrowUp</b></td>
-            <td>move selection to the previous vertical cell with the change of the selected cells</td>
+            <td>moves selection to the previous vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
             <td><b>Shift+ArrowDown</b></td>
-            <td>move selection to the next vertical cell with the change of the selected cells</td>
+            <td>moves selection to the next vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
             <td><b>Shift+ArrowLeft</b></td>
-            <td>move selection to the previous horizontal cell with the change of the selected cells</td>
+            <td>moves selection to the previous horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
             <td><b>Shift+ArrowRight</b></td>
-            <td>move selection to the next horizontal cell with the change of the selected cells</td>
+            <td>moves selection to the next horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
             <td><b>Ctrl+Shift+ArrowUp</b></td>
-            <td>move selection to the first vertical cell with the change of the selected cells</td>
+            <td>moves selection to the first vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
             <td><b>Ctrl+Shift+ArrowDown</b></td>
-            <td>move selection to the last vertical cell with the change of the selected cells</td>
+            <td>moves selection to the last vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
             <td><b>Ctrl+Shift+ArrowLeft</b></td>
-            <td>move selection to the first horizontal cell with the change of the selected cells</td>
+            <td>moves selection to the first horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
             <td><b>Ctrl+Shift+ArrowRight</b></td>
-            <td>move selection to the last horizontal cell with the change of the selected cells</td>
+            <td>moves selection to the last horizontal cell with the change of the selected cells</td>
         </tr>
     </tbody>
 </table>
 
 ### Shortcut keys for editing
 
-It is also possible to use shortcut keys for editing a cell in Grid by setting [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid.
+It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid.
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -3142,17 +3142,17 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-The list of the shortcut keys for editing:
+The list of the shortcut keys for editing is given below:
 
 <table>
     <tbody>
         <tr>
             <td><b>Enter</b></td>
-            <td>open the editor in the selected cell. If the editor is currently opened - close the editor and save changes</td>
+            <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes</td>
         </tr>
         <tr>
             <td><b>Escape</b></td>
-            <td>close the editor of the selected cell without saving</td>
+            <td>closes the editor of the selected cell without saving</td>
         </tr>
         <tr>
             <td><b>Delete</b></td>
@@ -3161,7 +3161,7 @@ The list of the shortcut keys for editing:
     </tbody>
 </table>
 
-### Selecting ranges of cells
+### Shortcut keys for selecting ranges of cells
 
 If you need to use the keyboard navigation for selecting ranges of cells via the user interface, you should enable the [`BlockSelection`](grid/usage_blockselection.md) module in the Grid configuration.
 
@@ -3169,12 +3169,95 @@ If you need to use the keyboard navigation for selecting ranges of cells via the
 Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
 :::
 
-- The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets:
-    - **Arrows** (`ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight`): moves the focus to the adjacent cell, setting the initially selected cell if no selection is active.
-    - **Shift + Arrows**: extends the selected range from the current initial cell in the direction of the pressed arrow.
-    - **Ctrl + Arrows**: extends the selected range to the last cell in the direction of the pressed arrow.
+The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets. The following shortcut keys and their combinations are available: 
 
-- The **Shift + click** combination sets the end cell of the range, extending the selection from the current initial cell.
+<table>
+    <tbody>
+        <tr>
+            <td><b>ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the previous vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the next vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the previous horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the next horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+         <tr>
+            <td><b>Shift+ArrowUp</b></td>
+            <td>extends the selected range from the current initial cell to the previous vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowDown</b></td>
+            <td>extends the selected range from the current initial cell to the next vertical cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowLeft</b></td>
+            <td>extends the selected range from the current initial cell to the previous horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowRight</b></td>
+            <td>extends the selected range from the current initial cell to the next horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the last horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td>extends the selected range to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td>extends the selected range to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td> extends the selected range to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td> extends the selected range to the last horizontal cell</td>
+        </tr>
+    </tbody>
+</table>
 
-- The **Delete** shortcut key allows clearing the selected cells when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode.  
+The following shortcut key and mouse combination is available:
 
+<table>
+    <tbody>
+        <tr>
+            <td><b>Shift + click</b></td>
+            <td>sets the end cell of the range, extending the selection from the current initial cell</td>
+        </tr>
+    </tbody>
+</table>
+
+The following shortcut key is available when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode:
+
+ <table>
+    <tbody>
+        <tr>
+            <td><b>Delete</b></td>
+            <td>allows clearing the selected cells</td>
+        </tr>
+    </tbody>
+</table>

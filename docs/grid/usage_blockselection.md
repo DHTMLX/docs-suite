@@ -123,14 +123,99 @@ The main points of cell selection while using the `BlockSelection` module are gi
 Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
 :::
 
-- The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets:
-	- **Arrows** (`ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight`): moves the focus to the adjacent cell, setting the initially selected cell if no selection is active.
-	- **Shift + Arrows**: extends the selected range from the current initial cell in the direction of the pressed arrow.
-	- **Ctrl + Arrows**: extends the selected range to the last cell in the direction of the pressed arrow.
+The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets. The following shortcut keys and their combinations are available: 
 
-- The **Shift + click** combination sets the end cell of the range, extending the selection from the current initial cell.
+<table>
+    <tbody>
+        <tr>
+            <td><b>ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the previous vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the next vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the previous horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the next horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+         <tr>
+            <td><b>Shift+ArrowUp</b></td>
+            <td>extends the selected range from the current initial cell to the previous vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowDown</b></td>
+            <td>extends the selected range from the current initial cell to the next vertical cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowLeft</b></td>
+            <td>extends the selected range from the current initial cell to the previous horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowRight</b></td>
+            <td>extends the selected range from the current initial cell to the next horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the last horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td>extends the selected range to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td>extends the selected range to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td> extends the selected range to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td> extends the selected range to the last horizontal cell</td>
+        </tr>
+    </tbody>
+</table>
 
-- The **Delete** shortcut key allows clearing the selected cells when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode. 
+The following shortcut key and mouse combination is available:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>Shift + click</b></td>
+            <td>sets the end cell of the range, extending the selection from the current initial cell</td>
+        </tr>
+    </tbody>
+</table>
+
+The following shortcut key is available when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode:
+
+ <table>
+    <tbody>
+        <tr>
+            <td><b>Delete</b></td>
+            <td>allows clearing the selected cells</td>
+        </tr>
+    </tbody>
+</table>
+
 It is possible to cancel the cells clearing by using the [`beforeKeyDown`](grid/api/grid_beforekeydown_event.md) event:
 
 ~~~jsx
