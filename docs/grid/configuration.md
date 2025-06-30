@@ -3163,7 +3163,7 @@ The list of the shortcut keys for editing is given below:
 
 ### Shortcut keys for selecting ranges of cells
 
-If you need to use the keyboard navigation for selecting ranges of cells via the user interface, you should enable the [`BlockSelection`](grid/usage_blockselection.md) module in the Grid configuration.
+If you need to use the keyboard navigation for selecting ranges of cells via the user interface, you should enable the [`BlockSelection` module](grid/usage_blockselection.md) in the Grid configuration.
 
 :::note
 Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
