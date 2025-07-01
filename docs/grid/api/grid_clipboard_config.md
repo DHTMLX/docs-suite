@@ -74,7 +74,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
+**Related sample**: [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
 
 **Related articles:** 
 - [Clipboard](grid/configuration.md/#clipboard)

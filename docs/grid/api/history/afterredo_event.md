@@ -35,7 +35,7 @@ grid.history.events.on("afterRedo", (action) => {
 
 @descr:
 
-**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
 **Related article**: [Applying undo/redo operations to Grid history actions](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions)
 

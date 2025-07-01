@@ -58,7 +58,7 @@ grid.range.setRange({ xStart: "b", yStart: "1" }); // setting a new range is can
 **Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md),
 [`afterSetRange`](grid/api/rangeselection/aftersetrange_event.md)
 
-**Related sample**: [Grid. BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+**Related sample**: [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
 @changelog:
 added in v9.2

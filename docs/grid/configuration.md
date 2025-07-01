@@ -2470,10 +2470,6 @@ If you use the GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to
 **Note**, to be able to drag-n-drop a column and (or) multiple rows, you need to use PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-![](../assets/grid/dnd_treegrid_mode.png)
-
-**Related sample**: [Grid. Drag-and-Drop in TreeGrid mode](https://snippet.dhtmlx.com/0tuk0y5f)
-
 ### Drag-n-drop inside the grid
 
 It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"`](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
@@ -2599,7 +2595,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
+**Related sample**: [Grid (TreeGrid). DragPanel. Initialization](https://snippet.dhtmlx.com/uevdwjuo)
 
 The module is also automatically enabled if the [row Drag-and-Drop](#drag-n-drop) functionality is activated 
 (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
@@ -2853,7 +2849,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample:** [Grid. BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+**Related sample:** [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
 For information on using the Block Selection API, read the [Work with Block Selection module](grid/usage_blockselection.md) guide.
 
@@ -2915,7 +2911,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
+**Related sample**: [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
 
 For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
 
@@ -2970,7 +2966,7 @@ const grid = new dhx.Grid("grid_container", {
 grid.history.enable(); // enabling the module
 ~~~
 
-**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
 For information on working with the History API, read the [Work with History module](grid/usage_history.md) guide.
 

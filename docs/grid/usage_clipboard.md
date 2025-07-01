@@ -35,6 +35,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+**Related sample**: [Grid. Clipboard with notifications (messages)](https://snippet.dhtmlx.com/2nar7ocd)
+
 The `clipboard` property can be set as an *object* to enable the module and define the [modifier functions](#using-formatter-functions) for data processing: `copyModifier`, `cutModifier` and `pasteModifier`. Check the details below.
 
 ## Using events of the Clipboard object
@@ -68,13 +70,13 @@ The `cut`/`paste` operations will be blocked in the [*grouping*](grid/usage.md/#
 
 The `Clipboard` module enables data exchange between multiple `dhx.Grid` instances or with external applications like Google Spreadsheets, Microsoft Excel, or similar widgets. Data is copied to the clipboard in a text format with tab separators (`\t`) between columns and newlines (`\n`) between rows, matching the standard table format.
 
-**Related sample**: [Grid. Clipboard. Employee data transfer between Grids](https://snippet.dhtmlx.com/z2i033yq)
+**Related sample**: [Grid. Clipboard. Copy/сut/paste between grids with validation](https://snippet.dhtmlx.com/q1wj772g)
+
+**Related sample**: [Grid. Clipboard between Grid and Spreadsheet](https://snippet.dhtmlx.com/hx69j42h)
 
 ### Integration with Google Spreadsheets
 
 Data from a grid can be copied to the clipboard and pasted directly into Google Spreadsheets. Similarly, data from Google Spreadsheets can be copied and pasted into the grid. Use [`pasteModifier`](#using-formatter-functions) to process data formats (e.g., converting strings to numbers).
-
-**Related sample**: [Grid. Clipboard. Clipboard operations between Grid and Spreadsheet](https://snippet.dhtmlx.com/mfmvbbda)
 
 ### Pasting from clipboard
 
@@ -139,6 +141,8 @@ const grid = new dhx.Grid("grid_container", {
     }
 });
 ~~~
+
+**Related sample**: [Grid. Clipboard between two Grids with modifiers](https://snippet.dhtmlx.com/h3hxcpog)
 
 These functions provide flexible control over how data is processed before copying, cutting, or pasting, which is particularly useful in the scenarios described below.
 
@@ -228,5 +232,5 @@ copyModifier: (value, cell, cut) => {
 }
 ~~~
 
-**Related sample**: [Grid. Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
+**Related sample**: [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
 

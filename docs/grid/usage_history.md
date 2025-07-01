@@ -33,6 +33,8 @@ const grid = new dhx.Grid("grid_container", {
 The `history` property can also be set as an *object* to enable the module and provide additional configuration options.
 Learn about configuration possibilities of the `History` module in the [Configuration](grid/configuration.md/#history-of-grid-actions) guide.
 
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
+
 ## Enabling/disabling History module
 
 You can activate the history module via the [`enable()`](grid/api/history/enable_method.md) method of the `history` object. The following example shows how the module is enabled after deactivation on initialization:
@@ -175,6 +177,8 @@ grid.history.add({
 const history = grid.history.getHistory();
 console.log(history.length); // ->1
 ~~~
+
+**Related sample:** [Grid. History. Adding a custom action](https://snippet.dhtmlx.com/i9rm4vsd)
 
 To make the process of adding new actions into the Grid history more flexible, you can apply the related events of the `history` object: 
 - [`beforeAdd`](grid/api/history/beforeadd_event.md)
@@ -442,7 +446,7 @@ The actions not related to the UI (e.g., programmatic changes via `grid.data`) a
 
 If the `limit` parameter is set in the [configuration of the `History` module](grid/api/grid_history_config.md), the history is limited to the specified number of actions. When the limit is exceeded, the oldest actions are automatically removed.
 
-**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
 ## Module disabling
 

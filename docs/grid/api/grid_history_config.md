@@ -66,7 +66,7 @@ const grid = new dhx.Grid("grid_container", {
 grid.history.enable(); // enabling the module
 ~~~
 
-**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
 **Related articles:** 
 - [History of Grid actions](grid/configuration.md/#history-of-grid-actions)

@@ -135,7 +135,7 @@ In this section you will get to know how to configure the drag-n-drop functional
 | [Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)           | Learn how to configure drag-n-drop between grids ([Example](https://snippet.dhtmlx.com/qx9a86ax))       |
 | [Drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows) | Learn how to allow end users to drag-n-drop several rows at once                                        |
 | [Copying of rows during drag-n-drop](../api/grid_dragcopy_config/)                 | Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/23slivyz)) |
-| [Using the DragPanel module](../usage_dragpanel/)           | Learn how to use the DragPanel module that provides additional functionality for moving rows in the Grid ([Example](https://snippet.dhtmlx.com/oyk02cr6)) |
+| [Using the DragPanel module](../usage_dragpanel/)           | Learn how to use the DragPanel module that provides additional functionality for moving rows in the Grid ([Example](https://snippet.dhtmlx.com/uevdwjuo)) |
 
 ## How to render custom statistics in the column header/footer and in the spans
 
@@ -312,7 +312,7 @@ In this section you will get to know how to work with the block selection functi
 
 | Topic                                                                         | Description                                                                                                                                                             |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuring block selection](../configuration/#managing-block-selection-in-grid) | Learn how to configure the block selection module within Grid ([Example](https://snippet.dhtmlx.com/8kttktiy))             |
+| [Configuring block selection](../configuration/#managing-block-selection-in-grid) | Learn how to configure the block selection module within Grid ([Example](https://snippet.dhtmlx.com/sryiguxu))             |
 | [Working with block selection](../usage_blockselection/)                     | Learn how to enable/disable block selection in Grid, check the main features of the BlockSelection module and explore how it interacts with other modules  |
 | [BlockSelection API](../../category/blockselection-api/)                    | Learn how to use API of the BlockSelection module to manage the block selection within Grid     |
 
@@ -322,7 +322,7 @@ In this section you will get to know how to work with the clipboard functionalit
 
 | Topic                                                                         | Description                                                                                                                                                             |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuring clipboard](../configuration/#clipboard) | Learn how to configure the Clipboard module within Grid ([Example](https://snippet.dhtmlx.com/1fnkhwm0))   |
+| [Configuring clipboard](../configuration/#clipboard) | Learn how to configure the Clipboard module within Grid ([Example](https://snippet.dhtmlx.com/dfj49xah))   |
 | [Working with clipboard](../usage_clipboard/)        | Learn how to enable the clipboard in Grid, check the main features and explore the peculiarities of using the Clipboard module  |
 | [Clipboard API](../../category/clipboard-events/)       | Learn how to use API of the Clipboard module to manage the clipboard operations within Grid     |
 
@@ -332,7 +332,7 @@ In this section you will get to know how to work with the history of Grid action
 
 | Topic                                                                         | Description                                                                                                                                                             |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuring history of Grid actions](../configuration/#history-of-grid-actions) | Learn how to configure the History module within Grid ([Example](https://snippet.dhtmlx.com/m88562wf)) |
+| [Configuring history of Grid actions](../configuration/#history-of-grid-actions) | Learn how to configure the History module within Grid ([Example](https://snippet.dhtmlx.com/vznpyeit)) |
 | [Working with history of actions](../usage_history/)        | Learn how to enable the history of actions in Grid, check the main features and explore the peculiarities of using the History module  |
 | [History API](../../category/history-api/)       | Learn how to use API of the History module to manage the history of operations within Grid     |
 

@@ -196,7 +196,7 @@ function blockSelectionHandler({ cell, array, index, grid }) {
 }
 ~~~
 
-**Related sample:** [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/8kttktiy)
+**Related sample:** [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/sryiguxu)
 
 **Related articles:** 
 - [Managing block selection in Grid](grid/configuration.md/#managing-block-selection-in-grid)

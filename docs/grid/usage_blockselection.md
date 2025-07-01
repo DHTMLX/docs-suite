@@ -35,6 +35,8 @@ const grid = new dhx.Grid("grid_container", {
 The `blockSelection` property can also be set as an *object* to enable the module and provide additional configuration options.
 Learn about configuration possibilities of the `BlockSelection` module in the [Configuration](grid/configuration.md/#managing-block-selection-in-grid) guide.
 
+**Related sample:** [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+
 ## Enabling/disabling BlockSelection module
 
 You can activate the block selection module via the [`enable()`](grid/api/blockselection/enable_method.md) method of the `block` object.
@@ -303,7 +305,7 @@ grid.block.events.on("blockSelectionValidate", (cell, handle, event) => {
 grid.range.setRange({ xStart: "b", xEnd: "d", yStart: "4", yEnd: "8" });
 ~~~
 
-**Related sample:** [Grid. BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+**Related sample:** [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
 #### Setting custom logic in the manual mode
 
@@ -449,7 +451,7 @@ function blockSelectionHandler({ cell, array, index, grid }) {
 }
 ~~~
 
-**Related sample:** [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/8kttktiy)
+**Related sample:** [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/sryiguxu)
 
 #### Selection styling
 
@@ -491,4 +493,4 @@ This example demonstrates how to customize the appearance of the selected range 
 </style>
 ~~~
 
-**Related sample:** [Grid. BlockSelection. Stylization of the area](https://snippet.dhtmlx.com/qr5xyqpu)
+**Related sample:** [Grid. BlockSelection. Styling (custom CSS)](https://snippet.dhtmlx.com/4k3x4bfm)

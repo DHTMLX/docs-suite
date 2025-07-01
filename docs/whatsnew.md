@@ -38,7 +38,7 @@ Released on June X, 2025
 
 ### Updates
 
-- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved. Check the [related sample](https://snippet.dhtmlx.com/0tuk0y5f) 
+- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved. Check the [related sample](https://snippet.dhtmlx.com/uevdwjuo) 
 - Grid. The [export to Excel](grid/usage.md/#exporting-data-to-excel) functionality is updated
 - Grid. The possibility to use keyboard navigation for [selecting ranges of cells](grid/configuration.md/#shortcut-keys-for-selecting-ranges-of-cells). The following shortcut keys and their combinations are available: 
 
@@ -150,15 +150,17 @@ The following shortcut key is available when the [`editable` mode](grid/api/grid
 
 #### Grid
 
-- [Drag-and-Drop in the TreeGrid mode](https://snippet.dhtmlx.com/0tuk0y5f)
-- [BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
-- [BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/8kttktiy)
-- [BlockSelection. Stylization of the area](https://snippet.dhtmlx.com/qr5xyqpu)
-- [Clipboard. Financial data with formatted copy/paste](https://snippet.dhtmlx.com/1fnkhwm0)
-- [Clipboard. Employee data transfer between Grids](https://snippet.dhtmlx.com/z2i033yq)
-- [Clipboard. Clipboard operations between Grid and Spreadsheet](https://snippet.dhtmlx.com/mfmvbbda)
-- [DragPanel. Initialization](https://snippet.dhtmlx.com/oyk02cr6)
-- [History. Configuration](https://snippet.dhtmlx.com/m88562wf)
+- [Grid (TreeGrid). DragPanel. Initialization](https://snippet.dhtmlx.com/uevdwjuo)
+- [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+- [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/sryiguxu)
+- [Grid. BlockSelection. Styling (custom CSS)](https://snippet.dhtmlx.com/4k3x4bfm)
+- [Grid. Clipboard with notifications (messages)](https://snippet.dhtmlx.com/2nar7ocd)
+- [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
+- [Grid. Clipboard. Copy/сut/paste between grids with validation](https://snippet.dhtmlx.com/q1wj772g)
+- [Grid. Clipboard between two Grids with modifiers](https://snippet.dhtmlx.com/h3hxcpog)
+- [Grid. Clipboard between Grid and Spreadsheet](https://snippet.dhtmlx.com/hx69j42h)
+- [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
+- [Grid. History. Adding a custom action](https://snippet.dhtmlx.com/i9rm4vsd)
 
 
 ## Version 9.1.6

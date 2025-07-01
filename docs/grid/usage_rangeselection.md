@@ -169,7 +169,7 @@ To make the process of selecting a range more flexible, you can apply the relate
 - [`afterSetRange`](grid/api/rangeselection/aftersetrange_event.md)
 - [`beforeSetRange`](grid/api/rangeselection/beforesetrange_event.md)
 
-**Related sample**: [Grid. BlockSelection in the "range" mode. Inventory selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+**Related sample**: [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
 ## Resetting the range selection
 

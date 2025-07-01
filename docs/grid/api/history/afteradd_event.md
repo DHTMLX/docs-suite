@@ -35,7 +35,7 @@ grid.history.events.on("afterAdd", (action) => {
 
 @descr:
 
-**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/m88562wf)
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
 **Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
 
