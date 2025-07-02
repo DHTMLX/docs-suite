@@ -39,7 +39,10 @@ Released on June X, 2025
 ### Updates
 
 - Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved. Check the [related sample](https://snippet.dhtmlx.com/uevdwjuo) 
-- Grid. The [export to Excel](grid/usage.md/#exporting-data-to-excel) functionality is updated
+- Grid. The [export to Excel](grid/usage.md/#exporting-data-to-excel) functionality is updated. The [Json2Excel](https://github.com/dhtmlx/json2excel) module is now used for exporting Grid data to Excel. Check the [Migration guide](migration.md/#91---92) for details
+- Grid. The [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the Export module gets two new properties:
+    - `tableName`- to set the name of a sheet with grid data in the Excel file
+    - `dateFormatMask` - to set the date format mask for Excel
 - Grid. The possibility to use keyboard navigation for [selecting ranges of cells](grid/configuration.md/#shortcut-keys-for-selecting-ranges-of-cells). The following shortcut keys and their combinations are available: 
 
 <table>
