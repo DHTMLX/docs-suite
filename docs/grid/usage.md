@@ -481,15 +481,14 @@ DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/d
 
 - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library
 - if you need to set a local path to the export module on your computer, specify the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method and set the path to the **worker.js** file like: `"../libs/json2excel/1.3/worker.js?vx"`. If the local path isn't set, the link to the file from CDN will be used
-- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module with the provided settings (all settings are optional)
+- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional)
 
 ~~~jsx
 grid.export.xlsx({
-    // a local path to the `worker.js` file of the Json2Excel library 
-    url: "../libs/json2excel/1.3/worker.js?vx", 
-    name: "my_file", // the name of a ready Excel file
-    tableName: "grid", // the name of a sheet with grid data in the Excel file
-    dateFormatMask: "mm.dd.yy" // the mask used for dates formatting in Excel
+    url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the export module
+    name: "my_file", // the name of a ready Excel file, "grid" by default
+    tableName: "grid", // the name of a sheet with grid data in the Excel file, "data" by default
+    dateFormatMask: "mm.dd.yy" // the date format mask for Excel, "dd/mm/yy" by default
 });
 ~~~
 
@@ -497,19 +496,19 @@ grid.export.xlsx({
 You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
 :::
 
-You can read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
+Read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
 
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
 #### Exporting data to CSV
 
-You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. 
+You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. The method takes an [object with export settings](grid/api/export/grid_csv_method.md) as a parameter (all settings are optional).
 
 ~~~jsx
 grid.export.csv({
-    name:"grid_data", // grid data will be exported to a CSV file named "grid_data"
-    rowDelimiter: "\t", // the tab delimiter will be used to separate rows
-    columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
+    name: "my_file", // the name of a ready CSV file, "grid" by default
+    rowDelimiter: "\t", // the delimiter used to separate rows, "\n" (newline) by default
+    columnDelimiter: ";" // the delimiter used to separate columns, "," (comma) by default
 });
 ~~~
 
@@ -519,14 +518,14 @@ The `csv()` method returns a CSV string with Grid data.
 
 #### Exporting data to PDF
 
-The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
+The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an [object with export settings](grid/api/export/grid_pdf_method.md) as a parameter (all settings are optional).
 
 ~~~jsx
 grid.export.pdf({
-    format: "A4",
-    scale: 0.75,
-    displayHeaderFooter: true,
-    theme: "dark",
+    format: "A4", // the format of the output file, "A4" by default
+    scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
+    displayHeaderFooter: true, // defines whether to display the header and footer, false by default
+    theme: "dark" // the exported theme, "light" by default
 });
 ~~~
 
@@ -534,11 +533,11 @@ grid.export.pdf({
 
 #### Exporting data to PNG
 
-The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
+The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an [object with export settings](grid/api/export/grid_png_method.md) as a parameter (all settings are optional).
 
 ~~~jsx
 grid.export.png({
-    theme: "dark",
+    theme: "dark" // the exported theme, "light" by default
 });
 ~~~
 
