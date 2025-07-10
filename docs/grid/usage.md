@@ -477,12 +477,15 @@ You can easily export data of Grid into the Excel, CSV, PDF, or PNG format.
 
 #### Exporting data to Excel
 
-DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. Thus, to have the possibility of exporting files you need to:
+Since v9.2 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. You can use either the public export server or a local export server. 
 
-- install the [Json2Excel](https://github.com/dhtmlx/json2excel) library
-- if you need to set a local path to the export module on your computer, specify the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method and set the path to the **worker.js** file like: `"../libs/json2excel/1.3/worker.js?vx"`. If the local path isn't set, the link to the file from CDN will be used
+Thus, to have the possibility of exporting files you need to:
+
 - call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional)
-
+    - if you use the public export server, you don't need to specify the link to it, since it is used by default
+    - if you use your own export server, you need to:
+        - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library 
+        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method 
 ~~~jsx
 grid.export.xlsx({
     url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the export module
@@ -492,13 +495,23 @@ grid.export.xlsx({
 });
 ~~~
 
-:::note
 You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
-:::
 
 Read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
 
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
+
+:::note
+The export module server used in the Suite versions up to v9.1 is still available. You can either set the path to the public export server as:
+
+~~~jsx
+grid.export.xlsx({
+    url: "//export.dhtmlx.com/excel"
+});
+~~~
+
+or provide a local path to the export module on your computer as a value of the `url` property of the export method.
+:::
 
 #### Exporting data to CSV
 
