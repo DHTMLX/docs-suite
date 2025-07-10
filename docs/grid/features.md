@@ -293,7 +293,7 @@ In this section you will find the ways of working with selection functionality.
 | [Enabling multiselection](../configuration/#multiple-selection-of-grid-cells) | Learn how to enable multi-row/multi-cell selection in Grid ([Example](https://snippet.dhtmlx.com/4nj0e9ye))                                                             |
 | [Working with selection](../usage_selection/)                                 | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell ([Example](https://snippet.dhtmlx.com/4nj0e9ye)) |
 | [Selection API](../../category/selection-api/)                                | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
-| [Keyboard navigation](../configuration/#arrow-shortcut-keys)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
+| [Keyboard navigation](../configuration/#shortcut-keys-for-moving-selection-between-cells)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
 
 ## How to work with range selection
 

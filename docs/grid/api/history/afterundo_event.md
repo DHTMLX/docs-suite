@@ -6,6 +6,10 @@ description: You can explore the afterUndo event of Grid history in the document
 
 # afterUndo
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered after successfully undoing an action
 
 @signature: {'afterUndo: (action: IAction) => void;'}

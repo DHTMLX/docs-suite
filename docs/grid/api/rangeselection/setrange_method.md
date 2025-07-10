@@ -6,6 +6,10 @@ description: You can explore the setRange method of Grid range selection in the 
 
 # setRange()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: sets the selection range
 
 ### Usage

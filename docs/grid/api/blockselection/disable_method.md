@@ -6,6 +6,10 @@ description: You can explore the disable method of Grid block selection in the d
 
 # disable()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: disables the BlockSelection module and resets processing of block selection in Grid
 
 @signature: {'disable(): void;'}

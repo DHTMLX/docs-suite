@@ -6,6 +6,10 @@ description: You can explore the beforePaste event of Grid clipboard in the docu
 
 # beforePaste
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires before pasting data from the clipboard
 
 ### Usage

@@ -6,6 +6,10 @@ description: You can explore the blockSelectionStart event of Grid block selecti
 
 # blockSelectionStart
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered when selection has been started
 
 ### Usage

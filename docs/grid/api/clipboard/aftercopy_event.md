@@ -6,6 +6,10 @@ description: You can explore the afterCopy event of Grid clipboard in the docume
 
 # afterCopy
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires after successfully copying or cutting data
 
 ### Usage

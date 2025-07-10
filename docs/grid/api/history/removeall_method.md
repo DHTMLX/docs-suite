@@ -6,6 +6,10 @@ description: You can explore the removeAll method of Grid history in the documen
 
 # removeAll()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: clears the entire Grid history and the redo stack
 
 :::note

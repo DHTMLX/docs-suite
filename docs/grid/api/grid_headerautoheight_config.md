@@ -6,7 +6,9 @@ description: You can explore the headerAutoHeight config of Grid in the document
 
 # headerAutoHeight
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: Optional. Allows adjusting the height of the header for the content to fit in
 

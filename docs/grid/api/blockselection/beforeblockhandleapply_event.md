@@ -6,6 +6,10 @@ description: You can explore the beforeBlockHandleApply event of Grid block sele
 
 # beforeBlockHandleApply
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered before applying the handle action
 
 ### Usage

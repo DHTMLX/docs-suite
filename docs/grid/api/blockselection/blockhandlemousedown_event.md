@@ -6,6 +6,10 @@ description: You can explore the blockHandleMouseDown event of Grid block select
 
 # blockHandleMouseDown
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered when clicking on the selection handle
 
 ### Usage

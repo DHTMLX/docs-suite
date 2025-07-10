@@ -6,6 +6,10 @@ description: You can explore the dragPanelItemMouseDown event of Grid drag panel
 
 # dragPanelItemMouseDown
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered when the mouse button is pressed on the drag panel item
 
 ### Usage

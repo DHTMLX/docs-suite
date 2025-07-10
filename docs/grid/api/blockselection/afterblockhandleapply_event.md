@@ -6,6 +6,10 @@ description: You can explore the afterBlockHandleApply event of Grid block selec
 
 # afterBlockHandleApply
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered after applying the handle action
 
 ### Usage

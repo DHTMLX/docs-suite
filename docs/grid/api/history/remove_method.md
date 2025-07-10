@@ -6,6 +6,10 @@ description: You can explore the remove method of Grid history in the documentat
 
 # remove()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: removes the last action from the Grid history
 
 :::note

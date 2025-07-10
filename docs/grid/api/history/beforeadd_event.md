@@ -6,6 +6,10 @@ description: You can explore the beforeAdd event of Grid history in the document
 
 # beforeAdd
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered before adding an action to the history
 
 @signature: {'beforeAdd: (action: IAction) => boolean | void;'}

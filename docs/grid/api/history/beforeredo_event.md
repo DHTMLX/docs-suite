@@ -6,6 +6,10 @@ description: You can explore the beforeRedo event of Grid history in the documen
 
 # beforeRedo
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered before redoing an action
 
 @signature: {'beforeRedo: (action: IAction) => boolean | void;'}

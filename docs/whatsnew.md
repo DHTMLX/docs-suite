@@ -10,9 +10,13 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.2 
 
-Released on June X, 2025
+Released on July X, 2025
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-9-2/" target="_blank">Review of the release on the blog</a>
+
+### Breaking changes
+
+This version brings some updates in the use of the export module used for [exporting Grid data to an Excel file](grid/usage.md/#exporting-data-to-excel). Check the [Migration](migration.md#91---92) guide to keep in step with the latest updates.
 
 ### New functionality
 
@@ -147,7 +151,9 @@ The following shortcut key is available when the [`editable` mode](grid/api/grid
 - Grid. The issue with falsy selection of fixed cells while selecting unfrozen cells
 - Grid. The issue with dragging unselected items
 - Grid. Sorting of the Date string (ISO) values results in the invalid format error
-- Grid. Export. Grid. Double quotes in the cell value are escaped in the exported Excel
+- Grid. Export. Double quotes in the cell value are escaped in the exported Excel
+- Grid. The issue with editor closing and saving the entered value on scrolling the grid
+- Grid. The `draggable:false` setting of a column affects the drag-n-drop of rows
 
 ### New samples
 
@@ -256,10 +262,18 @@ This version brings some updates in the API methods. Check the [Migration](migra
 
 ### New functionality
 
+#### DataCollection/TreeCollection
+
+- The new [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method to get the current state of data sorting (including sorting by multiple columns)
+
 #### Grid 
 
 - [Row expander](grid/configuration.md#row-expander) with the possibility to insert any Suite widget or HTML content (PRO version)
+    - new Grid configuration property: [`subRow`](grid/api/grid_subrow_config.md)
+    - new Grid configuration property: [`subRowConfig`](grid/api/grid_subrowconfig_config.md)
+    - new method: [`getSubRow()`](grid/api/grid_getsubrow_method.md)
 - [Multi-sorting](grid/usage.md#sorting-by-multiple-columns) functionality that allows sorting Grid by several columns (PRO version)
+    - new Grid configuration property: [`multiSort`](grid/api/grid_multisort_config.md)
 
 ### Fixes
 

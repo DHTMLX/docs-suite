@@ -6,6 +6,10 @@ description: You can explore the getHistory method of Grid history in the docume
 
 # getHistory()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: returns a copy of the array of all actions in the Grid history to prevent accidental modification of the internal structure
 
 @signature: {'getHistory(): IAction[];'}

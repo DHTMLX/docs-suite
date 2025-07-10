@@ -6,6 +6,10 @@ description: You can explore the copyError event of Grid clipboard in the docume
 
 # copyError
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires when an error occurs during copying or cutting (e.g., clipboard access is blocked)
 
 ### Usage

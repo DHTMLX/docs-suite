@@ -6,6 +6,10 @@ description: You can explore the afterBlockSelectionMove event of Grid block sel
 
 # afterBlockSelectionMove
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered after moving the selection boundary
 
 ### Usage

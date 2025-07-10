@@ -6,6 +6,10 @@ description: You can explore the isRanged method of Grid range selection in the 
 
 # isRanged()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: checks whether a cell is within the current range
 
 ### Usage

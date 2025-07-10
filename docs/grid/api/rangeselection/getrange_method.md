@@ -6,6 +6,10 @@ description: You can explore the getRange method of Grid range selection in the 
 
 # getRange()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: returns the current selection range 
 
 ### Usage

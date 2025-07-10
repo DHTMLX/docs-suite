@@ -6,6 +6,10 @@ description: You can explore the resetRange method of Grid range selection in th
 
 # resetRange()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: resets the current selection range
 
 ### Usage

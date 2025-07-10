@@ -6,6 +6,10 @@ description: You can explore the enable method of Grid history in the documentat
 
 # enable()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: enables the module, allowing the addition of new actions to the Grid history
 
 @signature: {'enable(): void;'}

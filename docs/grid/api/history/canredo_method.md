@@ -6,6 +6,10 @@ description: You can explore the canRedo method of Grid history in the documenta
 
 # canRedo()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: checks whether an action within the Grid history can be redone
 
 @signature: {'canRedo(): boolean;'}

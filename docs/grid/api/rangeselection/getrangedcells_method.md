@@ -6,6 +6,10 @@ description: You can explore the getRangedCells method of Grid range selection i
 
 # getRangedCells()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: returns an array of cells within the current range
 
 ### Usage

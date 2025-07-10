@@ -6,6 +6,10 @@ description: You can explore the error event of Grid history in the documentatio
 
 # error
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered when an error occurs
 
 :::note

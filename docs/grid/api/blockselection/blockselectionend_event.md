@@ -6,6 +6,10 @@ description: You can explore the blockSelectionEnd event of Grid block selection
 
 # blockSelectionEnd
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered when the selection has been completed
 
 ### Usage

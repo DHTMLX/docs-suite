@@ -6,6 +6,10 @@ description: You can explore the afterAdd event of Grid history in the documenta
 
 # afterAdd
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered after successfully adding an action to the history
 
 @signature: {'afterAdd: (action: IAction) => void;'}

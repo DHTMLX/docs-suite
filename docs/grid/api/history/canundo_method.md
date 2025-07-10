@@ -6,6 +6,10 @@ description: You can explore the canUndo method of Grid history in the documenta
 
 # canUndo()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: checks whether an action within the Grid history can be undone
 
 @signature: {'canUndo(): boolean;'}

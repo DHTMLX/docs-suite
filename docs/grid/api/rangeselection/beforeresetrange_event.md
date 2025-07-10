@@ -6,6 +6,10 @@ description: You can explore the beforeResetRange event of Grid range selection 
 
 # beforeResetRange
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires before resetting the range
 
 ### Usage

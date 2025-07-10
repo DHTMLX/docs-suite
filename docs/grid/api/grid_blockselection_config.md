@@ -6,7 +6,7 @@ description: You can explore the blockSelection config of Grid in the documentat
 
 # blockSelection
 
-:::tip Pro version only 
+:::tip pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 

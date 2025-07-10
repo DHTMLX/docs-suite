@@ -11,7 +11,10 @@ description: You can explore the height config of Grid in the documentation of t
 @signature: {'height?: number | "auto";'}
 
 @descr:
-{{pronote The **height: "auto"** option requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
+:::tip note
+The **height: "auto"** option requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @example:
 const grid = new dhx.Grid("grid_container", {

@@ -6,6 +6,10 @@ description: You can explore the beforeCopy event of Grid clipboard in the docum
 
 # beforeCopy
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires before copying or cutting data
 
 ### Usage

@@ -6,6 +6,10 @@ description: You can explore the afterRedo event of Grid history in the document
 
 # afterRedo
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered after successfully redoing an action
 
 @signature: {'afterRedo: (action: IAction) => void;'}

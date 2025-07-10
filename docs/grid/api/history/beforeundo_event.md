@@ -6,6 +6,10 @@ description: You can explore the beforeUndo event of Grid history in the documen
 
 # beforeUndo
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered before undoing an action
 
 @signature: {'beforeUndo: (action: IAction) => boolean | void;'}

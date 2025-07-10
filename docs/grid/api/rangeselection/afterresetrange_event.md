@@ -6,6 +6,10 @@ description: You can explore the afterResetRange event of Grid range selection i
 
 # afterResetRange
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires after a range has been successfully reset
 
 ### Usage

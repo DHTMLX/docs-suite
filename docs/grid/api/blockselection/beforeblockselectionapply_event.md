@@ -6,6 +6,10 @@ description: You can explore the beforeBlockSelectionApply event of Grid block s
 
 # beforeBlockSelectionApply
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered before applying the selection (e.g., to a range)
 
 ### Usage

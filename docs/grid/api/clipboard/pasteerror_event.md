@@ -6,6 +6,10 @@ description: You can explore the pasteError event of Grid clipboard in the docum
 
 # pasteError
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires when an error occurs during pasting (e.g., clipboard is empty or data is invalid)
 
 ### Usage

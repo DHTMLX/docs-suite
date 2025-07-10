@@ -6,6 +6,10 @@ description: You can explore the afterPaste event of Grid clipboard in the docum
 
 # afterPaste
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires after successfully pasting data
 
 ### Usage

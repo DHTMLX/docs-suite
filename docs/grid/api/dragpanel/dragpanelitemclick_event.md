@@ -6,6 +6,10 @@ description: You can explore the dragPanelItemClick event of Grid drag panel in 
 
 # dragPanelItemClick
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered when the drag panel item is clicked
 
 ### Usage

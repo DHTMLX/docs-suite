@@ -6,6 +6,10 @@ description: You can explore the isDisabled method of Grid block selection in th
 
 # isDisabled()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: returns the module's current state
 
 ### Usage

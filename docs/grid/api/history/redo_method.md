@@ -6,6 +6,10 @@ description: You can explore the redo method of Grid history in the documentatio
 
 # redo()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: reapplies the last undone action in the Grid history
 
 :::note

@@ -6,7 +6,7 @@ description: You can explore the autoHeight config of Grid in the documentation 
 
 # autoHeight
 
-:::tip Pro version only 
+:::tip pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 

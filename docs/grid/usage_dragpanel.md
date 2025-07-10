@@ -16,7 +16,7 @@ The `DragPanel` module provides auxiliary functionality for moving rows in the *
 
 The module is automatically activated when the [Drag-and-Drop functionality](grid/configuration.md/#drag-n-drop) for rows is enabled and conflicting configurations, such as the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules, are used. 
 
-You can also adjust the appearance and behavior of the `DragPanel` module via the [configuration options](grid/configuration.md/#adjusting-the-dragpanel-module).
+You can also adjust the appearance and behavior of the `DragPanel` module via the [configuration options](grid/configuration.md/#adjusting-dragpanel-module).
 
 ## Initializing the DragPanel module
 
@@ -45,7 +45,7 @@ const grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid (TreeGrid). DragPanel. Initialization](https://snippet.dhtmlx.com/uevdwjuo)
 
 The `dragPanel` property can also be set as an *object* to enable the module and provide additional configuration options.
-Learn about configuration possibilities of the drag panel in the [Configuration](grid/configuration.md/#adjusting-the-dragpanel-module) guide.
+Learn about configuration possibilities of the drag panel in the [Configuration](grid/configuration.md/#adjusting-dragpanel-module) guide.
 
 ## Using events of the DragPanel module
 

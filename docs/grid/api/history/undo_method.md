@@ -6,6 +6,10 @@ description: You can explore the undo method of Grid history in the documentatio
 
 # undo()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: undoes the last action in the Grid history 
 
 Depending on the type of the action, the method either applies the inverse action (for the "change" and "removeAll" types) or restores data (for the "add" and "remove" types).

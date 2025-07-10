@@ -6,6 +6,10 @@ description: You can explore the beforeBlockSelectionMove event of Grid block se
 
 # beforeBlockSelectionMove
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered before moving the selection boundary
 
 ### Usage

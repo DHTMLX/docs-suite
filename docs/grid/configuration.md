@@ -804,6 +804,10 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+:::info
+Note that on scrolling the grid the cell editor will be closed only when the cell is not in the visible area of the table anymore.
+:::
+
 ### Types of column editor
 
 You can specify the way of editing the cells of a Grid column depending on its content as a simple input, a date picker, a textarea control, a checkbox, a select, a multiselect or a combobox. The type of the used editor can be defined either by the `editorType` property of a [column](grid/api/grid_columns_config.md) or via the `type` one.

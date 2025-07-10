@@ -6,6 +6,10 @@ description: You can explore the enable method of Grid block selection in the do
 
 # enable()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: enables the BlockSelection module and activates the capabilities of block selection in Grid
 
 @signature: {'enable(): void;'}

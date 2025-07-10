@@ -6,6 +6,10 @@ description: You can explore the add method of Grid history in the documentation
 
 # add()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: adds a new action into the history of actions within the Grid
 
 ### Usage

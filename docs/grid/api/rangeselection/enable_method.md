@@ -6,6 +6,10 @@ description: You can explore the enable method of Grid range selection in the do
 
 # enable()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: enables the RangeSelection module and activates the capabilities of range selection in Grid
 
 ### Usage

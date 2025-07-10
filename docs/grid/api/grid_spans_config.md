@@ -120,9 +120,10 @@ const grid = new dhx.Grid("grid_container", {
 - All necessary columns or rows will be in a span if the **spans** property is set for the columns located within the frozen area.
 - If the **spans** property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
 
+**Related article:** [Spans](grid/configuration.md#spans)
+
 @changelog:
 - The `tooltipTemplate` property is added in v9.0
 - The ability to set the `tooltip` config as an object is added in v8.4
 - The `tooltip` property is added in v6.5.
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#spans)

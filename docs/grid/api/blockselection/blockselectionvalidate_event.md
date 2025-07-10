@@ -6,6 +6,10 @@ description: You can explore the blockSelectionValidate event of Grid block sele
 
 # blockSelectionValidate
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: triggered to check the possibility of starting a selection
 
 ### Usage

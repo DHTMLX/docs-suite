@@ -6,6 +6,10 @@ description: You can explore the beforeSetRange event of Grid range selection in
 
 # beforeSetRange
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: fires before setting a new range
 
 ### Usage
