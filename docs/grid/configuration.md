@@ -804,6 +804,10 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+:::info
+Note that on scrolling the grid the cell editor will be closed only when the cell is not in the visible area of the table anymore.
+:::
+
 ### Types of column editor
 
 You can specify the way of editing the cells of a Grid column depending on its content as a simple input, a date picker, a textarea control, a checkbox, a select, a multiselect or a combobox. The type of the used editor can be defined either by the `editorType` property of a [column](grid/api/grid_columns_config.md) or via the `type` one.
@@ -1628,6 +1632,393 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Frozen columns and rows](https://snippet.dhtmlx.com/hcgl9nth)
 
+## Spans
+
+The Grid component has the [`spans`](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [ 
+        // columns config
+    ],
+    spans: [
+        {row:"0", column:"a", rowspan:5 },
+        {row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
+        {row:"0", column:"c", colspan:2, text:"Some content"},
+        {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+    ],
+    data: dataset
+});
+~~~
+
+Each span object contains the following properties:
+
+- `row` - (*string | number*) obligatory, the id of a row
+- `column` - (*string|number*) obligatory, the id of a column
+- `rowspan` - (*number*) optional, the number of rows in a span
+- `colspan` - (*number*) optional, the number of columns in a span
+- `text` - (*string|number*) optional, the content of a span. You can specify the text of the column span via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
+    - `content` - an object with the content of the span tooltip that contains the calculated values of the `summary` property, set as *key:value* pairs where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+
+The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+
+:::note
+In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
+:::
+
+:::info important
+If the value of a spanned cell is initialized with the `text` property set as a *callback function*, the cell content can't be edited.
+:::
+
+~~~jsx {17}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: "Population" }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    spans: [
+        {
+            row: "rowid",
+            column: "population",
+            rowspan: 9,
+            text: ({ count }) => ("Count population:" + count)
+        },
+    ],
+    data: dataset
+});
+~~~
+
+- `css` - (*string*) optional, the name of a CSS class applied to a span
+- [`tooltip`](#column-and-spans-tooltips) - (*boolean|object*) optional, enables a tooltip on hovering over the content of a span, or sets the configuration object with the tooltip settings; *true* by default. When set as an object, the `tooltip` config can have the following properties:
+    - `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+    - `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+    - `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+    - `margin` - (optional) the margin between the node and tooltip
+    - `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default
+    - `css` - (optional) the style of a tooltip box
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    spans: [
+        {row:"0", column:"a", rowspan:5 },
+        {row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
+        {row:"0", column:"c", colspan:2, text:"Some content"},
+        {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+    ],
+    data: dataset
+});
+~~~
+
+- [`tooltipTemplate`](#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
+    - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - the value rendered in a cell, including the applied templates
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
+    - `span` - the object of the column span
+
+~~~jsx {17-18}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: "Population" }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    spans: [
+        {
+            row: "rowid",
+            column: "population",
+            rowspan: 9,
+            text: "Some text",
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+        },
+    ],
+    data: dataset
+});
+~~~
+
+**Related sample**: [Grid. Grouped cells (spans)](https://snippet.dhtmlx.com/1775dwbl)
+
+**Note**, that if both the `spans` and [`leftSplit`](grid/api/grid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
+
+- All necessary columns or rows will be in a span if the `spans` property is set for the columns located within the frozen area.
+- If the `spans` property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
+
+## Tooltip
+
+### Grid tooltips
+
+The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column's cell. All the tooltips can be controlled via the [](grid/api/grid_tooltip_config.md) configuration property of Grid. By default, the tooltips are enabled. You can disable them, by setting the config to *false*:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        //columns config
+    ],
+    data: dataset,
+    tooltip: false 
+});
+~~~
+
+**Related sample**: [Grid. Hiding tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
+
+The `tooltip` configuration option can be set as an object with the following properties:
+
+- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+- `margin` - (optional) the margin between the node and tooltip
+- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
+- `css` - (optional) the style of a tooltip box
+
+~~~jsx {6-8}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    tooltip: {
+       force: true
+    }
+});
+~~~
+
+**Related sample**: [Grid. Tooltip config](https://snippet.dhtmlx.com/qpqnalyt)
+
+It is also possible to control the header and footer tooltips, independently. There are the [`headerTooltip`](grid/api/grid_headertooltip_config.md) and [`footerTooltip`](grid/api/grid_footertooltip_config.md) Grid configuration properties, that you can use for this purpose:
+
+~~~jsx {7-8}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    tooltip: false, // Disable all tooltips
+    headerTooltip: true, // Enable all header tooltips
+    footerTooltip: true, // Enable all footer tooltips
+});
+~~~
+
+The `headerTooltip` and `footerTooltip` configs can be specified as objects the same as the main [`tooltip`](grid/configuration.md#grid-tooltips) config.
+
+### Column and spans tooltips
+
+There is a possibility to enable/disable tooltips for separate columns or spans by using the `tooltip` option in the configuration object of the [`columns`](grid/configuration.md#columns) or [`spans`](grid/configuration.md#spans) accordingly:
+
+~~~jsx {3,7,10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }], tooltip: true }, 
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+    ],
+    spans: [
+        { row: "1", column: "country", rowspan: 5, tooltip: true }, 
+    ],
+    data: dataset,
+    tooltip: false 
+});
+~~~
+
+The same as with the common Grid tooltips, column and span tooltips can be set as objects with the following properties:
+
+- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+- `margin` - (optional) the margin between the node and tooltip; *8px* by default
+- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
+- `css` - (optional) the style of a tooltip box
+
+~~~jsx {3,7,10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }], tooltip: { force: true } }, 
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+    ],
+    spans: [
+        { row: "1", column: "country", rowspan: 5, tooltip: { force: true } }, 
+    ],
+    data: dataset,
+    tooltip: false 
+});
+~~~
+
+#### Adding templates for column and spans tooltip
+
+You can add a template for a column or spans tooltip. 
+
+- to set a template for a column tooltip use a function which takes 3 parameters:
+    - `value` -  (required) the value of a cell
+    - `row` -  (required) an object with all cells in a row
+    - `column` -  (required) an object with the configuration of a column 
+
+Returning *false* from the function will block showing of the tooltip.
+
+~~~jsx {6-8}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            width: 200, id: "country", header: [{ text: "Country" }], align: "left",
+            htmlEnable: true, 
+            tooltipTemplate: function (value, row, column) { 
+                // the template logic
+            } 
+        },
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+        // more options
+    ],
+    data: dataset
+});
+~~~
+
+You can [check an example of applying a template for a column tooltip](grid/customization.md#adding-template-to-tooltip).
+
+- to set a template for a spans tooltip use the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
+    - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - the value rendered in a cell, including the applied templates
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
+    - `span` - the object of the column span
+
+~~~jsx {18}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: "Population" }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    spans: [
+        {
+            row: "rowid",
+            column: "population",
+            rowspan: 9,
+            text: "Some text",
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+        },
+    ],
+    data: dataset
+});
+~~~
+
+#### Column header/footer tooltip
+
+The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the `tooltip` property in the corresponding header/footer object inside the column:
+
+~~~jsx {4}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // Enables a tooltip for the country title
+        { id: "country", header: [{ text: "Country", tooltip: true }] }, 
+        { id: "population", header: [{ text: "Population" }] },
+           // more columns
+    ],
+    data: dataset,
+    tooltip: false,
+});
+~~~
+
+What is more, you can specify a necessary template for the header/footer tooltip via the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback
+function which is called with the following parameters:
+
+- `content` - an object with the content of the header/footer tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+    - `value` - (*string*) the value rendered in a cell, including the applied templates
+    - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+- `header/footer` - (*object*) the object of the column header/footer
+- `column` - (*object*) the object of a column
+
+and returns a string with the tooltip template for the header/footer or *false* to disable a tooltip.
+
+~~~jsx {9}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { 
+            width: 150, 
+            id: "population", 
+            header: [
+                {
+                    text: "Population",
+                    tooltipTemplate: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${ count }`
+                }
+            ],
+            summary: "count"
+        }
+        // more columns
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    data: dataset
+~~~
+
+**Related sample**: [Grid. Header/footer tooltip](https://snippet.dhtmlx.com/fgstf2mq)
+
+#### Tooltips for filters
+
+You can provide a tooltip template for the header content of any type, which allows showing tooltips for filters.
+
+Check the example below:
+
+~~~jsx {14,26}
+const balanceTemplate = value => {
+    return value > 0
+        ? `<div style='color:green'>⬆ $${value}</div>`
+        : `<div style='color:red'>⬇ $${value}</div>`;
+};
+
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            minWidth: 150,
+            id: "project",
+            header: [
+                {text: "Project"},
+                {content: "comboFilter", tooltipTemplate: () => "Select project"}
+            ],
+            footer: [{text: "Total"}],
+            resizable: true,
+            draggable: false
+        },
+        {
+            width: 130,
+            id: "balance",
+            header: [{text: "Balance"}, {content: "inputFilter"}],
+            footer: [
+                {
+                    tooltipTemplate: balanceTemplate
+                },
+            ],
+            template: balanceTemplate,
+            htmlEnable: true,
+            numberMask: {
+                prefix: "$"
+            }
+        },
+    ],
+});
+~~~
+
 ## Row expander
 
 The row expander functionality allows using nested content in Grid sub-rows. You can add a Grid or any other Suite widget, as well as some HTML content into a sub-row. 
@@ -2181,188 +2572,88 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-## Keyboard Navigation
+### Adjusting DragPanel module
 
-DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. 
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
-### Default shortcut keys
+The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the look and feel of the drag panel that appears when the drag-n-drop functionality is activated. Check the details below.
 
-There are four navigation keys that Grid enables by default:
+![](../assets/grid/dragpanel_module.png)
 
-<table>
-    <tbody>
-        <tr>
-            <td><b>PageUp</b></td>
-            <td>scroll Grid up to the height of the visible content (without change of the selected cell)</td>
-        </tr>
-        <tr>
-            <td><b>PageDown</b></td>
-            <td>scroll Grid down to the height of the visible content (without change of the selected cell)</td>
-        </tr>
-        <tr>
-            <td><b>Home</b></td>
-            <td>navigate to the beginning of the Grid content (without change of the selected cell)</td>
-        </tr>
-        <tr>
-            <td><b>End</b></td>
-            <td>navigate to the end of the Grid content (without change of the selected cell)</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+Enter</b></td>
-            <td>expands/collapses the parent item in the TreeGrid mode</td>
-        </tr>
-    </tbody>
-</table>
+To initialize the `DragPanel` module, you should enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration together with the [row Drag-and-Drop](#drag-n-drop) functionality (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties). For example:
 
-If you need to disable this functionality, set the [`keyNavigation`](grid/api/grid_keynavigation_config.md) property to *false*. 
-
-~~~jsx
+~~~jsx {10-11}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
     ],
-    data: dataset,
-    keyNavigation: false
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    dragItem: "row", // enables row Drag-and-Drop
+    dragPanel: true // enables the DragPanel module
 });
 ~~~
 
-**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
+**Related sample**: [Grid (TreeGrid). DragPanel. Initialization](https://snippet.dhtmlx.com/uevdwjuo)
 
-### Arrow shortcut keys
+The module is also automatically enabled if the [row Drag-and-Drop](#drag-n-drop) functionality is activated 
+(e.g. via the `dragItem: "row"` or `dragItem: "both"` properties) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
 
-In case you want to enable the arrow keys that allow moving the selection between cells, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
+The following example demonstrates enabling the `DragPanel` module with row Drag-and-Drop and the `BlockSelection` module:
 
-~~~jsx {6}
+~~~jsx {10-11}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
     ],
-    data: dataset,
-    selection: "complex",
-    keyNavigation: true // true - by default
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    dragItem: "row", // enables row Drag-and-Drop
+    blockSelection: true // triggers DragPanel activation
 });
 ~~~
 
-**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
+You can specify additional configuration options for the `DragPanel` module while initializing the component. For this, you need to set the `dragPanel` property as an *object*. The following options are available:
+    - `css` - (*string*) specifies a custom CSS class for styling the drag panel
+    - `icon` - (*string*) defines a custom icon for the drag handle
+    - `width` - (*number*) sets the width of the drag panel in pixels
 
-The list of the arrow shortcut keys:
+The following example demonstrates configuring the `DragPanel` module with custom styling and width:
 
-<table>
-    <tbody>
-        <tr>
-            <td><b>ArrowUp</b></td>
-            <td>move selection to the previous vertical cell</td>
-        </tr>
-        <tr>
-            <td><b>ArrowDown</b></td>
-            <td>move selection to the next vertical cell</td>
-        </tr>
-        <tr>
-            <td><b>ArrowLeft</b></td>
-            <td>move selection to the previous horizontal cell</td>
-        </tr>
-        <tr>
-            <td><b>ArrowRight</b></td>
-            <td>move selection to the next horizontal cell</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+ArrowUp</b></td>
-            <td>move selection to the first vertical cell</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+ArrowDown</b></td>
-            <td>move selection to the last vertical cell</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+ArrowLeft</b></td>
-            <td> move selection to the first horizontal cell</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+ArrowRight</b></td>
-            <td> move selection to the last horizontal cell</td>
-        </tr>
-        <tr>
-            <td><b>Tab</b></td>
-            <td> move selection to the next horizontal cell or the first cell of the next row</td>
-        </tr>
-        <tr>
-            <td><b>Shit+Tab</b></td>
-            <td> move selection to the previous horizontal cell or to the first cell of the previous row</td>
-        </tr>
-    </tbody>
-</table>
+~~~html
+<style>
+    .custom-drag-panel {
+        background-color: var(--dhx-color-primary);
+        border: 1px solid var(--dhx-color-secondary);
+    }
+</style>
 
-The arrow shortcut keys listed below do not work when the `selection` property is set to *"complex"*. Use another mode (*"cell" or "row"*) in case you want to activate these navigation keys:
-
-<table>
-    <tbody>
-        <tr>
-            <td><b>Shift+ArrowUp</b></td>
-            <td>move selection to the previous vertical cell with the change of the selected cells</td>
-        </tr>
-        <tr>
-            <td><b>Shift+ArrowDown</b></td>
-            <td>move selection to the next vertical cell with the change of the selected cells</td>
-        </tr>
-        <tr>
-            <td><b>Shift+ArrowLeft</b></td>
-            <td>move selection to the previous horizontal cell with the change of the selected cells</td>
-        </tr>
-        <tr>
-            <td><b>Shift+ArrowRight</b></td>
-            <td>move selection to the next horizontal cell with the change of the selected cells</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+Shift+ArrowUp</b></td>
-            <td>move selection to the first vertical cell with the change of the selected cells</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+Shift+ArrowDown</b></td>
-            <td>move selection to the last vertical cell with the change of the selected cells</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+Shift+ArrowLeft</b></td>
-            <td>move selection to the first horizontal cell with the change of the selected cells</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+Shift+ArrowRight</b></td>
-            <td>move selection to the last horizontal cell with the change of the selected cells</td>
-        </tr>
-    </tbody>
-</table>
-
-### Shortcut keys for editing
-
-It is also possible to use shortcut keys for editing a cell in Grid by setting [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid.
-
-~~~jsx {7}
+<script>
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
     ],
-    data: dataset,
-    selection: "complex",
-    editable: true,
-    keyNavigation: true // true - by default
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    dragPanel: {
+        css: "custom-drag-panel",
+        icon: "dxi dxi-drag",
+        width: 40
+    }
 });
+</script>
 ~~~
-
-**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
-
-The list of the shortcut keys for editing:
-
-<table>
-    <tbody>
-        <tr>
-            <td><b>Enter</b></td>
-            <td>open the editor in the selected cell. If the editor is currently opened - close the editor and save changes</td>
-        </tr>
-        <tr>
-            <td><b>Escape</b></td>
-            <td>close the editor of the selected cell without saving</td>
-        </tr>
-    </tbody>
-</table>
 
 ## Selection
 
@@ -2418,390 +2709,555 @@ const grid = new dhx.Grid("grid_container", {
 Since the `multiselection` configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
 A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select.
 
-## Spans
+## Managing range selection in Grid
 
-The Grid component has the [spans](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+The Grid functionality provides the [range selection management](grid/usage_rangeselection.md) feature for setting/resetting a range of cells, retrieving information about the current range, and checking whether specific cells belong to the selected range.
+
+To enable [range selection management](grid/usage_rangeselection.md) within a grid, you should use the `RangeSelection` module. To initialize the module, enable the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
-    columns: [ 
-        // columns config
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
     ],
-    spans: [
-        {row:"0", column:"a", rowspan:5 },
-        {row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
-        {row:"0", column:"c", colspan:2, text:"Some content"},
-        {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
     ],
-    data: dataset
+    rangeSelection: true // enables the RangeSelection module
 });
 ~~~
 
-Each span object contains the following properties:
+The `rangeSelection` property can be set in two ways:
 
-- `row` - (*string | number*) obligatory, the id of a row
-- `column` - (*string|number*) obligatory, the id of a column
-- `rowspan` - (*number*) optional, the number of rows in a span
-- `colspan` - (*number*) optional, the number of columns in a span
-- `text` - (*string|number*) optional, the content of a span. You can specify the text of the column span via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
-    - `content` - an object with the content of the span tooltip that contains the calculated values of the `summary` property, set as *key:value* pairs where:
-        - the *key* is either the key defined in the list or the functor name
-        - the *value* can be a *string*, *number* or *null*
+- as a *boolean* value it enables or disables the range selection module upon the component initialization
+- as an *object* it enables the module and allows setting additional configuration options during the component initialization. The following options are available:
+    - `disabled` - (*boolean*) makes the module inactive upon initialization of the component 
 
-The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The example below demonstrates interaction with the RangeSelection module's API when range selection is configured to be inactive on the component initialization.
+
+~~~jsx {11,15}
+const grid = new dhx.Grid("grid_container", {
+    // other configuration
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    rangeSelection: { disabled: true }
+});
+
+console.log(grid.range.isDisabled()); // `true` - module is inactive
+grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
+~~~
+
+For information on using the Range Selection API, read the [Work with RangeSelection module](grid/usage_rangeselection.md) guide.
+
+## Managing block selection in Grid
+
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+The Grid functionality provides the [block selection management](grid/usage_blockselection.md) feature for selecting cells' ranges via the mouse pointer, touch input, and keyboard navigation, as well as adjusting the appearance of the selection and managing the behavior of the module, depending on the applied mode.
+
+To enable managing of the block selection within a grid, you should use the `BlockSelection` module. To initialize the module, enable the [`blockSelection`](grid/api/grid_blockselection_config.md) property in the Grid configuration: 
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    blockSelection: true // enables the BlockSelection module
+});
+~~~
+
+The `blockSelection` property can be set in two ways:
+
+- as a *boolean* value it enables or disables the block selection module upon the component initialization
+- as an *object* it enables the module and allows setting additional configuration options during the component initialization. The following options are available:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>disabled</b></td>
+            <td>(<i>boolean</i>) disables the module on startup, `false` by default</td>
+        </tr>
+        <tr>
+            <td><b>mode</b></td>
+            <td>(<i>string</i>) the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>handle</b></td>
+            <td>(<i>boolean | object</i>) enables the handle for resizing or provides additional configuration options, `true` by default. As an *object* can contain the following properties:<ul><li><b>allowAxis</b> - (<i>string</i>) restricts the handle movement: `"x"` (horizontal), `"y"` (vertical), `"xy"` (both directions). `"xy"` by default</li><li><b>handler</b> - (<i>function | boolean</i>) a *function* to process the handle actions or *boolean* to enable/disable. As a *function*, the property takes the following parameters:</li><ul><li><b>cell</b> - (<i>object</i>) the object of the current cell. Contains the following properties:</li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>array</b> - (<i>array</i>) an array of all selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>range</b> - (<i>array</i>) an array of pre-selected cells. Each cell object contains the following properties: </li><ul><li>*row* - the configuration object of a row</li><li>*column* - the configuration object of a column</li></ul></ul><ul><li><b>dir</b> - (<i>string</i>) the direction of cells selection: "up" | "down" | "right" | "left"</li></ul><ul><li><b>index</b> - (<i>number</i>) the index of the iterated cell</li></ul><ul><li><b>grid</b> - (<i>object</i>) the `dhx.Grid` component object</li></ul>The <b>handler</b> function may return an <i>object with the history of Grid actions</i>. The returned object contains the following properties:<ul><li><b>prev</b> - the previous cell value</li><li><b>current</b> - the new cell value</li></ul></ul></td>
+        </tr>
+        <tr>
+            <td><b>area</b></td>
+            <td>(<i>boolean</i>) enables the display of the selection area, `true` by default</td>
+        </tr>
+    </tbody>
+</table>
 
 :::note
-In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
+By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the [`RangeSelection`](grid/usage_rangeselection.md) module is initialized.
 :::
 
-:::info important
-If the value of a spanned cell is initialized with the `text` property set as a *callback function*, the cell content can't be edited.
-:::
+The example below demonstrates configuring the module with the handle disabled and the "range" mode enabled:
 
-~~~jsx {17}
+~~~jsx {10-13}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }] },
-        { 
-            width: 150, 
-            id: "population", 
-            header: [{ text: "Population" }],
-            summary: "count"
-        }
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
     ],
-    summary: { totalPopulation: ["population", "sum"] },
-    spans: [
-        {
-            row: "rowid",
-            column: "population",
-            rowspan: 9,
-            text: ({ count }) => ("Count population:" + count)
-        },
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
     ],
-    data: dataset
-});
-~~~
-
-- `css` - (*string*) optional, the name of a CSS class applied to a span
-- [`tooltip`](#column-and-spans-tooltips) - (*boolean|object*) optional, enables a tooltip on hovering over the content of a span, or sets the configuration object with the tooltip settings; *true* by default. When set as an object, the `tooltip` config can have the following properties:
-    - `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
-    - `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
-    - `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
-    - `margin` - (optional) the margin between the node and tooltip
-    - `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default
-    - `css` - (optional) the style of a tooltip box
-
-~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // columns config
-    ],
-    spans: [
-        {row:"0", column:"a", rowspan:5 },
-        {row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
-        {row:"0", column:"c", colspan:2, text:"Some content"},
-        {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
-    ],
-    data: dataset
-});
-~~~
-
-- [`tooltipTemplate`](#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
-    - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
-        - `value` - the value rendered in a cell, including the applied templates
-        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
-            - the *key* is either the key defined in the list or the functor name
-            - the *value* can be a *string*, *number* or *null*
-    - `span` - the object of the column span
-
-~~~jsx {17-18}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }] },
-        { 
-            width: 150, 
-            id: "population", 
-            header: [{ text: "Population" }],
-            summary: "count"
-        }
-    ],
-    summary: { totalPopulation: ["population", "sum"] },
-    spans: [
-        {
-            row: "rowid",
-            column: "population",
-            rowspan: 9,
-            text: "Some text",
-            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
-        },
-    ],
-    data: dataset
-});
-~~~
-
-**Related sample**: [Grid. Grouped cells (spans)](https://snippet.dhtmlx.com/1775dwbl)
-
-**Note**, that if both the `spans` and [`leftSplit`](grid/api/grid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
-
-- All necessary columns or rows will be in a span if the `spans` property is set for the columns located within the frozen area.
-- If the `spans` property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
-
-## Tooltip
-
-### Grid tooltips
-
-The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column's cell. All the tooltips can be controlled via the [](grid/api/grid_tooltip_config.md) configuration property of Grid. By default, the tooltips are enabled. You can disable them, by setting the config to *false*:
-
-~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        //columns config
-    ],
-    data: dataset,
-    tooltip: false 
-});
-~~~
-
-**Related sample**: [Grid. Hiding tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
-
-The `tooltip` configuration option can be set as an object with the following properties:
-
-- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
-- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
-- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
-- `margin` - (optional) the margin between the node and tooltip
-- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
-- `css` - (optional) the style of a tooltip box
-
-~~~jsx {6-8}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // columns config
-    ],
-    data: dataset,
-    tooltip: {
-       force: true
+    blockSelection: {
+        mode: "range", // setting the "range" mode
+        handle: false // the handle is disabled
     }
 });
 ~~~
 
-**Related sample**: [Grid. Tooltip config](https://snippet.dhtmlx.com/qpqnalyt)
+The following example demonstrates configuring the handle:
 
-It is also possible to control the header and footer tooltips, independently. There are the [`headerTooltip`](grid/api/grid_headertooltip_config.md) and [`footerTooltip`](grid/api/grid_footertooltip_config.md) Grid configuration properties, that you can use for this purpose:
+~~~jsx {10-13}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    blockSelection: {
+        mode: "range", // setting the "range" mode
+        handle: { allowAxis: "y" } // restricts the handle movement to the vertical direction 
+    }
+});
+~~~
 
-~~~jsx {7-8}
+**Related sample:** [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+
+For information on using the Block Selection API, read the [Work with Block Selection module](grid/usage_blockselection.md) guide.
+
+## Clipboard 
+
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+The Grid component provides the [functionality for interacting with the clipboard](grid/usage_clipboard.md), such as copying, cutting, and pasting data from a selected range of cells, as well as integrating with other grids or external applications like Google Spreadsheets. 
+
+To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](grid/api/grid_clipboard_config.md) property in the Grid configuration. The `Clipboard` module requires the [`RangeSelection`](#managing-range-selection-in-grid) module to be enabled. For convenient range selection via the UI, it is recommended to use the [`BlockSelection`](#managing-block-selection-in-grid) module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting. 
+
+:::note
+The `blockSelection: { mode: "range" }` property is automatically initialized in the Grid configuration when the `Clipboard` module is enabled.
+:::
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    blockSelection: { mode: "range" }, // required for Clipboard to function (initializes automatically)
+    clipboard: true // enables the Clipboard module
+});
+~~~ 
+
+The `clipboard` property can be set in two ways:
+
+- as a *boolean* value it enables or disables the `clipboard` module upon the component initialization
+- as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md/#using-formatter-functions) for data processing. The following properties are available:
+    - `copyModifier` - (*function*) modifies data before copying to the clipboard. Accepts as parameters the cell value, the cell object, and the `cut` flag (set to `true`, if it's a cut operation)
+    - `cutModifier` - (*function*) modifies the cell data before cutting (before clearing the cell). Accepts as parameters the cell value and the cell object
+    - `pasteModifier` - (*function*) modifies data from the clipboard before pasting into a cell. Accepts as parameters the cell value and the cell object
+
+The example below demonstrates the clipboard configuration with all the modifiers in use:
+
+~~~jsx {10-15}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    clipboard: {
+        // adds a suffix based on the operation
+        copyModifier: (value, cell, cut) => `${value}${cut ? "-cut" : "-copied"}`, 
+        cutModifier: (value, cell) => `${value}-removed`, // before cutting a value
+        pasteModifier: (value, cell) => value.replace("-copied", "") // removes the suffix on data pasting
+    }
+});
+~~~
+
+**Related sample**: [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
+
+For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
+
+## History of Grid actions 
+
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+DHTMLX Grid provides the [functionality for managing the history of actions in the component](grid/usage_history.md). 
+
+To enable the history functionality within a grid, you should use the `History` module. To initialize the module, enable the [`history`](grid/api/grid_history_config.md) property in the Grid configuration. 
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    history: true // enables the History module
+});
+~~~
+
+The `history` property can be set in two ways:
+- as a *boolean* value it enables or disables the `History` module upon the component initialization
+- as an *object* it enables the module and allows setting additional parameters:
+    - `limit` - (*number*) the maximum number of actions stored in the history. When the limit is exceeded, the oldest actions are removed
+    - `disabled` - (*boolean*) if `true`, the module is disabled on initialization, and no actions are recorded in the history
+
+The example below demonstrates configuring the module with a history limit of 10 actions. The module is disabled on initialization:
+
+~~~jsx {10-13}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "a", header: [{ text: "A" }] },
+        { id: "b", header: [{ text: "B" }] },
+    ],
+    data: [
+        { id: "1", a: "A1", b: "B1" },
+        { id: "2", a: "A2", b: "B2" },
+    ],
+    history: {
+        limit: 10, // limits history to 10 actions
+        disabled: true // the module is disabled on start
+    }
+});
+
+grid.history.enable(); // enabling the module
+~~~
+
+**Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
+
+For information on working with the History API, read the [Work with History module](grid/usage_history.md) guide.
+
+## Keyboard navigation
+
+DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. 
+
+### Default shortcut keys
+
+The navigation shortcut keys and keys combinations that Grid enables by default are provided below:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>PageUp</b></td>
+            <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
+        </tr>
+        <tr>
+            <td><b>PageDown</b></td>
+            <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
+        </tr>
+        <tr>
+            <td><b>Home</b></td>
+            <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
+        </tr>
+        <tr>
+            <td><b>End</b></td>
+            <td>navigates to the end of the Grid content (without change of the selected cell)</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Enter</b></td>
+            <td>expands/collapses the parent item in the TreeGrid mode</td>
+        </tr>
+    </tbody>
+</table>
+
+If you need to disable this functionality, set the [`keyNavigation`](grid/api/grid_keynavigation_config.md) property to *false*. 
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
     data: dataset,
-    tooltip: false, // Disable all tooltips
-    headerTooltip: true, // Enable all header tooltips
-    footerTooltip: true, // Enable all footer tooltips
+    keyNavigation: false
 });
 ~~~
 
-The `headerTooltip` and `footerTooltip` configs can be specified as objects the same as the main [`tooltip`](grid/configuration.md#grid-tooltips) config.
+**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-### Column and spans tooltips
+### Shortcut keys for moving selection between cells
 
-There is a possibility to enable/disable tooltips for separate columns or spans by using the `tooltip` option in the configuration object of the [`columns`](grid/configuration.md#columns) or [`spans`](grid/configuration.md#spans) accordingly:
+In case you want to enable the shortcut keys that allow moving the selection between cells, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
 
-~~~jsx {3,7,10}
+~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], tooltip: true }, 
-        { width: 150, id: "population", header: [{ text: "Population" }] },
-    ],
-    spans: [
-        { row: "1", column: "country", rowspan: 5, tooltip: true }, 
+        // columns config
     ],
     data: dataset,
-    tooltip: false 
+    selection: "complex",
+    keyNavigation: true // true - by default
 });
 ~~~
 
-The same as with the common Grid tooltips, column and span tooltips can be set as objects with the following properties:
+**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
-- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
-- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
-- `margin` - (optional) the margin between the node and tooltip; *8px* by default
-- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
-- `css` - (optional) the style of a tooltip box
+The list of the shortcut keys and their combinations used for moving selection between cells is the following:
 
-~~~jsx {3,7,10}
+<table>
+    <tbody>
+        <tr>
+            <td><b>ArrowUp</b></td>
+            <td>moves selection to the previous vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>ArrowDown</b></td>
+            <td>moves selection to the next vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>ArrowLeft</b></td>
+            <td>moves selection to the previous horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>ArrowRight</b></td>
+            <td>moves selection to the next horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowUp</b></td>
+            <td>moves selection to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowDown</b></td>
+            <td>moves selection to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowLeft</b></td>
+            <td> moves selection to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowRight</b></td>
+            <td> moves selection to the last horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Tab</b></td>
+            <td> moves selection to the next horizontal cell or the first cell of the next row</td>
+        </tr>
+        <tr>
+            <td><b>Shit+Tab</b></td>
+            <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
+        </tr>
+    </tbody>
+</table>
+
+The combinations of the shortcut keys listed below do not work when the `selection` property is set to *"complex"*. Use another mode (*"cell" or "row"*) in case you want to activate these navigation keys:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>Shift+ArrowUp</b></td>
+            <td>moves selection to the previous vertical cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowDown</b></td>
+            <td>moves selection to the next vertical cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowLeft</b></td>
+            <td>moves selection to the previous horizontal cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowRight</b></td>
+            <td>moves selection to the next horizontal cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td>moves selection to the first vertical cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td>moves selection to the last vertical cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td>moves selection to the first horizontal cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td>moves selection to the last horizontal cell with the change of the selected cells</td>
+        </tr>
+    </tbody>
+</table>
+
+### Shortcut keys for editing
+
+It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid.
+
+~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], tooltip: { force: true } }, 
-        { width: 150, id: "population", header: [{ text: "Population" }] },
-    ],
-    spans: [
-        { row: "1", column: "country", rowspan: 5, tooltip: { force: true } }, 
+        // columns config
     ],
     data: dataset,
-    tooltip: false 
+    selection: "complex",
+    editable: true,
+    keyNavigation: true // true - by default
 });
 ~~~
 
-#### Adding templates for column and spans tooltip
+**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-You can add a template for a column or spans tooltip. 
+The list of the shortcut keys for editing is given below:
 
-- to set a template for a column tooltip use a function which takes 3 parameters:
-    - `value` -  (required) the value of a cell
-    - `row` -  (required) an object with all cells in a row
-    - `column` -  (required) an object with the configuration of a column 
+<table>
+    <tbody>
+        <tr>
+            <td><b>Enter</b></td>
+            <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes</td>
+        </tr>
+        <tr>
+            <td><b>Escape</b></td>
+            <td>closes the editor of the selected cell without saving</td>
+        </tr>
+        <tr>
+            <td><b>Delete</b></td>
+            <td>clears data in the selected cells. Works only with the <a href="../usage_blockselection/#keyboard-navigation">`BlockSelection` module</a> in the "range" mode</td>
+        </tr>
+    </tbody>
+</table>
 
-Returning *false* from the function will block showing of the tooltip.
+### Shortcut keys for selecting ranges of cells
 
-~~~jsx {6-8}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        {
-            width: 200, id: "country", header: [{ text: "Country" }], align: "left",
-            htmlEnable: true, 
-            tooltipTemplate: function (value, row, column) { 
-                // the template logic
-            } 
-        },
-        { width: 150, id: "population", header: [{ text: "Population" }] },
-        { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
-        // more options
-    ],
-    data: dataset
-});
-~~~
+If you need to use the keyboard navigation for selecting ranges of cells via the user interface, you should enable the [`BlockSelection` module](grid/usage_blockselection.md) in the Grid configuration.
 
-You can [check an example of applying a template for a column tooltip](grid/customization.md#adding-template-to-tooltip).
+:::note
+Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
+:::
 
-- to set a template for a spans tooltip use the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
-    - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
-        - `value` - the value rendered in a cell, including the applied templates
-        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
-            - the *key* is either the key defined in the list or the functor name
-            - the *value* can be a *string*, *number* or *null*
-    - `span` - the object of the column span
+The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets. The following shortcut keys and their combinations are available: 
 
-~~~jsx {18}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }] },
-        { 
-            width: 150, 
-            id: "population", 
-            header: [{ text: "Population" }],
-            summary: "count"
-        }
-    ],
-    summary: { totalPopulation: ["population", "sum"] },
-    spans: [
-        {
-            row: "rowid",
-            column: "population",
-            rowspan: 9,
-            text: "Some text",
-            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
-        },
-    ],
-    data: dataset
-});
-~~~
+<table>
+    <tbody>
+        <tr>
+            <td><b>ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the previous vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the next vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the previous horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the next horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+         <tr>
+            <td><b>Shift+ArrowUp</b></td>
+            <td>extends the selected range from the current initial cell to the previous vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowDown</b></td>
+            <td>extends the selected range from the current initial cell to the next vertical cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowLeft</b></td>
+            <td>extends the selected range from the current initial cell to the previous horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowRight</b></td>
+            <td>extends the selected range from the current initial cell to the next horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the last horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td>extends the selected range to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td>extends the selected range to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td> extends the selected range to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td> extends the selected range to the last horizontal cell</td>
+        </tr>
+    </tbody>
+</table>
 
-#### Column header/footer tooltip
+The following shortcut key and mouse combination is available:
 
-The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the `tooltip` property in the corresponding header/footer object inside the column:
+<table>
+    <tbody>
+        <tr>
+            <td><b>Shift + click</b></td>
+            <td>sets the end cell of the range, extending the selection from the current initial cell</td>
+        </tr>
+    </tbody>
+</table>
 
-~~~jsx {4}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // Enables a tooltip for the country title
-        { id: "country", header: [{ text: "Country", tooltip: true }] }, 
-        { id: "population", header: [{ text: "Population" }] },
-           // more columns
-    ],
-    data: dataset,
-    tooltip: false,
-});
-~~~
+The following shortcut key is available when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode:
 
-What is more, you can specify a necessary template for the header/footer tooltip via the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback
-function which is called with the following parameters:
-
-- `content` - an object with the content of the header/footer tooltip. Contains two properties which are available either from the component's or from the column's configuration:
-    - `value` - (*string*) the value rendered in a cell, including the applied templates
-    - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
-        - the *key* is either the key defined in the list or the functor name
-        - the *value* can be a *string*, *number* or *null*
-- `header/footer` - (*object*) the object of the column header/footer
-- `column` - (*object*) the object of a column
-
-and returns a string with the tooltip template for the header/footer or *false* to disable a tooltip.
-
-~~~jsx {9}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { 
-            width: 150, 
-            id: "population", 
-            header: [
-                {
-                    text: "Population",
-                    tooltipTemplate: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${ count }`
-                }
-            ],
-            summary: "count"
-        }
-        // more columns
-    ],
-    summary: { totalPopulation: ["population", "sum"] },
-    data: dataset
-~~~
-
-**Related sample**: [Grid. Header/footer tooltip](https://snippet.dhtmlx.com/fgstf2mq)
-
-#### Tooltips for filters
-
-You can provide a tooltip template for the header content of any type, which allows showing tooltips for filters.
-
-Check the example below:
-
-~~~jsx {14,26}
-const balanceTemplate = value => {
-    return value > 0
-        ? `<div style='color:green'>⬆ $${value}</div>`
-        : `<div style='color:red'>⬇ $${value}</div>`;
-};
-
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        {
-            minWidth: 150,
-            id: "project",
-            header: [
-                {text: "Project"},
-                {content: "comboFilter", tooltipTemplate: () => "Select project"}
-            ],
-            footer: [{text: "Total"}],
-            resizable: true,
-            draggable: false
-        },
-        {
-            width: 130,
-            id: "balance",
-            header: [{text: "Balance"}, {content: "inputFilter"}],
-            footer: [
-                {
-                    tooltipTemplate: balanceTemplate
-                },
-            ],
-            template: balanceTemplate,
-            htmlEnable: true,
-            numberMask: {
-                prefix: "$"
-            }
-        },
-    ],
-});
-~~~
-
+ <table>
+    <tbody>
+        <tr>
+            <td><b>Delete</b></td>
+            <td>allows clearing the selected cells</td>
+        </tr>
+    </tbody>
+</table>

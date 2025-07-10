@@ -6,6 +6,10 @@ description: You can explore the subRow config of Grid in the documentation of t
 
 # subRow
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: Optional. Defines the sub-row content for each row of the main Grid
 
 :::note
@@ -65,5 +69,8 @@ const grid = new dhx.Grid("grid_container", {
 **Related article:** [Row expander](grid/configuration.md#row-expander)
 
 **Related API**: [subRowConfig](grid/api/grid_subrowconfig_config.md)
+
+@changelog:
+- Added in v9.1
 
  

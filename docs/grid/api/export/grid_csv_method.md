@@ -13,7 +13,7 @@ description: You can explore the csv export method of Grid in the documentation 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to CSV:
     - `asFile?: boolean` - (optional) defines whether Grid should be exported to a file, *true* by default. To export Grid only as a CSV string, you need to set *asFile:false*
-    - `name?: string` - (optional) the name of the exported CSV file (if asFile is not set to *false*)
+    - `name?: string` - (optional) "grid" by default. The name of the exported CSV file (if asFile is not set to *false*)
     - `rowDelimiter?: string` - (optional) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
     - `columnDelimiter?: string` - (optional) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
 
@@ -26,9 +26,9 @@ grid.export.csv();
 
 // export with config settings
 grid.export.csv({
-    name:"grid_data", // grid data will be exported to a CSV file named "grid_data"
-    rowDelimiter: "\t", // the tab delimiter will be used to separate rows
-    columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
+    name: "my_file", // the name of a ready CSV file
+    rowDelimiter: "\t", // the delimiter used to separate rows
+    columnDelimiter: ";" // the delimiter used to separate columns
 });
 
 

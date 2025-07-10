@@ -2615,7 +2615,9 @@ module.exports = {
                     "grid/api/grid_autoemptyrow_config",
                     "grid/api/grid_autoheight_config",
                     "grid/api/grid_autowidth_config",
+                    "grid/api/grid_blockselection_config",
                     "grid/api/grid_bottomsplit_config",
+                    "grid/api/grid_clipboard_config",
                     "grid/api/grid_closable_config",
                     "grid/api/grid_collapsed_config",
                     "grid/api/grid_columns_config",
@@ -2625,6 +2627,7 @@ module.exports = {
                     "grid/api/grid_dragexpand_config",
                     "grid/api/grid_dragitem_config",
                     "grid/api/grid_dragmode_config",
+                    "grid/api/grid_dragpanel_config",
                     "grid/api/grid_editable_config",
                     "grid/api/grid_eventhandlers_config",
                     "grid/api/grid_exportstyles_config",
@@ -2637,11 +2640,13 @@ module.exports = {
                     "grid/api/grid_headerrowheight_config",
                     "grid/api/grid_headertooltip_config",
                     "grid/api/grid_height_config",
+                    "grid/api/grid_history_config",
                     "grid/api/grid_htmlenable_config",
                     "grid/api/grid_keynavigation_config",
                     "grid/api/grid_leftsplit_config",
                     "grid/api/grid_multiselection_config",
                     "grid/api/grid_multisort_config",
+                    "grid/api/grid_rangeselection_config",
                     "grid/api/grid_resizable_config",
                     "grid/api/grid_rightsplit_config",
                     "grid/api/grid_rootparent_config",
@@ -2736,6 +2741,7 @@ module.exports = {
                       "grid/api/selection/selection_enable_method",
                       "grid/api/selection/selection_getcell_method",
                       "grid/api/selection/selection_getcells_method",
+                      "grid/api/selection/selection_isselectedcell_method",
                       "grid/api/selection/selection_removecell_method",
                       "grid/api/selection/selection_setcell_method",
                     ],
@@ -2765,6 +2771,103 @@ module.exports = {
                 },
                 {
                   type: "category",
+                  label: "RangeSelection API",
+                  link: {
+                    type: 'generated-index',
+                    title: "RangeSelection API",
+                    keywords: ['rangeselection API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Grid RangeSelection methods",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid RangeSelection methods",
+                      keywords: ['grid range selection methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/rangeselection/disable_method",
+                      "grid/api/rangeselection/enable_method",
+                      "grid/api/rangeselection/getrange_method",
+                      "grid/api/rangeselection/getrangedcells_method",
+                      "grid/api/rangeselection/isdisabled_method",
+                      "grid/api/rangeselection/isranged_method",
+                      "grid/api/rangeselection/resetrange_method",
+                      "grid/api/rangeselection/setrange_method",
+                    ],
+                  },
+
+                  {
+                    type: "category",
+                    label: "Grid RangeSelection events",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid RangeSelection events",
+                      keywords: ['grid range selection events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/rangeselection/afterresetrange_event",
+                      "grid/api/rangeselection/aftersetrange_event",
+                      "grid/api/rangeselection/beforeresetrange_event",
+                      "grid/api/rangeselection/beforesetrange_event",
+                    ],
+                  },
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "BlockSelection API",
+                  link: {
+                    type: 'generated-index',
+                    title: "BlockSelection API",
+                    keywords: ['block selection API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Grid BlockSelection methods",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid BlockSelection methods",
+                      keywords: ['grid block selection methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/blockselection/disable_method",
+                      "grid/api/blockselection/enable_method",
+                      "grid/api/blockselection/isdisabled_method"
+                    ],
+                  },
+
+                  {
+                    type: "category",
+                    label: "Grid BlockSelection events",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid BlockSelection events",
+                      keywords: ['grid block selection events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/blockselection/afterblockhandleapply_event",
+                      "grid/api/blockselection/afterblockselectionapply_event",
+                      "grid/api/blockselection/afterblockselectionmove_event",
+                      "grid/api/blockselection/beforeblockhandleapply_event",
+                      "grid/api/blockselection/beforeblockselectionapply_event",
+                      "grid/api/blockselection/beforeblockselectionmove_event",
+                      "grid/api/blockselection/blockhandlemousedown_event",
+                      "grid/api/blockselection/blockselectionend_event",
+                      "grid/api/blockselection/blockselectionstart_event",
+                      "grid/api/blockselection/blockselectionvalidate_event"
+                    ],
+                  }
+                  ],
+                },
+                {
+                  type: "category",
                   label: "Export methods",
                   collapsed: true,
                   link: {
@@ -2780,6 +2883,92 @@ module.exports = {
                     "grid/api/export/grid_xlsx_method"
                   ],
                 },
+                {
+                  type: "category",
+                  label: "Clipboard events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Clipboard events",
+                    keywords: ['clipboard events'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "grid/api/clipboard/aftercopy_event",
+                    "grid/api/clipboard/afterpaste_event",
+                    "grid/api/clipboard/beforecopy_event",
+                    "grid/api/clipboard/beforepaste_event",
+                    "grid/api/clipboard/copyerror_event",
+                    "grid/api/clipboard/pasteerror_event"
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "DragPanel events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "DragPanel events",
+                    keywords: ['drag panel events'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "grid/api/dragpanel/dragpanelitemclick_event",
+                    "grid/api/dragpanel/dragpanelitemmousedown_event"
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "History API",
+                  link: {
+                    type: 'generated-index',
+                    title: "History API",
+                    keywords: ['history API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Grid History methods",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid History methods",
+                      keywords: ['grid history methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/history/add_method",
+                      "grid/api/history/canredo_method",
+                      "grid/api/history/canundo_method",
+                      "grid/api/history/disable_method",
+                      "grid/api/history/enable_method",
+                      "grid/api/history/isdisabled_method",
+                      "grid/api/history/gethistory_method",
+                      "grid/api/history/redo_method",
+                      "grid/api/history/remove_method",
+                      "grid/api/history/removeall_method",
+                      "grid/api/history/undo_method"
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Grid History events",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid History events",
+                      keywords: ['grid history events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/history/afteradd_event",
+                      "grid/api/history/afterredo_event",
+                      "grid/api/history/afterundo_event",
+                      "grid/api/history/beforeadd_event",
+                      "grid/api/history/beforeredo_event",
+                      "grid/api/history/beforeundo_event",
+                      "grid/api/history/error_event"
+                    ],
+                  }],
+                },
               ],
             },
             "grid/features",
@@ -2790,8 +2979,13 @@ module.exports = {
             "grid/usage",
             "grid/treegrid_mode",
             "grid/usage_selection",
+            "grid/usage_rangeselection",
+            "grid/usage_blockselection",
+            "grid/usage_clipboard",
+            "grid/usage_dragpanel",
+            "grid/usage_history",
             "grid/customization",
-            "grid/events",
+            "grid/events"
           ],
         },
         // end Grid

@@ -60,8 +60,8 @@ The width the columns will be adjusted to also depends on the values of the [`mi
 - in case of complex HTML data, usage of the `adjust` config may lead to incorrect size calculations
 - the enabled `adjust` config (including the "header", "footer", "data" modes) adjusts the width of columns taking into account the [`template`](grid/api/api_gridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [`header/footer`](grid/api/api_gridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated
 
+**Related API**: [`adjustColumnWidth()`](grid/api/grid_adjustcolumnwidth_method.md)
+
+**Related article**: [Autosize for columns](grid/configuration.md#autosize-for-columns)
+
 @changelog: added in v6.4
-
-[comment]: # (@relatedapi: grid/api/grid_adjustcolumnwidth_method.md)
-
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#autosize-for-columns)

@@ -46,6 +46,17 @@ In this section you can find out how to initialize Grid, how to load data into t
 
 ## How to configure Grid
 
+### How to work with TreeGrid mode
+
+In this section you will find the ways of working with the TreeGrid mode of Grid.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Enabling TreeGrid mode](../treegrid_mode/#initialization) | Learn how to enable the TreeGrid mode of Grid     |
+| [Configuring TreeGrid mode](../treegrid_mode/#configuration)| Learn how to configure the TreeGrid mode of Grid |
+| [Data loading in TreeGrid mode](../treegrid_mode/#data-loading)| Learn how to load data in the TreeGrid mode of Grid |
+| [Working with TreeGrid mode](../treegrid_mode/#work-with-grid-in-the-treegrid-mode) | Learn how to expand/collapse nodes |
+
 ### How to configure columns
 
 In this section you will get to know how to configure Grid columns on Grid initialization.
@@ -124,6 +135,7 @@ In this section you will get to know how to configure the drag-n-drop functional
 | [Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)           | Learn how to configure drag-n-drop between grids ([Example](https://snippet.dhtmlx.com/qx9a86ax))       |
 | [Drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows) | Learn how to allow end users to drag-n-drop several rows at once                                        |
 | [Copying of rows during drag-n-drop](../api/grid_dragcopy_config/)                 | Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/23slivyz)) |
+| [Using the DragPanel module](../usage_dragpanel/)           | Learn how to use the DragPanel module that provides additional functionality for moving rows in the Grid ([Example](https://snippet.dhtmlx.com/uevdwjuo)) |
 
 ## How to render custom statistics in the column header/footer and in the spans
 
@@ -281,18 +293,48 @@ In this section you will find the ways of working with selection functionality.
 | [Enabling multiselection](../configuration/#multiple-selection-of-grid-cells) | Learn how to enable multi-row/multi-cell selection in Grid ([Example](https://snippet.dhtmlx.com/4nj0e9ye))                                                             |
 | [Working with selection](../usage_selection/)                                 | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell ([Example](https://snippet.dhtmlx.com/4nj0e9ye)) |
 | [Selection API](../../category/selection-api/)                                | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
-| [Keyboard navigation](../configuration/#arrow-shortcut-keys)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
+| [Keyboard navigation](../configuration/#shortcut-keys-for-moving-selection-between-cells)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
 
-## How to work with TreeGrid mode
+## How to work with range selection
 
-In this section you will find the ways of working with the TreeGrid mode of Grid.
+In this section you will get to know how to work with the range selection functionality.
 
 | Topic                                                                         | Description                                                                                                                                                             |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Enabling TreeGrid mode](../treegrid_mode/#initialization) | Learn how to enable the TreeGrid mode of Grid     |
-| [Configuring TreeGrid mode](../treegrid_mode/#configuration)| Learn how to configure the TreeGrid mode of Grid |
-| [Data loading in TreeGrid mode](../treegrid_mode/#data-loading)| Learn how to load data in the TreeGrid mode of Grid |
-| [Working with TreeGrid mode](../treegrid_mode/#work-with-grid-in-the-treegrid-mode) | Learn how to expand/collapse nodes |
+| [Configuring range selection](../configuration/#managing-range-selection-in-grid)  | Learn how to configure the range selection module within Grid                |
+| [Working with range selection](../usage_rangeselection/)                     | Learn how to enable/disable range selection, set/reset range selection, get the range selection object, and check whether a cell is in the range ([Example](https://snippet.dhtmlx.com/42fp5qvt)) |
+| [Range Selection API](../../category/rangeselection-api/)                    | Learn how to use the API of the RangeSelection module to manage the range selection within Grid     |
+
+
+## How to work with block selection
+
+In this section you will get to know how to work with the block selection functionality.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring block selection](../configuration/#managing-block-selection-in-grid) | Learn how to configure the block selection module within Grid ([Example](https://snippet.dhtmlx.com/sryiguxu))             |
+| [Working with block selection](../usage_blockselection/)                     | Learn how to enable/disable block selection in Grid, check the main features of the BlockSelection module and explore how it interacts with other modules  |
+| [BlockSelection API](../../category/blockselection-api/)                    | Learn how to use API of the BlockSelection module to manage the block selection within Grid     |
+
+## How to work with clipboard
+
+In this section you will get to know how to work with the clipboard functionality.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring clipboard](../configuration/#clipboard) | Learn how to configure the Clipboard module within Grid ([Example](https://snippet.dhtmlx.com/dfj49xah))   |
+| [Working with clipboard](../usage_clipboard/)        | Learn how to enable the clipboard in Grid, check the main features and explore the peculiarities of using the Clipboard module  |
+| [Clipboard API](../../category/clipboard-events/)       | Learn how to use API of the Clipboard module to manage the clipboard operations within Grid     |
+
+## How to work with history of Grid actions
+
+In this section you will get to know how to work with the history of Grid actions.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring history of Grid actions](../configuration/#history-of-grid-actions) | Learn how to configure the History module within Grid ([Example](https://snippet.dhtmlx.com/vznpyeit)) |
+| [Working with history of actions](../usage_history/)        | Learn how to enable the history of actions in Grid, check the main features and explore the peculiarities of using the History module  |
+| [History API](../../category/history-api/)       | Learn how to use API of the History module to manage the history of operations within Grid     |
 
 
 ## How to scroll Grid
@@ -341,7 +383,14 @@ In this section you can find out corresponding references of Grid API.
 | [Grid properties](../api/api_overview/#grid-properties)     | Check the list of Grid properties                                |
 | [Grid column properties](../api/api_gridcolumn_properties/) | Check the list of properties of a Grid column                    |
 | [DataCollection API](../../data_collection/)                | Check the API of DataCollection to work with Grid data           |
-| [Selection API](../../category/selection-api/)              | Check the API of Selection to manage the selection of Grid cells |
+| [TreeCollection API](../../tree_collection/)                | Check the API of TreeCollection to work with Grid data in the TreeGrid mode         |
+| [Selection API](../../category/selection-api/)              | Check the API of the Selection object to manage the selection of Grid cells |
+| [RangeSelection API](../../category/rangeselection-api/)    | Check the API of the RangeSelection module to manage the range selection in Grid |
+| [BlockSelection API](../../category/blockselection-api/)     | Check the API of the BlockSelection module to manage the block selection in Grid |
+| [Clipboard API](../../category/clipboard-events/)              | Check the API of the Clipboard module to work with clipboard in Grid |
+| [DragPanel API](../../category/dragpanel-events/)              | Check the API of the DragPanel module to work with drag panel within Grid |
+| [History API](../../category/history-api/)              	 | Check the API of the History module to work with the history of Grid actions |
+| [Export API](../../category/export-methods-1/)              	 | Check the API of the Export module to export Grid data |
 
 
 ## Common functionality
