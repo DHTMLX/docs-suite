@@ -154,6 +154,7 @@ The following shortcut key is available when the [`editable` mode](grid/api/grid
 - Grid. Export. Double quotes in the cell value are escaped in the exported Excel
 - Grid. The issue with editor closing and saving the entered value on scrolling the grid
 - Grid. The `draggable:false` setting of a column affects the drag-n-drop of rows
+- Grid. The error that occurred when the value of the `parent` property was set as a number 
 
 ### New samples
 

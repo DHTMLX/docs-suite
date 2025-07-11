@@ -28,10 +28,14 @@ add(action: IAction): void;
 
 @params:
 
-- `action: IAction` - the action object containing:
-    - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
-    - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
-    - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
+<table>
+    <tbody>
+        <tr>
+            <td><b>action</b></td>
+            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 :::note
 The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered. 
