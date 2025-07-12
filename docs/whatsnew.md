@@ -10,7 +10,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.2 
 
-Released on July X, 2025
+Released on July 15, 2025
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-9-2/" target="_blank">Review of the release on the blog</a>
 
