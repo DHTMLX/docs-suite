@@ -12,7 +12,20 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 @short: triggered after successfully undoing an action
 
-@signature: {'afterUndo: (action: IAction) => void;'}
+
+### Usage
+
+~~~jsx
+type ActionType = "add" | "remove" | "removeAll" | "change";
+
+interface IAction {
+    type: ActionType; 
+    batch: IRow[];
+    inverse?: IAction; 
+}
+
+afterUndo: (action: IAction) => void;
+~~~
 
 @params:
 The callback of the event is called with the following parameters:

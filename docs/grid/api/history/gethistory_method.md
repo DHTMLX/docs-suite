@@ -12,13 +12,31 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 @short: returns a copy of the array of all actions in the Grid history to prevent accidental modification of the internal structure
 
-@signature: {'getHistory(): IAction[];'}
+### Usage
+
+~~~jsx
+type ActionType = "add" | "remove" | "removeAll" | "change";
+
+interface IAction {
+    type: ActionType; 
+    batch: IRow[];
+    inverse?: IAction; 
+}
+
+getHistory(): IAction[];
+~~~
 
 @returns:
-Returns a copy of the array of all actions in the history. Each `action` object may contain:
-    - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
-    - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
-    - `inverse?: IAction` - the inverse action required for undoing 
+Returns a copy of the array of all actions in the Grid history, where each action presents an object described below:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>action</b></td>
+            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (for the "change" and "removeAll" types)</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 @example:
 // The example shows retrieving the history

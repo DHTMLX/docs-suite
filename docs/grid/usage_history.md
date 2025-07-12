@@ -140,10 +140,14 @@ For the "change" and "removeAll" actions, an `inverse` action is mandatory. Othe
 
 You can add a new action into the history of actions within the grid by using the [`add()`](grid/api/history/add_method.md) method of the `history` object. The method takes the following parameters: 
 
-- `action: IAction` - the action object containing:
-    - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
-    - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
-    - `inverse?: IAction` - the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)
+<table>
+    <tbody>
+        <tr>
+            <td><b>action</b></td>
+            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 :::note
 The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered. 
@@ -397,10 +401,16 @@ To make the process of working with the undo/redo operations more flexible, you 
 
 You can get a copy of the array of all actions in the Grid history using the [`getHistory()`](grid/api/history/gethistory_method.md) method of the `history` object to prevent accidental modification of the internal structure.
 
-Each `action` object in the returned array may contain the following properties:
-    - `type: ActionType` - the type of action: "add", "remove", "removeAll", or "change"
-    - `batch: IRow[]` - an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)
-    - `inverse?: IAction` - the inverse action required for undoing (for the "change" and "removeAll" types)
+Each action in the returned array presents an object described below:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>action</b></td>
+            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (for the "change" and "removeAll" types)</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 The example below shows retrieving the history:
 
