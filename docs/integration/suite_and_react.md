@@ -67,8 +67,8 @@ Open the ***Grid.jsx*** file and import the corresponding Suite widget. Note tha
 - if you use PRO version and install the Suite package from a local folder, the import paths look as follows:
 
 ~~~jsx title="Grid.jsx"
-import { SuiteWidgetName } from 'dhx-suite-package'; // import { Grid, Pagination, ... } from 'dhx-suite-package';
-import 'dhx-suite-package/codebase/suite.css'; // import Suite styles
+import { SuiteWidgetName } from "dhx-suite-package"; // import { Grid, Pagination, ... } from "dhx-suite-package";
+import "dhx-suite-package/codebase/suite.css"; // import Suite styles
 ~~~
 
 Note that depending on the used package, the source files can be minified. In this case, make sure that you import the CSS file as ***suite.min.css***.
@@ -76,7 +76,7 @@ Note that depending on the used package, the source files can be minified. In th
 - if you use the trial version of Suite, the import paths look as follows:
 
 ~~~jsx title="Grid.jsx"
-import { SuiteWidgetName } from '@dhx/trial-suite'; // import { Grid, Pagination, ... } from '@dhx/trial-suite';
+import { SuiteWidgetName } from "@dhx/trial-suite"; // import { Grid, Pagination, ... } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css"; // import Suite styles
 ~~~
 
@@ -89,7 +89,7 @@ To display a Suite widget on a page, you need to create a container and initiali
 ~~~jsx {3,8,12-14,22} title="Grid.jsx"
 import { useEffect, useRef } from "react";
 // import a Suite widget
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 // import Suite styles
 import "@dhx/trial-suite/codebase/suite.min.css"; 
 // create and export the React component
@@ -160,7 +160,7 @@ To load predefined data into a Suite widget, you need to perform the following s
 
 ~~~jsx {5,8,14} title="Grid.jsx"
 import { useEffect, useRef } from "react";
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css";
 
 import { getData } from "../../data"; // 1. import predefined data
@@ -179,7 +179,7 @@ export default function Grid() {
         return () => {
             grid_widget.destructor();
         };
-    }, []);
+    }, [gridData]);
 
     return  <div className="component_container">
                 <div ref={grid_container} className="widget"></div>
@@ -187,13 +187,17 @@ export default function Grid() {
 }
 ~~~
 
+:::tip
+For more information, refer to the **Data loading** section of the corresponding control: [Tree](tree/loading_data.md), [Toolbar](toolbar/load_data.md), [Sidebar](sidebar/data_loading.md), [Ribbon](ribbon/data_loading.md), [Menu](menu/data_loading.md), [List](list/load_data.md), [Grid](grid/data_loading.md), [DataView](dataview/data_loading.md), [Combobox](combobox/adding_options.md), [Chart](chart/data_loading.md), etc.
+:::
+
 #### Specify data through the method
 
 To load predefined data into a Suite widget, you can also call the `parse()` method:
 
 ~~~jsx {5,8,17} title="Grid.jsx"
 import { useEffect, useRef } from "react";
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css";
 
 import { getData } from "../../data"; // 1. import predefined data
@@ -220,10 +224,6 @@ export default function Grid() {
             </div>
 }
 ~~~
-
-:::tip
-You can call any Suite widget method as follows: `suite_widget.someMethod()`
-:::
 
 ### Handle events
 

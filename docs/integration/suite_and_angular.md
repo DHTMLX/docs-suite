@@ -64,8 +64,8 @@ Open the ***grid.component.ts*** file and import the corresponding Suite widget.
 - if you use PRO version and install the Suite package from a local folder, the import paths look as follows:
 
 ~~~jsx title="grid.component.ts"
-import { SuiteWidgetName } from 'dhx-suite-package'; // import { Grid, Pagination, ... } from 'dhx-suite-package';
-import 'dhx-suite-package/codebase/suite.css'; // import Suite styles
+import { SuiteWidgetName } from "dhx-suite-package"; // import { Grid, Pagination, ... } from "dhx-suite-package";
+import "dhx-suite-package/codebase/suite.css"; // import Suite styles
 ~~~
 
 Note that depending on the used package, the source files can be minified. In this case, make sure that you import the CSS file as ***suite.min.css***.
@@ -73,7 +73,7 @@ Note that depending on the used package, the source files can be minified. In th
 - if you use the trial version of Suite, the import paths look as follows:
 
 ~~~jsx title="grid.component.ts"
-import { SuiteWidgetName } from '@dhx/trial-suite'; // import { Grid, Pagination, ... } from '@dhx/trial-suite';
+import { SuiteWidgetName } from "@dhx/trial-suite"; // import { Grid, Pagination, ... } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css"; // import Suite styles
 ~~~
 
@@ -85,7 +85,7 @@ To display a Suite widget on a page, you need to create a container and initiali
 
 ~~~jsx {2,17,23,29-31} title="grid.component.ts"
 // import a Suite widget
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 // import Suite styles
 import "@dhx/trial-suite/codebase/suite.min.css"; 
 
@@ -98,7 +98,7 @@ import {
 } from "@angular/core";
 
 @Component({
-  selector: 'app-grid',
+  selector: "app-grid",
   template: `<div class="component_container">
                 <div #grid_container class="widget"></div>
              </div>`
@@ -106,7 +106,7 @@ import {
 
 // create and export the Angular component
 export class GridComponent implements OnInit, OnDestroy {
-    @ViewChild('grid_container', { static: true }) grid_container!: ElementRef;
+    @ViewChild("grid_container", { static: true }) grid_container!: ElementRef;
 
     private _grid_widget!: Grid;
 
@@ -169,7 +169,7 @@ To load predefined data into a Suite widget, you need to perform the following s
 3. Set the `data` property to the predefined data set within the Suite widget constructor
 
 ~~~jsx {1,4,27,30} title="grid.component.ts"
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css"; 
 
 import { getData } from "../../../app.data"; // 1. import predefined data
@@ -183,14 +183,14 @@ import {
 } from "@angular/core";
 
 @Component({
-  selector: 'app-grid',
+  selector: "app-grid",
   template: `<div class="component_container">
                 <div #grid_container class="widget"></div>
              </div>`
 })
 
 export class GridComponent implements OnInit, OnDestroy {
-    @ViewChild('grid_container', { static: true }) grid_container!: ElementRef;
+    @ViewChild("grid_container", { static: true }) grid_container!: ElementRef;
 
     private _grid_widget!: Grid;
 
@@ -209,12 +209,16 @@ export class GridComponent implements OnInit, OnDestroy {
 }
 ~~~
 
+:::tip
+For more information, refer to the **Data loading** section of the corresponding control: [Tree](tree/loading_data.md), [Toolbar](toolbar/load_data.md), [Sidebar](sidebar/data_loading.md), [Ribbon](ribbon/data_loading.md), [Menu](menu/data_loading.md), [List](list/load_data.md), [Grid](grid/data_loading.md), [DataView](dataview/data_loading.md), [Combobox](combobox/adding_options.md), [Chart](chart/data_loading.md), etc.
+:::
+
 #### Specify data through the method
 
 To load predefined data into a Suite widget, you can also call the `parse()` method:
 
 ~~~jsx {1,4,27,33} title="grid.component.ts"
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css"; 
 
 import { getData } from "../../../app.data"; // 1. import predefined data
@@ -228,14 +232,14 @@ import {
 } from "@angular/core";
 
 @Component({
-  selector: 'app-grid',
+  selector: "app-grid",
   template: `<div class="component_container">
                 <div #grid_container class="widget"></div>
              </div>`
 })
 
 export class GridComponent implements OnInit, OnDestroy {
-    @ViewChild('grid_container', { static: true }) grid_container!: ElementRef;
+    @ViewChild("grid_container", { static: true }) grid_container!: ElementRef;
 
     private _grid_widget!: Grid;
 
@@ -254,10 +258,6 @@ export class GridComponent implements OnInit, OnDestroy {
     }
 }
 ~~~
-
-:::tip
-You can call any Suite widget method as follows: `this.suite_widget.someMethod()`
-:::
 
 ### Handle events
 

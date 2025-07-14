@@ -70,8 +70,8 @@ Open the ***Grid.vue*** file and import Suite source files. Note that:
 
 ~~~html title="Grid.vue"
 <script>
-import { SuiteWidgetName } from 'dhx-suite-package'; // import { Grid, Pagination, ... } from 'dhx-suite-package';
-import 'dhx-suite-package/codebase/suite.css'; // import Suite styles
+import { SuiteWidgetName } from "dhx-suite-package"; // import { Grid, Pagination, ... } from "dhx-suite-package";
+import "dhx-suite-package/codebase/suite.css"; // import Suite styles
 </script>
 ~~~
 
@@ -81,7 +81,7 @@ Note that depending on the used package, the source files can be minified. In th
 
 ~~~html title="Grid.vue"
 <script>
-import { SuiteWidgetName } from '@dhx/trial-suite'; // import { Grid, Pagination, ... } from '@dhx/trial-suite';
+import { SuiteWidgetName } from "@dhx/trial-suite"; // import { Grid, Pagination, ... } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css"; // import Suite styles
 </script>
 ~~~
@@ -167,7 +167,7 @@ To load predefined data into a Suite widget, you need to perform the following s
 
 ~~~html {5,8-11,16} title="Grid.vue"
 <script>
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css";
 
 import { getData } from "../../data"; // 1. import predefined data
@@ -199,13 +199,17 @@ export default {
 </template>
 ~~~
 
+:::tip
+For more information, refer to the **Data loading** section of the corresponding control: [Tree](tree/loading_data.md), [Toolbar](toolbar/load_data.md), [Sidebar](sidebar/data_loading.md), [Ribbon](ribbon/data_loading.md), [Menu](menu/data_loading.md), [List](list/load_data.md), [Grid](grid/data_loading.md), [DataView](dataview/data_loading.md), [Combobox](combobox/adding_options.md), [Chart](chart/data_loading.md), etc.
+:::
+
 #### Specify data through the method
 
 To load predefined data into a Suite widget, you can also call the `parse()` method:
 
 ~~~html {5,8-11,19} title="Grid.vue"
 <script>
-import { Grid } from '@dhx/trial-suite';
+import { Grid } from "@dhx/trial-suite";
 import "@dhx/trial-suite/codebase/suite.min.css";
 
 import { getData } from "../../data"; // 1. import predefined data
@@ -237,10 +241,6 @@ export default {
     </div>
 </template>
 ~~~
-
-:::tip
-You can call any Suite widget method as follows: `this.suite_widget.someMethod()`
-:::
 
 ### Handle events
 
