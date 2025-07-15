@@ -6,10 +6,13 @@ description: You can explore the footerAutoHeight config of Grid in the document
 
 # footerAutoHeight
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: Optional. Allows adjusting the height of the footer for the content to fit in
-@signature: footerAutoHeight?: boolean;
+
+@signature: {'footerAutoHeight?: boolean;'}
 
 @default: false
 

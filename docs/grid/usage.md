@@ -6,6 +6,10 @@ description: You can explore how to work with Grid in the documentation of the D
 
 # Work with Grid
 
+## Working with Grid in the TreeGrid mode
+
+For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.
+
 ## Working with columns and cells
 
 The API of DHTMLX Grid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
@@ -473,26 +477,51 @@ You can easily export data of Grid into the Excel, CSV, PDF, or PNG format.
 
 #### Exporting data to Excel
 
-DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the Export module. The method takes an object with export settings as a parameter.
+Since v9.2 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. You can use either the public export server or a local export server. 
 
-~~~js
+Thus, to have the possibility of exporting files you need to:
+
+- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional)
+    - if you use the public export server, you don't need to specify the link to it, since it is used by default
+    - if you use your own export server, you need to:
+        - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library 
+        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method 
+~~~jsx
 grid.export.xlsx({
-    name:"grid_data",
+    url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the export module
+    name: "my_file", // the name of a ready Excel file, "grid" by default
+    tableName: "grid", // the name of a sheet with grid data in the Excel file, "data" by default
+    dateFormatMask: "mm.dd.yy" // the date format mask for Excel, "dd/mm/yy" by default
+});
+~~~
+
+You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
+
+Read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
+
+**Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
+
+:::note
+The export module server used in the Suite versions up to v9.1 is still available. You can either set the path to the public export server as:
+
+~~~jsx
+grid.export.xlsx({
     url: "//export.dhtmlx.com/excel"
 });
 ~~~
 
-**Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
+or provide a local path to the export module on your computer as a value of the `url` property of the export method.
+:::
 
 #### Exporting data to CSV
 
-You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. 
+You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. The method takes an [object with export settings](grid/api/export/grid_csv_method.md) as a parameter (all settings are optional).
 
-~~~js
+~~~jsx
 grid.export.csv({
-    name:"grid_data", // grid data will be exported to a CSV file named "grid_data"
-    rowDelimiter: "\t", // the tab delimiter will be used to separate rows
-    columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
+    name: "my_file", // the name of a ready CSV file, "grid" by default
+    rowDelimiter: "\t", // the delimiter used to separate rows, "\n" (newline) by default
+    columnDelimiter: ";" // the delimiter used to separate columns, "," (comma) by default
 });
 ~~~
 
@@ -502,14 +531,14 @@ The `csv()` method returns a CSV string with Grid data.
 
 #### Exporting data to PDF
 
-The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
+The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an [object with export settings](grid/api/export/grid_pdf_method.md) as a parameter (all settings are optional).
 
-~~~js
+~~~jsx
 grid.export.pdf({
-    format: "A4",
-    scale: 0.75,
-    displayHeaderFooter: true,
-    theme: "dark",
+    format: "A4", // the format of the output file, "A4" by default
+    scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
+    displayHeaderFooter: true, // defines whether to display the header and footer, false by default
+    theme: "dark" // the exported theme, "light" by default
 });
 ~~~
 
@@ -517,11 +546,11 @@ grid.export.pdf({
 
 #### Exporting data to PNG
 
-The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
+The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an [object with export settings](grid/api/export/grid_png_method.md) as a parameter (all settings are optional).
 
-~~~js
+~~~jsx
 grid.export.png({
-    theme: "dark",
+    theme: "dark" // the exported theme, "light" by default
 });
 ~~~
 
@@ -1198,8 +1227,25 @@ grid.destructor();
 
 ## Using Selection API
 
-For information on using Selection API, read [Work with Selection Object](grid/usage_selection.md).
+For information on using Selection API, read [Work with Selection object](grid/usage_selection.md).
 
-## Working with Grid in the TreeGrid mode
+## Using RangeSelection API
 
-For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.
+For information on using RangeSelection API, read [Work with RangeSelection Module](grid/usage_rangeselection.md).
+
+## Using BlockSelection API
+
+For information on using BlockSelection API, read [Work with BlockSelection module](grid/usage_blockselection.md).
+
+## Working with Clipboard
+
+For information on using the Clipboard module in Grid, read [Work with Clipboard module](grid/usage_clipboard.md).
+
+## Working with DragPanel
+
+For information on using the DragPanel module in Grid, read [Work with DragPanel module](grid/usage_dragpanel.md).
+
+## Working with History API
+
+For information on using the History API in Grid, read [Work with History module](grid/usage_history.md).
+

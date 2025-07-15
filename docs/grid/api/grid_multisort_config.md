@@ -6,11 +6,12 @@ description: You can explore the multiSort config of Grid in the documentation o
 
 # multiSort
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: Optional. Enables the possibility of sorting Grid data by multiple columns
 
-:::tip Pro version only
-This functionality is available in the PRO edition only.
-:::
 
 @signature: {'multiSort?: boolean;'}
 
@@ -30,3 +31,6 @@ const grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
 **Related article**: [Sorting by multiple columns](grid/usage.md#sorting-by-multiple-columns)
+
+@changelog:
+- Added in v9.1

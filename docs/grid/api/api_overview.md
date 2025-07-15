@@ -43,8 +43,12 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 
 :::info important
 - Use [the methods of DataCollection](data_collection.md) to work with data. 
-- Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manage the selection of Grid cells. 
 - Use [the methods of TreeCollection](tree_collection.md#methods) to work with data of Grid in the TreeGrid mode. 
+- Use [the methods of the Selection object](grid/api/api_overview.md#selection-methods) to work with the selection of Grid cells. 
+- Use [the methods of the RangeSelection module](grid/api/api_overview.md#rangeselection-methods) to work with the range selection within Grid. 
+- Use [the methods of the BlockSelection module](grid/api/api_overview.md#blockselection-methods) to work with the block selection within Grid.
+- Use [the methods of the Export module](grid/api/api_overview.md#export-methods) to work with data export within Grid.  
+- Use [the methods of the History module](grid/api/api_overview.md#history-methods) to work with the history of actions within Grid. 
 :::
 
 ## Grid events
@@ -163,9 +167,14 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_beforerowresize_event.md) | @getshort(grid/api/grid_beforerowresize_event.md) |
 
 :::info important
-- Use [the events of DataCollection](data_collection.md#events) to work with data of Grid. 
-- Apply [the events of Selection](grid/api/api_overview.md#selection-events) to handle the selection of Grid cells. 
-- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
+- Use [the events of DataCollection](data_collection.md#events) to work with data of Grid.
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode.  
+- Use [the events of the Selection object](grid/api/api_overview.md#selection-events) to work with the selection of Grid cells. 
+- Use [the events of the RangeSelection module](grid/api/api_overview.md#rangeselection-events) to work with the range selection within Grid.
+- Use [the events of the BlockSelection module](grid/api/api_overview.md#blockselection-events) to work with the block selection within Grid.
+- Use [the events of the Clipboard module](grid/api/api_overview.md#clipboard-events) to work with clipboard within Grid. 
+- Use [the events of the DragPanel module](grid/api/api_overview.md#dragpanel-events) to work with drag panel within Grid. 
+- Use [the events of the History module](grid/api/api_overview.md#history-events) to work with the history of actions within Grid. 
 :::
 
 ## Grid properties
@@ -176,7 +185,9 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_autoemptyrow_config.md)    | @getshort(grid/api/grid_autoemptyrow_config.md)    |
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
+| [](grid/api/grid_blockselection_config.md)  | @getshort(grid/api/grid_blockselection_config.md)  |
 | [](grid/api/grid_bottomsplit_config.md)     | @getshort(grid/api/grid_bottomsplit_config.md)     |
+| [](grid/api/grid_clipboard_config.md)       | @getshort(grid/api/grid_clipboard_config.md)       |
 | [](grid/api/grid_closable_config.md)        | @getshort(grid/api/grid_closable_config.md)        |
 | [](grid/api/grid_collapsed_config.md)       | @getshort(grid/api/grid_collapsed_config.md)       |
 | [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
@@ -186,6 +197,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_dragexpand_config.md)      | @getshort(grid/api/grid_dragexpand_config.md)      |
 | [](grid/api/grid_dragitem_config.md)        | @getshort(grid/api/grid_dragitem_config.md)        |
 | [](grid/api/grid_dragmode_config.md)        | @getshort(grid/api/grid_dragmode_config.md)        |
+| [](grid/api/grid_dragpanel_config.md)       | @getshort(grid/api/grid_dragpanel_config.md)       |
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
 | [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
 | [](grid/api/grid_exportstyles_config.md)    | @getshort(grid/api/grid_exportstyles_config.md)    |
@@ -198,11 +210,13 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_headerrowheight_config.md) | @getshort(grid/api/grid_headerrowheight_config.md) |
 | [](grid/api/grid_headertooltip_config.md)   | @getshort(grid/api/grid_headertooltip_config.md)   |
 | [](grid/api/grid_height_config.md)          | @getshort(grid/api/grid_height_config.md)          |
+| [](grid/api/grid_history_config.md)         | @getshort(grid/api/grid_history_config.md)         |
 | [](grid/api/grid_htmlenable_config.md)      | @getshort(grid/api/grid_htmlenable_config.md)      |
 | [](grid/api/grid_keynavigation_config.md)   | @getshort(grid/api/grid_keynavigation_config.md)   |
 | [](grid/api/grid_leftsplit_config.md)       | @getshort(grid/api/grid_leftsplit_config.md)       |
 | [](grid/api/grid_multiselection_config.md)  | @getshort(grid/api/grid_multiselection_config.md)  |
 | [](grid/api/grid_multisort_config.md)  	  | @getshort(grid/api/grid_multisort_config.md)       |
+| [](grid/api/grid_rangeselection_config.md)  | @getshort(grid/api/grid_rangeselection_config.md)  |
 | [](grid/api/grid_resizable_config.md)       | @getshort(grid/api/grid_resizable_config.md)       |
 | [](grid/api/grid_rightsplit_config.md)      | @getshort(grid/api/grid_rightsplit_config.md)      |
 | [](grid/api/grid_rootparent_config.md)      | @getshort(grid/api/grid_rootparent_config.md)      |
@@ -227,14 +241,15 @@ You will find the list of all the available configuration properties of a Grid c
 
 ### Selection methods
 
-| Name                                                  | Description                                                  |
-| ----------------------------------------------------- | ------------------------------------------------------------ |
-| [](grid/api/selection/selection_disable_method.md)    | @getshort(grid/api/selection/selection_disable_method.md)    |
-| [](grid/api/selection/selection_enable_method.md)     | @getshort(grid/api/selection/selection_enable_method.md)     |
-| [](grid/api/selection/selection_getcell_method.md)    | @getshort(grid/api/selection/selection_getcell_method.md)    |
-| [](grid/api/selection/selection_getcells_method.md)   | @getshort(grid/api/selection/selection_getcells_method.md)   |
-| [](grid/api/selection/selection_removecell_method.md) | @getshort(grid/api/selection/selection_removecell_method.md) |
-| [](grid/api/selection/selection_setcell_method.md)    | @getshort(grid/api/selection/selection_setcell_method.md)    |
+| Name                                                  	| Description                                                  	  |
+| --------------------------------------------------------- | --------------------------------------------------------------- |
+| [](grid/api/selection/selection_disable_method.md)    	| @getshort(grid/api/selection/selection_disable_method.md)       |
+| [](grid/api/selection/selection_enable_method.md)     	| @getshort(grid/api/selection/selection_enable_method.md)        |
+| [](grid/api/selection/selection_getcell_method.md)    	| @getshort(grid/api/selection/selection_getcell_method.md)       |
+| [](grid/api/selection/selection_getcells_method.md)   	| @getshort(grid/api/selection/selection_getcells_method.md)      |
+| [](grid/api/selection/selection_isselectedcell_method.md) | @getshort(grid/api/selection/selection_isselectedcell_method.md)|
+| [](grid/api/selection/selection_removecell_method.md) 	| @getshort(grid/api/selection/selection_removecell_method.md)    |
+| [](grid/api/selection/selection_setcell_method.md)    	| @getshort(grid/api/selection/selection_setcell_method.md)       |
 
 ### Selection events
 
@@ -245,7 +260,61 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/selection/selection_beforeselect_event.md)   | @getshort(grid/api/selection/selection_beforeselect_event.md)   |
 | [](grid/api/selection/selection_beforeunselect_event.md) | @getshort(grid/api/selection/selection_beforeunselect_event.md) |
 
-## Export methods
+## RangeSelection API
+
+### RangeSelection methods
+
+| Name                                                  | Description                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/rangeselection/disable_method.md)    | @getshort(grid/api/rangeselection/disable_method.md)    |
+| [](grid/api/rangeselection/enable_method.md)    | @getshort(grid/api/rangeselection/enable_method.md)    |
+| [](grid/api/rangeselection/getrange_method.md)    | @getshort(grid/api/rangeselection/getrange_method.md)    |
+| [](grid/api/rangeselection/getrangedcells_method.md)    | @getshort(grid/api/rangeselection/getrangedcells_method.md)    |
+| [](grid/api/rangeselection/isdisabled_method.md)    | @getshort(grid/api/rangeselection/isdisabled_method.md)    |
+| [](grid/api/rangeselection/isranged_method.md)    | @getshort(grid/api/rangeselection/isranged_method.md)    |
+| [](grid/api/rangeselection/resetrange_method.md)    | @getshort(grid/api/rangeselection/resetrange_method.md)    |
+| [](grid/api/rangeselection/setrange_method.md)    | @getshort(grid/api/rangeselection/setrange_method.md)    |
+
+
+### RangeSelection events
+
+| Name                                                     | Description                                                     |
+| -------------------------------------------------------- | --------------------------------------------------------------- |
+| [](grid/api/rangeselection/afterresetrange_event.md)    | @getshort(grid/api/rangeselection/afterresetrange_event.md)    |
+| [](grid/api/rangeselection/aftersetrange_event.md)    | @getshort(grid/api/rangeselection/aftersetrange_event.md)    |
+| [](grid/api/rangeselection/beforeresetrange_event.md)    | @getshort(grid/api/rangeselection/beforeresetrange_event.md)    |
+| [](grid/api/rangeselection/beforesetrange_event.md)    | @getshort(grid/api/rangeselection/beforesetrange_event.md)    |
+
+
+
+## BlockSelection API
+
+### BlockSelection methods
+
+| Name                                                  | Description                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/blockselection/disable_method.md)    		| @getshort(grid/api/blockselection/disable_method.md)    	   |
+| [](grid/api/blockselection/enable_method.md)     		| @getshort(grid/api/blockselection/enable_method.md)          |
+| [](grid/api/blockselection/isdisabled_method.md)     	| @getshort(grid/api/blockselection/isdisabled_method.md)      |
+
+### BlockSelection events
+
+| Name                                                     	    | Description                                                     	    |
+| ------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [](grid/api/blockselection/afterblockhandleapply_event.md)    | @getshort(grid/api/blockselection/afterblockhandleapply_event.md)     |
+| [](grid/api/blockselection/afterblockselectionapply_event.md) | @getshort(grid/api/blockselection/afterblockselectionapply_event.md)  |
+| [](grid/api/blockselection/afterblockselectionmove_event.md)  | @getshort(grid/api/blockselection/afterblockselectionmove_event.md)   |
+| [](grid/api/blockselection/beforeblockhandleapply_event.md)   | @getshort(grid/api/blockselection/beforeblockhandleapply_event.md)    |
+| [](grid/api/blockselection/beforeblockselectionapply_event.md)| @getshort(grid/api/blockselection/beforeblockselectionapply_event.md) |
+| [](grid/api/blockselection/beforeblockselectionmove_event.md) | @getshort(grid/api/blockselection/beforeblockselectionmove_event.md)  |
+| [](grid/api/blockselection/blockhandlemousedown_event.md)   	| @getshort(grid/api/blockselection/blockhandlemousedown_event.md)    	|
+| [](grid/api/blockselection/blockselectionend_event.md)   		| @getshort(grid/api/blockselection/blockselectionend_event.md)    		|
+| [](grid/api/blockselection/blockselectionstart_event.md)   	| @getshort(grid/api/blockselection/blockselectionstart_event.md)  		|
+| [](grid/api/blockselection/blockselectionvalidate_event.md)   | @getshort(grid/api/blockselection/blockselectionvalidate_event.md)    |
+
+## Export API
+
+### Export methods
 
 | Name                                    | Description                                    |
 | --------------------------------------- | ---------------------------------------------- |
@@ -253,4 +322,58 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/export/grid_pdf_method.md)  | @getshort(grid/api/export/grid_pdf_method.md)  |
 | [](grid/api/export/grid_png_method.md)  | @getshort(grid/api/export/grid_png_method.md)  |
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |
+
+## Clipboard API
+
+### Clipboard events
+
+| Name                                    	 | Description                                    	 |
+| ------------------------------------------ | ------------------------------------------------- |
+| [](grid/api/clipboard/aftercopy_event.md)  | @getshort(grid/api/clipboard/aftercopy_event.md)  |
+| [](grid/api/clipboard/afterpaste_event.md) | @getshort(grid/api/clipboard/afterpaste_event.md) |
+| [](grid/api/clipboard/beforecopy_event.md) | @getshort(grid/api/clipboard/beforecopy_event.md) |
+| [](grid/api/clipboard/beforepaste_event.md)| @getshort(grid/api/clipboard/beforepaste_event.md)|
+| [](grid/api/clipboard/copyerror_event.md)  | @getshort(grid/api/clipboard/copyerror_event.md)  |
+| [](grid/api/clipboard/pasteerror_event.md) | @getshort(grid/api/clipboard/pasteerror_event.md) |
+
+## DragPanel API
+
+### DragPanel events
+
+| Name                                    	 		  	| Description                                    	  		 	|
+| ----------------------------------------------------- | ------------------------------------------------------------- |
+| [](grid/api/dragpanel/dragpanelitemclick_event.md)  	| @getshort(grid/api/dragpanel/dragpanelitemclick_event.md)  	|
+| [](grid/api/dragpanel/dragpanelitemmousedown_event.md)| @getshort(grid/api/dragpanel/dragpanelitemmousedown_event.md) |
+
+## History API
+
+### History methods
+
+| Name                                                  | Description                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/history/add_method.md)    				| @getshort(grid/api/history/add_method.md)    			   	   |
+| [](grid/api/history/canredo_method.md)    			| @getshort(grid/api/history/canredo_method.md)    			   |
+| [](grid/api/history/canundo_method.md)    			| @getshort(grid/api/history/canundo_method.md)    			   |
+| [](grid/api/history/disable_method.md)    			| @getshort(grid/api/history/disable_method.md)    			   |
+| [](grid/api/history/enable_method.md)     			| @getshort(grid/api/history/enable_method.md)     			   |
+| [](grid/api/history/gethistory_method.md)    			| @getshort(grid/api/history/gethistory_method.md)    		   |
+| [](grid/api/history/isdisabled_method.md)    			| @getshort(grid/api/history/isdisabled_method.md)    		   |
+| [](grid/api/history/redo_method.md)    				| @getshort(grid/api/history/redo_method.md)    		   	   |
+| [](grid/api/history/remove_method.md)    				| @getshort(grid/api/history/remove_method.md)    		   	   |
+| [](grid/api/history/removeall_method.md)              | @getshort(grid/api/history/removeall_method.md)              |
+| [](grid/api/history/undo_method.md)                   | @getshort(grid/api/history/undo_method.md)                   |
+
+
+### History events
+
+| Name                                                  | Description                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/history/afteradd_event.md)                | @getshort(grid/api/history/afteradd_event.md)                |
+| [](grid/api/history/afterredo_event.md)               | @getshort(grid/api/history/afterredo_event.md)               |
+| [](grid/api/history/afterundo_event.md)               | @getshort(grid/api/history/afterundo_event.md)               |
+| [](grid/api/history/beforeadd_event.md)               | @getshort(grid/api/history/beforeadd_event.md)               |
+| [](grid/api/history/beforeredo_event.md)              | @getshort(grid/api/history/beforeredo_event.md)              |
+| [](grid/api/history/beforeundo_event.md)              | @getshort(grid/api/history/beforeundo_event.md)              |
+| [](grid/api/history/error_event.md)                   | @getshort(grid/api/history/error_event.md)                   |
+
 

@@ -6,7 +6,9 @@ description: You can explore the dragColumnStart event of Grid in the documentat
 
 # dragColumnStart
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: fires when dragging of a column has started
 

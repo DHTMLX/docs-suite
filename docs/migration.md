@@ -6,6 +6,39 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+9.1 -> 9.2
+-----------
+
+### Grid
+
+#### Export to Excel module update
+
+Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for [exporting Grid data to an Excel file](grid/usage.md/#exporting-data-to-excel). As earlier, you can use either the public export server or a local export server.  
+
+##### From v9.2
+
+The link to the public export server is used by default, so you don't need to specify it. If you use your own export server, you need to install the **Json2Excel** library and provide the local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`:
+
+~~~jsx 
+grid.export.xlsx({
+    url: "../libs/json2excel/1.3/worker.js?vx", // the path to the export module, if a local export server is used
+    // more export settings
+});
+~~~
+
+##### Up to v9.1
+
+The previously used export module server is still available for the Suite versions up to v9.1. You can either set the path to the public export server as:
+
+~~~jsx
+grid.export.xlsx({
+    url: "//export.dhtmlx.com/excel"
+});
+~~~
+
+or provide a local path to the export module on your computer as a value of the `url` property of the export method.
+
+
 9.0 -> 9.1
 -----------
 

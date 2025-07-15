@@ -8,6 +8,171 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2 
+
+Released on July 15, 2025
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-9-2/" target="_blank">Review of the release on the blog</a>
+
+### Breaking changes
+
+This version brings some updates in the use of the export module used for [exporting Grid data to an Excel file](grid/usage.md/#exporting-data-to-excel). Check the [Migration](migration.md#91---92) guide to keep in step with the latest updates.
+
+### New functionality
+
+- Grid. The [`RangeSelection` module](grid/usage_rangeselection.md) is added to provide functionality for managing range selection in Grid (PRO version)
+    - new Grid configuration property: [`rangeSelection`](grid/api/grid_rangeselection_config.md)
+	- new methods of the `range` object: [`disable()`](grid/api/rangeselection/disable_method.md), [`enable()`](grid/api/rangeselection/enable_method.md), [`getRange()`](grid/api/rangeselection/getrange_method.md), [`getRangedCells()`](grid/api/rangeselection/getrangedcells_method.md), [`isDisabled()`](grid/api/rangeselection/isdisabled_method.md), [`isRanged()`](grid/api/rangeselection/isranged_method.md), [`resetRange()`](grid/api/rangeselection/resetrange_method.md), [`setRange()`](grid/api/rangeselection/setrange_method.md)
+	- new events of the `range` object: [`afterResetRange`](grid/api/rangeselection/afterresetrange_event.md), [`afterSetRange`](grid/api/rangeselection/aftersetrange_event.md), [`beforeResetRange`](grid/api/rangeselection/beforeresetrange_event.md), [`beforeSetRange`](grid/api/rangeselection/beforesetrange_event.md)
+- Grid. The [`BlockSelection` module](grid/usage_blockselection.md) is added to provide functionality for managing block selection in Grid (PRO version)
+	- new Grid configuration property: [`blockSelection`](grid/api/grid_blockselection_config.md)
+	- new methods of the `block` object: [`disable()`](grid/api/blockselection/disable_method.md), [`enable()`](grid/api/blockselection/enable_method.md), [`isDisabled()`](grid/api/blockselection/isdisabled_method.md)
+	- new events of the `block` object: [`afterBlockHandleApply`](grid/api/blockselection/afterblockhandleapply_event.md), [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md), [`afterBlockSelectionMove`](grid/api/blockselection/afterblockselectionmove_event.md), [`beforeBlockHandleApply`](grid/api/blockselection/beforeblockhandleapply_event.md), [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md), [`beforeBlockSelectionMove`](grid/api/blockselection/beforeblockselectionmove_event.md), [`blockHandleMouseDown`](grid/api/blockselection/blockhandlemousedown_event.md), [`blockSelectionEnd`](grid/api/blockselection/blockselectionend_event.md), [`blockSelectionStart`](grid/api/blockselection/blockselectionstart_event.md), [`blockSelectionValidate`](grid/api/blockselection/blockselectionvalidate_event.md) 
+- Grid. The [`Clipboard` module](grid/usage_clipboard.md) is added to provide functionality for interacting with the clipboard in Grid (PRO version)
+    - new Grid configuration property: [`clipboard`](grid/api/grid_clipboard_config.md)
+    - new events of the `clipboard` object: [`afterCopy`](grid/api/clipboard/aftercopy_event.md), [`afterPaste`](grid/api/clipboard/afterpaste_event.md), [`beforeCopy`](grid/api/clipboard/beforecopy_event.md), [`beforePaste`](grid/api/clipboard/beforepaste_event.md), [`copyError`](grid/api/clipboard/copyerror_event.md), [`pasteError`](grid/api/clipboard/pasteerror_event.md)
+- Grid. The [`DragPanel` module](grid/usage_dragpanel.md) is added to provide auxiliary functionality for moving rows in Grid and improve the drag-n-drop visualization (PRO version)
+	- new Grid configuration property: [`dragPanel`](grid/api/grid_dragpanel_config.md)
+	- new events: [`dragPanelItemClick`](grid/api/dragpanel/dragpanelitemclick_event.md), [`dragPanelItemMouseDown`](grid/api/dragpanel/dragpanelitemmousedown_event.md)
+- Grid. The [`History` module](grid/usage_history.md) is added to provide functionality for managing the history of actions in Grid, including the [Undo/Redo functionality](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions) (PRO version)
+	- new Grid configuration property: [`history`](grid/api/grid_history_config.md)
+	- new methods of the `history` object: [`add()`](grid/api/history/add_method.md), [`canRedo()`](grid/api/history/canredo_method.md), [`canUndo()`](grid/api/history/canundo_method.md), [`disable()`](grid/api/history/disable_method.md), [`enable()`](grid/api/history/enable_method.md), [`isDisabled()`](grid/api/history/isdisabled_method.md), [`getHistory()`](grid/api/history/gethistory_method.md), [`redo()`](grid/api/history/redo_method.md), [`remove()`](grid/api/history/remove_method.md), [`removeAll()`](grid/api/history/removeall_method.md), [`undo()`](grid/api/history/undo_method.md)
+	- new events of the `history` object: [`afterAdd`](grid/api/history/afteradd_event.md), [`afterRedo`](grid/api/history/afterredo_event.md), [`afterUndo`](grid/api/history/afterundo_event.md), [`beforeAdd`](grid/api/history/beforeadd_event.md), [`beforeRedo`](grid/api/history/beforeredo_event.md), [`beforeUndo`](grid/api/history/beforeundo_event.md), [`error`](grid/api/history/error_event.md)
+- Grid. The [`isSelected()`](grid/api/selection/selection_isselectedcell_method.md) method is added for the [`Selection` module](grid/usage_selection.md) to check whether the specified cell is selected
+
+### Updates
+
+- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved. Check the [related sample](https://snippet.dhtmlx.com/uevdwjuo) 
+- Grid. The [export to Excel](grid/usage.md/#exporting-data-to-excel) functionality is updated. The [Json2Excel](https://github.com/dhtmlx/json2excel) module is now used for exporting Grid data to Excel. Check the [Migration guide](migration.md/#91---92) for details
+- Grid. The [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the Export module gets two new configuration settings:
+    - `tableName`- to set the name of a sheet with grid data in the Excel file
+    - `dateFormatMask` - to set the date format mask for Excel
+- Grid. The possibility to use keyboard navigation for [selecting ranges of cells](grid/configuration.md/#shortcut-keys-for-selecting-ranges-of-cells). The following shortcut keys and their combinations are available: 
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the previous vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the next vertical cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the previous horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+        <tr>
+            <td><b>ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the next horizontal cell, setting the initially selected cell if no selection is active</td>
+        </tr>
+         <tr>
+            <td><b>Shift+ArrowUp</b></td>
+            <td>extends the selected range from the current initial cell to the previous vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowDown</b></td>
+            <td>extends the selected range from the current initial cell to the next vertical cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowLeft</b></td>
+            <td>extends the selected range from the current initial cell to the previous horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Shift+ArrowRight</b></td>
+            <td>extends the selected range from the current initial cell to the next horizontal cell </td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowUp</b></td>
+            <td>resets the selected range and moves the focus to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowDown</b></td>
+            <td>resets the selected range and moves the focus to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowLeft</b></td>
+            <td>resets the selected range and moves the focus to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+ArrowRight</b></td>
+            <td>resets the selected range and moves the focus to the last horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td>extends the selected range to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td>extends the selected range to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td> extends the selected range to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td> extends the selected range to the last horizontal cell</td>
+        </tr>
+    </tbody>
+</table>
+
+The following shortcut key and mouse combination is available:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>Shift + click</b></td>
+            <td>sets the end cell of the range, extending the selection from the current initial cell</td>
+        </tr>
+    </tbody>
+</table>
+
+The following shortcut key is available when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode:
+
+ <table>
+    <tbody>
+        <tr>
+            <td><b>Delete</b></td>
+            <td>allows clearing the selected cells</td>
+        </tr>
+    </tbody>
+</table>
+
+### Fixes
+
+- DragManager. Incorrect determining the position for dropping an element during the Drag&Drop operation (child elements) in the TreeGrid mode
+- DragManager. The issue with moving a line to the header/footer area
+- DragManager. The problem with determining the position for dropping above the first element
+- DragManager. The issue associated with the absence or incorrect definition of the drop position for the default mode
+- DragManager. The issue with the `dragIn` event (the previous reset state was transmitted)
+- DragManager. The `dragIn/dragOut` events are optimized (false positives are removed)
+- Grid. The issue with falsy selection of fixed cells while selecting unfrozen cells
+- Grid. The issue with dragging unselected items
+- Grid. Sorting of the Date string (ISO) values results in the invalid format error
+- Grid. Export. Double quotes in the cell value are escaped in the exported Excel
+- Grid. The issue with editor closing and saving the entered value on scrolling the grid
+- Grid. The `draggable:false` setting of a column affects the drag-n-drop of rows
+- Grid. The error that occurred when the value of the `parent` property was set as a number 
+
+### New samples
+
+#### Grid
+
+- [Grid (TreeGrid). DragPanel. Initialization](https://snippet.dhtmlx.com/uevdwjuo)
+- [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
+- [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/sryiguxu)
+- [Grid. BlockSelection. Styling (custom CSS)](https://snippet.dhtmlx.com/4k3x4bfm)
+- [Grid. Clipboard with notifications (messages)](https://snippet.dhtmlx.com/2nar7ocd)
+- [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
+- [Grid. Clipboard. Copy/сut/paste between grids with validation](https://snippet.dhtmlx.com/q1wj772g)
+- [Grid. Clipboard between two Grids with modifiers](https://snippet.dhtmlx.com/h3hxcpog)
+- [Grid. Clipboard between Grid and Spreadsheet](https://snippet.dhtmlx.com/hx69j42h)
+- [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
+- [Grid. History. Adding a custom action](https://snippet.dhtmlx.com/i9rm4vsd)
+
+
 ## Version 9.1.6
 
 Released on June 23, 2025
@@ -98,10 +263,18 @@ This version brings some updates in the API methods. Check the [Migration](migra
 
 ### New functionality
 
+#### DataCollection/TreeCollection
+
+- The new [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method to get the current state of data sorting (including sorting by multiple columns)
+
 #### Grid 
 
 - [Row expander](grid/configuration.md#row-expander) with the possibility to insert any Suite widget or HTML content (PRO version)
+    - new Grid configuration property: [`subRow`](grid/api/grid_subrow_config.md)
+    - new Grid configuration property: [`subRowConfig`](grid/api/grid_subrowconfig_config.md)
+    - new method: [`getSubRow()`](grid/api/grid_getsubrow_method.md)
 - [Multi-sorting](grid/usage.md#sorting-by-multiple-columns) functionality that allows sorting Grid by several columns (PRO version)
+    - new Grid configuration property: [`multiSort`](grid/api/grid_multisort_config.md)
 
 ### Fixes
 
