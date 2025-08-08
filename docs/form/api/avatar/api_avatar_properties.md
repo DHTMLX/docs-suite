@@ -178,7 +178,8 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr> 
         <tr>
             <td id="accept"><b>accept</b></td>
-            <td>(optional) allows specifying the type/extension of the selected file, <i>"image/*"</i> by default. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
+            <td>(optional) allows specifying the type/extension of the selected file, <i>"image/*"</i> by default. 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/accept">Check details</a></td>
         </tr>      
         <tr>
             <td><b>fieldName</b></td>

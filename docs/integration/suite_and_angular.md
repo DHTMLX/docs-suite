@@ -7,7 +7,7 @@ description: You can explore how to use DHTMLX Suite Widgets with Angular. Brows
 # Integration Suite widgets with Angular
 
 :::tip
-You should be familiar with basic concepts and patterns of **Angular** before reading this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.io/docs).
+You should be familiar with basic concepts and patterns of **Angular** before reading this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.dev/overview).
 :::
 
 DHTMLX Suite is compatible with **Angular**. For more information, refer to the corresponding example on GitHub: [DHTMLX Suite with Angular Demo](https://github.com/DHTMLX/angular-suite-demo).
@@ -15,7 +15,7 @@ DHTMLX Suite is compatible with **Angular**. For more information, refer to the 
 ## Create new Angular project
 
 :::info
-Before you start to create a new project, install [**Angular CLI**](https://angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
+Before you start to create a new project, install [**Angular CLI**](https://angular.dev/tools/cli) and [**Node.js**](https://nodejs.org/en/).
 :::
 
 Step 1. Create a project and name it as ***my-angular-suite-app***:

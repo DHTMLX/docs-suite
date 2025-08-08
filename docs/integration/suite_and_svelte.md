@@ -22,7 +22,7 @@ Step 1. Create a project and name it as ***my-svelte-suite-app***:
 
 There are several ways on how to create a **Svelte** project:
 
-- you can use the [**SvelteKit**](https://kit.svelte.dev/)
+- you can use the [**SvelteKit**](https://svelte.dev/docs/kit/introduction)
 
 or
 
@@ -32,7 +32,7 @@ or
 npm create vite@latest
 ~~~
 
-Check the details in the [related article](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit).
+Check the details in the [related article](https://svelte.dev/docs/svelte/getting-started#Alternatives-to-SvelteKit).
 
 Step 2. Go to the project directory:
 

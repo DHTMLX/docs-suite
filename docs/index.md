@@ -11,7 +11,7 @@ import WidgetIcons from '../src/components/WidgetIcons';
 
 Welcome to the documentation of DHTMLX Suite ‐ JavaScript UI widget library!
 
-This documentation provides insight into how to create cross-browser responsive web applications using DHTMLX Suite. It contains API references, overviews, initialization, configuration, customization, and event handling guides for each Suite widget. There is also guidance on how to build various web systems following the example of DHTMLX live demos. Additionally, here you will find links to code examples of Suite widgets used with Angular, React, and Vue.js.
+This documentation provides insight into how to create cross-browser responsive web applications using DHTMLX Suite. It contains API references, overviews, initialization, configuration, customization, and event handling guides for each Suite widget. There is also guidance on how to build various web systems following the example of DHTMLX live demos. Additionally, here you will find links to code examples of Suite widgets used with Angular, React, Svelte and Vue.
 
 ## DHTMLX Suite widgets
 
@@ -101,4 +101,4 @@ All DHTMLX widgets are created with accessible design in mind. DHTMLX sticks to 
 
 ## Release History
 
-The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the [“What’s new”](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.
+The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the ["What’s new"](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.
