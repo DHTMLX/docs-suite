@@ -101,4 +101,4 @@ All DHTMLX widgets are created with accessible design in mind. DHTMLX sticks to 
 
 ## Release History
 
-The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the ["What’s new"](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.
+The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the ["What's new"](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.

@@ -1,10 +1,10 @@
 ---
 sidebar_label: Integration with Angular
-title: Integration DHTML Suite with Angular
+title: Integration with Angular
 description: You can explore how to use DHTMLX Suite Widgets with Angular. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Integration Suite widgets with Angular
+# Integration with Angular
 
 :::tip
 You should be familiar with basic concepts and patterns of **Angular** before reading this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.dev/overview).

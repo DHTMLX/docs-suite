@@ -1,10 +1,10 @@
 ---
 sidebar_label: Integration with Svelte
-title: Integration DHTML Suite with Svelte 
+title: Integration with Svelte 
 description: You can explore how to use DHTMLX Suite Widgets with Svelte. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Integration Suite widgets with Svelte
+# Integration with Svelte
 
 :::tip
 You should be familiar with the basic concepts and patterns of **Svelte** before reading this documentation. To refresh your knowledge, please refer to the [**Svelte documentation**](https://svelte.dev/).

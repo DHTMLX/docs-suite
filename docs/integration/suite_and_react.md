@@ -1,10 +1,10 @@
 ---
 sidebar_label: Integration with React
-title: Integration DHTML Suite with React
+title: Integration with React
 description: You can explore how to use DHTMLX Suite Widgets with React. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Integration Suite widgets with React
+# Integration with React
 
 :::tip
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) before reading this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://react.dev/learn).
