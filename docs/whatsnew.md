@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.1 
+
+Released on September 1, 2025
+
+### Fixes
+
+- DragManager. Incorrect determining of dragged items' ids while dragging multiple items
+- Form. The `beforeChange` event behavior in the Input and Textarea controls
+- Grid. The `BlockSelection` module behavior when using several Grids on a page
+- Grid. The issue with inserting data into inputFilter from the clipboard 
+- Grid. The parameter that defines the dragged item's drop position relative to the target item is added for the callback of drag-related events
+- Grid. The problem with multiselection of rows outside the visible Grid area when the `dragMode` option is enabled
+- Grid. Displaying of boolean values in the grouped data
+- Grid. Processing of invalid data for columns with the `number` type 
+- Grid. The processing of the grouped invalid data is improved
+
 ## Version 9.2 
 
 Released on July 15, 2025

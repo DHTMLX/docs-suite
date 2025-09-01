@@ -8,7 +8,7 @@ description: You can explore the beforeRowDrop event of Grid in the documentatio
 
 @short: fires before the user has finished dragging and released the mouse button over a target row
 
-@signature: {'beforeRowDrop: (data: object, event: MouseEvent) => void | boolean;'}
+@signature: {'beforeRowDrop: (data: object, event: MouseEvent, dropPosition: "top" | "bottom" | "in") => void | boolean;'}
 
 @params:
 The callback of the event is called with the following parameters:
@@ -17,12 +17,14 @@ The callback of the event is called with the following parameters:
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
 - `event: MouseEvent` - a native HTML event object 
+- `dropPosition: string` - defines the position of the dragged item dropping relative to the target item: "top" | "bottom" | "in" (the "in" value is used only for the TreeGrid mode)
+
 
 @returns:
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-grid.events.on("beforeRowDrop", (data, event) => {
+grid.events.on("beforeRowDrop", (data, event, dropPosition) => {
     // your logic here
     return false;
 });
