@@ -939,7 +939,7 @@ column: {
     id: string | number,
     header: [
         {
-            text?: string,
+            text?: string | ((content: ISummaryList) => string),
             tooltip?: boolean | object, // true by default
             tooltipTemplate?: (
                 content: { value: string } & ISummaryList,
@@ -955,7 +955,7 @@ column: {
     ],
     footer?: [
         {
-            text?: string,
+            text?: string | ((content: ISummaryList) => string),
             tooltip?: boolean | object, // true by default
             tooltipTemplate?: (
                 content: { value: string } & ISummaryList,
