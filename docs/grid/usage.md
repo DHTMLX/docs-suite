@@ -18,7 +18,7 @@ The API of DHTMLX Grid allows setting configuration of columns, getting an objec
 
 You can specify the configuration of Grid columns on the fly via the [](grid/api/grid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
 
-~~~js
+~~~jsx
 grid.setColumns([
     { id: "a", header: [{ text: "New header for column a" }] },
     { id: "b", header: [{ text: "New header for column b" }] },
@@ -32,7 +32,7 @@ You can find the full list of the available configuration options of a Grid colu
 
 It is possible to return an object with attributes of a column via its id. Use the [](grid/api/grid_getcolumn_method.md) method for this purpose.
 
-~~~js
+~~~jsx
 const column = grid.getColumn("b"); // ->
 // -> { width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string" }
 ~~~
@@ -43,7 +43,7 @@ The method returns an object with configuration of the specified column. You can
 
 There is the [](grid/api/grid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
-~~~js
+~~~jsx
 const rect = grid.getCellRect("1", "c");
 // -> { x: 200, y: -40, height: 40, width: 200 }
 ~~~
@@ -75,7 +75,7 @@ The return object includes the following attributes:
 
 It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods.
 
-~~~js
+~~~jsx
 //showing a column
 grid.showColumn(colId);
 //hiding a column
@@ -90,7 +90,7 @@ Since the object of a column has the [hidden](grid/configuration.md#hidden-colum
 
 You can check whether a column is hidden or shown on a page using the [](grid/api/grid_iscolumnhidden_method.md) method. The method returns *true*, if a column is hidden, and *false* if it's visible.
 
-~~~js
+~~~jsx
 grid.isColumnHidden("country"); // -> true|false
 ~~~
 
@@ -100,7 +100,7 @@ grid.isColumnHidden("country"); // -> true|false
 
 You may want to manipulate a filter specified in the header of a grid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](grid/api/grid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
 
-~~~js
+~~~jsx
 // set a value by which a column will be filtered
 grid.getHeaderFilter("country").setValue("Brazil");
 
@@ -114,7 +114,7 @@ grid.getHeaderFilter("country").blur();
 const filter = grid.getHeaderFilter("country").getFilter();
 console.log(filter);
 // -> returns Combobox
-//  {config: {…}, _uid: 'u1670500020936', events: o, data: d, popup: f, …}
+// {config: {…}, _uid: 'u1670500020936', events: o, data: d, popup: f, …}
 
 // clear the value set in the filter
 grid.getHeaderFilter("country").clear();
@@ -130,7 +130,7 @@ grid.getHeaderFilter("country").clear();
 
 You may add a new row into the grid by using the [](../data_collection/api/datacollection_add_method.md) method of **DataCollection**:
 
-~~~js
+~~~jsx
 grid.data.add({
     "country": "Estonia",
     "population": "1326535",
@@ -150,13 +150,13 @@ grid.data.add({
 
 To remove the necessary row from the grid, apply the [](../data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
 
-~~~js
+~~~jsx
 grid.data.remove("5");
 ~~~
 
 Here is an example of removing a currently selected row:
 
-~~~js
+~~~jsx
 const cell = grid.selection.getCell();
 grid.data.remove(cell.row.id);
 ~~~
@@ -169,7 +169,7 @@ For more information about the selection functionality in Grid, read the [Select
 
 If you need to remove all rows at once, use the [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
 
-~~~js
+~~~jsx
 grid.data.removeAll();
 ~~~
 
@@ -177,7 +177,7 @@ grid.data.removeAll();
 
 Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods.
 
-~~~js
+~~~jsx
 //showing a row
 grid.showRow(rowId);
 //hiding a row
@@ -190,7 +190,7 @@ grid.hideRow(rowId);
 
 You can check whether a row is hidden or shown on a page using the [](grid/api/grid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
 
-~~~js
+~~~jsx
 grid.isRowHidden("1"); // -> true|false
 ~~~
 
@@ -204,7 +204,7 @@ You can manipulate columns and rows spans inside the grid with the help of the c
 
 In order to add a column/row span into the grid, use the [](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 
-~~~js
+~~~jsx
 grid.addSpan({ 
     row: "0", 
     column: "a", 
@@ -248,7 +248,7 @@ These are possible fields of a span object:
 
 You can return the column/row span a cell is a part of using the [](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
-~~~js
+~~~jsx
 const span = grid.getSpan("10", "a"); 
 // -> { row: "10", column: "a", colspan: 4, text: "Some header", css: "myCustomColspan" }
 ~~~
@@ -259,7 +259,7 @@ As a result, you'll get an object with a span configuration, if any span include
 
 To remove an existing span, make use of the [](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters:
 
-~~~js
+~~~jsx
 grid.removeSpan("10", "a");
 ~~~
 
@@ -283,7 +283,7 @@ You can filter grid data by the specified criteria with the help of the `filter(
 </table>
 <br/>
 
-~~~js
+~~~jsx
 grid.data.filter(function (item) {
   return item.a > 0 && item.b !== "Apple";
 });
@@ -453,7 +453,7 @@ You can easily edit the desired cell of a grid with the help of the [](grid/api/
 
 For example, you can edit the first cell of the "project" column like this:
 
-~~~js
+~~~jsx
 grid.editCell(grid.data.getId(0), "project");
 ~~~
 
@@ -461,7 +461,7 @@ grid.editCell(grid.data.getId(0), "project");
 
 To finish editing of a cell, use the [](grid/api/grid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
-~~~js
+~~~jsx
 grid.editEnd(); // the edited data will be saved
 
 grid.editEnd(true); // the edited data won't be saved
@@ -930,6 +930,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+#### Configuration of the column property of the group object 
+
 A column with grouped data may contain the following properties in its configuration:
 
 ~~~jsx
@@ -946,19 +948,9 @@ column: {
             ) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             css?: string,
-            content?: "inputFilter" | "selectFilter" | "comboFilter",
-            filterConfig?: {
-                filter?: (item: any, input: string) => boolean,
-                multiselection?: boolean,
-                readonly?: boolean,
-                placeholder?: string,
-                virtual?: boolean,
-                template?: function
-            },
-            customFilter?: (item: any, input: string) => boolean,
             headerSort?: boolean, // true by default
             sortAs?: (cellValue: any) => string | number,
-            htmlEnable?: boolean, // false by default
+            htmlEnable?: boolean, // true by default
         }
     ],
     footer?: [
@@ -972,14 +964,12 @@ column: {
             ) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             css?: string,
-            htmlEnable?: boolean, // false by default
+            htmlEnable?: boolean, // true by default
         },
     ],
     align?: "left" | "center" | "right", // "left" by default
     resizable?: boolean, // false by default
     sortable?: boolean, // true by default
-    mark?: { min?: string, max?: string } |
-           (cell: any, columnCells: any[], row?: object, column?: object) => string,
     template?: (cellValue: any, row: object, column: object) => string,
     tooltip?: boolean | object, // true by default
     tooltipTemplate?: (cellValue: any, row: object, column: object) => string,
@@ -1185,7 +1175,7 @@ The API of DHTMLX Grid provides the possibility to set scrolls to the necessary 
 
 You can scroll grid content to exact position defined by x and y coordinates via the [](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
 
-~~~js
+~~~jsx
 grid.scroll(75, 230);
 ~~~
 
@@ -1193,7 +1183,7 @@ grid.scroll(75, 230);
 
 It is also possible to scroll grid content to a particular cell. Pass the ids of the row and the column as parameters:
 
-~~~js
+~~~jsx
 grid.scrollTo("15", "c");
 ~~~
 
@@ -1203,7 +1193,7 @@ grid.scrollTo("15", "c");
 
 To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
 
-~~~js
+~~~jsx
 const state = grid.getScrollState(); // -> {x:0, y:0}
 ~~~
 
@@ -1213,7 +1203,7 @@ It returns an object with x,y coordinates of a position the grid has been scroll
 
 In case you've changed some configuration settings of a grid, you can repaint it on a page via the [](grid/api/grid_paint_method.md) method:
 
-~~~js
+~~~jsx
 grid.paint();
 ~~~
 
@@ -1221,7 +1211,7 @@ grid.paint();
 
 When it's necessary to release resources occupied by Grid during its activity, you can make use of the [](grid/api/grid_destructor_method.md) method:
 
-~~~js
+~~~jsx
 grid.destructor();
 ~~~
 
