@@ -42,7 +42,8 @@ jobs:
           tags: registry.webix.io/suite-docs-alt:${{ steps.vars.outputs.short_ref }}
 
       - run: curl "https://docs.dhtmlx.com/hooks/restart-docker?token=${{ secrets.RESTART_TOKEN }}&project=docs-suite-alt-${{ steps.vars.outputs.short_ref }}"
-algolia-crawl:
+
+  algolia-crawl:
     runs-on: ubuntu-latest
     needs: build
     steps:
