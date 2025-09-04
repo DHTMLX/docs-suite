@@ -42,3 +42,24 @@ jobs:
           tags: registry.webix.io/suite-docs-alt:${{ steps.vars.outputs.short_ref }}
 
       - run: curl "https://docs.dhtmlx.com/hooks/restart-docker?token=${{ secrets.RESTART_TOKEN }}&project=docs-suite-alt-${{ steps.vars.outputs.short_ref }}"
+
+  algolia-crawl:
+  runs-on: ubuntu-latest
+  needs: build
+  steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v4
+
+    - name: Wait for Deployment
+      run: sleep 30
+
+    - name: Algolia Crawler Creation and Crawl
+      uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
+      with:
+        crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
+        crawler-api-key: ${{ secrets.CRAWLER_API_KEY }}
+        algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+        algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
+        site-url: 'https://docs.dhtmlx.com/suite/'
+        crawler-name: 'Suite Docs Crawler'
+        override-config: true
