@@ -1,10 +1,10 @@
 ---
 sidebar_label: Integration with Vue
-title: Integration DHTML Suite with Vue
+title: Integration with Vue
 description: You can explore how to use DHTMLX Suite Widgets with Vue.js. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Integration Suite widgets with Vue
+# Integration with Vue
 
 :::tip
 You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) before reading this documentation. To refresh your knowledge, please refer to the [**Vue 3 documentation**](https://vuejs.org/guide/introduction.html#getting-started).

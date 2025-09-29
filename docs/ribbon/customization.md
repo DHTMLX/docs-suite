@@ -64,7 +64,7 @@ const data = [
 
 **Related sample**: [Ribbon. Custom icons](https://snippet.dhtmlx.com/sfkou9gp)
 
-{{note You can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) in the same way.}}
+{{note You can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) in the same way.}}
 
 ## Styling 
 
