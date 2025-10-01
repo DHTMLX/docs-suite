@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.2
+
+Released on October 1, 2025
+
+### Fixes
+
+- Layout. The error that occurred on clicking the scrollbar in an attached List component
+- Grid. Incorrect date format of exported columns with dates in some cases
+- Tree. Performance issues in trees with deep nesting structure
+
 ## Version 9.2.1 
 
 Released on September 1, 2025
