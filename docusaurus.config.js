@@ -130,12 +130,17 @@ module.exports = {
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/suite/',
     onBrokenLinks: 'warn',
-    onBrokenMarkdownLinks: 'warn',
+    // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     onBrokenAnchors: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name
     projectName: 'docs-suite', // Usually your repo name
     trailingSlash: true,
+    markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: 'warn',
+		}
+	},
     themeConfig: {
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
