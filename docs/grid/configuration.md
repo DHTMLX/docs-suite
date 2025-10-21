@@ -1438,7 +1438,7 @@ const grid = new dhx.Grid("grid_container", {
     - the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column
     - in all other cases, `readonly:false` is set by default
 - **placeholder** - (*string*) sets a placeholder in the input of ComboBox
-- **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options
+- **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
 
 #### Customizing header/footer filters
