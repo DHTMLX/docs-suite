@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.3
+
+Released on October 21, 2025
+
+### Fixes
+
+- Grid. Performance issues caused by using `comboFilter` in the Grid header while a large dataset is loaded 
+- Grid. The issue with the "combobox" editor not closing on pressing the "Enter" button
+
 ## Version 9.2.2
 
 Released on October 1, 2025
