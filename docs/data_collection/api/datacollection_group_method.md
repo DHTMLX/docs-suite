@@ -39,21 +39,19 @@ group(order: TGroupOrder[], config?: IGroupConfig): void;
 
 ## Parameters
 
-- `order` - an array that defines the order and configuration for data grouping. Each element in the array can be:
-	- a string that represents a grouping field
-	- a function `(i: IDataItem) => string` for dynamic defining of a group
-	- an `IGroupOrder` object that has the following properties:
-		- `by` - the field name or a function for user-defined grouping
-		- `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
-            - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
-            - a user-defined aggregation function `(i: IDataItem[]) => string | number`
-        - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
-- `config` - (optional) the configuration of data grouping
-    - `showMissed` - (optional) specifies whether the elements that don't have the field for grouping should be displayed, *true* by default
-        - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
-        - if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
-        - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
-    - `field` - (optional) the group field name, *"group"* by default
+<table>
+    <tbody>
+        <tr>
+            <td><b>order</b></td>
+            <td> (<i>array</i>) an array that defines the order and configuration for data grouping. Each element in the array can be:<ul><li>a string that represents a grouping field</li><li>a function `(i: IDataItem) => string` for dynamic defining of a group</li><li>an `IGroupOrder` object that has the following properties:<ul><li><b>`by: string | function`</b> - the field name or a function for user-defined grouping</li><li><b>`map?: object`</b> - optional, an object for data aggregation in a group, where the keys are field names, and the values can be:
+            <ul><li>a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the <a href="../../../helpers/data_calculation_functions/">`dhx.methods`</a> helper</li><li> a user-defined aggregation function `(i: IDataItem[]) => string | number`</li></ul></li><li><b>`summary?: string`</b> - optional, specifies where the total row is rendered - at the `top` or at the `bottom` of the group </li></ul></li></ul></td>
+        </tr>
+        <tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) optional, the configuration of data grouping. The configuration object may include the following properties:<ul><li><b>`showMissed?: boolean | string`</b> - optional, specifies whether the elements that don't have the field for grouping should be displayed, *true* by default<ul><li>if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data</li><li>if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one</li><li>if set to *false*, the rows that don't suit the grouping criteria won't be rendered</li></ul></li><li><b>`field?: string`</b> - optional, the group field name, *"group"* by default</li></ul></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Examples
 
