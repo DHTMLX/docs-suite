@@ -8,6 +8,18 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.4
+
+Released on November 17, 2025
+
+### Fixes
+
+- Form. The `getValue()` method returns an empty string for a Combo option if its ID is specified as 0 (zero)
+- Grid. `comboFilter` displays all the options even if its `filterConfig` configuration object is initialized without the `filter` property
+- Grid. Incorrect date format in an exported Excel file
+- Grid. The ability to [specify a placeholder in the `inputFilter` via the `filterConfig` configuration object](/grid/configuration/#headerfooter-filters) is added
+- Tree. Incorrect dropping behavior when the `dropBehavior:sibling` property is set in the Tree configuration
+
 ## Version 9.2.3
 
 Released on October 21, 2025

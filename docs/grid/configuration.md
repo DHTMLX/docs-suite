@@ -1386,6 +1386,18 @@ There are three types of filters that you can specify in the header/footer conte
 
 **Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
+If you specify **inputFilter** as the header or footer content of a column, you can set a configuration object for it via the `filterConfig` property. The configuration object may contain the **placeholder** property that sets a placeholder in the input:
+
+~~~jsx
+{ 
+    width: 160, id: "population", 
+    header: [
+        { text: "Population" }, 
+        { content: "inputFilter", filterConfig: { placeholder: "Type something" } }
+    ]
+}
+~~~
+
 - **selectFilter** - allows end users to filter data of a column by choosing an option from a presented dropdown list
 
 ~~~jsx
@@ -1412,7 +1424,7 @@ There are three types of filters that you can specify in the header/footer conte
 
 **Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
-If you specify **comboFilter** as the header or footer content of a column, you can set an additional config with properties for it.
+If you specify **comboFilter** as the header or footer content of a column, you can set an additional config with properties for it via the `filterConfig` property:
 
 ~~~jsx {8}
 const grid = new dhx.Grid("grid_container", {
