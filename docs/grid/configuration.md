@@ -1453,6 +1453,19 @@ const grid = new dhx.Grid("grid_container", {
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
 
+#### Redefining the default sorting for comboFilter
+
+By default the elements of the comboFilter are sorted by ID. You can modify the way of sorting elements in this type of the filter inside the handler of the [`beforeOpen`](/combobox/api/combobox_beforeopen_event/) event. For example, you can specify that the options in the comboFilter should be sorted by value in the following way:
+
+~~~jsx
+const comboFilter = grid.getHeaderFilter("access").getFilter();
+comboFilter.events.on("beforeOpen", function() {
+    comboFilter.data.sort({
+        by: "value",
+    });
+});
+~~~
+
 #### Customizing header/footer filters
 
 To add a custom function with your you own logic for the filter of a Grid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md).
