@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.5
+
+Released on November 28, 2025
+
+### Updates
+
+- DataCollection. The [`beforeAdd`](/data_collection/api/datacollection_beforeadd_event/), [`afterAdd`](/data_collection/api/datacollection_afteradd_event/), [`beforeRemove`](/data_collection/api/datacollection_beforeremove_event/), and [`afterRemove`](/data_collection/api/datacollection_afterremove_event/) events are updated to include the `batch` and `index` parameters for handling batch operations
+
+### Fixes
+
+- DataCollection. The issue where the `items` property of a parent object returned by the `getItem()` and `find()` methods included a removed child item is fixed
+- Grid. Improved performance of adding and removing data via the `add()` and `remove()` methods when the `adjust` configuration is enabled
+- Grid. The issue where the combo filter with enabled `multiselection` displayed all options ignoring other active filters is fixed
+
 ## Version 9.2.4
 
 Released on November 17, 2025
