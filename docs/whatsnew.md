@@ -18,9 +18,9 @@ Released on November 28, 2025
 
 ### Fixes
 
-- DataCollection. The issue where the `items` property of a parent object returned by the `getItem()` and `find()` methods included a removed child item is fixed
 - Grid. Improved performance of adding and removing data via the `add()` and `remove()` methods when the `adjust` configuration is enabled
 - Grid. The issue where the combo filter with enabled `multiselection` displayed all options ignoring other active filters is fixed
+- TreeCollection. The issue where the `items` property of a parent object returned by the `getItem()` and `find()` methods included a removed child item is fixed
 
 ## Version 9.2.4
 
