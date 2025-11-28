@@ -8,6 +8,10 @@ description: You can explore the add method of DataCollection in the documentati
 
 @short: adds a new item to the component
 
+:::note
+Please note that data should be loaded into DataCollection via the `parse()` method. The `add()` method is primarily intended for loading standalone elements or small groups of elements, so its loads data slower than the `parse()` method.
+:::
+
 @signature: {'add(new_item: object | object[], index?: number): (string | number) | (string | number)[];'}
 
 @params:

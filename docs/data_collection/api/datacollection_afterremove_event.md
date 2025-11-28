@@ -6,16 +6,18 @@ description: You can explore the afterRemove event of DataCollection in the docu
 
 # afterRemove
 
-@short: Fires after removing an item from a data collection
+@short: Fires after removing an item/items from a data collection
 
-@signature: {'afterRemove: (removedItem: object) => void;'}
+@signature: {'afterRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => void;'}
 
 @params:
 - `removedItem: object` - the object of a removed item
+- `batch: array` - an array of removed items
+- `index: number` - the index of the removed item within the batch
 
 @example:
-component.data.events.on("afterRemove", function(removedItem){
-    console.log("An item is removed");
+component.data.events.on("afterRemove", function(removedItem, batch, index){
+    console.log("Items are removed");
 });
 
 @descr:
