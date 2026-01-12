@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.6
+
+Released on January 13, 2026
+
+### Fixes
+
+- Dataview, Grid, List. The issue with the functionality of the `beforeAdd` event during drag-n-drop
+- Grid. The ability to enable grouping in Grid with `subrow` is fixed
+- Grid. The ability to group a non-existent column without actual grouping is fixed
+- Grid. The `comboFilter` not updating the options on adding new items or editing the existing ones
+- Grid. Incorrect behavior of the `comboFilter` with enabled multiselection 
+- Grid. The issue with the custom scroll being duplicated by the system scroll in Firefox on Windows 11
+- Grid. On grouping by a column with options, export to CSV/XLSX outputs the option's id instead of the displayed option's value
+- Sidebar. The functionality of the `navigationType` configuration option is fixed
+
 ## Version 9.2.5
 
 Released on November 28, 2025
