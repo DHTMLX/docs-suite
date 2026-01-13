@@ -3904,6 +3904,7 @@ module.exports = {
                     "sidebar/api/sidebar_data_config",
                     "sidebar/api/sidebar_menucss_config",
                     "sidebar/api/sidebar_minwidth_config",
+                    "sidebar/api/sidebar_navigationtype_config",
                     "sidebar/api/sidebar_width_config",
                   ],
                 },

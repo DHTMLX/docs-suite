@@ -13,7 +13,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 @short: Optional. Defines the sub-row content for each row of the main Grid
 
 :::note
-Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md) and the [data grouping](grid/usage.md#grouping-data) functionality.
+Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md), except for the [data grouping](grid/usage.md#grouping-data) functionality.
 :::
 
 @signature: {'subRow?: (row: IRow) => string | IViewConstructor;'}
