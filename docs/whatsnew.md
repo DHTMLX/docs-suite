@@ -8,6 +8,14 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.7
+
+Released on January 15, 2026
+
+### Fixes
+
+- Grid. Data isn't grouped via the group panel
+
 ## Version 9.2.6
 
 Released on January 13, 2026
