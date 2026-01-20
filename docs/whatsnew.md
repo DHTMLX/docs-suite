@@ -8,6 +8,27 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3 
+
+Released on January , 2026
+
+### New functionality 
+
+- Grid. The ability to define the behaviour of a dragged item via the `dropBehaviour` config property in the TreeGrid mode (PRO version)
+- Grid. The ability to place the footer at the bottom of the container (PRO version)
+- Tree. The ability to add tooltips for the items
+
+### Updates
+
+- Chart. Export module. The [`pdf()`](/chart/api/export/chart_pdf_method/) and [`png()`](/chart/api/export/chart_png_method/) export functions return a promise of data export
+- Grid. Export module. The [`pdf()`](/grid/api/export/grid_pdf_method/), [`png()`](/grid/api/export/grid_png_method/), [`xlsx()`](/grid/api/export/grid_xlsx_method/) and [`csv()`](/grid/api/export/grid_csv_method/) export functions return a promise of data export
+- Grid. The functionality of header filters is updated. New `dateFilter` is added for the column header
+
+### Fixes
+
+- Grid. The inability to set a single date in the range mode is fixed
+- Grid. Performance issues that occurred while filtering large data sets via `inputFilter` 
+
 ## Version 9.2.7
 
 Released on January 15, 2026
