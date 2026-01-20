@@ -12,7 +12,7 @@ description: You can explore the xlsx export method of Grid in the documentation
 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for export of data to Excel. [Check the details](grid/usage.md/#exporting-data-to-excel).
 :::
 
-@signature: {'xlsx(config?: object): void;'}
+@signature: {'xlsx(config?: IXlsxExportConfig) => Promise<void>;'}
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to Excel:
@@ -21,9 +21,15 @@ DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/d
     - `tableName?: string` - (optional) "data" by default. The name of a sheet with grid data in the Excel file
     - `dateFormatMask?: string` - (optional) "dd/mm/yy" by default. The mask used for [dates formatting in Excel](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e)
 
+@returns:
+A promise of data export 
+
 @example:
 // default export
-grid.export.xlsx();
+grid.export.xlsx()
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 
 // export with config settings
 grid.export.xlsx({
@@ -31,10 +37,17 @@ grid.export.xlsx({
     name: "my_file", // the name of a ready Excel file
     tableName: "grid", // the name of a sheet with grid data in the Excel file
     dateFormatMask: "mm.dd.yy" // the date format mask for Excel
-});
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 
 @descr:
 
 **Related samples**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
 **Related article:** [Exporting Grid](grid/usage.md/#exporting-data-to-excel)
+
+**Change log:** 
+
+- The method returns a promise of data export since v9.3

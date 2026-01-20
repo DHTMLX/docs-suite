@@ -481,7 +481,7 @@ Since v9.2 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://g
 
 Thus, to have the possibility of exporting files you need to:
 
-- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional)
+- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional) and returns a promise of data export.
     - if you use the public export server, you don't need to specify the link to it, since it is used by default
     - if you use your own export server, you need to:
         - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library 
@@ -492,7 +492,10 @@ grid.export.xlsx({
     name: "my_file", // the name of a ready Excel file, "grid" by default
     tableName: "grid", // the name of a sheet with grid data in the Excel file, "data" by default
     dateFormatMask: "mm.dd.yy" // the date format mask for Excel, "dd/mm/yy" by default
-});
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
@@ -515,14 +518,17 @@ or provide a local path to the export module on your computer as a value of the 
 
 #### Exporting data to CSV
 
-You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. The method takes an [object with export settings](grid/api/export/grid_csv_method.md) as a parameter (all settings are optional).
+You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. The method takes an [object with export settings](grid/api/export/grid_csv_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 grid.export.csv({
     name: "my_file", // the name of a ready CSV file, "grid" by default
     rowDelimiter: "\t", // the delimiter used to separate rows, "\n" (newline) by default
     columnDelimiter: ";" // the delimiter used to separate columns, "," (comma) by default
-});
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
@@ -531,7 +537,7 @@ The `csv()` method returns a CSV string with Grid data.
 
 #### Exporting data to PDF
 
-The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an [object with export settings](grid/api/export/grid_pdf_method.md) as a parameter (all settings are optional).
+The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an [object with export settings](grid/api/export/grid_pdf_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 grid.export.pdf({
@@ -539,19 +545,25 @@ grid.export.pdf({
     scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
     displayHeaderFooter: true, // defines whether to display the header and footer, false by default
     theme: "dark" // the exported theme, "light" by default
-});
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
 
 #### Exporting data to PNG
 
-The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an [object with export settings](grid/api/export/grid_png_method.md) as a parameter (all settings are optional).
+The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an [object with export settings](grid/api/export/grid_png_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 grid.export.png({
     theme: "dark" // the exported theme, "light" by default
-});
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
