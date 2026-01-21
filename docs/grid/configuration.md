@@ -2486,6 +2486,8 @@ If you use the GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to
 **Note**, to be able to drag-n-drop a column and (or) multiple rows, you need to use PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
+There are some peculiarities of the drag-n-drop functionality in the Grid in the TreeGrid mode. [Check the related section for details](/grid/treegrid_mode/#drag-n-drop).
+
 ### Drag-n-drop inside the grid
 
 It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"`](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:

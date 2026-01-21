@@ -36,11 +36,11 @@ const Grid = new dhx.Grid("grid_container", {
 
 Grid in the TreeGrid mode uses all the same configuration options available in the [API of the default Grid](grid/configuration.md).
 
-There is also a set of properties you can provide for Grid in the TreeGrid mode to optimize its configuration for your needs. 
+There is also a set of properties you can provide for Grid in the TreeGrid mode to optimize its configuration for your needs. They are described below.
 
 ### Collapsed mode 
 
-To initialize Grid in the TreeGrid mode in the collapsed state, use the [collapsed](grid/api/grid_collapsed_config.md) property:
+To initialize Grid in the TreeGrid mode in the collapsed state, use the [`collapsed`](grid/api/grid_collapsed_config.md) property:
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -54,24 +54,6 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid (TreeGrid). Collapsed mode](https://snippet.dhtmlx.com/t4iswa2y)
-
-### Expanding collapsed rows on drag-n-drop 
-
-If you have collapsed rows in your Grid in the TreeGrid mode, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [dragExpand](grid/api/grid_dragexpand_config.md) property to *false*:
-
-~~~jsx {7}
-const grid = new dhx.Grid("grid_container", {
-    type: "tree",
-    columns: [
-        // columns config
-    ],
-    dragItem: "row",
-    dragExpand: false,
-    data: dataset
-});
-~~~
-
-**Related sample:** [Grid (TreeGrid). Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
 
 ### Defining the id of the root parent 
 
@@ -216,6 +198,57 @@ grid.data.load("/some/data").then(function(){
    // some logic here
 });
 ~~~
+
+## Drag-n-drop
+
+The drag-n-drop functionality provides the possibility to reorder items inside the grid or between several grids in the TreeGrid mode. 
+
+To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](/grid/api/grid_dragitem_config/) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](/grid/api/grid_dragmode_config/) property.
+
+### Drop behaviour
+
+You can specify the drag-n-drop behaviour of items in the Grid in the TreeGrid mode with the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) option in the configuration object of the component.
+
+There are three modes of behaviour of a dragged item:
+
+- "child" - a dragged item becomes a child of the item it is dragged to
+- "sibling" - a dragged item becomes a sibling of the item it is dragged to
+- "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting 
+
+~~~jsx
+const grid = new dhx.Grid("treegrid_container", {
+    type: "tree",
+    columns: [
+        { id: "name", header: [{ text: "Book Name" }], gravity: 1.5 },
+        { id: "price", type: "string", header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }] },
+        { id: "cover", type: "string", header: [{}, { text: "Cover" }] },
+        { id: "ships", type: "string", header: [{ text: "Ships in" }] },
+        { id: "inStock", type: "string", header: [{ text: "In stock" }] }
+    ],
+    dragItem: "both", // to activate the functionality for columns or rows separately, set the value to "column" or "row"
+    dropBehaviour: "sibling" // enables one of the drop modes "child" | "sibling" | "complex"
+});
+~~~
+
+**Related sample**: [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/l5waxyqe)
+
+### Expanding collapsed rows on drag-n-drop 
+
+If you have collapsed rows in your Grid in the TreeGrid mode, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [`dragExpand`](grid/api/grid_dragexpand_config.md) property to *false*:
+
+~~~jsx {7}
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    dragItem: "row",
+    dragExpand: false,
+    data: dataset
+});
+~~~
+
+**Related sample:** [Grid (TreeGrid). Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
 
 ## Work with Grid in the TreeGrid mode 
 

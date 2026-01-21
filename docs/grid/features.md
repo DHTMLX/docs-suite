@@ -55,6 +55,7 @@ In this section you will find the ways of working with the TreeGrid mode of Grid
 | [Enabling TreeGrid mode](../treegrid_mode/#initialization) | Learn how to enable the TreeGrid mode of Grid     |
 | [Configuring TreeGrid mode](../treegrid_mode/#configuration)| Learn how to configure the TreeGrid mode of Grid |
 | [Data loading in TreeGrid mode](../treegrid_mode/#data-loading)| Learn how to load data in the TreeGrid mode of Grid |
+| [Drag-n-drop in TreeGrid mode](../treegrid_mode/#drag-n-drop)| Learn how to enable and configure the drag-n-drop functionality in the TreeGrid mode of Grid |
 | [Working with TreeGrid mode](../treegrid_mode/#work-with-grid-in-the-treegrid-mode) | Learn how to expand/collapse nodes |
 
 ### How to configure columns

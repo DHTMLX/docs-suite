@@ -2628,6 +2628,7 @@ module.exports = {
                     "grid/api/grid_dragitem_config",
                     "grid/api/grid_dragmode_config",
                     "grid/api/grid_dragpanel_config",
+                    "grid/api/grid_dropbehaviour_config",
                     "grid/api/grid_editable_config",
                     "grid/api/grid_eventhandlers_config",
                     "grid/api/grid_exportstyles_config",
