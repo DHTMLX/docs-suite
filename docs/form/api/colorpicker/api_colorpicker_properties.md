@@ -12,7 +12,7 @@ description: You can explore the Properties of the Colorpicker control of Form i
 {
     type: "colorpicker",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     value?: string,
     
     css?: string,
@@ -60,7 +60,7 @@ description: You can explore the Properties of the Colorpicker control of Form i
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>value</b></td>
