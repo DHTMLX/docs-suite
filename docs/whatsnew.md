@@ -14,15 +14,19 @@ Released on January , 2026
 
 ### New functionality 
 
-- Grid. The ability to define the behaviour of a dragged item via the `dropBehaviour` config property in the TreeGrid mode (PRO version)
+- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) via the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) config property in the TreeGrid mode (PRO version)
 - Grid. The ability to place the footer at the bottom of the container (PRO version)
+- Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter is added for the column header (PRO version)
 - Tree. The ability to add tooltips for the items
 
 ### Updates
 
 - Chart. Export module. The [`pdf()`](/chart/api/export/chart_pdf_method/) and [`png()`](/chart/api/export/chart_png_method/) export functions return a promise of data export
 - Grid. Export module. The [`pdf()`](/grid/api/export/grid_pdf_method/), [`png()`](/grid/api/export/grid_png_method/), [`xlsx()`](/grid/api/export/grid_xlsx_method/) and [`csv()`](/grid/api/export/grid_csv_method/) export functions return a promise of data export
-- Grid. The functionality of header filters is updated. New `dateFilter` is added for the column header
+- Grid. The functionality of header filters is updated:
+    - the [`setValue()`](/grid/api/headerfilter/setvalue_method/) method (of the [`getHeaderFilter()`](/grid/api/grid_getheaderfilter_method/) API), can take a *Date* object or an array of *Date[]* objects as a parameter
+    - the `value` parameter of the callback functions of [`filterChange`](/grid/api/grid_filterchange_event/) and [`beforeFilter`](/grid/api/grid_beforefilter_event/) events can be a *Date* object or an array of *Date[]* objects
+    - the parameters of the [`customFilter`](/grid/configuration/#customizing-headerfooter-filters) callback function can be *Date* objects or arrays of *Date[]* objects
 
 ### Fixes
 

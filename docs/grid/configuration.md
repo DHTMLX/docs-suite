@@ -1373,9 +1373,11 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Header/footer filters
 
-There are three types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md):
+There are the following types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md): **inputFilter**, **selectFilter**, **comboFilter**, **dateFilter** (**PRO version**).
 
-- **inputFilter** - provides a way of filtering data of a Grid column by using a text field
+- **inputFilter** 
+
+Provides a way of filtering data of a Grid column by using a text input field.
 
 ~~~jsx
 { 
@@ -1384,9 +1386,12 @@ There are three types of filters that you can specify in the header/footer conte
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+If you specify **inputFilter** as the header or footer content of a column, you can set a configuration object for it via the `filterConfig` property. 
 
-If you specify **inputFilter** as the header or footer content of a column, you can set a configuration object for it via the `filterConfig` property. The configuration object may contain the **placeholder** property that sets a placeholder in the input:
+#### The list of configuration properties for `inputFilter`
+
+- `placeholder` - (*string*) - optional, the placeholder text in the input field
+- `icon` - (*string*) - optional, the CSS class for the filter icon
 
 ~~~jsx
 { 
@@ -1396,53 +1401,41 @@ If you specify **inputFilter** as the header or footer content of a column, you 
         { content: "inputFilter", filterConfig: { placeholder: "Type something" } }
     ]
 }
-~~~
+~~~ 
 
-- **selectFilter** - allows end users to filter data of a column by choosing an option from a presented dropdown list
+**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+
+- **selectFilter** 
+
+Allows end users to filter data of a column by choosing an option from a presented dropdown list.
 
 ~~~jsx
 { 
-    width: 160, id: "status", 
+    id: "status", 
     header: [{ text: "Status" }, { content: "selectFilter" }],
     editorType: "select", 
     options: ["Done", "In Progress", "Not Started"] 
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
-- **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control
+- **comboFilter**
+
+Provides a way to filter data of a column by choosing an option from a presented combobox. To find an option quickly, you can enter text into the edit control.
 
 ~~~jsx
 {
-    width: 160, id: "renewals", 
+    id: "renewals", 
     header: [{ text: "Number of renewals" }, { content: "comboFilter" }],
     type: "string", editorType: "combobox", 
     options: ["1 time", "1-2 times", "more than 5 times"] 
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+If you specify **comboFilter** as the header or footer content of a column, you can set an additional config with properties for it via the `filterConfig` property.
 
-If you specify **comboFilter** as the header or footer content of a column, you can set an additional config with properties for it via the `filterConfig` property:
-
-~~~jsx {8}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        {
-            width: 150, 
-            id: "migrants", 
-            header: [
-                { text: "Migrants (net)" }, 
-                { content: "comboFilter", filterConfig: {readonly: true }}
-            ] 
-        }   
-    ],
-    data: dataset
-});
-~~~
-
-#### The list of configuration properties for comboFilter
+#### The list of configuration properties for `comboFilter`
 
 - **filter** - (*function*) sets a custom function for filtering Combo Box options
 - **multiselection** - (*boolean*) enables selection of multiple options
@@ -1453,13 +1446,91 @@ const grid = new dhx.Grid("grid_container", {
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
 
-#### Customizing header/footer filters
+~~~jsx 
+{
+    id: "category",
+    header: [
+        { text: "Category" },
+        { content: "comboFilter", filterConfig: { placeholder: "Select a category" } }
+    ]
+}
+~~~
+
+**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+
+- **dateFilter** 
+
+:::tip pro version only
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+Provides a way of filtering data of a Grid column by using a calendar for selecting a date or a date range.
+
+If you specify **dateFilter** as the header or footer content of a column, you can set an additional config with properties for it via the `filterConfig` property.
+
+#### The list of configuration properties for `dateFilter`
+
+Main properties:
+
+- `icon` - (*string*) - the CSS class for the calendar icon.
+- `placeholder` - (*string*) - the placeholder text in the input field when no date is selected.
+- `asDateObject` - (*boolean*) - determines how the filter processes data for `customFilter` and the `beforeFilter` and `filterChange` events. If `true`, the comparison is performed using Date objects.
+- `range` - (*boolean*) - enables the date range selection mode (from and to).
+- `dateFormat` - (*string*) - the date display format (e.g., `"%d/%m/%Y"`). By default, applies the `dateFormat` used for the column.
+
+Calendar API configuration properties:
+
+- `date` - (*Date | string*) - the initial date opened in the calendar.
+- `mark` - (*function*) - a function for adding custom CSS classes to specific dates.
+- `disabledDates` - (*function*) - a function for disabling the selection of specific dates.
+- `weekStart` - (*string*) - the start day of the week (`"saturday"`, `"sunday"`, `"monday"`).
+- `weekNumbers` - (*boolean*) - shows week numbers if `true`.
+- `mode` - (*string*) - the calendar display mode (`"calendar"`, `"year"`, `"month"`, `"timepicker"`).
+- `timePicker` - (*boolean*) - adds the ability to select time.
+- `timeFormat` - (*number*) - the time format (`12` or `24` hours).
+- `thisMonthOnly` - (*boolean*) - if `true`, allows selecting dates only within the current month.
+- `width` - (*string | number*) - the width of the dropdown calendar.
+
+**dateFilter** supports two modes of operation:
+
+- **single mode** (default) - the filter allows selecting a single specific date by default. Only records corresponding to the selected day will remain in the table.
+
+- **range mode** - this mode is activated by setting the `range: true` property in the `filterConfig` object. In this mode, the user can select the start date and the end date. The table will filter records falling within the selected time interval (inclusive).
+
+~~~jsx
+{
+    id: "receivedDate",
+    type: "date",
+    dateFormat: "%d.%m.%Y",
+    header: [
+        { text: "Received Date" },
+        {
+            content: "dateFilter",
+            filterConfig: {
+                placeholder: "Select a date",
+                range: true
+            }
+        }
+    ]
+}
+~~~
+
+**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+
+### Customizing header/footer filters
 
 To add a custom function with your you own logic for the filter of a Grid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md).
 
 :::note 
-The `customFilter` attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-filters) is set.
+The `customFilter` attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter" | "dateFilter"*](#headerfooter-filters) is set.
 :::
+
+The `customFilter` attribute is a callback function that compares the value of each cell of the row with the value which is selected in the header/footer filter of the column. It takes two parameters:
+
+- `value` - (*string* | *number* | *Date* | *Date[]*) the cell value in the row
+- `match` - (*string* | *string[]* | *Date* | *Date[]*) the value selected in the filter
+
+and returns `true`, if the row matches the filtering criteria, otherwise `false`.
 
 ~~~jsx {8}
 const grid = new dhx.Grid("grid_container", {
@@ -1473,13 +1544,11 @@ const grid = new dhx.Grid("grid_container", {
             }
         ]},   
     ],
-    data: dataset
+    // other configuration properties
 });
 ~~~
 
 **Related sample**: [Grid. Custom filters in the header](https://snippet.dhtmlx.com/gcidkxjg)
-
-The `customFilter` attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
 
 ### Header/footer height
 

@@ -6,17 +6,17 @@ description: You can explore the setValue method of the header filter of Grid in
 
 # setValue()
 
-@short: sets a value by which a column will be filtered
+@short: Sets the filter value
 
-@signature: {'setValue(value: string | string[]): void;'}
+@signature: {'setValue(value: string | string[] | Date | Date[]): void;'}
 
 @params:
-- `value: string | string[]` - a value by which the column will be filtered
-
-@descr:
+- `value: string | string[] | Date | Date[]` - the value to be set for the filter
 
 :::info
-An array of string values can be specified only for **comboFilter** in the [`multiselection:true`](grid/configuration.md#headerfooter-filters) mode.
+- An array of string values can be specified only for [`comboFilter`](/grid/configuration/#customizing-headerfooter-filters) in the `multiselection:true` mode.
+
+- For [`dateFilter`](/grid/configuration/#customizing-headerfooter-filters), the value must be passed strictly as a *Date* object (for a single selection) or an array of *Date[]* objects (for the `range` mode). *String* values are not supported by the `setValue()` method for this filter type.
 :::
 
 @example:
@@ -25,4 +25,6 @@ grid.getHeaderFilter("country").setValue("Brazil");
 @descr:
 
 @changelog:
-added in v8.0
+
+- The `value` parameter can be set as a *Date* object or as an array of *Date[]* objects since v9.3
+- Added in v8.0

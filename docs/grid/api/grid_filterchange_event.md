@@ -6,26 +6,36 @@ description: You can explore the filterChange event of Grid in the documentation
 
 # filterChange
 
-@short: fires on typing text in an input of a column's header
+@short: fires when the filter value is changed
 
-@signature: {'filterChange: (value: string, colId: string | number, filterId: string) => void;'}
+### Usage
+
+~~~jsx
+filterChange: (
+    value: string | string[] | Date | Date[],
+    colId: string | number,
+    content: "inputFilter" | "selectFilter" | "comboFilter" | "dateFilter"
+) => void;
+~~~
 
 @params:
 The callback of the event is called with the following parameters:
 
-- `value: string` - an entered value
-- `colId: string | number` - the id of a column
-- `filterId: string` - the type of a filter: "inputFilter" | "selectFilter" | "comboFilter"
+- `value: string | string[] | Date | Date[]` - the current value of the filter
+- `colId: string | number` - the ID of the column where the filter changed
+- `content: string` - the type of the applied filter ("inputFilter", "selectFilter", "comboFilter", or "dateFilter")
 
 @example:
-grid.events.on("filterChange", (value, colId, filterId) => {
+grid.events.on("filterChange", (value, colId, content) => {
     console.log("You've entered "+value+" into the "+colId+" column");
 });
 
 @descr:
 
 :::info
-The **filterChange** event invokes the [beforeFilter](grid/api/grid_beforefilter_event.md) event
+The `filterChange` event invokes the [`beforeFilter`](grid/api/grid_beforefilter_event.md) event.
 :::
 
-@changelog: added in v6.3
+@changelog: 
+- The `value` parameter of the callback function can be a *Date* object or an array of *Date[]* objects since v9.3
+- Added in v6.3
