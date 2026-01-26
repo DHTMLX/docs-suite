@@ -2633,6 +2633,7 @@ module.exports = {
                     "grid/api/grid_eventhandlers_config",
                     "grid/api/grid_exportstyles_config",
                     "grid/api/grid_footerautoheight_config",
+                    "grid/api/grid_footerposition_config",
                     "grid/api/grid_footerrowheight_config",
                     "grid/api/grid_footertooltip_config",
                     "grid/api/grid_group_config",

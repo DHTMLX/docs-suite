@@ -1600,6 +1600,35 @@ const grid2 = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Header/footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d?tag=grid)
 
+### Footer position
+
+You can define the logic of setting the position of the Grid footer as well as of the frozen rows set in the Grid configuration by the `bottomSplit` option with another Grid property `footerPosition`. The property has the following values:
+
+- `relative` - (default) the footer follows the content immediately. If the number of rows is small and doesn't fill the container, the footer moves up to stay attached with the last row.
+
+![](../assets/grid/footer_relative_position.png)
+
+- `bottom` - the footer and bottom-pinned rows are strictly locked to the bottom edge of the container. They remain at the base of the component even if the content occupies only a fraction of the available height.
+
+![](../assets/grid/footer_bottom_position.png)
+
+Here is the example of positioning the footer and two frozen rows at the bottom of the Grid, as presented in the above image:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    footerPosition: "bottom", // "relative" by default
+    bottomSplit: 2
+});
+~~~ 
+
+**Related samples**:
+- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/8n0pdqhp)
+- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/etg7raih)
+
 ## Rows
 
 ### Row height

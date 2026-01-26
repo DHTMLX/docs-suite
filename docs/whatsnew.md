@@ -15,7 +15,7 @@ Released on January , 2026
 ### New functionality 
 
 - Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) via the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) config property in the TreeGrid mode (PRO version)
-- Grid. The ability to place the footer at the bottom of the container (PRO version)
+- Grid. The ability to define the position of the footer and bottom-pinned rows within the component container via the [`footerPosition`](/grid/api/grid_footerposition_config/) property (PRO version)
 - Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter is added for the column header (PRO version)
 - Tree. The ability to add tooltips for the items
 
@@ -32,6 +32,14 @@ Released on January , 2026
 
 - Grid. The inability to set a single date in the range mode is fixed
 - Grid. Performance issues that occurred while filtering large data sets via `inputFilter` 
+
+### New samples
+
+#### Grid
+
+- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/8n0pdqhp)
+- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/etg7raih)
+
 
 ## Version 9.2.7
 
