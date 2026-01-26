@@ -69,6 +69,7 @@ In this section you can learn how to show and hide the window, how to switch it 
 | Topic                                                                 | Description                                                                                                        |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Showing / hiding Window](../usage/#showinghiding-window)             | Learn how to show or hide a window on the page ([Example](https://snippet.dhtmlx.com/ee2vf9xw))                    |
+| [Setting the active Window](../usage/#setting-the-active-window)		| Learn how to set the active window ([Example](https://snippet.dhtmlx.com/lvm3kfwq))
 | [Checking visibility of a window](../usage/#checking-visibility-of-window)                 | Learn how to check whether a window is visible on the page or not ([Example](https://snippet.dhtmlx.com/woz5c09h)) |
 | [Switching Window to the full screen mode](../usage/#fullscreen-mode) | Learn how to display a window in the full screen mode ([Example](https://snippet.dhtmlx.com/aftti5fy))             |
 | [Setting / getting Window position](../usage/#positioning-window)     | Learn how to set/get the position of a window on the fly ([Example](https://snippet.dhtmlx.com/hc3ronrk))          |

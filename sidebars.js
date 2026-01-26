@@ -4596,6 +4596,7 @@ module.exports = {
                     "window/api/window_isfullscreen_method",
                     "window/api/window_isvisible_method",
                     "window/api/window_paint_method",
+                    "window/api/window_setactive_method",
                     "window/api/window_setfullscreen_method",
                     "window/api/window_setposition_method",
                     "window/api/window_setsize_method",
