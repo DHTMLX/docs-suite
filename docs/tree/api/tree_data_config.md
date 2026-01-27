@@ -15,7 +15,7 @@ Please note that if you specify the `id` fields in the tree collection, their va
 @signature: {'data?: object[];'}
 
 @params:
-Each **data** object can have the following properties:
+Each `data` object can have the following properties:
 
 <table>
     <tbody>
@@ -77,10 +77,12 @@ const tree = new dhx.Tree("tree", {
 - [Tree. Initialization with config.data](https://snippet.dhtmlx.com/r49y51k3)
 - [Tree. Initialization with external TreeCollection](https://snippet.dhtmlx.com/osjo7t0h)
 
-You can disable displaying of a checkbox for a tree item via the [update](tree_collection/api/treecollection_update_method.md) method of tree collection.
+You can disable displaying of a checkbox for a tree item via the [`update()`](tree_collection/api/treecollection_update_method.md) method of tree collection.
 
 ~~~jsx
-tree.data.update("Books", {checkbox:false});
+tree.data.update("Books", { checkbox: false });
 ~~~
 
-[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/loading_data.md#preparing-data-set)
+**Related articles**: 
+- [Initialization](/tree/initialization_of_dhtmlxtree/#initialize-tree)
+- [Data loading](tree/loading_data.md#preparing-data-set)

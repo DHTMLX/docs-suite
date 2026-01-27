@@ -8,7 +8,7 @@ description: You can explore the template config of Tree in the documentation of
 
 @short: Optional. Specifies a template for Tree items
 
-@signature: template?: (item: object, isFolder: boolean) => string | null;
+@signature: {'template?: (item: object, isFolder: boolean) => string | null;'}
 
 @params:
 The template function takes two parameters:
@@ -16,9 +16,11 @@ The template function takes two parameters:
 - `item` - an object of a Tree item
 - `isFolder` - defines whether an item is a folder
 
-and returns either a string or null.
+and returns either a *string* or *null*.
 
-**Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
+:::tip
+The callback function together with the `isFolder` parameter allows you to specify a template for child items only.
+:::
 
 @example:
 const tree = new dhx.Tree("tree_container", {
@@ -36,7 +38,8 @@ const tree = new dhx.Tree("tree_container", {
         return isFolder ? null : template;
     }
 });
-@examplestop:
+
+@descr:
 
 **Related sample**: [Tree. Handling events in template](https://snippet.dhtmlx.com/hg3f50td)
 

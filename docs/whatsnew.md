@@ -14,10 +14,10 @@ Released on January , 2026
 
 ### New functionality 
 
-- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) via the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) config property in the TreeGrid mode (PRO version)
+- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) via the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) property in the TreeGrid mode (PRO version)
 - Grid. The ability to [define the position of the footer and bottom-pinned rows within the component container](/grid/configuration/#footer-position) via the [`footerPosition`](/grid/api/grid_footerposition_config/) property (PRO version)
 - Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter is added for the column header (PRO version)
-- Tree. The ability to add tooltips for the items
+- Tree. The ability to [add tooltips for the items](/tree/configuration/#tooltips-for-items) via the [`tooltip`](/tree/api/tree_tooltip_config/) property 
 - Window. The ability to [set the active window](/window/usage/#setting-the-active-window) via the [`setActive()`](/window/api/window_setactive_method/) method
 
 ### Updates
@@ -40,6 +40,11 @@ Released on January , 2026
 
 - [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/8n0pdqhp)
 - [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/etg7raih)
+- [Grid (TreeGrid). Drop behavior](https://snippet.dhtmlx.com/l5waxyqe)
+
+#### Tree
+
+- [Tree. Adding tooltips for the items](https://snippet.dhtmlx.com/7j097ht4)
 
 #### Window
 

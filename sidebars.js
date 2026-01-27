@@ -4534,6 +4534,7 @@ module.exports = {
                     "tree/api/tree_rootid_config",
                     "tree/api/tree_selection_config",
                     "tree/api/tree_template_config",
+                    "tree/api/tree_tooltip_config"
                   ],
                 },
               ],
