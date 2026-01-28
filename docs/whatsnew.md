@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.2.8 
+
+Released on January 28, 2026
+
+### Fixes
+
+- Grid. Enable the ability to use block selection when the editor is open 
+- Layout. Incorrect resizing of a cell with an attached iframe 
+
 ## Version 9.2.7
 
 Released on January 15, 2026
