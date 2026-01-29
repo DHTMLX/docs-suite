@@ -2631,6 +2631,7 @@ module.exports = {
                     "grid/api/grid_dropbehaviour_config",
                     "grid/api/grid_editable_config",
                     "grid/api/grid_eventhandlers_config",
+                    "grid/api/grid_exportconfig_config",
                     "grid/api/grid_exportstyles_config",
                     "grid/api/grid_footerautoheight_config",
                     "grid/api/grid_footerposition_config",

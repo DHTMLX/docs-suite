@@ -46,6 +46,10 @@ A promise of data export
     - `header?: string` - (optional) an HTML template for the header in the exported file
     - `footer?: string` - (optional) an HTML template for the footer in the exported file
 
+:::note
+You can specify extended export configuration settings via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) configuration property.
+:::
+
 
 @example:
 // default export

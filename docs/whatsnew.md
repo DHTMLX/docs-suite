@@ -10,15 +10,21 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.3 
 
-Released on January , 2026
+Released on February , 2026
 
 ### New functionality 
 
-- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) via the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) property in the TreeGrid mode (PRO version)
-- Grid. The ability to [define the position of the footer and bottom-pinned rows within the component container](/grid/configuration/#footer-position) via the [`footerPosition`](/grid/api/grid_footerposition_config/) property (PRO version)
-- Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter is added for the column header (PRO version)
-- Tree. The ability to [add tooltips for the items](/tree/configuration/#tooltips-for-items) via the [`tooltip`](/tree/api/tree_tooltip_config/) property 
-- Window. The ability to [set the active window](/window/usage/#setting-the-active-window) via the [`setActive()`](/window/api/window_setactive_method/) method
+- Grid. The ability to [specify a flexible configuration for export](/grid/usage/#extended-export-configuration-settings) to the CSV, XLSX, PDF, and PNG formats (PRO version)
+    - new Grid configuration property: [`exportConfig`](/grid/api/grid_exportconfig_config/)
+- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) in the TreeGrid mode (PRO version)
+    - new Grid configuration property: [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) 
+- Grid. The ability to [define the position of the footer and frozen rows within the component container](/grid/configuration/#footer-position) (PRO version)
+    - new Grid configuration property: [`footerPosition`](/grid/api/grid_footerposition_config/) 
+- Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter for the column header is added (PRO version)
+- Tree. The ability to [add tooltips for the items](/tree/configuration/#tooltips-for-items)
+    - new Tree configuration property: [`tooltip`](/tree/api/tree_tooltip_config/)
+- Window. The ability to [set the active window](/window/usage/#setting-the-active-window) 
+    - new Window method: [`setActive()`](/window/api/window_setactive_method/)
 
 ### Updates
 
@@ -38,6 +44,7 @@ Released on January , 2026
 
 #### Grid
 
+- [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/k4wberkh)
 - [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/8n0pdqhp)
 - [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/etg7raih)
 - [Grid (TreeGrid). Drop behavior](https://snippet.dhtmlx.com/l5waxyqe)

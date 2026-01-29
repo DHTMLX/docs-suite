@@ -201,6 +201,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_dropbehaviour_config.md)   | @getshort(grid/api/grid_dropbehaviour_config.md)   |
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
 | [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
+| [](grid/api/grid_exportconfig_config.md)    | @getshort(grid/api/grid_exportconfig_config.md)    |
 | [](grid/api/grid_exportstyles_config.md)    | @getshort(grid/api/grid_exportstyles_config.md)    |
 | [](grid/api/grid_footerautoheight_config.md)| @getshort(grid/api/grid_footerautoheight_config.md)|
 | [](grid/api/grid_footerposition_config.md)  | @getshort(grid/api/grid_footerposition_config.md)  |

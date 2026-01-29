@@ -17,6 +17,10 @@ description: You can explore the csv export method of Grid in the documentation 
     - `rowDelimiter?: string` - (optional) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
     - `columnDelimiter?: string` - (optional) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
 
+:::note
+You can specify extended export configuration settings via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) configuration property.
+:::
+
 @returns:
 A promise of data export 
 

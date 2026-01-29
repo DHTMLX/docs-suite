@@ -356,6 +356,7 @@ In this section you will get to know how to export Grid to different formats.
 | Topic                                                                       | Description                                                                                                                                           |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Exporting Grid to XLSX, CSV, PNG or PDF format](../usage/#exporting-data) | Learn how to export Grid to the necessary format ([Example 1](https://snippet.dhtmlx.com/58oqij47), [Example 2](https://snippet.dhtmlx.com/ti9l91mn)) |
+| [Extended export configuration settings](../usage/#extended-export-configuration-settings)| Learn how to provide extended configuration properties for Grid export ([Example](https://snippet.dhtmlx.com/k4wberkh))|
 
 ## How to localize Grid
 
