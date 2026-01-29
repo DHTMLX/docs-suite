@@ -57,6 +57,15 @@ Released on February , 2026
 
 - [Window. Setting the active window](https://snippet.dhtmlx.com/lvm3kfwq)
 
+## Version 9.2.8 
+
+Released on January 28, 2026
+
+### Fixes
+
+- Grid. Enable the ability to use block selection when the editor is open 
+- Layout. Incorrect resizing of a cell with an attached iframe 
+
 ## Version 9.2.7
 
 Released on January 15, 2026
