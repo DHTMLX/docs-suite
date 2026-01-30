@@ -30,7 +30,7 @@ Released on February , 2026
 
 - Chart. Export module. The [`pdf()`](/chart/api/export/chart_pdf_method/) and [`png()`](/chart/api/export/chart_png_method/) export functions return a promise of data export
 - Grid. Export module. The [`pdf()`](/grid/api/export/grid_pdf_method/), [`png()`](/grid/api/export/grid_png_method/), [`xlsx()`](/grid/api/export/grid_xlsx_method/) and [`csv()`](/grid/api/export/grid_csv_method/) export functions return a promise of data export
-- Grid. The functionality of header filters is updated:
+- Grid. The functionality of [column header filters](/grid/configuration/#headerfooter-filters) is updated:
     - the [`setValue()`](/grid/api/headerfilter/setvalue_method/) method (of the [`getHeaderFilter()`](/grid/api/grid_getheaderfilter_method/) API), can take a *Date* object or an array of *Date[]* objects as a parameter
     - the `value` parameter of the callback functions of [`filterChange`](/grid/api/grid_filterchange_event/) and [`beforeFilter`](/grid/api/grid_beforefilter_event/) events can be a *Date* object or an array of *Date[]* objects
     - the parameters of the [`customFilter`](/grid/configuration/#customizing-headerfooter-filters) callback function can be *Date* objects or arrays of *Date[]* objects
@@ -44,18 +44,18 @@ Released on February , 2026
 
 #### Grid
 
-- [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/k4wberkh)
-- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/8n0pdqhp)
-- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/etg7raih)
-- [Grid (TreeGrid). Drop behavior](https://snippet.dhtmlx.com/l5waxyqe)
+- [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/aher21cg)
+- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/jsc1tbgc)
+- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/ivmm2j89)
+- [Grid (TreeGrid). Drop behavior](https://snippet.dhtmlx.com/o2v3pcg0)
 
 #### Tree
 
-- [Tree. Adding tooltips for the items](https://snippet.dhtmlx.com/7j097ht4)
+- [Tree. Tooltip template](https://snippet.dhtmlx.com/kswil8cl)
 
 #### Window
 
-- [Window. Setting the active window](https://snippet.dhtmlx.com/lvm3kfwq)
+- [Window. Setting the active state](https://snippet.dhtmlx.com/lvm3kfwq)
 
 ## Version 9.2.8 
 
