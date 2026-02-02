@@ -102,7 +102,7 @@ In this section you can learn how to configure the header and footer of Grid, ho
 | [Configuring header/footer](../api/api_gridcolumn_properties/)                    | Learn how to configure a Grid header/footer  ([Example](https://snippet.dhtmlx.com/9jl55ep7))                           |
 | [Setting the height for header and footer](../configuration/#headerfooter-height) | Learn how to set the height for rows in the header and footer of Grid  ([Example](https://snippet.dhtmlx.com/wjcjl80i)) |
 | [Setting the text for header and footer](../configuration/#headerfooter-text) | Learn how to set the text for rows in the header and footer of Grid  ([Example](https://snippet.dhtmlx.com/9jl55ep7)) |
-| [Setting the position of the footer](../configuration/#footer-position) | Learn how to set the position of the footer and bottom-pinned rows ([Example 1](https://snippet.dhtmlx.com/etg7raih), [Example 2](https://snippet.dhtmlx.com/8n0pdqhp)) |
+| [Setting the position of the footer](../configuration/#footer-position) | Learn how to set the position of the footer and bottom-pinned rows ([Example 1](https://snippet.dhtmlx.com/w5xzdjb7), [Example 2](https://snippet.dhtmlx.com/8sbf8b2y)) |
 | [Styling header cells](../customization/#styling-header-cells)                    | Learn how to set styling to the text of header cells ([Example](https://snippet.dhtmlx.com/7o4elf48))                   |
 | [Styling footer cells](../customization/#styling-footer-cells)                    | Learn how to set styling to the text of footer cells ([Example](https://snippet.dhtmlx.com/d254hcvp))                   |
 
@@ -356,7 +356,7 @@ In this section you will get to know how to export Grid to different formats.
 | Topic                                                                       | Description                                                                                                                                           |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Exporting Grid to XLSX, CSV, PNG or PDF format](../usage/#exporting-data) | Learn how to export Grid to the necessary format ([Example 1](https://snippet.dhtmlx.com/58oqij47), [Example 2](https://snippet.dhtmlx.com/ti9l91mn)) |
-| [Extended export configuration settings](../usage/#extended-export-configuration-settings)| Learn how to provide extended configuration properties for Grid export ([Example](https://snippet.dhtmlx.com/k4wberkh))|
+| [Extended export configuration settings](../usage/#extended-export-configuration-settings)| Learn how to provide extended configuration properties for Grid export ([Example](https://snippet.dhtmlx.com/aher21cg))|
 
 ## How to localize Grid
 

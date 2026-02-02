@@ -230,7 +230,7 @@ const grid = new dhx.Grid("treegrid_container", {
 });
 ~~~
 
-**Related sample**: [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/l5waxyqe)
+**Related sample**: [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/o2v3pcg0)
 
 ### Expanding collapsed rows on drag-n-drop 
 

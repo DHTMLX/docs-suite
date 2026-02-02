@@ -33,8 +33,10 @@ exportConfig?: (config: IGridConfig, exportType: "pdf" | "png" | "csv" | "xlsx")
 
 The `exportConfig` property is a callback function that takes the following parameters:
 
-- `config` -  (*IGridConfig*) the current configuration of a Grid instance
-- `exportType` - (*string*) the type of export being performed: "pdf", "png", "csv", or "xlsx"
+| Parameter         | Description                                                                       |
+|------------------ |---------------------------------------------------------------------------------- |
+|  `config`         | (*IGridConfig*) the current configuration of a Grid instance                      |
+|  `exportType`     | (*string*) the type of export being performed: "pdf", "png", "csv", or "xlsx"     |
 
 and returns a configuration object with export parameters. The returned configuration object may contain the following properties:
 
@@ -160,7 +162,7 @@ The `exportConfig` property extends the possibilities of the standard export and
 - **define format-specific settings**: set delimiters for CSV, date masks for Excel, or visual themes for PDF
 - **adjust styling**: override Grid properties (such as row height) specifically for the exported file 
 
-**Related sample**: [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/k4wberkh)
+**Related sample**: [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/aher21cg)
 
 **Related article**: [Extended export configuration settings](/grid/usage/#extended-export-configuration-settings)
 

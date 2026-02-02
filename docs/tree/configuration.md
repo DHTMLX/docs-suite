@@ -127,13 +127,13 @@ const tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-**Related sample**: [Tree. Adding tooltips for the items](https://snippet.dhtmlx.com/7j097ht4)
+**Related sample**: [Tree. Tooltip template](https://snippet.dhtmlx.com/kswil8cl)
 
-The [`tooltip`](/tree/api/tree_tooltip_config/) property can take the following types of values:
+The [`tooltip`](/tree/api/tree_tooltip_config/) property can have the following types of values:
 
-- `boolean` — if `true`, enables the standard tooltip (the value is taken from the [`value`](/tree/api/tree_data_config/) property of the item)
-- `function` — a template function that returns the string content of the tooltip
-- `object` — a configuration object for detailed customization of the tooltip's behavior and appearance. The available properties are given below:
+- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](/tree/api/tree_data_config/) property of the item)
+- *function* — a template function that returns the string content of the tooltip
+- *object* — a configuration object for detailed customization of the tooltip's behavior and appearance. The available properties are given below:
     - `template` - (optional) a function that determines the content of the tooltip. It takes two arguments:
         - `item` - (*object*) the data object of a tree item.
         - `event` - (*object*) the native mouse event (MouseEvent). 

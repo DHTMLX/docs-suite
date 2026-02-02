@@ -585,8 +585,10 @@ Unlike the standard export, [`exportConfig`](/grid/api/grid_exportconfig_config/
 
 The `exportConfig` property is a callback function that takes the following parameters:
 
-- `config` -  (*IGridConfig*) the current configuration of a Grid instance
-- `exportType` - (*string*) the type of export being performed: "pdf", "png", "csv", or "xlsx"
+| Parameter         | Description                                                                       |
+|------------------ |---------------------------------------------------------------------------------- |
+|  `config`         | (*IGridConfig*) the current configuration of a Grid instance                      |
+|  `exportType`     | (*string*) the type of export being performed: "pdf", "png", "csv", or "xlsx"     |
 
 The returned configuration object may contain the following properties:
 
@@ -701,7 +703,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/k4wberkh)
+**Related sample**: [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/aher21cg)
 
 ## Grouping data
 

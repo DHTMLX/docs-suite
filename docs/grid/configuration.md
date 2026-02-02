@@ -1373,7 +1373,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Header/footer filters
 
-There are the following types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md): **inputFilter**, **selectFilter**, **comboFilter**, **dateFilter** (**PRO version**).
+There are the following types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md): `inputFilter`, `selectFilter`, `comboFilter`, `dateFilter` (**PRO version**).
 
 - **inputFilter** 
 
@@ -1403,7 +1403,7 @@ If you specify **inputFilter** as the header or footer content of a column, you 
 }
 ~~~ 
 
-**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 - **selectFilter** 
 
@@ -1418,7 +1418,7 @@ Allows end users to filter data of a column by choosing an option from a present
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter](https://snippet.dhtmlx.com/4qz8ng3c)
 
 - **comboFilter**
 
@@ -1456,7 +1456,7 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter](https://snippet.dhtmlx.com/4qz8ng3c)
 
 - **dateFilter** 
 
@@ -1515,7 +1515,7 @@ Calendar API configuration properties:
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter, dateFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 ### Customizing header/footer filters
 
@@ -1548,7 +1548,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Custom filters in the header](https://snippet.dhtmlx.com/gcidkxjg)
+**Related sample**: [Grid. Custom filters in the header (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/gcidkxjg)
 
 ### Header/footer height
 
@@ -1602,13 +1602,17 @@ const grid2 = new dhx.Grid("grid", {
 
 ### Footer position
 
-You can define the logic of setting the position of the Grid footer as well as of the frozen rows set in the Grid configuration by the `bottomSplit` option with another Grid property `footerPosition`. The property has the following values:
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+You can define the logic of setting the position of the Grid footer as well as of the frozen rows fixed at the Grid bottom by the [`bottomSplit`](/grid/api/grid_bottomsplit_config/) option with another Grid property [`footerPosition`](/grid/api/grid_footerposition_config/). The property has the following values:
 
 - `relative` - (default) the footer follows the content immediately. If the number of rows is small and doesn't fill the container, the footer moves up to stay attached with the last row.
 
 ![](../assets/grid/footer_relative_position.png)
 
-- `bottom` - the footer and bottom-pinned rows are strictly locked to the bottom edge of the container. They remain at the base of the component even if the content occupies only a fraction of the available height.
+- `bottom` - the footer and bottom-pinned (frozen) rows are strictly locked to the bottom edge of the container. They remain at the base of the component even if the content takes only a part of the available height.
 
 ![](../assets/grid/footer_bottom_position.png)
 
@@ -1626,8 +1630,8 @@ const grid = new dhx.Grid("grid_container", {
 ~~~ 
 
 **Related samples**:
-- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/8n0pdqhp)
-- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/etg7raih)
+- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/w5xzdjb7)
+- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/8sbf8b2y)
 
 ## Rows
 

@@ -43,6 +43,6 @@ The main benefit of this method is that the activation occurs **without re-rende
 @changelog:
 Added in v9.3
 
-**Related sample**: [Window. Setting the active window](https://snippet.dhtmlx.com/lvm3kfwq)
+**Related sample**: [Window. Setting the active state](https://snippet.dhtmlx.com/lvm3kfwq)
 
-**Related article**: [Work with Window](/window/usage/#setting-the-active-window)
+**Related article**: [Work with Window](/window/usage/#setting-the-active-state)

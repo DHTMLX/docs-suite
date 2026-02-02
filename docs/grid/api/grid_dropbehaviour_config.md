@@ -41,6 +41,6 @@ There are three modes of behaviour of a dragged item, depending on the value set
 - "sibling" - a dragged item becomes a sibling of the item it is dragged to
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting 
 
-**Related sample**: [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/l5waxyqe)
+**Related sample**: [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/o2v3pcg0)
 
 **Related article**: [Drop behaviour](/grid/treegrid_mode/#drop-behaviour)

@@ -23,7 +23,7 @@ Released on February , 2026
 - Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter for the column header is added (PRO version)
 - Tree. The ability to [add tooltips for the items](/tree/configuration/#tooltips-for-items)
     - new Tree configuration property: [`tooltip`](/tree/api/tree_tooltip_config/)
-- Window. The ability to [set the active window](/window/usage/#setting-the-active-window) 
+- Window. The ability to [set a window to the active state](/window/usage/#setting-the-active-state) 
     - new Window method: [`setActive()`](/window/api/window_setactive_method/)
 
 ### Updates
@@ -45,9 +45,9 @@ Released on February , 2026
 #### Grid
 
 - [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/aher21cg)
-- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/jsc1tbgc)
-- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/ivmm2j89)
-- [Grid (TreeGrid). Drop behavior](https://snippet.dhtmlx.com/o2v3pcg0)
+- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/w5xzdjb7)
+- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/8sbf8b2y)
+- [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/o2v3pcg0)
 
 #### Tree
 

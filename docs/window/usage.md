@@ -84,7 +84,7 @@ dhxWindow.hide();
 
 **Related sample**: [Window. Showing / hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
 
-## Setting the active window
+## Setting the active state
 
 While working with several windows, you may need to make a particular window active and bring it to the top. You can apply the [`setActive()`](/window/api/window_setactive_method/) method to the necessary window for this purpose.
 
@@ -115,7 +115,7 @@ window2.show(); // Window 2 is currently on top
 window1.setActive();
 ~~~
 
-**Related sample**: [Window. Setting the active window](https://snippet.dhtmlx.com/lvm3kfwq)
+**Related sample**: [Window. Setting the active state](https://snippet.dhtmlx.com/lvm3kfwq)
 
 The key advantage of this method is that the activation occurs **without re-rendering the content**. This ensures that the DOM state, such as form input values, scroll positions, or media playback, remains completely intact.
 
