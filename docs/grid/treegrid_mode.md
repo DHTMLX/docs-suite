@@ -212,7 +212,21 @@ You can specify the drag-n-drop behaviour of items in the Grid in the TreeGrid m
 There are three modes of behaviour of a dragged item:
 
 - "child" - a dragged item becomes a child of the item it is dragged to
+
+The images below show drag-n-drop behaviour of items within a Grid in the TreeGrid mode with the `dropBehaviour: "child"` configuration setting applied:
+
+|   Dragging an item                                        |                Result                                     |
+|-----------------------------------------------------------|-----------------------------------------------------------|
+|![](../assets/treegrid/dropbehaviour_child.png)            | ![](../assets/treegrid/dropbehaviour_child_result.png)  |
+
 - "sibling" - a dragged item becomes a sibling of the item it is dragged to
+
+The images below show the drag-n-drop behaviour of items within a Grid in the TreeGrid mode with the `dropBehaviour: "sibling"` configuration setting applied:
+
+|   Dragging an item                                         |                Result                                      |
+|----------------------------------------------------------- |----------------------------------------------------------- |
+|![](../assets/treegrid/dropbehaviour_sibling_dragging.png)  | ![](../assets/treegrid/dropbehaviour_sibling_result.png)   |
+
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting 
 
 ~~~jsx
