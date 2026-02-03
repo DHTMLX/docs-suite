@@ -37,24 +37,24 @@ header: [
             icon?: string, // sets CSS class for the filter icon in `inputFilter` and the calendar icon in `dateFilter`
             /* properties of `comboFilter` configuration */
             filter?: (item, input: string) => boolean,
-            multiselection?: boolean,
-            readonly?: boolean,
+            multiselection?: boolean, // false by default
+            readonly?: boolean, // false by default
             virtual?: boolean, // true by default
             template?: function,
             /* properties of `dateFilter` configuration */
-            asDateObject?: boolean,
+            asDateObject?: boolean, // false by default
             date?: Date | string,
             mark?: (date: Date) => string,
             disabledDates?: (date: Date) => boolean,
-            weekStart?: "saturday" | "sunday" | "monday",
-            weekNumbers?: boolean,
-            mode?: "calendar" | "year" | "month" | "timepicker",
-            timePicker?: boolean,
-            dateFormat?: string,
-            timeFormat?: 24 | 12,
-            thisMonthOnly?: boolean,
-            width?: string | number,
-            range?: boolean
+            weekStart?: "saturday" | "sunday" | "monday", // "sunday" by default
+            weekNumbers?: boolean, // false by default
+            mode?: "calendar" | "year" | "month" | "timepicker", // "calendar" by default
+            timePicker?: boolean, // false by default
+            dateFormat?: string, //  by default, applies the dateFormat used for the column
+            timeFormat?: 24 | 12, // 24 by default
+            thisMonthOnly?: boolean, // false by default
+            width?: string | number, // "250px" by default
+            range?: boolean // false by default
         },
         customFilter?: (
             value: string | number | Date | Date[],
@@ -100,10 +100,10 @@ Each header object may include:
         </tr>
         <tr>
             <td><a href="../../../configuration/#headerfooter-filters"><b>filterConfig</b></a></td>
-            <td>(optional) a configuration object for setting the behavior and appearance of the filter. The set of properties depends on the filter type specified in the `content` property: <br><br> - a configuration object for <b>"inputFilter"</b> can contain the following properties: <ul><li><b>placeholder</b> - (optional) the placeholder text in the input field</li><li><b> icon</b> - (optional) the CSS class for the filter icon</li></ul> <br> - a configuration object for <b>"comboFilter"</b> can contain a set of properties:<ul><li><b>filter</b> - (optional) sets a custom function for filtering Combo Box options</li><li><b>multiselection</b> - (optional) enables selection of multiple options</li><li><b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the <b>readonly</b> property depends on the following conditions:<ul><li>the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column</li><li>in all other cases, `readonly:false` is set by default</li></ul></li><li><b>placeholder</b> - (optional) sets a placeholder in the input of ComboBox</li><li><b>virtual</b> - (optional) enables dynamic loading of data on scrolling the list of options, <i>true</i> by default</li><li><b>template</b> - (optional) a function which returns a template with content for the filter options. Takes an option item as a parameter:<ul><li><b>item</b> - (object) an option item</li></ul></li></ul> - a configuration object for <b>"dateFilter" (PRO version)</b> can contain a set of properties:<br>Main properties:<ul><li><b>icon</b> - (optional) the CSS class for the calendar icon</li><li><b>placeholder</b> - (optional) the placeholder text in the input field when no date is selected</li><li><b>asDateObject</b> (optional) - determines how the filter processes data for `customFilter` and the `beforeFilter` and `filterChange` events. If `true`, the comparison is performed using Date objects</li><li><b>range</b> - (optional) enables the date range selection mode (from and to)</li><li><b>dateFormat</b> - (optional) the date display format (e.g., `"%d/%m/%Y"`). By default, applies the `dateFormat` used for the column</li></ul>Calendar API configuration properties:<ul><li><b>date</b> - (optional) - the initial date opened in the calendar</li><li><b>mark</b> - (optional) - a function for adding custom CSS classes to specific dates </li><li><b>disabledDates</b> - (optional) - a function for disabling the selection of specific dates </li><li><b>weekStart</b> - (optional) - the start day of the week (`"saturday"`, `"sunday"`, `"monday"`).</li><li><b>weekNumbers</b> - (optional) - shows week numbers if `true`</li><li><b>mode</b> - (optional) - the calendar display mode (`"calendar"`, `"year"`, `"month"`, `"timepicker"`)</li><li><b>timePicker</b> - (optional) - adds the ability to select time</li><li><b>timeFormat</b> - (optional) - the time format (`12` or `24` hours)</li><li><b>thisMonthOnly</b> - (optional) - if `true`, allows selecting dates only within the current month</li><li><b>width</b> - (optional) - the width of the dropdown calendar</li></ul></td>
+            <td>(optional) a configuration object for setting the behavior and appearance of the filter. The set of properties depends on the filter type specified in the `content` property: <br><br> - a configuration object for <b>"inputFilter"</b> can contain the following properties: <ul><li><b>placeholder</b> - (optional) the placeholder text in the input field</li><li><b> icon</b> - (optional) the CSS class for the filter icon</li></ul> <br> - a configuration object for <b>"comboFilter"</b> can contain a set of properties:<ul><li><b>filter</b> - (optional) sets a custom function for filtering Combo Box options</li><li><b>multiselection</b> - (optional) enables selection of multiple options, *false* by default</li><li><b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the <b>readonly</b> property depends on the following conditions:<ul><li>the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column</li><li>in all other cases, `readonly:false` is set by default</li></ul></li><li><b>placeholder</b> - (optional) sets a placeholder in the input of ComboBox</li><li><b>virtual</b> - (optional) enables dynamic loading of data on scrolling the list of options, <i>true</i> by default</li><li><b>template</b> - (optional) a function which returns a template with content for the filter options. Takes an option item as a parameter:<ul><li><b>item</b> - (object) an option item</li></ul></li></ul> - a configuration object for <b>"dateFilter" (PRO version)</b> can contain a set of properties:<br>Main properties:<ul><li><b>icon</b> - (optional) the CSS class for the calendar icon</li><li><b>placeholder</b> - (optional) the placeholder text in the input field when no date is selected</li><li><b>asDateObject</b> - (optional) determines how the filter processes data for `customFilter` and the `beforeFilter` and `filterChange` events. If *true*, the comparison is performed using Date objects, *false* by default</li><li><b>range</b> - (optional) enables the date range selection mode (from and to), *false* by default</li><li><b>dateFormat</b> - (optional) the date display format (e.g., *"%d/%m/%Y"*). By default, applies the `dateFormat` used for the column</li></ul>Calendar API configuration properties:<ul><li><b>date</b> - (optional) - the initial date opened in the calendar</li><li><b>mark</b> - (optional) - a function for adding custom CSS classes to specific dates </li><li><b>disabledDates</b> - (optional) - a function for disabling the selection of specific dates </li><li><b>weekStart</b> - (optional) - the start day of the week (*"saturday"*, *"sunday"* (default), *"monday"*).</li><li><b>weekNumbers</b> - (optional) - shows week numbers if *true*, *false* by default</li><li><b>mode</b> - (optional) - the calendar display mode (*"calendar"* (default), *"year"*, *"month"*, *"timepicker"*)</li><li><b>timePicker</b> - (optional) - adds the ability to select time, *false* by default</li><li><b>timeFormat</b> - (optional) - the time format (*12* or *24* (default) hours)</li><li><b>thisMonthOnly</b> - (optional) - if *true*, allows selecting dates only within the current month, *false* by default</li><li><b>width</b> - (optional) - the width of the dropdown calendar, *"250px"* by default</li></ul></td>
         </tr>
         <tr>
-            <td><a href="../../../configuration/#customizing-headerfooter-filters"><b>customFilter</b></a> </td><td>(optional) a callback function that allows defining custom filtering logic. It takes two parameters:<ul><li><b>value</b> - (required) the cell value in the row</li><li> <b>match</b> - (required) the value selected in the filter</li></ul>and returns `true`, if the row matches the filtering criteria, otherwise `false`</td>
+            <td><a href="../../../configuration/#customizing-headerfooter-filters"><b>customFilter</b></a> </td><td>(optional) a callback function that allows defining custom filtering logic. It takes two parameters:<ul><li><b>value</b> - (required) the cell value in the row</li><li> <b>match</b> - (required) the value selected in the filter</li></ul>and returns *true*, if the row matches the filtering criteria, otherwise *false*</td>
         </tr>
         <tr>
             <td><b>headerSort</b></td><td>(optional) enables/disables sorting by clicking the header, <i>true</i> by default</td>

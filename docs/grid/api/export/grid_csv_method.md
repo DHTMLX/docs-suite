@@ -22,7 +22,7 @@ You can specify extended export configuration settings via the Grid [`exportConf
 :::
 
 @returns:
-A promise of data export 
+A promise of data export as a CSV string
 
 @example:
 // default export
