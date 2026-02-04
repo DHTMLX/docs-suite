@@ -2810,7 +2810,7 @@ The `blockSelection` property can be set in two ways:
         </tr>
         <tr>
             <td><b>mode</b></td>
-            <td>(<i>string</i>) the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
+            <td>(<i>string</i>) the operating mode of the module:<ul><li><i>"range"</i> - managed through the <a href="../usage_rangeselection/">`RangeSelection` module</a></li><li><i>"manual"</i> - managed through the manual control</li></ul></td>
         </tr>
         <tr>
             <td><b>handle</b></td>
