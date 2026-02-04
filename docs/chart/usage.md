@@ -174,3 +174,38 @@ The method takes as a parameter an object with two properties:
 A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it correctly.
 
 **Related sample**: [Chart. Adding data on the fly](https://snippet.dhtmlx.com/dpz4w5nr)
+
+## Exporting data
+
+You can export data of Chart into the PDF or PNG format via the corresponding methods of the `Export` module.
+
+### Exporting data to PDF
+
+The [`pdf()`](chart/api/export/chart_pdf_method.md) method of the Export module allows you to export Chart data into a PDF file. The method takes an [object with the export settings](chart/api/export/chart_pdf_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+
+~~~jsx
+chart.export.pdf({
+    url: "https://export.dhtmlx.com/chart/pdf/9.3.0",
+    name: "result.pdf"
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
+~~~
+
+**Related sample**: [Chart. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
+
+### Exporting data to PNG
+
+The [`png()`](chart/api/export/chart_png_method.md) method of the Export module allows you to export data from Chart into a PNG file. The method takes an [object with export settings](chart/api/export/chart_png_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+
+~~~jsx
+chart.export.png({
+    theme: "dark" // the exported theme, "light" by default
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
+~~~
+
+**Related sample**: [Chart. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)

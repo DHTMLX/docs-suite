@@ -56,7 +56,7 @@ chart.export.pdf()
 // export with config settings
 chart.export.pdf({
     url: "https://export.dhtmlx.com/chart/pdf/9.3.0",
-    name:"result.pdf"
+    name: "result.pdf"
 })
     .then(() => console.log("success"))
     .catch(() => console.log("failure"))
@@ -84,9 +84,9 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 | "A5"      | (5.83in x 8.27in)  |
 | "A6"      | (4.13in x 5.83in)  |
 
-**Related samples**: [Chart. Export. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
+**Related samples**: [Chart. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
 
-**Related API:** [exportStyles](chart/api/chart_exportstyles_config.md)
+**Related API:** [`exportStyles`](chart/api/chart_exportstyles_config.md)
 
 **Change log:** 
 

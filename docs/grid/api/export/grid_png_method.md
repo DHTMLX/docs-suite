@@ -52,7 +52,7 @@ If you use Grid in conjunction with [Pagination](pagination.md), only the displa
 
 **Related article:** [Exporting Grid](grid/usage.md)
 
-**Related API:** [exportStyles](grid/api/grid_exportstyles_config.md)
+**Related API:** [`exportStyles`](grid/api/grid_exportstyles_config.md)
 
 **Change log:** 
 

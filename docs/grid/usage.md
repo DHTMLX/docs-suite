@@ -541,9 +541,11 @@ The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module al
 
 ~~~jsx
 grid.export.pdf({
-    format: "A4", // the format of the output file, "A4" by default
-    scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
-    displayHeaderFooter: true, // defines whether to display the header and footer, false by default
+    pdf: {
+        format: false, // the format of the output file, "A4" by default
+        scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
+        displayHeaderFooter: true // defines whether to display the header and footer, false by default
+    },
     theme: "dark" // the exported theme, "light" by default
 })
     .then(() => console.log("success"))

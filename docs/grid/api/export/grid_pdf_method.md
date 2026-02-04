@@ -60,10 +60,12 @@ grid.export.pdf()
 
 // export with config settings
 grid.export.pdf({
-    format: "A4",
-    scale: 0.75,
-    displayHeaderFooter: true,
-    theme: "dark",
+    pdf: {
+        format: false, // the format of the output file, "A4" by default
+        scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
+        displayHeaderFooter: true // defines whether to display the header and footer, false by default
+    },
+    theme: "dark" // the exported theme, "light" by default
 })
     .then(() => console.log("success"))
     .catch(() => console.log("failure"))
@@ -100,7 +102,7 @@ If you use Grid in conjunction with [Pagination](pagination.md), only the displa
 
 **Related article:** [Exporting Grid](grid/usage.md)
 
-**Related API:** [exportStyles](grid/api/grid_exportstyles_config.md)
+**Related API:** [`exportStyles`](grid/api/grid_exportstyles_config.md)
 
 **Change log:** 
 

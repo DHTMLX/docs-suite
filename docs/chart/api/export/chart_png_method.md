@@ -40,9 +40,9 @@ chart.export.png({
 
 @descr:
 
-**Related samples**: [Chart. Export. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
+**Related samples**: [Chart. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
 
-**Related API:** [exportStyles](chart/api/chart_exportstyles_config.md)
+**Related API:** [`exportStyles`](chart/api/chart_exportstyles_config.md)
 
 **Change log:** 
 
