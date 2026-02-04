@@ -8,6 +8,55 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3 
+
+Released on February , 2026
+
+### New functionality 
+
+- Grid. The ability to [specify a flexible configuration for export](/grid/usage/#extended-export-configuration-settings) to the CSV, XLSX, PDF, and PNG formats (PRO version)
+    - new Grid configuration property: [`exportConfig`](/grid/api/grid_exportconfig_config/)
+- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) in the TreeGrid mode (PRO version)
+    - new Grid configuration property: [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) 
+- Grid. The ability to [define the position of the footer and frozen rows within the component container](/grid/configuration/#footer-position) (PRO version)
+    - new Grid configuration property: [`footerPosition`](/grid/api/grid_footerposition_config/) 
+- Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter for the column header is added (PRO version)
+- Tree. The ability to [add tooltips for the items](/tree/configuration/#tooltips-for-items)
+    - new Tree configuration property: [`tooltip`](/tree/api/tree_tooltip_config/)
+- Window. The ability to [set a window to the active state](/window/usage/#setting-the-active-state) 
+    - new Window method: [`setActive()`](/window/api/window_setactive_method/)
+
+### Updates
+
+- Chart. Export module. The [`pdf()`](/chart/api/export/chart_pdf_method/) and [`png()`](/chart/api/export/chart_png_method/) export functions return a promise of data export
+- Grid. Export module. The [`pdf()`](/grid/api/export/grid_pdf_method/), [`png()`](/grid/api/export/grid_png_method/), [`xlsx()`](/grid/api/export/grid_xlsx_method/) and [`csv()`](/grid/api/export/grid_csv_method/) export functions return a promise of data export
+- Grid. The functionality of [column header filters](/grid/configuration/#headerfooter-filters) is updated:
+    - the [`setValue()`](/grid/api/headerfilter/setvalue_method/) method (of the [`getHeaderFilter()`](/grid/api/grid_getheaderfilter_method/) API), can take a *Date* object or an array of *Date[]* objects as a parameter
+    - the `value` parameter of the callback functions of [`filterChange`](/grid/api/grid_filterchange_event/) and [`beforeFilter`](/grid/api/grid_beforefilter_event/) events can be a *Date* object or an array of *Date[]* objects
+    - the parameters of the [`customFilter`](/grid/configuration/#customizing-headerfooter-filters) callback function can be *Date* objects or arrays of *Date[]* objects
+
+### Fixes
+
+- Grid. The inability to set a single date in the range mode is fixed
+- Grid. Performance issues that occurred while filtering large data sets via `inputFilter` 
+
+### New samples
+
+#### Grid
+
+- [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/aher21cg)
+- [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/w5xzdjb7)
+- [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/8sbf8b2y)
+- [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/o2v3pcg0)
+
+#### Tree
+
+- [Tree. Tooltip template](https://snippet.dhtmlx.com/kswil8cl)
+
+#### Window
+
+- [Window. Setting the active state](https://snippet.dhtmlx.com/lvm3kfwq)
+
 ## Version 9.2.8 
 
 Released on January 28, 2026

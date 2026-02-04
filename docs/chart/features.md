@@ -121,7 +121,7 @@ In this section you will know how to export Chart to different formats.
 
 | Topic                                                              | Description                                                                                      |
 | :----------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-| [Exporting Chart to a PDF or PNG file](category/export-methods.md) | Learn how to export Chart to PDF or PNG formats ([Example](https://snippet.dhtmlx.com/4rybsjjq)) |
+| [Exporting Chart to a PDF or PNG file](../usage/#exporting-data) | Learn how to export Chart to PDF or PNG formats ([Example](https://snippet.dhtmlx.com/4rybsjjq)) |
 
 ## How to work with Chart events
 
@@ -150,7 +150,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
-| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 

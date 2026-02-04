@@ -20,7 +20,7 @@ Note that when the [`subRow`](/grid/api/grid_subrow_config/) config is used, Gri
 
 @descr:
 
-## Parameters
+#### Parameters
 
 When the property is set as an *object*, the specified parameters are applied to all the rows. 
 
@@ -40,7 +40,7 @@ The `subRowConfig` object may contain the following properties:
 The `fullWidth` property works only if the `subRowConfig` property is initialized as an object.
 :::
 
-### Example
+#### Example
 
 - the global configuration of sub-rows
 

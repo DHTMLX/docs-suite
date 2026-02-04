@@ -8,11 +8,14 @@ description: You can explore the pdf method of Chart in the documentation of the
 
 @short: Exports a chart to a PDF file
 
-@signature: {'pdf(config?: object): void;'}
+@signature: {'pdf(config?: IPDFConfig): Promise<void>;'}
+
+@returns:
+A promise of data export
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to PDF:
-    - `url?: string` -  (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/chart/pdf/8.0.0`
+    - `url?: string` -  (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/chart/pdf/9.3.0`
     - `name?: string` - (optional) the name of the exported file
     - `theme?: string` - (optional) the exported theme, "light" by default. For custom or overridden themes, enable the `exportStyles` option
     - `exportStyles?: boolean | string[]` - (optional) defines the styles that will be sent to the export service when exporting Chart. Use *false* to prevent all styles from being sent to the export service
@@ -45,13 +48,19 @@ description: You can explore the pdf method of Chart in the documentation of the
 
 @example:
 // default export
-chart.export.pdf();
+chart.export.pdf()
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 
 // export with config settings
 chart.export.pdf({
-    url: "https://export.dhtmlx.com/chart/pdf/8.0.0",
-    name:"result.pdf"
-});
+    url: "https://export.dhtmlx.com/chart/pdf/9.3.0",
+    name: "result.pdf"
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 
 @descr:
 
@@ -75,11 +84,13 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 | "A5"      | (5.83in x 8.27in)  |
 | "A6"      | (4.13in x 5.83in)  |
 
-**Related samples**: [Chart. Export. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
+**Related samples**: [Chart. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
 
-**Related API:** [exportStyles](chart/api/chart_exportstyles_config.md)
+**Related API:** [`exportStyles`](chart/api/chart_exportstyles_config.md)
 
 **Change log:** 
+
+- The method returns a promise of data export since v9.3
 - The **header** and **footer** options of the export object were added in v8.4
 - The **theme**, **exportStyles** options of the export object were added in v8.1
 - The **pageRanges**, **displayHeaderFooter**, **footerTemplate**, **headerTemplate** options of the pdf object were added in v8.1
