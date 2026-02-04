@@ -1616,16 +1616,40 @@ You can define the logic of setting the position of the Grid footer as well as o
 
 ![](../assets/grid/footer_bottom_position.png)
 
-Here is the example of positioning the footer and two frozen rows at the bottom of the Grid, as presented in the above image:
+Here is the example of positioning the footer and a frozen row at the bottom of the Grid, as presented in the above image:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        {
+            id: "productId",
+            header: [{ text: "Product Id" }],
+            summary: "count",
+            footer: [{ text: summary => `Total: ${summary.count}` }],
+        },
+        {
+            id: "category",
+            header: [{ text: "Category" }],
+        },
+        {
+            id: "price",
+            type: "number",
+            numberMask: { prefix: "$" },
+            header: [{ text: "Price" }],
+            summary: "avg",
+            footer: [{ text: summary => `Avg: ${summary.avg}` }],
+        },
+        {
+            id: "stock",
+            type: "number",
+            header: [{ text: "Stock" }],
+            summary: "sum",
+            footer: [{ text: summary => `Total: ${summary.sum}` }],
+        },
     ],
     data: dataset,
     footerPosition: "bottom", // "relative" by default
-    bottomSplit: 2
+    bottomSplit: 1
 });
 ~~~ 
 
