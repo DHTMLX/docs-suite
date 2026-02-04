@@ -19,7 +19,31 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        {
+            id: "productId",
+            header: [{ text: "Product Id" }],
+            summary: "count",
+            footer: [{ text: summary => `Total: ${summary.count}` }],
+        },
+        {
+            id: "category",
+            header: [{ text: "Category" }],
+        },
+        {
+            id: "price",
+            type: "number",
+            numberMask: { prefix: "$" },
+            header: [{ text: "Price" }],
+            summary: "avg",
+            footer: [{ text: summary => `Avg: ${summary.avg}` }],
+        },
+        {
+            id: "stock",
+            type: "number",
+            header: [{ text: "Stock" }],
+            summary: "sum",
+            footer: [{ text: summary => `Total: ${summary.sum}` }],
+        },
     ],
     data: dataset,
     footerPosition: "bottom", // "relative" by default

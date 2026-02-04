@@ -10,19 +10,41 @@ description: You can explore the setValue method of the header filter of Grid in
 
 @signature: {'setValue(value: string | string[] | Date | Date[]): void;'}
 
+@descr:
+#### Usage
+
+- for inputFilter, selectFilter, comboFilter
+
+~~~jsx
+setValue(value: string): void; 
+~~~
+
+- for comboFilter
+
+~~~jsx
+setValue(value: string | string[]): void;
+~~~
+
+- for dateFilter
+
+~~~jsx
+setValue(value: Date | Date[]): void; 
+~~~
+
 @params:
 - `value: string | string[] | Date | Date[]` - the value to be set for the filter
-
-:::info
-- An array of string values can be specified only for [`comboFilter`](/grid/configuration/#customizing-headerfooter-filters) in the `multiselection:true` mode.
-
-- For [`dateFilter`](/grid/configuration/#customizing-headerfooter-filters), the value must be passed strictly as a *Date* object (for a single selection) or an array of *Date[]* objects (for the `range` mode). *String* values are not supported by the `setValue()` method for this filter type.
-:::
 
 @example:
 grid.getHeaderFilter("country").setValue("Brazil");
 
 @descr:
+:::info
+The [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter supports only the *Date object* values.
+:::
+
+Note that in case of the enabled `multiselection` or `range` modes, the method awaits the value to be passed as an array.
+
+**Related article**: [Header/footer filters](/grid/configuration/#headerfooter-filters)
 
 @changelog:
 
