@@ -225,7 +225,7 @@ The images below show the drag-n-drop behaviour of items within a Grid in the Tr
 
 |   Dragging an item                                         |                Result                                      |
 |----------------------------------------------------------- |----------------------------------------------------------- |
-|![](../assets/treegrid/dropbehaviour_sibling_dragging.png)  | ![](../assets/treegrid/dropbehaviour_sibling_result.png)   |
+|![](../assets/treegrid/dropbehaviour_sibling.png)  | ![](../assets/treegrid/dropbehaviour_sibling_result.png)   |
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting 
 
