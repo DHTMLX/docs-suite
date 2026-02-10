@@ -1418,7 +1418,7 @@ Allows end users to filter data of a column by choosing an option from a present
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 - **comboFilter**
 
@@ -1456,7 +1456,7 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 - **dateFilter** 
 
@@ -2108,6 +2108,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     summary: { totalPopulation: ["population", "sum"] },
     data: dataset
+});
 ~~~
 
 **Related sample**: [Grid. Header/footer tooltip](https://snippet.dhtmlx.com/fgstf2mq)
