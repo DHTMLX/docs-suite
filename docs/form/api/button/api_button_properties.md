@@ -12,7 +12,7 @@ description: You can explore the Properties of the Button control of Form in the
 {
     type: "button",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     
     text?: string,
     submit?: boolean, // false by default
@@ -50,7 +50,7 @@ description: You can explore the Properties of the Button control of Form in the
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set </td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>text</b></td>

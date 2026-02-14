@@ -14,19 +14,21 @@ You can quickly add/remove tabs of Tabbar on the fly with the help of the corres
 
 The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 
-<table>
-    <tbody>
-        <tr>
-            <td><b>view</b></td>
-            <td>(<i>object</i>) an object of a tab. It may include the following properties:<ul><li>tab - the name of a tab</li><li>tabCss - the name of the CSS class used for a tab</li><li>css - the name of the CSS class used for a cell</li><li>header - the header of a cell</li></ul></td>
-        </tr>
-        <tr>
-            <td><b>index</b></td>
-            <td>(<i>number</i>) the position to add a tab into</td>
-        </tr>
-    </tbody>
-</table>
-<br/>
+- `config` - an object of a tab. It may include the following properties:
+    - `id` - the id of a tab
+    - `tab` - the name of a tab
+    - `tabCss` - the name of the CSS class used for a tab
+    - `css` - the name of the CSS class used for a cell
+    - `header` - the header of a cell
+    - `html` - HTML content for a tab
+    - `padding` - the distance between the content of a cell and the border of tabbar
+    - `tabWidth` - the width of a tab (for more information, see [Tabs sizing](tabbar/api/tabbar_views_config.md#tabs-sizing))
+    - `tabHeight` - the height of a tab (for more information, see [Tabs sizing](tabbar/api/tabbar_views_config.md#tabs-sizing))
+- `index` - the position to add a tab into
+
+:::info
+Please note that if you specify the `id` fields for tabs, their values should be **unique**. You can also omit the `id` fields in the configuration of tabs. In this case they will be generated automatically.
+:::
 
 ~~~js
 // adding a new tab

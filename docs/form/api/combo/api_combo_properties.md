@@ -12,7 +12,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 {
     type: "combo",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     data?: object[],
     value?: string | number | array,
     
@@ -68,7 +68,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>data</b></td>
