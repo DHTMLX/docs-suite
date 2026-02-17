@@ -2217,6 +2217,37 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
 
+:::info
+For Grid (in the TreeGrid mode) or Tree used in a sub-row it is important to specify the id of the root element to link data to the corresponding collection: 
+- by using the [`rootParent`](grid/api/grid_rootparent_config.md) property for Grid in the TreeGrid mode 
+- by using the [`rootId`](tree/api/tree_rootid_config.md) property for Tree 
+:::
+
+For example:
+
+~~~jsx {8,16}
+grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,   
+    subRow: (row) => { 
+      subGrid = new dhx.Grid(null, {
+            rootParent: "root", // Add the root id
+            columns: [
+                { id: "country", header: [{ text: "Country" }] },
+                { id: "order_quantity", header: [{ text: "Orders" }], type: "number" },
+                { id: "average_check", header: [{ text: "Avg check" }], type: "number" },
+            ],
+            data: row.data,
+            autoWidth: true,
+            type: "tree",
+        });
+        return subGrid;
+    }, 
+}); 
+~~~
+
 ### Adjusting configuration of sub-rows
 
 You can define common configuration settings of all sub-rows or provide specific options for each sub-row via the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration property of Grid.
