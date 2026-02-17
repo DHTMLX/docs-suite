@@ -12,7 +12,7 @@ description: You can explore the getFilters method of DataCollection in the docu
 
 @params: 
 
-- `permanent: boolean` - optional, <i>false</i> by default. Allows getting the list of permanent filters
+- `permanent?: boolean` - optional, *false* by default. Allows getting the list of permanent filters
 
 @returns:
 - `filters: object` - an object with the applied filters, where the key is the id of a filter and the value is an object with the [`rule` and `config` properties](data_collection/api/datacollection_filter_method.md)
