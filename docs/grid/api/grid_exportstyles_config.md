@@ -22,11 +22,11 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 @descr:
-By default, the **exportStyles** property is disabled. Thus, when you export Grid, CSS styles included to the page are not sent to the export service. This reduces the size of the exported data. 
+By default, the `exportStyles` property is disabled. Thus, when you export Grid, CSS styles included to the page are not sent to the export service. This reduces the size of the exported data. 
 
-If you want some styles to be exported, set string values with the absolute paths to the desired styles to the **exportStyles** array:
+If you want some styles to be exported, set string values with the absolute paths to the desired styles to the `exportStyles` array:
 
-~~~js
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
@@ -50,7 +50,7 @@ You need to enable the property if you want to export Grid with a [custom or ove
 @descr:
 
 **Related API:**
-- [png()](grid/api/export/grid_png_method.md)
-- [pdf()](grid/api/export/grid_pdf_method.md)
+- [`png()`](grid/api/export/grid_png_method.md)
+- [`pdf()`](grid/api/export/grid_pdf_method.md)
 
 @changelog: added in v8.1

@@ -16,11 +16,11 @@ description: You can explore the getHeaderFilter method of Grid in the documenta
 @returns:
 An object with a set of methods which let you work with the header filter of the specified column. The methods are:
 
-- [blur()](grid/api/headerfilter/blur_method.md) - removes focus from the filter
-- [clear()](grid/api/headerfilter/clear_method.md) - clears the value set in the filter
-- [focus()](grid/api/headerfilter/focus_method.md) - sets focus on the filter
-- [getFilter()](grid/api/headerfilter/getfilter_method.md) - returns either an HTML object or an object with Combobox configuration
-- [setValue()](grid/api/headerfilter/setvalue_method.md) - sets a value by which a column will be filtered
+- [`blur()`](grid/api/headerfilter/blur_method.md) - removes focus from the filter
+- [`clear()`](grid/api/headerfilter/clear_method.md) - clears the value set in the filter
+- [`focus()`](grid/api/headerfilter/focus_method.md) - sets focus on the filter
+- [`getFilter()`](grid/api/headerfilter/getfilter_method.md) - returns either an HTML object, or an object with Combobox/Calendar configuration
+- [`setValue()`](grid/api/headerfilter/setvalue_method.md) - sets the filter value
 
 @example:
 const countryFilter = grid.getHeaderFilter("country");

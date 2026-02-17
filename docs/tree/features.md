@@ -46,13 +46,14 @@ In this section you can find out how to initialize Tree, how to load data into t
 In this section you can find out how to configure drag-n-drop in Tree, how to enable or disable key navigation, how to let users to edit items by double-click.
 
 
-| Topic                                                                               | Description                                                                                                                                                                          |
-| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Configuring drag-n-drop](../drag_and_drop_handling/)                     | Learn how to configure the necessary mode of drag-n-drop of items between trees ([Example 1](https://snippet.dhtmlx.com/7idtw7i4), [Example 2](https://snippet.dhtmlx.com/hyfz6ai7)) |
-| [Configuring drop behavior](../drag_and_drop_handling/)               | Learn how to define the behavior of a dragged item ([Example](https://snippet.dhtmlx.com/80mh3hly))                                                                                  |
-| [Copying items during drag-n-drop](../drag_and_drop_handling/) | Learn how to copy an item to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/xm0lxbpj))                                                                            |
-| [Enabling/disabling key navigation](../configuration/#key-navigation)               | Learn how to enable and disable key navigation ([Example](https://snippet.dhtmlx.com/icql8fwq))                                                                                      |
-| [Activating inline editing](../configuration/#editing-of-items)                     | Learn how to activate inline editing on Tree initialization ([Example](https://snippet.dhtmlx.com/hyfz6ai7))                                                                         |
+| Topic                                            				| Description                                                                |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [Configuring drag-n-drop](../drag_and_drop_handling/)         | Learn how to configure the necessary mode of drag-n-drop of items between trees ([Example 1](https://snippet.dhtmlx.com/7idtw7i4), [Example 2](https://snippet.dhtmlx.com/hyfz6ai7)) |
+| [Configuring drop behavior](../drag_and_drop_handling/)       | Learn how to define the behavior of a dragged item ([Example](https://snippet.dhtmlx.com/80mh3hly))             |
+| [Copying items during drag-n-drop](../drag_and_drop_handling/) | Learn how to copy an item to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/xm0lxbpj))              |
+| [Enabling/disabling key navigation](../configuration/#key-navigation)  | Learn how to enable and disable key navigation ([Example](https://snippet.dhtmlx.com/icql8fwq))           |
+| [Activating inline editing](../configuration/#editing-of-items) | Learn how to activate inline editing on Tree initialization ([Example](https://snippet.dhtmlx.com/hyfz6ai7))          |
+| [Enabling and configuring tooltips](../configuration/#tooltips-for-items) | Learn how to enable and configure tooltips for Tree items ([Example](https://snippet.dhtmlx.com/kswil8cl))          |
 
 ## How to customize Tree and change its size
 

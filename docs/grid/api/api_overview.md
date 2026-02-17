@@ -198,10 +198,13 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_dragitem_config.md)        | @getshort(grid/api/grid_dragitem_config.md)        |
 | [](grid/api/grid_dragmode_config.md)        | @getshort(grid/api/grid_dragmode_config.md)        |
 | [](grid/api/grid_dragpanel_config.md)       | @getshort(grid/api/grid_dragpanel_config.md)       |
+| [](grid/api/grid_dropbehaviour_config.md)   | @getshort(grid/api/grid_dropbehaviour_config.md)   |
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
 | [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
+| [](grid/api/grid_exportconfig_config.md)    | @getshort(grid/api/grid_exportconfig_config.md)    |
 | [](grid/api/grid_exportstyles_config.md)    | @getshort(grid/api/grid_exportstyles_config.md)    |
 | [](grid/api/grid_footerautoheight_config.md)| @getshort(grid/api/grid_footerautoheight_config.md)|
+| [](grid/api/grid_footerposition_config.md)  | @getshort(grid/api/grid_footerposition_config.md)  |
 | [](grid/api/grid_footerrowheight_config.md) | @getshort(grid/api/grid_footerrowheight_config.md) |
 | [](grid/api/grid_footertooltip_config.md)   | @getshort(grid/api/grid_footertooltip_config.md)   |
 | [](grid/api/grid_group_config.md)        	  | @getshort(grid/api/grid_group_config.md)           |

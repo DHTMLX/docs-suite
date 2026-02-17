@@ -9,12 +9,12 @@ description: You can explore the rootParent config of Grid in the documentation 
 @short: Optional. Defines the id of the root parent
 
 :::note
-The property works only for Grid with the `type: "tree"` configuration option
+The property works only for Grid with the `type: "tree"` configuration option.
 :::
 
-@signature: rootParent?: string;
+@signature: {'rootParent?: string;'}
 
-@example:			
+@example:
 const grid = new dhx.Grid("grid_container", {
     type: "tree",
     rootParent: "root", 

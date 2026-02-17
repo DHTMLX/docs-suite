@@ -20,11 +20,11 @@ Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid m
 
 @descr:
 
-## Parameters
+#### Parameters
 
 The `subRow` property is a callback function which is called with the row object as a parameter and returns HTML as string or a constructor of a subGrid (or any other nested Suite component).
 
-### Example
+#### Example
 
 - a sub-row with an HTML content
 
