@@ -10,17 +10,17 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.3 
 
-Released on February , 2026
+Released on February 17, 2026
 
 ### New functionality 
 
 - Grid. The ability to [specify a flexible configuration for export](/grid/usage/#extended-export-configuration-settings) to the CSV, XLSX, PDF, and PNG formats (PRO version)
     - new Grid configuration property: [`exportConfig`](/grid/api/grid_exportconfig_config/)
-- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) in the TreeGrid mode (PRO version)
-    - new Grid configuration property: [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) 
+- Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter for the column header is added (PRO version)
 - Grid. The ability to [define the position of the footer and frozen rows within the component container](/grid/configuration/#footer-position) (PRO version)
     - new Grid configuration property: [`footerPosition`](/grid/api/grid_footerposition_config/) 
-- Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter for the column header is added (PRO version)
+- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) in the TreeGrid mode (PRO version)
+    - new Grid configuration property: [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) 
 - Tree. The ability to [add tooltips for the items](/tree/configuration/#tooltips-for-items)
     - new Tree configuration property: [`tooltip`](/tree/api/tree_tooltip_config/)
 - Window. The ability to [set a window to the active state](/window/usage/#setting-the-active-state) 
