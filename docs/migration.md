@@ -6,6 +6,10 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+:::info
+If you are using an outdated version of DHTMLX Suite 5 and require the documentation for it, please [contact us](https://dhtmlx.com/docs/contact.shtml), and we will send it to you.
+:::
+
 9.1 -> 9.2
 -----------
 
