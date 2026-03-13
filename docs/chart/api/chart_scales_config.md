@@ -43,7 +43,7 @@ There are the following *types* of the scales: "left","right","top","bottom","ra
 
 :::tip
 You can apply the options below to configure scales for charts with the following types: 
-["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
+["line", "spline"](/chart/charts_overview/#line-and-spline-chart), ["bar", "x-bar"](/chart/charts_overview/#bar-and-x-bar-chart), ["area", "splineArea"](/chart/charts_overview/#area-and-splinearea-chart), ["scatter"](/chart/charts_overview/#scatter-chart).
 :::
 
 ### Usage
@@ -162,7 +162,7 @@ scales: {
 ## The list of config options for radial scales
 
 :::tip
-The **radial** scale is used for [Radar chart (type: "radar")](chart/charts_overview.md#radar-chart) and has its own properties, due to peculiarities of configuration.
+The **radial** scale is used for [Radar chart (type: "radar")](/chart/charts_overview/#radar-chart) and has its own properties, due to peculiarities of configuration.
 :::
 
 ### Usage
@@ -190,4 +190,4 @@ scales: {
 
 **Related sample**: [Chart. Radar chart. Axis configuration](https://snippet.dhtmlx.com/yksfvhhl)
 
-**Related article:** [Configuration](chart/configuration_properties.md)
+**Related article:** [Configuration](/chart/configuration_properties/)

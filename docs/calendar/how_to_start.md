@@ -101,15 +101,15 @@ This variant presupposes that you create a popup first and then attach a calenda
 
 <iframe src="https://snippet.dhtmlx.com/mj7jr6ro?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-Read the details in the [DatePicker](calendar/datepicker.md) article.
+Read the details in the [DatePicker](/calendar/datepicker/) article.
 
 ### Configuration properties
 
-Check the full list of Calendar configuration properties in the [Calendar API overview](calendar/api/api_overview.md#properties) article.
+Check the full list of Calendar configuration properties in the [Calendar API overview](/calendar/api/api_overview/#properties) article.
 
 ## Select initial date (optional)
 
-You can specify what date should be selected in the calendar before initialization of the component via the [](calendar/api/calendar_value_config.md) configuration option:
+You can specify what date should be selected in the calendar before initialization of the component via the [`value`](/calendar/api/calendar_value_config/) configuration option:
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -119,7 +119,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 **Related sample**: [Calendar. Date initialization](https://snippet.dhtmlx.com/fyg6l65t)
 
-If you need to select a specific date after initialization of Calendar, use the [](calendar/api/calendar_setvalue_method.md) method:
+If you need to select a specific date after initialization of Calendar, use the [`setValue()`](/calendar/api/calendar_setvalue_method/) method:
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {

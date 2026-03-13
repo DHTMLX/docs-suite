@@ -60,4 +60,4 @@ calendar.events.fire("name",args);
 
 ## The list of events
 
-You can find the full list of events in the [Calendar API](calendar/api/api_overview.md#events).
+You can find the full list of events in the [Calendar API](/calendar/api/api_overview/#events).

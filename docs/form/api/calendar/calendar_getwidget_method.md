@@ -23,7 +23,7 @@ const datepicker = form.getItem("datepicker").getWidget();
 
 It is possible to use methods of DHTMLX Calendar via the **getWidget()** method of a DatePicker control.
 
-For example, you can show the current month in the control. To do this, you need to get the widget attached to the DatePicker control and then use the [showDate()](calendar/api/calendar_showdate_method.md) method of this widget.
+For example, you can show the current month in the control. To do this, you need to get the widget attached to the DatePicker control and then use the [`showDate()`](/calendar/api/calendar_showdate_method/) method of this widget.
 
 ~~~js
 const datepicker = form.getItem("datepicker").getWidget();  // -> DHTMLX Calendar

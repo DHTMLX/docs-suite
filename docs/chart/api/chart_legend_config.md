@@ -31,7 +31,7 @@ const chart = new dhx.Chart("chart_container", {
 
 :::info
 You can apply the options below to configure the legend for charts with the following types: 
-["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["radar"](chart/charts_overview.md#radar-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
+["line", "spline"](/chart/charts_overview/#line-and-spline-chart), ["bar", "x-bar"](/chart/charts_overview/#bar-and-x-bar-chart), ["area", "splineArea"](/chart/charts_overview/#area-and-splinearea-chart), ["radar"](/chart/charts_overview/#radar-chart), ["scatter"](/chart/charts_overview/#scatter-chart).
 :::
 
 ### Usage
@@ -93,7 +93,7 @@ legend?: {
 
 :::info
 You can apply the options below to configure the legend for charts with the following types: 
-["pie", "pie3D", "donut"](chart/charts_overview.md#pie-pie-3d-and-donut-chart).
+["pie", "pie3D", "donut"](/chart/charts_overview/#pie-pie-3d-and-donut-chart).
 :::
 
 ### Usage
@@ -157,7 +157,7 @@ legend?: {
 ## The list of config options for legend (for charts without scales: Treemap)
 
 :::info
-You can apply the options below to configure the legend for charts with the ["treeMap"](chart/charts_overview.md#treemap-chart) type.
+You can apply the options below to configure the legend for charts with the ["treeMap"](/chart/charts_overview/#treemap-chart) type.
 :::
 
 ### Usage
@@ -238,7 +238,7 @@ The calendar heatmap chart is available only in the PRO version of the DHTMLX Ch
 :::
 
 :::info
-You can apply the options below to configure the legend for charts with the ["calendarHeatMap"](chart/charts_overview.md#calendar-heatmap-chart) type.
+You can apply the options below to configure the legend for charts with the ["calendarHeatMap"](/chart/charts_overview/#calendar-heatmap-chart) type.
 :::
 
 ### Usage
@@ -287,4 +287,4 @@ legend?: {
 </table>
 <br><br>
 
-**Related article:** [Configuration](chart/configuration_properties.md)
+**Related article:** [Configuration](/chart/configuration_properties/)

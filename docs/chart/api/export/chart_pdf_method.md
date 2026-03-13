@@ -86,7 +86,7 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 
 **Related samples**: [Chart. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
 
-**Related API:** [`exportStyles`](chart/api/chart_exportstyles_config.md)
+**Related API:** [`exportStyles`](/chart/api/chart_exportstyles_config/)
 
 **Change log:** 
 

@@ -16,7 +16,7 @@ Check [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=
 
 You can check the following page to learn how to build a full-featured DHTMLX Chart:
 
-- [Features](chart/features.md)
+- [Features](/chart/features/)
 
 ## API reference
 

@@ -97,7 +97,7 @@ Add a container for Chart and give it an id, "chart_container", for example:
 Initialize Chart with the `dhx.Chart` object constructor. The constructor has two parameters:
 
 - a container to place a Chart into. You've defined it at the previous step.
-- an object with configuration properties. [See the full list of properties here](chart/api/api_overview.md#properties)
+- an object with configuration properties. [See the full list of properties here](/chart/api/api_overview/#properties)
 
 ~~~js title="index.js"
 const config = {
@@ -127,11 +127,11 @@ const chart = new dhx.Chart("chart_container", config);
 
 ### Configuration properties
 
-See the full list of Chart configuration properties in the [Chart API overview](chart/api/api_overview.md#properties) article.
+See the full list of Chart configuration properties in the [Chart API overview](/chart/api/api_overview/#properties) article.
 
 ## Load data into Chart
 
-Detailed information on how to load data into DHTMLX Chart is given in the [Data loading](chart/data_loading.md) article.
+Detailed information on how to load data into DHTMLX Chart is given in the [Data loading](/chart/data_loading/) article.
 
 ## Example
 

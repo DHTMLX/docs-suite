@@ -436,7 +436,7 @@ In the above example:
 
 #### Setting the format for dates
 
-To specify the necessary format for dates, set the `type: "date"` property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the `dateFormat` option:
+To specify the necessary format for dates, set the `type: "date"` property for a column and define the [format of dates](/calendar/api/calendar_dateformat_config/) with the help of the `dateFormat` option:
 
 ~~~jsx {3}
 { 
@@ -840,7 +840,7 @@ const grid = new dhx.Grid("grid_container", {
 
 An editor for cells with dates (default for a column with `type:"date"`).
 
-To use this editor, you should specify the `type:"date"` property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the `dateFormat` option.
+To use this editor, you should specify the `type:"date"` property for a column. It is also possible to set the necessary [format of date](/calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the `dateFormat` option.
 
 By default, after editing dates are transformed and displayed as string values. 
 You can also save a date as a string representation of the Date object by setting the `asDateObject` property to *true* in the `editorConfig` object:

@@ -6,7 +6,7 @@ description: You can explore the dateFormat config of Grid column in the documen
 
 # dateFormat
 
-@short: Optional. Defines the [format of dates](calendar/api/calendar_dateformat_config.md)
+@short: Optional. Defines the [format of dates](/calendar/api/calendar_dateformat_config/)
 
 :::note
 The date format must include delimiters (spaces or symbols), otherwise an error will be thrown

@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](calendar/api/calendar_css_config.md) property in the Calendar configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [`css`](/calendar/api/calendar_css_config/) property in the Calendar configuration:
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -60,7 +60,7 @@ For example:
 
 **Related sample**: [Calendar. Custom styles for selected date](https://snippet.dhtmlx.com/9u0ix3na)
 
-You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linking-two-calendars). There are system styles you need to change for this purpose:
+You can apply custom styling to dates selected in a calendar as well as to [date ranges](/calendar/operating_calendar/#linking-two-calendars). There are system styles you need to change for this purpose:
 
 ~~~html
 <style>

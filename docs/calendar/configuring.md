@@ -8,7 +8,7 @@ description: You can explore the configuration of Calendar in the documentation 
 
 ## Calendar modes
 
-There are several modes of displaying Calendar, which are set via the [](calendar/api/calendar_mode_config.md) property:
+There are several modes of displaying Calendar, which are set via the [`mode`](/calendar/api/calendar_mode_config/) property:
 
 - **"calendar"** - the default mode. The current date (year and month) is shown in the calendar
 
@@ -40,11 +40,11 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 **Related sample**: [Calendar. Calendar modes](https://snippet.dhtmlx.com/n9q0tc0q)
 
-You can also show the calendar in one of the modes using the [](calendar/api/calendar_showdate_method.md) method.
+You can also show the calendar in one of the modes using the [](/calendar/api/calendar_showdate_method.md) method.
 
 ## Date format
 
-There is a possibility to specify the format of dates in the calendar via the [](calendar/api/calendar_dateformat_config.md) property. The default format is "%d/%m/%y". 
+There is a possibility to specify the format of dates in the calendar via the [](/calendar/api/calendar_dateformat_config.md) property. The default format is "%d/%m/%y". 
 The full list of available characters used to make formats is provided in the [API reference](/calendar/api/calendar_dateformat_config).
 
 ~~~js
@@ -61,7 +61,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
-To disable certain dates, use the [](calendar/api/calendar_disableddates_config.md) setting. The value of the property must be a function that takes a *date* as a parameter and returns a *boolean* value.
+To disable certain dates, use the [](/calendar/api/calendar_disableddates_config.md) setting. The value of the property must be a function that takes a *date* as a parameter and returns a *boolean* value.
 The dates, for which the function returns *true*, are dimmed in the calendar.
 
 ~~~js
@@ -88,7 +88,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 **Related sample**: [Calendar. The days of this month only](https://snippet.dhtmlx.com/4wi5hbtr)
 
-A default calendar shows both the days of the current month and several days of the previous and next months. You can choose the mode of displaying just the current month by setting the value of the [](calendar/api/calendar_thismonthonly_config.md) configuration property to *true*:
+A default calendar shows both the days of the current month and several days of the previous and next months. You can choose the mode of displaying just the current month by setting the value of the [](/calendar/api/calendar_thismonthonly_config.md) configuration property to *true*:
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -102,7 +102,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
-You can highlight certain dates in the calendar. Set the [](calendar/api/calendar_mark_config.md) property for that. The value of the property must be a function that takes a *date* as a parameter and returns a *string* with the name of a CSS class for marked dates or an empty string for other dates.
+You can highlight certain dates in the calendar. Set the [](/calendar/api/calendar_mark_config.md) property for that. The value of the property must be a function that takes a *date* as a parameter and returns a *string* with the name of a CSS class for marked dates or an empty string for other dates.
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -127,7 +127,7 @@ Where "highlight-date" is a CSS class like this:
 
 ## Initial calendar date
 
-By default, a calendar shows a month with the current date. If for some reason you want to open some other date, set the [](calendar/api/calendar_date_config.md) property. It accepts a Date object as a value. It is either the same as [](calendar/api/calendar_value_config.md) (by default), or shows the current date if **value** is not specified.
+By default, a calendar shows a month with the current date. If for some reason you want to open some other date, set the [](/calendar/api/calendar_date_config.md) property. It accepts a Date object as a value. It is either the same as [](/calendar/api/calendar_value_config.md) (by default), or shows the current date if **value** is not specified.
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -139,7 +139,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Initially selected date
 
-If you want to create a calendar with an initially selected date, set the [](calendar/api/calendar_value_config.md) property in the configuration object. The property can accept a value in several formats:
+If you want to create a calendar with an initially selected date, set the [](/calendar/api/calendar_value_config.md) property in the configuration object. The property can accept a value in several formats:
 
 - as a Date object
 - as a string
@@ -185,7 +185,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 The specified date will be highlighted with a round blue marker in the calendar. By default, no date is selected initially.
 
 :::note
-Please note that the format of date in the Calendar is defined by the dateFormat option. So, check that you've set the format of date you want to use in the calendar both in the [](calendar/api/calendar_value_config.md) and in the [](calendar/api/calendar_dateformat_config.md) property. Otherwise, the default format ("%d/%m/%y") will be used.
+Please note that the format of date in the Calendar is defined by the dateFormat option. So, check that you've set the format of date you want to use in the calendar both in the [](/calendar/api/calendar_value_config.md) and in the [](/calendar/api/calendar_dateformat_config.md) property. Otherwise, the default format ("%d/%m/%y") will be used.
 :::
 
 ## Numbers of weeks
@@ -194,7 +194,7 @@ Please note that the format of date in the Calendar is defined by the dateFormat
 
 **Related sample**: [Calendar. Numbers of weeks](https://snippet.dhtmlx.com/9692gk6n)
 
-If you want to display the numbers of weeks in the calendar, enable the [](calendar/api/calendar_weeknumbers_config.md) property. By default, the numbers are not shown as the property is set to *false*.
+If you want to display the numbers of weeks in the calendar, enable the [](/calendar/api/calendar_weeknumbers_config.md) property. By default, the numbers are not shown as the property is set to *false*.
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -228,7 +228,7 @@ The **value** option should have the array type and contain a pair of values (ei
 
 **Related sample**: [Calendar. Week start](https://snippet.dhtmlx.com/kaxmurh9)
 
-By default, the first day of the week is Sunday, as the **weekStart:"sunday"** configuration option is used. It is also possible to set Monday as the start of the week, by applying "monday" as a value of the [](calendar/api/calendar_weekstart_config.md) setting:
+By default, the first day of the week is Sunday, as the **weekStart:"sunday"** configuration option is used. It is also possible to set Monday as the start of the week, by applying "monday" as a value of the [](/calendar/api/calendar_weekstart_config.md) setting:
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -238,8 +238,8 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Timepicker
 
-You can add a timepicker into a calendar by enabling the [](calendar/api/calendar_timepicker_config.md) property. By default, a timepicker uses the 24-hour format.
-You can change it to the 12-hour format via the [](calendar/api/calendar_timeformat_config.md) property. It accepts either 12 or 24 value to select the desired time format.
+You can add a timepicker into a calendar by enabling the [](/calendar/api/calendar_timepicker_config.md) property. By default, a timepicker uses the 24-hour format.
+You can change it to the 12-hour format via the [](/calendar/api/calendar_timeformat_config.md) property. It accepts either 12 or 24 value to select the desired time format.
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -260,7 +260,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 **Related sample**: [Calendar. Calendar width](https://snippet.dhtmlx.com/azm0u5ns)
 
-You can set the desired width of a calendar using the [](calendar/api/calendar_width_config.md) configuration property. The default width of Calendar is 250px.
+You can set the desired width of a calendar using the [](/calendar/api/calendar_width_config.md) configuration property. The default width of Calendar is 250px.
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {

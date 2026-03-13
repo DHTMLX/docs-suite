@@ -657,7 +657,7 @@ Released on July 16, 2024
 
 #### Chart 
 
-- The ability to [specify a template for showing values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-to-values-of-data-items-in-pie-and-donut-charts)
+- The ability to [specify a template for showing values for data items on the Pie, Pie3D and Donut charts](/chart/customization#adding-template-to-values-of-data-items-in-pie-and-donut-charts)
 - The ability to [add the header/footer for an exported PNG/PDF file](/chart/api/export/chart_png_method/) 
 
 #### Combobox
@@ -1050,7 +1050,7 @@ Released on August 29, 2023
 
 #### Chart
 
-- The [series](chart/api/chart_series_config.md) configuration property is extended with the **label** option for setting the text of the legend for a series (for the "line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter" chart types)
+- The [series](/chart/api/chart_series_config/) configuration property is extended with the **label** option for setting the text of the legend for a series (for the "line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter" chart types)
 
 #### DataCollection/TreeCollection
 
@@ -1208,7 +1208,7 @@ Released on April 18, 2023
 
 #### Chart
 
-- New [`exportStyles`](chart/api/chart_exportstyles_config.md) property
+- New [`exportStyles`](/chart/api/chart_exportstyles_config/) property
 
 #### Grid
 
@@ -1244,10 +1244,10 @@ Released on April 18, 2023
 
 #### Chart
 
-- The [pdf()](chart/api/export/chart_pdf_method.md) method was updated:
+- The [pdf()](/chart/api/export/chart_pdf_method/) method was updated:
     - new options of the `export` object are added: `theme`, `exportStyles`
     - new options of the `pdf` object are added: `pageRanges`, `displayHeaderFooter`, `footerTemplate`, `headerTemplate` 
-- The [png()](chart/api/export/chart_png_method.md) method was updated:
+- The [png()](/chart/api/export/chart_png_method/) method was updated:
     - new options of the `export` object are added: `theme`, `exportStyles`
 
 ### Fixes
@@ -1322,8 +1322,8 @@ Released on February 24, 2023
 
 #### Chart
 
-- [Calendar heatmap chart](chart/charts_overview.md#calendar-heatmap-chart) (Pro version)
-- The ability to export the Chart data to [PDF](chart/api/export/chart_pdf_method.md) and [PNG](chart/api/export/chart_png_method.md) ([Example](https://snippet.dhtmlx.com/4rybsjjq))
+- [Calendar heatmap chart](/chart/charts_overview/#calendar-heatmap-chart) (Pro version)
+- The ability to export the Chart data to [PDF](/chart/api/export/chart_pdf_method/) and [PNG](/chart/api/export/chart_png_method/) ([Example](https://snippet.dhtmlx.com/4rybsjjq))
 
 #### Colorpicker
 
@@ -1484,7 +1484,7 @@ Released on November 17, 2022
 
 ### Fixes
 
-- Calendar. Fix the issue with calling the [`clear()`](calendar/api/calendar_clear_method.md) method when [two calendars are linked](calendar/operating_calendar.md#linking-two-calendars)
+- Calendar. Fix the issue with calling the [`clear()`](/calendar/api/calendar_clear_method/) method when [two calendars are linked](/calendar/operating_calendar/#linking-two-calendars)
 - Gird. Fix the issue with the [`type: "percent"`](grid/api/api_gridcolumn_properties.md) property of a column
 - Grid. Fix issues with [selectFilter](grid/configuration.md/#headerfooter-filters) and [comboFilter](grid/configuration.md/#headerfooter-filters). Now they don't ignore the [`type`](grid/api/api_gridcolumn_properties.md) and [`format`](grid/api/api_gridcolumn_properties.md) properties of a column
 - Grid. Fix the error thrown when [exporting data to CSV format](grid/usage.md#exporting-data-to-csv)
@@ -1538,7 +1538,7 @@ Released on September 19, 2022
 
 ### Fixes
 
-- Calendar. Fix the issue which appeared when the [`width`](calendar/api/calendar_width_config.md) property specified as a number was used together with [`weekNumbers: true`](calendar/api/calendar_weeknumbers_config.md)
+- Calendar. Fix the issue which appeared when the [`width`](/calendar/api/calendar_width_config/) property specified as a number was used together with [`weekNumbers: true`](/calendar/api/calendar_weeknumbers_config/)
 - Grid. Fix the behavior of selection with frozen spans
 - Grid. Fix the incorrect work of the [`dragItem`](grid/api/grid_dragitem_config.md) property when the item's ID was defined as a number
 - Grid. Fix the issue which caused the resized width of the columns to be reset to the initial values after dragging the columns
@@ -1572,7 +1572,7 @@ Released on August 8, 2022
 
 ### Fixes
 
-- Calendar. Now it is possible [to set "saturday" as the starting day of the week](calendar/api/calendar_weekstart_config.md)
+- Calendar. Now it is possible [to set "saturday" as the starting day of the week](/calendar/api/calendar_weekstart_config/)
 - Data. Fix the issue which caused extra requests to be sent to the server when making several changes to one item
 - Data. Now it is possible to sort data by the value without use of the `as` attribute of the **rule** object if some of the values are `null` | `undefined`
 - DataView, List, Tree. Now you can block bubbling of the events specified via the `eventHandlers` property by using `stopPropagation()`
@@ -1676,8 +1676,8 @@ Released on January 19, 2022
 
 #### Chart
 
-- New [Treemap chart](chart/charts_overview.md/#treemap-chart)
-- The ability to arrange legend items vertically or horizontally via the `direction` property of the [legend](chart/api/chart_legend_config.md)
+- New [Treemap chart](/chart/charts_overview/#treemap-chart)
+- The ability to arrange legend items vertically or horizontally via the `direction` property of the [legend](/chart/api/chart_legend_config/)
 
 #### Combobox
 
@@ -1717,7 +1717,7 @@ Released on January 19, 2022
 
 - Chart. Fix the incorrect display of Radar chart if the values in the data set are the same
 - Chart. Fix the issue with displaying an empty tooltip in Line chart
-- Chart. Fix the issue with the type of the [`value`](chart/data_loading.md/#preparing-data-set) property in a data set
+- Chart. Fix the issue with the type of the [`value`](/chart/data_loading/#preparing-data-set) property in a data set
 - Custom Scroll. Fix the incorrect position of scroll after scrolling the grid attached to the tabbar and changing the tabs
 - Form. Fix the issue with enabling the disabled RadioGroup control
 - Form. Fix the issue with the Textarea control. Now the [`required`](form/api/textarea/api_textarea_properties.md) property doesn't take `value: null` as a valid
@@ -1735,7 +1735,7 @@ Released on January 19, 2022
 - Layout. Fix the issue which caused the cells without the height/width specified initially cannot be reverted to the original state after they've been resized and collapsed several times
 - Layout. Fix the issue with collapsing and resizing a cell after it has been resized
 - LazyDataProxy in Grid. Fix the issue with the [`loadError`](data_collection/api/datacollection_loaderror_event.md) event
-- Menu. ContextMenu. Fix the issue with the self-generated "–context-menu" postfix for the name of the custom CSS class
+- Menu. ContextMenu. Fix the issue with the self-generated "-context-menu" postfix for the name of the custom CSS class
 - Menu. Fix the issue which caused the menu to close after hovering over the first item which is disabled
 - Ribbon. Fix the issue with calculation of the widget's height when some items are hidden
 - Toolbar. Datepicker control. Fix the issue which caused the same date to be shown in different Datepickers (two or more)
@@ -2042,8 +2042,8 @@ Released on April 12, 2021
 ### Fixes
 
 - Form. Fix the behavior of [DatePicker](form/calendar.md) control when adding a timepicker into the control
-- Calendar. Fix the issue with the [dateFormat](calendar/api/calendar_dateformat_config.md) property that caused AM/PM to be ignored
-- Chart. Fix the issue with the [serieClick](chart/api/chart_serieclick_event.md) event in the Bar chart
+- Calendar. Fix the issue with the [dateFormat](/calendar/api/calendar_dateformat_config/) property that caused AM/PM to be ignored
+- Chart. Fix the issue with the [serieClick](/chart/api/chart_serieclick_event/) event in the Bar chart
 - ComboBox. Fix the issue with filtering
 - Form. Fix the incorrect work of the popup control that is located at the bottom of the page and is shown at the top relative to the input when opening
 - Grid. The [adjust](grid/api/grid_adjust_config.md) and [autoHeight](grid/api/grid_autoheight_config.md) configuration properties now should adjust the sizes of cells with account of [HTML content](grid/configuration.md#html-content-of-grid-columns) and [template](grid/api/api_gridcolumn_properties.md) added to cells
@@ -2150,7 +2150,7 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 
 ### Updates
 
-- Chart. [Improved tooltips for all charts](chart/charts_overview.md).
+- Chart. [Improved tooltips for all charts](/chart/charts_overview/).
 - Chart. Now the tooltip will contain values of multiple series on hovering over a chart ([Line](https://snippet.dhtmlx.com/t881qcim), [Spline](https://snippet.dhtmlx.com/2wvmdm0y), [Area](https://snippet.dhtmlx.com/nv6t6lvm), [Spline Area](https://snippet.dhtmlx.com/bo82km4n)).
 - Grid/TreeGrid. The values of the [type](grid/api/api_gridcolumn_properties.md) configuration property of the Grid/TreeGrid columns are updated. Now the type sets the alignment of content inside cells and defines the type of the editor used in the cells of the column.
 
@@ -2181,7 +2181,7 @@ Released on January 19, 2021
 
 ### Fixes
 
-- [Donut chart](chart/charts_overview.md#pie-pie-3d-and-donut-chart). Fix the issue with colors
+- [Donut chart](/chart/charts_overview/#pie-pie-3d-and-donut-chart). Fix the issue with colors
 - Grid. Fix the issue that caused the [frozen](grid/api/grid_leftsplit_config.md) columns to become movable when hiding columns
 - Grid. Fix the issue with the [filter()](data_collection/api/datacollection_filter_method.md) method when the [](grid/api/grid_autoemptyrow_config.md) property is enabled
 - Grid. Fix the issue with alignment of spans in the header of the grid
@@ -2468,7 +2468,7 @@ Released on September 15, 2020
 - Fix the incorrect work of the select filter of a Grid column after resizing of the column
 - Fix the issue which caused hidden columns of Grid to be displayed in the exported Excel file
 - Fix the incorrect behavior of scrolling Grid container when using [keyboard navigation](grid/configuration.md#keyboard-navigation) in a grid with [frozen columns](grid/configuration.md#frozen-columns)
-- Fix the incorrect rendering of a [Spline chart](chart/charts_overview.md#line-and-spline-chart) when a data set contains less than 3 records
+- Fix the incorrect rendering of a [Spline chart](/chart/charts_overview/#line-and-spline-chart) when a data set contains less than 3 records
 - Fix the issue with visualization of the [mark](grid/api/api_gridcolumn_properties.md) property of a Grid column after data reloading
 - Fix the issue which caused a footer of a grid not to be included to the exported file
 
@@ -2642,13 +2642,13 @@ Released on January 28, 2020
 
 #### Calendar
 
-- The ability to clear the value set in the calendar using the [](calendar/api/calendar_clear_method.md) method
+- The ability to clear the value set in the calendar using the [clear()](/calendar/api/calendar_clear_method.md) method
 
 #### Chart
 
-- The [](chart/api/chart_serieclick_event.md) event is added
-- The ability to rotate labels of data items on the scale using [the scaleRotate property in the configuration of the scale](chart/configuration_properties.md#scales)
-- The ability to rotate text values of data items in Bar and X-Bar chart via [the showTextRotate property in the configuration of the series](chart/configuration_properties.md#series)
+- The [serieClick](/chart/api/chart_serieclick_event/) event is added
+- The ability to rotate labels of data items on the scale using [the scaleRotate property in the configuration of the scale](/chart/configuration_properties/#scales)
+- The ability to rotate text values of data items in Bar and X-Bar chart via [the showTextRotate property in the configuration of the series](/chart/configuration_properties/#series)
 
 #### ColorPicker
 
@@ -2775,7 +2775,7 @@ Released on January 28, 2020
 
 #### Fixes
 
-- The issue with ability to use all types of [chart scales](chart/api/chart_scales_config.md) in any combinations
+- The issue with ability to use all types of [chart scales](/chart/api/chart_scales_config/) in any combinations
 - The issue with the `setActive()` method in Tabbar
 - The issue with styles when switching between modes in Colorpicker
 - The issue with the `getValue()` method in Calendar and Colorpicker
@@ -2803,12 +2803,12 @@ Released on December 12, 2019
 
 #### Calendar
 
-- The ability to get the current mode of displaying Calendar via the [getCurrentMode()](calendar/operating_calendar.md#getting-current-mode) method
-- New [](calendar/api/calendar_cancelclick_event.md), [](calendar/api/calendar_modechange_event.md), [](calendar/api/calendar_monthselected_event.md), [](calendar/api/calendar_yearselected_event.md) events are added
+- The ability to get the current mode of displaying Calendar via the [getCurrentMode()](/calendar/operating_calendar/#getting-current-mode) method
+- New [cancelClick](/calendar/api/calendar_cancelclick_event/), [modeChange](/calendar/api/calendar_modechange_event/), [monthSelected](/calendar/api/calendar_monthselected_event/), [yearSelected](/calendar/api/calendar_yearselected_event/) events are added
 
 #### Chart
 
-- The ability to specify templates for showing values of data items in [Bar, X-Bar, Pie and Pie 3D charts](chart/configuration_properties.md#series) using the `showTextTemplate` property
+- The ability to specify templates for showing values of data items in [Bar, X-Bar, Pie and Pie 3D charts](/chart/configuration_properties/#series) using the `showTextTemplate` property
 
 #### Grid
 
@@ -2893,7 +2893,7 @@ Released on October 23, 2019
 
 #### Calendar
 
-- The ability [to select a range of dates in one calendar](calendar/configuring.md#range-mode)
+- The ability [to select a range of dates in one calendar](/calendar/configuring/#range-mode)
 
 #### Form 
 
@@ -2924,8 +2924,8 @@ Released on October 23, 2019
 
 #### Calendar
 
-- The possibility to set the start and end dates for a calendar in the range mode via the [setValue()](calendar/api/calendar_setvalue_method.md) method
-- The ability to get the start and end dates from the selected range of dates in the calendar via the [getValue()](calendar/api/calendar_getvalue_method.md) method
+- The possibility to set the start and end dates for a calendar in the range mode via the [setValue()](/calendar/api/calendar_setvalue_method/) method
+- The ability to get the start and end dates from the selected range of dates in the calendar via the [getValue()](/calendar/api/calendar_getvalue_method/) method
 
 #### Grid
 

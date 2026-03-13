@@ -197,7 +197,7 @@ onDestroy(() => {
 ~~~
 
 :::tip
-For more information, refer to the **Data loading** section of the corresponding control: [Tree](tree/loading_data.md), [Toolbar](toolbar/load_data.md), [Sidebar](sidebar/data_loading.md), [Ribbon](ribbon/data_loading.md), [Menu](menu/data_loading.md), [List](list/load_data.md), [Grid](grid/data_loading.md), [DataView](dataview/data_loading.md), [Combobox](combobox/adding_options.md), [Chart](chart/data_loading.md), etc.
+For more information, refer to the **Data loading** section of the corresponding control: [Tree](/tree/loading_data/), [Toolbar](/toolbar/load_data/), [Sidebar](/sidebar/data_loading/), [Ribbon](/ribbon/data_loading/), [Menu](/menu/data_loading/), [List](/list/load_data/), [Grid](/grid/data_loading/), [DataView](/dataview/data_loading/), [Combobox](/combobox/adding_options/), [Chart](/chart/data_loading/), etc.
 :::
 
 #### Specify data through the method

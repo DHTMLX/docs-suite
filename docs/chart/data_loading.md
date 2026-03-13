@@ -157,7 +157,7 @@ const heatMapData = [
 
 ## Loading data on initialization
 
-You can load [a predefined data set](#preparing-data-set) into Chart on the initialization stage. Use the [data](chart/api/chart_data_config.md) configuration property, as in:
+You can load [a predefined data set](#preparing-data-set) into Chart on the initialization stage. Use the [data](/chart/api/chart_data_config/) configuration property, as in:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -210,7 +210,7 @@ There are two ways to load data into Chart after its initialization:
 
 ### External data loading
 
-To load data from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the [load()](/data_collection/api/datacollection_load_method/) method of [DataCollection](/data_collection/). It takes the URL of the file with data as a parameter:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -242,7 +242,7 @@ chart.data.load("/some/data").then(function(){
 
 ### Loading from local source
 
-To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the [parse()](/data_collection/api/datacollection_parse_method/) method of [DataCollection](/data_collection/). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -264,7 +264,7 @@ chart.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a chart, use the **serialize()** method of [DataCollection](data_collection.md). It converts the data of a chart into an array of JSON objects. 
+To save the current state of a chart, use the **serialize()** method of [DataCollection](/data_collection/). It converts the data of a chart into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs for data titles and values.
 
 ~~~js

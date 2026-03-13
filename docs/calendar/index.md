@@ -14,7 +14,7 @@ DHTMLX Calendar is a component that allows users to view and select dates. You c
 
 You can check the following page to learn how to build a full-featured DHTMLX Calendar:
 
-- [Features](calendar/features.md)
+- [Features](/calendar/features/)
 
 ## API reference
 

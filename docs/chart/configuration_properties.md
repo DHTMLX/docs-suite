@@ -23,7 +23,7 @@ DHTMLX Chart includes several configuration options that are mostly common for a
 
 ### type
 
-- [](chart/api/chart_type_config.md) - (*string*) defines the [type of a chart](chart/charts_overview.md) to initialize; "bar", "x-bar" (for horizontal Bar chart), "line", "spline", "scatter", "area", 
+- [`type`](/chart/api/chart_type_config/) - (*string*) defines the [type of a chart](/chart/charts_overview/) to initialize; "bar", "x-bar" (for horizontal Bar chart), "line", "spline", "scatter", "area", 
 "splineArea", "donut", "pie", "pie3D", "radar", "treeMap", and "calendarHeatMap"
 
 ~~~js
@@ -34,7 +34,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ### scales
 
-- [](chart/api/chart_scales_config.md) - (*object*) defines configuration of chart scales
+- [`scales`](/chart/api/chart_scales_config/) - (*object*) defines configuration of chart scales
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -43,10 +43,10 @@ const chart = new dhx.Chart("chart_container", {
 ~~~
 
 :::info
-It is necessary to configure [](chart/api/chart_scales_config.md) for the Line, Spline, Bar, X-Bar, Area, SplineArea, Radar, or Scatter chart.
+It is necessary to configure [`scales`](/chart/api/chart_scales_config/) for the Line, Spline, Bar, X-Bar, Area, SplineArea, Radar, or Scatter chart.
 :::
 
-There are "left","right","top","bottom" and "radial" (for Radar chart) types of [scales](chart/api/chart_scales_config.md). 
+There are "left","right","top","bottom" and "radial" (for Radar chart) types of [scales](/chart/api/chart_scales_config/). 
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -72,11 +72,11 @@ const chart = new dhx.Chart("chart_container", {
 
 **Related sample**: [Chart. Scale title](https://snippet.dhtmlx.com/5ir00fer)
 
-Scales have both common and specific options. Check the full list of the available options for scales in the [API reference](chart/api/chart_scales_config.md).
+Scales have both common and specific options. Check the full list of the available options for scales in the [API reference](/chart/api/chart_scales_config/).
 
 ### series
 
-- [](chart/api/chart_series_config.md) - (*array*) defines configuration of chart series
+- [`series`](/chart/api/chart_series_config/) - (*array*) defines configuration of chart series
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -85,10 +85,10 @@ const chart = new dhx.Chart("chart_container", {
 ~~~
 
 :::info
-The [](chart/api/chart_series_config.md) configuration option is required for all types of charts.
+The [`series`](/chart/api/chart_series_config/) configuration option is required for all types of charts.
 :::
 
-[Series](chart/api/chart_series_config.md) present an array of objects each of which contains a number of properties for rendering a separate [data set](chart/data_loading.md#preparing-data-set) on a chart.
+[Series](/chart/api/chart_series_config/) present an array of objects each of which contains a number of properties for rendering a separate [data set](/chart/data_loading/#preparing-data-set) on a chart.
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -120,11 +120,11 @@ const chart = new dhx.Chart("chart_container", {
 
 **Related sample**: [Chart. Point types](https://snippet.dhtmlx.com/cbj54wwu)
 
-See the full list of configuration options for chart series in the [API reference](chart/api/chart_series_config.md).
+See the full list of configuration options for chart series in the [API reference](/chart/api/chart_series_config/).
 
 ### legend
 
-- [](chart/api/chart_legend_config.md) - (*object*) defines the configuration of a chart legend
+- [`legend`](/chart/api/chart_legend_config/) - (*object*) defines the configuration of a chart legend
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -133,10 +133,10 @@ const chart = new dhx.Chart("chart_container", {
 ~~~
 
 :::info
-The [](chart/api/chart_legend_config.md) configuration option is required for Treemap charts and is optional for other types of charts.
+The [`legend`](/chart/api/chart_legend_config/) configuration option is required for Treemap charts and is optional for other types of charts.
 :::
 
-The [](chart/api/chart_legend_config.md) object may contain a number of options that define its configuration.
+The [`legend`](/chart/api/chart_legend_config/) object may contain a number of options that define its configuration.
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -159,12 +159,12 @@ const chart = new dhx.Chart("chart_container", {
 - [Chart. Enable legend](https://snippet.dhtmlx.com/00ei3q23)
 - [Chart. Legend position](https://snippet.dhtmlx.com/pgqf1yxj)
 
-You can view the full list of the configuration options of chart legends in the [API reference](chart/api/chart_legend_config.md).
+You can view the full list of the configuration options of chart legends in the [API reference](/chart/api/chart_legend_config/).
 
 
 ### maxPoints
 
-- [](chart/api/chart_maxpoints_config.md) - (*number*) displays an average number of values in case a data set is too large to show all the values in the chart
+- [`maxPoints`](/chart/api/chart_maxpoints_config/) - (*number*) displays an average number of values in case a data set is too large to show all the values in the chart
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -177,12 +177,12 @@ const chart = new dhx.Chart("chart_container", {
 
 ## Line and Spline chart
 
-The configuration object of [Line and Spline chart](chart/charts_overview.md#line-and-spline-chart) must include the following properties:
+The configuration object of [Line and Spline chart](/chart/charts_overview/#line-and-spline-chart) must include the following properties:
 
-- [type: "line"](chart/api/chart_type_config.md) (or [type: "spline"](chart/api/chart_type_config.md))
-- [scales: {}](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales)
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-with-scales)
-- and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-with-scales) 
+- [type: "line"](/chart/api/chart_type_config/) (or [type: "spline"](/chart/api/chart_type_config/))
+- [scales: {}](/chart/api/chart_scales_config/#the-list-of-config-options-for-scales)
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-with-scales)
+- and, optionally, [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-with-scales) 
 
 For example:
 
@@ -234,12 +234,12 @@ chart.data.parse(dataset);
 
 ## Bar and X-Bar chart
 
-The configuration object of [Bar and X-Bar chart](chart/charts_overview.md#bar-and-x-bar-chart) must include the following properties:
+The configuration object of [Bar and X-Bar chart](/chart/charts_overview/#bar-and-x-bar-chart) must include the following properties:
 
-- [type: "bar"](chart/api/chart_type_config.md) (or [type: "x-bar"](chart/api/chart_type_config.md))
-- [scales: {}](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales)
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-with-scales)
-- and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-with-scales) 
+- [type: "bar"](/chart/api/chart_type_config/) (or [type: "x-bar"](/chart/api/chart_type_config/))
+- [scales: {}](/chart/api/chart_scales_config/#the-list-of-config-options-for-scales)
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-with-scales)
+- and, optionally, [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-with-scales) 
 
 For example:
 
@@ -291,12 +291,12 @@ chart.data.parse(dataset);
 
 ## Area and SplineArea chart
 
-The configuration object of [Area and SplineArea chart](chart/charts_overview.md#area-and-splinearea-chart) must include the following properties:
+The configuration object of [Area and SplineArea chart](/chart/charts_overview/#area-and-splinearea-chart) must include the following properties:
 
-- [type: "area"](chart/api/chart_type_config.md) (or [type: "splineArea"](chart/api/chart_type_config.md))
-- [scales: {}](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales)
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-with-scales)
-- and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-with-scales) 
+- [type: "area"](/chart/api/chart_type_config/) (or [type: "splineArea"](/chart/api/chart_type_config/))
+- [scales: {}](/chart/api/chart_scales_config/#the-list-of-config-options-for-scales)
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-with-scales)
+- and, optionally, [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-with-scales) 
 
 For example:
 
@@ -348,11 +348,11 @@ chart.data.parse(dataset);
 
 ## Pie, Pie 3D and Donut chart
 
-The configuration object of [Pie, Pie 3D and Donut chart](chart/charts_overview.md#pie-pie-3d-and-donut-chart) must include the following properties:
+The configuration object of [Pie, Pie 3D and Donut chart](/chart/charts_overview/#pie-pie-3d-and-donut-chart) must include the following properties:
 
-- [type: "pie"](chart/api/chart_type_config.md) (or [type: "pie3D"](chart/api/chart_type_config.md), [type: "donut"](chart/api/chart_type_config.md))
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-without-scales-pie-pie3d-donut)
-- and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-without-scales-pie-pie3d-donut) 
+- [type: "pie"](/chart/api/chart_type_config/) (or [type: "pie3D"](/chart/api/chart_type_config/), [type: "donut"](/chart/api/chart_type_config/))
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-without-scales-pie-pie3d-donut)
+- and, optionally, [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-without-scales-pie-pie3d-donut) 
 
 For example:
 
@@ -386,12 +386,12 @@ chart.data.parse(pie_dataset);
 
 ## Radar chart
 
-The configuration object of [Radar chart](chart/charts_overview.md#radar-chart) must include the following properties:
+The configuration object of [Radar chart](/chart/charts_overview/#radar-chart) must include the following properties:
 
-- [type: "radar"](chart/api/chart_type_config.md)
-- [scales: {}](chart/api/chart_scales_config.md#the-list-of-config-options-for-radial-scales)
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-with-scales)
-- and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-with-scales) 
+- [type: "radar"](/chart/api/chart_type_config/)
+- [scales: {}](/chart/api/chart_scales_config/#the-list-of-config-options-for-radial-scales)
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-with-scales)
+- and, optionally, [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-with-scales) 
 
 For example:
 
@@ -439,12 +439,12 @@ chart.data.parse(dataset);
 
 ## Scatter chart
 
-The configuration object of [Scatter chart](chart/charts_overview.md#scatter-chart) must include the following properties:
+The configuration object of [Scatter chart](/chart/charts_overview/#scatter-chart) must include the following properties:
 
-- [type: "scatter"](chart/api/chart_type_config.md)
-- [scales: {}](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales)
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-with-scales)
-- and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-with-scales) 
+- [type: "scatter"](/chart/api/chart_type_config/)
+- [scales: {}](/chart/api/chart_scales_config/#the-list-of-config-options-for-scales)
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-with-scales)
+- and, optionally, [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-with-scales) 
 
 For example:
 
@@ -493,11 +493,11 @@ chart.data.parse(dataset);
 
 ## Treemap chart
 
-The configuration object of [Treemap chart](chart/charts_overview.md#treemap-chart) must include the following properties:
+The configuration object of [Treemap chart](/chart/charts_overview/#treemap-chart) must include the following properties:
 
-- [type: "treeMap"](chart/api/chart_type_config.md)
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-without-scales-treemap)
-- [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-without-scales-treemap) 
+- [type: "treeMap"](/chart/api/chart_type_config/)
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-without-scales-treemap)
+- [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-without-scales-treemap) 
 
 ### With groups
 
@@ -596,11 +596,11 @@ const chart = new dhx.Chart("chart_container", config);
 
 ## Calendar heatmap chart
 
-The configuration object of [Calendar heatmap chart](chart/charts_overview.md#calendar-heatmap-chart) must include the following properties:
+The configuration object of [Calendar heatmap chart](/chart/charts_overview/#calendar-heatmap-chart) must include the following properties:
 
-- [type: "calendarHeatMap"](chart/api/chart_type_config.md)
-- [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-without-scales-calendar-heatmap)
-- and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-without-scales-calendar-heatmap)
+- [type: "calendarHeatMap"](/chart/api/chart_type_config/)
+- [series: []](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-without-scales-calendar-heatmap)
+- and, optionally, [legend: {}](/chart/api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-without-scales-calendar-heatmap)
 
 For example
 
@@ -657,7 +657,7 @@ The default range of dates for which Calendar heatmap chart will be shown is **f
 
 If you have a large data set and don't need the chart to be shown for the [whole period of time](#default-range-of-dates), you may change a range of dates to display the chart during the necessary period of time.
 
-For this, use the **startDate** and **endDate** properties of the [series](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-without-scales-calendar-heatmap) property.
+For this, use the **startDate** and **endDate** properties of the [`series`](/chart/api/chart_series_config/#the-list-of-config-options-for-series-for-charts-without-scales-calendar-heatmap) property.
 
 #### 1. startDate & endDate
 

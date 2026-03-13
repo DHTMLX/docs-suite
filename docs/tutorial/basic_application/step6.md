@@ -47,7 +47,7 @@ var chart = new dhx.Chart(null, {
 layout.cell("chart-cell").attach(chart);
 ~~~
 
-You can learn more about chart configuration options in the [Configuration](chart/configuration_properties.md) article.
+You can learn more about chart configuration options in the [Configuration](/chart/configuration_properties/) article.
 
 
 <div id="tutorial_step">

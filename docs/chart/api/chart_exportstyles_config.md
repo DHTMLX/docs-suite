@@ -70,13 +70,13 @@ You must use only absolute paths not relative ones.
 :::
 
 :::info
-You need to enable the property if you want to export Chart with a [custom or overridden theme](themes.md).
+You need to enable the property if you want to export Chart with a [custom or overridden theme](/themes/).
 :::
 
 @descr:
 
 **Related API:**
-- [png()](chart/api/export/chart_png_method.md)
-- [pdf()](chart/api/export/chart_pdf_method.md)
+- [png()](/chart/api/export/chart_png_method/)
+- [pdf()](/chart/api/export/chart_pdf_method/)
 
 @changelog: added in v8.1

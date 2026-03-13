@@ -50,5 +50,5 @@ const form = new dhx.Form("form_container");
 ~~~
 
 :::tip
-The localization of the ColorPicker, DatePicker, Combo controls is the same as the localization of the widgets: [ColorPicker](colorpicker/localizing_colorpicker.md), [Calendar](calendar/localizing_calendar.md) and [Combo](combobox/localization.md).
+The localization of the ColorPicker, DatePicker, Combo controls is the same as the localization of the widgets: [ColorPicker](/colorpicker/localizing_colorpicker/), [Calendar](/calendar/localizing_calendar/) and [Combo](/combobox/localization/).
 :::
