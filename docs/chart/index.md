@@ -20,7 +20,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ch
 
 ## API reference
 
-- [](api/api_overview.md)
+- [Chart API overview](api/api_overview.md)
 
 ## Related resources
 
@@ -33,10 +33,10 @@ You can check the following page to learn how to build a full-featured DHTMLX Ch
 
 You can read the following articles to find out how to add Chart on the page and work with it.
 
-- [](charts_overview.md)
-- [](initialization.md)
-- [](configuration_properties.md)
-- [](data_loading.md)
-- [](usage.md)
-- [](customization.md)
-- [](events.md)
+- [Overview of Chart types](charts_overview.md)
+- [Initialization](initialization.md)
+- [Configuration](configuration_properties.md)
+- [Data loading](data_loading.md)
+- [Work with Chart](usage.md)
+- [Customization](customization.md)
+- [Event handling](events.md)

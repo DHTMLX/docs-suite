@@ -28,11 +28,11 @@ You can check the following page to learn how to build a full-featured DHTMLX Ti
 
 ## Guides
 
-- [](initialization.md)
-- [](configuration.md)
-- [](usage.md)
-- [](customization.md)
-- [](handling_events.md)
+- [Initialization](initialization.md)
+- [Configuration](configuration.md)
+- [Work with TimePicker](usage.md)
+- [Customization](customization.md)
+- [Event handling](handling_events.md)
 
 ## Other
 

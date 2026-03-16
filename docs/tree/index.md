@@ -31,14 +31,14 @@ You can check the following page to learn how to build a full-featured DHTMLX Tr
   
 ## Guides
 
-- [](initialization_of_dhtmlxtree.md)
-- [](configuration.md)
-- [](loading_data.md)
-- [](drag_and_drop_handling.md)
-- [](work_with_tree.md)
-- [](usage_selection.md)
-- [](setting_tree_appearance.md)
-- [](events_handling.md)
+- [Initialization](initialization_of_dhtmlxtree.md)
+- [Configuration](configuration.md)
+- [Data loading](loading_data.md)
+- [Drag-n-Drop](drag_and_drop_handling.md)
+- [Work with Tree](work_with_tree.md)
+- [Work with Selection object](usage_selection.md)
+- [Customization](setting_tree_appearance.md)
+- [Event handling](events_handling.md)
 
 ## Other
 

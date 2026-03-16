@@ -20,7 +20,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## API reference
 
-- [](api/api_overview.md)
+- [Combobox API overview](api/api_overview.md)
 
 ## Related resources
 
@@ -30,13 +30,13 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## Guides
 
-- [](how_to_start.md)
-- [](configuration.md)
-- [](localization.md)
-- [](adding_options.md)
-- [](work_with_combo.md)
-- [](customization.md)
-- [](handling_events.md)
+- [Initialization](how_to_start.md)
+- [Configuration](configuration.md)
+- [Localization](localization.md)
+- [Data loading](adding_options.md)
+- [Work with ComboBox](work_with_combo.md)
+- [Customization](customization.md)
+- [Event handling](handling_events.md)
 
 ## Other
 

@@ -33,20 +33,20 @@ You can check the following page to learn how to build a full-featured DHTMLX Si
 
 Tells about creation of Sidebar and shows all available ways of data loading, configuring and styling the component, and working with controls.
 
-- [](initialization.md)
-- [](data_loading.md)
-- [](sidebar_config.md)
-- [](work_with_sidebar.md)
-- [](customization.md)
-- [](events.md)
+- [Initialization](initialization.md)
+- [Data loading](data_loading.md)
+- [Configuration](sidebar_config.md)
+- [Work with Sidebar](work_with_sidebar.md)
+- [Customization](customization.md)
+- [Event handling](events.md)
 
 ### Sidebar controls
 
 Dwells on the creation of Sidebar controls and the possibilities of manipulating them.
 
-- [](customhtmlbutton.md)
-- [](menuitem.md)
-- [](navitem.md)
-- [](separator.md)
-- [](spacer.md)
-- [](title.md)
+- [Custom HTML](customhtmlbutton.md)
+- [MenuItem](menuitem.md)
+- [NavItem](navitem.md)
+- [Separator](separator.md)
+- [Spacer](spacer.md)
+- [Title](title.md)

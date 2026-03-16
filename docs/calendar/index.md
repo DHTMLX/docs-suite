@@ -18,7 +18,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ca
 
 ## API reference
 
-- [](api/api_overview.md)
+- [Calendar API overview](api/api_overview.md)
 
 ## Related resources
 
@@ -30,13 +30,13 @@ You can check the following page to learn how to build a full-featured DHTMLX Ca
 
 You can read the following articles to find out how to add Calendar on the page and work with it.
 
-- [](how_to_start.md)
-- [](configuring.md)
-- [](localizing_calendar.md)  
-- [](operating_calendar.md)
-- [](datepicker.md)
-- [](customization.md)
-- [](handling_events.md)  
+- [Initialization](how_to_start.md)
+- [Configuration](configuring.md)
+- [Localization](localizing_calendar.md)  
+- [Work with Calendar](operating_calendar.md)
+- [DatePicker](datepicker.md)
+- [Customization](customization.md)
+- [Event handling](handling_events.md)  
 
 ## Other
 

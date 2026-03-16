@@ -17,11 +17,11 @@ Check [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb
 
 You can check the following page to learn how to build a full-featured DHTMLX Colorpicker:
 
-- [Features](colorpicker/features.md)
+- [Features](/colorpicker/features/)
 
 ## API reference
 
-- [](api/api_overview.md)
+- [Colorpicker API overview](api/api_overview.md)
 
 ## Related resources
 
@@ -32,12 +32,12 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 Covers the processes of creating, configuring, localizing, customizing ColorPicker, and working with it.
 
-- [](how_to_start.md)
-- [](configuration.md)
-- [](localizing_colorpicker.md)
-- [](manipulating_colorpicker.md)
-- [](customization.md)
-- [](handling_events.md)
+- [Initialization](how_to_start.md)
+- [Configuration](configuration.md)
+- [Localization](localizing_colorpicker.md)
+- [Work with ColorPicker](manipulating_colorpicker.md)
+- [Customization](customization.md)
+- [Event handling](handling_events.md)
 
 ## Other
 

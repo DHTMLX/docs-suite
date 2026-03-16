@@ -19,7 +19,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Li
 
 ## API reference
 
-- [](api/api_overview.md)
+- [List API overview](api/api_overview.md)
 
 ## Related resources
 
@@ -29,13 +29,13 @@ You can check the following page to learn how to build a full-featured DHTMLX Li
 
 ## Guides
 
-- [](initialization.md)
-- [](configuration.md)
-- [](load_data.md)
-- [](work_with_list.md)
-- [](usage_selection.md)
-- [](customization.md)
-- [](events.md)
+- [Initialization](initialization.md)
+- [Configuration](configuration.md)
+- [Data loading](load_data.md)
+- [Work with List](work_with_list.md)
+- [Work with Selection object](usage_selection.md)
+- [Customization](customization.md)
+- [Event handling](events.md)
 
 ## Other
 

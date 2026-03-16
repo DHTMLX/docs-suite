@@ -20,7 +20,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Da
 
 ## API reference
 
-- [](api/api_overview.md)
+- [DataView API overview](api/api_overview.md)
 
 ## Related resources
 
@@ -32,13 +32,13 @@ You can check the following page to learn how to build a full-featured DHTMLX Da
 
 You can read the following articles to find out how to add DataView on the page and work with it.
 
-- [](initialization.md)
-- [](configuration.md)
-- [](data_loading.md)
-- [](manipulating_data.md)
-- [](usage_selection.md)
-- [](customization.md)
-- [](events.md)
+- [Initialization](initialization.md)
+- [Configuration](configuration.md)
+- [Data loading](data_loading.md)
+- [Work with DataView](manipulating_data.md)
+- [Work with Selection object](usage_selection.md)
+- [Customization](customization.md)
+- [Event handling](events.md)
 
 ## Other
 

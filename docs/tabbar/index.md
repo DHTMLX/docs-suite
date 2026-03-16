@@ -29,11 +29,11 @@ You can check the following page to learn how to build a full-featured DHTMLX Ta
 
 ## Guides
 
-- [](init.md)
-- [](configuring_tabbar.md)
-- [](work_with_tabbar.md)
-- [](customization.md)
-- [](events.md)
+- [Initialization](init.md)
+- [Configuration](configuring_tabbar.md)
+- [Work with Tabbar](work_with_tabbar.md)
+- [Customization](customization.md)
+- [Event handling](events.md)
 
 ## Other
 

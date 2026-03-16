@@ -29,11 +29,11 @@ You can check the following page to learn how to build a full-featured DHTMLX Wi
 
 ## Guides
 
-- [](how_to_start.md)
-- [](configuration.md)
-- [](usage.md)
-- [](customization.md)
-- [](handling_events.md)
+- [Initialization](how_to_start.md)
+- [Configuration](configuration.md)
+- [Work with Window](usage.md)
+- [Customization](customization.md)
+- [Event handling](handling_events.md)
 
 ## Other
 

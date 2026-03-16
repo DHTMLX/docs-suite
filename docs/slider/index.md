@@ -29,12 +29,12 @@ You can check the following page to learn how to build a full-featured DHTMLX Sl
 
 ## Guides
 
-- [](initializing_slider.md)
-- [](configuring_slider.md)
-- [](range_slider.md)
-- [](usage.md)
-- [](customization.md)
-- [](handling_events.md)
+- [Initialization](initializing_slider.md)
+- [Configuration](configuring_slider.md)
+- [Range mode](range_slider.md)
+- [Work with Slider](usage.md)
+- [Customization](customization.md)
+- [Event handling](handling_events.md)
 
 ## Other
 

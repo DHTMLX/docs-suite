@@ -417,12 +417,12 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                    | Description                                                    |
 | :------------------------------------------------------ | :------------------------------------------------------------- |
-| [](container/container_afterchangeproperties_event.md)  | @getshort(container/container_afterchangeproperties_event.md)  |
-| [](container/container_afterhide_event.md)              | @getshort(container/container_afterhide_event.md)              |
-| [](container/container_aftershow_event.md)              | @getshort(container/container_aftershow_event.md)              |
-| [](container/container_beforechangeproperties_event.md) | @getshort(container/container_beforechangeproperties_event.md) |
-| [](container/container_beforehide_event.md)             | @getshort(container/container_beforehide_event.md)             |
-| [](container/container_beforeshow_event.md)             | @getshort(container/container_beforeshow_event.md)             |
+| [afterChangeProperties](container/container_afterchangeproperties_event.md)  | @getshort(container/container_afterchangeproperties_event.md)  |
+| [afterHide](container/container_afterhide_event.md)              | @getshort(container/container_afterhide_event.md)              |
+| [afterShow](container/container_aftershow_event.md)              | @getshort(container/container_aftershow_event.md)              |
+| [beforeChangeProperties](container/container_beforechangeproperties_event.md) | @getshort(container/container_beforechangeproperties_event.md) |
+| [beforeHide](container/container_beforehide_event.md)             | @getshort(container/container_beforehide_event.md)             |
+| [beforeShow](container/container_beforeshow_event.md)             | @getshort(container/container_beforeshow_event.md)             |
 
 ### Container properties
 
