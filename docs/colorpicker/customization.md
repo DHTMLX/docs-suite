@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](colorpicker/api/colorpicker_css_config.md) property in the Colorpicker configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [`css`](/colorpicker/api/colorpicker_css_config/) property in the Colorpicker configuration:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {

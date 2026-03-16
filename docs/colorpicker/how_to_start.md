@@ -115,11 +115,11 @@ colorpicker.events.on("colorChange", function (color) {
 
 ### Configuration properties
 
-The detailed information on Colorpicker configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
+The detailed information on Colorpicker configuration options can be found in the [Colorpicker API overview](/colorpicker/api/api_overview/#properties) article.
 
 ## Select initial color (optional)
 
-You can specify the color that should be selected in the palette after Colorpicker initialization with the help of the [](colorpicker/api/colorpicker_setvalue_method.md) method:
+You can specify the color that should be selected in the palette after Colorpicker initialization with the help of the [`setValue()`](/colorpicker/api/colorpicker_setvalue_method/) method:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {

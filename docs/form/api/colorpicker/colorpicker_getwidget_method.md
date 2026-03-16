@@ -23,7 +23,7 @@ const colorpicker = form.getItem("colorpicker").getWidget();
 
 It is possible to use methods of DHTMLX ColorPicker via the **getWidget()** method of a ColorPicker control.
 
-For example, you can set focus on the specified value in the control. To do this, you need to get the widget attached to the ColorPicker control and then use the [setFocus()](colorpicker/api/colorpicker_setfocus_method.md) method of this widget.
+For example, you can set focus on the specified value in the control. To do this, you need to get the widget attached to the ColorPicker control and then use the [setFocus()](/colorpicker/api/colorpicker_setfocus_method/) method of this widget.
 
 ~~~js
 const colorpicker = form.getItem("colorpicker").getWidget();  // -> ColorPicker

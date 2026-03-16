@@ -29,7 +29,7 @@ const palette = [
 
 **Related sample**: [Colorpicker. Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
 
-It is possible to redefine the structure of a palette via the [](colorpicker/api/colorpicker_palette_config.md) config option, and set an array of custom colors that will be shown on initialization of the component. 
+It is possible to redefine the structure of a palette via the [`palette`](/colorpicker/api/colorpicker_palette_config/) config option, and set an array of custom colors that will be shown on initialization of the component. 
 For example:
 
 ~~~js
@@ -58,7 +58,7 @@ The default configuration of the Colorpicker palette includes a section with gra
 
 **Related sample**: [Colorpicker. Palette without gray shades](https://snippet.dhtmlx.com/b44fp8q2)
 
-Use the [](colorpicker/api/colorpicker_grayshades_config.md) configuration option for this purpose:
+Use the [`grayShades`](/colorpicker/api/colorpicker_grayshades_config/) configuration option for this purpose:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
@@ -71,7 +71,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 ![](../assets/colorpicker/custom_colors.png)
 
 When Colorpicker is rendered on a page, its list of custom (user-defined) colors is empty. You can change this configuration and specify custom colors that should be shown in the related section on initialization of 
-the component via the [](colorpicker/api/colorpicker_customcolors_config.md) configuration option. Colors should be specified as an array of strings in the Hex format:
+the component via the [`customColors`](/colorpicker/api/colorpicker_customcolors_config/) configuration option. Colors should be specified as an array of strings in the Hex format:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
@@ -81,7 +81,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 ## "palette" or "picker" mode only
 
-DHTMLX Colorpicker has two main modes: "palette" (default) and "picker". To initialize the component in the "picker" mode, set the [](colorpicker/api/colorpicker_pickeronly_config.md) property in the Colorpicker 
+DHTMLX Colorpicker has two main modes: "palette" (default) and "picker". To initialize the component in the "picker" mode, set the [`pickerOnly`](/colorpicker/api/colorpicker_pickeronly_config/) property in the Colorpicker 
 configuration to *true*.
 
 ~~~js
@@ -96,7 +96,7 @@ In this mode the palette is not available and only the picker is displayed.
 
 **Related sample**: [Colorpicker. Picker only](https://snippet.dhtmlx.com/5zlvvwpl)
 
-It is also possible to create the component in the palette mode only using the [](colorpicker/api/colorpicker_paletteonly_config.md) mode:
+It is also possible to create the component in the palette mode only using the [`paletteOnly`](/colorpicker/api/colorpicker_paletteonly_config/) mode:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
@@ -112,7 +112,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 ## Width of Colorpicker
 
-By default, the width of the component is 238 px. In case you change the number of colors in the palette, it may be necessary to adjust the width of Colorpicker accordingly. You can do this with the help of the [](colorpicker/api/colorpicker_width_config.md) property:
+By default, the width of the component is 238 px. In case you change the number of colors in the palette, it may be necessary to adjust the width of Colorpicker accordingly. You can do this with the help of the [`width`](/colorpicker/api/colorpicker_width_config/) property:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {  
@@ -122,7 +122,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 ## Color transparency
 
-The Colorpicker component provides the possibility to set the necessary color transparency in the "picker" mode by pulling the handle on the transparency scale. This feature is enabled by default. To switch it off, set the [transparency](colorpicker/api/colorpicker_transparency_config.md) configuration option to *false*:
+The Colorpicker component provides the possibility to set the necessary color transparency in the "picker" mode by pulling the handle on the transparency scale. This feature is enabled by default. To switch it off, set the [transparency](/colorpicker/api/colorpicker_transparency_config/) configuration option to *false*:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker", {
