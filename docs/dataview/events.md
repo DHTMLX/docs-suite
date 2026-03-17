@@ -60,4 +60,4 @@ dataview.events.fire("name",args);
 
 ## List of supported events
 
-You can find the full list of Dataview events in the [API Reference](dataview/api/api_overview.md#events).
+You can find the full list of Dataview events in the [API Reference](/dataview/api/api_overview/#events).

@@ -8,7 +8,7 @@ description: You can explore how to work with DataView in the documentation of t
 
 ## Setting focus on item
 
-To set focus on a DataView item, make use of the [setFocus()](dataview/api/dataview_setfocus_method.md) method. It takes the id of an item as a parameter:
+To set focus on a DataView item, make use of the [setFocus()](/dataview/api/dataview_setfocus_method/) method. It takes the id of an item as a parameter:
 
 ~~~js
 dataview.setFocus("7");
@@ -16,7 +16,7 @@ dataview.setFocus("7");
 
 ## Editing items
 
-You can edit a particular DataView item with the help of the [editItem()](dataview/api/dataview_edititem_method.md) method. It takes as a parameter the id of an item:
+You can edit a particular DataView item with the help of the [editItem()](/dataview/api/dataview_edititem_method/) method. It takes as a parameter the id of an item:
 
 ~~~js
 dataview.editItem("1");
@@ -26,7 +26,7 @@ dataview.editItem("1");
 
 ## Disabling and enabling selection of an item
 
-For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](dataview/usage_selection.md#enablingdisabling-selection-object).
+For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](/dataview/usage_selection/#enablingdisabling-selection-object).
 
 ## Using Data Collection API
 
@@ -130,4 +130,4 @@ dataview.data.sort({
 
 ## Using Selection API
 
-For information on using Selection API, read [Work with Selection Object](dataview/usage_selection.md).
+For information on using Selection API, read [Work with Selection Object](/dataview/usage_selection/).

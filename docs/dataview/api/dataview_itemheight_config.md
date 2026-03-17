@@ -27,7 +27,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 **Related sample**: [Dataview. Setup Dataview item height](https://snippet.dhtmlx.com/cth9mwrf)
 
-Note that the value of the **itemHeight** property is ignored when you use a [template](dataview/api/dataview_template_config.md) for DataView items.
+Note that the value of the **itemHeight** property is ignored when you use a [template](/dataview/api/dataview_template_config/) for DataView items.
 
 The usage of the CSS **_calc()_** function within the **itemHeight** property is not possible.
 

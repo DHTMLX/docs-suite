@@ -1190,7 +1190,7 @@ Released on May 18, 2023
 ### Fixes
 
 - DataProxy. Fix the issue with items' ids during lazy loading
-- Dataview. Fix incorrect work of the [`setFocus()`](dataview/api/dataview_setfocus_method.md) method
+- Dataview. Fix incorrect work of the [`setFocus()`](/dataview/api/dataview_setfocus_method/) method
 - Form. Fix incorrect application of a validation class added to a custom CSS class
 - Grid/TreeGrid. Fix the issue with ignoring hidden columns being a part of a colspan
 - Grid/TreeGrid. Fix displaying of data in the header/footer during the initialization of a large number of columns
@@ -2249,11 +2249,11 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 #### DataView
 
-- The ability to add event handlers to custom templates of DataView items via the [eventHandlers](dataview/api/dataview_eventhandlers_config.md) property
-- New drag-n-drop events: [afterDrag](dataview/api/dataview_afterdrag_event.md), [afterDrop](dataview/api/dataview_afterdrop_event.md), [beforeDrag](dataview/api/dataview_beforedrag_event.md), [beforeDrop](dataview/api/dataview_beforedrop_event.md), [cancelDrop](dataview/api/dataview_canceldrop_event.md), [canDrop](dataview/api/dataview_candrop_event.md), [dragIn](dataview/api/dataview_dragin_event.md), [dragOut](dataview/api/dataview_dragout_event.md), [dragStart](dataview/api/dataview_dragstart_event.md)
-- The ability [to enable/disable selection of items](dataview/usage_selection.md) in DataView via the related [enable()](selection/api/selection_enable_method.md)/ [disable()](selection/api/selection_disable_method.md) methods of the selection object
+- The ability to add event handlers to custom templates of DataView items via the [eventHandlers](/dataview/api/dataview_eventhandlers_config/) property
+- New drag-n-drop events: [afterDrag](/dataview/api/dataview_afterdrag_event/), [afterDrop](/dataview/api/dataview_afterdrop_event/), [beforeDrag](/dataview/api/dataview_beforedrag_event/), [beforeDrop](/dataview/api/dataview_beforedrop_event/), [cancelDrop](/dataview/api/dataview_canceldrop_event/), [canDrop](/dataview/api/dataview_candrop_event/), [dragIn](/dataview/api/dataview_dragin_event/), [dragOut](/dataview/api/dataview_dragout_event/), [dragStart](/dataview/api/dataview_dragstart_event/)
+- The ability [to enable/disable selection of items](/dataview/usage_selection/) in DataView via the related [enable()](selection/api/selection_enable_method.md)/ [disable()](selection/api/selection_disable_method.md) methods of the selection object
 - The ability to use the simplified versions of the [afterSelect](selection/api/selection_afterselect_event.md), [afterUnSelect](selection/api/selection_afterunselect_event.md), [beforeSelect](selection/api/selection_beforeselect_event.md), [beforeUnSelect](selection/api/selection_beforeunselect_event.md) events of Selection object
-- The ability to select all DataView items at once by using ["Ctrl+A"](dataview/configuration.md#arrow-keys-navigation) combination
+- The ability to select all DataView items at once by using ["Ctrl+A"](/dataview/configuration/#arrow-keys-navigation) combination
 
 #### Form
 
@@ -2536,8 +2536,8 @@ Released on June 16, 2020
 
 #### DataView
 
-- The ability to [disable selection of items in DataView](dataview/configuration.md#selection-of-items) via the [selection](dataview/api/dataview_selection_config.md) configuration property 
-- The ability to [enable/disable](dataview/manipulating_data.md#disabling-and-enabling-selection-of-an-item) selection of DataView items via the corresponding `enableSelection` and `disableSelection` methods
+- The ability to [disable selection of items in DataView](/dataview/configuration/#selection-of-items) via the [selection](/dataview/api/dataview_selection_config/) configuration property 
+- The ability to [enable/disable](/dataview/manipulating_data/#disabling-and-enabling-selection-of-an-item) selection of DataView items via the corresponding `enableSelection` and `disableSelection` methods
 
 #### List
 
@@ -2664,7 +2664,7 @@ Released on January 28, 2020
 
 #### Dataview
 
-- The [itemMouseOver](dataview/api/dataview_itemmouseover_event.md) event is added
+- The [itemMouseOver](/dataview/api/dataview_itemmouseover_event/) event is added
 
 #### Form
 
@@ -2769,7 +2769,7 @@ Released on January 28, 2020
 
 #### Updates
 
-- Now the [multiselection](dataview/api/dataview_multiselection_config.md) configuration property [allows setting the mode of multiselection in Dataview](dataview/configuration.md#multiple-selection-of-items)
+- Now the [multiselection](/dataview/api/dataview_multiselection_config/) configuration property [allows setting the mode of multiselection in Dataview](/dataview/configuration/#multiple-selection-of-items)
 - Now the [multiselection](list/api/list_multiselection_config.md) property [allows setting the mode of multiselection in List](list/configuration.md#multiple-selection-of-items)
 - The getValue method of [DatePicker Form control](form/api/calendar/calendar_getvalue_method.md)
 
@@ -3028,11 +3028,11 @@ Released on August 15, 2019
 
 #### Dataview/List
 
-- The possibility to edit items via API ([DataView](dataview/manipulating_data.md#editing-items) / [List](list/work_with_list.md#editing-items)) or the configuration object 
-([DataView](dataview/configuration.md#editing-items) / [List](list/configuration.md#editing-items))
+- The possibility to edit items via API ([DataView](/dataview/manipulating_data/#editing-items) / [List](list/work_with_list/#editing-items)) or the configuration object 
+([DataView](/dataview/configuration/#editing-items) / [List](list/configuration.md#editing-items))
 - New editing-related events: `DoubleClick`, `BeforeEditStart`, `BeforeEditEnd`, `AfterEditStart`, `AfterEditEnd`
-- Multiple selection of items ([DataView](dataview/configuration.md#multiple-selection-of-items) / [List](list/configuration.md#multiple-selection-of-items)) 
-- Multiple drag-n-drop of items ([DataView](dataview/configuration.md#drag-n-drop-of-items) / [List](list/configuration.md#drag-n-drop-of-items))
+- Multiple selection of items ([DataView](/dataview/configuration/#multiple-selection-of-items) / [List](list/configuration.md#multiple-selection-of-items)) 
+- Multiple drag-n-drop of items ([DataView](/dataview/configuration/#drag-n-drop-of-items) / [List](list/configuration.md#drag-n-drop-of-items))
 
 #### Data/Tree Collection
 

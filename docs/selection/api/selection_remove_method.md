@@ -21,7 +21,9 @@ component.selection.remove("1"); // -> true
 
 @descr:
 
-{{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}
+:::note 
+The method can be used in the [DataView](/dataview/usage_selection/), [List](/list/usage_selection/), [Tree](/tree/usage_selection/) components.
+:::
 
 Starting from v7.0, the method unselects all previously selected items when calling without parameters:
 

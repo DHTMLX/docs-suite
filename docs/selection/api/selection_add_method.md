@@ -19,7 +19,9 @@ component.selection.add("2");
 
 @descr:
 
-{{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}
+:::note 
+The method can be used in the [DataView](/dataview/usage_selection/), [List](/list/usage_selection/), [Tree](/tree/usage_selection/) components.
+:::
 
 Starting from v7.0, the method selects all unselected items when calling without parameters (in **List/DataView**):
 

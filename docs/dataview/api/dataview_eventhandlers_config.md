@@ -58,7 +58,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 **Related sample**: [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
 
-**Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [click](dataview/api/dataview_click_event.md) event when you click on the item with `className`.
+**Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [click](/dataview/api/dataview_click_event/) event when you click on the item with `className`.
 
 As an alternative way, you may use `stopPropagation()` for this purpose (from v7.3.6):
 

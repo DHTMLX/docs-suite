@@ -46,12 +46,12 @@ const dataset = [
 Each object in the data set contains a number of *key:value* pairs that represent attributes of DataView items. 
 
 :::note
-You can specify your own template of rendering DataView items with the help of the [](dataview/api/dataview_template_config.md) configuration option.
+You can specify your own template of rendering DataView items with the help of the [template](/dataview/api/dataview_template_config/) configuration option.
 :::
 
 ## Loading data on initialization
 
-You can load [a predefined data set](#preparing-data-set) into DataView on the initialization stage. Use the [data](dataview/api/dataview_data_config.md) configuration property, as in:
+You can load [a predefined data set](#preparing-data-set) into DataView on the initialization stage. Use the [data](/dataview/api/dataview_data_config/) configuration property, as in:
 
 ~~~js
 const dataview = new dhx.DataView("dataview_container", {

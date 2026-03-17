@@ -74,20 +74,20 @@ const dataview = new dhx.DataView("dataview_container", {
 ~~~
 
 :::info
-To display data in DataView you should define a [template](dataview/configuration.md/#template-for-dataview-items) via the [template](dataview/api/dataview_template_config.md) configuration property.
+To display data in DataView you should define a [template](/dataview/configuration/#template-for-dataview-items) via the [template](/dataview/api/dataview_template_config/) configuration property.
 
-Another way to display data in DataView is to prepare a data set with the ["value"](dataview/data_loading.md/#preparing-data-set) attribute.
+Another way to display data in DataView is to prepare a data set with the ["value"](/dataview/data_loading/#preparing-data-set) attribute.
 :::
 
 ### Configuration properties
 
 There is a set of properties you can specify for DataView to optimize its configuration for your needs.
 
-The detailed information on DataView configuration options can be found in the [Dataview API overview](dataview/api/api_overview.md#properties) article.
+The detailed information on DataView configuration options can be found in the [Dataview API overview](/dataview/api/api_overview/#properties) article.
 
 ## Load data into DataView
 
-Detailed information on how to load data into DHTMLX DataView is given in the [Data loading](dataview/data_loading.md) article.
+Detailed information on how to load data into DHTMLX DataView is given in the [Data loading](/dataview/data_loading/) article.
 
 ## Example
 

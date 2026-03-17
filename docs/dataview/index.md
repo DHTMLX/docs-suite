@@ -16,7 +16,7 @@ Check [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?t
 
 You can check the following page to learn how to build a full-featured DHTMLX DataView:
 
-- [Features](dataview/features.md)
+- [Features](/dataview/features/)
 
 ## API reference
 

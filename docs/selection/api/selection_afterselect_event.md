@@ -20,7 +20,9 @@ component.selection.events.on("afterSelect", function(id){
 
 @descr:
 
-{{note The event can be applied to the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components.}}
+:::note 
+The event can be applied to the [DataView](/dataview/usage_selection/), [List](/list/usage_selection/), [Tree](/tree/usage_selection/) components.
+:::
 
 Starting from v7.0, you can also apply the simplified version of the event:
 

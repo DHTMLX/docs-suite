@@ -63,7 +63,7 @@ You can get the id of the currently selected item with the **getId()** method of
 const selected = dataview.selection.getId(); // -> "2"
 ~~~
 
-Starting from v7.0, the method can also return an array with ids of selected items if the [multiselection](dataview/api/dataview_multiselection_config.md) property of DataView is enabled.
+Starting from v7.0, the method can also return an array with ids of selected items if the [multiselection](/dataview/api/dataview_multiselection_config/) property of DataView is enabled.
 
 ## Getting object of a selected item
 
@@ -73,4 +73,4 @@ It is also possible to get the object of a selected item using the **getItem()**
 const item = dataview.selection.getItem();
 ~~~
 
-Starting from v7.0, the method can also return an array of selected items if the [multiselection](dataview/api/dataview_multiselection_config.md) property of DataView is enabled.
+Starting from v7.0, the method can also return an array of selected items if the [multiselection](/dataview/api/dataview_multiselection_config/) property of DataView is enabled.

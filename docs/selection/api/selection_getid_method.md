@@ -18,6 +18,8 @@ const id = component.selection.getId(); // -> "2"
 
 @descr:
 
-{{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}
+:::note 
+The method can be used in the [DataView](/dataview/usage_selection/), [List](/list/usage_selection/), [Tree](/tree/usage_selection/) components.
+:::
 
 Starting from v7.0, the method can also return an array with ids of selected items if the **multiselection** property of List or DataView is enabled.

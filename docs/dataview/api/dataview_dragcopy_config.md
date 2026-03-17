@@ -20,6 +20,8 @@ const target = new dhx.DataView("dataview_target", {dragMode: "target", dragCopy
 
 **Related sample**: [Dataview. Drag-n-drop copy](https://snippet.dhtmlx.com/h89c3gl3)
 
-{{note Don't forget to enable drag-n-drop via the [](dataview/api/dataview_dragmode_config.md) property to use **dragCopy**.}}
+:::note 
+Don't forget to enable drag-n-drop via the [dragMode](/dataview/api/dataview_dragmode_config/) property to use **dragCopy**.
+:::
 
 [comment]: # (@relatedapi: dataview/configuration.md#drag-n-drop-of-items)
