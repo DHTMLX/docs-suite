@@ -28,7 +28,7 @@ There is a possibility to make changes in the look and feel of a combo box. For 
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](combobox/api/combobox_css_config.md) property in the ComboBox configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](/combobox/api/combobox_css_config/) property in the ComboBox configuration:
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
@@ -60,7 +60,7 @@ For example:
 
 ![Custom filter](../assets/combo/custom_filter.png)
 
-It is possible to set a custom filtering function for the options of ComboBox via the [](combobox/api/combobox_filter_config.md) option. A custom function takes two parameters:
+It is possible to set a custom filtering function for the options of ComboBox via the [filter](/combobox/api/combobox_filter_config/) option. A custom function takes two parameters:
 
 <table>
     <tbody>

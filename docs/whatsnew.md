@@ -662,7 +662,7 @@ Released on July 16, 2024
 
 #### Combobox
 
-- The ability to [add event handlers to HTML elements of a custom template of Combobox items](combobox/configuration.md#event-handlers-for-the-template)
+- The ability to [add event handlers to HTML elements of a custom template of Combobox items](/combobox/configuration/#event-handlers-for-the-template)
 
 #### Form 
 
@@ -1140,7 +1140,7 @@ Released on June 19, 2023
 
 ### Fixes
 
-- Combobox. Fix the functionality of the [addOption()](combobox/api/combobox_addoption_method.md) method. Now it takes both a string and an object as a parameter
+- Combobox. Fix the functionality of the [addOption()](/combobox/api/combobox_addoption_method/) method. Now it takes both a string and an object as a parameter
 - Form. Fix the issue with the beforeChange event not triggering for the TimePicker control during the UI interaction in the `controls:false` mode
 - Grid. Fix the issue with ignoring colspans defined in the configuration object while loading data via the parse() or load() methods
 - Grid/TreeGrid. Fix the problem with the "combobox" editor saving an option's text instead of its id in the data set after editing
@@ -1289,8 +1289,8 @@ Released on March 13, 2023
 
 ### Fixes
 
-- Combobox. Fix default templates for the `img` and `icon` attributes of a [data item](combobox/api/combobox_data_config.md)
-- Combobox. Fix work of the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
+- Combobox. Fix default templates for the `img` and `icon` attributes of a [data item](/combobox/api/combobox_data_config/)
+- Combobox. Fix work of the [`htmlEnable`](/combobox/api/combobox_htmlenable_config/) property
 - Context menu. Fix the issue with applying of [themes](themes.md) to the context menu
 - Grid/TreeGrid. Fix an error thrown when editing cells with null or undefined values in the column with [`editorType: "select"`](grid/configuration.md#types-of-column-editor)
 - Grid/TreeGrid. Fix the issue with custom scroll when using together with frozen columns/rows
@@ -1331,7 +1331,7 @@ Released on February 24, 2023
 
 #### Combobox
 
-- New [`beforeChange`](combobox/api/combobox_beforechange_event.md) event
+- New [`beforeChange`](/combobox/api/combobox_beforechange_event/) event
 
 #### Form
 
@@ -1402,7 +1402,7 @@ Released on February 24, 2023
 
 #### Combobox
 
-- The [`addOption()`](combobox/api/combobox_addoption_method.md) method is updated (new `join` parameter)
+- The [`addOption()`](/combobox/api/combobox_addoption_method/) method is updated (new `join` parameter)
 
 #### Form
 
@@ -1681,15 +1681,15 @@ Released on January 19, 2022
 
 #### Combobox
 
-- The ability to disable rendering of HTML content in Combobox options via the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
-- The ability [to allow users to add new items into the list of options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](combobox/api/combobox_newoptions_config.md) property
-- New [`addOption()`](combobox/api/combobox_addoption_method.md) method
-- New ["createItem"](combobox/localization.md) locale option added
+- The ability to disable rendering of HTML content in Combobox options via the [`htmlEnable`](/combobox/api/combobox_htmlenable_config/) property
+- The ability [to allow users to add new items into the list of options from UI](/combobox/configuration/#editable-combobox) via the [`newOptions`](/combobox/api/combobox_newoptions_config/) property
+- New [`addOption()`](/combobox/api/combobox_addoption_method/) method
+- New ["createItem"](/combobox/localization/) locale option added
 
 #### Form. Combo control
 
-- The ability [to allow users to add new values into the list of combobox options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
-- The ability to add a new item into the Combo control via the [`addOption()`](combobox/api/combobox_addoption_method.md) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md/#working-with-the-dhtmlxcombobox-widget)
+- The ability [to allow users to add new values into the list of combobox options from UI](/combobox/configuration/#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
+- The ability to add a new item into the Combo control via the [`addOption()`](/combobox/api/combobox_addoption_method/) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md/#working-with-the-dhtmlxcombobox-widget)
 
 #### Grid
 
@@ -1835,8 +1835,8 @@ Check the [Migration article](migration.md/#71---72) to keep in step with the la
 
 #### Combobox
 
-- New [blur()](combobox/api/combobox_blur_method.md) method is added
-- New events are added: [blur](combobox/api/combobox_blur_event.md), [focus](combobox/api/combobox_focus_event.md), [keydown](combobox/api/combobox_keydown_event.md), [beforeOpen](combobox/api/combobox_beforeopen_event.md), [afterOpen](combobox/api/combobox_afteropen_event.md)
+- New [blur()](/combobox/api/combobox_blur_method/) method is added
+- New events are added: [blur](/combobox/api/combobox_blur_event/), [focus](/combobox/api/combobox_focus_event/), [keydown](/combobox/api/combobox_keydown_event/), [beforeOpen](/combobox/api/combobox_beforeopen_event/), [afterOpen](/combobox/api/combobox_afteropen_event/)
 
 #### Form
 
@@ -2016,7 +2016,7 @@ Released on April 22, 2021
 ### Fixes
 
 - Calendar, Colorpicker, Combobox, Dataview, Form, Layout, List, Tabbar, Timepicker, Window. Fix the "destructor()" method
-- Combobox. Fix the behavior of the [css](combobox/api/combobox_css_config.md) configuration option
+- Combobox. Fix the behavior of the [css](/combobox/api/combobox_css_config/) configuration option
 - Tabbar. The recalculation function of the width of the tabs is optimized
 
 ## Version 7.1.4
@@ -2245,7 +2245,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 #### Combobox
 
-- The ability to specify the initial value of the combobox via the [value](combobox/api/combobox_value_config.md) configuration property
+- The ability to specify the initial value of the combobox via the [value](/combobox/api/combobox_value_config/) configuration property
 
 #### DataView
 
@@ -2574,7 +2574,7 @@ Released on May 19, 2020
 - Fix the behavior of charts placed into a cell of Tabbar in IE
 - Fix issue with the [afterShow](layout/api/layout_aftershow_event.md) event of Layout not being called
 - Fix the incorrect work of the [destructor()](grid/api/grid_destructor_method.md) method when combo filters are not specified in Grid
-- Fix the incorrect work of the [Change](combobox/api/combobox_change_event.md) event when the [multiselection](combobox/api/combobox_multiselection_config.md) property is enabled in Combobox
+- Fix the incorrect work of the [Change](/combobox/api/combobox_change_event/) event when the [multiselection](/combobox/api/combobox_multiselection_config/) property is enabled in Combobox
 - Fix the incorrect work of the [change](/colorpicker/api/colorpicker_change_event/) event while calling the [clear()](/colorpicker/api/colorpicker_clear_method/) method in ColorPicker
 - Fix issue with the [getValue()](form/api/form_getvalue_method.md) method of Form
 - Fix the incorrect work of the [change](form/api/form_change_event.md) event  while calling the [clear()](form/api/form_clear_method.md) method for Form controls (Input, Textarea, Checkbox, RadioGroup, Select, DatePicker, TimePicker, ColorPicker, Combo)
@@ -2657,10 +2657,10 @@ Released on January 28, 2020
 
 #### Combobox
 
-- The possibility [to check whether a combobox is disabled on the page](combobox/work_with_combo.md#checking-if-a-combobox-is-disabled) using the [isDisabled()](combobox/api/combobox_isdisabled_method.md) method
-- The [beforeClose](combobox/api/combobox_beforeclose_event.md) and [afterClose](combobox/api/combobox_afterclose_event.md) events are added
-- The ability to specify an array of data objects before initialization via the [data](combobox/api/combobox_data_config.md) configuration property
-- The possibility to define the position of a label of a combobox using the [labelPosition](combobox/api/combobox_labelposition_config.md) property
+- The possibility [to check whether a combobox is disabled on the page](/combobox/work_with_combo/#checking-if-a-combobox-is-disabled) using the [isDisabled()](/combobox/api/combobox_isdisabled_method/) method
+- The [beforeClose](/combobox/api/combobox_beforeclose_event/) and [afterClose](/combobox/api/combobox_afterclose_event/) events are added
+- The ability to specify an array of data objects before initialization via the [data](/combobox/api/combobox_data_config/) configuration property
+- The possibility to define the position of a label of a combobox using the [labelPosition](/combobox/api/combobox_labelposition_config/) property
 
 #### Dataview
 
@@ -3024,7 +3024,7 @@ Released on August 15, 2019
 
 #### ComboBox
 
-- Ability to [manipulate the visibility of the Combo popup](combobox/work_with_combo.md#hidingshowing-the-popup) via the Popup API
+- Ability to [manipulate the visibility of the Combo popup](/combobox/work_with_combo/#hidingshowing-the-popup) via the Popup API
 
 #### Dataview/List
 

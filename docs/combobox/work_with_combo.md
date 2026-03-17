@@ -8,7 +8,7 @@ description: You can explore how to work with Combo Box in the documentation of 
 
 ## Setting/getting value(s)
 
-In order to select options in ComboBox, use the [setValue()](combobox/api/combobox_setvalue_method.md) method. It takes one parameter:
+In order to select options in ComboBox, use the [setValue()](/combobox/api/combobox_setvalue_method/) method. It takes one parameter:
 
 - **value** - (*string|number|array*) the **ID(s)** of Combo options from data collection that should be selected in ComboBox
 
@@ -22,7 +22,7 @@ combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 
 **Related sample**: [Combobox. Set value](https://snippet.dhtmlx.com/xl1p7zcx)
 
-To get the list of selected options, apply the [getValue()](combobox/api/combobox_getvalue_method.md) method. It returns IDs of selected options either as string(s) (by default) or as an array of strings. 
+To get the list of selected options, apply the [getValue()](/combobox/api/combobox_getvalue_method/) method. It returns IDs of selected options either as string(s) (by default) or as an array of strings. 
 In the latter case you need to pass the following parameter:
 
 - **asArray**  - (*boolean*) true, to return ids as an array of strings
@@ -44,7 +44,7 @@ const array_ids = combo.getValue(true);
 
 ## Disabling/enabling ComboBox
 
-To disable/enable ComboBox, make use of the [disable()](combobox/api/combobox_disable_method.md)/[enable()](combobox/api/combobox_enable_method.md) methods:
+To disable/enable ComboBox, make use of the [disable()](/combobox/api/combobox_disable_method/)/[enable()](/combobox/api/combobox_enable_method/) methods:
 
 ~~~js
 // disabling a combo box
@@ -57,7 +57,7 @@ combo.enable();
 
 ## Checking if a combobox is disabled
 
-To check if a combobox is disabled, call the [isDisabled()](combobox/api/combobox_isdisabled_method.md) method:
+To check if a combobox is disabled, call the [isDisabled()](/combobox/api/combobox_isdisabled_method/) method:
 
 ~~~js
 combo.isDisabled(); // -> true/false
@@ -67,7 +67,7 @@ combo.isDisabled(); // -> true/false
 
 ## Repainting ComboBox
 
-You can repaint ComboBox on a page, e.g. after changing its configuration, using the [`paint()`](combobox/api/combobox_paint_method.md) method:
+You can repaint ComboBox on a page, e.g. after changing its configuration, using the [`paint()`](/combobox/api/combobox_paint_method/) method:
 
 ~~~js
 // disabling ComboBox via the configuration object
@@ -78,7 +78,7 @@ combo.paint();
 
 ## Clearing input
 
-It is possible to clear the ComboBox input from the selected value(s) with the help of the [`clear()`](combobox/api/combobox_clear_method.md) method:
+It is possible to clear the ComboBox input from the selected value(s) with the help of the [`clear()`](/combobox/api/combobox_clear_method/) method:
 
 ~~~js
 combo.clear();
@@ -88,13 +88,13 @@ combo.clear();
 
 ## Setting/removing focus
 
-When needed, you can set focus in the ComboBox input without opening the list of options. Use the [`focus()`](combobox/api/combobox_focus_method.md) method for this purpose:
+When needed, you can set focus in the ComboBox input without opening the list of options. Use the [`focus()`](/combobox/api/combobox_focus_method/) method for this purpose:
 
 ~~~js
 combo.focus();
 ~~~
 
-To remove focus from Combobox, apply the [`blur()`](combobox/api/combobox_blur_method.md) method:
+To remove focus from Combobox, apply the [`blur()`](/combobox/api/combobox_blur_method/) method:
 
 ~~~js
 combo.blur();
@@ -208,7 +208,7 @@ combobox.data.add({value:"Russia"},1);
 **Related sample**: [Combobox. Add data and remove item](https://snippet.dhtmlx.com/o7vd331z)
 
 :::info
-From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method which you can also use for adding new options into the data collection.
+From v7.3, Combobox includes the [`addOption()`](/combobox/api/combobox_addoption_method/) method which you can also use for adding new options into the data collection.
 :::
 
 ### Updating ComboBox options

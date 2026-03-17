@@ -16,7 +16,7 @@ Check [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?t
 
 You can check the following page to learn how to build a full-featured DHTMLX Combobox:
 
-- [Features](combobox/features.md)
+- [Features](/combobox/features/)
 
 ## API reference
 

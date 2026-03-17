@@ -34,4 +34,4 @@ The end user can add a new item into the data collection in two ways:
 @descr:
 #### Related article
 
-[Editable combobox](combobox/configuration.md/#editable-combobox)
+[Editable combobox](/combobox/configuration/#editable-combobox)

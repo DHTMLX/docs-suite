@@ -60,4 +60,4 @@ combo.events.fire("name",args);
 
 ## List of supported events
 
-You can find the full list of ComboBox events in the [API Reference](combobox/api/api_overview.md#events).
+You can find the full list of ComboBox events in the [API Reference](/combobox/api/api_overview/#events).

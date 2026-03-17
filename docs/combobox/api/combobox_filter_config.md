@@ -13,7 +13,7 @@ description: You can explore the filter config of Combo Box in the documentation
 @params:
 The **filter** property is a custom function which takes two parameters:
 
-- `item: object` - an [item](combobox/api/combobox_data_config.md) of data collection
+- `item: object` - an [item](/combobox/api/combobox_data_config/) of data collection
 - `target: string` - the string to compare to
 
 and should return *true/false* to specify whether an item should be displayed in the filtered list of options.

@@ -44,15 +44,17 @@ const dataset = [
 ]
 ~~~
 
-Each object in the data set contains a number of *key:value* pairs that represent attributes of Combo options. [Check the details](combobox/api/combobox_data_config.md).
+Each object in the data set contains a number of *key:value* pairs that represent attributes of Combo options. [Check the details](/combobox/api/combobox_data_config/).
 
-You can specify your own template of rendering Combo options with the help of the [template](combobox/api/combobox_template_config.md) configuration option.
+You can specify your own template of rendering Combo options with the help of the [template](/combobox/api/combobox_template_config/) configuration option.
 
-{{note Note, until you use the [template](combobox/api/combobox_template_config.md) option, the **value** is a mandatory property for a dataset item and **src** is a reserved one.}}
+:::note 
+Note, until you use the [template](/combobox/api/combobox_template_config/) option, the **value** is a mandatory property for a dataset item and **src** is a reserved one.
+:::
 
 ## Loading data on initialization
 
-You can load [a predefined data set](#preparing-data-set) into Combobox on the initialization stage. Use the [data](combobox/api/combobox_data_config.md) configuration property, as in:
+You can load [a predefined data set](#preparing-data-set) into Combobox on the initialization stage. Use the [data](/combobox/api/combobox_data_config/) configuration property, as in:
 
 ~~~js
 const combo = new dhx.Combobox("combo_container",{
@@ -117,7 +119,7 @@ If you just call the [serialize()](data_collection/api/datacollection_serialize_
 
 If you select an option in the Combobox and call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return only this option.
 
-If you enable the [multi-selection mode](combobox/configuration.md#selection-of-multiple-options) of Combobox, then select one or several options in the Combobox and call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return the list of all Combobox options.
+If you enable the [multi-selection mode](/combobox/configuration/#selection-of-multiple-options) of Combobox, then select one or several options in the Combobox and call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return the list of all Combobox options.
 :::
 
 Then you can parse the data stored in the saved state array to a different combo box. For example:

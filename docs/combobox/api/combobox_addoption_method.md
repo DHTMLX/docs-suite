@@ -33,7 +33,7 @@ console.log(combobox.data.serialize());
 
 ### Adding an option as an object
 
-When you need an extended configuration, while adding an item, pass the **value** parameter as an object with a set of *key:value* pairs that represent attributes of a Combo option. [Check the list of available attributes](combobox/api/combobox_data_config.md). For example:
+When you need an extended configuration, while adding an item, pass the **value** parameter as an object with a set of *key:value* pairs that represent attributes of a Combo option. [Check the list of available attributes](/combobox/api/combobox_data_config/). For example:
 
 ~~~js
 combobox.addOption({
@@ -42,8 +42,9 @@ combobox.addOption({
 });
 ~~~
 
-{{note The method invokes the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) and [afterAdd](data_collection/api/datacollection_afteradd_event.md) events of the Data Collection object. If the **beforeAdd** event returns *false*, a new item won't be added into the data collection.
-}}
+:::note
+The method invokes the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) and [afterAdd](data_collection/api/datacollection_afteradd_event.md) events of the Data Collection object. If the **beforeAdd** event returns *false*, a new item won't be added into the data collection.
+:::
 
 @changelog:
 

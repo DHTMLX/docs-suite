@@ -76,11 +76,11 @@ const combo = new dhx.Combobox("combo_container", {
 
 ### Configuration properties
 
-See the detailed description of Combo configuration options in the [Combobox API overview](combobox/api/api_overview.md#properties) article.
+See the detailed description of Combo configuration options in the [Combobox API overview](/combobox/api/api_overview/#properties) article.
 
 ## Load data into ComboBox
 
-Detailed information on how to load data into ComboBox is given in the [](combobox/adding_options.md) article.
+Detailed information on how to load data into ComboBox is given in the [Data loading](/combobox/adding_options/) article.
 
 ## Example
 
