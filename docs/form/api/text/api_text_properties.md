@@ -123,4 +123,4 @@ description: You can explore the Properties of the Text control of Form in the d
 
 <iframe src="https://snippet.dhtmlx.com/ikyyekxq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Text](form/text.md)
+**Related article:** [Text](/form/text/)

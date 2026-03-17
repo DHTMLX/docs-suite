@@ -92,6 +92,6 @@ The returned object of a **checkbox** of the **CheckboxGroup** control looks lik
 }
 ~~~
 
-You will find the description of all these properties [here](form/api/checkbox_group/api_checkboxgroup_properties.md).
+You will find the description of all these properties [here](/form/api/checkbox_group/api_checkboxgroup_properties/).
 
 @changelog: added in v7.0

@@ -64,7 +64,7 @@ description: You can explore the Properties of the Timepicker control of Form in
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `padding` - (optional) sets padding between a cell and a border of the TimePicker control
 - `required` - (optional) defines whether a control is required, *false* by default
-- `validation` - (optional) [the validation function](form/work_with_form.md#validation-rules), takes as a parameter the value to validate and returns true/false to indicate the result of validation
+- `validation` - (optional) [the validation function](/form/work_with_form/#validation-rules), takes as a parameter the value to validate and returns true/false to indicate the result of validation
 - `width` - (optional) the width of a control, *"content"* by default
 - `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons, *false* by default
 - `icon` - (optional) the CSS class name of an icon from the used icon font
@@ -84,4 +84,4 @@ description: You can explore the Properties of the Timepicker control of Form in
 
 <iframe src="https://snippet.dhtmlx.com/4k3o8p7b?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [TimePicker](form/timepicker.md)
+**Related article:** [TimePicker](/form/timepicker/)

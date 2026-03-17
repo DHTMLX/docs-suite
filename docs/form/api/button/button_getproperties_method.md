@@ -52,6 +52,6 @@ The returned object of the **Button** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/button/api_button_properties.md).
+You will find the description of these properties [here](/form/api/button/api_button_properties/).
 
 @changelog: added in v7.0

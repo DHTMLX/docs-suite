@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Avatar contr
 @signature: {'afterChangeProperties: (properties: object) => void;'}
 
 @params:
-- `properties: object` - an object with the [configuration attributes](form/api/avatar/avatar_setproperties_method.md) of the control and their new values
+- `properties: object` - an object with the [configuration attributes](/form/api/avatar/avatar_setproperties_method/) of the control and their new values
 
 @example:
 form.getItem("avatar").events.on("afterChangeProperties", properties => {

@@ -51,4 +51,4 @@ description: You can explore the Properties of the Fieldset control of Form in t
 
 <iframe src="https://snippet.dhtmlx.com/lo6g167p?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Fieldset](form/fieldset.md)
+**Related article:** [Fieldset](/form/fieldset/)

@@ -197,4 +197,4 @@ description: You can explore the Properties of the Combo Box control of Form in 
 
 <iframe src="https://snippet.dhtmlx.com/wla7u1xq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Combo](form/combo.md)
+**Related article:** [Combo](/form/combo/)

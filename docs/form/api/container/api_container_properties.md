@@ -53,4 +53,4 @@ description: You can explore the Properties of the Container control of Form in 
 
 <iframe src="https://snippet.dhtmlx.com/cnxi9eqq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Container](form/container.md)
+**Related article:** [Container](/form/container/)

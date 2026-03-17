@@ -23,7 +23,7 @@ form.getItem("datepicker").setProperties({
 @descr:
 
 :::info
-The method invokes the [](form/api/calendar/calendar_afterchangeproperties_event.md) and [](form/api/calendar/calendar_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/calendar/calendar_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/calendar/calendar_beforechangeproperties_event/) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **DatePicker** control:
@@ -60,6 +60,6 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-You will find the description of these properties [here](form/api/calendar/api_calendar_properties.md).
+You will find the description of these properties [here](/form/api/calendar/api_calendar_properties/).
 
 @changelog: added in v7.0

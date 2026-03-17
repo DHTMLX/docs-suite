@@ -185,4 +185,4 @@ description: You can explore the Properties of the Simple Vault control  of Form
 
 <iframe src="https://snippet.dhtmlx.com/ofy4k51o?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [SimpleVault](form/simplevault.md)
+**Related article:** [SimpleVault](/form/simplevault/)

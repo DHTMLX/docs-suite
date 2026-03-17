@@ -145,4 +145,4 @@ description: You can explore the Properties of the Select control of Form in the
 
 <iframe src="https://snippet.dhtmlx.com/yo9w9o2t?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Select](form/select.md)
+**Related article:** [Select](/form/select/)

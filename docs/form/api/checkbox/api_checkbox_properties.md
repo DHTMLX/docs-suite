@@ -132,4 +132,4 @@ description: You can explore the Properties of the Checkbox control of Form in t
 
 <iframe src="https://snippet.dhtmlx.com/scs712zl?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
-**Related article:** [Checkboxes](form/checkbox.md)
+**Related article:** [Checkboxes](/form/checkbox/)

@@ -93,5 +93,5 @@ description: You can explore the Properties of the Toggle Group control of Form 
 
 <iframe src="https://snippet.dhtmlx.com/yqi21ykr?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
-**Related article:** [ToggleGroup](form/togglegroup.md)
+**Related article:** [ToggleGroup](/form/togglegroup/)
 

@@ -33,11 +33,11 @@ const form = new dhx.Form("form_container", {
 
 ## Properties
 
-View [the full list of configuration properties of the Datepicker control](form/api/calendar/api_calendar_properties.md).
+View [the full list of configuration properties of the Datepicker control](/form/api/calendar/api_calendar_properties/).
 
 ## Working with DatePicker
 
-You can manipulate a DatePicker control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a DatePicker control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -51,15 +51,15 @@ const value = form.getItem("datepicker").getValue(true);
 
 ### Methods
 
-Check [the full list of methods of the Datepicker control](form/api/api_overview.md#datepicker-methods).
+Check [the full list of methods of the Datepicker control](/form/api/api_overview/#datepicker-methods).
 
 ### Events
 
-Check [the full list of events of the Datepicker control](form/api/api_overview.md#datepicker-events).
+Check [the full list of events of the Datepicker control](/form/api/api_overview/#datepicker-events).
 
 ## Working with the dhtmlxCalendar widget
 
-There is a possibility to use methods of DHTMLX Calendar via the [getWidget()](form/api/calendar/calendar_getwidget_method.md) method of a DatePicker control.
+There is a possibility to use methods of DHTMLX Calendar via the [getWidget()](/form/api/calendar/calendar_getwidget_method/) method of a DatePicker control.
 
 For example, you can show the current month in the control. To do this, you need to get the widget attached to the DatePicker control and then use the [`showDate()`](/calendar/api/calendar_showdate_method/) method of this widget.
 

@@ -55,15 +55,15 @@ const form = new dhx.Form("form_container", {
 
 ### Properties of CheckboxGroup
 
-View [the full list of configuration properties of the CheckboxGroup control](form/api/checkbox_group/api_checkboxgroup_properties.md).
+View [the full list of configuration properties of the CheckboxGroup control](/form/api/checkbox_group/api_checkboxgroup_properties/).
 
 ### Properties of Checkbox of CheckboxGroup control
 
-Check [the full list of configuration properties of a Checkbox of the CheckboxGroup control](form/api/checkbox_group/api_checkboxgroup_properties.md#properties-of-a-checkbox-of-checkboxgroup).
+Check [the full list of configuration properties of a Checkbox of the CheckboxGroup control](/form/api/checkbox_group/api_checkboxgroup_properties/#properties-of-a-checkbox-of-checkboxgroup).
 
 ## Working with CheckboxGroup
 
-You can manipulate a CheckboxGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a CheckboxGroup control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can hide a control on a page:
 
@@ -73,8 +73,8 @@ const value = form.getItem("CheckboxGroup").hide();
 
 ### Methods
 
-Check [the full list of methods of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-methods).
+Check [the full list of methods of the CheckboxGroup control](/form/api/api_overview/#checkboxgroup-methods).
 
 ### Events
 
-Check [the full list of events of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-events).
+Check [the full list of events of the CheckboxGroup control](/form/api/api_overview/#checkboxgroup-events).

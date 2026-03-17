@@ -62,6 +62,6 @@ The returned object of the **DatePicker** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/calendar/api_calendar_properties.md).
+You will find the description of these properties [here](/form/api/calendar/api_calendar_properties/).
 
 @changelog: added in v7.0

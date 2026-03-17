@@ -68,5 +68,5 @@ The returned object of the **Avatar** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/avatar/api_avatar_properties.md).
+You will find the description of these properties [here](/form/api/avatar/api_avatar_properties/).
 

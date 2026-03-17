@@ -11,7 +11,7 @@ description: You can explore the beforeChangeProperties event of the Button cont
 @signature: {'beforeChangeProperties: (properties: object) => boolean | void;'}
 
 @params:
-- `properties: object` - an object with [configuration attributes](form/api/button/button_setproperties_method.md) of the control and their new values
+- `properties: object` - an object with [configuration attributes](/form/api/button/button_setproperties_method/) of the control and their new values
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, return `true`.

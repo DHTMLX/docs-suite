@@ -34,11 +34,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Checkbox control](form/api/checkbox/api_checkbox_properties.md).
+View [the full list of configuration properties of the Checkbox control](/form/api/checkbox/api_checkbox_properties/).
 
 ## Working with Checkbox
 
-You can manipulate a Checkbox control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Checkbox control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -48,8 +48,8 @@ const value = form.getItem("checkbox").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Checkbox control](form/api/api_overview.md#checkbox-methods).
+Check [the full list of methods of the Checkbox control](/form/api/api_overview/#checkbox-methods).
 
 ### Events
 
-Check [the full list of events of the Checkbox control](form/api/api_overview.md#checkbox-events).
+Check [the full list of events of the Checkbox control](/form/api/api_overview/#checkbox-events).

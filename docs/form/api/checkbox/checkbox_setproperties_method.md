@@ -23,7 +23,7 @@ form.getItem("checkbox").setProperties({
 @descr:
 
 :::info
-The method invokes the [](form/api/checkbox/checkbox_afterchangeproperties_event.md) and [](form/api/checkbox/checkbox_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/checkbox/checkbox_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/checkbox/checkbox_beforechangeproperties_event/) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **Checkbox** control:
@@ -47,6 +47,6 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox/api_checkbox_properties.md).
+You will find the description of these properties [here](/form/api/checkbox/api_checkbox_properties/).
 
 @changelog: added in v7.0

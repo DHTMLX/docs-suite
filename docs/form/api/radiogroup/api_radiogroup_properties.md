@@ -217,4 +217,4 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 
 <iframe src="https://snippet.dhtmlx.com/ycp1cbct?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [RadioGroup](form/radiogroup.md)
+**Related article:** [RadioGroup](/form/radiogroup/)

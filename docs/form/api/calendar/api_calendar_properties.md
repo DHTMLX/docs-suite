@@ -198,4 +198,4 @@ description: You can explore the Properties of the Datepicker control of Form in
 
 <iframe src="https://snippet.dhtmlx.com/q3yk7e6s?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
-**Related article:** [DatePicker](form/calendar.md)
+**Related article:** [DatePicker](/form/calendar/)

@@ -65,4 +65,4 @@ description: You can explore the Properties of the Spacer control of Form in the
 
 <iframe src="https://snippet.dhtmlx.com/ikyyekxq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Spacer](form/spacer.md)
+**Related article:** [Spacer](/form/spacer/)

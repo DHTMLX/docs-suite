@@ -123,4 +123,4 @@ description: You can explore the Properties of the Button control of Form in the
 
 <iframe src="https://snippet.dhtmlx.com/qgxzwyfa?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
 
-**Related article:** [Button](form/button.md)
+**Related article:** [Button](/form/button/)

@@ -208,4 +208,4 @@ description: You can explore the Properties of the Avatar control of Form in the
 
 <iframe src="https://snippet.dhtmlx.com/87u37hqc?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Avatar](form/avatar.md)
+**Related article:** [Avatar](/form/avatar/)

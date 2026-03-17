@@ -39,11 +39,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Avatar control](form/api/avatar/api_avatar_properties.md).
+View [the full list of configuration properties of the Avatar control](/form/api/avatar/api_avatar_properties/).
 
 ## Working with Avatar
 
-You can manipulate an Avatar control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate an Avatar control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -53,8 +53,8 @@ const value = form.getItem("avatar").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Avatar control](form/api/api_overview.md#avatar-methods).
+Check [the full list of methods of the Avatar control](/form/api/api_overview/#avatar-methods).
 
 ### Events
 
-Check [the full list of events of the Avatar control](form/api/api_overview.md#avatar-events).
+Check [the full list of events of the Avatar control](/form/api/api_overview/#avatar-events).

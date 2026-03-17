@@ -213,4 +213,4 @@ description: You can explore the Properties of the Input control of Form in the 
 
 <iframe src="https://snippet.dhtmlx.com/9q8fubjm?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [Input](form/input.md)
+**Related article:** [Input](/form/input/)

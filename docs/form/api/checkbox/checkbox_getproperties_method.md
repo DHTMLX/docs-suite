@@ -51,6 +51,6 @@ The returned object of the **Checkbox** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox/api_checkbox_properties.md).
+You will find the description of these properties [here](/form/api/checkbox/api_checkbox_properties/).
 
 @changelog: added in v7.0

@@ -214,4 +214,4 @@ description: You can explore the Properties of the Checkbox Group control of For
 
 <iframe src="https://snippet.dhtmlx.com/p89u4ovb?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-**Related article:** [CheckboxGroup](form/checkboxgroup.md)
+**Related article:** [CheckboxGroup](/form/checkboxgroup/)

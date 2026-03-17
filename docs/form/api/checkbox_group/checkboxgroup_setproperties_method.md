@@ -49,7 +49,7 @@ form.getItem("checkboxGroup").setProperties("first", {
 @descr:
 
 :::info
-The method invokes the [](form/api/checkbox_group/checkboxgroup_afterchangeproperties_event.md) and [](form/api/checkbox_group/checkboxgroup_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/checkbox_group/checkboxgroup_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/checkbox_group/checkboxgroup_beforechangeproperties_event/) events.
 :::
 
 It is possible to change the values of the following configuration attributes of the **CheckboxGroup** control:
@@ -85,6 +85,6 @@ It is possible to change the values of the following configuration attributes of
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox_group/api_checkboxgroup_properties.md).
+You will find the description of these properties [here](/form/api/checkbox_group/api_checkboxgroup_properties/).
 
 @changelog: added in v7.0

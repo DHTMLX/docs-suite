@@ -33,11 +33,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Button control](form/api/button/api_button_properties.md).
+View [the full list of configuration properties of the Button control](/form/api/button/api_button_properties/).
 
 ## Working with Button
 
-You can manipulate a Button control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Button control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can disable a control on a page:
 
@@ -47,8 +47,8 @@ form.getItem("button").disable();
 
 ### Methods
 
-Check [the full list of methods of the Button control](form/api/api_overview.md#button-methods).
+Check [the full list of methods of the Button control](/form/api/api_overview/#button-methods).
 
 ### Events
 
-Check [the full list of events of the Button control](form/api/api_overview.md#button-events).
+Check [the full list of events of the Button control](/form/api/api_overview/#button-events).
