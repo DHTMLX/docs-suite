@@ -48,4 +48,4 @@ The **properties** object object of a **toggle** of the **ToggleGroup** control 
 }
 ~~~
 
-You will find the description of all these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of all these properties [here](/form/api/togglegroup/api_togglegroup_properties/).

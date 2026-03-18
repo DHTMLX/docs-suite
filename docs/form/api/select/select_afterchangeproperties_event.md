@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Select contr
 @signature: {'afterChangeProperties: (properties: object) => void;'}
 
 @params:
-- `properties: object` - an object with [configuration attributes](form/api/select/select_setoptions_method.md) of the control and their new values
+- `properties: object` - an object with [configuration attributes](/form/api/select/select_setoptions_method/) of the control and their new values
 
 @example:
 form.getItem("select").events.on("afterChangeProperties", function(properties) {

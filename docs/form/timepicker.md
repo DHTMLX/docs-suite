@@ -36,11 +36,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the TimePicker control](form/api/timepicker/api_timepicker_properties.md).
+View [the full list of configuration properties of the TimePicker control](/form/api/timepicker/api_timepicker_properties/).
 
 ## Working with TimePicker
 
-You can manipulate a TimePicker control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a TimePicker control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -50,17 +50,17 @@ const value = form.getItem("timepicker").getValue();
 
 ### Methods:
 
-Check [the full list of methods of the Timepicker control](form/api/api_overview.md#timepicker-methods).
+Check [the full list of methods of the Timepicker control](/form/api/api_overview/#timepicker-methods).
 
 ### Events:
 
-Check [the full list of events of the Timepicker control](form/api/api_overview.md#timepicker-events).
+Check [the full list of events of the Timepicker control](/form/api/api_overview/#timepicker-events).
 
 ### Working with the dhtmlxTimePicker widget
 
-There is a possibility to use methods of DHTMLX TimePicker via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method of a TimePicker control.
+There is a possibility to use methods of DHTMLX TimePicker via the [getWidget()](/form/api/timepicker/timepicker_getwidget_method/) method of a TimePicker control.
 
-For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
+For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](/timepicker/api/timepicker_setvalue_method/) method of this widget.
 
 ~~~js
 const timepicker = form.getItem("timepicker").getWidget();  // -> TimePicker

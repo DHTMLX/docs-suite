@@ -34,11 +34,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Input control](form/api/input/api_input_properties.md).
+View [the full list of configuration properties of the Input control](/form/api/input/api_input_properties/).
 
 ## Working with Input
 
-You can manipulate an Input control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate an Input control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -48,8 +48,8 @@ const value = form.getItem("input").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Input control](form/api/api_overview.md#input-methods).
+Check [the full list of methods of the Input control](/form/api/api_overview/#input-methods).
 
 ### Events
 
-Check [the full list of events of the Input control](form/api/api_overview.md#input-events).
+Check [the full list of events of the Input control](/form/api/api_overview/#input-events).

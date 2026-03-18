@@ -21,7 +21,7 @@ form.getItem("spacer").setProperties({
 @descr:
 
 :::info
-The method invokes the [](form/api/spacer/spacer_afterchangeproperties_event.md) and [](form/api/spacer/spacer_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/spacer/spacer_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/spacer/spacer_beforechangeproperties_event/) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **Spacer** control:
@@ -35,6 +35,6 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-You will find the description of these properties [here](form/api/spacer/api_spacer_properties.md).
+You will find the description of these properties [here](/form/api/spacer/api_spacer_properties/).
 
 @changelog: added in v7.0

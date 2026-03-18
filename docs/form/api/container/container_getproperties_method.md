@@ -47,6 +47,6 @@ The returned object of the Container control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/container/api_container_properties.md).
+You will find the description of these properties [here](/form/api/container/api_container_properties/).
 
 @changelog: added in v7.2

@@ -139,7 +139,7 @@ const form = new dhx.Form("form_container", {
 
 ### Configuration properties
 
-You can find the full list of Form configuration properties in the [Form API overview](form/api/api_overview.md#properties) article.
+You can find the full list of Form configuration properties in the [Form API overview](/form/api/api_overview/#properties) article.
 
 ## Example
 

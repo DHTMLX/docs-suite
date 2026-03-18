@@ -74,7 +74,7 @@ The returned object of the **ToggleGroup** control looks like:
 }
 ~~~
 
-You will find the description of all these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of all these properties [here](/form/api/togglegroup/api_togglegroup_properties/).
 
 The returned object of a **toggle** of the **ToggleGroup** control looks like:
 
@@ -89,6 +89,6 @@ The returned object of a **toggle** of the **ToggleGroup** control looks like:
 }
 ~~~
 
-You will find the description of all these properties [here](form/api/togglegroup/api_togglegroup_properties.md#properties-of-a-toggle-of-togglegroup).
+You will find the description of all these properties [here](/form/api/togglegroup/api_togglegroup_properties/#properties-of-a-toggle-of-togglegroup).
 
 

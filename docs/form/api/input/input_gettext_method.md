@@ -23,9 +23,9 @@ input.getValue(); // "1000.01" for the input type string
 input.getText(); // "1,000.01" with the applied numberMask/patternMask
 
 @descr:
-The method is used with the [`numberMask`](form/work_with_form.md#numbermask) and [`patternMask`](form/work_with_form.md#patternmask) properties of the Input control. It allows getting the value with the applied mask. 
+The method is used with the [`numberMask`](/form/work_with_form/#numbermask) and [`patternMask`](/form/work_with_form/#patternmask) properties of the Input control. It allows getting the value with the applied mask. 
 
 @changelog:
 Added in v9.0
 
-**Related:** [Getting the text value of an input](form/work_with_form.md#getting-the-text-value-of-an-input-or-a-textarea)
+**Related:** [Getting the text value of an input](/form/work_with_form/#getting-the-text-value-of-an-input-or-a-textarea)

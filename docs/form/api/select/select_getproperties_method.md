@@ -61,6 +61,6 @@ The returned object of the **Select** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/select/api_select_properties.md).
+You will find the description of these properties [here](/form/api/select/api_select_properties/).
 
 @changelog: added in v7.0

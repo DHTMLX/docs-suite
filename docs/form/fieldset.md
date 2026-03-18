@@ -54,11 +54,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Fieldset control](form/api/fieldset/api_fieldset_properties.md).
+View [the full list of configuration properties of the Fieldset control](/form/api/fieldset/api_fieldset_properties/).
 
 ## Working with Fieldset
 
-You can manipulate a Fieldset control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Fieldset control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can disable a control on a page:
 
@@ -68,11 +68,11 @@ form.getItem("fieldset").disable();
 
 ### Methods
 
-Check [the full list of methods of the Fieldset control](form/api/api_overview.md#fieldset-methods).
+Check [the full list of methods of the Fieldset control](/form/api/api_overview/#fieldset-methods).
 
 ### Events
 
-Check [the full list of events of the Fieldset control](form/api/api_overview.md#fieldset-events).
+Check [the full list of events of the Fieldset control](/form/api/api_overview/#fieldset-events).
 
 
 

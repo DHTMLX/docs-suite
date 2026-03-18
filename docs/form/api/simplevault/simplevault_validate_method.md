@@ -23,7 +23,7 @@ form.getItem("simplevault").validate(true);
 
 @descr:
 
-When called without the **silent** parameter or with this parameter set to *false*, the method invokes the [BeforeValidate](form/api/simplevault/simplevault_beforevalidate_event.md) and [AfterValidate](form/api/simplevault/simplevault_aftervalidate_event.md) events and modifies the control visually.
+When called without the **silent** parameter or with this parameter set to *false*, the method invokes the [BeforeValidate](/form/api/simplevault/simplevault_beforevalidate_event/) and [AfterValidate](/form/api/simplevault/simplevault_aftervalidate_event/) events and modifies the control visually.
 
 ~~~js
 form.getItem("simplevault").validate(); // -> true/false

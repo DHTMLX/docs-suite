@@ -23,7 +23,7 @@ form.getItem("textarea").setProperties({
 @descr:
 
 :::info
-The method invokes the [](form/api/textarea/textarea_afterchangeproperties_event.md) and [](form/api/textarea/textarea_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/textarea/textarea_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/textarea/textarea_beforechangeproperties_event/) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **Textarea** control:
@@ -51,6 +51,6 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-You will find the description of these properties [here](form/api/textarea/api_textarea_properties.md).
+You will find the description of these properties [here](/form/api/textarea/api_textarea_properties/).
 
 @changelog: added in v7.0

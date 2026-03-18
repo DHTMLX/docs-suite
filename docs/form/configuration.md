@@ -8,9 +8,9 @@ description: You can explore the configuration of Form in the documentation of t
 
 ## Alignment
 
-The [](form/api/form_align_config.md) property allows you to set aligning direction for all controls in Form. 
+The [align](/form/api/form_align_config/) property allows you to set aligning direction for all controls in Form. 
 
-You can apply various options of alignment for different [control groups](form/configuration.md#grouping-controls-in-form) by specifying the [](form/api/form_align_config.md) property for the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md):
+You can apply various options of alignment for different [control groups](/form/configuration/#grouping-controls-in-form) by specifying the [align](/form/api/form_align_config/) property for the [rows](/form/api/form_rows_config/) and [cols](/form/api/form_cols_config/):
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -58,7 +58,7 @@ const form = new dhx.Form("form_container", {
 
 ## Grouping Controls in Form
 
-You can combine controls into groups by placing controls into rows and columns with any level of complexity. To do this, use the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md) options in the configuration object of the component:
+You can combine controls into groups by placing controls into rows and columns with any level of complexity. To do this, use the [rows](/form/api/form_rows_config/) and [cols](/form/api/form_cols_config/) options in the configuration object of the component:
 
 ~~~js {3,6,12,19,43,50}
 const form = new dhx.Form("form_container", {
@@ -143,7 +143,7 @@ const form = new dhx.Form("form_container", {
 
 **Related sample**: [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
 
-By default, Form is enabled. To make Form disabled, set the [](form/api/form_disabled_config.md) configuration property to *true*:
+By default, Form is enabled. To make Form disabled, set the [disabled](/form/api/form_disabled_config/) configuration property to *true*:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -154,7 +154,7 @@ const form = new dhx.Form("form_container", {
 
 ## Making Form hidden
 
-By default, Form is visible. To make Form hidden, set the [](form/api/form_hidden_config.md) configuration property to *true*:
+By default, Form is visible. To make Form hidden, set the [hidden](/form/api/form_hidden_config/) configuration property to *true*:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -165,7 +165,7 @@ const form = new dhx.Form("form_container", {
 
 ## Padding
 
-To generate space around a [control group](form/configuration.md#grouping-controls-in-form), make use of the [](form/api/form_padding_config.md) parameter:
+To generate space around a [control group](/form/configuration/#grouping-controls-in-form), make use of the [padding](/form/api/form_padding_config/) parameter:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -198,7 +198,7 @@ const form = new dhx.Form("form_container", {
 
 ## Title
 
-You can define a title for a [control group](form/configuration.md#grouping-controls-in-form) with the help of the [](form/api/form_title_config.md) property:
+You can define a title for a [control group](/form/configuration/#grouping-controls-in-form) with the help of the [title](/form/api/form_title_config/) property:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -229,7 +229,7 @@ const form = new dhx.Form("form_container", {
 
 ## Width/Height
 
-You can adjust sizes of a [control group](form/configuration.md#grouping-controls-in-form) with the corresponding properties [](form/api/form_height_config.md) and [](form/api/form_width_config.md):
+You can adjust sizes of a [control group](/form/configuration/#grouping-controls-in-form) with the corresponding properties [height](/form/api/form_height_config/) and [width](/form/api/form_width_config/):
 
 ~~~js
 const form = new dhx.Form("form_container", {

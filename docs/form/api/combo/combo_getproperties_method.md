@@ -72,6 +72,6 @@ The returned object of the **Combo** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/combo/api_combo_properties.md).
+You will find the description of these properties [here](/form/api/combo/api_combo_properties/).
 
 @changelog: added in v7.0

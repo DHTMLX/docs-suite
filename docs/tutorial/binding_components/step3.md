@@ -81,7 +81,7 @@ var countries = [
 
 {{note You need to define a JSON structure with country options before defining the list of Form controls.}}
 
-The full list of form controls and their attributes is given [here](form/controls_list.md).
+The full list of form controls and their attributes is given [here](/form/controls_list/).
 
 ##Initializing the Form
 

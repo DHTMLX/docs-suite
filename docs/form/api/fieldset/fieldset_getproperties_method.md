@@ -58,4 +58,4 @@ The returned object of the **Fieldset** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/fieldset/api_fieldset_properties.md).
+You will find the description of these properties [here](/form/api/fieldset/api_fieldset_properties/).

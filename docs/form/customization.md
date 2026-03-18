@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](form/api/form_css_config.md) property in the Form configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](/form/api/form_css_config/) property in the Form configuration:
 
 ~~~js
 const form = new dhx.Form("form_container", {

@@ -59,6 +59,6 @@ The returned object of the **Input** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/input/api_input_properties.md).
+You will find the description of these properties [here](/form/api/input/api_input_properties/).
 
 @changelog: added in v7.0

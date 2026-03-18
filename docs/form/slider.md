@@ -32,11 +32,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Slider control](form/api/slider/api_slider_properties.md).
+View [the full list of configuration properties of the Slider control](/form/api/slider/api_slider_properties/).
 
 ## Working with Slider
 
-You can manipulate a Slider control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Slider control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -46,17 +46,17 @@ const value = form.getItem("slider_id").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Slider control](form/api/api_overview.md#slider-methods).
+Check [the full list of methods of the Slider control](/form/api/api_overview/#slider-methods).
 
 ### Events
 
-Check [the full list of events of the Slider control](form/api/api_overview.md#slider-events).
+Check [the full list of events of the Slider control](/form/api/api_overview/#slider-events).
 
 ### Working with the dhtmlxSlider widget
 
-There is a possibility to use methods of DHTMLX Slider via the [getWidget()](form/api/slider/slider_getwidget_method.md) method of a Slider control.
+There is a possibility to use methods of DHTMLX Slider via the [getWidget()](/form/api/slider/slider_getwidget_method/) method of a Slider control.
 
-For example, you can disable a Slider control. To do this, you need to get the widget attached to the Slider control and then use the [disable()](slider/api/slider_disable_method.md) method of this widget.
+For example, you can disable a Slider control. To do this, you need to get the widget attached to the Slider control and then use the [disable()](/slider/api/slider_disable_method/) method of this widget.
 
 ~~~js
 const slider = form.getItem("slider_id").getWidget();  // -> DHTMLX Slider

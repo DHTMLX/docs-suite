@@ -20,25 +20,25 @@ You can add the Container control to the Form in an easy way.
 
 You need to specify the type of the control `type: "container"` during the initialization of Form and then use one of the methods:
 
-- [](form/api/container/container_attachhtml_method.md) - for HTML code
-- [](form/api/container/container_attach_method.md) - for DHTMLX widget
+- [attachHTML()](/form/api/container/container_attachhtml_method/) - for HTML code
+- [attach()](/form/api/container/container_attach_method/) - for DHTMLX widget
 
 You can also attach the HTML code directly to the Container control. Look at the sample above.
 
 ## Methods
 
-[List of the Container control methods](form/api/api_overview.md#container-methods)
+[List of the Container control methods](/form/api/api_overview/#container-methods)
 
-You can manipulate the Container control by using methods of the object returned by the [getItem()](form/api/form_getitem_method.md) method. Use methods to hide or show Container, set and get properties, etc.
+You can manipulate the Container control by using methods of the object returned by the [getItem()](/form/api/form_getitem_method/) method. Use methods to hide or show Container, set and get properties, etc.
 
 ## Events
 
-[List of the Container control events](form/api/api_overview.md#container-events)
+[List of the Container control events](/form/api/api_overview/#container-events)
 
-You can manipulate the Container control by using events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate the Container control by using events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 ## Properties
 
-[List of the Container control properties](form/api/container/api_container_properties.md)
+[List of the Container control properties](/form/api/container/api_container_properties/)
 
 The list of the properties is used to configure the Container control. For example, to specify css, height, width, padding, etc.

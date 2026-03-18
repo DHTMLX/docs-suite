@@ -8,7 +8,7 @@ description: description
 
 ## Getting values of controls
 
-You can get current values/states of Form controls with the help of the [](form/api/form_getvalue_method.md) method. By default, this method returns an object  with names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states.
+You can get current values/states of Form controls with the help of the [getValue()](/form/api/form_getvalue_method/) method. By default, this method returns an object  with names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states.
 
 ~~~jsx
 // default functionality
@@ -29,7 +29,7 @@ const state = form.getValue(true);
 
 ## Setting new values for controls
 
-If you want to set new values or states for Form controls on the fly, there is the [](form/api/form_setvalue_method.md) at your disposal. The method takes as a parameter an object with new values/states of controls. This
+If you want to set new values or states for Form controls on the fly, there is the [setValue()](/form/api/form_setvalue_method/) at your disposal. The method takes as a parameter an object with new values/states of controls. This
 object should contain a set of `key:value` pairs where `key` is either the name of the control or the control's id (if the name attribute is not defined in the config of the control) and `value` is a new value/state of the control:
 
 ~~~jsx
@@ -44,13 +44,13 @@ form.setValue({
 
 ## Enabling/Disabling a form
 
-To enable a form, use the [enable()](form/api/form_enable_method.md) method:
+To enable a form, use the [enable()](/form/api/form_enable_method/) method:
 
 ~~~jsx
 form.enable();
 ~~~
 
-To disable a form, use the [disable()](form/api/form_disable_method.md) method:
+To disable a form, use the [disable()](/form/api/form_disable_method/) method:
 
 ~~~jsx
 form.disable();
@@ -61,13 +61,13 @@ form.disable();
 
 ## Checking if a form is disabled
 
-To check if a form is disabled, call the [isDisabled()](form/api/form_isdisabled_method.md) method:
+To check if a form is disabled, call the [isDisabled()](/form/api/form_isdisabled_method/) method:
 
 ~~~jsx
 form.isDisabled(); // -> true/false
 ~~~
 
-To check whether a form control is disabled, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isDisabled()](form/api/form_isdisabled_method.md) method:
+To check whether a form control is disabled, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isDisabled()](/form/api/form_isdisabled_method/) method:
 
 ~~~jsx
 form.isDisabled("input"); // -> returns true/false
@@ -77,13 +77,13 @@ form.isDisabled("input"); // -> returns true/false
 
 ## Hiding/Showing a form
 
-To hide a form, use the [hide()](form/api/form_hide_method.md) method:
+To hide a form, use the [hide()](/form/api/form_hide_method/) method:
 
 ~~~jsx
 form.hide();
 ~~~
 
-To show a form, use the [show()](form/api/form_show_method.md) method:
+To show a form, use the [show()](/form/api/form_show_method/) method:
 
 ~~~jsx
 form.show();
@@ -93,13 +93,13 @@ form.show();
 
 ## Checking if a form is visible
 
-To check if a form is visible, call the [isVisible()](form/api/form_isvisible_method.md) method:
+To check if a form is visible, call the [isVisible()](/form/api/form_isvisible_method/) method:
 
 ~~~jsx
 form.isVisible(); // -> true/false
 ~~~
 
-To check whether a form control is visible, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isVisible()](form/api/form_isvisible_method.md) method:
+To check whether a form control is visible, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isVisible()](/form/api/form_isvisible_method/) method:
 
 ~~~jsx
 form.isVisible("input"); // -> returns true/false
@@ -107,11 +107,11 @@ form.isVisible("input"); // -> returns true/false
 
 ## Using input masks
 
-The input masks are used to provide entering of values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input-or-a-textarea) method in the Input control API which are used for working with input masks.
+The input masks are used to provide entering of values into the [**Input**](/form/input/) and [**Textarea**](/form/textarea/) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input-or-a-textarea) method in the Input control API which are used for working with input masks.
 
 ### numberMask
 
-The `numberMask` property sets an input mask for entering number values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls. It can be set in two ways:
+The `numberMask` property sets an input mask for entering number values into the [**Input**](/form/input/) and [**Textarea**](/form/textarea/) Form controls. It can be set in two ways:
 
 - as an *object* with the following properties:
     - ***prefix*** - renders a text before the resulting value
@@ -167,7 +167,7 @@ The default config for `inputType: "text"` (the default input type) is the follo
 }
 ~~~
 
-When the `inputType:"text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is *"1000000"*.
+When the `inputType:"text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](/form/api/input/input_getvalue_method/) method is *"1000000"*.
 
 - as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates (depending on the specified `inputType`)
 
@@ -184,7 +184,7 @@ For the above example, the value *100000.01* is converted into *100,000.01* by t
 
 ### patternMask
 
-The `patternMask` property sets an input mask for entering number and string values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls according to a special pattern. It can be set in two ways - as an object or as a string: 
+The `patternMask` property sets an input mask for entering number and string values into the [**Input**](/form/input/) and [**Textarea**](/form/textarea/) Form controls according to a special pattern. It can be set in two ways - as an object or as a string: 
 
 - as an *object* the `patternMask` property has the following properties:
     - **pattern** - (*function* | *string*) allows specifying the necessary mask and change it dynamically, depending on the entered values. Can be set as:
@@ -321,7 +321,7 @@ In the above example:
 
 ### Getting the text value of an input or a textarea
 
-When you need to get the value of an input or a textarea with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the **Input** control or the [`getText()`](form/api/textarea/textarea_gettext_method.md) method of the **Textarea** control.
+When you need to get the value of an input or a textarea with the applied mask, you can use the [`getText()`](/form/api/input/input_gettext_method/) method of the **Input** control or the [`getText()`](/form/api/textarea/textarea_gettext_method/) method of the **Textarea** control.
 It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the control. 
 
 ~~~jsx
@@ -523,7 +523,7 @@ For example, a configuration object for an input with email may look as in:
 ### Validation API
 
 After a user has finished filling out the form according to the specified rules, it's high time to check, whether it is done correctly.
-To validate a form, make use of the [](form/api/form_validate_method.md) method:
+To validate a form, make use of the [validate()](/form/api/form_validate_method/) method:
 
 ~~~jsx
 const result = form.validate();
@@ -535,7 +535,7 @@ The method should return *true*, if all the fields are filled as required, or *f
 
 ## Sending form to server
 
-To send a form to the server, make use of the [](form/api/form_send_method.md) method. It takes three parameters:
+To send a form to the server, make use of the [send()](/form/api/form_send_method/) method. It takes three parameters:
 
 <table>
     <tbody>
@@ -560,7 +560,7 @@ and returns a promise object.
 const send = form.send("myserver.com", "POST");
 ~~~
 
-To control the process of a form sending, you can make use of the related events: [](form/api/form_beforesend_event.md) and [](form/api/form_aftersend_event.md):
+To control the process of a form sending, you can make use of the related events: [BeforeSend](/form/api/form_beforesend_event/) and [AfterSend](/form/api/form_aftersend_event/):
 
 ~~~jsx
 // fires before sending a form to the server
@@ -576,7 +576,7 @@ form.events.on("AfterSend", function(){
 
 ## Clearing form
 
-The API of DHTMLX Form provides you with flexible ways of clearing a form. There is the [](form/api/form_clear_method.md) method that clears a form either fully or partially, depending on the passed parameter.
+The API of DHTMLX Form provides you with flexible ways of clearing a form. There is the [clear()](/form/api/form_clear_method/) method that clears a form either fully or partially, depending on the passed parameter.
 
 - "value" - clears only form values
 - "validation" - clears form validation
@@ -599,7 +599,7 @@ form.clear();
 
 ![](../assets/form/set_focus.png)
 
-Starting from v7.0, you can set focus to a Form control via the [setFocus()](form/api/form_setfocus_method.md) method. It takes either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter:
+Starting from v7.0, you can set focus to a Form control via the [setFocus()](/form/api/form_setfocus_method/) method. It takes either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter:
 
 ~~~jsx
 form.setFocus("input");

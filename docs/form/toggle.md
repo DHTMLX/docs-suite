@@ -35,11 +35,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Toggle control](form/api/toggle/api_toggle_properties.md).
+View [the full list of configuration properties of the Toggle control](/form/api/toggle/api_toggle_properties/).
 
 ## Working with Toggle
 
-You can manipulate a Toggle control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Toggle control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -49,8 +49,8 @@ const value = form.getItem("toggle").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Toggle control](form/api/api_overview.md#toggle-methods).
+Check [the full list of methods of the Toggle control](/form/api/api_overview/#toggle-methods).
 
 ### Events
 
-Check [the full list of events of the Toggle control](form/api/api_overview.md#toggle-events).
+Check [the full list of events of the Toggle control](/form/api/api_overview/#toggle-events).

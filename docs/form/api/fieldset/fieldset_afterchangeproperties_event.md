@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Fieldset con
 @signature: {'afterChangeProperties: (properties: object) => void;'}
 
 @params:
-- `properties: object` - an object with the [configuration attributes](form/api/fieldset/fieldset_setproperties_method.md) of the control and their new values
+- `properties: object` - an object with the [configuration attributes](/form/api/fieldset/fieldset_setproperties_method/) of the control and their new values
 
 @example:
 form.getItem("fieldset").events.on("afterChangeProperties", properties => {

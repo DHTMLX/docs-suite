@@ -57,4 +57,4 @@ form.events.fire(evName,[args]);
 
 ## List of supported events
 
-You can find the full list of Form events in the [API section](form/api/api_overview.md#events).
+You can find the full list of Form events in the [API section](/form/api/api_overview/#events).

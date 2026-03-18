@@ -46,11 +46,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the ToggleGroup control](form/api/togglegroup/api_togglegroup_properties.md).
+View [the full list of configuration properties of the ToggleGroup control](/form/api/togglegroup/api_togglegroup_properties/).
 
 ## Working with ToggleGroup
 
-You can manipulate a ToggleGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a ToggleGroup control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can hide a control on a page:
 
@@ -60,8 +60,8 @@ const value = form.getItem("ToggleGroup").hide();
 
 ### Methods
 
-Check [the full list of methods of the ToggleGroup control](form/api/api_overview.md#togglegroup-methods).
+Check [the full list of methods of the ToggleGroup control](/form/api/api_overview/#togglegroup-methods).
 
 ### Events
 
-Check [the full list of events of the ToggleGroup control](form/api/api_overview.md#togglegroup-events).
+Check [the full list of events of the ToggleGroup control](/form/api/api_overview/#togglegroup-events).

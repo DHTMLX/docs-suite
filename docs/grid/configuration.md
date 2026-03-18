@@ -280,7 +280,7 @@ The default config for the `type:"string"` is the following:
 }
 ~~~
 
-When the `type:"string"` type is specified for a column, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](form/api/form_getvalue_method.md) method is *"1000000"*.
+When the `type:"string"` type is specified for a column, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](/form/api/form_getvalue_method/) method is *"1000000"*.
 
 - as a *boolean* value the `numberMask` property converts the number value displayed in the column into one of the predefined templates (depending on the specified column type):
 

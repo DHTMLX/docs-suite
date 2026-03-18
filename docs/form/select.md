@@ -53,11 +53,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Select control](form/api/select/api_select_properties.md).
+View [the full list of configuration properties of the Select control](/form/api/select/api_select_properties/).
 
 ## Working with Select
 
-You can manipulate a Select control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Select control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -67,8 +67,8 @@ const value = form.getItem("select").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Select control](form/api/api_overview.md#select-methods).
+Check [the full list of methods of the Select control](/form/api/api_overview/#select-methods).
 
 ### Events
 
-Check [the full list of events of the Select control](form/api/api_overview.md#select-events).
+Check [the full list of events of the Select control](/form/api/api_overview/#select-events).

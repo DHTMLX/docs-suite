@@ -61,6 +61,6 @@ The returned object of the **SimpleVault** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/simplevault/api_simplevault_properties.md).
+You will find the description of these properties [here](/form/api/simplevault/api_simplevault_properties/).
 
 @changelog: added in v7.0

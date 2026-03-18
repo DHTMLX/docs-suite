@@ -87,6 +87,6 @@ The returned object of a **radio button** of the RadioGroup control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/radiogroup/api_radiogroup_properties.md).
+You will find the description of these properties [here](/form/api/radiogroup/api_radiogroup_properties/).
 
 @changelog: added in v7.0

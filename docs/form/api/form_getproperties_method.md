@@ -150,7 +150,7 @@ The returned object of the **Avatar** control can contain the following properti
 }
 ~~~
 
-You will find the description of these properties [here](form/api/avatar/api_avatar_properties.md).
+You will find the description of these properties [here](/form/api/avatar/api_avatar_properties/).
 
 ## Button
 
@@ -175,7 +175,7 @@ The returned object of the **Button** control can contain the following properti
 }
 ~~~
 
-You will find the description of these properties [here](form/api/button/api_button_properties.md).
+You will find the description of these properties [here](/form/api/button/api_button_properties/).
 
 ## DatePicker
 
@@ -213,7 +213,7 @@ The returned object of the **DatePicker** control can contain the following prop
 }
 ~~~
 
-You will find the description of these properties [here](form/api/calendar/api_calendar_properties.md).
+You will find the description of these properties [here](/form/api/calendar/api_calendar_properties/).
 
 ## Checkbox
 
@@ -238,7 +238,7 @@ The returned object of the **Checkbox** control can contain the following proper
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox/api_checkbox_properties.md).
+You will find the description of these properties [here](/form/api/checkbox/api_checkbox_properties/).
 
 ## CheckboxGroup
 
@@ -263,7 +263,7 @@ The returned object of the **CheckboxGroup** control can contain the following p
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox_group/api_checkboxgroup_properties.md).
+You will find the description of these properties [here](/form/api/checkbox_group/api_checkboxgroup_properties/).
 
 ### Checkbox properties
 
@@ -279,7 +279,7 @@ The returned object of a **checkbox** of the **CheckboxGroup** control can conta
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox_group/api_checkboxgroup_properties.md).
+You will find the description of these properties [here](/form/api/checkbox_group/api_checkboxgroup_properties/).
 
 ## ColorPicker
 
@@ -311,7 +311,7 @@ The returned object of the **ColorPicker** control can contain the following pro
 }
 ~~~
 
-You will find the description of these properties [here](form/api/colorpicker/api_colorpicker_properties.md).
+You will find the description of these properties [here](/form/api/colorpicker/api_colorpicker_properties/).
 
 ## Combo
 
@@ -346,7 +346,7 @@ The returned object of the **Combo** control can contain the following propertie
 }
 ~~~
 
-You will find the description of these properties [here](form/api/combo/api_combo_properties.md).
+You will find the description of these properties [here](/form/api/combo/api_combo_properties/).
 
 ## Container
 
@@ -361,7 +361,7 @@ The returned object of the **Container** control can contain the following prope
 }
 ~~~
 
-You will find the description of these properties [here](form/api/container/api_container_properties.md).
+You will find the description of these properties [here](/form/api/container/api_container_properties/).
 
 ## Fieldset
 
@@ -380,7 +380,7 @@ The returned object of the **Fieldset** control can contain the following proper
 }
 ~~~
 
-You will find the description of these properties [here](form/api/fieldset/api_fieldset_properties.md).
+You will find the description of these properties [here](/form/api/fieldset/api_fieldset_properties/).
 
 ## Input
 
@@ -414,7 +414,7 @@ The returned object of the **Input** control can contain the following propertie
 }
 ~~~
 
-You will find the description of these properties [here](form/api/input/api_input_properties.md).
+You will find the description of these properties [here](/form/api/input/api_input_properties/).
 
 ## RadioGroup
 
@@ -439,7 +439,7 @@ The returned object of the **RadioGroup** control can contain the following prop
 }
 ~~~
 
-You will find the description of these properties [here](form/api/radiogroup/api_radiogroup_properties.md).
+You will find the description of these properties [here](/form/api/radiogroup/api_radiogroup_properties/).
 
 ### RadioButton properties
 
@@ -455,7 +455,7 @@ The returned object of a **radio button** of the **RadioGroup** control can cont
 }
 ~~~
 
-You will find the description of these properties [here](form/api/radiogroup/api_radiogroup_properties.md).
+You will find the description of these properties [here](/form/api/radiogroup/api_radiogroup_properties/).
 
 ## Select
 
@@ -480,7 +480,7 @@ The returned object of the **Select** control can contain the following properti
 }
 ~~~
 
-You will find the description of these properties [here](form/api/select/api_select_properties.md).
+You will find the description of these properties [here](/form/api/select/api_select_properties/).
 
 ## SimpleVault
 
@@ -513,7 +513,7 @@ The returned object of the **SimpleVault** control can contain the following pro
 }
 ~~~
 
-You will find the description of these properties [here](form/api/simplevault/api_simplevault_properties.md).
+You will find the description of these properties [here](/form/api/simplevault/api_simplevault_properties/).
 
 ## Slider
 
@@ -543,7 +543,7 @@ The returned object of the **Slider** control can contain the following properti
 }
 ~~~
 
-You will find the description of these properties [here](form/api/slider/api_slider_properties.md).
+You will find the description of these properties [here](/form/api/slider/api_slider_properties/).
 
 ## Spacer
 
@@ -558,7 +558,7 @@ The returned object of the **Spacer** control can contain the following properti
 }
 ~~~
 
-You will find the description of these properties [here](form/api/spacer/api_spacer_properties.md).
+You will find the description of these properties [here](/form/api/spacer/api_spacer_properties/).
 
 ## Text
 
@@ -579,7 +579,7 @@ The returned object of the **Text** control can contain the following properties
 }
 ~~~
 
-You will find the description of these properties [here](form/api/text/api_text_properties.md).
+You will find the description of these properties [here](/form/api/text/api_text_properties/).
 
 ## Textarea
 
@@ -608,7 +608,7 @@ The returned object of the **Textarea** control can contain the following proper
 }
 ~~~
 
-You will find the description of these properties [here](form/api/textarea/api_textarea_properties.md).
+You will find the description of these properties [here](/form/api/textarea/api_textarea_properties/).
 
 ## TimePicker
 
@@ -639,7 +639,7 @@ The returned object of the **TimePicker** control can contain the following prop
 }
 ~~~
 
-You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
+You will find the description of these properties [here](/form/api/timepicker/api_timepicker_properties/).
 
 ## Toggle
 
@@ -660,7 +660,7 @@ The returned object of the **Toggle** control can contain the following properti
 }
 ~~~
 
-You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
+You will find the description of these properties [here](/form/api/toggle/api_toggle_properties/).
 
 ## ToggleGroup
 
@@ -679,7 +679,7 @@ The returned object of the **ToggleGroup** control can contain the following pro
 }
 ~~~
 
-You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of these properties [here](/form/api/togglegroup/api_togglegroup_properties/).
 
 ### Toggle properties
 
@@ -696,9 +696,9 @@ The returned object of a **toggle** of the **ToggleGroup** control can contain t
 }
 ~~~
 
-You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of these properties [here](/form/api/togglegroup/api_togglegroup_properties/).
 
-**Related API**: [setProperties()](form/api/form_setproperties_method.md)
+**Related API**: [setProperties()](/form/api/form_setproperties_method/)
 
 @changelog: added in v7.0
 

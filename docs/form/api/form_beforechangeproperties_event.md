@@ -12,7 +12,7 @@ description: You can explore the beforeChangeProperties event of Form in the doc
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
-- `properties: object` - an object with [configuration attributes](form/api/form_setproperties_method.md) of the control and their new values
+- `properties: object` - an object with [configuration attributes](/form/api/form_setproperties_method/) of the control and their new values
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

@@ -33,4 +33,4 @@ The **value** array can contain a set of files to load. Each file object can con
 - **request** - (*object*) optional, an XMLHttpRequest object sent to the server when an upload begins
 - **name** - (*string*) optional, the name of the file including the extension (for adding files from the server)
 - **path** - (*string*) optional, the path to the file on the computer starting from the name of the folder (in case a folder with files is added)
-- **[key:string]** - optional, any *key:value* pair received as a server response (if the [updateFromResponse](form/api/simplevault/api_simplevault_properties.md) property is enabled)
+- **[key:string]** - optional, any *key:value* pair received as a server response (if the [updateFromResponse](/form/api/simplevault/api_simplevault_properties/) property is enabled)

@@ -38,7 +38,7 @@ const state = form.getValue();
 // -> {"id":"John Doe"}
 ~~~
 
-2\. Starting with v7.0, the type of the returned value for the **TimePicker** control depends on the applied [valueFormat](form/timepicker.md#adding-timepicker) and [timeFormat](form/timepicker.md#adding-timepicker):
+2\. Starting with v7.0, the type of the returned value for the **TimePicker** control depends on the applied [valueFormat](/form/timepicker/#adding-timepicker) and [timeFormat](/form/timepicker/#adding-timepicker):
 
 - If `valueFormat: "string"`  and `timeFormat:24` are specified, a return string value will include just the hour and minutes: "00:39"
 - If `valueFormat: "string"`  and `timeFormat:12` are specified, a return string value will include hour, minutes, and am/pm identifiers: "06:00AM"

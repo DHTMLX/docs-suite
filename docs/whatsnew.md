@@ -537,9 +537,9 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 
 #### Form
 
-- The ability to [specify patternMask/numberMask for the Input and Textarea controls](form/work_with_form.md#using-input-masks)
-- The new [`getText()`](form/api/input/input_gettext_method.md) method for getting the text value of an input
-- The new [`getText()`](form/api/textarea/textarea_gettext_method.md) method for getting the text value of a textarea
+- The ability to [specify patternMask/numberMask for the Input and Textarea controls](/form/work_with_form/#using-input-masks)
+- The new [`getText()`](/form/api/input/input_gettext_method/) method for getting the text value of an input
+- The new [`getText()`](/form/api/textarea/textarea_gettext_method/) method for getting the text value of a textarea
 
 #### Grid
 
@@ -914,7 +914,7 @@ Released on October 23, 2023
 
 #### Form. Container
 
-- The control's [configuration object](form/api/container/api_container_properties.md) is extended with a set of properties that allow adding and controlling the **label**
+- The control's [configuration object](/form/api/container/api_container_properties/) is extended with a set of properties that allow adding and controlling the **label**
 
 #### Grid/TreeGrid
 
@@ -1042,9 +1042,9 @@ Released on August 29, 2023
 
 #### Form
 
-- New [Avatar](form/avatar.md) control
-- New [Fieldset](form/fieldset.md) control
-- New [Toggle](form/toggle.md) and [ToggleGroup](form/togglegroup.md) controls
+- New [Avatar](/form/avatar/) control
+- New [Fieldset](/form/fieldset/) control
+- New [Toggle](/form/toggle/) and [ToggleGroup](/form/togglegroup/) controls
 
 ### Updates
 
@@ -1335,22 +1335,22 @@ Released on February 24, 2023
 
 #### Form
 
-- New [`beforeChange`](form/api/form_beforechange_event.md) event
+- New [`beforeChange`](/form/api/form_beforechange_event/) event
 
 #### Form controls
 
 - New events:
-  - Datepicker [`beforeChange`](form/api/calendar/calendar_beforechange_event.md) event
-  - Checkbox [`beforeChange`](form/api/checkbox/checkbox_beforechange_event.md) event
-  - CheckboxGroup [`beforeChange`](form/api/checkbox_group/checkboxgroup_beforechange_event.md) event
-  - Colorpicker [`beforeChange`](form/api/colorpicker/colorpicker_beforechange_event.md) event
-  - Combo [`beforeChange`](form/api/combo/combo_beforechange_event.md) event
-  - Input [`beforeChange`](form/api/input/input_beforechange_event.md) event
-  - Radiogroup [`beforeChange`](form/api/radiogroup/radiogroup_beforechange_event.md) event
-  - Select [`beforeChange`](form/api/select/select_beforechange_event.md) and [`beforeChangeOptions`](form/api/select/select_beforechangeoptions_event.md) events
-  - Slider [`beforeChange`](form/api/slider/slider_beforechange_event.md) event
-  - Textarea [`beforeChange`](form/api/textarea/textarea_beforechange_event.md) event
-  - Timepicker [`beforeChange`](form/api/timepicker/timepicker_beforechange_event.md) event
+  - Datepicker [`beforeChange`](/form/api/calendar/calendar_beforechange_event/) event
+  - Checkbox [`beforeChange`](/form/api/checkbox/checkbox_beforechange_event/) event
+  - CheckboxGroup [`beforeChange`](/form/api/checkbox_group/checkboxgroup_beforechange_event/) event
+  - Colorpicker [`beforeChange`](/form/api/colorpicker/colorpicker_beforechange_event/) event
+  - Combo [`beforeChange`](/form/api/combo/combo_beforechange_event/) event
+  - Input [`beforeChange`](/form/api/input/input_beforechange_event/) event
+  - Radiogroup [`beforeChange`](/form/api/radiogroup/radiogroup_beforechange_event/) event
+  - Select [`beforeChange`](/form/api/select/select_beforechange_event/) and [`beforeChangeOptions`](/form/api/select/select_beforechangeoptions_event/) events
+  - Slider [`beforeChange`](/form/api/slider/slider_beforechange_event/) event
+  - Textarea [`beforeChange`](/form/api/textarea/textarea_beforechange_event/) event
+  - Timepicker [`beforeChange`](/form/api/timepicker/timepicker_beforechange_event/) event
 
 #### Grid
 
@@ -1406,38 +1406,38 @@ Released on February 24, 2023
 
 #### Form
 
-- New `id` parameter is added for Form events: [`afterHide`](form/api/form_afterhide_event.md), [`afterShow`](form/api/form_aftershow_event.md), [`beforeHide`](form/api/form_beforehide_event.md), [`beforeShow`](form/api/form_beforeshow_event.md)
+- New `id` parameter is added for Form events: [`afterHide`](/form/api/form_afterhide_event/), [`afterShow`](/form/api/form_aftershow_event/), [`beforeHide`](/form/api/form_beforehide_event/), [`beforeShow`](/form/api/form_beforeshow_event/)
 
 #### Form. CheckboxGroup control
 
 - Now it is possible to hide/show not only the whole control but also its separate checkboxes:
-    - new `id` parameter is added for CheckboxGroup methods: [`hide()`](form/api/checkbox_group/checkboxgroup_hide_method.md) and [`show()`](form/api/checkbox_group/checkboxgroup_show_method.md)
-    - new `id` parameter is added for CheckboxGroup events: [`afterHide`](form/api/checkbox_group/checkboxgroup_afterhide_event.md), [`afterShow`](form/api/checkbox_group/checkboxgroup_aftershow_event.md), [`beforeHide`](form/api/checkbox_group/checkboxgroup_beforehide_event.md), [`beforeShow`](form/api/checkbox_group/checkboxgroup_beforeshow_event.md)
+    - new `id` parameter is added for CheckboxGroup methods: [`hide()`](/form/api/checkbox_group/checkboxgroup_hide_method/) and [`show()`](/form/api/checkbox_group/checkboxgroup_show_method/)
+    - new `id` parameter is added for CheckboxGroup events: [`afterHide`](/form/api/checkbox_group/checkboxgroup_afterhide_event/), [`afterShow`](/form/api/checkbox_group/checkboxgroup_aftershow_event/), [`beforeHide`](/form/api/checkbox_group/checkboxgroup_beforehide_event/), [`beforeShow`](/form/api/checkbox_group/checkboxgroup_beforeshow_event/)
 
 - Now it is possible to enable/disable and check visibility not only of the whole control but also of its separate checkboxes:
-    - new `id` parameter is added for CheckboxGroup methods: [`enable()`](form/api/checkbox_group/checkboxgroup_enable_method.md), [`disable()`](form/api/checkbox_group/checkboxgroup_disable_method.md), [`isVisible()`](form/api/checkbox_group/checkboxgroup_isvisible_method.md), [`isDisabled()`](form/api/checkbox_group/checkboxgroup_isdisabled_method.md)
+    - new `id` parameter is added for CheckboxGroup methods: [`enable()`](/form/api/checkbox_group/checkboxgroup_enable_method/), [`disable()`](/form/api/checkbox_group/checkboxgroup_disable_method/), [`isVisible()`](/form/api/checkbox_group/checkboxgroup_isvisible_method/), [`isDisabled()`](/form/api/checkbox_group/checkboxgroup_isdisabled_method/)
 
 #### Form. Container control
 
--  The `value` parameter is removed from Container events: [`afterhide`](form/api/container/container_afterhide_event.md), [`aftershow`](form/api/container/container_afterhide_event.md), [`beforehide`](form/api/container/container_beforehide_event.md), [`beforeshow`](form/api/container/container_beforeshow_event.md)
+-  The `value` parameter is removed from Container events: [`afterhide`](/form/api/container/container_afterhide_event/), [`aftershow`](/form/api/container/container_afterhide_event/), [`beforehide`](/form/api/container/container_beforehide_event/), [`beforeshow`](/form/api/container/container_beforeshow_event/)
 
 #### Form. RadioGroup control
 
 - Now it is possible to hide/show not only the whole control but also its separate radio buttons:
-    - new `id` parameter is added for RadioGroup methods: [`hide()`](form/api/radiogroup/radiogroup_hide_method.md) and [`show()`](form/api/radiogroup/radiogroup_show_method.md)
-    - new `id` parameter is added for RadioGroup events: [`afterHide`](form/api/radiogroup/radiogroup_afterhide_event.md), [`afterShow`](form/api/radiogroup/radiogroup_aftershow_event.md), [`beforeHide`](form/api/radiogroup/radiogroup_beforehide_event.md), [`beforeShow`](form/api/radiogroup/radiogroup_beforeshow_event.md)
+    - new `id` parameter is added for RadioGroup methods: [`hide()`](/form/api/radiogroup/radiogroup_hide_method/) and [`show()`](/form/api/radiogroup/radiogroup_show_method/)
+    - new `id` parameter is added for RadioGroup events: [`afterHide`](/form/api/radiogroup/radiogroup_afterhide_event/), [`afterShow`](/form/api/radiogroup/radiogroup_aftershow_event/), [`beforeHide`](/form/api/radiogroup/radiogroup_beforehide_event/), [`beforeShow`](/form/api/radiogroup/radiogroup_beforeshow_event/)
 
 - Now it is possible to enable/disable and check visibility not only of the whole control but also of its separate radio buttons:
-    - new `id` parameter is added for RadioGroup methods: [`enable()`](form/api/checkbox_group/checkboxgroup_enable_method.md), [`disable()`](form/api/checkbox_group/checkboxgroup_disable_method.md), [`isVisible()`](form/api/checkbox_group/checkboxgroup_isvisible_method.md), [`isDisabled()`](form/api/checkbox_group/checkboxgroup_isdisabled_method.md)
+    - new `id` parameter is added for RadioGroup methods: [`enable()`](/form/api/checkbox_group/checkboxgroup_enable_method/), [`disable()`](/form/api/checkbox_group/checkboxgroup_disable_method/), [`isVisible()`](/form/api/checkbox_group/checkboxgroup_isvisible_method/), [`isDisabled()`](/form/api/checkbox_group/checkboxgroup_isdisabled_method/)
 
 #### Form. Select control
 
 - Now it is possible to enable/disable and check visibility not only of the whole control but also of its separate radio buttons:
-    - new `value` parameter is added for Select methods: [`enable()`](form/api/select/select_enable_method.md), [`disable()`](form/api/select/select_disable_method.md), [`isDisabled()`](form/api/select/select_isdisabled_method.md)
+    - new `value` parameter is added for Select methods: [`enable()`](/form/api/select/select_enable_method/), [`disable()`](/form/api/select/select_disable_method/), [`isDisabled()`](/form/api/select/select_isdisabled_method/)
 
 #### Form. Spacer control
 
--  The `value` parameter is removed from Spacer events: [`afterhide`](form/api/spacer/spacer_afterhide_event.md), [`aftershow`](form/api/spacer/spacer_afterhide_event.md), [`beforehide`](form/api/spacer/spacer_beforehide_event.md), [`beforeshow`](form/api/spacer/spacer_beforeshow_event.md)
+-  The `value` parameter is removed from Spacer events: [`afterhide`](/form/api/spacer/spacer_afterhide_event/), [`aftershow`](/form/api/spacer/spacer_afterhide_event/), [`beforehide`](/form/api/spacer/spacer_beforehide_event/), [`beforeshow`](/form/api/spacer/spacer_beforeshow_event/)
 
 #### Grid/TreeGrid
 
@@ -1500,7 +1500,7 @@ Released on November 3, 2022
 ### Fixes
 
 - DataCollection. Fix work of the [`save()`](data_collection/api/datacollection_save_method.md) method which thrown an error in some cases
-- Form. Combo control. Fix the issue which caused data of the control to be reset after applying the [`setProperties()`](form/api/combo/combo_setproperties_method.md) method
+- Form. Combo control. Fix the issue which caused data of the control to be reset after applying the [`setProperties()`](/form/api/combo/combo_setproperties_method/) method
 - Grid. Fix the incorrect display of values for options of the combobox
 - Grid. Fix the issue with the selectFilter of a column which appeared after resizing the column
 - Grid. Fix the type of data returned by the [`getSpan()`](grid/api/grid_getspan_method.md) method
@@ -1688,8 +1688,8 @@ Released on January 19, 2022
 
 #### Form. Combo control
 
-- The ability [to allow users to add new values into the list of combobox options from UI](/combobox/configuration/#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
-- The ability to add a new item into the Combo control via the [`addOption()`](/combobox/api/combobox_addoption_method/) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md/#working-with-the-dhtmlxcombobox-widget)
+- The ability [to allow users to add new values into the list of combobox options from UI](/combobox/configuration/#editable-combobox) via the [`newOptions`](/form/api/combo/api_combo_properties/) property
+- The ability to add a new item into the Combo control via the [`addOption()`](/combobox/api/combobox_addoption_method/) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](/form/combo//#working-with-the-dhtmlxcombobox-widget)
 
 #### Grid
 
@@ -1720,8 +1720,8 @@ Released on January 19, 2022
 - Chart. Fix the issue with the type of the [`value`](/chart/data_loading/#preparing-data-set) property in a data set
 - Custom Scroll. Fix the incorrect position of scroll after scrolling the grid attached to the tabbar and changing the tabs
 - Form. Fix the issue with enabling the disabled RadioGroup control
-- Form. Fix the issue with the Textarea control. Now the [`required`](form/api/textarea/api_textarea_properties.md) property doesn't take `value: null` as a valid
-- Form. Input control. Fix the issue with display of excess whitespace in the output value of the [`Input`](form/api/input/input_input_event.md) event
+- Form. Fix the issue with the Textarea control. Now the [`required`](/form/api/textarea/api_textarea_properties/) property doesn't take `value: null` as a valid
+- Form. Input control. Fix the issue with display of excess whitespace in the output value of the [`Input`](/form/api/input/input_input_event/) event
 - Grid, Pagination. Fix the incorrect work of Pagination if the first column of the grid is hidden
 - Grid. Fix the incorrect display of actual values specified in the "select", "combobox", or "multiselect" editor when opening the editor
 - Grid. Fix the incorrect loading of string values from XML file
@@ -1767,8 +1767,8 @@ Released on October 13, 2021
 ### Fixes
 
 - DataCollection. Now the [save()](data_collection/api/datacollection_save_method.md) method of DataCollection sends `PUT` request to the backend after adding new data to the component, and `POST` one after editing the data
-- Form. Combo control. Fix the issue which caused errors to appear in the console after calling the [setProperties()](form/api/combo/combo_setproperties_method.md) method of the control
-- Form. Fix the issue which caused the [send()](form/api/form_send_method.md) method to accept only one success HTTP status code which is 200. Now the method can accept other 2xx codes. 
+- Form. Combo control. Fix the issue which caused errors to appear in the console after calling the [setProperties()](/form/api/combo/combo_setproperties_method/) method of the control
+- Form. Fix the issue which caused the [send()](/form/api/form_send_method/) method to accept only one success HTTP status code which is 200. Now the method can accept other 2xx codes. 
 - Form. TimePicker control. Fix the issue which caused the value of the control not being updated after the value is selected in the timepicker when working in Firefox
 - Grid. Fix issues with touch events for the in-header filters of the Grid columns
 - Grid. Fix the incorrect work of key navigation in the components when they are attached into the grid which is attached into a layout cell
@@ -1840,17 +1840,17 @@ Check the [Migration article](migration.md/#71---72) to keep in step with the la
 
 #### Form
 
-- New [Container control](form/container.md) to attach HTML code or the DHTMLX widgets is added (Pro version)
-- New [blur()](form/api/form_blur_method.md) method is added
-- New events are added: [blur](form/api/form_blur_event.md), [focus](form/api/form_focus_event.md), [keydown](form/api/form_keydown_event.md)
+- New [Container control](/form/container/) to attach HTML code or the DHTMLX widgets is added (Pro version)
+- New [blur()](/form/api/form_blur_method/) method is added
+- New events are added: [blur](/form/api/form_blur_event/), [focus](/form/api/form_focus_event/), [keydown](/form/api/form_keydown_event/)
 
 #### Form controls
 
-- New "blur()" method of Form controls: [Button](form/api/button/button_blur_method.md), [DatePicker](form/api/calendar/calendar_blur_method.md), [Checkbox](form/api/checkbox/checkbox_blur_method.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_blur_method.md), [ColorPicker](form/api/colorpicker/colorpicker_blur_method.md), [Combo](form/api/combo/combo_blur_method.md), [Input](form/api/input/input_blur_method.md), [RadioGroup](form/api/radiogroup/radiogroup_blur_method.md), [Select](form/api/select/select_blur_method.md), [Slider](form/api/slider/slider_blur_method.md), [Textarea](form/api/textarea/textarea_blur_method.md), [TimePicker](form/api/timepicker/timepicker_blur_method.md)
-- New "focus()" method of Form controls: [Button](form/api/button/button_focus_method.md), [Slider](form/api/slider/slider_focus_method.md)
-- New "blur" event of Form controls: [Button](form/api/button/button_blur_event.md), [DatePicker](form/api/calendar/calendar_blur_event.md), [Checkbox](form/api/checkbox/checkbox_blur_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_blur_event.md), [ColorPicker](form/api/colorpicker/colorpicker_blur_event.md), [Combo](form/api/combo/combo_blur_event.md), [Input](form/api/input/input_blur_event.md), [RadioGroup](form/api/radiogroup/radiogroup_blur_event.md), [Select](form/api/select/select_blur_event.md), [Slider](form/api/slider/slider_blur_event.md), [Textarea](form/api/textarea/textarea_blur_event.md), [TimePicker](form/api/timepicker/timepicker_blur_event.md)
-- New "focus" event of Form controls: [Button](form/api/button/button_focus_event.md), [DatePicker](form/api/calendar/calendar_focus_event.md), [Checkbox](form/api/checkbox/checkbox_focus_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_focus_event.md), [ColorPicker](form/api/colorpicker/colorpicker_focus_event.md), [Combo](form/api/combo/combo_focus_event.md), [Input](form/api/input/input_focus_event.md), [RadioGroup](form/api/radiogroup/radiogroup_focus_event.md), [Select](form/api/select/select_focus_event.md), [Slider](form/api/slider/slider_focus_event.md), [Textarea](form/api/textarea/textarea_focus_event.md), [TimePicker](form/api/timepicker/timepicker_focus_event.md)
-- New "keydown" event of Form controls: [Button](form/api/button/button_keydown_event.md), [DatePicker](form/api/calendar/calendar_keydown_event.md), [Checkbox](form/api/checkbox/checkbox_keydown_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_keydown_event.md), [ColorPicker](form/api/colorpicker/colorpicker_keydown_event.md), [Combo](form/api/combo/combo_keydown_event.md), [Input](form/api/input/input_keydown_event.md), [RadioGroup](form/api/radiogroup/radiogroup_keydown_event.md), [Select](suite/form/api/select/select_keydown_event.md), [Slider](form/api/slider/slider_keydown_event.md), [Textarea](form/api/textarea/textarea_keydown_event.md), [TimePicker](form/api/timepicker/timepicker_keydown_event.md)
+- New "blur()" method of Form controls: [Button](/form/api/button/button_blur_method/), [DatePicker](/form/api/calendar/calendar_blur_method/), [Checkbox](/form/api/checkbox/checkbox_blur_method/), [CheckboxGroup](/form/api/checkbox_group/checkboxgroup_blur_method/), [ColorPicker](/form/api/colorpicker/colorpicker_blur_method/), [Combo](/form/api/combo/combo_blur_method/), [Input](/form/api/input/input_blur_method/), [RadioGroup](/form/api/radiogroup/radiogroup_blur_method/), [Select](/form/api/select/select_blur_method/), [Slider](/form/api/slider/slider_blur_method/), [Textarea](/form/api/textarea/textarea_blur_method/), [TimePicker](/form/api/timepicker/timepicker_blur_method/)
+- New "focus()" method of Form controls: [Button](/form/api/button/button_focus_method/), [Slider](/form/api/slider/slider_focus_method/)
+- New "blur" event of Form controls: [Button](/form/api/button/button_blur_event/), [DatePicker](/form/api/calendar/calendar_blur_event/), [Checkbox](/form/api/checkbox/checkbox_blur_event/), [CheckboxGroup](/form/api/checkbox_group/checkboxgroup_blur_event/), [ColorPicker](/form/api/colorpicker/colorpicker_blur_event/), [Combo](/form/api/combo/combo_blur_event/), [Input](/form/api/input/input_blur_event/), [RadioGroup](/form/api/radiogroup/radiogroup_blur_event/), [Select](/form/api/select/select_blur_event/), [Slider](/form/api/slider/slider_blur_event/), [Textarea](/form/api/textarea/textarea_blur_event/), [TimePicker](/form/api/timepicker/timepicker_blur_event/)
+- New "focus" event of Form controls: [Button](/form/api/button/button_focus_event/), [DatePicker](/form/api/calendar/calendar_focus_event/), [Checkbox](/form/api/checkbox/checkbox_focus_event/), [CheckboxGroup](/form/api/checkbox_group/checkboxgroup_focus_event/), [ColorPicker](/form/api/colorpicker/colorpicker_focus_event/), [Combo](/form/api/combo/combo_focus_event/), [Input](/form/api/input/input_focus_event/), [RadioGroup](/form/api/radiogroup/radiogroup_focus_event/), [Select](/form/api/select/select_focus_event/), [Slider](/form/api/slider/slider_focus_event/), [Textarea](/form/api/textarea/textarea_focus_event/), [TimePicker](/form/api/timepicker/timepicker_focus_event/)
+- New "keydown" event of Form controls: [Button](/form/api/button/button_keydown_event/), [DatePicker](/form/api/calendar/calendar_keydown_event/), [Checkbox](/form/api/checkbox/checkbox_keydown_event/), [CheckboxGroup](/form/api/checkbox_group/checkboxgroup_keydown_event/), [ColorPicker](/form/api/colorpicker/colorpicker_keydown_event/), [Combo](/form/api/combo/combo_keydown_event/), [Input](/form/api/input/input_keydown_event/), [RadioGroup](/form/api/radiogroup/radiogroup_keydown_event/), [Select](suite/form/api/select/select_keydown_event/), [Slider](/form/api/slider/slider_keydown_event/), [Textarea](/form/api/textarea/textarea_keydown_event/), [TimePicker](/form/api/timepicker/timepicker_keydown_event/)
 
 #### Grid
 
@@ -2041,7 +2041,7 @@ Released on April 12, 2021
 
 ### Fixes
 
-- Form. Fix the behavior of [DatePicker](form/calendar.md) control when adding a timepicker into the control
+- Form. Fix the behavior of [DatePicker](/form/calendar/) control when adding a timepicker into the control
 - Calendar. Fix the issue with the [dateFormat](/calendar/api/calendar_dateformat_config/) property that caused AM/PM to be ignored
 - Chart. Fix the issue with the [serieClick](/chart/api/chart_serieclick_event/) event in the Bar chart
 - ComboBox. Fix the issue with filtering
@@ -2217,7 +2217,7 @@ Released on December 21, 2020
 - Fix the incorrect work of the [save()](data_collection/api/datacollection_save_method.md) method of Data Collection
 - Fix the issue with display of sorting icon when applying alignment to Grid columns
 - Fix the issue which caused the item in the filtered state after deleting from the data collection to be still found via the [afterRemove](data_collection/api/datacollection_afterremove_event.md) event
-- Fix the issue which caused the multiple combo options selected not to be numerated when [sending values of Form to the server as Form Data](form/api/form_send_method.md)
+- Fix the issue which caused the multiple combo options selected not to be numerated when [sending values of Form to the server as Form Data](/form/api/form_send_method/)
 
 ## Version 7.0
 
@@ -2257,31 +2257,31 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 #### Form
 
-- The ability [to set focus to a Form control by its id](form/work_with_form.md#setting-focus-to-a-control) via the [setFocus()](form/api/form_setfocus_method.md) method
-- The new [getProperties()](form/api/form_getproperties_method.md) and [setProperties()](form/api/form_setproperties_method.md) methods
-- The new [beforeChangeProperties](form/api/form_beforechangeproperties_event.md) and [afterChangeProperties](form/api/form_afterchangeproperties_event.md) events
-- The new [afterValidate](form/api/form_aftervalidate_event.md) and [beforeValidate](form/api/form_beforevalidate_event.md) events
-- The new [click](form/api/form_click_event.md) event
+- The ability [to set focus to a Form control by its id](/form/work_with_form/#setting-focus-to-a-control) via the [setFocus()](/form/api/form_setfocus_method/) method
+- The new [getProperties()](/form/api/form_getproperties_method/) and [setProperties()](/form/api/form_setproperties_method/) methods
+- The new [beforeChangeProperties](/form/api/form_beforechangeproperties_event/) and [afterChangeProperties](/form/api/form_afterchangeproperties_event/) events
+- The new [afterValidate](/form/api/form_aftervalidate_event/) and [beforeValidate](/form/api/form_beforevalidate_event/) events
+- The new [click](/form/api/form_click_event/) event
 
 #### Form controls
 
-- New Form controls: [CheckboxGroup](form/checkboxgroup.md) and [Spacer](form/spacer.md)
-- New "focus()" method of Form controls: [DatePicker](form/api/calendar/calendar_focus_method.md), [Checkbox](form/api/checkbox/checkbox_focus_method.md), [ColorPicker](form/api/colorpicker/colorpicker_focus_method.md), [Combo](form/api/combo/combo_focus_method.md), [Input](form/api/input/input_focus_method.md), [RadioGroup](form/api/radiogroup/radiogroup_focus_method.md), [Select](form/api/select/select_focus_method.md), [Textarea](form/api/textarea/textarea_focus_method.md), [TimePicker](form/api/timepicker/timepicker_focus_method.md) 
-- The new "getProperties()" and "setProperties()" methods are added for Form controls: [Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api)
-- The Event Systems are added for Form controls: [Button](form/api/api_overview.md#button-events), [DatePicker](form/api/api_overview.md#datepicker-events), [Checkbox](form/api/api_overview.md#checkbox-events), [ColorPicker](form/api/api_overview.md#color-picker-events), [Combo](form/api/api_overview.md#combo-events), [Input](form/api/api_overview.md#input-events), [RadioGroup](form/api/api_overview.md#radiogroup-events), [Select](form/api/api_overview.md#select-events), [Slider](form/api/api_overview.md#slider-events), [Text](form/api/api_overview.md#text-events), [Textarea](form/api/api_overview.md#textarea-events), [TimePicker](form/api/api_overview.md#timepicker-events)
+- New Form controls: [CheckboxGroup](/form/checkboxgroup/) and [Spacer](/form/spacer/)
+- New "focus()" method of Form controls: [DatePicker](/form/api/calendar/calendar_focus_method/), [Checkbox](/form/api/checkbox/checkbox_focus_method/), [ColorPicker](/form/api/colorpicker/colorpicker_focus_method/), [Combo](/form/api/combo/combo_focus_method/), [Input](/form/api/input/input_focus_method/), [RadioGroup](/form/api/radiogroup/radiogroup_focus_method/), [Select](/form/api/select/select_focus_method/), [Textarea](/form/api/textarea/textarea_focus_method/), [TimePicker](/form/api/timepicker/timepicker_focus_method/) 
+- The new "getProperties()" and "setProperties()" methods are added for Form controls: [Button](/form/api/api_overview/#button-api), [DatePicker](/form/api/api_overview/#datepicker-api), [Checkbox](/form/api/api_overview/#checkbox-api), [ColorPicker](/form/api/api_overview/), [Combo](/form/api/api_overview/#combo-api), [Input](/form/api/api_overview/#input-api), [RadioGroup](/form/api/api_overview/#radiogroup-api), [Select](/form/api/api_overview/#select-api), [SimpleVault](/form/api/api_overview/#simple-vault-api), [Slider](/form/api/api_overview/#slider-api), [Text](/form/api/api_overview/#text-api), [Textarea](/form/api/api_overview/#textarea-api), [TimePicker](/form/api/api_overview/#timepicker-api)
+- The Event Systems are added for Form controls: [Button](/form/api/api_overview/#button-events), [DatePicker](/form/api/api_overview/#datepicker-events), [Checkbox](/form/api/api_overview/#checkbox-events), [ColorPicker](/form/api/api_overview/#color-picker-events), [Combo](/form/api/api_overview/#combo-events), [Input](/form/api/api_overview/#input-events), [RadioGroup](/form/api/api_overview/#radiogroup-events), [Select](/form/api/api_overview/#select-events), [Slider](/form/api/api_overview/#slider-events), [Text](/form/api/api_overview/#text-events), [Textarea](/form/api/api_overview/#textarea-events), [TimePicker](/form/api/api_overview/#timepicker-events)
 - SimpleVault control. New events: 
-[AfterHide](form/api/simplevault/simplevault_afterhide_event.md), [AfterShow](form/api/simplevault/simplevault_aftershow_event.md), [AfterValidate](form/api/simplevault/simplevault_aftervalidate_event.md), [BeforeHide](form/api/simplevault/simplevault_beforehide_event.md), [BeforeShow](form/api/simplevault/simplevault_beforeshow_event.md), [BeforeValidate](form/api/simplevault/simplevault_beforevalidate_event.md), [Change](form/api/simplevault/simplevault_change_event.md)
-- Checkbox control. The [isChecked()](form/api/checkbox/checkbox_ischecked_method.md) method and the ["text"](form/api/checkbox/api_checkbox_properties.md) property are added
-- Input control. The new ["minlength", "min", "max"](form/api/input/api_input_properties.md) attributes are added 
-- Input control. The validations for [minimal/maximal values](form/work_with_form.md#minimal-and-maximal-values) and for [number of characters](form/work_with_form.md#number-of-allowed-characters) allowed in the input are added
-- RadioGroup control. The ability to define the initial value via the ["value"](form/api/radiogroup/api_radiogroup_properties.md) attribute
-- RadioGroup control. The ["padding", "label", "labelWidth", "labelPosition", "hiddenLabel", "helpMessage"](form/api/radiogroup/api_radiogroup_properties.md) attributes are added
-- Radio button of the RadioGroup control. The ["text", "padding", "hidden"](form/api/radiogroup/api_radiogroup_properties.md#radiobutton-properties) configuration properties are added
-- Select control. The ability to make an option of the control disabled via the ["disabled" attribute of the "option" property](form/api/select/api_select_properties.md)
-- Text control. The ["inputType"](form/api/text/api_text_properties.md) attribute is added
-- Textarea control. The ["maxlength", "minlength"](form/api/textarea/api_textarea_properties.md) attributes are added
-- Textarea control. The validation for [number of characters](form/work_with_form.md#number-of-allowed-characters) allowed in the textarea field is added 
-- TimePicker control. The ["valueFormat"](form/api/timepicker/api_timepicker_properties.md) attribute is added
+[AfterHide](/form/api/simplevault/simplevault_afterhide_event/), [AfterShow](/form/api/simplevault/simplevault_aftershow_event/), [AfterValidate](/form/api/simplevault/simplevault_aftervalidate_event/), [BeforeHide](/form/api/simplevault/simplevault_beforehide_event/), [BeforeShow](/form/api/simplevault/simplevault_beforeshow_event/), [BeforeValidate](/form/api/simplevault/simplevault_beforevalidate_event/), [Change](/form/api/simplevault/simplevault_change_event/)
+- Checkbox control. The [isChecked()](/form/api/checkbox/checkbox_ischecked_method/) method and the ["text"](/form/api/checkbox/api_checkbox_properties/) property are added
+- Input control. The new ["minlength", "min", "max"](/form/api/input/api_input_properties/) attributes are added 
+- Input control. The validations for [minimal/maximal values](/form/work_with_form/#minimal-and-maximal-values) and for [number of characters](/form/work_with_form/#number-of-allowed-characters) allowed in the input are added
+- RadioGroup control. The ability to define the initial value via the ["value"](/form/api/radiogroup/api_radiogroup_properties/) attribute
+- RadioGroup control. The ["padding", "label", "labelWidth", "labelPosition", "hiddenLabel", "helpMessage"](/form/api/radiogroup/api_radiogroup_properties/) attributes are added
+- Radio button of the RadioGroup control. The ["text", "padding", "hidden"](/form/api/radiogroup/api_radiogroup_properties/#radiobutton-properties) configuration properties are added
+- Select control. The ability to make an option of the control disabled via the ["disabled" attribute of the "option" property](/form/api/select/api_select_properties/)
+- Text control. The ["inputType"](/form/api/text/api_text_properties/) attribute is added
+- Textarea control. The ["maxlength", "minlength"](/form/api/textarea/api_textarea_properties/) attributes are added
+- Textarea control. The validation for [number of characters](/form/work_with_form/#number-of-allowed-characters) allowed in the textarea field is added 
+- TimePicker control. The ["valueFormat"](/form/api/timepicker/api_timepicker_properties/) attribute is added
 
 #### Grid
 
@@ -2360,17 +2360,17 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 ### Updates
 
-- Form. The [afterHide](form/api/form_afterhide_event.md), [afterShow](form/api/form_aftershow_event.md), [beforeHide](form/api/form_beforehide_event.md), [beforeShow](form/api/form_beforeshow_event.md) events are updated - the `id` parameter is replaced with the `name` and `value` ones.
-- Form. The [validate()](form/api/form_validate_method.md) method is updated - now the method validates only the required fields or the fields that contain validation rules. The new "silent" parameter is added.
+- Form. The [afterHide](/form/api/form_afterhide_event/), [afterShow](/form/api/form_aftershow_event/), [beforeHide](/form/api/form_beforehide_event/), [beforeShow](/form/api/form_beforeshow_event/) events are updated - the `id` parameter is replaced with the `name` and `value` ones.
+- Form. The [validate()](/form/api/form_validate_method/) method is updated - now the method validates only the required fields or the fields that contain validation rules. The new "silent" parameter is added.
 - Form and Form controls. The types of the "width/height" properties are updated - the *number* and *"content"* types are added.
-- Form controls. The "value" attribute is updated - the *number* type is added ([Input](form/api/input/api_input_properties.md)/[Text](form/api/text/api_text_properties.md)/[Select](form/api/select/api_select_properties.md)) 
-- Form controls. The "validate()" method is updated - the new "silent" and "validateValue" parameters are added ([DatePicker](form/api/calendar/calendar_validate_method.md), [ColorPicker](form/api/colorpicker/colorpicker_validate_method.md), [Combo](form/api/combo/combo_validate_method.md), [Input](form/api/input/input_validate_method.md), [Textarea](form/api/textarea/textarea_validate_method.md), [TimePicker](form/api/timepicker/timepicker_validate_method.md))
-- Checkbox control of Form. The [getValue()](form/api/checkbox/checkbox_getvalue_method.md) method is updated
-- Input control of Form. The ability to define the type for the input field via the ["inputType"](form/api/input/api_input_properties.md) attribute
-- TimePicker control of Form. The ["value"](form/timepicker.md#adding-timepicker) attribute is updated - the ability to specify the value as a Date, a number, an array, an object is added.
-- SimpleVault control of Form. The [beforeUploadFile](form/api/simplevault/simplevault_beforeuploadfile_event.md), [uploadBegin](form/api/simplevault/simplevault_uploadbegin_event.md), [uploadComplete](form/api/simplevault/simplevault_uploadcomplete_event.md), [uploadFail](form/api/simplevault/simplevault_uploadfail_event.md), [uploadFile](form/api/simplevault/simplevault_uploadfile_event.md), [uploadProgress](form/api/simplevault/simplevault_uploadprogress_event.md) events are improved
-- TimePicker control of Form. The [getValue()](form/api/timepicker/timepicker_getvalue_method.md)/ [setValue()](form/api/timepicker/timepicker_setvalue_method.md) methods are updated
-- Form. The [getValue()](form/api/form_getvalue_method.md) method is updated
+- Form controls. The "value" attribute is updated - the *number* type is added ([Input](/form/api/input/api_input_properties/)/[Text](/form/api/text/api_text_properties/)/[Select](/form/api/select/api_select_properties/)) 
+- Form controls. The "validate()" method is updated - the new "silent" and "validateValue" parameters are added ([DatePicker](/form/api/calendar/calendar_validate_method/), [ColorPicker](/form/api/colorpicker/colorpicker_validate_method/), [Combo](/form/api/combo/combo_validate_method/), [Input](/form/api/input/input_validate_method/), [Textarea](/form/api/textarea/textarea_validate_method/), [TimePicker](/form/api/timepicker/timepicker_validate_method/))
+- Checkbox control of Form. The [getValue()](/form/api/checkbox/checkbox_getvalue_method/) method is updated
+- Input control of Form. The ability to define the type for the input field via the ["inputType"](/form/api/input/api_input_properties/) attribute
+- TimePicker control of Form. The ["value"](/form/timepicker/#adding-timepicker) attribute is updated - the ability to specify the value as a Date, a number, an array, an object is added.
+- SimpleVault control of Form. The [beforeUploadFile](/form/api/simplevault/simplevault_beforeuploadfile_event/), [uploadBegin](/form/api/simplevault/simplevault_uploadbegin_event/), [uploadComplete](/form/api/simplevault/simplevault_uploadcomplete_event/), [uploadFail](/form/api/simplevault/simplevault_uploadfail_event/), [uploadFile](/form/api/simplevault/simplevault_uploadfile_event/), [uploadProgress](/form/api/simplevault/simplevault_uploadprogress_event/) events are improved
+- TimePicker control of Form. The [getValue()](/form/api/timepicker/timepicker_getvalue_method/)/ [setValue()](/form/api/timepicker/timepicker_setvalue_method/) methods are updated
+- Form. The [getValue()](/form/api/form_getvalue_method/) method is updated
 - Grid/TreeGrid. The "splitAt" configuration property is replaced by the "leftSplit" one
 - [Grid](grid/api/grid_beforecolumndrag_event.md)/[TreeGrid](grid/api/grid_beforecolumndrag_event.md). The "beforeColumnDrag" event is updated - the `id` parameter is replaced with the `data` and `e` ones.
 - [Grid](grid/api/grid_beforecolumndrop_event.md)/[TreeGrid](grid/api/grid_beforecolumndrop_event.md). The "beforeColumnDrop" event is updated - the `sourceId`/ `targetId` parameters are replaced with the `data` and `e` ones.
@@ -2397,7 +2397,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - Issue with the [update()](data_collection/api/datacollection_update_method.md) method of Data Collection
 - Issue with the [update()](tree_collection/api/treecollection_update_method.md) method of Tree Collection
 - The issue which caused the width of Grid columns not to be changed via the configuration when the [autoWidth](grid/api/grid_autowidth_config.md) option is enabled and Grid is attached to a Tabbar cell
-- The issue with the ability to use numeric fields of Form without their validation. Now it is possible to define the number type for the input via the ["inputType"](form/api/input/api_input_properties.md) attribute.
+- The issue with the ability to use numeric fields of Form without their validation. Now it is possible to define the number type for the input via the ["inputType"](/form/api/input/api_input_properties/) attribute.
 - The incorrect work of the [autoEmptyRow](grid/api/grid_autoemptyrow_config.md) configuration property of Grid which caused empty rows to appear at the top and at the bottom of the Grid after [loading data from an external file](grid/data_loading.md#external-data-loading)
 - The incorrect work of the [save()](data_collection/api/datacollection_save_method.md) method of Data Collection
 - Issue with the [add()](tree_collection/api/treecollection_add_method.md) method of Tree Collection when using in Tree/ TreeGrid
@@ -2546,13 +2546,13 @@ Released on June 16, 2020
 
 #### Form
 
-- New methods of the [Select control of Form](form/api/api_overview.md#select-api) are added: getOptions(), setOptions()
-- The ability to [make Form hidden](form/configuration.md#making-form-hidden)
-- The ability to make a Form control ([Button](form/button.md), [DatePicker](form/calendar.md), [Checkbox](form/checkbox.md), [ColorPicker](form/colorpicker.md), [Combo](form/combo.md), [Input](form/input.md), [RadioGroup](form/radiogroup.md), [Select](form/select.md), [SimpleVault](form/simplevault.md), [Slider](form/slider.md), [Text](form/text.md), [Textarea](form/textarea.md), [TimePicker](form/timepicker.md)) hidden via the `hidden` configuration attribute of the control
-- New methods of Form are added: [hide()](form/api/form_hide_method.md), [show()](form/api/form_show_method.md), [isVisible()](form/api/form_isvisible_method.md)
-- The [afterHide](form/api/form_afterhide_event.md), [afterShow](form/api/form_aftershow_event.md), [beforeHide](form/api/form_beforehide_event.md), [beforeShow](form/api/form_beforeshow_event.md) events are added
-- The ability to hide/show Form controls ([Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api)) via the corresponding hide()/show() methods of the controls
-- [New methods](form/api/api_overview.md#simple-vault-api) of the SimpleVault control of Form are added: selectFile(), send(), setValue()
+- New methods of the [Select control of Form](/form/api/api_overview/#select-api) are added: getOptions(), setOptions()
+- The ability to [make Form hidden](/form/configuration/#making-form-hidden)
+- The ability to make a Form control ([Button](/form/button/), [DatePicker](/form/calendar/), [Checkbox](/form/checkbox/), [ColorPicker](/form/colorpicker/), [Combo](/form/combo/), [Input](/form/input/), [RadioGroup](/form/radiogroup/), [Select](/form/select/), [SimpleVault](/form/simplevault/), [Slider](/form/slider/), [Text](/form/text/), [Textarea](/form/textarea/), [TimePicker](/form/timepicker/)) hidden via the `hidden` configuration attribute of the control
+- New methods of Form are added: [hide()](/form/api/form_hide_method/), [show()](/form/api/form_show_method/), [isVisible()](/form/api/form_isvisible_method/)
+- The [afterHide](/form/api/form_afterhide_event/), [afterShow](/form/api/form_aftershow_event/), [beforeHide](/form/api/form_beforehide_event/), [beforeShow](/form/api/form_beforeshow_event/) events are added
+- The ability to hide/show Form controls ([Button](/form/api/api_overview/#button-api), [DatePicker](/form/api/api_overview/#datepicker-api), [Checkbox](/form/api/api_overview/#checkbox-api), [ColorPicker](/form/api/api_overview/), [Combo](/form/api/api_overview/#combo-api), [Input](/form/api/api_overview/#input-api), [RadioGroup](/form/api/api_overview/#radiogroup-api), [Select](/form/api/api_overview/#select-api), [SimpleVault](/form/api/api_overview/#simple-vault-api), [Slider](/form/api/api_overview/#slider-api), [Text](/form/api/api_overview/#text-api), [Textarea](/form/api/api_overview/#textarea-api), [TimePicker](/form/api/api_overview/#timepicker-api)) via the corresponding hide()/show() methods of the controls
+- [New methods](/form/api/api_overview/#simple-vault-api) of the SimpleVault control of Form are added: selectFile(), send(), setValue()
 
 #### Sidebar
 
@@ -2576,10 +2576,10 @@ Released on May 19, 2020
 - Fix the incorrect work of the [destructor()](grid/api/grid_destructor_method.md) method when combo filters are not specified in Grid
 - Fix the incorrect work of the [Change](/combobox/api/combobox_change_event/) event when the [multiselection](/combobox/api/combobox_multiselection_config/) property is enabled in Combobox
 - Fix the incorrect work of the [change](/colorpicker/api/colorpicker_change_event/) event while calling the [clear()](/colorpicker/api/colorpicker_clear_method/) method in ColorPicker
-- Fix issue with the [getValue()](form/api/form_getvalue_method.md) method of Form
-- Fix the incorrect work of the [change](form/api/form_change_event.md) event  while calling the [clear()](form/api/form_clear_method.md) method for Form controls (Input, Textarea, Checkbox, RadioGroup, Select, DatePicker, TimePicker, ColorPicker, Combo)
-- Fix the incorrect work of the Combo control of Form while calling the [getValue()](form/api/form_getvalue_method.md) method
-- Fix issue with the [change](form/api/form_change_event.md) event of Form
+- Fix issue with the [getValue()](/form/api/form_getvalue_method/) method of Form
+- Fix the incorrect work of the [change](/form/api/form_change_event/) event  while calling the [clear()](/form/api/form_clear_method/) method for Form controls (Input, Textarea, Checkbox, RadioGroup, Select, DatePicker, TimePicker, ColorPicker, Combo)
+- Fix the incorrect work of the Combo control of Form while calling the [getValue()](/form/api/form_getvalue_method/) method
+- Fix issue with the [change](/form/api/form_change_event/) event of Form
 - Fix validation for the Input control of Form
 - Fix rendering of custom HTML content in Window
 - Fix priority of the modal window while calling more than one window
@@ -2668,16 +2668,16 @@ Released on January 28, 2020
 
 #### Form
 
-- The ability [to check whether a form or a form control is disabled on the page](form/work_with_form.md#checking-if-a-form-is-disabled) via the [isDisabled()](form/api/form_isdisabled_method.md) method 
-- The possibility [to disable a form on a page](form/work_with_form.md#enablingdisabling-a-form) using the [disable()](form/api/form_disable_method.md) method
-- The possibility [to enable a form on a page](form/work_with_form.md#enablingdisabling-a-form) using the [enable()](form/api/form_enable_method.md) method
-- The possibility [to make a form disabled](form/configuration.md#making-form-disabled) using the [disabled](form/api/form_disabled_config.md) property
-- The ability to use methods for [Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api) Form controls: `disable()`, `enable()`, `isDisabled()`
-- The possibility to specify the maximum number of characters allowed in the input via the `maxlength` attribute of the [Input](form/input.md) Form control
-- The ability [to set the format of the value that will be returned while getting the current value of DatePicker control using the valueFormat property](form/api/calendar/api_calendar_properties.md)
-- The ability to define the position of a label for [Button](form/button.md), [DatePicker](form/calendar.md), [Checkbox](form/checkbox.md), [ColorPicker](form/colorpicker.md), [Combo](form/combo.md), [Input](form/input.md), [RadioGroup](form/radiogroup.md), [Select](form/select.md), [SimpleVault](form/simplevault.md), [Slider](form/slider.md), [Text](form/text.md), [Textarea](form/textarea.md), [TimePicker](form/timepicker.md) Form controls using the `labelPosition` attribute
-- The possibility to specify the `url` attribute to which form data will be sent to for [Button Form control](form/api/button/api_button_properties.md)
-- The [forEach()](form/api/form_foreach_method.md) method is added
+- The ability [to check whether a form or a form control is disabled on the page](/form/work_with_form/#checking-if-a-form-is-disabled) via the [isDisabled()](/form/api/form_isdisabled_method/) method 
+- The possibility [to disable a form on a page](/form/work_with_form/#enablingdisabling-a-form) using the [disable()](/form/api/form_disable_method/) method
+- The possibility [to enable a form on a page](/form/work_with_form/#enablingdisabling-a-form) using the [enable()](/form/api/form_enable_method/) method
+- The possibility [to make a form disabled](/form/configuration/#making-form-disabled) using the [disabled](/form/api/form_disabled_config/) property
+- The ability to use methods for [Button](/form/api/api_overview/#button-api), [DatePicker](/form/api/api_overview/#datepicker-api), [Checkbox](/form/api/api_overview/#checkbox-api), [ColorPicker](/form/api/api_overview/), [Combo](/form/api/api_overview/#combo-api), [Input](/form/api/api_overview/#input-api), [RadioGroup](/form/api/api_overview/#radiogroup-api), [Select](/form/api/api_overview/#select-api), [SimpleVault](/form/api/api_overview/#simple-vault-api), [Slider](/form/api/api_overview/#slider-api), [Text](/form/api/api_overview/#text-api), [Textarea](/form/api/api_overview/#textarea-api), [TimePicker](/form/api/api_overview/#timepicker-api) Form controls: `disable()`, `enable()`, `isDisabled()`
+- The possibility to specify the maximum number of characters allowed in the input via the `maxlength` attribute of the [Input](/form/input/) Form control
+- The ability [to set the format of the value that will be returned while getting the current value of DatePicker control using the valueFormat property](/form/api/calendar/api_calendar_properties/)
+- The ability to define the position of a label for [Button](/form/button/), [DatePicker](/form/calendar/), [Checkbox](/form/checkbox/), [ColorPicker](/form/colorpicker/), [Combo](/form/combo/), [Input](/form/input/), [RadioGroup](/form/radiogroup/), [Select](/form/select/), [SimpleVault](/form/simplevault/), [Slider](/form/slider/), [Text](/form/text/), [Textarea](/form/textarea/), [TimePicker](/form/timepicker/) Form controls using the `labelPosition` attribute
+- The possibility to specify the `url` attribute to which form data will be sent to for [Button Form control](/form/api/button/api_button_properties/)
+- The [forEach()](/form/api/form_foreach_method/) method is added
 
 #### Grid
 
@@ -2771,7 +2771,7 @@ Released on January 28, 2020
 
 - Now the [multiselection](/dataview/api/dataview_multiselection_config/) configuration property [allows setting the mode of multiselection in Dataview](/dataview/configuration/#multiple-selection-of-items)
 - Now the [multiselection](list/api/list_multiselection_config.md) property [allows setting the mode of multiselection in List](list/configuration.md#multiple-selection-of-items)
-- The getValue method of [DatePicker Form control](form/api/calendar/calendar_getvalue_method.md)
+- The getValue method of [DatePicker Form control](/form/api/calendar/calendar_getvalue_method/)
 
 #### Fixes
 
@@ -2897,10 +2897,10 @@ Released on October 23, 2019
 
 #### Form 
 
-- The ability to manipulate Form controls via the [getItem() method of Form](form/api/form_getitem_method.md)
-- The ability to use methods for [DatePicker](form/calendar.md#working-with-datepicker), [Checkbox](form/checkbox.md#working-with-checkbox), [Colorpicker](form/colorpicker.md#working-with-colorpicker), [Combo](form/combo.md#working-with-combo), [Input](form/input.md#working-with-input), [RadioGroup](form/radiogroup.md#working-with-radiogroup), [Select](form/select.md#working-with-select), [SimpleVault](form/simplevault.md#working-with-simplevault), [Slider](form/slider.md#working-with-slider), [Text](form/text.md#working-with-text), [Textarea](form/textarea.md#working-with-textarea), [TimePicker](form/timepicker.md#working-with-timepicker) Form controls: `clear()`, `clearValidate()`, `getValue()`, `setValue()`, `validate()`
-- The possibility to update the configuration of [DatePicker](form/calendar.md#working-with-datepicker), [Checkbox](form/checkbox.md#working-with-checkbox), [Colorpicker](form/colorpicker.md#working-with-colorpicker), [Combo](form/combo.md#working-with-combo), [Input](form/input.md#working-with-input), [RadioGroup](form/radiogroup.md#working-with-radiogroup), [Select](form/select.md#working-with-select), [SimpleVault](form/simplevault.md#working-with-simplevault), [Slider](form/slider.md#working-with-slider), [Text](form/text.md#working-with-text), [Textarea](form/textarea.md#working-with-textarea), [TimePicker](form/timepicker.md#working-with-timepicker) Form controls via the `setConfig()` method
-- The ability to use methods of DHTMLX widgets via the `getWidget()` method of [DatePicker](form/calendar.md#working-with-the-dhtmlxcalendar-widget), [ColorPicker](form/colorpicker.md#working-with-the-dhtmlxcolorpicker-widget), [Slider](form/slider.md#working-with-the-dhtmlxslider-widget), [TimePicker](form/timepicker.md#working-with-the-dhtmlxtimepicker-widget) Form controls
+- The ability to manipulate Form controls via the [getItem() method of Form](/form/api/form_getitem_method/)
+- The ability to use methods for [DatePicker](/form/calendar/#working-with-datepicker), [Checkbox](/form/checkbox/#working-with-checkbox), [Colorpicker](/form/colorpicker/#working-with-colorpicker), [Combo](/form/combo/#working-with-combo), [Input](/form/input/#working-with-input), [RadioGroup](/form/radiogroup/#working-with-radiogroup), [Select](/form/select/#working-with-select), [SimpleVault](/form/simplevault/#working-with-simplevault), [Slider](/form/slider/#working-with-slider), [Text](/form/text/#working-with-text), [Textarea](/form/textarea/#working-with-textarea), [TimePicker](/form/timepicker/#working-with-timepicker) Form controls: `clear()`, `clearValidate()`, `getValue()`, `setValue()`, `validate()`
+- The possibility to update the configuration of [DatePicker](/form/calendar/#working-with-datepicker), [Checkbox](/form/checkbox/#working-with-checkbox), [Colorpicker](/form/colorpicker/#working-with-colorpicker), [Combo](/form/combo/#working-with-combo), [Input](/form/input/#working-with-input), [RadioGroup](/form/radiogroup/#working-with-radiogroup), [Select](/form/select/#working-with-select), [SimpleVault](/form/simplevault/#working-with-simplevault), [Slider](/form/slider/#working-with-slider), [Text](/form/text/#working-with-text), [Textarea](/form/textarea/#working-with-textarea), [TimePicker](/form/timepicker/#working-with-timepicker) Form controls via the `setConfig()` method
+- The ability to use methods of DHTMLX widgets via the `getWidget()` method of [DatePicker](/form/calendar/#working-with-the-dhtmlxcalendar-widget), [ColorPicker](/form/colorpicker/#working-with-the-dhtmlxcolorpicker-widget), [Slider](/form/slider/#working-with-the-dhtmlxslider-widget), [TimePicker](/form/timepicker/#working-with-the-dhtmlxtimepicker-widget) Form controls
 
 #### Grid/TreeGrid
 
@@ -3040,11 +3040,11 @@ Released on August 15, 2019
 
 #### Form 
 
-- [Dynamic config updating and re-rendering of a form](form/work_with_form.md)  
-- [Adding values into controls on the fly](form/work_with_form.md#setting-new-values-for-controls)
-- [Clearing a form](form/work_with_form.md#clearing-form)
-- The new [send()](form/work_with_form.md#sending-form-to-server) method for sending a form to the server
-- A new [RadioGroup](form/radiogroup.md) control for grouping RadioButtons
+- [Dynamic config updating and re-rendering of a form](/form/work_with_form/)  
+- [Adding values into controls on the fly](/form/work_with_form/#setting-new-values-for-controls)
+- [Clearing a form](/form/work_with_form/#clearing-form)
+- The new [send()](/form/work_with_form/#sending-form-to-server) method for sending a form to the server
+- A new [RadioGroup](/form/radiogroup/) control for grouping RadioButtons
 
 #### Grid
 
@@ -3078,10 +3078,10 @@ Released on August 15, 2019
 
 #### Form
 
-- The possibility to set values for [DatePicker](form/calendar.md), [TimePicker](form/timepicker.md), [ColorPicker](form/colorpicker.md) Form controls via inputs
-- The possibility to make Form [Inputs](form/input.md) hidden
-- The autocomplete feature for Form [Inputs](form/input.md)  
-- Validation of a Form [Select](form/select.md) control
+- The possibility to set values for [DatePicker](/form/calendar/), [TimePicker](/form/timepicker/), [ColorPicker](/form/colorpicker/) Form controls via inputs
+- The possibility to make Form [Inputs](/form/input/) hidden
+- The autocomplete feature for Form [Inputs](/form/input/)  
+- Validation of a Form [Select](/form/select/) control
 
 #### Grid
 

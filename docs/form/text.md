@@ -31,11 +31,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Text control](form/api/text/api_text_properties.md).
+View [the full list of configuration properties of the Text control](/form/api/text/api_text_properties/).
 
 ## Working with Text
 
-You can manipulate a Text control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Text control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -45,8 +45,8 @@ const value = form.getItem("text").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Text control](form/api/api_overview.md#text-methods).
+Check [the full list of methods of the Text control](/form/api/api_overview/#text-methods).
 
 ### Events
 
-Check [the full list of events of the Text control](form/api/api_overview.md#text-events).
+Check [the full list of events of the Text control](/form/api/api_overview/#text-events).

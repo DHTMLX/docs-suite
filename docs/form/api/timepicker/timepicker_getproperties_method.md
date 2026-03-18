@@ -58,6 +58,6 @@ The returned object of the **TimePicker** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
+You will find the description of these properties [here](/form/api/timepicker/api_timepicker_properties/).
 
 @changelog: added in v7.0

@@ -54,15 +54,15 @@ const form = new dhx.Form("form_container", {
 
 ### Properties of RadioGroup
 
-View [the full list of configuration properties of the RadioGroup control](form/api/radiogroup/api_radiogroup_properties.md).
+View [the full list of configuration properties of the RadioGroup control](/form/api/radiogroup/api_radiogroup_properties/).
 
 ### Properties of RadioButton
 
-View [the full list of properties](form/api/radiogroup/api_radiogroup_properties.md#radiobutton-properties) that you can provide in the configuration object of a RadioButton of the RadioGroup control.
+View [the full list of properties](/form/api/radiogroup/api_radiogroup_properties/#radiobutton-properties) that you can provide in the configuration object of a RadioButton of the RadioGroup control.
 
 ## Working with RadioGroup
 
-You can manipulate a RadioGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a RadioGroup control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -72,8 +72,8 @@ const value = form.getItem("radiogroup").getValue();
 
 ### Methods
 
-Check [the full list of methods of the RadioGroup control](form/api/api_overview.md#radiogroup-methods).
+Check [the full list of methods of the RadioGroup control](/form/api/api_overview/#radiogroup-methods).
 
 ### Events
 
-Check [the full list of events of the RadioGroup control](form/api/api_overview.md#radiogroup-events).
+Check [the full list of events of the RadioGroup control](/form/api/api_overview/#radiogroup-events).

@@ -27,7 +27,7 @@ form.setProperties("input_name", {
 
 @descr:
 
-The method invokes the [](form/api/form_afterchangeproperties_event.md) and [](form/api/form_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/form_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/form_beforechangeproperties_event/) events.
 
 {{note Note, that the method allows changing values only for the properties that are listed below for each control.}}
 
@@ -114,7 +114,7 @@ It is possible to change the following configuration attributes of the **Avatar*
 }
 ~~~
 
-You will find the description of these properties [here](form/api/avatar/api_avatar_properties.md).
+You will find the description of these properties [here](/form/api/avatar/api_avatar_properties/).
 
 ## Button
 
@@ -139,7 +139,7 @@ It is possible to change the following configuration attributes of the **Button*
 }
 ~~~
 
-You will find the description of these properties [here](form/api/button/api_button_properties.md).
+You will find the description of these properties [here](/form/api/button/api_button_properties/).
 
 ## DatePicker
 
@@ -177,7 +177,7 @@ It is possible to change the following configuration attributes of the **DatePic
 }
 ~~~
 
-You will find the description of these properties [here](form/api/calendar/api_calendar_properties.md).
+You will find the description of these properties [here](/form/api/calendar/api_calendar_properties/).
 
 ## Checkbox
 
@@ -202,7 +202,7 @@ It is possible to change the following configuration attributes of the **Checkbo
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox/api_checkbox_properties.md).
+You will find the description of these properties [here](/form/api/checkbox/api_checkbox_properties/).
 
 ## CheckboxGroup
 
@@ -227,7 +227,7 @@ It is possible to change the following configuration attributes of the **Checkbo
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox_group/api_checkboxgroup_properties.md).
+You will find the description of these properties [here](/form/api/checkbox_group/api_checkboxgroup_properties/).
 
 ### Checkbox properties
 
@@ -243,7 +243,7 @@ It is possible to change the following configuration attributes of a **checkbox*
 }
 ~~~
 
-You will find the description of these properties [here](form/api/checkbox_group/api_checkboxgroup_properties.md).
+You will find the description of these properties [here](/form/api/checkbox_group/api_checkboxgroup_properties/).
 
 ## ColorPicker
 
@@ -275,7 +275,7 @@ It is possible to change the following configuration attributes of the **ColorPi
 }
 ~~~
 
-You will find the description of these properties [here](form/api/colorpicker/api_colorpicker_properties.md).
+You will find the description of these properties [here](/form/api/colorpicker/api_colorpicker_properties/).
 
 ## Combo
 
@@ -310,7 +310,7 @@ It is possible to change the following configuration attributes of the **Combo**
 }
 ~~~
 
-You will find the description of these properties [here](form/api/combo/api_combo_properties.md).
+You will find the description of these properties [here](/form/api/combo/api_combo_properties/).
 
 ## Container
 
@@ -324,7 +324,7 @@ It is possible to change the following configuration attributes of the **Contain
 }
 ~~~
 
-You will find the description of these properties [here](form/api/container/api_container_properties.md).
+You will find the description of these properties [here](/form/api/container/api_container_properties/).
 
 ## Fieldset
 
@@ -343,7 +343,7 @@ It is possible to change the following configuration attributes of the **Fieldse
 }
 ~~~
 
-You will find the description of these properties [here](form/api/fieldset/api_fieldset_properties.md).
+You will find the description of these properties [here](/form/api/fieldset/api_fieldset_properties/).
 
 ## Input
 
@@ -377,7 +377,7 @@ It is possible to change the following configuration attributes of the **Input**
 }
 ~~~
 
-You will find the description of these properties [here](form/api/input/api_input_properties.md).
+You will find the description of these properties [here](/form/api/input/api_input_properties/).
 
 ## RadioGroup
 
@@ -402,7 +402,7 @@ It is possible to change the following configuration attributes of the **RadioGr
 }
 ~~~
 
-You will find the description of these properties [here](form/api/radiogroup/api_radiogroup_properties.md).
+You will find the description of these properties [here](/form/api/radiogroup/api_radiogroup_properties/).
 
 ### RadioButton properties
 
@@ -418,7 +418,7 @@ It is possible to change the following configuration attributes of a **radio but
 }
 ~~~
 
-You will find the description of these properties [here](form/api/radiogroup/api_radiogroup_properties.md).
+You will find the description of these properties [here](/form/api/radiogroup/api_radiogroup_properties/).
 
 ## Select
 
@@ -443,7 +443,7 @@ It is possible to change the following configuration attributes of the **Select*
 }
 ~~~
 
-You will find the description of these properties [here](form/api/select/api_select_properties.md).
+You will find the description of these properties [here](/form/api/select/api_select_properties/).
 
 ## SimpleVault
 
@@ -476,7 +476,7 @@ It is possible to change the following configuration attributes of the **SimpleV
 }
 ~~~
 
-You will find the description of these properties [here](form/api/simplevault/api_simplevault_properties.md).
+You will find the description of these properties [here](/form/api/simplevault/api_simplevault_properties/).
 
 ## Slider
 
@@ -506,7 +506,7 @@ It is possible to change the following configuration attributes of the **Slider*
 }
 ~~~
 
-You will find the description of these properties [here](form/api/slider/api_slider_properties.md).
+You will find the description of these properties [here](/form/api/slider/api_slider_properties/).
 
 ## Spacer
 
@@ -521,7 +521,7 @@ It is possible to change the following configuration attributes of the **Spacer*
 }
 ~~~
 
-You will find the description of these properties [here](form/api/spacer/api_spacer_properties.md).
+You will find the description of these properties [here](/form/api/spacer/api_spacer_properties/).
 
 ## Text
 
@@ -545,7 +545,7 @@ It is possible to change the following configuration attributes of the **Text** 
 }
 ~~~
 
-You will find the description of these properties [here](form/api/text/api_text_properties.md).
+You will find the description of these properties [here](/form/api/text/api_text_properties/).
 
 ## Textarea
 
@@ -574,7 +574,7 @@ It is possible to change the following configuration attributes of the **Textare
 }
 ~~~
 
-You will find the description of these properties [here](form/api/textarea/api_textarea_properties.md).
+You will find the description of these properties [here](/form/api/textarea/api_textarea_properties/).
 
 ## TimePicker
 
@@ -605,7 +605,7 @@ It is possible to change the following configuration attributes of the **TimePic
 }
 ~~~
 
-You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
+You will find the description of these properties [here](/form/api/timepicker/api_timepicker_properties/).
 
 ## Toggle
 
@@ -626,7 +626,7 @@ It is possible to change the following configuration attributes of the **Toggle*
 }
 ~~~
 
-You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
+You will find the description of these properties [here](/form/api/toggle/api_toggle_properties/).
 
 ## ToggleGroup
 
@@ -645,7 +645,7 @@ It is possible to change the following configuration attributes of the **ToggleG
 }
 ~~~
 
-You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of these properties [here](/form/api/togglegroup/api_togglegroup_properties/).
 
 ### Toggle properties
 
@@ -662,10 +662,10 @@ It is possible to change the following configuration attributes of a **toggle** 
 }
 ~~~
 
-You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of these properties [here](/form/api/togglegroup/api_togglegroup_properties/).
 
 
-**Related API**: [getProperties()](form/api/form_getproperties_method.md)
+**Related API**: [getProperties()](/form/api/form_getproperties_method/)
 
 @changelog: added in v7.0
 

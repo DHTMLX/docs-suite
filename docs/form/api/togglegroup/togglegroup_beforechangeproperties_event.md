@@ -11,7 +11,7 @@ description: You can explore the beforeChangeProperties event of the Toggle Grou
 @signature: {'beforeChangeProperties: (properties: object, id?: string) => boolean | void;'}
 
 @params:
-- `properties: object` - an object with [configuration attributes](form/api/togglegroup/togglegroup_getproperties_method.md) of the ToggleGroup or its separate options and their new values
+- `properties: object` - an object with [configuration attributes](/form/api/togglegroup/togglegroup_getproperties_method/) of the ToggleGroup or its separate options and their new values
 - `id: string` - optional, the id of an option of the ToggleGroup
 
 @returns:
@@ -52,4 +52,4 @@ The **properties** object object of a **toggle** of the **ToggleGroup** control 
 }
 ~~~
 
-You will find the description of all these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of all these properties [here](/form/api/togglegroup/api_togglegroup_properties/).

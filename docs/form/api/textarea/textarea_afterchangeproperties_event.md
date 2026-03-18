@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Textarea con
 @signature: {'afterChangeProperties: (properties: object) => void;'}
 
 @params:
-- `properties: object` - an object with [configuration attributes](form/api/textarea/textarea_setproperties_method.md) of the control and their new values
+- `properties: object` - an object with [configuration attributes](/form/api/textarea/textarea_setproperties_method/) of the control and their new values
 
 @example:s
 form.getItem("textarea").events.on("afterChangeProperties", function(properties) {

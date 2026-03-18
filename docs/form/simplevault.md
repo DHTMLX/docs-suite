@@ -36,11 +36,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the SimpleVault control](form/api/simplevault/api_simplevault_properties.md).
+View [the full list of configuration properties of the SimpleVault control](/form/api/simplevault/api_simplevault_properties/).
 
 ## Working with SimpleVault
 
-You can manipulate a SimpleVault control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a SimpleVault control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can get the value of the control:
 
@@ -50,17 +50,17 @@ const value = form.getItem("simpleVault").getValue();
 
 ### Methods
 
-Check [the full list of methods of the SimpleVault control](form/api/api_overview.md#simple-vault-methods).
+Check [the full list of methods of the SimpleVault control](/form/api/api_overview/#simple-vault-methods).
 
 ### Events
 
-Check [the full list of events of the SimpleVault control](form/api/api_overview.md#simple-vault-events).
+Check [the full list of events of the SimpleVault control](/form/api/api_overview/#simple-vault-events).
 
 ## Using DataCollection API
 
 You can manipulate a SimpleVault control with the help of the [DataCollection API](https://docs.dhtmlx.com/vault/api__refs__data_methods.html).
 
-For example, you can remove one or all files from the list. To do that, you need to apply the [remove](https://docs.dhtmlx.com/vault/api__data__remove.html), or [removeAll](https://docs.dhtmlx.com/vault/api__data__removeall.html) method of DataCollection to the object returned by the [getItem()](form/api/form_getitem_method.md) method as follows:
+For example, you can remove one or all files from the list. To do that, you need to apply the [remove](https://docs.dhtmlx.com/vault/api__data__remove.html), or [removeAll](https://docs.dhtmlx.com/vault/api__data__removeall.html) method of DataCollection to the object returned by the [getItem()](/form/api/form_getitem_method/) method as follows:
 
 ~~~js
 form.getItem("simpleVault").data.remove("file_id");

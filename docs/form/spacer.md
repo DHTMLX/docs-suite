@@ -37,11 +37,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Spacer control](form/api/spacer/api_spacer_properties.md).
+View [the full list of configuration properties of the Spacer control](/form/api/spacer/api_spacer_properties/).
 
 ## Working with Spacer
 
-You can manipulate a Spacer control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Spacer control by using methods or events of the object returned by the [getItem()](/form/api/form_getitem_method/) method.
 
 For example, you can hide the control:
 
@@ -51,8 +51,8 @@ const value = form.getItem("spacer").hide();
 
 ### Methods
 
-Check [the full list of methods of the Spacer control](form/api/api_overview.md#spacer-methods).
+Check [the full list of methods of the Spacer control](/form/api/api_overview/#spacer-methods).
 
 ### Events
 
-Check [the full list of events of the Spacer control](form/api/api_overview.md#spacer-events).
+Check [the full list of events of the Spacer control](/form/api/api_overview/#spacer-events).

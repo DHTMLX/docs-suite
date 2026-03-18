@@ -45,6 +45,6 @@ The returned object of the **Text** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/text/api_text_properties.md).
+You will find the description of these properties [here](/form/api/text/api_text_properties/).
 
 @changelog: added in v7.0

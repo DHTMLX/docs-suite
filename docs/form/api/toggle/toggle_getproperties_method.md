@@ -47,6 +47,6 @@ The returned object of the **Toggle** control looks like:
 }
 ~~~
 
-You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
+You will find the description of these properties [here](/form/api/toggle/api_toggle_properties/).
 
 

@@ -22,7 +22,7 @@ form.getItem("combo").setProperties({
 @descr:
 
 :::info
-The method invokes the [](form/api/combo/combo_afterchangeproperties_event.md) and [](form/api/combo/combo_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/combo/combo_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/combo/combo_beforechangeproperties_event/) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **Combo** control:
@@ -56,6 +56,6 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-You will find the description of these properties [here](form/api/combo/api_combo_properties.md).
+You will find the description of these properties [here](/form/api/combo/api_combo_properties/).
 
 @changelog: added in v7.0

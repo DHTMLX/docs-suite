@@ -22,7 +22,7 @@ form.getItem("radiogroup").validate();
 
 @descr:
 
-When calling without the  **silent** parameter or setting it to *false*, the method invokes the [BeforeValidate](form/api/radiogroup/radiogroup_beforevalidate_event.md) and [AfterValidate](form/api/radiogroup/radiogroup_aftervalidate_event.md) events and visually modifies the control.
+When calling without the  **silent** parameter or setting it to *false*, the method invokes the [BeforeValidate](/form/api/radiogroup/radiogroup_beforevalidate_event/) and [AfterValidate](/form/api/radiogroup/radiogroup_aftervalidate_event/) events and visually modifies the control.
 
 ~~~js
 form.getItem("radiogroup").validate(); // -> true/false

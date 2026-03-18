@@ -62,7 +62,7 @@ form.getItem("radiogroup").setProperties("first", {
 ~~~
 
 :::info
-The method invokes the [](form/api/radiogroup/radiogroup_afterchangeproperties_event.md) and [](form/api/radiogroup/radiogroup_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/radiogroup/radiogroup_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/radiogroup/radiogroup_beforechangeproperties_event/) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **RadioGroup** control:
@@ -98,6 +98,6 @@ It is possible to change values of the following configuration attributes of a *
 }
 ~~~
 
-You will find the description of these properties [here](form/api/radiogroup/api_radiogroup_properties.md).
+You will find the description of these properties [here](/form/api/radiogroup/api_radiogroup_properties/).
 
 @changelog: added in v7.0

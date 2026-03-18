@@ -11,7 +11,7 @@ description: You can explore the beforeChangeProperties event of the Select cont
 @signature: {'beforeChangeProperties: (properties: object) => boolean | void;'}
 
 @params:
-- `properties: object` - an object with [configuration attributes](form/api/select/select_setoptions_method.md) of the control and their new values
+- `properties: object` - an object with [configuration attributes](/form/api/select/select_setoptions_method/) of the control and their new values
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

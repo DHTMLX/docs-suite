@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Spacer contr
 @signature: {'afterChangeProperties: (properties: object) => void;'}
 
 @params:
-- `properties: object` - an object with [configuration attributes](form/api/spacer/spacer_setproperties_method.md) of the control and their new values
+- `properties: object` - an object with [configuration attributes](/form/api/spacer/spacer_setproperties_method/) of the control and their new values
 
 @example:
 form.getItem("spacer").events.on("afterChangeProperties", function(properties) {

@@ -23,7 +23,7 @@ form.getItem("timepicker").setProperties({
 @descr:
 
 :::info
-The method invokes the [](form/api/timepicker/timepicker_afterchangeproperties_event.md) and [](form/api/timepicker/timepicker_beforechangeproperties_event.md) events.
+The method invokes the [afterChangeProperties](/form/api/timepicker/timepicker_afterchangeproperties_event/) and [beforeChangeProperties](/form/api/timepicker/timepicker_beforechangeproperties_event/) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **TimePicker** control:
@@ -53,6 +53,6 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
+You will find the description of these properties [here](/form/api/timepicker/api_timepicker_properties/).
 
 @changelog: added in v7.0

@@ -15,11 +15,11 @@ Check [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=f
 
 You can check the following page to learn how to build a full-featured DHTMLX Form:
 
-- [Features](form/features.md)
+- [Features](/form/features/)
 
 ## API reference
 
-- [Form API overview](api/api_overview.md)
+- [Form API overview](/form/api/api_overview/)
 
 ## Related resources
 
@@ -32,38 +32,38 @@ You can check the following page to learn how to build a full-featured DHTMLX Fo
 
 Guides you through common information you may need while working with Form.
 
-- [Initialization](how_to_start.md)
-- [Localization](localization.md)
-- [Configuration](configuration.md)
-- [Work with Form](form/work_with_form.md)
-- [Customization](form/customization.md)
-- [Event handling](form/handling_events.md)
+- [Initialization](/form/how_to_start/)
+- [Localization](/form/localization/)
+- [Configuration](/form/configuration/)
+- [Work with Form](/form/work_with_form/)
+- [Customization](/form/customization/)
+- [Event handling](/form/handling_events/)
 
 ### Form Controls
 
 Discusses the creation of Form controls and the possibilities of manipulating them.
 
-- [](form/avatar.md)
-- [](form/button.md)
-- [](form/calendar.md)
-- [](form/checkbox.md)
-- [](form/checkboxgroup.md)
-- [](form/colorpicker.md)
-- [](form/combo.md)
-- [](form/container.md)
-- [](form/fieldset.md)
-- [](form/input.md)
-- [](form/radiogroup.md)
-- [](form/select.md)
-- [](form/simplevault.md)
-- [](form/slider.md)
-- [](form/spacer.md)
-- [](form/text.md)
-- [](form/textarea.md)
-- [](form/timepicker.md)
-- [](form/toggle.md)
-- [](form/togglegroup.md)
+- [Avatar](/form/avatar/)
+- [Button](/form/button/)
+- [Calendar](/form/calendar/)
+- [Checkbox](/form/checkbox/)
+- [CheckboxGroup](/form/checkboxgroup/)
+- [ColorPicker](/form/colorpicker/)
+- [Combo](/form/combo/)
+- [Container](/form/container/)
+- [Fieldset](/form/fieldset/)
+- [Input](/form/input/)
+- [RadioGroup](/form/radiogroup/)
+- [Select](/form/select/)
+- [SimpleVault](/form/simplevault/)
+- [Slider](/form/slider/)
+- [Spacer](/form/spacer/)
+- [Text](/form/text/)
+- [Textarea](/form/textarea/)
+- [TimePicker](/form/timepicker/)
+- [Toggle](/form/toggle/)
+- [ToggleGroup](/form/togglegroup/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](../migration/)
