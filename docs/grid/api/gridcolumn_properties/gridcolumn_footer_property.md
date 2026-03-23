@@ -82,6 +82,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Configuration](grid/configuration.md)
+**Related article**: [Configuration](/grid/configuration/)
 
 **Related sample**: [Grid. Grid with footer](https://snippet.dhtmlx.com/9jl55ep7)

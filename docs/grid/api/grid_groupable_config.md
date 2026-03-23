@@ -13,7 +13,7 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 :::
 
 :::note
-The `groupable` property works only with the [`group`](grid/api/grid_group_config.md) panel.
+The `groupable` property works only with the [`group`](/grid/api/grid_group_config/) panel.
 :::
 
 @signature: {'groupable?: boolean;'}
@@ -50,6 +50,6 @@ const grid = new dhx.Grid("grid_container", {
 - You mustn't change the order of elements grouping by drag-n-drop
 :::
 
-**Related article**: [Grouping data](grid/usage.md#grouping-data)
+**Related article**: [Grouping data](/grid/usage/#grouping-data)
 
 @changelog: added in v9.0

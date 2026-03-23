@@ -8,7 +8,7 @@ description: You can explore how to work with Grid in the documentation of the D
 
 ## Working with Grid in the TreeGrid mode
 
-For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.
+For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](/grid/treegrid_mode/#work-with-grid-in-the-treegrid-mode) guide.
 
 ## Working with columns and cells
 
@@ -16,7 +16,7 @@ The API of DHTMLX Grid allows setting configuration of columns, getting an objec
 
 ### Setting columns configuration
 
-You can specify the configuration of Grid columns on the fly via the [](grid/api/grid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
+You can specify the configuration of Grid columns on the fly via the [setColumns()](/grid/api/grid_setcolumns_method/) method. It takes an array with columns objects as a parameter.
 
 ~~~jsx
 grid.setColumns([
@@ -26,22 +26,22 @@ grid.setColumns([
 ]);
 ~~~
 
-You can find the full list of the available configuration options of a Grid column [here](grid/api/api_gridcolumn_properties.md).
+You can find the full list of the available configuration options of a Grid column [here](/grid/api/api_gridcolumn_properties/).
 
 ### Getting configuration of a column
 
-It is possible to return an object with attributes of a column via its id. Use the [](grid/api/grid_getcolumn_method.md) method for this purpose.
+It is possible to return an object with attributes of a column via its id. Use the [getColumn()](/grid/api/grid_getcolumn_method/) method for this purpose.
 
 ~~~jsx
 const column = grid.getColumn("b"); // ->
 // -> { width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string" }
 ~~~
 
-The method returns an object with configuration of the specified column. You can find the list of properties that the return object can contain [here](grid/api/grid_getcolumn_method.md).
+The method returns an object with configuration of the specified column. You can find the list of properties that the return object can contain [here](/grid/api/grid_getcolumn_method/).
 
 ### Getting configuration of a cell
 
-There is the [](grid/api/grid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
+There is the [getCellRect()](/grid/api/grid_getcellrect_method/) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
 ~~~jsx
 const rect = grid.getCellRect("1", "c");
@@ -73,7 +73,7 @@ The return object includes the following attributes:
 
 ### Hiding/showing a column
 
-It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods.
+It is possible to show and hide a column in the grid via the [showColumn()](/grid/api/grid_showcolumn_method/) and [hideColumn()](/grid/api/grid_hidecolumn_method/) methods.
 
 ~~~jsx
 //showing a column
@@ -84,11 +84,11 @@ grid.hideColumn(colId);
 
 **Related sample**: [Grid. Show / hide column](https://snippet.dhtmlx.com/n4zjwsqj)
 
-Since the object of a column has the [hidden](grid/configuration.md#hidden-columns) property, the `showColumn()` method changes the value of the `hidden` property to *false* while the `hideColumn()` method changes the value of the property to *true*.
+Since the object of a column has the [hidden](/grid/configuration/#hidden-columns) property, the `showColumn()` method changes the value of the `hidden` property to *false* while the `hideColumn()` method changes the value of the property to *true*.
 
 ### Checking visibility of a column
 
-You can check whether a column is hidden or shown on a page using the [](grid/api/grid_iscolumnhidden_method.md) method. The method returns *true*, if a column is hidden, and *false* if it's visible.
+You can check whether a column is hidden or shown on a page using the [isColumnHidden()](/grid/api/grid_iscolumnhidden_method/) method. The method returns *true*, if a column is hidden, and *false* if it's visible.
 
 ~~~jsx
 grid.isColumnHidden("country"); // -> true|false
@@ -98,7 +98,7 @@ grid.isColumnHidden("country"); // -> true|false
 
 ## Getting header filter
 
-You may want to manipulate a filter specified in the header of a grid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](grid/api/grid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
+You may want to manipulate a filter specified in the header of a grid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [getHeaderFilter()](/grid/api/grid_getheaderfilter_method/) method to get an object with methods of the header filter and apply the necessary method. For example:
 
 ~~~jsx
 // set a value by which a column will be filtered
@@ -128,7 +128,7 @@ grid.getHeaderFilter("country").clear();
 
 #### Adding a row
 
-You may add a new row into the grid by using the [](../data_collection/api/datacollection_add_method.md) method of **DataCollection**:
+You may add a new row into the grid by using the [add()](/data_collection/api/datacollection_add_method/) method of **DataCollection**:
 
 ~~~jsx
 grid.data.add({
@@ -148,7 +148,7 @@ grid.data.add({
 
 #### Removing a row
 
-To remove the necessary row from the grid, apply the [](../data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
+To remove the necessary row from the grid, apply the [remove()](/data_collection/api/datacollection_remove_method/) method of **DataCollection**. Pass the id of the row that should be removed to the method:
 
 ~~~jsx
 grid.data.remove("5");
@@ -163,11 +163,11 @@ grid.data.remove(cell.row.id);
 
 **Related sample**: [Grid. Delete row](https://snippet.dhtmlx.com/8ezuj7io)
 
-For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md/#selection) and [Work with selection object](grid/usage_selection.md) articles.
+For more information about the selection functionality in Grid, read the [Selection](/grid/configuration/#selection) and [Work with selection object](/grid/usage_selection/) articles.
 
 #### Removing all rows
 
-If you need to remove all rows at once, use the [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
+If you need to remove all rows at once, use the [removeAll()](/data_collection/api/datacollection_removeall_method/) method of **DataCollection**:
 
 ~~~jsx
 grid.data.removeAll();
@@ -175,7 +175,7 @@ grid.data.removeAll();
 
 ### Hiding/showing a row
 
-Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods.
+Starting from v7.0, it is possible to show and hide a row in the grid via the [showRow()](/grid/api/grid_showrow_method/) and [hideRow()](/grid/api/grid_hiderow_method/) methods.
 
 ~~~jsx
 //showing a row
@@ -188,7 +188,7 @@ grid.hideRow(rowId);
 
 ### Checking visibility of a row
 
-You can check whether a row is hidden or shown on a page using the [](grid/api/grid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
+You can check whether a row is hidden or shown on a page using the [isRowHidden()](/grid/api/grid_isrowhidden_method/) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
 
 ~~~jsx
 grid.isRowHidden("1"); // -> true|false
@@ -202,7 +202,7 @@ You can manipulate columns and rows spans inside the grid with the help of the c
 
 ### Adding spans
 
-In order to add a column/row span into the grid, use the [](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
+In order to add a column/row span into the grid, use the [addSpan()](/grid/api/grid_addspan_method/) method. Pass an object with configuration of a span as a parameter:
 
 ~~~jsx
 grid.addSpan({ 
@@ -246,7 +246,7 @@ These are possible fields of a span object:
 
 ### Getting spans
 
-You can return the column/row span a cell is a part of using the [](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
+You can return the column/row span a cell is a part of using the [getSpan()](/grid/api/grid_getspan_method/) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
 ~~~jsx
 const span = grid.getSpan("10", "a"); 
@@ -257,7 +257,7 @@ As a result, you'll get an object with a span configuration, if any span include
 
 ### Removing spans
 
-To remove an existing span, make use of the [](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters:
+To remove an existing span, make use of the [removeSpan()](/grid/api/grid_removespan_method/) method. It takes the ids of the row and the column as parameters:
 
 ~~~jsx
 grid.removeSpan("10", "a");
@@ -377,7 +377,7 @@ grid.data.sort({ by: "animal_type", dir: "asc" });
 
 **Related sample**: [Grid. Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
 
-If you need to disable the multi-sorting ability, set the [`multiSort`](grid/api/grid_multisort_config.md) Grid property to *false*.
+If you need to disable the multi-sorting ability, set the [`multiSort`](/grid/api/grid_multisort_config/) Grid property to *false*.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -436,7 +436,7 @@ const state = grid.data.getSortingStates();
 
 ### Editing data
 
-You can easily edit the desired cell of a grid with the help of the [](grid/api/grid_editcell_method.md) method. It takes two parameters:
+You can easily edit the desired cell of a grid with the help of the [editCell()](/grid/api/grid_editcell_method/) method. It takes two parameters:
 
 <table>
     <tbody>
@@ -459,7 +459,7 @@ grid.editCell(grid.data.getId(0), "project");
 
 **Related sample**: [Grid. Edit the first cell](https://snippet.dhtmlx.com/pqbax5vs)
 
-To finish editing of a cell, use the [](grid/api/grid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
+To finish editing of a cell, use the [editEnd()](/grid/api/grid_editend_method/) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
 ~~~jsx
 grid.editEnd(); // the edited data will be saved
@@ -468,7 +468,7 @@ grid.editEnd(true); // the edited data won't be saved
 ~~~
 
 :::note
-The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#types-of-column-editor) is defined as **checkbox**.
+The [editEnd()](/grid/api/grid_editend_method/) method does not work if [the type of the column editor](/grid/configuration/#types-of-column-editor) is defined as **checkbox**.
 :::
 
 ### Exporting data
@@ -477,15 +477,15 @@ You can easily export data of Grid into the Excel, CSV, PDF, or PNG format. Besi
 
 #### Exporting data to Excel
 
-Since v9.2 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. You can use either the public export server or a local export server. 
+Since v9.2 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](/grid/api/export/grid_xlsx_method/) method of the `Export` module to export data from Grid into an Excel file. You can use either the public export server or a local export server. 
 
 Thus, to have the possibility of exporting files you need to:
 
-- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+- call the [`xlsx()`](/grid/api/export/grid_xlsx_method/) method of the `Export` module. The method takes an [object with export settings](/grid/api/export/grid_xlsx_method/) as a parameter (all settings are optional) and returns a promise of data export.
     - if you use the public export server, you don't need to specify the link to it, since it is used by default
     - if you use your own export server, you need to:
         - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library 
-        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method 
+        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](/grid/api/export/grid_xlsx_method/) method 
 ~~~jsx
 grid.export.xlsx({
     url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the export module
@@ -518,7 +518,7 @@ or provide a local path to the export module on your computer as a value of the 
 
 #### Exporting data to CSV
 
-You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. The method takes an [object with export settings](grid/api/export/grid_csv_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+You can export data from Grid to the CSV format with the [`csv()`](/grid/api/export/grid_csv_method/) method of the Export module. The method takes an [object with export settings](/grid/api/export/grid_csv_method/) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 grid.export.csv({
@@ -537,7 +537,7 @@ The `csv()` method returns a CSV string with Grid data.
 
 #### Exporting data to PDF
 
-The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an [object with export settings](grid/api/export/grid_pdf_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+The [`pdf()`](/grid/api/export/grid_pdf_method/) method of the Export module allows you to export data from Grid into a PDF file. The method takes an [object with export settings](/grid/api/export/grid_pdf_method/) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 grid.export.pdf({
@@ -557,7 +557,7 @@ grid.export.pdf({
 
 #### Exporting data to PNG
 
-The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an [object with export settings](grid/api/export/grid_png_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+The [`png()`](/grid/api/export/grid_png_method/) method of the Export module allows you to export data from Grid into a PNG file. The method takes an [object with export settings](/grid/api/export/grid_png_method/) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 grid.export.png({
@@ -720,14 +720,14 @@ It is possible to [set a predefined Grid configuration](#configuring-data-groupi
 **Related sample:** [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
 
 :::info important
-- Data grouping isn't intended for working with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
+- Data grouping isn't intended for working with [`lazyDataProxy`](/grid/data_loading/#dynamic-loading)
 - Modifying the values of grouped elements won't modify the aggregated values
 - You mustn't change the order of elements grouping by drag-n-drop 
 :::
 
 ### Enabling data grouping
 
-To use the row data grouping functionality in Grid, you need to apply the [`group`](grid/api/grid_group_config.md) configuration property of Grid. You can set the `group` property to *true* to enable grouping, or to specify it as a configuration object to [configure data grouping ](#configuring-data-grouping).
+To use the row data grouping functionality in Grid, you need to apply the [`group`](/grid/api/grid_group_config/) configuration property of Grid. You can set the `group` property to *true* to enable grouping, or to specify it as a configuration object to [configure data grouping ](#configuring-data-grouping).
 
 ~~~jsx {5}
 const grid = new dhx.Grid("grid_container", {
@@ -746,7 +746,7 @@ Note that when you initialize Grid with the `group` configuration property, the 
 
 You can also specify what Grid data will be used for grouping using the `groupable` properties of Grid and of a column.
 
-The [`groupable`](grid/api/grid_groupable_config.md) **property of Grid** enables grouping data by the values in all columns via the user interface:
+The [`groupable`](/grid/api/grid_groupable_config/) **property of Grid** enables grouping data by the values in all columns via the user interface:
 
 ~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
@@ -760,7 +760,7 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 :::note
-The `groupable` property works only with the [`group`](grid/api/grid_group_config.md) panel.
+The `groupable` property works only with the [`group`](/grid/api/grid_group_config/) panel.
 :::
 
 With the Grid `groupable` property enabled you can:
@@ -774,7 +774,7 @@ With the Grid `groupable` property enabled you can:
 
 **Related sample:** [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
 
-The [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column via the user interface:
+The [`groupable`](/grid/api/api_gridcolumn_properties/) **property of a column** allows grouping data by the values of a certain column via the user interface:
 
 ~~~jsx {3}
 const grid = new dhx.Grid("grid_container", {
@@ -1127,11 +1127,11 @@ column: {
 }
 ~~~
 
-Note that the `column` object of the `group` configuration option has some properties of a Grid column. You can check the descriptions of the group column object properties enumerated above in the [Grid column properties](grid/api/api_gridcolumn_properties.md) guide.
+Note that the `column` object of the `group` configuration option has some properties of a Grid column. You can check the descriptions of the group column object properties enumerated above in the [Grid column properties](/grid/api/api_gridcolumn_properties/) guide.
 
 ### Making group panel elements closable
 
-You can enable closing of all the elements of the group panel using the [`closable`](grid/api/grid_closable_config.md) configuration option of Grid.
+You can enable closing of all the elements of the group panel using the [`closable`](/grid/api/grid_closable_config/) configuration option of Grid.
 
 ~~~jsx {10}
 const grid = new dhx.Grid("grid_container", {
@@ -1150,7 +1150,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
 
-You can also use the [`closable`](grid/api/api_gridcolumn_properties.md) configuration property of a column. It allows making a particular group panel element closable or permanently enabled:
+You can also use the [`closable`](/grid/api/api_gridcolumn_properties/) configuration property of a column. It allows making a particular group panel element closable or permanently enabled:
 
 ~~~jsx {7-9}
 const grid = new dhx.Grid("grid_container", {
@@ -1315,7 +1315,7 @@ const en = {
 }
 ~~~
 
-Check the details at the [Localization guide](grid/localization.md).
+Check the details at the [Localization guide](/grid/localization/).
 
 
 ## Controlling scroll behavior
@@ -1324,7 +1324,7 @@ The API of DHTMLX Grid provides the possibility to set scrolls to the necessary 
 
 ### Scrolling to specific coordinates
 
-You can scroll grid content to exact position defined by x and y coordinates via the [](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
+You can scroll grid content to exact position defined by x and y coordinates via the [scroll()](/grid/api/grid_scroll_method/) method. Pass the coordinates as parameters of the method.
 
 ~~~jsx
 grid.scroll(75, 230);
@@ -1342,7 +1342,7 @@ grid.scrollTo("15", "c");
 
 ### Getting the state of scroll
 
-To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
+To return the current state of scroll, use the [getScrollState()](/grid/api/grid_getscrollstate_method/) method. 
 
 ~~~jsx
 const state = grid.getScrollState(); // -> {x:0, y:0}
@@ -1352,7 +1352,7 @@ It returns an object with x,y coordinates of a position the grid has been scroll
 
 ## Repainting Grid
 
-In case you've changed some configuration settings of a grid, you can repaint it on a page via the [](grid/api/grid_paint_method.md) method:
+In case you've changed some configuration settings of a grid, you can repaint it on a page via the [paint()](/grid/api/grid_paint_method/) method:
 
 ~~~jsx
 grid.paint();
@@ -1360,7 +1360,7 @@ grid.paint();
 
 ## Destructing Grid
 
-When it's necessary to release resources occupied by Grid during its activity, you can make use of the [](grid/api/grid_destructor_method.md) method:
+When it's necessary to release resources occupied by Grid during its activity, you can make use of the [destructor()](/grid/api/grid_destructor_method/) method:
 
 ~~~jsx
 grid.destructor();
@@ -1368,25 +1368,25 @@ grid.destructor();
 
 ## Using Selection API
 
-For information on using Selection API, read [Work with Selection object](grid/usage_selection.md).
+For information on using Selection API, read [Work with Selection object](/grid/usage_selection/).
 
 ## Using RangeSelection API
 
-For information on using RangeSelection API, read [Work with RangeSelection Module](grid/usage_rangeselection.md).
+For information on using RangeSelection API, read [Work with RangeSelection Module](/grid/usage_rangeselection/).
 
 ## Using BlockSelection API
 
-For information on using BlockSelection API, read [Work with BlockSelection module](grid/usage_blockselection.md).
+For information on using BlockSelection API, read [Work with BlockSelection module](/grid/usage_blockselection/).
 
 ## Working with Clipboard
 
-For information on using the Clipboard module in Grid, read [Work with Clipboard module](grid/usage_clipboard.md).
+For information on using the Clipboard module in Grid, read [Work with Clipboard module](/grid/usage_clipboard/).
 
 ## Working with DragPanel
 
-For information on using the DragPanel module in Grid, read [Work with DragPanel module](grid/usage_dragpanel.md).
+For information on using the DragPanel module in Grid, read [Work with DragPanel module](/grid/usage_dragpanel/).
 
 ## Working with History API
 
-For information on using the History API in Grid, read [Work with History module](grid/usage_history.md).
+For information on using the History API in Grid, read [Work with History module](/grid/usage_history/).
 

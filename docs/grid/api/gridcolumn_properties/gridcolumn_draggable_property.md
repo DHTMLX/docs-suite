@@ -30,5 +30,5 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Drag-n-drop inside the grid](grid/configuration.md#drag-n-drop-inside-the-grid)
+**Related article**: [Drag-n-drop inside the grid](/grid/configuration/#drag-n-drop-inside-the-grid)
 

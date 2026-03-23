@@ -13,7 +13,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 @short: Optional. Specifies the configuration settings of a sub-row
 
 :::note
-Note that when the [`subRow`](/grid/api/grid_subrow_config/) config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md), except for the [data grouping](grid/usage.md#grouping-data) functionality.
+Note that when the [`subRow`](/grid/api/grid_subrow_config/) config is used, Grid doesn't support the [TreeGrid mode](/grid/treegrid_mode/), except for the [data grouping](/grid/usage/#grouping-data) functionality.
 :::
 
 @signature: {'subRowConfig?: ((row: IRow) => ISubRowConfig) | ISubRowConfig;'}
@@ -31,7 +31,7 @@ The `subRowConfig` object may contain the following properties:
 - `expanded` - (*boolean*) defines whether a sub-row is expanded by default, *false* by default
 - `preserve` - (*boolean*) saves the state of sub-rows while expanding/collapsing, disappearing from the visible area, data updating, *false* by default
 - `toggleIcon` - (*boolean*) enables the icon for expanding/collapsing, *true* by default
-- `height` - (*number*) the height of a sub-row in pixels, [controls the visibility of sub-rows](grid/configuration.md#adding-sub-rows-for-specific-rows), *200* by default
+- `height` - (*number*) the height of a sub-row in pixels, [controls the visibility of sub-rows](/grid/configuration/#adding-sub-rows-for-specific-rows), *200* by default
 - `padding` - (*string* | *number*) the inner padding of a sub-row, *8* by default
 - `css` - (*string*) user-defined CSS classes for a sub-row
 - `fullWidth` - (*boolean*) defines whether a sub-row will take all the width of Grid, *false* by default
@@ -88,9 +88,9 @@ const grid = new dhx.Grid("grid_container", {
 - [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
 - [Grid. Row expander. Subgrid only in specific rows](https://snippet.dhtmlx.com/03udbtmr)
 
-**Related article:** [Row expander](grid/configuration.md#row-expander)
+**Related article:** [Row expander](/grid/configuration/#row-expander)
 
-**Related API**: [subRow](grid/api/grid_subrow_config.md)
+**Related API**: [subRow](/grid/api/grid_subrow_config/)
 
 @changelog:
 - Added in v9.1

@@ -68,9 +68,9 @@ console.log(history.length); // -> 2
 
 @descr:
 
-**Related article**: [Getting the history of Grid actions](grid/usage_history.md/#getting-the-history-of-grid-actions)
+**Related article**: [Getting the history of Grid actions](/grid/usage_history/#getting-the-history-of-grid-actions)
 
-**Related API**: [`add()`](grid/api/history/add_method.md), [`remove()`](grid/api/history/remove_method.md), [`removeAll()`](grid/api/history/removeall_method.md)
+**Related API**: [`add()`](/grid/api/history/add_method/), [`remove()`](/grid/api/history/remove_method/), [`removeAll()`](/grid/api/history/removeall_method/)
 
 @changelog:
 added in v9.2

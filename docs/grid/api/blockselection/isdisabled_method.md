@@ -41,9 +41,9 @@ console.log(grid.block.isDisabled()); // -> true
 
 @descr:
 
-**Related article**: [Work with BlockSelection module](grid/usage_blockselection.md)
+**Related article**: [Work with BlockSelection module](/grid/usage_blockselection/)
 
-**Related API**: [`disable()`](grid/api/blockselection/disable_method.md), [`enable()`](grid/api/blockselection/enable_method.md)
+**Related API**: [`disable()`](/grid/api/blockselection/disable_method/), [`enable()`](/grid/api/blockselection/enable_method/)
 
 @changelog:
 added in v9.2

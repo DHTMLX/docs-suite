@@ -30,7 +30,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
-**Related article**: [Sorting by multiple columns](grid/usage.md#sorting-by-multiple-columns)
+**Related article**: [Sorting by multiple columns](/grid/usage/#sorting-by-multiple-columns)
 
 @changelog:
 - Added in v9.1

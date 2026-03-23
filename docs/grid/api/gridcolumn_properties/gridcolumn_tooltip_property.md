@@ -43,5 +43,5 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Column and spans tooltips](grid/configuration.md#column-and-spans-tooltips)
+**Related article**: [Column and spans tooltips](/grid/configuration/#column-and-spans-tooltips)
 

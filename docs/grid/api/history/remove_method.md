@@ -13,7 +13,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 @short: removes the last action from the Grid history
 
 :::note
-If the history is empty or the module is disabled, the operation is ignored, and the [`error`](grid/api/history/error_event.md) event is triggered (for a disabled module).
+If the history is empty or the module is disabled, the operation is ignored, and the [`error`](/grid/api/history/error_event/) event is triggered (for a disabled module).
 :::
 
 @signature: {'remove(): void;'}
@@ -48,9 +48,9 @@ console.log(grid.history.getHistory().length); // -> 0
 
 @descr:
 
-**Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
+**Related article**: [Adding/removing Grid history actions](/grid/usage_history/#addingremoving-grid-history-actions)
 
-**Related API**: [`add()`](grid/api/history/add_method.md), [`removeAll()`](grid/api/history/removeall_method.md), [`getHistory()`](grid/api/history/gethistory_method.md)
+**Related API**: [`add()`](/grid/api/history/add_method/), [`removeAll()`](/grid/api/history/removeall_method/), [`getHistory()`](/grid/api/history/gethistory_method/)
 
 @changelog:
 added in v9.2

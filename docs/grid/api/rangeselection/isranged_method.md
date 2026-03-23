@@ -57,9 +57,9 @@ console.log(grid.range.isRanged({ y: "3" })); // -> false
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md)
+**Related API**: [`setRange()`](/grid/api/rangeselection/setrange_method/)
 
 @changelog:
 added in v9.2

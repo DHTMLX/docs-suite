@@ -52,11 +52,11 @@ grid.range.resetRange(); // logs the previous range
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md),
-[`resetRange()`](grid/api/rangeselection/resetrange_method.md),
-[`beforeResetRange`](grid/api/rangeselection/beforeresetrange_event.md)
+**Related API**: [`setRange()`](/grid/api/rangeselection/setrange_method/),
+[`resetRange()`](/grid/api/rangeselection/resetrange_method/),
+[`beforeResetRange`](/grid/api/rangeselection/beforeresetrange_event/)
 
 @changelog:
 added in v9.2

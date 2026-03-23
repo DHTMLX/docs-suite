@@ -44,13 +44,13 @@ You must use only absolute paths not relative ones.
 :::
 
 :::info
-You need to enable the property if you want to export Grid with a [custom or overridden theme](themes.md).
+You need to enable the property if you want to export Grid with a [custom or overridden theme](/themes/).
 :::
 
 @descr:
 
 **Related API:**
-- [`png()`](grid/api/export/grid_png_method.md)
-- [`pdf()`](grid/api/export/grid_pdf_method.md)
+- [`png()`](/grid/api/export/grid_png_method/)
+- [`pdf()`](/grid/api/export/grid_pdf_method/)
 
 @changelog: added in v8.1

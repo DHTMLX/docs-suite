@@ -10,14 +10,14 @@ description: You can explore how to work with Clipboard module of Grid in the do
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can manage the clipboard functionality within a grid via the API of the [`Clipboard`](grid/configuration.md/#clipboard) module. It enables copying, cutting, and pasting data from a selected range of cells. Besides, it allows [integrating with other grids or external applications](#interaction-between-grids-and-external-widgets) like Google Spreadsheets. 
+You can manage the clipboard functionality within a grid via the API of the [`Clipboard`](/grid/configuration/#clipboard) module. It enables copying, cutting, and pasting data from a selected range of cells. Besides, it allows [integrating with other grids or external applications](#interaction-between-grids-and-external-widgets) like Google Spreadsheets. 
 
 ## Initializing the Clipboard module
 
-To initialize the `Clipboard` module, use the [`clipboard`](grid/api/grid_clipboard_config.md) property in the **dhx.Grid** component configuration. After the Grid component is created, the module is accessible through the `grid.clipboard` property. 
+To initialize the `Clipboard` module, use the [`clipboard`](/grid/api/grid_clipboard_config/) property in the **dhx.Grid** component configuration. After the Grid component is created, the module is accessible through the `grid.clipboard` property. 
 
 :::note
-The module requires the [`RangeSelection`](grid/usage_rangeselection.md) module to be enabled and is best used in conjunction with the [`BlockSelection`](grid/usage_blockselection.md) module in the `"range"` mode (enabled on initialization of the `Clipboard` module) for convenient range selection via the UI. [Check the details below](#interaction-with-cell-selection)
+The module requires the [`RangeSelection`](/grid/usage_rangeselection/) module to be enabled and is best used in conjunction with the [`BlockSelection`](/grid/usage_blockselection/) module in the `"range"` mode (enabled on initialization of the `Clipboard` module) for convenient range selection via the UI. [Check the details below](#interaction-with-cell-selection)
 :::
 
 ~~~jsx
@@ -42,7 +42,7 @@ The `clipboard` property can be set as an *object* to enable the module and defi
 ## Using events of the Clipboard object
 
 To make the process of working with clipboard more flexible, you can apply the related events of the `clipboard` object:
-[`afterCopy`](grid/api/clipboard/aftercopy_event.md), [`afterPaste`](grid/api/clipboard/afterpaste_event.md), [`beforeCopy`](grid/api/clipboard/beforecopy_event.md), [`beforePaste`](grid/api/clipboard/beforepaste_event.md), [`copyError`](grid/api/clipboard/copyerror_event.md), [`pasteError`](grid/api/clipboard/pasteerror_event.md)
+[`afterCopy`](/grid/api/clipboard/aftercopy_event/), [`afterPaste`](/grid/api/clipboard/afterpaste_event/), [`beforeCopy`](/grid/api/clipboard/beforecopy_event/), [`beforePaste`](/grid/api/clipboard/beforepaste_event/), [`copyError`](/grid/api/clipboard/copyerror_event/), [`pasteError`](/grid/api/clipboard/pasteerror_event/)
 
 ## Interaction with cell selection
 
@@ -52,7 +52,7 @@ When `Clipboard` module is enabled (e.g., via `grid.config.clipboard: true`), th
 
 ### Usage in other BlockSelection modes
 
-If the [`BlockSelection`](grid/usage_blockselection.md) module is configured in the `manual` mode, the `Clipboard` module does not automatically receive a range. In this case, you should manually set the range using the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api). For this purpose, you need to call `grid.range.setRange({ xStart, xEnd, yStart, yEnd })`.
+If the [`BlockSelection`](/grid/usage_blockselection/) module is configured in the `manual` mode, the `Clipboard` module does not automatically receive a range. In this case, you should manually set the range using the [`RangeSelection` API](/grid/api/api_overview/#rangeselection-api). For this purpose, you need to call `grid.range.setRange({ xStart, xEnd, yStart, yEnd })`.
 
 :::note
 Without a set range, copying and pasting will not work, as **Clipboard API** relies on data from the **RangeSelection API**.
@@ -60,10 +60,10 @@ Without a set range, copying and pasting will not work, as **Clipboard API** rel
 
 ### Data source for Clipboard
 
-The **Clipboard API** always uses data from the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api) to determine the cells that will be copied or into which data will be pasted.
+The **Clipboard API** always uses data from the [`RangeSelection` API](/grid/api/api_overview/#rangeselection-api) to determine the cells that will be copied or into which data will be pasted.
 
 :::note
-The `cut`/`paste` operations will be blocked in the [*grouping*](grid/usage.md/#grouping-data) mode.
+The `cut`/`paste` operations will be blocked in the [*grouping*](/grid/usage/#grouping-data) mode.
 :::
 
 ## Interaction between Grids and external widgets

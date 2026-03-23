@@ -49,4 +49,4 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 
-**Related article**: [Custom statistics in the column header/footer and spans](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans)
+**Related article**: [Custom statistics in the column header/footer and spans](/grid/configuration/#custom-statistics-in-the-column-headerfooter-and-spans)

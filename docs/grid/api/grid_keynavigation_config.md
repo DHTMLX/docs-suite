@@ -27,7 +27,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-You need to set the [selection](grid/api/grid_selection_config.md) and [editable](grid/api/grid_editable_config.md) properties in the configuration object of Grid to enable all available shortcut keys.  Read the details in the [Key Navigation](grid/configuration.md#keyboard-navigation) article.
+You need to set the [selection](/grid/api/grid_selection_config/) and [editable](/grid/api/grid_editable_config/) properties in the configuration object of Grid to enable all available shortcut keys.  Read the details in the [Key Navigation](/grid/configuration/#keyboard-navigation) article.
 
 @changelog: added in v6.3
 

@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](grid/api/grid_css_config.md) property in the Grid configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](/grid/api/grid_css_config/) property in the Grid configuration:
 
 ~~~js
 const grid = new dhx.Grid("grid_container", { 
@@ -398,7 +398,7 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 
 ![](../assets/grid/cell_templates.png)
 
-It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/api/api_gridcolumn_properties.md). The template option is a function that takes three parameters:
+It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](/grid/api/api_gridcolumn_properties/). The template option is a function that takes three parameters:
 
 <table>
     <tbody>
@@ -438,7 +438,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Event handlers for the template
 
-Starting from v7.0, you can assign event handlers to HTML elements of a custom template of Grid cells via using the [](grid/api/grid_eventhandlers_config.md) configuration property of Grid, for instance:
+Starting from v7.0, you can assign event handlers to HTML elements of a custom template of Grid cells via using the [eventHandlers](/grid/api/grid_eventhandlers_config/) configuration property of Grid, for instance:
 
 ~~~js {7-10,15-21}
 const grid = new dhx.Grid("grid_container", {
@@ -471,7 +471,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ![](../assets/grid/tooltip_template.png)
 
-Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
+Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](/grid/api/api_gridcolumn_properties/) configuration option of the [column](/grid/configuration/#columns). The **tooltipTemplate** function takes three parameters:
 
 <table>
     <tbody>
@@ -523,4 +523,6 @@ To prevent a tooltip from being shown, return `false` from the function (from v7
 
 **Related sample**: [Grid. Tooltip template](https://snippet.dhtmlx.com/954f7h9m)
 
-{{note You should enable the [htmlEnable](grid/configuration.md#html-content-of-grid-columns) option in the configuration of Grid (or configuration of the column) to activate HTML support for the tooltip.}}
+:::note 
+You should enable the [htmlEnable](/grid/configuration/#html-content-of-grid-columns) option in the configuration of Grid (or configuration of the column) to activate HTML support for the tooltip.
+:::

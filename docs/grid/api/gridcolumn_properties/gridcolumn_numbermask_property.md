@@ -64,6 +64,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [numberMask](grid/configuration.md#numbermask)
+**Related article**: [numberMask](/grid/configuration/#numbermask)
 
 **Related sample**: [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)

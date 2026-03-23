@@ -40,10 +40,9 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // the range won't be set
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`enable()`](grid/api/rangeselection/enable_method.md), [`getRange()`](grid/api/rangeselection/getrange_method.md),
-[`setRange()`](grid/api/rangeselection/setrange_method.md)
+**Related API**: [`enable()`](/grid/api/rangeselection/enable_method/), [`getRange()`](/grid/api/rangeselection/getrange_method/), [`setRange()`](/grid/api/rangeselection/setrange_method/)
 
 @changelog:
 added in v9.2

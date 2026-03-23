@@ -28,5 +28,5 @@ When you set `selection:true`, the "complex" mode is applied.
 **Related sample**: [Grid. Selection](https://snippet.dhtmlx.com/ad6roqsx)
 
 **Related articles:** 
-- [Selection](grid/configuration.md#selection)
-- [Work with Selection object](grid/usage_selection.md)
+- [Selection](/grid/configuration/#selection)
+- [Work with Selection object](/grid/usage_selection/)

@@ -39,7 +39,7 @@ Each object in the spans array contains the following properties:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The counted values are taken either from the [`summary`](/grid/api/grid_summary_config/) config option of the component or the [`summary`](/grid/api/api_gridcolumn_properties/) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -74,14 +74,14 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 - `css` - (*string*) optional, the name of a CSS class applied to a span
-- [`tooltip`](grid/configuration.md#column-and-spans-tooltips) - (*boolean|object*) optional, enables a tooltip on hovering over the content of a span, or sets the configuration object with the tooltip settings; *true* by default. When set as an object, the `tooltip` config can have the following properties:
+- [`tooltip`](/grid/configuration/#column-and-spans-tooltips) - (*boolean|object*) optional, enables a tooltip on hovering over the content of a span, or sets the configuration object with the tooltip settings; *true* by default. When set as an object, the `tooltip` config can have the following properties:
     - `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
     - `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
     - `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
     - `margin` - (optional) the margin between the node and tooltip
     - `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default
     - `css` - (optional) the style of a tooltip box
-- [`tooltipTemplate`](grid/configuration.md#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
+- [`tooltipTemplate`](/grid/configuration/#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - the value rendered in a cell, including the applied templates
         - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
@@ -115,12 +115,12 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 
-**Note**, that if both the **spans** and [leftSplit](grid/api/grid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
+**Note**, that if both the **spans** and [leftSplit](/grid/api/grid_leftsplit_config/) properties are set in the Grid config, the following rules will be applied:
 
 - All necessary columns or rows will be in a span if the **spans** property is set for the columns located within the frozen area.
 - If the **spans** property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
 
-**Related article:** [Spans](grid/configuration.md#spans)
+**Related article:** [Spans](/grid/configuration/#spans)
 
 @changelog:
 - The `tooltipTemplate` property is added in v9.0

@@ -54,7 +54,7 @@ grid.block.events.on("afterBlockHandleApply", (startCell, endCell, dir) => {
 
 @descr:
 
-**Related API**: [`beforeBlockHandleApply`](grid/api/blockselection/beforeblockhandleapply_event.md)
+**Related API**: [`beforeBlockHandleApply`](/grid/api/blockselection/beforeblockhandleapply_event/)
 
 @changelog:
 added in v9.2

@@ -40,14 +40,14 @@ You can apply the following events of the Selection object when working with the
 
 See the full lists of the methods of the Selection object you can use to manage the selection of cells in **Grid**, **Grid in the TreeGrid mode**:
 
-- [Grid. Selection methods](grid/api/api_overview.md#selection-methods)
+- [Grid. Selection methods](/grid/api/api_overview/#selection-methods)
 
-- [Grid in the TreeGrid mode. Selection methods](grid/api/api_overview.md#selection-methods) 
+- [Grid in the TreeGrid mode. Selection methods](/grid/api/api_overview/#selection-methods) 
 
 ### Events
 
 See the full lists of the events of the Selection object you can use while working with the selection of cells in **Grid**, **Grid in the TreeGrid mode**:
 
-- [Grid. Selection events](grid/api/api_overview.md#selection-events)
+- [Grid. Selection events](/grid/api/api_overview/#selection-events)
 
-- [Grid in the TreeGrid mode. Selection events](grid/api/api_overview.md#selection-events) 
+- [Grid in the TreeGrid mode. Selection events](/grid/api/api_overview/#selection-events) 

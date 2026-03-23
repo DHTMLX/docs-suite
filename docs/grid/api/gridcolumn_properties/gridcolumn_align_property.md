@@ -27,6 +27,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Alignment](grid/configuration.md#alignment)
+**Related article**: [Alignment](/grid/configuration/#alignment)
 
 **Related sample**: [Grid. Content align](https://snippet.dhtmlx.com/eyreddku)

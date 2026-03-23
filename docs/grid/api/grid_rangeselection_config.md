@@ -61,7 +61,7 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 ~~~
 
 **Related articles:** 
-- [Managing RangeSelection in Grid](grid/configuration.md/#managing-range-selection-in-grid)
-- [Work with RangeSelection module](grid/usage_rangeselection.md)
+- [Managing RangeSelection in Grid](/grid/configuration/#managing-range-selection-in-grid)
+- [Work with RangeSelection module](/grid/usage_rangeselection/)
 
 @changelog: added in v9.2

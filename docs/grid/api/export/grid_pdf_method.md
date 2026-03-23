@@ -78,7 +78,7 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 :::
 
 :::info
-If you use Grid in conjunction with [Pagination](pagination.md), only the displayed page will be exported. 
+If you use Grid in conjunction with [Pagination](pagination/), only the displayed page will be exported. 
 :::
 
 ## List of formats
@@ -100,9 +100,9 @@ If you use Grid in conjunction with [Pagination](pagination.md), only the displa
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
 
-**Related article:** [Exporting Grid](grid/usage.md)
+**Related article:** [Exporting Grid](/grid/usage/)
 
-**Related API:** [`exportStyles`](grid/api/grid_exportstyles_config.md)
+**Related API:** [`exportStyles`](/grid/api/grid_exportstyles_config/)
 
 **Change log:** 
 

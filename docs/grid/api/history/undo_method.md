@@ -15,7 +15,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 Depending on the type of the action, the method either applies the inverse action (for the "change" and "removeAll" types) or restores data (for the "add" and "remove" types).
 
 :::note
-If the history is empty, the module is disabled, or no inverse action is available (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered.
+If the history is empty, the module is disabled, or no inverse action is available (for actions with the "change" and "removeAll" types), the [`error`](/grid/api/history/error_event/) event is triggered.
 :::
 
 @signature: {'undo(): void;'}
@@ -50,9 +50,9 @@ console.log(grid.history.canRedo()); // -> true
 
 @descr:
 
-**Related article**: [Applying undo/redo operations to Grid history actions](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions)
+**Related article**: [Applying undo/redo operations to Grid history actions](/grid/usage_history/#applying-undoredo-operations-to-grid-history-actions)
 
-**Related API**: [`redo()`](grid/api/history/redo_method.md), [`canUndo()`](grid/api/history/canundo_method.md)
+**Related API**: [`redo()`](/grid/api/history/redo_method/), [`canUndo()`](/grid/api/history/canundo_method/)
 
 @changelog:
 added in v9.2

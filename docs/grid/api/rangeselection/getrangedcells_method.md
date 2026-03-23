@@ -52,9 +52,9 @@ grid.range.setRange({ xStart: "a", yStart: "1", xEnd: "b", yEnd: "1" });
 console.log(grid.range.getRangedCells()); // -> [{ row: { id: "1", ... }, column: { id: "a", ... }}, ...]
 
 @descr:
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md)
+**Related API**: [`setRange()`](/grid/api/rangeselection/setrange_method/)
 
 @changelog:
 added in v9.2

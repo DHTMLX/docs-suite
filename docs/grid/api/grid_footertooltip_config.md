@@ -9,7 +9,7 @@ description: You can explore the footerTooltip config of Grid in the documentati
 @short: Optional. Controls the footer tooltips
 
 :::note
-The `footerTooltip` config redefines the value of the [`tooltip`](grid/api/grid_tooltip_config.md) config for the footer tooltips.
+The `footerTooltip` config redefines the value of the [`tooltip`](/grid/api/grid_tooltip_config/) config for the footer tooltips.
 :::
 
 @signature: {'footerTooltip?: boolean | object;'}

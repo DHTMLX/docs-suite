@@ -10,7 +10,7 @@ DHTMLX Grid possesses flexible configuration that let you get desired look and f
 
 ## Setting the TreeGrid mode 
 
-**If you use the PRO version of DHTMLX Grid**, you can initialize Grid in the [TreeGrid mode](grid/treegrid_mode.md) which allows showing the nested tabular data. To create Grid in the TreeGrid mode, use the [`type: "tree"`](grid/api/grid_type_config.md) configuration option.
+**If you use the PRO version of DHTMLX Grid**, you can initialize Grid in the [TreeGrid mode](/grid/treegrid_mode/) which allows showing the nested tabular data. To create Grid in the TreeGrid mode, use the [`type: "tree"`](/grid/api/grid_type_config/) configuration option.
 
 ~~~jsx {2} title="index.js"
 const Grid = new dhx.Grid("grid_container", {
@@ -26,11 +26,11 @@ const Grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Check the details on the TreeGrid mode in the [related article](grid/treegrid_mode.md).
+Check the details on the TreeGrid mode in the [related article](/grid/treegrid_mode/).
 
 ## Width/height
 
-You can specify the necessary size of your Grid via the [`width`](grid/api/grid_width_config.md) and [`height`](grid/api/grid_height_config.md) configuration properties:
+You can specify the necessary size of your Grid via the [`width`](/grid/api/grid_width_config/) and [`height`](/grid/api/grid_height_config/) configuration properties:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -51,7 +51,7 @@ If the `width` and `height` options aren't set in the Grid configuration, the Gr
 
 ### Autoheight for Grid
 
-**If you use the PRO version of DHTMLX Grid**, you may enable the auto height mode of Grid. For this, set the value of the [height](grid/api/grid_height_config.md) property to "auto". In this mode, Grid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
+**If you use the PRO version of DHTMLX Grid**, you may enable the auto height mode of Grid. For this, set the value of the [height](/grid/api/grid_height_config/) property to "auto". In this mode, Grid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -82,7 +82,7 @@ If needed, you may set the minimal and maximal height for the container via the 
 
 ## Columns
 
-It is possible to adjust the configuration of grid columns via the corresponding option [`columns`](grid/api/grid_columns_config.md). As a value it takes an array with objects each of which contains config of a column.
+It is possible to adjust the configuration of grid columns via the corresponding option [`columns`](/grid/api/grid_columns_config/). As a value it takes an array with objects each of which contains config of a column.
 The full list of properties you can set for a column is given in the API reference.
 
 ~~~jsx
@@ -100,7 +100,7 @@ const grid = new dhx.Grid("grid_container", {
 Each column object may contain a set of properties.
 
 :::note 
-You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).
+You will find the full list of the configuration properties of a Grid column [here](/grid/api/api_gridcolumn_properties/).
 :::
 
 ### Alignment
@@ -123,7 +123,7 @@ The available values of the option are *"left"*, *"center"* and *"right"*.
 
 ### Autosize for columns
 
-You can configure columns' settings so that their width would automatically adjust to their content. Use the [](grid/api/grid_adjust_config.md) property for this purpose. The property can take one of four values:
+You can configure columns' settings so that their width would automatically adjust to their content. Use the [adjust](/grid/api/grid_adjust_config/) property for this purpose. The property can take one of four values:
 
 <table>
     <tbody>
@@ -159,7 +159,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Adjust columns by header, data, all](https://snippet.dhtmlx.com/zfrpe22d)
 
-It is also possible to use the [](grid/api/grid_adjust_config.md) property in the configuration of a separate column:
+It is also possible to use the [adjust](/grid/api/grid_adjust_config/) property in the configuration of a separate column:
 
 ~~~jsx {3,6}
 const grid = new dhx.Grid("grid_container", { 
@@ -178,7 +178,7 @@ In case complex HTML content is added into a column, the column width may be cal
 
 ### Autowidth for columns
 
-It is possible to automatically adjust the size of Grid columns to the size of Grid with the help of the [](grid/api/grid_autowidth_config.md) configuration option, like this:
+It is possible to automatically adjust the size of Grid columns to the size of Grid with the help of the [autoWidth](/grid/api/grid_autowidth_config/) configuration option, like this:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -192,7 +192,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Columns auto width](https://snippet.dhtmlx.com/4as4y3l4)
 
-You can disable this functionality for a specified column via setting the [](grid/api/grid_autowidth_config.md) property to *false* in the configuration of the column:
+You can disable this functionality for a specified column via setting the [autoWidth](/grid/api/grid_autowidth_config/) property to *false* in the configuration of the column:
 
 ~~~jsx {3,6}
 const grid = new dhx.Grid("grid_container", {
@@ -455,8 +455,8 @@ The date format must include delimiters (spaces or symbols), otherwise an error 
 
 You can fix (or "freeze") a column or several columns, so that they will become static when you scroll the grid, while the rest of columns remain movable. 
 
-- To fix columns to the left side of the grid, use the [leftSplit](grid/api/grid_leftsplit_config.md) property. 
-- To fix columns to the right side of the grid, use the [rightSplit](grid/api/grid_rightsplit_config.md) property. 
+- To fix columns to the left side of the grid, use the [leftSplit](/grid/api/grid_leftsplit_config/) property. 
+- To fix columns to the right side of the grid, use the [rightSplit](/grid/api/grid_rightsplit_config/) property. 
 
 Just set the number of columns you want to freeze as a value of the related property in the Grid configuration.
 
@@ -475,7 +475,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Hidden columns
 
-You can set the `hidden:true` property in the [config of a column](grid/configuration.md#columns) so that it doesn't appear on a page.
+You can set the `hidden:true` property in the [config of a column](/grid/configuration/#columns) so that it doesn't appear on a page.
 
 ~~~jsx {5}
 { 
@@ -492,7 +492,7 @@ You can set the `hidden:true` property in the [config of a column](grid/configur
 
 By default, DHTMLX Grid allows sorting content of any Grid column by clicking on its header. 
 
-To disable this option, set the [](grid/api/grid_sortable_config.md) property in the Grid configuration to *false*:
+To disable this option, set the [sortable](/grid/api/grid_sortable_config/) property in the Grid configuration to *false*:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -508,7 +508,7 @@ const grid = new dhx.Grid("grid_container", {
 
 #### Making separate columns sortable
 
-You can make separate columns sortable by specifying the [`sortable:true`](grid/api/grid_sortable_config.md) property in the configuration of a column:
+You can make separate columns sortable by specifying the [`sortable:true`](/grid/api/grid_sortable_config/) property in the configuration of a column:
 
 In the example below all columns will be sortable, except for the second one:
 
@@ -557,7 +557,7 @@ Then you will be able to change the width of columns using the mouse. With the c
 If you also set the `autoWidth` configuration option, you will be able to change the width of columns only inside the container of Grid. 
 :::
 
-You can disable the resizing of any column by setting the [`resizable:false`](grid/api/grid_resizable_config.md) property in the config of a column.
+You can disable the resizing of any column by setting the [`resizable:false`](/grid/api/grid_resizable_config/) property in the config of a column.
 
 ~~~jsx {4,7}
 const grid = new dhx.Grid("grid_container", {
@@ -582,7 +582,7 @@ DHTMLX Grid allows adding HTML content into Grid cells (such as images, icons, t
 
 - setting HTML content for all Grid columns
 
-This way presupposes making each cell of Grid capable of displaying the HTML content via using the [htmlEnable](grid/api/grid_htmlenable_config.md) property in the configuration object of Grid.
+This way presupposes making each cell of Grid capable of displaying the HTML content via using the [htmlEnable](/grid/api/grid_htmlenable_config/) property in the configuration object of Grid.
 
 ~~~jsx {14}
 const dataset = [
@@ -606,7 +606,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ![](../assets/grid/html_content.png)
 
-If you want to add custom elements into cells of the specified column, you need to set the `htmlEnable:true` property in the [configuration of a column](grid/api/api_gridcolumn_properties.md):
+If you want to add custom elements into cells of the specified column, you need to set the `htmlEnable:true` property in the [configuration of a column](/grid/api/api_gridcolumn_properties/):
 
 ~~~jsx {12}
 const dataset = [
@@ -659,7 +659,7 @@ const grid = new dhx.Grid("grid", {
 
 #### HTML elements defined in the data set
 
-Starting from v7.0, you can add event handlers to the HTML elements defined in a data set of Grid with the help of the [](grid/api/grid_eventhandlers_config.md) configuration property, for instance:
+Starting from v7.0, you can add event handlers to the HTML elements defined in a data set of Grid with the help of the [eventHandlers](/grid/api/grid_eventhandlers_config/) configuration property, for instance:
 
 ~~~jsx {3,17-28}
 const data = [
@@ -697,7 +697,7 @@ const grid = new dhx.Grid("grid_container", {
 
 #### HTML elements in the header/footer cell
 
-The Suite version 8.3 brought the possibility to add events handlers for the header/footer cell's content. Use the [](grid/api/grid_eventhandlers_config.md) configuration property for this purpose:
+The Suite version 8.3 brought the possibility to add events handlers for the header/footer cell's content. Use the [eventHandlers](/grid/api/grid_eventhandlers_config/) configuration property for this purpose:
 
 ~~~jsx
 const grid = new dhx.Grid("grid", {
@@ -745,7 +745,7 @@ DHTMLX Grid provides the editing feature that includes two options:
 
 - editing of the whole Grid, i.e. of all its columns
 
-To make all columns of the Grid editable, specify the [](grid/api/grid_editable_config.md) option in the configuration of Grid:
+To make all columns of the Grid editable, specify the [editable](/grid/api/grid_editable_config/) option in the configuration of Grid:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -761,7 +761,7 @@ const grid = new dhx.Grid("grid_container", {
 
 - editing of the specified columns only
 
-This option implies that you can enable/disable editing of particular columns by setting the [`editable: true`](grid/api/grid_editable_config.md) property in the configuration of a column:
+This option implies that you can enable/disable editing of particular columns by setting the [`editable: true`](/grid/api/grid_editable_config/) property in the configuration of a column:
 
 In the example below all columns will be editable, except for the first one:
 
@@ -810,7 +810,7 @@ Note that on scrolling the grid the cell editor will be closed only when the cel
 
 ### Types of column editor
 
-You can specify the way of editing the cells of a Grid column depending on its content as a simple input, a date picker, a textarea control, a checkbox, a select, a multiselect or a combobox. The type of the used editor can be defined either by the `editorType` property of a [column](grid/api/grid_columns_config.md) or via the `type` one.
+You can specify the way of editing the cells of a Grid column depending on its content as a simple input, a date picker, a textarea control, a checkbox, a select, a multiselect or a combobox. The type of the used editor can be defined either by the `editorType` property of a [column](/grid/api/grid_columns_config/) or via the `type` one.
 
 There are several types of column editors:
 
@@ -840,7 +840,7 @@ const grid = new dhx.Grid("grid_container", {
 
 An editor for cells with dates (default for a column with `type:"date"`).
 
-To use this editor, you should specify the `type:"date"` property for a column. It is also possible to set the necessary [format of date](/calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the `dateFormat` option.
+To use this editor, you should specify the `type:"date"` property for a column. It is also possible to set the necessary [format of date](/calendar/api/calendar_dateformat_config/) while editing a cell content with the help of the `dateFormat` option.
 
 By default, after editing dates are transformed and displayed as string values. 
 You can also save a date as a string representation of the Date object by setting the `asDateObject` property to *true* in the `editorConfig` object:
@@ -861,7 +861,7 @@ You can also save a date as a string representation of the Date object by settin
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 :::info
-You can configure the date picker by passing the [properties of Calendar](category/calendar-properties.md) (**except for** the `value` and `range` ones) to the `editorConfig` object, as in:
+You can configure the date picker by passing the [properties of Calendar](category/calendar-properties/) (**except for** the `value` and `range` ones) to the `editorConfig` object, as in:
 
 ~~~jsx
 { 
@@ -886,7 +886,7 @@ An editor for cells that contain text.
 To use this editor, you should specify the `editorType:"textarea"` property for a column.
 
 :::note 
-The **textarea** editor allows editing multiple lines of text when the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration option of Grid is enabled. The functionality is available only in PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+The **textarea** editor allows editing multiple lines of text when the [autoHeight:true](/grid/api/grid_autoheight_config/) configuration option of Grid is enabled. The functionality is available only in PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
 ~~~jsx
@@ -1037,7 +1037,7 @@ Note that the *ids* of the **multiselect** editor options specified as *objects*
 
 #### Configuring the multiselect editor
 
-There is a list of [configuration settings](grid/api/api_gridcolumn_properties.md) you may provide for the **multiselect** editor type. Use the `editorConfig` property to specify the desired settings:
+There is a list of [configuration settings](/grid/api/api_gridcolumn_properties/) you may provide for the **multiselect** editor type. Use the `editorConfig` property to specify the desired settings:
 
 ~~~jsx
 {
@@ -1093,7 +1093,7 @@ Or define unique lists of options for different column cells. For that, use a fu
 
 #### Configuring the combobox editor
 
-There is a list of [configuration settings](grid/api/api_gridcolumn_properties.md) you may provide for the **combobox** editor type. Use the `editorConfig` property to specify the desired settings:
+There is a list of [configuration settings](/grid/api/api_gridcolumn_properties/) you may provide for the **combobox** editor type. Use the `editorConfig` property to specify the desired settings:
 
 ~~~jsx
 {
@@ -1145,7 +1145,7 @@ There is a possibility to redefine the style of the warning on entering an inval
 
 ### Editable combobox
 
-From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#types-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](grid/api/api_gridcolumn_properties.md):
+From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#types-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](/grid/api/api_gridcolumn_properties/):
 
 ~~~jsx {7}
 {
@@ -1188,7 +1188,7 @@ dhx.i18n.setLocale("combobox", locale["de"]);
 ### Opening editor with one click
 
 By default, you can open the editor by double-clicking on a cell. 
-But if you need the editor to open after a single click, apply the [](grid/api/grid_cellclick_event.md) event of the grid.
+But if you need the editor to open after a single click, apply the [cellClick](/grid/api/grid_cellclick_event/) event of the grid.
 
 <iframe src="https://snippet.dhtmlx.com/r5crm57v?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
@@ -1209,14 +1209,14 @@ It is also possible to [get the object with the calculated values](#getting-the-
 **Related sample:** [Grid. Custom totals for footer and columns with dynamic updates on edit](https://snippet.dhtmlx.com/59d6hqtm)
 
 :::info
-Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation while creating the summary list. 
+Use the [`dhx.methods`](helpers/data_calculation_functions/) helper to define the default statistical functions and to create custom functions for data calculation while creating the summary list. 
 ::: 
 
 ### Column summary
 
-To form a summary list that will be available at the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
+To form a summary list that will be available at the column's level only, you should use the [`summary`](/grid/api/api_gridcolumn_properties/) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
 
-- a string with the name of the [applied functor](helpers/data_calculation_functions.md)
+- a string with the name of the [applied functor](/helpers/data_calculation_functions/)
 
 - a tuple `[string, string]` that specifies the field name and the name of the applied functor
 
@@ -1239,9 +1239,9 @@ When the column `summary` property is initialized as a string, the resulting val
 
 ### Grid summary
 
-To form a summary list at the Grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. The `summary` configuration option of Grid is an *object* with calculated values, where the *keys* are the field names and the *values* can be:
+To form a summary list at the Grid's level, you need to use the [`summary`](/grid/api/grid_summary_config/) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. The `summary` configuration option of Grid is an *object* with calculated values, where the *keys* are the field names and the *values* can be:
 
-- a string with the name of the [applied functor](helpers/data_calculation_functions.md)
+- a string with the name of the [applied functor](/helpers/data_calculation_functions/)
 
 - a tuple `[string, string]` that specifies the field name and the name of the applied functor
 
@@ -1300,14 +1300,14 @@ const summary = grid.getSummary();
 console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 20.00 }
 ~~~
 
-In the above example the [`dhx.methods`](helpers/data_calculation_functions.md) helper is used to:
+In the above example the [`dhx.methods`](/helpers/data_calculation_functions/) helper is used to:
 
 - create a custom function for calculating the density of population 
 - redefine the default `sum` functor by using custom calculations for the summary of the "area" column
 
 ### Getting the summary object
 
-To get the object with the calculated values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters, the method returns an object with the calculated values defined in the configuration of the component.
+To get the object with the calculated values, you should use the [`getSummary()`](/grid/api/grid_getsummary_method/) method. When called without parameters, the method returns an object with the calculated values defined in the configuration of the component.
 
 You can also pass the `id` of a column to the method to get an object with the calculated values defined in the column's configuration together with the calculated values defined in the component's configuration. In the following example calculated values are used for rendering the summary for a column:
 
@@ -1347,7 +1347,7 @@ You can specify the text of the header/footer column via the `text` property. It
     - the *key* is either the key defined in the list or the functor name
     - the *value* can be a *string*, *number* or *null*
 
-The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The calculated values are taken from the [`summary`](/grid/api/grid_summary_config/) config option of the component and the [`summary`](/grid/api/api_gridcolumn_properties/) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -1373,7 +1373,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Header/footer filters
 
-There are the following types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md): `inputFilter`, `selectFilter`, `comboFilter`, `dateFilter` (**PRO version**).
+There are the following types of filters that you can specify in the header/footer content of a [Grid column](/grid/api/grid_columns_config/): `inputFilter`, `selectFilter`, `comboFilter`, `dateFilter` (**PRO version**).
 
 - **inputFilter** 
 
@@ -1519,7 +1519,7 @@ Calendar API configuration properties:
 
 ### Customizing header/footer filters
 
-To add a custom function with your you own logic for the filter of a Grid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md).
+To add a custom function with your you own logic for the filter of a Grid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](/grid/api/api_gridcolumn_properties/).
 
 :::note 
 The `customFilter` attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter" | "dateFilter"*](#headerfooter-filters) is set.
@@ -1556,7 +1556,7 @@ You can change the height of the header/footer in one of the following ways:
 
 1. Specify the necessary height of the rows in the header/footer via the related API options
 
-The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [`headerRowHeight`](/grid/api/grid_headerrowheight_config/)/[`footerRowHeight`](/grid/api/grid_footerrowheight_config/)
 properties, correspondingly. The default value of the mentioned properties is 40.
 
 ~~~jsx
@@ -1573,7 +1573,7 @@ const grid = new dhx.Grid("grid_container", {
 
 2. Provide the automatic adjustment of the header/footer height for the content to fit in
 
-Use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to redefine the `autoHeight` config for the header and the footer, correspondingly:
+Use the [headerAutoHeight](/grid/api/grid_headerautoheight_config/) and [footerAutoHeight](/grid/api/grid_footerautoheight_config/) configuration options of Grid (**PRO version only**) to redefine the `autoHeight` config for the header and the footer, correspondingly:
 
 ~~~jsx
 // enabling autoheight only in the content
@@ -1661,7 +1661,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Row height
 
-The default height of a grid row is 40. You can change it and set any other height via the [`rowHeight`](grid/api/grid_rowheight_config.md) property, e.g.:
+The default height of a grid row is 40. You can change it and set any other height via the [`rowHeight`](/grid/api/grid_rowheight_config/) property, e.g.:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1679,7 +1679,7 @@ In this case, the height of each row is 30.
 
 ### Setting height for a separate row
 
-Starting with v7.1, it is possible to specify the height for the necessary row of data in Grid via setting the number value to the `height` option when defining the [data set](grid/api/grid_data_config.md):
+Starting with v7.1, it is possible to specify the height for the necessary row of data in Grid via setting the number value to the `height` option when defining the [data set](/grid/api/grid_data_config/):
 
 ~~~jsx {5}
 const dataset = [
@@ -1700,7 +1700,7 @@ const dataset = [
 **Related sample**: [Grid. Row height](https://snippet.dhtmlx.com/2jo5lcuj)
 
 :::note 
-The `height` option has a higher priority than the [`autoHeight:true`](grid/api/grid_autoheight_config.md) configuration property of Grid. 
+The `height` option has a higher priority than the [`autoHeight:true`](/grid/api/grid_autoheight_config/) configuration property of Grid. 
 :::
 
 ### Autoheight for rows
@@ -1709,7 +1709,7 @@ The `height` option has a higher priority than the [`autoHeight:true`](grid/api/
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-Starting from v7.1, you can set the [`autoHeight: true`](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make a long text split into multiple lines automatically based on the width of the column:
+Starting from v7.1, you can set the [`autoHeight: true`](/grid/api/grid_autoheight_config/) option in the configuration of Grid to make a long text split into multiple lines automatically based on the width of the column:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1731,12 +1731,12 @@ Please note that the `autoHeight` option does not adjust the height of the cells
 
 The option just makes their text split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you can:
 
-- use the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid to set specific values for the header/footer rows height
-- use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to enable autoheight for the header/footer rows
+- use the [headerRowHeight](/grid/api/grid_headerrowheight_config/) and [footerRowHeight](/grid/api/grid_footerrowheight_config/) configuration options of Grid to set specific values for the header/footer rows height
+- use the [headerAutoHeight](/grid/api/grid_headerautoheight_config/) and [footerAutoHeight](/grid/api/grid_footerautoheight_config/) configuration options of Grid (**PRO version only**) to enable autoheight for the header/footer rows
 
 ### Automatic adding of empty row into Grid
 
-There is a possibility to automatically add an empty row after the last filled row in the grid. Use the [](grid/api/grid_autoemptyrow_config.md) property in the Grid configuration object to enable this feature:
+There is a possibility to automatically add an empty row after the last filled row in the grid. Use the [autoEmptyRow](/grid/api/grid_autoemptyrow_config/) property in the Grid configuration object to enable this feature:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1754,8 +1754,8 @@ const grid = new dhx.Grid("grid_container", {
 
 You can fix (or "freeze") a row or several rows, so that they will become static when you scroll the grid, while the rest of rows remain movable. 
 
-- To fix rows on the top of the grid, use the [`topSplit`](grid/api/grid_topsplit_config.md) property. 
-- To fix rows on the bottom of the grid, use the [`bottomSplit`](grid/api/grid_bottomsplit_config.md) property. 
+- To fix rows on the top of the grid, use the [`topSplit`](/grid/api/grid_topsplit_config/) property. 
+- To fix rows on the bottom of the grid, use the [`bottomSplit`](/grid/api/grid_bottomsplit_config/) property. 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1772,7 +1772,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Spans
 
-The Grid component has the [`spans`](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
+The Grid component has the [`spans`](/grid/api/grid_spans_config/) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1800,7 +1800,7 @@ Each span object contains the following properties:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The calculated values are taken from the [`summary`](/grid/api/grid_summary_config/) config option of the component and the [`summary`](/grid/api/api_gridcolumn_properties/) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -1893,7 +1893,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Grouped cells (spans)](https://snippet.dhtmlx.com/1775dwbl)
 
-**Note**, that if both the `spans` and [`leftSplit`](grid/api/grid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
+**Note**, that if both the `spans` and [`leftSplit`](/grid/api/grid_leftsplit_config/) properties are set in the Grid config, the following rules will be applied:
 
 - All necessary columns or rows will be in a span if the `spans` property is set for the columns located within the frozen area.
 - If the `spans` property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
@@ -1902,7 +1902,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Grid tooltips
 
-The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column's cell. All the tooltips can be controlled via the [](grid/api/grid_tooltip_config.md) configuration property of Grid. By default, the tooltips are enabled. You can disable them, by setting the config to *false*:
+The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column's cell. All the tooltips can be controlled via the [tooltip](/grid/api/grid_tooltip_config/) configuration property of Grid. By default, the tooltips are enabled. You can disable them, by setting the config to *false*:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1939,7 +1939,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Tooltip config](https://snippet.dhtmlx.com/qpqnalyt)
 
-It is also possible to control the header and footer tooltips, independently. There are the [`headerTooltip`](grid/api/grid_headertooltip_config.md) and [`footerTooltip`](grid/api/grid_footertooltip_config.md) Grid configuration properties, that you can use for this purpose:
+It is also possible to control the header and footer tooltips, independently. There are the [`headerTooltip`](/grid/api/grid_headertooltip_config/) and [`footerTooltip`](/grid/api/grid_footertooltip_config/) Grid configuration properties, that you can use for this purpose:
 
 ~~~jsx {7-8}
 const grid = new dhx.Grid("grid_container", {
@@ -1953,11 +1953,11 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-The `headerTooltip` and `footerTooltip` configs can be specified as objects the same as the main [`tooltip`](grid/configuration.md#grid-tooltips) config.
+The `headerTooltip` and `footerTooltip` configs can be specified as objects the same as the main [`tooltip`](/grid/configuration/#grid-tooltips) config.
 
 ### Column and spans tooltips
 
-There is a possibility to enable/disable tooltips for separate columns or spans by using the `tooltip` option in the configuration object of the [`columns`](grid/configuration.md#columns) or [`spans`](grid/configuration.md#spans) accordingly:
+There is a possibility to enable/disable tooltips for separate columns or spans by using the `tooltip` option in the configuration object of the [`columns`](/grid/configuration/#columns) or [`spans`](/grid/configuration/#spans) accordingly:
 
 ~~~jsx {3,7,10}
 const grid = new dhx.Grid("grid_container", {
@@ -2025,7 +2025,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-You can [check an example of applying a template for a column tooltip](grid/customization.md#adding-template-to-tooltip).
+You can [check an example of applying a template for a column tooltip](/grid/customization/#adding-template-to-tooltip).
 
 - to set a template for a spans tooltip use the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
@@ -2169,10 +2169,10 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 ### Adding sub-rows 
 
-In order to enable the row expander feature, you should use the [`subRow`](grid/api/grid_subrow_config.md) configuration option. It defines the content of sub-rows for each row of the Grid. The `subRow` property is a callback function which is called with the row object as a parameter and should return an HTML string or the constructor of a Suite component (Grid, Chart, Form, DataView, etc.).
+In order to enable the row expander feature, you should use the [`subRow`](/grid/api/grid_subrow_config/) configuration option. It defines the content of sub-rows for each row of the Grid. The `subRow` property is a callback function which is called with the row object as a parameter and should return an HTML string or the constructor of a Suite component (Grid, Chart, Form, DataView, etc.).
 
 :::note
-Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md), except for the [data grouping](grid/usage.md#grouping-data) functionality.
+Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](/grid/treegrid_mode/), except for the [data grouping](/grid/usage/#grouping-data) functionality.
 :::
 
 Check the example of using a sub-row with an HTML content:
@@ -2219,7 +2219,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Adjusting configuration of sub-rows
 
-You can define common configuration settings of all sub-rows or provide specific options for each sub-row via the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration property of Grid.
+You can define common configuration settings of all sub-rows or provide specific options for each sub-row via the [`subRowConfig`](/grid/api/grid_subrowconfig_config/) configuration property of Grid.
 
 This property can be used either as a callback function or as an object:
 
@@ -2262,7 +2262,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Dynamic configuration of sub-rows
 
-You can dynamically expand/collapse certain sub-rows or adjust their appearance (specify the size of a cell, provide particular styles for sub-rows, etc.) on initialization of Grid depending on some conditions, using the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration property of Grid set as a callback function. Check the example below:
+You can dynamically expand/collapse certain sub-rows or adjust their appearance (specify the size of a cell, provide particular styles for sub-rows, etc.) on initialization of Grid depending on some conditions, using the [`subRowConfig`](/grid/api/grid_subrowconfig_config/) configuration property of Grid set as a callback function. Check the example below:
 
 ~~~jsx {7-11}
 const grid = new dhx.Grid("grid_container", {
@@ -2284,7 +2284,7 @@ In the above example the sub-rows are dynamically configured depending on the va
 
 #### Adding sub-rows for specific rows
 
-You can define which row a sub-row should be created for with the help of the `height` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option. If you don't want to create sub-rows for particular rows, specify the `height:0` setting in the `subRowConfig` property.
+You can define which row a sub-row should be created for with the help of the `height` property of the [`subRowConfig`](/grid/api/grid_subrowconfig_config/) configuration option. If you don't want to create sub-rows for particular rows, specify the `height:0` setting in the `subRowConfig` property.
 
 :::note
 The described functionality works only if the `subRowConfig` property is initialized as a callback function.
@@ -2312,13 +2312,13 @@ const grid = new dhx.Grid("grid_container", {
 
 ![](../assets/grid/subgrid_specific_rows.png)
 
-In the above example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that sub-rows with the height 250px will be created for rows that have some data. For rows without data the `height:0` setting is specified, so sub-rows won't be created for these rows.
+In the above example the [`subRowConfig`](/grid/api/grid_subrowconfig_config/) config set as a callback function defines that sub-rows with the height 250px will be created for rows that have some data. For rows without data the `height:0` setting is specified, so sub-rows won't be created for these rows.
 
 **Related sample:** [Grid. Row expander. Subgrid only in specific rows](https://snippet.dhtmlx.com/03udbtmr)
 
 ### Saving state of nested components or data in sub-rows
 
-You can save the state of the nested components or the data of sub-rows while updating data, scrolling or collapsing sub-rows by using the `preserve` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option of Grid. By default, sub-rows are destroyed when they are hidden (e.g. if a row leaves the visible area during scrolling) or collapsed, which leads to resetting of any changes made in the inner components.
+You can save the state of the nested components or the data of sub-rows while updating data, scrolling or collapsing sub-rows by using the `preserve` property of the [`subRowConfig`](/grid/api/grid_subrowconfig_config/) configuration option of Grid. By default, sub-rows are destroyed when they are hidden (e.g. if a row leaves the visible area during scrolling) or collapsed, which leads to resetting of any changes made in the inner components.
 
 When the `preserve: true` setting is specified, sub-rows aren't destroyed when hidden or collapsed and their content is saved. It means that any change (such as sorting, data input or state change) is saved and the sub-row is restored in the same state when displayed again.
 
@@ -2395,7 +2395,7 @@ In the above example the `load()` method of [DataCollection](/data_collection/) 
 
 #### Grid event handlers
 
-If a sub-row initializes a nested component (any Suite component), the sub-component's events can be set in the [`subRow`](grid/api/grid_subrow_config.md) callback function. It allows specifying event handlers directly for the nested component:
+If a sub-row initializes a nested component (any Suite component), the sub-component's events can be set in the [`subRow`](/grid/api/grid_subrow_config/) callback function. It allows specifying event handlers directly for the nested component:
 
 ~~~jsx {16-18}
 const grid = new dhx.Grid("grid_container", {
@@ -2426,7 +2426,7 @@ const grid = new dhx.Grid("grid_container", {
 
 #### HTML template event handlers
 
-To specify the event handlers for a sub-row with an HTML content, use the [`eventHandlers`](grid/api/grid_eventhandlers_config.md) configuration option of Grid:
+To specify the event handlers for a sub-row with an HTML content, use the [`eventHandlers`](/grid/api/grid_eventhandlers_config/) configuration option of Grid:
 
 ~~~jsx {13-20}
 const grid = new dhx.Grid("grid_container", {
@@ -2461,7 +2461,7 @@ It is possible to create as many levels of nested subgrids, as necessary.
 To specify the structure of a multi-level Grid nesting, do the following:
 
 - create a Grid with columns and data 
-- in the Grid configuration specify the [`subRow`](grid/api/grid_subrow_config.md) option as a callback function, which:
+- in the Grid configuration specify the [`subRow`](/grid/api/grid_subrow_config/) option as a callback function, which:
     - returns a nested Grid that contains the `subRow` config set as a callback function that may return:
         - some Suite component
         - HTML as string 
@@ -2517,7 +2517,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Adjusting sub-row width 
 
-You can adjust the sub-row width depending on the width of its parent Grid via the `fullWidth` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration object.
+You can adjust the sub-row width depending on the width of its parent Grid via the `fullWidth` property of the [`subRowConfig`](/grid/api/grid_subrowconfig_config/) configuration object.
 
 :::info note
 The `fullWidth` property works only if the `subRowConfig` property is initialized as an object.
@@ -2553,7 +2553,7 @@ In the above example:
 
 ### Getting sub-row config and content
 
-You can get the configuration settings applied to a sub-row and the content inside it using the [`getSubRow()`](grid/api/grid_getsubrow_method.md) method. 
+You can get the configuration settings applied to a sub-row and the content inside it using the [`getSubRow()`](/grid/api/grid_getsubrow_method/) method. 
 
 :::info
 Note that the method works if a sub-row is in the visible area or if the `preserve:true` property is specified in the `subRowConfig` object of the sub-row.
@@ -2616,7 +2616,7 @@ There are some peculiarities of the drag-n-drop functionality in the Grid in the
 
 ### Drag-n-drop inside the grid
 
-It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"`](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
+It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"`](/grid/api/grid_dragitem_config/) property in the configuration object of Grid:
 
 ~~~jsx {5}
 const grid = new dhx.Grid("grid_container", {
@@ -2649,12 +2649,12 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 :::tip
-To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).
+To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](/grid/api/api_overview/#column-drag-and-drop) and [rows](/grid/api/api_overview/#row-drag-and-drop).
 :::
 
 ### Drag-n-drop between grids
 
-DHTMLX Grid supports drag-n-drop of rows/columns between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
+DHTMLX Grid supports drag-n-drop of rows/columns between grids in several modes. To begin with, you should specify the [dragMode](/grid/api/grid_dragmode_config/) property in the configuration object of Grid. Then define which mode you need:
 
 - "target" - a grid takes a row/column from other grids, while its row/colmn can't be dragged out of it
 - "source" - a grid allows dragging its row/column out and can't take a row/column from other grids
@@ -2718,11 +2718,11 @@ const grid = new dhx.Grid("grid", {
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the look and feel of the drag panel that appears when the drag-n-drop functionality is activated. Check the details below.
+The [`DragPanel`](/grid/usage_dragpanel/) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the look and feel of the drag panel that appears when the drag-n-drop functionality is activated. Check the details below.
 
 ![](../assets/grid/dragpanel_module.png)
 
-To initialize the `DragPanel` module, you should enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration together with the [row Drag-and-Drop](#drag-n-drop) functionality (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties). For example:
+To initialize the `DragPanel` module, you should enable the [`dragPanel`](/grid/api/grid_dragpanel_config/) property in the Grid configuration together with the [row Drag-and-Drop](#drag-n-drop) functionality (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties). For example:
 
 ~~~jsx {10-11}
 const grid = new dhx.Grid("grid_container", {
@@ -2742,7 +2742,7 @@ const grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid (TreeGrid). DragPanel. Initialization](https://snippet.dhtmlx.com/uevdwjuo)
 
 The module is also automatically enabled if the [row Drag-and-Drop](#drag-n-drop) functionality is activated 
-(e.g. via the `dragItem: "row"` or `dragItem: "both"` properties) and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
+(e.g. via the `dragItem: "row"` or `dragItem: "both"` properties) and either the [`BlockSelection`](/grid/usage_blockselection/) or [`Clipboard`](/grid/usage_clipboard/) modules are enabled.
 
 The following example demonstrates enabling the `DragPanel` module with row Drag-and-Drop and the `BlockSelection` module:
 
@@ -2797,7 +2797,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Selection
 
-DHTMLX Grid includes the selection feature that allows highlighting Grid elements depending on the chosen mode. The [`selection`](grid/api/grid_selection_config.md) property enables selection in a grid. It can take three values:
+DHTMLX Grid includes the selection feature that allows highlighting Grid elements depending on the chosen mode. The [`selection`](/grid/api/grid_selection_config/) property enables selection in a grid. It can take three values:
 
 <table>
     <tbody>
@@ -2831,7 +2831,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Multiple selection of Grid cells
 
-While setting the [`selection`](grid/configuration.md#selection) property to *"row"*, *"cell"*, or *"complex"* value, you can enable the [](grid/api/grid_multiselection_config.md) property to allow a user to select multiple Grid elements:
+While setting the [`selection`](/grid/configuration/#selection) property to *"row"*, *"cell"*, or *"complex"* value, you can enable the [`multiselection`](/grid/api/grid_multiselection_config/) property to allow a user to select multiple Grid elements:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2855,9 +2855,9 @@ A range of Grid cells/rows can be selected by clicking the first element to sele
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-The Grid functionality provides the [range selection management](grid/usage_rangeselection.md) feature for setting/resetting a range of cells, retrieving information about the current range, and checking whether specific cells belong to the selected range.
+The Grid functionality provides the [range selection management](/grid/usage_rangeselection/) feature for setting/resetting a range of cells, retrieving information about the current range, and checking whether specific cells belong to the selected range.
 
-To enable [range selection management](grid/usage_rangeselection.md) within a grid, you should use the `RangeSelection` module. To initialize the module, enable the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration: 
+To enable [range selection management](/grid/usage_rangeselection/) within a grid, you should use the `RangeSelection` module. To initialize the module, enable the [`rangeSelection`](/grid/api/grid_rangeselection_config/) property in the Grid configuration: 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2899,7 +2899,7 @@ console.log(grid.range.isDisabled()); // `true` - module is inactive
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will not be set
 ~~~
 
-For information on using the Range Selection API, read the [Work with RangeSelection module](grid/usage_rangeselection.md) guide.
+For information on using the Range Selection API, read the [Work with RangeSelection module](/grid/usage_rangeselection/) guide.
 
 ## Managing block selection in Grid
 
@@ -2907,9 +2907,9 @@ For information on using the Range Selection API, read the [Work with RangeSelec
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-The Grid functionality provides the [block selection management](grid/usage_blockselection.md) feature for selecting cells' ranges via the mouse pointer, touch input, and keyboard navigation, as well as adjusting the appearance of the selection and managing the behavior of the module, depending on the applied mode.
+The Grid functionality provides the [block selection management](/grid/usage_blockselection/) feature for selecting cells' ranges via the mouse pointer, touch input, and keyboard navigation, as well as adjusting the appearance of the selection and managing the behavior of the module, depending on the applied mode.
 
-To enable managing of the block selection within a grid, you should use the `BlockSelection` module. To initialize the module, enable the [`blockSelection`](grid/api/grid_blockselection_config.md) property in the Grid configuration: 
+To enable managing of the block selection within a grid, you should use the `BlockSelection` module. To initialize the module, enable the [`blockSelection`](/grid/api/grid_blockselection_config/) property in the Grid configuration: 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2952,7 +2952,7 @@ The `blockSelection` property can be set in two ways:
 </table>
 
 :::note
-By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the [`RangeSelection`](grid/usage_rangeselection.md) module is initialized.
+By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the [`RangeSelection`](/grid/usage_rangeselection/) module is initialized.
 :::
 
 The example below demonstrates configuring the module with the handle disabled and the "range" mode enabled:
@@ -2995,7 +2995,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
-For information on using the Block Selection API, read the [Work with Block Selection module](grid/usage_blockselection.md) guide.
+For information on using the Block Selection API, read the [Work with Block Selection module](/grid/usage_blockselection/) guide.
 
 ## Clipboard 
 
@@ -3003,9 +3003,9 @@ For information on using the Block Selection API, read the [Work with Block Sele
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-The Grid component provides the [functionality for interacting with the clipboard](grid/usage_clipboard.md), such as copying, cutting, and pasting data from a selected range of cells, as well as integrating with other grids or external applications like Google Spreadsheets. 
+The Grid component provides the [functionality for interacting with the clipboard](/grid/usage_clipboard/), such as copying, cutting, and pasting data from a selected range of cells, as well as integrating with other grids or external applications like Google Spreadsheets. 
 
-To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](grid/api/grid_clipboard_config.md) property in the Grid configuration. The `Clipboard` module requires the [`RangeSelection`](#managing-range-selection-in-grid) module to be enabled. For convenient range selection via the UI, it is recommended to use the [`BlockSelection`](#managing-block-selection-in-grid) module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting. 
+To enable the clipboard functionality within a grid, you should use the `Clipboard` module. To initialize the module, enable the [`clipboard`](/grid/api/grid_clipboard_config/) property in the Grid configuration. The `Clipboard` module requires the [`RangeSelection`](#managing-range-selection-in-grid) module to be enabled. For convenient range selection via the UI, it is recommended to use the [`BlockSelection`](#managing-block-selection-in-grid) module with the `mode: "range"` setting. It allows users to visually select areas before copying or pasting. 
 
 :::note
 The `blockSelection: { mode: "range" }` property is automatically initialized in the Grid configuration when the `Clipboard` module is enabled.
@@ -3029,7 +3029,7 @@ const grid = new dhx.Grid("grid_container", {
 The `clipboard` property can be set in two ways:
 
 - as a *boolean* value it enables or disables the `clipboard` module upon the component initialization
-- as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md/#using-formatter-functions) for data processing. The following properties are available:
+- as an *object* it enables the module and allows defining [modifier functions](/grid/usage_clipboard/#using-formatter-functions) for data processing. The following properties are available:
     - `copyModifier` - (*function*) modifies data before copying to the clipboard. Accepts as parameters the cell value, the cell object, and the `cut` flag (set to `true`, if it's a cut operation)
     - `cutModifier` - (*function*) modifies the cell data before cutting (before clearing the cell). Accepts as parameters the cell value and the cell object
     - `pasteModifier` - (*function*) modifies data from the clipboard before pasting into a cell. Accepts as parameters the cell value and the cell object
@@ -3057,7 +3057,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
 
-For information on working with Clipboard, read the [Work with Clipboard module](grid/usage_clipboard.md) guide.
+For information on working with Clipboard, read the [Work with Clipboard module](/grid/usage_clipboard/) guide.
 
 ## History of Grid actions 
 
@@ -3065,9 +3065,9 @@ For information on working with Clipboard, read the [Work with Clipboard module]
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-DHTMLX Grid provides the [functionality for managing the history of actions in the component](grid/usage_history.md). 
+DHTMLX Grid provides the [functionality for managing the history of actions in the component](/grid/usage_history/). 
 
-To enable the history functionality within a grid, you should use the `History` module. To initialize the module, enable the [`history`](grid/api/grid_history_config.md) property in the Grid configuration. 
+To enable the history functionality within a grid, you should use the `History` module. To initialize the module, enable the [`history`](/grid/api/grid_history_config/) property in the Grid configuration. 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -3112,7 +3112,7 @@ grid.history.enable(); // enabling the module
 
 **Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
-For information on working with the History API, read the [Work with History module](grid/usage_history.md) guide.
+For information on working with the History API, read the [Work with History module](/grid/usage_history/) guide.
 
 ## Keyboard navigation
 
@@ -3147,7 +3147,7 @@ The navigation shortcut keys and keys combinations that Grid enables by default 
     </tbody>
 </table>
 
-If you need to disable this functionality, set the [`keyNavigation`](grid/api/grid_keynavigation_config.md) property to *false*. 
+If you need to disable this functionality, set the [`keyNavigation`](/grid/api/grid_keynavigation_config/) property to *false*. 
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -3163,7 +3163,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Shortcut keys for moving selection between cells
 
-In case you want to enable the shortcut keys that allow moving the selection between cells, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
+In case you want to enable the shortcut keys that allow moving the selection between cells, you need to specify the [`selection`](/grid/api/grid_selection_config/) property for Grid.
 
 ~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
@@ -3266,7 +3266,7 @@ The combinations of the shortcut keys listed below do not work when the `selecti
 
 ### Shortcut keys for editing
 
-It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid.
+It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](/grid/api/grid_editable_config/) property in the configuration object of Grid.
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -3303,10 +3303,10 @@ The list of the shortcut keys for editing is given below:
 
 ### Shortcut keys for selecting ranges of cells
 
-If you need to use the keyboard navigation for selecting ranges of cells via the user interface, you should enable the [`BlockSelection` module](grid/usage_blockselection.md) in the Grid configuration.
+If you need to use the keyboard navigation for selecting ranges of cells via the user interface, you should enable the [`BlockSelection` module](/grid/usage_blockselection/) in the Grid configuration.
 
 :::note
-Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
+Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](/grid/api/blockselection/beforeblockselectionapply_event/) and [`afterBlockSelectionApply`](/grid/api/blockselection/afterblockselectionapply_event/).
 :::
 
 The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets. The following shortcut keys and their combinations are available: 
@@ -3391,7 +3391,7 @@ The following shortcut key and mouse combination is available:
     </tbody>
 </table>
 
-The following shortcut key is available when the [`editable` mode](grid/api/grid_editable_config.md) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode:
+The following shortcut key is available when the [`editable` mode](/grid/api/grid_editable_config/) is set for the Grid component and the `BlockSelection` module is used in the `"range"` mode:
 
  <table>
     <tbody>

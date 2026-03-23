@@ -24,7 +24,7 @@ The `mark` property can be either an *object* or a *function*:
 	- **cell** - (required) the value of a cell
 	- **columnCells** - (required) an array of all cell values in the specified column
 	- **row** - (optional) an object with all cells in a row
-	- **column** - (optional) an object with the configuration of a column (see the [columns](grid/api/grid_columns_config.md) config)
+	- **column** - (optional) an object with the configuration of a column (see the [columns](/grid/api/grid_columns_config/) config)
 
 @descr:
 ### Example
@@ -60,6 +60,6 @@ The `mark` property can be either an *object* or a *function*:
 ~~~
 
 
-**Related article**: [Adding custom marks to cells](grid/customization.md#adding-custom-marks-to-cells)
+**Related article**: [Adding custom marks to cells](/grid/customization/#adding-custom-marks-to-cells)
 
 **Related sample**: [Grid. Mark cells](https://snippet.dhtmlx.com/buirf16n)

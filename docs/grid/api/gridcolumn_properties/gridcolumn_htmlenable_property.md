@@ -36,6 +36,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [HTML content of Grid columns](grid/configuration.md#html-content-of-grid-columns)
+**Related article**: [HTML content of Grid columns](/grid/configuration/#html-content-of-grid-columns)
 
 **Related sample**: [Grid. HTML in data](https://snippet.dhtmlx.com/chitkvkc)

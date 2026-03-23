@@ -37,7 +37,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Types of column editor](grid/configuration.md#types-of-column-editor)
+**Related article**: [Types of column editor](/grid/configuration/#types-of-column-editor)
 
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date, number)
 ](https://snippet.dhtmlx.com/w2cdossn)

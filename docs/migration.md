@@ -17,7 +17,7 @@ If you are using an outdated version of DHTMLX Suite 5 and require the documenta
 
 #### Export to Excel module update
 
-Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for [exporting Grid data to an Excel file](grid/usage.md/#exporting-data-to-excel). As earlier, you can use either the public export server or a local export server.  
+Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for [exporting Grid data to an Excel file](/grid/usage/#exporting-data-to-excel). As earlier, you can use either the public export server or a local export server.  
 
 ##### From v9.2
 
@@ -65,7 +65,7 @@ grid.data.getSortingStates()[0]; // getting the first (main) sorting state
 
 #### TreeGrid as a Grid mode
 
-Since v9.0 the TreeGrid component becomes a part of the Grid component. To enable the [TreeGrid mode](grid/treegrid_mode.md) you need just to use the `dhx.Grid` constructor and set the `type: "tree"` property in the Grid configuration. This functionality is available in the PRO version.
+Since v9.0 the TreeGrid component becomes a part of the Grid component. To enable the [TreeGrid mode](/grid/treegrid_mode/) you need just to use the `dhx.Grid` constructor and set the `type: "tree"` property in the Grid configuration. This functionality is available in the PRO version.
 
 ~~~jsx title="Before v9.0"
 const treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -88,7 +88,7 @@ const grid = new dhx.Grid("grid_container", {
 
 #### Data grouping
 
-Since v9.0 the TreeGrid data grouping methods `groupBy()` and `ungroup()`, and the `groupTitleTemplate` property have been deprecated. The data grouping functionality is now available via the [`group`](grid/api/grid_group_config.md) configuration property of Grid.
+Since v9.0 the TreeGrid data grouping methods `groupBy()` and `ungroup()`, and the `groupTitleTemplate` property have been deprecated. The data grouping functionality is now available via the [`group`](/grid/api/grid_group_config/) configuration property of Grid.
 
 ~~~jsx {2}title="From v9.0"
 const grid = new dhx.Grid("grid_container", {
@@ -100,7 +100,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-This config enables the TreeGrid mode (the `type:"tree"` configuration option is automatically set in the Grid configuration), allows [configuring the data grouping settings](grid/usage.md#grouping-data) and [using DataCollection API](grid/usage.md#using-datacollection-api-for-data-grouping) for grouping Grid data.
+This config enables the TreeGrid mode (the `type:"tree"` configuration option is automatically set in the Grid configuration), allows [configuring the data grouping settings](/grid/usage/#grouping-data) and [using DataCollection API](/grid/usage/#using-datacollection-api-for-data-grouping) for grouping Grid data.
 
 #### Using statistical functions in the column header/footer
 
@@ -122,7 +122,7 @@ Before v9.0 the `content` property of the column header/footer could have the de
 
 Since v9.0 it is possible both to define the default statistical functions and create custom functions for data calculation. The following new functionality has been added:
 
-- the DHTMLX library provides a [helper method `dhx.methods`](helpers/data_calculation_functions.md) that allows:     
+- the DHTMLX library provides a [helper method `dhx.methods`](/helpers/data_calculation_functions/) that allows:     
 
 1. defining the default data calculation functions:
 
@@ -151,16 +151,16 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-- the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans) both at the Grid and column's levels
+- the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](/grid/configuration/#custom-statistics-in-the-column-headerfooter-and-spans) both at the Grid and column's levels
 
-- the [`getSummary()`](grid/api/grid_getsummary_method.md) method is added for getting the summary data either of a column or of the Grid
+- the [`getSummary()`](/grid/api/grid_getsummary_method/) method is added for getting the summary data either of a column or of the Grid
 
-- the `text` property of the Grid column [*header/footer*](grid/configuration.md#headerfooter-text) configuration object can be set as a *callback function* called with the following parameter:
+- the `text` property of the Grid column [*header/footer*](/grid/configuration/#headerfooter-text) configuration object can be set as a *callback function* called with the following parameter:
     - `content` - an object with the content of the column header/footer that contains the calculated values from the `summary` property as *key:value* pairs, where:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-- the `tooltipTemplate` property of the Grid column [*header/footer*](grid/configuration.md#column-headerfooter-tooltip) configuration object can be set as a *callback function* called with the following parameters:
+- the `tooltipTemplate` property of the Grid column [*header/footer*](/grid/configuration/#column-headerfooter-tooltip) configuration object can be set as a *callback function* called with the following parameters:
     - `content` - an object with the content of the header/footer. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - (*string*) the value rendered in a cell, including the applied templates
         - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
@@ -169,12 +169,12 @@ const grid = new dhx.Grid("grid_container", {
     - `header/footer` - (*object*) the object of the column header/footer 
     - `column` - (*object*) the object of a column 
 
-- the `text` property of the Grid [*spans*](grid/configuration.md#spans) configuration object can be set as a *callback function* called with the following parameter:
+- the `text` property of the Grid [*spans*](/grid/configuration/#spans) configuration object can be set as a *callback function* called with the following parameter:
     - `content` - an object with the content of the spans tooltip that contains the calculated values from the `summary` property as *key:value* pairs, where:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-- the `tooltipTemplate` property of the Grid [*spans*](grid/configuration.md#adding-templates-for-column-and-spans-tooltip) configuration objects can be set as a *callback function* called with the following parameters:
+- the `tooltipTemplate` property of the Grid [*spans*](/grid/configuration/#adding-templates-for-column-and-spans-tooltip) configuration objects can be set as a *callback function* called with the following parameters:
     - `content` - an object with the content of the spans tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - (*string*) the value rendered in a cell, including the applied templates
         - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
@@ -303,18 +303,18 @@ Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of
 
 ### DataCollection/TreeCollection
 
-Before v8.2, the `smartFilter` property of the [`filter()`](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
+Before v8.2, the `smartFilter` property of the [`filter()`](/data_collection/api/datacollection_filter_method/) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
 
-Since v8.2 this property is **deprecated** and replaced with the [`permanent`](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the `add/update/parse` methods.
+Since v8.2 this property is **deprecated** and replaced with the [`permanent`](/data_collection/api/datacollection_filter_method/) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the `add/update/parse` methods.
 
-Besides, the `id` property has been added into the configuration object of the [`filter()`](data_collection/api/datacollection_filter_method.md) method.
+Besides, the `id` property has been added into the configuration object of the [`filter()`](/data_collection/api/datacollection_filter_method/) method.
 
 7.3 -> 8.0
 ------------
 
 ### Grid/TreeGrid
 
-Before v8.0, the [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) method returned either an HTML element or an object with Combobox configuration. That allowed you to set focus on the filter or remove it:
+Before v8.0, the [`getHeaderFilter()`](/grid/api/grid_getheaderfilter_method/) method returned either an HTML element or an object with Combobox configuration. That allowed you to set focus on the filter or remove it:
 
 ~~~js
 const countryFilter = grid.getHeaderFilter("country");
@@ -334,9 +334,9 @@ const countryFilter = grid.getHeaderFilter("density");
 countryFilter.focus();
 ~~~
 
-In v8.0, we've improved the way of work with the filter. Now the [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) method returns an object with a set of methods which allow you to get an object of the filter, to set/remove focus from the filter, to set a value by which a column will be filtered or to clear this value.
+In v8.0, we've improved the way of work with the filter. Now the [`getHeaderFilter()`](/grid/api/grid_getheaderfilter_method/) method returns an object with a set of methods which allow you to get an object of the filter, to set/remove focus from the filter, to set a value by which a column will be filtered or to clear this value.
 
-If you need to get an HTML object or an object with configuration of Combobox, apply the [`getFilter()`](grid/api/headerfilter/getfilter_method.md) method of the [header filter](grid/api/grid_getheaderfilter_method.md) object:
+If you need to get an HTML object or an object with configuration of Combobox, apply the [`getFilter()`](/grid/api/headerfilter/getfilter_method/) method of the [header filter](/grid/api/grid_getheaderfilter_method/) object:
 
 ~~~js
 const filter1 = grid.getHeaderFilter("country").getFilter();
@@ -484,7 +484,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Layout
 
-2) Before v7.0, the [`gravity`](layout/api/cell/layout_cell_gravity_config.md) property of a Layout cell was intended to arrange content evenly throughout the cell.
+2) Before v7.0, the [`gravity`](/layout/api/cell/layout_cell_gravity_config/) property of a Layout cell was intended to arrange content evenly throughout the cell.
 
 Starting from v7.0, the property is used for setting the "weight" of a cell in relation to other cells placed in the same row, within one parent.
 

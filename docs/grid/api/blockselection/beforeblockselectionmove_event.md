@@ -63,7 +63,7 @@ grid.block.events.on("beforeBlockSelectionMove", (startCell, nextCell) => {
 
 @descr:
 
-**Related API**: [`afterBlockSelectionMove`](grid/api/blockselection/afterblockselectionmove_event.md)
+**Related API**: [`afterBlockSelectionMove`](/grid/api/blockselection/afterblockselectionmove_event/)
 
 @changelog:
 added in v9.2

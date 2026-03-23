@@ -59,6 +59,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Editing Grid and separate columns](grid/configuration.md#editing-grid-and-separate-columns)
+**Related article**: [Editing Grid and separate columns](/grid/configuration/#editing-grid-and-separate-columns)
 
 **Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax)

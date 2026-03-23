@@ -64,7 +64,7 @@ grid.history.events.on("error", (error, action) => {
 
 @descr:
 
-**Related article**: [Work with History module](grid/usage_history.md)
+**Related article**: [Work with History module](/grid/usage_history/)
 
 
 @changelog:

@@ -56,11 +56,11 @@ grid.range.resetRange(); // resetting of the range is canceled
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md),
-[`resetRange()`](grid/api/rangeselection/resetrange_method.md),
-[`afterResetRange`](grid/api/rangeselection/afterresetrange_event.md)
+**Related API**: [`setRange()`](/grid/api/rangeselection/setrange_method/),
+[`resetRange()`](/grid/api/rangeselection/resetrange_method/),
+[`afterResetRange`](/grid/api/rangeselection/afterresetrange_event/)
 
 @changelog:
 added in v9.2

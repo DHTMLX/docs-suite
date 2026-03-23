@@ -46,7 +46,7 @@ grid.export.csv({
 
 **Related samples**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
-**Related article:** [Exporting Grid](grid/usage.md)
+**Related article:** [Exporting Grid](/grid/usage/)
 
 **Change log:** 
 

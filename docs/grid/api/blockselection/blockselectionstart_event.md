@@ -57,7 +57,7 @@ grid.block.events.on("blockSelectionStart", (startCell, endCell, handle) => {
 
 @descr:
 
-**Related API**: [`blockSelectionEnd`](grid/api/blockselection/blockselectionend_event.md)
+**Related API**: [`blockSelectionEnd`](/grid/api/blockselection/blockselectionend_event/)
 
 @changelog:
 added in v9.2

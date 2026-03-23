@@ -31,6 +31,6 @@ grid.events.on("beforeRowResize", (row, event, currentHeight) => {
 
 @descr:
 
-To be able to change the height of the row, you should specify the [autoHeight:true](grid/api/grid_autoheight_config.md) and [editable:true](grid/api/grid_editable_config.md) options in the configuration of Grid. 
+To be able to change the height of the row, you should specify the [autoHeight:true](/grid/api/grid_autoheight_config/) and [editable:true](/grid/api/grid_editable_config/) options in the configuration of Grid. 
 
 @changelog: added in v7.1

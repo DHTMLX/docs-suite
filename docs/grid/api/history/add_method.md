@@ -38,7 +38,7 @@ add(action: IAction): void;
 </table>
 
 :::note
-The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered. 
+The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing (for actions with the "change" and "removeAll" types), the [`error`](/grid/api/history/error_event/) event is triggered. 
 :::
 
 @example:
@@ -70,9 +70,9 @@ console.log(history.length); // ->1
 
 @descr:
 
-**Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
+**Related article**: [Adding/removing Grid history actions](/grid/usage_history/#addingremoving-grid-history-actions)
 
-**Related API**: [`remove()`](grid/api/history/remove_method.md), [`removeAll()`](grid/api/history/removeall_method.md), [`getHistory()`](grid/api/history/gethistory_method.md)
+**Related API**: [`remove()`](/grid/api/history/remove_method/), [`removeAll()`](/grid/api/history/removeall_method/), [`getHistory()`](/grid/api/history/gethistory_method/)
 
 @changelog:
 added in v9.2

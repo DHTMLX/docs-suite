@@ -33,7 +33,7 @@ const grid = new dhx.Grid("grid_container", {
 Also note:
 
 - If `autoWidth` is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the `minWidth/maxWidth` properties if they are set for the column.
-- The property is ignored if the [`adjust`](grid/configuration.md#autosize-for-columns) property is used.
+- The property is ignored if the [`adjust`](/grid/configuration/#autosize-for-columns) property is used.
 - If the `width` property is specified in the configuration object of a column, the `autoWidth` property won't work for this column.
 
-**Related article**: [Autowidth for columns](grid/configuration.md/#autowidth-for-columns)
+**Related article**: [Autowidth for columns](/grid/configuration/#autowidth-for-columns)

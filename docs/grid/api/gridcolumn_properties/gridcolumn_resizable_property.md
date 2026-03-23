@@ -30,4 +30,4 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Resizable columns](grid/configuration.md#resizable-columns)
+**Related article**: [Resizable columns](/grid/configuration/#resizable-columns)

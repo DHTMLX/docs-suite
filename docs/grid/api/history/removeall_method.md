@@ -13,7 +13,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 @short: clears the entire Grid history and the redo stack
 
 :::note
-If the module is disabled, the operation is ignored, and the [`error`](grid/api/history/error_event.md) event is triggered.
+If the module is disabled, the operation is ignored, and the [`error`](/grid/api/history/error_event/) event is triggered.
 :::
 
 @signature: {'removeAll(): void;'}
@@ -48,9 +48,9 @@ console.log(grid.history.canRedo()); // -> false
 
 @descr:
 
-**Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
+**Related article**: [Adding/removing Grid history actions](/grid/usage_history/#addingremoving-grid-history-actions)
 
-**Related API**: [`add()`](grid/api/history/add_method.md), [`remove()`](grid/api/history/remove_method.md), [`getHistory()`](grid/api/history/gethistory_method.md)
+**Related API**: [`add()`](/grid/api/history/add_method/), [`remove()`](/grid/api/history/remove_method/), [`getHistory()`](/grid/api/history/gethistory_method/)
 
 @changelog:
 added in v9.2

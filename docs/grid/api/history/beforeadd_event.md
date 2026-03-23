@@ -63,9 +63,9 @@ grid.history.events.on("beforeAdd", (action) => {
 
 @descr:
 
-**Related article**: [Adding/removing Grid history actions](grid/usage_history.md/#addingremoving-grid-history-actions)
+**Related article**: [Adding/removing Grid history actions](/grid/usage_history/#addingremoving-grid-history-actions)
 
-**Related API**: [`add()`](grid/api/history/add_method.md), [`afterAdd()`](grid/api/history/afteradd_event.md)
+**Related API**: [`add()`](/grid/api/history/add_method/), [`afterAdd()`](/grid/api/history/afteradd_event/)
 
 @changelog:
 added in v9.2

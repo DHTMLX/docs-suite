@@ -16,39 +16,39 @@ Check [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=g
 
 You can check the following page to learn how to build a full-featured DHTMLX Grid:
 
-- [Features](grid/features.md)
+- [Features](/grid/features/)
 
 ## API Reference
 
-- [](grid/api/api_overview.md)
+- [Grid API overview](/grid/api/api_overview/)
 
 ## Related resources
 
 - To get just DHTMLX Grid, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml)
 - To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid)
-- To work with data of Grid check [DataCollection API](data_collection.md)
-- To work with data of Grid in the TreeGrid mode check [TreeCollection API](tree_collection.md)
+- To work with data of Grid check [DataCollection API](/data_collection/)
+- To work with data of Grid in the TreeGrid mode check [TreeCollection API](/tree_collection/)
 
 ## Guides
 
 Says how to build a standard grid on a page and bring it to life: configure with specific settings, customize the appearance, attach events, etc.
 
-- [](grid/initialization.md)
-- [](grid/configuration.md)
-- [](grid/localization.md)
-- [](grid/data_loading.md)
-- [](grid/usage.md)
-- [](grid/treegrid_mode.md) 
-- [](grid/usage_selection.md)
-- [](grid/usage_rangeselection.md)
-- [](grid/usage_blockselection.md)
-- [](grid/usage_clipboard.md)
-- [](grid/usage_dragpanel.md)
-- [](grid/usage_history.md)
-- [](grid/customization.md)
-- [](grid/events.md)
+- [Initialization](/grid/initialization/)
+- [Configuration](/grid/configuration/)
+- [Localization](/grid/localization/)
+- [Data loading](/grid/data_loading/)
+- [Work with Grid](/grid/usage/)
+- [TreeGrid mode](/grid/treegrid_mode/) 
+- [Work with Selection object](/grid/usage_selection/)
+- [Work with RangeSelection module](/grid/usage_rangeselection/)
+- [Work with BlockSelection module](/grid/usage_blockselection/)
+- [Work with Clipboard module](/grid/usage_clipboard/)
+- [Work with DragPanel module](/grid/usage_dragpanel/)
+- [Work with History module](/grid/usage_history/)
+- [Customization](/grid/customization/)
+- [Event handling](/grid/events/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](/migration/)

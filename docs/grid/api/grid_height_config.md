@@ -31,7 +31,7 @@ const grid = new dhx.Grid("grid_container", {
 - [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
 - [Grid. Set automatic height (PRO)](https://snippet.dhtmlx.com/srbu56ob)
 
-**Related article:** [Width/height](grid/configuration.md#widthheight)
+**Related article:** [Width/height](/grid/configuration/#widthheight)
 
 @changelog: 
 

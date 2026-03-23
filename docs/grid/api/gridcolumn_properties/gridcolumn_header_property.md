@@ -131,6 +131,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Configuration](grid/configuration.md)
+**Related article**: [Configuration](/grid/configuration/)
 
 **Related sample**: [Grid. Grouped headers (spans)](https://snippet.dhtmlx.com/eol76o68)

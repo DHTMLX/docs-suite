@@ -9,7 +9,7 @@ description: You can explore the xlsx export method of Grid in the documentation
 @short: Exports data from a grid to an Excel file
 
 :::info
-DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for export of data to Excel. [Check the details](grid/usage.md/#exporting-data-to-excel).
+DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for export of data to Excel. [Check the details](/grid/usage/#exporting-data-to-excel).
 :::
 
 @signature: {'xlsx(config?: IXlsxExportConfig) => Promise<void>;'}
@@ -50,7 +50,7 @@ grid.export.xlsx({
 
 **Related samples**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
-**Related article:** [Exporting Grid](grid/usage.md/#exporting-data-to-excel)
+**Related article:** [Exporting Grid](/grid/usage/#exporting-data-to-excel)
 
 **Change log:** 
 

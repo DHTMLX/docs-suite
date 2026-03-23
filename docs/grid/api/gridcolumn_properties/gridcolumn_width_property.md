@@ -10,7 +10,7 @@ description: You can explore the width config of Grid column in the documentatio
 
 :::note
 Note that width can't be less than 20px.
-The property is ignored if the [`adjust`](grid/api/gridcolumn_properties/gridcolumn_adjust_property.md) property is used.
+The property is ignored if the [`adjust`](/grid/api/gridcolumn_properties/gridcolumn_adjust_property/) property is used.
 :::
 
 ### Usage

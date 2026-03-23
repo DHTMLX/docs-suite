@@ -10,11 +10,11 @@ description: You can explore how to work with RangeSelection module of Grid in t
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can manage range selection within a grid via the API of the [`RangeSelection`](grid/configuration.md/#managing-range-selection-in-grid) module. It provides methods for setting and resetting a range of cells, getting information about the current range, and checking whether specific cells belong to the selected range. It also supports an [event system](grid/api/api_overview.md/#rangeselection-events) to track changes.
+You can manage range selection within a grid via the API of the [`RangeSelection`](/grid/configuration/#managing-range-selection-in-grid) module. It provides methods for setting and resetting a range of cells, getting information about the current range, and checking whether specific cells belong to the selected range. It also supports an [event system](/grid/api/api_overview/#rangeselection-events) to track changes.
 
 ## Initializing the RangeSelection module
 
-To initialize the `RangeSelection` module, use the [`rangeSelection`](grid/api/grid_rangeselection_config.md) property in the Grid configuration. Once the Grid is created, the module is accessible through the `grid.range` property.
+To initialize the `RangeSelection` module, use the [`rangeSelection`](/grid/api/grid_rangeselection_config/) property in the Grid configuration. Once the Grid is created, the module is accessible through the `grid.range` property.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -31,11 +31,11 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 The `rangeSelection` property can also be set as an *object* to enable the module and provide additional configuration options.
-Learn about configuration possibilities of the `RangeSelection` module in the [Configuration](grid/configuration.md/#managing-range-selection-in-grid) guide.
+Learn about configuration possibilities of the `RangeSelection` module in the [Configuration](/grid/configuration/#managing-range-selection-in-grid) guide.
 
 ## Enabling/disabling RangeSelection module
 
-You can activate the range selection module via the [`enable()`](grid/api/rangeselection/enable_method.md) method of the `range` object.
+You can activate the range selection module via the [`enable()`](/grid/api/rangeselection/enable_method/) method of the `range` object.
 The following example shows how the module is enabled after deactivation on initialization:
 
 ~~~jsx {14}
@@ -56,7 +56,7 @@ grid.range.enable(); // activating the module
 grid.range.setRange({ xStart: "a", yStart: "1" }); // the range will be set
 ~~~
 
-To disable the range selection in Grid, use the [`disable()`](grid/api/rangeselection/disable_method.md) method of the `range` object.
+To disable the range selection in Grid, use the [`disable()`](/grid/api/rangeselection/disable_method/) method of the `range` object.
 The example below shows disabling of the `range` module:
 
 ~~~jsx {15}
@@ -81,7 +81,7 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // the range won't be set
 
 ## Checking RangeSelection module state
 
-You can check whether the RangeSelection module is disabled, using the [`isDisabled()`](grid/api/rangeselection/isdisabled_method.md) method of the `range` object. It returns `true`, if the module is disabled and `false`, if it is enabled. The following example shows checking of the module's activity status:
+You can check whether the RangeSelection module is disabled, using the [`isDisabled()`](/grid/api/rangeselection/isdisabled_method/) method of the `range` object. It returns `true`, if the module is disabled and `false`, if it is enabled. The following example shows checking of the module's activity status:
 
 ~~~jsx {15,17}
 const grid = new dhx.Grid("grid_container", {
@@ -105,7 +105,7 @@ console.log(grid.range.isDisabled()); // -> false
 
 ## Setting a range selection
 
-You can set a range selection using the [`setRange()`](grid/api/rangeselection/setrange_method.md) method of the `range` object. The method takes the following parameters: 
+You can set a range selection using the [`setRange()`](/grid/api/rangeselection/setrange_method/) method of the `range` object. The method takes the following parameters: 
 
 <table>
     <tbody>
@@ -166,14 +166,14 @@ console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1",
 
 To make the process of selecting a range more flexible, you can apply the related events of the `range` object:
 
-- [`afterSetRange`](grid/api/rangeselection/aftersetrange_event.md)
-- [`beforeSetRange`](grid/api/rangeselection/beforesetrange_event.md)
+- [`afterSetRange`](/grid/api/rangeselection/aftersetrange_event/)
+- [`beforeSetRange`](/grid/api/rangeselection/beforesetrange_event/)
 
 **Related sample**: [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
 ## Resetting the range selection
 
-You can reset the applied range selection using the [`resetRange()`](grid/api/rangeselection/resetrange_method.md) method of the `range` object. The method returns `true` - on success, `false`, if the module is disabled, or if reset is canceled by an event.
+You can reset the applied range selection using the [`resetRange()`](/grid/api/rangeselection/resetrange_method/) method of the `range` object. The method returns `true` - on success, `false`, if the module is disabled, or if reset is canceled by an event.
 
 The following example shows resetting of the current range: 
 
@@ -198,12 +198,12 @@ console.log(grid.range.getRange()); // -> null
 
 To make the process of unselecting a range more flexible, you can apply the related events of the `range` object:
 
-- [`afterResetRange`](grid/api/rangeselection/afterresetrange_event.md)
-- [`beforeResetRange`](grid/api/rangeselection/beforeresetrange_event.md)
+- [`afterResetRange`](/grid/api/rangeselection/afterresetrange_event/)
+- [`beforeResetRange`](/grid/api/rangeselection/beforeresetrange_event/)
 
 ## Getting the range selection
 
-You can get the current selection range. For this, use the [`getRange()`](grid/api/rangeselection/getrange_method.md) method of the `range` object. It returns the object of selection range or `null` if no range is set. The following example shows retrieving of the current range:
+You can get the current selection range. For this, use the [`getRange()`](/grid/api/rangeselection/getrange_method/) method of the `range` object. It returns the object of selection range or `null` if no range is set. The following example shows retrieving of the current range:
 
 ~~~jsx {15}
 const grid = new dhx.Grid("grid_container", {
@@ -248,7 +248,7 @@ The returned object with the current selection range contains the following prop
 
 ### Getting an array of cells within the range
 
-It is also possible to get an array of cells within the range selection by using the [`getRangedCells()`](grid/api/rangeselection/getrangedcells_method.md) method of the `range` object. It returns an array of objects where:
+It is also possible to get an array of cells within the range selection by using the [`getRangedCells()`](/grid/api/rangeselection/getrangedcells_method/) method of the `range` object. It returns an array of objects where:
 
 <table>
     <tbody>
@@ -285,7 +285,7 @@ console.log(grid.range.getRangedCells()); // -> [{ row: { id: "1", ... }, column
 
 ## Checking whether a cell is in the range 
 
-You can check whether a cell is within the current range using the [`isRanged()`](grid/api/rangeselection/isranged_method.md) method of the `range` object. The method takes the following parameter: 
+You can check whether a cell is within the current range using the [`isRanged()`](/grid/api/rangeselection/isranged_method/) method of the `range` object. The method takes the following parameter: 
 
 <table>
     <tbody>

@@ -39,7 +39,7 @@ var grid = new dhx.Grid(null, {
 - the first parameter, which is the HTML container for Grid will be `null`, as we are attaching the grid to the layout, not to an HTML container 
 - the second parameter is an object where we specify a set of Grid properties </i>
 
-You can read more about Grid properties in the [API](grid/api/refs/grid.md) and in the [Configuration](grid/configuration.md#data) article. 
+You can read more about Grid properties in the [API](/grid/api/refs/grid/) and in the [Configuration](/grid/configuration/#data) article. 
 
 2\. Next, we can easily attach the grid to the "grid-cell" of Layout, as well as we did with the toolbar:
 
@@ -72,7 +72,7 @@ var grid_dataset = [
 
 
 <div id="tutorial_step">
-    <a id="next_step" href="tutorial/basic_application/step5.md"></a>
+    <a id="next_step" href="/tutorial/basic_application/step5/"></a>
 </div>
 
 ```

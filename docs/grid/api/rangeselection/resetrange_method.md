@@ -43,9 +43,9 @@ console.log(grid.range.getRange()); // -> null
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`getRange()`](grid/api/rangeselection/getrange_method.md), [`setRange()`](grid/api/rangeselection/setrange_method.md)
+**Related API**: [`getRange()`](/grid/api/rangeselection/getrange_method/), [`setRange()`](/grid/api/rangeselection/setrange_method/)
 
 @changelog:
 added in v9.2

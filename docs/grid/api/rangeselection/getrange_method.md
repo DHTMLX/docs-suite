@@ -69,9 +69,9 @@ console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1",
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md)
+**Related API**: [`setRange()`](/grid/api/rangeselection/setrange_method/)
 
 
 @changelog:

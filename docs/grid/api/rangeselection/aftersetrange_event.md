@@ -51,10 +51,10 @@ grid.range.setRange({ xStart: "a", yStart: "1" }); // logs the range object
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`setRange()`](grid/api/rangeselection/setrange_method.md),
-[`beforeSetRange`](grid/api/rangeselection/beforesetrange_event.md)
+**Related API**: [`setRange()`](/grid/api/rangeselection/setrange_method/),
+[`beforeSetRange`](/grid/api/rangeselection/beforesetrange_event/)
 
 @changelog:
 added in v9.2

@@ -37,5 +37,5 @@ const grid = new dhx.Grid("grid_container", {
 Note that if you change the font type, size, or offsets, the correct calculation of the `adjust` property of a cell may not be guaranteed.
 :::
 
-**Related article**: [Autosize for columns](grid/configuration.md#autosize-for-columns)
+**Related article**: [Autosize for columns](/grid/configuration/#autosize-for-columns)
 

@@ -8,7 +8,7 @@ In this step we consider how to add and display a context menu on the page.
 
 To add a context menu on the page we should take the following steps:
 
-1\. Initialize dhtmlxContextMenu with the constructor in the same way as we [initialized the toolbar](tutorial/basic_application/step3.md):
+1\. Initialize dhtmlxContextMenu with the constructor in the same way as we [initialized the toolbar](/tutorial/basic_application/step3/):
 
 ~~~js
 var contextMenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
@@ -31,7 +31,7 @@ var contextmenu_data = [
 ];
 ~~~
 
-You can find more information about types of the menu controls and their attributes in the [List of Menu Controls](menu/configuring_menu_items.md) article.
+You can find more information about types of the menu controls and their attributes in the [List of Menu Controls](/menu/configuring_menu_items/) article.
 
 
 3\. We use the <b>parse()</b> method to load the predefined data set to the context menu:
@@ -60,13 +60,13 @@ grid.selection.setCell(row.id);
 e.preventDefault();
 ~~~
 
-- show a dhxContextMenu on the page via the [](menu/api/menu_showat_method.md) method of dhxContextMenu:
+- show a dhxContextMenu on the page via the [showAt()](/menu/api/menu_showat_method/) method of dhxContextMenu:
 
 ~~~js
 contextMenu.showAt(e);
 ~~~
 
-Now we should put together the above described steps and place them inside the handler function of the [](grid/api/grid_cellrightclick_event.md) event:
+Now we should put together the above described steps and place them inside the handler function of the [CellRightClick](/grid/api/grid_cellrightclick_event/) event:
 
 ~~~js
 grid.events.on("CellRightClick", function(row,column,e){
@@ -81,7 +81,7 @@ After that a right-click on a grid cell will call a context menu we have specifi
 <img src="tutorial/binding_components/context_menu.png"/>
 
 <div id="tutorial_step">
-    <a id="next_step" href="tutorial/binding_components/step5.md"></a>
+    <a id="next_step" href="/tutorial/binding_components/step5/"></a>
 </div>
 
 

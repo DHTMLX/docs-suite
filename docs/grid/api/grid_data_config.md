@@ -68,7 +68,7 @@ const dataset = [
 **Related sample**: [Grid. Row height](https://snippet.dhtmlx.com/2jo5lcuj)
 
 :::note 
-The `height` option has a higher priority than the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration property of Grid. <br>Thus, [autoHeight:true](grid/api/grid_autoheight_config.md) will be ignored for the cell that the `height` option is defined to.
+The `height` option has a higher priority than the [autoHeight:true](/grid/api/grid_autoheight_config/) configuration property of Grid. <br>Thus, [autoHeight:true](/grid/api/grid_autoheight_config/) will be ignored for the cell that the `height` option is defined to.
 :::
 
 2. Starting with v7.1, it is possible to use the Date() object when specifying data for the "Date" column:

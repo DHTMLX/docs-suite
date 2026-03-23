@@ -43,9 +43,9 @@ console.log(grid.range.isDisabled()); // -> false
 
 @descr:
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`enable()`](grid/api/rangeselection/enable_method.md), [`disable()`](grid/api/rangeselection/disable_method.md)
+**Related API**: [`enable()`](/grid/api/rangeselection/enable_method/), [`disable()`](/grid/api/rangeselection/disable_method/)
 
 @changelog:
 added in v9.2

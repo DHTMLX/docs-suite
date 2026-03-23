@@ -9,7 +9,7 @@ description: You can explore the headerTooltip config of Grid in the documentati
 @short: Optional. Controls the header tooltips
 
 :::note
-The `headerTooltip` config redefines the value of the [`tooltip`](grid/api/grid_tooltip_config.md) config for the header tooltips.
+The `headerTooltip` config redefines the value of the [`tooltip`](/grid/api/grid_tooltip_config/) config for the header tooltips.
 :::
 
 @signature: {'headerTooltip?: boolean | object;'}

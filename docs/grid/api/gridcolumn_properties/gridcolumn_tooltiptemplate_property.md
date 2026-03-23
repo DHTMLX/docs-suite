@@ -20,7 +20,7 @@ The `tooltipTemplate` function takes 3 parameters:
 
 - **cellValue** - (required) the value of a cell
 - **row** - (required) an object with all cells in a row
-- **column** - (required) an object with the configuration of a column (see the [`columns`](grid/api/grid_columns_config.md) config)
+- **column** - (required) an object with the configuration of a column (see the [`columns`](/grid/api/grid_columns_config/) config)
 
 Returning *false* from the function will block showing of the tooltip.
 
@@ -44,6 +44,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Adding template to tooltip](grid/customization.md#adding-template-to-tooltip)
+**Related article**: [Adding template to tooltip](/grid/customization/#adding-template-to-tooltip)
 
 **Related sample**: [Grid. Rich tooltip template for the first column](https://snippet.dhtmlx.com/md8tr3pr)

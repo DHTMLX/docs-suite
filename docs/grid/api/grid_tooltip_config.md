@@ -47,7 +47,7 @@ const grid = new dhx.Grid("grid_container", {
 - [Grid. Hiding tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
 - [Grid. Tooltip config](https://snippet.dhtmlx.com/qpqnalyt)
 
-**Related article:** [Tooltip](grid/configuration.md#tooltip)
+**Related article:** [Tooltip](/grid/configuration/#tooltip)
 
 @changelog: 
 - The ability to set the `tooltip` config as an object is added in v8.4

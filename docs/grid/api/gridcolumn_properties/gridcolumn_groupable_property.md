@@ -30,4 +30,4 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Enabling data grouping](grid/usage.md#enabling-data-grouping)
+**Related article**: [Enabling data grouping](/grid/usage/#enabling-data-grouping)

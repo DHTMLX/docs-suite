@@ -33,11 +33,11 @@ grid.selection.setCell(row, column);
 @descr:
 
 :::note 
-For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#setting-selection-to-cells).
+For details about how to set selection to multiple cells/rows, see [Setting selection to cells](/grid/usage_selection/#setting-selection-to-cells).
 :::
 
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
-**Related article**: [Selection](grid/usage_selection.md)
+**Related article**: [Selection](/grid/usage_selection/)
 
-**Related API**: [`enable()`](grid/api/selection/selection_enable_method.md), [`removeCell()`](grid/api/selection/selection_removecell_method.md)
+**Related API**: [`enable()`](/grid/api/selection/selection_enable_method/), [`removeCell()`](/grid/api/selection/selection_removecell_method/)

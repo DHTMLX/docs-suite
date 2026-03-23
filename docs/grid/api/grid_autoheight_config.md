@@ -29,7 +29,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
-You can control the autoheight of the header/footer separately with the help of the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. For example, you can disable autoheight of the header and the footer, while it is enabled for the whole Grid:
+You can control the autoheight of the header/footer separately with the help of the [headerAutoHeight](/grid/api/grid_headerautoheight_config/) and [footerAutoHeight](/grid/api/grid_footerautoheight_config/) configuration options of Grid. For example, you can disable autoheight of the header and the footer, while it is enabled for the whole Grid:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {

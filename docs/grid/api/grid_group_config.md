@@ -50,7 +50,7 @@ interface IGridConfig {
 As an object the `group` configuration option has the following properties:
 
 :::tip
-You can find the detailed description of the `group` object properties with examples in the related guide [Grouping data](grid/usage.md#configuring-data-grouping). 
+You can find the detailed description of the `group` object properties with examples in the related guide [Grouping data](/grid/usage/#configuring-data-grouping). 
 :::
 
 - `panel` -  (optional) enables the group panel, *true* by default. When the `panel` config is set to *true*, a user can drag columns' headers to the panel of creating and modifying groups
@@ -62,7 +62,7 @@ You can find the detailed description of the `group` object properties with exam
     - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
 - `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation rules and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
     - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
-        - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the [`dhx.methods`](helpers/data_calculation_functions.md) helper
+        - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the [`dhx.methods`](/helpers/data_calculation_functions/) helper
         - a user-defined aggregation function `((row: IRow[]) => string | number)`
     - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group
 - `order` - (optional) defines the order of grouping by setting the sequence of columns for grouping. The elements of the `order` array can be: 
@@ -73,7 +73,7 @@ You can find the detailed description of the `group` object properties with exam
             - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
             - a user-defined aggregation function `((row: IRow[]) => string | number)`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
-- `column` - (optional) defines the [configuration of a column](grid/usage.md/#configuration-of-the-column-property-of-the-group-object) that renders values of the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
+- `column` - (optional) defines the [configuration of a column](/grid/usage/#configuration-of-the-column-property-of-the-group-object) that renders values of the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -92,6 +92,6 @@ const grid = new dhx.Grid("grid_container", {
 @descr:
 
 
-**Related article**: [Grouping data](grid/usage.md#grouping-data)
+**Related article**: [Grouping data](/grid/usage/#grouping-data)
 
 @changelog: added in v9.0

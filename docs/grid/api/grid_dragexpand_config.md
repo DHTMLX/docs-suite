@@ -32,12 +32,12 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid (TreeGrid). Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
 
-**Related article:** [Drag-n-drop](grid/treegrid_mode.md#expanding-collapsed-rows-on-drag-n-drop)
+**Related article:** [Drag-n-drop](/grid/treegrid_mode/#expanding-collapsed-rows-on-drag-n-drop)
 
 **Related API:**
 
-- [dragCopy](grid/api/grid_dragcopy_config.md)
-- [dragItem](grid/api/grid_dragitem_config.md)
-- [dragMode](grid/api/grid_dragmode_config.md)
+- [dragCopy](/grid/api/grid_dragcopy_config/)
+- [dragItem](/grid/api/grid_dragitem_config/)
+- [dragMode](/grid/api/grid_dragmode_config/)
 
 @changelog: added in v8.1

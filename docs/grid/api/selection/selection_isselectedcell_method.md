@@ -36,9 +36,9 @@ console.log(selectedCell); // -> true
 
 @descr:
 
-**Related article**: [Selection](grid/usage_selection.md)
+**Related article**: [Selection](/grid/usage_selection/)
 
-**Related API**: [`setCell()`](grid/api/selection/selection_setcell_method.md)
+**Related API**: [`setCell()`](/grid/api/selection/selection_setcell_method/)
 
 @changelog:
 added in v9.2

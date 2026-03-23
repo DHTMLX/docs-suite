@@ -13,7 +13,7 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 :::
 
 :::note
-The `closable` property works only with the [`group`](grid/api/grid_group_config.md) panel.
+The `closable` property works only with the [`group`](/grid/api/grid_group_config/) panel.
 :::
 
 @signature: {'closable?: boolean;'}
@@ -35,9 +35,9 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 @descr:
-The `closable` property works with the [`group`](grid/api/grid_group_config.md) panel.
+The `closable` property works with the [`group`](/grid/api/grid_group_config/) panel.
 
 
-**Related article**: [Making group panel elements closable](grid/usage.md#making-group-panel-elements-closable)
+**Related article**: [Making group panel elements closable](/grid/usage/#making-group-panel-elements-closable)
 
 @changelog: added in v9.0

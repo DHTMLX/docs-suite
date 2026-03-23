@@ -14,7 +14,7 @@ There are several ways of loading data into DHTMLX Grid:
 First, you need to prepare a data set that will be loaded into Grid.
 
 :::note
-If you use the [TreeGrid mode of Grid](grid/treegrid_mode.md), check the [related guide on data loading](grid/treegrid_mode.md#data-loading).
+If you use the [TreeGrid mode of Grid](/grid/treegrid_mode/), check the [related guide on data loading](/grid/treegrid_mode/#data-loading).
 :::
 
 ## Preparing data set
@@ -66,7 +66,7 @@ Each object in the data set contains configuration of a grid row. The structure 
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Grid on the initialization stage. Use the [data](grid/api/grid_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Grid on the initialization stage. Use the [data](/grid/api/grid_data_config/) configuration property, as in:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {

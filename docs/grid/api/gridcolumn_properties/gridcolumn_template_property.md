@@ -20,7 +20,7 @@ The `template` function takes 3 parameters:
 
 - **cellValue** - (required) the value of a cell
 - **row** - (required) an object with all cells in a row
-- **column** - (required) an object with the configuration of a column (see the [`columns`](grid/api/grid_columns_config.md) config)
+- **column** - (required) an object with the configuration of a column (see the [`columns`](/grid/api/grid_columns_config/) config)
 
 @descr:
 ### Example
@@ -41,6 +41,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Adding template to cells](grid/customization.md#adding-template-to-cells)
+**Related article**: [Adding template to cells](/grid/customization/#adding-template-to-cells)
 
 **Related sample**: [Grid. Cell templates](https://snippet.dhtmlx.com/9txizaow)

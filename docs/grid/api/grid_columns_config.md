@@ -23,6 +23,6 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-Each column object may contain a set of properties. You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).
+Each column object may contain a set of properties. You will find the full list of the configuration properties of a Grid column [here](/grid/api/api_gridcolumn_properties/).
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#columns grid/customization.md) 

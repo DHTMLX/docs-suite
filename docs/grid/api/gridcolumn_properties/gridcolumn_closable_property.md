@@ -42,4 +42,4 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Making group panel elements closable](grid/usage.md#making-group-panel-elements-closable)
+**Related article**: [Making group panel elements closable](/grid/usage/#making-group-panel-elements-closable)

@@ -33,7 +33,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Setting the format for dates](grid/configuration.md#setting-the-format-for-dates)
+**Related article**: [Setting the format for dates](/grid/configuration/#setting-the-format-for-dates)
 
 **Related sample**: [Grid. Data formats (percent, currency, date and combination with templates)](https://snippet.dhtmlx.com/ox37nvdm)
 

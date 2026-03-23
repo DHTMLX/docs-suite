@@ -29,4 +29,4 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Sortable columns](grid/configuration.md#sortable-columns)
+**Related article**: [Sortable columns](/grid/configuration/#sortable-columns)

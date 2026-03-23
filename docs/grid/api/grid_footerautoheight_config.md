@@ -30,7 +30,7 @@ const grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Header/footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d?tag=grid)
 
-Redefines the [autoHeight](grid/api/grid_autoheight_config.md) config for the footer.
+Redefines the [autoHeight](/grid/api/grid_autoheight_config/) config for the footer.
 
 @changelog: added in v8.3
 

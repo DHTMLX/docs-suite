@@ -65,7 +65,7 @@ An object that includes the following properties:
     </tbody>
 </table>
 
-**Related article:** [Getting sub-row config and content](grid/configuration.md#getting-sub-row-config-and-content)
+**Related article:** [Getting sub-row config and content](/grid/configuration/#getting-sub-row-config-and-content)
 
 @changelog:
 - Added in v9.1

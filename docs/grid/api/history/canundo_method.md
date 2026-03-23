@@ -45,9 +45,9 @@ if (grid.history.canUndo()) {
 
 @descr:
 
-**Related article**: [Applying undo/redo operations to Grid history actions](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions)
+**Related article**: [Applying undo/redo operations to Grid history actions](/grid/usage_history/#applying-undoredo-operations-to-grid-history-actions)
 
-**Related API**: [`undo()`](grid/api/history/undo_method.md)
+**Related API**: [`undo()`](/grid/api/history/undo_method/)
 
 @changelog:
 added in v9.2

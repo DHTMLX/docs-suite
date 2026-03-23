@@ -47,9 +47,9 @@ console.log(grid.history.getHistory().length); // -> 1 (the new action hasn't be
 
 @descr:
 
-**Related article**: [Enabling/disabling History module](grid/usage_history.md/#enablingdisabling-history-module)
+**Related article**: [Enabling/disabling History module](/grid/usage_history/#enablingdisabling-history-module)
 
-**Related API**: [`enable()`](grid/api/history/enable_method.md), [`isDisabled()`](grid/api/history/isdisabled_method.md)
+**Related API**: [`enable()`](/grid/api/history/enable_method/), [`isDisabled()`](/grid/api/history/isdisabled_method/)
 
 @changelog:
 added in v9.2

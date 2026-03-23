@@ -54,10 +54,10 @@ The returned object contains the following set of properties:
 }
 ~~~
 
-You will find the description of these properties [here](grid/api/api_gridcolumn_properties.md).
+You will find the description of these properties [here](/grid/api/api_gridcolumn_properties/).
 
-**Related API:** [setColumns()](grid/api/grid_setcolumns_method.md)
+**Related API:** [setColumns()](/grid/api/grid_setcolumns_method/)
 
-**Related article:** [Working with columns and cells](grid/usage.md#working-with-columns-and-cells)
+**Related article:** [Working with columns and cells](/grid/usage/#working-with-columns-and-cells)
 
 

@@ -29,6 +29,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [Hidden columns](grid/configuration.md#hidden-columns)
+**Related article**: [Hidden columns](/grid/configuration/#hidden-columns)
 
 **Related sample**: [Grid. Hidden columns](https://snippet.dhtmlx.com/lh7ma639)

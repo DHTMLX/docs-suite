@@ -105,11 +105,11 @@ const grid = new dhx.Grid("grid_container", {
 
 There is a set of properties you can specify for Grid to optimize its configuration for your needs.
 
-See the full list of properties that you can specify in the Grid configuration object (the second parameter of the constructor function) in the [Grid API overview](grid/api/api_overview.md#grid-properties) article.
+See the full list of properties that you can specify in the Grid configuration object (the second parameter of the constructor function) in the [Grid API overview](/grid/api/api_overview/#grid-properties) article.
 
 ## Load data into Grid
 
-Detailed information on loading data into Grid is given in the article [](grid/data_loading.md).
+Detailed information on loading data into Grid is given in the article [Data loading](/grid/data_loading/).
 
 ## Example
 

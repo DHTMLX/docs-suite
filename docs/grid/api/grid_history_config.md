@@ -69,7 +69,7 @@ grid.history.enable(); // enabling the module
 **Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
 **Related articles:** 
-- [History of Grid actions](grid/configuration.md/#history-of-grid-actions)
-- [Work with History module](grid/usage_history.md)
+- [History of Grid actions](/grid/configuration/#history-of-grid-actions)
+- [Work with History module](/grid/usage_history/)
 
 @changelog: added in v9.2

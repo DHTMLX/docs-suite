@@ -90,10 +90,10 @@ grid.range.setRange({ xEnd: "b", yEnd: "2" }, true); // merges with the current 
 console.log(grid.range.getRange()); // -> { xStart: "a", xEnd: "b", yStart: "1", yEnd: "2" }
 ~~~
 
-**Related article**: [Work with Range Selection object](grid/usage_rangeselection.md)
+**Related article**: [Work with Range Selection object](/grid/usage_rangeselection/)
 
-**Related API**: [`getRange()`](grid/api/rangeselection/getrange_method.md),
-[`resetRange()`](grid/api/rangeselection/resetrange_method.md)
+**Related API**: [`getRange()`](/grid/api/rangeselection/getrange_method/),
+[`resetRange()`](/grid/api/rangeselection/resetrange_method/)
 
 **Related sample**: [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 

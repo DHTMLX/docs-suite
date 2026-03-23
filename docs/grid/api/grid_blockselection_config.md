@@ -82,7 +82,7 @@ The `blockSelection` property can be set in two ways:
 </table>
 
 :::note
-By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the [`RangeSelection`](grid/usage_rangeselection.md) module is initialized.
+By default, the `blockSelection` property is set to `false`. When `blockSelection` is set to `true` or the module is set to the "range" mode, the [`RangeSelection`](/grid/usage_rangeselection/) module is initialized.
 :::
 
 This example demonstrates configuring the module with the handle disabled and the "range" mode enabled:
@@ -199,8 +199,8 @@ function blockSelectionHandler({ cell, array, index, grid }) {
 **Related sample:** [Grid. BlockSelection. Work with the handle configuration](https://snippet.dhtmlx.com/sryiguxu)
 
 **Related articles:** 
-- [Managing block selection in Grid](grid/configuration.md/#managing-block-selection-in-grid)
-- [Work with BlockSelection module](grid/usage_blockselection.md)
+- [Managing block selection in Grid](/grid/configuration/#managing-block-selection-in-grid)
+- [Work with BlockSelection module](/grid/usage_blockselection/)
 
 @changelog: added in v9.2
 

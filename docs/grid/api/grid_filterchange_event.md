@@ -33,7 +33,7 @@ grid.events.on("filterChange", (value, colId, content) => {
 @descr:
 
 :::info
-The `filterChange` event invokes the [`beforeFilter`](grid/api/grid_beforefilter_event.md) event.
+The `filterChange` event invokes the [`beforeFilter`](/grid/api/grid_beforefilter_event/) event.
 :::
 
 @changelog: 

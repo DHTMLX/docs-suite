@@ -48,6 +48,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related article**: [patternMask](grid/configuration.md#patternmask)
+**Related article**: [patternMask](/grid/configuration/#patternmask)
 
 **Related sample**: [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)

@@ -9,7 +9,7 @@ description: You can explore the options config of Grid column in the documentat
 @short: Optional. Specifies a set of options to be displayed in the editor of a cell
 
 :::note
-The property is required if you specify [`editorType: "select" | "combobox" | "multiselect"`](grid/configuration.md#types-of-column-editor). 
+The property is required if you specify [`editorType: "select" | "combobox" | "multiselect"`](/grid/configuration/#types-of-column-editor). 
 :::
 
 :::info
@@ -52,7 +52,7 @@ const grid = new dhx.Grid("grid_container", {
 }); 
 ~~~
 
-**Related article**: [Editing Grid and separate columns](grid/configuration.md#editing-grid-and-separate-columns)
+**Related article**: [Editing Grid and separate columns](/grid/configuration/#editing-grid-and-separate-columns)
 
 **Related samples**:
 - [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)

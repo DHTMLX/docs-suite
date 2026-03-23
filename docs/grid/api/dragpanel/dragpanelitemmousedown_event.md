@@ -43,7 +43,7 @@ grid.events.on("dragPanelItemMouseDown", (id, event) => {
 
 @descr:
 
-**Related article**: [Work with DragPanel module](grid/usage_dragpanel.md)
+**Related article**: [Work with DragPanel module](/grid/usage_dragpanel/)
 
 @changelog:
 added in v9.2

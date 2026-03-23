@@ -34,7 +34,7 @@ Drag-n-drop can work in three modes:
 - "both" - enables both modes mentioned above
 
 :::info
-Enable [multiselection](grid/configuration.md#multiple-selection-of-grid-cells) of rows to allow a user to drag-n-drop multiple rows at once.
+Enable [multiselection](/grid/configuration/#multiple-selection-of-grid-cells) of rows to allow a user to drag-n-drop multiple rows at once.
 :::
 
 @changelog:
