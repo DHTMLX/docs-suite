@@ -2226,13 +2226,13 @@ For Grid (in the TreeGrid mode) or Tree used in a sub-row it is important to spe
 For example:
 
 ~~~jsx {8,16}
-grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
-    data: dataset,   
-    subRow: (row) => { 
-      subGrid = new dhx.Grid(null, {
+    data: dataset,
+    subRow: (row) => (
+        new dhx.Grid(null, {
             rootParent: "root", // Add the root id
             columns: [
                 { id: "country", header: [{ text: "Country" }] },
@@ -2242,10 +2242,9 @@ grid = new dhx.Grid("grid_container", {
             data: row.data,
             autoWidth: true,
             type: "tree",
-        });
-        return subGrid;
-    }, 
-}); 
+        })
+    ),
+});
 ~~~
 
 ### Adjusting configuration of sub-rows
