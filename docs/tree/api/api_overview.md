@@ -69,7 +69,7 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 | ----------------------------------------- | ------------------------------------------------ |
 | [](tree/api/tree_autoload_config.md)      | @getshort(tree/api/tree_autoload_config.md)      |
 | [](tree/api/tree_checkbox_config.md)      | @getshort(tree/api/tree_checkbox_config.md)      |
-| [](tree/api/tree_collapsed_config.md)      | @getshort(tree/api/tree_collapsed_config.md)      |
+| [](tree/api/tree_collapsed_config.md)     | @getshort(tree/api/tree_collapsed_config.md)     |
 | [](tree/api/tree_css_config.md)           | @getshort(tree/api/tree_css_config.md)           |
 | [](tree/api/tree_data_config.md)          | @getshort(tree/api/tree_data_config.md)          |
 | [](tree/api/tree_dragcopy_config.md)      | @getshort(tree/api/tree_dragcopy_config.md)      |
@@ -84,3 +84,4 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 | [](tree/api/tree_rootid_config.md)        | @getshort(tree/api/tree_rootid_config.md)        |
 | [](tree/api/tree_selection_config.md)     | @getshort(tree/api/tree_selection_config.md)     |
 | [](tree/api/tree_template_config.md)      | @getshort(tree/api/tree_template_config.md)      |
+| [](tree/api/tree_tooltip_config.md)      	| @getshort(tree/api/tree_tooltip_config.md)       |

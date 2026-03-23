@@ -6,21 +6,25 @@ description: You can explore the subRow config of Grid in the documentation of t
 
 # subRow
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: Optional. Defines the sub-row content for each row of the main Grid
 
 :::note
-Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md) and the [data grouping](grid/usage.md#grouping-data) functionality.
+Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md), except for the [data grouping](grid/usage.md#grouping-data) functionality.
 :::
 
 @signature: {'subRow?: (row: IRow) => string | IViewConstructor;'}
 
 @descr:
 
-## Parameters
+#### Parameters
 
 The `subRow` property is a callback function which is called with the row object as a parameter and returns HTML as string or a constructor of a subGrid (or any other nested Suite component).
 
-### Example
+#### Example
 
 - a sub-row with an HTML content
 
@@ -96,5 +100,8 @@ grid = new dhx.Grid("grid_container", {
 **Related article:** [Row expander](grid/configuration.md#row-expander)
 
 **Related API**: [subRowConfig](grid/api/grid_subrowconfig_config.md)
+
+@changelog:
+- Added in v9.1
 
  

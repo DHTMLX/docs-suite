@@ -6,7 +6,9 @@ description: You can explore the beforeColumnDrop event of Grid in the documenta
 
 # beforeColumnDrop
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: fires before the user has finished dragging and released the mouse button over a target column
 

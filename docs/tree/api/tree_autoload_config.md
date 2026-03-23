@@ -11,7 +11,7 @@ description: You can explore the autoload config of Tree in the documentation of
 @signature: {'autoload?: string;'}
 
 @example:
-const tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
+const tree = new dhx.Tree("tree_container", { autoload: "/backend/autoload" });
 tree.data.load("/backend/autoload?id=tree");
 
 @descr:
@@ -19,18 +19,16 @@ tree.data.load("/backend/autoload?id=tree");
 **Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
 :::info
-To control the process of auto-load, use the related [beforeItemLoad](tree_collection/api/treecollection_beforeitemload_event.md) and [afterItemLoad](tree_collection/api/treecollection_afteritemload_event.md) events
+To control the process of auto-load, use the related [`beforeItemLoad`](tree_collection/api/treecollection_beforeitemload_event.md) and [`afterItemLoad`](tree_collection/api/treecollection_afteritemload_event.md) events.
 :::
-
-<br>
 
 Here is an example of sending an HTTP GET request to the server using the Express library:
 
-~~~js
+~~~jsx
 app.get("/backend/autoload", (req, res) => {
     const currentData = treeData.filter(i => i.parent === req.query.id);
     return res.send(currentData);
-})
+});
 ~~~
 
-[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree)
+**Related article**: [Initialization](/tree/initialization_of_dhtmlxtree/#initialize-tree)

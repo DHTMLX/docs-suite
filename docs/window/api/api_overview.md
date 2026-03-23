@@ -21,6 +21,7 @@ description: You can explore the API of Window in the documentation of the DHTML
 | [](window/api/window_isfullscreen_method.md)    | @getshort(window/api/window_isfullscreen_method.md)    |
 | [](window/api/window_isvisible_method.md)       | @getshort(window/api/window_isvisible_method.md)       |
 | [](window/api/window_paint_method.md)           | @getshort(window/api/window_paint_method.md)           |
+| [](window/api/window_setactive_method.md)       | @getshort(window/api/window_setactive_method.md)       |
 | [](window/api/window_setfullscreen_method.md)   | @getshort(window/api/window_setfullscreen_method.md)   |
 | [](window/api/window_setposition_method.md)     | @getshort(window/api/window_setposition_method.md)     |
 | [](window/api/window_setsize_method.md)         | @getshort(window/api/window_setsize_method.md)         |

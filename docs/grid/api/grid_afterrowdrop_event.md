@@ -8,7 +8,7 @@ description: You can explore the afterRowDrop event of Grid in the documentation
 
 @short: fires before the user has finished dragging a row but after the mouse button is released
 
-@signature: {'afterRowDrop: (data: object, event: MouseEvent) => void;'}
+@signature: {'afterRowDrop: (data: object, event: MouseEvent, dropPosition: "top" | "bottom" | "in") => void;'}
 
 @params:
 The callback of the event is called with the following parameters:
@@ -18,9 +18,10 @@ The callback of the event is called with the following parameters:
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
 - `event: MouseEvent` - a native HTML event object
+- `dropPosition: string` - defines the position of the dragged item dropping relative to the target item: "top" | "bottom" | "in" (the "in" value is used only for the TreeGrid mode)
 
 @example:
-grid.events.on("afterRowDrop", (data, event) => {
+grid.events.on("afterRowDrop", (data, event, dropPosition) => {
     // your logic here
 });
 

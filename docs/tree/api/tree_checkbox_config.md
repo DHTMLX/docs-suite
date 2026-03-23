@@ -11,10 +11,12 @@ description: You can explore the checkbox config of Tree in the documentation of
 @signature: {'checkbox?: boolean;'}
 
 @example:
-const tree = new dhx.Tree("tree_container", {checkbox: true});
+const tree = new dhx.Tree("tree_container", { checkbox: true });
 
 @descr:
 
 **Related sample**: [Tree. Inline editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
 
-[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/configuration.md#checkboxes-for-items)
+**Related articles**: 
+- [Initialization](/tree/initialization_of_dhtmlxtree/#initialize-tree)
+- [Configuration](/tree/configuration/#checkboxes-for-items)
