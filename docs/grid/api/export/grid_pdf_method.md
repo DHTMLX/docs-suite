@@ -8,11 +8,14 @@ description: You can explore the pdf export method of Grid in the documentation 
 
 @short: Exports data from a grid to a PDF file
 
-@signature: {'pdf(config?: object): void;'}
+@signature: {'pdf(config?: IPDFConfig) => Promise<void>;'}
+
+@returns:
+A promise of data export
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to PDF:
-    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/grid/pdf/8.1.0`
+    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/grid/pdf/9.3.0`
     - `name?: string` - (optional) the name of the exported file
     - `theme?: string` - (optional) the exported theme, "light" by default. For custom or overridden themes, enable the `exportStyles` option
     - `exportStyles?: boolean | string[]` - (optional) defines the styles that will be sent to the export service when exporting Grid. Use *false* to prevent all styles from being sent to the export service
@@ -43,19 +46,30 @@ description: You can explore the pdf export method of Grid in the documentation 
     - `header?: string` - (optional) an HTML template for the header in the exported file
     - `footer?: string` - (optional) an HTML template for the footer in the exported file
 
+:::note
+You can specify extended export configuration settings via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) configuration property.
+:::
+
 
 @example:
 // default export
-grid.export.pdf();
+grid.export.pdf()
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 
 // export with config settings
 grid.export.pdf({
-    format: "A4",
-    scale: 0.75,
-    displayHeaderFooter: true,
-    theme: "dark",
-});
-
+    pdf: {
+        format: false, // the format of the output file, "A4" by default
+        scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
+        displayHeaderFooter: true // defines whether to display the header and footer, false by default
+    },
+    theme: "dark" // the exported theme, "light" by default
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 
 @descr:
 
@@ -88,8 +102,10 @@ If you use Grid in conjunction with [Pagination](pagination.md), only the displa
 
 **Related article:** [Exporting Grid](grid/usage.md)
 
-**Related API:** [exportStyles](grid/api/grid_exportstyles_config.md)
+**Related API:** [`exportStyles`](grid/api/grid_exportstyles_config.md)
 
 **Change log:** 
+
+- The method returns a promise of data export since v9.3
 - The **header** and **footer** options of the export object were added in v8.4
 - Added in v8.1

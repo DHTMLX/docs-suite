@@ -31,17 +31,18 @@ description: You can explore the css config of Tree in the documentation of the 
 </script>
 ~~~
 
-**Related samples**:
-- [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
-- [Tree. Custom toggle icon](https://snippet.dhtmlx.com/zapehxd3)
-
+@descr:
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Tree:
 
-~~~js
+~~~jsx
 const tree = new dhx.Tree("tree_container", {
     css: "dhx_widget--bg-gray"
 });
 ~~~
+
+**Related samples**:
+- [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
+- [Tree. Custom toggle icon](https://snippet.dhtmlx.com/zapehxd3)
 
 **Related articles**: 
 - [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)

@@ -14,7 +14,8 @@ const AT_NOTATION_KEYS = {
 
 const COMPONENTS_PATH = '@site/src/components';
 
-let components = { Disqus: "Disqus" };
+// let components = { Disqus: "Disqus" };
+let components = {};
 let metaDescription = '';
 
 const wrapDataWithComponent = (data, componentName) => {
@@ -104,7 +105,7 @@ const onAfterDataTransformation = (data) => {
         const imports = `import { ${allAvailableComponents.join(', ')} } from '${COMPONENTS_PATH}';\n\n`;
         const isTitles = /---((?:\r?\n|\r)|.)+?---/.test(transformedData);
         transformedData = isTitles
-            ? (transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`) + "\n\n<Disqus />")
+            ? (transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`))
             : imports + transformedData;
     }
 
@@ -118,7 +119,7 @@ const onAfterDataTransformation = (data) => {
         });
     }
 
-    components = { Disqus: "Disqus" };
+    // components = { Disqus: "Disqus" };
     metaDescription = '';
 
     return transformedData;

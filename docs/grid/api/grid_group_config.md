@@ -16,7 +16,7 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have the `type: tree` property in its configuration.
 :::
 
-## Usage
+#### Usage
 
 ~~~jsx {22}
 type TAggregate = "sum" | "count" | "min" | "max" | "avg" | string;
@@ -45,7 +45,7 @@ interface IGridConfig {
 }
 ~~~
 
-## Parameters 
+#### Parameters 
 
 As an object the `group` configuration option has the following properties:
 

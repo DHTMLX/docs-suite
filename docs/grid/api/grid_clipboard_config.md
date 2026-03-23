@@ -16,7 +16,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 The module requires the [`RangeSelection`](grid/usage_rangeselection.md) module to be enabled and is best used in conjunction with the [`BlockSelection`](grid/usage_blockselection.md) module in the `"range"` mode (enabled on initialization of the `Clipboard` module) for convenient range selection via the UI.
 :::
 
-### Usage
+#### Usage
 
 ~~~jsx
 clipboard?:

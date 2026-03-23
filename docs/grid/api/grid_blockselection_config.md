@@ -12,7 +12,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 @short: Optional. Enables/disables the BlockSelection module during the Grid initialization
 
-### Usage
+#### Usage
 
 ~~~jsx
 blockSelection?:
@@ -53,7 +53,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 @descr:
-### Parameters
+#### Parameters
 
 The `blockSelection` property can be set in two ways:
 

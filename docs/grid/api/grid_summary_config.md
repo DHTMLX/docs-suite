@@ -8,7 +8,7 @@ description: You can explore the spans config of Grid in the documentation of th
 
 @short: Optional. Creates the list of calculated values based on the column's data 
 
-## Usage
+#### Usage
 
 ~~~jsx
 type TSummaryMethod = (rows: IRow[]) => string | number;
@@ -19,7 +19,7 @@ interface ISummary {
 summary?: ISummary;
 ~~~
 
-## Parameters
+#### Parameters
 
 The `summary` configuration option of Grid is an object with calculated values, where the *keys* are the field names and the *values* can be:
 

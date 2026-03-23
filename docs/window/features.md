@@ -69,7 +69,8 @@ In this section you can learn how to show and hide the window, how to switch it 
 | Topic                                                                 | Description                                                                                                        |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Showing / hiding Window](../usage/#showinghiding-window)             | Learn how to show or hide a window on the page ([Example](https://snippet.dhtmlx.com/ee2vf9xw))                    |
-| [Checking visibility of a window](../usage/#checking-visibility-of-window)                 | Learn how to check whether a window is visible on the page or not ([Example](https://snippet.dhtmlx.com/woz5c09h)) |
+| [Setting the active state](../usage/#setting-the-active-state)		| Learn how to set the active state of Window ([Example](https://snippet.dhtmlx.com/lvm3kfwq))
+| [Checking visibility of a window](../usage/#checking-visibility-of-window)  | Learn how to check whether a window is visible on the page or not ([Example](https://snippet.dhtmlx.com/woz5c09h)) |
 | [Switching Window to the full screen mode](../usage/#fullscreen-mode) | Learn how to display a window in the full screen mode ([Example](https://snippet.dhtmlx.com/aftti5fy))             |
 | [Setting / getting Window position](../usage/#positioning-window)     | Learn how to set/get the position of a window on the fly ([Example](https://snippet.dhtmlx.com/hc3ronrk))          |
 | [Setting / getting Window size](../usage/#sizing-window)              | Learn how to change and get the size of a window dynamically ([Example](https://snippet.dhtmlx.com/0zqxydvm))      |
@@ -104,7 +105,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support ([Example](https://snippet.dhtmlx.com/q3cu6x1a)) |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                                                     |
-| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering                         |
+| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component's rendering                         |
 
 ## Any questions left?
 

@@ -6,25 +6,24 @@ description: You can explore the getFilter method of the header filter of Grid i
 
 # getFilter()
 
-@short: returns either an HTML object or an object with Combobox configuration
+@short: returns either an HTML object, or an object with Combobox/Calendar configuration
 
-@signature: {'getFilter(): HTML object | Combobox;'}
+@signature: {'getFilter(): VNode | Combobox | Calendar;'}
 
 @returns:
-Either an HTML object or an object with Combobox configuration
+Either an HTML object, or an object with Combobox/Calendar configuration
 
 @example:
 const filter1 = grid.getHeaderFilter("country").getFilter();
 console.log(filter1);
 // -> returns Combobox
-//  {config: {…}, _uid: 'u1670500020936', events: o, data: d, popup: f, …}
-
+// { config: {...}, _uid: 'u1670500020936', events: o, data: d, popup: f, ... }
 
 const filter2 = grid.getHeaderFilter("netChange").getFilter();
 console.log(filter2);
 // -> returns an HTML object
-// {type: 1, attrs: {…}, tag: 'div', _class: 'dhx_grid-filter__label dxi dxi-magnify', 
-// ref: 'netChange_filter', …}
+// { type: 1, attrs: {...}, tag: 'div', _class: 'dhx_grid-filter__label dxi dxi-magnify', ref: 'netChange_filter', ... }
 
 @changelog:
-added in v8.0
+- The method may return an object with Calendar configuration since v9.3
+- Added in v8.0
