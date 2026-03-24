@@ -66,8 +66,8 @@ const grid = new dhx.Grid("grid_container", {
 
 :::info
 For Grid (in the TreeGrid mode) or Tree used in a sub-row it is important to specify the id of the root element to link data to the corresponding collection:  
-- by using the [`rootParent`](grid/api/grid_rootparent_config.md) property for Grid in the TreeGrid mode 
-- by using the [`rootId`](tree/api/tree_rootid_config.md) property for Tree 
+- by using the [`rootParent`](/grid/api/grid_rootparent_config/) property for Grid in the TreeGrid mode 
+- by using the [`rootId`](/tree/api/tree_rootid_config/) property for Tree 
 :::
 
 For example:
