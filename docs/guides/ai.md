@@ -5,57 +5,64 @@ description: AI tools (MCP)
 sidebar_class_name: ai-icon
 ---
 
-# Getting Started with DHTMLX MCP Server
+# Getting started with DHTMLX MCP server
 
-If you're using AI coding assistants like Claude, Cursor, or ChatGPT, you've probably noticed they sometimes struggle with library-specific code. They might suggest outdated APIs or miss the latest features. That's exactly the problem our MCP server solves.
+AI coding assistants often rely on training data that may not include the latest updates. As a result, generated code may reference outdated APIs or missing features. 
 
-## What's MCP and Why Should You Care?
+The DHTMLX MCP server allows AI tools to retrieve up-to-date documentation for DHTMLX components while generating responses. By connecting an assistant to the MCP endpoint, developers can generate code examples, query APIs, and access configuration details based on the current documentation.
 
-Model Context Protocol (MCP) is basically a way to feed your AI assistant fresh, accurate information about specific tools and libraries. Think of it as giving your AI a direct line to our documentation.
+#### MCP endpoint
 
-Here's the deal: LLMs are trained on data up to a certain date. They don't automatically know about that new feature we released last month or the API change we made in the latest version. The DHTMLX MCP server bridges this gap by providing real-time access to our docs and a smart RAG (Retrieval-Augmented Generation) system that finds exactly what you need.
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
 
-**Server URL:** `https://docs.dhtmlx.com/mcp`
+:::note
+The DHTMLX MCP server is a shared service for all major DHTMLX products, not only DHTMLX Suite. The configuration instructions apply to any DHTMLX component you are working with.
+:::
 
-## What You Get
+Typical use cases include:
 
-When you connect your AI tool to our MCP server, it can:
+- Retrieving documentation for a specific component.
+- Generating code examples based on current APIs.
+- Understanding configuration options, methods, and events.
 
-- Pull the latest documentation for any DHTMLX product
-- Generate accurate code snippets based on current APIs
-- Answer questions about configuration, events, methods — you name it
+## How DHTMLX MCP server works
 
-The best part? It covers **all major DHTMLX products**:
-- Gantt
-- Scheduler
-- Suite (Grid, Form, TreeGrid, and more)
-- Kanban
-- Pivot
-- Spreadsheet
-- Diagram
-- RichText
+The DHTMLX MCP server uses a Retrieval-Augmented Generation (RAG) pipeline combined with the Model Context Protocol (MCP) to provide AI assistants with up-to-date documentation.
 
-One server, all products. Simple.
+At a high level:
 
-## A Note on Privacy
+1. The AI assistant sends a query through MCP.
+2. The server determines which product documentation is relevant.
+3. Documentation content is retrieved from a vector index.
+4. The retrieved context is sent back to the assistant.
+5. The assistant generates a response using that context.
 
-The MCP server is a hosted service — it doesn't run locally and doesn't access your files. We don't store personal information about users. Queries might be logged for debugging and improving the service, but if that's a concern for you, drop us a line at `info@dhtmlx.com`. We offer commercial options with strict no-logging policies.
+This approach allows AI tools to generate answers based on current documentation rather than training data alone.
 
-## Setting It Up
+## Setup
 
-Let's get you connected. Pick your tool below.
+Most AI development tools allow adding MCP endpoints through either a CLI command or a JSON configuration file.
+The configuration generally consists of registering the MCP server URL.
+
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
+
+Below are examples for commonly used tools.
 
 ### Claude Code
 
-The quickest way is through the CLI:
+The quickest way is to add the MCP server URL through the CLI:
 
-```bash
+~~~jsx
 claude mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
-```
+~~~
 
 Or if you prefer manual configuration, add this to your `mcp.json`:
 
-```json
+~~~jsx
 {
   "mcpServers": {
     "dhtmlx-mcp": {
@@ -64,18 +71,18 @@ Or if you prefer manual configuration, add this to your `mcp.json`:
     }
   }
 }
-```
+~~~
 
 ### Cursor
 
-Cursor makes this pretty straightforward:
+Follow the steps below:
 
-1. Open Settings (Cmd+Shift+J on Mac, Ctrl+Shift+J on Windows/Linux)
+1. Open Settings (`Cmd+Shift+J` on Mac, `Ctrl+Shift+J` on Windows/Linux)
 2. Go to **Tools & MCP**
 3. Click **Add Custom MCP**
 4. Paste this config:
 
-```json
+~~~jsx
 {
   "mcpServers": {
     "dhtmlx-mcp": {
@@ -83,15 +90,15 @@ Cursor makes this pretty straightforward:
     }
   }
 }
-```
+~~~
 
-Now you can ask things like "Check DHTMLX docs for how to add a custom column to Gantt" right in your chat.
+Now you can ask things like "Implement row grouping with expandable sections in DHTMLX Grid" right in your chat.
 
 ### Gemini CLI
 
 Find your config file at `~/.gemini/settings.json` and add:
 
-```json
+~~~jsx
 {
   "mcpServers": {
     "dhtmlx-mcp": {
@@ -99,47 +106,92 @@ Find your config file at `~/.gemini/settings.json` and add:
     }
   }
 }
-```
+~~~
 
-Restart Gemini CLI and you're good to go.
+Restart Gemini CLI after saving the file.
 
 ### Antigravity (Google)
+
+These are the steps to complete:
 
 1. Open the command palette
 2. Type "mcp add"
 3. Select "HTTP"
-4. Enter URL: `https://docs.dhtmlx.com/mcp`
-5. Enter Name: `dhtmlx-mcp`
+4. Provide the following values:
+- name:
 
-Done.
+~~~jsx
+dhtmlx-mcp
+~~~
 
-### Other Tools
+- URL: 
 
-Most modern AI coding tools have MCP support somewhere in their settings. Look for "Model Context Protocol", "Context Sources", or similar. Add `https://docs.dhtmlx.com/mcp` as a custom source.
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
 
 ### ChatGPT
 
-Fair warning: MCP with ChatGPT works, but it's not the smoothest experience. Responses can take around 20 seconds. If you're doing serious coding, one of the other tools above will serve you better.
-
-But if ChatGPT is your thing:
+To configure, follow the provided instructions:
 
 1. Go to **Settings** → **Apps & Connectors**
 2. Click **Advanced settings**
 3. Enable **Developer mode**
-4. Go back — you'll now see a "Create" button on the Connectors screen
-5. Click it and fill in:
+4. Return to the **Apps & Connectors** screen and click "Create".
+5. Configure the connector:
    - Name: `dhtmlx-mcp`
    - URL: `https://docs.dhtmlx.com/mcp`
    - Authentication: `No authentication`
-6. Hit **Create**
+6. Click **Create**
 
-You can now ask ChatGPT to "consult the DHTMLX MCP server" when you need help with any of our components.
+Once added, ChatGPT can retrieve documentation from the MCP server during conversations.
 
-## Tips for Best Results
+:::info
+Note that for intensive coding workflows, other MCP-aware tools may be more efficient.
+:::
 
-Once connected, try prompts like:
-- "Using DHTMLX docs, show me how to implement drag and drop in Scheduler"
-- "Check DHTMLX MCP for Gantt task editing configuration"
-- "How do I add custom validation to DHTMLX Form? Use the docs."
+### Other tools
 
-The more specific you are, the better results you'll get. Happy coding!
+Most modern AI coding tools expose MCP under "Model Context Protocol", "Context Sources", or similar wording in settings. Add `https://docs.dhtmlx.com/mcp` as a custom source.
+
+## Privacy and data handling
+
+The MCP server is a hosted service.
+
+Key points:
+
+- It does not run locally.
+- It does not access files in your environment.
+- It does not store personal user information.
+
+Queries may be logged for debugging and service improvements.
+
+Organizations that require stricter privacy guarantees can request commercial deployment options with no query logging.
+For inquiries: `info@dhtmlx.com`.
+
+## Usage tips
+
+Once the MCP server is configured, use concrete, task-oriented prompts so the assistant can call the docs effectively.
+
+You can copy and test the example prompts given below:
+
+~~~
+How do I add custom validation to DHTMLX Form? Use the docs.
+~~~
+~~~
+I want to create a layout with a calendar in one cell, and a grid in another.
+~~~
+~~~
+I want to create a grid with the possibility to sort, resize and edit column cells.
+~~~
+~~~
+I have a chart with the bar type, how can I also add a line chart above it?
+~~~
+~~~
+I want to create two grids with the possibility to drag item rows from one grid to another, but not vice versa."
+~~~
+
+More specific prompts result in more relevant snippets and fewer follow-up questions.
+
+**Related sample**: [Kanban and Chatbot. Example built with MCP](https://snippet.dhtmlx.com/rp3dzkei)
+
