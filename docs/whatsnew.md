@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.1 
+
+Released on March 26, 2026
+
+### Fixes
+
+- Form. The validation issue in the `timePicker` control with the `timeObject` value format when the minute part is less than 10 is fixed
+- Form. The issue where hiding and showing a form control caused the form title to be positioned incorrectly is fixed
+
 ## Version 9.3 
 
 Released on February 17, 2026
