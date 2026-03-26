@@ -58,7 +58,7 @@ const list = new dhx.List("list_container", {
 
 **Related sample**: [List. Handling events in template](https://snippet.dhtmlx.com/7fyilbb7)
 
-**Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [click](list/api/list_click_event.md) event when you click on the item with `className`.
+**Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [click](/list/api/list_click_event/) event when you click on the item with `className`.
 
 As an alternative way, you may use `stopPropagation()` for this purpose (from v7.3.6):
 

@@ -15,28 +15,28 @@ It allows you to arrange multiple objects with similar properties within a singl
 
 You can check the following page to learn how to build a full-featured DHTMLX List:
 
-- [Features](list/features.md)
+- [Features](/list/features/)
 
 ## API reference
 
-- [List API overview](api/api_overview.md)
+- [List API overview](/api/api_overview/)
 
 ## Related resources
 
 - You can get DHTMLX List as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX List](https://snippet.dhtmlx.com/0sorkczm?tag=list)
-- To work with data of List check [DataCollection API](data_collection.md)
+- To work with data of List check [DataCollection API](/data_collection/)
 
 ## Guides
 
-- [Initialization](initialization.md)
-- [Configuration](configuration.md)
-- [Data loading](load_data.md)
-- [Work with List](work_with_list.md)
-- [Work with Selection object](usage_selection.md)
-- [Customization](customization.md)
-- [Event handling](events.md)
+- [Initialization](/list/initialization/)
+- [Configuration](/list/configuration/)
+- [Data loading](/list/load_data/)
+- [Work with List](/list/work_with_list/)
+- [Work with Selection object](/list/usage_selection/)
+- [Customization](/list/customization/)
+- [Event handling](/list/events/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](/migration/)

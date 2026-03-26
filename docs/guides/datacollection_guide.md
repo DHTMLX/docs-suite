@@ -121,7 +121,7 @@ const list = new dhx.List("list_container", {
 });
 ~~~
 
-For more information about List initialization check [here](list/initialization.md/).
+For more information about List initialization check [here](/list/initialization/).
 
 As you can see, we've initialized the list but it is still empty. To fill in our list with data we need to take the following steps:
 

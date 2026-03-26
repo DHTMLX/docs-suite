@@ -33,11 +33,11 @@ const dataset = [
 ~~~
 
 Each object in the data set contains a number of *key:value* pairs that represent attributes of List items. 
-You can specify your own template of rendering List items with the help of the [template](list/api/list_template_config.md) configuration option.
+You can specify your own template of rendering List items with the help of the [template](/list/api/list_template_config/) configuration option.
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into List on the initialization stage. Use the [data](list/api/list_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into List on the initialization stage. Use the [data](/list/api/list_data_config/) configuration property, as in:
 
 ~~~js
 const list = new dhx.List("list_container", {
@@ -130,7 +130,7 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 });
 ~~~
 
-- to enable dynamic rendering of List items, switch the [`virtual`](list/api/list_virtual_config.md) property on:
+- to enable dynamic rendering of List items, switch the [`virtual`](/list/api/list_virtual_config/) property on:
 
 ~~~jsx {2}
 const list = new dhx.list("list_container", {

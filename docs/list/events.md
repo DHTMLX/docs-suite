@@ -60,4 +60,4 @@ list.events.fire("name",args);
 
 ## List of supported events
 
-You can find the full list of List events in the [API Reference](list/api/api_overview.md#events).
+You can find the full list of List events in the [API Reference](/list/api/api_overview/#events).

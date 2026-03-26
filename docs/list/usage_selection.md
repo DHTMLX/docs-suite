@@ -67,7 +67,7 @@ const selected = list.selection.getId(); // -> "2"
 
 **Related sample**: [List. Get selection](https://snippet.dhtmlx.com/elonnovx)
 
-Starting from v7.0, the method can also return an array with ids of selected items if the [multiselection](list/api/list_multiselection_config.md) property of List is enabled.
+Starting from v7.0, the method can also return an array with ids of selected items if the [multiselection](/list/api/list_multiselection_config/) property of List is enabled.
 
 ## Getting object of a selected item
 
@@ -77,4 +77,4 @@ It is also possible to get the object of a selected item using the **getItem()**
 const item = list.selection.getItem();
 ~~~
 
-Starting from v7.0, the method can also return an array of selected items if the [multiselection](list/api/list_multiselection_config.md) property of List is enabled.
+Starting from v7.0, the method can also return an array of selected items if the [multiselection](/list/api/list_multiselection_config/) property of List is enabled.

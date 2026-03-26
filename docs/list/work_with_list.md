@@ -8,7 +8,7 @@ description: You can explore how to work with List in the documentation of the D
 
 ## Setting focus on item
 
-To set focus on a List item, make use of the [](list/api/list_setfocus_method.md) method. It takes the id of an item as a parameter:
+To set focus on a List item, make use of the [setFocus()](/list/api/list_setfocus_method/) method. It takes the id of an item as a parameter:
 
 ~~~js
 list.setFocus("7");
@@ -16,7 +16,7 @@ list.setFocus("7");
 
 **Related sample**: [List. Set active index](https://snippet.dhtmlx.com/ermcjx3d)
 
-To get the id of a List item in focus, use the [](list/api/list_getfocus_method.md) method. It will return the id of an item in focus:
+To get the id of a List item in focus, use the [getFocus()](/list/api/list_getfocus_method/) method. It will return the id of an item in focus:
 
 ~~~js
 list.getFocus(); // -> "6"
@@ -24,7 +24,7 @@ list.getFocus(); // -> "6"
 
 ## Editing items
 
-You can edit a particular List item with the help of the [](list/api/list_edititem_method.md) method. It takes as a parameter the id of an item:
+You can edit a particular List item with the help of the [editItem()](/list/api/list_edititem_method/) method. It takes as a parameter the id of an item:
 
 ~~~js
 list.editItem("1");
@@ -34,11 +34,11 @@ list.editItem("1");
 
 ## Disabling and enabling selection of an item
 
-For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](list/usage_selection.md#enablingdisabling-selection-object).
+For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](/list/usage_selection/#enablingdisabling-selection-object).
 
 ## Using Data Collection API
 
-You can manipulate List items with the help of the [Data Collection API](data_collection.md).
+You can manipulate List items with the help of the [Data Collection API](/data_collection/).
 
 ### Adding items into List
 
@@ -111,7 +111,7 @@ list.data.removeAll();
 
 You can filter List data by the specified criteria with the help of the [filter()](../../data_collection/api/datacollection_filter_method/) method of Data Collection.
 
-Check all details on the parameters of the method in the [Data Collection API](data_collection.md).
+Check all details on the parameters of the method in the [Data Collection API](/data_collection/).
 
 ~~~js
 list.data.filter({
@@ -129,7 +129,7 @@ Filtering can be applied to any attribute of a data item.
 
 It is possible to sort data in List via the [sort()](../../data_collection/api/datacollection_sort_method/) method of Data Collection.
 
-Check all details on the parameters of the method in the [Data Collection API](data_collection.md).
+Check all details on the parameters of the method in the [Data Collection API](/data_collection/).
 
 ~~~js
 list.data.sort({ 
@@ -144,4 +144,4 @@ Sorting can be applied to any attribute of a data item.
 
 ## Using selection API
 
-For information on using Selection API, read [Work with Selection Object](list/usage_selection.md).
+For information on using Selection API, read [Work with Selection Object](/list/usage_selection/).

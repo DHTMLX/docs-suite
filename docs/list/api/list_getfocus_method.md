@@ -19,7 +19,7 @@ list.getFocus(); // -> "item_id"
 @descr:
 
 :::info
-From v8.0, focusing of items isn't available when [key navigation](list/api/list_keynavigation_config.md) is disabled. Use methods of the [Selection](selection.md#methods) object.
+From v8.0, focusing of items isn't available when [key navigation](/list/api/list_keynavigation_config/) is disabled. Use methods of the [Selection](/selection/#methods) object.
 :::
 
 @changelog:

@@ -28,7 +28,7 @@ There is a possibility to make changes in the look and feel of a list. For this 
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](list/api/list_css_config.md) property in the List configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](/list/api/list_css_config/) property in the List configuration:
 
 ~~~js
 const list = new dhx.List("list_container", { 

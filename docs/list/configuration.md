@@ -8,7 +8,7 @@ description: You can explore the configuration of List in the documentation of t
 
 ## Arrow keys navigation
 
-The List component provides the possibility to navigate its items with arrow keys. You can enable this functionality using the [](list/api/list_keynavigation_config.md) property:
+The List component provides the possibility to navigate its items with arrow keys. You can enable this functionality using the [keyNavigation](/list/api/list_keynavigation_config/) property:
 
 ~~~js
 const list = new dhx.List("list_container", {keyNavigation:true});
@@ -45,7 +45,7 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 
 ## Drag-n-drop of items
 
-DHTMLX List supports drag-n-drop of items between lists in several modes. To begin with, you should specify the [](list/api/list_dragmode_config.md) property in the configuration object of List. Then define which mode you need:
+DHTMLX List supports drag-n-drop of items between lists in several modes. To begin with, you should specify the [dragMode](/list/api/list_dragmode_config/) property in the configuration object of List. Then define which mode you need:
 
 - "target" - a list takes items from other lists, while its items can't be dragged out of it
 - "source" - a list allows dragging its items out and can't take items from other lists
@@ -57,7 +57,7 @@ const list = new dhx.List("list_container", {
 });
 ~~~
 
-In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the [](list/api/list_dragmode_config.md):
+In order to provide the possiblity of dragging several items between lists, you should enable the [multiselection](/list/api/list_multiselection_config/) in addition to the [dragMode](/list/api/list_dragmode_config/):
 
 ~~~js
 const list = new dhx.List("list_container", { 
@@ -75,7 +75,7 @@ Read more about multiselection in List [below](#multiple-selection-of-items).
 All data is loaded into List and rendered at once. In case you use large amounts of data in the list, it may slow down the work of your app.
 
 There is a possibility to increase the speed of your application containing a List by enabling dynamic data rendering. It presupposes that data is rendered by parts and on demand.
-To make use of dynamic data rendering, switch the [](list/api/list_virtual_config.md) property on.
+To make use of dynamic data rendering, switch the [virtual](/list/api/list_virtual_config/) property on.
 
 ~~~js
 const list = new dhx.List("list_container", { 
@@ -91,7 +91,7 @@ const list = new dhx.List("list_container", {
 
 **Related sample**: [List. Inline editing](https://snippet.dhtmlx.com/f26lfcai)
 
-You can enable the possibility to edit List items with the help of the [](list/api/list_editable_config.md) configuration option:
+You can enable the possibility to edit List items with the help of the [editable](/list/api/list_editable_config/) configuration option:
 
 ~~~js
 const list = new dhx.List("list_container", {editable:true});
@@ -103,7 +103,7 @@ const list = new dhx.List("list_container", {editable:true});
 
 **Related sample**: [List. Setup list item height](https://snippet.dhtmlx.com/89buovn2)
 
-You can specify the necessary height of an item and set it before initialization of List via the [itemHeight](list/api/list_itemheight_config.md) property either as a number:
+You can specify the necessary height of an item and set it before initialization of List via the [itemHeight](/list/api/list_itemheight_config/) property either as a number:
 
 ~~~js {3}
 // sets the height of an item as a number
@@ -121,9 +121,9 @@ const list = new dhx.List("list_container", {
 });
 ~~~
 
-{{note The usage of the *CSS calc() function* within the [](list/api/list_itemheight_config.md) property is not possible.}}
+{{note The usage of the *CSS calc() function* within the [itemHeight](/list/api/list_itemheight_config/) property is not possible.}}
 
-When the [virtual](list/api/list_virtual_config.md) property is set to *true*, the default height of a list item is 37. To change this value, make use of the **itemHeight** property, as described above.
+When the [virtual](/list/api/list_virtual_config/) property is set to *true*, the default height of a list item is 37. To change this value, make use of the **itemHeight** property, as described above.
 
 ## Height of the List
 
@@ -131,7 +131,7 @@ When the [virtual](list/api/list_virtual_config.md) property is set to *true*, t
 
 **Related sample**: [List. Setup list height](https://snippet.dhtmlx.com/k2mj2sz7)
 
-You can define the desired height of a list via the [height](list/api/list_height_config.md) configuration option as easy as that:
+You can define the desired height of a list via the [height](/list/api/list_height_config/) configuration option as easy as that:
 
 ~~~js
 const list = new dhx.List("list_container", {height: 700});
@@ -143,7 +143,7 @@ You can also use a string value for setting the height of List:
 const list = new dhx.List("list_container", {height: "700px"});
 ~~~
 
-{{note The usage of the *CSS calc() function* within the [](list/api/list_height_config.md) property is not possible.}}
+{{note The usage of the *CSS calc() function* within the [height](/list/api/list_height_config/) property is not possible.}}
 
 ## Multiple selection of items
 
@@ -152,7 +152,7 @@ const list = new dhx.List("list_container", {height: "700px"});
 **Related sample**: [List. Multiselection](https://snippet.dhtmlx.com/0sorkczm)
 
 By default, you can select only one item in a list, since selection of another item resets selection of the previous one. To enable the possibility to select several List items, make use of the 
-[](list/api/list_multiselection_config.md) configuration option:
+[multiselection](/list/api/list_multiselection_config/) configuration option:
 
 ~~~js
 const list = new dhx.List("list_container", {multiselection:true});
@@ -160,7 +160,7 @@ const list = new dhx.List("list_container", {multiselection:true});
 
 Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
 It is also possible to use the "Ctrl+click" combination to select several items. For this, you need to set the 
-[](list/api/list_multiselection_config.md) configuration option to *"ctrlClick"*:
+[multiselection](/list/api/list_multiselection_config/) configuration option to *"ctrlClick"*:
 ~~~js
 const list = new dhx.List("list_container", {
     multiselection:"ctrlClick"   
@@ -173,7 +173,7 @@ const list = new dhx.List("list_container", {
 
 **Related sample**: [List. Disable selection](https://snippet.dhtmlx.com/dk4czs1z)
 
-The default configuration of List provides you with the selection feature that allows highlighting a List item. To disable selection in a List you need to set the [](list/api/list_selection_config.md) configuration property to *false*:
+The default configuration of List provides you with the selection feature that allows highlighting a List item. To disable selection in a List you need to set the [selection](/list/api/list_selection_config/) configuration property to *false*:
 
 ~~~js
 const list = new dhx.List("list_container", {selection: false});
@@ -185,7 +185,7 @@ const list = new dhx.List("list_container", {selection: false});
 
 **Related sample**: [List. HTML template for item](https://snippet.dhtmlx.com/gtzdwpj4)
 
-You can define a template for rendering items in a List with the help of the [](list/api/list_template_config.md) configuration property. Set as its value a function that takes one parameter:
+You can define a template for rendering items in a List with the help of the [template](/list/api/list_template_config/) configuration property. Set as its value a function that takes one parameter:
 
 - **item** - (*object*) an object of a data item
 
@@ -214,7 +214,7 @@ const list = new dhx.List("list_container", {
 
 ## Event handlers for the template
 
-Starting from v7.0, it is possible to assign event handlers to HTML elements of a custom template of List items by using the [](list/api/list_eventhandlers_config.md) configuration option:
+Starting from v7.0, it is possible to assign event handlers to HTML elements of a custom template of List items by using the [eventHandlers](/list/api/list_eventhandlers_config/) configuration option:
 
 ~~~js {1-13,18-29}
 function template(item) {
