@@ -53,6 +53,6 @@ var layout = new dhx.Layout("layout", {
 
 *We divide the layout into two rows. The first row will contain a toolbar. The second row will be divided into two columns: one for Grid and another for Chart.*
 
-You can read more information about [Configuration of a cell](layout/cell_configuration.md) and  about [Styling of Layout cells](layout/customization.md).
+You can read more information about [Configuration of a cell](/layout/cell_configuration/) and  about [Styling of Layout cells](/layout/customization/).
 
 <div id="tutorial_step"><a id="next_step" href="tutorial/basic_application/step3.md"></a></div>

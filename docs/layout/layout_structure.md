@@ -10,7 +10,7 @@ You can use DHTMLX Layout to build the necessary composition of blocks to arrang
 
 - horizontal layout
 
-This type of layout contains several [](layout/api/layout_rows_config.md) of cells which are placed horizontally.
+This type of layout contains several [rows](/layout/api/layout_rows_config/) of cells which are placed horizontally.
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {                                  
@@ -25,7 +25,7 @@ const layout = new dhx.Layout("layout_container", {
 
 - vertical layout
 
-This type of layout includes a set of [columns](layout/api/layout_cols_config.md) of cells that are located vertically. 
+This type of layout includes a set of [columns](/layout/api/layout_cols_config/) of cells that are located vertically. 
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {   

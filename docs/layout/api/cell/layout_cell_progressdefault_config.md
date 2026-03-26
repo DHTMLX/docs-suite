@@ -38,4 +38,4 @@ const layout = new dhx.Layout("layout_container", {
 
 @descr:
 
-**Related article:** [Progress bar](layout/cell_configuration.md#progress-bar)
+**Related article:** [Progress bar](/layout/cell_configuration/#progress-bar)

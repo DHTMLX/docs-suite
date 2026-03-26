@@ -15,11 +15,11 @@ Check [online samples for DHTMLX Layout](https://snippet.dhtmlx.com/f1f49n35?tag
 
 You can check the following page to learn how to build a full-featured DHTMLX Layout:
 
-- [Features](layout/features.md)
+- [Features](/layout/features/)
 
 ## API reference
 
-- [Layout API overview](api/api_overview.md)
+- [Layout API overview](/api/api_overview/)
 
 ## Related resources
 
@@ -30,14 +30,14 @@ You can check the following page to learn how to build a full-featured DHTMLX La
 
 You can read the following articles to find out how to add Layout on the page and work with it.
 
-- [Initialization](initialization.md)
-- [Layout structure](layout_structure.md)
-- [Layout patterns](layout_patterns.md)
-- [Configuration of a Cell](cell_configuration.md)
-- [Work with Layout](work_with_layout.md)
-- [Customization](customization.md)
-- [Event handling](events.md)
+- [Initialization](/layout/initialization/)
+- [Layout structure](/layout/layout_structure/)
+- [Layout patterns](/layout/layout_patterns/)
+- [Configuration of a Cell](/layout/cell_configuration/)
+- [Work with Layout](/layout/work_with_layout/)
+- [Customization](/layout/customization/)
+- [Event handling](/layout/events/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](/migration/)

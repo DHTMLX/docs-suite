@@ -19,4 +19,4 @@ layout.progressHide();
 
 **Related sample:** [Layout. Spinner (busy indicator/ progress bar) for Layout and its cells](https://snippet.dhtmlx.com/vzrvf4rm)
 
-**Related article:** [Showing/hiding a progress bar](layout/work_with_layout.md#showinghiding-a-progress-bar)
+**Related article:** [Showing/hiding a progress bar](/layout/work_with_layout/#showinghiding-a-progress-bar)

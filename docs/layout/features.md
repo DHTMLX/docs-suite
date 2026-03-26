@@ -17,7 +17,7 @@ In this section you can find out how to initialize Layout, how to attach the nec
 | Topic                                                       | Description                                                                                              |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | [Basic initialization](../initialization/)                  | Learn how to initialize a Layout ([Example](https://snippet.dhtmlx.com/ls3cbcys))                        |
-| [Attaching widgets](layout/work_with_layout.md#attaching-a-component-to-a-cell) | Learn how to attach a DHTMLX component to a Layout cell or detach it ([Example](https://snippet.dhtmlx.com/6wuxj6sh)) |
+| [Attaching widgets](/layout/work_with_layout/#attaching-a-component-to-a-cell) | Learn how to attach a DHTMLX component to a Layout cell or detach it ([Example](https://snippet.dhtmlx.com/6wuxj6sh)) |
 
 ### Integration
 
@@ -50,7 +50,7 @@ In this section you can find out how to configure the size and visibility of cel
 | [Configuring content alignment](../api/cell/layout_cell_align_config/)                 | Learn how to set the alignment of content inside a cell ([Example](https://snippet.dhtmlx.com/4w1033c9))                                                                            |
 | [Configuring paddings](../api/cell/layout_cell_padding_config/)                        | Learn how to configure the distance between a cell and the Layout border ([Example](https://snippet.dhtmlx.com/tk6tpwwv))                                                           |
 | [Initializing a collapsed cell](../cell_configuration/#collapsibility)                 | Learn how to initialize a collapsed cell and provide the ability to expand it ([Example 1](https://snippet.dhtmlx.com/f1f49n35), [Example 2](https://snippet.dhtmlx.com/r2e0y6n7)) |
-|[Showing a progress bar by default](layout/cell_configuration.md#progress-bar)|Learn how to render the progress bar in a cell in the absence of the component/HTML content in the cell|
+|[Showing a progress bar by default](/layout/cell_configuration/#progress-bar)|Learn how to render the progress bar in a cell in the absence of the component/HTML content in the cell|
 
 ## How to configure sizes of Layout cells
 
@@ -69,7 +69,7 @@ In this section you can learn how to configure the style of Layout and its cells
 | Topic                                                                | Description                                                                                                           |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | [Rendering HTML content](../api/cell/layout_cell_html_config/)       | Learn how to render HTML content in a cell on Layout initialization  ([Example](https://snippet.dhtmlx.com/6x76kgyq)) |
-| [Attaching HTML content](layout/work_with_layout.md#attaching-an-html-content-to-a-cell) | Learn how to attach HTML content into a cell dynamically or detach it                                                                 |
+| [Attaching HTML content](/layout/work_with_layout/#attaching-an-html-content-to-a-cell) | Learn how to attach HTML content into a cell dynamically or detach it                                                                 |
 | [Styling (custom CSS)](../customization/)                            | Learn how to apply custom styles to a Layout cell ([Example](https://snippet.dhtmlx.com/pwxmf0lx))                    |
 | [List of CSS classes](../../helpers/base_elements/)                  | A set of CSS classes provided by the DHTMLX library                                                                   |
 
@@ -86,7 +86,7 @@ In this section you will learn how to get a cell object, how to add or remove, h
 | [Showing/hiding a cell](../work_with_layout/#hidingshowing-a-cell)               | Learn how to hide/show a cell ([Example 1](https://snippet.dhtmlx.com/v0q7gq26), [Example](https://snippet.dhtmlx.com/u0jd8ah3))        |
 | [Checking visibility of a cell](../work_with_layout/#checking-visibility-of-a-cell)                 | Learn how to check whether a Layout cell is visible                                                                                     |
 | [Expanding/collapsing a cell](../work_with_layout/#collapsingexpanding-a-cell) | Learn how to collapse/expand a cell ([Example 1](https://snippet.dhtmlx.com/h0wtlpyk), [Example 2](https://snippet.dhtmlx.com/t38tqk0k)) |
-|[Showing/hiding a progress bar](layout/work_with_layout.md#showinghiding-a-progress-bar)|Learn how to show/hide the progress bar in a Layout container or in a cell ([Example](https://snippet.dhtmlx.com/vzrvf4rm))|
+|[Showing/hiding a progress bar](/layout/work_with_layout/#showinghiding-a-progress-bar)|Learn how to show/hide the progress bar in a Layout container or in a cell ([Example](https://snippet.dhtmlx.com/vzrvf4rm))|
 
 
 ## Layout patterns
@@ -165,7 +165,7 @@ In this section you will learn about common functionality of the library which c
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
 | [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Layout cells                       |
-| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 

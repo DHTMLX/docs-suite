@@ -27,5 +27,5 @@ layout.getCell("two").detach();
 
 **Related articles:**
 
-- [Attaching a component to a cell](layout/work_with_layout.md#attaching-a-component-to-a-cell)
-- [Attaching an HTML content to a cell](layout/work_with_layout.md#attaching-an-html-content-to-a-cell)
+- [Attaching a component to a cell](/layout/work_with_layout/#attaching-a-component-to-a-cell)
+- [Attaching an HTML content to a cell](/layout/work_with_layout/#attaching-an-html-content-to-a-cell)

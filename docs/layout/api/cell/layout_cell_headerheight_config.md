@@ -29,7 +29,7 @@ const layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
-If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the **headerHeight** option will add a header without text for a cell.
+If the [header](/layout/api/cell/layout_cell_header_config/) property is not set in the config of a cell, the **headerHeight** option will add a header without text for a cell.
 
 @changelog: added in v6.4
 

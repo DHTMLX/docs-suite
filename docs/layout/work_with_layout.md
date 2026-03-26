@@ -8,7 +8,7 @@ description: You can explore how to work with Layout in the documentation of the
 
 ## Removing cells
 
-To remove a certain cell from a layout, apply the [](layout/api/layout_removecell_method.md) method. As a parameter it takes the id of a cell to be removed:
+To remove a certain cell from a layout, apply the [removeCell()](/layout/api/layout_removecell_method/) method. As a parameter it takes the id of a cell to be removed:
 
 ~~~js
 layout.removeCell(id);
@@ -18,7 +18,7 @@ layout.removeCell(id);
 
 ## Getting the object of a cell
 
-You can get the object of a cell by its id. Use the [](layout/api/layout_getcell_method.md) method for this purpose:
+You can get the object of a cell by its id. Use the [getCell()](/layout/api/layout_getcell_method/) method for this purpose:
 
 ~~~js
 layout.getCell("header");
@@ -28,7 +28,7 @@ layout.getCell("header");
 
 ### Attach a component
 
-You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Layout using the [](layout/api/cell/layout_cell_attach_method.md) method of a cell:
+You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Layout using the [attach()](/layout/api/cell/layout_cell_attach_method/) method of a cell:
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -53,7 +53,7 @@ layout.getCell("list").attach(list);
 
 ### Detach a component
 
-To detach a component from a Layout cell, use the [detach()](layout/api/cell/layout_cell_detach_method.md) method of a cell:
+To detach a component from a Layout cell, use the [detach()](/layout/api/cell/layout_cell_detach_method/) method of a cell:
 
 ~~~js
 layout.getCell("list").detach();
@@ -63,7 +63,7 @@ layout.getCell("list").detach();
 
 ### Attach HTML content
 
-You can easily attach some HTML content to a cell of Layout via the [](layout/api/cell/layout_cell_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
+You can easily attach some HTML content to a cell of Layout via the [attachHTML()](/layout/api/cell/layout_cell_attachhtml_method/) method of a cell. It takes as a parameter a string with HTML.
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -75,7 +75,7 @@ layout.getCell("content").attachHTML(html);
 
 ### Detach HTML content
 
-To detach any HTML content from a Layout cell, use the [detach()](layout/api/cell/layout_cell_detach_method.md) method of a cell:
+To detach any HTML content from a Layout cell, use the [detach()](/layout/api/cell/layout_cell_detach_method/) method of a cell:
 
 ~~~js
 layout.getCell("content").detach();
@@ -83,7 +83,7 @@ layout.getCell("content").detach();
 
 ## Hiding/showing a cell
 
-It is possible to hide/show a cell with the help of its API. Both the [](layout/api/cell/layout_cell_hide_method.md) and [](layout/api/cell/layout_cell_show_method.md) methods take the id of a cell as a parameter.
+It is possible to hide/show a cell with the help of its API. Both the [hide()](/layout/api/cell/layout_cell_hide_method/) and [show()](/layout/api/cell/layout_cell_show_method/) methods take the id of a cell as a parameter.
 
 ~~~js
 // hiding a cell
@@ -101,7 +101,7 @@ layout.getCell("toolbar").show();
 
 ## Checking visibility of a cell
 
-Since the object of a cell has the [hidden](layout/api/cell/layout_cell_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibility of a cell via the [](layout/api/cell/layout_cell_isvisible_method.md) method. It returns *true* if the cell is visible and *false* if it is hidden.
+Since the object of a cell has the [hidden](/layout/api/cell/layout_cell_hidden_config/) attribute, a cell can be hidden in a layout. You can check the visibility of a cell via the [isVisible()](/layout/api/cell/layout_cell_isvisible_method/) method. It returns *true* if the cell is visible and *false* if it is hidden.
 
 ~~~js
 layout.getCell("sidebar").isVisible(); // -> true|false
@@ -109,7 +109,7 @@ layout.getCell("sidebar").isVisible(); // -> true|false
 
 ## Collapsing/expanding a cell
 
-You can collapse/expand a specified cell using two corresponding methods of a Layout cell - [](layout/api/cell/layout_cell_collapse_method.md) and [](layout/api/cell/layout_cell_expand_method.md):
+You can collapse/expand a specified cell using two corresponding methods of a Layout cell - [collapse()](/layout/api/cell/layout_cell_collapse_method/) and [expand()](/layout/api/cell/layout_cell_expand_method/):
 
 ~~~js
 // collapsing a cell by its id
@@ -123,7 +123,7 @@ layout.getCell("sidebar").expand();
 
 ## Toggling a cell
 
-It is also possible to collapse and expand a specified cell of Layout using the [](layout/api/cell/layout_cell_toggle_method.md) method of a cell:
+It is also possible to collapse and expand a specified cell of Layout using the [toggle()](/layout/api/cell/layout_cell_toggle_method/) method of a cell:
 
 ~~~js
 layout.getCell("toolbar").toggle();
@@ -136,17 +136,17 @@ layout.getCell("toolbar").toggle();
 A progress bar is a visual component which informs users that the content is loading or updating. 
 You may show or hide the component via API calls either in the [Layout container](#progress-bar-in-the-layout-container) or in a [separate cell](#progress-bar-in-a-layout-cell).
 
-The progress bar can be also shown by default for cells without any attached component or HTML content. [Check the details](layout/cell_configuration.md#progress-bar).  
+The progress bar can be also shown by default for cells without any attached component or HTML content. [Check the details](/layout/cell_configuration/#progress-bar).  
 
 ### Progress bar in the Layout container
 
-To show the progress bar in the container of a Layout, use the [progressShow()](layout/api/layout_progressshow_method.md) method of Layout:
+To show the progress bar in the container of a Layout, use the [progressShow()](/layout/api/layout_progressshow_method/) method of Layout:
 
 ~~~js
 layout.progressShow();
 ~~~
 
-To hide it, use the [progressHide()](layout/api/layout_progresshide_method.md) method:
+To hide it, use the [progressHide()](/layout/api/layout_progresshide_method/) method:
 
 ~~~js
 layout.progressHide();
@@ -154,13 +154,13 @@ layout.progressHide();
 
 ### Progress bar in a Layout cell
 
-To show the progress bar in a separate Layout cell, apply the [progressShow()](layout/api/cell/layout_cell_progressshow_method.md) method of a Layout cell:
+To show the progress bar in a separate Layout cell, apply the [progressShow()](/layout/api/cell/layout_cell_progressshow_method/) method of a Layout cell:
 
 ~~~js
 layout.getCell("two").progressShow();
 ~~~
 
-To hide the component, apply the [progressHide()](layout/api/cell/layout_cell_progresshide_method.md) method of the cell:
+To hide the component, apply the [progressHide()](/layout/api/cell/layout_cell_progresshide_method/) method of the cell:
 
 ~~~js
 layout.getCell("two").progressHide();

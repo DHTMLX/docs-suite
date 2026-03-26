@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](layout/api/cell/layout_cell_css_config.md) property in the configuration of a Layout cell:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](/layout/api/cell/layout_cell_css_config/) property in the configuration of a Layout cell:
 
 ~~~js
 const layout = new dhx.Layout("layout_container",{

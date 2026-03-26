@@ -60,4 +60,4 @@ layout.events.fire("beforeHide",args);
 
 ## List of supported events
 
-You can find the full list of Layout events in the [API Reference](layout/api/api_overview.md#layout-events).
+You can find the full list of Layout events in the [API Reference](/layout/api/api_overview/#layout-events).
