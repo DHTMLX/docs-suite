@@ -19,7 +19,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Li
 
 ## API reference
 
-- [List API overview](/api/api_overview/)
+- [List API overview](/list/api/api_overview/)
 
 ## Related resources
 

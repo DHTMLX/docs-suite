@@ -64,7 +64,7 @@ A data set consists of objects with configurations of menu controls. Templates f
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Menu on the initialization stage. Use the [data](menu/api/menu_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Menu on the initialization stage. Use the [data](/menu/api/menu_data_config/) configuration property, as in:
 
 ~~~jsx
 const menu = new dhx.Menu("menu_container", {
@@ -157,7 +157,7 @@ This section will give you the idea of JSON format templates for separate Menu c
 ~~~
 
 :::tip
-You can find the full list of properties of the **menuItem** object [here](menu/api/api_menuitem_properties.md).
+You can find the full list of properties of the **menuItem** object [here](/menu/api/api_menuitem_properties/).
 :::
 
 ### Custom HTML template
@@ -174,7 +174,7 @@ You can find the full list of properties of the **menuItem** object [here](menu/
 ~~~
 
 :::tip
-You will find the full list of properties of the **customHTML** object [here](menu/api/api_customhtml_properties.md).
+You will find the full list of properties of the **customHTML** object [here](/menu/api/api_customhtml_properties/).
 :::
 
 ### Separator template
@@ -190,7 +190,7 @@ You can add separators that will draw horizontal lines between menu options or v
 ~~~
 
 :::tip
-You will find the full list of properties of the **separator** object [here](menu/api/api_separator_properties.md).
+You will find the full list of properties of the **separator** object [here](/menu/api/api_separator_properties/).
 :::
 
 ### Spacer template
@@ -204,5 +204,5 @@ You will find the full list of properties of the **separator** object [here](men
 ~~~
 
 :::tip
-You will find the full list of properties of the **spacer** object [here](menu/api/api_spacer_properties.md).
+You will find the full list of properties of the **spacer** object [here](/menu/api/api_spacer_properties/).
 :::

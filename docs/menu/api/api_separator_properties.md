@@ -36,4 +36,4 @@ const data = [
 
 <iframe src="https://snippet.dhtmlx.com/71tybx5j?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-**Related article:** [Separator](menu/configuring_menu_items.md#separator)
+**Related article:** [Separator](/menu/configuring_menu_items/#separator)

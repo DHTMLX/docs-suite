@@ -70,11 +70,11 @@ const menu = new dhx.Menu("menu_container");
 
 ### Configuration properties
 
-You can find the full list of Menu configuration properties in the [Menu API overview](menu/api/api_overview.md) article.
+You can find the full list of Menu configuration properties in the [Menu API overview](/menu/api/api_overview/) article.
 
 ## Load data into Menu
 
-Detailed information on loading data into Menu is given in the article [](menu/data_loading.md).
+Detailed information on loading data into Menu is given in the article [Data loading](/menu/data_loading/).
 
 ## Example
 

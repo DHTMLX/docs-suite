@@ -8,7 +8,7 @@ description: You can explore the customization of Menu in the documentation of t
 
 ## Icons
 
-DHTMLX Menu uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons for Menu controls.
+DHTMLX Menu uses the [icons of the DHTMLX library](/helpers/icon/) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons for Menu controls.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Menu as follows:
 
@@ -21,7 +21,7 @@ For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack 
     crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](menu/data_loading.md#json-format-templates) for menu:
+Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](/menu/data_loading/#json-format-templates) for menu:
 
 ~~~js
 const dataset = [
@@ -70,7 +70,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](menu/api/menu_css_config.md) property in the Menu configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](/menu/api/menu_css_config/) property in the Menu configuration:
 
 ~~~js
 const menu = new dhx.Menu("menu_container", {

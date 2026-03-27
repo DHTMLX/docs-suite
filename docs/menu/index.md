@@ -14,26 +14,26 @@ DHTMLX Menu is a component that provides an easy way to add a drop down menu to 
 
 You can check the following page to learn how to build a full-featured DHTMLX Menu:
 
-- [Features](menu/features.md)
+- [Features](/menu/features/)
 
 ## API reference
 
-- [](menu/api/api_overview.md)
+- [Menu API overview](/menu/api/api_overview/)
 
 ## Related resources
 
 - You can get DHTMLX Menu as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu)
-- To work with data of Menu check [TreeCollection API](tree_collection.md)
+- To work with data of Menu check [TreeCollection API](/tree_collection/)
 
 ## Guides
 
 You can read the following articles to find out how to add Menu on the page and work with it.
 
-- [](menu/how_to_start.md)
-- [](menu/configuring_menu_items.md)
-- [](menu/data_loading.md)
-- [](menu/work_with_menu.md)
-- [](menu/creating_context_menu.md)
-- [](menu/customization.md)
-- [](menu/handling_events.md)
+- [Initialization](/menu/how_to_start/)
+- [List of Menu controls](/menu/configuring_menu_items/)
+- [Data loading](/menu/data_loading/)
+- [Work with Menu](/menu/work_with_menu/)
+- [Context menu](/menu/creating_context_menu/)
+- [Customization](/menu/customization/)
+- [Event handling](/menu/handling_events/)

@@ -8,7 +8,7 @@ description: You can explore the list of Menu controls of Menu in the documentat
 
 In this article you'll find the controls you can use in DHTMLX Menu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
 
-To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection.md). Check the [related article](menu/work_with_menu.md).
+To operate Menu controls, you can use Menu API and [Tree Collection API](/tree_collection/). Check the [related article](/menu/work_with_menu/).
 
 ## MenuItem
 
@@ -35,7 +35,7 @@ menu.data.add({
 
 #### Properties
 
-See [the full list of properties](menu/api/api_menuitem_properties.md) that you can provide in the configuration object of a MenuItem control.
+See [the full list of properties](/menu/api/api_menuitem_properties/) that you can provide in the configuration object of a MenuItem control.
 
 ## Custom HTML
 
@@ -45,7 +45,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ### Adding Custom HTML
 
-Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection.md):
+Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](/tree_collection/):
 
 ~~~js
 menu.data.add({
@@ -61,7 +61,7 @@ menu.data.add({
 
 #### Properties
 
-See [the full list of properties](menu/api/api_customhtml_properties.md) that you can provide in the configuration object of a Custom HTML control.
+See [the full list of properties](/menu/api/api_customhtml_properties/) that you can provide in the configuration object of a Custom HTML control.
 
 ## Separator
 
@@ -83,7 +83,7 @@ menu.data.add({
 
 #### Properties
 
-See [the full list of properties](menu/api/api_separator_properties.md) that you can provide in the configuration object of a Separator control.
+See [the full list of properties](/menu/api/api_separator_properties/) that you can provide in the configuration object of a Separator control.
 
 ## Spacer
 
@@ -105,4 +105,4 @@ menu.data.add({
 
 #### Properties
 
-See [the full list of properties](menu/api/api_spacer_properties.md) that you can provide in the configuration object of a Spacer control.
+See [the full list of properties](/menu/api/api_spacer_properties/) that you can provide in the configuration object of a Spacer control.

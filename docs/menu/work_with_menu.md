@@ -8,7 +8,7 @@ description: You can explore how to work with Menu in the documentation of the D
 
 ## Hiding/showing menu options
 
-You can hide and show menu items (one or several at once) with the help of the [hide()](menu/api/menu_hide_method.md) / [show()](menu/api/menu_show_method.md) methods:
+You can hide and show menu items (one or several at once) with the help of the [hide()](/menu/api/menu_hide_method/) / [show()](/menu/api/menu_show_method/) methods:
 
 ~~~js
 menu.hide(id);
@@ -30,14 +30,14 @@ menu.show();
 
 ## Disabling/enabling menu options
 
-You can disable one menu option or several options at a time with the [disable()](menu/api/menu_disable_method.md) method:
+You can disable one menu option or several options at a time with the [disable()](/menu/api/menu_disable_method/) method:
 
 ~~~js
 menu.disable("1");
 menu.disable(["2","3"]);
 ~~~
 
-To enable one menu option or several options at a time, use the [enable()](menu/api/menu_enable_method.md) method:
+To enable one menu option or several options at a time, use the [enable()](/menu/api/menu_enable_method/) method:
 
 ~~~js
 menu.enable("1");
@@ -59,7 +59,7 @@ menu.enable();
 
 ## Checking if a menu option is disabled
 
-To check if an item of Menu is disabled, call the [isDisabled()](menu/api/menu_isdisabled_method.md) method. The method takes one parameter:
+To check if an item of Menu is disabled, call the [isDisabled()](/menu/api/menu_isdisabled_method/) method. The method takes one parameter:
 
 <table>
     <tbody>
@@ -80,7 +80,7 @@ menu.isDisabled("1"); // -> true/false
 
 ### Selecting a menu item
 
-To select a particular Menu item, make use of the [select()](menu/api/menu_select_method.md) method of Menu. The method takes two parameters:
+To select a particular Menu item, make use of the [select()](/menu/api/menu_select_method/) method of Menu. The method takes two parameters:
 
 <table>
     <tbody>
@@ -104,14 +104,14 @@ menu.select("align-left");
 
 ### Unselecting a menu item
 
-To remove selection from a selected item, apply the [unselect()](menu/api/menu_unselect_method.md) method of Menu. The method may take the id of an item as a parameter:
+To remove selection from a selected item, apply the [unselect()](/menu/api/menu_unselect_method/) method of Menu. The method may take the id of an item as a parameter:
 
 ~~~js
 // unselects a specified selected item
 menu.unselect("align-left");
 ~~~
 
-It is also possible to remove selection from all previously selected items of Menu via the [unselect()](menu/api/menu_unselect_method.md) method:
+It is also possible to remove selection from all previously selected items of Menu via the [unselect()](/menu/api/menu_unselect_method/) method:
 
 ~~~js
 // unselects all previously selected items
@@ -122,7 +122,7 @@ menu.unselect();
 
 ## Checking if a menu item is selected
 
-To check if an item of Menu is selected, call the [isSelected()](menu/api/menu_isselected_method.md) method. The method takes one parameter:
+To check if an item of Menu is selected, call the [isSelected()](/menu/api/menu_isselected_method/) method. The method takes one parameter:
 
 <table>
     <tbody>
@@ -142,7 +142,7 @@ menu.isSelected("align-left"); // -> returns true/false
 
 ## Getting selected items
 
-To get the selected items, call the [getSelected()](menu/api/menu_getselected_method.md) method. The method returns an array of string values with IDs of selected items:
+To get the selected items, call the [getSelected()](/menu/api/menu_getselected_method/) method. The method returns an array of string values with IDs of selected items:
 
 ~~~js
 menu.getSelected(); // -> ["selected_1", "selected_1.1"]
@@ -150,7 +150,7 @@ menu.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 ## Using Tree collection API
 
-You can manipulate the controls of Menu with the help of the [Tree collection API](tree_collection.md). 
+You can manipulate the controls of Menu with the help of the [Tree collection API](/tree_collection/).
 
 ### Adding menu items
 
@@ -240,4 +240,4 @@ menu.data.removeAll();
 menu.data.parse(new_options);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection.md).}}
+{{note Check the full list of [Tree collection API](/tree_collection/).}}

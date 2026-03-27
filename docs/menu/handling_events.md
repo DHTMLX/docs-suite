@@ -58,4 +58,4 @@ menu.events.fire(evName,[args]);
 
 ## List of supported events
 
-You can find the full list of Menu events in the [API section](menu/api/api_overview.md#menu-events).
+You can find the full list of Menu events in the [API section](/menu/api/api_overview/#menu-events).

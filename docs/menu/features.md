@@ -51,11 +51,11 @@ In this section you can find out how to initialize Menu, how to add controls ins
 
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](optimus_guides.md)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
-| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Menu with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                    |
-| [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Menu with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
-| [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Menu with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
+| [Backend integration](/integration/suite_and_backend/) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
+| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [React integration](/integration/suite_and_react/)     | Learn how to use DHTMLX Menu with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                    |
+| [Angular integration](/integration/suite_and_angular/) | Learn how to use DHTMLX Menu with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
+| [Vue integration](/integration/suite_and_vue/)         | Learn how to use DHTMLX Menu with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
 
 ## How to customize Menu
@@ -72,7 +72,7 @@ In this section you can learn how to configure the style of Menu and its control
 
 ## How to work with data in Menu
 
-This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Menu, i.e. edit, add, remove, rearrange items, etc.
+This section will tell you how to use [TreeCollection API](/guides/datacollection_guide/) for working with data of Menu, i.e. edit, add, remove, rearrange items, etc.
 
 | Topic                                                                                                     | Description                                                                                                                                                      |
 | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -110,7 +110,7 @@ This section explains how to work with Menu events.
 
 | Topic                                       | Description                                                                                               |
 | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event basic rules](/guides/events_guide/) | Learn basic rules on how to work with events                                                              |
 | [Event handling](../handling_events/)       | Learn how to attach, detach, or call the Menu events ([Example](https://snippet.dhtmlx.com/yjt39a4k)) |
 
 ## API reference
@@ -137,7 +137,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
-| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 

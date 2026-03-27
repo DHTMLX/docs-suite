@@ -93,4 +93,4 @@ const data = [
 
 <iframe src="https://snippet.dhtmlx.com/qkxeer2h?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-**Related article:** [MenuItem](menu/configuring_menu_items.md#menuitem)
+**Related article:** [MenuItem](/menu/configuring_menu_items/#menuitem)

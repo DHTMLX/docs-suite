@@ -56,4 +56,4 @@ const data = [
 
 <iframe src="https://snippet.dhtmlx.com/nk65jfmx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
 
-**Related article:** [Custom HTML](menu/configuring_menu_items.md#custom-html)
+**Related article:** [Custom HTML](/menu/configuring_menu_items/#custom-html)

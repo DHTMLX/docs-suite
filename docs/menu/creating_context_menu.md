@@ -61,7 +61,7 @@ const dataset = [
 
 A data set consists of objects with configurations of context menu controls.
 
-Like with [DHTMLX Menu](menu/data_loading.md), options can be:
+Like with [DHTMLX Menu](/menu/data_loading/), options can be:
 
 - either loaded into the ContextMenu on initialization via the `data` configuration property:
 

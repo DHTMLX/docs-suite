@@ -19,7 +19,7 @@ You can check the following page to learn how to build a full-featured DHTMLX La
 
 ## API reference
 
-- [Layout API overview](/api/api_overview/)
+- [Layout API overview](/layout/api/api_overview/)
 
 ## Related resources
 

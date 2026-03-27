@@ -40,7 +40,7 @@ description: You can explore the css config of Menu in the documentation of the 
 
 **Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)
 
-Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Menu:
+Note, that the DHTMLX library provides [a set of own CSS classes](/helpers/base_elements/#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Menu:
 
 ~~~js
 const menu = new dhx.Menu("menu_container", {
@@ -49,5 +49,5 @@ const menu = new dhx.Menu("menu_container", {
 ~~~
 
 **Related articles**: 
-- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
-- [Themes](themes.md)
+- [List of CSS classes for styling a widget](/helpers/base_elements/#list-of-css-classes-for-styling-a-widget)
+- [Themes](/themes/)
