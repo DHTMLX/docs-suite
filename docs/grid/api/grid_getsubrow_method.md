@@ -6,6 +6,10 @@ description: You can explore the getSubRow method of Grid in the documentation o
 
 # getSubRow()
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: returns the configuration and content of a sub-row for the specified row
 
 :::info

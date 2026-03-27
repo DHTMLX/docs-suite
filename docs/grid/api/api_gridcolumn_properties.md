@@ -33,12 +33,12 @@ Click the name of the necessary property to see the details on its usage.
 | [options](grid/api/gridcolumn_properties/gridcolumn_options_property.md) | (optional) specifies a set of options to be displayed in the editor of a cell. It is required if you specify `editorType:"select"/"combobox"/"multiselect"` |
 | [patternMask](grid/api/gridcolumn_properties/gridcolumn_patternmask_property.md) | (optional) sets an input mask for entering number and string values according to a special pattern |
 | [resizable](grid/api/gridcolumn_properties/gridcolumn_resizable_property.md) | (optional) defines whether a column can be resized, *false* by default |
-| [sortable](grid/api/gridcolumn_properties/gridcolumn_resizable_property.md) | (optional) defines whether a column is sortable, *true* by default |
-| [summary](grid/api/gridcolumn_properties/gridcolumn_closable_property.md) | (optional) creates the list of calculated values based on the column's data. The defined list is available only at the column's level  |
+| [sortable](grid/api/gridcolumn_properties/gridcolumn_sortable_property.md) | (optional) defines whether a column is sortable, *true* by default |
+| [summary](grid/api/gridcolumn_properties/gridcolumn_summary_property.md) | (optional) creates the list of calculated values based on the column's data. The defined list is available only at the column's level  |
 | [template](grid/api/gridcolumn_properties/gridcolumn_template_property.md) | (optional) a function which returns a template with content for a cell  |
 | [tooltip](grid/api/gridcolumn_properties/gridcolumn_tooltip_property.md) | (optional) enables/disables the header tooltip, or sets the configuration object with the tooltip settings  |
 | [tooltipTemplate](grid/api/gridcolumn_properties/gridcolumn_tooltiptemplate_property.md) | (optional) a function which returns a template for the content of the tooltip  |
-| [type](grid/api/gridcolumn_properties/gridcolumn_footer_property.md) | (optional) the type of a column |
+| [type](grid/api/gridcolumn_properties/gridcolumn_type_property.md) | (optional) the type of a column |
 | [width](grid/api/gridcolumn_properties/gridcolumn_width_property.md)  | (optional) the width of a column, *100* by default     |
 
 

@@ -13,8 +13,8 @@ description: You can explore the setCell method of Grid in the documentation of 
 @params:
 - `row: object | string | number` - an object with a cell to be selected or the id of a row
 - `column: object | string | number` - the config of a column or its id
-- `ctrlUp: boolean` - *true* - to select the desired rows or cells, otherwise - *false* (for multiselection mode)
-- `shiftUp: boolean` - *true* - to select a range of rows or cells, otherwise - *false* (for multiselection mode)
+- `ctrlUp: boolean` - *true* - to select the desired rows or cells, otherwise - *false* (for the `multiselection` mode)
+- `shiftUp: boolean` - *true* - to select a range of rows or cells, otherwise - *false* (for the `multiselection` mode)
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -32,10 +32,12 @@ grid.selection.setCell(row, column);
 
 @descr:
 
-{{note For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#setting-selection-to-cells).}}
+:::note 
+For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#setting-selection-to-cells).
+:::
 
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
-[comment]: # (@related: grid/usage_selection.md)
+**Related article**: [Selection](grid/usage_selection.md)
 
-[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md grid/api/selection/selection_removecell_method.md)
+**Related API**: [`enable()`](grid/api/selection/selection_enable_method.md), [`removeCell()`](grid/api/selection/selection_removecell_method.md)

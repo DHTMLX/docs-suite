@@ -6,43 +6,43 @@ description: You can explore how to work with Selection Object of Grid in the do
 
 # Work with Selection object
 
-You can manipulate with Grid cells via the API of the selection object. It is possible to get the object of one or more selected cells or rows, to set selection as to a single row or cell as to multiple rows or cells. The selection object also allows removing selection from previously selected cells.
+You can manipulate with Grid cells via the API of the `selection` object. It is possible to get the object of one or more selected cells or rows, to set selection both to a single row or cell and to multiple rows or cells. The `selection` object also allows removing selection from previously selected cells.
 
-## Enabling/Disabling Selection object
+## Enabling/disabling Selection object
 
-Starting from v7.0, you can activate selection of cells via the [](grid/api/selection/selection_enable_method.md) method of the selection object.
+Starting from v7.0, you can activate selection of cells via the [`enable`](grid/api/selection/selection_enable_method.md) method of the `selection` object.
 
-~~~js
+~~~jsx
 grid.selection.enable();
 ~~~
 
-To disable selection of cells in Grid, make use of the [](grid/api/selection/selection_disable_method.md) method of the selection object:
+To disable selection of cells in Grid, make use of the [`disable`](grid/api/selection/selection_disable_method.md) method of the `selection` object:
 
-~~~js
+~~~jsx
 grid.selection.disable();
 ~~~
 
 ## Setting selection to cells
 
-You can set selection to one or more rows or cells using the [setCell()](grid/api/selection/selection_setcell_method.md) method of the selection object. The method takes the following parameters:
+You can set selection to one or more rows or cells using the [`setCell()`](grid/api/selection/selection_setcell_method.md) method of the `selection` object. The method takes the following parameters:
 
 <table>
     <tbody>
         <tr>
             <td><b>row</b></td>
-            <td>(<i>object|string</i>) an object with a cell to be selected or the id of a row</td>
+            <td>(<i>object | string</i>) an object with a cell to be selected or the id of a row</td>
         </tr>
         <tr>
             <td><b>column</b></td>
-            <td>(<i>object|string</i>) the config of a column or its id</td>
+            <td>(<i>object | string</i>) the config of a column or its id</td>
         </tr>
         <tr>
             <td><b>ctrlUp</b></td>
-            <td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="../configuration/#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
+            <td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="../configuration/#multiple-selection-of-grid-cells">for the `multiselection` mode</a>)</td>
         </tr>
         <tr>
             <td><b>shiftUp</b></td>
-            <td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="../configuration/#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
+            <td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="../configuration/#multiple-selection-of-grid-cells">for the `multiselection` mode</a>)</td>
         </tr>
     </tbody>
 </table>
@@ -53,7 +53,7 @@ You can set selection to one or more rows or cells using the [setCell()](grid/ap
 
 The example below shows how to highlight the first cell in the "Yearly Change" column:
 
-~~~js {6}
+~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
@@ -70,15 +70,17 @@ grid.selection.setCell(row, column);
 
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
-{{note The **multiselection** property is disabled.}}
+:::note 
+The `multiselection` property is disabled.
+:::
 
 ### Setting selection to multiple cells/rows
 
-You can highlight the desired cells when the [multiselection:true](grid/api/grid_multiselection_config.md) and the [selection:"cell"](grid/api/grid_selection_config.md) properties are set:
+You can highlight the desired cells when the [`multiselection:true`](grid/api/grid_multiselection_config.md) and the [`selection:"cell"`](grid/api/grid_selection_config.md) properties are set:
 
 ![](../assets/grid/desired_setcell.png)
 
-~~~js {5,6}
+~~~jsx {5,6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
@@ -99,40 +101,77 @@ It is also possible to select a range of cells at once:
 
 ![](../assets/grid/range_setcell.png)
 
-For that, manipulate the **ctrlUp** and **shiftUp** parameters accordingly:
+For that, manipulate the `ctrlUp` and `shiftUp` parameters accordingly:
 
-~~~js
+~~~jsx
 grid.selection.setCell(grid.data.getId(1),"yearlyChange");
 grid.selection.setCell(grid.data.getId(3),"density", false, true);
 ~~~
 
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
-{{note Use the **selection:"rows"** property to be able to operate rows. }}
+:::note 
+Use the `selection:"rows"` property to be able to operate rows. 
+:::
 
-To make the process of selecting cells more flexible, you can apply the related events of the selection object:
+To make the process of selecting cells more flexible, you can apply the related events of the `selection` object:
 
-- [afterSelect](grid/api/selection/selection_afterselect_event.md)
-- [beforeSelect](grid/api/selection/selection_beforeselect_event.md)
+- [`afterSelect`](grid/api/selection/selection_afterselect_event.md)
+- [`beforeSelect`](grid/api/selection/selection_beforeselect_event.md)
+
+## Checking whether a cell is selected
+
+You can check whether a particular cell is selected using the [`isSelectedCell()`](grid/api/selection/selection_isselectedcell_method.md) method of the `selection` object. The method takes the following parameters:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>row</b></td>
+            <td>(<i>IRow | Id</i>) an object with a cell to be checked or the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>column</b></td>
+            <td>(<i>ICol | Id</i>) the config of a column or its id</td>
+        </tr>
+    </tbody>
+</table>
+
+~~~jsx {14}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    selection:"cell",
+    multiselection: false, 
+    data: dataset
+});
+
+const row = grid.data.getItem(grid.data.getId(0));
+const column = grid.getColumn("project");
+grid.selection.setCell(row,column);
+
+const selectedCell = grid.selection.isSelectedCell(row,column); 
+console.log(selectedCell); // -> true
+~~~
 
 ## Removing selection
 
-Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [](grid/api/selection/selection_removecell_method.md) method of the selection object. The method takes two parameters:
+Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [`removeCell`](grid/api/selection/selection_removecell_method.md) method of the `selection` object. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
             <td><b>rowId</b></td>
-            <td>(<i>string|number</i>) optional, the id of a row</td>
+            <td>(<i>string | number</i>) optional, the id of a row</td>
         </tr>
         <tr>
             <td><b>colId</b></td>
-            <td>(<i>string|number</i>) optional, the id of a column</td>
+            <td>(<i>string | number</i>) optional, the id of a column</td>
         </tr>
     </tbody>
 </table>
 
-~~~js
+~~~jsx
 // unselects all previously selected cells
 grid.selection.removeCell();
  
@@ -143,23 +182,23 @@ grid.selection.removeCell(rowId);
 grid.selection.removeCell(rowId, colId);
 ~~~
 
-To make the process of unselecting cells more flexible, you can apply the related events of the selection object:
+To make the process of unselecting cells more flexible, you can apply the related events of the `selection` object:
 
-- [afterUnSelect](grid/api/selection/selection_afterunselect_event.md) 
-- [beforeUnSelect](grid/api/selection/selection_beforeunselect_event.md)
+- [`afterUnSelect`](grid/api/selection/selection_afterunselect_event.md) 
+- [`beforeUnSelect`](grid/api/selection/selection_beforeunselect_event.md)
 
 ## Getting object of selected cells
 
-To get the object of a selected Grid cell, use the [getCell()](grid/api/selection/selection_getcell_method.md) method of the selection object:
+To get the object of a selected Grid cell, use the [`getCell()`](grid/api/selection/selection_getcell_method.md) method of the `selection` object:
 
-~~~js
+~~~jsx
 const selectedCell = grid.selection.getCell();
 // -> {row: {…}, column: {…}}
 ~~~
 
-To get the object of multiple selected cells, use the [getCells()](grid/api/selection/selection_getcells_method.md) method of the selection object:
+To get the object of multiple selected cells, use the [`getCells()`](grid/api/selection/selection_getcells_method.md) method of the `selection` object:
 
-~~~js
+~~~jsx
 const selectedCells = grid.selection.getCells();
 // -> [{…}, {…}, {…}]
 0: {row: {…}, column: {…}}

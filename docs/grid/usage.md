@@ -6,6 +6,10 @@ description: You can explore how to work with Grid in the documentation of the D
 
 # Work with Grid
 
+## Working with Grid in the TreeGrid mode
+
+For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.
+
 ## Working with columns and cells
 
 The API of DHTMLX Grid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
@@ -14,7 +18,7 @@ The API of DHTMLX Grid allows setting configuration of columns, getting an objec
 
 You can specify the configuration of Grid columns on the fly via the [](grid/api/grid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
 
-~~~js
+~~~jsx
 grid.setColumns([
     { id: "a", header: [{ text: "New header for column a" }] },
     { id: "b", header: [{ text: "New header for column b" }] },
@@ -28,7 +32,7 @@ You can find the full list of the available configuration options of a Grid colu
 
 It is possible to return an object with attributes of a column via its id. Use the [](grid/api/grid_getcolumn_method.md) method for this purpose.
 
-~~~js
+~~~jsx
 const column = grid.getColumn("b"); // ->
 // -> { width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string" }
 ~~~
@@ -39,7 +43,7 @@ The method returns an object with configuration of the specified column. You can
 
 There is the [](grid/api/grid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
-~~~js
+~~~jsx
 const rect = grid.getCellRect("1", "c");
 // -> { x: 200, y: -40, height: 40, width: 200 }
 ~~~
@@ -71,7 +75,7 @@ The return object includes the following attributes:
 
 It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods.
 
-~~~js
+~~~jsx
 //showing a column
 grid.showColumn(colId);
 //hiding a column
@@ -86,7 +90,7 @@ Since the object of a column has the [hidden](grid/configuration.md#hidden-colum
 
 You can check whether a column is hidden or shown on a page using the [](grid/api/grid_iscolumnhidden_method.md) method. The method returns *true*, if a column is hidden, and *false* if it's visible.
 
-~~~js
+~~~jsx
 grid.isColumnHidden("country"); // -> true|false
 ~~~
 
@@ -96,7 +100,7 @@ grid.isColumnHidden("country"); // -> true|false
 
 You may want to manipulate a filter specified in the header of a grid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](grid/api/grid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
 
-~~~js
+~~~jsx
 // set a value by which a column will be filtered
 grid.getHeaderFilter("country").setValue("Brazil");
 
@@ -110,7 +114,7 @@ grid.getHeaderFilter("country").blur();
 const filter = grid.getHeaderFilter("country").getFilter();
 console.log(filter);
 // -> returns Combobox
-//  {config: {…}, _uid: 'u1670500020936', events: o, data: d, popup: f, …}
+// {config: {…}, _uid: 'u1670500020936', events: o, data: d, popup: f, …}
 
 // clear the value set in the filter
 grid.getHeaderFilter("country").clear();
@@ -126,7 +130,7 @@ grid.getHeaderFilter("country").clear();
 
 You may add a new row into the grid by using the [](../data_collection/api/datacollection_add_method.md) method of **DataCollection**:
 
-~~~js
+~~~jsx
 grid.data.add({
     "country": "Estonia",
     "population": "1326535",
@@ -146,13 +150,13 @@ grid.data.add({
 
 To remove the necessary row from the grid, apply the [](../data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
 
-~~~js
+~~~jsx
 grid.data.remove("5");
 ~~~
 
 Here is an example of removing a currently selected row:
 
-~~~js
+~~~jsx
 const cell = grid.selection.getCell();
 grid.data.remove(cell.row.id);
 ~~~
@@ -165,7 +169,7 @@ For more information about the selection functionality in Grid, read the [Select
 
 If you need to remove all rows at once, use the [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
 
-~~~js
+~~~jsx
 grid.data.removeAll();
 ~~~
 
@@ -173,7 +177,7 @@ grid.data.removeAll();
 
 Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods.
 
-~~~js
+~~~jsx
 //showing a row
 grid.showRow(rowId);
 //hiding a row
@@ -186,7 +190,7 @@ grid.hideRow(rowId);
 
 You can check whether a row is hidden or shown on a page using the [](grid/api/grid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
 
-~~~js
+~~~jsx
 grid.isRowHidden("1"); // -> true|false
 ~~~
 
@@ -200,7 +204,7 @@ You can manipulate columns and rows spans inside the grid with the help of the c
 
 In order to add a column/row span into the grid, use the [](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 
-~~~js
+~~~jsx
 grid.addSpan({ 
     row: "0", 
     column: "a", 
@@ -244,7 +248,7 @@ These are possible fields of a span object:
 
 You can return the column/row span a cell is a part of using the [](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
-~~~js
+~~~jsx
 const span = grid.getSpan("10", "a"); 
 // -> { row: "10", column: "a", colspan: 4, text: "Some header", css: "myCustomColspan" }
 ~~~
@@ -255,7 +259,7 @@ As a result, you'll get an object with a span configuration, if any span include
 
 To remove an existing span, make use of the [](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters:
 
-~~~js
+~~~jsx
 grid.removeSpan("10", "a");
 ~~~
 
@@ -279,7 +283,7 @@ You can filter grid data by the specified criteria with the help of the `filter(
 </table>
 <br/>
 
-~~~js
+~~~jsx
 grid.data.filter(function (item) {
   return item.a > 0 && item.b !== "Apple";
 });
@@ -449,7 +453,7 @@ You can easily edit the desired cell of a grid with the help of the [](grid/api/
 
 For example, you can edit the first cell of the "project" column like this:
 
-~~~js
+~~~jsx
 grid.editCell(grid.data.getId(0), "project");
 ~~~
 
@@ -457,7 +461,7 @@ grid.editCell(grid.data.getId(0), "project");
 
 To finish editing of a cell, use the [](grid/api/grid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
-~~~js
+~~~jsx
 grid.editEnd(); // the edited data will be saved
 
 grid.editEnd(true); // the edited data won't be saved
@@ -469,31 +473,62 @@ The [](grid/api/grid_editend_method.md) method does not work if [the type of the
 
 ### Exporting data
 
-You can easily export data of Grid into the Excel, CSV, PDF, or PNG format.
+You can easily export data of Grid into the Excel, CSV, PDF, or PNG format. Besides the standard functionality of the `Export` module methods described below, you can also [provide advanced configuring of parameters for Grid export](/grid/usage/#extended-export-configuration-settings) via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) property.
 
 #### Exporting data to Excel
 
-DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the Export module. The method takes an object with export settings as a parameter.
+Since v9.2 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. You can use either the public export server or a local export server. 
 
-~~~js
+Thus, to have the possibility of exporting files you need to:
+
+- call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+    - if you use the public export server, you don't need to specify the link to it, since it is used by default
+    - if you use your own export server, you need to:
+        - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library 
+        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method 
+~~~jsx
 grid.export.xlsx({
-    name:"grid_data",
+    url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the export module
+    name: "my_file", // the name of a ready Excel file, "grid" by default
+    tableName: "grid", // the name of a sheet with grid data in the Excel file, "data" by default
+    dateFormatMask: "mm.dd.yy" // the date format mask for Excel, "dd/mm/yy" by default
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
+~~~
+
+You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
+
+Read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
+
+**Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
+
+:::note
+The export module server used in the Suite versions up to v9.1 is still available. You can either set the path to the public export server as:
+
+~~~jsx
+grid.export.xlsx({
     url: "//export.dhtmlx.com/excel"
 });
 ~~~
 
-**Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
+or provide a local path to the export module on your computer as a value of the `url` property of the export method.
+:::
 
 #### Exporting data to CSV
 
-You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. 
+You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. The method takes an [object with export settings](grid/api/export/grid_csv_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
-~~~js
+~~~jsx
 grid.export.csv({
-    name:"grid_data", // grid data will be exported to a CSV file named "grid_data"
-    rowDelimiter: "\t", // the tab delimiter will be used to separate rows
-    columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
-});
+    name: "my_file", // the name of a ready CSV file, "grid" by default
+    rowDelimiter: "\t", // the delimiter used to separate rows, "\n" (newline) by default
+    columnDelimiter: ";" // the delimiter used to separate columns, "," (comma) by default
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
@@ -502,30 +537,175 @@ The `csv()` method returns a CSV string with Grid data.
 
 #### Exporting data to PDF
 
-The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
+The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an [object with export settings](grid/api/export/grid_pdf_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
-~~~js
+~~~jsx
 grid.export.pdf({
-    format: "A4",
-    scale: 0.75,
-    displayHeaderFooter: true,
-    theme: "dark",
-});
+    pdf: {
+        format: false, // the format of the output file, "A4" by default
+        scale: 0.75, // the scale of the grid rendering (between 0.1 and 2)
+        displayHeaderFooter: true // defines whether to display the header and footer, false by default
+    },
+    theme: "dark" // the exported theme, "light" by default
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
 
 #### Exporting data to PNG
 
-The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
+The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an [object with export settings](grid/api/export/grid_png_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
-~~~js
+~~~jsx
 grid.export.png({
-    theme: "dark",
-});
+    theme: "dark" // the exported theme, "light" by default
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
+
+### Extended export configuration settings
+
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+There is a possibility to provide an advanced configuring of parameters for Grid export into the CSV, XLSX, PDF, and PNG formats with the [`exportConfig`](/grid/api/grid_exportconfig_config/) property.
+
+Unlike the standard export, [`exportConfig`](/grid/api/grid_exportconfig_config/) allows you to dynamically modify the structure and content of the resulting document at the moment the export function is called. With this property, you can:
+
+- **filter data**: exclude specific rows, columns, or spans by returning `null` in the corresponding callback methods
+- **transform content**: modify headers, format values, or strip HTML templates to ensure data is displayed correctly in spreadsheet editors
+- **define format-specific settings**: set delimiters for CSV, date masks for Excel, or visual themes for PDF
+- **adjust styling**: override Grid properties (such as row height) specifically for the exported file
+
+The `exportConfig` property is a callback function that takes the following parameters:
+
+| Parameter         | Description                                                                       |
+|------------------ |---------------------------------------------------------------------------------- |
+|  `config`         | (*IGridConfig*) the current configuration of a Grid instance                      |
+|  `exportType`     | (*string*) the type of export being performed: "pdf", "png", "csv", or "xlsx"     |
+
+The returned configuration object may contain the following properties:
+
+- `columns` - (*function*) a function for column transformation; returning `null` excludes the column from the export
+- `data` - (*function*) a function for filtering or modifying row data; returning `null` excludes the row from the final file
+- `spans` - (*function*) a function to handle cell merging (spans); returning `null` ignores the span in the export
+- `typeConfig` - (*object*) an object containing unique settings for the specific format (filenames, delimiters, themes)
+- **Grid properties** - any Grid property that should be overridden (e.g., `headerRowHeight`) set as a `key:value` pair, where the *key* is the property name and the *value* is the property value to be applied only to the exported state
+
+#### Example 1: Conditional filtering and formatting 
+
+In this example, sensitive data is excluded for all formats, while for PDF/PNG the headers are converted to the uppercase and HTML templates are disabled:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data:dataset,
+    exportConfig: (config, exportType) => ({
+        // Column transformation
+        columns: (column) => {
+            // Completely exclude the "experience_level" column from any export
+            if (column.id === "experience_level") return null;
+
+            // For spreadsheet formats (Excel/CSV), keep columns as is
+            if (exportType === "xlsx" || exportType === "csv") {
+                return column;
+            }
+
+            // For PDF/PNG, remove HTML templates and uppercase the headers
+            column.template = null;
+            column.header[0].text = column.header[0].text.toUpperCase();
+
+            return column;
+        },
+
+        // Row data filtering
+        data: (row) => {
+            // Exclude young animals (age <= 3) from the export
+            if (row.animal_age <= 3) return null;
+
+            // Business logic example: do not export dogs to CSV and cats to Excel
+            if (exportType === "csv" && row.animal_type === "Dog") return null;
+            if (exportType === "xlsx" && row.animal_type === "Cat") return null;
+
+            return row;
+        },
+
+        // Adjust the header height specifically for the Excel file
+        headerRowHeight: exportType === "xlsx" ? 60 : config.headerRowHeight,
+    }),
+});
+~~~
+
+#### Example 2: Format-specific configuration with `typeConfig`
+
+The following example shows the use of the `typeConfig` property to define filenames, CSV delimiters, and XLSX date masks:
+
+~~~jsx
+const exportConfig = {
+    csv: {
+        name: "cat_report",      // Resulting CSV filename
+        rowDelimiter: "\t",      // Use Tab as row delimiter
+        columnDelimiter: ";"     // Use Semicolon as column delimiter
+    },
+    xlsx: {
+        name: "dog_report",      // Resulting Excel filename
+        tableName: "Main Report", // Sheet name in the Excel workbook
+        dateFormatMask: "dd.mm.yyyy" // Excel-specific date format mask
+    },
+    pdf: {
+        theme: "dark",           // Apply the dark theme to the PDF document
+        scale: 0.8,              // Content scaling (80%)
+        format: "A4"             // Page format
+    }
+};
+
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data:dataset,
+    exportConfig: (config, exportType) => ({
+        // Pass settings from our object based on the export type
+        typeConfig: exportConfig[exportType]
+    })
+});
+~~~
+
+#### Example 3: Filtering spans
+
+If your Grid uses cell merging, you can manage how spans are handled during export. Check the example below:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data:dataset,
+    spans: [
+        // span configuration objects
+    ],
+    exportConfig: (config, exportType) => ({
+        spans: (span) => {
+            // Exclude cells' merges when exporting to CSV,
+            // as the CSV format does not support merged cells
+            if (exportType === "csv") return null;
+            return span;
+        }
+    })
+});
+~~~
+
+**Related sample**: [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/aher21cg)
 
 ## Grouping data
 
@@ -901,6 +1081,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+#### Configuration of the column property of the group object 
+
 A column with grouped data may contain the following properties in its configuration:
 
 ~~~jsx
@@ -917,19 +1099,9 @@ column: {
             ) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             css?: string,
-            content?: "inputFilter" | "selectFilter" | "comboFilter",
-            filterConfig?: {
-                filter?: (item: any, input: string) => boolean,
-                multiselection?: boolean,
-                readonly?: boolean,
-                placeholder?: string,
-                virtual?: boolean,
-                template?: function
-            },
-            customFilter?: (item: any, input: string) => boolean,
             headerSort?: boolean, // true by default
             sortAs?: (cellValue: any) => string | number,
-            htmlEnable?: boolean, // false by default
+            htmlEnable?: boolean, // true by default
         }
     ],
     footer?: [
@@ -943,14 +1115,12 @@ column: {
             ) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             css?: string,
-            htmlEnable?: boolean, // false by default
+            htmlEnable?: boolean, // true by default
         },
     ],
     align?: "left" | "center" | "right", // "left" by default
     resizable?: boolean, // false by default
     sortable?: boolean, // true by default
-    mark?: { min?: string, max?: string } |
-           (cell: any, columnCells: any[], row?: object, column?: object) => string,
     template?: (cellValue: any, row: object, column: object) => string,
     tooltip?: boolean | object, // true by default
     tooltipTemplate?: (cellValue: any, row: object, column: object) => string,
@@ -1156,7 +1326,7 @@ The API of DHTMLX Grid provides the possibility to set scrolls to the necessary 
 
 You can scroll grid content to exact position defined by x and y coordinates via the [](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
 
-~~~js
+~~~jsx
 grid.scroll(75, 230);
 ~~~
 
@@ -1164,7 +1334,7 @@ grid.scroll(75, 230);
 
 It is also possible to scroll grid content to a particular cell. Pass the ids of the row and the column as parameters:
 
-~~~js
+~~~jsx
 grid.scrollTo("15", "c");
 ~~~
 
@@ -1174,7 +1344,7 @@ grid.scrollTo("15", "c");
 
 To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
 
-~~~js
+~~~jsx
 const state = grid.getScrollState(); // -> {x:0, y:0}
 ~~~
 
@@ -1184,7 +1354,7 @@ It returns an object with x,y coordinates of a position the grid has been scroll
 
 In case you've changed some configuration settings of a grid, you can repaint it on a page via the [](grid/api/grid_paint_method.md) method:
 
-~~~js
+~~~jsx
 grid.paint();
 ~~~
 
@@ -1192,14 +1362,31 @@ grid.paint();
 
 When it's necessary to release resources occupied by Grid during its activity, you can make use of the [](grid/api/grid_destructor_method.md) method:
 
-~~~js
+~~~jsx
 grid.destructor();
 ~~~
 
 ## Using Selection API
 
-For information on using Selection API, read [Work with Selection Object](grid/usage_selection.md).
+For information on using Selection API, read [Work with Selection object](grid/usage_selection.md).
 
-## Working with Grid in the TreeGrid mode
+## Using RangeSelection API
 
-For information on working with with Grid in the TreeGrid mode, read the [TreeGrid mode](grid/treegrid_mode.md#work-with-grid-in-the-treegrid-mode) guide.
+For information on using RangeSelection API, read [Work with RangeSelection Module](grid/usage_rangeselection.md).
+
+## Using BlockSelection API
+
+For information on using BlockSelection API, read [Work with BlockSelection module](grid/usage_blockselection.md).
+
+## Working with Clipboard
+
+For information on using the Clipboard module in Grid, read [Work with Clipboard module](grid/usage_clipboard.md).
+
+## Working with DragPanel
+
+For information on using the DragPanel module in Grid, read [Work with DragPanel module](grid/usage_dragpanel.md).
+
+## Working with History API
+
+For information on using the History API in Grid, read [Work with History module](grid/usage_history.md).
+

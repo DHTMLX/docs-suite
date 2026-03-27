@@ -16,22 +16,28 @@ dhtmlxContextMenu is a component that provides an easy way to add a contextual m
 
 You can initialize dhtmlxContextMenu with the constructor:
 
-~~~js
+~~~jsx
 const cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
 ~~~
 
 It takes two parameters:
 
-- *container* - optional, set it to *null*, since ContentMenu is created inside a popup
-- *config* - optional, a configuration object. You can set the CSS classes to style a context menu here 
+- `container` - optional, set it to *null*, since ContextMenu is created inside a popup
+- `config` - optional, a configuration object. It may contain the following properties:
+    - `css` -  adds style classes to ContextMenu
+    - `data` - specifies an array of data objects to set into ContextMenu
+    - `navigationType` - defines the action that opens context menu options:
+        - "click" - displays the context menu option when a user clicks on it
+        - "pointer" - displays the context menu option when a user hovers the mouse pointer over it
 
 ## Loading menu options
 
-Like with DHTMLX Menu, options can be either parsed from a JSON array:
+dhtmlxContextMenu expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
-~~~js
-const data = [
-    { value: "File", 
+~~~jsx
+const dataset = [
+    { 
+        value: "File", 
         items: [
             { value: "New File", icon: "dxi dxi-file-outline"},                      
             { value: "Remove File", icon: "dxi dxi-delete"}        
@@ -40,7 +46,8 @@ const data = [
     {
         type: "separator"
     },
-    { value: "Edit",
+    { 
+        value: "Edit",
         items: [
             { value: "Undo", icon: "dxi dxi-undo"},
             { value: "Redo", icon: "dxi dxi-redo"}
@@ -50,19 +57,36 @@ const data = [
         type: "spacer"
     }
 ];
-
-cmenu.data.parse(data);
 ~~~
 
-or loaded from a JSON file:
+A data set consists of objects with configurations of context menu controls.
 
-~~~js
+Like with [DHTMLX Menu](menu/data_loading.md), options can be:
+
+- either loaded into the ContextMenu on initialization via the `data` configuration property:
+
+~~~jsx
+const cmenu = new dhx.ContextMenu(null, {
+    css: "dhx_widget--bg_gray"
+    data: dataset
+});
+~~~
+
+- or parsed from a JSON array:
+
+~~~jsx
+cmenu.data.parse(dataset);
+~~~
+
+- or loaded from a JSON file:
+
+~~~jsx
 cmenu.data.load("[path_to_file]/file.json");
 ~~~
 
 ## Showing dhtmlxContextMenu
 
-dhtmlxContextMenu is attached to a context zone, and can be shown with the **showAt()** method. It takes two parameters:
+dhtmlxContextMenu is attached to a context zone, and can be shown with the `showAt()` method. It takes two parameters:
 
 <table>
     <tbody>
@@ -85,7 +109,7 @@ This is how you can attach dhtmlxContextMenu to an HTML element:
 <div id="menu"></div>
 ~~~
 
-~~~js
+~~~jsx
 const cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
 
 document.querySelector('#menu').oncontextmenu = function(e) {    
@@ -100,7 +124,7 @@ document.querySelector('#menu').oncontextmenu = function(e) {
 
 This is how you can attach dhtmlxContextMenu to a mouse event:
 
-~~~js
+~~~jsx
 const cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
 
 document.querySelector('#menu').oncontextmenu = function(e) {   

@@ -6,19 +6,21 @@ description: You can explore the beforeAdd event of DataCollection in the docume
 
 # beforeAdd
 
-@short: fires before adding a new item into a data collection
+@short: fires before adding a new item/items into a data collection
 
-@signature: {'beforeAdd: (newItem: object) => boolean | void;'}
+@signature: {'beforeAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;'}
 
 @params:
 - `newItem: object` - the object of an added item
+- `batch: array` - an array of added items
+- `index: number` - the index of the added item within the batch
 
 @returns:
 Return `false` to prevent an item adding into a data collection; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeAdd", function(newItem){
-    console.log("A new item will be added");
+component.data.events.on("beforeAdd", function(newItem, batch, index){
+    console.log("New items will be added");
     return true;
 });
 

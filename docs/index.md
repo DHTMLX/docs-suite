@@ -11,7 +11,7 @@ import WidgetIcons from '../src/components/WidgetIcons';
 
 Welcome to the documentation of DHTMLX Suite ‐ JavaScript UI widget library!
 
-This documentation provides insight into how to create cross-browser responsive web applications using DHTMLX Suite. It contains API references, overviews, initialization, configuration, customization, and event handling guides for each Suite widget. There is also guidance on how to build various web systems following the example of DHTMLX live demos. Additionally, here you will find links to code examples of Suite widgets used with Angular, React, and Vue.js.
+This documentation provides insight into how to create cross-browser responsive web applications using DHTMLX Suite. It contains API references, overviews, initialization, configuration, customization, and event handling guides for each Suite widget. There is also guidance on how to build various web systems following the example of DHTMLX live demos. Additionally, here you will find links to code examples of Suite widgets used with Angular, React, Svelte and Vue.
 
 ## DHTMLX Suite widgets
 
@@ -62,10 +62,29 @@ A gallery of live demos provides real-life examples of using DHTMLX widgets in w
 
 A [set of CSS templates](https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-create-javascript-applications/) is specially designed for various use cases that can be implemented using DHTMLX widgets. You can borrow the CSS code and apply the styles you like in your web app.
 
-### Integration with Angular, React, and Vue.js
-[comment]: # (ссылки ниже должны уводить на страницы доки)
-DHTMLX Suite is compatible with any client-side framework. There are code examples of how to use DHTMLX widgets with [Angular](integration/suite_and_angular.md), [React](integration/suite_and_react.md), and [Vue.js](integration/suite_and_vue.md) available on our GitHub pages.
+### Integration with frameworks
 
+[comment]: # (ссылки ниже должны уводить на страницы доки)
+
+DHTMLX Suite is compatible with client-side frameworks. Refer to the following guides for more information on how to use DHTMLX Suite widgets with frameworks:
+- [Integration with React](integration/suite_and_react.md)
+- [Integration with Angular](integration/suite_and_angular.md)
+- [Integration with Vue](integration/suite_and_vue.md)
+- [Integration with Svelte](integration/suite_and_svelte.md)
+
+You can import DHTMLX Suite into your project using `yarn` or `npm` package manager.
+
+#### Installing trial DHTMLX Suite via npm or yarn
+
+:::info
+If you want to use trial version of Suite, download the [**trial Suite package**](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and follow steps mentioned in the *README* file. Note that trial Suite is available 30 days only.
+:::
+
+#### Installing PRO DHTMLX Suite via npm or yarn
+
+:::info
+You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Suite license is active.
+:::
 ### Integration with any backend technologies
 
 Being a fully client-side library, DHTMLX Suite can be used with any backend. There is an example of integrating [DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo) in our GitHub repository.
@@ -82,4 +101,10 @@ All DHTMLX widgets are created with accessible design in mind. DHTMLX sticks to 
 
 ## Release History
 
-The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the [“What’s new”](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.
+The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the ["What's new"](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.
+
+## Documentation for DHTMLX Suite 5 version 
+
+:::info
+If you are using an outdated version of DHTMLX Suite 5 and require the documentation for it, please [contact us](https://dhtmlx.com/docs/contact.shtml), and we will send it to you.
+:::

@@ -6,7 +6,9 @@ description: You can explore the dragColumnIn event of Grid in the documentation
 
 # dragColumnIn
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: fires when a column is dragged to another potential target
 

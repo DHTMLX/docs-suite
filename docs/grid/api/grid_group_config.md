@@ -16,7 +16,7 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have the `type: tree` property in its configuration.
 :::
 
-## Usage
+#### Usage
 
 ~~~jsx {22}
 type TAggregate = "sum" | "count" | "min" | "max" | "avg" | string;
@@ -45,7 +45,7 @@ interface IGridConfig {
 }
 ~~~
 
-## Parameters 
+#### Parameters 
 
 As an object the `group` configuration option has the following properties:
 
@@ -73,7 +73,7 @@ You can find the detailed description of the `group` object properties with exam
             - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
             - a user-defined aggregation function `((row: IRow[]) => string | number)`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
-- `column` - (optional) defines the configuration of a column that renders values of the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
+- `column` - (optional) defines the [configuration of a column](grid/usage.md/#configuration-of-the-column-property-of-the-group-object) that renders values of the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
 
 @example:
 const grid = new dhx.Grid("grid_container", {

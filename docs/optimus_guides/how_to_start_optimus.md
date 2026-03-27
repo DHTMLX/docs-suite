@@ -65,7 +65,7 @@ Step 1. Initialize an application
 
 {{note The full code for Step 1 is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-1" target="_blank">GitHub</a>. }}
 
-After running the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-1" target="_blank">project</a> on the local server and opening *http://localhost:8080/* in your browser, you will see the following result:
+After running the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-1" target="_blank">project</a> on the local server and opening `http://localhost:8080/` in your browser, you will see the following result:
 
 ![](../assets/optimus/start_optimus.png)
 

@@ -10,11 +10,11 @@ description: You can explore the itemHeight config of Combo Box in the documenta
 
 @signature: {'itemHeight?: number | string;'}
 
-@default: 32
+@default: 37
 
 @example:
 const combo = new dhx.Combobox("combo_container",{
-    itemHeight:50
+    itemHeight: 50
 });
 
 @descr:

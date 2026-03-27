@@ -6,21 +6,25 @@ description: You can explore the subRow config of Grid in the documentation of t
 
 # subRow
 
+:::tip pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @short: Optional. Defines the sub-row content for each row of the main Grid
 
 :::note
-Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md) and the [data grouping](grid/usage.md#grouping-data) functionality.
+Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md), except for the [data grouping](grid/usage.md#grouping-data) functionality.
 :::
 
 @signature: {'subRow?: (row: IRow) => string | IViewConstructor;'}
 
 @descr:
 
-## Parameters
+#### Parameters
 
 The `subRow` property is a callback function which is called with the row object as a parameter and returns HTML as string or a constructor of a subGrid (or any other nested Suite component).
 
-### Example
+#### Example
 
 - a sub-row with an HTML content
 
@@ -60,10 +64,43 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+:::info
+For Grid (in the TreeGrid mode) or Tree used in a sub-row it is important to specify the id of the root element to link data to the corresponding collection:  
+- by using the [`rootParent`](grid/api/grid_rootparent_config.md) property for Grid in the TreeGrid mode 
+- by using the [`rootId`](tree/api/tree_rootid_config.md) property for Tree 
+:::
+
+For example:
+
+~~~jsx {8,16}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    subRow: (row) => (
+        new dhx.Grid(null, {
+            rootParent: "root", // Add the root id
+            columns: [
+                { id: "country", header: [{ text: "Country" }] },
+                { id: "order_quantity", header: [{ text: "Orders" }], type: "number" },
+                { id: "average_check", header: [{ text: "Avg check" }], type: "number" },
+            ],
+            data: row.data,
+            autoWidth: true,
+            type: "tree",
+        })
+    ),
+});
+~~~
+
 **Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
 
 **Related article:** [Row expander](grid/configuration.md#row-expander)
 
 **Related API**: [subRowConfig](grid/api/grid_subrowconfig_config.md)
+
+@changelog:
+- Added in v9.1
 
  
