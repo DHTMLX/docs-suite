@@ -11,19 +11,19 @@ description: You can explore the sort method of DataCollection in the documentat
 @signature: {'sort(rule?: object, config?: object): void;'}
 
 @params:
-- `rule: object` - an object with parameters for sorting. The object has the following attributes:
-    - `by: string | number` - the id of a data field 
-    - `dir: string` - the direction of sorting: "asc" or "desc"
-    - `as: function` -  a function that specifies the type to sort data as
-    - `rule: function` -  optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
-- `config: object` - defines the parameter of sorting. It may contain one property:
-    - `smartSorting: boolean` - specifies whether a sorting rule should be applied each time after changing the data set
+- `rule?: object` - optional, an object with parameters for sorting. The object has the following attributes:
+    - `by?: string | number` - optional, the id of a data field 
+    - `dir?: string` - optional, the direction of sorting: "asc" or "desc"
+    - `as?: function` -  optional, a function that specifies the type to sort data as
+    - `rule?: function` -  optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
+- `config?: object` - optional, defines the parameter of sorting. It may contain one property:
+    - `smartSorting?: boolean` - optional, specifies whether a sorting rule should be applied each time after changing the data set
 
 @example:
 grid.data.sort(
     {
-        by:"a",
-        dir:"desc",
+        by: "a",
+        dir: "desc",
         as: item => (item.toUpperCase())
     },
     { smartSorting: true }
