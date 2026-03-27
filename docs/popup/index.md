@@ -1,6 +1,6 @@
 ---
 sidebar_label: Overview
-title: JavaScript Popup - Popup Overview 
+title: JavaScript Popup - Popup Overview
 description: You can have an overview of Popup in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -16,22 +16,22 @@ Mainly, the component is applied for showing a pop-up content on some action, su
 
 You can check the following page to learn how to build a full-featured DHTMLX Popup:
 
-- [Features](popup/features.md)
+- [Features](/popup/features/)
 
 ## API reference
 
-- [](popup/api/api_overview.md)
+- [Popup API overview](/popup/api/api_overview/)
 
 ## Related resources
 
 - You can get DHTMLX Popup as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Popup](https://snippet.dhtmlx.com/bz1ekc71?tag=popup) 
+- There are also [online samples for DHTMLX Popup](https://snippet.dhtmlx.com/bz1ekc71?tag=popup)
 
 ## Guides
 
 Guides you through the information about possibilities of working with Popup.
 
-- [](popup/initialization.md)
-- [](popup/work_with_popup.md)
-- [](popup/customization.md)
-- [](popup/event_handling.md)
+- [Initialization](/popup/initialization/)
+- [Work with Popup](/popup/work_with_popup/)
+- [Customization](/popup/customization/)
+- [Event handling](/popup/event_handling/)

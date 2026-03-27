@@ -1,6 +1,6 @@
 ---
 sidebar_label: Overview
-title: JavaScript Toolbar - Toolbar Overview 
+title: JavaScript Toolbar - Toolbar Overview
 description: You can have an overview of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -15,17 +15,17 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 
 You can check the following page to learn how to build a full-featured DHTMLX Toolbar:
 
-- [Features](toolbar/features.md)
+- [Features](/toolbar/features/)
 
 ## API reference
 
-- [](toolbar/api/api_overview.md)
+- [Toolbar API overview](/toolbar/api/api_overview/)
 
 ## Related resources
 
 - You can get DHTMLX Toolbar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar)
-- To work with data of Toolbar check [TreeCollection API](tree_collection.md)
+- To work with data of Toolbar check [TreeCollection API](/tree_collection/)
 
 ## Guides
 
@@ -33,23 +33,23 @@ You can check the following page to learn how to build a full-featured DHTMLX To
 
 Describes the steps of initializing Toolbar and working with it.
 
-- [](toolbar/how_to_start.md)
-- [](toolbar/load_data.md)
-- [](toolbar/common_methods.md)
-- [](toolbar/customization.md)
-- [](toolbar/handling_events.md)
+- [Initialization](/toolbar/how_to_start/)
+- [Data loading](/toolbar/load_data/)
+- [Work with Toolbar](/toolbar/common_methods/)
+- [Customization](/toolbar/customization/)
+- [Event handling](/toolbar/handling_events/)
 
 ### Toolbar controls
 
 Discusses the creation of Toolbar controls and the possibilities of manipulating them.
 
-- [](toolbar/button.md)
-- [](toolbar/customhtmlbutton.md)
-- [](toolbar/datepicker.md)
-- [](toolbar/image_button.md)
-- [](toolbar/input.md)
-- [](toolbar/navitem.md)
-- [](toolbar/selectbutton.md)
-- [](toolbar/separator.md)
-- [](toolbar/spacer.md)
-- [](toolbar/title.md)  
+- [Button](/toolbar/button/)
+- [Custom HTML](/toolbar/customhtmlbutton/)
+- [Datepicker](/toolbar/datepicker/)
+- [ImageButton](/toolbar/image_button/)
+- [Input](/toolbar/input/)
+- [NavItem](/toolbar/navitem/)
+- [SelectButton](/toolbar/selectbutton/)
+- [Separator](/toolbar/separator/)
+- [Spacer](/toolbar/spacer/)
+- [Title](/toolbar/title/)

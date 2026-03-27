@@ -1,13 +1,13 @@
 ---
 sidebar_label: Overview
-title: JavaScript Tabbar - Tabbar Overview 
+title: JavaScript Tabbar - Tabbar Overview
 description: You can have an overview of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Tabbar overview
 
 DHTMLX Tabbar component allows a user to keep several groups of content together and navigate between them with in a handy way.
-Being highly configurable, the component can be easily adjusted to your requirements and will provide quick switching between parts of your app. 
+Being highly configurable, the component can be easily adjusted to your requirements and will provide quick switching between parts of your app.
 Check [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar).
 
 ![](../assets/tabbar/tabbar_front.png)
@@ -16,25 +16,25 @@ Check [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag
 
 You can check the following page to learn how to build a full-featured DHTMLX Tabbar:
 
-- [Features](tabbar/features.md)
+- [Features](/tabbar/features/)
 
 ## API reference
 
-- [](tabbar/api/api_overview.md)
+- [Tabbar API overview](/tabbar/api/api_overview/)
 
 ## Related resources
 
 - You can get DHTMLX Tabbar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar)  
+- There are also [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar)
 
 ## Guides
 
-- [Initialization](init.md)
-- [Configuration](configuring_tabbar.md)
-- [Work with Tabbar](work_with_tabbar.md)
-- [Customization](customization.md)
-- [Event handling](events.md)
+- [Initialization](/tabbar/init/)
+- [Configuration](/tabbar/configuring_tabbar/)
+- [Work with Tabbar](/tabbar/work_with_tabbar/)
+- [Customization](/tabbar/customization/)
+- [Event handling](/tabbar/events/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](/migration/)

@@ -20,23 +20,23 @@ You can check the following page to learn how to build a full-featured DHTMLX Ch
 
 ## API reference
 
-- [Chart API overview](api/api_overview.md)
+- [Chart API overview](/chart/api/api_overview/)
 
 ## Related resources
 
 - To get just DHTMLX Chart, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml)
 - To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=chart)
-- To work with data of Chart check [DataCollection API](data_collection.md)
+- To work with data of Chart check [DataCollection API](/data_collection/)
 
 ## Guides
 
 You can read the following articles to find out how to add Chart on the page and work with it.
 
-- [Overview of Chart types](charts_overview.md)
-- [Initialization](initialization.md)
-- [Configuration](configuration_properties.md)
-- [Data loading](data_loading.md)
-- [Work with Chart](usage.md)
-- [Customization](customization.md)
-- [Event handling](events.md)
+- [Overview of Chart types](/chart/charts_overview/)
+- [Initialization](/chart/initialization/)
+- [Configuration](/chart/configuration_properties/)
+- [Data loading](/chart/data_loading/)
+- [Work with Chart](/chart/usage/)
+- [Customization](/chart/customization/)
+- [Event handling](/chart/events/)

@@ -20,24 +20,24 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## API reference
 
-- [Combobox API overview](api/api_overview.md)
+- [Combobox API overview](/combobox/api/api_overview/)
 
 ## Related resources
 
 - You can get DHTMLX ComboBox as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox)
-- To work with data of ComboBox check [DataCollection API](data_collection.md)
+- To work with data of ComboBox check [DataCollection API](/data_collection/)
 
 ## Guides
 
-- [Initialization](how_to_start.md)
-- [Configuration](configuration.md)
-- [Localization](localization.md)
-- [Data loading](adding_options.md)
-- [Work with ComboBox](work_with_combo.md)
-- [Customization](customization.md)
-- [Event handling](handling_events.md)
+- [Initialization](/combobox/how_to_start/)
+- [Configuration](/combobox/configuration/)
+- [Localization](/combobox/localization/)
+- [Data loading](/combobox/adding_options/)
+- [Work with ComboBox](/combobox/work_with_combo/)
+- [Customization](/combobox/customization/)
+- [Event handling](/combobox/handling_events/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](/migration/)

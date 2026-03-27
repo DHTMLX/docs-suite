@@ -1,12 +1,12 @@
 ---
 sidebar_label: Overview
-title: JavaScript Window - Window Overview 
+title: JavaScript Window - Window Overview
 description: You can have an overview of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Window overview
 
-DHTMLX Window allows working with several windows and their content at the same time. The component provides means for performing standard operations with windows, 
+DHTMLX Window allows working with several windows and their content at the same time. The component provides means for performing standard operations with windows,
 such as moving/resizing a window, sending a window to the foreground/background, making a window modal, changing position and size of a window, setting content inside a window, etc.
 Check [online samples for DHTMLX Window](https://snippet.dhtmlx.com/nthbfzfr?tag=window).
 
@@ -16,11 +16,11 @@ Check [online samples for DHTMLX Window](https://snippet.dhtmlx.com/nthbfzfr?tag
 
 You can check the following page to learn how to build a full-featured DHTMLX Window:
 
-- [Features](window/features.md)
+- [Features](/window/features/)
 
 ## API reference
 
-- [](window/api/api_overview.md)
+- [Window API overview](/window/api/api_overview/)
 
 ## Related resources
 
@@ -29,12 +29,12 @@ You can check the following page to learn how to build a full-featured DHTMLX Wi
 
 ## Guides
 
-- [Initialization](how_to_start.md)
-- [Configuration](configuration.md)
-- [Work with Window](usage.md)
-- [Customization](customization.md)
-- [Event handling](handling_events.md)
+- [Initialization](/window/how_to_start/)
+- [Configuration](/window/configuration/)
+- [Work with Window](/window/usage/)
+- [Customization](/window/customization/)
+- [Event handling](/window/handling_events/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](/migration/)

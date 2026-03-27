@@ -1,6 +1,6 @@
 ---
 sidebar_label: Overview
-title: JavaScript Slider - Slider Overview 
+title: JavaScript Slider - Slider Overview
 description: You can have an overview of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -16,26 +16,26 @@ Check [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag
 
 You can check the following page to learn how to build a full-featured DHTMLX Slider:
 
-- [Features](slider/features.md)
+- [Features](/slider/features/)
 
 ## API reference
 
-- [](slider/api/api_overview.md)
+- [Slider API overview](/slider/api/api_overview/)
 
 ## Related resources
 
 - You can get DHTMLX Slider as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider)  
+- There are also [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider)
 
 ## Guides
 
-- [Initialization](initializing_slider.md)
-- [Configuration](configuring_slider.md)
-- [Range mode](range_slider.md)
-- [Work with Slider](usage.md)
-- [Customization](customization.md)
-- [Event handling](handling_events.md)
+- [Initialization](/slider/initializing_slider/)
+- [Configuration](/slider/configuring_slider/)
+- [Range mode](/slider/range_slider/)
+- [Work with Slider](/slider/usage/)
+- [Customization](/slider/customization/)
+- [Event handling](/slider/handling_events/)
 
 ## Other
 
-- [](../migration.md)
+- [Migration to newer versions](/migration/)
