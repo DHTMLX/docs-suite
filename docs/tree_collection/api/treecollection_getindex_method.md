@@ -17,6 +17,6 @@ description: You can explore the getIndex method of TreeCollection in the docume
 The current position of the item.
 
 @example:
-toolbar.data.getIndex("add_btn");
+const index = toolbar.data.getIndex("add_btn");
 
 @descr:

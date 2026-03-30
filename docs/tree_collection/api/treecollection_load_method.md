@@ -8,11 +8,11 @@ description: You can explore the load method of TreeCollection in the documentat
 
 @short: loads items from a file
 
-@signature: {'load(url: string | object, driver?: object | string): Promise<any>'}
+@signature: {'load(url: string | IDataProxy, driver?: object | string): Promise<any>'}
 
 @params:
-- `url: string | DataProxy` - the URL of an external file or DataProxy object with the URL configured
-- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `url: string | IDataProxy` - the URL of an external file or DataProxy object with the URL configured
+- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @returns:
 A promise of data loading.
@@ -31,7 +31,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
 ~~~jsx
-toolbar.data.load(url).then(function(){
+toolbar.data.load(url).then(function () {
     //do something after load;
 });
 ~~~
@@ -40,7 +40,7 @@ or
 
 ~~~jsx
 toolbar.data.load(url);
-toolbar.data.loadData.then(function(){
+toolbar.data.loadData.then(function () {
     //do something after load;
 });
 // loadData executes a callback function after an asynchronous

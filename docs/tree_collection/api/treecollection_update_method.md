@@ -6,15 +6,32 @@ description: You can explore the update method of TreeCollection in the document
 
 # update()
 
-@short: changes an item
+@short: updates properties of the item
 
-@signature: {'update(id: string | number, item: object): void;'}
+@signature: {'update(id: string | number, item: object, silent?: boolean): void;'}
 
 @params:
 - `id: string | number` - the ID of an item
 - `item: object` - new properties for an item
+- `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
+
+:::info
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+:::
 
 @example:
-toolbar.data.update("add_btn",{ value:"Add new" });
+toolbar.data.update("add_btn", { value:"Add new" });
 
 @descr:
+Also note, that for correct work of the method the last update of a data collection should be done with the `silent:false` setting applied, for example:
+
+~~~jsx
+const children = tree.data.findAll({ by: "parent", match: "folder_1" });
+const lastIndex = children.length - 1;
+
+children.forEach((item, index) => {
+    tree.data.update(item.id, {
+        icon: { file: "dxi dxi-file", folder: "dxi dxi-folder" },
+    }, index != lastIndex); // the last update isn't silent, as the `silent:false` parameter is set
+});
+~~~

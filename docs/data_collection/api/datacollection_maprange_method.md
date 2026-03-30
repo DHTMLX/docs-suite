@@ -8,15 +8,15 @@ description: You can explore the mapRange method of DataCollection in the docume
 
 @short: returns a new array of the items according to the specified parameters
 
-@signature: {'mapRange(from: number, to: number, callback: (item: object, index?: number, array?: object[]) => any): object[];'}
+@signature: {'mapRange(from: number, to: number, callback: (item: object, index: number, array: object[]) => any): object[];'}
 
 @params:
 - `from: number` - the initial position of an item in the range
 - `to: number` - the final position of an item in the range
 - `callback: function` - a function that will be called for each item from the specified range. The function is called with the following parameters:
     - `item: object` - the object of an item
-    - `index?: number` - optional, the index of an item
-    - `array?: object[]` - optional, an array of items the method was called upon
+    - `index: number` - the index of an item
+    - `array: object[]` - an array of items the method was called upon
 
 @returns:
 A new array of matching item objects.

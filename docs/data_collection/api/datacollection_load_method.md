@@ -8,7 +8,7 @@ description: You can explore the load method of DataCollection in the documentat
 
 @short: loads data from an external file
 
-@signature: {'load(url: string | DataProxy, driver?: object | string): Promise<any>;'}
+@signature: {'load(url: string | IDataProxy, driver?: object | string): Promise<any>;'}
 
 @params:
 

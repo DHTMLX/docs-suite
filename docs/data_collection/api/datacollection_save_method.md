@@ -38,7 +38,7 @@ return data.saveData.then(function () {
 });
 ~~~
 
-Use the [`isSaved`](data_collection/api/datacollection_issaved_method.md) method to know whether the changes are saved:
+Use the [`isSaved`](data_collection/api/datacollection_issaved_method.md) method to check whether the changes are saved:
 
 ~~~jsx
 grid.data.saveData.then(function () {

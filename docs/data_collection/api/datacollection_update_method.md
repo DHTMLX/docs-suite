@@ -8,7 +8,7 @@ description: You can explore the update method of DataCollection in the document
 
 @short: updates properties of the item
 
-@signature: {'update?: (id: string | number, newItem: object, silent?: boolean) => void;'}
+@signature: {'update(id: string | number, newItem: object, silent?: boolean): void;'}
 
 @params:
 - `id: string | number` - the id of the item which needs to be updated
@@ -26,9 +26,10 @@ component.data.update(123, { text:"New text" });
 Also note, that for correct work of the method the last update of a data collection should be done with the `silent:false` setting applied, for example:
 
 ~~~jsx
-const lastIndex = data.getLength() - 1;
+const itemsForUpdate = [...]; // items { ... }
+const lastIndex = itemsForUpdate.length - 1;
 
-data.forEach((item, index) => {
+itemsForUpdate.forEach((item, index) => {
     data.update(item.id, {
         param: "change param",
     }, index != lastIndex); // the last update isn't silent, as the `silent:false` parameter is set

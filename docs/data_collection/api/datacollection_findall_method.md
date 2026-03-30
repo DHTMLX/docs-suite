@@ -8,7 +8,7 @@ description: You can explore the findAll method of DataCollection in the documen
 
 @short: finds all the items that correspond to the specified rule
 
-@signature: {'findAll(rule: object | (item: object, index?: number, array?: object[]) => any): object[];'}
+@signature: {'findAll(rule: object | (item: object, index: number, array: object[]) => any): object[];'}
 
 @params:
 - `rule: object | function` - the search criteria:
@@ -17,8 +17,8 @@ description: You can explore the findAll method of DataCollection in the documen
         - `match: string` - the value of the item attribute
     - if set as a function, the search will be applied by the rule specified in the function. The function takes three parameters:
         - `item: object` - the object of an item
-        - `index?: number` - optional, the index of an item
-        - `array?: object[]` - optional, an array of items the method was called upon
+        - `index: number` - the index of an item
+        - `array: object[]` - an array of items the method was called upon
 
 @returns:
 An array of matching item objects.
