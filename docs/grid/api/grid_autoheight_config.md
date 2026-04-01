@@ -29,6 +29,10 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
+:::info
+You can't enable `autoHeight` and `adjust` properties at the same time, as they are mutually exclusive.
+:::
+
 You can control the autoheight of the header/footer separately with the help of the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. For example, you can disable autoheight of the header and the footer, while it is enabled for the whole Grid:
 
 ~~~jsx
@@ -50,6 +54,7 @@ const grid = new dhx.Grid("grid_container", {
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content
 - in case of complex HTML data, usage of the `autoHeight` config may lead to incorrect size calculations
 - note that if you decide to change the font type, its size and offsets, correct calculation of the cell's autoHeight can't be ensured
+- you can't enable `autoHeight` and `adjust` properties at the same time, as they are mutually exclusive
 
 @changelog: added in v7.1
 
