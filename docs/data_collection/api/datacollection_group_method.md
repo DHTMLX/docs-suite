@@ -16,9 +16,9 @@ Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazyd
 Grouped data can be serialized. After serialization data is available for rendering and editing as a plain tree-like structure
 :::
 
-## Usage
+#### Usage
 
-~~~jsx {16}
+~~~ts {16}
 type TGroupOrderFunc = (item: IDataItem) => string;
 type TAggregate = "sum" | "count" | "min" | "max" | "avg" | string;
 interface IGroupOrder {

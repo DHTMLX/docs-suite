@@ -12,9 +12,9 @@ description: You can explore the add method of DataCollection in the documentati
 Please note that data should be loaded into DataCollection via the `parse()` method. The `add()` method is primarily intended for loading standalone elements or small groups of elements, so its loads data slower than the `parse()` method.
 :::
 
-### Usage
+#### Usage
 
-~~~jsx
+~~~ts
 type Id = string | number; 
 add(newItem: IDataItem | IDataItem[], index?: number): Id | Id[];
 ~~~

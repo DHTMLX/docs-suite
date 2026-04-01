@@ -26,12 +26,12 @@ toolbar.data.update("add_btn", { value:"Add new" });
 Also note, that for correct work of the method the last update of a data collection should be done with the `silent:false` setting applied, for example:
 
 ~~~jsx
-const children = tree.data.findAll({ by: "parent", match: "folder_1" });
-const lastIndex = children.length - 1;
+const itemsForUpdate = [...]; // items { ... }
+const lastIndex = itemsForUpdate.length - 1;
 
-children.forEach((item, index) => {
-    tree.data.update(item.id, {
-        icon: { file: "dxi dxi-file", folder: "dxi dxi-folder" },
+itemsForUpdate.forEach((item, index) => {
+    data.update(item.id, {
+        param: "change param",
     }, index != lastIndex); // the last update isn't silent, as the `silent:false` parameter is set
 });
 ~~~

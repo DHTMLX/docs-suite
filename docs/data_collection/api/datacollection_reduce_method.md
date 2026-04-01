@@ -8,13 +8,18 @@ description: You can explore the reduce method of DataCollection in the document
 
 @short: reduces the array to a single value
 
-@signature: {'reduce(callback: (acc: any, IDataItem: any, index: number) => any, acc: any): any;'}
+#### Usage
+
+~~~ts
+type ReduceCallBack<IDataItem, A> = (acc: A, item: IDataItem, index: number) => A;
+reduce<A>(callback: ReduceCallBack<IDataItem, A>, acc: A): A;
+~~~
 
 @params:
 
 - `callback: function` - a function that will be called for each item in the array. The function is called with the following parameters:
     - `acc: any` - the *initialValue*, or the previously returned value of the function
-    - `IDataItem: any` - the current item of a data collection
+    - `item: IDataItem` - the current item of a data collection
     - `index: number` - the index of the item 
 - `acc: any` - a value to be passed to the function as the initial value
 
