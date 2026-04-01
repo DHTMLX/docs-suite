@@ -13,8 +13,8 @@ description: You can explore the mapVisible method of TreeCollection in the docu
 @params:
 - `callback: function` - the function that will be applied to every visible item. The function can take three parameters:
     - `item: object` - required, the object of an item
-    - `index?: number` - optional, the index of an item
-    - `array?: object[]` - optional, an array with items 
+    - `index: number` - the index of an item
+    - `array: object[]` - an array with items 
 - `id?: string | number` - optional, the ID of a control the child items of which will be included
 - `direct?: boolean` - optional, defines whether only direct children of the control will be included in the iteration
 
