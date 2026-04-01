@@ -8,9 +8,9 @@ description: You can explore the adjust config of Grid column in the documentati
 
 @short: Optional. Defines whether the width of a column is automatically adjusted to its content
 
-### Usage
+#### Usage
 
-~~~jsx
+~~~ts
 adjust?: "data" | "header" | "footer" | boolean; 
 ~~~
 
@@ -21,7 +21,7 @@ adjust?: "data" | "header" | "footer" | boolean;
 You can't enable `autoHeight` and `adjust` properties at the same time, as they are mutually exclusive.
 :::
 
-### Example
+#### Example
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", { 
@@ -38,7 +38,6 @@ const grid = new dhx.Grid("grid_container", {
 
 - the `adjust` property has a priority over the `autoWidth` property if it is specified either for the grid or for the column, and over the `width` property of the column
 - the width the columns will be adjusted to also depends on the values of the `minWidth/maxWidth` properties if they are set for a column
-- you can't enable `autoHeight` and `adjust` properties at the same time, as they are mutually exclusive
 
 :::note
 Note that if you change the font type, size, or offsets, the correct calculation of the `adjust` property of a cell may not be guaranteed.
