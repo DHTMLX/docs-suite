@@ -54,6 +54,10 @@ Below are examples for commonly used tools.
 
 ### Claude Code
 
+:::info
+Learn how to connect Claude Code with MCP in the [official documentation](https://code.claude.com/docs/en/mcp).
+:::
+
 The quickest way is to add the MCP server URL through the CLI:
 
 ~~~jsx
@@ -75,6 +79,10 @@ Or if you prefer manual configuration, add this to your `mcp.json`:
 
 ### Cursor
 
+:::info
+For detailed instructions, see the [official documentation](https://cursor.com/en-US/docs/mcp).
+:::
+
 Follow the steps below:
 
 1. Open Settings (`Cmd+Shift+J` on Mac, `Ctrl+Shift+J` on Windows/Linux)
@@ -92,11 +100,19 @@ Follow the steps below:
 }
 ~~~
 
-Now you can ask things like "Implement row grouping with expandable sections in DHTMLX Grid" right in your chat.
-
 ### Gemini CLI
 
-Find your config file at `~/.gemini/settings.json` and add:
+:::info
+The [official documentation](https://geminicli.com/docs/tools/mcp-server/) provides a complete guide to configuring and using MCP servers with the Gemini CLI.
+:::
+
+To connect via the CLI, use:
+
+~~~jsx
+gemini mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
+~~~
+
+Alternatively, you can find your config file at `~/.gemini/settings.json` and add:
 
 ~~~jsx
 {
@@ -112,42 +128,53 @@ Restart Gemini CLI after saving the file.
 
 ### Antigravity (Google)
 
+:::info
+Learn more about connecting MCP servers in the [official documentation](https://antigravity.google/docs/mcp).
+:::
+
 These are the steps to complete:
 
 1. Open the command palette
 2. Type "mcp add"
 3. Select "HTTP"
 4. Provide the following values:
-- name:
-
+- Name:
 ~~~jsx
 dhtmlx-mcp
 ~~~
-
 - URL: 
-
 ~~~jsx
 https://docs.dhtmlx.com/mcp
 ~~~
 
 ### ChatGPT
 
-To configure, follow the provided instructions:
+:::info
+For more information, consult the [official documentation](https://developers.openai.com/api/docs/guides/tools-connectors-mcp).
+:::
+
+Follow these steps:
 
 1. Go to **Settings** → **Apps & Connectors**
 2. Click **Advanced settings**
 3. Enable **Developer mode**
-4. Return to the **Apps & Connectors** screen and click "Create".
+4. Return to the **Apps & Connectors** screen and click "Create"
 5. Configure the connector:
-   - Name: `dhtmlx-mcp`
-   - URL: `https://docs.dhtmlx.com/mcp`
-   - Authentication: `No authentication`
+- Name: 
+~~~jsx
+dhtmlx-mcp
+~~~
+- URL: 
+~~~jsx
+https://docs.dhtmlx.com/mcp
+~~~
+- Authentication: `No authentication`
 6. Click **Create**
 
 Once added, ChatGPT can retrieve documentation from the MCP server during conversations.
 
-:::info
-Note that for intensive coding workflows, other MCP-aware tools may be more efficient.
+:::warning 
+For intensive coding workflows, other MCP-aware tools may be more efficient.
 :::
 
 ### Other tools
@@ -188,7 +215,7 @@ I want to create a grid with the possibility to sort, resize and edit column cel
 I have a chart with the bar type, how can I also add a line chart above it?
 ~~~
 ~~~
-I want to create two grids with the possibility to drag item rows from one grid to another, but not vice versa."
+I want to create two grids with the possibility to drag item rows from one grid to another, but not vice versa.
 ~~~
 
 More specific prompts result in more relevant snippets and fewer follow-up questions.
