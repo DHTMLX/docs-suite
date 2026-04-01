@@ -14,6 +14,6 @@ description: You can explore the getRoot method of TreeCollection in the documen
 The id of the root element.
 
 @example:
-toolbar.data.getRoot();
+const rootId = toolbar.data.getRoot();
 
 @descr:

@@ -8,9 +8,9 @@ description: You can explore the getSortingStates method of DataCollection in th
 
 @short: returns an array of objects with the current parameters of sorting applied to the data
 
-## Usage
+#### Usage
 
-~~~jsx 
+~~~ts 
 interface ISortingState {
     by: string | number, 
     dir: "asc" | "desc", 
@@ -27,7 +27,7 @@ An array of objects with the current parameters of sorting applied to the data.
 
 @example:
 const state = grid.data.getSortingStates(); 
-// -> [{by: "country", dir: "desc"}, {by: "population", dir: "desc"}]
+// -> [{ by: "country", dir: "desc" }, { by: "population", dir: "desc" }]
 
 @descr:
 The array returned by the method contains objects with the following properties:

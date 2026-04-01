@@ -6,7 +6,7 @@ description: You can explore the map method of TreeCollection in the documentati
 
 # map()
 
-@short: iterates through items
+@short: iterates through all the items of the component
 
 @signature: {'map(callback: function, id?: string | number, direct?: boolean): any;'}
 
@@ -15,11 +15,11 @@ description: You can explore the map method of TreeCollection in the documentati
     - `item: object` - the object of an item
     - `index: number` - the index of an item
     - `array: object[]` - an array of items the method was called upon  
-- `id: string | number` - the ID of a control the child items of which will be included
-- `direct: boolean` - defines whether only direct children of the control will be included in the iteration
+- `id?: string | number` - optional, the ID of a control the child items of which will be included
+- `direct?: boolean` - optional, defines whether only direct children of the control will be included in the iteration
 
 @example:
-toolbar.data.map((item)=>{
+toolbar.data.map ((item) => {
     //remove all icons
     item.icon = "";
 });
@@ -30,19 +30,19 @@ toolbar.paint();
 To work with all children of a particular control, pass one more parameter to **map()** - the ID of the control:
 
 ~~~jsx
-toolbar.data.map((item)=>{
+toolbar.data.map ((item) => {
     // disable items
     item.disabled = true;
-},"menu_1");
+}, "menu_1");
 toolbar.paint();
 ~~~
 
 If you want to iterate only through immediate children, set the third parameter to *false*:
 
 ~~~jsx
-toolbar.data.map((item)=>{
+toolbar.data.map ((item) => {
     // add a css class to each item
     item.css = "highlight";
-},"menu_1",false);
+}, "menu_1", false);
 toolbar.paint();
 ~~~

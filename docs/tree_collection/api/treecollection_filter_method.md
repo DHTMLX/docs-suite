@@ -8,24 +8,29 @@ description: You can explore the filter method of TreeCollection in the document
 
 @short: filters controls by some criteria
 
-@signature: {'filter(rule?: function | object, config?: object): string;'}
+@signature: {'filter(rule?: function | object, config?: object, silent?: boolean): string;'}
 
 @params:
-- `rule: function | object` - the filtering criteria
-    - If set as a *function*, filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns *true/false*
+- `rule?: function | object` - the filtering criteria
+    - If set as a *function*, filtering will be applied by the rule specified in the function. It takes as a parameter a data item and returns *true/false*
     - If set as an *object*, the parameter has the following attributes:
-        - `by: string | number` - required, the id of a data field
-        - `match: string` - required, a pattern to match
-        - `compare: function` - optional, a function for extended filtering that takes three parameters:
+        - `by?: string | number` - optional, the id of a data field
+        - `match?: string` - optional, a pattern to match
+        - `compare?: function` - optional, a function for extended filtering that takes three parameters:
             - `value` - the value to compare 
             - `match` - a pattern to match
             - `item` - a data item the values of which should be compared 
-- `config: object` - optional, defines the parameters of filtering. The parameter may contain the following properties:
-    - `type: string` - optional, defines the area the filtering will be applied: "all", "level", "leafs"
-    - `level: number` - optional, the level the filtering will be applied to
-    - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-    - `id: string` - optional, the id of the filter
-    - `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](tree_collection/api/treecollection_resetfilter_method.md) method
+- `config?: object` - optional, defines the parameters of filtering. The parameter may contain the following properties:
+    - `type?: string` - optional, defines the area the filtering will be applied: "all", "level", "leafs"
+    - `level?: number` - optional, the level the filtering will be applied to
+    - `add?: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
+    - `id?: string` - optional, the id of the filter
+    - `permanent?: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](tree_collection/api/treecollection_resetfilter_method.md) method
+- `silent?: boolean` - optional, if set to <i>true</i>, the method will be called without triggering events, <i>false</i> by default
+
+:::info
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+:::
 
 @returns:
 - `id: string` - the id of the filter

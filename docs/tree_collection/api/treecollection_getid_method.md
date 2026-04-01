@@ -12,7 +12,7 @@ description: You can explore the getId method of TreeCollection in the documenta
 
 @params:
 - `index: number` - the index of the item
-- `parentId: string | number` - the id of the parent of an item
+- `parentId?: string | number` - optional, the id of the parent of an item
 
 @returns:
 The id of the item.

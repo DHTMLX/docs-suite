@@ -8,22 +8,28 @@ description: You can explore the filter method of DataCollection in the document
 
 @short: filters data items in a component
 
-@signature: {'filter(rule?: function | object, config?: object): string;'}
+@signature: {'filter(rule?: function | object, config?: object, silent?: boolean): string;'}
 
 @params:
-- `rule: function | object` - the filtering criteria
-    - If set as a *function*, filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns *true/false*
+
+- `rule?: function | object` - optional, the filtering criteria
+    - If set as a *function*, filtering will be applied by the rule specified in the function. It takes as a parameter a data item and returns *true/false*
     - If set as an *object*, the parameter has the following attributes:
-        - `by: string | number` - mandatory, the id of a data field 
-        - `match: string` - mandatory, a pattern to match
-        - `compare: function` - optional, a function for extended filtering that takes three parameters:
+        - `by?: string | number` - optional, the id of a data field 
+        - `match?: string` - optional, a pattern to match
+        - `compare?: function` - optional, a function for extended filtering that takes the following parameters:
             - `value` - the value to compare 
             - `match` - a pattern to match
             - `item` - a data item the values of which should be compared 
-- `config: object` - optional, defines the parameters of filtering. It may contain the following properties: 
-    - `id: string` - optional, the id of the filter
-    - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-    - `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](data_collection/api/datacollection_resetfilter_method.md) method
+- `config?: object` - optional, an object with the following properties:
+    - `id?: string` - optional, the id of the filter
+    - `add?: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
+    - `permanent?: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](data_collection/api/datacollection_resetfilter_method.md) method
+- `silent?: boolean` - optional, if set to <i>true</i>, the method will be called without triggering events, <i>false</i> by default
+
+:::info
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+:::
     
 @returns:
 - `id: string` - the id of the filter

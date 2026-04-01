@@ -13,14 +13,14 @@ description: You can explore the move method of TreeCollection in the documentat
 @params:
 - `id: (string | number) | (string | number)[]` - the ids of items to move
 - `index: number` - the index to move items to
-- `target: object` - optional, the target tree collection object
-- `targetId: (string | number) | (string | number)[]` - optional, the id of the parent item where the moved items will be placed
+- `target?: object` - optional, the target tree collection object
+- `targetId?: (string | number) | (string | number)[]` - optional, the id of the parent item where the moved items will be placed
 
 @returns:
 The item's id or an array with ids of items.
 
 @example:
-toolbar.data.move("profile_btn",-1);
+toolbar.data.move("profile_btn", -1);
 
 @descr:
 
