@@ -51,7 +51,7 @@ Install the DHTMLX Suite library to get access to Suite widgets. Refer to the fo
 
 ## Create Angular component
 
-Now you can create Angular components (wrappers) based on Suite widgets. For each complex Suite widget you can create a separate file (for instance [***grid.component.ts***](https://github.com/DHTMLX/angular-suite-demo/blob/master/src/app/MainContainer/Content/LeftContent/Grid/grid.component.ts)) in the [***src/***](https://github.com/DHTMLX/angular-suite-demo/tree/master/src) directory.
+Now you can create Angular components (wrappers) based on Suite widgets. For each complex Suite widget you can create a separate file (for instance ***grid.component.ts***) in the [***src/***](https://github.com/DHTMLX/angular-suite-demo/tree/master/src) directory.
 
 ### Import source files
 

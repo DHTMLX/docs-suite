@@ -441,7 +441,7 @@ series: [
         </tr>
         <tr>
             <td><b>dateFormat</b></td>
-            <td>(optional) defines the <a href="../../../calendar_dateformat_config/">format of dates</a> in the tooltips ("%d/%m/%y" by default). In this format, you can specify dates in the data set </td>
+            <td>(optional) defines the <a href="../../../calendar/api/calendar_dateformat_config/">format of dates</a> in the tooltips ("%d/%m/%y" by default). In this format, you can specify dates in the data set </td>
         </tr>
         <tr>
             <td><b>days</b></td>
