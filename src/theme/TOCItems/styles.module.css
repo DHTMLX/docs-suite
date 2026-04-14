@@ -1,0 +1,14 @@
+.contactSupportLinkWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contactSupportLink {
+  font-size: var(--ifm-h4-font-size);
+  font-weight: var(--ifm-heading-font-weight);
+  text-align: center;
+}
