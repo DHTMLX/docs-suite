@@ -8,21 +8,30 @@ description: You can explore the save method of TreeCollection in the documentat
 
 @short: saves changes made in a tree collection to the server side
 
-@signature: {'save(url: string | object): void;'}
+@signature: {'save(url: IDataProxy | string): void;'}
 
 @params:
-- `url: string | object` - the URL of a server side (or DataProxy object)
+- `url: IDataProxy | string` - the URL of a server side or DataProxy with the URL configured
 
 @example:
 toolbar.data.save("http://userurl/");
 
+//or
+toolbar.data.save(new DataProxy({ url:"http://userurl/" }));
+
 @descr:
 
-The component will make an AJAX call and expect the remote URL to save data changes.
+Each time the user changes data of the component, the `save()` method will make an AJAX call and expect the remote URL to save data changes.
+The method will send one of the following requests to the backend:
+
+- `POST` - after adding new data into the component;
+- `PUT` - after editing data of the component;
+- `DELETE` - after deleting data.
+
 
 Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the **saveData** property that returns a "promise" object:
 
-~~~js
+~~~jsx
 const data = new TreeCollection();
 data.save(loader);
 return data.saveData.then(function () {
@@ -30,9 +39,9 @@ return data.saveData.then(function () {
 });
 ~~~
 
-Use the [](tree_collection/api/treecollection_issaved_method.md) method to know whether the changes are saved:
+Use the [](tree_collection/api/treecollection_issaved_method.md) method to check whether the changes are saved:
 
-~~~js
+~~~jsx
 toolbar.data.saveData.then(function () {
     console.log(toolbar.data.isSaved());
 });

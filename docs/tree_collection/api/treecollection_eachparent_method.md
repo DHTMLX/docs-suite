@@ -14,9 +14,9 @@ description: You can explore the eachParent method of TreeCollection in the docu
 - `id: string | number` - the ID of the item
 - `callback: function` - the function that will be applied to each parent of the item. The function takes three parameters:
     - `item: object` - required, the object of an item
-    - `index: number` - optional, the index of an item
-    - `array: object[]` - optional, an array with items  
-- `self: boolean` - optional, defines whether the function should iterate over the specified item itself; *false* by default
+    - `index?: number` - optional, the index of an item
+    - `array?: object[]` - optional, an array with items  
+- `self?: boolean` - optional, defines whether the function should iterate over the specified item itself; *false* by default
 
 @example:
 toolbar.data.eachParent("new_btn", item => console.log(item));

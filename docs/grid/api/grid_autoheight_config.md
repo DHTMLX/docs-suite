@@ -12,11 +12,23 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 @short: Optional. Makes long text split into multiple lines based on the width of the column, controls the automatic height adjustment of the header/footer and cells with data
 
-@signature: {'autoHeight?: boolean;'}
+#### Usage
+
+~~~ts
+autoHeight?: boolean;
+~~~
 
 @default: false
 
-@example:
+@descr: 
+
+:::info
+You can't enable `autoHeight` and `adjust` properties at the same time, as they are mutually exclusive.
+:::
+
+#### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
@@ -24,8 +36,7 @@ const grid = new dhx.Grid("grid_container", {
     autoHeight: true,
     data: dataset
 });
-
-@descr: 
+~~~
 
 **Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
@@ -50,6 +61,7 @@ const grid = new dhx.Grid("grid_container", {
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content
 - in case of complex HTML data, usage of the `autoHeight` config may lead to incorrect size calculations
 - note that if you decide to change the font type, its size and offsets, correct calculation of the cell's autoHeight can't be ensured
+
 
 @changelog: added in v7.1
 

@@ -11,12 +11,12 @@ description: You can explore the getLength method of TreeCollection in the docum
 @signature: {'getLength(id?: string | number): number;'}
 
 @params:
-- `id: string | number` - the ID of a control
+- `id?: string | number` - optional, the ID of a control
 
 @returns:
 A number of the child items of the control.
 
 @example:
-toolbar.data.getLength("menu1");
+const itemsLength = toolbar.data.getLength("menu1");
 
 @descr:

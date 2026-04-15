@@ -8,16 +8,16 @@ description: You can explore the forEach method of DataCollection in the documen
 
 @short: iterates over all items of a data collection
 
-@signature: {'forEach(callback: (item: object, index?: number, array?: object[]) => any): void;'}
+@signature: {'forEach(callback: (item: object, index: number, array: object[]) => any): void;'}
 
 @params:
 - `callback: function` - a function that will iterate over items of a data collection. The function is called with the following parameters:
-    - `item` - the object of an item
-    - `index` - the index of an item
-    - `array` - an array of items the method was called upon
+    - `item: object` - the object of an item
+    - `index: number` - the index of an item
+    - `array: object[]` - an array of items the method was called upon
 
 @example:
-component.data.forEach(function(item, index, array) {
+component.data.forEach(function (item, index, array) {
     console.log("This is an item of dataCollection: ", item);
     console.log("This is an index of the element: ", index);
     console.log("This is an array of the elements: ", array);

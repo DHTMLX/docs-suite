@@ -8,11 +8,23 @@ description: You can explore the adjust config of Grid in the documentation of t
 
 @short: Optional. Defines whether the width of columns is automatically adjusted to the width of their content
 
-@signature: {'adjust?: "header" | "footer" | "data" | boolean;'}
+#### Usage
+
+~~~ts
+adjust?: "header" | "footer" | "data" | boolean; 
+~~~
 
 @default: false
 
-@example:
+@descr:
+
+:::info
+You can't enable `autoHeight` and `adjust` properties at the same time, as they are mutually exclusive.
+:::
+
+#### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
@@ -20,8 +32,7 @@ const grid = new dhx.Grid("grid_container", {
     adjust: true,
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related sample**: [Grid. Adjust columns by header, data, all](https://snippet.dhtmlx.com/zfrpe22d)
 
@@ -52,13 +63,14 @@ The `adjust` property has a priority over the [`autoWidth`](../../../grid/config
 
 The width the columns will be adjusted to also depends on the values of the [`minWidth/maxWidth`](../../../grid/api/api_gridcolumn_properties/) properties if they are set for a column.
 
-**Note** that:
+#### Take into account the information below:  
 
 - to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content
 - you can also specify `htmlEnable:true` in the configuration object of Grid
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content
 - in case of complex HTML data, usage of the `adjust` config may lead to incorrect size calculations
 - the enabled `adjust` config (including the "header", "footer", "data" modes) adjusts the width of columns taking into account the [`template`](grid/api/api_gridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [`header/footer`](grid/api/api_gridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated
+
 
 **Related API**: [`adjustColumnWidth()`](grid/api/grid_adjustcolumnwidth_method.md)
 

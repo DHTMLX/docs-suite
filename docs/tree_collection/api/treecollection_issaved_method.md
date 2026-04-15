@@ -14,7 +14,7 @@ description: You can explore the isSaved method of TreeCollection in the documen
 `true` if the changes are saved; otherwise, `false`.
 
 @example:
-toolbar.data.isSaved();
+const result = toolbar.data.isSaved();
 
 @descr:
 

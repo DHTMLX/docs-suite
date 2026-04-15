@@ -118,7 +118,7 @@ export default {
 
 ### Load data
 
-To add data into a Suite widget, you need to provide a data set. You can create the [***data.js***](https://github.com/DHTMLX/vue-suite-demo/blob/master/src/store.js) file in the ***src/*** directory and add required data sets:
+To add data into a Suite widget, you need to provide a data set. You can create the [***data.js***](https://github.com/DHTMLX/vue-suite-demo/blob/master/src/data.js) file in the ***src/*** directory and add required data sets:
 
 ~~~jsx {2,27,29} title="data.js"
 export function getData() {

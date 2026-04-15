@@ -11,19 +11,19 @@ description: You can explore the serialize method of TreeCollection in the docum
 @signature: {'serialize(driver?: string): object[] | string;'}
 
 @params:
-- `driver: string` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
+- `driver?: string` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
 
 @returns:
 Serialized data of the component either as an array of JSON objects or as a CSV/XML string.
 
 @example:
 // serialize data into an array of JSON objects
-component.data.serialize();
+const data = component.data.serialize();
 
 // serialize data into an XML string
-component.data.serialize("xml");
+const xmlData = component.data.serialize("xml");
 
 // serialize data into a CSV string
-component.data.serialize("csv");
+const csvData = component.data.serialize("csv");
 
 @descr:

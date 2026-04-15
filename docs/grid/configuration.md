@@ -1445,7 +1445,7 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 - **placeholder** - (*string*) sets a placeholder in the input of ComboBox
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
-
+- 
 ~~~jsx 
 {
     id: "category",
@@ -1457,6 +1457,19 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 ~~~
 
 **Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+
+#### Redefining the default sorting for comboFilter
+
+By default the elements of the comboFilter are sorted by ID. You can modify the way of sorting elements in this type of the filter inside the handler of the [`beforeOpen`](/combobox/api/combobox_beforeopen_event/) event. For example, you can specify that the options in the comboFilter should be sorted by value in the following way:
+
+~~~jsx
+const comboFilter = grid.getHeaderFilter("access").getFilter();
+comboFilter.events.on("beforeOpen", function() {
+    comboFilter.data.sort({
+        by: "value",
+    });
+});
+~~~
 
 - **dateFilter** 
 
@@ -2217,6 +2230,36 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+
+:::info
+For Grid (in the TreeGrid mode) or Tree used in a sub-row it is important to specify the id of the root element to link data to the corresponding collection: 
+- by using the [`rootParent`](grid/api/grid_rootparent_config.md) property for Grid in the TreeGrid mode 
+- by using the [`rootId`](tree/api/tree_rootid_config.md) property for Tree 
+:::
+
+For example:
+
+~~~jsx {8,16}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    subRow: (row) => (
+        new dhx.Grid(null, {
+            rootParent: "root", // Add the root id
+            columns: [
+                { id: "country", header: [{ text: "Country" }] },
+                { id: "order_quantity", header: [{ text: "Orders" }], type: "number" },
+                { id: "average_check", header: [{ text: "Avg check" }], type: "number" },
+            ],
+            data: row.data,
+            autoWidth: true,
+            type: "tree",
+        })
+    ),
+});
+~~~
 
 ### Adjusting configuration of sub-rows
 

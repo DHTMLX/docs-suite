@@ -12,7 +12,7 @@ description: You can explore the parse method of DataCollection in the documenta
 
 @params:
 - `data: array | string` - the data to load
-- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:
 const dataset = [

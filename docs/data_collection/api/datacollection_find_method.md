@@ -8,7 +8,7 @@ description: You can explore the find method of DataCollection in the documentat
 
 @short: finds the item that corresponds to the specified rule
 
-@signature: {'find(rule: object | (item: object, index?: number, array?: object[]) => any): object;'}
+@signature: {'find(rule: object | (item: object, index: number, array: object[]) => any): object;'}
 
 @params:
 - `rule: object | function` - the search criteria:
@@ -16,21 +16,23 @@ description: You can explore the find method of DataCollection in the documentat
         - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
         - `match: string` - the value of the item attribute
     - if set as a function, the search will be applied by the rule specified in the function. The function takes three parameters:
-        - `item` - (required) the object of an item
-        - `index` - (optional) the index of an item
-        - `array` - (optional) an array with items
+        - `item: object` - the object of an item
+        - `index: number` - the index of an item
+        - `array: object[]` - an array of items the method was called upon
 
 @returns:
-An object of the matching item.
+The object of the matching item.
 
 @example:
-//searching for an item by the function
-const item = component.data.find(function(item){
-    if(item.text==="Manager"||item.text==="Marketer"){return true}
+// searching for an item by the function
+const item = component.data.find(function (item) {
+    if (item.text === "Manager" || item.text === "Marketer") {
+        return true
+    }
 });
 
-//searching for an item by the attribute key
-const item = component.data.find({by:"text",match:"Manager"});
+// searching for an item by the attribute key
+const item = component.data.find({ by: "text", match: "Manager" });
 
 @descr:
 
