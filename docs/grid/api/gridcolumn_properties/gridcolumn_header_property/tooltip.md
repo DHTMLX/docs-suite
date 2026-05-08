@@ -30,9 +30,15 @@ When set as an *object*, the tooltip config can have the following properties:
 
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // enables a tooltip for the country title
-        { id: "country", header: [{ text: "Country", tooltip: true }] }, 
-        { id: "population", header: [{ text: "Population" }] },
+        // enables a tooltip for the header
+        { id: "country", header: [{ text: "Country", tooltip: true }] },
+        // configures tooltip appearance and timing
+        { id: "population", header: [{ text: "Population", tooltip: {
+            showDelay: 300,
+            hideDelay: 200,
+            position: "top",
+            css: "custom_tooltip"
+        }}] },
         // more columns configuration objects
     ],
     // more options

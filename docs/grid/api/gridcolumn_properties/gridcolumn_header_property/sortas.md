@@ -13,3 +13,28 @@ description: You can explore the sortAs config of Grid column header in the docu
 ~~~jsx
 sortAs?: (cellValue) => string | number;
 ~~~
+
+@params:
+The callback function takes one parameter:
+- `cellValue` - (required) the current cell value
+
+and returns a *string* or *number* used as the sort key.
+
+@example:
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { 
+            width: 150, 
+            id: "task", 
+            header: [{ 
+                text: "Name",
+                // returns a lowercase string for case-insensitive sorting
+                sortAs: (cellValue) => cellValue.toLowerCase()
+                // -> "Apple" → "apple", "BANANA" → "banana", "cherry" → "cherry"
+            }],
+            // other column properties
+        },
+        // more columns configuration objects
+    ],
+    // more options
+});

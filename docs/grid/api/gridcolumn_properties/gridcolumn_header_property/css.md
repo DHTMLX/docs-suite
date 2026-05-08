@@ -15,6 +15,13 @@ css?: string;
 ~~~
 
 @example:
+<style>
+    .myCustomStyle {
+        background: #F2F2F2;
+        font-weight: bold;
+    }
+</style>
+
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 

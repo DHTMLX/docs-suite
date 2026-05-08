@@ -33,7 +33,10 @@ const grid = new dhx.Grid("grid_container", {
         { 
             width: 150, 
             id: "population", 
-            header: [{ text: () => `<mark>Population</mark>`, htmlEnable: true }]
+            header: [{ 
+                text: ({ sum }) => `Population (Total: ${sum})`
+            }],
+            summary: "sum",
             // other column properties
         },
         // more columns configuration objects

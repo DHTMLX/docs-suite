@@ -20,9 +20,9 @@ customFilter?: (
 @params:
 
 The callback function takes two parameters:
-	- `value` - (required) the cell value in the row
-	- `match` - (required) the value selected in the filter
-	
+- `value` - (required) the cell value in the row
+- `match` - (required) the value selected in the filter
+
 and returns *true*, if the row matches the filtering criteria, otherwise *false*.
 
 @example:

@@ -42,40 +42,41 @@ filterConfig?: {
 The set of properties depends on the filter type specified in the [`content`](/grid/api/gridcolumn_properties/gridcolumn_header_property/content/) property:
 
 - a configuration object for **"inputFilter"** can contain the following properties:
-    - `placeholder` - (*string*) - optional, the placeholder text in the input field
-    - `icon` - (*string*) - optional, the CSS class for the filter icon
+    - `placeholder` - (*string*) optional, the placeholder text in the input field
+    - `icon` - (*string*) optional, the CSS class for the filter icon
 
 - a configuration object for **"comboFilter"** can contain a set of properties:
-    - **filter** - (*function*) sets a custom function for filtering Combo Box options
-    - **multiselection** - (*boolean*) enables selection of multiple options
-    - **readonly** - (*boolean*) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the **readonly** property depends on the following conditions:
+    - `filter` - (*function*) optional, sets a custom function for filtering Combo Box options
+    - `multiselection` - (*boolean*) optional, enables selection of multiple options
+    - `readonly` - (*boolean*) optional, makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the `readonly` property depends on the following conditions:
         - the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column
         - in all other cases, `readonly:false` is set by default
-    - **placeholder** - (*string*) sets a placeholder in the input of ComboBox
-    - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
-    - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
+    - `placeholder` - (*string*) optional, sets a placeholder in the input of ComboBox
+    - `virtual` - (*boolean*) optional, enables dynamic loading of data on scrolling the list of options, *true* by default
+    - `template` - (*function*) optional, a function which returns a template with content for the filter options. Takes an option item as a parameter
 
 - a configuration object for **"dateFilter"** (**PRO version**) can contain a set of properties:
-Main properties:
 
-- `icon` - (*string*) - the CSS class for the calendar icon.
-    - `placeholder` - (*string*) - the placeholder text in the input field when no date is selected.
-    - `asDateObject` - (*boolean*) - determines how the filter processes data for `customFilter` and the `beforeFilter` and `filterChange` events. If `true`, the comparison is performed using Date objects.
-    - `range` - (*boolean*) - enables the date range selection mode (from and to).
-    - `dateFormat` - (*string*) - the date display format (e.g., `"%d/%m/%Y"`). By default, applies the `dateFormat` used for the column.
+    Main properties:
+
+    - `icon` - (*string*) optional, the CSS class for the calendar icon
+    - `placeholder` - (*string*) optional, the placeholder text in the input field when no date is selected
+    - `asDateObject` - (*boolean*) optional, determines how the filter processes data for `customFilter` and the `beforeFilter` and `filterChange` events. If `true`, the comparison is performed using Date objects
+    - `range` - (*boolean*) optional, enables the date range selection mode (from and to)
+    - `dateFormat` - (*string*) optional, the date display format (e.g., `"%d/%m/%Y"`). By default, applies the `dateFormat` used for the column
 
     Calendar API configuration properties:
 
-    - `date` - (*Date | string*) - the initial date opened in the calendar.
-    - `mark` - (*function*) - a function for adding custom CSS classes to specific dates.
-    - `disabledDates` - (*function*) - a function for disabling the selection of specific dates.
-    - `weekStart` - (*string*) - the start day of the week (`"saturday"`, `"sunday"`, `"monday"`).
-    - `weekNumbers` - (*boolean*) - shows week numbers if `true`.
-    - `mode` - (*string*) - the calendar display mode (`"calendar"`, `"year"`, `"month"`, `"timepicker"`).
-    - `timePicker` - (*boolean*) - adds the ability to select time.
-    - `timeFormat` - (*number*) - the time format (`12` or `24` hours).
-    - `thisMonthOnly` - (*boolean*) - if `true`, allows selecting dates only within the current month.
-    - `width` - (*string | number*) - the width of the dropdown calendar.
+    - `date` - (*Date | string*) optional, the initial date opened in the calendar
+    - `mark` - (*function*) optional, a function for adding custom CSS classes to specific dates
+    - `disabledDates` - (*function*) optional, a function for disabling the selection of specific dates
+    - `weekStart` - (*string*) optional, the start day of the week (`"saturday"`, `"sunday"`, `"monday"`)
+    - `weekNumbers` - (*boolean*) optional, shows week numbers if `true`
+    - `mode` - (*string*) optional, the calendar display mode (`"calendar"`, `"year"`, `"month"`, `"timepicker"`)
+    - `timePicker` - (*boolean*) optional, adds the ability to select time
+    - `timeFormat` - (*number*) optional, the time format (`12` or `24` hours)
+    - `thisMonthOnly` - (*boolean*) optional, if `true`, allows selecting dates only within the current month
+    - `width` - (*string | number*) optional, the width of the dropdown calendar
 
 **dateFilter** supports two modes of operation:
 
