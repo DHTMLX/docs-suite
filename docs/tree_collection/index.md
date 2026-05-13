@@ -33,6 +33,7 @@ A set of API methods and events that allow you to work with data of a component 
 | [](api/treecollection_issaved_method.md)          | @getshort(api/treecollection_issaved_method.md)           |
 | [](api/treecollection_load_method.md)             | @getshort(api/treecollection_load_method.md)              |
 | [](api/treecollection_loaditems_method.md)        | @getshort(api/treecollection_loaditems_method.md)         |
+| [](api/treecollection_mapvisible_method.md)       | @getshort(api/treecollection_mapvisible_method.md)        |
 | [](api/treecollection_move_method.md)             | @getshort(api/treecollection_move_method.md)              |
 | [](api/treecollection_parse_method.md)            | @getshort(api/treecollection_parse_method.md)             |
 | [](api/treecollection_refreshitems_method.md)     | @getshort(api/treecollection_refreshitems_method.md)      |

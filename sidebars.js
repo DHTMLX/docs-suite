@@ -4976,6 +4976,7 @@ module.exports = {
               "tree_collection/api/treecollection_issaved_method",
               "tree_collection/api/treecollection_load_method",
               "tree_collection/api/treecollection_loaditems_method",
+              "tree_collection/api/treecollection_mapvisible_method",
               "tree_collection/api/treecollection_move_method",
               "tree_collection/api/treecollection_parse_method",
               "tree_collection/api/treecollection_refreshitems_method",
