@@ -485,10 +485,10 @@ Thus, to have the possibility of exporting files you need to:
     - if you use the public export server, you don't need to specify the link to it, since it is used by default
     - if you use your own export server, you need to:
         - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library 
-        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method 
+        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/x.x/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method 
 ~~~jsx
 grid.export.xlsx({
-    url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the export module
+    url: "../libs/json2excel/x.x/worker.js?vx", // a local path to the export module
     name: "my_file", // the name of a ready Excel file, "grid" by default
     tableName: "grid", // the name of a sheet with grid data in the Excel file, "data" by default
     dateFormatMask: "mm.dd.yy" // the date format mask for Excel, "dd/mm/yy" by default
@@ -498,7 +498,7 @@ grid.export.xlsx({
     .finally(() => console.log("finished"));
 ~~~
 
-You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
+Replace `x.x` with the actual version number. You can check the latest version of the Json2Excel library at the [GitHub repository](https://github.com/dhtmlx/json2excel).
 
 Read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
 
