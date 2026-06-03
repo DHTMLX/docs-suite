@@ -1,7 +1,7 @@
 ---
-sidebar_label: AI tools (MCP)
-title: AI tools (MCP)
-description: AI tools (MCP)
+sidebar_label: DHTMLX MCP server
+title: Getting started with DHTMLX MCP server
+description: You can learn about DHTMLX MCP server in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 sidebar_class_name: ai-icon
 ---
 

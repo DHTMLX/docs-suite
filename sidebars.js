@@ -5117,7 +5117,7 @@ module.exports = {
       items: [
         "guides/events_guide",
         "guides/datacollection_guide",
-        "guides/ai",
+        "guides/mcp-server",
       ],
     },
     // end Guides
