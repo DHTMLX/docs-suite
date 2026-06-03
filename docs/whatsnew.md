@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.3 
+
+Released on June 2, 2026
+
+### Fixes
+
+- Grid. Fixed the issue where `comboFilter`/`selectFilter` did not pull updated values during scrolling or pagination when using `lazyDataProxy`
+- Grid. Fixed the behavior of fixed rows (`topSplit`/`bottomSplit`) in TreeGrid mode: rows now expand/collapse correctly and no longer collapse automatically upon data loading or scrolling
+
 ## Version 9.3.2
 
 Released on May 12, 2026
@@ -15,9 +24,9 @@ Released on May 12, 2026
 ### Fixes
 
 - Calendar. The calculation of the week number during the transition to summer time (DST) is fixed
-- Grid. The issue with incorrect row height after row deletion when using pagination and lazy loading is fixed.
-- Grid. The styling issue of the `BlockSelection` module when using splits (left, right, top, or bottom) is fixed.
-- Grid. The issue where export to XLSX or CSV failed if a configuration object was passed without a URL is fixed.
+- Grid. The issue with incorrect row height after row deletion when using pagination and lazy loading is fixed
+- Grid. The styling issue of the `BlockSelection` module when using splits (left, right, top, or bottom) is fixed
+- Grid. The issue where export to XLSX or CSV failed if a configuration object was passed without a URL is fixed
 
 ## Version 9.3.1 
 
