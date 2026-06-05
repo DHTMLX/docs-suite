@@ -23,7 +23,9 @@ Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](ht
 
 The link to the public export server is used by default (`https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx`), so you don't need to specify it. 
 
-If you use your own export server, you need to install the **Json2Excel** library and set the path to the **worker.js** file as the `url` option: use `"../libs/json2excel/next/worker.js?vx"` for the latest version, or `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the actual version from the [GitHub repository](https://github.com/dhtmlx/json2excel)):
+If you use your own export server, you need to install the **Json2Excel** library and set the path to the **worker.js** file as the `url` option: 
+    - use `"../libs/json2excel/next/worker.js?vx"` for the latest version
+    - use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the actual version from the [GitHub repository](https://github.com/dhtmlx/json2excel))
 
 ~~~jsx 
 grid.export.xlsx({
