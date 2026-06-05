@@ -1,7 +1,7 @@
 ---
-sidebar_label: AI tools (MCP)
-title: AI tools (MCP)
-description: AI tools (MCP)
+sidebar_label: DHTMLX MCP server
+title: Getting started with DHTMLX MCP server
+description: Connect AI coding assistants to live DHTMLX Suite documentation via the MCP server. Covers Grid, Form, Tree, Calendar, and all other Suite UI components.
 sidebar_class_name: ai-icon
 ---
 
@@ -21,11 +21,19 @@ https://docs.dhtmlx.com/mcp
 The DHTMLX MCP server is a shared service for all major DHTMLX products, not only DHTMLX Suite. The configuration instructions apply to any DHTMLX component you are working with.
 :::
 
-Typical use cases include:
+## Where MCP server helps with Suite
 
-- Retrieving documentation for a specific component.
-- Generating code examples based on current APIs.
-- Understanding configuration options, methods, and events.
+The MCP server indexes the full DHTMLX Suite documentation across all components. Common scenarios include:
+
+- Looking up the current API for any Suite component, including [Grid](/grid/), [Form](/form/), [Chart](/chart/), [Tree](/tree/), [Calendar](/calendar/), and others.
+- Generating ready-to-run initialization and configuration code for any component based on a description.
+- Configuring [Grid](/grid/) features: sorting, filtering, inline editing, column resizing, and drag-and-drop between grids.
+- Building [Form](/form/) layouts with validation rules, built-in controls, and event-driven behavior.
+- Creating [Chart](/chart/) configurations across bar, line, pie, area, radar, and other chart types.
+- Loading and managing data using [DataCollection](/data_collection/) across components.
+- Handling component events to respond to user interactions, value changes, and data updates.
+- Composing multiple components in a shared [Layout](/layout/) with rows, columns, and cells.
+- Exploring [TypeScript support](/common_features/using_typescript/) and integration with [React](/integration/suite_and_react/), [Vue](/integration/suite_and_vue/), [Angular](/integration/suite_and_angular/), and [Svelte](/integration/suite_and_svelte/).
 
 ## How DHTMLX MCP server works
 
@@ -196,29 +204,55 @@ Queries may be logged for debugging and service improvements.
 Organizations that require stricter privacy guarantees can request commercial deployment options with no query logging.
 For inquiries: `info@dhtmlx.com`.
 
-## Usage tips
+## Example prompts for Suite with AI
 
-Once the MCP server is configured, use concrete, task-oriented prompts so the assistant can call the docs effectively.
+Once you connect the MCP server, phrase your prompts around a concrete goal so the assistant knows which component and feature to look up. The prompts below are organized by component. Copy and adapt them as needed.
 
-You can copy and test the example prompts given below:
+**Grid**
+
+~~~
+I want to create a grid with the possibility to sort, resize and edit column cells.
+~~~
+~~~
+I want to create two grids with the possibility to drag item rows from one grid to another, but not vice versa.
+~~~
+~~~
+How do I apply multiple filters to a DHTMLX Grid?
+~~~
+
+**Form**
 
 ~~~
 How do I add custom validation to DHTMLX Form? Use the docs.
 ~~~
 ~~~
-I want to create a layout with a calendar in one cell, and a grid in another.
+How do I get all form values as an object and handle the send event in DHTMLX Form?
 ~~~
-~~~
-I want to create a grid with the possibility to sort, resize and edit column cells.
-~~~
+
+**Chart**
+
 ~~~
 I have a chart with the bar type, how can I also add a line chart above it?
 ~~~
 ~~~
-I want to create two grids with the possibility to drag item rows from one grid to another, but not vice versa.
+How do I load data into a DHTMLX Chart from a JSON array?
 ~~~
 
-More specific prompts result in more relevant snippets and fewer follow-up questions.
+**Layout and composition**
+
+~~~
+I want to create a layout with a calendar in one cell, and a grid in another.
+~~~
+~~~
+How do I resize layout cells and handle the resize event in DHTMLX Layout?
+~~~
 
 **Related sample**: [Kanban and Chatbot. Example built with MCP](https://snippet.dhtmlx.com/rp3dzkei)
+
+## Tips for effective Suite prompts
+
+- **Name the component.** DHTMLX Suite contains many components, each with its own API. Always specify the component in your prompt (for example, "in DHTMLX Grid" vs. "in DHTMLX Form"). Without this, the assistant may retrieve documentation for the wrong component.
+- **Include the feature or behavior.** Prompts like "drag-and-drop between two grids" or "form validation on send" retrieve more relevant documentation than a generic description. The more specific the feature, the more precise the retrieval.
+- **Add "Use the docs"** to your prompt. This phrase signals to the assistant that it should trigger an MCP lookup instead of answering from training data alone. It is especially useful for event names, method signatures, and configuration properties that change between versions.
+- **Describe the expected interaction.** Suite components often support multiple ways to achieve a goal (a configuration property, a method call, or an event handler). Describing the expected behavior helps the assistant pick the right approach.
 
