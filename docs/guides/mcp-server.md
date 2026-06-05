@@ -226,7 +226,7 @@ How do I apply multiple filters to a DHTMLX Grid?
 How do I add custom validation to DHTMLX Form? Use the docs.
 ~~~
 ~~~
-How do I get all form values as an object and handle the send event in DHTMLX Form?
+How do I get all form values as an object and handle the afterSend event in DHTMLX Form?
 ~~~
 
 **Chart**
