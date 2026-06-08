@@ -486,11 +486,10 @@ Thus, to have the possibility of exporting files you need to:
     - if you use your own export server, you need to:
         - install the [**Json2Excel**](https://github.com/dhtmlx/json2excel) library 
         - provide a local path to the **worker.js** file as the `url` option: 
-            - use `"../libs/json2excel/next/worker.js?vx"` for the latest version
-            - use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the actual version from the [GitHub repository](https://github.com/dhtmlx/json2excel))
+        use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the version deployed on your server).
 ~~~jsx
 grid.export.xlsx({
-    url: "../libs/json2excel/next/worker.js?vx", // latest version; use x.x instead of next for a specific version
+    url: "../libs/json2excel/x.x/worker.js?vx", // the path to the export module, if a local export server is used
     name: "my_file", // the name of a ready Excel file, "grid" by default
     tableName: "grid", // the name of a sheet with grid data in the Excel file, "data" by default
     dateFormatMask: "mm.dd.yy" // the date format mask for Excel, "dd/mm/yy" by default
