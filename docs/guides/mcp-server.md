@@ -108,33 +108,9 @@ Follow the steps below:
 }
 ~~~
 
-### Gemini CLI
+### Google Antigravity
 
-:::info
-The [official documentation](https://geminicli.com/docs/tools/mcp-server/) provides a complete guide to configuring and using MCP servers with the Gemini CLI.
-:::
-
-To connect via the CLI, use:
-
-~~~jsx
-gemini mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
-~~~
-
-Alternatively, you can find your config file at `~/.gemini/settings.json` and add:
-
-~~~jsx
-{
-  "mcpServers": {
-    "dhtmlx-mcp": {
-      "url": "https://docs.dhtmlx.com/mcp"
-    }
-  }
-}
-~~~
-
-Restart Gemini CLI after saving the file.
-
-### Antigravity (Google)
+#### Antigravity 2.0
 
 :::info
 Learn more about connecting MCP servers in the [official documentation](https://antigravity.google/docs/mcp).
@@ -154,6 +130,31 @@ dhtmlx-mcp
 ~~~jsx
 https://docs.dhtmlx.com/mcp
 ~~~
+
+#### Antigravity CLI 
+
+:::info
+Check the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) to learn about migration from Gemini CLI to Antigravity CLI.
+:::
+
+Create `mcp_config.json` in one of these locations:
+
+- Global: `~/.gemini/config/mcp_config.json`
+- Workspace: `.agents/mcp_config.json`
+
+Add the following:
+
+~~~jsx
+{
+  "mcpServers": {
+    "dhtmlx-mcp": {
+      "serverUrl": "https://docs.dhtmlx.com/mcp"
+    }
+  }
+}
+~~~
+
+Then run `agy` in the terminal.
 
 ### ChatGPT
 
