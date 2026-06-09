@@ -108,7 +108,9 @@ Follow the steps below:
 }
 ~~~
 
-### Antigravity (Google) 2.0
+### Google Antigravity
+
+#### Antigravity 2.0
 
 :::info
 Learn more about connecting MCP servers in the [official documentation](https://antigravity.google/docs/mcp).
@@ -129,7 +131,7 @@ dhtmlx-mcp
 https://docs.dhtmlx.com/mcp
 ~~~
 
-### Antigravity CLI (former Gemini CLI)
+#### Antigravity CLI 
 
 :::info
 Check the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) to learn about migration from Gemini CLI to Antigravity CLI.
