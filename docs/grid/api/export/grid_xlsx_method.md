@@ -16,7 +16,11 @@ DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/d
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to Excel:
-    - `url?: string` - (optional) the path to the **worker.js** file of the [Json2Excel](https://github.com/dhtmlx/json2excel) library (where export will be processed) set as `"../libs/json2excel/1.3/worker.js?vx"`, if the local export server is used. The path to the public export server is used by default
+    - `url?: string` - (optional) the path to the **worker.js** file of the [Json2Excel](https://github.com/dhtmlx/json2excel) library (where export will be processed). By default, `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx` is used. 
+
+        For a local export server, set the path to the **worker.js** file relative to your server: 
+        use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the version deployed on your server).
+
     - `name?: string` - (optional) "grid" by default. The name of a ready Excel file
     - `tableName?: string` - (optional) "data" by default. The name of a sheet with grid data in the Excel file
     - `dateFormatMask?: string` - (optional) "dd/mm/yy" by default. The mask used for [dates formatting in Excel](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e)
@@ -37,7 +41,7 @@ grid.export.xlsx()
 
 // export with config settings
 grid.export.xlsx({
-    url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the `worker.js` file of the export module
+    url: "../libs/json2excel/x.x/worker.js?vx", // a local path to the `worker.js` file of the export module
     name: "my_file", // the name of a ready Excel file
     tableName: "grid", // the name of a sheet with grid data in the Excel file
     dateFormatMask: "mm.dd.yy" // the date format mask for Excel
