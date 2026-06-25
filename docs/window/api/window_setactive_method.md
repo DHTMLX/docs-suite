@@ -45,4 +45,4 @@ Added in v9.3
 
 **Related sample**: [Window. Setting the active state](https://snippet.dhtmlx.com/lvm3kfwq)
 
-**Related article**: [Work with Window](/window/usage/#setting-the-active-state)
+**Related article**: [Work with Window](window/usage.md#setting-the-active-state)

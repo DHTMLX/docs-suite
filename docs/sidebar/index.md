@@ -25,7 +25,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Si
 
 - You can get DHTMLX Sidebar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?tag=sidebar)
-- To work with data of Sidebar check [TreeCollection API](tree_collection.md)
+- To work with data of Sidebar check [TreeCollection API](/tree_collection/)
 
 ## Guides
 
@@ -33,20 +33,20 @@ You can check the following page to learn how to build a full-featured DHTMLX Si
 
 Tells about creation of Sidebar and shows all available ways of data loading, configuring and styling the component, and working with controls.
 
-- [](initialization.md)
-- [](data_loading.md)
-- [](sidebar_config.md)
-- [](work_with_sidebar.md)
-- [](customization.md)
-- [](events.md)
+- [](sidebar/initialization.md)
+- [](sidebar/data_loading.md)
+- [](sidebar/sidebar_config.md)
+- [](sidebar/work_with_sidebar.md)
+- [](sidebar/customization.md)
+- [](sidebar/events.md)
 
 ### Sidebar controls
 
 Dwells on the creation of Sidebar controls and the possibilities of manipulating them.
 
-- [](customhtmlbutton.md)
-- [](menuitem.md)
-- [](navitem.md)
-- [](separator.md)
-- [](spacer.md)
-- [](title.md)
+- [](sidebar/customhtmlbutton.md)
+- [](sidebar/menuitem.md)
+- [](sidebar/navitem.md)
+- [](sidebar/separator.md)
+- [](sidebar/spacer.md)
+- [](sidebar/title.md)

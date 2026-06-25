@@ -23,20 +23,20 @@ The DHTMLX Suite UI library comprises 20+ versatile widgets for processing and v
 
 There is a collection of helpers aimed to streamline web development by giving you all the necessary tools to work with data, content, and styles in the DHTMLX Suite library.
 
-- [AJAX](ajax/)
-- [AwaitRedraw](helpers/await_redraw)
-- [CSS classes of base elements](helpers/base_elements)
-- [CssManager](css_manager/)
-- [DataCollection API](data_collection/)
-- [DataDrivers](helpers/datadrivers)
-- [DataProxy](data_proxy/)
-- [Default Icons](helpers/icon)
-- [Dynamic Loading](helpers/lazydataproxy)
-- [Resizer](helpers/resize_handler)
-- [Selection Object API](selection/)
-- [Themes](themes/)
-- [TreeCollection API](tree_collection/)
-- [Uploader API](uploader/)
+- [AJAX](/ajax/)
+- [AwaitRedraw](helpers/await_redraw.md)
+- [CSS classes of base elements](helpers/base_elements.md)
+- [CssManager](/css_manager/)
+- [DataCollection API](/data_collection/)
+- [DataDrivers](helpers/datadrivers.md)
+- [DataProxy](/data_proxy/)
+- [Default Icons](helpers/icon.md)
+- [Dynamic Loading](helpers/lazydataproxy.md)
+- [Resizer](helpers/resize_handler.md)
+- [Selection Object API](/selection/)
+- [Themes](/themes/)
+- [TreeCollection API](/tree_collection/)
+- [Uploader API](/uploader/)
 
 ## How to create DHTMLX-based web applications
 
@@ -50,13 +50,13 @@ Here you can find best practices in working with DHTMLX Suite widgets and explor
 
 A gallery of live demos provides real-life examples of using DHTMLX widgets in web apps. You can download any demo, view the source code, and try it out in your project. All demos are created with the help of Suite and Optimus.
 
-- [File manager demo](optimus_guides/filemanager_demo)
-- [UI dashboard demo](optimus_guides/dashboard_demo)
-- [Hotel management demo](optimus_guides/hotel_demo)
-- [Geo tracking demo](optimus_guides/geotracking_demo)
-- [Sales KPI tracking demo](optimus_guides/kpi_demo)
-- [Hospital management demo](optimus_guides/hospital_demo)
-- [Online exam demo](optimus_guides/exam_demo)
+- [File manager demo](optimus_guides/filemanager_demo.md)
+- [UI dashboard demo](optimus_guides/dashboard_demo.md)
+- [Hotel management demo](optimus_guides/hotel_demo.md)
+- [Geo tracking demo](optimus_guides/geotracking_demo.md)
+- [Sales KPI tracking demo](optimus_guides/kpi_demo.md)
+- [Hospital management demo](optimus_guides/hospital_demo.md)
+- [Online exam demo](optimus_guides/exam_demo.md)
 
 ### CSS widget templates
 
@@ -90,10 +90,10 @@ You can access the DHTMLX private **npm** directly in the [Client's Area](https:
 Being a fully client-side library, DHTMLX Suite can be used with any backend. There is an example of integrating [DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo) in our GitHub repository.
 
 ### Touch support
-You can easily create responsive web applications using DHTMLX Suite due to built-in touch support. Check out how UI widgets work on touch devices in the [Touch Support](/common_features/touch_support/) guide.
+You can easily create responsive web applications using DHTMLX Suite due to built-in touch support. Check out how UI widgets work on touch devices in the [Touch Support](common_features/touch_support.md) guide.
 
 ### TypeScript support
-The Suite library is equipped with built-in type definitions allowing you to write clean code faster. Browse the [TypeScript Support](/common_features/using_typescript/) guide with code snippets to learn more.
+The Suite library is equipped with built-in type definitions allowing you to write clean code faster. Browse the [TypeScript Support](common_features/using_typescript.md) guide with code snippets to learn more.
 
 ### Accessibility
 
@@ -101,7 +101,7 @@ All DHTMLX widgets are created with accessible design in mind. DHTMLX sticks to 
 
 ## Release History
 
-The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the ["What's new"](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.
+The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the ["What's new"](whatsnew.md) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](migration.md) will instruct you on the changes in the code.
 
 ## Documentation for DHTMLX Suite 5 version 
 

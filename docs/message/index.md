@@ -32,4 +32,4 @@ You can check the following page to learn how to build a full-featured DHTMLX Me
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

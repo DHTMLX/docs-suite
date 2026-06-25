@@ -255,7 +255,7 @@ const list = new dhx.List("list_container", {
 
 By default, List displays HTML content if it is specified for its options.
 
-In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../list/api/list_htmlenable_config/) property to *false*. 
+In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](list/api/list_htmlenable_config.md) property to *false*. 
 
 ~~~js
 const list = new dhx.List("list_container", {

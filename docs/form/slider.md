@@ -63,4 +63,4 @@ const slider = form.getItem("slider_id").getWidget();  // -> DHTMLX Slider
 slider.disable(); // disables slider
 ~~~
 
-Check [the full list of methods of the DHTMLX Slider component](../../slider/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/slider/slider_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Slider component](slider/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/slider/slider_getwidget_method.md) method.

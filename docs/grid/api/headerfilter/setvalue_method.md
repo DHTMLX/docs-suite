@@ -39,12 +39,12 @@ grid.getHeaderFilter("country").setValue("Brazil");
 
 @descr:
 :::info
-The [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter supports only the *Date object* values.
+The [`dateFilter`](grid/configuration.md#headerfooter-filters) type of filter supports only the *Date object* values.
 :::
 
 Note that in case of the enabled `multiselection` or `range` modes, the method awaits the value to be passed as an array.
 
-**Related article**: [Header/footer filters](/grid/configuration/#headerfooter-filters)
+**Related article**: [Header/footer filters](grid/configuration.md#headerfooter-filters)
 
 @changelog:
 

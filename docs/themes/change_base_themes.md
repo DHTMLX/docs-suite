@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Changing a separate theme
 
-If you want to override some color values for a separate [Suite theme](themes.md#suite-themes), you need to do this in the 'data-dhx-theme' attribute:
+If you want to override some color values for a separate [Suite theme](/themes/#suite-themes), you need to do this in the 'data-dhx-theme' attribute:
 
 ~~~html {1-27,39}
 <style>

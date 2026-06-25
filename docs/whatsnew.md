@@ -43,26 +43,26 @@ Released on February 17, 2026
 
 ### New functionality 
 
-- Grid. The ability to [specify a flexible configuration for export](/grid/usage/#extended-export-configuration-settings) to the CSV, XLSX, PDF, and PNG formats (PRO version)
-    - new Grid configuration property: [`exportConfig`](/grid/api/grid_exportconfig_config/)
-- Grid. A new [`dateFilter`](/grid/configuration/#headerfooter-filters) type of filter for the column header is added (PRO version)
-- Grid. The ability to [define the position of the footer and frozen rows within the component container](/grid/configuration/#footer-position) (PRO version)
-    - new Grid configuration property: [`footerPosition`](/grid/api/grid_footerposition_config/) 
-- Grid. The ability to [define the behaviour of a dragged item](/grid/treegrid_mode/#drop-behaviour) in the TreeGrid mode (PRO version)
-    - new Grid configuration property: [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) 
-- Tree. The ability to [add tooltips for the items](/tree/configuration/#tooltips-for-items)
-    - new Tree configuration property: [`tooltip`](/tree/api/tree_tooltip_config/)
-- Window. The ability to [set a window to the active state](/window/usage/#setting-the-active-state) 
-    - new Window method: [`setActive()`](/window/api/window_setactive_method/)
+- Grid. The ability to [specify a flexible configuration for export](grid/usage.md#extended-export-configuration-settings) to the CSV, XLSX, PDF, and PNG formats (PRO version)
+    - new Grid configuration property: [`exportConfig`](grid/api/grid_exportconfig_config.md)
+- Grid. A new [`dateFilter`](grid/configuration.md#headerfooter-filters) type of filter for the column header is added (PRO version)
+- Grid. The ability to [define the position of the footer and frozen rows within the component container](grid/configuration.md#footer-position) (PRO version)
+    - new Grid configuration property: [`footerPosition`](grid/api/grid_footerposition_config.md) 
+- Grid. The ability to [define the behaviour of a dragged item](grid/treegrid_mode.md#drop-behaviour) in the TreeGrid mode (PRO version)
+    - new Grid configuration property: [`dropBehaviour`](grid/api/grid_dropbehaviour_config.md) 
+- Tree. The ability to [add tooltips for the items](tree/configuration.md#tooltips-for-items)
+    - new Tree configuration property: [`tooltip`](tree/api/tree_tooltip_config.md)
+- Window. The ability to [set a window to the active state](window/usage.md#setting-the-active-state) 
+    - new Window method: [`setActive()`](window/api/window_setactive_method.md)
 
 ### Updates
 
-- Chart. Export module. The [`pdf()`](/chart/api/export/chart_pdf_method/) and [`png()`](/chart/api/export/chart_png_method/) export functions return a promise of data export
-- Grid. Export module. The [`pdf()`](/grid/api/export/grid_pdf_method/), [`png()`](/grid/api/export/grid_png_method/), [`xlsx()`](/grid/api/export/grid_xlsx_method/) and [`csv()`](/grid/api/export/grid_csv_method/) export functions return a promise of data export
-- Grid. The functionality of [column header filters](/grid/configuration/#headerfooter-filters) is updated:
-    - the [`setValue()`](/grid/api/headerfilter/setvalue_method/) method (of the [`getHeaderFilter()`](/grid/api/grid_getheaderfilter_method/) API), can take a *Date* object or an array of *Date[]* objects as a parameter
-    - the `value` parameter of the callback functions of [`filterChange`](/grid/api/grid_filterchange_event/) and [`beforeFilter`](/grid/api/grid_beforefilter_event/) events can be a *Date* object or an array of *Date[]* objects
-    - the parameters of the [`customFilter`](/grid/configuration/#customizing-headerfooter-filters) callback function can be *Date* objects or arrays of *Date[]* objects
+- Chart. Export module. The [`pdf()`](chart/api/export/chart_pdf_method.md) and [`png()`](chart/api/export/chart_png_method.md) export functions return a promise of data export
+- Grid. Export module. The [`pdf()`](grid/api/export/grid_pdf_method.md), [`png()`](grid/api/export/grid_png_method.md), [`xlsx()`](grid/api/export/grid_xlsx_method.md) and [`csv()`](grid/api/export/grid_csv_method.md) export functions return a promise of data export
+- Grid. The functionality of [column header filters](grid/configuration.md#headerfooter-filters) is updated:
+    - the [`setValue()`](grid/api/headerfilter/setvalue_method.md) method (of the [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) API), can take a *Date* object or an array of *Date[]* objects as a parameter
+    - the `value` parameter of the callback functions of [`filterChange`](grid/api/grid_filterchange_event.md) and [`beforeFilter`](grid/api/grid_beforefilter_event.md) events can be a *Date* object or an array of *Date[]* objects
+    - the parameters of the [`customFilter`](grid/configuration.md#customizing-headerfooter-filters) callback function can be *Date* objects or arrays of *Date[]* objects
 
 ### Fixes
 
@@ -124,7 +124,7 @@ Released on November 28, 2025
 
 ### Updates
 
-- DataCollection. The [`beforeAdd`](/data_collection/api/datacollection_beforeadd_event/), [`afterAdd`](/data_collection/api/datacollection_afteradd_event/), [`beforeRemove`](/data_collection/api/datacollection_beforeremove_event/), and [`afterRemove`](/data_collection/api/datacollection_afterremove_event/) events are updated to include the `batch` and `index` parameters for handling batch operations
+- DataCollection. The [`beforeAdd`](data_collection/api/datacollection_beforeadd_event.md), [`afterAdd`](data_collection/api/datacollection_afteradd_event.md), [`beforeRemove`](data_collection/api/datacollection_beforeremove_event.md), and [`afterRemove`](data_collection/api/datacollection_afterremove_event.md) events are updated to include the `batch` and `index` parameters for handling batch operations
 
 ### Fixes
 
@@ -141,7 +141,7 @@ Released on November 17, 2025
 - Form. The `getValue()` method returns an empty string for a Combo option if its ID is specified as 0 (zero)
 - Grid. `comboFilter` displays all the options even if its `filterConfig` configuration object is initialized without the `filter` property
 - Grid. Incorrect date format in an exported Excel file
-- Grid. The ability to [specify a placeholder in the `inputFilter` via the `filterConfig` configuration object](/grid/configuration/#headerfooter-filters) is added
+- Grid. The ability to [specify a placeholder in the `inputFilter` via the `filterConfig` configuration object](grid/configuration.md#headerfooter-filters) is added
 - Tree. Incorrect dropping behavior when the `dropBehavior:sibling` property is set in the Tree configuration
 
 ## Version 9.2.3
@@ -187,7 +187,7 @@ Released on July 15, 2025
 
 ### Breaking changes
 
-This version brings some updates in the use of the export module used for [exporting Grid data to an Excel file](grid/usage.md/#exporting-data-to-excel). Check the [Migration](migration.md#91---92) guide to keep in step with the latest updates.
+This version brings some updates in the use of the export module used for [exporting Grid data to an Excel file](grid/usage.md#exporting-data-to-excel). Check the [Migration](migration.md#91---92) guide to keep in step with the latest updates.
 
 ### New functionality
 
@@ -205,7 +205,7 @@ This version brings some updates in the use of the export module used for [expor
 - Grid. The [`DragPanel` module](grid/usage_dragpanel.md) is added to provide auxiliary functionality for moving rows in Grid and improve the drag-n-drop visualization (PRO version)
 	- new Grid configuration property: [`dragPanel`](grid/api/grid_dragpanel_config.md)
 	- new events: [`dragPanelItemClick`](grid/api/dragpanel/dragpanelitemclick_event.md), [`dragPanelItemMouseDown`](grid/api/dragpanel/dragpanelitemmousedown_event.md)
-- Grid. The [`History` module](grid/usage_history.md) is added to provide functionality for managing the history of actions in Grid, including the [Undo/Redo functionality](grid/usage_history.md/#applying-undoredo-operations-to-grid-history-actions) (PRO version)
+- Grid. The [`History` module](grid/usage_history.md) is added to provide functionality for managing the history of actions in Grid, including the [Undo/Redo functionality](grid/usage_history.md#applying-undoredo-operations-to-grid-history-actions) (PRO version)
 	- new Grid configuration property: [`history`](grid/api/grid_history_config.md)
 	- new methods of the `history` object: [`add()`](grid/api/history/add_method.md), [`canRedo()`](grid/api/history/canredo_method.md), [`canUndo()`](grid/api/history/canundo_method.md), [`disable()`](grid/api/history/disable_method.md), [`enable()`](grid/api/history/enable_method.md), [`isDisabled()`](grid/api/history/isdisabled_method.md), [`getHistory()`](grid/api/history/gethistory_method.md), [`redo()`](grid/api/history/redo_method.md), [`remove()`](grid/api/history/remove_method.md), [`removeAll()`](grid/api/history/removeall_method.md), [`undo()`](grid/api/history/undo_method.md)
 	- new events of the `history` object: [`afterAdd`](grid/api/history/afteradd_event.md), [`afterRedo`](grid/api/history/afterredo_event.md), [`afterUndo`](grid/api/history/afterundo_event.md), [`beforeAdd`](grid/api/history/beforeadd_event.md), [`beforeRedo`](grid/api/history/beforeredo_event.md), [`beforeUndo`](grid/api/history/beforeundo_event.md), [`error`](grid/api/history/error_event.md)
@@ -213,12 +213,12 @@ This version brings some updates in the use of the export module used for [expor
 
 ### Updates
 
-- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md/#drag-n-drop) is improved. Check the [related sample](https://snippet.dhtmlx.com/uevdwjuo) 
-- Grid. The [export to Excel](grid/usage.md/#exporting-data-to-excel) functionality is updated. The [Json2Excel](https://github.com/dhtmlx/json2excel) module is now used for exporting Grid data to Excel. Check the [Migration guide](migration.md/#91---92) for details
+- Grid. The logic and appearance of the [drag-n-drop functionality](grid/configuration.md#drag-n-drop) is improved. Check the [related sample](https://snippet.dhtmlx.com/uevdwjuo) 
+- Grid. The [export to Excel](grid/usage.md#exporting-data-to-excel) functionality is updated. The [Json2Excel](https://github.com/dhtmlx/json2excel) module is now used for exporting Grid data to Excel. Check the [Migration guide](migration.md#91---92) for details
 - Grid. The [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the Export module gets two new configuration settings:
     - `tableName`- to set the name of a sheet with grid data in the Excel file
     - `dateFormatMask` - to set the date format mask for Excel
-- Grid. The possibility to use keyboard navigation for [selecting ranges of cells](grid/configuration.md/#shortcut-keys-for-selecting-ranges-of-cells). The following shortcut keys and their combinations are available: 
+- Grid. The possibility to use keyboard navigation for [selecting ranges of cells](grid/configuration.md#shortcut-keys-for-selecting-ranges-of-cells). The following shortcut keys and their combinations are available: 
 
 <table>
     <tbody>
@@ -687,7 +687,7 @@ Released on July 16, 2024
 #### Chart 
 
 - The ability to [specify a template for showing values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-to-values-of-data-items-in-pie-and-donut-charts)
-- The ability to [add the header/footer for an exported PNG/PDF file](/chart/api/export/chart_png_method/) 
+- The ability to [add the header/footer for an exported PNG/PDF file](chart/api/export/chart_png_method.md) 
 
 #### Combobox
 
@@ -695,12 +695,12 @@ Released on July 16, 2024
 
 #### Form 
 
-- The ability to [add event handlers to HTML elements of a custom template of the Combo control items](/form/api/combo/api_combo_properties/)
+- The ability to [add event handlers to HTML elements of a custom template of the Combo control items](form/api/combo/api_combo_properties.md)
 
 #### Grid/TreeGrid
 
-- The ability to [add event handlers to HTML elements of a custom template of Combobox editor items in a column](/grid/api/api_gridcolumn_properties/)
-- The ability to [add the header/footer for an exported PNG/PDF file](/grid/api/export/grid_png_method/) 
+- The ability to [add event handlers to HTML elements of a custom template of Combobox editor items in a column](grid/api/api_gridcolumn_properties.md)
+- The ability to [add the header/footer for an exported PNG/PDF file](grid/api/export/grid_png_method.md) 
 
 #### Toolbar
 
@@ -712,11 +712,11 @@ Released on July 16, 2024
 
 - The ability to [use most Data/TreeCollection methods during dynamic loading before data is fully loaded](grid/data_loading.md#dynamic-loading)
 - The ability to specify Grid/TreeGrid [tooltips](grid/configuration.md#tooltip) as objects with settings 
-- The ability to provide a [filtering function for the Combobox editor in a column](/grid/api/api_gridcolumn_properties/) 
+- The ability to provide a [filtering function for the Combobox editor in a column](grid/api/api_gridcolumn_properties.md) 
 
 #### List
 
-- The ability to [use most Data/TreeCollection methods during dynamic loading before data is fully loaded](/list/load_data/#dynamic-loading)
+- The ability to [use most Data/TreeCollection methods during dynamic loading before data is fully loaded](list/load_data.md#dynamic-loading)
 
 ### Fixes
 
@@ -754,7 +754,7 @@ Released on June 24, 2024
 
 ### Fixes
 
-- Window. The [`Tabbar.tabAlign`](/tabbar/api/tabbar_tabalign_config/) property is ignored if the Tabbar is placed within the Window control
+- Window. The [`Tabbar.tabAlign`](tabbar/api/tabbar_tabalign_config.md) property is ignored if the Tabbar is placed within the Window control
 - Form. The `helpMessage` is displayed in the incorrect position if the Form is scrolled to the bottom edge
 - Core. Memory leaks (Layout, Combobox, Form components)
 
@@ -998,9 +998,9 @@ Released on October 12, 2023
 ### Fixes
 
 - ColorPicker. Fix incorrect adding of a custom color
-- Form. Fix incorrect work of the [`validate()`](suite/form/api/form_validate_method.md) method in the "silent" mode
-- Form. Fix incorrect work of the [`clear()`](suite/form/api/form_clear_method.md) method that triggered validation
-- Form. Fix blocking of typing on call of the [`validate()`](suite/form/api/input/input_validate_method.md) method for the Input control  
+- Form. Fix incorrect work of the [`validate()`](form/api/form_validate_method.md) method in the "silent" mode
+- Form. Fix incorrect work of the [`clear()`](form/api/form_clear_method.md) method that triggered validation
+- Form. Fix blocking of typing on call of the [`validate()`](form/api/input/input_validate_method.md) method for the Input control  
 - Grid/TreeGrid. Fix the difference in the number format used for the cell data and for the footer
 - Grid/TreeGrid. Fix the problem with displaying `O`(zero) in the footer as a total sum of a column
 
@@ -1011,7 +1011,7 @@ Released on October 4, 2023
 ### Fixes
 
 - Grid/TreeGrid. Fix the issue with comboFilter not working in case the column's editor contains options with the id and value that don't match
-- Grid/TreeGrid. Fix the problem with the [`setColumns()`](/suite/grid/api/grid_setcolumns_method/) method not refreshing the comboFilter options
+- Grid/TreeGrid. Fix the problem with the [`setColumns()`](grid/api/grid_setcolumns_method.md) method not refreshing the comboFilter options
 - TreeGrid. Fix the issue with a console error throwing on hovering over the footer tooltips used together with the "content" property
 - Toolbar/Menu. Fix the problem with displaying the count badge with the `0` value
 
@@ -1320,11 +1320,11 @@ Released on March 13, 2023
 
 - Combobox. Fix default templates for the `img` and `icon` attributes of a [data item](combobox/api/combobox_data_config.md)
 - Combobox. Fix work of the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
-- Context menu. Fix the issue with applying of [themes](themes.md) to the context menu
+- Context menu. Fix the issue with applying of [themes](/themes/) to the context menu
 - Grid/TreeGrid. Fix an error thrown when editing cells with null or undefined values in the column with [`editorType: "select"`](grid/configuration.md#types-of-column-editor)
 - Grid/TreeGrid. Fix the issue with custom scroll when using together with frozen columns/rows
 - Grid/TreeGrid. Fix the issue with the value returned from the [`filterChange`](grid/api/grid_filterchange_event.md) event after resetting the value of the [inputFilter/selectFilter](grid/configuration.md#headerfooter-filters). Now the event returns `value` as an empty string
-- Grid/TreeGrid. Fix work of events of the [Selection](category/grid-selection-events.md) object
+- Grid/TreeGrid. Fix work of events of the [Selection](/category/grid-selection-events/) object
 - List. Now focusing of items isn't available when [key navigation](list/api/list_keynavigation_config.md) is disabled
 - Suite. Now the date format must include delimiters (space or symbol), otherwise an error will be thrown
 - TreeGrid. Fix the issue which caused headers of groups to be duplicated when using the [`leftSplit`](grid/api/grid_leftsplit_config.md) property of TreeGrid
@@ -1345,7 +1345,7 @@ Released on February 24, 2023
 
 #### Styling
 
-- New ["light", "contrast-light", "dark", "contrast-dark"](themes.md) color themes
+- New ["light", "contrast-light", "dark", "contrast-dark"](/themes/) color themes
 - The ability to [change base themes](themes/change_base_themes.md) or [configure your own color theme](themes/custom_theme.md)
 - [Theme configurator](themes/theme_configurator.md)
 
@@ -1387,7 +1387,7 @@ Released on February 24, 2023
 - The ability to configure [drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows) (Pro version)
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 - Now the sorting icon will also appear after sorting data via the `data.sort()` method
-- The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property
+- The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](/category/calendar-properties/) to the `columns.editorConfig` property
 - The ability to fix bottom rows and right columns using the corresponding [`bottomSplit`](grid/api/grid_bottomsplit_config.md) and [`rightSplit`](grid/api/grid_rightsplit_config.md) properties ([Example](https://snippet.dhtmlx.com/hcgl9nth))
 
 #### Layout
@@ -1424,7 +1424,7 @@ Released on February 24, 2023
 #### TreeGrid
 
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
-- The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property
+- The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](/category/calendar-properties/) to the `columns.editorConfig` property
 - The ability to fix bottom rows and right columns using the corresponding [`bottomSplit`](grid/api/grid_bottomsplit_config.md) and [`rightSplit`](grid/api/grid_rightsplit_config.md) properties ([Example](https://snippet.dhtmlx.com/46me58ze))
 
 ### Updates
@@ -1494,7 +1494,7 @@ Released on January 17, 2023
 - TreeGrid. Fix the issue with display of total values in the footer of the [exported .csv / .xlsx file](grid/usage.md)
 - TreeGrid. Fix the issue with editing of spanned cells
 - TreeGrid. Now it is possible to collapse/expand the content of the first cell of the first column even if it is included into the colspan
-- Fix issues with [AJAX helper](ajax.md)
+- Fix issues with [AJAX helper](/ajax/)
 
 ## Version 7.3.13
 
@@ -1515,7 +1515,7 @@ Released on November 17, 2022
 
 - Calendar. Fix the issue with calling the [`clear()`](calendar/api/calendar_clear_method.md) method when [two calendars are linked](calendar/operating_calendar.md#linking-two-calendars)
 - Gird. Fix the issue with the [`type: "percent"`](grid/api/api_gridcolumn_properties.md) property of a column
-- Grid. Fix issues with [selectFilter](grid/configuration.md/#headerfooter-filters) and [comboFilter](grid/configuration.md/#headerfooter-filters). Now they don't ignore the [`type`](grid/api/api_gridcolumn_properties.md) and [`format`](grid/api/api_gridcolumn_properties.md) properties of a column
+- Grid. Fix issues with [selectFilter](grid/configuration.md#headerfooter-filters) and [comboFilter](grid/configuration.md#headerfooter-filters). Now they don't ignore the [`type`](grid/api/api_gridcolumn_properties.md) and [`format`](grid/api/api_gridcolumn_properties.md) properties of a column
 - Grid. Fix the error thrown when [exporting data to CSV format](grid/usage.md#exporting-data-to-csv)
 - Grid. Now [custom tooltip](grid/customization.md#adding-template-to-tooltip) will be also displayed for cells with empty values
 - Grid. Now it is possible to prevent a [custom tooltip](grid/customization.md#adding-template-to-tooltip) from being shown via returning `false` from the `tooltipTemplate` function
@@ -1676,7 +1676,7 @@ Released on April 4, 2022
 - Data. Now the `,`,  `;`, `"` symbols will be wrapped into the quotes when serializing a data set into the CSV format
 - Form. Text control. Fix the incorrect display of the long value of the Text control
 - Grid, TreeGrid. Now the Grid and TreeGrid packages includes the ability to localize the "datePicker" and "combobox" column editors
-- Grid. Fix the issue which caused the empty row/col objects to be returned after calling [events for custom templates](../grid/api/grid_eventhandlers_config/) of Grid columns
+- Grid. Fix the issue which caused the empty row/col objects to be returned after calling [events for custom templates](grid/api/grid_eventhandlers_config.md) of Grid columns
 - Grid. Fix the issue with processing of Date objects when exporting the Grid data into the CSV/Excel format
 - Grid. Fix the issue with the `htmlEnable: true` property which didn't take into account the line breaks of the cells content when the `autoHeight:false` property of Grid was applied 
 
@@ -1705,25 +1705,25 @@ Released on January 19, 2022
 
 #### Chart
 
-- New [Treemap chart](chart/charts_overview.md/#treemap-chart)
+- New [Treemap chart](chart/charts_overview.md#treemap-chart)
 - The ability to arrange legend items vertically or horizontally via the `direction` property of the [legend](chart/api/chart_legend_config.md)
 
 #### Combobox
 
 - The ability to disable rendering of HTML content in Combobox options via the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
-- The ability [to allow users to add new items into the list of options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](combobox/api/combobox_newoptions_config.md) property
+- The ability [to allow users to add new items into the list of options from UI](combobox/configuration.md#editable-combobox) via the [`newOptions`](combobox/api/combobox_newoptions_config.md) property
 - New [`addOption()`](combobox/api/combobox_addoption_method.md) method
 - New ["createItem"](combobox/localization.md) locale option added
 
 #### Form. Combo control
 
-- The ability [to allow users to add new values into the list of combobox options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
-- The ability to add a new item into the Combo control via the [`addOption()`](combobox/api/combobox_addoption_method.md) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md/#working-with-the-dhtmlxcombobox-widget)
+- The ability [to allow users to add new values into the list of combobox options from UI](combobox/configuration.md#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
+- The ability to add a new item into the Combo control via the [`addOption()`](combobox/api/combobox_addoption_method.md) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md#working-with-the-dhtmlxcombobox-widget)
 
 #### Grid
 
-- The ability [to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
-- The ability [to allow users to add new values into the list of options from UI](grid/configuration.md/#editable-combobox) via the `newOptions` attribute of the [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
+- The ability [to add custom logic to the header/footer filters of the column](grid/configuration.md#customizing-headerfooter-filters) via the `customFilter` attribute
+- The ability [to allow users to add new values into the list of options from UI](grid/configuration.md#editable-combobox) via the `newOptions` attribute of the [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
 
 #### List
 
@@ -1731,7 +1731,7 @@ Released on January 19, 2022
 
 #### Message
 
-- The ability to disable displaying HTML content in the [Alert box](message/api/api_message_properties.md/#alert-box), [Confirm box](message/api/api_message_properties.md/#confirm-box), and [Tooltip](message/api/api_message_properties.md/#tooltip) via the [`htmlEnable`](message/api/api_message_properties.md) property
+- The ability to disable displaying HTML content in the [Alert box](message/api/api_message_properties.md#alert-box), [Confirm box](message/api/api_message_properties.md#confirm-box), and [Tooltip](message/api/api_message_properties.md#tooltip) via the [`htmlEnable`](message/api/api_message_properties.md) property
 
 #### Tabbar
 
@@ -1739,14 +1739,14 @@ Released on January 19, 2022
 
 #### TreeGrid
 
-- The ability [to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
-- The ability [to allow users to add new items into the list of options from UI](grid/configuration.md/#editable-combobox) via the `newOptions` attribute of the  [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
+- The ability [to add custom logic to the header/footer filters of the column](grid/configuration.md#customizing-headerfooter-filters) via the `customFilter` attribute
+- The ability [to allow users to add new items into the list of options from UI](grid/configuration.md#editable-combobox) via the `newOptions` attribute of the  [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
 
 ### Fixes
 
 - Chart. Fix the incorrect display of Radar chart if the values in the data set are the same
 - Chart. Fix the issue with displaying an empty tooltip in Line chart
-- Chart. Fix the issue with the type of the [`value`](chart/data_loading.md/#preparing-data-set) property in a data set
+- Chart. Fix the issue with the type of the [`value`](chart/data_loading.md#preparing-data-set) property in a data set
 - Custom Scroll. Fix the incorrect position of scroll after scrolling the grid attached to the tabbar and changing the tabs
 - Form. Fix the issue with enabling the disabled RadioGroup control
 - Form. Fix the issue with the Textarea control. Now the [`required`](form/api/textarea/api_textarea_properties.md) property doesn't take `value: null` as a valid
@@ -1754,11 +1754,11 @@ Released on January 19, 2022
 - Grid, Pagination. Fix the incorrect work of Pagination if the first column of the grid is hidden
 - Grid. Fix the incorrect display of actual values specified in the "select", "combobox", or "multiselect" editor when opening the editor
 - Grid. Fix the incorrect loading of string values from XML file
-- Grid. Fix the incorrect work of [selectFilter](grid/configuration.md/#headerfooter-filters) with boolean values
+- Grid. Fix the incorrect work of [selectFilter](grid/configuration.md#headerfooter-filters) with boolean values
 - Grid. Fix the issue that caused the [`adjust`](grid/api/api_gridcolumn_properties.md) property to ignore the [`template`](grid/api/api_gridcolumn_properties.md) specified for a column
 - Grid. Fix the issue which caused key navigation to stop working in Grid attached into Tabbar which is attached into Window
-- Grid. Fix the issue which caused [`autoWidth`](grid/api/grid_autowidth_config.md) not to work if the [`width`](grid/configuration.md/#columns) wasn't specified for only one of the grid columns
-- Grid. Fix the issue with [number formatting](grid/configuration.md/#formatting-columns) which caused minus numbers from -1 to 0 to be displayed like positive numbers
+- Grid. Fix the issue which caused [`autoWidth`](grid/api/grid_autowidth_config.md) not to work if the [`width`](grid/configuration.md#columns) wasn't specified for only one of the grid columns
+- Grid. Fix the issue with [number formatting](grid/configuration.md#formatting-columns) which caused minus numbers from -1 to 0 to be displayed like positive numbers
 - Grid. Fix the issue with drag-and-drop of the first row
 - Grid. Fix the issue with the [`canRowDrop`](grid/api/grid_canrowdrop_event.md) event
 - Layout. Fix the issue which caused the cells without the height/width specified initially cannot be reverted to the original state after they've been resized and collapsed several times
@@ -1769,7 +1769,7 @@ Released on January 19, 2022
 - Ribbon. Fix the issue with calculation of the widget's height when some items are hidden
 - Toolbar. Datepicker control. Fix the issue which caused the same date to be shown in different Datepickers (two or more)
 - Toolbar. SelectButton control. Fix the issue that caused an icon of the selected value not being displayed initially or after applying the [`setState()`](toolbar/api/toolbar_setstate_method.md) method
-- TreeGrid. Fix the incorrect work of filtering when [`multiselection`](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is enabled for comboFilter and multiple options are selected
+- TreeGrid. Fix the incorrect work of filtering when [`multiselection`](grid/configuration.md#the-list-of-configuration-properties-for-combofilter) is enabled for comboFilter and multiple options are selected
 - TreeGrid. Fix the issue with exporting a grouped treegrid to CSV
 - TreeGrid. Fix the issue with render of data items when they are parsed in reverse order
 
@@ -1786,7 +1786,7 @@ Released on October 28, 2021
 - Grid. Fix the issue which caused the method of dragging a column to be called after clicking the in-header filter of a column (in Firefox only)
 - Grid. Fix the issue with incorrect calculation of the height of the grid header when the [autoHeight](grid/api/grid_autoheight_config.md) property is enabled
 - Grid. Fix the issue with key navigation when working with several grids
-- Grid. Fix the issue with the [autoWidth](grid/configuration.md/#autowidth-for-columns) property which caused the minimal width of the column not being taken into account when calculating the column's width
+- Grid. Fix the issue with the [autoWidth](grid/configuration.md#autowidth-for-columns) property which caused the minimal width of the column not being taken into account when calculating the column's width
 - Grid. TreeGrid. Fix the issue which caused data of the treegrid to be changed after filtering and dragging a column/row
 
 ## Version 7.2.4
@@ -1858,7 +1858,7 @@ Released on August 4, 2021
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-7-2-new-form-control-custom-scroll-tree-templates/" target="_blank">Review of release on the blog</a>
 <br/><br/>
 
-Check the [Migration article](migration.md/#71---72) to keep in step with the latest version.
+Check the [Migration article](migration.md#71---72) to keep in step with the latest version.
 
 ### New functionality
 
@@ -1879,13 +1879,13 @@ Check the [Migration article](migration.md/#71---72) to keep in step with the la
 - New "focus()" method of Form controls: [Button](form/api/button/button_focus_method.md), [Slider](form/api/slider/slider_focus_method.md)
 - New "blur" event of Form controls: [Button](form/api/button/button_blur_event.md), [DatePicker](form/api/calendar/calendar_blur_event.md), [Checkbox](form/api/checkbox/checkbox_blur_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_blur_event.md), [ColorPicker](form/api/colorpicker/colorpicker_blur_event.md), [Combo](form/api/combo/combo_blur_event.md), [Input](form/api/input/input_blur_event.md), [RadioGroup](form/api/radiogroup/radiogroup_blur_event.md), [Select](form/api/select/select_blur_event.md), [Slider](form/api/slider/slider_blur_event.md), [Textarea](form/api/textarea/textarea_blur_event.md), [TimePicker](form/api/timepicker/timepicker_blur_event.md)
 - New "focus" event of Form controls: [Button](form/api/button/button_focus_event.md), [DatePicker](form/api/calendar/calendar_focus_event.md), [Checkbox](form/api/checkbox/checkbox_focus_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_focus_event.md), [ColorPicker](form/api/colorpicker/colorpicker_focus_event.md), [Combo](form/api/combo/combo_focus_event.md), [Input](form/api/input/input_focus_event.md), [RadioGroup](form/api/radiogroup/radiogroup_focus_event.md), [Select](form/api/select/select_focus_event.md), [Slider](form/api/slider/slider_focus_event.md), [Textarea](form/api/textarea/textarea_focus_event.md), [TimePicker](form/api/timepicker/timepicker_focus_event.md)
-- New "keydown" event of Form controls: [Button](form/api/button/button_keydown_event.md), [DatePicker](form/api/calendar/calendar_keydown_event.md), [Checkbox](form/api/checkbox/checkbox_keydown_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_keydown_event.md), [ColorPicker](form/api/colorpicker/colorpicker_keydown_event.md), [Combo](form/api/combo/combo_keydown_event.md), [Input](form/api/input/input_keydown_event.md), [RadioGroup](form/api/radiogroup/radiogroup_keydown_event.md), [Select](suite/form/api/select/select_keydown_event.md), [Slider](form/api/slider/slider_keydown_event.md), [Textarea](form/api/textarea/textarea_keydown_event.md), [TimePicker](form/api/timepicker/timepicker_keydown_event.md)
+- New "keydown" event of Form controls: [Button](form/api/button/button_keydown_event.md), [DatePicker](form/api/calendar/calendar_keydown_event.md), [Checkbox](form/api/checkbox/checkbox_keydown_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_keydown_event.md), [ColorPicker](form/api/colorpicker/colorpicker_keydown_event.md), [Combo](form/api/combo/combo_keydown_event.md), [Input](form/api/input/input_keydown_event.md), [RadioGroup](form/api/radiogroup/radiogroup_keydown_event.md), [Select](form/api/select/select_keydown_event.md), [Slider](form/api/slider/slider_keydown_event.md), [Textarea](form/api/textarea/textarea_keydown_event.md), [TimePicker](form/api/timepicker/timepicker_keydown_event.md)
 
 #### Grid
 
-- New [multiselect editor](grid/configuration.md/#types-of-column-editor) is added
-- The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-filters) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
-- The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md/#types-of-column-editor) of the combo editor
+- New [multiselect editor](grid/configuration.md#types-of-column-editor) is added
+- The ability to [choose several options in comboFilter at once](grid/configuration.md#headerfooter-filters) via setting [multiselection:true](grid/configuration.md#the-list-of-configuration-properties-for-combofilter) property of comboFilter
+- The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md#types-of-column-editor) of the combo editor
 - The ability to specify the type to sort data as via the [sortAs](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
 - The ability to enable/disable sorting by clicking the header via the [headerSort](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
 
@@ -1908,20 +1908,20 @@ Check the [Migration article](migration.md/#71---72) to keep in step with the la
 #### Treegrid
 
 - New [multiselect editor](grid/configuration.md#types-of-column-editor) is added
-- The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-filters) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
-- The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](grid/configuration.md/#types-of-column-editor) of the combobox editor
+- The ability to [choose several options in comboFilter at once](grid/configuration.md#headerfooter-filters) via setting [multiselection:true](grid/configuration.md#the-list-of-configuration-properties-for-combofilter) property of comboFilter
+- The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](grid/configuration.md#types-of-column-editor) of the combobox editor
 - The ability to specify the type to sort data as via the [sortAs](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
 - The ability to enable/disable sorting by clicking the header via the [headerSort](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
 
 #### Helpers
 
-- [Custom scroll](../helpers/custom_scroll/) to replace the standard browser scrollbar is added (Pro version)
+- [Custom scroll](helpers/custom_scroll.md) to replace the standard browser scrollbar is added (Pro version)
 
 ### Updates
 
-- DataCollection. The [save()](data_collection/api/datacollection_save_method.md/) method of DataCollection is updated. Now the method sends either `POST`, or `PUT`, or `DELETE` requests to the [backend](../integration/suite_and_backend/).
-- Grid, TreeGrid. The "row" and "both" values of the [dragItem](grid/api/grid_dragitem_config.md/) configuration property are added.
-- Tree. Now it is possible to edit multiline content of a Tree item after setting [editable:true](tree/api/tree_editable_config.md/) configuration option of Tree
+- DataCollection. The [save()](data_collection/api/datacollection_save_method.md) method of DataCollection is updated. Now the method sends either `POST`, or `PUT`, or `DELETE` requests to the [backend](integration/suite_and_backend.md).
+- Grid, TreeGrid. The "row" and "both" values of the [dragItem](grid/api/grid_dragitem_config.md) configuration property are added.
+- Tree. Now it is possible to edit multiline content of a Tree item after setting [editable:true](tree/api/tree_editable_config.md) configuration option of Tree
 
 ### Fixes
 
@@ -2260,7 +2260,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 ### Major updates
 
-- [The new Pagination widget](pagination.md) is added (Pro version) 
+- [The new Pagination widget](/pagination/) is added (Pro version) 
 - <a href="https://github.com/DHTMLX/nodejs-suite-demo" target="_blank">Suite with Node.js demo</a> is added
 - <a href="https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-create-javascript-applications/" target="_blank">CSS templates for Suite widgets</a>
 - Layout. The configuration has become simpler, more concise and clearer.  New [type: "line", "space", "wide", "none"](layout/api/cell/layout_cell_type_config.md) allows creating Layout of the desired view.
@@ -2860,7 +2860,7 @@ Released on December 12, 2019
 
 #### Helpers
 
-- The ability to exchange data with a web server using [AJAX](ajax.md)
+- The ability to exchange data with a web server using [AJAX](/ajax/)
 
 ### Updates
 

@@ -75,9 +75,9 @@ const list = new dhx.List("list_container", {
 ~~~
 
 :::info
-To display data in List you should define a [template](list/configuration.md/#template-for-list-items) via the [template](list/api/list_template_config.md/) configuration property.
+To display data in List you should define a [template](list/configuration.md#template-for-list-items) via the [template](list/api/list_template_config.md) configuration property.
 
-Another way to display data in List is to prepare a data set with the ["value"](list/load_data.md/#preparing-data-set) attribute.
+Another way to display data in List is to prepare a data set with the ["value"](list/load_data.md#preparing-data-set) attribute.
 :::
 
 ### Configuration properties

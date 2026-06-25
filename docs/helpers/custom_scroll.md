@@ -6,7 +6,7 @@ description: You can have an overview of Custom Scroll in the documentation of t
 
 # Custom scroll
 
-[Custom Scroll](../../common_features/custom_scroll/) of the DHTMLX library is developed to replace the default browser scrollbars and make your application more attractive for the end users.
+[Custom Scroll](common_features/custom_scroll.md) of the DHTMLX library is developed to replace the default browser scrollbars and make your application more attractive for the end users.
 
 {{pronote The custom scroll is available only in PRO version of the DHTMLX Suite package.}}
 

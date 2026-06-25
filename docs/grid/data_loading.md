@@ -88,7 +88,7 @@ There are two ways to load data into Grid after its initialization:
 
 ### External data loading
 
-To load data from an external file, make use of the **load()** method of [Data Collection](data_collection.md). It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the **load()** method of [Data Collection](/data_collection/). It takes the URL of the file with data as a parameter:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container");
@@ -109,7 +109,7 @@ grid.data.load("/some/data").then(function(){
 
 ### Loading from local source
 
-To load data from a local data source, use the `parse()` method of [Data Collection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the `parse()` method of [Data Collection](/data_collection/). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container");
@@ -120,7 +120,7 @@ grid.data.parse(dataset);
 
 Note that for loading data from a **CSV file** into a grid, you need to:
 
-- [create a data driver](/helpers/datadrivers/#csv-format) with the `nameByHeader: true` setting. Thus the data from the first data line will be used as keys of items
+- [create a data driver](helpers/datadrivers.md#csv-format) with the `nameByHeader: true` setting. Thus the data from the first data line will be used as keys of items
 - pass the created driver as a second parameter to the `parse()` method
 
 Check the example below:
@@ -148,7 +148,7 @@ grid.data.parse(csvData, csvDataDriver);
 
 ## Saving and restoring state
 
-To save the current state of a grid, use the **serialize()** method of [Data Collection](data_collection.md). It converts the data of a grid into an array of JSON objects.
+To save the current state of a grid, use the **serialize()** method of [Data Collection](/data_collection/). It converts the data of a grid into an array of JSON objects.
 Each JSON object contains the configuration of a separate row.
 
 ~~~jsx

@@ -24,7 +24,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ri
 
 - You can get DHTMLX Ribbon as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Ribbon](https://snippet.dhtmlx.com/3djaib6o?tag=ribbon)
-- To work with data of Ribbon check [TreeCollection API](tree_collection.md)
+- To work with data of Ribbon check [TreeCollection API](/tree_collection/)
 
 ## Guides
 

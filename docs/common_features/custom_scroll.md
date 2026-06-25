@@ -42,7 +42,7 @@ list.data.load(data);
 list.scrollView.enable();
 ~~~
 
-For more details on the custom scroll configuration, read [this article](../../helpers/custom_scroll/). 
+For more details on the custom scroll configuration, read [this article](helpers/custom_scroll.md). 
 
 ## Custom scroll in Optimus demos
 
@@ -54,10 +54,10 @@ You may notice, that all DHTMLX demos built with Optimus have the custom scroll 
 
 | Demo                                                                                    | Related article                                                             |
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)      | learn more in [the related article](../../optimus_guides/filemanager_demo/) |
-| [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)       | learn more in [the related article](../../optimus_guides/dashboard_demo/)   |
-| [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/) | learn more in [the related article](../../optimus_guides/hotel_demo/)       |
-| [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/)            | learn more in [the related article](../../optimus_guides/geotracking_demo/) |
-| [Hospital Management](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/)        | learn more in [the related article](../../optimus_guides/hospital_demo/)    |
-| [Sales KPI Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/)              | learn more in [the related article](../../optimus_guides/kpi_demo/)         |
-| [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/)             | learn more in [the related article](../../optimus_guides/exam_demo/)        |
+| [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)      | learn more in [the related article](optimus_guides/filemanager_demo.md) |
+| [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)       | learn more in [the related article](optimus_guides/dashboard_demo.md)   |
+| [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/) | learn more in [the related article](optimus_guides/hotel_demo.md)       |
+| [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/)            | learn more in [the related article](optimus_guides/geotracking_demo.md) |
+| [Hospital Management](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/)        | learn more in [the related article](optimus_guides/hospital_demo.md)    |
+| [Sales KPI Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/)              | learn more in [the related article](optimus_guides/kpi_demo.md)         |
+| [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/)             | learn more in [the related article](optimus_guides/exam_demo.md)        |

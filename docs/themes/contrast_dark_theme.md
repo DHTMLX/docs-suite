@@ -8,7 +8,7 @@ description: You can explore the dark high contrast theme of DHTMLX Suite in the
 
 ![dark high contrast theme](../assets/themes/contrastdark_theme.png)
 
-The ["contrast-dark"](themes.md#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
+The ["contrast-dark"](/themes/#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
 
 ~~~css
 [data-dhx-theme='contrast-dark'] {

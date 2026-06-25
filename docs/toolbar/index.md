@@ -25,7 +25,7 @@ You can check the following page to learn how to build a full-featured DHTMLX To
 
 - You can get DHTMLX Toolbar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar)
-- To work with data of Toolbar check [TreeCollection API](tree_collection.md)
+- To work with data of Toolbar check [TreeCollection API](/tree_collection/)
 
 ## Guides
 

@@ -27,19 +27,19 @@ You can check the following page to learn how to build a full-featured DHTMLX Tr
 - To get just DHTMLX Tree, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml)
 - To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Tree](https://snippet.dhtmlx.com/hg3f50td?tag=tree)
-- To work with data of Tree check [TreeCollection API](tree_collection.md)
+- To work with data of Tree check [TreeCollection API](/tree_collection/)
   
 ## Guides
 
-- [](initialization_of_dhtmlxtree.md)
-- [](configuration.md)
-- [](loading_data.md)
-- [](drag_and_drop_handling.md)
-- [](work_with_tree.md)
-- [](usage_selection.md)
-- [](setting_tree_appearance.md)
-- [](events_handling.md)
+- [](tree/initialization_of_dhtmlxtree.md)
+- [](tree/configuration.md)
+- [](tree/loading_data.md)
+- [](tree/drag_and_drop_handling.md)
+- [](tree/work_with_tree.md)
+- [](tree/usage_selection.md)
+- [](tree/setting_tree_appearance.md)
+- [](tree/events_handling.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

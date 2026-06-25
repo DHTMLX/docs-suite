@@ -10,7 +10,7 @@ description: You can explore how to work with BlockSelection module of Grid in t
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can manage block selection within a grid via the API of the [`BlockSelection`](grid/configuration.md/#managing-block-selection-in-grid) module. It allows selecting ranges of cells using the mouse pointer, touch input, or keyboard navigation, visualizing the selection, and controlling behavior through various modes and handlers. It also supports an [event system](grid/api/api_overview.md/#blockselection-events) to track user actions, including keyboard and mouse combinations.
+You can manage block selection within a grid via the API of the [`BlockSelection`](grid/configuration.md#managing-block-selection-in-grid) module. It allows selecting ranges of cells using the mouse pointer, touch input, or keyboard navigation, visualizing the selection, and controlling behavior through various modes and handlers. It also supports an [event system](grid/api/api_overview.md#blockselection-events) to track user actions, including keyboard and mouse combinations.
 
 ![](../assets/grid/blockselection_module.png)
 
@@ -33,7 +33,7 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 The `blockSelection` property can also be set as an *object* to enable the module and provide additional configuration options.
-Learn about configuration possibilities of the `BlockSelection` module in the [Configuration](grid/configuration.md/#managing-block-selection-in-grid) guide.
+Learn about configuration possibilities of the `BlockSelection` module in the [Configuration](grid/configuration.md#managing-block-selection-in-grid) guide.
 
 **Related sample:** [Grid. BlockSelection in the "range" mode. Selection with restricted columns](https://snippet.dhtmlx.com/42fp5qvt)
 
@@ -103,7 +103,7 @@ console.log(grid.block.isDisabled()); // -> true
 
 ## Using events of the BlockSelection object
 
-To make the process of working with block selection more flexible, you can apply the [related events of the `block` object](grid/api/api_overview.md/#blockselection-events).
+To make the process of working with block selection more flexible, you can apply the [related events of the `block` object](grid/api/api_overview.md#blockselection-events).
 
 ## User-interface features 
 
@@ -116,8 +116,8 @@ The main points of cell selection while using the `BlockSelection` module are gi
 - The user selects a range by dragging the mouse from the initial cell to the end cell. For example, dragging from **A1** to **B3** creates the range **A1:B3**, which is highlighted.
 - The `Shift + click` combination allows extending the range from the current initial cell to the clicked cell.
 - The cell selection behavior depends on the applied mode: 
-    - the `"range"` mode uses the [**RangeSelection API**](grid/api/api_overview.md/#rangeselection-api)
-    - the `"manual"` mode requires specifying a custom logic via the [events](grid/api/api_overview.md/#blockselection-events)
+    - the `"range"` mode uses the [**RangeSelection API**](grid/api/api_overview.md#rangeselection-api)
+    - the `"manual"` mode requires specifying a custom logic via the [events](grid/api/api_overview.md#blockselection-events)
 
 ### Keyboard navigation
 
@@ -246,7 +246,7 @@ grid.events.on("beforeKeyDown", (event) => {
 
 The peculiarities of the selection handle functionality are the following: 
 
-- When the handle is enabled via [`blockSelection.handle`](grid/api/grid_blockselection_config.md/#parameters), it appears in the bottom-right corner of the range.
+- When the handle is enabled via [`blockSelection.handle`](grid/api/grid_blockselection_config.md#parameters), it appears in the bottom-right corner of the range.
 - When the handle is used with **default** settings (the `handler` property isn't specified in the `handle` object) and the `BlockSelection` module is used in the `"range"` mode, the behavior of the handle is the following:
 	- copies the value of the first cell of the selected range (or the entire range if selected) to new cells. For example, selecting **A1** (the value is "x") and dragging to **A3** fills **A2**, **A3** with "x".
     - if the range **A1:B1** (the values are "x" and "y", correspondingly) is selected, dragging to **D1** copies "x" to **C1** and "y" to **D1**.
@@ -259,7 +259,7 @@ The way of `BlockSelection` API interacting with other grid modules depends on w
 
 #### Range mode
 
-- The `BlockSelection` module uses the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api) to manage continuous rectangular ranges.
+- The `BlockSelection` module uses the [`RangeSelection` API](grid/api/api_overview.md#rangeselection-api) to manage continuous rectangular ranges.
 - The handle automatically fills data in the new range.
 - The selected range will be reset during data grouping or ungrouping.
 - The range will be reinstalled to a new one when moving columns or rows.
@@ -273,7 +273,7 @@ The way of `BlockSelection` API interacting with other grid modules depends on w
 
 #### Restricting selection in the Range mode
 
-This example shows how to control the start of a block selection and programmatically set a range using the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api).
+This example shows how to control the start of a block selection and programmatically set a range using the [`RangeSelection` API](grid/api/api_overview.md#rangeselection-api).
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {

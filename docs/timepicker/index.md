@@ -28,12 +28,12 @@ You can check the following page to learn how to build a full-featured DHTMLX Ti
 
 ## Guides
 
-- [](initialization.md)
-- [](configuration.md)
-- [](usage.md)
-- [](customization.md)
-- [](handling_events.md)
+- [](timepicker/initialization.md)
+- [](timepicker/configuration.md)
+- [](timepicker/usage.md)
+- [](timepicker/customization.md)
+- [](timepicker/handling_events.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

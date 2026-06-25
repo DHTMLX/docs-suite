@@ -84,5 +84,5 @@ tree.data.update("Books", { checkbox: false });
 ~~~
 
 **Related articles**: 
-- [Initialization](/tree/initialization_of_dhtmlxtree/#initialize-tree)
+- [Initialization](tree/initialization_of_dhtmlxtree.md#initialize-tree)
 - [Data loading](tree/loading_data.md#preparing-data-set)

@@ -17,7 +17,7 @@ If you are using an outdated version of DHTMLX Suite 5 and require the documenta
 
 #### Export to Excel module update
 
-Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for [exporting Grid data to an Excel file](grid/usage.md/#exporting-data-to-excel). As earlier, you can use either the public export server or a local export server.  
+Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for [exporting Grid data to an Excel file](grid/usage.md#exporting-data-to-excel). As earlier, you can use either the public export server or a local export server.  
 
 ##### From v9.2
 
@@ -241,7 +241,7 @@ Before v9.0, the format for dates in a column has been set by specifying the `ty
 }
 ~~~
 
-Since v9.0, to set the format for dates, you need to use the combination of the `type: "date"` property and the [`dateFormat`](/grid/configuration#setting-the-format-for-dates) option:
+Since v9.0, to set the format for dates, you need to use the combination of the `type: "date"` property and the [`dateFormat`](grid/configuration.md#setting-the-format-for-dates) option:
 
 ~~~jsx {3}title="From v9.0"
 { 
@@ -264,7 +264,7 @@ Before v9.0 the necessary format of data for a column has been specified via the
 }
 ~~~
 
-Since v9.0, the data format is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+Since v9.0, the data format is specified via the [`numberMask`](grid/configuration.md#numbermask) configuration option of a column object:
 
 ~~~jsx {6-8}title="From v9.0"
 {
@@ -289,7 +289,7 @@ Before v9.0, to display the percentage value in a column, the `type: "percent"` 
 }
 ~~~
 
-Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](grid/configuration.md#numbermask) configuration option of a column object:
 
 ~~~jsx {3}title="From v9.0"
 { 
