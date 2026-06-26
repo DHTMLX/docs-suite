@@ -3,6 +3,8 @@ sidebar_label: Step 6. Edit data in the Grid
 title: Step 6. Edit data in the Grid
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 We've already studied how to add and display components on the page. 
 
 The last part of this tutorial will teach you how to bind Grid to Toolbar, Window and ContextMenu to make it possible to edit data of the grid. 
@@ -29,7 +31,11 @@ function openAddWindow(){
 };
 ~~~
 
-<img style="margin: 12px" src="tutorial/binding_components/adding_item.png"/>
+<div className={styles.image}>
+
+![](/img/tutorial/binding_components/adding_item.png)
+
+</div>
 
 ### openEditWindow() function
 
@@ -41,7 +47,11 @@ In our app we consider several ways to open the editing window. They are:
 
 In all these cases we'll call the **openEditWindow** function to display the edit window on the page. 
 
-<img style="margin: 12px" src="tutorial/binding_components/editing_item.png"/>
+<div className={styles.image}>
+
+![](/img/tutorial/binding_components/editing_item.png)
+
+</div>
 
 All fields of the form inside the window will be filled with data from a selected grid row. If no row is selected in the grid, all data for the window will be selected from the 1st row of the grid.
 
@@ -156,7 +166,11 @@ Getting the result
 
 When you complete the steps described in this tutorial, you'll get an advanced demo application that allows editing data in the grid in several ways. This is how the ready app looks like:
 
-<img style="margin: 12px" src="tutorial/binding_components/binding_components.png"/>
+<div className={styles.image}>
+
+![](/img/tutorial/binding_components/binding_components.png)
+
+</div>
 
 
 <div id="tutorial_step">

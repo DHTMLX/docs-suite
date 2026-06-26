@@ -8,7 +8,7 @@ description: You can explore the SelectButton of Toolbar in the documentation of
 
 This is a button that contains a drop-down list of options.
 
-![](../assets/toolbar/selectbutton.png)
+![](/img/toolbar/selectbutton.png)
 
 **Related sample**: [Toolbar. SelectButton](https://snippet.dhtmlx.com/nqq5ej8w)
 

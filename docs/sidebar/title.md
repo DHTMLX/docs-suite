@@ -8,7 +8,7 @@ description: You can explore the Title of Sidebar in the documentation of the DH
 
 This is an item that contains some text.
 
-![](../assets/sidebar/title.png)
+![](/img/sidebar/title.png)
 
 ## Adding Title control
 

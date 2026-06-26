@@ -16,7 +16,7 @@ There are several modes of displaying Calendar, which are set via the [](calenda
 const calendar = new dhx.Calendar("calendar_container");
 ~~~
 
-![](../assets/calendar/calendar_mode.png)
+![](/img/calendar/calendar_mode.png)
 
 - **"month"** - only months of the current year are shown in the calendar 
 
@@ -26,7 +26,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-![](../assets/calendar/month_mode.png)
+![](/img/calendar/month_mode.png)
 
 - **"year"** - only years are shown, including the current one
 
@@ -36,7 +36,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-![](../assets/calendar/year_mode.png)
+![](/img/calendar/year_mode.png)
 
 **Related sample**: [Calendar. Calendar modes](https://snippet.dhtmlx.com/n9q0tc0q)
 
@@ -57,7 +57,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Disabled dates
 
-![](../assets/calendar/blocked_dates.png)
+![](/img/calendar/blocked_dates.png)
 
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
@@ -84,7 +84,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Displaying only current month
 
-![](../assets/calendar/this_month_only.png)
+![](/img/calendar/this_month_only.png)
 
 **Related sample**: [Calendar. The days of this month only](https://snippet.dhtmlx.com/4wi5hbtr)
 
@@ -98,7 +98,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Highlighted dates
 
-![](../assets/calendar/marked_dates.png)
+![](/img/calendar/marked_dates.png)
 
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
@@ -190,7 +190,7 @@ Please note that the format of date in the Calendar is defined by the dateFormat
 
 ## Numbers of weeks
 
-![](../assets/calendar/week_numbers.png)
+![](/img/calendar/week_numbers.png)
 
 **Related sample**: [Calendar. Numbers of weeks](https://snippet.dhtmlx.com/9692gk6n)
 
@@ -204,7 +204,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Range mode
 
-![](../assets/calendar/range_mode.png)
+![](/img/calendar/range_mode.png)
 
 **Related sample**: [Calendar. Range](https://snippet.dhtmlx.com/2mrj53h0)
 
@@ -224,7 +224,7 @@ The **value** option should have the array type and contain a pair of values (ei
 
 ## Start of the week
 
-![](../assets/calendar/weekstart_monday.png)
+![](/img/calendar/weekstart_monday.png)
 
 **Related sample**: [Calendar. Week start](https://snippet.dhtmlx.com/kaxmurh9)
 
@@ -248,7 +248,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-![](../assets/calendar/timepicker_format.png)
+![](/img/calendar/timepicker_format.png)
 
 **Related sample**: [Calendar. Timepicker In Calendar](https://snippet.dhtmlx.com/jkbfb202)
 
@@ -256,7 +256,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Width of calendar
 
-![](../assets/calendar/calendar_width.png)
+![](/img/calendar/calendar_width.png)
 
 **Related sample**: [Calendar. Calendar width](https://snippet.dhtmlx.com/azm0u5ns)
 

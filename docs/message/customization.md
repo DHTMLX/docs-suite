@@ -10,7 +10,7 @@ There is a possibility to make changes in the look and feel of a message box or 
 
 ## Using new CSS classes
 
-![](../assets/message/custom_style.png)
+![](/img/message/custom_style.png)
 
 To use a new CSS class you need to take the following steps:
 

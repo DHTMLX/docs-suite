@@ -6,7 +6,7 @@ description: You can explore how to connect DHTMLX Suite to a backend. Browse de
 
 # How to connect DHTMLX Suite to a backend
 
-![](../assets/integration/work_with_backend.png)
+![](/img/integration/work_with_backend.png)
 
 DHTMLX Suite 9 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API). Besides, the DHTMLX library allows providing a [multi-user backend](#multiuser-real-time-updated-backend-save-method-getting-editing-deleting-and-sending-data) for any Suite component.
 
@@ -34,7 +34,7 @@ In the examples pack, you will find:
 
 ### Form. Sending data
 
-![](../assets/integration/work_with_backend_form.png)
+![](/img/integration/work_with_backend_form.png)
 
 A nice Form to collect data. Easy to use and modify.
 
@@ -42,7 +42,7 @@ The following request method is used in this example: `POST`.
 
 ### Simple Vault. Sending data
 
-![](../assets/integration/work_with_backend_simplevault.png)
+![](/img/integration/work_with_backend_simplevault.png)
 
 Ready to use. The Simple Vault for files and folders.
 
@@ -50,7 +50,7 @@ The following request method is used in this example: `POST`.
 
 ### DataView. Getting data
 
-![](../assets/integration/work_with_backend_dataview.png)
+![](/img/integration/work_with_backend_dataview.png)
 
 One of the best ways to organize and display objects with similar information.
 
@@ -58,7 +58,7 @@ The following request method is used in this example: `GET`.
 
 ### List. Getting data
 
-![](../assets/integration/work_with_backend_list.png)
+![](/img/integration/work_with_backend_list.png)
 
 A List is another convenient way to organize information.
 
@@ -66,7 +66,7 @@ The following request method is used in this example: `GET`.
 
 ### Chart. Getting data
 
-![](../assets/integration/work_with_backend_chart.png)
+![](/img/integration/work_with_backend_chart.png)
 
 The Chart can help you visualize your data. It is interactive and useful for comparing the data you need.
 
@@ -74,7 +74,7 @@ The following request method is used in this example: `GET`.
 
 ### Grid. Getting data, inline editing, and sending data
 
-![](../assets/integration/work_with_backend_grid.png)
+![](/img/integration/work_with_backend_grid.png)
 
 Sorting and searching options are shown in the Grid example. You can also check how selection of rows and cells works.
 
@@ -82,7 +82,7 @@ The following request methods are used in this example: `GET`, `PUT`.
 
 ### Tree. Getting data, inline editing, and sending data
 
-![](../assets/integration/work_with_backend_tree.png)
+![](/img/integration/work_with_backend_tree.png)
 
 The sample of a Tree widget shows you the way to organize the information in a tree-like structure. You can drag-and-drop the items, rename them, and change the current example's structure.
 
@@ -90,9 +90,9 @@ The following request methods are used in this example: `GET`, `PUT`.
 
 ### DataView with Form and Window. Getting, editing, deleting, and sending data
 
-![](../assets/integration/work_with_backend_dataview_and_form.png)
+![](/img/integration/work_with_backend_dataview_and_form.png)
 
-![](../assets/integration/work_with_backend_dataview_card.png)
+![](/img/integration/work_with_backend_dataview_card.png)
 
 This example of DataView shows you more opportunities to manipulate the widget. Click the card to edit or delete it. Add a new card with the help of the corresponding button.
 
@@ -100,9 +100,9 @@ The following request methods are used in this example: `GET`, `PUT`, `POST`, `D
 
 ### List with Form and Window. Getting, editing, deleting, and sending data
 
-![](../assets/integration/work_with_backend_list_and_form.png)
+![](/img/integration/work_with_backend_list_and_form.png)
 
-![](../assets/integration/work_with_backend_list_card.png)
+![](/img/integration/work_with_backend_list_card.png)
 
 The example of an interactive List shows you the opportunities to delete and edit cards, add a new card.
 
@@ -110,9 +110,9 @@ The following request methods are used in this example: `GET`, `PUT`, `POST`, `D
 
 ### Grid with Form and Window. Getting, editing, deleting, and sending data
 
-![](../assets/integration/work_with_backend_grid_and_form.png)
+![](/img/integration/work_with_backend_grid_and_form.png)
 
-![](../assets/integration/work_with_backend_grid_card.png)
+![](/img/integration/work_with_backend_grid_card.png)
 
 The interactive Grid example helps you understand how simple you can manipulate the widget. You can also easily use this example in your own project.
 
@@ -120,7 +120,7 @@ The following request methods are used in this example: `GET`, `PUT`, `POST`, `D
 
 ### Save method. Getting, editing, deleting, and sending data
 
-![](../assets/integration/work_with_backend_save.png)
+![](/img/integration/work_with_backend_save.png)
 
 The example is created to show you how to save the changes made in data to the backend via the `save()` method of DataCollection. 
 

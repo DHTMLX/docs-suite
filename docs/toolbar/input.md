@@ -8,7 +8,7 @@ description: You can explore the Input of Toolbar in the documentation of the DH
 
 This is an input field for entering some text.
 
-![](../assets/toolbar/input.png)
+![](/img/toolbar/input.png)
 
 **Related sample**: [Toolbar. Input](https://snippet.dhtmlx.com/ykd0uii1)
 

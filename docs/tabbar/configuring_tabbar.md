@@ -8,7 +8,7 @@ description: You can explore the configuration of Tabbar in the documentation of
 
 ## Close buttons for tabs
 
-![](../assets/tabbar/close_button.png)
+![](/img/tabbar/close_button.png)
 
 **Related sample**: [Tabbar. Close button](https://snippet.dhtmlx.com/cysre4v8)
 
@@ -31,7 +31,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Disabled tabs
 
-![](../assets/tabbar/disabled_tab.png)
+![](/img/tabbar/disabled_tab.png)
 
 By default, all tabs in Tabbar are enabled. It is possible to make one or several tabs disabled using the [](tabbar/api/tabbar_disabled_config.md) configuration property:
 
@@ -51,7 +51,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Position of tabbar
 
-![](../assets/tabbar/mode.png)
+![](/img/tabbar/mode.png)
 
 **Related sample**: [Tabbar. Mode: top, left, right, bottom](https://snippet.dhtmlx.com/xq6k0tts)
 
@@ -130,7 +130,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Tabs without content
 
-![](../assets/tabbar/no_content.png)
+![](/img/tabbar/no_content.png)
 
 It is possible to render a tabbar without any content. Use the [noContent](tabbar/api/tabbar_nocontent_config.md) option for this purpose:
 
@@ -144,7 +144,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Alignment
 
-![](../assets/tabbar/tabbar_align.png)
+![](/img/tabbar/tabbar_align.png)
 
 Starting from v7.0, there is the ability to set alignment for tabs via the [tabAlign](tabbar/api/tabbar_tabalign_config.md) configuration option of Tabbar:
 

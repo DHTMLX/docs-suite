@@ -8,7 +8,7 @@ description: You can explore the Avatar of Form in the documentation of the DHTM
 
 A compact but useful control for swift uploading of an avatar into a form.
 
-![Avatar control](../assets/form/form_avatar.png)
+![Avatar control](/img/form/form_avatar.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

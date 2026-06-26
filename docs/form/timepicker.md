@@ -8,7 +8,7 @@ description: You can explore the TimePicker of Form in the documentation of the 
 
 A control that allows a user to select time value either by moving handles along track bars or by entering hour and minutes values directly into related inputs.
 
-![TimePicker](../assets/form/form_timepicker.png)
+![TimePicker](/img/form/form_timepicker.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

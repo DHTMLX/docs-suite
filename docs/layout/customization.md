@@ -10,7 +10,7 @@ description: You can explore the customization of Layout in the documentation of
 
 There is a possibility to make changes in the look and feel of a layout by styling its cells. 
 
-![Styling cells](../assets/layout/custom_css.png)
+![Styling cells](/img/layout/custom_css.png)
 
 **Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)
 

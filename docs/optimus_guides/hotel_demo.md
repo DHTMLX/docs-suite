@@ -8,7 +8,7 @@ description: description
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
-![](../assets/optimus/demo/hotel_demo.png)
+![](/img/optimus/demo/hotel_demo.png)
 
 This demo shows how to create a hotel management system based on DHTMLX Suite widgets: Layout, Grid, List, Toolbar, Sidebar, and Calendar.
 

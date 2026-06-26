@@ -25,7 +25,7 @@ const palette = [
 ];
 ~~~
 
-![](../assets/colorpicker/default_palette.png)
+![](/img/colorpicker/default_palette.png)
 
 **Related sample**: [Colorpicker. Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
 
@@ -46,7 +46,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 });
 ~~~
 
-![](../assets/colorpicker/custom_palette.png)
+![](/img/colorpicker/custom_palette.png)
 
 **Related sample**: [Colorpicker. Custom palette and custom colors](https://snippet.dhtmlx.com/097jjhb8)
 
@@ -54,7 +54,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 The default configuration of the Colorpicker palette includes a section with gray shades, which is shown at the top of palette. There is a possibility to hide this section showing just main colors: default or custom.
 
-![](../assets/colorpicker/no_shades_palette.png)
+![](/img/colorpicker/no_shades_palette.png)
 
 **Related sample**: [Colorpicker. Palette without gray shades](https://snippet.dhtmlx.com/b44fp8q2)
 
@@ -68,7 +68,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 ## List of custom colors
 
-![](../assets/colorpicker/custom_colors.png)
+![](/img/colorpicker/custom_colors.png)
 
 When Colorpicker is rendered on a page, its list of custom (user-defined) colors is empty. You can change this configuration and specify custom colors that should be shown in the related section on initialization of 
 the component via the [](colorpicker/api/colorpicker_customcolors_config.md) configuration option. Colors should be specified as an array of strings in the Hex format:
@@ -92,7 +92,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 In this mode the palette is not available and only the picker is displayed.
 
-![](../assets/colorpicker/picker_only.png)
+![](/img/colorpicker/picker_only.png)
 
 **Related sample**: [Colorpicker. Picker only](https://snippet.dhtmlx.com/5zlvvwpl)
 
@@ -104,7 +104,7 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 });
 ~~~
 
-![](../assets/colorpicker/palette_only.png)
+![](/img/colorpicker/palette_only.png)
 
 {{note Note that in the **paletteOnly** mode the palette is displayed without the panel with custom (user-defined) colors.}}
 
@@ -131,6 +131,6 @@ const colorpicker = new dhx.Colorpicker("colorpicker", {
 });
 ~~~
 
-![](../assets/colorpicker/colorpicker_transparency.png)
+![](/img/colorpicker/colorpicker_transparency.png)
 
 **Related sample**: [Colorpicker. Disable color transparency](https://snippet.dhtmlx.com/ewgu0aps?tag=colorpicker)

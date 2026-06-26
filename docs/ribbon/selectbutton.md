@@ -8,7 +8,7 @@ description: You can explore the SelectButton of Ribbon in the documentation of 
 
 This is a button that contains a drop-down list of options.
 
-![DHX Select Button](../assets/ribbon/select_button.png)
+![DHX Select Button](/img/ribbon/select_button.png)
 
 ## Adding SelectButton
 

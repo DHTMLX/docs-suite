@@ -6,7 +6,7 @@ description: You can explore the default theme of DHTMLX Suite in the documentat
 
 # Default theme
 
-![light theme](../assets/themes/light_theme.png)
+![light theme](/img/themes/light_theme.png)
 
 The [default ("light")](/themes/#suite-themes) theme is configured on the base of the CSS variables which are listed below:
 

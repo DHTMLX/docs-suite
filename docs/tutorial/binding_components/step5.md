@@ -3,6 +3,8 @@ sidebar_label: Step 5. Add buttons to Toolbar
 title: Step 5. Add buttons to Toolbar
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 We've already placed the "Load" and "Clear" buttons into Toolbar in the [previous tutorial](tutorial/basic_application/step3.md). 
 
 Now we need to add other buttons to Toolbar in order to edit, add or delete rows in the grid. This is how we add them:
@@ -28,7 +30,11 @@ toolbar.data.parse([
 ]);
 ~~~
 
-<img src="tutorial/binding_components/toolbar.png"/>
+<div className={styles.image}>
+
+![](/img/tutorial/binding_components/toolbar.png)
+
+</div>
 
 
 <div id="tutorial_step">

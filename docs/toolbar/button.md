@@ -8,7 +8,7 @@ description: You can explore the Button of Toolbar in the documentation of the D
 
 This is a simple button that can have an icon. Button can have two states and a badge with a number, which can be useful for displaying the number of new messages, etc.
 
-![](../assets/toolbar/buttons.png)
+![](/img/toolbar/buttons.png)
 
 **Related sample**: [Toolbar. Button](https://snippet.dhtmlx.com/7aysw3gb)
 

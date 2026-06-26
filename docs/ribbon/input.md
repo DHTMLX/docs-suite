@@ -8,7 +8,7 @@ description: You can explore the Input of Ribbon in the documentation of the DHT
 
 A text input field with an icon.
 
-![](../assets/ribbon/input.png)
+![](/img/ribbon/input.png)
 
 ## Adding Input
 

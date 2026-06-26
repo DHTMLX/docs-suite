@@ -8,7 +8,7 @@ description: You can explore the Select of Form in the documentation of the DHTM
 
 An advanced select box that provides a set of options to choose from.
 
-![Select control](../assets/form/form_select.png)
+![Select control](/img/form/form_select.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

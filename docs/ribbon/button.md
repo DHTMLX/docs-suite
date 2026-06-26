@@ -8,7 +8,7 @@ description: You can explore the Button of Ribbon in the documentation of the DH
 
 This is a simple button that can have an icon. Button can be *twoState* and can have a badge with a number, which can be useful for displaying the number of new messages, etc.
 
-![](../assets/ribbon/ribbon_button.png)
+![](/img/ribbon/ribbon_button.png)
 
 **Related sample**: [Ribbon. Group buttons](https://snippet.dhtmlx.com/nlviu82g)
 

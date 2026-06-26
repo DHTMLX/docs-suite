@@ -8,7 +8,7 @@ description: You can explore the ToggleGroup of Form in the documentation of the
 
 A control intended for creating groups of toggle buttons.
 
-![ToggleGroup control](../assets/form/form_togglegroup.png)
+![ToggleGroup control](/img/form/form_togglegroup.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

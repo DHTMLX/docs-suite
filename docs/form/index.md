@@ -9,7 +9,7 @@ description: You can have an overview of Form in the documentation of the DHTMLX
 DHTMLX Form is a typical form widget that can contain a number of adjustable and easy-to-use controls, supports data validation and localization of labels.
 Check [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=form). 
 
-![](../assets/form/form_front.png)
+![](/img/form/form_front.png)
 
 ## Features
 

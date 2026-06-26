@@ -10,7 +10,7 @@ In this article you will find the detailed list of properties that you can use i
 
 ## Message box
 
-![](../assets/message/show_message.png)
+![](/img/message/show_message.png)
 
 **Related sample**: [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
@@ -54,7 +54,7 @@ From v8.0, you can close a message box via the [close()](message/api/message_clo
 
 ## Alert box
 
-![](../assets/message/show_alert.png)
+![](/img/message/show_alert.png)
 
 **Related sample**: [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
@@ -74,7 +74,7 @@ dhx.alert({
 
 ## Confirm box
 
-![](../assets/message/show_confirm.png)
+![](/img/message/show_confirm.png)
 
 **Related sample**: [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
@@ -114,7 +114,7 @@ dhx.confirm({
 
 ## Tooltip
 
-![](../assets/message/show_tooltip.png)
+![](/img/message/show_tooltip.png)
 
 **Related sample**: [Message. Show Tooltip](https://snippet.dhtmlx.com/c6jm8if6)
 
@@ -141,7 +141,7 @@ dhx.tooltip("Tooltip From Right", {
 
 In the image below the target is adjacent to the right side of screen. Its tooltip that has the *position:"right"* attribute in the config object appears from the left side of the target.
 
-![Smart positioning](../assets/message/smart_tooltip.png)
+![Smart positioning](/img/message/smart_tooltip.png)
 
 ### Tooltip API
 

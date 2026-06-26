@@ -2,6 +2,9 @@
 sidebar_label: Step 4. Add a ContextMenu
 title: Step 4. Add a ContextMenu
 ---          
+
+import styles from '@site/src/css/tutorial.module.scss';
+
 In this step we consider how to add and display a context menu on the page.
 
 ##Adding ContextMenu on the page
@@ -78,7 +81,11 @@ grid.events.on("CellRightClick", function(row,column,e){
 
 After that a right-click on a grid cell will call a context menu we have specified.
 
-<img src="tutorial/binding_components/context_menu.png"/>
+<div className={styles.image}>
+
+![](/img/tutorial/binding_components/context_menu.png)
+
+</div>
 
 <div id="tutorial_step">
     <a id="next_step" href="tutorial/binding_components/step5.md"></a>

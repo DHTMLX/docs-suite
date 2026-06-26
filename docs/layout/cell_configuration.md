@@ -259,4 +259,4 @@ The available values of the option are "line", "wide", "space", "none".
 
 | type:"line"                         | type:"wide"                         | type:"space"                         | type:"none"                               |
 | ----------------------------------- | ----------------------------------- | ------------------------------------ | ----------------------------------------- |
-| ![](../assets/layout/line_type.png) | ![](../assets/layout/wide_type.png) | ![](../assets/layout/space_type.png) | ![](../assets/layout/without_borders.png) |
+| ![](/img/layout/line_type.png) | ![](/img/layout/wide_type.png) | ![](/img/layout/space_type.png) | ![](/img/layout/without_borders.png) |

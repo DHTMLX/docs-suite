@@ -349,7 +349,7 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 
 You can sort Grid by multiple columns simultaneously. 
 
-![](../assets/grid/multisorting_data.png)
+![](/img/grid/multisorting_data.png)
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
@@ -373,7 +373,7 @@ grid.data.sort({ by: "task_status", dir: "asc" });
 grid.data.sort({ by: "animal_type", dir: "asc" });
 ~~~
 
-![](../assets/grid/multisort_grouped_data.png)
+![](/img/grid/multisort_grouped_data.png)
 
 **Related sample**: [Grid. Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
 

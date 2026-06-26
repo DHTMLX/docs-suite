@@ -11,7 +11,7 @@ It possesses easy-to-configure interface that can be simply localized and custom
 
 Check [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb8?tag=colorpicker).
 
-![DHTMLX Colorpicker](../assets/colorpicker/colorpicker_front.png)
+![DHTMLX Colorpicker](/img/colorpicker/colorpicker_front.png)
 
 ## Features
 

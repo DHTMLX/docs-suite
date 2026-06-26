@@ -8,7 +8,7 @@ description: You can explore the customization of Combo Box in the documentation
 
 ## Styling
 
-![](../assets/combo/custom_css.png)
+![](/img/combo/custom_css.png)
 
 **Related sample**: [Combobox. Styling (custom CSS)](https://snippet.dhtmlx.com/lldd739i)
 
@@ -58,7 +58,7 @@ For example:
 
 ## Custom filter for options
 
-![Custom filter](../assets/combo/custom_filter.png)
+![Custom filter](/img/combo/custom_filter.png)
 
 It is possible to set a custom filtering function for the options of ComboBox via the [](combobox/api/combobox_filter_config.md) option. A custom function takes two parameters:
 

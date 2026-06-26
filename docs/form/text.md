@@ -8,7 +8,7 @@ description: You can explore the Text of Form in the documentation of the DHTMLX
 
 A control for adding some text.
 
-![Text](../assets/form/form_text.png)
+![Text](/img/form/form_text.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

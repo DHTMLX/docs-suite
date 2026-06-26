@@ -37,7 +37,7 @@ You can work with controls in the header/footer of a window in the same way as w
 
 Besides initial controls, you can add other controls into the header/footer on the fly. 
 
-![](../assets/window/custom_buttons.png)
+![](/img/window/custom_buttons.png)
 
 For this, you should apply the [](data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
 
@@ -96,7 +96,7 @@ dhxWindow.footer.data.remove("accept");
 
 There is a possibility to make changes in the look and feel of a window. 
 
-![](../assets/window/custom_style.png)
+![](/img/window/custom_style.png)
 
 **Related sample**: [Window. Styling (custom CSS)](https://snippet.dhtmlx.com/t5mvhwx8)
 

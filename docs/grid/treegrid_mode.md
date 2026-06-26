@@ -12,7 +12,7 @@ The TreeGrid mode of the Grid component is available in the **PRO** version only
 
 TreeGrid mode of the Grid component allows showing the nested tabular data. 
 
-![](../assets/treegrid/treegrid_front.png)
+![](/img/treegrid/treegrid_front.png)
 
 ## Initialization
 
@@ -217,7 +217,7 @@ The images below show drag-n-drop behaviour of items within a Grid in the TreeGr
 
 |   Dragging an item                                        |                Result                                     |
 |-----------------------------------------------------------|-----------------------------------------------------------|
-|![](../assets/treegrid/dropbehaviour_child.png)            | ![](../assets/treegrid/dropbehaviour_child_result.png)  |
+|![](/img/treegrid/dropbehaviour_child.png)            | ![](/img/treegrid/dropbehaviour_child_result.png)  |
 
 - "sibling" - a dragged item becomes a sibling of the item it is dragged to
 
@@ -225,7 +225,7 @@ The images below show the drag-n-drop behaviour of items within a Grid in the Tr
 
 |   Dragging an item                                         |                Result                                      |
 |----------------------------------------------------------- |----------------------------------------------------------- |
-|![](../assets/treegrid/dropbehaviour_sibling.png)  | ![](../assets/treegrid/dropbehaviour_sibling_result.png)   |
+|![](/img/treegrid/dropbehaviour_sibling.png)  | ![](/img/treegrid/dropbehaviour_sibling_result.png)   |
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting 
 

@@ -8,7 +8,7 @@ description: You can explore the configuration of DataView in the documentation 
 
 ## Arrow keys navigation
 
-![](../assets/dataview/arrow_navigation.png)
+![](/img/dataview/arrow_navigation.png)
 
 **Related sample**: [Dataview. Arrow navigation](https://snippet.dhtmlx.com/u7mgoly9)
 
@@ -100,7 +100,7 @@ const target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy
 
 ## Editing items
 
-![](../assets/dataview/editable.png)
+![](/img/dataview/editable.png)
 
 **Related sample**: [Dataview. Inline editing](https://snippet.dhtmlx.com/m8fbqcza)
 
@@ -112,7 +112,7 @@ const dataview = new dhx.DataView("dataview_container", {editable:true});
 
 ## Height of an item
 
-![](../assets/dataview/item_height.png)
+![](/img/dataview/item_height.png)
 
 **Related sample**: [Dataview. Setup Dataview item height](https://snippet.dhtmlx.com/cth9mwrf)
 
@@ -138,7 +138,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 ## Height of the Dataview
 
-![](../assets/dataview/dataview_height.png)
+![](/img/dataview/dataview_height.png)
 
 **Related sample**: [Dataview. Setup Dataview height](https://snippet.dhtmlx.com/g1k2l4q0)
 
@@ -158,7 +158,7 @@ const dataview = new dhx.DataView("dataview_container", {height: "400px"});
 
 ## Margins around DataView items
 
-![](../assets/dataview/gap.png)
+![](/img/dataview/gap.png)
 
 **Related sample**: [Dataview. Configure gap size](https://snippet.dhtmlx.com/ozsuww1q)
 
@@ -171,7 +171,7 @@ const dataview = new dhx.DataView("dataview_container", {itemsInRow: 4, gap: 20}
 
 ## Multiple selection of items
 
-![](../assets/dataview/multiselection.png)
+![](/img/dataview/multiselection.png)
 
 By default, you can select only one item in a dataview, since selection of another item resets selection of the previous one. To enable the possbility to select several DataView items, make use of the [](dataview/api/dataview_multiselection_config.md) configuration option:
 
@@ -192,7 +192,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 ## Number of items in a row
 
-![](../assets/dataview/items_in_row.png)
+![](/img/dataview/items_in_row.png)
 
 **Related sample**: [Dataview. Amount items in a row](https://snippet.dhtmlx.com/de4r8km3)
 
@@ -204,7 +204,7 @@ const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
 
 ## Selection of items
 
-![](../assets/dataview/disable_selection.png)
+![](/img/dataview/disable_selection.png)
 
 The default configuration of DataView provides you with the selection feature that allows highlighting a DataView item. To disable selection in a DataView you need to set the [](dataview/api/dataview_selection_config.md) configuration property to *false*:
 
@@ -216,7 +216,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 ## Template for DataView items
 
-![](../assets/dataview/template.png)
+![](/img/dataview/template.png)
 
 **Related sample**: [Dataview. With template](https://snippet.dhtmlx.com/d6l6grr7)
 

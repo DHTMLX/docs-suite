@@ -10,7 +10,7 @@ DHTMLX DataView allows rendering a collection of objects according to a specifie
 This component is especially useful, if you're creating an online store or an image gallery, or just want to display a number of similar objects on a page.
 Check [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview). 
 
-![](../assets/dataview/dataview_front.png)
+![](/img/dataview/dataview_front.png)
 
 ## Features
 

@@ -8,7 +8,7 @@ description: You can explore the ImageButton of Toolbar in the documentation of 
 
 This is a button with an image. Unlike a [button](toolbar/button.md), it does not have a text label, but can also have a badge with a number and can be two state.
 
-![](../assets/toolbar/image_button.png)
+![](/img/toolbar/image_button.png)
 
 **Related sample**: [Toolbar. ImageButton](https://snippet.dhtmlx.com/vdiha09g)
 

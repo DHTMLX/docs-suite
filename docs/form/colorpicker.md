@@ -8,7 +8,7 @@ description: You can explore the ColorPicker of Form in the documentation of the
 
 An input with a color picker attached to it for selecting a color.
 
-![ColorPicker](../assets/form/form_colorpicker.png)
+![ColorPicker](/img/form/form_colorpicker.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

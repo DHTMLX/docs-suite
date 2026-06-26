@@ -33,7 +33,7 @@ const toolbarData = [
 ];
 ~~~
 
-![](../assets/toolbar/fa_icons.png)
+![](/img/toolbar/fa_icons.png)
 
 **Related sample**: [Toolbar. Custom icons](https://snippet.dhtmlx.com/4aiwvow7)
 
@@ -43,7 +43,7 @@ const toolbarData = [
 
 There is a possibility to make changes in the look and feel of a toolbar. 
 
-![Styling Toolbar](../assets/toolbar/custom_style.png)
+![Styling Toolbar](/img/toolbar/custom_style.png)
 
 **Related sample**: [Toolbar. Styling (custom CSS)](https://snippet.dhtmlx.com/uekgjwsi)
 

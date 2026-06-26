@@ -87,7 +87,7 @@ const list = new dhx.List("list_container", {
 
 ## Editing items
 
-![](../assets/list/editable.png)
+![](/img/list/editable.png)
 
 **Related sample**: [List. Inline editing](https://snippet.dhtmlx.com/f26lfcai)
 
@@ -99,7 +99,7 @@ const list = new dhx.List("list_container", {editable:true});
 
 ## Height of an item
 
-![](../assets/list/item_height.png)
+![](/img/list/item_height.png)
 
 **Related sample**: [List. Setup list item height](https://snippet.dhtmlx.com/89buovn2)
 
@@ -127,7 +127,7 @@ When the [virtual](list/api/list_virtual_config.md) property is set to *true*, t
 
 ## Height of the List
 
-![](../assets/list/list_height.png)
+![](/img/list/list_height.png)
 
 **Related sample**: [List. Setup list height](https://snippet.dhtmlx.com/k2mj2sz7)
 
@@ -147,7 +147,7 @@ const list = new dhx.List("list_container", {height: "700px"});
 
 ## Multiple selection of items
 
-![](../assets/list/multiselection.png)
+![](/img/list/multiselection.png)
 
 **Related sample**: [List. Multiselection](https://snippet.dhtmlx.com/0sorkczm)
 
@@ -169,7 +169,7 @@ const list = new dhx.List("list_container", {
 
 ## Selection of items
 
-![](../assets/list/disable_selection.png)
+![](/img/list/disable_selection.png)
 
 **Related sample**: [List. Disable selection](https://snippet.dhtmlx.com/dk4czs1z)
 
@@ -181,7 +181,7 @@ const list = new dhx.List("list_container", {selection: false});
 
 ## Template for List items
 
-![](../assets/list/list_template.png)
+![](/img/list/list_template.png)
 
 **Related sample**: [List. HTML template for item](https://snippet.dhtmlx.com/gtzdwpj4)
 

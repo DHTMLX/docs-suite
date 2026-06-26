@@ -34,7 +34,7 @@ how the number of staff has increased over several years. Choose this variant wh
 
 ### Line chart
 
-![Line chart](../assets/chart/line_overview.png)
+![Line chart](/img/chart/line_overview.png)
 
 **Related sample**: [Chart. Line chart initialization](https://snippet.dhtmlx.com/t881qcim)
 
@@ -42,7 +42,7 @@ how the number of staff has increased over several years. Choose this variant wh
 
 ### Spline chart
 
-![Spline chart](../assets/chart/spline_overview.png)
+![Spline chart](/img/chart/spline_overview.png)
 
 **Related sample**: [Chart. Spline chart initialization](https://snippet.dhtmlx.com/2wvmdm0y)
 
@@ -54,7 +54,7 @@ The same as Line chart it displays data for certain periods. It greatly suits yo
 
 ### Bar chart
 
-![Bar chart](../assets/chart/bar_overview.png)
+![Bar chart](/img/chart/bar_overview.png)
 
 **Related sample**: [Chart. Bar chart initialization](https://snippet.dhtmlx.com/id9nbujd)
 
@@ -62,7 +62,7 @@ The same as Line chart it displays data for certain periods. It greatly suits yo
 
 ### X-Bar chart
 
-![X-Bar chart](../assets/chart/xbar_overview.png)
+![X-Bar chart](/img/chart/xbar_overview.png)
 
 **Related sample**: [Chart. X-Bar chart initialization](https://snippet.dhtmlx.com/qz80yw84)
 
@@ -74,7 +74,7 @@ Area chart is based on the Line chart. The difference is that areas below lines 
 
 ### Area chart
 
-![Area chart](../assets/chart/area_overview.png)
+![Area chart](/img/chart/area_overview.png)
 
 **Related sample**: [Chart. Area chart initialization](https://snippet.dhtmlx.com/nv6t6lvm)
 
@@ -82,7 +82,7 @@ Area chart is based on the Line chart. The difference is that areas below lines 
 
 ### SplineArea chart
 
-![SplineArea chart](../assets/chart/splinearea_overview.png)
+![SplineArea chart](/img/chart/splinearea_overview.png)
 
 **Related sample**: [Chart. Spline Area chart initialization](https://snippet.dhtmlx.com/bo82km4n)
 
@@ -94,7 +94,7 @@ Pie chart and its variations are the best choice when you deal with proportions 
 
 ### Pie and Pie 3D chart
 
-![Pie and Pie 3D charts](../assets/chart/pie_overview.png)
+![Pie and Pie 3D charts](/img/chart/pie_overview.png)
 
 **Related sample**: [Chart. Pie chart initialization](https://snippet.dhtmlx.com/jfbet749)
 
@@ -104,7 +104,7 @@ Pie chart and its variations are the best choice when you deal with proportions 
 
 ### Donut chart
 
-![Donut chart](../assets/chart/donut_overview.png)
+![Donut chart](/img/chart/donut_overview.png)
 
 **Related sample**: [Chart. Donut chart initialization](https://snippet.dhtmlx.com/lobb80ig)
 
@@ -115,7 +115,7 @@ Pie chart and its variations are the best choice when you deal with proportions 
 This one is a two-dimensional chart that allows placing one or several series of values over multiple numerical variables. For example, Radar chart will help you to study how a number of parameters 
 relate to one item (the center point of a chart) and compare their values.
 
-![Radar chart](../assets/chart/radar_overview.png)
+![Radar chart](/img/chart/radar_overview.png)
 
 **Related sample**: [Chart. Radar chart initialization](https://snippet.dhtmlx.com/6otf4h0t)
 
@@ -125,7 +125,7 @@ relate to one item (the center point of a chart) and compare their values.
 
 The peculiarity of Scatter Chart is that it allows exploring relations between two sets of data in order to find out possible dependencies or patterns.
 
-![Scatter chart](../assets/chart/scatter_overview.png)
+![Scatter chart](/img/chart/scatter_overview.png)
 
 **Related sample**: [Chart. Scatter chart initialization](https://snippet.dhtmlx.com/pkczfmpu)
 
@@ -135,7 +135,7 @@ The peculiarity of Scatter Chart is that it allows exploring relations between t
 
 A treemap chart presents a hierarchical visualization of data as a set of rectangular tiles and makes it easy to spot patterns. Several tiles can be collected into a group. The sizes of tiles are proportional to the values of the data items they represent.
 
-![Treemap chart](../assets/chart/treemap.png)
+![Treemap chart](/img/chart/treemap.png)
 
 **Related sample**: [Chart. Treemap chart initialization](https://snippet.dhtmlx.com/p31wzm0b)
 
@@ -153,7 +153,7 @@ The calendar heatmap chart is a two dimensional calendar view that uses graduate
 
 The chart helps to display and identify daily patterns or anomalies over the necessary period.
 
-![Calendar heatmap chart](../assets/chart/heatmap_overview.png)
+![Calendar heatmap chart](/img/chart/heatmap_overview.png)
 
 **Related samples:**
 

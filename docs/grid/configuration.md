@@ -604,7 +604,7 @@ const grid = new dhx.Grid("grid_container", {
 
 - setting HTML content for a particular column
 
-![](../assets/grid/html_content.png)
+![](/img/grid/html_content.png)
 
 If you want to add custom elements into cells of the specified column, you need to set the `htmlEnable:true` property in the [configuration of a column](grid/api/api_gridcolumn_properties.md):
 
@@ -1126,7 +1126,7 @@ const grid = new dhx.Grid("grid", {
 
 In case a user enters a value that goes beyond the limits specified by the above settings, the entered value is highlighted in red:
 
-![Validation of columns with the number type](../assets/grid/col_number_validation.png)
+![Validation of columns with the number type](/img/grid/col_number_validation.png)
 
 If the user ignores the warning and still tries to enter an unallowable value, it will be replaced with the minimum/maximum value defined in the `editorConfig` object by the `min/max` values. Thus, in the above example the entered value `200` will be replaced with `100`, since it is the upper limit set in the editor configuration.
 
@@ -1163,11 +1163,11 @@ From v7.3, you may allow end users to add new options into the combobox editor (
 
 The new option will be added into the combobox after the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list. 
 
-![](../assets/grid/combobox_editor.png)
+![](/img/grid/combobox_editor.png)
 
 At the same time, the created option will also appear in the drop-down list of the header/footer filters ([content: "selectFilter" | "comboFilter"](#headerfooter-filters)) of the column:
 
-![](../assets/grid/new_combobox_option.png)
+![](/img/grid/new_combobox_option.png)
 
 
 > To localize the *Create* option, translate the corresponding string and apply a ready locale to the Combobox component:
@@ -1623,11 +1623,11 @@ You can define the logic of setting the position of the Grid footer as well as o
 
 - `relative` - (default) the footer follows the content immediately. If the number of rows is small and doesn't fill the container, the footer moves up to stay attached with the last row.
 
-![](../assets/grid/footer_relative_position.png)
+![](/img/grid/footer_relative_position.png)
 
 - `bottom` - the footer and bottom-pinned (frozen) rows are strictly locked to the bottom edge of the container. They remain at the base of the component even if the content takes only a part of the available height.
 
-![](../assets/grid/footer_bottom_position.png)
+![](/img/grid/footer_bottom_position.png)
 
 Here is the example of positioning the footer and a frozen row at the bottom of the Grid, as presented in the above image:
 
@@ -2178,7 +2178,7 @@ The row expander functionality allows using nested content in Grid sub-rows. You
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-![](../assets/grid/row_expander.png)
+![](/img/grid/row_expander.png)
 
 ### Adding sub-rows 
 
@@ -2353,7 +2353,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-![](../assets/grid/subgrid_specific_rows.png)
+![](/img/grid/subgrid_specific_rows.png)
 
 In the above example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that sub-rows with the height 250px will be created for rows that have some data. For rows without data the `height:0` setting is specified, so sub-rows won't be created for these rows.
 
@@ -2499,7 +2499,7 @@ const grid = new dhx.Grid("grid_container", {
 
 It is possible to create as many levels of nested subgrids, as necessary. 
 
-![](../assets/grid/multi_level_nesting.png)
+![](/img/grid/multi_level_nesting.png)
 
 To specify the structure of a multi-level Grid nesting, do the following:
 
@@ -2763,7 +2763,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the look and feel of the drag panel that appears when the drag-n-drop functionality is activated. Check the details below.
 
-![](../assets/grid/dragpanel_module.png)
+![](/img/grid/dragpanel_module.png)
 
 To initialize the `DragPanel` module, you should enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration together with the [row Drag-and-Drop](#drag-n-drop) functionality (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties). For example:
 

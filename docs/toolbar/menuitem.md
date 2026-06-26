@@ -8,7 +8,7 @@ description: You can explore the MenuItem of Toolbar in the documentation of the
 
 MenuItem is a drop-down list of options, can contain its own sub-menu. 
 
-![](../assets/toolbar/menuitem.png)
+![](/img/toolbar/menuitem.png)
 
 ## Adding MenuItem
 

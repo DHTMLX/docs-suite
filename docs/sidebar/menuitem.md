@@ -8,7 +8,7 @@ description: You can explore the MenuItem of Sidebar in the documentation of the
 
 MenuItem is a drop-down list of options, can contain its own sub-menu. 
 
-![](../assets/sidebar/menuitem.png)
+![](/img/sidebar/menuitem.png)
 
 ## Adding MenuItem
 

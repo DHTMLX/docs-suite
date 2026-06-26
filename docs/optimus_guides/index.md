@@ -71,7 +71,7 @@ DHTMLX Optimus requires the files of the DHTMLX Suite library as dependencies. T
 
 After running the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/main" target="_blank">project</a> on the local server and opening `http://localhost:8080/` in your browser, you will see the following result:
 
-![](../assets/optimus/start_optimus.png)
+![](/img/optimus/start_optimus.png)
 
 Let's consider how we've created our demo application:
 

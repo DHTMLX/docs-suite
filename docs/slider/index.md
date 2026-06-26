@@ -10,7 +10,7 @@ DHTMLX Slider allows adding handy slider bars into web pages and applications. T
 
 Check [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider).
 
-![](../assets/slider/slider_front.png)
+![](/img/slider/slider_front.png)
 
 ## Features
 

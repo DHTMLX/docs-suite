@@ -8,7 +8,7 @@ description: You can explore the Spacer of Ribbon in the documentation of the DH
 
 This item takes space on the ribbon and is used for aligning controls.
 
-![DHX Ribbon spacer](../assets/ribbon/spacer.png)
+![DHX Ribbon spacer](/img/ribbon/spacer.png)
 
 ## Adding Spacer
 

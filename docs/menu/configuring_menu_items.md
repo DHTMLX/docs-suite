@@ -14,7 +14,7 @@ To operate Menu controls, you can use Menu API and [Tree Collection API](/tree_c
 
 MenuItem is a drop-down list of options.
 
-![Menu Item](../assets/menu/menu_item.png)
+![Menu Item](/img/menu/menu_item.png)
 
 ### Adding menuItem
 
@@ -41,7 +41,7 @@ See [the full list of properties](menu/api/api_menuitem_properties.md) that you 
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
-![](../assets/menu/htmlcontent.png)
+![](/img/menu/htmlcontent.png)
 
 ### Adding Custom HTML
 
@@ -67,7 +67,7 @@ See [the full list of properties](menu/api/api_customhtml_properties.md) that yo
 
 This is a horizontal (between menu options) or vertical (between menu items) line separating items/groups of items from each other.
 
-![](../assets/menu/separator.png)
+![](/img/menu/separator.png)
 
 ### Adding Separator
 
@@ -89,7 +89,7 @@ See [the full list of properties](menu/api/api_separator_properties.md) that you
 
 This item takes space on the toolbar and is used for aligning controls.
 
-![DHX Toolbar spacer](../assets/menu/spacer.png)
+![DHX Toolbar spacer](/img/menu/spacer.png)
 
 ### Adding Spacer
 

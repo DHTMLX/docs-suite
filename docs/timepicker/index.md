@@ -9,7 +9,7 @@ description: You can have an overview of Timepicker in the documentation of the 
 DHTMLX TimePicker is a useful component for selecting time in both 12-hour and 24-hour clock format. Based on Layout and Slider components, it will work smoothly as a part of any DHTMLX-based application.<br/>
 Check [online samples for DHTMLX TimePicker](https://snippet.dhtmlx.com/u9ge1a4z?tag=timepicker). 
 
-![](../assets/timepicker/dhx_timepicker.png)
+![](/img/timepicker/dhx_timepicker.png)
 
 ## Features
 

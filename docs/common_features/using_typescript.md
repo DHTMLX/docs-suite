@@ -8,7 +8,7 @@ description: You can learn about TypeScript support in the documentation of the 
 
 The dhtmlxSuite library of version 6.5 and higher lets you work with DHTMLX components faster and more effectively by using TypeScript definitions.
 
-![](../assets/guides/typescript1.png)
+![](/img/guides/typescript1.png)
 
 The library provides a built-in support of Typescript that should work out of the box.
 

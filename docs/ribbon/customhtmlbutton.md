@@ -8,7 +8,7 @@ description: You can explore the custom HTML button of Ribbon in the documentati
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
-![](../assets/ribbon/custom_html.png)
+![](/img/ribbon/custom_html.png)
 
 **Related sample**: [Ribbon. Custom HTML](https://snippet.dhtmlx.com/c0i0q3cu)
 

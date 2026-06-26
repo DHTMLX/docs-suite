@@ -8,7 +8,7 @@ description: You can explore how to work with Geo Tracking Demo using Optimus Fr
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
-![](../assets/optimus/demo/geotracking_demo.png)
+![](/img/optimus/demo/geotracking_demo.png)
 
 This demo shows how to create a geo tracking application for delivery management. It is developed using DHTMLX Suite widgets: Layout, Sidebar, Tabbar, Form, and Dataview.
 

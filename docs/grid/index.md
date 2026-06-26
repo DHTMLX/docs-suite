@@ -10,7 +10,7 @@ DHTMLX Grid is a flexible, smart, and easy-to-use JavaScript component which all
 
 Check [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid).   
 
-![](../assets/grid/grid_front.png)
+![](/img/grid/grid_front.png)
 
 ## Features
 

@@ -8,7 +8,7 @@ description: You can explore the Simple Vault of Form in the documentation of th
 
 A handy control for quick and easy uploading of a file or a set of files.
 
-![SimpleVault control](../assets/form/form_simplevault.png)
+![SimpleVault control](/img/form/form_simplevault.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

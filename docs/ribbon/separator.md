@@ -8,7 +8,7 @@ description: You can explore the Separator of Ribbon in the documentation of the
 
 This is a control that adds a line separating items/groups of items from each other.
 
-![DHX Ribbon with separators](../assets/ribbon/separator.png)
+![DHX Ribbon with separators](/img/ribbon/separator.png)
 
 ## Adding Separator
 

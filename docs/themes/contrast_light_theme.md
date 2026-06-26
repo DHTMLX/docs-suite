@@ -6,7 +6,7 @@ description: You can explore the light high contrast theme of DHTMLX Suite in th
 
 # Light high contrast theme
 
-![light high contrast theme](../assets/themes/contrastlight_theme.png)
+![light high contrast theme](/img/themes/contrastlight_theme.png)
 
 The ["contrast-light"](/themes/#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
 

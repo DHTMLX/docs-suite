@@ -8,7 +8,7 @@ description: You can explore the Textarea of Form in the documentation of the DH
 
 A control that allows a user to enter a simple multi-line text.
 
-![Textarea control](../assets/form/form_textarea.png)
+![Textarea control](/img/form/form_textarea.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

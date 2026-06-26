@@ -8,7 +8,7 @@ description: You can explore the DatePicker of Calendar in the documentation of 
 
 You can use DHTMLX Calendar as a date picker by putting it inside a popup. 
 
-![Date picker](./../assets/calendar/date_picker.png)
+![Date picker](/img/calendar/date_picker.png)
 
 First, you should create a popup and then attach a calendar into it. Follow the steps below:
 

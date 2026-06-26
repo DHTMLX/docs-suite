@@ -8,7 +8,7 @@ description: You can explore the Title of Toolbar in the documentation of the DH
 
 This is an item that contains some text.
 
-![](../assets/toolbar/title.png)
+![](/img/toolbar/title.png)
 
 **Related sample**: [Toolbar. Title](https://snippet.dhtmlx.com/dwynhb7o)
 

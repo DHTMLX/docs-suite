@@ -8,7 +8,7 @@ description: You can explore the Slider of Form in the documentation of the DHTM
 
 A control that allows selecting a numeric value by moving a thumb along a line with a fixed set of options.
 
-![Slider control](../assets/form/form_slider.png)
+![Slider control](/img/form/form_slider.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

@@ -10,7 +10,7 @@ DHTMLX Chart is a great tool for creating powerful charts for web applications. 
 both 2D and 3D presentation, different variants of data loading, and a whole kit of configuration settings for all elements of a chart interface. 
 Check [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=chart). 
 
-![](../assets/chart/line_overview.png)
+![](/img/chart/line_overview.png)
 
 ## Features
 

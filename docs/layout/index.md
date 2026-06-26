@@ -9,7 +9,7 @@ description: You can have an overview of Layout in the documentation of the DHTM
 DHTMLX Layout component lets you specify the main scheme of your application or web page, as it defines the arrangement of blocks with content. Layout helps blend diverse types of data representation on one page.<br/>
 Check [online samples for DHTMLX Layout](https://snippet.dhtmlx.com/f1f49n35?tag=layout).
 
-![](../assets/layout/layout.png)
+![](/img/layout/layout.png)
 
 ## Features
 

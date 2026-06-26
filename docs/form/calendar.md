@@ -8,7 +8,7 @@ description: You can explore the DatePicker of Form in the documentation of the 
 
 An input with a calendar attached to it for selecting a date.
 
-![DatePicker](../assets/form/form_datepicker.png)
+![DatePicker](/img/form/form_datepicker.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

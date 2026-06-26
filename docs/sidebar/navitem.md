@@ -8,7 +8,7 @@ description: You can explore the NavItem of Sidebar in the documentation of the 
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
-![](../assets/sidebar/navitem.png)
+![](/img/sidebar/navitem.png)
 
 ## Adding NavItem
 
