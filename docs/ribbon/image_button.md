@@ -8,7 +8,7 @@ description: You can explore the ImageButton of Ribbon in the documentation of t
 
 This is a button with an image. Unlike a [button](ribbon/button.md), it does not have a text label, but can also have a badge with a number and can be *twoState*.
 
-![DHX Ribbon imageButton](../assets/ribbon/image_button.png)
+![Ribbon image button showing a round user avatar with a name label in DHTMLX Suite](/img/ribbon/image_button.png)
 
 ## Adding ImageButton
 

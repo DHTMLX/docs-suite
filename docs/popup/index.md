@@ -10,7 +10,7 @@ DHTMLX Popup is a pop-up window that can contain various content. It allows atta
 
 Mainly, the component is applied for showing a pop-up content on some action, such as a button click. Check [online samples for DHTMLX Popup](https://snippet.dhtmlx.com/bz1ekc71?tag=popup).
 
-![](../assets/popup/popup_front.png)
+![Popup with a welcome message opened below a Show Popup button in DHTMLX Suite](/img/popup/popup_front.png)
 
 ## Features
 

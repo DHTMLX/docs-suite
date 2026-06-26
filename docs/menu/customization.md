@@ -40,7 +40,7 @@ const dataset = [
 ];
 ~~~
 
-![](../assets/menu/custom_icons.png)
+![Menu with an open Edit dropdown showing custom Font Awesome icons in DHTMLX Suite](/img/menu/custom_icons.png)
 
 **Related sample**: [Menu. Custom icons](https://snippet.dhtmlx.com/nkmz6ilv)
 
@@ -50,7 +50,7 @@ const dataset = [
 
 There is a possibility to make changes in the look and feel of a menu. 
 
-![](../assets/menu/custom_menu.png)
+![Dark-themed menu with a custom-styled File dropdown of file options in DHTMLX Suite](/img/menu/custom_menu.png)
 
 **Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)
 

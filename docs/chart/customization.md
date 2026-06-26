@@ -10,7 +10,7 @@ description: You can explore the customization of Chart in the documentation of 
 
 There is a possibility to make changes in the look and feel of a chart.
 
-![](../assets/chart/custom_style.png)
+![Bar chart styled with custom CSS on a dark background and orange bars in DHTMLX Suite](/img/chart/custom_style.png)
 
 **Related sample**: [Chart. Styling (custom CSS)](https://snippet.dhtmlx.com/p82iew5s)
 
@@ -81,7 +81,7 @@ For example:
 
 ## Adding template to scale labels
 
-![](../assets/chart/text_template.png)
+![Line chart with custom scale labels formatted by a text template in DHTMLX Suite](/img/chart/text_template.png)
 
 **Related sample**: [Chart. Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n)
 
@@ -112,7 +112,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ## Adding color gradient for bars
 
-![](../assets/chart/bar_gradient.png)
+![Bar chart with color gradient fill applied to the bars in DHTMLX Suite](/img/chart/bar_gradient.png)
 
 **Related sample**: [Chart. Bar chart. Gradient](https://snippet.dhtmlx.com/j3duyn2q)
 
@@ -157,7 +157,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ## Adding template to tooltips
 
-![](../assets/chart/show_tooltip.png)
+![Scatter chart with a custom tooltip template showing x and y values in DHTMLX Suite](/img/chart/show_tooltip.png)
 
 **Related sample**: [Chart. Tooltip template](https://snippet.dhtmlx.com/mbz7dkku)
 
@@ -197,7 +197,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ## Adding template to text values of data items in bars
 
-![](../assets/chart/show_text.png)
+![Bar chart with formatted dollar value labels shown on each bar in DHTMLX Suite](/img/chart/show_text.png)
 
 **Related sample**: [Chart. Show text](https://snippet.dhtmlx.com/o7ke2f1s)
 
@@ -248,7 +248,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ## Adding template to values of data items in Pie and Donut charts
 
-![](../assets/chart/show_percent_values.png)
+![Pie chart with percentage value labels on each slice in DHTMLX Suite](/img/chart/show_percent_values.png)
 
 **Related sample**: [Chart. Value template](https://snippet.dhtmlx.com/o7ke2f1s)
 

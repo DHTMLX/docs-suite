@@ -10,7 +10,7 @@ description: You can explore the customization of Timepicker in the documentatio
 
 There is a possibility to make changes in the look and feel of a timepicker. 
 
-![Styling Timepicker](../assets/timepicker/custom_style.png)
+![TimePicker styled with custom red color showing hours and minutes sliders in DHTMLX Suite](/img/timepicker/custom_style.png)
 
 **Related sample**: [Timepicker. Styling (custom CSS)](https://snippet.dhtmlx.com/n4xfu4e9)
 
