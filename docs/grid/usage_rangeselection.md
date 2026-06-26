@@ -10,7 +10,7 @@ description: You can explore how to work with RangeSelection module of Grid in t
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can manage range selection within a grid via the API of the [`RangeSelection`](grid/configuration.md/#managing-range-selection-in-grid) module. It provides methods for setting and resetting a range of cells, getting information about the current range, and checking whether specific cells belong to the selected range. It also supports an [event system](grid/api/api_overview.md/#rangeselection-events) to track changes.
+You can manage range selection within a grid via the API of the [`RangeSelection`](grid/configuration.md#managing-range-selection-in-grid) module. It provides methods for setting and resetting a range of cells, getting information about the current range, and checking whether specific cells belong to the selected range. It also supports an [event system](grid/api/api_overview.md#rangeselection-events) to track changes.
 
 ## Initializing the RangeSelection module
 
@@ -31,7 +31,7 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 The `rangeSelection` property can also be set as an *object* to enable the module and provide additional configuration options.
-Learn about configuration possibilities of the `RangeSelection` module in the [Configuration](grid/configuration.md/#managing-range-selection-in-grid) guide.
+Learn about configuration possibilities of the `RangeSelection` module in the [Configuration](grid/configuration.md#managing-range-selection-in-grid) guide.
 
 ## Enabling/disabling RangeSelection module
 

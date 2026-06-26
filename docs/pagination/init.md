@@ -86,7 +86,7 @@ Add two containers:
 ## Initialize a related widget
 
 :::note 
-DHTMLX Pagination can be used in conjunction with data components like [List](list.md), [DataView](dataview.md), [Tree](tree.md), [Grid](grid.md), or [Grid in the TreeGrid mode](/grid/treegrid_mode/).
+DHTMLX Pagination can be used in conjunction with data components like [List](/list/), [DataView](/dataview/), [Tree](/tree/), [Grid](/grid/), or [Grid in the TreeGrid mode](grid/treegrid_mode.md).
 :::
 
 Choose the widget you want to link to the Pagination component, for example, DHTMLX List. 

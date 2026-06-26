@@ -14,7 +14,7 @@ This is a default control for navigation-related components, can contain any oth
 
 ## Adding NavItem
 
-A navItem can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md).
+A navItem can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/).
 
 ~~~js
 toolbar.data.add({

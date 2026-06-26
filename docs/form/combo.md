@@ -77,4 +77,4 @@ const combo = form.getItem("combo").getWidget();  // -> ComboBox
 combo.focus(); // sets focus in the input
 ~~~
 
-Check [the full list of methods of the DHTMLX Combobox component](../../combobox/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/combo/combo_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Combobox component](combobox/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/combo/combo_getwidget_method.md) method.

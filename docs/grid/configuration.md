@@ -861,7 +861,7 @@ You can also save a date as a string representation of the Date object by settin
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 :::info
-You can configure the date picker by passing the [properties of Calendar](category/calendar-properties.md) (**except for** the `value` and `range` ones) to the `editorConfig` object, as in:
+You can configure the date picker by passing the [properties of Calendar](/category/calendar-properties/) (**except for** the `value` and `range` ones) to the `editorConfig` object, as in:
 
 ~~~jsx
 { 
@@ -1460,7 +1460,7 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 
 #### Redefining the default sorting for comboFilter
 
-By default the elements of the comboFilter are sorted by ID. You can modify the way of sorting elements in this type of the filter inside the handler of the [`beforeOpen`](/combobox/api/combobox_beforeopen_event/) event. For example, you can specify that the options in the comboFilter should be sorted by value in the following way:
+By default the elements of the comboFilter are sorted by ID. You can modify the way of sorting elements in this type of the filter inside the handler of the [`beforeOpen`](combobox/api/combobox_beforeopen_event.md) event. For example, you can specify that the options in the comboFilter should be sorted by value in the following way:
 
 ~~~jsx
 const comboFilter = grid.getHeaderFilter("access").getFilter();
@@ -1619,7 +1619,7 @@ const grid2 = new dhx.Grid("grid", {
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can define the logic of setting the position of the Grid footer as well as of the frozen rows fixed at the Grid bottom by the [`bottomSplit`](/grid/api/grid_bottomsplit_config/) option with another Grid property [`footerPosition`](/grid/api/grid_footerposition_config/). The property has the following values:
+You can define the logic of setting the position of the Grid footer as well as of the frozen rows fixed at the Grid bottom by the [`bottomSplit`](grid/api/grid_bottomsplit_config.md) option with another Grid property [`footerPosition`](grid/api/grid_footerposition_config.md). The property has the following values:
 
 - `relative` - (default) the footer follows the content immediately. If the number of rows is small and doesn't fill the container, the footer moves up to stay attached with the last row.
 
@@ -2655,7 +2655,7 @@ If you use the GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to
 **Note**, to be able to drag-n-drop a column and (or) multiple rows, you need to use PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-There are some peculiarities of the drag-n-drop functionality in the Grid in the TreeGrid mode. [Check the related section for details](/grid/treegrid_mode/#drag-n-drop).
+There are some peculiarities of the drag-n-drop functionality in the Grid in the TreeGrid mode. [Check the related section for details](grid/treegrid_mode.md#drag-n-drop).
 
 ### Drag-n-drop inside the grid
 
@@ -2692,7 +2692,7 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 :::tip
-To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).
+To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md#row-drag-and-drop).
 :::
 
 ### Drag-n-drop between grids
@@ -3072,7 +3072,7 @@ const grid = new dhx.Grid("grid_container", {
 The `clipboard` property can be set in two ways:
 
 - as a *boolean* value it enables or disables the `clipboard` module upon the component initialization
-- as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md/#using-formatter-functions) for data processing. The following properties are available:
+- as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md#using-formatter-functions) for data processing. The following properties are available:
     - `copyModifier` - (*function*) modifies data before copying to the clipboard. Accepts as parameters the cell value, the cell object, and the `cut` flag (set to `true`, if it's a cut operation)
     - `cutModifier` - (*function*) modifies the cell data before cutting (before clearing the cell). Accepts as parameters the cell value and the cell object
     - `pasteModifier` - (*function*) modifies data from the clipboard before pasting into a cell. Accepts as parameters the cell value and the cell object

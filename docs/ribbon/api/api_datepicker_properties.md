@@ -46,7 +46,7 @@ const data = [
 
 ### Description
 
-- `type` - (required) the type of a control, set it to `"datePicker"`, if not specified - the [navItem](../../../ribbon/navitem/) type is applied by default
+- `type` - (required) the type of a control, set it to `"datePicker"`, if not specified - the [navItem](ribbon/navitem.md) type is applied by default
 - `id` - (optional) the id of a control, auto-generated if not set
 - `parent` - (optional) the parent of the item
 - `value` - (optional) the value of a datepicker

@@ -19,7 +19,7 @@ You can check the following page to learn how to build a full-featured DHTMLX La
 
 ## API reference
 
-- [](api/api_overview.md)
+- [](layout/api/api_overview.md)
 
 ## Related resources
 
@@ -30,14 +30,14 @@ You can check the following page to learn how to build a full-featured DHTMLX La
 
 You can read the following articles to find out how to add Layout on the page and work with it.
 
-- [](initialization.md)
-- [](layout_structure.md)
-- [](layout_patterns.md)
-- [](cell_configuration.md)
-- [](work_with_layout.md)
-- [](customization.md)
-- [](events.md)
+- [](layout/initialization.md)
+- [](layout/layout_structure.md)
+- [](layout/layout_patterns.md)
+- [](layout/cell_configuration.md)
+- [](layout/work_with_layout.md)
+- [](layout/customization.md)
+- [](layout/events.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

@@ -9,7 +9,7 @@ description: You can explore the xlsx export method of Grid in the documentation
 @short: Exports data from a grid to an Excel file
 
 :::info
-DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for export of data to Excel. [Check the details](grid/usage.md/#exporting-data-to-excel).
+DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for export of data to Excel. [Check the details](grid/usage.md#exporting-data-to-excel).
 :::
 
 @signature: {'xlsx(config?: IXlsxExportConfig) => Promise<void>;'}
@@ -26,7 +26,7 @@ DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/d
     - `dateFormatMask?: string` - (optional) "dd/mm/yy" by default. The mask used for [dates formatting in Excel](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e)
 
 :::note
-You can specify extended export configuration settings via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) configuration property.
+You can specify extended export configuration settings via the Grid [`exportConfig`](grid/api/grid_exportconfig_config.md) configuration property.
 :::
 
 @returns:
@@ -54,7 +54,7 @@ grid.export.xlsx({
 
 **Related samples**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
-**Related article:** [Exporting Grid](grid/usage.md/#exporting-data-to-excel)
+**Related article:** [Exporting Grid](grid/usage.md#exporting-data-to-excel)
 
 **Change log:** 
 

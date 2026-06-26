@@ -69,4 +69,4 @@ timepicker.setValue("00:39"); //set the value as a string
 
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
-Check [the full list of methods of the DHTMLX Timepicker component](../../timepicker/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/timepicker/timepicker_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Timepicker component](timepicker/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method.

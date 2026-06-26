@@ -23,7 +23,7 @@ description: You can explore the API of Combo Box in the documentation of the DH
 | [](combobox/api/combobox_setvalue_method.md)   | @getshort(combobox/api/combobox_setvalue_method.md)   |
 
 :::info important
-Use [DataCollection methods](data_collection.md) to work with data.
+Use [DataCollection methods](/data_collection/) to work with data.
 :::
 
 ## Events
@@ -42,7 +42,7 @@ Use [DataCollection methods](data_collection.md) to work with data.
 | [](combobox/api/combobox_keydown_event.md)      | @getshort(combobox/api/combobox_keydown_event.md)      |
 
 :::info important
-Use [DataCollection events](data_collection.md#events) to work with data.
+Use [DataCollection events](/data_collection/#events) to work with data.
 :::
 
 ## Properties

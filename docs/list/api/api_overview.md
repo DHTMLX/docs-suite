@@ -19,8 +19,8 @@ description: You can explore the API of List in the documentation of the DHTMLX 
 | [](list/api/list_setfocus_method.md)         | @getshort(list/api/list_setfocus_method.md)         |
 
 :::info important
-- Use [the methods of DataCollection](data_collection.md) to work with data. 
-- Apply [the methods of Selection](selection.md#methods) to manage the selection of List items. 
+- Use [the methods of DataCollection](/data_collection/) to work with data. 
+- Apply [the methods of Selection](/selection/#methods) to manage the selection of List items. 
 :::
 
 ## Events
@@ -47,8 +47,8 @@ description: You can explore the API of List in the documentation of the DHTMLX 
 | [](list/api/list_itemrightclick_event.md)     | @getshort(list/api/list_itemrightclick_event.md)  |
 
 :::info important
-- Use [the events of DataCollection](data_collection.md#events) to work with data of List. 
-- Apply [the events of Selection](selection.md#events) to control the selection of List items. 
+- Use [the events of DataCollection](/data_collection/#events) to work with data of List. 
+- Apply [the events of Selection](/selection/#events) to control the selection of List items. 
 :::
 
 ## Properties

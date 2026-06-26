@@ -19,7 +19,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Fo
 
 ## API reference
 
-- [](api/api_overview.md)
+- [](form/api/api_overview.md)
 
 ## Related resources
 
@@ -32,9 +32,9 @@ You can check the following page to learn how to build a full-featured DHTMLX Fo
 
 Guides you through common information you may need while working with Form.
 
-- [](how_to_start.md)
-- [](localization.md)
-- [](configuration.md)
+- [](form/how_to_start.md)
+- [](form/localization.md)
+- [](form/configuration.md)
 - [](form/work_with_form.md)
 - [](form/customization.md)
 - [](form/handling_events.md)
@@ -66,4 +66,4 @@ Discusses the creation of Form controls and the possibilities of manipulating th
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

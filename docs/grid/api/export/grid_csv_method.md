@@ -18,7 +18,7 @@ description: You can explore the csv export method of Grid in the documentation 
     - `columnDelimiter?: string` - (optional) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
 
 :::note
-You can specify extended export configuration settings via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) configuration property.
+You can specify extended export configuration settings via the Grid [`exportConfig`](grid/api/grid_exportconfig_config.md) configuration property.
 :::
 
 @returns:

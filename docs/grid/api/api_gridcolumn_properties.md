@@ -13,7 +13,7 @@ Click the name of the necessary property to see the details on its usage.
 | [adjust](grid/api/gridcolumn_properties/gridcolumn_adjust_property.md) | (optional) *false* by default, defines whether the width of a column is automatically adjusted to its content |
 | [align](grid/api/gridcolumn_properties/gridcolumn_align_property.md) | (optional) aligns data in a column: *"left"*/*"center"*/*"right"*| 
 | [autoWidth](grid/api/gridcolumn_properties/gridcolumn_autowidth_property.md) | (optional) enables/disables the ability of a column to adjust its size to the size of Grid, *false* by default |
-| [closable](grid/api/gridcolumn_properties/gridcolumn_closable_property.md) | (optional)  either allows closing a particular element of the [`group`](../../api/grid_group_config/) panel or makes it permanently enabled (**PRO version only**)|
+| [closable](grid/api/gridcolumn_properties/gridcolumn_closable_property.md) | (optional)  either allows closing a particular element of the [`group`](grid/api/grid_group_config.md) panel or makes it permanently enabled (**PRO version only**)|
 | [dateFormat](grid/api/gridcolumn_properties/gridcolumn_dateformat_property.md) | (optional) defines the format of dates. The date format must include delimiters (spaces or symbols), otherwise an error will be thrown |
 | [draggable](grid/api/gridcolumn_properties/gridcolumn_draggable_property.md) | (optional) defines whether a column is draggable, *false* by default |
 | [editable](grid/api/gridcolumn_properties/gridcolumn_editable_property.md) | (optional) defines whether a column is editable, *false* by default |

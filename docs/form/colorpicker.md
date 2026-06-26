@@ -69,4 +69,4 @@ colorpicker.setFocus("#BDF0E9"); // sets focus on the "#BDF0E9" color
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
 
-Check [the full list of methods of the DHTMLX Colorpicker component](../../colorpicker/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/colorpicker/colorpicker_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Colorpicker component](colorpicker/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/colorpicker/colorpicker_getwidget_method.md) method.

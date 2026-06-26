@@ -70,4 +70,4 @@ datepicker.showDate(null,"month"); // shows the current month
 
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
-Check [the full list of methods of the DHTMLX Calendar component](../../calendar/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/calendar/calendar_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Calendar component](calendar/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/calendar/calendar_getwidget_method.md) method.
