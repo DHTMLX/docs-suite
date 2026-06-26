@@ -48,7 +48,7 @@ const grid = new dhx.Grid("grid_container", {
 The `clipboard` property can be set in two ways:
 
 - as a *boolean* value it enables or disables the `clipboard` module upon the component initialization
-- as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md/#using-formatter-functions) for data processing. The following properties are available:
+- as an *object* it enables the module and allows defining [modifier functions](grid/usage_clipboard.md#using-formatter-functions) for data processing. The following properties are available:
     - `copyModifier` - (*function*) modifies data before copying to the clipboard. Accepts as parameters the cell value, the cell object, and the `cut` flag (set to `true`, if it's a cut operation)
     - `cutModifier` - (*function*) modifies the cell data before cutting (before clearing the cell). Accepts as parameters the cell value and the cell object
     - `pasteModifier` - (*function*) modifies data from the clipboard before pasting into a cell. Accepts as parameters the cell value and the cell object
@@ -77,7 +77,7 @@ const grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid. Clipboard. Custom copy/cut/paste for number and date columns](https://snippet.dhtmlx.com/dfj49xah)
 
 **Related articles:** 
-- [Clipboard](grid/configuration.md/#clipboard)
+- [Clipboard](grid/configuration.md#clipboard)
 - [Work with Clipboard module](grid/usage_clipboard.md)
 
 @changelog: added in v9.2

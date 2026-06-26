@@ -15,7 +15,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 :::note
 The `dropBehaviour` property is available only in the TreeGrid mode with the enabled drag-n-drop functionality.
 
-To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](/grid/api/grid_dragitem_config/) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](/grid/api/grid_dragmode_config/) property.
+To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](grid/api/grid_dragitem_config.md) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](grid/api/grid_dragmode_config.md) property.
 :::
 
 @signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
@@ -43,4 +43,4 @@ There are three modes of behaviour of a dragged item, depending on the value set
 
 **Related sample**: [Grid (TreeGrid). Drop behaviour](https://snippet.dhtmlx.com/o2v3pcg0)
 
-**Related article**: [Drop behaviour](/grid/treegrid_mode/#drop-behaviour)
+**Related article**: [Drop behaviour](grid/treegrid_mode.md#drop-behaviour)

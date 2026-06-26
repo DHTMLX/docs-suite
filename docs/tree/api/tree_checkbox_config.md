@@ -18,5 +18,5 @@ const tree = new dhx.Tree("tree_container", { checkbox: true });
 **Related sample**: [Tree. Inline editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
 
 **Related articles**: 
-- [Initialization](/tree/initialization_of_dhtmlxtree/#initialize-tree)
-- [Configuration](/tree/configuration/#checkboxes-for-items)
+- [Initialization](tree/initialization_of_dhtmlxtree.md#initialize-tree)
+- [Configuration](tree/configuration.md#checkboxes-for-items)

@@ -8,12 +8,12 @@ description: You can learn how to work with DataCollection in the documentation 
 
 The DHTMLX library includes two invisible components (in other words, helpers) that serve to store data:
 
-- [DataCollection](data_collection.md/) - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
-- [TreeCollection](tree_collection.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode)
+- [DataCollection](/data_collection/) - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
+- [TreeCollection](/tree_collection/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode)
 
 API methods and events of DataCollection and TreeCollection let you work with data items, namely to load, process, and edit the items.
 
-The helpers allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List with the help of the [](../data_collection/api/datacollection_load_method.md) method of DataCollection.
+The helpers allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List with the help of the [](data_collection/api/datacollection_load_method.md) method of DataCollection.
 
 :::info
 Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
@@ -21,7 +21,7 @@ Please note that if you specify the `id` fields in the data collection, their va
 
 In this article we will consider how to work with DataCollection.
 
-Check all the methods and events of [Data Collection API](data_collection.md/).
+Check all the methods and events of [Data Collection API](/data_collection/).
 
 ## Common features of DataCollection
 
@@ -68,7 +68,7 @@ The `serialize()` method is used to serialize data into JSON, XML or CSV format.
 
 You can group the data of a component using the `group()` method and remove data groups via the `ungroup()` method. The `isGrouped()` method allows you to check whether a data collection is grouped.
 
-Check all the [methods](data_collection.md/#methods) of DataCollection.
+Check all the [methods](/data_collection/#methods) of DataCollection.
 
 ### DataCollection events
 
@@ -85,9 +85,9 @@ where:
 
 Events of DataCollection are helpful when you need to configure a system response to the changes made in data.
 
-Check all the [events](data_collection.md/#events) of DataCollection.
+Check all the [events](/data_collection/#events) of DataCollection.
 
-Check how to work with events in the [Events basic rules](guides/events_guide.md/) guide.
+Check how to work with events in the [Events basic rules](guides/events_guide.md) guide.
 
 ## The DataCollection usage sample
 
@@ -121,7 +121,7 @@ const list = new dhx.List("list_container", {
 });
 ~~~
 
-For more information about List initialization check [here](list/initialization.md/).
+For more information about List initialization check [here](list/initialization.md).
 
 As you can see, we've initialized the list but it is still empty. To fill in our list with data we need to take the following steps:
 
@@ -265,7 +265,7 @@ Please note that if you specify the `id` fields in the data set, their values sh
 </script>
 ~~~
 
-- Then, to load the prepared data into the list we apply the [](../data_collection/api/datacollection_parse_method.md) method of DataCollection:
+- Then, to load the prepared data into the list we apply the [](data_collection/api/datacollection_parse_method.md) method of DataCollection:
 
 ~~~jsx
 list.data.parse(data);
@@ -273,7 +273,7 @@ list.data.parse(data);
 
 As a result, the list of books is rendered on the page according to the specified template. We took a small part of the list just for a convenience sample, in real-life practice, the list can be very huge.
 
-Now, let's add a new book to the list. To do that, we need to use the [](../data_collection/api/datacollection_add_method.md) method of DataCollection:
+Now, let's add a new book to the list. To do that, we need to use the [](data_collection/api/datacollection_add_method.md) method of DataCollection:
 
 ~~~jsx
 list.data.add(
@@ -296,13 +296,13 @@ list.data.add(
 Note, that we have added the new item into the list but not into the data set.
 
 
-To save the current state of the list we will serialize the component data with the  help of the [](../data_collection/api/datacollection_serialize_method.md) method of DataCollection. 
+To save the current state of the list we will serialize the component data with the  help of the [](data_collection/api/datacollection_serialize_method.md) method of DataCollection. 
 
 ~~~jsx
 const state = list.data.serialize();
 ~~~
 
-After that, we can parse the serialized data to the new list. We will use the [](../data_collection/api/datacollection_parse_method.md) method for it.
+After that, we can parse the serialized data to the new list. We will use the [](data_collection/api/datacollection_parse_method.md) method for it.
 
 Do not forget to add a separate container for the new component.
 

@@ -20,26 +20,26 @@ You can check the following page to learn how to build a full-featured DHTMLX Da
 
 ## API reference
 
-- [](api/api_overview.md)
+- [](dataview/api/api_overview.md)
 
 ## Related resources
 
 - You can get DHTMLX DataView as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview)
-- To work with data of DataView check [DataCollection API](data_collection.md)
+- To work with data of DataView check [DataCollection API](/data_collection/)
 
 ## Guides
 
 You can read the following articles to find out how to add DataView on the page and work with it.
 
-- [](initialization.md)
-- [](configuration.md)
-- [](data_loading.md)
-- [](manipulating_data.md)
-- [](usage_selection.md)
-- [](customization.md)
-- [](events.md)
+- [](dataview/initialization.md)
+- [](dataview/configuration.md)
+- [](dataview/data_loading.md)
+- [](dataview/manipulating_data.md)
+- [](dataview/usage_selection.md)
+- [](dataview/customization.md)
+- [](dataview/events.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

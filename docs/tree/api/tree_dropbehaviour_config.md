@@ -34,4 +34,4 @@ There are three modes of behaviour of a dragged tree item, depending on the valu
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting (check the above images)
 
-**Related article**: [Drop behaviour](/tree/drag_and_drop_handling/#drop-behaviour)
+**Related article**: [Drop behaviour](tree/drag_and_drop_handling.md#drop-behaviour)

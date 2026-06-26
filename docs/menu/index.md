@@ -24,7 +24,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Me
 
 - You can get DHTMLX Menu as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu)
-- To work with data of Menu check [TreeCollection API](tree_collection.md)
+- To work with data of Menu check [TreeCollection API](/tree_collection/)
 
 ## Guides
 

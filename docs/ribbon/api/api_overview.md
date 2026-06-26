@@ -25,7 +25,7 @@ description: You can explore the API of Ribbon in the documentation of the DHTML
 | [](ribbon/api/ribbon_unselect_method.md)    | @getshort(ribbon/api/ribbon_unselect_method.md)    |
 
 :::info important
-Use [TreeCollection methods](tree_collection.md) to work with data. 
+Use [TreeCollection methods](/tree_collection/) to work with data. 
 :::
 
 ## Ribbon events
@@ -42,7 +42,7 @@ Use [TreeCollection methods](tree_collection.md) to work with data.
 | [](ribbon/api/ribbon_openmenu_event.md)     | @getshort(ribbon/api/ribbon_openmenu_event.md)     |
 
 :::info important
-Use [TreeCollection events](tree_collection.md#events) to work with data. 
+Use [TreeCollection events](/tree_collection/#events) to work with data. 
 :::
 
 ## Ribbon properties

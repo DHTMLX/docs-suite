@@ -10,7 +10,7 @@ description: You can explore how to connect DHTMLX Suite to a backend. Browse de
 
 DHTMLX Suite 9 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API). Besides, the DHTMLX library allows providing a [multi-user backend](#multiuser-real-time-updated-backend-save-method-getting-editing-deleting-and-sending-data) for any Suite component.
 
-The DHTMLX library includes the [DataCollection](/data_collection/) helper that completely supports REST API for dealing with the backend. Thus, to transfer data from your backend to the Suite components, all you need to do is create a valid JSON dataset. You can load it into the component using the [load()](/data_collection/api/datacollection_load_method/) method of DataCollection.
+The DHTMLX library includes the [DataCollection](/data_collection/) helper that completely supports REST API for dealing with the backend. Thus, to transfer data from your backend to the Suite components, all you need to do is create a valid JSON dataset. You can load it into the component using the [load()](data_collection/api/datacollection_load_method.md) method of DataCollection.
 
 
 

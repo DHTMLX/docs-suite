@@ -38,11 +38,11 @@ For information on disabling/enabling selection of an item, read [Enabling/Disab
 
 ## Using Data Collection API
 
-You can manipulate List items with the help of the [Data Collection API](data_collection.md).
+You can manipulate List items with the help of the [Data Collection API](/data_collection/).
 
 ### Adding items into List
 
-It is possible to add more items into the initialized List on the fly. Use the [add()](../../data_collection/api/datacollection_add_method/) method of Data Collection. It takes two parameters:
+It is possible to add more items into the initialized List on the fly. Use the [add()](data_collection/api/datacollection_add_method.md) method of Data Collection. It takes two parameters:
 
 <table>
     <tbody>
@@ -66,7 +66,7 @@ list.data.add({value:"New item"},1);
 
 ### Updating List items
 
-You can change config options of the item via the [update()](../../data_collection/api/datacollection_update_method/) method of Data Collection. It takes two parameters:
+You can change config options of the item via the [update()](data_collection/api/datacollection_update_method.md) method of Data Collection. It takes two parameters:
 
 <table>
     <tbody>
@@ -93,13 +93,13 @@ list.data.update("option_id",{
 
 ### Removing items from List
 
-To remove an item, make use of the [remove()](../../data_collection/api/datacollection_remove_method/) method of Data Collection. Pass the id of the item that should be removed to the method:
+To remove an item, make use of the [remove()](data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass the id of the item that should be removed to the method:
 
 ~~~js
 list.data.remove("option_id");
 ~~~
 
-To remove all items at once, use the [removeAll()](../../data_collection/api/datacollection_removeall_method/) method of DataCollection:
+To remove all items at once, use the [removeAll()](data_collection/api/datacollection_removeall_method.md) method of DataCollection:
 
 ~~~js
 list.data.removeAll();
@@ -109,9 +109,9 @@ list.data.removeAll();
 
 ### Filtering List data
 
-You can filter List data by the specified criteria with the help of the [filter()](../../data_collection/api/datacollection_filter_method/) method of Data Collection.
+You can filter List data by the specified criteria with the help of the [filter()](data_collection/api/datacollection_filter_method.md) method of Data Collection.
 
-Check all details on the parameters of the method in the [Data Collection API](data_collection.md).
+Check all details on the parameters of the method in the [Data Collection API](/data_collection/).
 
 ~~~js
 list.data.filter({
@@ -127,9 +127,9 @@ Filtering can be applied to any attribute of a data item.
 
 ### Sorting List data
 
-It is possible to sort data in List via the [sort()](../../data_collection/api/datacollection_sort_method/) method of Data Collection.
+It is possible to sort data in List via the [sort()](data_collection/api/datacollection_sort_method.md) method of Data Collection.
 
-Check all details on the parameters of the method in the [Data Collection API](data_collection.md).
+Check all details on the parameters of the method in the [Data Collection API](/data_collection/).
 
 ~~~js
 list.data.sort({ 

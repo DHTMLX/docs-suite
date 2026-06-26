@@ -128,7 +128,7 @@ grid.getHeaderFilter("country").clear();
 
 #### Adding a row
 
-You may add a new row into the grid by using the [](../data_collection/api/datacollection_add_method.md) method of **DataCollection**:
+You may add a new row into the grid by using the [](data_collection/api/datacollection_add_method.md) method of **DataCollection**:
 
 ~~~jsx
 grid.data.add({
@@ -148,7 +148,7 @@ grid.data.add({
 
 #### Removing a row
 
-To remove the necessary row from the grid, apply the [](../data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
+To remove the necessary row from the grid, apply the [](data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
 
 ~~~jsx
 grid.data.remove("5");
@@ -163,11 +163,11 @@ grid.data.remove(cell.row.id);
 
 **Related sample**: [Grid. Delete row](https://snippet.dhtmlx.com/8ezuj7io)
 
-For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md/#selection) and [Work with selection object](grid/usage_selection.md) articles.
+For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md#selection) and [Work with selection object](grid/usage_selection.md) articles.
 
 #### Removing all rows
 
-If you need to remove all rows at once, use the [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
+If you need to remove all rows at once, use the [](data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
 
 ~~~jsx
 grid.data.removeAll();
@@ -267,7 +267,7 @@ grid.removeSpan("10", "a");
 
 ### Filtering data
 
-You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](/data_collection/). The method takes as a parameter an object with the properties described below:
 
 <table>
     <tbody>
@@ -312,7 +312,7 @@ grid.data.filter({
 
 ### Sorting data
 
-It is possible to sort data in the grid via the `sort()` method of [DataCollection](data_collection.md). The method takes two parameters:
+It is possible to sort data in the grid via the `sort()` method of [DataCollection](/data_collection/). The method takes two parameters:
 
 <table>
     <tbody>
@@ -353,7 +353,7 @@ You can sort Grid by multiple columns simultaneously.
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
-Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](data_collection.md) by several columns:
+Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](/data_collection/) by several columns:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -473,7 +473,7 @@ The [](grid/api/grid_editend_method.md) method does not work if [the type of the
 
 ### Exporting data
 
-You can easily export data of Grid into the Excel, CSV, PDF, or PNG format. Besides the standard functionality of the `Export` module methods described below, you can also [provide advanced configuring of parameters for Grid export](/grid/usage/#extended-export-configuration-settings) via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) property.
+You can easily export data of Grid into the Excel, CSV, PDF, or PNG format. Besides the standard functionality of the `Export` module methods described below, you can also [provide advanced configuring of parameters for Grid export](grid/usage.md#extended-export-configuration-settings) via the Grid [`exportConfig`](grid/api/grid_exportconfig_config.md) property.
 
 #### Exporting data to Excel
 
@@ -575,9 +575,9 @@ grid.export.png({
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-There is a possibility to provide an advanced configuring of parameters for Grid export into the CSV, XLSX, PDF, and PNG formats with the [`exportConfig`](/grid/api/grid_exportconfig_config/) property.
+There is a possibility to provide an advanced configuring of parameters for Grid export into the CSV, XLSX, PDF, and PNG formats with the [`exportConfig`](grid/api/grid_exportconfig_config.md) property.
 
-Unlike the standard export, [`exportConfig`](/grid/api/grid_exportconfig_config/) allows you to dynamically modify the structure and content of the resulting document at the moment the export function is called. With this property, you can:
+Unlike the standard export, [`exportConfig`](grid/api/grid_exportconfig_config.md) allows you to dynamically modify the structure and content of the resulting document at the moment the export function is called. With this property, you can:
 
 - **filter data**: exclude specific rows, columns, or spans by returning `null` in the corresponding callback methods
 - **transform content**: modify headers, format values, or strip HTML templates to ensure data is displayed correctly in spreadsheet editors
@@ -1181,11 +1181,11 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Using DataCollection API for data grouping
 
-After you've [enabled grouping in Grid](#enabling-data-grouping), you can use the [DataCollection API](../../data_collection) to work with data grouping.
+After you've [enabled grouping in Grid](#enabling-data-grouping), you can use the [DataCollection API](/data_collection/) to work with data grouping.
 
 #### Grouping Grid data
 
-To group Grid data, use the [](../data_collection/api/datacollection_group_method.md) method of DataCollection.
+To group Grid data, use the [](data_collection/api/datacollection_group_method.md) method of DataCollection.
 The method takes the following parameters:
 
 - `order` - an array that defines the order and configuration for data grouping. Each element in the array can be:
@@ -1285,7 +1285,7 @@ grid.data.group(["city"], {
 
 #### Ungrouping Grid data
 
-To ungroup Grid data, use the [](../data_collection/api/datacollection_ungroup_method.md) method of DataCollection.
+To ungroup Grid data, use the [](data_collection/api/datacollection_ungroup_method.md) method of DataCollection.
 
 ~~~jsx
 grid.data.ungroup();
@@ -1293,7 +1293,7 @@ grid.data.ungroup();
 
 #### Checking whether Grid data is grouped
 
-To check whether Grid data is grouped at the moment, use the [](../data_collection/api/datacollection_isgrouped_method.md) method of DataCollection. The method returns *true* if Grid data is grouped at the moment and *false* if it isn't grouped.
+To check whether Grid data is grouped at the moment, use the [](data_collection/api/datacollection_isgrouped_method.md) method of DataCollection. The method returns *true* if Grid data is grouped at the moment and *false* if it isn't grouped.
 
 ~~~jsx
 if (grid.data.isGrouped()) {

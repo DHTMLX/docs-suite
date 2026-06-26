@@ -31,7 +31,7 @@ Then you can use the name of the icon as the value of the **icon** property in t
 ## Controls and operations
 
 It is possible to add any Toolbar controls into the header/footer of a window.
-You can work with controls in the header/footer of a window in the same way as with [Toolbar](toolbar.md) controls, i.e. add new controls, delete unnecessary ones and update the settings of controls, e.g. labels and icons.
+You can work with controls in the header/footer of a window in the same way as with [Toolbar](/toolbar/) controls, i.e. add new controls, delete unnecessary ones and update the settings of controls, e.g. labels and icons.
 
 ### Adding controls
 
@@ -39,7 +39,7 @@ Besides initial controls, you can add other controls into the header/footer on t
 
 ![](../assets/window/custom_buttons.png)
 
-For this, you should apply the [](../data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
+For this, you should apply the [](data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
 
 <table>
     <tbody>
@@ -70,7 +70,7 @@ dhxWindow.footer.data.add({icon: "mdi mdi-thumb-down", id: "dislike"})
 
 ### Updating controls
 
-You can change the icon of the Window control and its other config options with the help of the [](../data_collection/api/datacollection_update_method.md) method of Data Collection. It takes two parameters: 
+You can change the icon of the Window control and its other config options with the help of the [](data_collection/api/datacollection_update_method.md) method of Data Collection. It takes two parameters: 
 
 - the id of an icon button
 - an object with a new configuration of the control
@@ -86,7 +86,7 @@ dhxWindow.header.data.update("close", {
 
 ### Deleting controls
 
-To remove a control from the header/footer, make use of the [](../data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass the id of the control that should be removed to the method:
+To remove a control from the header/footer, make use of the [](data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass the id of the control that should be removed to the method:
 
 ~~~js
 dhxWindow.footer.data.remove("accept");

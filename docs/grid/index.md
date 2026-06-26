@@ -27,8 +27,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Gr
 - To get just DHTMLX Grid, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml)
 - To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid)
-- To work with data of Grid check [DataCollection API](data_collection.md)
-- To work with data of Grid in the TreeGrid mode check [TreeCollection API](tree_collection.md)
+- To work with data of Grid check [DataCollection API](/data_collection/)
+- To work with data of Grid in the TreeGrid mode check [TreeCollection API](/tree_collection/)
 
 ## Guides
 
@@ -51,4 +51,4 @@ Says how to build a standard grid on a page and bring it to life: configure with
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

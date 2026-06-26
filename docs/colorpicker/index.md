@@ -21,7 +21,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## API reference
 
-- [](api/api_overview.md)
+- [](colorpicker/api/api_overview.md)
 
 ## Related resources
 
@@ -32,13 +32,13 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 Covers the processes of creating, configuring, localizing, customizing ColorPicker, and working with it.
 
-- [](how_to_start.md)
-- [](configuration.md)
-- [](localizing_colorpicker.md)
-- [](manipulating_colorpicker.md)
-- [](customization.md)
-- [](handling_events.md)
+- [](colorpicker/how_to_start.md)
+- [](colorpicker/configuration.md)
+- [](colorpicker/localizing_colorpicker.md)
+- [](colorpicker/manipulating_colorpicker.md)
+- [](colorpicker/customization.md)
+- [](colorpicker/handling_events.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

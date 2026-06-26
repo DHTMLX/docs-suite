@@ -8,7 +8,7 @@ description: You can explore the default theme of DHTMLX Suite in the documentat
 
 ![light theme](../assets/themes/light_theme.png)
 
-The [default ("light")](themes.md#suite-themes) theme is configured on the base of the CSS variables which are listed below:
+The [default ("light")](/themes/#suite-themes) theme is configured on the base of the CSS variables which are listed below:
 
 ~~~css
 :root, [data-dhx-theme] {

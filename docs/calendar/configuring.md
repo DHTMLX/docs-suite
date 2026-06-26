@@ -45,7 +45,7 @@ You can also show the calendar in one of the modes using the [](calendar/api/cal
 ## Date format
 
 There is a possibility to specify the format of dates in the calendar via the [](calendar/api/calendar_dateformat_config.md) property. The default format is "%d/%m/%y". 
-The full list of available characters used to make formats is provided in the [API reference](/calendar/api/calendar_dateformat_config).
+The full list of available characters used to make formats is provided in the [API reference](calendar/api/calendar_dateformat_config.md).
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -208,7 +208,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 **Related sample**: [Calendar. Range](https://snippet.dhtmlx.com/2mrj53h0)
 
-You have a possibility to create a calendar in the range mode that allows you to select a range of dates in the calendar. To do this, you need to use the [range:true](/calendar/api/calendar_range_config) option in the calendar configuration object and define an array with the start and end dates of the range.
+You have a possibility to create a calendar in the range mode that allows you to select a range of dates in the calendar. To do this, you need to use the [range:true](calendar/api/calendar_range_config.md) option in the calendar configuration object and define an array with the start and end dates of the range.
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {

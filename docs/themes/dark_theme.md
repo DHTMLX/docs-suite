@@ -8,7 +8,7 @@ description: You can explore the dark theme of DHTMLX Suite in the documentation
 
 ![dark theme](../assets/themes/dark_theme.png)
 
-The ["dark"](themes.md#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
+The ["dark"](/themes/#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
 
 ~~~css
 [data-dhx-theme='dark'] {

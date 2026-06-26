@@ -203,11 +203,11 @@ grid.data.load("/some/data").then(function(){
 
 The drag-n-drop functionality provides the possibility to reorder items inside the grid or between several grids in the TreeGrid mode. 
 
-To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](/grid/api/grid_dragitem_config/) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](/grid/api/grid_dragmode_config/) property.
+To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](grid/api/grid_dragitem_config.md) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](grid/api/grid_dragmode_config.md) property.
 
 ### Drop behaviour
 
-You can specify the drag-n-drop behaviour of items in the Grid in the TreeGrid mode with the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) option in the configuration object of the component.
+You can specify the drag-n-drop behaviour of items in the Grid in the TreeGrid mode with the [`dropBehaviour`](grid/api/grid_dropbehaviour_config.md) option in the configuration object of the component.
 
 There are three modes of behaviour of a dragged item:
 
@@ -339,6 +339,6 @@ grid.collapseAll();
 
 When you work with Grid in the TreeGrid mode, you can use the [API Events of DHTMLX Grid](/category/grid-events/). 
 
-You can learn how to work with Grid events in the [related guide](/grid/events/).
+You can learn how to work with Grid events in the [related guide](grid/events.md).
 
 

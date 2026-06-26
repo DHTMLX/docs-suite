@@ -10,7 +10,7 @@ description: You can explore how to work with History module of Grid in the docu
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can manage the history of actions in the Grid component via the API of the [`History`](grid/configuration.md/#history-of-grid-actions) module. It allows tracking changes made by the user through the user interface, such as editing cells using the editor, clearing cells, or applying modifications via the handle in the `BlockSelection` mode. The module supports the `undo` and `redo` operations, as well as allows managing the history stack with the ability to limit its size.
+You can manage the history of actions in the Grid component via the API of the [`History`](grid/configuration.md#history-of-grid-actions) module. It allows tracking changes made by the user through the user interface, such as editing cells using the editor, clearing cells, or applying modifications via the handle in the `BlockSelection` mode. The module supports the `undo` and `redo` operations, as well as allows managing the history stack with the ability to limit its size.
 
 ## Initializing the History module
 
@@ -31,7 +31,7 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 The `history` property can also be set as an *object* to enable the module and provide additional configuration options.
-Learn about configuration possibilities of the `History` module in the [Configuration](grid/configuration.md/#history-of-grid-actions) guide.
+Learn about configuration possibilities of the `History` module in the [Configuration](grid/configuration.md#history-of-grid-actions) guide.
 
 **Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
@@ -448,7 +448,7 @@ The `History` module records actions performed through the user interface, inclu
 
 - cells editing: changes made using the cell editor
 - cells clearing: clearing the contents of cells using keyboard navigation
-- handle modifications: if the handle is used in the [`BlockSelection` mode](grid/configuration.md/#managing-block-selection-in-grid) and the [`handler`](grid/api/grid_blockselection_config.md/#parameters) function returns an object with the `prev` (the previous cell value) and `current` (the new cell value) fields, these changes are added to the history
+- handle modifications: if the handle is used in the [`BlockSelection` mode](grid/configuration.md#managing-block-selection-in-grid) and the [`handler`](grid/api/grid_blockselection_config.md#parameters) function returns an object with the `prev` (the previous cell value) and `current` (the new cell value) fields, these changes are added to the history
 
 The actions not related to the UI (e.g., programmatic changes via `grid.data`) are not automatically recorded, but can be manually added using the [`add()`](grid/api/history/add_method.md) method.
 

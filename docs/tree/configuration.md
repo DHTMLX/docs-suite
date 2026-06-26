@@ -94,7 +94,7 @@ const tree = new dhx.Tree("tree_container", {
 
 ## Tooltips for items
 
-You can add tooltips for Tree items via the [`tooltip`](/tree/api/tree_tooltip_config/) configuration option. It is possible to use the default tooltips, provide a template function to render a custom content in the tooltips, or apply extended options to get the desired tooltip configuration. Check the following examples:
+You can add tooltips for Tree items via the [`tooltip`](tree/api/tree_tooltip_config.md) configuration option. It is possible to use the default tooltips, provide a template function to render a custom content in the tooltips, or apply extended options to get the desired tooltip configuration. Check the following examples:
 
 - using the tooltip configuration with a custom template and a display delay:
 
@@ -129,9 +129,9 @@ const tree = new dhx.Tree("tree_container", {
 
 **Related sample**: [Tree. Tooltip template](https://snippet.dhtmlx.com/kswil8cl)
 
-The [`tooltip`](/tree/api/tree_tooltip_config/) property can have the following types of values:
+The [`tooltip`](tree/api/tree_tooltip_config.md) property can have the following types of values:
 
-- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](/tree/api/tree_data_config/) property of the item)
+- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](tree/api/tree_data_config.md) property of the item)
 - *function* — a template function that returns the string content of the tooltip
 - *object* — a configuration object for detailed customization of the tooltip's behavior and appearance. The available properties are given below:
     - `template` - (optional) a function that determines the content of the tooltip. It takes two arguments:

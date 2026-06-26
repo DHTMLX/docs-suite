@@ -33,7 +33,7 @@ The MCP server indexes the full DHTMLX Suite documentation across all components
 - Loading and managing data using [DataCollection](/data_collection/) across components.
 - Handling component events to respond to user interactions, value changes, and data updates.
 - Composing multiple components in a shared [Layout](/layout/) with rows, columns, and cells.
-- Exploring [TypeScript support](/common_features/using_typescript/) and integration with [React](/integration/suite_and_react/), [Vue](/integration/suite_and_vue/), [Angular](/integration/suite_and_angular/), and [Svelte](/integration/suite_and_svelte/).
+- Exploring [TypeScript support](common_features/using_typescript.md) and integration with [React](integration/suite_and_react.md), [Vue](integration/suite_and_vue.md), [Angular](integration/suite_and_angular.md), and [Svelte](integration/suite_and_svelte.md).
 
 ## How DHTMLX MCP server works
 

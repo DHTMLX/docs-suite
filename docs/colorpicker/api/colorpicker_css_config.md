@@ -52,4 +52,4 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 **Related articles**: 
 - [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
-- [Themes](themes.md)
+- [Themes](/themes/)

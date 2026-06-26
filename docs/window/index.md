@@ -29,12 +29,12 @@ You can check the following page to learn how to build a full-featured DHTMLX Wi
 
 ## Guides
 
-- [](how_to_start.md)
-- [](configuration.md)
-- [](usage.md)
-- [](customization.md)
-- [](handling_events.md)
+- [](window/how_to_start.md)
+- [](window/configuration.md)
+- [](window/usage.md)
+- [](window/customization.md)
+- [](window/handling_events.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

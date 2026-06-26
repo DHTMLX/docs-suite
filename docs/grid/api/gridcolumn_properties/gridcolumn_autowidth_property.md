@@ -36,4 +36,4 @@ Also note:
 - The property is ignored if the [`adjust`](grid/configuration.md#autosize-for-columns) property is used.
 - If the `width` property is specified in the configuration object of a column, the `autoWidth` property won't work for this column.
 
-**Related article**: [Autowidth for columns](grid/configuration.md/#autowidth-for-columns)
+**Related article**: [Autowidth for columns](grid/configuration.md#autowidth-for-columns)

@@ -79,10 +79,10 @@ All DHTMLX Suite widgets are provided with a keyboard navigation support. It all
 
 :::info
 For the full list of built-in hotkeys, refer to the **Keyboard Navigation** articles of the following widgets:
-- [Grid](../../grid/configuration/#keyboard-navigation)
-- [List](../../list/configuration/#arrow-keys-navigation)
-- [Tree](../../tree/configuration/#key-navigation)
-- [DataView](../../dataview/configuration/#arrow-keys-navigation)
+- [Grid](grid/configuration.md#keyboard-navigation)
+- [List](list/configuration.md#arrow-keys-navigation)
+- [Tree](tree/configuration.md#key-navigation)
+- [DataView](dataview/configuration.md#arrow-keys-navigation)
 :::
 
 ## High-Contrast Themes
