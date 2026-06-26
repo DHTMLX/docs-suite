@@ -49,7 +49,7 @@ layout.cell("toolbar-cell").attach(toolbar);
 
 <div className={styles.image}>
 
-![](/img/tutorial/basic_application/toolbar_003.png)
+![Toolbar with Load and Clear buttons attached above empty grid and chart cells in DHTMLX Suite](/img/tutorial/basic_application/toolbar_003.png)
 
 </div>
 

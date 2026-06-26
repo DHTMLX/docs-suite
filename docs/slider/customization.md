@@ -10,7 +10,7 @@ description: You can explore the customization of Slider in the documentation of
 
 There is a possibility to make changes in the look and feel of a slider. 
 
-![Styling Slider](/img/slider/custom_style.png)
+![Custom styled slider with a teal trackbar and tooltip value 33 in DHTMLX Suite](/img/slider/custom_style.png)
 
 **Related sample**: [Slider. Styling (custom CSS)](https://snippet.dhtmlx.com/ewizud5e)
 

@@ -25,7 +25,7 @@ Download the demo app [here](https://dhtmlx.com/x/download/docs/basic_applicatio
 
 <div className={styles.image}>
 
-![](/img/tutorial/basic_application/basic_initialization.png)
+![Contact manager app with a users grid, toolbar and Default vs Premium pie chart in DHTMLX Suite](/img/tutorial/basic_application/basic_initialization.png)
 
 </div>
 

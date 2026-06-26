@@ -8,7 +8,7 @@ description: You can explore the range mode of Slider in the documentation of th
 
 The range mode of slider presupposes the usage of two thumbs for selecting the starting and ending values of a range. 
 
-![](/img/slider/range_mode.png)
+![Range slider with two thumbs labeled 25 and 75 selecting a value interval in DHTMLX Suite](/img/slider/range_mode.png)
 
 To enable the range mode, you need to set the [](slider/api/slider_range_config.md) property to *true* and specify an array of two values - min and max values of the range:
 

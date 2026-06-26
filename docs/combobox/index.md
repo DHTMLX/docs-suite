@@ -10,7 +10,7 @@ DHTMLX ComboBox is an advanced select box that provides the ability to show sugg
 displaying options in the list. Among other nice features there are tuning of the list of options and Combo Box input, selection of multiple options and data loading on request.
 Check [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox).
 
-![](/img/combo/combo_front.png)
+![DHTMLX ComboBox with typed text and a dropdown of country options with flag icons in DHTMLX Suite](/img/combo/combo_front.png)
 
 ## Features
 

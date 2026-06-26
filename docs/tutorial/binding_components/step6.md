@@ -33,7 +33,7 @@ function openAddWindow(){
 
 <div className={styles.image}>
 
-![](/img/tutorial/binding_components/adding_item.png)
+![Adding item window with empty form fields for name, email, country and a premium checkbox in DHTMLX Suite](/img/tutorial/binding_components/adding_item.png)
 
 </div>
 
@@ -49,7 +49,7 @@ In all these cases we'll call the **openEditWindow** function to display the edi
 
 <div className={styles.image}>
 
-![](/img/tutorial/binding_components/editing_item.png)
+![Editing item window with form fields prefilled from the selected grid row in DHTMLX Suite](/img/tutorial/binding_components/editing_item.png)
 
 </div>
 
@@ -168,7 +168,7 @@ When you complete the steps described in this tutorial, you'll get an advanced d
 
 <div className={styles.image}>
 
-![](/img/tutorial/binding_components/binding_components.png)
+![Contact manager app with an Editing item window over the users grid and pie chart in DHTMLX Suite](/img/tutorial/binding_components/binding_components.png)
 
 </div>
 

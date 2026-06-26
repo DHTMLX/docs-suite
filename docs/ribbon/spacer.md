@@ -8,7 +8,7 @@ description: You can explore the Spacer of Ribbon in the documentation of the DH
 
 This item takes space on the ribbon and is used for aligning controls.
 
-![DHX Ribbon spacer](/img/ribbon/spacer.png)
+![Ribbon with a spacer adding empty space between button groups in DHTMLX Suite](/img/ribbon/spacer.png)
 
 ## Adding Spacer
 

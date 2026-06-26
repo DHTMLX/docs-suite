@@ -91,7 +91,7 @@ After finishing all the steps described in the tutorial, you get a mini app that
 
 <div className={styles.image}>
 
-![](/img/tutorial/basic_application/chart.png)
+![Contacts grid beside a pie chart showing default versus premium users in DHTMLX Suite](/img/tutorial/basic_application/chart.png)
 
 </div>
 

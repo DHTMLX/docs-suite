@@ -8,7 +8,7 @@ description: You can explore the Custom HTML of Toolbar in the documentation of 
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
-![](/img/toolbar/htmlcontent.png)
+![Toolbar custom HTML item displaying a DHX logo image in DHTMLX Suite](/img/toolbar/htmlcontent.png)
 
 **Related sample**: [Toolbar. Custom HTML](https://snippet.dhtmlx.com/rv3gq5qe)
 

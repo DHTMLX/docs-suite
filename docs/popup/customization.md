@@ -10,7 +10,7 @@ description: You can explore the customization of Popup in the documentation of 
 
 There is a possibility to make changes in the look and feel of a popup. 
 
-![Styling Popup](/img/popup/custom_css.png)
+![Popup styled with custom CSS showing a blue welcome message under a button in DHTMLX Suite](/img/popup/custom_css.png)
 
 **Related sample**: [Popup. Styling (custom CSS)](https://snippet.dhtmlx.com/rd8zfw5h)
 

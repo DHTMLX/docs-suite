@@ -48,7 +48,7 @@ For more details on the custom scroll configuration, read [this article](helpers
 
 You may notice, that all DHTMLX demos built with Optimus have the custom scroll enabled. 
 
-![](/img/integration/custom_scroll_optimus.png)
+![Hospital management demo grid with thin custom scrollbars enabled in DHTMLX Suite](/img/integration/custom_scroll_optimus.png)
 
 **View the live demos to check the feature:**
 

@@ -10,7 +10,7 @@ description: You can explore the customization of Tabbar in the documentation of
 
 There is a possibility to make changes in the look and feel of a tabbar.
 
-![Styling Tabbar](/img/tabbar/custom_style.png)
+![Custom styled Tabbar with a red active VILNIUS tab and city tabs in DHTMLX Suite](/img/tabbar/custom_style.png)
 
 **Related sample**: [Tabbar. Styling (custom CSS)](https://snippet.dhtmlx.com/47en9f0a)
 

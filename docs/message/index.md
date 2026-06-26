@@ -10,7 +10,7 @@ DHTMLX Message is a tiny but useful component that helps you to interact with a 
 
 Check [online samples for DHTMLX Message](https://snippet.dhtmlx.com/tfiqt79l?tag=message). 
 
-![](/img/message/dhx_confirm.png)
+![Modal confirm box with a question and Decline and Accept buttons in DHTMLX Suite](/img/message/dhx_confirm.png)
 
 ## Features
 

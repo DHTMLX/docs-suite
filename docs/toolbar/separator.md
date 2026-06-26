@@ -8,7 +8,7 @@ description: You can explore the Separator of Toolbar in the documentation of th
 
 This is a horizontal (between menu options) or vertical (between toolbar controls) line separating items/groups of items from each other.
 
-![](/img/toolbar/separator.png)
+![Toolbar with vertical separator lines dividing groups of controls in DHTMLX Suite](/img/toolbar/separator.png)
 
 **Related sample**: [Toolbar. Separator](https://snippet.dhtmlx.com/sguwr3m9)
 

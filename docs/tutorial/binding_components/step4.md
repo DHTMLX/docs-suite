@@ -83,7 +83,7 @@ After that a right-click on a grid cell will call a context menu we have specifi
 
 <div className={styles.image}>
 
-![](/img/tutorial/binding_components/context_menu.png)
+![Context menu with Edit and Delete items opened on a grid row beside a pie chart in DHTMLX Suite](/img/tutorial/binding_components/context_menu.png)
 
 </div>
 

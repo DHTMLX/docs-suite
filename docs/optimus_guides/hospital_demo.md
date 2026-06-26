@@ -8,7 +8,7 @@ description: You can explore how to work with Hospital Management Demo using Opt
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
-![](/img/optimus/demo/hospital_demo.png)
+![Hospital Management System demo with a patients TreeGrid grouped by rooms and filter sidebar in DHTMLX Suite](/img/optimus/demo/hospital_demo.png)
 
 This demo application shows how to create a hospital management system with a clear and accurate UI based on DHTMLX Diagram and DHTMLX Suite widgets: Sidebar, Grid in the TreeGrid mode, Tabbar, Dataview, Window, Toolbar, and Form.
 

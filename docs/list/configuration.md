@@ -87,7 +87,7 @@ const list = new dhx.List("list_container", {
 
 ## Editing items
 
-![](/img/list/editable.png)
+![List with an item being edited inline showing selected highlighted text in DHTMLX Suite](/img/list/editable.png)
 
 **Related sample**: [List. Inline editing](https://snippet.dhtmlx.com/f26lfcai)
 
@@ -99,7 +99,7 @@ const list = new dhx.List("list_container", {editable:true});
 
 ## Height of an item
 
-![](/img/list/item_height.png)
+![List with increased item height showing book titles and categories in DHTMLX Suite](/img/list/item_height.png)
 
 **Related sample**: [List. Setup list item height](https://snippet.dhtmlx.com/89buovn2)
 
@@ -127,7 +127,7 @@ When the [virtual](list/api/list_virtual_config.md) property is set to *true*, t
 
 ## Height of the List
 
-![](/img/list/list_height.png)
+![Scrollable List with a fixed height showing book titles and categories in DHTMLX Suite](/img/list/list_height.png)
 
 **Related sample**: [List. Setup list height](https://snippet.dhtmlx.com/k2mj2sz7)
 
@@ -147,7 +147,7 @@ const list = new dhx.List("list_container", {height: "700px"});
 
 ## Multiple selection of items
 
-![](/img/list/multiselection.png)
+![List with multiple selected book items highlighted at once in DHTMLX Suite](/img/list/multiselection.png)
 
 **Related sample**: [List. Multiselection](https://snippet.dhtmlx.com/0sorkczm)
 
@@ -169,7 +169,7 @@ const list = new dhx.List("list_container", {
 
 ## Selection of items
 
-![](/img/list/disable_selection.png)
+![List of books with titles, authors and categories without selection in DHTMLX Suite](/img/list/disable_selection.png)
 
 **Related sample**: [List. Disable selection](https://snippet.dhtmlx.com/dk4czs1z)
 
@@ -181,7 +181,7 @@ const list = new dhx.List("list_container", {selection: false});
 
 ## Template for List items
 
-![](/img/list/list_template.png)
+![List rendered with a custom HTML template showing book titles, authors and categories in DHTMLX Suite](/img/list/list_template.png)
 
 **Related sample**: [List. HTML template for item](https://snippet.dhtmlx.com/gtzdwpj4)
 

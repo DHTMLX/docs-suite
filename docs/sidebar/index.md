@@ -9,7 +9,7 @@ description: You can have an overview of Sidebar in the documentation of the DHT
 DHTMLX Sidebar is a component that provides means for comfy vertical navigation. Sidebar can contain any Toolbar controls that can be controlled via a handy API.
 Check [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?tag=sidebar).  
 
-![](/img/sidebar/sidebar_front.png)
+![Sidebar with navigation items, icons, badges and an open submenu beside page content in DHTMLX Suite](/img/sidebar/sidebar_front.png)
 
 ## Features
 

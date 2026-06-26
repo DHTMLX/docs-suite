@@ -10,7 +10,7 @@ DHTMLX Tabbar component allows a user to keep several groups of content together
 Being highly configurable, the component can be easily adjusted to your requirements and will provide quick switching between parts of your app. 
 Check [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar).
 
-![](/img/tabbar/tabbar_front.png)
+![Tabbar with three tabs and the active Dynamic Interface tab showing its content in DHTMLX Suite](/img/tabbar/tabbar_front.png)
 
 ## Features
 

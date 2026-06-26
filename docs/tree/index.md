@@ -10,7 +10,7 @@ DHTMLX Tree is a nice JavaScript tree component intended for making intuitive hi
 The component provides smart drag-and-drop, dynamic rendering of items, handy key navigation, customizable appearance, and other useful features. 
 Check [online samples for DHTMLX Tree](https://snippet.dhtmlx.com/hg3f50td?tag=tree).
 
-![](/img/tree/tree_front.png)
+![DHTMLX Tree with expandable folders and nested file items in DHTMLX Suite](/img/tree/tree_front.png)
 
 ## Features
 

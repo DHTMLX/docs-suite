@@ -44,7 +44,7 @@ We pass two parameters to the method:
  
 <div className={styles.image}>
 
-![](/img/tutorial/binding_components/window.png)
+![Empty modal window titled Editing item with Cancel and Apply footer buttons in DHTMLX Suite](/img/tutorial/binding_components/window.png)
 
 </div>
  

@@ -8,7 +8,7 @@ description: You can learn about TypeScript support in the documentation of the 
 
 The dhtmlxSuite library of version 6.5 and higher lets you work with DHTMLX components faster and more effectively by using TypeScript definitions.
 
-![](/img/guides/typescript1.png)
+![Snippet Tool editor showing TypeScript autocompletion for a Colorpicker in DHTMLX Suite](/img/guides/typescript1.png)
 
 The library provides a built-in support of Typescript that should work out of the box.
 

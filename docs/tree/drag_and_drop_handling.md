@@ -43,11 +43,11 @@ There are three modes of behaviour of a dragged tree item:
 
 - "child" - a dragged item becomes a child of the item it is dragged to
 
-![Child](/img/tree/drag_behaviour_child.png)
+![Tree drag-and-drop dropping an item as a child of the target folder in DHTMLX Suite](/img/tree/drag_behaviour_child.png)
 
 - "sibling" - a dragged item becomes a sibling of the item it is dragged to
 
-![Sibling](/img/tree/drag_behaviour_sibling.png)
+![Tree drag-and-drop dropping an item as a sibling of the target item in DHTMLX Suite](/img/tree/drag_behaviour_sibling.png)
 
 - "complex" - a dragged item can become both a child and a sibling of a target item, depending on the position specified by highlighting (check the above images)
 

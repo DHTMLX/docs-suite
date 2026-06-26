@@ -10,7 +10,7 @@ description: You can explore the customization of Calendar in the documentation 
 
 There is a possibility to make changes in the look and feel of a calendar. For example, change its background color:
 
-![](/img/calendar/styled_calendar.png)
+![Calendar month view styled with a custom teal primary color in DHTMLX Suite](/img/calendar/styled_calendar.png)
 
 **Related sample**: [Calendar. Styling (custom CSS)](https://snippet.dhtmlx.com/2045cbe1)
 
@@ -56,7 +56,7 @@ For example:
 
 ## Styling selected dates
 
-![](/img/calendar/calendar_range_styling.png)
+![Two Calendars with a custom red selected date and pink range highlight in DHTMLX Suite](/img/calendar/calendar_range_styling.png)
 
 **Related sample**: [Calendar. Custom styles for selected date](https://snippet.dhtmlx.com/9u0ix3na)
 

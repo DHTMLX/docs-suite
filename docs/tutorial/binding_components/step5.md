@@ -32,7 +32,7 @@ toolbar.data.parse([
 
 <div className={styles.image}>
 
-![](/img/tutorial/binding_components/toolbar.png)
+![Toolbar with Load, Clear, Add, Edit and Delete buttons above the contacts grid in DHTMLX Suite](/img/tutorial/binding_components/toolbar.png)
 
 </div>
 

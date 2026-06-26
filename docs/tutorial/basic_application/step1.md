@@ -13,7 +13,7 @@ Let's start our tutorial with preparing a file for our future app:
 
 <div className={styles.image}>
 
-![](/img/tutorial/basic_application/file.png)
+![File explorer showing the contact_manager folder with an index file in DHTMLX Suite](/img/tutorial/basic_application/file.png)
 
 </div>
 

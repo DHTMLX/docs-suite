@@ -8,7 +8,7 @@ description: You can explore the RadioGroup of Form in the documentation of the 
 
 A control intended for creating groups of Radio buttons.
 
-![RadioGroup control](/img/form/form_radio.png)
+![RadioGroup form control with three radio button options and the second one selected in DHTMLX Suite](/img/form/form_radio.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

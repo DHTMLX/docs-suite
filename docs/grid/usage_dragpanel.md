@@ -12,7 +12,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 The `DragPanel` module provides auxiliary functionality for moving rows in the **dhx.Grid** component. 
 
-![](/img/grid/dragpanel_module.png)
+![Grid rows with drag handle panels shown in the leftmost column for row reordering in DHTMLX Suite](/img/grid/dragpanel_module.png)
 
 The module is automatically activated when the [Drag-and-Drop functionality](grid/configuration.md#drag-n-drop) for rows is enabled and conflicting configurations, such as the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules, are used. 
 

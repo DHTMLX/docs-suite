@@ -8,7 +8,7 @@ description: You can explore how to work with UI Dashboard Demo using Optimus Fr
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
-![](/img/optimus/demo/dashboard_demo.png)
+![UI dashboard demo with sales area chart, donut chart, ticket cards and notifications panel in DHTMLX Suite](/img/optimus/demo/dashboard_demo.png)
 
 This demo application shows how to create a dashboard for a ticketing system based on DHTMLX Suite widgets: Layout, Grid, DataView, Toolbar, Chart, Window, and Form.
 

@@ -8,7 +8,7 @@ description: You can explore the configuration of Tree in the documentation of t
 
 ## Checkboxes for items
 
-![](/img/tree/checkbox.png)
+![Tree with three-state checkboxes showing checked and intermediate states in DHTMLX Suite](/img/tree/checkbox.png)
 
 DHTMLX Tree provides enhanced system of checkbox manipulations. In addition to standard two-state checkboxes that allow check/uncheck tree items, it also uses three-state checkboxes that include an intermediate state, 
 when just some children of a parent item are checked.
@@ -35,7 +35,7 @@ const tree = new dhx.Tree("tree_container", {
 
 ## Editing of items
 
-![](/img/tree/editable.png)
+![Tree item being edited inline with an active text editor in DHTMLX Suite](/img/tree/editable.png)
 
 It is possible to enable editing of the text of Tree items before initialization of the component using the [`editable`](tree/api/tree_editable_config.md) configuration property:
 
@@ -80,7 +80,7 @@ After that you need to select any item and then apply the Arrow keys:
 
 ## Selection of items
 
-![](/img/tree/disable_selection.png)
+![Tree with a highlighted selected item among folders and files in DHTMLX Suite](/img/tree/disable_selection.png)
 
 **Related sample**: [Tree. Disable selection](https://snippet.dhtmlx.com/2x9htpke)
 

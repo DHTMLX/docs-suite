@@ -24,7 +24,7 @@ after the source files of DHTMLX Ribbon as follows:
 
 Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](ribbon/data_loading.md#json-format-templates) for ribbon:
 
-![](/img/ribbon/fa_icons.png)
+![Ribbon buttons with custom icon font showing New, Add and Remove in DHTMLX Suite](/img/ribbon/fa_icons.png)
 
 ~~~js
 const data = [
@@ -70,7 +70,7 @@ const data = [
 
 There is a possibility to make changes in the look and feel of a ribbon. 
 
-![Styling Ribbon](/img/ribbon/custom_style.png)
+![Ribbon with a highlighted Left button showing custom CSS styling in DHTMLX Suite](/img/ribbon/custom_style.png)
 
 **Related sample**: [Ribbon. Styling (custom CSS)](https://snippet.dhtmlx.com/9ckg47ro)
 

@@ -8,7 +8,7 @@ description: You can explore how to work with Sales KPI Tracking Demo using Opti
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
-![](/img/optimus/demo/kpi_demo.png)
+![Sales KPI tracking demo with donut, bar and area charts and a sales reps list in DHTMLX Suite](/img/optimus/demo/kpi_demo.png)
 
 This demo application shows how to create a Sales KPI tracking system based on the DHTMLX Suite widgets: Layout, List, Toolbar, and Charts.
 

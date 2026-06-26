@@ -12,7 +12,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 You can manage block selection within a grid via the API of the [`BlockSelection`](grid/configuration.md#managing-block-selection-in-grid) module. It allows selecting ranges of cells using the mouse pointer, touch input, or keyboard navigation, visualizing the selection, and controlling behavior through various modes and handlers. It also supports an [event system](grid/api/api_overview.md#blockselection-events) to track user actions, including keyboard and mouse combinations.
 
-![](/img/grid/blockselection_module.png)
+![Grid with a rectangular block of product cells selected and highlighted with a fill handle in DHTMLX Suite](/img/grid/blockselection_module.png)
 
 ## Initializing the BlockSelection module
 

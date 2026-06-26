@@ -8,7 +8,7 @@ description: You can have an overview of Ribbon in the documentation of the DHTM
 
 DHTMLX Ribbon is an advanced version of DHTMLX Toolbar. It aggregates commands and tools used in an application or in a website into logical blocks thus providing a handy navigation bar. Check [online samples for DHTMLX Ribbon](https://snippet.dhtmlx.com/3djaib6o?tag=ribbon).
 
-![](/img/ribbon/ribbon_front.png)
+![Ribbon toolbar with grouped File, Action, Text and Output buttons in DHTMLX Suite](/img/ribbon/ribbon_front.png)
 
 ## Features
 

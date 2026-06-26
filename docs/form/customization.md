@@ -10,7 +10,7 @@ description: You can explore the customization of Form in the documentation of t
 
 There is a possibility to make changes in the look and feel of a form. 
 
-![Custom style](/img/form/custom_style.png)
+![Form with a custom teal color theme on input fields and a Send button in DHTMLX Suite](/img/form/custom_style.png)
 
 **Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 
@@ -74,7 +74,7 @@ For example:
 
 ## Styling Form controls
 
-![Styling Form and its controls](/img/form/custom_styles.png)
+![Form with a custom-styled Name input outlined in yellow among teal-themed controls in DHTMLX Suite](/img/form/custom_styles.png)
 
 **Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 

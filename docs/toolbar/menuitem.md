@@ -8,7 +8,7 @@ description: You can explore the MenuItem of Toolbar in the documentation of the
 
 MenuItem is a drop-down list of options, can contain its own sub-menu. 
 
-![](/img/toolbar/menuitem.png)
+![Toolbar menuItem with an expanded dropdown list of options in DHTMLX Suite](/img/toolbar/menuitem.png)
 
 ## Adding MenuItem
 

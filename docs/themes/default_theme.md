@@ -6,7 +6,7 @@ description: You can explore the default theme of DHTMLX Suite in the documentat
 
 # Default theme
 
-![light theme](/img/themes/light_theme.png)
+![Sidebar, toolbar and grid widgets rendered with the default light theme in DHTMLX Suite](/img/themes/light_theme.png)
 
 The [default ("light")](/themes/#suite-themes) theme is configured on the base of the CSS variables which are listed below:
 

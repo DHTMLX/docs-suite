@@ -8,7 +8,7 @@ description: You can explore the Context Menu in the documentation of the DHTMLX
 
 dhtmlxContextMenu is a component that provides an easy way to add a contextual menu to projects. It will be of great help for frequently used actions in web sites, help systems, etc.
 
-![DHX Context Menu](/img/menu/context_menu.png)
+![Context menu with Add, Rename, Delete options and a nested submenu in DHTMLX Suite](/img/menu/context_menu.png)
 
 **Related sample**: [Menu. Context menu initialization with config.data](https://snippet.dhtmlx.com/mgya9p1l)
 

@@ -16,7 +16,7 @@ const combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-![](/img/combo/disabled.png)
+![DHTMLX ComboBox in disabled state shown as a greyed-out empty input in DHTMLX Suite](/img/combo/disabled.png)
 
 **Related sample**: [Combobox. Disabled](https://snippet.dhtmlx.com/ductsm0f)
 
@@ -35,7 +35,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 ## Height of list of options and its items
 
-![](/img/combo/height.png)
+![DHTMLX ComboBox open dropdown with tall list items showing custom list and item height in DHTMLX Suite](/img/combo/height.png)
 
 **Related sample**: [Combobox. List height](https://snippet.dhtmlx.com/vilg4l7w)
 
@@ -103,7 +103,7 @@ const combo = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-![](/img/combo/label_left.png)
+![DHTMLX ComboBox with a label positioned to the left of the input in DHTMLX Suite](/img/combo/label_left.png)
 
 or
 
@@ -115,13 +115,13 @@ const combo = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-![](/img/combo/label_top.png)
+![DHTMLX ComboBox with a label positioned above the input in DHTMLX Suite](/img/combo/label_top.png)
 
 **Related sample**: [Combobox. Label position](https://snippet.dhtmlx.com/2936fray)
 
 ## Number of selected options
 
-![](/img/combo/selected_item.png)
+![DHTMLX ComboBox input showing the count of selected options as one item selected in DHTMLX Suite](/img/combo/selected_item.png)
 
 **Related sample**: [Combobox. Items count](https://snippet.dhtmlx.com/fw2u2bww)
 
@@ -156,7 +156,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 ## Placeholder
 
-![](/img/combo/placeholder.png)
+![DHTMLX ComboBox input displaying placeholder text above an open options dropdown in DHTMLX Suite](/img/combo/placeholder.png)
 
 **Related sample**: [Combobox. Placeholder](https://snippet.dhtmlx.com/759z23gh)
 
@@ -182,7 +182,7 @@ const combobox = new dhx.Combobox("combo_container", {
 
 To add a new item into the list of options, the user needs to type a new value into the input field and either press "Enter" or click on the appeared *Create "newValue"* option in the drop-down list.
 
-![](/img/combo/new_value.png)
+![DHTMLX ComboBox dropdown offering a Create option to add a new typed value in DHTMLX Suite](/img/combo/new_value.png)
 
 **Related sample**: [Combobox. Multiselection, add new options (free text), select all button](https://snippet.dhtmlx.com/ui7pi7ty)
 
@@ -199,7 +199,7 @@ You can provide a combobox with the ability to edit/delete items via the user in
 
 ## Readonly mode
 
-![](/img/combo/readonly.png)
+![DHTMLX ComboBox in readonly mode with an open dropdown for selecting options only in DHTMLX Suite](/img/combo/readonly.png)
 
 **Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)
 
@@ -239,7 +239,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 ## Template for ComboBox options
 
-![](/img/combo/combo_template.png)
+![DHTMLX ComboBox dropdown with custom template options showing country names and flag icons in DHTMLX Suite](/img/combo/combo_template.png)
 
 **Related sample**: [Combobox. HTML template](https://snippet.dhtmlx.com/z7cpj76i)
 

@@ -67,7 +67,7 @@ Step 1. Initialize an application
 
 After running the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-1" target="_blank">project</a> on the local server and opening `http://localhost:8080/` in your browser, you will see the following result:
 
-![](/img/optimus/start_optimus.png)
+![Browser showing the Hello Optimus starter app running on localhost in DHTMLX Suite](/img/optimus/start_optimus.png)
 
 Let's consider how we've initialized our starter application:
 
@@ -330,11 +330,11 @@ Now, we'll follow the changes in the global event bus. Each time the user clicks
 
 Let's take a look at the result:
 
-![](/img/optimus/empty_view.png)
+![Starter app with a First, Second, Third toolbar showing the empty view in DHTMLX Suite](/img/optimus/empty_view.png)
 
 After clicking on the "Second" button you should see the view, as in:
 
-![](/img/optimus/second_view.png)
+![Starter app with the Second toolbar button selected showing the second view in DHTMLX Suite](/img/optimus/second_view.png)
 
 You can also learn more details about how to:
 
@@ -475,7 +475,7 @@ The above code sample shows that we won't render the default view in the "conten
 
 Let's run the application now. You will see that the first view is active by default:
 
-![](/img/optimus/first_view.png)
+![Starter app with the First toolbar button active by default showing the first view in DHTMLX Suite](/img/optimus/first_view.png)
 
 It means, that the id of the button that should be active by default is passed to the state manager on initialization of the application.
 
@@ -698,15 +698,15 @@ As a result, when the active state is changed, the related component will be ren
 
 Once you are done with it, run the application now. You will see the DataView widget on the first page:
 
-![](/img/optimus/dataview.png)
+![DataView widget displaying employee cards with names and positions on the first page in DHTMLX Suite](/img/optimus/dataview.png)
 
 the Chart widget on the second page:
 
-![](/img/optimus/chart.png)
+![Donut chart showing the number of employees by position on the second page in DHTMLX Suite](/img/optimus/chart.png)
 
 and the Grid widget on the third page:
 
-![](/img/optimus/grid.png)
+![Grid listing employees with name, post, phone, mail and dates on the third page in DHTMLX Suite](/img/optimus/grid.png)
 
 Step 5. Provide editing data 
 --------------
@@ -948,15 +948,15 @@ export const emptyItem = {
 
 That's all. Open *http://localhost:8080/* and you'll see the dataview like the one shown here: 
 
-![](/img/optimus/edit_dataview.png)
+![DataView of employee cards with a toolbar offering add and remove actions in DHTMLX Suite](/img/optimus/edit_dataview.png)
 
 Click the second button to see the chart view, as in:
 
-![](/img/optimus/edit_chart.png)
+![Donut chart of employees by position shown on the second page of the demo in DHTMLX Suite](/img/optimus/edit_chart.png)
 
 To see the grid view, click the third button. You can try to edit a cell in the grid by double-click on the cell.
 
-![](/img/optimus/edit_grid.png)
+![Editable employee grid with a mail cell being edited inline in DHTMLX Suite](/img/optimus/edit_grid.png)
 
 You could also note, that changing data in one of the widgets will change the data in the other widgets.
 

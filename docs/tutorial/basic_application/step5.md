@@ -29,7 +29,7 @@ toolbar.events.on("Click", function(id,e){
 
 <div className={styles.image}>
 
-![](/img/tutorial/basic_application/bind_toolbar_grid.png)
+![Contacts grid filled with user data after clicking the Load toolbar button in DHTMLX Suite](/img/tutorial/basic_application/bind_toolbar_grid.png)
 
 </div>
 

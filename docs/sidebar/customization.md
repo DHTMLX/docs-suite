@@ -49,7 +49,7 @@ const sidebarData = [
 ];
 ~~~
 
-![](/img/sidebar/fa_icons.png)
+![Sidebar items using Font Awesome icons for Bold, Underline, Italic and Strikethrough in DHTMLX Suite](/img/sidebar/fa_icons.png)
 
 {{note You can use the [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
 
@@ -57,7 +57,7 @@ const sidebarData = [
 
 There is a possibility to make changes in the look and feel of a sidebar. 
 
-![Styling Sidebar](/img/sidebar/custom_style.png)
+![Dark themed Sidebar styled with custom CSS showing navigation items, badges and a submenu in DHTMLX Suite](/img/sidebar/custom_style.png)
 
 **Related sample**: [Sidebar. Styling (custom CSS)](https://snippet.dhtmlx.com/3mhhvvcr)
 

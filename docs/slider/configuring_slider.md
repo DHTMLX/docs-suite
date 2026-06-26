@@ -20,7 +20,7 @@ const slider = new dhx.Slider("slider_container", {
 
 You can adjust the configuration of Slider so that its scale would render values in the reverse order, i.e. from the maximal value to the minimal one.
 
-![](/img/slider/inverse_mode.png)
+![Inverse mode slider with the thumb near the right end showing tooltip value 86 in DHTMLX Suite](/img/slider/inverse_mode.png)
 
 To launch this mode, make use of the [](slider/api/slider_inverse_config.md) property set to *true*:
 
@@ -74,7 +74,7 @@ You can configure the look and feel of the Slider scale via the corresponding pr
 - [](slider/api/slider_majortick_config.md) - (<i>number</i>) sets interval of rendering numeric values on the slider scale
 - [](slider/api/slider_ticktemplate_config.md) - (<i>function</i>) sets a template for rendering values on the slider scale
 
-![](/img/slider/scale.png)
+![Slider with a scale of ticks and degree labels at 0, 50 and 100 in DHTMLX Suite](/img/slider/scale.png)
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -97,7 +97,7 @@ In case you want to mark just the minimal and maximal values with ticks, you nee
 - set the value of the [](slider/api/slider_tick_config.md) property equal to the value of the [](slider/api/slider_max_config.md) property
 - set the [](slider/api/slider_majortick_config.md) property to 1
 
-![](/img/slider/min_max_ticks_only.png)
+![Slider showing only the first and last ticks labeled 0 and 100 in DHTMLX Suite](/img/slider/min_max_ticks_only.png)
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -109,7 +109,7 @@ const slider = new dhx.Slider("slider_container", {
 
 There is a possibility to show a label next to the slider. 
 
-![](/img/slider/slider_label.png)
+![Slider with a Volume label placed to the left of the trackbar in DHTMLX Suite](/img/slider/slider_label.png)
 
 There are two properties that allow manipulating the label of the slider: 
 
@@ -140,7 +140,7 @@ const slider = new dhx.Slider("slider_container", {
 
 You can specify a tooltip that will display changeable values of the slider when the user moves the slider's thumb. 
 
-![](/img/slider/tooltip.png)
+![Slider showing a tooltip with the value 0 above the dragged thumb in DHTMLX Suite](/img/slider/tooltip.png)
 
 There is the [](slider/api/slider_tooltip_config.md) property that enables rendering the slider value over the thumb:
 

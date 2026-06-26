@@ -13,7 +13,7 @@ Besides, this tutorial will help you to learn how to edit data in the Grid, add 
 
 <div className={styles.image}>
 
-![](/img/tutorial/binding_components/binding_components.png)
+![Contact manager app with an Editing item window over the users grid and pie chart in DHTMLX Suite](/img/tutorial/binding_components/binding_components.png)
 
 </div>
 

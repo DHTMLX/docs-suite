@@ -8,7 +8,7 @@ description: You can explore the Input of Ribbon in the documentation of the DHT
 
 A text input field with an icon.
 
-![](/img/ribbon/input.png)
+![Ribbon search input field with a magnifier icon and placeholder text in DHTMLX Suite](/img/ribbon/input.png)
 
 ## Adding Input
 

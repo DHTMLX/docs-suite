@@ -8,7 +8,7 @@ description: You can explore the Combo of Form in the documentation of the DHTML
 
 An input that represents an advanced select box with a set of options. It is able to provide suggestions while a user is typing text.
 
-![Combo control](/img/form/form_combo.png)
+![Combo form control with an open dropdown list of numeric options in DHTMLX Suite](/img/form/form_combo.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

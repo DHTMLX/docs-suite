@@ -13,7 +13,7 @@ Our application will have the following structure:
 
 <div className={styles.image}>
 
-![](/img/tutorial/basic_application/layout_002.png)
+![Layout scheme with a toolbar row above grid and chart cells in DHTMLX Suite](/img/tutorial/basic_application/layout_002.png)
 
 </div>
 

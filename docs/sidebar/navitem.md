@@ -8,7 +8,7 @@ description: You can explore the NavItem of Sidebar in the documentation of the 
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
-![](/img/sidebar/navitem.png)
+![Sidebar NavItem with an icon, text label and a number badge in DHTMLX Suite](/img/sidebar/navitem.png)
 
 ## Adding NavItem
 

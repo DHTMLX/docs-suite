@@ -10,7 +10,7 @@ description: You can explore the customization of Grid in the documentation of t
 
 There is a possibility to make changes in the look and feel of a grid. 
 
-![Styling grid](/img/grid/styling_grid.png)
+![Grid styled with a custom dark theme applied to headers and rows in DHTMLX Suite](/img/grid/styling_grid.png)
 
 **Related sample**: [Grid. Styling (custom CSS)](https://snippet.dhtmlx.com/c5tr3s5r)
 
@@ -69,7 +69,7 @@ For example:
 
 ## Styling selection
 
-![Styling selection](/img/grid/styling_selection.png)
+![Grid with a single cell selected and highlighted by a custom red selection border in DHTMLX Suite](/img/grid/styling_selection.png)
 
 **Related sample**: [Grid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/xs7bixmg)
 
@@ -101,7 +101,7 @@ Here is an example of how you can style selection in Grid:
 
 ## Styling header cells
 
-![](/img/grid/styling_header.png)
+![Grid with custom styled header cells where the Population header is enlarged and colored in DHTMLX Suite](/img/grid/styling_header.png)
 
 You can easily set some styling to the text of header cells by applying some inline style or a CSS class to the **text** property of the header of a column:
 
@@ -175,7 +175,7 @@ You can easily set some styling to the text of footer cells by applying some inl
 
 ## Styling rows
 
-![](/img/grid/rowcss.png)
+![Grid with a single row highlighted in orange by a custom CSS class in DHTMLX Suite](/img/grid/rowcss.png)
 
 It is possible to change the appearance of grid rows by applying custom CSS styles to them. There are two ways to do it:
 
@@ -235,7 +235,7 @@ where:
 
 ## Styling cells
 
-![](/img/grid/cellcss.png)
+![Grid with a single cell highlighted in green by a custom CSS class in DHTMLX Suite](/img/grid/cellcss.png)
 
 It is easy to style necessary cells using the **addCellCss()** method. It takes three parameters:
 
@@ -282,7 +282,7 @@ It is easy to style necessary cells using the **addCellCss()** method. It takes 
 
 ## Adding custom marks to cells
 
-![](/img/grid/markcells.png)
+![Grid with conditionally marked cells in the Population column shaded red in DHTMLX Suite](/img/grid/markcells.png)
 
 You can mark particular cells in a grid using the **mark** property of a column configuration. You need to set its value as a function that takes the following parameters:
 
@@ -390,13 +390,13 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 </script>
 ~~~
 
-![](/img/grid/mark_cell.png)
+![Grid marking the maximum population cell in red and the minimum in green in DHTMLX Suite](/img/grid/mark_cell.png)
 
 **Related sample**: [Grid. Mark cells](https://snippet.dhtmlx.com/buirf16n)
 
 ## Adding template to cells
 
-![](/img/grid/cell_templates.png)
+![Grid with a custom cell template rendering checkboxes in the Net Change column in DHTMLX Suite](/img/grid/cell_templates.png)
 
 It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/api/api_gridcolumn_properties.md). The template option is a function that takes three parameters:
 
@@ -469,7 +469,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Adding template to tooltip
 
-![](/img/grid/tooltip_template.png)
+![Grid showing a custom rich tooltip with an avatar image and last edit time on cell hover in DHTMLX Suite](/img/grid/tooltip_template.png)
 
 Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
 

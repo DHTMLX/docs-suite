@@ -10,7 +10,7 @@ description: You can explore the customization of Tree in the documentation of t
 
 There is a possibility to make changes in the look and feel of a tree. 
 
-![Styling Tree](/img/tree/custom_style.png)
+![Tree styled with custom CSS using colored folders and item text in DHTMLX Suite](/img/tree/custom_style.png)
 
 **Related sample**: [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
 
@@ -62,7 +62,7 @@ For example:
 
 ## Changing icons
 
-![](/img/tree/custom_icons.png)
+![Tree with custom book icons for folders and file items in DHTMLX Suite](/img/tree/custom_icons.png)
 
 **Related sample**: [Tree. Custom icons](https://snippet.dhtmlx.com/lpsgn3j7)
 

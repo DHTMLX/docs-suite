@@ -8,7 +8,7 @@ description: You can explore the configuration of DataView in the documentation 
 
 ## Arrow keys navigation
 
-![](/img/dataview/arrow_navigation.png)
+![DHTMLX DataView with animal cards arranged in two rows for arrow key navigation in DHTMLX Suite](/img/dataview/arrow_navigation.png)
 
 **Related sample**: [Dataview. Arrow navigation](https://snippet.dhtmlx.com/u7mgoly9)
 
@@ -100,7 +100,7 @@ const target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy
 
 ## Editing items
 
-![](/img/dataview/editable.png)
+![DHTMLX DataView item card with editable text in an inline edit field in DHTMLX Suite](/img/dataview/editable.png)
 
 **Related sample**: [Dataview. Inline editing](https://snippet.dhtmlx.com/m8fbqcza)
 
@@ -112,7 +112,7 @@ const dataview = new dhx.DataView("dataview_container", {editable:true});
 
 ## Height of an item
 
-![](/img/dataview/item_height.png)
+![DHTMLX DataView with short name-only item cards in two columns set by item height in DHTMLX Suite](/img/dataview/item_height.png)
 
 **Related sample**: [Dataview. Setup Dataview item height](https://snippet.dhtmlx.com/cth9mwrf)
 
@@ -138,7 +138,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 ## Height of the Dataview
 
-![](/img/dataview/dataview_height.png)
+![DHTMLX DataView with a single row of animal cards limited by a fixed widget height in DHTMLX Suite](/img/dataview/dataview_height.png)
 
 **Related sample**: [Dataview. Setup Dataview height](https://snippet.dhtmlx.com/g1k2l4q0)
 
@@ -158,7 +158,7 @@ const dataview = new dhx.DataView("dataview_container", {height: "400px"});
 
 ## Margins around DataView items
 
-![](/img/dataview/gap.png)
+![DHTMLX DataView animal cards spaced apart by margins between items in DHTMLX Suite](/img/dataview/gap.png)
 
 **Related sample**: [Dataview. Configure gap size](https://snippet.dhtmlx.com/ozsuww1q)
 
@@ -171,7 +171,7 @@ const dataview = new dhx.DataView("dataview_container", {itemsInRow: 4, gap: 20}
 
 ## Multiple selection of items
 
-![](/img/dataview/multiselection.png)
+![DHTMLX DataView with several item cards highlighted by multiple selection in DHTMLX Suite](/img/dataview/multiselection.png)
 
 By default, you can select only one item in a dataview, since selection of another item resets selection of the previous one. To enable the possbility to select several DataView items, make use of the [](dataview/api/dataview_multiselection_config.md) configuration option:
 
@@ -192,7 +192,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 ## Number of items in a row
 
-![](/img/dataview/items_in_row.png)
+![DHTMLX DataView showing five animal cards per row in a grid in DHTMLX Suite](/img/dataview/items_in_row.png)
 
 **Related sample**: [Dataview. Amount items in a row](https://snippet.dhtmlx.com/de4r8km3)
 
@@ -204,7 +204,7 @@ const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
 
 ## Selection of items
 
-![](/img/dataview/disable_selection.png)
+![DHTMLX DataView grid of animal cards with no item selected in DHTMLX Suite](/img/dataview/disable_selection.png)
 
 The default configuration of DataView provides you with the selection feature that allows highlighting a DataView item. To disable selection in a DataView you need to set the [](dataview/api/dataview_selection_config.md) configuration property to *false*:
 
@@ -216,7 +216,7 @@ const dataview = new dhx.DataView("dataview_container", {
 
 ## Template for DataView items
 
-![](/img/dataview/template.png)
+![DHTMLX DataView item cards rendered with a custom template showing photo title and description in DHTMLX Suite](/img/dataview/template.png)
 
 **Related sample**: [Dataview. With template](https://snippet.dhtmlx.com/d6l6grr7)
 

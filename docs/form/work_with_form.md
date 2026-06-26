@@ -355,7 +355,7 @@ You can easily specify that an input is obligatory to be treated by a user with 
 
 While you've set `required:true` for a field, it gets an asterisk next to its label:
 
-![Required fields](/img/form/required_fields.png)
+![Form with required Name Email and I am agree fields marked by asterisks in DHTMLX Suite](/img/form/required_fields.png)
 
 **Related sample**: [Form. Required](https://snippet.dhtmlx.com/0pr3var0)
 
@@ -365,7 +365,7 @@ The attribute is applicable to the input fields with the input types: "number", 
 
 Starting with v7.0, it is possible to add validation for number values entered in the input field. 
 
-![Value validate](/img/form/value_validate.png)
+![Form Age inputs showing green valid value and red invalid value validation messages in DHTMLX Suite](/img/form/value_validate.png)
 
 You just need to specify the minimum and/or maximum values allowed in the input via the `min` and/or `max` attributes.
 
@@ -387,7 +387,7 @@ The attributes are applicable to the input fields with the input type: "number".
 
 Starting from v7.0, you can easily limit the number of characters entered in an input or textarea field. 
 
-![Length validate](/img/form/length_validate.png)
+![Form Name inputs showing red invalid and green valid character length validation in DHTMLX Suite](/img/form/length_validate.png)
 
 For that, you need to use the `minlength` and (or) `maxlength` attributes that check the length of the given value. Validation is successful if the length is greater than or equal to the `minlength` value and (or) less than or equal to the `maxlength` value.
 
@@ -597,7 +597,7 @@ form.clear();
 
 ## Setting focus to a control
 
-![](/img/form/set_focus.png)
+![Form with various controls and focus set on the Name input field in DHTMLX Suite](/img/form/set_focus.png)
 
 Starting from v7.0, you can set focus to a Form control via the [setFocus()](form/api/form_setfocus_method.md) method. It takes either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter:
 

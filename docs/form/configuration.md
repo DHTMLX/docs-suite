@@ -139,7 +139,7 @@ const form = new dhx.Form("form_container", {
 
 ## Making Form disabled
 
-![](/img/form/disabled.png)
+![Disabled Form with greyed-out Name and Email inputs an I agree checkbox and a Send button in DHTMLX Suite](/img/form/disabled.png)
 
 **Related sample**: [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
 
