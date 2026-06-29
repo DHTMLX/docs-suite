@@ -8,7 +8,7 @@ description: You can explore the custom HTML button of Sidebar in the documentat
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
-![](../assets/sidebar/htmlcontent.png)
+![Sidebar Custom HTML item showing a user avatar, name and handle in DHTMLX Suite](/img/sidebar/htmlcontent.png)
 
 **Related sample**: [Sidebar. Custom HTML](https://snippet.dhtmlx.com/26ds0gxp)
 

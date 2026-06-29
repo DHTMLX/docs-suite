@@ -8,7 +8,7 @@ description: You can explore the Spacer of Sidebar in the documentation of the D
 
 This item takes space on the sidebar and is used for aligning controls.
 
-![](../assets/sidebar/spacer.png)
+![Sidebar Spacer adding empty space between navigation items in DHTMLX Suite](/img/sidebar/spacer.png)
 
 ## Adding Spacer
 

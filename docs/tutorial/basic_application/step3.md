@@ -3,6 +3,8 @@ sidebar_label: Step 3. Add a Toolbar
 title: Step 3. Add a Toolbar
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 To present Toolbar on the page we should take 3 simple steps:
 
 1\. To add a toolbar on the page we need to use the constructor, like this:
@@ -45,7 +47,11 @@ You can add other buttons in a similar manner.
 layout.cell("toolbar-cell").attach(toolbar);
 ~~~
 
-<img style="margin: 19px;  display: block;" src="tutorial/basic_application/toolbar_003.png"/>
+<div className={styles.image}>
+
+![Toolbar with Load and Clear buttons attached above empty grid and chart cells in DHTMLX Suite](/img/tutorial/basic_application/toolbar_003.png)
+
+</div>
 
 <div id="tutorial_step">
     <a id="next_step" href="tutorial/basic_application/step4.md"></a>

@@ -11,7 +11,7 @@ specify the sizes of a window and decide whether it should be resizable, movable
 
 ## Closability
 
-![](../assets/window/closable.png)
+![Closable Window with a header, Close button, text and an illustration in DHTMLX Suite](/img/window/closable.png)
 
 There is the [](window/api/window_closable_config.md) property that adds a Close button into the right top part of a window to allow a user to close a window on clicking it. This option is set to *true* by default.
 
@@ -39,7 +39,7 @@ const dhxWindow = new dhx.Window({
 
 ## Footer
 
-![](../assets/window/with_footer.png)
+![Window with a footer holding Decline and Accept buttons below the content in DHTMLX Suite](/img/window/with_footer.png)
 
 You can provide a window with a footer that will include some additional controls for manipulating the content.
 
@@ -55,7 +55,7 @@ By default a footer is initialized with no controls. To add a control into the f
 
 ## Modality
 
-![](../assets/window/modal_window.png)
+![Modal Window over a grayed out blocked background page in DHTMLX Suite](/img/window/modal_window.png)
 
 It is possible to make a window modal, if there's a necessity. Use the [](window/api/window_modal_config.md) property to turn this functionality on:
 
@@ -71,7 +71,7 @@ A modal window blocks the main window on its calling. It means that only the mod
 
 ## Movability
 
-![](../assets/window/movable.png)
+![Movable Window with a drag move cursor icon above its header in DHTMLX Suite](/img/window/movable.png)
 
 To equip a window with the ability to be moved around the screen, you should set the [](window/api/window_movable_config.md) property to *true*:
 
@@ -99,7 +99,7 @@ const dhxWindow = new dhx.Window({
 
 ## Resizing
 
-![](../assets/window/resizable.png)
+![Resizable Window with a diagonal resize handle in the top right corner in DHTMLX Suite](/img/window/resizable.png)
 
 The default window has fixed sizes with no possibility to change them from UI. You can switch on the corresponding configuration option to make a window resizable. 
 

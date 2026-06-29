@@ -8,7 +8,7 @@ description: You can explore the Title of Sidebar in the documentation of the DH
 
 This is an item that contains some text.
 
-![](../assets/sidebar/title.png)
+![Sidebar Title control displaying an app name text label in DHTMLX Suite](/img/sidebar/title.png)
 
 ## Adding Title control
 

@@ -6,7 +6,7 @@ description: You can explore the dark high contrast theme of DHTMLX Suite in the
 
 # Dark high contrast theme
 
-![dark high contrast theme](../assets/themes/contrastdark_theme.png)
+![Sidebar, toolbar and grid widgets rendered with the dark high contrast theme in DHTMLX Suite](/img/themes/contrastdark_theme.png)
 
 The ["contrast-dark"](/themes/#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
 

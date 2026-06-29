@@ -8,7 +8,7 @@ description: You can explore the Toggle of Form in the documentation of the DHTM
 
 A special button control that changes its state from pressed to the unpressed one when clicked.
 
-![Toggle button control](../assets/form/form_toggle.png)
+![Toggle button form control shown with an eye icon in pressed and unpressed states in DHTMLX Suite](/img/form/form_toggle.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

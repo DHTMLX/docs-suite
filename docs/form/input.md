@@ -8,7 +8,7 @@ description: You can explore the Input of Form in the documentation of the DHTML
 
 An input field for typing some text inside.
 
-![Input control](../assets/form/form_input.png)
+![Input form control with a Name label and a placeholder text in DHTMLX Suite](/img/form/form_input.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

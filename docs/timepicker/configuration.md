@@ -11,7 +11,7 @@ description: You can explore the configuration of Timepicker in the documentatio
 The default TimePicker doesn't have any buttons. However, you can add two buttons that will allow you to close the timepicker after selecting necessary time or save the values selected for hour and minutes.
 These controls are helpful if you attach TimePicker to an input or a calendar, for example.
 
-![Actions buttons](../assets/timepicker/dhx_timepicker.png)
+![TimePicker with Save and Close action buttons enabled in DHTMLX Suite](/img/timepicker/dhx_timepicker.png)
 
 There's the [](timepicker/api/timepicker_controls_config.md) property in the timepicker configuration that while set to *true* enables rendering of the Save button and the Close icon button in the top right corner of the component.
 
@@ -31,7 +31,7 @@ In this mode the clock inside the timepicker will be shown together with the AM/
 
 - 24-hour clock:
 
-![24-hour clock](../assets/timepicker/amdm_false.png)
+![TimePicker in 24-hour format showing 20:33 with hour and minute sliders in DHTMLX Suite](/img/timepicker/amdm_false.png)
 
 ~~~js
 const timepicker = new dhx.Timepicker("timepicker_container");
@@ -39,7 +39,7 @@ const timepicker = new dhx.Timepicker("timepicker_container");
 
 - 12-hour clock:
 
-![12-hour clock](../assets/timepicker/amdm_true.png)
+![TimePicker in 12-hour format showing 08:33 PM with hour and minute sliders in DHTMLX Suite](/img/timepicker/amdm_true.png)
 
 ~~~js {2}
 const timepicker = new dhx.Timepicker("timepicker_container",{

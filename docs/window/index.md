@@ -10,7 +10,7 @@ DHTMLX Window allows working with several windows and their content at the same 
 such as moving/resizing a window, sending a window to the foreground/background, making a window modal, changing position and size of a window, setting content inside a window, etc.
 Check [online samples for DHTMLX Window](https://snippet.dhtmlx.com/nthbfzfr?tag=window).
 
-![](../assets/window/window_front.png)
+![DHTMLX Window titled WINDOW showing a scrollable list of dhtmlx components in DHTMLX Suite](/img/window/window_front.png)
 
 ## Features
 
