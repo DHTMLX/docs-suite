@@ -3,6 +3,8 @@ sidebar_label: Step 7. Display Data in the Chart
 title: Step 7. Display Data in the Chart
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 Before displaying data in the chart we need to process grid data.
 
 ## Process grid data
@@ -87,7 +89,11 @@ grid.data.events.on("Change", function(id,status,updatedItem){
 
 After finishing all the steps described in the tutorial, you get a mini app that looks like this:
 
-<img style="margin: 16px" src="tutorial/basic_application/chart.png"/>
+<div className={styles.image}>
+
+![Contacts grid beside a pie chart showing default versus premium users in DHTMLX Suite](/img/tutorial/basic_application/chart.png)
+
+</div>
 
 <div id="tutorial_step">
     <a id="next_step" href="tutorial.md"></a>

@@ -49,7 +49,7 @@ You can set selection to one or more rows or cells using the [`setCell()`](grid/
 
 ### Setting selection to a cell
 
-![](../assets/grid/set_cell.png)
+![Grid with a single cell selected and highlighted in the Yearly Change column in DHTMLX Suite](/img/grid/set_cell.png)
 
 The example below shows how to highlight the first cell in the "Yearly Change" column:
 
@@ -78,7 +78,7 @@ The `multiselection` property is disabled.
 
 You can highlight the desired cells when the [`multiselection:true`](grid/api/grid_multiselection_config.md) and the [`selection:"cell"`](grid/api/grid_selection_config.md) properties are set:
 
-![](../assets/grid/desired_setcell.png)
+![Grid with multiple non-adjacent cells selected and highlighted using multiselection in DHTMLX Suite](/img/grid/desired_setcell.png)
 
 ~~~jsx {5,6}
 const grid = new dhx.Grid("grid_container", {
@@ -99,7 +99,7 @@ grid.selection.setCell(grid.data.getId(3),"netChange", true, false);
 
 It is also possible to select a range of cells at once:
 
-![](../assets/grid/range_setcell.png)
+![Grid with a continuous range of cells selected and highlighted across several rows in DHTMLX Suite](/img/grid/range_setcell.png)
 
 For that, manipulate the `ctrlUp` and `shiftUp` parameters accordingly:
 

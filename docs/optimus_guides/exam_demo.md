@@ -8,7 +8,7 @@ description: You can explore how to work with Online Exam Demo using Optimus Fra
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
-![](../assets/optimus/demo/examsystem_demo.png)
+![Online Exam System demo showing an exams TreeGrid grouped by subject with filters and sidebar in DHTMLX Suite](/img/optimus/demo/examsystem_demo.png)
 
 This demo application shows how to create an online examination system for an educational project with subjects, exams, and students' results. It is developed using DHTMLX Suite widgets: Grid in the TreeGrid mode, Form, Sidebar, and Toolbar.
 

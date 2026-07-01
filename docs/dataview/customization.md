@@ -10,7 +10,7 @@ description: You can explore the customization of DataView in the documentation 
 
 There is a possibility to make changes in the look and feel of a dataview. 
 
-![Custom dataview styles](../assets/dataview/custom_widget_styles.png)
+![DHTMLX DataView with a dark custom theme applied to item cards in DHTMLX Suite](/img/dataview/custom_widget_styles.png)
 
 **Related sample**: [Dataview. Styling (custom CSS)](https://snippet.dhtmlx.com/j1yv94o8)
 
@@ -87,7 +87,7 @@ You can style particular cells in the dataview. For example, apply some color to
 
 The image below and the related sample demonstrate another example of customization of Dataview items:
 
-![Custom items styles](../assets/dataview/custom_items_styles.png)
+![DHTMLX DataView with numbered item cards styled with custom green borders in DHTMLX Suite](/img/dataview/custom_items_styles.png)
 
 **Related sample**: [Dataview. Styling (custom CSS for item)](https://snippet.dhtmlx.com/kpnzizbf)
 
@@ -110,6 +110,6 @@ additional custom classes.
 </script>
 ~~~
 
-![Custom selection styles](../assets/dataview/custom_selection_styles.png)
+![DHTMLX DataView with a selected item card highlighted by a custom blue border in DHTMLX Suite](/img/dataview/custom_selection_styles.png)
 
 **Related sample**: [Dataview. Custom selection styles](https://snippet.dhtmlx.com/n98tzmzp)

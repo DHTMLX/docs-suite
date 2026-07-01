@@ -8,7 +8,7 @@ description: You can explore the customization of List in the documentation of t
 
 ## Styling
 
-![Styling List](../assets/list/custom_style.png)
+![List styled with custom CSS showing colored book titles and authors in DHTMLX Suite](/img/list/custom_style.png)
 
 **Related sample**: [List. Styling (custom CSS)](https://snippet.dhtmlx.com/s461f09w)
 
@@ -61,7 +61,7 @@ For example:
 
 You can style particular cells in the list.
 
-![Styling items](../assets/list/custom_css.png)
+![List with custom CSS applied to alternating numbered book items in DHTMLX Suite](/img/list/custom_css.png)
 
 **Related sample**: [List. Styling (custom CSS for item)](https://snippet.dhtmlx.com/ipu9yshl)
 
@@ -90,7 +90,7 @@ For example, apply some color to each even item, as in:
 
 It is also possible to customize selection of an item.
 
-![Custom selection](../assets/list/custom_selection.png)
+![List with a custom highlighted selected book item in DHTMLX Suite](/img/list/custom_selection.png)
 
 **Related sample**: [List. Styling selection with CSS](https://snippet.dhtmlx.com/6hss19d3)
 

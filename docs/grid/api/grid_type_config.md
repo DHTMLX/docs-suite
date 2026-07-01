@@ -24,4 +24,6 @@ const grid = new dhx.Grid("grid_container", {
 
 
 
-**Related article:** [TreeGrid mode](grid/treegrid_mode.md)
+**Related articles:**
+- [TreeGrid mode](grid/treegrid_mode.md)
+- [Grid accessibility](grid/accessibility.md)

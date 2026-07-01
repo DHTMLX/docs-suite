@@ -8,7 +8,7 @@ description: You can explore the Spacer of Toolbar in the documentation of the D
 
 This item takes space on the toolbar and is used for aligning controls.
 
-![](../assets/toolbar/spacer.png)
+![Toolbar using a spacer to align controls to the left and right sides in DHTMLX Suite](/img/toolbar/spacer.png)
 
 **Related sample**: [Toolbar. Spacer](https://snippet.dhtmlx.com/0wt6z7sc)
 

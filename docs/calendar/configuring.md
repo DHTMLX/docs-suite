@@ -16,7 +16,7 @@ There are several modes of displaying Calendar, which are set via the [](calenda
 const calendar = new dhx.Calendar("calendar_container");
 ~~~
 
-![](../assets/calendar/calendar_mode.png)
+![Calendar in default day mode showing the month grid for July 2019 in DHTMLX Suite](/img/calendar/calendar_mode.png)
 
 - **"month"** - only months of the current year are shown in the calendar 
 
@@ -26,7 +26,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-![](../assets/calendar/month_mode.png)
+![Calendar in month mode listing the twelve months of 2019 in DHTMLX Suite](/img/calendar/month_mode.png)
 
 - **"year"** - only years are shown, including the current one
 
@@ -36,7 +36,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-![](../assets/calendar/year_mode.png)
+![Calendar in year mode showing the years 2016 to 2027 in DHTMLX Suite](/img/calendar/year_mode.png)
 
 **Related sample**: [Calendar. Calendar modes](https://snippet.dhtmlx.com/n9q0tc0q)
 
@@ -57,7 +57,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Disabled dates
 
-![](../assets/calendar/blocked_dates.png)
+![Calendar month view with weekend days disabled and dimmed in DHTMLX Suite](/img/calendar/blocked_dates.png)
 
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
@@ -84,7 +84,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Displaying only current month
 
-![](../assets/calendar/this_month_only.png)
+![Calendar showing only the current month days without adjacent month dates in DHTMLX Suite](/img/calendar/this_month_only.png)
 
 **Related sample**: [Calendar. The days of this month only](https://snippet.dhtmlx.com/4wi5hbtr)
 
@@ -98,7 +98,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Highlighted dates
 
-![](../assets/calendar/marked_dates.png)
+![Calendar month view with Saturdays highlighted by red circular markers in DHTMLX Suite](/img/calendar/marked_dates.png)
 
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
@@ -190,7 +190,7 @@ Please note that the format of date in the Calendar is defined by the dateFormat
 
 ## Numbers of weeks
 
-![](../assets/calendar/week_numbers.png)
+![Calendar month view with week numbers shown in a left-hand column in DHTMLX Suite](/img/calendar/week_numbers.png)
 
 **Related sample**: [Calendar. Numbers of weeks](https://snippet.dhtmlx.com/9692gk6n)
 
@@ -204,7 +204,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Range mode
 
-![](../assets/calendar/range_mode.png)
+![Calendar in range mode with a span of dates highlighted in July 2020 in DHTMLX Suite](/img/calendar/range_mode.png)
 
 **Related sample**: [Calendar. Range](https://snippet.dhtmlx.com/2mrj53h0)
 
@@ -224,7 +224,7 @@ The **value** option should have the array type and contain a pair of values (ei
 
 ## Start of the week
 
-![](../assets/calendar/weekstart_monday.png)
+![Calendar month view with the week starting on Monday in DHTMLX Suite](/img/calendar/weekstart_monday.png)
 
 **Related sample**: [Calendar. Week start](https://snippet.dhtmlx.com/kaxmurh9)
 
@@ -248,7 +248,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-![](../assets/calendar/timepicker_format.png)
+![Two Calendars comparing 24-hour and 12-hour timepicker formats in DHTMLX Suite](/img/calendar/timepicker_format.png)
 
 **Related sample**: [Calendar. Timepicker In Calendar](https://snippet.dhtmlx.com/jkbfb202)
 
@@ -256,7 +256,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Width of calendar
 
-![](../assets/calendar/calendar_width.png)
+![Calendar month view rendered at a wider custom width in DHTMLX Suite](/img/calendar/calendar_width.png)
 
 **Related sample**: [Calendar. Calendar width](https://snippet.dhtmlx.com/azm0u5ns)
 

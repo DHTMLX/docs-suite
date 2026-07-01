@@ -604,7 +604,7 @@ const grid = new dhx.Grid("grid_container", {
 
 - setting HTML content for a particular column
 
-![](../assets/grid/html_content.png)
+![Grid with HTML content enabled showing country flag images in the Country column in DHTMLX Suite](/img/grid/html_content.png)
 
 If you want to add custom elements into cells of the specified column, you need to set the `htmlEnable:true` property in the [configuration of a column](grid/api/api_gridcolumn_properties.md):
 
@@ -1126,7 +1126,7 @@ const grid = new dhx.Grid("grid", {
 
 In case a user enters a value that goes beyond the limits specified by the above settings, the entered value is highlighted in red:
 
-![Validation of columns with the number type](../assets/grid/col_number_validation.png)
+![Grid number editor highlighting an out-of-range value in red during cell editing in DHTMLX Suite](/img/grid/col_number_validation.png)
 
 If the user ignores the warning and still tries to enter an unallowable value, it will be replaced with the minimum/maximum value defined in the `editorConfig` object by the `min/max` values. Thus, in the above example the entered value `200` will be replaced with `100`, since it is the upper limit set in the editor configuration.
 
@@ -1163,11 +1163,11 @@ From v7.3, you may allow end users to add new options into the combobox editor (
 
 The new option will be added into the combobox after the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list. 
 
-![](../assets/grid/combobox_editor.png)
+![Grid combobox editor showing a Create new option prompt in the Status column dropdown in DHTMLX Suite](/img/grid/combobox_editor.png)
 
 At the same time, the created option will also appear in the drop-down list of the header/footer filters ([content: "selectFilter" | "comboFilter"](#headerfooter-filters)) of the column:
 
-![](../assets/grid/new_combobox_option.png)
+![Grid header selectFilter dropdown listing a newly added Verified option in the Status column in DHTMLX Suite](/img/grid/new_combobox_option.png)
 
 
 > To localize the *Create* option, translate the corresponding string and apply a ready locale to the Combobox component:
@@ -1623,11 +1623,11 @@ You can define the logic of setting the position of the Grid footer as well as o
 
 - `relative` - (default) the footer follows the content immediately. If the number of rows is small and doesn't fill the container, the footer moves up to stay attached with the last row.
 
-![](../assets/grid/footer_relative_position.png)
+![Grid with the summary footer following the last row in relative position in DHTMLX Suite](/img/grid/footer_relative_position.png)
 
 - `bottom` - the footer and bottom-pinned (frozen) rows are strictly locked to the bottom edge of the container. They remain at the base of the component even if the content takes only a part of the available height.
 
-![](../assets/grid/footer_bottom_position.png)
+![Grid with the summary footer and a frozen row locked to the bottom edge of the container in DHTMLX Suite](/img/grid/footer_bottom_position.png)
 
 Here is the example of positioning the footer and a frozen row at the bottom of the Grid, as presented in the above image:
 
@@ -2178,7 +2178,7 @@ The row expander functionality allows using nested content in Grid sub-rows. You
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-![](../assets/grid/row_expander.png)
+![Grid with an expanded row revealing a nested subgrid of animal details in DHTMLX Suite](/img/grid/row_expander.png)
 
 ### Adding sub-rows 
 
@@ -2353,7 +2353,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-![](../assets/grid/subgrid_specific_rows.png)
+![Grid where only the row with data is expanded to show a nested country subgrid in DHTMLX Suite](/img/grid/subgrid_specific_rows.png)
 
 In the above example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that sub-rows with the height 250px will be created for rows that have some data. For rows without data the `height:0` setting is specified, so sub-rows won't be created for these rows.
 
@@ -2499,7 +2499,7 @@ const grid = new dhx.Grid("grid_container", {
 
 It is possible to create as many levels of nested subgrids, as necessary. 
 
-![](../assets/grid/multi_level_nesting.png)
+![Grid with multiple levels of nested subgrids expanded from level 1 down to level 4 in DHTMLX Suite](/img/grid/multi_level_nesting.png)
 
 To specify the structure of a multi-level Grid nesting, do the following:
 
@@ -2763,7 +2763,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 The [`DragPanel`](grid/usage_dragpanel.md) module allows configuring the drag-n-drop functionality in Grid. It provides settings for adjusting the look and feel of the drag panel that appears when the drag-n-drop functionality is activated. Check the details below.
 
-![](../assets/grid/dragpanel_module.png)
+![Grid rows with drag handle panels shown in the leftmost column for row reordering in DHTMLX Suite](/img/grid/dragpanel_module.png)
 
 To initialize the `DragPanel` module, you should enable the [`dragPanel`](grid/api/grid_dragpanel_config.md) property in the Grid configuration together with the [row Drag-and-Drop](#drag-n-drop) functionality (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties). For example:
 
@@ -3168,23 +3168,23 @@ The navigation shortcut keys and keys combinations that Grid enables by default 
 <table>
     <tbody>
         <tr>
-            <td><b>PageUp</b></td>
+            <td><kbd>PageUp</kbd></td>
             <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>PageDown</b></td>
+            <td><kbd>PageDown</kbd></td>
             <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>Home</b></td>
+            <td><kbd>Home</kbd></td>
             <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>End</b></td>
+            <td><kbd>End</kbd></td>
             <td>navigates to the end of the Grid content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Enter</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
             <td>expands/collapses the parent item in the TreeGrid mode</td>
         </tr>
     </tbody>
@@ -3226,43 +3226,43 @@ The list of the shortcut keys and their combinations used for moving selection b
 <table>
     <tbody>
         <tr>
-            <td><b>ArrowUp</b></td>
+            <td><kbd>ArrowUp</kbd></td>
             <td>moves selection to the previous vertical cell</td>
         </tr>
         <tr>
-            <td><b>ArrowDown</b></td>
+            <td><kbd>ArrowDown</kbd></td>
             <td>moves selection to the next vertical cell</td>
         </tr>
         <tr>
-            <td><b>ArrowLeft</b></td>
+            <td><kbd>ArrowLeft</kbd></td>
             <td>moves selection to the previous horizontal cell</td>
         </tr>
         <tr>
-            <td><b>ArrowRight</b></td>
+            <td><kbd>ArrowRight</kbd></td>
             <td>moves selection to the next horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
             <td> moves selection to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
             <td> moves selection to the last horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Tab</b></td>
+            <td><kbd>Tab</kbd></td>
             <td> moves selection to the next horizontal cell or the first cell of the next row</td>
         </tr>
         <tr>
-            <td><b>Shit+Tab</b></td>
+            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
             <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
         </tr>
     </tbody>
@@ -3273,35 +3273,35 @@ The combinations of the shortcut keys listed below do not work when the `selecti
 <table>
     <tbody>
         <tr>
-            <td><b>Shift+ArrowUp</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the previous vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowDown</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the next vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowLeft</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>moves selection to the previous horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowRight</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>moves selection to the next horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the first vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the last vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>moves selection to the first horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>moves selection to the last horizontal cell with the change of the selected cells</td>
         </tr>
     </tbody>
@@ -3330,15 +3330,15 @@ The list of the shortcut keys for editing is given below:
 <table>
     <tbody>
         <tr>
-            <td><b>Enter</b></td>
+            <td><kbd>Enter</kbd></td>
             <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes</td>
         </tr>
         <tr>
-            <td><b>Escape</b></td>
+            <td><kbd>Escape</kbd></td>
             <td>closes the editor of the selected cell without saving</td>
         </tr>
         <tr>
-            <td><b>Delete</b></td>
+            <td><kbd>Delete</kbd></td>
             <td>clears data in the selected cells. Works only with the <a href="../usage_blockselection/#keyboard-navigation">`BlockSelection` module</a> in the "range" mode</td>
         </tr>
     </tbody>
@@ -3357,67 +3357,67 @@ The module supports keyboard navigation for selecting and managing ranges, simil
 <table>
     <tbody>
         <tr>
-            <td><b>ArrowUp</b></td>
+            <td><kbd>ArrowUp</kbd></td>
             <td>resets the selected range and moves the focus to the previous vertical cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowDown</b></td>
+            <td><kbd>ArrowDown</kbd></td>
             <td>resets the selected range and moves the focus to the next vertical cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowLeft</b></td>
+            <td><kbd>ArrowLeft</kbd></td>
             <td>resets the selected range and moves the focus to the previous horizontal cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowRight</b></td>
+            <td><kbd>ArrowRight</kbd></td>
             <td>resets the selected range and moves the focus to the next horizontal cell, setting the initially selected cell if no selection is active</td>
         </tr>
          <tr>
-            <td><b>Shift+ArrowUp</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>extends the selected range from the current initial cell to the previous vertical cell</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowDown</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>extends the selected range from the current initial cell to the next vertical cell </td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowLeft</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>extends the selected range from the current initial cell to the previous horizontal cell </td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowRight</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>extends the selected range from the current initial cell to the next horizontal cell </td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
             <td>resets the selected range and moves the focus to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
             <td>resets the selected range and moves the focus to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>resets the selected range and moves the focus to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
             <td>resets the selected range and moves the focus to the last horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>extends the selected range to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>extends the selected range to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td> extends the selected range to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td> extends the selected range to the last horizontal cell</td>
         </tr>
     </tbody>
@@ -3428,7 +3428,7 @@ The following shortcut key and mouse combination is available:
 <table>
     <tbody>
         <tr>
-            <td><b>Shift + click</b></td>
+            <td><kbd>Shift</kbd> + click</td>
             <td>sets the end cell of the range, extending the selection from the current initial cell</td>
         </tr>
     </tbody>
@@ -3439,7 +3439,7 @@ The following shortcut key is available when the [`editable` mode](grid/api/grid
  <table>
     <tbody>
         <tr>
-            <td><b>Delete</b></td>
+            <td><kbd>Delete</kbd></td>
             <td>allows clearing the selected cells</td>
         </tr>
     </tbody>
