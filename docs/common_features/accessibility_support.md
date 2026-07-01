@@ -32,14 +32,18 @@ There are special attributes used in the markup of DHTMLX Suite widgets that mak
 
 ### Grid
 
-There are **roles** and **attributes** for elements of grid, sorting, filters, editable cells to enable screen readers to interpret and navigate the columns and rows of the grid (enabled by default). Custom content should be marked manually.
+There are **roles** and **attributes** for elements of grid, sorting, filters, editable cells to enable screen readers to interpret and navigate the columns and rows of the grid (enabled by default). The semantics are always present and there is no flag to disable them. Custom content should be marked manually.
 
 You can find the following **roles** and **attributes** in the DOM:
 
-- role: *grid*, *rowgroup*, *row*, *columnheader*, *gridcell*, *button*
-- aria attributes: *label*, *rowcount*, *colcount*, *rowindex*, *colindex*, *aria-sort*.
+- role: *grid* (or *treegrid* in the `type: "tree"` mode), *rowgroup*, *row*, *columnheader*, *gridcell*, *button*
+- aria attributes: *label*, *rowcount*, *colcount*, *rowindex*, *colindex*, *aria-sort*, *aria-selected*, *aria-readonly*, *aria-multiselectable*, and — for tree rows — *aria-level* and *aria-expanded*.
 
-Role presentation and aria-hidden are used to hide redundant content from the accessibility tree.
+In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree.
+
+:::info
+For the complete picture — the ARIA model, the keyboard zones (header/body/footer), the focus model, and configuration recipes — see the dedicated [Grid accessibility](grid/accessibility.md) guide.
+:::
 
 ### Chart
 
@@ -72,10 +76,10 @@ Role presentation and aria-hidden are used to hide redundant markup from the acc
 
 All DHTMLX Suite widgets are provided with a keyboard navigation support. It allows using a Suite-based app without a mouse pointer. Basic rules include:
 
-- the "tab" key is used to navigate between widgets and clickable areas of the widgets
-- the "esc" key closes windows and editors
-- the "enter" is used to open and hide drop-down lists of select controls
-- the arrow keys are used to move selection or change active elements within widgets
+- the <kbd>Tab</kbd> key is used to navigate between widgets and clickable areas of the widgets
+- the <kbd>Esc</kbd> key closes windows and editors
+- the <kbd>Enter</kbd> is used to open and hide drop-down lists of select controls
+- the <kbd>Arrow</kbd> keys are used to move selection or change active elements within widgets
 
 :::info
 For the full list of built-in hotkeys, refer to the **Keyboard Navigation** articles of the following widgets:

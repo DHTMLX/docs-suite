@@ -584,7 +584,7 @@ form.getItem("button_id").setValue("button_value");
 
 ### Confirm message box
 
-10) Before v7.0, the *Space* and *Enter* key were used to confirm the Reject button. Starting with v7.0, the keys confirm the Apply button. The *Esc* key confirms the Reject button.
+10) Before v7.0, the <kbd>Space</kbd> and <kbd>Enter</kbd> key were used to confirm the Reject button. Starting with v7.0, the keys confirm the Apply button. The <kbd>Esc</kbd> key confirms the Reject button.
 
 Also note, that before v7.0, the confirm buttons were displayed in the following order: "Apply" and "Reject". In the version 7.0, the order has been changed to "Reject" and "Apply".
 

@@ -8,6 +8,31 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.5
+
+Released on July 1, 2026
+
+### Updates
+
+- Grid. Full WAI-ARIA accessibility support: implemented proper ARIA roles, states (selection, expansion), and accessible labels for editors and filters to support screen readers (WCAG 2.2 compliance)
+- Grid. Advanced Keyboard Navigation:
+    - Added navigation for Headers, Footers, and Grouping panel
+    - Added support for sorting via keyboard (<kbd>Enter</kbd>/<kbd>Space</kbd>)
+    - Added support for <kbd>PageUp</kbd>/<kbd>PageDown</kbd>, <kbd>Home</kbd>/<kbd>End</kbd>, and <kbd>Ctrl</kbd>+<kbd>Home</kbd>/<kbd>End</kbd> for cell focus movement
+    - Added <kbd>F2</kbd> shortcut to enter edit mode
+- Grid. Added standard keyboard patterns: <kbd>ArrowRight</kbd>/<kbd>ArrowLeft</kbd> for expanding and collapsing rows
+- Grid. Improved performance of rendering and selection state tracking in large datasets
+
+For additional information, refer to [Grid accessibility](grid/accessibility.md) and [Keyboard navigation](grid/configuration.md#keyboard-navigation) guides.
+
+### Fixes
+
+- Grid. Fixed clipboard operations (copy/paste) for frozen columns (`leftSplit`/`rightSplit`)
+- Grid. Fixed focus restoration to the cell after closing an editor
+- Grid. Fixed row highlighting and dropdown behavior in the `bottomSplit` area.
+- Tree. Fixed an error when removing items in autoload mode
+- Window. Fixed drag/resize positioning issues on scrolled pages
+
 ## Version 9.3.3 
 
 Released on June 2, 2026

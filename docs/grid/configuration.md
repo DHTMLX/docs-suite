@@ -3168,23 +3168,23 @@ The navigation shortcut keys and keys combinations that Grid enables by default 
 <table>
     <tbody>
         <tr>
-            <td><b>PageUp</b></td>
+            <td><kbd>PageUp</kbd></td>
             <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>PageDown</b></td>
+            <td><kbd>PageDown</kbd></td>
             <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>Home</b></td>
+            <td><kbd>Home</kbd></td>
             <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>End</b></td>
+            <td><kbd>End</kbd></td>
             <td>navigates to the end of the Grid content (without change of the selected cell)</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Enter</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
             <td>expands/collapses the parent item in the TreeGrid mode</td>
         </tr>
     </tbody>
@@ -3226,43 +3226,43 @@ The list of the shortcut keys and their combinations used for moving selection b
 <table>
     <tbody>
         <tr>
-            <td><b>ArrowUp</b></td>
+            <td><kbd>ArrowUp</kbd></td>
             <td>moves selection to the previous vertical cell</td>
         </tr>
         <tr>
-            <td><b>ArrowDown</b></td>
+            <td><kbd>ArrowDown</kbd></td>
             <td>moves selection to the next vertical cell</td>
         </tr>
         <tr>
-            <td><b>ArrowLeft</b></td>
+            <td><kbd>ArrowLeft</kbd></td>
             <td>moves selection to the previous horizontal cell</td>
         </tr>
         <tr>
-            <td><b>ArrowRight</b></td>
+            <td><kbd>ArrowRight</kbd></td>
             <td>moves selection to the next horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
             <td> moves selection to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
             <td> moves selection to the last horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Tab</b></td>
+            <td><kbd>Tab</kbd></td>
             <td> moves selection to the next horizontal cell or the first cell of the next row</td>
         </tr>
         <tr>
-            <td><b>Shit+Tab</b></td>
+            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
             <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
         </tr>
     </tbody>
@@ -3273,35 +3273,35 @@ The combinations of the shortcut keys listed below do not work when the `selecti
 <table>
     <tbody>
         <tr>
-            <td><b>Shift+ArrowUp</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the previous vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowDown</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the next vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowLeft</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>moves selection to the previous horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowRight</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>moves selection to the next horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the first vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the last vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>moves selection to the first horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>moves selection to the last horizontal cell with the change of the selected cells</td>
         </tr>
     </tbody>
@@ -3330,15 +3330,15 @@ The list of the shortcut keys for editing is given below:
 <table>
     <tbody>
         <tr>
-            <td><b>Enter</b></td>
+            <td><kbd>Enter</kbd></td>
             <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes</td>
         </tr>
         <tr>
-            <td><b>Escape</b></td>
+            <td><kbd>Escape</kbd></td>
             <td>closes the editor of the selected cell without saving</td>
         </tr>
         <tr>
-            <td><b>Delete</b></td>
+            <td><kbd>Delete</kbd></td>
             <td>clears data in the selected cells. Works only with the <a href="../usage_blockselection/#keyboard-navigation">`BlockSelection` module</a> in the "range" mode</td>
         </tr>
     </tbody>
@@ -3357,67 +3357,67 @@ The module supports keyboard navigation for selecting and managing ranges, simil
 <table>
     <tbody>
         <tr>
-            <td><b>ArrowUp</b></td>
+            <td><kbd>ArrowUp</kbd></td>
             <td>resets the selected range and moves the focus to the previous vertical cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowDown</b></td>
+            <td><kbd>ArrowDown</kbd></td>
             <td>resets the selected range and moves the focus to the next vertical cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowLeft</b></td>
+            <td><kbd>ArrowLeft</kbd></td>
             <td>resets the selected range and moves the focus to the previous horizontal cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowRight</b></td>
+            <td><kbd>ArrowRight</kbd></td>
             <td>resets the selected range and moves the focus to the next horizontal cell, setting the initially selected cell if no selection is active</td>
         </tr>
          <tr>
-            <td><b>Shift+ArrowUp</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>extends the selected range from the current initial cell to the previous vertical cell</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowDown</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>extends the selected range from the current initial cell to the next vertical cell </td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowLeft</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>extends the selected range from the current initial cell to the previous horizontal cell </td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowRight</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>extends the selected range from the current initial cell to the next horizontal cell </td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
             <td>resets the selected range and moves the focus to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
             <td>resets the selected range and moves the focus to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>resets the selected range and moves the focus to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
             <td>resets the selected range and moves the focus to the last horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>extends the selected range to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>extends the selected range to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td> extends the selected range to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td> extends the selected range to the last horizontal cell</td>
         </tr>
     </tbody>
@@ -3428,7 +3428,7 @@ The following shortcut key and mouse combination is available:
 <table>
     <tbody>
         <tr>
-            <td><b>Shift + click</b></td>
+            <td><kbd>Shift</kbd> + click</td>
             <td>sets the end cell of the range, extending the selection from the current initial cell</td>
         </tr>
     </tbody>
@@ -3439,7 +3439,7 @@ The following shortcut key is available when the [`editable` mode](grid/api/grid
  <table>
     <tbody>
         <tr>
-            <td><b>Delete</b></td>
+            <td><kbd>Delete</kbd></td>
             <td>allows clearing the selected cells</td>
         </tr>
     </tbody>
