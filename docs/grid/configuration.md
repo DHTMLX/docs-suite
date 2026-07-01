@@ -3159,7 +3159,7 @@ For information on working with the History API, read the [Work with History mod
 
 ## Keyboard navigation
 
-DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. Shortcuts are organized into **zones** - the body, header, and footer - and are resolved by where the focus currently is. Focus enters the grid through hidden focus sentinels and moves between the zones with the <kbd>Arrow</kbd> and <kbd>Tab</kbd> keys. For ARIA semantics, the focus model, and configuration recipes, refer to the following guide: [Grid accessibility](grid/accessibility.md).
+DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. 
 
 ### Default shortcut keys
 
@@ -3169,11 +3169,19 @@ The navigation shortcut keys and keys combinations that Grid enables by default 
     <tbody>
         <tr>
             <td><kbd>PageUp</kbd></td>
-            <td>moves the selected cell up by one page of visible rows; when no cell is selected, scrolls Grid up to the height of the visible content</td>
+            <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
         </tr>
         <tr>
             <td><kbd>PageDown</kbd></td>
-            <td>moves the selected cell down by one page of visible rows; when no cell is selected, scrolls Grid down to the height of the visible content</td>
+            <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
+        </tr>
+        <tr>
+            <td><kbd>Home</kbd></td>
+            <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
+        </tr>
+        <tr>
+            <td><kbd>End</kbd></td>
+            <td>navigates to the end of the Grid content (without change of the selected cell)</td>
         </tr>
         <tr>
             <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
@@ -3250,28 +3258,12 @@ The list of the shortcut keys and their combinations used for moving selection b
             <td> moves selection to the last horizontal cell</td>
         </tr>
         <tr>
-            <td><kbd>Home</kbd></td>
-            <td>moves selection to the first cell (column) of the current row</td>
-        </tr>
-        <tr>
-            <td><kbd>End</kbd></td>
-            <td>moves selection to the last cell (column) of the current row</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Home</kbd></td>
-            <td>moves selection to the first cell of the grid</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>End</kbd></td>
-            <td>moves selection to the last cell of the grid</td>
-        </tr>
-        <tr>
             <td><kbd>Tab</kbd></td>
-            <td>moves selection to the next horizontal cell or the first cell of the next row; at the end of the grid moves the focus into the footer (when it exists) or out of the grid</td>
+            <td> moves selection to the next horizontal cell or the first cell of the next row</td>
         </tr>
         <tr>
             <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
-            <td>moves selection to the previous horizontal cell or to the last cell of the previous row; at the beginning of the grid moves the focus into the header or out of the grid</td>
+            <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
         </tr>
     </tbody>
 </table>
@@ -3312,30 +3304,6 @@ The combinations of the shortcut keys listed below do not work when the `selecti
             <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>moves selection to the last horizontal cell with the change of the selected cells</td>
         </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>Home</kbd></td>
-            <td>extends the selection to the first cell of the current row</td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>End</kbd></td>
-            <td>extends the selection to the last cell of the current row</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Home</kbd></td>
-            <td>extends the selection to the first cell of the grid</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>End</kbd></td>
-            <td>extends the selection to the last cell of the grid</td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>PageUp</kbd></td>
-            <td>extends the selection up by one page of visible rows</td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>PageDown</kbd></td>
-            <td>extends the selection down by one page of visible rows</td>
-        </tr>
     </tbody>
 </table>
 
@@ -3363,15 +3331,7 @@ The list of the shortcut keys for editing is given below:
     <tbody>
         <tr>
             <td><kbd>Enter</kbd></td>
-            <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes. On a boolean (checkbox) cell, toggles the value</td>
-        </tr>
-        <tr>
-            <td><kbd>F2</kbd></td>
-            <td>opens the editor in the selected cell (non-boolean cells) - an alternative to <kbd>Enter</kbd></td>
-        </tr>
-        <tr>
-            <td><kbd>Space</kbd></td>
-            <td>toggles a boolean (checkbox) cell without opening a text editor</td>
+            <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes</td>
         </tr>
         <tr>
             <td><kbd>Escape</kbd></td>
@@ -3484,90 +3444,3 @@ The following shortcut key is available when the [`editable` mode](grid/api/grid
         </tr>
     </tbody>
 </table>
-
-### Shortcut keys for the header
-
-The column header is a navigable focus zone. The following shortcut keys are available when the focus is in the header:
-
-<table>
-    <tbody>
-        <tr>
-            <td><kbd>ArrowLeft</kbd> / <kbd>ArrowRight</kbd></td>
-            <td>move between header cells (colspan-aware: the focus skips cells covered by a span and lands on the owning cell)</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd></td>
-            <td>move between header rows in a multi-row header. <kbd>ArrowUp</kbd> from the first row has no effect; <kbd>ArrowDown</kbd> from the last row moves the focus into the body</td>
-        </tr>
-        <tr>
-            <td><kbd>Enter</kbd> / <kbd>Space</kbd></td>
-            <td>sort by the column. On a header cell that contains a filter control, <kbd>Enter</kbd> activates the filter (the inner control receives focus)</td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>Enter</kbd></td>
-            <td>toggle multi-column sort for the column (requires the [`multiSort`](grid/api/grid_multisort_config.md) property)</td>
-        </tr>
-        <tr>
-            <td><kbd>Tab</kbd> / <kbd>Shift</kbd>+<kbd>Tab</kbd></td>
-            <td>move within the header with row wrapping; <kbd>Tab</kbd> past the last header cell moves the focus into the body, <kbd>Shift</kbd>+<kbd>Tab</kbd> before the first header cell exits the grid</td>
-        </tr>
-        <tr>
-            <td><kbd>Escape</kbd></td>
-            <td>deactivate an active filter control and return the focus to its header cell; a second <kbd>Escape</kbd> returns the focus to the body</td>
-        </tr>
-    </tbody>
-</table>
-
-### Shortcut keys for the footer
-
-The footer is a navigable focus zone, symmetric with the header. The following shortcut keys are available when the focus is in the footer:
-
-<table>
-    <tbody>
-        <tr>
-            <td><kbd>ArrowLeft</kbd> / <kbd>ArrowRight</kbd></td>
-            <td>move between footer cells (colspan-aware)</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd></td>
-            <td>move between footer rows in a multi-row footer. <kbd>ArrowUp</kbd> from the first row moves the focus into the body; <kbd>ArrowDown</kbd> from the last row has no effect</td>
-        </tr>
-        <tr>
-            <td><kbd>Enter</kbd></td>
-            <td>activate a footer filter control</td>
-        </tr>
-        <tr>
-            <td><kbd>Tab</kbd> / <kbd>Shift</kbd>+<kbd>Tab</kbd></td>
-            <td>move within the footer with row wrapping; <kbd>Shift</kbd>+<kbd>Tab</kbd> before the first footer cell moves the focus into the body, <kbd>Tab</kbd> past the last footer cell exits the grid</td>
-        </tr>
-        <tr>
-            <td><kbd>Escape</kbd></td>
-            <td>deactivate an active filter control and return the focus to its footer cell, or return the focus to the body</td>
-        </tr>
-    </tbody>
-</table>
-
-### Shortcut keys for the TreeGrid
-
-In the TreeGrid mode (`type: "tree"`), the arrow keys operate on the tree column in addition to the [`Ctrl+Enter`](#default-shortcut-keys) expand/collapse toggle:
-
-<table>
-    <tbody>
-        <tr>
-            <td><kbd>ArrowRight</kbd></td>
-            <td>expands a collapsed branch; on an expanded branch with children, moves the focus to the first child row</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowLeft</kbd></td>
-            <td>collapses an expanded branch; on a leaf or a collapsed branch, moves the focus to the parent row</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
-            <td>toggles expand/collapse of the row</td>
-        </tr>
-    </tbody>
-</table>
-
-:::tip
-For the full picture of the keyboard model together with the WAI-ARIA semantics and the focus model, see the [Grid accessibility](grid/accessibility.md) guide.
-:::

@@ -33,10 +33,6 @@ For additional information, refer to [Grid accessibility](grid/accessibility.md)
 - Tree. Fixed an error when removing items in autoload mode
 - Window. Fixed drag/resize positioning issues on scrolled pages
 
-### Breaking changes
-
-- Grid. The <kbd>Home</kbd>/<kbd>End</kbd> and <kbd>Page Up</kbd>/<kbd>Page Down</kbd> keys now move the selected (active) cell instead of only scrolling the viewport. See the [Migration to Newer Versions](migration.md) guide for additional information.
-
 ## Version 9.3.3 
 
 Released on June 2, 2026
