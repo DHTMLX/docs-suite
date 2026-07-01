@@ -10,6 +10,20 @@ description: You can explore how to migrate to newer versions in the documentati
 If you are using an outdated version of DHTMLX Suite 5 and require the documentation for it, please [contact us](https://dhtmlx.com/docs/contact.shtml), and we will send it to you.
 :::
 
+9.3.3 -> 9.3.5
+-----------
+
+### Grid
+
+#### Keyboard navigation behaviour of Home/End and Page Up/Page Down
+
+Since v9.3.5, <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>Page Up</kbd>, and <kbd>Page Down</kbd> keys move the **selected (active) cell** instead of only scrolling the viewport (as part of the new [accessibility and keyboard navigation](grid/accessibility.md) model):
+
+- <kbd>Home</kbd> / <kbd>End</kbd> move the selected cell to the first / last column of the current row (previously they scrolled to the beginning / end of the grid content without changing the selected cell).
+- <kbd>Page Up</kbd> / <kbd>Page Down</kbd> move the selected cell up / down by one page of visible rows (previously they only scrolled the grid by the height of the visible content).
+
+The previous behaviour - scrolling the viewport without changing the active cell - is preserved as a fallback when **no cell is selected**. If you relied on these keys for viewport scrolling while a cell was selected, review the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article for the updated shortcut set.
+
 9.1 -> 9.2
 -----------
 
@@ -584,7 +598,7 @@ form.getItem("button_id").setValue("button_value");
 
 ### Confirm message box
 
-10) Before v7.0, the *Space* and *Enter* key were used to confirm the Reject button. Starting with v7.0, the keys confirm the Apply button. The *Esc* key confirms the Reject button.
+10) Before v7.0, the <kbd>Space</kbd> and <kbd>Enter</kbd> key were used to confirm the Reject button. Starting with v7.0, the keys confirm the Apply button. The <kbd>Esc</kbd> key confirms the Reject button.
 
 Also note, that before v7.0, the confirm buttons were displayed in the following order: "Apply" and "Reject". In the version 7.0, the order has been changed to "Reject" and "Apply".
 

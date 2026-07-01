@@ -2988,6 +2988,7 @@ module.exports = {
             "grid/usage_dragpanel",
             "grid/usage_history",
             "grid/customization",
+            "grid/accessibility",
             "grid/events"
           ],
         },

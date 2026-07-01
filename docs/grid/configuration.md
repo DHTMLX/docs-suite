@@ -3159,7 +3159,7 @@ For information on working with the History API, read the [Work with History mod
 
 ## Keyboard navigation
 
-DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. 
+DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. Shortcuts are organized into **zones** - the body, header, and footer - and are resolved by where the focus currently is. Focus enters the grid through hidden focus sentinels and moves between the zones with the <kbd>Arrow</kbd> and <kbd>Tab</kbd> keys. For ARIA semantics, the focus model, and configuration recipes, refer to the following guide: [Grid accessibility](grid/accessibility.md).
 
 ### Default shortcut keys
 
@@ -3168,23 +3168,15 @@ The navigation shortcut keys and keys combinations that Grid enables by default 
 <table>
     <tbody>
         <tr>
-            <td><b>PageUp</b></td>
-            <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
+            <td><kbd>PageUp</kbd></td>
+            <td>moves the selected cell up by one page of visible rows; when no cell is selected, scrolls Grid up to the height of the visible content</td>
         </tr>
         <tr>
-            <td><b>PageDown</b></td>
-            <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
+            <td><kbd>PageDown</kbd></td>
+            <td>moves the selected cell down by one page of visible rows; when no cell is selected, scrolls Grid down to the height of the visible content</td>
         </tr>
         <tr>
-            <td><b>Home</b></td>
-            <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
-        </tr>
-        <tr>
-            <td><b>End</b></td>
-            <td>navigates to the end of the Grid content (without change of the selected cell)</td>
-        </tr>
-        <tr>
-            <td><b>Ctrl+Enter</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
             <td>expands/collapses the parent item in the TreeGrid mode</td>
         </tr>
     </tbody>
@@ -3226,44 +3218,60 @@ The list of the shortcut keys and their combinations used for moving selection b
 <table>
     <tbody>
         <tr>
-            <td><b>ArrowUp</b></td>
+            <td><kbd>ArrowUp</kbd></td>
             <td>moves selection to the previous vertical cell</td>
         </tr>
         <tr>
-            <td><b>ArrowDown</b></td>
+            <td><kbd>ArrowDown</kbd></td>
             <td>moves selection to the next vertical cell</td>
         </tr>
         <tr>
-            <td><b>ArrowLeft</b></td>
+            <td><kbd>ArrowLeft</kbd></td>
             <td>moves selection to the previous horizontal cell</td>
         </tr>
         <tr>
-            <td><b>ArrowRight</b></td>
+            <td><kbd>ArrowRight</kbd></td>
             <td>moves selection to the next horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
             <td> moves selection to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
             <td> moves selection to the last horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Tab</b></td>
-            <td> moves selection to the next horizontal cell or the first cell of the next row</td>
+            <td><kbd>Home</kbd></td>
+            <td>moves selection to the first cell (column) of the current row</td>
         </tr>
         <tr>
-            <td><b>Shit+Tab</b></td>
-            <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
+            <td><kbd>End</kbd></td>
+            <td>moves selection to the last cell (column) of the current row</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>Home</kbd></td>
+            <td>moves selection to the first cell of the grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>End</kbd></td>
+            <td>moves selection to the last cell of the grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Tab</kbd></td>
+            <td>moves selection to the next horizontal cell or the first cell of the next row; at the end of the grid moves the focus into the footer (when it exists) or out of the grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>moves selection to the previous horizontal cell or to the last cell of the previous row; at the beginning of the grid moves the focus into the header or out of the grid</td>
         </tr>
     </tbody>
 </table>
@@ -3273,36 +3281,60 @@ The combinations of the shortcut keys listed below do not work when the `selecti
 <table>
     <tbody>
         <tr>
-            <td><b>Shift+ArrowUp</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the previous vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowDown</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the next vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowLeft</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>moves selection to the previous horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowRight</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>moves selection to the next horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>moves selection to the first vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>moves selection to the last vertical cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>moves selection to the first horizontal cell with the change of the selected cells</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>moves selection to the last horizontal cell with the change of the selected cells</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>Home</kbd></td>
+            <td>extends the selection to the first cell of the current row</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>End</kbd></td>
+            <td>extends the selection to the last cell of the current row</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Home</kbd></td>
+            <td>extends the selection to the first cell of the grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>End</kbd></td>
+            <td>extends the selection to the last cell of the grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>PageUp</kbd></td>
+            <td>extends the selection up by one page of visible rows</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>PageDown</kbd></td>
+            <td>extends the selection down by one page of visible rows</td>
         </tr>
     </tbody>
 </table>
@@ -3330,15 +3362,23 @@ The list of the shortcut keys for editing is given below:
 <table>
     <tbody>
         <tr>
-            <td><b>Enter</b></td>
-            <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes</td>
+            <td><kbd>Enter</kbd></td>
+            <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes. On a boolean (checkbox) cell, toggles the value</td>
         </tr>
         <tr>
-            <td><b>Escape</b></td>
+            <td><kbd>F2</kbd></td>
+            <td>opens the editor in the selected cell (non-boolean cells) - an alternative to <kbd>Enter</kbd></td>
+        </tr>
+        <tr>
+            <td><kbd>Space</kbd></td>
+            <td>toggles a boolean (checkbox) cell without opening a text editor</td>
+        </tr>
+        <tr>
+            <td><kbd>Escape</kbd></td>
             <td>closes the editor of the selected cell without saving</td>
         </tr>
         <tr>
-            <td><b>Delete</b></td>
+            <td><kbd>Delete</kbd></td>
             <td>clears data in the selected cells. Works only with the <a href="../usage_blockselection/#keyboard-navigation">`BlockSelection` module</a> in the "range" mode</td>
         </tr>
     </tbody>
@@ -3357,67 +3397,67 @@ The module supports keyboard navigation for selecting and managing ranges, simil
 <table>
     <tbody>
         <tr>
-            <td><b>ArrowUp</b></td>
+            <td><kbd>ArrowUp</kbd></td>
             <td>resets the selected range and moves the focus to the previous vertical cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowDown</b></td>
+            <td><kbd>ArrowDown</kbd></td>
             <td>resets the selected range and moves the focus to the next vertical cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowLeft</b></td>
+            <td><kbd>ArrowLeft</kbd></td>
             <td>resets the selected range and moves the focus to the previous horizontal cell, setting the initially selected cell if no selection is active</td>
         </tr>
         <tr>
-            <td><b>ArrowRight</b></td>
+            <td><kbd>ArrowRight</kbd></td>
             <td>resets the selected range and moves the focus to the next horizontal cell, setting the initially selected cell if no selection is active</td>
         </tr>
          <tr>
-            <td><b>Shift+ArrowUp</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>extends the selected range from the current initial cell to the previous vertical cell</td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowDown</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>extends the selected range from the current initial cell to the next vertical cell </td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowLeft</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>extends the selected range from the current initial cell to the previous horizontal cell </td>
         </tr>
         <tr>
-            <td><b>Shift+ArrowRight</b></td>
+            <td><kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td>extends the selected range from the current initial cell to the next horizontal cell </td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
             <td>resets the selected range and moves the focus to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
             <td>resets the selected range and moves the focus to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
             <td>resets the selected range and moves the focus to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
             <td>resets the selected range and moves the focus to the last horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowUp</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowUp</kbd></td>
             <td>extends the selected range to the first vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowDown</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowDown</kbd></td>
             <td>extends the selected range to the last vertical cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowLeft</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowLeft</kbd></td>
             <td> extends the selected range to the first horizontal cell</td>
         </tr>
         <tr>
-            <td><b>Ctrl+Shift+ArrowRight</b></td>
+            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>ArrowRight</kbd></td>
             <td> extends the selected range to the last horizontal cell</td>
         </tr>
     </tbody>
@@ -3428,7 +3468,7 @@ The following shortcut key and mouse combination is available:
 <table>
     <tbody>
         <tr>
-            <td><b>Shift + click</b></td>
+            <td><kbd>Shift</kbd> + click</td>
             <td>sets the end cell of the range, extending the selection from the current initial cell</td>
         </tr>
     </tbody>
@@ -3439,8 +3479,95 @@ The following shortcut key is available when the [`editable` mode](grid/api/grid
  <table>
     <tbody>
         <tr>
-            <td><b>Delete</b></td>
+            <td><kbd>Delete</kbd></td>
             <td>allows clearing the selected cells</td>
         </tr>
     </tbody>
 </table>
+
+### Shortcut keys for the header
+
+The column header is a navigable focus zone. The following shortcut keys are available when the focus is in the header:
+
+<table>
+    <tbody>
+        <tr>
+            <td><kbd>ArrowLeft</kbd> / <kbd>ArrowRight</kbd></td>
+            <td>move between header cells (colspan-aware: the focus skips cells covered by a span and lands on the owning cell)</td>
+        </tr>
+        <tr>
+            <td><kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd></td>
+            <td>move between header rows in a multi-row header. <kbd>ArrowUp</kbd> from the first row has no effect; <kbd>ArrowDown</kbd> from the last row moves the focus into the body</td>
+        </tr>
+        <tr>
+            <td><kbd>Enter</kbd> / <kbd>Space</kbd></td>
+            <td>sort by the column. On a header cell that contains a filter control, <kbd>Enter</kbd> activates the filter (the inner control receives focus)</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>Enter</kbd></td>
+            <td>toggle multi-column sort for the column (requires the [`multiSort`](grid/api/grid_multisort_config.md) property)</td>
+        </tr>
+        <tr>
+            <td><kbd>Tab</kbd> / <kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>move within the header with row wrapping; <kbd>Tab</kbd> past the last header cell moves the focus into the body, <kbd>Shift</kbd>+<kbd>Tab</kbd> before the first header cell exits the grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Escape</kbd></td>
+            <td>deactivate an active filter control and return the focus to its header cell; a second <kbd>Escape</kbd> returns the focus to the body</td>
+        </tr>
+    </tbody>
+</table>
+
+### Shortcut keys for the footer
+
+The footer is a navigable focus zone, symmetric with the header. The following shortcut keys are available when the focus is in the footer:
+
+<table>
+    <tbody>
+        <tr>
+            <td><kbd>ArrowLeft</kbd> / <kbd>ArrowRight</kbd></td>
+            <td>move between footer cells (colspan-aware)</td>
+        </tr>
+        <tr>
+            <td><kbd>ArrowUp</kbd> / <kbd>ArrowDown</kbd></td>
+            <td>move between footer rows in a multi-row footer. <kbd>ArrowUp</kbd> from the first row moves the focus into the body; <kbd>ArrowDown</kbd> from the last row has no effect</td>
+        </tr>
+        <tr>
+            <td><kbd>Enter</kbd></td>
+            <td>activate a footer filter control</td>
+        </tr>
+        <tr>
+            <td><kbd>Tab</kbd> / <kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>move within the footer with row wrapping; <kbd>Shift</kbd>+<kbd>Tab</kbd> before the first footer cell moves the focus into the body, <kbd>Tab</kbd> past the last footer cell exits the grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Escape</kbd></td>
+            <td>deactivate an active filter control and return the focus to its footer cell, or return the focus to the body</td>
+        </tr>
+    </tbody>
+</table>
+
+### Shortcut keys for the TreeGrid
+
+In the TreeGrid mode (`type: "tree"`), the arrow keys operate on the tree column in addition to the [`Ctrl+Enter`](#default-shortcut-keys) expand/collapse toggle:
+
+<table>
+    <tbody>
+        <tr>
+            <td><kbd>ArrowRight</kbd></td>
+            <td>expands a collapsed branch; on an expanded branch with children, moves the focus to the first child row</td>
+        </tr>
+        <tr>
+            <td><kbd>ArrowLeft</kbd></td>
+            <td>collapses an expanded branch; on a leaf or a collapsed branch, moves the focus to the parent row</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
+            <td>toggles expand/collapse of the row</td>
+        </tr>
+    </tbody>
+</table>
+
+:::tip
+For the full picture of the keyboard model together with the WAI-ARIA semantics and the focus model, see the [Grid accessibility](grid/accessibility.md) guide.
+:::
