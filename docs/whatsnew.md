@@ -14,24 +14,41 @@ Released on July 1, 2026
 
 ### Updates
 
-- Grid. Full WAI-ARIA accessibility support: implemented proper ARIA roles, states (selection, expansion), and accessible labels for editors and filters to support screen readers (WCAG 2.2 compliance)
+- Grid. Full WAI-ARIA Accessibility Support:
+    - Implemented a comprehensive accessibility layer compliant with **WCAG 2.2**.
+    - Added support for `role="grid"` and `role="treegrid"`, including proper hierarchical attributes: `aria-level`, `aria-expanded`, and `aria-rowindex/colindex`.
+    - Added descriptive `aria-label` attributes for inline editors, filter controls (input, select, combo), and sort triggers.
+    - Implemented **Roving Tabindex** and focus sentinels for seamless navigation between the Grid and other page elements.
+    - Improved screen reader experience by hiding decorative elements (resizers, sort icons, drag ghosts) from the accessibility tree via `aria-hidden`.
+
 - Grid. Advanced Keyboard Navigation:
-    - Added navigation for Headers, Footers, and Grouping panel
-    - Added support for sorting via keyboard (<kbd>Enter</kbd>/<kbd>Space</kbd>)
-    - Added support for <kbd>PageUp</kbd>/<kbd>PageDown</kbd>, <kbd>Home</kbd>/<kbd>End</kbd>, and <kbd>Ctrl</kbd>+<kbd>Home</kbd>/<kbd>End</kbd> for cell focus movement
-    - Added <kbd>F2</kbd> shortcut to enter edit mode
-- Grid. Added standard keyboard patterns: <kbd>ArrowRight</kbd>/<kbd>ArrowLeft</kbd> for expanding and collapsing rows
-- Grid. Improved performance of rendering and selection state tracking in large datasets
+    - Zone Navigation: Introduced three navigable focus zones: **Header**, **Body**, and **Footer**. Use <kbd>Up</kbd>/<kbd>Down</kbd> arrows or <kbd>Tab</kbd> to transition between zones.
+    - Global Shortcuts: Added support for <kbd>PageUp</kbd> / <kbd>PageDown</kbd> (page-wise movement), <kbd>Home</kbd> / <kbd>End</kbd> (first/last cell in a row), and <kbd>Ctrl+Home</kbd> / <kbd>Ctrl+End</kbd> (start/end of the grid).
+    - Selection & Range: Added <kbd>Shift</kbd> + navigation keys to extend selection in both `selection` and `blockSelection` modes.
+    - Editing & Interaction:
+        - Added <kbd>F2</kbd> as an alternative to <kbd>Enter</kbd> for opening editors.
+        - Added <kbd>Space</kbd> / <kbd>Enter</kbd> to toggle boolean (checkbox) cells without opening a text editor.
+        - Added <kbd>Delete</kbd> to clear content in `blockSelection` mode (when `editable: true`).
+    - Header/Footer Operations: Enabled column sorting via <kbd>Enter</kbd> / <kbd>Space</kbd> and multi-sorting via <kbd>Shift+Enter</kbd>. Filters can now be activated and navigated via keyboard.
+
+- Grid. TreeGrid Keyboard Patterns:
+    - Added standard tree navigation: <kbd>ArrowRight</kbd> to expand branches/move to children and <kbd>ArrowLeft</kbd> to collapse branches/move to parents.
+
+- Grid. Performance & Internal Optimization:
+    - Optimized selection state tracking by switching from $O(n)$ scans to $O(1)$ lookups.
+    - Implemented caching for derived accessibility properties to maintain high rendering speeds in large datasets.
+    - Improved focus restoration logic, ensuring focus returns to the correct cell after closing editors or switching zones.
 
 For additional information, refer to [Grid accessibility](grid/accessibility.md) and [Keyboard navigation](grid/configuration.md#keyboard-navigation) guides.
 
 ### Fixes
 
-- Grid. Fixed clipboard operations (copy/paste) for frozen columns (`leftSplit`/`rightSplit`)
-- Grid. Fixed focus restoration to the cell after closing an editor
-- Grid. Fixed row highlighting and dropdown behavior in the `bottomSplit` area.
-- Tree. Fixed an error when removing items in autoload mode
-- Window. Fixed drag/resize positioning issues on scrolled pages
+- Grid. Clipboard operations (`copy`/`paste`) when working with frozen columns (`leftSplit` / `rightSplit`).
+- Grid. Row highlighting and dropdown positioning issues within the `bottomSplit` area.
+- Grid. Improved `:focus-visible` styling to ensure focus outlines only appear during keyboard interaction.
+- Tree. A runtime error occurs when removing items in `autoload` mode.
+- Window. Positioning and calculation errors during drag-and-resize operations on scrolled pages.
+
 
 ## Version 9.3.3 
 
