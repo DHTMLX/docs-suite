@@ -12,7 +12,7 @@ description: You can explore the Properties of the Fieldset control of Form in t
 {
     type: "fieldset",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -34,7 +34,7 @@ description: You can explore the Properties of the Fieldset control of Form in t
 
 - `type` - (required) the type of a control, set it to "fieldset"
 - `name` - (optional) the name of a control
-- `id` - (optional) the id of a control, auto-generated if not set
+- `id` - (optional) the id of a control, must be **unique** if set, auto-generated if not set
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `css` - (optional) the name of a CSS class(es) applied to the control group

@@ -6,6 +6,10 @@ description: You can explore the configuration of a Cell of Layout in the docume
 
 # Configuration of a Cell
 
+:::info
+Please note that if you specify the `id` fields for cells, their values should be **unique**. You can also omit the `id` fields in the configuration of cells. In this case they will be generated automatically.
+:::
+
 ## HTML content
 
 A layout cell can have any HTML content inside it. You can set it with the [](layout/api/cell/layout_cell_html_config.md) attribute in the object of a cell.

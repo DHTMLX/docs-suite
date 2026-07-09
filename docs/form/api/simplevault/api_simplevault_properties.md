@@ -12,7 +12,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
 {
     type: "simplevault",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     target?: string,
     value?: [
         {
@@ -76,7 +76,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>target</b></td>

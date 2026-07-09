@@ -12,7 +12,7 @@ description: You can explore the Properties of the Timepicker control of Form in
 {
     type: "timepicker",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     value?: Date | number | string | array | object,
 
     css?: string,
@@ -47,7 +47,7 @@ description: You can explore the Properties of the Timepicker control of Form in
 
 - `type` - (required) the type of a control, set it to "timepicker"
 - `name` - (optional) the name of a control
-- `id` - (optional) the id of a control, auto-generated if not set
+- `id` - (optional) the id of a control, must be **unique** if set, auto-generated if not set
 - `value` - (optional) the initial value of the TimePicker control:
     -  The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the `getTime()` method of the `Date` object.
     - The value of a timepicker set as an array should have the following elements:
