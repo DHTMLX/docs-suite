@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.6
+
+Released on July 24, 2026
+
+### Fixes
+
+- Form. Fixed the `show()` method behavior to prevent overriding flexbox alignment styles with an inline `display: block` property
+- Grid. Fixed the checkbox click interaction in columns with `type: "boolean"`, ensuring the state toggles correctly on user click
+
 ## Version 9.3.5
 
 Released on July 1, 2026
