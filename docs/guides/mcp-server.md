@@ -159,7 +159,7 @@ Then run `agy` in the terminal.
 ### ChatGPT
 
 :::info
-For more information, consult the [official documentation](https://developers.openai.com/api/docs/guides/tools-connectors-mcp).
+For more information, consult the [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt).
 :::
 
 Follow these steps:
