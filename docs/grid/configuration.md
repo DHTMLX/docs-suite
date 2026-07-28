@@ -1418,7 +1418,11 @@ Allows end users to filter data of a column by choosing an option from a present
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+
+:::note
+If you work with large data sets, it is recommended to use **comboFilter** instead of **selectFilter** as header filters. Unlike selectFilter, comboFilter renders its options dynamically (the `virtual` property of `filterConfig` is enabled by default), so it does not render all options at once and performs better with a large number of filter values.
+:::
 
 - **comboFilter**
 
@@ -1445,7 +1449,6 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 - **placeholder** - (*string*) sets a placeholder in the input of ComboBox
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
-- 
 ~~~jsx 
 {
     id: "category",
@@ -1456,7 +1459,7 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 }
 ~~~
 
-**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 #### Redefining the default sorting for comboFilter
 
