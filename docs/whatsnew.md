@@ -8,6 +8,18 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.7
+
+Released on July 29, 2026
+
+### Updates
+
+- Grid. Significant performance optimizations: improved FPS and scroll smoothness when handling large datasets due to optimized internal rendering and virtualization logic
+
+### Fixes
+
+- Form/Grid. Fixed the issue where the `numberMask` would reset the value to 0 if it started with a leading zero during editing
+
 ## Version 9.3.6
 
 Released on July 24, 2026
