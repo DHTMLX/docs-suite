@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.8
+
+Released on August 3, 2026
+
+### Fixes
+
+- Grid. Fixed the height calculation for rows with `rowspan` when `autoHeight: true` is enabled, ensuring the container expands to fit the entire spanned content
+- Grid. Resolved an initialization error that occurred when using `autoWidth` with grouped data and an external `TreeCollection`
+
 ## Version 9.3.7
 
 Released on July 29, 2026
