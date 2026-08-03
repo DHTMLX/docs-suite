@@ -72,7 +72,7 @@ The quickest way is to add the MCP server URL through the CLI:
 claude mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
 ~~~
 
-Or if you prefer manual configuration, add this to your `mcp.json`:
+Or if you prefer manual configuration, add this to your `.mcp.json`:
 
 ~~~jsx
 {
