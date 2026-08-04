@@ -1,17 +1,17 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: Getting started with DHTMLX MCP server
+title: DHTMLX Suite MCP server for setup and component examples
 description: Connect AI coding assistants to live DHTMLX Suite documentation via the MCP server. Covers Grid, Form, Tree, Calendar, and all other Suite UI components.
 sidebar_class_name: ai-icon
 ---
 
-# Getting started with DHTMLX MCP server
+# DHTMLX Suite MCP server: setup and component examples
 
 DHTMLX Suite is a JavaScript UI library that includes [Grid](/grid/), [Form](/form/), [Chart](/chart/), [Tree](/tree/), [Calendar](/calendar/), [Layout](/layout/), and many other components, each with its own configuration properties, methods, and events. AI coding assistants often rely on training data that may not reflect the latest Suite releases, so generated code can reference outdated APIs, incorrect event names, or changed configuration options.
 
 The DHTMLX MCP server gives AI tools direct access to the current Suite documentation while generating responses. By connecting an assistant to the MCP endpoint, developers get accurate initialization code, current method signatures, and correct configuration details for any Suite component, based on live documentation rather than stale training data.
 
-#### MCP endpoint
+### MCP endpoint
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
