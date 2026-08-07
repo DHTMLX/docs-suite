@@ -1,17 +1,17 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: Getting started with DHTMLX MCP server
+title: DHTMLX Suite MCP server for setup and component examples
 description: Connect AI coding assistants to live DHTMLX Suite documentation via the MCP server. Covers Grid, Form, Tree, Calendar, and all other Suite UI components.
 sidebar_class_name: ai-icon
 ---
 
-# Getting started with DHTMLX MCP server
+# DHTMLX Suite MCP server: setup and component examples
 
 DHTMLX Suite is a JavaScript UI library that includes [Grid](/grid/), [Form](/form/), [Chart](/chart/), [Tree](/tree/), [Calendar](/calendar/), [Layout](/layout/), and many other components, each with its own configuration properties, methods, and events. AI coding assistants often rely on training data that may not reflect the latest Suite releases, so generated code can reference outdated APIs, incorrect event names, or changed configuration options.
 
 The DHTMLX MCP server gives AI tools direct access to the current Suite documentation while generating responses. By connecting an assistant to the MCP endpoint, developers get accurate initialization code, current method signatures, and correct configuration details for any Suite component, based on live documentation rather than stale training data.
 
-#### MCP endpoint
+### MCP endpoint
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -37,17 +37,17 @@ The MCP server indexes the full DHTMLX Suite documentation across all components
 
 ## How DHTMLX MCP server works
 
-The DHTMLX MCP server uses a Retrieval-Augmented Generation (RAG) pipeline combined with the Model Context Protocol (MCP) to provide AI assistants with up-to-date documentation.
+The DHTMLX MCP server uses a Retrieval-Augmented Generation (RAG) pipeline combined with the Model Context Protocol (MCP) to provide AI assistants with up-to-date documentation. Before any of that, the assistant first figures out which part of a request actually needs a documentation lookup and handles the rest from its own knowledge.
 
 At a high level:
 
-1. The AI assistant sends a query through MCP.
+1. The assistant sends the part of the query that needs documentation through MCP.
 2. The server determines which product documentation is relevant.
 3. Documentation content is retrieved from a vector index.
 4. The retrieved context is sent back to the assistant.
-5. The assistant generates a response using that context.
+5. The assistant combines that context with the part of the request it already handled on its own to generate a response.
 
-This approach allows AI tools to generate answers based on current documentation rather than training data alone.
+This approach allows AI tools to generate answers based on current documentation.
 
 ## Setup
 
@@ -182,7 +182,7 @@ https://docs.dhtmlx.com/mcp
 
 Once added, ChatGPT can retrieve documentation from the MCP server during conversations.
 
-:::warning 
+:::info 
 For intensive coding workflows, other MCP-aware tools may be more efficient.
 :::
 
