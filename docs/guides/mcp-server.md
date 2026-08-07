@@ -37,17 +37,17 @@ The MCP server indexes the full DHTMLX Suite documentation across all components
 
 ## How DHTMLX MCP server works
 
-The DHTMLX MCP server uses a Retrieval-Augmented Generation (RAG) pipeline combined with the Model Context Protocol (MCP) to provide AI assistants with up-to-date documentation.
+The DHTMLX MCP server uses a Retrieval-Augmented Generation (RAG) pipeline combined with the Model Context Protocol (MCP) to provide AI assistants with up-to-date documentation. Before any of that, the assistant first figures out which part of a request actually needs a documentation lookup and handles the rest from its own knowledge.
 
 At a high level:
 
-1. The AI assistant sends a query through MCP.
+1. The assistant sends the part of the query that needs documentation through MCP.
 2. The server determines which product documentation is relevant.
 3. Documentation content is retrieved from a vector index.
 4. The retrieved context is sent back to the assistant.
-5. The assistant generates a response using that context.
+5. The assistant combines that context with the part of the request it already handled on its own to generate a response.
 
-This approach allows AI tools to generate answers based on current documentation rather than training data alone.
+This approach allows AI tools to generate answers based on current documentation.
 
 ## Setup
 
