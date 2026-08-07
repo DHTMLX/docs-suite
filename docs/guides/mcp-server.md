@@ -182,7 +182,7 @@ https://docs.dhtmlx.com/mcp
 
 Once added, ChatGPT can retrieve documentation from the MCP server during conversations.
 
-:::warning 
+:::info 
 For intensive coding workflows, other MCP-aware tools may be more efficient.
 :::
 
