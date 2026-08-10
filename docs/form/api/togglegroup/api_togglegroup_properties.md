@@ -12,7 +12,7 @@ description: You can explore the Properties of the Toggle Group control of Form 
 {
     type: "toggleGroup",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -23,7 +23,7 @@ description: You can explore the Properties of the Toggle Group control of Form 
 
     options: [
         {
-             id?: string,
+             id?: string, // must be unique if set, auto-generated if not set
              hidden?: boolean,
              disabled?: boolean,
              selected?: boolean,
@@ -52,14 +52,14 @@ description: You can explore the Properties of the Toggle Group control of Form 
 
 - `type` - (required) the type of a control, set it to "toggleGroup"
 - `name` - (optional) the name of a control
-- `id` - (optional) the id of a control, auto-generated if not set
+- `id` - (optional) the id of a control, must be **unique** if set, auto-generated if not set
 - `hidden`- (optional) defines whether a ToggleGroup is hidden, *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `full` - (optional) defines whether the ToggleGroup will be extended to the width specified by the **width** property, *false* by default
 - `gap` - (optional) sets an offset between the elements (buttons) of an option, *0* by default
 - `multiselection` - (optional) defines the behavior that allows a multiple choice, *false* by default
 - `options` - (required) an array of ToggleGroup elements. An object of an element can contain the following attributes:
-    - `id` - (optional) the id of a control, auto-generated if not set
+    - `id` - (optional) the id of a control, must be **unique** if set, auto-generated if not set
     - `hidden`- (optional) defines whether a toggle button is hidden, *false* by default
     - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
     - `selected` - (optional) defines the initial state of the toggle as selected (pressed), *false* by default
@@ -78,7 +78,7 @@ description: You can explore the Properties of the Toggle Group control of Form 
 
 ### Properties of a Toggle of ToggleGroup
 
-- `id` - (optional) the id of a control, auto-generated if not set
+- `id` - (optional) the id of a control, must be **unique** if set, auto-generated if not set
 - `hidden`- (optional) defines whether a toggle button is hidden, *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `selected` - (optional) defines the initial state of the toggle as selected (pressed), *false* by default

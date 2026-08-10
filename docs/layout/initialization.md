@@ -121,13 +121,17 @@ const layout = new dhx.Layout("layout_container", {cols});
 
 The properties of the configuration object of Layout allow you to define the structure of Layout.
 
-See the list of Layout properties [here](layout/api/api_overview.md#layout-properties).
+[See the list of Layout properties](layout/api/api_overview.md#layout-properties).
 
 #### Cell object
 
 There is also a set of properties you can specify for a Layout cell to configure it according to your needs. 
 
-You will find the detailed information on configuration options of the cell object in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.
+You will find the detailed information on configuration options of the cell object in the [Layout Cell API overview](layout/api/api_overview.md#cell-properties) article.
+
+:::info
+Please note that if you specify the `id` fields for cells, their values should be **unique**. You can also omit the `id` fields in the [configuration of cells](layout/cell_configuration.md). In this case they will be generated automatically.
+:::
 
 ## Example
 

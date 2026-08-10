@@ -114,6 +114,10 @@ rows: [
 ]
 ~~~
 
+:::info
+Please note that if you specify the `id` fields for controls, their values should be **unique**. You can also omit the `id` fields in the configuration of controls. In this case they will be generated automatically.
+:::
+
 ## Initialize Form
 
 Initialize Form with the `dhx.Form` object constructor. The constructor takes two parameters:

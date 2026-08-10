@@ -11,7 +11,7 @@ description: You can explore the views config of Tabbar in the documentation of 
 @signature: {'views: object[];'}
 
 @params:
-The **views** array contains a set of objects that describe configuration of tabs. Each tab object may include the following properties:
+The `views` array contains a set of objects that describe configuration of tabs. Each tab object may include the following properties:
 
 - `id: string` - the id of a tab
 - `tab: string` - the name of a tab
@@ -22,6 +22,10 @@ The **views** array contains a set of objects that describe configuration of tab
 - `padding: number | string` - the distance between the content of a cell and the border of tabbar
 - `tabWidth: number | string` - the width of a tab
 - `tabHeight: number | string` - the height of a tab
+
+:::info
+Please note that if you specify the `id` fields for tabs, their values should be **unique**. You can also omit the `id` fields in the configuration of tabs. In this case they will be generated automatically.
+:::
 
 @example:
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -36,6 +40,8 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 @descr:
 
 **Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
+
+## Tabs sizing
 
 1\. In case you specify both the sizes for a separate tab and the sizes for all tabs, the sizes set for a separate tab are a priority. For example:
 
@@ -60,6 +66,6 @@ As a result, the height of a tab is 45 and the width is 100.
 
 @changelog:
 
-The **tabWidth** and **tabHeight** properties of a tab object are added in v7.0.
+The `tabWidth` and `tabHeight` properties of a tab object are added in v7.0.
 
 [comment]: # (@related: tabbar/init.md#define-tabbar-structure tabbar/configuring_tabbar.md#structure-of-tabs)
