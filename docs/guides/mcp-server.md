@@ -39,13 +39,13 @@ The MCP server indexes the full DHTMLX Suite documentation across all components
 
 The DHTMLX MCP server uses a Retrieval-Augmented Generation (RAG) pipeline combined with the Model Context Protocol (MCP) to provide AI assistants with up-to-date documentation. Before any of that, the assistant first figures out which part of a request actually needs a documentation lookup and handles the rest from its own knowledge.
 
-At a high level:
+Here's what that looks like for the prompt *"I want to create a layout with a calendar in one cell, and a grid in another,"* one example among the many Suite components this same mechanism covers:
 
-1. The assistant sends the part of the query that needs documentation through MCP.
-2. The server determines which product documentation is relevant.
-3. Documentation content is retrieved from a vector index.
-4. The retrieved context is sent back to the assistant.
-5. The assistant combines that context with the part of the request it already handled on its own to generate a response.
+1. The assistant sends the query through MCP.
+2. The server determines that it touches the Layout, Calendar, and Grid documentation.
+3. Since the answer requires generated code, the server routes the query to *Search*, one of two workflows; a narrower factual question would route to *Inference* instead, which reads the same pages and answers directly.
+4. *Search* retrieves the matching pages from a vector index built on the current documentation and sends them back to the assistant as context.
+5. The assistant configures the layout, calendar, and grid together using that context.
 
 This approach allows AI tools to generate answers based on current documentation.
 
