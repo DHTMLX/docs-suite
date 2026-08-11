@@ -66,6 +66,4 @@ component.data.sort({
 
 @changelog:
 
-- The `config` parameter is added in v9.0.
-
-- As of v9.3.9, calling the method with a rule and without a config always sets the sorting anew instead of extending the previously applied levels.
+The `config` parameter is added in v9.0.

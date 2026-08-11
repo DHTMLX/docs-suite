@@ -60,6 +60,4 @@ The array returned by the method contains objects with the following properties:
 
 
 @changelog:
-- Added in v9.1
-
-- As of v9.3.9, `smartSorting` is reliably included in the returned object for every sorting level.
+added in v9.1

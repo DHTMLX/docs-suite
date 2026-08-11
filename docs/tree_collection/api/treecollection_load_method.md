@@ -48,7 +48,3 @@ toolbar.data.loadData.then(function () {
 ~~~
 
 The method resets the applied sorting and filtering: the sorting is dropped, and so are all the filters except those applied with `permanent: true`, which are reapplied to the new data.
-
-@changelog:
-
-As of v9.3.9, the method resets the applied sorting and non-permanent filtering.

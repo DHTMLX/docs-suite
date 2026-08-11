@@ -72,14 +72,6 @@ grid.data.filter({
 
 @descr:
 
-Unless `config.add` is set, the method replaces the currently applied filters. Permanent filters are the exception: they always survive and are reapplied first, and the new rule narrows their result further, so the two act as an AND.
-
-:::note
-Calling the method without a rule drops all non-permanent filters and restores the unfiltered order.
-:::
+Unless `config.add` is set, the method replaces the currently applied filters; calling it without a rule at all drops all non-permanent filters and restores the unfiltered order. Permanent filters are the exception: they always survive and are reapplied first. The new rule then narrows their result further, so an item remains in the result only if it matches both the permanent filter and the new rule.
 
 **Related sample**: [Grid (TreeGrid). Filter](https://snippet.dhtmlx.com/epsslwcd)
-
-@changelog:
-
-As of v9.3.9, the `multi` attribute of a filtering rule is passed to the `compare` callback, matching the behavior of a flat collection.
