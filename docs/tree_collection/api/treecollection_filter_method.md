@@ -16,10 +16,12 @@ description: You can explore the filter method of TreeCollection in the document
     - If set as an *object*, the parameter has the following attributes:
         - `by?: string | number` - optional, the id of a data field
         - `match?: string` - optional, a pattern to match
-        - `compare?: function` - optional, a function for extended filtering that takes three parameters:
+        - `compare?: function` - optional, a function for extended filtering that takes the following parameters:
             - `value` - the value to compare 
             - `match` - a pattern to match
             - `item` - a data item the values of which should be compared 
+            - `multi` - the value of the `multi` attribute of the rule
+        - `multi?: boolean` - optional, marks the field as holding several values at once (e.g. a multiselect column stores them as a comma-separated string). Passed to `compare` as its last argument
 - `config?: object` - optional, defines the parameters of filtering. The parameter may contain the following properties:
     - `type?: string` - optional, defines the area the filtering will be applied: "all", "level", "leafs"
     - `level?: number` - optional, the level the filtering will be applied to
@@ -70,4 +72,14 @@ grid.data.filter({
 
 @descr:
 
+Unless `config.add` is set, the method replaces the currently applied filters. Permanent filters are the exception: they always survive and are reapplied first, and the new rule narrows their result further, so the two act as an AND.
+
+:::note
+Calling the method without a rule drops all non-permanent filters and restores the unfiltered order.
+:::
+
 **Related sample**: [Grid (TreeGrid). Filter](https://snippet.dhtmlx.com/epsslwcd)
+
+@changelog:
+
+As of v9.3.9, the `multi` attribute of a filtering rule is passed to the `compare` callback, matching the behavior of a flat collection.

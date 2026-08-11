@@ -8,6 +8,29 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.9
+
+Released on August 11, 2026
+
+### Updates
+
+- DataCollection/TreeCollection. The `parse()` and `load()` methods now reset the applied sorting and filtering:
+    - the sorting is dropped
+    - all the filters are dropped except those applied with `permanent: true`, which are reapplied to the new data
+- DataCollection/TreeCollection. The `sort()` method called with a rule and without a config now always sets the sorting anew:
+    - it discards the previously applied sorting levels and stops maintaining the order when items are added or updated
+    - multi-level sorting is built by applying the base level with `smartSorting: true` and every next level with `smartSorting: false`
+- DataCollection/TreeCollection. The `getSortingStates()` method returns the applied rules together with the config they were applied with, so `smartSorting` is available for every sorting level
+- Grid/TreeGrid. The sorting marks and the values of the header filters are reset when the data is replaced with `parse()` or `load()`
+
+### Fixes
+
+- Grid. Fixed multiselect filtering in a column with `editorType: "multiselect"`: a cell holding several values is now matched by any of them
+- Grid. Fixed the filter state not being reset by `removeAll()`: the header filter inputs were cleared while the filtering rules stayed in effect
+- TreeCollection. Fixed the tree becoming empty after `parse()` when a filter with `permanent: true` was applied: the next `filter()` or `resetFilter()` call cleared the tree, and `find()` stopped finding items
+- TreeCollection. Fixed an item being added twice when it was added to a sorted tree
+- TreeCollection. Fixed the `multi` property of a filtering rule not being passed to the compare callback, which made multiselect filtering in a tree differ from a flat collection
+
 ## Version 9.3.8
 
 Released on August 3, 2026

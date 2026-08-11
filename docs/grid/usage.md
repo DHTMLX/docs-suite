@@ -273,11 +273,11 @@ You can filter grid data by the specified criteria with the help of the `filter(
     <tbody>
         <tr>
             <td><b>rule</b></td>
-            <td>(<i>object|function</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>or:<li>an object with the following attributes:<br/>- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol><ol>- <b>match</b> - a pattern to match </ol><ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol></li></ul></td>
+            <td>(<i>object|function</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>or:<li>an object with the following attributes:<br/>- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes the following parameters:<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol><ol>- <b>match</b> - a pattern to match </ol><ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol><ol>- <b>multi</b> - the value of the <b>multi</b> attribute of the rule </ol><br/>- <b>multi</b> - (<i>boolean</i>) optional, marks the column as holding several values at once (e.g. a column with <b>editorType: "multiselect"</b> stores them as a comma-separated string). Passed to <b>compare</b> as its last argument</li></ul></td>
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object, is not dropped by resetFilter(), and is reapplied to the data after parse() or load(). Such a filter can be removed just with the resetFilter() method</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -307,6 +307,12 @@ grid.data.filter({
   add: true,
 });
 ~~~
+
+Unless `config.add` is set, the method replaces the currently applied filters. Permanent filters are the exception: they always survive and are reapplied first, and the new rule narrows their result further, so the two act as an AND.
+
+:::note
+Calling the method without a rule drops all non-permanent filters and restores the unfiltered order.
+:::
 
 **Related sample**: [Grid. Basic filter](https://snippet.dhtmlx.com/g0zpjqi1)
 
@@ -353,7 +359,7 @@ You can sort Grid by multiple columns simultaneously.
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
-Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](/data_collection/) by several columns:
+Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](/data_collection/) by several columns: the base level is applied with `smartSorting: true`, and every next level with `smartSorting: false`. Calling `sort()` with a rule and without this config would discard the previously applied levels instead of adding to them.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -369,8 +375,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.data.sort({ by: "volunteer_name", dir: "desc" }, { smartSorting: true });
-grid.data.sort({ by: "task_status", dir: "asc" });
-grid.data.sort({ by: "animal_type", dir: "asc" });
+grid.data.sort({ by: "task_status", dir: "asc" }, { smartSorting: false });
+grid.data.sort({ by: "animal_type", dir: "asc" }, { smartSorting: false });
 ~~~
 
 ![Grid with grouped rows and multi-column sorting shown in a group panel and column headers in DHTMLX Suite](/img/grid/multisort_grouped_data.png)
@@ -401,7 +407,7 @@ grid.data.sort({
 
 #### Getting the sorting state
 
-To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties:
+To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties. The array is ordered from the base sorting level to the last one added; do not modify it, as it is the array the collection sorts by, not a copy.
 
 <table>
     <tbody>

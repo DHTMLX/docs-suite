@@ -21,6 +21,8 @@ description: You can explore the filter method of DataCollection in the document
             - `value` - the value to compare 
             - `match` - a pattern to match
             - `item` - a data item the values of which should be compared 
+            - `multi` - the value of the `multi` attribute of the rule
+        - `multi?: boolean` - optional, marks the field as holding several values at once (e.g. a multiselect column stores them as a comma-separated string). Passed to `compare` as its last argument
 - `config?: object` - optional, an object with the following properties:
     - `id?: string` - optional, the id of the filter
     - `add?: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
@@ -62,6 +64,12 @@ grid.data.filter({
 });
 
 @descr:
+
+Unless `config.add` is set, the method replaces the currently applied filters. Permanent filters are the exception: they always survive and are reapplied first, and the new rule narrows their result further, so the two act as an AND.
+
+:::note
+Calling the method without a rule drops all non-permanent filters and restores the unfiltered order.
+:::
 
 **Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
 

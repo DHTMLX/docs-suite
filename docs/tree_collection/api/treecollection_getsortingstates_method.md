@@ -29,6 +29,8 @@ An array of objects with the current parameters of sorting applied to the data.
 const state = component.data.getSortingStates(); 
 
 @descr:
+The array is ordered from the base sorting level to the last one added; do not modify it, as it is the array the collection sorts by, not a copy.
+
 The array returned by the method contains objects with the following properties:
 
 <table>
@@ -58,4 +60,6 @@ The array returned by the method contains objects with the following properties:
 
 
 @changelog:
-added in v9.1
+- Added in v9.1
+
+- As of v9.3.9, `smartSorting` is reliably included in the returned object for every sorting level.
