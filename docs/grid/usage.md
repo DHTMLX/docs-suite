@@ -273,11 +273,11 @@ You can filter grid data by the specified criteria with the help of the `filter(
     <tbody>
         <tr>
             <td><b>rule</b></td>
-            <td>(<i>object|function</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>or:<li>an object with the following attributes:<ul><li><b>by</b> - (<i>string | number</i>) mandatory, the id of a column</li><li><b>match</b> - (<i>string</i>) mandatory, a pattern to match</li><li><b>compare</b> - (<i>function</i>) a function for extended filtering that takes the following parameters:<ul><li><b>value</b> - the value to compare (e.g. a column in a row)</li><li><b>match</b> - a pattern to match</li><li><b>item</b> - a data item the values of which should be compared (e.g. a row)</li><li><b>multi</b> - the value of the <b>multi</b> attribute of the rule</li></ul></li><li><b>multi</b> - (<i>boolean</i>) optional, marks the column as holding several values at once (e.g. a column with <b>editorType: "multiselect"</b> stores them as a comma-separated string). Passed to <b>compare</b> as its last argument</li></ul></li></ul></td>
+            <td>(<i>object|function</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>or:<li>an object with the following attributes:<ul><li><b>by</b> - (<i>string | number</i>) mandatory, the id of a column</li><li><b>match</b> - (<i>string</i>) mandatory, a pattern to match</li><li><b>compare</b> - (<i>function</i>) a function for extended filtering that takes the following parameters:<ul><li><b>value</b> - the value to compare (e.g. a column in a row)</li><li><b>match</b> - a pattern to match</li><li><b>item</b> - a data item the values of which should be compared (e.g. a row)</li><li><b>multi</b> - the value of the <code>multi</code> attribute of the rule</li></ul></li><li><b>multi</b> - (<i>boolean</i>) optional, marks the column as holding several values at once (e.g. a column with <code>editorType: "multiselect"</code> stores them as a comma-separated string). Passed to <code>compare</code> as its last argument</li></ul></li></ul></td>
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object, is not dropped by resetFilter(), and is reapplied to the data after parse() or load(). Such a filter can be removed just with the resetFilter() method</li></ul></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It is applied even if the next filtering doesn't have the <code>add:true</code> property in its configuration object. It is not dropped by a plain <code>resetFilter()</code> call and is reapplied to the data after <code>parse()</code> or <code>load()</code>; pass <code>permanent:true</code> to <code>resetFilter()</code> to remove it as well</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -328,7 +328,7 @@ It is possible to sort data in the grid via the `sort()` method of [DataCollecti
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) defines the parameter of sorting. It takes one attribute:<ul><li><b>smartSorting</b> (<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set</li></ul></td>
+            <td>(<i>object</i>) defines the parameter of sorting. It takes one attribute:<ul><li><b>smartSorting</b> - (<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set</li></ul></td>
         </tr>
     </tbody>
 </table>

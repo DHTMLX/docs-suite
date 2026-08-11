@@ -27,7 +27,7 @@ description: You can explore the filter method of TreeCollection in the document
     - `level?: number` - optional, the level the filtering will be applied to
     - `add?: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
     - `id?: string` - optional, the id of the filter
-    - `permanent?: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](tree_collection/api/treecollection_resetfilter_method.md) method
+    - `permanent?: boolean` - optional, *true* to make the current filter permanent. It is applied even if the next filtering doesn't have the `add:true` property in its configuration object. It is not dropped by a plain `resetFilter()` call and is reapplied to the data after `parse()` or `load()`; pass `permanent:true` to [resetFilter()](tree_collection/api/treecollection_resetfilter_method.md) to remove it as well
 - `silent?: boolean` - optional, if set to <i>true</i>, the method will be called without triggering events, <i>false</i> by default
 
 :::info
