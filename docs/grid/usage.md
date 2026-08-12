@@ -355,7 +355,7 @@ You can sort Grid by multiple columns simultaneously.
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
-Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](/data_collection/) by several columns: the base level is applied with `smartSorting: true`, and every next level with `smartSorting: false`. Calling `sort()` with a rule and without this config would discard the previously applied levels instead of adding to them.
+Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](/data_collection/) by several columns:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -371,8 +371,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.data.sort({ by: "volunteer_name", dir: "desc" }, { smartSorting: true });
-grid.data.sort({ by: "task_status", dir: "asc" }, { smartSorting: false });
-grid.data.sort({ by: "animal_type", dir: "asc" }, { smartSorting: false });
+grid.data.sort({ by: "task_status", dir: "asc" });
+grid.data.sort({ by: "animal_type", dir: "asc" });
 ~~~
 
 ![Grid with grouped rows and multi-column sorting shown in a group panel and column headers in DHTMLX Suite](/img/grid/multisort_grouped_data.png)
@@ -403,7 +403,7 @@ grid.data.sort({
 
 #### Getting the sorting state
 
-To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties.
+To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties:
 
 <table>
     <tbody>

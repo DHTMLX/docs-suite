@@ -15,8 +15,6 @@ Released on August 12, 2026
 ### Updates
 
 - DataCollection/TreeCollection. The `parse()` and `load()` methods now reset existing sorting and filtering. Only filters with `permanent: true` are retained and reapplied to the new dataset
-- DataCollection/TreeCollection. The `sort()` method now clears previous sorting levels by default when called without a config, providing a cleaner state for new sorting operations
-- DataCollection/TreeCollection. The `getSortingStates()` method now returns the full configuration for each level, including the `smartSorting` state
 - Grid. Visual sorting indicators and header filter values are now automatically reset when data is reloaded via `parse()` or `load()`
 
 ### Fixes

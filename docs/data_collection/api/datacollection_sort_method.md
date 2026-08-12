@@ -40,22 +40,6 @@ grid.data.sort();
 Calling the method without parameters will discard all applied sorting rules.
 :::
 
-Calling the method with a `rule` but without a `config` always sets the sorting anew, discarding whatever sorting was applied before.
-
-### Multi-level sorting
-
-To sort by several columns at once, apply the base level with `smartSorting: true` and every next level with `smartSorting: false`:
-
-~~~jsx
-// two-level sorting: by country, then by population
-grid.data.sort({ by: "country", dir: "asc" }, { smartSorting: true });
-grid.data.sort({ by: "population", dir: "desc" }, { smartSorting: false });
-~~~
-
-While the base level has `smartSorting: true`, the sorting is maintained as items are added or updated.
-
-`smartSorting: false` only appends a level on top of a base applied with `smartSorting: true`. Without such a base already applied, it replaces the current sorting instead of adding to it.
-
 ### Custom sorting
 
 To set a custom function for sorting, you need to specify the `rule` attribute in a passed object. For example:
