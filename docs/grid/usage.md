@@ -403,7 +403,7 @@ grid.data.sort({
 
 #### Getting the sorting state
 
-To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties. The array is ordered from the base sorting level to the last one added; do not modify it, as it is the array the collection sorts by, not a copy.
+To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties.
 
 <table>
     <tbody>

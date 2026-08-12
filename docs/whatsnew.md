@@ -10,26 +10,27 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.3.9
 
-Released on August 11, 2026
+Released on August 12, 2026
 
 ### Updates
 
-- DataCollection/TreeCollection. The `parse()` and `load()` methods now reset the applied sorting and filtering:
-    - the sorting is dropped
-    - all the filters are dropped except those applied with `permanent: true`, which are reapplied to the new data
-- DataCollection/TreeCollection. The `sort()` method called with a rule and without a config now always sets the sorting anew:
-    - it discards the previously applied sorting levels and stops maintaining the order when items are added or updated
-    - multi-level sorting is built by applying the base level with `smartSorting: true` and every next level with `smartSorting: false`
-- DataCollection/TreeCollection. The `getSortingStates()` method returns the applied rules together with the config they were applied with, so `smartSorting` is available for every sorting level
-- Grid/TreeGrid. The sorting marks and the values of the header filters are reset when the data is replaced with `parse()` or `load()`
+- DataCollection/TreeCollection. The `parse()` and `load()` methods now reset existing sorting and filtering. Only filters with `permanent: true` are retained and reapplied to the new dataset
+- DataCollection/TreeCollection. The `sort()` method now clears previous sorting levels by default when called without a config, providing a cleaner state for new sorting operations
+- DataCollection/TreeCollection. The `getSortingStates()` method now returns the full configuration for each level, including the `smartSorting` state
+- Grid. Visual sorting indicators and header filter values are now automatically reset when data is reloaded via `parse()` or `load()`
 
 ### Fixes
 
-- Grid. Fixed multiselect filtering in a column with `editorType: "multiselect"`: a cell holding several values is now matched by any of them
-- Grid. Fixed the filter state not being reset by `removeAll()`: the header filter inputs were cleared while the filtering rules stayed in effect
-- TreeCollection. Fixed the tree becoming empty after `parse()` when a filter with `permanent: true` was applied: the next `filter()` or `resetFilter()` call cleared the tree, and `find()` stopped finding items
-- TreeCollection. Fixed an item being added twice when it was added to a sorted tree
-- TreeCollection. Fixed the `multi` property of a filtering rule not being passed to the compare callback, which made multiselect filtering in a tree differ from a flat collection
+- DataCollection. Fixed inconsistent results in `forEach()` and `map()` when `update()` was called from within the callback while sorting was active
+- Grid. Fixed the duplication of selection overlays on spanned cells when using `selection: "complex"`
+- Grid. Fixed a checkbox click in a sortable column header triggering a sort action
+- Grid. Fixed a bug where an `undefined` CSS class was added to cells when using the `mark` property
+- Grid. Fixed removing a grouped column via its "close" icon starting a column drag action
+- Grid. Resolved an issue where `removeAll()` cleared header filter inputs but failed to reset the underlying filtering rules
+- Grid. Fixed multiselect filtering for columns with `editorType: "multiselect"`; cells are now correctly matched if any of their values satisfy the filter
+- TreeCollection. Fixed an issue where the tree could appear empty after `parse()` if a permanent filter was active
+- TreeCollection. Fixed a bug where items were added twice when inserted into a sorted tree
+- TreeCollection. Fixed the `multi` property of a filtering rule not being passed to the `compare` callback
 
 ## Version 9.3.8
 
