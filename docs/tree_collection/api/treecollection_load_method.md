@@ -46,3 +46,5 @@ toolbar.data.loadData.then(function () {
 // loadData executes a callback function after an asynchronous
 // data loading has completed
 ~~~
+
+The method resets the applied sorting and filtering: the sorting is dropped, and so are all the filters except those applied with `permanent: true`, which are reapplied to the new data.
