@@ -86,6 +86,10 @@ There are two ways to load data into Grid after its initialization:
 - [from an external file](#external-data-loading)
 - [from a local data source](#loading-from-local-source)
 
+:::note
+Calling `load()` or `parse()` resets the sorting and filtering applied to Grid: the sorting marks are cleared, and so are the values of the header filters. Filters applied with `permanent: true` are the exception: they are reapplied to the newly loaded data.
+:::
+
 ### External data loading
 
 To load data from an external file, make use of the **load()** method of [Data Collection](/data_collection/). It takes the URL of the file with data as a parameter:

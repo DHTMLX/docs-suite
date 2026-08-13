@@ -8,6 +8,28 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.9
+
+Released on August 13, 2026
+
+### Updates
+
+- DataCollection/TreeCollection. The `parse()` and `load()` methods now reset existing sorting and filtering. Only filters with `permanent: true` are retained and reapplied to the new dataset
+- Grid. Visual sorting indicators and header filter values are now automatically reset when data is reloaded via `parse()` or `load()`
+
+### Fixes
+
+- DataCollection. Fixed inconsistent results in `forEach()` and `map()` when `update()` was called from within the callback while sorting was active
+- Grid. Fixed the duplication of selection overlays on spanned cells when using `selection: "complex"`
+- Grid. Fixed a checkbox click in a sortable column header triggering a sort action
+- Grid. Fixed a bug where an `undefined` CSS class was added to cells when using the `mark` property
+- Grid. Fixed removing a grouped column via its "close" icon starting a column drag action
+- Grid. Resolved an issue where `removeAll()` cleared header filter inputs but failed to reset the underlying filtering rules
+- Grid. Fixed multiselect filtering for columns with `editorType: "multiselect"`; cells are now correctly matched if any of their values satisfy the filter
+- TreeCollection. Fixed an issue where the tree could appear empty after `parse()` if a permanent filter was active
+- TreeCollection. Fixed a bug where items were added twice when inserted into a sorted tree
+- TreeCollection. Fixed the `multi` property of a filtering rule not being passed to the `compare` callback
+
 ## Version 9.3.8
 
 Released on August 3, 2026
