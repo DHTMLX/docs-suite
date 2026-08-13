@@ -26,6 +26,7 @@ Released on August 13, 2026
 - Grid. Fixed removing a grouped column via its "close" icon starting a column drag action
 - Grid. Resolved an issue where `removeAll()` cleared header filter inputs but failed to reset the underlying filtering rules
 - Grid. Fixed multiselect filtering for columns with `editorType: "multiselect"`; cells are now correctly matched if any of their values satisfy the filter
+- Grid. Fixed the export to Excel where Microsoft Excel formatted cells without prefixes incorrectly
 - TreeCollection. Fixed an issue where the tree could appear empty after `parse()` if a permanent filter was active
 - TreeCollection. Fixed a bug where items were added twice when inserted into a sorted tree
 - TreeCollection. Fixed the `multi` property of a filtering rule not being passed to the `compare` callback
