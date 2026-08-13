@@ -10,7 +10,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.3.9
 
-Released on August 12, 2026
+Released on August 13, 2026
 
 ### Updates
 
