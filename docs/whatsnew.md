@@ -8,6 +8,14 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.10
+
+Released on August 19, 2026
+
+### Fixes
+
+- Grid. Fixed a script error that occurred when the `mark` property was applied to a hidden column
+
 ## Version 9.3.9
 
 Released on August 13, 2026
