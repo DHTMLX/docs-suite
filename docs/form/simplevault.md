@@ -8,7 +8,7 @@ description: You can explore the Simple Vault of Form in the documentation of th
 
 A handy control for quick and easy uploading of a file or a set of files.
 
-![SimpleVault control](../assets/form/form_simplevault.png)
+![SimpleVault form control with a drag and drop upload area and an uploaded file in DHTMLX Suite](/img/form/form_simplevault.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

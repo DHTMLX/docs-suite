@@ -8,13 +8,13 @@ description: You can explore the Input of Toolbar in the documentation of the DH
 
 This is an input field for entering some text.
 
-![](../assets/toolbar/input.png)
+![Toolbar input field with a type to search placeholder and a search icon in DHTMLX Suite](/img/toolbar/input.png)
 
 **Related sample**: [Toolbar. Input](https://snippet.dhtmlx.com/ykd0uii1)
 
 ## Adding Input
 
-The following example shows how an Input control can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md):
+The following example shows how an Input control can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/):
 
 ~~~js
 toolbar.data.add({
@@ -95,5 +95,5 @@ toolbar.setFocus("search");
 ~~~
 
 :::info
-Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
 :::

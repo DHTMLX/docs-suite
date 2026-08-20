@@ -10,7 +10,7 @@ description: You can explore how to work with Clipboard module of Grid in the do
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can manage the clipboard functionality within a grid via the API of the [`Clipboard`](grid/configuration.md/#clipboard) module. It enables copying, cutting, and pasting data from a selected range of cells. Besides, it allows [integrating with other grids or external applications](#interaction-between-grids-and-external-widgets) like Google Spreadsheets. 
+You can manage the clipboard functionality within a grid via the API of the [`Clipboard`](grid/configuration.md#clipboard) module. It enables copying, cutting, and pasting data from a selected range of cells. Besides, it allows [integrating with other grids or external applications](#interaction-between-grids-and-external-widgets) like Google Spreadsheets. 
 
 ## Initializing the Clipboard module
 
@@ -52,7 +52,7 @@ When `Clipboard` module is enabled (e.g., via `grid.config.clipboard: true`), th
 
 ### Usage in other BlockSelection modes
 
-If the [`BlockSelection`](grid/usage_blockselection.md) module is configured in the `manual` mode, the `Clipboard` module does not automatically receive a range. In this case, you should manually set the range using the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api). For this purpose, you need to call `grid.range.setRange({ xStart, xEnd, yStart, yEnd })`.
+If the [`BlockSelection`](grid/usage_blockselection.md) module is configured in the `manual` mode, the `Clipboard` module does not automatically receive a range. In this case, you should manually set the range using the [`RangeSelection` API](grid/api/api_overview.md#rangeselection-api). For this purpose, you need to call `grid.range.setRange({ xStart, xEnd, yStart, yEnd })`.
 
 :::note
 Without a set range, copying and pasting will not work, as **Clipboard API** relies on data from the **RangeSelection API**.
@@ -60,10 +60,10 @@ Without a set range, copying and pasting will not work, as **Clipboard API** rel
 
 ### Data source for Clipboard
 
-The **Clipboard API** always uses data from the [`RangeSelection` API](grid/api/api_overview.md/#rangeselection-api) to determine the cells that will be copied or into which data will be pasted.
+The **Clipboard API** always uses data from the [`RangeSelection` API](grid/api/api_overview.md#rangeselection-api) to determine the cells that will be copied or into which data will be pasted.
 
 :::note
-The `cut`/`paste` operations will be blocked in the [*grouping*](grid/usage.md/#grouping-data) mode.
+The `cut`/`paste` operations will be blocked in the [*grouping*](grid/usage.md#grouping-data) mode.
 :::
 
 ## Interaction between Grids and external widgets

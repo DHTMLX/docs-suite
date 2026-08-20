@@ -3,6 +3,8 @@ sidebar_label: Step 4. Add a Grid
 title: Step 4. Add a Grid
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 ``` todo страница не нужна
 
 Now let’s consider  how start to work with such DHTMLX component as Grid.
@@ -47,7 +49,11 @@ You can read more about Grid properties in the [API](grid/api/refs/grid.md) and 
 layout.cell("grid-cell").attach(grid);
 ~~~
 
-<img style="margin: 19px" src="tutorial/basic_application/grid_003.png"/>
+<div className={styles.image}>
+
+![](/img/tutorial/basic_application/grid_003.png)
+
+</div>
 
 3\. Also we need to prepare a data set that will be loaded into the Grid later. An example of a Grid data set is given below:
 

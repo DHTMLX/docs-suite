@@ -42,8 +42,8 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_showrow_method.md)           | @getshort(grid/api/grid_showrow_method.md)           |
 
 :::info important
-- Use [the methods of DataCollection](data_collection.md) to work with data. 
-- Use [the methods of TreeCollection](tree_collection.md#methods) to work with data of Grid in the TreeGrid mode. 
+- Use [the methods of DataCollection](/data_collection/) to work with data. 
+- Use [the methods of TreeCollection](/tree_collection/#methods) to work with data of Grid in the TreeGrid mode. 
 - Use [the methods of the Selection object](grid/api/api_overview.md#selection-methods) to work with the selection of Grid cells. 
 - Use [the methods of the RangeSelection module](grid/api/api_overview.md#rangeselection-methods) to work with the range selection within Grid. 
 - Use [the methods of the BlockSelection module](grid/api/api_overview.md#blockselection-methods) to work with the block selection within Grid.
@@ -167,8 +167,8 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_beforerowresize_event.md) | @getshort(grid/api/grid_beforerowresize_event.md) |
 
 :::info important
-- Use [the events of DataCollection](data_collection.md#events) to work with data of Grid.
-- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode.  
+- Use [the events of DataCollection](/data_collection/#events) to work with data of Grid.
+- Use [the events of TreeCollection](/tree_collection/#events) to work with data of Grid in the TreeGrid mode.  
 - Use [the events of the Selection object](grid/api/api_overview.md#selection-events) to work with the selection of Grid cells. 
 - Use [the events of the RangeSelection module](grid/api/api_overview.md#rangeselection-events) to work with the range selection within Grid.
 - Use [the events of the BlockSelection module](grid/api/api_overview.md#blockselection-events) to work with the block selection within Grid.

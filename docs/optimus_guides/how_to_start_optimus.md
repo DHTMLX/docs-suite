@@ -12,7 +12,7 @@ The guide will teach you how to create your own views on the base of DHTMLX Opti
 
 {{note The complete source code is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-5" target="_blank">GitHub</a>. You can check the step-by-step changes by switching between the branches with the related names.}}
 
-For more information about working with the components of DHTMLX Suite, see **DHTMLX documentation**. The detailed information on DHTMLX Optimus is presented [here](optimus_guides.md).
+For more information about working with the components of DHTMLX Suite, see **DHTMLX documentation**. The detailed information on DHTMLX Optimus is presented [here](/optimus_guides/).
 
 So, let's get started! 
 
@@ -67,7 +67,7 @@ Step 1. Initialize an application
 
 After running the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-1" target="_blank">project</a> on the local server and opening `http://localhost:8080/` in your browser, you will see the following result:
 
-![](../assets/optimus/start_optimus.png)
+![Browser showing the Hello Optimus starter app running on localhost in DHTMLX Suite](/img/optimus/start_optimus.png)
 
 Let's consider how we've initialized our starter application:
 
@@ -133,7 +133,7 @@ export class MyApp extends App {
 }
 ~~~
 
-You can find more details on API methods [here](optimus_guides.md#api).
+You can find more details on API methods [here](/optimus_guides/#api).
 
 5\. Finally, we've initialized our application via updating the code of the *index.html* file with the following:
 
@@ -274,7 +274,7 @@ export class TopLayout extends View {
 
 In the above code we've returned Layout as a view and placed the *EmptyView* and *ToolbarView* views into the cells of the layout. 
 
-To render the views, the **show()** method is called. For details about rendering of the components of the DHTMLX Suite library, see the [documentation](optimus_guides.md#initialization-of-the-dhtmlx-layout-component).
+To render the views, the **show()** method is called. For details about rendering of the components of the DHTMLX Suite library, see the [documentation](/optimus_guides/#initialization-of-the-dhtmlx-layout-component).
 
 But, if you've already run your app, you can notice that nothing happens when switching the buttons in the toolbar. To solve this problem, we need to add global events.
 
@@ -330,17 +330,17 @@ Now, we'll follow the changes in the global event bus. Each time the user clicks
 
 Let's take a look at the result:
 
-![](../assets/optimus/empty_view.png)
+![Starter app with a First, Second, Third toolbar showing the empty view in DHTMLX Suite](/img/optimus/empty_view.png)
 
 After clicking on the "Second" button you should see the view, as in:
 
-![](../assets/optimus/second_view.png)
+![Starter app with the Second toolbar button selected showing the second view in DHTMLX Suite](/img/optimus/second_view.png)
 
 You can also learn more details about how to:
 
-- [pass parameters to child components](optimus_guides.md#passing-data-to-child-components);
-- [use global event bus](optimus_guides.md#subscribing-to-global-events); 
-- [work with the DHTMLX Suite library in views](optimus_guides.md#working-with-widgets-of-suite).
+- [pass parameters to child components](/optimus_guides/#passing-data-to-child-components);
+- [use global event bus](/optimus_guides/#subscribing-to-global-events); 
+- [work with the DHTMLX Suite library in views](/optimus_guides/#working-with-widgets-of-suite).
 
 Step 3. Define the global state of the app
 --------------------------------
@@ -475,7 +475,7 @@ The above code sample shows that we won't render the default view in the "conten
 
 Let's run the application now. You will see that the first view is active by default:
 
-![](../assets/optimus/first_view.png)
+![Starter app with the First toolbar button active by default showing the first view in DHTMLX Suite](/img/optimus/first_view.png)
 
 It means, that the id of the button that should be active by default is passed to the state manager on initialization of the application.
 
@@ -557,7 +557,7 @@ export class MyApp extends App {
 
 4\. Now, create the *views/content* folder. We are going to create the DataView, Chart, and Grid views there:
 
-- create the *DataView.js* file and add the DataView view there by using the [DataView widget](dataview.md) of Suite:
+- create the *DataView.js* file and add the DataView view there by using the [DataView widget](/dataview/) of Suite:
 
 ~~~js title="src/views/content/DataView.js"
 import { View } from "dhx-optimus";
@@ -581,7 +581,7 @@ export class DataView extends View {
 }
 ~~~
 
-- create the *ChartView.js* file and add the Chart view there by using the [Chart widget](chart.md) of Suite:
+- create the *ChartView.js* file and add the Chart view there by using the [Chart widget](/chart/) of Suite:
 
 ~~~js title="src/views/content/ChartView.js"
 import { View } from "dhx-optimus";
@@ -616,7 +616,7 @@ export class ChartView extends View {
 
 The *getChartStatistic* function is used to prepare the data for Chart. For details on the function, see the <a href="https://github.com/DHTMLX/optimus-starter-app/blob/guide/step-4/src/utils/helpers.js" target="_blank">utils/helpers.js</a> file.
 
-- create the *GridView.js* file and add the Grid view there by using the [Grid widget](grid.md) of Suite:
+- create the *GridView.js* file and add the Grid view there by using the [Grid widget](/grid/) of Suite:
 
 ~~~js title="src/views/content/GridView.js"
 import { View } from "dhx-optimus";
@@ -698,15 +698,15 @@ As a result, when the active state is changed, the related component will be ren
 
 Once you are done with it, run the application now. You will see the DataView widget on the first page:
 
-![](../assets/optimus/dataview.png)
+![DataView widget displaying employee cards with names and positions on the first page in DHTMLX Suite](/img/optimus/dataview.png)
 
 the Chart widget on the second page:
 
-![](../assets/optimus/chart.png)
+![Donut chart showing the number of employees by position on the second page in DHTMLX Suite](/img/optimus/chart.png)
 
 and the Grid widget on the third page:
 
-![](../assets/optimus/grid.png)
+![Grid listing employees with name, post, phone, mail and dates on the third page in DHTMLX Suite](/img/optimus/grid.png)
 
 Step 5. Provide editing data 
 --------------
@@ -948,15 +948,15 @@ export const emptyItem = {
 
 That's all. Open *http://localhost:8080/* and you'll see the dataview like the one shown here: 
 
-![](../assets/optimus/edit_dataview.png)
+![DataView of employee cards with a toolbar offering add and remove actions in DHTMLX Suite](/img/optimus/edit_dataview.png)
 
 Click the second button to see the chart view, as in:
 
-![](../assets/optimus/edit_chart.png)
+![Donut chart of employees by position shown on the second page of the demo in DHTMLX Suite](/img/optimus/edit_chart.png)
 
 To see the grid view, click the third button. You can try to edit a cell in the grid by double-click on the cell.
 
-![](../assets/optimus/edit_grid.png)
+![Editable employee grid with a mail cell being edited inline in DHTMLX Suite](/img/optimus/edit_grid.png)
 
 You could also note, that changing data in one of the widgets will change the data in the other widgets.
 
@@ -967,7 +967,7 @@ We hope you have learned how to build the DHTMLX-based app with DHTMLX Optimus a
 
 You can find the initial code on <a href="https://github.com/DHTMLX/optimus-starter-app/" target="_blank">GitHub</a>, clone or download it and use it for your projects.
 
-For details about API methods of DHTMLX Optimus, see [the documentation](optimus_guides.md).
+For details about API methods of DHTMLX Optimus, see [the documentation](/optimus_guides/).
 
 Check more demos build with Optimus:
 

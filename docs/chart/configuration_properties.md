@@ -834,3 +834,38 @@ chart.data.parse(heatMapData);
 ~~~
 
 As a result, the chart will be displayed for the period from "01/01/22" to "15/05/23" inclusively.
+
+## Mixed graphs in one chart
+
+You can create a chart that combines several graphs of different types. Define each graph as an object in the `series` array and set the desired chart type via the `type` property. For example: 
+
+~~~jsx
+const chart = new dhx.Chart("chart_container", {
+    series: [
+        {
+            id: "A",
+            type: "line",
+            value: "company A",
+            color: "red",
+            fill: "#FDBBBB"
+        },
+        {
+            id: "B",
+            type: "bar",
+            value: "company B",
+            color: "blue",
+            fill: "lightblue"
+        },
+        {
+            id: "C",
+            type: "area",
+            value: "company C",
+            fill: "lightgreen",
+            color: "green"
+        }
+    ],
+    // other configuration properties
+});
+~~~
+
+**Related sample**: [Chart. Line, Spline and Area charts together](https://snippet.dhtmlx.com/eti3i33o)

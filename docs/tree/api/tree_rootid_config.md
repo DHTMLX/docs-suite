@@ -24,7 +24,7 @@ const tree = new dhx.Tree("tree_container");
 tree.data.getRoot(); -> "tree_container"
 ~~~
 
-You should use the `rootId` property, if you render a tree in a layout cell and use the [`autoload`](/tree/api/tree_autoload_config/) option in the Tree configuration object. For example:
+You should use the `rootId` property, if you render a tree in a layout cell and use the [`autoload`](tree/api/tree_autoload_config.md) option in the Tree configuration object. For example:
 
 ~~~js
 const layout = new dhx.Layout("layout", {

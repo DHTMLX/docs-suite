@@ -10,7 +10,7 @@ description: You can explore the customization of Pagination in the documentatio
 
 There is a possibility to make changes in the look and feel of a pagination. 
 
-![Styling Pagination](../assets/pagination/styling.png)
+![DHTMLX Pagination with a purple custom-styled navigation bar below a grid of sections in DHTMLX Suite](/img/pagination/styling.png)
 
 **Related sample**: [Pagination. Styling (custom CSS)](https://snippet.dhtmlx.com/e7bujtsu)
 

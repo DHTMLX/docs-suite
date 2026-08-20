@@ -180,7 +180,7 @@ combo.popup.events.on("AfterHide", function(e){
 
 ## Using Data Collection API
 
-You can manipulate ComboBox options with the help of the [Data Collection API](data_collection.md).
+You can manipulate ComboBox options with the help of the [Data Collection API](/data_collection/).
 
 ### Adding options into ComboBox
 
@@ -247,5 +247,5 @@ combo.data.remove("option_id");
 ~~~
 
 :::note
-Check the full list of [Data collection API](data_collection.md)
+Check the full list of [Data collection API](/data_collection/)
 :::

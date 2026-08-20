@@ -9,7 +9,7 @@ description: You can have an overview of Toolbar in the documentation of the DHT
 DHTMLX Toolbar is a JavaScript component that allows you to keep all main commands and tools of the app in one place and define their look and feel.
 Being a great tool for fast and handy navigation, it will make work with your app or website clear and easy. Check [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar).
 
-![](../assets/toolbar/toolbar_front.png)
+![Toolbar with New dropdown, undo and redo, print, search input, login links, and an avatar badge in DHTMLX Suite](/img/toolbar/toolbar_front.png)
 
 ## Features
 
@@ -25,7 +25,7 @@ You can check the following page to learn how to build a full-featured DHTMLX To
 
 - You can get DHTMLX Toolbar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar)
-- To work with data of Toolbar check [TreeCollection API](tree_collection.md)
+- To work with data of Toolbar check [TreeCollection API](/tree_collection/)
 
 ## Guides
 

@@ -12,7 +12,7 @@ The TreeGrid mode of the Grid component is available in the **PRO** version only
 
 TreeGrid mode of the Grid component allows showing the nested tabular data. 
 
-![](../assets/treegrid/treegrid_front.png)
+![Grid in TreeGrid mode with expandable hierarchical book categories and nested rows in DHTMLX Suite](/img/treegrid/treegrid_front.png)
 
 ## Initialization
 
@@ -203,11 +203,11 @@ grid.data.load("/some/data").then(function(){
 
 The drag-n-drop functionality provides the possibility to reorder items inside the grid or between several grids in the TreeGrid mode. 
 
-To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](/grid/api/grid_dragitem_config/) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](/grid/api/grid_dragmode_config/) property.
+To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](grid/api/grid_dragitem_config.md) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](grid/api/grid_dragmode_config.md) property.
 
 ### Drop behaviour
 
-You can specify the drag-n-drop behaviour of items in the Grid in the TreeGrid mode with the [`dropBehaviour`](/grid/api/grid_dropbehaviour_config/) option in the configuration object of the component.
+You can specify the drag-n-drop behaviour of items in the Grid in the TreeGrid mode with the [`dropBehaviour`](grid/api/grid_dropbehaviour_config.md) option in the configuration object of the component.
 
 There are three modes of behaviour of a dragged item:
 
@@ -217,7 +217,7 @@ The images below show drag-n-drop behaviour of items within a Grid in the TreeGr
 
 |   Dragging an item                                        |                Result                                     |
 |-----------------------------------------------------------|-----------------------------------------------------------|
-|![](../assets/treegrid/dropbehaviour_child.png)            | ![](../assets/treegrid/dropbehaviour_child_result.png)  |
+|![Dragging a TreeGrid row over a target node to drop it as a child in DHTMLX Suite](/img/treegrid/dropbehaviour_child.png)            | ![TreeGrid row dropped and nested as a child of the target node in DHTMLX Suite](/img/treegrid/dropbehaviour_child_result.png)  |
 
 - "sibling" - a dragged item becomes a sibling of the item it is dragged to
 
@@ -225,7 +225,7 @@ The images below show the drag-n-drop behaviour of items within a Grid in the Tr
 
 |   Dragging an item                                         |                Result                                      |
 |----------------------------------------------------------- |----------------------------------------------------------- |
-|![](../assets/treegrid/dropbehaviour_sibling.png)  | ![](../assets/treegrid/dropbehaviour_sibling_result.png)   |
+|![Dragging a TreeGrid row over a target node to drop it as a sibling in DHTMLX Suite](/img/treegrid/dropbehaviour_sibling.png)  | ![TreeGrid row dropped as a sibling next to the target node in DHTMLX Suite](/img/treegrid/dropbehaviour_sibling_result.png)   |
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting 
 
@@ -339,6 +339,6 @@ grid.collapseAll();
 
 When you work with Grid in the TreeGrid mode, you can use the [API Events of DHTMLX Grid](/category/grid-events/). 
 
-You can learn how to work with Grid events in the [related guide](/grid/events/).
+You can learn how to work with Grid events in the [related guide](grid/events.md).
 
 

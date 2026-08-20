@@ -93,13 +93,13 @@ const colorpicker = new dhx.Colorpicker(null, { customColors: ["#f2f2f2"] });
 const popup = new dhx.Popup();
 ~~~
 
-- attach the colorpicker to the popup using the [](../popup/api/popup_attach_method.md) method of Popup:
+- attach the colorpicker to the popup using the [](popup/api/popup_attach_method.md) method of Popup:
 
 ~~~js
 popup.attach(colorpicker);
 ~~~
 
-- use the [show()](../../popup/api/popup_show_method/) and [hide()](../../popup/api/popup_hide_method/) methods of Popup to control when a popup with color picker should be shown/hidden. For example:
+- use the [show()](popup/api/popup_show_method.md) and [hide()](popup/api/popup_hide_method.md) methods of Popup to control when a popup with color picker should be shown/hidden. For example:
 
 ~~~js
 popup.show("showButton");

@@ -8,7 +8,7 @@ description: You can explore the Slider of Form in the documentation of the DHTM
 
 A control that allows selecting a numeric value by moving a thumb along a line with a fixed set of options.
 
-![Slider control](../assets/form/form_slider.png)
+![Slider form control with a thumb and a tooltip showing the selected value 34 in DHTMLX Suite](/img/form/form_slider.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
@@ -63,4 +63,4 @@ const slider = form.getItem("slider_id").getWidget();  // -> DHTMLX Slider
 slider.disable(); // disables slider
 ~~~
 
-Check [the full list of methods of the DHTMLX Slider component](../../slider/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/slider/slider_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Slider component](slider/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/slider/slider_getwidget_method.md) method.

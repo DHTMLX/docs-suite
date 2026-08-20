@@ -8,7 +8,7 @@ description: You can explore the CheckboxGroup of Form in the documentation of t
 
 A control intended for creating groups of checkboxes.
 
-![CheckboxGroup control](../assets/form/form_checkboxgroup.png)
+![CheckboxGroup form control with three checkbox options and the first one checked in DHTMLX Suite](/img/form/form_checkboxgroup.png)
 
 **Related sample**: [Form. Checkbox groups](https://snippet.dhtmlx.com/p89u4ovb?tag=checkbox_group)
 

@@ -8,7 +8,7 @@ description: You can explore the NavItem of Ribbon in the documentation of the D
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
-![](../assets/ribbon/navitem.png)
+![Ribbon nav item with a save icon and a red counter badge in DHTMLX Suite](/img/ribbon/navitem.png)
 
 ## Adding NavItem
 

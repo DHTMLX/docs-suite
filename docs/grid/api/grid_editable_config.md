@@ -25,6 +25,10 @@ const grid = new dhx.Grid("grid_container", {
  
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
+**Related articles:**
+- [Keyboard navigation](grid/configuration.md#keyboard-navigation)
+- [Grid accessibility](grid/accessibility.md)
+
 @changelog: added in v6.4
 
 [comment]: # (@related:grid/initialization.md#initialize-grid grid/configuration.md#editing-grid-and-separate-columns)

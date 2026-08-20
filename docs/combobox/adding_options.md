@@ -71,7 +71,7 @@ There are two ways to load data into Combobox after its initialization:
 
 ### External data loading
 
-To load data from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](/data_collection/). It takes the URL of the file with data as a parameter:
 
 ~~~js
 const combo = new dhx.Combo("combo_container");
@@ -92,7 +92,7 @@ combo.data.load("/some/data").then(function(){
 
 ### Loading from local source
 
-To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](/data_collection/). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 const combo = new dhx.Combo("combo_container");
@@ -103,7 +103,7 @@ combo.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a combo box (in other words, the current list of Combobox options), use the **serialize()** method of [DataCollection](data_collection.md). It converts the data of a combo box into an array of JSON objects.
+To save the current state of a combo box (in other words, the current list of Combobox options), use the **serialize()** method of [DataCollection](/data_collection/). It converts the data of a combo box into an array of JSON objects.
 Each JSON object contains a set of *key:value* pairs that represent attributes of ComboBox options.
 
 ~~~js

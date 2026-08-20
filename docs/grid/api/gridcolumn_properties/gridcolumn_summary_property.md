@@ -20,7 +20,7 @@ summary?: {
 
 The defined list of calculated values is available only at the column's level. Can be initialized either as an *object* or as a *string*. 
 As an *object* it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
-- a string with the name of the [applied functor](/helpers/data_calculation_functions/)
+- a string with the name of the [applied functor](helpers/data_calculation_functions.md)
 - a tuple `[string, string]` that specifies the field name and the name of the applied functor
 - a `(rows: IRow[]) => string | number;` function for calculating the summary of the column
 

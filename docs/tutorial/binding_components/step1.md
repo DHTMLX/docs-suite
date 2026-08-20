@@ -3,6 +3,8 @@ sidebar_label: Step 1. Add a Window
 title: Step 1. Add a Window
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 Let’s see how to add a window on the page in two steps: 
 
 1\. At first, we need to initialize a Window with the dhx.Window object constructor:
@@ -40,7 +42,11 @@ We pass two parameters to the method:
 - the first is an array of item objects,
 - the second is the index of the position starting from which new items will be added
  
-<img style="margin: 12px" src="tutorial/binding_components/window.png"/> 
+<div className={styles.image}>
+
+![Empty modal window titled Editing item with Cancel and Apply footer buttons in DHTMLX Suite](/img/tutorial/binding_components/window.png)
+
+</div>
  
 You can find out more about Window properties in the [Configuration](window/configuration.md) article. The possibilities of adjusting the look and feel of the Window header and footer are described in the
 [Customization](window/customization.md) article.

@@ -8,7 +8,7 @@ description: You can explore the Checkbox of Form in the documentation of the DH
 
 A control that allows displaying the specified value or change it to the opposite one.
 
-![Checkbox control](../assets/form/form_checkbox.png)
+![Checkbox form control shown in unchecked and checked states in DHTMLX Suite](/img/form/form_checkbox.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

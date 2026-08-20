@@ -70,7 +70,7 @@ You must use only absolute paths not relative ones.
 :::
 
 :::info
-You need to enable the property if you want to export Chart with a [custom or overridden theme](themes.md).
+You need to enable the property if you want to export Chart with a [custom or overridden theme](/themes/).
 :::
 
 @descr:

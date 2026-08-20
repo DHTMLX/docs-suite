@@ -27,7 +27,7 @@ dragPanel?:
 @default: false
 
 :::note
-The module is automatically enabled, if the [row Drag-and-Drop](grid/configuration.md/#drag-n-drop) functionality is active (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties), and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
+The module is automatically enabled, if the [row Drag-and-Drop](grid/configuration.md#drag-n-drop) functionality is active (e.g. via the `dragItem: "row"` or `dragItem: "both"` properties), and either the [`BlockSelection`](grid/usage_blockselection.md) or [`Clipboard`](grid/usage_clipboard.md) modules are enabled.
 :::
 
 @example:
@@ -88,7 +88,7 @@ const grid = new dhx.Grid("grid_container", {
 **Related sample:** [Grid (TreeGrid). DragPanel. Initialization](https://snippet.dhtmlx.com/uevdwjuo)
 
 **Related articles:** 
-- [Adjusting DragPanel module](grid/configuration.md/#adjusting-dragpanel-module)
+- [Adjusting DragPanel module](grid/configuration.md#adjusting-dragpanel-module)
 - [Work with DragPanel module](grid/usage_dragpanel.md)
 
 

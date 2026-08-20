@@ -8,7 +8,7 @@ description: You can explore the DatePicker of Calendar in the documentation of 
 
 You can use DHTMLX Calendar as a date picker by putting it inside a popup. 
 
-![Date picker](./../assets/calendar/date_picker.png)
+![Calendar used as a date picker popup attached to a date input field in DHTMLX Suite](/img/calendar/date_picker.png)
 
 First, you should create a popup and then attach a calendar into it. Follow the steps below:
 
@@ -25,13 +25,13 @@ const calendar = new dhx.Calendar(null, {dateFormat: "%d/%m/%y"});
 const popup = new dhx.Popup();
 ~~~
 
-3\. Attach the calendar to the popup using the [](../popup/api/popup_attach_method.md) method of Popup:
+3\. Attach the calendar to the popup using the [](popup/api/popup_attach_method.md) method of Popup:
 
 ~~~js
 popup.attach(calendar);
 ~~~
 
-4\. Use the [](../popup/api/popup_show_method.md) method of Popup inside a click handler to define that a popup with calendar will open on click in the "date-input" input:
+4\. Use the [](popup/api/popup_show_method.md) method of Popup inside a click handler to define that a popup with calendar will open on click in the "date-input" input:
 
 ~~~js
 const dateInput = document.getElementById("date-input");
@@ -40,7 +40,7 @@ dateInput.addEventListener("click", function() {
 });
 ~~~
 
-5\. Define the logic of closing the popup with calendar using the [](../popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar:
+5\. Define the logic of closing the popup with calendar using the [](popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar:
 
 ~~~js
 calendar.events.on("change", function() {

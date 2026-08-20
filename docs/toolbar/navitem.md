@@ -8,13 +8,13 @@ description: You can explore the NavItem of Toolbar in the documentation of the 
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
-![](../assets/toolbar/navitem.png)
+![Toolbar navItem with an icon, NAV ITEM label, and a number badge in DHTMLX Suite](/img/toolbar/navitem.png)
 
 **Related sample**: [Toolbar. NavItem](https://snippet.dhtmlx.com/os48cj6x)
 
 ## Adding NavItem
 
-A navItem can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md).
+A navItem can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/).
 
 ~~~js
 toolbar.data.add({

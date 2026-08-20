@@ -6,7 +6,7 @@ description: You can explore the DataDrivers helper in the documentation of the 
 
 # DataDrivers
 
-By default, the components of the DHTMLX Suite library operate data in JSON format. But, if necessary, they can also handle data in CSV or XML formats. Using API of [Data Collection](data_collection.md) or [Tree Collection](tree_collection.md) provides an opportunity to parse, load or serialize data of a component in any of the mentioned formats. 
+By default, the components of the DHTMLX Suite library operate data in JSON format. But, if necessary, they can also handle data in CSV or XML formats. Using API of [Data Collection](/data_collection/) or [Tree Collection](/tree_collection/) provides an opportunity to parse, load or serialize data of a component in any of the mentioned formats. 
 
 However, for further work, you may need to get the same data in different formats, and, in that case, you need to convert the data between them. The best way to do this is to use the **DataDrivers** helper.
 
@@ -37,7 +37,7 @@ The constructor has one parameter:
     - `rowDelimiter` - (*string*) optional, a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
     - `nameByHeader` - (*boolean*) optional, if set to *true*, the data from the first line are used as keys of the items; *false* by default
 :::note
-Note that the `nameByHeader: true` setting is required when you [create a data driver for parsing CSV data into a grid](/grid/data_loading/#loading-from-local-source)
+Note that the `nameByHeader: true` setting is required when you [create a data driver for parsing CSV data into a grid](grid/data_loading.md#loading-from-local-source)
 :::
 
 To convert data of a component (for instance, data of a chart) into a CSV string, use the `serialize()` method, as in:

@@ -23,7 +23,7 @@ A promise of data export
     - `footer?: string` - (optional) an HTML template for the footer in the exported file
 
 :::note
-You can specify extended export configuration settings via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) configuration property.
+You can specify extended export configuration settings via the Grid [`exportConfig`](grid/api/grid_exportconfig_config.md) configuration property.
 :::
 
 @example:
@@ -45,7 +45,7 @@ grid.export.png({
 @descr:
 
 :::info
-If you use Grid in conjunction with [Pagination](pagination.md), only the displayed page will be exported. 
+If you use Grid in conjunction with [Pagination](/pagination/), only the displayed page will be exported. 
 :::
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)

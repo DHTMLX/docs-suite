@@ -19,7 +19,7 @@ const list = new dhx.List("list_container", {
 
 @descr:
 :::info
-From v8.0, focusing of items isn't available when key navigation is disabled. Use methods of the [Selection](selection.md#methods) object.
+From v8.0, focusing of items isn't available when key navigation is disabled. Use methods of the [Selection](/selection/#methods) object.
 :::
 
 [comment]: # (@related: list/configuration.md#arrow-keys-navigation)

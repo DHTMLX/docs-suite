@@ -8,7 +8,7 @@ description: You can explore the Fieldset of Form in the documentation of the DH
 
 A control that allows arranging the elements of the form controls into groups.
 
-![Fieldset control](../assets/form/form_fieldset.png)
+![Fieldset form control grouping Personal info and Contact info input fields in DHTMLX Suite](/img/form/form_fieldset.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 

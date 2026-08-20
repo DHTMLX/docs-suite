@@ -69,7 +69,7 @@ Thus, the structure of your form will look like this:
 - an Agree checkbox
 - a Send button
 
-![Form structure](../assets/form/form_init.png)
+![Form with Name and Email input fields an I agree checkbox and a Send button in DHTMLX Suite](/img/form/form_init.png)
 
 To add controls inside a form, you should put them into a layout, either a vertical one (the **rows** attribute), or a horizontal one (the **cols** attribute). In the example below controls are arranged vertically, one under
 another:

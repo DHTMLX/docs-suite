@@ -3004,6 +3004,7 @@ module.exports = {
             "grid/usage_dragpanel",
             "grid/usage_history",
             "grid/customization",
+            "grid/accessibility",
             "grid/events"
           ],
         },
@@ -4992,6 +4993,7 @@ module.exports = {
               "tree_collection/api/treecollection_issaved_method",
               "tree_collection/api/treecollection_load_method",
               "tree_collection/api/treecollection_loaditems_method",
+              "tree_collection/api/treecollection_mapvisible_method",
               "tree_collection/api/treecollection_move_method",
               "tree_collection/api/treecollection_parse_method",
               "tree_collection/api/treecollection_refreshitems_method",
@@ -5132,7 +5134,7 @@ module.exports = {
       items: [
         "guides/events_guide",
         "guides/datacollection_guide",
-        "guides/ai",
+        "guides/mcp-server",
       ],
     },
     // end Guides

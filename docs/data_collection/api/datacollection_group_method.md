@@ -9,7 +9,7 @@ description: You can explore the group method of DataCollection in the documenta
 @short: groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration
 
 :::info important
-Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazydataproxy/)
+Data grouping isn't intended for working with [`lazyDataProxy`](helpers/lazydataproxy.md)
 :::
 
 :::note

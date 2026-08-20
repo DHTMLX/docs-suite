@@ -54,7 +54,7 @@ const grid = new dhx.Grid("grid_container", {
 The property has the following values:
 
 - `relative` - the footer follows the content immediately. If the number of rows is small and doesn't fill the container, the footer moves up to stay attached to the last row.
-- `bottom` - the footer and [bottom-pinned rows](/grid/api/grid_bottomsplit_config/) are strictly locked to the bottom edge of the container. They remain at the base of the component even if the content occupies only a fraction of the available height.
+- `bottom` - the footer and [bottom-pinned rows](grid/api/grid_bottomsplit_config.md) are strictly locked to the bottom edge of the container. They remain at the base of the component even if the content occupies only a fraction of the available height.
 
 @changelog: added in v9.3
 
@@ -62,4 +62,4 @@ The property has the following values:
 - [Grid. Fixed rows positioned at the bottom](https://snippet.dhtmlx.com/w5xzdjb7)
 - [Grid. Footer positioned at the bottom](https://snippet.dhtmlx.com/8sbf8b2y)
 
-**Related article**: [Configuration](/grid/configuration/#footer-position)
+**Related article**: [Configuration](grid/configuration.md#footer-position)

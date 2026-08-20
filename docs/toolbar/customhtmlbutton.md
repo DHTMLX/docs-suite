@@ -8,13 +8,13 @@ description: You can explore the Custom HTML of Toolbar in the documentation of 
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
-![](../assets/toolbar/htmlcontent.png)
+![Toolbar custom HTML item displaying a DHX logo image in DHTMLX Suite](/img/toolbar/htmlcontent.png)
 
 **Related sample**: [Toolbar. Custom HTML](https://snippet.dhtmlx.com/rv3gq5qe)
 
 ## Adding Custom HTML
 
-Any custom HTML content can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md):
+Any custom HTML content can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/):
 
 ~~~js
 toolbar.data.add({
@@ -30,4 +30,4 @@ You can provide the [following properties](toolbar/api/api_customhtmlbutton_prop
 
 ## Working with Custom HTML
 
-You can perform operations over the **Custom HTML** item with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection.md).
+You can perform operations over the **Custom HTML** item with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](/tree_collection/).

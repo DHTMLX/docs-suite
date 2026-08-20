@@ -11,24 +11,24 @@ interaction with the users of your app or web-site.
 
 ## Message
 
-![DHTMLX Message](../assets/message/message.png)
+![Notification message box with the dhtmlxMessage logo and text in DHTMLX Suite](/img/message/message.png)
 
 A simple message box to inform a user about processes occurring in the application in this or that moment.
 
 ## Alert
 
-![DHX Alert](../assets/message/dhx_alert.png)
+![Modal alert box with a warning message and an OK button in DHTMLX Suite](/img/message/dhx_alert.png)
 
 This type of message box allows warning a user against taking some steps that may lead to unexpected or undesirable result.
 
 ## Confirm
 
-![DHX Confirm](../assets/message/dhx_confirm.png)
+![Modal confirm box with a question and Decline and Accept buttons in DHTMLX Suite](/img/message/dhx_confirm.png)
 
 This type of message box is useful when you need to ask a user to confirm some action to proceed to next steps.
 
 ## Tooltip
 
-![DHX Tooltip](../assets/message/show_tooltip.png)
+![Dark tooltip displayed when hovering over an element in DHTMLX Suite](/img/message/show_tooltip.png)
 
 Tooltip is a great helper for giving information about an element a user is hovering over.

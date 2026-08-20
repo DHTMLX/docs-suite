@@ -59,9 +59,9 @@ The property can be specified to one of the available adjustment modes:
     </tbody>
 </table>
 
-The `adjust` property has a priority over the [`autoWidth`](../../../grid/configuration/#autowidth-for-columns) property if it is specified either for a grid or for its column, and over the [`width`](../../../grid/api/api_gridcolumn_properties/) property of the column.
+The `adjust` property has a priority over the [`autoWidth`](grid/configuration.md#autowidth-for-columns) property if it is specified either for a grid or for its column, and over the [`width`](grid/api/api_gridcolumn_properties.md) property of the column.
 
-The width the columns will be adjusted to also depends on the values of the [`minWidth/maxWidth`](../../../grid/api/api_gridcolumn_properties/) properties if they are set for a column.
+The width the columns will be adjusted to also depends on the values of the [`minWidth/maxWidth`](grid/api/api_gridcolumn_properties.md) properties if they are set for a column.
 
 #### Take into account the information below:  
 

@@ -4,6 +4,8 @@ title: Step 3. Add Form into Window
 description: description
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 ``` todo страница не нужна
 
 In this step we describe how to add a form on the page. The form will contain fields displaying the content of the selected grid row and will allow you to edit the data in the grid.
@@ -104,7 +106,11 @@ Finally, we use the <b>attach()</b> method of a window to attach a form to the w
 dhxWindow.attach(form);
 ~~~~ 
 
-<img style="margin: 12px" src="tutorial/binding_components/form.png"/>
+<div className={styles.image}>
+
+![](/img/tutorial/binding_components/form.png)
+
+</div>
 
 <div id="tutorial_step">
     <a id="next_step" href="tutorial/binding_components/step4.md"></a>

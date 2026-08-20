@@ -17,15 +17,17 @@ If you are using an outdated version of DHTMLX Suite 5 and require the documenta
 
 #### Export to Excel module update
 
-Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for [exporting Grid data to an Excel file](grid/usage.md/#exporting-data-to-excel). As earlier, you can use either the public export server or a local export server.  
+Since v9.2 the Grid component uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for [exporting Grid data to an Excel file](grid/usage.md#exporting-data-to-excel). As earlier, you can use either the public export server or a local export server.  
 
 ##### From v9.2
 
-The link to the public export server is used by default, so you don't need to specify it. If you use your own export server, you need to install the **Json2Excel** library and provide the local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`:
+The link to the public export server is used by default (`https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx`), so you don't need to specify it. 
+
+If you use your own export server, you need to install the **Json2Excel** library and set the path to the **worker.js** file as the `url` option: use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the version deployed on your server).
 
 ~~~jsx 
 grid.export.xlsx({
-    url: "../libs/json2excel/1.3/worker.js?vx", // the path to the export module, if a local export server is used
+    url: "../libs/json2excel/x.x/worker.js?vx", // the path to the export module, if a local export server is used
     // more export settings
 });
 ~~~
@@ -239,7 +241,7 @@ Before v9.0, the format for dates in a column has been set by specifying the `ty
 }
 ~~~
 
-Since v9.0, to set the format for dates, you need to use the combination of the `type: "date"` property and the [`dateFormat`](/grid/configuration#setting-the-format-for-dates) option:
+Since v9.0, to set the format for dates, you need to use the combination of the `type: "date"` property and the [`dateFormat`](grid/configuration.md#setting-the-format-for-dates) option:
 
 ~~~jsx {3}title="From v9.0"
 { 
@@ -262,7 +264,7 @@ Before v9.0 the necessary format of data for a column has been specified via the
 }
 ~~~
 
-Since v9.0, the data format is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+Since v9.0, the data format is specified via the [`numberMask`](grid/configuration.md#numbermask) configuration option of a column object:
 
 ~~~jsx {6-8}title="From v9.0"
 {
@@ -287,7 +289,7 @@ Before v9.0, to display the percentage value in a column, the `type: "percent"` 
 }
 ~~~
 
-Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](grid/configuration.md#numbermask) configuration option of a column object:
 
 ~~~jsx {3}title="From v9.0"
 { 
@@ -582,7 +584,7 @@ form.getItem("button_id").setValue("button_value");
 
 ### Confirm message box
 
-10) Before v7.0, the *Space* and *Enter* key were used to confirm the Reject button. Starting with v7.0, the keys confirm the Apply button. The *Esc* key confirms the Reject button.
+10) Before v7.0, the <kbd>Space</kbd> and <kbd>Enter</kbd> key were used to confirm the Reject button. Starting with v7.0, the keys confirm the Apply button. The <kbd>Esc</kbd> key confirms the Reject button.
 
 Also note, that before v7.0, the confirm buttons were displayed in the following order: "Apply" and "Reject". In the version 7.0, the order has been changed to "Reject" and "Apply".
 

@@ -167,7 +167,7 @@ sidebar.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 ## Using Tree collection API
 
-You can manipulate the controls of Sidebar with the help of the [Tree collection API](tree_collection.md). 
+You can manipulate the controls of Sidebar with the help of the [Tree collection API](/tree_collection/). 
 
 ### Adding new controls into Sidebar
 
@@ -252,4 +252,4 @@ You can move menu controls to different positions with the **move()** method of 
 sidebar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection.md).}} 
+{{note Check the full list of [Tree collection API](/tree_collection/).}} 

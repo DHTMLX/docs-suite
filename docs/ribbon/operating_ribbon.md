@@ -190,7 +190,7 @@ ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 ### Adding controls
 
-You can add controls dynamically with the **add()** method of [TreeCollection](tree_collection.md).
+You can add controls dynamically with the **add()** method of [TreeCollection](/tree_collection/).
 
 ~~~js
 ribbon.data.add({

@@ -8,7 +8,7 @@ description: You can explore the ColorPicker of Form in the documentation of the
 
 An input with a color picker attached to it for selecting a color.
 
-![ColorPicker](../assets/form/form_colorpicker.png)
+![ColorPicker form control with an open color palette and a hex value input in DHTMLX Suite](/img/form/form_colorpicker.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
@@ -69,4 +69,4 @@ colorpicker.setFocus("#BDF0E9"); // sets focus on the "#BDF0E9" color
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
 
-Check [the full list of methods of the DHTMLX Colorpicker component](../../colorpicker/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/colorpicker/colorpicker_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Colorpicker component](colorpicker/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/colorpicker/colorpicker_getwidget_method.md) method.

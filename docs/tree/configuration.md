@@ -8,7 +8,7 @@ description: You can explore the configuration of Tree in the documentation of t
 
 ## Checkboxes for items
 
-![](../assets/tree/checkbox.png)
+![Tree with three-state checkboxes showing checked and intermediate states in DHTMLX Suite](/img/tree/checkbox.png)
 
 DHTMLX Tree provides enhanced system of checkbox manipulations. In addition to standard two-state checkboxes that allow check/uncheck tree items, it also uses three-state checkboxes that include an intermediate state, 
 when just some children of a parent item are checked.
@@ -35,7 +35,7 @@ const tree = new dhx.Tree("tree_container", {
 
 ## Editing of items
 
-![](../assets/tree/editable.png)
+![Tree item being edited inline with an active text editor in DHTMLX Suite](/img/tree/editable.png)
 
 It is possible to enable editing of the text of Tree items before initialization of the component using the [`editable`](tree/api/tree_editable_config.md) configuration property:
 
@@ -80,7 +80,7 @@ After that you need to select any item and then apply the Arrow keys:
 
 ## Selection of items
 
-![](../assets/tree/disable_selection.png)
+![Tree with a highlighted selected item among folders and files in DHTMLX Suite](/img/tree/disable_selection.png)
 
 **Related sample**: [Tree. Disable selection](https://snippet.dhtmlx.com/2x9htpke)
 
@@ -94,7 +94,7 @@ const tree = new dhx.Tree("tree_container", {
 
 ## Tooltips for items
 
-You can add tooltips for Tree items via the [`tooltip`](/tree/api/tree_tooltip_config/) configuration option. It is possible to use the default tooltips, provide a template function to render a custom content in the tooltips, or apply extended options to get the desired tooltip configuration. Check the following examples:
+You can add tooltips for Tree items via the [`tooltip`](tree/api/tree_tooltip_config.md) configuration option. It is possible to use the default tooltips, provide a template function to render a custom content in the tooltips, or apply extended options to get the desired tooltip configuration. Check the following examples:
 
 - using the tooltip configuration with a custom template and a display delay:
 
@@ -129,9 +129,9 @@ const tree = new dhx.Tree("tree_container", {
 
 **Related sample**: [Tree. Tooltip template](https://snippet.dhtmlx.com/kswil8cl)
 
-The [`tooltip`](/tree/api/tree_tooltip_config/) property can have the following types of values:
+The [`tooltip`](tree/api/tree_tooltip_config.md) property can have the following types of values:
 
-- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](/tree/api/tree_data_config/) property of the item)
+- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](tree/api/tree_data_config.md) property of the item)
 - *function* — a template function that returns the string content of the tooltip
 - *object* — a configuration object for detailed customization of the tooltip's behavior and appearance. The available properties are given below:
     - `template` - (optional) a function that determines the content of the tooltip. It takes two arguments:

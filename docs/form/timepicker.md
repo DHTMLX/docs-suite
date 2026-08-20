@@ -8,7 +8,7 @@ description: You can explore the TimePicker of Form in the documentation of the 
 
 A control that allows a user to select time value either by moving handles along track bars or by entering hour and minutes values directly into related inputs.
 
-![TimePicker](../assets/form/form_timepicker.png)
+![TimePicker form control with hours and minutes slider track bars for selecting time in DHTMLX Suite](/img/form/form_timepicker.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
@@ -69,4 +69,4 @@ timepicker.setValue("00:39"); //set the value as a string
 
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
-Check [the full list of methods of the DHTMLX Timepicker component](../../timepicker/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/timepicker/timepicker_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Timepicker component](timepicker/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method.

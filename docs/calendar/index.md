@@ -8,7 +8,7 @@ description: You can have an overview of Calendar in the documentation of the DH
 
 DHTMLX Calendar is a component that allows users to view and select dates. You can create calendar in one of 4 modes: days, months, years, or as a timepicker. This component is a great date picker solution for your website or application. Check [online samples for DHTMLX Calendar](https://snippet.dhtmlx.com/jkbfb202?tag=calendar).  
 
-![DHTMLX Calendar](../assets/calendar/calendar_front.png)
+![Calendar month view for April 2019 with the 16th selected and a timepicker in DHTMLX Suite](/img/calendar/calendar_front.png)
 
 ## Features
 
@@ -18,7 +18,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ca
 
 ## API reference
 
-- [](api/api_overview.md)
+- [](calendar/api/api_overview.md)
 
 ## Related resources
 
@@ -30,14 +30,14 @@ You can check the following page to learn how to build a full-featured DHTMLX Ca
 
 You can read the following articles to find out how to add Calendar on the page and work with it.
 
-- [](how_to_start.md)
-- [](configuring.md)
-- [](localizing_calendar.md)  
-- [](operating_calendar.md)
-- [](datepicker.md)
-- [](customization.md)
-- [](handling_events.md)  
+- [](calendar/how_to_start.md)
+- [](calendar/configuring.md)
+- [](calendar/localizing_calendar.md)  
+- [](calendar/operating_calendar.md)
+- [](calendar/datepicker.md)
+- [](calendar/customization.md)
+- [](calendar/handling_events.md)  
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

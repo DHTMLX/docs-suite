@@ -8,7 +8,7 @@ description: You can explore the Block of Ribbon in the documentation of the DHT
 
 The Block control is used for grouping related controls.
 
-![DHX Ribbon Block groups controls](../assets/ribbon/ribbon_block.png)
+![Ribbon with color-highlighted blocks grouping related buttons in DHTMLX Suite](/img/ribbon/ribbon_block.png)
 
 ## Creating a Block
 

@@ -9,7 +9,7 @@ description: You can have an overview of Layout in the documentation of the DHTM
 DHTMLX Layout component lets you specify the main scheme of your application or web page, as it defines the arrangement of blocks with content. Layout helps blend diverse types of data representation on one page.<br/>
 Check [online samples for DHTMLX Layout](https://snippet.dhtmlx.com/f1f49n35?tag=layout).
 
-![](../assets/layout/layout.png)
+![Layout structure with a header, sidebar, content, aside columns, and a footer in DHTMLX Suite](/img/layout/layout.png)
 
 ## Features
 
@@ -19,7 +19,7 @@ You can check the following page to learn how to build a full-featured DHTMLX La
 
 ## API reference
 
-- [](api/api_overview.md)
+- [](layout/api/api_overview.md)
 
 ## Related resources
 
@@ -30,14 +30,14 @@ You can check the following page to learn how to build a full-featured DHTMLX La
 
 You can read the following articles to find out how to add Layout on the page and work with it.
 
-- [](initialization.md)
-- [](layout_structure.md)
-- [](layout_patterns.md)
-- [](cell_configuration.md)
-- [](work_with_layout.md)
-- [](customization.md)
-- [](events.md)
+- [](layout/initialization.md)
+- [](layout/layout_structure.md)
+- [](layout/layout_patterns.md)
+- [](layout/cell_configuration.md)
+- [](layout/work_with_layout.md)
+- [](layout/customization.md)
+- [](layout/events.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

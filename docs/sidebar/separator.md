@@ -8,7 +8,7 @@ description: You can explore the Separator of Sidebar in the documentation of th
 
 This is a line separating items/groups of items from each other.
 
-![](../assets/sidebar/separator.png)
+![Sidebar Separator lines dividing navigation items with icons in DHTMLX Suite](/img/sidebar/separator.png)
 
 ## Adding Separator
 
@@ -35,4 +35,4 @@ sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](tree_collection.md).
+Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](/tree_collection/).

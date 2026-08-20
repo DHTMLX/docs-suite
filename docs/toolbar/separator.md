@@ -8,13 +8,13 @@ description: You can explore the Separator of Toolbar in the documentation of th
 
 This is a horizontal (between menu options) or vertical (between toolbar controls) line separating items/groups of items from each other.
 
-![](../assets/toolbar/separator.png)
+![Toolbar with vertical separator lines dividing groups of controls in DHTMLX Suite](/img/toolbar/separator.png)
 
 **Related sample**: [Toolbar. Separator](https://snippet.dhtmlx.com/sguwr3m9)
 
 ## Adding Separator
 
-A new Separator can be created with the help of the **add()** method of [Tree Collection](tree_collection.md):
+A new Separator can be created with the help of the **add()** method of [Tree Collection](/tree_collection/):
 
 ~~~js
 toolbar.data.add({
@@ -37,4 +37,4 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](/tree_collection/).

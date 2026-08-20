@@ -3,13 +3,19 @@ sidebar_label: Step 1. Include DHTMLX files
 title: Step 1. Include DHTMLX Files 
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 Let's start our tutorial with preparing a file for our future app: 
 
 1\. Create  a folder with the name <i>"contact_manager"</i> in the root directory of your local web server.
 
 2\. Create the <i>"index.html" </i> file in the "contact_manager" folder.
 
-<img style="border-radius:8px; margin: 30px;  display: block;" src="tutorial/basic_application/file.png"/>
+<div className={styles.image}>
+
+![File explorer showing the contact_manager folder with an index file in DHTMLX Suite](/img/tutorial/basic_application/file.png)
+
+</div>
 
 Now we need to include ".js" and ".css" files of the DHTMLX Suite library to the main file of our future app.
 You can use CDN links to do this.

@@ -128,7 +128,7 @@ grid.getHeaderFilter("country").clear();
 
 #### Adding a row
 
-You may add a new row into the grid by using the [](../data_collection/api/datacollection_add_method.md) method of **DataCollection**:
+You may add a new row into the grid by using the [](data_collection/api/datacollection_add_method.md) method of **DataCollection**:
 
 ~~~jsx
 grid.data.add({
@@ -148,7 +148,7 @@ grid.data.add({
 
 #### Removing a row
 
-To remove the necessary row from the grid, apply the [](../data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
+To remove the necessary row from the grid, apply the [](data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
 
 ~~~jsx
 grid.data.remove("5");
@@ -163,11 +163,11 @@ grid.data.remove(cell.row.id);
 
 **Related sample**: [Grid. Delete row](https://snippet.dhtmlx.com/8ezuj7io)
 
-For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md/#selection) and [Work with selection object](grid/usage_selection.md) articles.
+For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md#selection) and [Work with selection object](grid/usage_selection.md) articles.
 
 #### Removing all rows
 
-If you need to remove all rows at once, use the [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
+If you need to remove all rows at once, use the [](data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
 
 ~~~jsx
 grid.data.removeAll();
@@ -267,17 +267,17 @@ grid.removeSpan("10", "a");
 
 ### Filtering data
 
-You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](/data_collection/). The method takes as a parameter an object with the properties described below:
 
 <table>
     <tbody>
         <tr>
             <td><b>rule</b></td>
-            <td>(<i>object|function</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>or:<li>an object with the following attributes:<br/>- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol><ol>- <b>match</b> - a pattern to match </ol><ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol></li></ul></td>
+            <td>(<i>object|function</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>or:<li>an object with the following attributes:<ul><li><b>by</b> - (<i>string | number</i>) mandatory, the id of a column</li><li><b>match</b> - (<i>string</i>) mandatory, a pattern to match</li><li><b>compare</b> - (<i>function</i>) a function for extended filtering that takes the following parameters:<ul><li><b>value</b> - the value to compare (e.g. a column in a row)</li><li><b>match</b> - a pattern to match</li><li><b>item</b> - a data item the values of which should be compared (e.g. a row)</li><li><b>multi</b> - the value of the <code>multi</code> attribute of the rule</li></ul></li><li><b>multi</b> - (<i>boolean</i>) optional, marks the column as holding several values at once (e.g. a column with <code>editorType: "multiselect"</code> stores them as a comma-separated string). Passed to <code>compare</code> as its last argument</li></ul></li></ul></td>
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It is applied even if the next filtering doesn't have the <code>add:true</code> property in its configuration object. It is not dropped by a plain <code>resetFilter()</code> call and is reapplied to the data after <code>parse()</code> or <code>load()</code>; pass <code>permanent:true</code> to <code>resetFilter()</code> to remove it as well</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -308,11 +308,13 @@ grid.data.filter({
 });
 ~~~
 
+Unless `config.add` is set, the method replaces the currently applied filters; calling it without a rule at all drops all non-permanent filters and restores the unfiltered order. Permanent filters are the exception: they always survive and are reapplied first. The new rule then narrows their result further, so an item remains in the result only if it matches both the permanent filter and the new rule.
+
 **Related sample**: [Grid. Basic filter](https://snippet.dhtmlx.com/g0zpjqi1)
 
 ### Sorting data
 
-It is possible to sort data in the grid via the `sort()` method of [DataCollection](data_collection.md). The method takes two parameters:
+It is possible to sort data in the grid via the `sort()` method of [DataCollection](/data_collection/). The method takes two parameters:
 
 <table>
     <tbody>
@@ -322,7 +324,7 @@ It is possible to sort data in the grid via the `sort()` method of [DataCollecti
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) defines the parameter of sorting. It takes one attribute:<ul><li><b>smartSorting</b> (<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set</li></ul></td>
+            <td>(<i>object</i>) defines the parameter of sorting. It takes one attribute:<ul><li><b>smartSorting</b> - (<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -349,11 +351,11 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 
 You can sort Grid by multiple columns simultaneously. 
 
-![](../assets/grid/multisorting_data.png)
+![Grid data sorted by multiple columns at once with numbered sort indicators in column headers in DHTMLX Suite](/img/grid/multisorting_data.png)
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
-Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](data_collection.md) by several columns:
+Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](/data_collection/) by several columns:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -373,7 +375,7 @@ grid.data.sort({ by: "task_status", dir: "asc" });
 grid.data.sort({ by: "animal_type", dir: "asc" });
 ~~~
 
-![](../assets/grid/multisort_grouped_data.png)
+![Grid with grouped rows and multi-column sorting shown in a group panel and column headers in DHTMLX Suite](/img/grid/multisort_grouped_data.png)
 
 **Related sample**: [Grid. Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
 
@@ -473,22 +475,23 @@ The [](grid/api/grid_editend_method.md) method does not work if [the type of the
 
 ### Exporting data
 
-You can easily export data of Grid into the Excel, CSV, PDF, or PNG format. Besides the standard functionality of the `Export` module methods described below, you can also [provide advanced configuring of parameters for Grid export](/grid/usage/#extended-export-configuration-settings) via the Grid [`exportConfig`](/grid/api/grid_exportconfig_config/) property.
+You can easily export data of Grid into the Excel, CSV, PDF, or PNG format. Besides the standard functionality of the `Export` module methods described below, you can also [provide advanced configuring of parameters for Grid export](grid/usage.md#extended-export-configuration-settings) via the Grid [`exportConfig`](grid/api/grid_exportconfig_config.md) property.
 
 #### Exporting data to Excel
 
-Since v9.2 DHTMLX Grid uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. You can use either the public export server or a local export server. 
+Since v9.2 DHTMLX Grid uses the WebAssembly-based library [**Json2Excel**](https://github.com/dhtmlx/json2excel) to enable the export to Excel functionality and the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module to export data from Grid into an Excel file. Export is processed at the **worker.js** file of the **Json2Excel** library (the default link is `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx`). You can use either the public export server or a local export server.
 
 Thus, to have the possibility of exporting files you need to:
 
 - call the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the `Export` module. The method takes an [object with export settings](grid/api/export/grid_xlsx_method.md) as a parameter (all settings are optional) and returns a promise of data export.
     - if you use the public export server, you don't need to specify the link to it, since it is used by default
     - if you use your own export server, you need to:
-        - install the [Json2Excel](https://github.com/dhtmlx/json2excel) library 
-        - provide a local path to the export module on your computer by setting the path to the **worker.js** file as `"../libs/json2excel/1.3/worker.js?vx"`, as a value of the `url` option in the configuration object of the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method 
+        - install the [**Json2Excel**](https://github.com/dhtmlx/json2excel) library 
+        - provide a local path to the **worker.js** file as the `url` option: 
+        use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the version deployed on your server).
 ~~~jsx
 grid.export.xlsx({
-    url: "../libs/json2excel/1.3/worker.js?vx", // a local path to the export module
+    url: "../libs/json2excel/x.x/worker.js?vx", // the path to the export module, if a local export server is used
     name: "my_file", // the name of a ready Excel file, "grid" by default
     tableName: "grid", // the name of a sheet with grid data in the Excel file, "data" by default
     dateFormatMask: "mm.dd.yy" // the date format mask for Excel, "dd/mm/yy" by default
@@ -497,8 +500,6 @@ grid.export.xlsx({
     .catch(() => console.log("failure"))
     .finally(() => console.log("finished"));
 ~~~
-
-You can check the latest version of the Json2Excel library at the [github repository](https://github.com/dhtmlx/json2excel).
 
 Read the details on dates formatting in Excel in the [related Excel documentation](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-in-excel-8e10019e-d5d8-47a1-ba95-db95123d273e). 
 
@@ -576,9 +577,9 @@ grid.export.png({
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-There is a possibility to provide an advanced configuring of parameters for Grid export into the CSV, XLSX, PDF, and PNG formats with the [`exportConfig`](/grid/api/grid_exportconfig_config/) property.
+There is a possibility to provide an advanced configuring of parameters for Grid export into the CSV, XLSX, PDF, and PNG formats with the [`exportConfig`](grid/api/grid_exportconfig_config.md) property.
 
-Unlike the standard export, [`exportConfig`](/grid/api/grid_exportconfig_config/) allows you to dynamically modify the structure and content of the resulting document at the moment the export function is called. With this property, you can:
+Unlike the standard export, [`exportConfig`](grid/api/grid_exportconfig_config.md) allows you to dynamically modify the structure and content of the resulting document at the moment the export function is called. With this property, you can:
 
 - **filter data**: exclude specific rows, columns, or spans by returning `null` in the corresponding callback methods
 - **transform content**: modify headers, format values, or strip HTML templates to ensure data is displayed correctly in spreadsheet editors
@@ -1182,11 +1183,11 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Using DataCollection API for data grouping
 
-After you've [enabled grouping in Grid](#enabling-data-grouping), you can use the [DataCollection API](../../data_collection) to work with data grouping.
+After you've [enabled grouping in Grid](#enabling-data-grouping), you can use the [DataCollection API](/data_collection/) to work with data grouping.
 
 #### Grouping Grid data
 
-To group Grid data, use the [](../data_collection/api/datacollection_group_method.md) method of DataCollection.
+To group Grid data, use the [](data_collection/api/datacollection_group_method.md) method of DataCollection.
 The method takes the following parameters:
 
 - `order` - an array that defines the order and configuration for data grouping. Each element in the array can be:
@@ -1286,7 +1287,7 @@ grid.data.group(["city"], {
 
 #### Ungrouping Grid data
 
-To ungroup Grid data, use the [](../data_collection/api/datacollection_ungroup_method.md) method of DataCollection.
+To ungroup Grid data, use the [](data_collection/api/datacollection_ungroup_method.md) method of DataCollection.
 
 ~~~jsx
 grid.data.ungroup();
@@ -1294,7 +1295,7 @@ grid.data.ungroup();
 
 #### Checking whether Grid data is grouped
 
-To check whether Grid data is grouped at the moment, use the [](../data_collection/api/datacollection_isgrouped_method.md) method of DataCollection. The method returns *true* if Grid data is grouped at the moment and *false* if it isn't grouped.
+To check whether Grid data is grouped at the moment, use the [](data_collection/api/datacollection_isgrouped_method.md) method of DataCollection. The method returns *true* if Grid data is grouped at the moment and *false* if it isn't grouped.
 
 ~~~jsx
 if (grid.data.isGrouped()) {

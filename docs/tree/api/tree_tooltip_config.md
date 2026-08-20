@@ -28,7 +28,7 @@ tooltip?:
 
 The property can have three types of values: 
 
-- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](/tree/api/tree_data_config/) property of the item)
+- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](tree/api/tree_data_config.md) property of the item)
 - *function* — a template function that returns the string content of the tooltip
 - *object* — a configuration object for detailed customization of the tooltip's behavior and appearance. Check the available properties below
 
@@ -84,7 +84,7 @@ const tree = new dhx.Tree("tree_container", {
 
 **Related sample**: [Tree. Tooltip template](https://snippet.dhtmlx.com/kswil8cl)
 
-**Related article**: [Configuration](/tree/configuration/#tooltips-for-items)
+**Related article**: [Configuration](tree/configuration.md#tooltips-for-items)
 
 @changelog: 
 Added in v9.3

@@ -181,7 +181,7 @@ Here is an example of a treeState object:
 
 ## Using Tree Collection API
 
-You can manipulate Tree items with the help of the [Tree collection API](tree_collection.md).
+You can manipulate Tree items with the help of the [Tree collection API](/tree_collection/).
 
 ### Adding items into Tree
 
@@ -268,4 +268,4 @@ tree.data.remove("id");
 
 **Related sample**: [Tree. Adding and removing items](https://snippet.dhtmlx.com/k0os4lk2)
 
-{{note Check the full list of [Tree collection API](tree_collection.md).}}
+{{note Check the full list of [Tree collection API](/tree_collection/).}}

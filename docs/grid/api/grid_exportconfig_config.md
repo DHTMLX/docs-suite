@@ -164,6 +164,6 @@ The `exportConfig` property extends the possibilities of the standard export and
 
 **Related sample**: [Grid. Custom export logic for PDF, PNG, XLSX, CSV](https://snippet.dhtmlx.com/aher21cg)
 
-**Related article**: [Extended export configuration settings](/grid/usage/#extended-export-configuration-settings)
+**Related article**: [Extended export configuration settings](grid/usage.md#extended-export-configuration-settings)
 
 @changelog: added in v9.3

@@ -21,7 +21,7 @@ dhxWindow.show();
 
 ## Attaching DHTMLX components
 
-DHTMLX Window allows attaching other DHTMLX components inside it via the [`attach()`](/window/api/window_attach_method/) method.
+DHTMLX Window allows attaching other DHTMLX components inside it via the [`attach()`](window/api/window_attach_method.md) method.
 
 ~~~jsx
 dhxWindow.attach("richtext", { mode: "document" });
@@ -86,7 +86,7 @@ dhxWindow.hide();
 
 ## Setting the active state
 
-While working with several windows, you may need to make a particular window active and bring it to the top. You can apply the [`setActive()`](/window/api/window_setactive_method/) method to the necessary window for this purpose.
+While working with several windows, you may need to make a particular window active and bring it to the top. You can apply the [`setActive()`](window/api/window_setactive_method.md) method to the necessary window for this purpose.
 
 In the example below two windows are created. Although the second window overlaps the first one upon initialization, calling `setActive()` on the first window programmatically brings it back to the front.
 

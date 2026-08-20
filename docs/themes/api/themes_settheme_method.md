@@ -72,7 +72,7 @@ dhx.setTheme("dark"); // apply the "dark" theme to the body
 
 @descr:
 
-**Related article:** [Themes overview](themes.md)
+**Related article:** [Themes overview](/themes/)
 
 **Related samples:**
 

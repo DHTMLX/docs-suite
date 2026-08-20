@@ -8,7 +8,7 @@ description: You can explore the SelectButton of Ribbon in the documentation of 
 
 This is a button that contains a drop-down list of options.
 
-![DHX Select Button](../assets/ribbon/select_button.png)
+![Ribbon select button with a dropdown list of file format options in DHTMLX Suite](/img/ribbon/select_button.png)
 
 ## Adding SelectButton
 
@@ -46,4 +46,4 @@ You can provide the [following properties](ribbon/api/api_selectbutton_propertie
 
 ## Operations with a button
 
-You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection.md).
+You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](/tree_collection/).

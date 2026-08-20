@@ -31,4 +31,4 @@ app.get("/backend/autoload", (req, res) => {
 });
 ~~~
 
-**Related article**: [Initialization](/tree/initialization_of_dhtmlxtree/#initialize-tree)
+**Related article**: [Initialization](tree/initialization_of_dhtmlxtree.md#initialize-tree)

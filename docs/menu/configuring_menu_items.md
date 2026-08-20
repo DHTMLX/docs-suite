@@ -8,13 +8,13 @@ description: You can explore the list of Menu controls of Menu in the documentat
 
 In this article you'll find the controls you can use in DHTMLX Menu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
 
-To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection.md). Check the [related article](menu/work_with_menu.md).
+To operate Menu controls, you can use Menu API and [Tree Collection API](/tree_collection/). Check the [related article](menu/work_with_menu.md).
 
 ## MenuItem
 
 MenuItem is a drop-down list of options.
 
-![Menu Item](../assets/menu/menu_item.png)
+![Menu item with an open dropdown list of options in DHTMLX Suite](/img/menu/menu_item.png)
 
 ### Adding menuItem
 
@@ -41,11 +41,11 @@ See [the full list of properties](menu/api/api_menuitem_properties.md) that you 
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
-![](../assets/menu/htmlcontent.png)
+![Menu with a custom HTML item containing a text input and icon options in DHTMLX Suite](/img/menu/htmlcontent.png)
 
 ### Adding Custom HTML
 
-Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection.md):
+Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](/tree_collection/):
 
 ~~~js
 menu.data.add({
@@ -67,7 +67,7 @@ See [the full list of properties](menu/api/api_customhtml_properties.md) that yo
 
 This is a horizontal (between menu options) or vertical (between menu items) line separating items/groups of items from each other.
 
-![](../assets/menu/separator.png)
+![Menu dropdown with a horizontal separator line between options in DHTMLX Suite](/img/menu/separator.png)
 
 ### Adding Separator
 
@@ -89,7 +89,7 @@ See [the full list of properties](menu/api/api_separator_properties.md) that you
 
 This item takes space on the toolbar and is used for aligning controls.
 
-![DHX Toolbar spacer](../assets/menu/spacer.png)
+![Menu bar with a spacer pushing the Edit item and its dropdown to the right in DHTMLX Suite](/img/menu/spacer.png)
 
 ### Adding Spacer
 

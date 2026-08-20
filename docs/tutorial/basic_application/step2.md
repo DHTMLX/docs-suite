@@ -3,13 +3,19 @@ sidebar_label: Step 2. Specify the Layout
 title: Step 2. Specify the Layout
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 Our application will have the following structure:
 
 - Toolbar
 - Grid with a list of users
 - Chart
 
-<img style="margin: 19px;  display: block;" src="tutorial/basic_application/layout_002.png"/>
+<div className={styles.image}>
+
+![Layout scheme with a toolbar row above grid and chart cells in DHTMLX Suite](/img/tutorial/basic_application/layout_002.png)
+
+</div>
 
 To set the main scheme of our app we should start by initializing the Layout. Later we will attach the rest of the components to it.
 

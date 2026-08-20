@@ -8,7 +8,7 @@ description: You can explore the Combo of Form in the documentation of the DHTML
 
 An input that represents an advanced select box with a set of options. It is able to provide suggestions while a user is typing text.
 
-![Combo control](../assets/form/form_combo.png)
+![Combo form control with an open dropdown list of numeric options in DHTMLX Suite](/img/form/form_combo.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
@@ -77,4 +77,4 @@ const combo = form.getItem("combo").getWidget();  // -> ComboBox
 combo.focus(); // sets focus in the input
 ~~~
 
-Check [the full list of methods of the DHTMLX Combobox component](../../combobox/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/combo/combo_getwidget_method/) method.
+Check [the full list of methods of the DHTMLX Combobox component](combobox/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/combo/combo_getwidget_method.md) method.

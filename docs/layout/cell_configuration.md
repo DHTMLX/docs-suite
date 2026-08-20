@@ -259,4 +259,4 @@ The available values of the option are "line", "wide", "space", "none".
 
 | type:"line"                         | type:"wide"                         | type:"space"                         | type:"none"                               |
 | ----------------------------------- | ----------------------------------- | ------------------------------------ | ----------------------------------------- |
-| ![](../assets/layout/line_type.png) | ![](../assets/layout/wide_type.png) | ![](../assets/layout/space_type.png) | ![](../assets/layout/without_borders.png) |
+| ![Layout cells with thin line borders between three stacked rows in DHTMLX Suite](/img/layout/line_type.png) | ![Layout cells separated by wide gray borders between three stacked rows in DHTMLX Suite](/img/layout/wide_type.png) | ![Layout cells separated by blank space between three stacked rows in DHTMLX Suite](/img/layout/space_type.png) | ![Layout cells merged without borders or space between three stacked rows in DHTMLX Suite](/img/layout/without_borders.png) |

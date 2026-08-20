@@ -8,13 +8,13 @@ description: You can explore the Title of Toolbar in the documentation of the DH
 
 This is an item that contains some text.
 
-![](../assets/toolbar/title.png)
+![Toolbar title text controls showing My profile and a welcome label with badges in DHTMLX Suite](/img/toolbar/title.png)
 
 **Related sample**: [Toolbar. Title](https://snippet.dhtmlx.com/dwynhb7o)
 
 ## Adding Title control
 
-A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md):
+A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/):
 
 ~~~js
 toolbar.data.add({

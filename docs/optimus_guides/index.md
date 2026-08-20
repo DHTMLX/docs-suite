@@ -71,7 +71,7 @@ DHTMLX Optimus requires the files of the DHTMLX Suite library as dependencies. T
 
 After running the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/main" target="_blank">project</a> on the local server and opening `http://localhost:8080/` in your browser, you will see the following result:
 
-![](../assets/optimus/start_optimus.png)
+![Browser showing the Hello Optimus starter app running on localhost in DHTMLX Suite](/img/optimus/start_optimus.png)
 
 Let's consider how we've created our demo application:
 
@@ -134,7 +134,7 @@ export class MyApp extends App {
 }
 ~~~
 
-You can find more details on API methods [below](optimus_guides.md#api).
+You can find more details on API methods [below](/optimus_guides/#api).
 
 5\. Finally, we've initialized our application via updating the code of the *index.html* file with the following:
 
@@ -332,7 +332,7 @@ The above code shows that:
 The Component class also provides access to the events of the app via the `fire()`, `on()` methods. See more details below.
 
 
-The following example shows that it is possible to use the class inherited from the Component class by calling it in the class inherited from the App class via the [`use()`](optimus_guides.md#api) method.
+The following example shows that it is possible to use the class inherited from the Component class by calling it in the class inherited from the App class via the [`use()`](/optimus_guides/#api) method.
 
 ~~~js
 import { App } from "dhx-optimus";

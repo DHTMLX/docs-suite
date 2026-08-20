@@ -8,7 +8,7 @@ description: You can explore how to work with File Manager Demo using Optimus Fr
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
-![](../assets/optimus/demo/filemanager_demo.png)
+![File Explorer demo app showing a file list grid with folder tree and details panel in DHTMLX Suite](/img/optimus/demo/filemanager_demo.png)
 
 This demo application shows how to create a Material-style file manager app based on DHTMLX Suite widgets: Grid, Tree, Layout, DataView, Toolbar, Sidebar, Menu, Form, and Tabbar.
 

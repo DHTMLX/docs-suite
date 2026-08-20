@@ -9,7 +9,7 @@ description: You can have an overview of List in the documentation of the DHTMLX
 DHTMLX List is a client-side JavaScript component that displays a collection of objects in a list according to a user-defined template.
 It allows you to arrange multiple objects with similar properties within a single container and make your data organized. Check [online samples for DHTMLX List](https://snippet.dhtmlx.com/0sorkczm?tag=list). 
 
-![](../assets/list/list_front.png)
+![List of books with titles, authors and category labels in DHTMLX Suite](/img/list/list_front.png)
 
 ## Features
 
@@ -19,24 +19,24 @@ You can check the following page to learn how to build a full-featured DHTMLX Li
 
 ## API reference
 
-- [](api/api_overview.md)
+- [](list/api/api_overview.md)
 
 ## Related resources
 
 - You can get DHTMLX List as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX List](https://snippet.dhtmlx.com/0sorkczm?tag=list)
-- To work with data of List check [DataCollection API](data_collection.md)
+- To work with data of List check [DataCollection API](/data_collection/)
 
 ## Guides
 
-- [](initialization.md)
-- [](configuration.md)
-- [](load_data.md)
-- [](work_with_list.md)
-- [](usage_selection.md)
-- [](customization.md)
-- [](events.md)
+- [](list/initialization.md)
+- [](list/configuration.md)
+- [](list/load_data.md)
+- [](list/work_with_list.md)
+- [](list/usage_selection.md)
+- [](list/customization.md)
+- [](list/events.md)
 
 ## Other
 
-- [](../migration.md)
+- [](migration.md)

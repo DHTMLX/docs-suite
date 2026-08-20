@@ -3,6 +3,8 @@ sidebar_label: Step 5. Bind Toolbar to Grid
 title: Step 5. Bind Toolbar to Grid
 ---          
 
+import styles from '@site/src/css/tutorial.module.scss';
+
 At this step we will discuss how to fill and clear the Grid with the help of Toolbar buttons. For this purpose we will use the <b>Click</b> event of the Toolbar:
 
 ~~~js
@@ -25,7 +27,11 @@ toolbar.events.on("Click", function(id,e){
 
 <i>If you click on the "Clear" icon, all items will be deleted from the grid through the <b>removeAll()</b> method.</i>
 
-<img style="margin: 19px" src="tutorial/basic_application/bind_toolbar_grid.png"/>
+<div className={styles.image}>
+
+![Contacts grid filled with user data after clicking the Load toolbar button in DHTMLX Suite](/img/tutorial/basic_application/bind_toolbar_grid.png)
+
+</div>
 
 For more information about working with the Toolbar events, see the [](toolbar/handling_events.md) article. The methods used to work with data are described in data_collection/api/refs/datacollection.md.
 
