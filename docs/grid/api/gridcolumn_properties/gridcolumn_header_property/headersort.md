@@ -8,7 +8,7 @@ description: You can explore the headerSort config of Grid column header in the 
 
 @short: Optional. Enables/disables sorting by clicking the header
 
-#### Usage
+### Usage
 
 ~~~jsx
 headerSort?: boolean;
@@ -16,12 +16,15 @@ headerSort?: boolean;
 
 @default: true
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
             width: 150, 
-            id: "population", 
+            id: "project", 
             header: [{ text: "Project", headerSort: false }]
             // other column properties
         },
@@ -29,3 +32,8 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // more options
 });
+~~~
+
+**Related article**: [Sortable columns](grid/configuration.md#sortable-columns)
+
+**Related sample**: [Grid. Sortable columns](https://snippet.dhtmlx.com/r3prvlmo)

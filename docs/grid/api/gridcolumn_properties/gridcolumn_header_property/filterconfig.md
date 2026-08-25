@@ -8,7 +8,7 @@ description: You can explore the filterConfig config of Grid column header in th
 
 @short: Optional. A configuration object for setting the behavior and appearance of the filter
 
-#### Usage
+### Usage
 
 ~~~jsx
 filterConfig?: {
@@ -37,9 +37,9 @@ filterConfig?: {
 };
 ~~~
 
-@params:
+### Parameters
 
-The set of properties depends on the filter type specified in the [`content`](/grid/api/gridcolumn_properties/gridcolumn_header_property/content/) property:
+The set of properties depends on the filter type specified in the [`content`](grid/api/gridcolumn_properties/gridcolumn_header_property/content.md) property:
 
 - a configuration object for **"inputFilter"** can contain the following properties:
     - `placeholder` - (*string*) optional, the placeholder text in the input field
@@ -47,7 +47,7 @@ The set of properties depends on the filter type specified in the [`content`](/g
 
 - a configuration object for **"comboFilter"** can contain a set of properties:
     - `filter` - (*function*) optional, sets a custom function for filtering Combo Box options
-    - `multiselection` - (*boolean*) optional, enables selection of multiple options
+    - `multiselection` - (*boolean*) optional, enables selection of multiple options, *false* by default
     - `readonly` - (*boolean*) optional, makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the `readonly` property depends on the following conditions:
         - the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column
         - in all other cases, `readonly:false` is set by default
@@ -61,8 +61,8 @@ The set of properties depends on the filter type specified in the [`content`](/g
 
     - `icon` - (*string*) optional, the CSS class for the calendar icon
     - `placeholder` - (*string*) optional, the placeholder text in the input field when no date is selected
-    - `asDateObject` - (*boolean*) optional, determines how the filter processes data for `customFilter` and the `beforeFilter` and `filterChange` events. If `true`, the comparison is performed using Date objects
-    - `range` - (*boolean*) optional, enables the date range selection mode (from and to)
+    - `asDateObject` - (*boolean*) optional, determines how the filter processes data for `customFilter` and the `beforeFilter` and `filterChange` events. If `true`, the comparison is performed using Date objects, *false* by default
+    - `range` - (*boolean*) optional, enables the date range selection mode (from and to), *false* by default
     - `dateFormat` - (*string*) optional, the date display format (e.g., `"%d/%m/%Y"`). By default, applies the `dateFormat` used for the column
 
     Calendar API configuration properties:
@@ -70,13 +70,13 @@ The set of properties depends on the filter type specified in the [`content`](/g
     - `date` - (*Date | string*) optional, the initial date opened in the calendar
     - `mark` - (*function*) optional, a function for adding custom CSS classes to specific dates
     - `disabledDates` - (*function*) optional, a function for disabling the selection of specific dates
-    - `weekStart` - (*string*) optional, the start day of the week (`"saturday"`, `"sunday"`, `"monday"`)
-    - `weekNumbers` - (*boolean*) optional, shows week numbers if `true`
-    - `mode` - (*string*) optional, the calendar display mode (`"calendar"`, `"year"`, `"month"`, `"timepicker"`)
-    - `timePicker` - (*boolean*) optional, adds the ability to select time
-    - `timeFormat` - (*number*) optional, the time format (`12` or `24` hours)
-    - `thisMonthOnly` - (*boolean*) optional, if `true`, allows selecting dates only within the current month
-    - `width` - (*string | number*) optional, the width of the dropdown calendar
+    - `weekStart` - (*string*) optional, the start day of the week (`"saturday"`, `"sunday"`, `"monday"`), *"sunday"* by default
+    - `weekNumbers` - (*boolean*) optional, shows week numbers if `true`, *false* by default
+    - `mode` - (*string*) optional, the calendar display mode (`"calendar"`, `"year"`, `"month"`, `"timepicker"`), *"calendar"* by default
+    - `timePicker` - (*boolean*) optional, adds the ability to select time, *false* by default
+    - `timeFormat` - (*number*) optional, the time format (`12` or `24` hours), *24* by default
+    - `thisMonthOnly` - (*boolean*) optional, if `true`, allows selecting dates only within the current month, *false* by default
+    - `width` - (*string | number*) optional, the width of the dropdown calendar, *"250px"* by default
 
 **dateFilter** supports two modes of operation:
 
@@ -84,8 +84,10 @@ The set of properties depends on the filter type specified in the [`content`](/g
 
 - **range mode** - this mode is activated by setting the `range: true` property in the `filterConfig` object. In this mode, the user can select the start date and the end date. The table will filter records falling within the selected time interval (inclusive).
 
-@example:
+@descr:
+### Example
 
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -136,9 +138,8 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // more options
 });
+~~~
 
-@descr:
-
-**Related article**: [Header/footer filters](/grid/configuration/#headerfooter-filters)
+**Related article**: [Header/footer filters](grid/configuration.md#headerfooter-filters)
 
 **Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)

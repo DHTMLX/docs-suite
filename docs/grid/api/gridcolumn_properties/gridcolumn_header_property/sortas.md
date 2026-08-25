@@ -8,24 +8,28 @@ description: You can explore the sortAs config of Grid column header in the docu
 
 @short: Optional. A function that defines the type to sort data as (e.g. string, number, date, etc.)
 
-#### Usage
+### Usage
 
 ~~~jsx
 sortAs?: (cellValue) => string | number;
 ~~~
 
-@params:
+### Parameters
+
 The callback function takes one parameter:
 - `cellValue` - (required) the current cell value
 
 and returns a *string* or *number* used as the sort key.
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
             width: 150, 
-            id: "task", 
+            id: "name", 
             header: [{ 
                 text: "Name",
                 // returns a lowercase string for case-insensitive sorting
@@ -38,3 +42,6 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // more options
 });
+~~~
+
+**Related article**: [Sorting data](grid/usage.md#sorting-data)

@@ -8,7 +8,7 @@ description: You can explore the tooltip config of Grid column header in the doc
 
 @short: Optional. Enables/disables the header tooltip, or sets the configuration object with the tooltip settings
 
-#### Usage
+### Usage
 
 ~~~jsx
 tooltip?: boolean | object;
@@ -16,7 +16,8 @@ tooltip?: boolean | object;
 
 @default: true
 
-@params:
+### Parameters
+
 When set as an *object*, the tooltip config can have the following properties:
 
 - `force` - (optional) forces opening of a tooltip; if set to *true*, the `showDelay` and `hideDelay` settings are ignored, *false* by default
@@ -26,8 +27,10 @@ When set as an *object*, the tooltip config can have the following properties:
 - `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default
 - `css` - (optional) the style of a tooltip box
 
-@example:
+@descr:
+### Example
 
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // enables a tooltip for the header
@@ -43,9 +46,8 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // more options
 });
+~~~
 
-
-@descr:
-**Related article**: [Column header/footer tooltip](/grid/configuration/#column-headerfooter-tooltip)
+**Related article**: [Column header/footer tooltip](grid/configuration.md#column-headerfooter-tooltip)
 
 **Related sample**: [Grid. Header/footer tooltips](https://snippet.dhtmlx.com/fgstf2mq)

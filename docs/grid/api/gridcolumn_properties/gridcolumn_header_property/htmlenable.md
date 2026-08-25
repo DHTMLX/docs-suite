@@ -8,7 +8,7 @@ description: You can explore the htmlEnable config of Grid column header in the 
 
 @short: Optional. Allows using and displaying HTML content in a header
 
-#### Usage
+### Usage
 
 ~~~jsx
 htmlEnable?: boolean;
@@ -16,7 +16,10 @@ htmlEnable?: boolean;
 
 @default: false
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
@@ -29,11 +32,10 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // more options
 });
-
-@descr:
+~~~
 
 If the `htmlEnable` property is set to *false* (default), the content of the header cells is displayed as a string value.
 
-**Related article**: [HTML content of Grid columns](/grid/configuration/#html-content-of-grid-columns)
+**Related article**: [HTML content of Grid columns](grid/configuration.md#html-content-of-grid-columns)
 
 **Related sample**: [Grid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/7o4elf48?tag=grid) 

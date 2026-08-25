@@ -8,7 +8,7 @@ description: You can explore the text config of Grid column header in the docume
 
 @short: Optional. The text of a header 
 
-#### Usage
+### Usage
 
 ~~~jsx
 text?:
@@ -18,16 +18,20 @@ text?:
     }) => string);
 ~~~
 
-@params:
+### Parameters
+
 The text of a header can be set as a *string* or a *callback function* which is called with the following parameter: 
 
 - `content` - an object with the content of the header/footer tooltip that contains the calculated values from the `summary` property as *key:value* pairs, where:
     - the *key* is either the key defined in the list or the functor name
     - the *value* can be a *string*, *number* or *null*
 
-The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/gridcolumn_properties/gridcolumn_summary_property.md) config option of a column.
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
@@ -43,7 +47,6 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // more options
 });
+~~~
 
-@descr:
-
-**Related article**: [Header/footer text](/grid/configuration/#headerfooter-text)
+**Related article**: [Header/footer text](grid/configuration.md#headerfooter-text)

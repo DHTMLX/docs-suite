@@ -8,7 +8,45 @@ description: You can explore the Grid column header properties of Grid in the do
 
 The Grid column `header` is a required property that presents an array of objects with header rows configuration. This section contains the list of the column header objects' properties. Click the name of the necessary property to see the details on its usage.
 
-  Property                                                             			        |        Description                                     |
+## Usage
+
+~~~jsx
+header: [
+    {
+        text?:
+            string |
+            ((content: {
+                [key: string]: string | number | null
+            }) => string),
+        tooltip?: boolean | object, // true by default
+        tooltipTemplate?: (
+            content: {
+                [key: string]: string | number | null;
+                value: string;
+            },
+            header: IHeader,
+            column: ICol
+        ) => string | boolean,
+        align?: "left" | "center" | "right", // "left" by default
+        colspan?: number,
+        rowspan?: number,
+        css?: string,
+        content?: "inputFilter" | "selectFilter" | "comboFilter" | "dateFilter",
+        filterConfig?: object,
+        customFilter?: (
+            value: string | number | Date | Date[],
+            match: string | string[] | Date | Date[]
+        ) => boolean,
+        headerSort?: boolean, // true by default
+        sortAs?: (cellValue) => string | number,
+        htmlEnable?: boolean, // false by default
+    }
+];
+~~~
+
+## Properties
+
+|  Property                                                                          |        Description                                     |
 |---------------------------------------------------------------------------------- |------------------------------------------------------- |
 | [`align`](grid/api/gridcolumn_properties/gridcolumn_header_property/align.md)     | (optional) aligns data in the header                   |
 | [`colspan`](grid/api/gridcolumn_properties/gridcolumn_header_property/colspan.md) | (optional) the number of columns in a colspan          |
@@ -23,3 +61,21 @@ The Grid column `header` is a required property that presents an array of object
 | [`text`](grid/api/gridcolumn_properties/gridcolumn_header_property/text.md)       | (optional) the text of a header                        |
 | [`tooltip`](grid/api/gridcolumn_properties/gridcolumn_header_property/tooltip.md) | (optional) enables/disables the header tooltip, or sets the configuration object with the tooltip settings  |
 | [`tooltipTemplate`](grid/api/gridcolumn_properties/gridcolumn_header_property/tooltiptemplate.md) | (optional) sets a template for the header tooltip, taking into account the `htmlEnable` property      |
+
+## Example
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "title", header: [{ text: "Title" }] },
+        // more columns configuration objects
+    ],
+    // more options
+});
+~~~
+
+**Related articles:**
+- [Configuration](grid/configuration.md)
+- [Grid column properties](grid/api/api_gridcolumn_properties.md)
+
+**Related sample**: [Grid. Grouped headers (spans)](https://snippet.dhtmlx.com/eol76o68)

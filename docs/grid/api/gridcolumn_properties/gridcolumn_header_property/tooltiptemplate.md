@@ -8,7 +8,7 @@ description: You can explore the tooltipTemplate config of Grid column header in
 
 @short: Optional. Sets a template for the header tooltip, taking into account the `htmlEnable` property
 
-#### Usage
+### Usage
 
 ~~~jsx
 tooltipTemplate?: (
@@ -21,7 +21,8 @@ tooltipTemplate?: (
 ) => string | boolean;
 ~~~
 
-@params:
+### Parameters
+
 The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
 
 - `content` - an object with the content of the header tooltip. Contains two properties which are available either from the component's or from the column's configuration:
@@ -34,8 +35,10 @@ The value of the `tooltipTemplate` property is a callback function which is call
 
 Return *false* to disable the tooltip.
 
-@example:
+@descr:
+### Example
 
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
@@ -50,11 +53,12 @@ const grid = new dhx.Grid("grid_container", {
             summary: "count"
         }
         // more columns configuration objects
-    ]
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
     // more options
 });
+~~~
 
-@descr:
-**Related article**: [Column header/footer tooltip](/grid/configuration/#column-headerfooter-tooltip)
+**Related article**: [Column header/footer tooltip](grid/configuration.md#column-headerfooter-tooltip)
 
 **Related sample**: [Grid. Header/footer tooltips](https://snippet.dhtmlx.com/fgstf2mq)

@@ -8,21 +8,32 @@ description: You can explore the rowspan config of Grid column header in the doc
 
 @short: Optional. The number of rows in a rowspan
 
-#### Usage
+### Usage
 
 ~~~jsx
 rowspan?: number;
 ~~~
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
             width: 150, id: "start_date", 
-            header: [{ text: "Some text", rowspan: 2 }],
+            // the "Start date" header cell takes both header rows
+            header: [{ text: "Start date", rowspan: 2 }]
             // other column properties 
+        },
+        { 
+            width: 150, id: "duration", 
+            header: [{ text: "Duration" }, { content: "inputFilter" }]
         }
         // more columns configuration objects
     ],
     // more options
 });
+~~~
+
+**Related sample**: [Grid. Grouped headers (spans)](https://snippet.dhtmlx.com/eol76o68)

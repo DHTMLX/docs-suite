@@ -8,13 +8,16 @@ description: You can explore the css config of Grid column header in the documen
 
 @short: Optional. Styling to be applied to a header
 
-#### Usage
+### Usage
 
 ~~~jsx
 css?: string;
 ~~~
 
-@example:
+@descr:
+### Example
+
+~~~html
 <style>
     .myCustomStyle {
         background: #F2F2F2;
@@ -22,15 +25,22 @@ css?: string;
     }
 </style>
 
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { 
-            width: 150, 
-            id: "population", 
-            header: [{ text: "Country", css: "myCustomStyle" }]
-            // other column properties
-        },
-        // more columns configuration objects
-    ],
-    // more options
-});
+<script>
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            { 
+                width: 150, 
+                id: "country", 
+                header: [{ text: "Country", css: "myCustomStyle" }]
+                // other column properties
+            },
+            // more columns configuration objects
+        ],
+        // more options
+    });
+</script>
+~~~
+
+**Related article**: [Styling header cells](grid/customization.md#styling-header-cells)
+
+**Related sample**: [Grid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/7o4elf48)

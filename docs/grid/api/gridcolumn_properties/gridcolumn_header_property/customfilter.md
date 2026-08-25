@@ -8,7 +8,7 @@ description: You can explore the customFilter config of Grid column header in th
 
 @short: Optional. A callback function that allows defining custom filtering logic
 
-#### Usage
+### Usage
 
 ~~~jsx
 customFilter?: (
@@ -17,7 +17,7 @@ customFilter?: (
 ) => boolean;
 ~~~
 
-@params:
+### Parameters
 
 The callback function takes two parameters:
 - `value` - (required) the cell value in the row
@@ -25,7 +25,10 @@ The callback function takes two parameters:
 
 and returns *true*, if the row matches the filtering criteria, otherwise *false*.
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 150, id: "country", header: [
@@ -39,9 +42,8 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // other configuration properties
 });
+~~~
 
-@descr:
-
-**Related article**: [Customizing header/footer filters](/grid/configuration/#customizing-headerfooter-filters)
+**Related article**: [Customizing header/footer filters](grid/configuration.md#customizing-headerfooter-filters)
 
 **Related sample**: [Grid. Custom filters in the header (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/gcidkxjg)

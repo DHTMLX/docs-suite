@@ -8,7 +8,7 @@ description: You can explore the align config of Grid column header in the docum
 
 @short: Optional. Aligns data in the header
 
-#### Usage
+### Usage
 
 ~~~jsx
 align?: "left" | "center" | "right";
@@ -16,14 +16,17 @@ align?: "left" | "center" | "right";
 
 @default: "left"
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { id: "name", header: [{ text: "Name", align: "center" }], align: "right"}
+        { id: "name", header: [{ text: "Name", align: "center" }], align: "right" }
         // more columns configuration objects
     ],
     // more options
 });
+~~~
 
-@descr:
-**Related article**: [Alignment](/grid/configuration/#alignment)
+**Related article**: [Alignment](grid/configuration.md#alignment)

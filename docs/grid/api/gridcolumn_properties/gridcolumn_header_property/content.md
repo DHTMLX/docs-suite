@@ -8,21 +8,25 @@ description: You can explore the content config of Grid column header in the doc
 
 @short: Optional. Defines the content of the column header, including the filter type
 
-#### Usage
+### Usage
 
 ~~~jsx
 content?: "inputFilter" | "selectFilter" | "comboFilter" | "dateFilter";
 ~~~
 
-@params:
+### Parameters
+
 The `content` property allows setting one of the predefined filters:
 
-- `"inputFilter"` — a text input field
-- `"selectFilter"` — a dropdown list
-- `"comboFilter"` — a combobox with search
-- `"dateFilter"` (**PRO version**) — a filter with a calendar for selecting a date or a date range
+- `"inputFilter"` - a text input field
+- `"selectFilter"` - a dropdown list
+- `"comboFilter"` - a combobox with search
+- `"dateFilter"` (**PRO version**) - a filter with a calendar for selecting a date or a date range
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -73,9 +77,8 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // more options
 });
+~~~
 
-@descr:
-
-**Related article**: [Header/footer filters](/grid/configuration/#headerfooter-filters)
+**Related article**: [Header/footer filters](grid/configuration.md#headerfooter-filters)
 
 **Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
