@@ -32,4 +32,6 @@ const grid = new dhx.Grid("grid", {
 
 Redefines the [autoHeight](grid/api/grid_autoheight_config.md) config for the header.
 
+Ignored when [`headerRowHeight`](grid/api/grid_headerrowheight_config.md) is set as an array: in that case the height of each level of the header is defined by the corresponding array item, and only the *"auto"* items fit their content.
+
 @changelog: added in v8.3

@@ -15,9 +15,18 @@ description: You can explore the headerRowHeight config of Grid in the documenta
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        {
+            id: "country", width: 200,
+            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
+        },
+        {
+            id: "region", width: 200,
+            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
+        },
     ],
-    headerRowHeight: [50, "auto"]
+    // level 0 -> 56px, level 1 -> adjusts to its content, level 2 -> 32px
+    headerRowHeight: [56, "auto", 32],
+    data: dataset,
 });
 
 @descr:
@@ -40,9 +49,17 @@ The `headerRowHeight` property defines how tall those levels are and can be set 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        {
+            id: "country", width: 200,
+            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
+        },
+        {
+            id: "region", width: 200,
+            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
+        },
     ],
-    headerRowHeight: 50 // both levels are 50px tall
+    headerRowHeight: 56, // all the three levels are 56px tall
+    data: dataset,
 });
 ~~~
 
@@ -51,13 +68,50 @@ const grid = new dhx.Grid("grid_container", {
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        {
+            id: "country", width: 200,
+            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
+        },
+        {
+            id: "region", width: 200,
+            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
+        },
     ],
-    headerRowHeight: [60, "auto"] // the first level is 60px tall, the second one fits its content
+    // level 0 -> 56px, level 1 -> adjusts to its content, level 2 -> 32px
+    headerRowHeight: [56, "auto", 32],
+    data: dataset,
 });
 ~~~
 
+:::tip pro version only
+Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
+
+In the GPL version the array form itself works, individual pixel heights per level are fully supported, but an *"auto"* item is accepted and silently degrades: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values in the GPL version.
+:::
+
+This is how the height of a level is resolved:
+
+| `headerRowHeight` | Level | Height | Text wrapping |
+| -------- | ----- | ------ | ------------- |
+| *number* | any | the number | no |
+| *array*  | a *number* item | the item | no |
+| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40 | yes |
+| *array*  | beyond the array length | 40 | no |
+
+Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40.
+
 The total height of the header is calculated as a sum of all level heights in it.
+
+### Relation to `headerAutoHeight`
+
+The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md) which turns it on for the whole component, makes every level of the header fit its content. The array form of `headerRowHeight` is more specific, so it wins:
+
+- if `headerRowHeight` is set as an array, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
+- if `headerRowHeight` is set as a number, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
+
+### Export
+
+The per-level heights are carried over to the [export](grid/usage.md#exporting-data): the XLSX header and footer rows keep their individual heights, and the PDF/PNG snapshot uses the correct total height of the zone.
 
 @changelog: the array value with individual level heights and the *"auto"* keyword were added in v9.4
 
