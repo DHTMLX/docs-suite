@@ -1572,16 +1572,40 @@ You can change the height of the header/footer in one of the following ways:
 
 1. Specify the necessary height of the rows in the header/footer via the related API options
 
-The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
-properties, correspondingly. The default value of the mentioned properties is 40.
+Grid renders the header and the footer as a stack of levels (rows). The number of levels is defined by the longest `header`/`footer` array among the columns:
 
 ~~~jsx
+columns: [
+    { id: "country", header: [{ text: "Region", colspan: 2 }, { text: "Country" }] }, // 2 levels
+    { id: "population", header: ["", { text: "Population" }] },
+]
+~~~
+
+The height of the header/footer of Grid is calculated as a sum of the levels which are included into it. To set the height of the levels, use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md) properties, correspondingly. Each of them can be set either as a *number*, which is applied to every level of the zone, or as an *array*, which sizes the levels individually.
+
+The default value of the mentioned properties is 40.
+
+~~~jsx
+// the same height for all the levels of the header/footer
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
-    footerRowHeight:50
+    footerRowHeight: 50,
     headerRowHeight: 50
+});
+~~~
+
+When the property is set as an array, the item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword, which adjusts the level height to its content:
+
+~~~jsx
+// individual height for each level of the header/footer
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    headerRowHeight: [60, "auto"], // the first level is 60px tall, the second one fits its content
+    footerRowHeight: ["auto", 60] // the first level fits its content, the second one is 60px tall
 });
 ~~~
 
@@ -1747,7 +1771,7 @@ Please note that the `autoHeight` option does not adjust the height of the cells
 
 The option just makes their text split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you can:
 
-- use the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid to set specific values for the header/footer rows height
+- use the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid to set specific values for the header/footer rows height, either the same one for all the rows (levels) or an individual one for each of them
 - use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to enable autoheight for the header/footer rows
 
 ### Automatic adding of empty row into Grid
