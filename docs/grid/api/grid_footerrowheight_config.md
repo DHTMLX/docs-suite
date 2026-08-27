@@ -6,8 +6,6 @@ description: You can explore the footerRowHeight config of Grid in the documenta
 
 # footerRowHeight
 
-### Description
-
 @short: Optional. Sets the height of rows in the footer
 
 ### Usage
@@ -17,7 +15,7 @@ footerRowHeight?: number | (number | "auto")[];
 ~~~
 
 :::tip pro version only
-The "auto" value is a PRO feature.
+The "auto" value is a PRO feature. Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
 :::
 
 ### Default config
@@ -58,55 +56,23 @@ columns: [
 ]
 ~~~
 
-The `footerRowHeight` property defines how tall those levels are and can be set in two ways:
+The `footerRowHeight` property defines the height of those levels. You can set it in two ways:
 
 - as a **number** - the same height, in pixels, is applied to every level of the footer:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        {
-            id: "country", width: 200,
-            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
-            footer: [{ text: "Total", rowspan: 2 }],
-        },
-        {
-            id: "region", width: 200,
-            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
-            footer: [{ text: "Count" }, { text: "The number of the listed countries" }],
-        },
-    ],
-    footerRowHeight: 56, // both levels are 56px tall
-    data: dataset,
-});
+footerRowHeight: 56 // the height of both levels is 56px
 ~~~
 
 - as an **array** - the levels are sized individually. The item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword (**PRO version only**), which adjusts the level height to its content:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        {
-            id: "country", width: 200,
-            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
-            footer: [{ text: "Total", rowspan: 2 }],
-        },
-        {
-            id: "region", width: 200,
-            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
-            footer: [{ text: "Count" }, { text: "The number of the listed countries" }],
-        },
-    ],
-    // level 0 -> 40px, level 1 -> adjusts to its content
-    footerRowHeight: [40, "auto"],
-    data: dataset,
-});
+// level 0 -> 40px, level 1 -> adjusts to its content
+footerRowHeight: [40, "auto"]
 ~~~
 
 :::info
-Note that the *"auto"* value is a PRO feature. Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
-
-In the GPL version, the array form works too: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
+In the GPL version, the array form still works: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
 :::
 
 ### Height resolution rules
@@ -115,16 +81,16 @@ In the GPL version, the array form works too: individual pixel heights per level
 | -------- | ----- | ------ | ------------- |
 | *number* | any | the number | no |
 | *array*  | a *number* item | the item | no |
-| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40 | yes |
-| *array*  | beyond the array length | 40 | no |
+| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40px | yes |
+| *array*  | beyond the array length | 40px | no |
 
-Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40.
+Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40px.
 
 The height of the footer is calculated as a sum of all row heights in it.
 
 ### Relation to `footerAutoHeight`
 
-The [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md) which turns it on for the whole component, makes **every** level of the footer fit its content. The array form of `footerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `footerAutoHeight`:
+The [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md), which turns it on for the whole component, makes **every** level of the footer fit its content. The array form of `footerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `footerAutoHeight`:
 
 - if `footerRowHeight` is set as an **array**, `footerAutoHeight` is ignored for the footer entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
 - if `footerRowHeight` is set as a **number**, `footerAutoHeight` works as before: every level fits its content but is never shorter than `footerRowHeight`

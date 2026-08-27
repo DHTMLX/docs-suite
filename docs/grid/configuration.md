@@ -1576,8 +1576,8 @@ Grid renders the header and the footer as a stack of levels (rows). The number o
 
 ~~~jsx
 columns: [
-    { id: "country", header: [{ text: "Region", colspan: 2 }, { text: "Country" }] }, // 2 levels
-    { id: "population", header: ["", { text: "Population" }] },
+    { id: "country", header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }] }, // 3 levels
+    { id: "region", header: ["", { text: "Region" }, { text: "Subregion of the world" }] },
 ]
 ~~~
 
@@ -1587,13 +1587,8 @@ The default value of the mentioned properties is 40.
 
 ~~~jsx
 // the same height for all the levels of the header/footer
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // columns config
-    ],
-    footerRowHeight: 50,
-    headerRowHeight: 50
-});
+headerRowHeight: 50,
+footerRowHeight: 50
 ~~~
 
 When the property is set as an array, the item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword (**PRO version only**), which adjusts the level height to its content:
@@ -1630,10 +1625,10 @@ The height of a level is resolved as follows:
 | -------- | ----- | ------ | ------------- |
 | *number* | any | the number | no |
 | *array*  | a *number* item | the item | no |
-| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40 | yes |
-| *array*  | beyond the array length | 40 | no |
+| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40px | yes |
+| *array*  | beyond the array length | 40px | no |
 
-Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40.
+Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40px.
 
 The per-level heights are carried over to the [export](grid/usage.md#exporting-data): the XLSX header and footer rows keep their individual heights, and the PDF/PNG snapshot uses the correct total height of the zone.
 
@@ -1647,7 +1642,7 @@ Use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footer
 
 ~~~jsx
 // enabling autoheight only in the content
-const grid1 = new dhx.Grid("grid", {
+const grid1 = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
@@ -1658,7 +1653,7 @@ const grid1 = new dhx.Grid("grid", {
 });
 
 // enabling autoheight only in the header
-const grid2 = new dhx.Grid("grid", {
+const grid2 = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],

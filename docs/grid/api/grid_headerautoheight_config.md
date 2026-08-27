@@ -17,7 +17,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 @default: false
 
 @example:
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],

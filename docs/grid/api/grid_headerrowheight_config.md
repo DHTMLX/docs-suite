@@ -6,8 +6,6 @@ description: You can explore the headerRowHeight config of Grid in the documenta
 
 # headerRowHeight
 
-### Description
-
 @short: Optional. Sets the height of rows in the header
 
 ### Usage
@@ -17,7 +15,7 @@ headerRowHeight?: number | (number | "auto")[];
 ~~~
 
 :::tip pro version only
-The "auto" value is a PRO feature.
+The "auto" value is a PRO feature. Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
 :::
 
 ### Default config
@@ -51,56 +49,28 @@ Grid renders the header as a stack of **levels** (rows). The number of levels is
 
 ~~~jsx
 columns: [
-    { id: "country", header: [{ text: "Region", colspan: 2 }, { text: "Country" }] }, // 2 levels
-    { id: "population", header: ["", { text: "Population" }] },
+    { id: "country", header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }] }, // 3 levels
+    { id: "region", header: ["", { text: "Region" }, { text: "Subregion of the world" }] },
 ]
 ~~~
 
-The `headerRowHeight` property defines how tall those levels are and can be set in two ways:
+The `headerRowHeight` property defines the height of those levels. You can set it in two ways:
 
 - as a **number** - the same height, in pixels, is applied to every level of the header:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        {
-            id: "country", width: 200,
-            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
-        },
-        {
-            id: "region", width: 200,
-            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
-        },
-    ],
-    headerRowHeight: 56, // all the three levels are 56px tall
-    data: dataset,
-});
+headerRowHeight: 56 // the height of all the three levels is 56px
 ~~~
 
 - as an **array** - the levels are sized individually. The item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword (**PRO version only**), which adjusts the level height to its content:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        {
-            id: "country", width: 200,
-            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
-        },
-        {
-            id: "region", width: 200,
-            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
-        },
-    ],
-    // level 0 -> 56px, level 1 -> adjusts to its content, level 2 -> 32px
-    headerRowHeight: [56, "auto", 32],
-    data: dataset,
-});
+// level 0 -> 56px, level 1 -> adjusts to its content, level 2 -> 32px
+headerRowHeight: [56, "auto", 32]
 ~~~
 
 :::info
-Note that the *"auto"* value is a PRO feature. Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
-
-In the GPL version, the array form works too: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
+In the GPL version, the array form still works: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
 :::
 
 ### Height resolution rules
@@ -109,16 +79,16 @@ In the GPL version, the array form works too: individual pixel heights per level
 | -------- | ----- | ------ | ------------- |
 | *number* | any | the number | no |
 | *array*  | a *number* item | the item | no |
-| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40 | yes |
-| *array*  | beyond the array length | 40 | no |
+| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40px | yes |
+| *array*  | beyond the array length | 40px | no |
 
-Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40.
+Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40px.
 
 The height of the header is calculated as a sum of all row heights in it.
 
 ### Relation to `headerAutoHeight`
 
-The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md) which turns it on for the whole component, makes **every** level of the header fit its content. The array form of `headerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `headerAutoHeight`:
+The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md), which turns it on for the whole component, makes **every** level of the header fit its content. The array form of `headerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `headerAutoHeight`:
 
 - if `headerRowHeight` is set as an **array**, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
 - if `headerRowHeight` is set as a **number**, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
