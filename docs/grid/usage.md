@@ -601,6 +601,8 @@ The returned configuration object may contain the following properties:
 - `typeConfig` - (*object*) an object containing unique settings for the specific format (filenames, delimiters, themes)
 - **Grid properties** - any Grid property that should be overridden (e.g., `headerRowHeight`) set as a `key:value` pair, where the *key* is the property name and the *value* is the property value to be applied only to the exported state
 
+You can override `headerRowHeight`/`footerRowHeight` with an array as well, so that the individual level heights differ in the exported file. Note that the callback receives `config.headerRowHeight`/`config.footerRowHeight` either as a *number* or as an *array*.
+
 #### Example 1: Conditional filtering and formatting 
 
 In this example, sensitive data is excluded for all formats, while for PDF/PNG the headers are converted to the uppercase and HTML templates are disabled:

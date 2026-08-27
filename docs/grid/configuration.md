@@ -1581,7 +1581,7 @@ columns: [
 ]
 ~~~
 
-The height of the header/footer of Grid is calculated as a sum of the levels which are included into it. To set the height of the levels, use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md) properties, correspondingly. Each of them can be set either as a *number*, which is applied to every level of the zone, or as an *array*, which sizes the levels individually.
+The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md) properties, correspondingly. Each of them can be set either as a **number**, which is applied to every level of the zone, or as an **array**, which sizes the levels individually.
 
 The default value of the mentioned properties is 40.
 
@@ -1596,7 +1596,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-When the property is set as an array, the item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword, which adjusts the level height to its content:
+When the property is set as an array, the item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword (**PRO version only**), which adjusts the level height to its content:
 
 ~~~jsx
 // individual height for each level of the header/footer
@@ -1621,10 +1621,10 @@ const grid = new dhx.Grid("grid_container", {
 :::tip pro version only
 Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
 
-In the GPL version the array form itself works, individual pixel heights per level are fully supported, but an *"auto"* item is accepted and silently degrades: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values in the GPL version.
+In the GPL version, the array form works too: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
 :::
 
-This is how the height of a level is resolved:
+The height of a level is resolved as follows:
 
 | `headerRowHeight` / `footerRowHeight` | Level | Height | Text wrapping |
 | -------- | ----- | ------ | ------------- |
@@ -1637,7 +1637,9 @@ Extra array items are ignored: an array longer than the actual number of levels 
 
 The per-level heights are carried over to the [export](grid/usage.md#exporting-data): the XLSX header and footer rows keep their individual heights, and the PDF/PNG snapshot uses the correct total height of the zone.
 
-**Related sample**: [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
+**Related samples**:
+- [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
+- [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
 
 2. Provide the automatic adjustment of the header/footer height for the content to fit in
 
@@ -1668,10 +1670,10 @@ const grid2 = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Header/footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d?tag=grid)
 
-Both configuration options make every level of the zone fit its content. The array form of `headerRowHeight`/`footerRowHeight` is more specific, so it wins:
+Both configuration options make **every** level of the zone fit its content. The array form of `headerRowHeight`/`footerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `headerAutoHeight`/`footerAutoHeight`:
 
-- if `headerRowHeight` is set as an array, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
-- if `headerRowHeight` is set as a number, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
+- if `headerRowHeight` is set as an **array**, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
+- if `headerRowHeight` is set as a **number**, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
 
 The same pair of rules applies to `footerRowHeight` and `footerAutoHeight`.
 

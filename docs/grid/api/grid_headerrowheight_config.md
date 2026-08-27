@@ -6,13 +6,28 @@ description: You can explore the headerRowHeight config of Grid in the documenta
 
 # headerRowHeight
 
-@short: Optional. Sets the height of rows (levels) in the header
+### Description
 
-@signature: {'headerRowHeight?: number | (number | "auto")[];'}
+@short: Optional. Sets the height of rows in the header
 
-@default: 40
+### Usage
 
-@example:
+~~~jsx
+headerRowHeight?: number | (number | "auto")[];
+~~~
+
+:::tip pro version only
+The "auto" value is a PRO feature.
+:::
+
+### Default config
+
+~~~jsx
+headerRowHeight: 40
+~~~
+
+### Example
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -28,12 +43,11 @@ const grid = new dhx.Grid("grid_container", {
     headerRowHeight: [56, "auto", 32],
     data: dataset,
 });
+~~~
 
-@descr:
+### Header levels and their height
 
-**Related sample**: [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
-
-Grid renders the header as a stack of levels (rows). The number of levels is defined by the longest `header` array among the columns:
+Grid renders the header as a stack of **levels** (rows). The number of levels is defined by the longest `header` array among the columns:
 
 ~~~jsx
 columns: [
@@ -44,7 +58,7 @@ columns: [
 
 The `headerRowHeight` property defines how tall those levels are and can be set in two ways:
 
-- as a *number* - the same height, in pixels, is applied to every level of the header:
+- as a **number** - the same height, in pixels, is applied to every level of the header:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -63,7 +77,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-- as an *array* - the levels are sized individually. The item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword, which adjusts the level height to its content:
+- as an **array** - the levels are sized individually. The item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword (**PRO version only**), which adjusts the level height to its content:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -83,13 +97,13 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-:::tip pro version only
-Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
+:::info
+Note that the *"auto"* value is a PRO feature. Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
 
-In the GPL version the array form itself works, individual pixel heights per level are fully supported, but an *"auto"* item is accepted and silently degrades: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values in the GPL version.
+In the GPL version, the array form works too: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
 :::
 
-This is how the height of a level is resolved:
+### Height resolution rules
 
 | `headerRowHeight` | Level | Height | Text wrapping |
 | -------- | ----- | ------ | ------------- |
@@ -100,19 +114,29 @@ This is how the height of a level is resolved:
 
 Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40.
 
-The total height of the header is calculated as a sum of all level heights in it.
+The height of the header is calculated as a sum of all row heights in it.
 
 ### Relation to `headerAutoHeight`
 
-The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md) which turns it on for the whole component, makes every level of the header fit its content. The array form of `headerRowHeight` is more specific, so it wins:
+The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md) which turns it on for the whole component, makes **every** level of the header fit its content. The array form of `headerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `headerAutoHeight`:
 
-- if `headerRowHeight` is set as an array, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
-- if `headerRowHeight` is set as a number, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
+- if `headerRowHeight` is set as an **array**, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
+- if `headerRowHeight` is set as a **number**, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
 
-### Export
+### Level heights in the export
 
 The per-level heights are carried over to the [export](grid/usage.md#exporting-data): the XLSX header and footer rows keep their individual heights, and the PDF/PNG snapshot uses the correct total height of the zone.
 
-@changelog: the array value with individual level heights and the *"auto"* keyword were added in v9.4
+**Change log**: the array value with individual level heights and the *"auto"* keyword were added in v9.4
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#headerfooter-height)
+**Related API:**
+- [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+- [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md)
+- [`autoHeight`](grid/api/grid_autoheight_config.md)
+- [`rowHeight`](grid/api/grid_rowheight_config.md)
+
+**Related article**: [Header/footer height](grid/configuration.md#headerfooter-height)
+
+**Related samples**: 
+- [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
+- [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
