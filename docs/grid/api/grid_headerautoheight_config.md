@@ -17,7 +17,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 @default: false
 
 @example:
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
@@ -32,4 +32,9 @@ const grid = new dhx.Grid("grid", {
 
 Redefines the [autoHeight](grid/api/grid_autoheight_config.md) config for the header.
 
-@changelog: added in v8.3
+Ignored when [`headerRowHeight`](grid/api/grid_headerrowheight_config.md) is set as an array: in that case the height of each level of the header is defined by the corresponding array item, and only the *"auto"* items fit their content.
+
+@changelog: 
+
+- Since v9.4, ignored when `headerRowHeight` is set as an array
+- Added in v8.3
