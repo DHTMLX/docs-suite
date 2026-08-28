@@ -1576,8 +1576,16 @@ Grid renders the header and the footer as a stack of levels (rows). The number o
 
 ~~~jsx
 columns: [
-    { id: "country", header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }] }, // 3 levels
-    { id: "region", header: ["", { text: "Region" }, { text: "Subregion of the world" }] },
+    {
+        id: "country",
+        header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }], // 3 levels in the header
+        footer: [{ text: "Total" }, { text: "The number of the listed countries" }] // 2 levels in the footer
+    },
+    {
+        id: "region",
+        header: ["", { text: "Region" }, { text: "Subregion of the world" }],
+        footer: [{ text: "Unique" }, { text: "The number of the distinct regions" }]
+    }
 ]
 ~~~
 
@@ -1600,23 +1608,26 @@ const grid = new dhx.Grid("grid_container", {
         {
             id: "country", width: 200,
             header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
+            footer: [{ text: "Total" }, { text: "The number of the listed countries" }],
         },
         {
             id: "region", width: 200,
             header: ["", { text: "Region" }, { text: "Subregion of the world" }],
+            footer: [{ text: "Unique" }, { text: "The number of the distinct regions" }],
         },
     ],
     // level 0 -> 56px, level 1 -> adjusts to its content, level 2 -> 32px
     headerRowHeight: [56, "auto", 32],
+    // level 0 -> 40px, level 1 -> adjusts to its content
     footerRowHeight: [40, "auto"],
-    data: dataset,
+    data: dataset
 });
 ~~~
 
 :::tip pro version only
 Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
 
-In the GPL version, the array form works too: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
+In the GPL version, the array form still works: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
 :::
 
 The height of a level is resolved as follows:

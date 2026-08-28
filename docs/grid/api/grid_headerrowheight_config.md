@@ -39,7 +39,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     // level 0 -> 56px, level 1 -> adjusts to its content, level 2 -> 32px
     headerRowHeight: [56, "auto", 32],
-    data: dataset,
+    data: dataset
 });
 ~~~
 
@@ -50,7 +50,7 @@ Grid renders the header as a stack of **levels** (rows). The number of levels is
 ~~~jsx
 columns: [
     { id: "country", header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }] }, // 3 levels
-    { id: "region", header: ["", { text: "Region" }, { text: "Subregion of the world" }] },
+    { id: "region", header: ["", { text: "Region" }, { text: "Subregion of the world" }] }
 ]
 ~~~
 
@@ -97,7 +97,8 @@ The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) config, as we
 
 The per-level heights are carried over to the [export](grid/usage.md#exporting-data): the XLSX header and footer rows keep their individual heights, and the PDF/PNG snapshot uses the correct total height of the zone.
 
-**Change log**: the array value with individual level heights and the *"auto"* keyword were added in v9.4
+**Change log**: 
+- the array value with individual level heights and the *"auto"* keyword were added in v9.4
 
 **Related API:**
 - [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
@@ -107,6 +108,6 @@ The per-level heights are carried over to the [export](grid/usage.md#exporting-d
 
 **Related article**: [Header/footer height](grid/configuration.md#headerfooter-height)
 
-**Related samples**: 
+**Related samples**:
 - [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
 - [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)

@@ -46,7 +46,9 @@ and returns a configuration object with export parameters. The returned configur
 - `typeConfig` - (*object*) an object containing unique settings for the specific format (filenames, delimiters, themes)
 - **Grid properties** - any Grid property that should be overridden (e.g., `headerRowHeight`) set as a `key:value` pair, where the *key* is the property name and the *value* is the property value to be applied only to the exported state
 
-You can override `headerRowHeight`/`footerRowHeight` with an array as well, so that the individual level heights differ in the exported file. Note that the callback receives `config.headerRowHeight`/`config.footerRowHeight` either as a *number* or as an *array*.
+:::note
+In the callback, `config.headerRowHeight`/`config.footerRowHeight` can be a *number* or an *array*. Pass an array to keep individual level heights in the exported file, see [Header/footer height](grid/configuration.md#headerfooter-height).
+:::
 
 #### Examples
 

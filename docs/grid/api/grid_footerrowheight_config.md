@@ -31,17 +31,17 @@ const grid = new dhx.Grid("grid_container", {
         {
             id: "country", width: 200,
             header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
-            footer: [{ text: "Total", rowspan: 2 }],
+            footer: [{ text: "Total" }, { text: "The number of the listed countries" }],
         },
         {
             id: "region", width: 200,
             header: ["", { text: "Region" }, { text: "Subregion of the world" }],
-            footer: [{ text: "Count" }, { text: "The number of the listed countries" }],
+            footer: [{ text: "Unique" }, { text: "The number of the distinct regions" }],
         },
     ],
     // level 0 -> 40px, level 1 -> adjusts to its content
     footerRowHeight: [40, "auto"],
-    data: dataset,
+    data: dataset
 });
 ~~~
 
@@ -51,8 +51,8 @@ Grid renders the footer as a stack of **levels** (rows). The number of levels is
 
 ~~~jsx
 columns: [
-    { id: "country", footer: [{ text: "Total", rowspan: 2 }] },
-    { id: "region", footer: [{ text: "Count" }, { text: "The number of the listed countries" }] }, // 2 levels
+    { id: "country", footer: [{ text: "Total" }, { text: "The number of the listed countries" }] }, // 2 levels
+    { id: "region", footer: [{ text: "Unique" }, { text: "The number of the distinct regions" }] }
 ]
 ~~~
 
@@ -99,7 +99,8 @@ The [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) config, as we
 
 The per-level heights are carried over to the [export](grid/usage.md#exporting-data): the XLSX header and footer rows keep their individual heights, and the PDF/PNG snapshot uses the correct total height of the zone.
 
-**Change log**: the array value with individual level heights and the *"auto"* keyword were added in v9.4
+**Change log**: 
+- the array value with individual level heights and the *"auto"* keyword were added in v9.4
 
 **Related API:**
 - [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)
@@ -109,6 +110,6 @@ The per-level heights are carried over to the [export](grid/usage.md#exporting-d
 
 **Related article**: [Header/footer height](grid/configuration.md#headerfooter-height)
 
-**Related samples**: 
+**Related samples**:
 - [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
 - [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
