@@ -1,0 +1,155 @@
+{
+  "fixture": "tier-a/20-prose-should-be-code.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/configuration.md",
+  "note": "AUDIT-1. Фикстура на inline-проверку «Text that explains UI or code» из SKILL.md (выделенного файла правил нет, поэтому source указывает на секцию SKILL.md). Позитивы: последовательность методов прозой, взаимное расположение элементов интерфейса прозой, структура конфигурационного объекта прозой, описание визуальной анимации прозой. Негативы: приманка в ~~~js-заборе (комментарии с той же последовательностью методов и с расположением элементов), SEO-шаблон во frontmatter, упоминание одного метода без последовательности и корректная подводка к картинке. Аудит: psbc-neg-04 понижен до may_flag — подводка к картинке действительно корректна как «проза вместо изображения», но заканчивается точкой перед ![](), а rules/punctuation.md#colon требует двоеточие перед «list, image, table, or code snippet», поэтому жёстким негативом она быть не может. Добавлена may_flag-запись на заголовок «Initialization». В psbc-01 добавлены alt_categories «punctuation» (точка вместо двоеточия перед ~~~js-забором) и «overused-words» («use `attachEvent()`» вместо точного глагола), в psbc-02 — «pronouns» (неоднозначное «its»), в psbc-03 — «repetition» (двойное «accepts» и «object»): это разные нарушения на тех же спанах, и сопоставитель всё равно отдаст находку объемлющей записи.",
+  "word_count_prose": 137,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [15, 20] }
+  ],
+  "expected_total_range": [4, 9],
+  "records": [
+    {
+      "id": "psbc-01",
+      "polarity": "must_find",
+      "category": "prose-should-be-code",
+      "alt_categories": [
+        "text-that-explains-ui-or-code",
+        "explains-ui-or-code",
+        "plain-text-description",
+        "information-mapping",
+        "long-sentences",
+        "punctuation",
+        "overused-words"
+      ],
+      "span": "Call `init()` first, then pass the configuration object to `setConfig()`, then call `render()`, and finally use `attachEvent()` to bind a click handler.",
+      "line": 13,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Прозой пересказана последовательность из четырёх вызовов API: init() → setConfig() → render() → attachEvent(). Это ровно то, что SKILL.md требует заменить на код: «prose that describes sequences of methods/properties ... these should be code samples». Ниже уже стоит ~~~js-забор, куда эта последовательность и должна переехать. Дополнительно совпадает с маркерами «then ... finally» из секции про информационное картирование. Аудит: на этом же спане лежат ещё два законных нарушения — предложение вводит ~~~js-забор строк 15–20, но заканчивается точкой вместо двоеточия (punctuation.md#colon), и «use `attachEvent()`» вместо точного глагола «call» (overused-words.md, раздел «use»); обе категории добавлены в alt_categories, потому что сопоставитель отдаст такую находку этой записи.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "psbc-02",
+      "polarity": "must_find",
+      "category": "prose-should-be-code",
+      "alt_categories": [
+        "text-that-explains-ui-or-code",
+        "explains-ui-or-code",
+        "plain-text-description",
+        "information-mapping",
+        "long-sentences",
+        "pronouns"
+      ],
+      "span": "The toolbar sits above the matrix, the filter row appears directly under the header row, and the pager occupies the left corner of the footer, with the page counter to its right.",
+      "line": 26,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Взаимное расположение четырёх элементов интерфейса (toolbar, filter row, pager, page counter) описано словами. SKILL.md прямо называет «UI element positions» кандидатом на скриншот: читатель всё равно не соберёт в голове макет по такому перечислению. Нужна картинка с подписанными зонами. Аудит: в хвосте «with the page counter to its right» «its» по правилу указывает на ближайшее существительное («footer»), а по смыслу — на «pager»; это законная находка по rules/pronouns.md, поэтому категория добавлена в alt_categories.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "psbc-03",
+      "polarity": "must_find",
+      "category": "prose-should-be-code",
+      "alt_categories": [
+        "text-that-explains-ui-or-code",
+        "explains-ui-or-code",
+        "plain-text-description",
+        "information-mapping",
+        "long-sentences",
+        "repetition"
+      ],
+      "span": "The configuration object accepts `width` and `height` at the top level, a nested `columns` array where every entry accepts `id`, `header`, `width`, and `align`, and an optional `footer` object.",
+      "line": 28,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Прозой изложена структура вложенного объекта конфигурации с перечислением семи свойств и уровней вложенности. Это «sequences of methods/properties» в чистом виде: форма JSON-литерала передаёт вложенность за одну строку кода, а текст заставляет её реконструировать. Аудит: в том же предложении дважды «accepts» и дважды «object» — законная находка по inline-проверке «Repetition» из SKILL.md, категория добавлена в alt_categories.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "psbc-04",
+      "polarity": "must_find",
+      "category": "prose-should-be-code",
+      "alt_categories": [
+        "text-that-explains-ui-or-code",
+        "explains-ui-or-code",
+        "long-sentences"
+      ],
+      "span": "When the pointer enters a cell, the border turns blue, the background lightens by one shade, and a resize handle grows out of the bottom-right corner.",
+      "line": 32,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Три визуальных изменения по наведению описаны словами, включая цвет и оттенок фона. SKILL.md относит «visual changes» к тому, что должно быть картинкой или анимацией: словесное описание цвета не проверяемо и не воспроизводимо.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "psbc-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "prose-should-be-code",
+      "alt_categories": ["text-that-explains-ui-or-code", "explains-ui-or-code"],
+      "span": "// Call init(), then setConfig(), then render() to draw the widget.",
+      "line": 17,
+      "occurrence": 1,
+      "rationale": "Главная приманка фикстуры: та же последовательность методов, что и в psbc-01, но внутри ~~~js-забора. Комментарий в коде — не проза статьи, и требование «замени это кодом» здесь бессмысленно: это уже код. Строкой ниже лежит вторая приманка «// The header row appears above the body, and the pager sits below it.» — расположение элементов интерфейса в комментарии, её тоже трогать нельзя.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "psbc-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "prose-should-be-code",
+      "alt_categories": ["inversion", "overused-words", "wordiness"],
+      "span": "You can explore the layout and appearance of Matrix",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон description, идентичный во всех 1891 файлах корпуса. Формально анонсирует «layout and appearance», то есть визуальную тему, но это frontmatter, а не проза; заменить его кодом или картинкой невозможно, правка вне области ревью статьи.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "psbc-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "prose-should-be-code",
+      "alt_categories": ["text-that-explains-ui-or-code", "weak-verbs"],
+      "span": "The `setConfig()` method applies a new column set and keeps the loaded data.",
+      "line": 22,
+      "occurrence": 1,
+      "rationale": "Похоже на нарушение, но им не является: назван один метод и описан его эффект на данные, а не последовательность вызовов. Правило запрещает пересказывать прозой цепочку методов и свойств, а не упоминать API в тексте вообще — иначе пришлось бы вычистить всю описательную часть корпуса.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "psbc-neg-04",
+      "polarity": "may_flag",
+      "category": "punctuation",
+      "alt_categories": [
+        "prose-should-be-code",
+        "text-that-explains-ui-or-code",
+        "explains-ui-or-code"
+      ],
+      "span": "The screenshot below shows the default toolbar.",
+      "line": 34,
+      "occurrence": 1,
+      "rationale": "Автор задумал жёсткий негатив: вместо словесного описания внешнего вида дана подводка к картинке, а сама картинка стоит строкой 36, — флагать это как «прозу, которая должна была стать изображением» действительно нельзя. Но must_not_flag запись быть не может: rules/punctuation.md#colon требует «Use a colon after an introductory sentence that precedes a list, image, table, or code snippet», а предложение заканчивается точкой перед ![](). Так же аудит поступил с этим шаблоном в ow-may-05, art-may-04 и apifmt-may-02. Сопоставитель считает жёстким ложным срабатыванием любое попадание в must_not_flag независимо от категории, поэтому корректная находка по пунктуации штрафовалась бы незаслуженно. Полярность понижена до may_flag: оба прочтения перестают влиять на метрики, ценой потери ловушки на prose-should-be-code.",
+      "source": "rules/punctuation.md#colon"
+    },
+    {
+      "id": "psbc-may-01",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["information-mapping", "plain-text-description"],
+      "span": "Initialization",
+      "line": 11,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Заголовок-отглагольное существительное: rules/gerunds.md, раздел «Gerunds in Titles», требует в заголовках глагольную форму («Data Binding» → «Bind to Data», «Data Editing» → «Edit Data»), то есть здесь «Initialize the widget». Случай двойственный и потому только may_flag: «Initialization» — не ING-форма, а раздел «Gerund When a Noun Analog Exists» того же файла, наоборот, предпочитает именной аналог. Без записи законная находка на строке 11 попала бы в unmatched_extra.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    }
+  ]
+}
