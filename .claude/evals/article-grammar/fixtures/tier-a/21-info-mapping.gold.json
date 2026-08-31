@@ -1,0 +1,148 @@
+{
+  "fixture": "tier-a/21-info-mapping.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/usage.md",
+  "note": "Tier-A фикстура на inline-проверку «Plain-text description (information mapping)» из SKILL.md — отдельного файла правил у категории нет. Позитивы делятся на два подпункта проверки: последовательность действий и альтернативы, записанные нарративом (First/Then/Finally, Another option is/You can also), и контрасты по времени (Prior to / Now) и по состоянию (By default / If you set), которые должны быть таблицей. Негативы проверяют, что скилл не трогает те же паттерны в не-прозе и не переписывает уже корректно оформленные список и таблицу. Аудит: все 8 исходных спанов дословны и уникальны, номера строк верны, nonprose_ranges полны (@-макросов, ссылок и вторых заборов в фикстуре нет). Полярности не менялись — все четыре позитива опираются на дословные маркеры из SKILL.md, все четыре негатива обоснованы (два лежат в не-прозе, два являются целевой формой правила и дополнительно поддержаны rules/overused-words.md и rules/punctuation.md). Добавлены три may_flag на непосеянные нарушения (артикль перед «Matrix», герундий в заголовке, «it» в пункте списка) и расширены alt_categories позитивов там, где на том же спане законно срабатывает второе правило.",
+  "word_count_prose": 147,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [15, 23] }
+  ],
+  "expected_total_range": [4, 9],
+  "records": [
+    {
+      "id": "infomap-pos-01",
+      "polarity": "must_find",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description", "long-sentences", "text-that-explains-ui-or-code", "inversion", "overused-words"],
+      "span": "To turn on inline editing, first set the `editable` property. Then define the editor type for each column. Finally, call the `render()` method.",
+      "line": 13,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Последовательность из трёх шагов записана сплошным текстом с маркерами «first», «Then», «Finally» — дословно те переходные слова, которые SKILL.md велит флагать в подпункте «Action sequences or alternatives». Ожидаемая правка: нумерованный список из трёх пунктов. Дополнительно это перечисление вызовов методов, поэтому допустима альтернативная категория про описание кода прозой. Аудит расширил alt_categories: на этом же спане законно срабатывают ещё два правила — rules/inversion.md запрещает открывать секцию оборотом «To do X, ...» (строка 13 — первое предложение секции «## Enable editing», ср. пример правила «To enable automatic column resizing, ... (as the first sentence)»), а rules/overused-words.md прямо перечисляет «Finally,» среди вводных слов-филлеров, которые надо удалять.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-pos-02",
+      "polarity": "must_find",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description", "weak-verbs"],
+      "span": "Another option is to declare the editor in the column config. You can also handle the `beforeEditStart` event and build a custom editor.",
+      "line": 25,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Два равноправных альтернативных способа склеены нарративом с обоими шаблонными зачинами из правила — «Another option is» и «You can also». Правило требует список или разделы с заголовками. Абзац покрывается одной записью намеренно: скилл может процитировать любое из двух предложений, подстрока совпадёт со спаном целиком. Аудит добавил alt-категорию weak-verbs: зачин «Another option is to ...» — конструкция с формой «to be», которую rules/weak-verbs.md велит заменять сильным глаголом.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-pos-03",
+      "polarity": "must_find",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description", "word-choice", "wordiness", "overused-words", "tenses", "long-sentences", "repetition"],
+      "span": "Prior to version 3.2, the widget wrote the edited value into the record only after the editor lost focus. Now the widget updates the record on every keystroke.",
+      "line": 35,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Контраст «было/стало» — ровно тот time-based contrast (Prior to / Now), который второй подпункт правила требует превращать в таблицу со строками «Before 3.2» и «3.2 and later». Альтернативные категории честные: «prior to» отдельно стоит в таблице Word choice в SKILL.md с заменой на «before», поэтому находка под категорией word-choice/wordiness на этом же спане тоже верна. Аудит дописал ещё три законных пересечения на том же спане: tenses (rules/tenses.md требует Present Simple вместо нарратива в прошедшем — «wrote», «lost focus»), long-sentences (первое предложение несёт два действия) и repetition (в двух предложениях подряд дважды повторяются «the widget» и «the record», что прямо описано во внутренней проверке SKILL.md «Repetition»).",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-pos-04",
+      "polarity": "must_find",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description", "long-sentences", "overused-words", "passive-voice", "weak-verbs", "pronouns", "articles"],
+      "span": "By default, the `autoSave` property is disabled and the Matrix keeps changes in memory. If you set it to `true`, the widget sends a request after each edit.",
+      "line": 37,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "State-based contrast «Default / If you change» из того же подпункта правила: два состояния одного свойства описаны параллельными предложениями. Ожидаемая правка — таблица «autoSave / Behavior» с двумя строками (false и true). Аудит расширил alt_categories: спан несёт ещё четыре независимо обоснованных нарушения, и находка по любому из них законна. overused-words — «by default» вынесено в отдельный раздел rules/overused-words.md с требованием заменить на прилагательное «default» или на таблицу с пометкой (default), то есть правило само указывает на ту же правку. passive-voice и weak-verbs — «is disabled» это ровно шаблон «to be + past participle» из rules/passive-voice.md (ср. пример «the `AutoSideMargins` property is ignored» → «the control ignores»). pronouns — во «If you set it to `true`» ближайшее существительное в единственном числе это «memory», а не `autoSave`, что и есть случай из rules/pronouns.md. articles — «the Matrix» без последующего нарицательного существительного должно идти с нулевым артиклем (см. infomap-may-01).",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description"],
+      "span": "// first read the config, then build the editor, and finally focus the input",
+      "line": 19,
+      "occurrence": 1,
+      "rationale": "Комментарий внутри забора ~~~js содержит полный набор приманок — «first», «then», «finally» в одной строке. Но содержимое код-сниппета не является прозой статьи: превратить комментарий в маркированный список невозможно, правило к нему не применяется.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description", "wordiness"],
+      "span": "how to edit cells first in the grid and then in the form",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Связка «first ... then ...» внутри SEO-шаблона description. Frontmatter — не проза статьи, шаблон одинаков во всех 1891 файлах корпуса и физически не может стать списком: description это одна строка YAML.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description"],
+      "span": "Follow the steps below:",
+      "line": 27,
+      "occurrence": 1,
+      "rationale": "Это лид-ин к уже корректно оформленному нумерованному списку (строки 29–31): последовательность действий вынесена из нарратива именно так, как предписывает правило. Флаг здесь означал бы, что скилл реагирует на слово «steps», а не на форму подачи, и требует переписать то, что уже исправлено.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "info-mapping",
+      "alt_categories": ["information-mapping", "plain-text-description"],
+      "span": "Editor types return different values:",
+      "line": 39,
+      "occurrence": 1,
+      "rationale": "Сравнение двух типов редакторов уже вынесено в markdown-таблицу (строки 41–44), а предложение служит только подводкой к ней. Это целевая форма второго подпункта правила, а не нарушение: требовать здесь таблицу — значит требовать то, что уже сделано. Дополнительно rules/punctuation.md прямо предписывает двоеточие перед таблицей, то есть пунктуация подводки тоже корректна.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "infomap-may-01",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": ["text-that-explains-ui-or-code", "explains-ui-or-code"],
+      "span": "The Matrix opens an inline editor on a double click.",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). rules/articles.md: за именем продукта/компонента без следующего за ним нарицательного существительного идёт нулевой артикль («Acme Mobile UI allows you to…»), а тип как целое в общем утверждении тоже берётся без артикля («`DxDataGrid` ships with an integrated filter editor»). Здесь «Matrix» стоит один, без «component/widget/control», в обобщающем предложении — ожидаемая правка «Matrix opens an inline editor…». Случай двойственный: в документации широко принято «the Grid», «the Scheduler», поэтому ни must_find, ни must_not_flag не были бы честными. Тот же оборот повторяется в строке 37 и учтён там через alt_categories записи infomap-pos-04.",
+      "source": "rules/articles.md#proper-noun--regular-noun--use-the"
+    },
+    {
+      "id": "infomap-may-02",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "## Enable editing",
+      "line": 11,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). rules/gerunds.md#gerunds-in-titles требует глагольных форм в заголовках («Data Editing» → «Edit Data»), а раздел «Verb + ING» того же файла велит разворачивать связку глагол+ING («`true` to allow editing» → «allow edit operations»). Ожидаемая правка — «Enable cell editor» / «Edit cells inline». Слабее чистого герундийного заголовка вроде «Inline editing», потому что «Enable editing» уже глагольная фраза, — отсюда may_flag, а не must_find. Спан включает «##», чтобы цитата не смешивалась с «Edit cells» в строках 2, 3 и 7.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "infomap-may-03",
+      "polarity": "may_flag",
+      "category": "pronouns",
+      "alt_categories": [],
+      "span": "Return `false` from it.",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). rules/pronouns.md: «it» указывает на ближайшее существительное в единственном числе, и правило требует флагать случаи, где местоимение может указать не на тот объект. В пункте списка ближайшее существительное — `false`, а нужный референт («the `beforeEditStart` handler») стоит в предыдущем пункте, за границей предложения. Ожидаемая правка — «Return `false` from the handler». may_flag, а не must_find: пункты списка читаются как единая последовательность, и часть рецензентов сочтёт референт достаточно очевидным.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "fixture": "tier-c/43-long-form.md",
+  "tier": "C",
+  "skill_version": "1.1.0",
+  "template_source": "docs/guides/events_guide.md",
+  "note": "Длинная страница-руководство (1403 слова прозы, 196 строк) на дефект H5: у скилла нет лимита числа находок и нет предписания дочитывать документ до конца. Посеяно 18 нарушений, ровно по 6 в каждой трети текста (границы третей: 1-65, 66-131, 132-196); поле tail_records перечисляет id тех must_find, что лежат в последней трети (строки 132-196) — по ним считается, падает ли recall к концу документа. Заборы кода здесь тройные бэктики, а не ~~~: такой стиль встречается в 6 файлах корпуса (data_proxy/index.md, guides/events_guide.md, tutorial/*), и парсер зон обязан его понимать. Разметка якорная (gold_exhaustive: false): unmatched_extra на Tier C идёт в unscored_extra и в precision не входит, поэтому неразмеченные мелкие огрехи прозы не штрафуют скилл — штрафуют только попадания в не-прозу и в must_not_flag. Аудит разметки: спаны, номера строк и nonprose_ranges сверены с файлом и совпадают; сверх 18 посеянных нарушений в прозе найдено 10 непосеянных (строки 66, 86, 90, 109, 117, 147, 173, 179, 187, 191) — они добавлены как may_flag, чтобы законная находка скилла не уходила в неразмеченный остаток. Все may_flag стоят в массиве records после must_find: при равном перекрытии score.mjs оставляет первую подходящую запись, поэтому цитата целого абзаца по-прежнему засчитывается позитиву.",
+  "gold_exhaustive": false,
+  "word_count_prose": 1403,
+  "nonprose_ranges": [
+    {
+      "kind": "frontmatter",
+      "lines": [
+        1,
+        5
+      ]
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        23,
+        31
+      ]
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        51,
+        56
+      ]
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        72,
+        82
+      ]
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        100,
+        105
+      ]
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        119,
+        124
+      ]
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        138,
+        143
+      ]
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        163,
+        169
+      ]
+    },
+    {
+      "kind": "link_url",
+      "lines": [
+        195,
+        195
+      ],
+      "url": "/roster/api/"
+    },
+    {
+      "kind": "link_url",
+      "lines": [
+        196,
+        196
+      ],
+      "url": "/roster/events/"
+    }
+  ],
+  "expected_total_range": [
+    18,
+    34
+  ],
+  "tail_records": [
+    "lf-pos-13",
+    "lf-pos-14",
+    "lf-pos-15",
+    "lf-pos-16",
+    "lf-pos-17",
+    "lf-pos-18"
+  ],
+  "tail_definition": "must_find-записи со строками 132-196 (последняя треть файла: разделы Export data, Localization, Performance notes). Негативы lf-neg-06 и lf-neg-10 тоже лежат в этой зоне, но в tail_records не входят — recall считается только по must_find.",
+  "records": [
+    {
+      "id": "lf-pos-01",
+      "polarity": "must_find",
+      "category": "passive-voice",
+      "alt_categories": [
+        "weak-verbs"
+      ],
+      "span": "The data is loaded from a remote endpoint and is rendered as soon as the constructor finishes.",
+      "line": 11,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Два пассива подряд («is loaded», «is rendered») в одном предложении, причём исполнитель известен и назван в соседних абзацах — это сам компонент. passive-voice.md требует подлежащим делать сам компонент: «The Roster loads the data from a remote endpoint and renders it right after the constructor finishes». Альтернативная категория weak-verbs честная: обе конструкции держатся на форме «to be».",
+      "source": "rules/passive-voice.md#how-to-detect-it"
+    },
+    {
+      "id": "lf-pos-02",
+      "polarity": "must_find",
+      "category": "word-choice",
+      "alt_categories": [
+        "wordiness",
+        "overused-words"
+      ],
+      "span": "you must utilize the `data` property",
+      "line": 13,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«utilize» стоит первой строкой в таблице Word choice в SKILL.md с заменой на «use». Категории wordiness и overused-words перечислены как альтернативные, потому что раздел «use» в overused-words.md и раздел padded phrases в wordiness.md покрывают ровно этот же случай.",
+      "source": "SKILL.md#word-choice"
+    },
+    {
+      "id": "lf-pos-03",
+      "polarity": "must_find",
+      "category": "inversion",
+      "alt_categories": [
+        "repetition"
+      ],
+      "span": "To add the component to a page, declare a container element and pass its id to the constructor. To keep the layout stable, set an explicit height on that container.",
+      "line": 19,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Раздел открывается конструкцией «To do X, do Y» и следующее предложение повторяет тот же зачин — ровно паттерн, который inversion.md велит флагать («Avoid opening a section or paragraph with To do X»). Плюс первое предложение дословно повторяет заголовок раздела, поэтому repetition указан как законная альтернативная категория.",
+      "source": "rules/inversion.md#avoid-opening-a-section-or-paragraph-with-to-do-x"
+    },
+    {
+      "id": "lf-pos-04",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "You initialize the widget by setting the `container` option and by calling the `render()` method.",
+      "line": 21,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Двойная связка «by -ing», прямо разобранная в разделе «By -ing Link» файла gerunds.md: «You need to enable the grid's footer by setting the ShowFooter property» → «Set the ShowFooter property to enable the footer». Ожидаемая правка — императив: «Set the `container` option and call `render()`».",
+      "source": "rules/gerunds.md#by-ing-link"
+    },
+    {
+      "id": "lf-pos-05",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "Follow the steps below to add the Toolbar component above the table:",
+      "line": 37,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Дословный Avoid-пример из articles.md, раздел «Creating new objects → a/an»: «Follow the steps below to add the Calendar component» → «add a Calendar component». Тулбар здесь создаётся впервые и ранее не упоминался, значит определённый артикль неверен. Двоеточие в конце поставлено намеренно, чтобы предложение не тянуло за собой ещё и нарушение punctuation.",
+      "source": "rules/articles.md#creating-new-objects--aan"
+    },
+    {
+      "id": "lf-pos-06",
+      "polarity": "must_find",
+      "category": "tenses",
+      "alt_categories": [
+        "pronouns"
+      ],
+      "span": "After the component has loaded the records, it will display the total count in the footer.",
+      "line": 49,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Present Perfect плюс Future Simple в одном предложении — оба Avoid-примера tenses.md («Use the method after the Range Filter has loaded data», «The control will display a confirmation message»). Целевая форма: «After the component loads the records, it displays the total count». Альтернатива pronouns честная: «it» стоит сразу после «the records» и формально может указывать на них.",
+      "source": "rules/tenses.md#conditionals--present-simple-instead-of-perfectfuture"
+    },
+    {
+      "id": "lf-pos-07",
+      "polarity": "must_find",
+      "category": "misused-words",
+      "alt_categories": [],
+      "span": "Each column definition represents one field of the record.",
+      "line": 66,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«represent» в значении «задаёт структуру» — раздел «represent» в misused-words.md прямо предписывает заменить на «defines» / «identifies» (пример «Fields that represent grid columns» → «Fields that define grid columns»).",
+      "source": "rules/misused-words.md#represent--replace-with-a-precise-verb"
+    },
+    {
+      "id": "lf-pos-08",
+      "polarity": "must_find",
+      "category": "possessives",
+      "alt_categories": [],
+      "span": "The columns collection accepts a template function for every cell.",
+      "line": 70,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«columns collection» — дословный Avoid из possessives.md, раздел «Adjectives use singular noun form»: существительное в роли определения всегда стоит в единственном числе, правильная форма «the column collection». Ловушка усилена тем, что в конфиге компонента опция действительно называется `columns` — но в прозе это уже прилагательное, а не имя API.",
+      "source": "rules/possessives.md#adjectives-use-singular-noun-form--never-plural"
+    },
+    {
+      "id": "lf-pos-09",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Data Filtering",
+      "line": 92,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Заголовок раздела построен на герундии-существительном — раздел «Gerunds in Titles» в gerunds.md разбирает ровно этот случай («Data Binding» → «Bind to Data»). Правильная форма — глагольная: «Filter data». Дополнительная зацепка: это единственный заголовок страницы в Title Case, все прочие — в sentence case. Соседние заголовки разделов с инструкциями уже глагольные («Add the component to a page», «Bind the component to data», «Configure columns», «Handle events», «Export data»), тогда как «Localization», «Performance notes» и «Related articles» — именные, но не герундийные, и под этот пункт правила не подпадают.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "lf-pos-10",
+      "polarity": "must_find",
+      "category": "overused-words",
+      "alt_categories": [
+        "weak-verbs"
+      ],
+      "span": "The search is case-insensitive by default.",
+      "line": 96,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«by default» — первый раздел overused-words.md: оборот заменяется прилагательным «default» («The default search mode ignores letter case»). Альтернатива weak-verbs законна: предложение держится на «is» и скрывает более сильный глагол «ignores».",
+      "source": "rules/overused-words.md#by-default--replace-with-adjective-default"
+    },
+    {
+      "id": "lf-pos-11",
+      "polarity": "must_find",
+      "category": "pronouns",
+      "alt_categories": [
+        "long-sentences"
+      ],
+      "span": "It also receives the current input value, so it can cancel the operation and start a server-side search.",
+      "line": 115,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Два «it» в одном предложении с разными подразумеваемыми референтами: по замыслу автора это обработчик события, но обработчик в тексте ещё не назван, а ближайшие существительные — «the query» и «the store». pronouns.md требует заменить местоимение явным существительным («The handler receives the current input value»). Альтернатива long-sentences честная: в предложении три действия (receives, cancel, start).",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "lf-pos-12",
+      "polarity": "must_find",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "The **afterFilter** event fires after the component repaints the rows.",
+      "line": 126,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Имя события обёрнуто в `**...**` вместо бэктиков — прямой запрет api-formatting.md («API names must always be wrapped in backticks only»). Ловушка на выносливость: то же самое имя события во всех остальных местах страницы оформлено верно (`beforeFilter`, `getFilteredData()`, `setLocale()`), значит скилл должен заметить единственное исключение в середине длинного документа.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "lf-pos-13",
+      "polarity": "must_find",
+      "category": "wordiness",
+      "alt_categories": [
+        "word-choice",
+        "long-sentences"
+      ],
+      "span": "due to the fact that the server does not keep a copy of the applied sort order and filters",
+      "line": 134,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«due to the fact that» стоит и в таблице padded phrases в wordiness.md, и в таблице Word choice в SKILL.md — обе дают замену «because». Первая запись последней трети: если скилл к этому месту уже «выдохся», очевидное словарное совпадение будет пропущено.",
+      "source": "rules/wordiness.md#padded-phrases--replace-with-a-single-word"
+    },
+    {
+      "id": "lf-pos-14",
+      "polarity": "must_find",
+      "category": "misused-words",
+      "alt_categories": [
+        "gerunds",
+        "word-choice"
+      ],
+      "span": "Configure the output name via the `fileName` option.",
+      "line": 136,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«via» разобрано в misused-words.md с заменой на прямой глагол: «Customize hints via the button's Hint property» → «Assign a custom hint to the button's Hint property». Здесь ожидается «Assign the output name to the `fileName` option». Альтернатива gerunds честная: раздел «Using and Similar Prepositions» в gerunds.md перечисляет «via» в том же ряду.",
+      "source": "rules/misused-words.md#via--replace-with-a-precise-verb"
+    },
+    {
+      "id": "lf-pos-15",
+      "polarity": "must_find",
+      "category": "weak-verbs",
+      "alt_categories": [
+        "wordiness"
+      ],
+      "span": "The component has support for right-to-left layouts.",
+      "line": 153,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Дословный Avoid из weak-verbs.md: «The control has support for Markdown rendering» → «The control supports Markdown rendering». Альтернатива wordiness законна — это же именная группа, прячущая глагол (раздел «Noun phrases that hide a verb»).",
+      "source": "rules/weak-verbs.md#forms-of-to-have--find-the-real-relationship"
+    },
+    {
+      "id": "lf-pos-16",
+      "polarity": "must_find",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "The locale object contains the following fields.",
+      "line": 155,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Подводка к списку (строки 157-159) заканчивается точкой вместо двоеточия — раздел «Colon» в punctuation.md: «Do not end a list introduction with a period — use a colon». Парная проверка к негативу lf-neg-10, где такая же по смыслу подводка оформлена верно: скилл должен различать эти два случая, а не реагировать на слово «following».",
+      "source": "rules/punctuation.md#colon"
+    },
+    {
+      "id": "lf-pos-17",
+      "polarity": "must_find",
+      "category": "long-sentences",
+      "alt_categories": [
+        "info-mapping",
+        "wordiness"
+      ],
+      "span": "When you scroll the table, the component removes the rows that left the viewport, creates new rows for the incoming range, recalculates the column widths, and repaints the header, so the number of DOM nodes stays constant.",
+      "line": 177,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "37 слов, пять глаголов (scroll, removes, creates, recalculates, repaints) и придаточное следствия — inline-проверка «Long sentences» в SKILL.md требует разбить такое предложение или превратить в список. Альтернатива info-mapping честная: это последовательность действий, записанная нарративом, то есть кандидат в маркированный список.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "lf-pos-18",
+      "polarity": "must_find",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "e.g. a screenshot tool or an end-to-end test",
+      "line": 179,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Латинское сокращение «e.g.» в прозе — первая строка таблицы в abbreviations.md, замена «for example». Последнее по счёту нарушение документа (строка 179 из 196): если recall падает к концу, промах будет именно здесь. Внутри забора на строке 53 намеренно оставлен близнец «i.e.» — но с другим сокращением, чтобы цитата скилла не могла случайно локализоваться не в ту зону.",
+      "source": "rules/abbreviations.md#latin-abbreviations--use-english-substitutes"
+    },
+    {
+      "id": "lf-may-01",
+      "polarity": "may_flag",
+      "category": "weak-verbs",
+      "alt_categories": [
+        "gerunds"
+      ],
+      "span": "The `template` option allows you to render badges, links, and small charts inside a cell.",
+      "line": 84,
+      "occurrence": 1,
+      "rationale": "Двойственный случай. gerunds.md прямо называет «Allows you to override» целевой формой (в отличие от «Allows overriding»), значит предложение уже исправлено. Но weak-verbs.md держит отдельный раздел про «allow» и предлагает «enables» / «supports». Ни must_find, ни must_not_flag не были бы честными: находка здесь не ошибка, но и требовать её нельзя.",
+      "source": "rules/weak-verbs.md#allow--noun-phrase--replace-with-a-verb"
+    },
+    {
+      "id": "lf-may-02",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [
+        "repetition"
+      ],
+      "span": "The Roster exposes events for selection, sorting, filtering, and row updates.",
+      "line": 128,
+      "occurrence": 1,
+      "rationale": "«sorting» и «filtering» — герундии в роли имён функций, и раздел «Gerund When a Noun Analog Exists» в gerunds.md формально требует существительных («sort orders»). Но это устоявшиеся названия возможностей компонента, а глагол «exposes» — тот самый сильный глагол, который weak-verbs.md рекомендует вместо «has». Случай спорный, поэтому may_flag.",
+      "source": "rules/gerunds.md#gerund-when-a-noun-analog-exists"
+    },
+    {
+      "id": "lf-may-03",
+      "polarity": "may_flag",
+      "category": "possessives",
+      "alt_categories": [
+        "repetition",
+        "wordiness"
+      ],
+      "span": "The `columns` array sets the order of the columns, and the component draws them from left to right.",
+      "line": 66,
+      "occurrence": 1,
+      "rationale": "Непосеянное. Два самостоятельных повода: «the order of the columns» — конструкция «of», которую possessives.md предлагает свернуть в именную группу («settings of the editor» → «editor settings», здесь → «the column order»), и повтор имени API в прозе («The `columns` array … the columns»), прямо описанный в inline-проверке Repetition в SKILL.md. Ни одна претензия не обязательна, поэтому may_flag. Спан взят вторым предложением строки, чтобы не пересекаться с lf-pos-07.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    },
+    {
+      "id": "lf-may-04",
+      "polarity": "may_flag",
+      "category": "info-mapping",
+      "alt_categories": [
+        "repetition"
+      ],
+      "span": "The header row shows the `header` value of each column. The footer row shows the `footer` value and stays empty when a column omits this field.",
+      "line": 86,
+      "occurrence": 1,
+      "rationale": "Непосеянное. Параллельная конструкция «The X row shows the `x` value…», повторённая дважды подряд, — кандидат в таблицу по inline-проверке «Plain-text description (information mapping)» в SKILL.md («Comparisons, contrasts, parallel constructs: should be tables»). Плюс дословный повтор «row shows the … value». Текст при этом корректен, переписывание не обязательно, поэтому may_flag.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "lf-may-05",
+      "polarity": "may_flag",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "Give every column a unique id, because the component matches cells to fields by this value.",
+      "line": 90,
+      "occurrence": 1,
+      "rationale": "Непосеянное. То же поле в предыдущем предложении той же строки оформлено как `id` в бэктиках («A column without an `id` field»), а здесь написано простым текстом. api-formatting.md в разделе «What to flag» велит помечать «API names written in plain text (no backticks) when the surrounding context clearly refers to code». Ослабляющий довод: «a unique id» читается и как обычное слово «идентификатор», а не как имя поля, поэтому не must_find.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "lf-may-06",
+      "polarity": "may_flag",
+      "category": "possessives",
+      "alt_categories": [
+        "wordiness"
+      ],
+      "span": "so a reset of the filter restores the full row set",
+      "line": 109,
+      "occurrence": 1,
+      "rationale": "Непосеянное. «a reset of the filter» — конструкция «of» вместо именной группы («a filter reset») по possessives.md; она же прячет глагол, и wordiness.md в разделе «Noun phrases that hide a verb» предлагает свернуть такое в действие («when you reset the filter, the component restores the full row set»). Обе претензии стилистические, поэтому may_flag.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    },
+    {
+      "id": "lf-may-07",
+      "polarity": "may_flag",
+      "category": "possessives",
+      "alt_categories": [
+        "wordiness"
+      ],
+      "span": "Handlers run in the order of subscription.",
+      "line": 117,
+      "occurrence": 1,
+      "rationale": "Непосеянное. «the order of subscription» — та же конструкция «of», что и в примере possessives.md «settings of the editor» → «editor settings»; целевая форма «in subscription order». Второе предложение строки добавляет ещё одну такую же группу («the default action of the component»). Правка необязательна, поэтому may_flag.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    },
+    {
+      "id": "lf-may-08",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": [
+        "possessives"
+      ],
+      "span": "the order of the sheet columns repeats the order on the screen",
+      "line": 147,
+      "occurrence": 1,
+      "rationale": "Непосеянное. «order» повторяется дважды в одном придаточном — inline-проверка Repetition в SKILL.md («the same word or phrase repeats unnecessarily»); целевая форма «the sheet columns keep their screen order». Заодно «the order of the sheet columns» — конструкция «of» из possessives.md. Стилистика, не ошибка, поэтому may_flag.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "lf-may-09",
+      "polarity": "may_flag",
+      "category": "possessives",
+      "alt_categories": [],
+      "span": "Date fields follow the format string of the locale.",
+      "line": 173,
+      "occurrence": 1,
+      "rationale": "Непосеянное. «the format string of the locale» → «the locale format string» по разделу «Replace \\\"of\\\" with noun phrases where it reads better» в possessives.md. Ослабляющий довод: свёрнутая форма даёт именную группу из трёх слов, а тот же файл велит такие группы разбивать, так что правка спорна — отсюда may_flag.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    },
+    {
+      "id": "lf-may-10",
+      "polarity": "may_flag",
+      "category": "weak-verbs",
+      "alt_categories": [
+        "wordiness",
+        "gerunds"
+      ],
+      "span": "Virtual rendering has a cost for scripts that read the DOM directly",
+      "line": 179,
+      "occurrence": 1,
+      "rationale": "Непосеянное, последняя треть. «has a cost» — форма «to have», прячущая настоящий глагол (weak-verbs.md, «The control has support for…» → «supports»); здесь целевая форма «Virtual rendering costs…» или «Virtual rendering slows down scripts that…». Та же группа подпадает под «Noun phrases that hide a verb» в wordiness.md, а «Virtual rendering» — под «Gerund as Feature Name» в gerunds.md. Держится как may_flag, а не must_find, потому что «virtual rendering» — устоявшееся имя механизма, и переписывать его в глагол в этом предложении необязательно. Спан не пересекается с lf-pos-18 на той же строке.",
+      "source": "rules/weak-verbs.md#forms-of-to-have--find-the-real-relationship"
+    },
+    {
+      "id": "lf-may-11",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": [
+        "weak-verbs"
+      ],
+      "span": "The `beforeRender` and `afterRender` events give two timestamps for that measurement.",
+      "line": 187,
+      "occurrence": 1,
+      "rationale": "Непосеянное, последняя треть. Перечисление двух имён API во множественном числе с определённым артиклем — дословный Avoid-паттерн articles.md, раздел «Plural countable nouns → zero article by default» («Handle the onRowUpdating and onRowInserting events» → «Handle onRowUpdating and onRowInserting events»). Оба события на этой странице упоминаются впервые, поэтому исключение «previously mentioned or explicitly listed items» не применяется. Альтернатива weak-verbs честная: «give two timestamps» просит более точного глагола («return», «expose»). Не must_find, потому что исключение про ранее упомянутые элементы оставляет место для спора.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "lf-may-12",
+      "polarity": "may_flag",
+      "category": "possessives",
+      "alt_categories": [],
+      "span": "The server-side mode changes the contract of the data source.",
+      "line": 191,
+      "occurrence": 1,
+      "rationale": "Непосеянное, последняя треть. «the contract of the data source» → «the data source contract» по разделу «Replace \\\"of\\\" with noun phrases where it reads better» в possessives.md. Та же оговорка, что и у lf-may-09: свёрнутая форма даёт трёхсловную именную группу, поэтому правка необязательна и запись остаётся may_flag.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    },
+    {
+      "id": "lf-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "word-choice",
+      "alt_categories": [
+        "wordiness"
+      ],
+      "span": "// in order to keep the DOM small, the component reuses row elements",
+      "line": 25,
+      "occurrence": 1,
+      "rationale": "«in order to» из таблицы Word choice — но внутри забора ```js. Комментарий в коде не является прозой статьи; правка формулировок в сниппете выходит за область ревью. Первая проверка того, что парсер зон понимает тройные бэктики, а не только ~~~.",
+      "source": "SKILL.md#word-choice"
+    },
+    {
+      "id": "lf-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "// sort the rows before the first paint, i.e. before the user sees them",
+      "line": 53,
+      "occurrence": 1,
+      "rationale": "Латинское сокращение внутри забора. Взято «i.e.», а не «e.g.», намеренно: одноимённая приманка в прозе (строка 179) — «e.g.», и разные сокращения гарантируют, что цитата скилла локализуется в свою зону, а не в первое вхождение подстроки.",
+      "source": "rules/abbreviations.md#latin-abbreviations--use-english-substitutes"
+    },
+    {
+      "id": "lf-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "possessives",
+      "alt_categories": [
+        "passive-voice"
+      ],
+      "span": "// the columns collection is rebuilt on each render",
+      "line": 78,
+      "occurrence": 1,
+      "rationale": "Тот же оборот «columns collection», что и в позитиве lf-pos-08, плюс пассив «is rebuilt» — двойная приманка, но внутри забора. Прозаическое вхождение стоит выше (строка 70), поэтому короткая цитата вида «columns collection» локализуется в прозу и штрафа не даёт; сюда попадёт только находка, процитировавшая сам комментарий.",
+      "source": "rules/possessives.md#adjectives-use-singular-noun-form--never-plural"
+    },
+    {
+      "id": "lf-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "overused-words",
+      "alt_categories": [],
+      "span": "placeholder: \"Search (by default, all columns)\"",
+      "line": 102,
+      "occurrence": 1,
+      "rationale": "«by default» внутри строкового литерала конфигурации. Это текст UI-подсказки в коде: переписать его по правилу overused-words нельзя, не изменив поведение примера. Зона — забор, находка здесь жёсткое ложное срабатывание.",
+      "source": "rules/overused-words.md#by-default--replace-with-adjective-default"
+    },
+    {
+      "id": "lf-neg-05",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "pronouns",
+      "alt_categories": [
+        "weak-verbs"
+      ],
+      "span": "// it gets the row set and returns it unchanged",
+      "line": 121,
+      "occurrence": 1,
+      "rationale": "Два «it» с разными референтами плюс слабый глагол «gets» — комментарий собран из приманок обоих правил. Но он лежит внутри забора ```js, и переписывание комментариев в примерах кода в область грамматического ревью статьи не входит.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "lf-neg-06",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "passive-voice",
+      "alt_categories": [
+        "weak-verbs"
+      ],
+      "span": "// the labels are loaded and are applied when the locale is set",
+      "line": 165,
+      "occurrence": 1,
+      "rationale": "Три пассива в одной строке — самая яркая приманка страницы, и она намеренно вынесена в последнюю треть (строка 165 из 196). Проверяет обратную сторону дефекта H5: скилл, который к концу длинного документа перестаёт различать зоны и начинает цитировать всё подряд, споткнётся именно здесь.",
+      "source": "rules/passive-voice.md#how-to-detect-it"
+    },
+    {
+      "id": "lf-neg-07",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "inversion",
+      "alt_categories": [
+        "wordiness",
+        "overused-words"
+      ],
+      "span": "You can explore how to configure the Roster component",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон description, идентичный во всех 1891 файлах корпуса. Frontmatter — не проза статьи, правка здесь бессмысленна и не входит в область ревью.",
+      "source": "rules/inversion.md#avoid-you-can-you-can-you-can-runs"
+    },
+    {
+      "id": "lf-neg-08",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "articles",
+      "alt_categories": [
+        "abbreviations"
+      ],
+      "span": "Browse developer guides and API reference",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Тот же SEO-шаблон. Формально перед «API reference» просится артикль, а «API» — сокращение, но обе претензии адресованы шаблону сайта, а не тексту статьи.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "lf-neg-09",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "articles",
+      "alt_categories": [
+        "misused-words"
+      ],
+      "span": "The filter panel validates user input and ignores values that do not match the column type.",
+      "line": 98,
+      "occurrence": 1,
+      "rationale": "Предложение уже написано по правилам: «validates user input» без артикля — дословный Prefer-пример articles.md для неисчисляемых существительных, а «values that do not match» — ограничительное придаточное с «that» без запятой, как требует misused-words.md. Находка здесь означала бы, что скилл правит корректный текст в обратную сторону. Отдельно снимается претензия по punctuation.md#colon: строка стоит перед забором 100-105, но подводкой к сниппету не является — она описывает валидацию ввода, тогда как сниппет задаёт конфигурацию фильтра, поэтому двоеточие вместо точки здесь было бы ошибкой. Так же оформлены все прочие абзацы перед заборами на этой странице (строки 21, 70, 117, 136, 161).",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "lf-neg-10",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "punctuation",
+      "alt_categories": [
+        "info-mapping"
+      ],
+      "span": "The component reduces repaints in the following ways:",
+      "line": 181,
+      "occurrence": 1,
+      "rationale": "Подводка — законченное предложение с двоеточием, за ней список из трёх пунктов, каждый с заглавной буквы и с точкой. Это целевая форма разделов «Colon» и «Lists» в punctuation.md и парный негатив к позитиву lf-pos-16 (строка 155), где такая же подводка закрыта точкой. Стоит в последней трети намеренно: скилл, дочитавший документ, обязан различить два случая, а не флагать оба по ключевому слову «following».",
+      "source": "rules/punctuation.md#lists"
+    }
+  ]
+}

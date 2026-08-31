@@ -1,0 +1,182 @@
+{
+  "fixture": "tier-a/13-articles.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "note": "Фикстура сфокусирована на rules/articles.md: «the» перед списком API-членов, «the» перед неисчисляемым существительным, «the» вместо «a» при создании объекта, пропущенное «the» перед «имя собственное + нарицательное». Ловушки: комментарий в ~~~-заборе, SEO-шаблон во frontmatter и два случая, прямо разрешённые правилом. Аудит: добавлены пять may_flag-записей на непосеянные нарушения (заголовок-герундий, повтор «timeline», неоднозначное «it», точка вместо двоеточия перед примером кода, «through» + API-имя без обратных кавычек); в art-pos-03 и art-pos-05 добавлена alt_categories «api-formatting», потому что те же спаны содержат API-имена простым текстом.",
+  "word_count_prose": 117,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [15, 21] }
+  ],
+  "expected_total_range": [5, 11],
+  "records": [
+    {
+      "id": "art-pos-01",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "Acme Roster scheduling library allows",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Имя собственное «Acme Roster» с последующим нарицательным «scheduling library» требует «the»: «The Acme Roster scheduling library allows...». Правило приводит буквально этот шаблон в колонке Avoid.",
+      "source": "rules/articles.md#proper-noun--regular-noun--use-the"
+    },
+    {
+      "id": "art-pos-02",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "add the Panel component",
+      "line": 13,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Компонент добавляется впервые, экземпляр не был упомянут ранее, поэтому нужен «a Panel component». Секция «Creating new objects» содержит идентичный пример «Follow the steps below to add the Calendar component».",
+      "source": "rules/articles.md#creating-new-objects--aan"
+    },
+    {
+      "id": "art-pos-03",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": ["api-formatting"],
+      "span": "Adjust the rowHeight and headerHeight properties",
+      "line": 23,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Перечисление членов API во множественном числе идёт без артикля: «Adjust rowHeight and headerHeight properties». Ни один из них не упоминался ранее, так что исключение про «previously mentioned» не действует.",
+      "source": "rules/articles.md#api-names--member-name--property--method--event"
+    },
+    {
+      "id": "art-pos-04",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "validates the user input",
+      "line": 27,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "«user input» — неисчисляемое существительное, артикль не нужен: «validates user input». Это дословный пример из таблицы Avoid в секции про mass nouns, и конструкции «the X of Y» здесь нет.",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "art-pos-05",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": ["api-formatting"],
+      "span": "Handle the onBeforeEditStart and onAfterEditEnd events",
+      "line": 27,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Список событий во множественном числе — нулевой артикль: «Handle onBeforeEditStart and onAfterEditEnd events». Правило приводит ровно такой пример с onRowUpdating/onRowInserting.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "art-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "articles",
+      "alt_categories": ["passive-voice"],
+      "span": "applies the custom styling to each row",
+      "line": 18,
+      "occurrence": 1,
+      "rationale": "Выглядит как «the» перед неисчисляемым «styling», но это комментарий внутри ~~~js-забора. Код и комментарии в коде не входят в область грамматического ревью прозы.",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "art-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "articles",
+      "alt_categories": ["wordiness", "inversion"],
+      "span": "You can explore the inline editing of Roster",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон описания, одинаковый во всех файлах корпуса. Формально «the inline editing» — артикль перед неисчисляемым, но это frontmatter, а не проза статьи; плюс это конструкция «the X of Y», разрешённая исключением.",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "art-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "change the appearance of individual rows",
+      "line": 23,
+      "occurrence": 1,
+      "rationale": "Правило прямо разрешает: «Exception: use \"the\" in \"the X of Y\" constructions (\"the appearance of individual cells\", \"the content of an indicator\")». Здесь ровно эта конструкция, флагать нельзя.",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "art-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "Roster ships with a built-in date editor",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Правило прямо разрешает нулевой артикль, когда за именем собственным нет нарицательного: «If no common noun follows, zero article: \"Acme Mobile UI allows you to…\"». Тип целиком как proper noun — тоже допустимый случай («Type as a whole»).",
+      "source": "rules/articles.md#proper-noun--regular-noun--use-the"
+    },
+    {
+      "id": "art-may-01",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "# Inline editing",
+      "line": 7,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Заголовок-герундий: правило «Gerunds in Titles» требует глагольную форму («Edit data inline»), ср. «Data Editing» → «Edit Data».",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "art-may-02",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": ["wordiness"],
+      "span": "so the timeline needs no extra dependencies",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). «timeline» повторяется в двух соседних предложениях («right in the timeline» → «the timeline needs»), как и «Roster». Inline-проверка Repetition; хвост предложения к тому же ничего не добавляет к «built-in». Спан не пересекается с art-pos-01 и art-neg-04.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "art-may-03",
+      "polarity": "may_flag",
+      "category": "pronouns",
+      "alt_categories": [],
+      "span": "to your page and switch it",
+      "line": 13,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). «it» стоит после «page», и по правилу местоимение указывает на ближайшее существительное в единственном числе, а не на Panel. Правило приводит ровно этот случай: «It/its points to \"page\", not TreeView». Спан не пересекается с art-pos-02.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "art-may-04",
+      "polarity": "may_flag",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "switch it into edit mode.",
+      "line": 13,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Вводное предложение перед примером кода (~~~js на строке 15) заканчивается точкой, а правило требует двоеточие: «Use a colon after an introductory sentence that precedes a list, image, table, or code snippet».",
+      "source": "rules/punctuation.md#colon"
+    },
+    {
+      "id": "art-may-05",
+      "polarity": "may_flag",
+      "category": "misused-words",
+      "alt_categories": ["api-formatting"],
+      "span": "through the css property",
+      "line": 23,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). «through» использовано вместо точного глагола для сцепки объектов — правило про «via» прямо распространяется на «through». Плюс `css` — имя свойства простым текстом без обратных кавычек. Спан не пересекается с art-pos-03 и art-neg-03.",
+      "source": "rules/misused-words.md#via--replace-with-a-precise-verb"
+    }
+  ]
+}

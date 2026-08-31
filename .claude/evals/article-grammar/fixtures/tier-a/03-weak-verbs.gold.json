@@ -1,0 +1,162 @@
+{
+  "fixture": "tier-a/03-weak-verbs.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/configuration.md",
+  "note": "Прозаическая guide-страница корпуса (290 из 1891 файлов). Посеяны пять нарушений категории weak-verbs: две формы «to be», одна «to have», одна «to get» и одна конструкция «allows + именная группа». Приманки: комментарий внутри ~~~-забора, SEO-описание во frontmatter, summary-поле API-таблицы с явно разрешённым «Gets or sets» и корректная проза с рекомендованным глаголом «contains». Аудит разметки: все девять спанов подтверждены дословно (grep -F) и по номерам строк; пять позитивов — прямые аналоги строк таблиц rules/weak-verbs.md, понижать полярность не потребовалось. Добавлены три may_flag на непосеянные нарушения: повтор «Roster» на стыке предложений строки 9, «the» перед перечислением клавиш в строке 23 и повтор «the selection» в параллельных предложениях строки 38 (до аудита строка 38 не была размечена вовсе, и любая находка по ней шла в ложные срабатывания).",
+  "word_count_prose": 113,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [15, 21] },
+    { "kind": "code_fence", "lines": [31, 34] }
+  ],
+  "expected_total_range": [5, 9],
+  "records": [
+    {
+      "id": "wv-pos-01",
+      "polarity": "must_find",
+      "category": "weak-verbs",
+      "alt_categories": ["wordiness"],
+      "span": "The `selection` property is responsible for the state of the marked cells",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Прямой аналог строки правила «The ShowHeader property is responsible for displaying the header» — форма «to be» + «responsible for» прячет сильный глагол (controls / stores). Нужен «The selection property controls which cells Roster marks».",
+      "source": "rules/weak-verbs.md#forms-of-to-be"
+    },
+    {
+      "id": "wv-pos-02",
+      "polarity": "must_find",
+      "category": "weak-verbs",
+      "alt_categories": ["wordiness"],
+      "span": "Roster has support for two selection modes",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Дословный шаблон из таблицы «to have»: «The control has support for Markdown rendering» → «supports». Правильная форма: «Roster supports two selection modes».",
+      "source": "rules/weak-verbs.md#forms-of-to-have"
+    },
+    {
+      "id": "wv-pos-03",
+      "polarity": "must_find",
+      "category": "weak-verbs",
+      "alt_categories": [],
+      "span": "The `multiselect` property allows extended selection",
+      "line": 23,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "«allows» + именная группа («extended selection»), а не глагол — секция правила «Allow + noun phrase». Ожидается «enables extended selection» или «supports extended selection».",
+      "source": "rules/weak-verbs.md#allow--noun-phrase"
+    },
+    {
+      "id": "wv-pos-04",
+      "polarity": "must_find",
+      "category": "weak-verbs",
+      "alt_categories": [],
+      "span": "Use the `getSelection()` method to get the ids of the marked cells",
+      "line": 29,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Копия строки правила «Use this method to get the current filter criteria» → retrieve / obtain / read. Это проза, а не summary-поле, поэтому исключение для «gets or sets» здесь не действует.",
+      "source": "rules/weak-verbs.md#forms-of-to-get"
+    },
+    {
+      "id": "wv-pos-05",
+      "polarity": "must_find",
+      "category": "weak-verbs",
+      "alt_categories": ["passive-voice"],
+      "span": "The `afterSelect` event is fired every time a user marks a cell",
+      "line": 36,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Строка правила «The event is fired when the user clicks a row» → «fires». Находка под категорией passive-voice тоже засчитывается: конструкция одновременно пассивная.",
+      "source": "rules/weak-verbs.md#forms-of-to-be"
+    },
+    {
+      "id": "wv-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "weak-verbs",
+      "alt_categories": ["passive-voice"],
+      "span": "// the active row is highlighted by the built-in CSS class",
+      "line": 20,
+      "occurrence": 1,
+      "rationale": "Комментарий внутри ~~~js-забора выглядит как «to be» + пассив, но содержимое кода вне области ревью статьи (hard gate findings_inside_code_fence == 0).",
+      "source": "rules/weak-verbs.md#forms-of-to-be"
+    },
+    {
+      "id": "wv-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "weak-verbs",
+      "alt_categories": ["passive-voice"],
+      "span": "the selection modes that are supported by Roster",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Переменная часть SEO-шаблона description, одинакового во всех 1891 файлах корпуса. «are supported by» — приманка на «to be», но frontmatter не является прозой статьи и правится не автором.",
+      "source": "rules/weak-verbs.md#forms-of-to-be"
+    },
+    {
+      "id": "wv-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "weak-verbs",
+      "alt_categories": [],
+      "span": "Gets or sets the selection mode",
+      "line": 44,
+      "occurrence": 1,
+      "rationale": "weak-verbs.md прямо объявляет эту формулировку допустимой: строка «Gets or sets the property value | (Acceptable in YAML summary fields for API reference.)». Ячейка таблицы содержит текст summary-поля API-справочника (в корпусе он подставляется макросом @getshort), поэтому флагать её — противоречие собственному правилу.",
+      "source": "rules/weak-verbs.md#forms-of-to-get"
+    },
+    {
+      "id": "wv-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "weak-verbs",
+      "alt_categories": [],
+      "span": "Each entry of the array contains the row id",
+      "line": 36,
+      "occurrence": 1,
+      "rationale": "«contains» — именно тот глагол, который колонка Prefer в weak-verbs.md рекомендует вместо «has» («The form has three tabs» → «The form contains three tabs»). Предложение уже исправно, находка здесь была бы ложноположительной.",
+      "source": "rules/weak-verbs.md#forms-of-to-have"
+    },
+    {
+      "id": "wv-may-01",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": ["wordiness"],
+      "span": "marked cells in Roster. Roster",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Имя виджета повторяется на стыке двух соседних предложений — inline-проверка «Repetition» в SKILL.md прямо велит флагать повтор слова в пределах нескольких предложений, особенно когда в окружающей прозе повторяется имя API. Спан взят по границе повтора, чтобы не перехватывать матчи у wv-pos-01 и wv-pos-02.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "wv-may-02",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "with the Ctrl and Shift keys",
+      "line": 23,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Множественное исчисляемое с «the» перед перечислением элементов интерфейса — структурный близнец строки правила «Use the Width and Height properties» → «Use Width and Height properties». Случай пограничный (идиоматичный английский «the Ctrl and Shift keys» допустим), поэтому may_flag, а не must_find.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "wv-may-03",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": ["possessives", "info-mapping", "wordiness"],
+      "span": "Roster keeps the selection after a data reload. A click on an empty area of the widget clears the selection",
+      "line": 38,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). «the selection» повторяется в двух подряд идущих предложениях (inline-проверка Repetition), а сами предложения — параллельный контраст состояний (перезагрузка данных / клик по пустой области), который inline-проверка «Comparisons, contrasts, parallel constructs» предлагает переносить в таблицу. Побочно строка содержит «an empty area of the widget» — секцию «of» из rules/possessives.md, которую корпус фикстур сознательно выводит из-под позитивов, поэтому она идёт в alt_categories. До аудита строка 38 не имела ни одной записи, и любая законная находка по ней засчитывалась как ложное срабатывание.",
+      "source": "SKILL.md#repetition"
+    }
+  ]
+}

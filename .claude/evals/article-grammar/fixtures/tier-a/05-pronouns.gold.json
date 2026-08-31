@@ -1,0 +1,183 @@
+{
+  "fixture": "tier-a/05-pronouns.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/configuration.md",
+  "note": "Tier A: страница-донор — обычная prose-страница Configuration. Посеяны только нарушения категории pronouns; негативы проверяют забор кода, frontmatter и явное исключение из rules/pronouns.md. Записи pron-may-* добавлены аудитом: это непосеянные, но законные находки других категорий — они нейтральны и не должны считаться ложными срабатываниями.",
+  "word_count_prose": 117,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [13, 22] }
+  ],
+  "expected_total_range": [5, 12],
+  "records": [
+    {
+      "id": "pron-pos-01",
+      "polarity": "must_find",
+      "category": "pronouns",
+      "alt_categories": ["weak-verbs", "wordiness"],
+      "span": "It also allows you to filter records by team.",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Классический случай из таблицы «Personal pronouns»: ближайшее существительное в единственном числе — «the weekly schedule», поэтому «It» указывает на расписание, а не на Roster panel. Правило требует слить предложения или назвать существительное явно. Дополнительно фрагмент подпадает под weak-verbs («allows you to»), поэтому категория weak-verbs допустима как альтернативная.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "pron-pos-02",
+      "polarity": "must_find",
+      "category": "pronouns",
+      "alt_categories": [],
+      "span": "bind it to the dataset, and configure its columns",
+      "line": 11,
+      "occurrence": 1,
+      "rationale": "Дословный аналог третьей строки таблицы «Personal pronouns» (Add the TreeView, bind it to data, and configure its core features). Ближайшее существительное — «the page», поэтому «it» и «its» формально указывают на страницу, а не на Roster. Плюс один и тот же местоимённый корень повторяется для разных референтов, что правило запрещает отдельным пунктом в «Fixes».",
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "pron-pos-03",
+      "polarity": "must_find",
+      "category": "pronouns",
+      "alt_categories": [],
+      "span": "this resets the `autoColumns` property",
+      "line": 26,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Дословный аналог примера «If you set StartSideMargin, this resets the AutoSideMargins property» из секции «This» without a clear referent. «This» скрывает подлежащее: непонятно, кто сбрасывает свойство — панель, настройка или сам вызов. Правило требует назвать субъект явно («the panel resets»).",
+      "source": "rules/pronouns.md#this-without-a-clear-referent--flag-it"
+    },
+    {
+      "id": "pron-pos-04",
+      "polarity": "must_find",
+      "category": "pronouns",
+      "alt_categories": ["wordiness", "tenses"],
+      "span": "If you selected any team-specific columns",
+      "line": 26,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Дословный аналог единственной строки таблицы «Indefinite pronouns»: «If you selected any platform-specific items…». Неопределённое местоимение «any» — слово-филлер, его нужно убрать («If you selected team-specific columns»). Аудит: тот же фрагмент законно попадает и под rules/tenses.md («Conditionals — present simple instead of perfect/future»: «If you selected» → «If you select»), поэтому tenses добавлена в alt_categories — находка по этому спану с категорией tenses не должна считаться промахом.",
+      "source": "rules/pronouns.md#indefinite-pronouns-any-some-such-something"
+    },
+    {
+      "id": "pron-pos-05",
+      "polarity": "must_find",
+      "category": "pronouns",
+      "alt_categories": ["tenses"],
+      "span": "This release of Acme Suite ships the `groupBy` property",
+      "line": 32,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Прямое попадание в секцию «This release / this version»: относительная отсылка обесценивается со временем, нужно указать конкретную версию («Acme Suite v9.3 ships…»). Формулировка совпадает по структуре с примером про TestCafe Studio.",
+      "source": "rules/pronouns.md#this-release--this-version--name-it-explicitly"
+    },
+    {
+      "id": "pron-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "pronouns",
+      "alt_categories": ["passive-voice"],
+      "span": "the panel reads the dataset and renders it row by row",
+      "line": 19,
+      "occurrence": 1,
+      "rationale": "Это комментарий внутри забора ~~~js. Внешне — идеальная приманка: «it» стоит после двух существительных в единственном числе («the panel», «the dataset»). Но содержимое заборов кода не является прозой статьи и не ревьюится; любая находка здесь нарушает hard_gate findings_inside_code_fence.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "pron-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "pronouns",
+      "alt_categories": ["possessives"],
+      "span": "the Roster panel and its configuration",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон description, одинаковый во всех 1891 файлах корпуса (вариант «... and its ...» реально встречается в корпусе). Притяжательное «its» здесь часть шаблона метаданных, а не прозы; правка бессмысленна и вне области ревью статьи.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "pron-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "pronouns",
+      "alt_categories": [],
+      "span": "This menu lets users hide columns",
+      "line": 28,
+      "occurrence": 1,
+      "rationale": "Секция «When demonstrative pronouns are fine» прямо разрешает такую конструкцию: «Use \"this [noun]\" to split a long sentence after the concept has been introduced», а её пример — «The grid allows users to right-click a column header to display a context menu. This menu enables users to show/hide the Group Panel…» — структурно совпадает с этим абзацем. Контекстное меню названо в предыдущем предложении, «This menu» имеет однозначный референт.",
+      "source": "rules/pronouns.md#when-demonstrative-pronouns-are-fine"
+    },
+    {
+      "id": "pron-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "pronouns",
+      "alt_categories": [],
+      "span": "you can cancel this operation",
+      "line": 32,
+      "occurrence": 1,
+      "rationale": "Это ровно та форма, которую rules/pronouns.md рекомендует в колонке Prefer второй строки таблицы «Personal pronouns»: «You can cancel this operation» вместо «You can cancel it». Флагать её — прямое противоречие собственному правилу.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "pron-may-01",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "Add the Roster to the page",
+      "line": 11,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). rules/articles.md, секция «Creating new objects → a/an»: «Follow the steps below to add the Calendar component» → «add a Calendar component». Здесь виджет добавляется впервые, поэтому «the Roster» должно быть «a Roster». Спан не пересекается с pron-pos-02, который начинается со слова «bind».",
+      "source": "rules/articles.md#creating-new-objects--aan"
+    },
+    {
+      "id": "pron-may-02",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": ["pronouns"],
+      "span": "until the user expands the group",
+      "line": 26,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). «The group» вводится определённым артиклем без предшествующего упоминания: группировка появляется только в следующей секции. rules/articles.md#singular-countable-nouns требует «the» только для конкретного, ранее упомянутого или единственного в контексте объекта.",
+      "source": "rules/articles.md#singular-countable-nouns"
+    },
+    {
+      "id": "pron-may-03",
+      "polarity": "may_flag",
+      "category": "long-sentences",
+      "alt_categories": ["gerunds"],
+      "span": "pin them to the left edge, and switch the grouping field",
+      "line": 28,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Inline-проверки SKILL.md: предложение перечисляет три действия (hide / pin / switch) — кандидат на список; «pin them to the left edge» дополнительно описывает положение UI-элемента («Text that explains UI or code»). Плюс «the grouping field» — герундийное имя признака (rules/gerunds.md#gerund-as-feature-name). Спан намеренно не пересекается с pron-neg-03, который защищает только «This menu lets users hide columns».",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "pron-may-04",
+      "polarity": "may_flag",
+      "category": "misused-words",
+      "alt_categories": ["long-sentences"],
+      "span": "which sorts rows before the panel paints them",
+      "line": 32,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). rules/misused-words.md#that-vs-which: «If a \"which\" clause can be omitted without changing meaning, remove it and split into two sentences». Придаточное описывает суть свойства (ограничительное значение) и растягивает предложение до трёх глаголов.",
+      "source": "rules/misused-words.md#that-vs-which"
+    },
+    {
+      "id": "pron-may-05",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "The regrouping runs asynchronously",
+      "line": 32,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Герундий-подлежащее скрывает субъект действия — аналог «Font loading process takes a while» из rules/gerunds.md#gerund-as-feature-name. Ожидаемая правка: «The panel regroups rows asynchronously».",
+      "source": "rules/gerunds.md#gerund-as-feature-name"
+    }
+  ]
+}
