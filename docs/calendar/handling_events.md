@@ -8,7 +8,7 @@ description: You can explore the event handling of Calendar in the documentation
 
 ## Attach event listeners
 
-Use the `calendar.events.on()` method of the `events` module to attach event listeners:
+Use the `calendar.events.on()` method to attach event listeners:
 
 ~~~js
 calendar.events.on("change",function(date, oldDate, byClick){
@@ -39,7 +39,7 @@ You can attach several handlers to one event. Calendar executes all of them.
 
 ## Detach event listeners
 
-Use the `calendar.events.detach()` method to detach an event listener:
+The `calendar.events.detach()` method removes an event listener:
 
 ~~~js
 calendar.events.on("change",function(date, oldDate, byClick){
@@ -51,7 +51,7 @@ calendar.events.detach("change");
 
 ## Call events
 
-Use the `calendar.events.fire()` method to call an event:
+Call `calendar.events.fire()` to trigger an event manually:
 
 ~~~js
 calendar.events.fire("name",args);
@@ -60,4 +60,4 @@ calendar.events.fire("name",args);
 
 ## Event list
 
-You can find the full event list in the [Calendar API](calendar/api/api_overview.md#events).
+For the full event list, see the [Calendar API](calendar/api/api_overview.md#events).
