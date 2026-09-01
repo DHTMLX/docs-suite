@@ -31,7 +31,7 @@ calendar.events.on("change",(date)=>{
 });
 ~~~
 
-You can attach several handlers to one event. Calendar executes all of them.
+You can attach several handlers to one event. Calendar executes all handlers.
 
 {{note Event names are case-insensitive.}}
 
@@ -49,7 +49,7 @@ calendar.events.on("change",function(date, oldDate, byClick){
 calendar.events.detach("change");
 ~~~
 
-## Call events
+## Trigger events
 
 Call `calendar.events.fire()` to trigger an event manually:
 
