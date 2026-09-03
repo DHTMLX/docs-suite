@@ -8,6 +8,15 @@ description: You can learn about accessibility and keyboard navigation in DHTMLX
 
 DHTMLX Grid is built to be operated entirely from the keyboard and to expose its structure and state to assistive technology. WAI-ARIA semantics are part of the rendered markup, and a single, coherent focus model spans the header, body, and footer. The semantics are always present — there is **no** configuration flag to disable them.
 
+:::info Target conformance
+DHTMLX Grid is designed to meet **WCAG 2.2 Level AA**, **Section 508** of the U.S. Rehabilitation Act, and **EN 301 549** (the technical baseline of the European Accessibility Act). Because WCAG 2.2 AA also satisfies ADA and Section 508 expectations, a single conformance target covers the major regulatory requirements.
+
+Conformance is reported criterion by criterion rather than as a blanket claim. The detailed **Accessibility Conformance Report (VPAT® 2.5)** is available: [Accessibility Conformance Report](grid/accessibility_conformance_report.md).
+:::
+
+<!-- TODO: link to the live Accessibility sample here, in the form:
+     To try it hands-on, see the live [Accessibility sample](<snippet url>). -->
+
 ## Capabilities
 
 | Area | Support |
@@ -77,7 +86,7 @@ The following table lists the roles and attributes applied to the header and foo
 
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
-| Header/footer group | `role="rowgroup"` + `aria-rowcount` | Groups the header or footer rows |
+| Header/footer group | `role="rowgroup"` | Groups the header or footer rows |
 | Header/footer row | `role="row"` + `aria-rowindex` | A header or footer row |
 | Header cell | `role="columnheader"` + `aria-sort` | Column header; `aria-sort` is `none` / `ascending` / `descending` |
 | Footer cell | `role="gridcell"` + `aria-colindex` | A footer (summary) cell |
@@ -196,12 +205,38 @@ Navigation is **span-aware**: movement across merged (colspan/rowspan) header an
 
 ## Assistive technology
 
-What the Grid exposes to assistive technology is driven entirely by the ARIA markup above. Rows and cells carry their position (`aria-rowindex` / `aria-colindex`) against the grid totals (`aria-rowcount` / `aria-colcount`), so position is announced even when rows are virtualized. Selection is exposed through `aria-selected`, editability through `aria-readonly`, sort state through `aria-sort`, and — in tree mode (`type: "tree"`) — hierarchy through `aria-level` and `aria-expanded`.
+DHTMLX Grid is tested against the most widely used assistive technologies:
+
+| Screen reader | Browser | Platform |
+| ------------- | ------- | -------- |
+| NVDA | Firefox | Windows |
+| JAWS | Chrome | Windows |
+| VoiceOver | Safari | macOS |
+
+What the Grid exposes to them is driven entirely by the ARIA markup above — there is no separate announcement layer to configure.
+
+Rows and cells carry their position (`aria-rowindex` / `aria-colindex`) against the grid totals (`aria-rowcount` / `aria-colcount`). Because these are absolute positions in the dataset rather than positions in the DOM, they stay correct while rows and columns are virtualized: a screen reader announces "row 4,812 of 50,000" even though only the visible window exists in the markup.
+
+The rest of the state travels the same way, on the element it belongs to:
+
+| State | Exposed through | Read on |
+| ------ | --------------- | ------- |
+| Selection | `aria-selected` | The focused cell, or the row in `selection: "row"` mode |
+| Editability | `aria-readonly` | The grid container and each cell |
+| Sort direction | `aria-sort` (`none` / `ascending` / `descending`) | The column header |
+| Hierarchy | `aria-level`, `aria-expanded` | Tree rows (`type: "tree"`) |
+| Multi-selection capability | `aria-multiselectable` | The grid container |
+
+Editors and filters take their accessible name from the column header text, so the user always hears which column is in play. Decorative markup — resizer grips, sort icons, drag ghosts, drop indicators, the selection overlay — is hidden from the accessibility tree, so nothing redundant is announced.
 
 ## High contrast and focus
 
-- **High-contrast themes.** Light and dark high-contrast themes ship with the library (`contrast-light` and `contrast-dark`), activated by setting `data-dhx-theme="contrast-light"` or `data-dhx-theme="contrast-dark"`. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
-- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so the active cell is the single tab stop and moves predictably with the arrow keys.
+- **High-contrast themes.** Light and dark high-contrast themes ship with the library (`contrast-light` and `contrast-dark`), activated by setting `data-dhx-theme="contrast-light"` or `data-dhx-theme="contrast-dark"`. Both meet WCAG AA contrast and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
+
+  <!-- TODO: screenshots of the grid under contrast-light and contrast-dark, as:
+       ![contrast_light_grid](/img/<file>.png) -->
+- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so the active cell is the single tab stop and moves predictably with the arrow keys. The active cell is marked by a persistent 2px solid border in the theme primary color; header and footer cells show a 2px focus ring, and filter inputs and open editors an inset ring. Because keyboard navigation moves the selection, the focus position stays visible throughout arrow-key navigation.
+- **Scrolling into view.** When focus reaches an off-screen row or column, the Grid scrolls it into view and compensates for frozen columns and rows and for the header height, so the focused cell is never left behind a frozen zone.
 
 ## Configuration recipes
 
@@ -233,13 +268,8 @@ new dhx.Grid("grid_container", {
 // WAI-ARIA semantics are always emitted — there is no flag to toggle them.
 ~~~
 
-Related articles:
-
-- [Keyboard navigation](grid/configuration.md#keyboard-navigation)
-- [keyNavigation](grid/api/grid_keynavigation_config.md)
-- [selection](grid/api/grid_selection_config.md)
-- [blockSelection](grid/api/grid_blockselection_config.md)
-- [TreeGrid mode](grid/treegrid_mode.md)
+<!-- TODO: live demo iframe for the accessible grid setup, as:
+     <iframe src="https://snippet.dhtmlx.com/<id>?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe> -->
 
 ## Host-page responsibilities
 
@@ -249,6 +279,23 @@ A few accessibility requirements live at the page level, not inside the componen
 - provides a page `<h1>` and wraps the grid in an appropriate landmark (e.g. `<main>`);
 - gives the grid container an accessible name where multiple widgets share a page.
 
-## Reference
+## Testing and methodology
 
+Accessibility is validated continuously, and against the component source rather than a single demo page, so the results hold for every configuration the Grid can be put into:
+
+1. **Automated testing** with [axe-core](https://github.com/dequelabs/axe-core) across representative configurations, among them the plain grid, TreeGrid mode, header and footer filters, inline editing, frozen columns and rows, and the high-contrast themes.
+2. **Manual review** of the source: the roles, states and accessible names emitted per part of the widget; the shortcut registry and focus model — zones, the roving tab stop, the sentinels that enter and leave the widget, and the behavior of each binding in each selection mode; and the theme tokens, with contrast ratios computed for the default light, dark, `contrast-light` and `contrast-dark` themes.
+3. **Manual testing**: keyboard-only walkthroughs of every zone, screen-reader passes with NVDA, JAWS and VoiceOver, and checks under color-vision-deficiency emulation, 200% / 400% zoom and WCAG text-spacing overrides.
+4. **Conformance reporting**: results are published openly, criterion by criterion, in the [Accessibility Conformance Report](grid/accessibility_conformance_report.md) — including the criteria the Grid only partially meets.
+
+## Resources
+
+- [Accessibility Conformance Report (VPAT 2.5)](grid/accessibility_conformance_report.md)
+- [Keyboard navigation](grid/configuration.md#keyboard-navigation)
+- [keyNavigation](grid/api/grid_keynavigation_config.md)
+- [selection](grid/api/grid_selection_config.md)
+- [blockSelection](grid/api/grid_blockselection_config.md)
+- [TreeGrid mode](grid/treegrid_mode.md)
+- [Accessibility support across DHTMLX Suite](common_features/accessibility_support.md)
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [WAI-ARIA Authoring Practices: Grid / Treegrid](https://www.w3.org/WAI/ARIA/apg/patterns/)

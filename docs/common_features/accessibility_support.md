@@ -42,7 +42,7 @@ You can find the following **roles** and **attributes** in the DOM:
 In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree.
 
 :::info
-For the complete picture — the ARIA model, the keyboard zones (header/body/footer), the focus model, and configuration recipes — see the dedicated [Grid accessibility](grid/accessibility.md) guide.
+For the complete picture — the ARIA model, the keyboard zones (header/body/footer), the focus model, and configuration recipes — see the dedicated [Grid accessibility](grid/accessibility.md) guide. Criterion-by-criterion conformance with WCAG 2.2 AA, Section 508 and EN 301 549 is documented in the [Accessibility Conformance Report](grid/accessibility_conformance_report.md).
 :::
 
 ### Chart
