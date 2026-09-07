@@ -6,15 +6,14 @@ description: You can have an overview of Chart in the documentation of the DHTML
 
 # Chart overview
 
-DHTMLX Chart is a great tool for creating powerful charts for web applications. It provides a wide variety of chart types, the possibility to render several data properties on the same chart and adding tooltips, 
-both 2D and 3D presentation, different variants of data loading, and a whole kit of configuration settings for all elements of a chart interface. 
-Check [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=chart). 
+DHTMLX Chart renders interactive charts in web applications. It supports many chart types, displays several data properties on one chart, and adds tooltips.
+Chart offers both 2D and 3D presentation, several ways to load data, and configuration settings for every chart interface element.
 
 ![Line chart comparing four company data series with a values tooltip in DHTMLX Suite](/img/chart/line_overview.png)
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Chart:
+Learn how to build a complete DHTMLX Chart:
 
 - [Features](chart/features.md)
 
@@ -24,14 +23,14 @@ You can check the following page to learn how to build a full-featured DHTMLX Ch
 
 ## Related resources
 
-- To get just DHTMLX Chart, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml)
-- To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=chart)
-- To work with data of Chart check [DataCollection API](/data_collection/)
+- Download DHTMLX Chart alone from [the DHTMLX website](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml).
+- To get the whole JavaScript library of UI components, [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml).
+- [Online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=chart).
+- To work with Chart data, check the [`DataCollection` API](/data_collection/).
 
 ## Guides
 
-You can read the following articles to find out how to add Chart on the page and work with it.
+These articles explain how to add Chart to a page and configure it.
 
 - [](chart/charts_overview.md)
 - [](chart/initialization.md)
