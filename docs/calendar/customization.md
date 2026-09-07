@@ -8,15 +8,15 @@ description: You can explore the customization of Calendar in the documentation 
 
 ## Styling Calendar
 
-There is a possibility to make changes in the look and feel of a calendar. For example, change its background color:
+You can change the look and feel of a calendar. For example, change its background color:
 
 ![Calendar month view styled with a custom teal primary color in DHTMLX Suite](/img/calendar/styled_calendar.png)
 
 **Related sample**: [Calendar. Styling (custom CSS)](https://snippet.dhtmlx.com/2045cbe1)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes in the `<style>` section of your HTML page or in a separate stylesheet linked on the page:
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](calendar/api/calendar_css_config.md) property in the Calendar configuration:
+- Assign the class name (or several names separated by spaces) to the [](calendar/api/calendar_css_config.md) property:
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
@@ -60,7 +60,7 @@ For example:
 
 **Related sample**: [Calendar. Custom styles for selected date](https://snippet.dhtmlx.com/9u0ix3na)
 
-You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linking-two-calendars). There are system styles you need to change for this purpose:
+You can style selected dates and [date ranges](calendar/operating_calendar.md#linking-two-calendars) with your own CSS. Override these system styles:
 
 ~~~html
 <style>
