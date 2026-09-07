@@ -8,7 +8,7 @@ description: You can explore how to work with Chart in the documentation of the 
 
 ## Setting Chart configuration
 
-You can change configuration of Chart on the fly with the help of the [](chart/api/chart_setconfig_method.md) method. It takes as a parameter an object with updated [chart configuration](chart/configuration_properties.md).
+You can change the Chart configuration on the fly with the [](chart/api/chart_setconfig_method.md) method. It takes an object with the updated [chart configuration](chart/configuration_properties.md) as a parameter.
 
 ~~~js
 const config = {
@@ -44,7 +44,7 @@ chart.setConfig(config);
 
 ## Getting series configuration
 
-The Chart API gives you the possibility to get an object with the configuration of a certain series. Use the [](chart/api/chart_getseries_method.md) method for this purpose. It takes the id of a series as a parameter:
+Use the [](chart/api/chart_getseries_method.md) method to get the configuration of a specific series. It takes the series `id` as a parameter:
 
 ~~~js
 const config = chart.getSeries("A");
@@ -67,8 +67,8 @@ const config = chart.getSeries("A");
 
 ## Iterating over series
 
-It is possible to iterate over chart series using the [](chart/api/chart_eachseries_method.md). As a parameter it takes a handler function that will perform iteration. 
-Pass an array with series objects as a parameter of the handler function:
+Use the [](chart/api/chart_eachseries_method.md) method to iterate over chart series. It takes a handler function that runs for each series.
+The handler function receives each series object as its argument:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -107,8 +107,8 @@ chart.eachSeries(function(seria){
 
 ## Adding items into Chart
 
-The API of [Data Collection](/data_collection/) allows you to perform operations with Chart data items. 
-For example, you can add more items (points) into your Chart using the [](data_collection/api/datacollection_add_method.md) method, like this:
+The [Data Collection](/data_collection/) API lets you work with Chart data items.
+For example, you can add more items (points) to your Chart with the [](data_collection/api/datacollection_add_method.md) method:
 
 ~~~js
 const config = {
@@ -156,32 +156,32 @@ function add() {
 };
 ~~~
 
-The method takes as a parameter an object with two properties:
+The method takes an object with two properties as a parameter:
 
 <table>
     <tbody>
         <tr>
-            <td><b>value</b></td>
+            <td><code>value</code></td>
             <td>the value of an item</td>
         </tr>
         <tr>
-            <td><b>text</b></td>
+            <td><code>text</code></td>
             <td>the text of an item on the X-axis</td>
         </tr>
     </tbody>
 </table>
 
-A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it correctly.
+Chart places a new data item relative to the X-axis. When you add several items, increase the position value of each one so that they render in order.
 
 **Related sample**: [Chart. Adding data on the fly](https://snippet.dhtmlx.com/dpz4w5nr)
 
 ## Exporting data
 
-You can export data of Chart into the PDF or PNG format via the corresponding methods of the `Export` module.
+You can export Chart data to PDF or PNG with the `pdf()` and `png()` methods of the `Export` module.
 
 ### Exporting data to PDF
 
-The [`pdf()`](chart/api/export/chart_pdf_method.md) method of the Export module allows you to export Chart data into a PDF file. The method takes an [object with the export settings](chart/api/export/chart_pdf_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+The [`pdf()`](chart/api/export/chart_pdf_method.md) method of the `Export` module exports Chart data to a PDF file. The method takes an [object with export settings](chart/api/export/chart_pdf_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 chart.export.pdf({
@@ -197,7 +197,7 @@ chart.export.pdf({
 
 ### Exporting data to PNG
 
-The [`png()`](chart/api/export/chart_png_method.md) method of the Export module allows you to export data from Chart into a PNG file. The method takes an [object with export settings](chart/api/export/chart_png_method.md) as a parameter (all settings are optional) and returns a promise of data export.
+The [`png()`](chart/api/export/chart_png_method.md) method of the `Export` module exports Chart data to a PNG file. The method takes an [object with export settings](chart/api/export/chart_png_method.md) as a parameter (all settings are optional) and returns a promise of data export.
 
 ~~~jsx
 chart.export.png({

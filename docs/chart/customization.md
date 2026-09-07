@@ -8,15 +8,15 @@ description: You can explore the customization of Chart in the documentation of 
 
 ## Styling chart
 
-There is a possibility to make changes in the look and feel of a chart.
+Apply custom CSS classes to change chart appearance.
 
 ![Bar chart styled with custom CSS on a dark background and orange bars in DHTMLX Suite](/img/chart/custom_style.png)
 
 **Related sample**: [Chart. Styling (custom CSS)](https://snippet.dhtmlx.com/p82iew5s)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes in the `<style>` section of your HTML page or in a separate stylesheet linked on the page:
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](chart/api/chart_css_config.md) property in the Chart configuration:
+- Assign the class name (or several names separated by spaces) to the [](chart/api/chart_css_config.md) property:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -85,7 +85,7 @@ For example:
 
 **Related sample**: [Chart. Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n)
 
-While configuring chart scales you can add a template for the labels of the scales by using the **textTemplate** configuration option of [scales](chart/configuration_properties.md#scales):
+Set the `textTemplate` option of [scales](chart/configuration_properties.md#scales) to add a template for scale labels:
 
 ~~~js {7-9}
 const chart = new dhx.Chart("chart_container", {
@@ -116,7 +116,7 @@ const chart = new dhx.Chart("chart_container", {
 
 **Related sample**: [Chart. Bar chart. Gradient](https://snippet.dhtmlx.com/j3duyn2q)
 
-It is possible to define a color gradient for bars with the help of the **gradient** option of [series](chart/configuration_properties.md#series). You need to set its value as a function that takes the color of the series filling in Hex format as a parameter:
+Use the `gradient` option of [series](chart/configuration_properties.md#series) to define a color gradient for bars. Set it to a function that takes the series fill color as a Hex string:
 
 ~~~js {16-31}
 const chart = new dhx.Chart("chart_container", {
@@ -161,7 +161,7 @@ const chart = new dhx.Chart("chart_container", {
 
 **Related sample**: [Chart. Tooltip template](https://snippet.dhtmlx.com/mbz7dkku)
 
-You can easily define a template for showing values of data items in tooltip via the **tooltipTemplate** option of [series](chart/configuration_properties.md#series):
+Set the `tooltipTemplate` option of [series](chart/configuration_properties.md#series) to define how data item values appear in a tooltip:
 
 ~~~js {1-3,18,23}
 function tooltipTemplate(p) {
@@ -201,7 +201,7 @@ const chart = new dhx.Chart("chart_container", {
 
 **Related sample**: [Chart. Show text](https://snippet.dhtmlx.com/o7ke2f1s)
 
-The **showTextTemplate** option of [series](chart/configuration_properties.md#series) allows you to add a template to values that are shown for data items in bars:
+The `showTextTemplate` option of [series](chart/configuration_properties.md#series) formats the values that appear on bars:
 
 ~~~js {20-22,29-31}
 const chart = new dhx.Chart("chart_container", {
@@ -252,7 +252,7 @@ const chart = new dhx.Chart("chart_container", {
 
 **Related sample**: [Chart. Value template](https://snippet.dhtmlx.com/o7ke2f1s)
 
-When you need to show values for data items on the Pie, Pie3D and Donut charts, you can use the **valueTemplate** option of [series](chart/configuration_properties.md#pie-pie-3d-and-donut-chart) to specify the necessary template function. For example:
+The `valueTemplate` option of [series](chart/configuration_properties.md#pie-pie-3d-and-donut-chart) formats the values displayed on Pie, Pie3D, and Donut charts. For example:
 
 ~~~jsx {6-8}
 const chart = new dhx.Chart("chart_container", {

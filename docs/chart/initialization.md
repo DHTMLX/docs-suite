@@ -10,10 +10,10 @@ description: You can explore the initialization of Chart in the documentation of
 Download the DHTMLX Chart package:
 
 - [as a separate component](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml)
-- [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- [as part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 :::
 
-To initialize DHTMLX Chart in an application, you need to take the following steps:
+Follow these steps to initialize DHTMLX Chart in an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -60,24 +60,24 @@ To initialize DHTMLX Chart in an application, you need to take the following ste
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the library into the header of the created file.
+Create an HTML file and add full paths to the library JS and CSS files in its header.
 
-**If you use DHTMLX Chart standalone**, you need to include JS/CSS files of DHTMLX Chart:
+**If you use DHTMLX Chart standalone**, include these JS/CSS files:
 
-- *chart.js*
-- *chart.css*
+- `chart.js`
+- `chart.css`
 
 ~~~html title="index.html"
 <script type="text/javascript" src="../../codebase/chart.js"></script>
 <link rel="stylesheet" href="../../codebase/chart.css">
 ~~~
 
-**If you use DHTMLX Chart as a part of the Suite package**, you need to include JS/CSS files of the DHTMLX Suite library:
+**If you use DHTMLX Chart as part of the Suite package**, include these JS/CSS files:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html title="index.html"
 <link type="text/css" href="../codebase/suite.css">
@@ -86,7 +86,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container 
 
-Add a container for Chart and give it an id, "chart_container", for example: 
+Add a container for Chart and give it an `id`, for example `chart_container`:
 
 ~~~html title="index.html"
 <div id="chart_container"></div>
@@ -94,10 +94,10 @@ Add a container for Chart and give it an id, "chart_container", for example:
 
 ## Initialize Chart
 
-Initialize Chart with the `dhx.Chart` object constructor. The constructor has two parameters:
+Initialize Chart with the `dhx.Chart` object constructor. The constructor takes two parameters:
 
-- a container to place a Chart into. You've defined it at the previous step.
-- an object with configuration properties. [See the full list of properties here](chart/api/api_overview.md#properties)
+- A container for Chart. You defined it in the previous step.
+- An object with configuration properties. See the [full list of properties](chart/api/api_overview.md#properties).
 
 ~~~js title="index.js"
 const config = {
@@ -131,7 +131,7 @@ See the full list of Chart configuration properties in the [Chart API overview](
 
 ## Load data into Chart
 
-Detailed information on how to load data into DHTMLX Chart is given in the [Data loading](chart/data_loading.md) article.
+The [Data loading](chart/data_loading.md) article explains how to load data into DHTMLX Chart.
 
 ## Example
 
