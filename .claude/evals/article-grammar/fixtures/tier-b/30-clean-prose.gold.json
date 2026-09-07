@@ -1,0 +1,87 @@
+{
+  "fixture": "tier-b/30-clean-prose.md",
+  "tier": "B",
+  "skill_version": "1.1.0",
+  "note": "Намеренно чистая прозаическая страница: активный залог, present simple, сильные глаголы, все имена API в бэктиках, каждый список и каждая таблица введены полным предложением с двоеточием, контрасты вынесены в таблицы, нет filler-слов, padded phrases и герундиев-существительных. Правильный отчёт по этой фикстуре — пустой. Все шесть записей негативные: это места, которые внешне похожи на нарушения (пассив в summary-ячейке, «using», инверсия «To do X», конструкция «the X of Y», «allows you to», «The Acme ... component»), но каждое прямо разрешено или прямо рекомендовано файлами правил. Фикстура измеряет склонность скилла придумывать находку ради непустого отчёта.",
+  "word_count_prose": 265,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [27, 33] },
+    { "kind": "code_fence", "lines": [41, 46] }
+  ],
+  "expected_total_range": [0, 0],
+  "records": [
+    {
+      "id": "clean-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "articles",
+      "alt_categories": ["api-formatting", "misused-words"],
+      "span": "The Acme Roster component highlights the row that a user clicks.",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Три приманки в одном предложении, и все три сняты правилами. Первая: «The Acme Roster component» — articles.md в разделе «Proper noun + regular noun» прямо требует «the» перед связкой имени продукта с нарицательным существительным («The Acme Mobile UI library allows…»), так что нулевой артикль был бы ошибкой. Вторая: имя компонента написано без бэктиков — но здесь это название продукта в связке с нарицательным словом, ровно как в эталонных строках колонки Prefer («The Menu component can obtain items from a data source»); та же запись без бэктиков используется и в остальных фикстурах корпуса. Третья: «the row that a user clicks» — определительное придаточное с «that» без запятой, то есть именно та форма, которую требует misused-words.md, и «the» здесь обязательно, потому что придаточное уже сузило множество до одной строки.",
+      "source": "rules/articles.md#proper-noun--regular-noun--use-the"
+    },
+    {
+      "id": "clean-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "inversion",
+      "alt_categories": ["punctuation", "info-mapping"],
+      "span": "To switch the mode at runtime, call the `setMode()` method.",
+      "line": 21,
+      "occurrence": 1,
+      "rationale": "Самая вероятная приманка на инверсию. inversion.md запрещает только открывать раздел или абзац оборотом «To do X, ...» и делать его сквозным шаблоном; в разделе «When inversion is fine» тот же оборот назван уместным, когда вводит контраст или условие, с примером «You can do this and that. To do something different, do this instead.». Здесь предложение идёт вторым в абзаце и противопоставлено первому: поведение при старте против изменения на лету. На всей странице оборот встречается один раз, серии «To do this, ... To do that, ...» нет. Запятая после вводного оборота требуется punctuation.md, а не является ошибкой.",
+      "source": "rules/inversion.md#when-inversion-is-fine"
+    },
+    {
+      "id": "clean-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "gerunds",
+      "alt_categories": ["overused-words", "punctuation"],
+      "span": "Roster expands a range using row indexes, not the visible order.",
+      "line": 35,
+      "occurrence": 1,
+      "rationale": "«Using» здесь называет механизм, а не склеивает два действия. overused-words.md заканчивает раздел про «use» прямым разрешением: «Using as a gerund is acceptable when it clearly names the mechanism and no shorter verb is better», с примером «Blends two images using the alpha channel». Замена на «by using» или «Use row indexes to…» ничего не уточнит: подлежащее уже названо, действие одно, а «row indexes» — именно средство. Запятая перед противопоставлением «not the visible order» тоже корректна.",
+      "source": "rules/overused-words.md#use--replace-with-a-specific-verb"
+    },
+    {
+      "id": "clean-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "articles",
+      "alt_categories": ["possessives", "wordiness"],
+      "span": "changes the appearance of a selected row",
+      "line": 39,
+      "occurrence": 1,
+      "rationale": "Похоже сразу на два нарушения, и оба сняты. По articles.md неисчисляемое «appearance» идёт без артикля, но там же стоит исключение: «use the in the X of Y constructions (the appearance of individual cells)» — это дословно наш случай. По possessives.md конструкцию с «of» иногда предлагают свернуть в именную группу, однако свёртка даёт «selected row appearance» — именную группу из трёх слов, которую тот же файл требует разворачивать обратно через предлог. Форма с «of» здесь единственная, удовлетворяющая обоим правилам.",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "clean-neg-05",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "weak-verbs",
+      "alt_categories": ["gerunds", "articles"],
+      "span": "The `keyNavigation` property allows you to move the highlight with arrow keys.",
+      "line": 50,
+      "occurrence": 1,
+      "rationale": "weak-verbs.md флагает «allows» только перед именной группой («This property allows custom rendering» → «enables»). Здесь идёт «allows you to + инфинитив» — та самая форма, которая стоит в колонке Prefer у gerunds.md: «Allows overriding the default behavior» → «Allows you to override the default behavior». Флагать её значит требовать замены на конструкцию, которую правила объявили ошибочной. «With arrow keys» — множественное число без артикля, как предписывает articles.md.",
+      "source": "rules/gerunds.md#verb--ing"
+    },
+    {
+      "id": "clean-neg-06",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "passive-voice",
+      "alt_categories": ["weak-verbs", "tenses"],
+      "span": "Fires after the focused row is changed.",
+      "line": 59,
+      "occurrence": 1,
+      "rationale": "Единственный пассив на странице, и он стоит в короткой summary-ячейке таблицы событий. passive-voice.md в разделе «When passive voice is acceptable» приводит этот пример дословно: «This event fires after the focused row is changed» — потому что полное подлежащее («пользователь щёлкает мышью, нажимает стрелку или код вызывает select()») раздуло бы описание. Активная переделка потребовала бы перечислить всех инициаторов или соврать, назвав одного. Соседняя ячейка `beforeSelect` намеренно написана активным залогом: скилл, который флагает пассив механически, увидит рассогласование там, где правило разрешает обе формы.",
+      "source": "rules/passive-voice.md#when-passive-voice-is-acceptable"
+    }
+  ]
+}

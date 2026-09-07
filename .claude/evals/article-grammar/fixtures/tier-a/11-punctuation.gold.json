@@ -1,0 +1,171 @@
+{
+  "fixture": "tier-a/11-punctuation.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "note": "Фикстура на пунктуацию: серийная запятая, запятая после вводной фразы, точка вместо двоеточия перед списком, строчные пункты списка, непоследовательные точки в конце пунктов. Приманки: код-забор, frontmatter и два случая, прямо разрешённые punctuation.md. Аудит: спаны и номера строк проверены дословно, nonprose_ranges полны (frontmatter 1–5, единственный ~~~-забор 19–24, @-макросов в фикстуре нет); добавлены четыре may_flag на непосеянные нарушения (два оставшихся строчных пункта того же списка, «the» перед множественным «records», повтор «record» в трёх подряд предложениях), чтобы законные находки скилла не считались ложными срабатываниями; expected_total_range расширен с [4, 7] до [5, 11], так как нижняя граница не покрывала пять must_find.",
+  "word_count_prose": 115,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [19, 24] }
+  ],
+  "expected_total_range": [5, 11],
+  "records": [
+    {
+      "id": "pu-01",
+      "polarity": "must_find",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "text, numbers, dates and links",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Нет серийной (оксфордской) запятой перед финальным «and» в перечислении. punctuation.md требует «letters, numbers, periods, and underscores» — должно быть «text, numbers, dates, and links».",
+      "source": "rules/punctuation.md#comma"
+    },
+    {
+      "id": "pu-02",
+      "polarity": "must_find",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "To change the layout pass a mode name",
+      "line": 17,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Вводная инфинитивная фраза «To change the layout» стоит перед главным предложением и не отделена запятой. punctuation.md прямо приводит образец «To do this, place…».",
+      "source": "rules/punctuation.md#comma"
+    },
+    {
+      "id": "pu-03",
+      "polarity": "must_find",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "The widget supports the following display modes.",
+      "line": 11,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Вводное предложение к списку заканчивается точкой. punctuation.md: «Do not end a list introduction with a period — use a colon», образец «This task includes the following steps:».",
+      "source": "rules/punctuation.md#colon"
+    },
+    {
+      "id": "pu-04",
+      "polarity": "must_find",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "- department",
+      "line": 30,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Пункты списка (department / location / hire date) начинаются со строчной буквы. punctuation.md «Capitalize each list item» требует «- Aggregation / - Group / - Sort». Это обычные существительные, а не литеральные значения API, так что строчная буква здесь ничем не оправдана.",
+      "source": "rules/punctuation.md#capitalize-each-list-item"
+    },
+    {
+      "id": "pu-05",
+      "polarity": "must_find",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "A saved layout applies only to the current browser",
+      "line": 45,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Все три пункта списка — законченные предложения, но два оканчиваются точкой, а этот нет. punctuation.md «Periods after list items»: полное предложение → точка, и «Be consistent».",
+      "source": "rules/punctuation.md#periods-after-list-items"
+    },
+    {
+      "id": "pu-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "// the mode accepts \"compact\", \"detailed\" and \"grouped\"",
+      "line": 21,
+      "occurrence": 1,
+      "rationale": "Точно такое же отсутствие серийной запятой, как в pu-01, но внутри ~~~js-забора. Комментарий в коде — не проза статьи; правила пунктуации к нему не применяются.",
+      "source": "rules/punctuation.md#comma"
+    },
+    {
+      "id": "pu-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "punctuation",
+      "alt_categories": ["wordiness"],
+      "span": "try out code examples and live demos, and download a free 30-day evaluation version of Acme Suite.",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон description, одинаковый во всём корпусе. Серийная запятая здесь уже на месте, а сам frontmatter не входит в область ревью прозы.",
+      "source": "rules/punctuation.md#comma"
+    },
+    {
+      "id": "pu-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "Right-click a record to open the context menu.",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Главное предложение стоит перед зависимой инфинитивной частью, поэтому запятая не нужна. punctuation.md, секция «Do NOT use a comma», приводит буквально этот пример: «Right-click an item to invoke the context menu» (no comma before \"to\").",
+      "source": "rules/punctuation.md#comma"
+    },
+    {
+      "id": "pu-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "- Search box",
+      "line": 36,
+      "occurrence": 1,
+      "rationale": "Пункты Search box / Mode switcher / Export button — именные группы, а не предложения, поэтому точки не нужны, и список последователен. punctuation.md «Periods after list items»: «If items are noun phrases → no period needed». Приманка на фоне pu-05.",
+      "source": "rules/punctuation.md#periods-after-list-items"
+    },
+    {
+      "id": "pu-may-01",
+      "polarity": "may_flag",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "- location",
+      "line": 31,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Второй пункт того же списка со строчной буквы: pu-04 фиксирует только «- department», хотя правило «Capitalize each list item» нарушают все три пункта. Без этой записи находка скилла на строке 31 попала бы в ложные срабатывания.",
+      "source": "rules/punctuation.md#capitalize-each-list-item"
+    },
+    {
+      "id": "pu-may-02",
+      "polarity": "may_flag",
+      "category": "punctuation",
+      "alt_categories": [],
+      "span": "- hire date",
+      "line": 32,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Третий пункт того же списка со строчной буквы, аналогично pu-04 и pu-may-01. «hire date» с пробелом не может быть литеральным значением API, так что строчная буква не оправдана.",
+      "source": "rules/punctuation.md#capitalize-each-list-item"
+    },
+    {
+      "id": "pu-may-03",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "splits the records",
+      "line": 28,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). articles.md «Plural countable nouns → zero article by default» требует «splits records»; исключение про ранее упомянутые элементы натянуто, потому что «records» упоминались в другой секции (строка 9), а не в этом предложении. Спорно, поэтому may_flag, а не must_find. Спан не пересекается ни с одним must_find/must_not_flag.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "pu-may-04",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": [],
+      "span": "renders records inside a Panel container. A single record",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). «record/records» повторяется трижды в трёх подряд идущих предложениях строки 9 («renders records», «A single record», «Right-click a record»). Inline-проверка SKILL.md «Repetition». Спан подобран так, чтобы не пересекаться с pu-01 («text, numbers, dates and links») и pu-neg-03 («Right-click a record to open the context menu.»).",
+      "source": "SKILL.md#repetition"
+    }
+  ]
+}

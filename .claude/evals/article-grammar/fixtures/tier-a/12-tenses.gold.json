@@ -1,0 +1,151 @@
+{
+  "fixture": "tier-a/12-tenses.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/usage_history.md",
+  "note": "Tier-A фикстура на одну категорию: tenses. Страница оформлена как шаг туториала, чтобы одновременно проверить нарушение «будущее во вступлении» и явное исключение правила для туториалов, где подлежащее — пользователь. Записи tense-may-* добавлены аудитом: это непосеянные, но законные находки других категорий — они нейтральны и не должны считаться ложными срабатываниями.",
+  "word_count_prose": 133,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [15, 21] },
+    { "kind": "code_fence", "lines": [29, 31] }
+  ],
+  "expected_total_range": [5, 10],
+  "records": [
+    {
+      "id": "tense-pos-01",
+      "polarity": "must_find",
+      "category": "tenses",
+      "alt_categories": ["wordiness"],
+      "span": "This topic will teach you how to group records in the Roster panel.",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Будущее время во вступлении, где подлежащее — сама статья («This topic»). tenses.md запрещает это дословно: строка Avoid «This topic will teach you how to add parameters» против Prefer «This topic describes...». Исключение для туториалов здесь не работает, потому что субъект — топик, а не пользователь.",
+      "source": "rules/tenses.md#introductions--no-future-tense"
+    },
+    {
+      "id": "tense-pos-02",
+      "polarity": "must_find",
+      "category": "tenses",
+      "alt_categories": [],
+      "span": "Once the Roster has loaded all records, the panel builds the group tree.",
+      "line": 13,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Present Perfect в придаточном условия вместо Present Simple. Прямой аналог строки Avoid «After the grid has loaded all records, it displays a message» и «Use the method after the Range Filter has loaded data». Ожидаемая правка: «The Roster loads all records and builds the group tree».",
+      "source": "rules/tenses.md#conditionals--present-simple-instead-of-perfectfuture"
+    },
+    {
+      "id": "tense-pos-03",
+      "polarity": "must_find",
+      "category": "tenses",
+      "alt_categories": ["wordiness"],
+      "span": "the column whose values you would like to combine",
+      "line": 13,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Гипотетическое будущее «would like». tenses.md держит для этого отдельную секцию с примером «…the element whose appearance you would like to change» → «…you need to change». Конструкция здесь синтаксически совпадает с примером правила.",
+      "source": "rules/tenses.md#avoid-hypothetical-future-would"
+    },
+    {
+      "id": "tense-pos-04",
+      "polarity": "must_find",
+      "category": "tenses",
+      "alt_categories": ["wordiness"],
+      "span": "When you save a layout, you will be able to choose the storage format.",
+      "line": 27,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Будущее «will be able to» в условном предложении. Строка Avoid правила: «When you save a report, you will be able to choose the file format» → «you can choose». Совпадение практически пословное.",
+      "source": "rules/tenses.md#conditionals--present-simple-instead-of-perfectfuture"
+    },
+    {
+      "id": "tense-pos-05",
+      "polarity": "must_find",
+      "category": "tenses",
+      "alt_categories": [],
+      "span": "We have implemented incremental repaint for grouped data",
+      "line": 33,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Present Perfect о завершённой работе вместо Past Simple. Секция правила даёт ровно этот случай: «We have implemented this request» → «We implemented this request».",
+      "source": "rules/tenses.md#present-perfect--past-simple"
+    },
+    {
+      "id": "tense-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "tenses",
+      "alt_categories": ["passive-voice", "wordiness"],
+      "span": "how the Roster panel will group and summarize records",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Будущее время внутри frontmatter. Это SEO-шаблон description, одинаковый по форме во всех 1891 файлах корпуса; он не является прозой статьи и не входит в область ревью. Правка здесь ничего не улучшает и ломает шаблон.",
+      "source": "rules/tenses.md#basic-narrative--replace-pastfuture-with-present-simple"
+    },
+    {
+      "id": "tense-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "tenses",
+      "alt_categories": ["passive-voice"],
+      "span": "// the summary row will be redrawn after the data has loaded",
+      "line": 18,
+      "occurrence": 1,
+      "rationale": "Комментарий внутри забора ~~~js: одновременно будущее время, пассив и Present Perfect в придаточном — максимально соблазнительная приманка. Но содержимое код-сниппета не проверяется правилами прозы.",
+      "source": "rules/tenses.md#conditionals--present-simple-instead-of-perfectfuture"
+    },
+    {
+      "id": "tense-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "tenses",
+      "alt_categories": [],
+      "span": "In this tutorial, you will enable grouping, add a summary row, and store the resulting layout.",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Правило прямо разрешает этот случай: «Exception: tutorial introductions may use Future Simple and Past Simple when the *user* is the subject (not the article)», а в колонке Prefer стоит образец «In this tutorial, **you will enable** master filtering». Подлежащее — «you», страница оформлена как шаг туториала, значит будущее допустимо. Флаг здесь означал бы, что скилл читает только колонку Avoid и игнорирует исключение в том же разделе. Аудит: рассмотрены два конкурирующих прочтения того же спана — «enable grouping» как Verb + ING (rules/gerunds.md#verb--ing) и перечисление трёх действий (SKILL.md#long-sentences). Запись оставлена must_not_flag, потому что спан построен как копия образца из колонки Prefer самого правила («you will enable master filtering» — там тоже «enable» + герундий-имя признака), то есть флаг по этому предложению противоречит эталону скилла. Спан нельзя одновременно защитить от tenses и открыть для gerunds: любой подспан вложен в этот и матчится с коэффициентом 1.0. Это осознанный компромисс, а не недосмотр.",
+      "source": "rules/tenses.md#introductions--no-future-tense"
+    },
+    {
+      "id": "tense-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "tenses",
+      "alt_categories": [],
+      "span": "The panel applies this property during initialization.",
+      "line": 23,
+      "occurrence": 1,
+      "rationale": "Present Simple, одно подлежащее и один глагол — ровно та форма, которую предписывает первая строка правила («Use Present Simple by default»). Контрольный образец рядом с нарушениями: скилл не должен переписывать корректное предложение за компанию. Аудит: проверено также по rules/pronouns.md — «this property» это форма «this [noun]», которую секция «When demonstrative pronouns are fine» прямо разрешает после того, как понятие введено (свойство `groupBy` названо в предыдущем абзаце, строка 13); под запрет «This without a clear referent» попадает только голое «this» в роли подлежащего.",
+      "source": "rules/tenses.md#rule-tenses"
+    },
+    {
+      "id": "tense-may-01",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": ["Repetition", "wordiness", "text-that-explains-ui-or-code"],
+      "span": "Each group header shows the team name and the number of rows in the group.",
+      "line": 23,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Inline-проверка SKILL.md#repetition: «group» повторяется в одном предложении дважды («group header» … «in the group»), причём хвост «in the group» дублирует смысл, уже заданный подлежащим — это же случай rules/wordiness.md#unnecessary-repetition-of-meaning. Дополнительно предложение пересказывает содержимое UI-элемента, что подпадает под SKILL.md#text-that-explains-ui-or-code. Спан не пересекается с tense-neg-04: тот защищает только первое предложение строки 23.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "tense-may-02",
+      "polarity": "may_flag",
+      "category": "long-sentences",
+      "alt_categories": ["Long sentences", "sentence-length", "text-that-explains-ui-or-code"],
+      "span": "Pass the format name to the `saveLayout()` method, and the panel returns a serializable object.",
+      "line": 27,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Inline-проверка SKILL.md#long-sentences: в предложении две пары «подлежащее-сказуемое» и два разных субъекта — императив, адресованный читателю («Pass»), склеен союзом с утверждением о поведении панели («the panel returns»). Кандидат на разделение на два предложения. Спан не пересекается с tense-pos-04, который занимает первое предложение строки 27.",
+      "source": "SKILL.md#long-sentences"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "fixture": "tier-a/06-inversion.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/usage_selection.md",
+  "note": "Фикстура на категорию inversion: открытие введения и секции конструкцией «To do X,...», серия из трёх «To do X» подряд и серия «You can... You can... You can...». Негативы: приманка в ~~~js-заборе, SEO-шаблон во frontmatter, инверсия-исключение по контрасту и одиночное «You can». Аудит: добавлены пять may_flag-записей на непосеянные нарушения (три заголовка-герундия — H1 и обе секции, их же дубль во frontmatter, «The Roster» с определённым артиклем без нарицательного); в inv-02 и inv-04 добавлена alt_categories «info-mapping» (а в inv-04 ещё «prose-should-be-code»), потому что те же серии предложений законно читаются как перечисление действий, которому положен список; во всех записях проставлен source.",
+  "word_count_prose": 141,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [11, 17] }
+  ],
+  "expected_total_range": [4, 10],
+  "records": [
+    {
+      "id": "inv-01",
+      "polarity": "must_find",
+      "category": "inversion",
+      "alt_categories": [],
+      "span": "To display tabular data in the Roster widget, create an instance with a container id.",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Первое предложение введения начинается с «To do X,...». inversion.md прямо запрещает открывать введение, секцию или абзац этой конструкцией; нужно сначала назвать возможность, потом объяснить, как её включить.",
+      "source": "rules/inversion.md#avoid-opening-a-section-or-paragraph-with-to-do-x"
+    },
+    {
+      "id": "inv-02",
+      "polarity": "must_find",
+      "category": "inversion",
+      "alt_categories": ["repetition", "info-mapping"],
+      "span": "To sort by one column, call the `sort()` method. To sort by several columns, pass an array of rules. To restore the original order, call `sort()` with no arguments.",
+      "line": 21,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Три подряд идущих предложения по шаблону «To do X, do Y» — ровно тот блок, который inversion.md показывает как «Pattern to flag». Монотонность; правило требует перестроить в список или вести от подлежащего. Тот же спан законно проходит и как info-mapping: SKILL.md требует оформлять списком перечисление альтернативных действий.",
+      "source": "rules/inversion.md#avoid-opening-a-section-or-paragraph-with-to-do-x"
+    },
+    {
+      "id": "inv-03",
+      "polarity": "must_find",
+      "category": "inversion",
+      "alt_categories": [],
+      "span": "To group rows by a column, set the `groupBy` property in the constructor.",
+      "line": 25,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Первое предложение секции «Grouping rows» снова открывается инверсией. Совпадает с таблицей Avoid/Prefer в inversion.md: «To enable automatic column resizing, set the ColumnWidth property to Auto. (as the first sentence)».",
+      "source": "rules/inversion.md#avoid-opening-a-section-or-paragraph-with-to-do-x"
+    },
+    {
+      "id": "inv-04",
+      "polarity": "must_find",
+      "category": "inversion",
+      "alt_categories": ["repetition", "info-mapping", "prose-should-be-code"],
+      "span": "You can collapse a group with the `collapse()` method. You can open a collapsed group with `expand()`. You can switch every group at once with `toggleAll()`.",
+      "line": 27,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Три подряд идущих предложения, начинающихся с «You can» — секция «Avoid \"You can... You can... You can...\" runs» в inversion.md. Правило требует переписать это списком или вести от подлежащего. Тот же спан законно проходит как info-mapping (перечисление действий) и как prose-should-be-code (проза перечисляет три метода подряд), поэтому обе категории добавлены в alt_categories.",
+      "source": "rules/inversion.md#avoid-you-can-you-can-you-can-runs"
+    },
+    {
+      "id": "inv-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "inversion",
+      "alt_categories": ["punctuation"],
+      "span": "// To enable multiselect, set the flag below.",
+      "line": 13,
+      "occurrence": 1,
+      "rationale": "Это комментарий внутри ~~~js-забора, а не проза статьи. Формально выглядит как открытие «To do X,...», но код не входит в область грамматического ревью; строкой ниже лежит вторая приманка «You can pass true. You can pass \"row\" instead.» — её тоже трогать нельзя.",
+      "source": "rules/inversion.md#avoid-opening-a-section-or-paragraph-with-to-do-x"
+    },
+    {
+      "id": "inv-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "inversion",
+      "alt_categories": ["overused-words", "wordiness"],
+      "span": "You can explore sorting and grouping of Roster",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон description, идентичный во всех 1891 файлах корпуса. Начинается с «You can», но это frontmatter, а не проза; правка бессмысленна и вне области ревью статьи.",
+      "source": "rules/inversion.md#avoid-you-can-you-can-you-can-runs"
+    },
+    {
+      "id": "inv-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "inversion",
+      "alt_categories": [],
+      "span": "To keep the scroll at the top instead, call `reset()` before `parse()`.",
+      "line": 31,
+      "occurrence": 1,
+      "rationale": "Секция «When inversion is fine» разрешает ровно эту форму: «You can do this and that. To do something different, do this instead.» Здесь инверсия стоит вторым предложением абзаца и вводит контраст к поведению по умолчанию, описанному в первом предложении. Флагать нельзя.",
+      "source": "rules/inversion.md#when-inversion-is-fine"
+    },
+    {
+      "id": "inv-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "inversion",
+      "alt_categories": ["repetition"],
+      "span": "You can read the current offset from the `scrollState` property.",
+      "line": 33,
+      "occurrence": 1,
+      "rationale": "Одиночное «You can» в отдельном абзаце другой секции. Правило запрещает не оборот сам по себе, а серию из подряд идущих предложений («Repeating \"You can do this. You can do that.\" in consecutive sentences»). Здесь серии нет.",
+      "source": "rules/inversion.md#avoid-you-can-you-can-you-can-runs"
+    },
+    {
+      "id": "inv-may-01",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["Gerunds", "ING words (gerunds)"],
+      "span": "# Sorting and grouping",
+      "line": 7,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Заголовок H1 построен на герундиях, тогда как rules/gerunds.md#gerunds-in-titles требует глагольную форму: «Data Binding» → «Bind to Data», «Data Editing» → «Edit Data». Ожидаемая правка — «Sort and group rows». Спан включает «#», потому что без решётки текст «Sorting and grouping» впервые встречается во frontmatter (строки 2-4) и цитата локализовалась бы в не-прозе; тот случай закрыт отдельной записью inv-may-02.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "inv-may-02",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["Gerunds", "ING words (gerunds)"],
+      "span": "Sorting and grouping",
+      "line": 2,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Тот же герундийный заголовок стоит в sidebar_label (строка 2) и в title (строка 3: «JavaScript Roster - Sorting and Grouping» — дословный аналог примера «React Scheduler - Grouping» из rules/gerunds.md#gerunds-in-titles). Цитата без «#» локализуется на первое вхождение, то есть внутрь frontmatter, поэтому запись помечена may_flag: законная находка по герундию в заголовке не должна превращаться в жёсткое зональное ложное срабатывание. Зональную проверку frontmatter продолжает держать inv-neg-02 (строка 4, SEO-описание, спан с ним не пересекается).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "inv-may-03",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["Gerunds", "ING words (gerunds)"],
+      "span": "Sorting rows",
+      "line": 19,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Заголовок H2 — герундий-существительное; rules/gerunds.md#gerunds-in-titles требует глагольную форму («Sort rows»). Соседняя фикстура 02-gerunds.md использует именно такую форму («## Sort Data»), так что правка законна, но необязательна — отсюда may_flag.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "inv-may-04",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["Gerunds", "ING words (gerunds)"],
+      "span": "Grouping rows",
+      "line": 23,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Второй заголовок с тем же дефектом, что и inv-may-03: ожидаемая форма — «Group rows». Основание — rules/gerunds.md#gerunds-in-titles.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "inv-may-05",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": ["Articles", "Articles (a, an, the, zero)"],
+      "span": "The Roster keeps its scroll position",
+      "line": 31,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Предложение делает общее утверждение о поведении виджета, а после имени не идёт нарицательное существительное, поэтому rules/articles.md требует нулевой артикль: «Proper noun + regular noun → use the… If no common noun follows, zero article» и «Type as a whole → DxDataGrid ships with an integrated filter editor». Ср. строку 9, где «the Roster widget» корректно, потому что за именем стоит «widget». Полярность may_flag: «the Roster» можно защитить как отсылку к конкретному ранее созданному экземпляру. Спан намеренно обрезан до первого предложения и не пересекается с inv-neg-03: цитата всей строки 31 по-прежнему сопоставляется с ловушкой-негативом.",
+      "source": "rules/articles.md#proper-noun--regular-noun--use-the"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "fixture": "tier-a/08-abbreviations.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "note": "Прозаическая guide-страница с посевом нарушений категории abbreviations: латинские e.g./i.e., открытый список с «and so on», избыточное «etc.» после «such as». Негативные контроли: e.g. внутри ~~~js-забора, i.e. внутри SEO-описания во frontmatter и две формы, которые abbreviations.md прямо объявляет предпочтительными. Аудит: все 8 исходных записей проверены дословно (grep -F) и по номерам строк — расхождений нет; добавлено 6 непосеянных нарушений с polarity may_flag, чтобы законные находки скилла вне категории abbreviations не считались ложными срабатываниями.",
+  "word_count_prose": 123,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [11, 16] },
+    { "kind": "code_fence", "lines": [30, 32] }
+  ],
+  "expected_total_range": [4, 9],
+  "records": [
+    {
+      "id": "abbr-01",
+      "polarity": "must_find",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "with a target format, e.g.",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Латинское «e.g.» в прозе. Таблица правила требует заменить его на «for example» / «for instance»: скринридеры произносят его неверно, и не все читатели знают сокращение.",
+      "source": "rules/abbreviations.md#latin-abbreviations--use-english-substitutes"
+    },
+    {
+      "id": "abbr-02",
+      "polarity": "must_find",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "the visible rows, i.e. the rows that survive the active filter",
+      "line": 18,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Латинское «i.e.» в прозе. Правило требует «that is». Случай однозначный: сокращение стоит в обычном предложении, а не в коде или шаблоне.",
+      "source": "rules/abbreviations.md#latin-abbreviations--use-english-substitutes"
+    },
+    {
+      "id": "abbr-03",
+      "polarity": "must_find",
+      "category": "abbreviations",
+      "alt_categories": ["wordiness"],
+      "span": "the page orientation, and so on.",
+      "line": 22,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Открытый список, закрытый через «and so on». Правило требует перечислить все элементы или перефразировать (пример в таблице: «…and other dimension and measure settings»). Читатель не узнаёт, какие ещё опции принимает второй аргумент. Побочно фрагмент может попасть в wordiness как перечисление, которое стоило бы сделать списком.",
+      "source": "rules/abbreviations.md#open-ended-lists--be-specific"
+    },
+    {
+      "id": "abbr-04",
+      "polarity": "must_find",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "formats such as CSV, TSV, JSON, etc.",
+      "line": 24,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "«etc.» после «such as» — прямое попадание в третью секцию правила: «such as» уже сообщает, что список неполный, поэтому «etc.» избыточно. Предпочитаемая форма — «such as CSV, TSV, and JSON».",
+      "source": "rules/abbreviations.md#etc--and-so-on-after-for-example-such-as-like--remove"
+    },
+    {
+      "id": "abbr-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "choose a writer by name, e.g. csv or xlsx",
+      "line": 13,
+      "occurrence": 1,
+      "rationale": "«e.g.» внутри JS-комментария в заборе ~~~js. Содержимое кодового забора не является прозой статьи и не подлежит грамматическому ревью — правка сломала бы сниппет, который пользователь копирует как есть.",
+      "source": "rules/abbreviations.md#latin-abbreviations--use-english-substitutes"
+    },
+    {
+      "id": "abbr-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "abbreviations",
+      "alt_categories": ["wordiness", "inversion"],
+      "span": "the export API of Panel, i.e. the CSV, XLSX, and PDF writers",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "«i.e.» внутри YAML-описания. Поле description — SEO-шаблон, одинаковый для всего корпуса; оно не входит в область ревью текста статьи. Дополнительно шаблон содержит «You can explore …», которое тоже нельзя флагать (inversion/wordiness).",
+      "source": "rules/abbreviations.md#latin-abbreviations--use-english-substitutes"
+    },
+    {
+      "id": "abbr-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "For example, the PDF writer reuses the print stylesheet",
+      "line": 26,
+      "occurrence": 1,
+      "rationale": "«For example» — это ровно та замена, которую правило предписывает вместо «e.g.» (таблица: «e.g. | for example, for instance»). Флагать её значило бы противоречить собственному правилу. Список после неё отсутствует, «etc.» нет. Проверено также по overused-words.md: «For example,» не входит в список парентетических открывашек-филлеров (Now, / As you see, / As mentioned above, / Finally, / Thus,). Спан намеренно обрывается на «print stylesheet» и не покрывает вторую половину предложения — она вынесена в abbr-may-03.",
+      "source": "rules/abbreviations.md#latin-abbreviations--use-english-substitutes"
+    },
+    {
+      "id": "abbr-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "abbreviations",
+      "alt_categories": [],
+      "span": "such as functions, symbols, and DOM nodes.",
+      "line": 28,
+      "occurrence": 1,
+      "rationale": "Закрытый список после «such as», без «etc.» и без «and so on» — дословно форма из колонки Prefer («…such as text files, PDFs, and images.»). Оксфордская запятая перед «and» соответствует punctuation.md. Аббревиатура DOM не латинская и правилом не покрывается.",
+      "source": "rules/abbreviations.md#etc--and-so-on-after-for-example-such-as-like--remove"
+    },
+    {
+      "id": "abbr-may-01",
+      "polarity": "may_flag",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "the writer returns a Blob",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). «Blob» — имя типа Web API, записанное простым текстом в контексте, который явно говорит о коде (возвращаемое значение `export()`). api-formatting.md#what-to-flag требует бэктиков для типов и классов: `Blob`. Спан не пересекается с abbr-01.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "abbr-may-02",
+      "polarity": "may_flag",
+      "category": "long-sentences",
+      "alt_categories": [],
+      "span": "Panel serializes the current dataset and hands the result to a writer.",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Инлайн-проверка SKILL.md «Long sentences»: два действия в одном предложении («serializes …» и «hands …»), правило прямо велит следить за избытком глаголов даже в коротких предложениях. Спан не пересекается с abbr-01 (тот начинается со слова «with» во втором предложении строки).",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "abbr-may-03",
+      "polarity": "may_flag",
+      "category": "passive-voice",
+      "alt_categories": [],
+      "span": "a column hidden by CSS never reaches the file",
+      "line": 26,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Свёрнутое пассивное определение с агентом «by CSS» («a column that is hidden by CSS»); passive-voice.md предлагает назвать действующий субъект («the print stylesheet hides the column»). Формально в тексте нет связки «to be», поэтому запись оставлена нейтральной may_flag. Спан начинается после «print stylesheet» и не пересекается с негативом abbr-neg-03.",
+      "source": "rules/passive-voice.md#how-to-detect-it"
+    },
+    {
+      "id": "abbr-may-04",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": ["info-mapping"],
+      "span": "the file name, the sheet title, the column widths",
+      "line": 22,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). articles.md#plural-countable-nouns--zero-article-by-default: у множественного «the column widths» артикль по умолчанию нулевой, и повтор «the» перед каждым элементом перечисления утяжеляет ряд. Спорно, так как настройки относятся к конкретному экспортируемому файлу (исключение «previously mentioned or explicitly listed»), поэтому may_flag. Побочно всё перечисление могло бы стать списком (info-mapping). Спан не пересекается с abbr-03.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "abbr-may-05",
+      "polarity": "may_flag",
+      "category": "long-sentences",
+      "alt_categories": ["repetition"],
+      "span": "Binary writers run in a worker and cover XLSX and PDF.",
+      "line": 24,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Два действия в одном предложении («run …» и «cover …»), инлайн-проверка «Long sentences». Кроме того, слово «writer(s)» встречается в 123 словах прозы семь раз (строки 9, 18, 24, 26, 28) — инлайн-проверка «Repetition» может законно это отметить. Спан не пересекается с abbr-04, который заканчивается на «etc.».",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "abbr-may-06",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Data export",
+      "line": 7,
+      "occurrence": 2,
+      "rationale": "Аудит (непосеянное нарушение). Заголовок H1 — отглагольная именная группа того же типа, что и примеры из gerunds.md#gerunds-in-titles («Data Binding» → «Bind to Data», «Data Editing» → «Edit Data»); ожидаемая форма — «Export data». Буквально правило говорит про ING-формы, а здесь их нет, поэтому запись нейтральная. occurrence 2: первое вхождение литерала «Data export» — в строке 2 (sidebar_label, frontmatter).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    }
+  ]
+}
