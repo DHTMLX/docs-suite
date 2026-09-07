@@ -1418,6 +1418,12 @@ Allows end users to filter data of a column by choosing an option from a present
 }
 ~~~
 
+If you specify **selectFilter** as the header or footer content of a column, you can set a configuration object for it via the `filterConfig` property.
+
+#### The list of configuration properties for `selectFilter`
+
+- `options` - (*array | function*) - optional, sets the list of the filter options manually instead of collecting them from the column data, see [Custom options of header/footer filters](#custom-options-of-headerfooter-filters)
+
 **Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 :::note
@@ -1449,6 +1455,7 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 - **placeholder** - (*string*) sets a placeholder in the input of ComboBox
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
+- **options** - (*array | function*) sets the list of the filter options manually instead of collecting them from the column data, see [Custom options of header/footer filters](#custom-options-of-headerfooter-filters)
 ~~~jsx 
 {
     id: "category",
@@ -1532,6 +1539,132 @@ Calendar API configuration properties:
 ~~~
 
 **Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
+
+### Custom options of header/footer filters
+
+:::info
+The ability to manage the options of a filter manually is available starting from v9.4.
+:::
+
+By default, the **selectFilter** and **comboFilter** filters build their dropdown list from the data of the column: only the values that actually occur in the loaded rows are shown. If a column holds *"KG"* in every row, the dropdown offers *"KG"* and nothing else, even when the valid values for the column come from a fixed reference list.
+
+The `options` property of the `filterConfig` object lets you define that list yourself. It takes either a static array of options, or a function that transforms the data-driven list:
+
+~~~jsx
+type TOption = { id: Id, value: string } | string;
+
+options?: TOption[] | ((uniqueData: IOption[], col: ICol) => TOption[]);
+~~~
+
+| Form | Behavior |
+| ---- | -------- |
+| `TOption[]` | a static list. It fully replaces the data-driven one, and the dataset is not scanned for this column at all |
+| `(uniqueData, col) => TOption[]` | a callback function. It receives the data-driven list, already normalized to `{ id, value }` pairs, and returns the list to show |
+| *omitted* | the default. The list is built from the column data |
+
+#### Option format
+
+An option is either an `{ id, value }` pair or a plain string. Both parts are converted to strings internally, because a header filter always reports its value as a string.
+
+- `id` - the value stored in the cell. This is what the filter compares against, and what the [`customFilter`](#customizing-headerfooter-filters) function receives as its `match` parameter
+- `value` - the label shown in the dropdown
+
+:::note
+The `id` of an option must match the value stored in the cell, not the formatted one. For example, in a column with `type: "number"` and a [`numberMask`](#numbermask), the cell holds *1000* while Grid displays *1,000*, so the id of the option must be *1000*.
+:::
+
+#### A static list of options
+
+Use a static list when the column has a fixed reference list that must always be offered in full:
+
+~~~jsx {10-14}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            id: "unitMeasure",
+            header: [
+                { text: "Unit Measure" },
+                {
+                    content: "selectFilter",
+                    filterConfig: {
+                        options: [
+                            { id: "KG", value: "Kilogram" },
+                            { id: "L", value: "Liters" },
+                            { id: "PCS", value: "Pieces" }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    data: [
+        { id: 1, unitMeasure: "KG" },
+        { id: 2, unitMeasure: "KG" }
+    ]
+});
+~~~
+
+The dropdown shows *Kilogram*, *Liters* and *Pieces* regardless of what the dataset contains. Selecting *Liters* leaves the grid empty, which is the expected outcome: the option exists, while the matching rows do not.
+
+A list of plain strings is accepted as well. In this case each string becomes both the id and the label of an option:
+
+~~~jsx
+filterConfig: { options: ["KG", "L", "PCS"] }
+~~~
+
+#### A function for adjusting options
+
+Use a function when you want to keep the data-driven list and adjust it: add the options that the data does not contain yet, hide the ones that must never be filtered by, or reorder the list.
+
+~~~jsx
+// always offers "Liters" on top of whatever the data holds
+filterConfig: {
+    options: uniqueData => uniqueData.concat([{ id: "L", value: "Liters" }])
+}
+~~~
+
+~~~jsx
+// hides the technical "draft" status from the filter
+filterConfig: {
+    options: uniqueData => uniqueData.filter(option => option.id !== "draft")
+}
+~~~
+
+The function is called with the list already normalized to `{ id, value }` pairs, so `option.id` is safe to compare against. The second argument is the configuration object of the column.
+
+The function runs whenever Grid recalculates the filter lists:
+
+- on initialization
+- on the data events (`load`, `parse`, `add`, `remove`, `update`, `filter`)
+- on calling the [`setColumns()`](grid/api/grid_setcolumns_method.md) method
+- on showing or hiding a column
+
+It is not re-evaluated on a plain [`paint()`](grid/api/grid_paint_method.md) call.
+
+**Related sample**: [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
+
+#### Behavior notes
+
+- **The selected value is never dropped.** An option that no row matches stays selected, and Grid stays empty. A filter does not reset itself when its selected value is absent from the column data, which is what makes a static reference list usable.
+
+- **Cross-filtering.** When several columns are filtered at once, the filter lists of the other columns are normally narrowed down to the values that are still reachable. The two forms of the `options` property differ here:
+
+    - a static list is never narrowed, since it is a reference list and not a view of the data
+    - a callback function receives the narrowed list, so its result can reflect the values that are still reachable
+
+- **The full list stays in the dropdown.** When the `options` property is defined, **selectFilter** renders its whole `<select>` list even while a value is selected, so the user can switch straight to another option.
+
+- **Interaction with `customFilter`.** The [`customFilter`](#customizing-headerfooter-filters) function takes precedence over the built-in matching and receives `option.id` as its `match` argument:
+
+    ~~~jsx
+    {
+        content: "selectFilter",
+        filterConfig: { options: [{ id: "L", value: "Liters" }] },
+        customFilter: (cellValue, match) => cellValue === match // match === "L"
+    }
+    ~~~
+
+- **Columns without `options`.** A column that does not define the `options` property builds its filter list from the data, narrows it on cross-filtering, and reports the displayed text as the filter value.
 
 ### Customizing header/footer filters
 
