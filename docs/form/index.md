@@ -13,7 +13,7 @@ Check [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=f
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Form:
+Learn how to build a full-featured DHTMLX Form:
 
 - [Features](form/features.md)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Fo
 
 ## Related resources
 
-- You can get DHTMLX Form as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=form)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Form as part of the Suite library
+- Try the [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=form)
 
 ## Guides
 

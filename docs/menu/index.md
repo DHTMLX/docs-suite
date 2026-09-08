@@ -12,7 +12,7 @@ DHTMLX Menu is a component that provides an easy way to add a drop down menu to 
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Menu:
+Learn how to build a full-featured DHTMLX Menu:
 
 - [Features](menu/features.md)
 
@@ -22,8 +22,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Me
 
 ## Related resources
 
-- You can get DHTMLX Menu as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Menu as part of the Suite library
+- Try the [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu)
 - To work with data of Menu check [TreeCollection API](/tree_collection/)
 
 ## Guides

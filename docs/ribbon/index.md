@@ -12,7 +12,7 @@ DHTMLX Ribbon is an advanced version of DHTMLX Toolbar. It aggregates commands a
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Ribbon:
+Learn how to build a full-featured DHTMLX Ribbon:
 
 - [Features](ribbon/features.md)
 
@@ -22,8 +22,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Ri
 
 ## Related resources
 
-- You can get DHTMLX Ribbon as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Ribbon](https://snippet.dhtmlx.com/3djaib6o?tag=ribbon)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Ribbon as part of the Suite library
+- Try the [online samples for DHTMLX Ribbon](https://snippet.dhtmlx.com/3djaib6o?tag=ribbon)
 - To work with data of Ribbon check [TreeCollection API](/tree_collection/)
 
 ## Guides

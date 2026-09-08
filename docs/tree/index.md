@@ -14,7 +14,7 @@ Check [online samples for DHTMLX Tree](https://snippet.dhtmlx.com/hg3f50td?tag=t
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Tree:
+Learn how to build a full-featured DHTMLX Tree:
 
 - [Features](tree/features.md)
 
@@ -26,7 +26,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Tr
 
 - To get just DHTMLX Tree, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml)
 - To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Tree](https://snippet.dhtmlx.com/hg3f50td?tag=tree)
+- Try the [online samples for DHTMLX Tree](https://snippet.dhtmlx.com/hg3f50td?tag=tree)
 - To work with data of Tree check [TreeCollection API](/tree_collection/)
   
 ## Guides

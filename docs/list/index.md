@@ -13,7 +13,7 @@ It allows you to arrange multiple objects with similar properties within a singl
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX List:
+Learn how to build a full-featured DHTMLX List:
 
 - [Features](list/features.md)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Li
 
 ## Related resources
 
-- You can get DHTMLX List as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX List](https://snippet.dhtmlx.com/0sorkczm?tag=list)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX List as part of the Suite library
+- Try the [online samples for DHTMLX List](https://snippet.dhtmlx.com/0sorkczm?tag=list)
 - To work with data of List check [DataCollection API](/data_collection/)
 
 ## Guides

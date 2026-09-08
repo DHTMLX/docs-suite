@@ -14,7 +14,7 @@ Check [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?t
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX DataView:
+Learn how to build a full-featured DHTMLX DataView:
 
 - [Features](dataview/features.md)
 
@@ -24,8 +24,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Da
 
 ## Related resources
 
-- You can get DHTMLX DataView as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX DataView as part of the Suite library
+- Try the [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview)
 - To work with data of DataView check [DataCollection API](/data_collection/)
 
 ## Guides
