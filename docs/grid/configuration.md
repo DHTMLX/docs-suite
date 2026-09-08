@@ -1565,7 +1565,7 @@ options?: TOption[] | ((uniqueData: IOption[], col: ICol) => TOption[]);
 
 #### Option format
 
-An option is either an `{ id, value }` pair or a plain string. Grid converts both parts to strings, because a header filter always reports its value as a string.
+An option is either an `{ id, value }` pair or a plain string. Grid converts both `id` and `value` to strings, because a header filter always reports its value as a string.
 
 - `id` - the value stored in the cell. This is what the filter compares against, and what the [`customFilter`](#customizing-headerfooter-filters) function receives as its `match` parameter
 - `value` - the label shown in the dropdown
@@ -1631,7 +1631,7 @@ filterConfig: {
 }
 ~~~
 
-Grid normalizes the list to `{ id, value }` pairs before it calls the function, so `option.id` is safe to compare against. The second argument is the configuration object of the column.
+Grid normalizes the list to `{ id, value }` pairs before it calls the function, so `option.id` is always defined and safe to compare. The second argument is the configuration object of the column.
 
 The function runs whenever Grid recalculates the filter lists:
 
