@@ -14,7 +14,7 @@ Mainly, the component is applied for showing a pop-up content on some action, su
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Popup:
+Learn how to build a full-featured DHTMLX Popup:
 
 - [Features](popup/features.md)
 
@@ -24,8 +24,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Po
 
 ## Related resources
 
-- You can get DHTMLX Popup as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Popup](https://snippet.dhtmlx.com/bz1ekc71?tag=popup) 
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Popup as part of the Suite library
+- Try the [online samples for DHTMLX Popup](https://snippet.dhtmlx.com/bz1ekc71?tag=popup)
 
 ## Guides
 

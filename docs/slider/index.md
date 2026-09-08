@@ -14,7 +14,7 @@ Check [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Slider:
+Learn how to build a full-featured DHTMLX Slider:
 
 - [Features](slider/features.md)
 
@@ -24,8 +24,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Sl
 
 ## Related resources
 
-- You can get DHTMLX Slider as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Slider as part of the Suite library
+- Try the [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider)
 
 ## Guides
 

@@ -14,7 +14,7 @@ Check [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?t
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Combobox:
+Learn how to build a full-featured DHTMLX Combobox:
 
 - [Features](combobox/features.md)
 
@@ -24,8 +24,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## Related resources
 
-- You can get DHTMLX ComboBox as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX ComboBox as part of the Suite library
+- Try the [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox)
 - To work with data of ComboBox check [DataCollection API](/data_collection/)
 
 ## Guides

@@ -14,14 +14,14 @@ Check [online samples for DHTMLX Message](https://snippet.dhtmlx.com/tfiqt79l?ta
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Message:
+Learn how to build a full-featured DHTMLX Message:
 
 - [Features](message/features.md)
 
 ## Related resources
 
-- You can get DHTMLX Message as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Message](https://snippet.dhtmlx.com/tfiqt79l?tag=message)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Message as part of the Suite library
+- Try the [online samples for DHTMLX Message](https://snippet.dhtmlx.com/tfiqt79l?tag=message)
 
 ## Guides
 

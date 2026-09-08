@@ -15,7 +15,7 @@ Check [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Colorpicker:
+Learn how to build a full-featured DHTMLX Colorpicker:
 
 - [Features](colorpicker/features.md)
 
@@ -25,8 +25,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## Related resources
 
-- You can get DHTMLX Colorpicker as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb8?tag=colorpicker)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Colorpicker as part of the Suite library
+- Try the [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb8?tag=colorpicker)
 
 ## Guides
 
