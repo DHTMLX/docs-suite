@@ -6,13 +6,13 @@ description: You can explore the localization of Combo Box in the documentation 
 
 # Localization
 
-You can apply different languages to the interface of DHTMLX Combo. You just need to translate the corresponding strings for Combobox labels and apply a ready locale to the component.
+You can apply different languages to the DHTMLX Combobox interface. Translate the label strings and apply the resulting locale to the component.
 
 **Related sample**: [Combobox. Localization](https://snippet.dhtmlx.com/cnj0j9g0?tag=combobox)
 
 ## Default locale
 
-The default locale for Combobox looks like this:
+Combobox uses the following default locale:
 
 ~~~js
 const en = {
@@ -27,9 +27,9 @@ const en = {
 
 ## Custom locale
 
-To use a different locale, your need to:
+Follow these steps to use a different locale:
 
-- define necessary language settings - names of buttons and labels:
+- Define the language settings—button and label names:
 
 ~~~js
 const de = {
@@ -42,10 +42,10 @@ const de = {
 };
 ~~~
 
-- apply the language settings by calling the **dhx.i18n.setLocale()** method before Combobox initialization:
+- Call the `dhx.i18n.setLocale()` method before Combobox initialization to apply the settings:
 
 ~~~js
-dhx.i18n.setLocale("combo_container", de);
+dhx.i18n.setLocale("combobox", de);
 const combo = new dhx.Combobox("combo_container");
 ~~~
 
