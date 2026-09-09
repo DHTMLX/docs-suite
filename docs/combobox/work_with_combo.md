@@ -8,9 +8,9 @@ description: You can explore how to work with Combo Box in the documentation of 
 
 ## Setting/getting value(s)
 
-In order to select options in ComboBox, use the [setValue()](combobox/api/combobox_setvalue_method.md) method. It takes one parameter:
+Use the [`setValue()`](combobox/api/combobox_setvalue_method.md) method to select options in Combobox. The method takes one parameter:
 
-- **value** - (*string|number|array*) the **ID(s)** of Combo options from data collection that should be selected in ComboBox
+- `value` — (`string|number|array`) the ids of the Combobox options in the data collection to select
 
 ~~~js
 // select one option
@@ -22,10 +22,9 @@ combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 
 **Related sample**: [Combobox. Set value](https://snippet.dhtmlx.com/xl1p7zcx)
 
-To get the list of selected options, apply the [getValue()](combobox/api/combobox_getvalue_method.md) method. It returns IDs of selected options either as string(s) (by default) or as an array of strings. 
-In the latter case you need to pass the following parameter:
+Apply the [`getValue()`](combobox/api/combobox_getvalue_method.md) method to get the list of selected options. The method returns ids of selected options, and the default return type is a string. To get an array of strings, pass the following parameter:
 
-- **asArray**  - (*boolean*) true, to return ids as an array of strings
+- `asArray` — (`boolean`) `true`, to return ids as an array of strings
 
 ~~~js
 const id = combo.getValue();
@@ -44,7 +43,7 @@ const array_ids = combo.getValue(true);
 
 ## Disabling/enabling ComboBox
 
-To disable/enable ComboBox, make use of the [disable()](combobox/api/combobox_disable_method.md)/[enable()](combobox/api/combobox_enable_method.md) methods:
+Use [`disable()`](combobox/api/combobox_disable_method.md) and [`enable()`](combobox/api/combobox_enable_method.md) methods to disable and enable Combobox:
 
 ~~~js
 // disabling a combo box
@@ -57,7 +56,7 @@ combo.enable();
 
 ## Checking if a combobox is disabled
 
-To check if a combobox is disabled, call the [isDisabled()](combobox/api/combobox_isdisabled_method.md) method:
+Call the [`isDisabled()`](combobox/api/combobox_isdisabled_method.md) method to check whether Combobox is disabled:
 
 ~~~js
 combo.isDisabled(); // -> true/false
@@ -67,7 +66,7 @@ combo.isDisabled(); // -> true/false
 
 ## Repainting ComboBox
 
-You can repaint ComboBox on a page, e.g. after changing its configuration, using the [`paint()`](combobox/api/combobox_paint_method.md) method:
+You can repaint Combobox on a page with the [`paint()`](combobox/api/combobox_paint_method.md) method, for example after you change its configuration:
 
 ~~~js
 // disabling ComboBox via the configuration object
@@ -78,7 +77,7 @@ combo.paint();
 
 ## Clearing input
 
-It is possible to clear the ComboBox input from the selected value(s) with the help of the [`clear()`](combobox/api/combobox_clear_method.md) method:
+The [`clear()`](combobox/api/combobox_clear_method.md) method clears the selected values from the Combobox input:
 
 ~~~js
 combo.clear();
@@ -88,13 +87,13 @@ combo.clear();
 
 ## Setting/removing focus
 
-When needed, you can set focus in the ComboBox input without opening the list of options. Use the [`focus()`](combobox/api/combobox_focus_method.md) method for this purpose:
+You can set focus in the Combobox input without opening the list of options. Use the [`focus()`](combobox/api/combobox_focus_method.md) method:
 
 ~~~js
 combo.focus();
 ~~~
 
-To remove focus from Combobox, apply the [`blur()`](combobox/api/combobox_blur_method.md) method:
+Apply the [`blur()`](combobox/api/combobox_blur_method.md) method to remove focus from Combobox:
 
 ~~~js
 combo.blur();
@@ -104,15 +103,15 @@ combo.blur();
 
 ## Hiding/showing the popup
 
-You can manipulate the visibility of the Combo popup with the help of the [Popup](popup/api/api_overview.md) API.
+You can show and hide the Combobox popup with the [Popup](popup/api/api_overview.md) API.
 
-To hide/show the popup, use the corresponding methods:
+Use the following methods to hide and show the popup:
 
 <table>
     <tbody>
         <tr>
             <td><b>show()</b></td>
-            <td>shows a popup in a Combo. Takes two parameters:<ul><li><i>container</i> - (HTMLElement) mandatory, the container to place a popup in</li><li><i>config</i> - (object)    optional, the configuration object of a popup</li></ul></td>
+            <td>shows a popup in Combobox. Takes two parameters:<ul><li><i>container</i> - (HTMLElement) mandatory, the container to place a popup in</li><li><i>config</i> - (object) optional, the configuration object of a popup</li></ul></td>
         </tr>
         <tr>
             <td><b>hide()</b></td>
@@ -132,21 +131,21 @@ combo.popup.hide();
 
 **Related sample**: [Combobox. Show / hide options list](https://snippet.dhtmlx.com/ztc4sko8)
 
-To control the process of showing/hiding the popup, apply the related events:
+Handle the following events to control when the popup opens and closes:
 
 <table>
     <tbody>
         <tr>
             <td><b>beforeShow</b></td>
-            <td>fires before a popup is shown. The handler function takes one parameter:<ul><li><i>container</i> - (HTMLElement) a container a popup is placed into</li></ul>Return <i>false</i> to prevent showing of a popup</td>
+            <td>fires before a popup is shown. The handler function takes one parameter:<ul><li><i>container</i> - (HTMLElement) the container the popup is placed in</li></ul>Return <i>false</i> to prevent the popup from opening</td>
         </tr>
         <tr>
             <td><b>afterShow</b></td>
-            <td>fires after a popup is shown. The handler function takes one parameter:<ul><li><i>container</i> - (HTMLElement) a container a popup is placed into</li></ul></td>
+            <td>fires after a popup is shown. The handler function takes one parameter:<ul><li><i>container</i> - (HTMLElement) the container the popup is placed in</li></ul></td>
         </tr>
         <tr>
             <td><b>beforeHide</b></td>
-            <td>fires before a popup is hidden. The handler function takes two parameters:<ul><li><i>fromOuterClick</i> - (boolean) true, for a click outside a popup, otherwise - false</li><li><i>e</i> - (Event) the native mouse event</li></ul>Return <i>false</i> to prevent hiding of a popup</td>
+            <td>fires before a popup is hidden. The handler function takes two parameters:<ul><li><i>fromOuterClick</i> - (boolean) true, for a click outside a popup, otherwise - false</li><li><i>e</i> - (Event) the native mouse event</li></ul>Return <i>false</i> to prevent the popup from closing</td>
         </tr>
         <tr>
             <td><b>afterHide</b></td>
@@ -180,11 +179,11 @@ combo.popup.events.on("AfterHide", function(e){
 
 ## Using Data Collection API
 
-You can manipulate ComboBox options with the help of the [Data Collection API](/data_collection/).
+You can manage Combobox options with the [Data Collection API](/data_collection/).
 
 ### Adding options into ComboBox
 
-It is possible to add more options into the initialized ComboBox on the fly. Use the `add()` method of Data Collection. It takes two parameters:
+You can add more options to an initialized Combobox on the fly. Use the `add()` method of Data Collection. The method takes two parameters:
 
 <table>
     <tbody>
@@ -199,7 +198,7 @@ It is possible to add more options into the initialized ComboBox on the fly. Use
     </tbody>
 </table>
 
-For instance:
+For example:
 
 ~~~js
 combobox.data.add({value:"Russia"},1);
@@ -208,12 +207,12 @@ combobox.data.add({value:"Russia"},1);
 **Related sample**: [Combobox. Add data and remove item](https://snippet.dhtmlx.com/o7vd331z)
 
 :::info
-From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method which you can also use for adding new options into the data collection.
+From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method that you can also use to add new options to the data collection.
 :::
 
 ### Updating ComboBox options
 
-You can change config options of the option via the `update()` method of Data Collection. It takes two parameters:
+You can change option settings with the `update()` method of Data Collection. The method takes two parameters:
 
 <table>
     <tbody>
@@ -223,7 +222,7 @@ You can change config options of the option via the `update()` method of Data Co
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>an object with new configuration of the option</td>
+            <td>an object with the new option configuration</td>
         </tr>
     </tbody>
 </table>
@@ -240,12 +239,12 @@ combo.data.update("option_id",{
 
 ### Removing options from ComboBox
 
-To remove an option, make use of the `remove()` method of Data Collection. Pass the id of the option that should be removed to the method:
+Use the `remove()` method of Data Collection to remove an option. Pass the option id to the method:
 
 ~~~js
 combo.data.remove("option_id");
 ~~~
 
 :::note
-Check the full list of [Data collection API](/data_collection/)
+Check the full [Data Collection API](/data_collection/) reference.
 :::
