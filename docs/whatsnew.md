@@ -8,6 +8,33 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.4
+
+Released on September , 2026
+
+### New functionality
+
+- Grid. The ability to [set an individual height for each row of the header/footer](grid/configuration.md#headerfooter-height), including the *"auto"* value that adjusts a row to its content (PRO version)
+    - updated Grid configuration properties: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md), [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+- Grid. The ability to [define the options of a header/footer filter manually](grid/configuration.md#custom-options-of-headerfooter-filters) instead of building them from the column data
+    - new property of the `filterConfig` object of **selectFilter** and **comboFilter**: `options`
+- DataCollection/TreeCollection. The ability to get the position of an item among the visible ones
+    - new methods: [`getVisibleIndex()`](data_collection/api/datacollection_getvisibleindex_method.md) (DataCollection), [`getVisibleIndex()`](tree_collection/api/treecollection_getvisibleindex_method.md) (TreeCollection)
+
+### Updates
+
+- DataCollection. The [`changeId()`](data_collection/api/datacollection_changeid_method.md) method returns the new id of the item
+- Grid. The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties are ignored when `headerRowHeight`/`footerRowHeight` is set as an array
+
+### Fixes
+
+### New samples
+
+#### Grid
+
+- [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
+- [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
+
 ## Version 9.3.10
 
 Released on August 19, 2026
