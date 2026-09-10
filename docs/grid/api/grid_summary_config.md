@@ -82,6 +82,8 @@ console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 
 
 @descr:
 
+In a grid with [grouped data](grid/usage.md#grouping-data), the summaries are calculated over the data rows only: the group header rows and the group summary rows aren't counted as data.
+
 When a grid has no rows, the built-in functors are called with an empty set of rows: the "sum" and "count" functors give *0*, while "avg", "min" and "max" give *null*, which is rendered as an empty value. Check the details in the [Data calculation functions](helpers/data_calculation_functions.md#aggregating-an-empty-set-of-items) guide.
 
 **Related article:** [Custom statistics in the column header/footer and spans](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans)

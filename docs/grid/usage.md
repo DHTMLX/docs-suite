@@ -1196,6 +1196,8 @@ A header row also provides the `$by` property with the name of the field that th
 
 Every field listed in the `map` object of a grouping level is recomputed over the rows that are left, both on the header row and on the group summary row set by the `summary` property.
 
+The [summaries](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans) of a column and of the grid are calculated over the data rows only as well, so the group header rows and the group summary rows don't affect the totals.
+
 In the snippet below the [`counter`](#configuring-data-grouping) function renders the current number of rows of a group against the initial one, while the `map` object puts the recalculated total of the group into the "price" cell of the header row and of the summary row:
 
 ~~~jsx {8-12,14-15}
