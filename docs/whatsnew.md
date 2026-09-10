@@ -14,12 +14,24 @@ Released on September , 2026
 
 ### New functionality
 
-- Grid. The ability to [set an individual height for each row of the header/footer](grid/configuration.md#headerfooter-height), including the *"auto"* value that adjusts a row to its content (PRO version)
-    - updated Grid configuration properties: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md), [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
-- Grid. The ability to [define the options of a header/footer filter manually](grid/configuration.md#custom-options-of-headerfooter-filters) instead of building them from the column data
+#### DataCollection/TreeCollection
+
+- The ability to get the position of an item among the visible ones
+    - new DataCollection method: [`getVisibleIndex()`](data_collection/api/datacollection_getvisibleindex_method.md) 
+    - new TreeCollection method: [`getVisibleIndex()`](tree_collection/api/treecollection_getvisibleindex_method.md) 
+
+#### Grid
+
+- The ability to [set an individual height for each row of the header/footer](grid/configuration.md#headerfooter-height), including the *"auto"* value that adjusts a row to its content (PRO version)
+    - updated Grid configuration property: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)
+    - updated Grid configuration property: [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+- [Group counters](grid/usage.md#group-counters-and-aggregates) with the possibility to define the text rendered next to the group name and to keep the groups that are left with no rows after filtering (PRO version)
+    - new property of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `counter`
+    - new property of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `showEmptyGroups`
+    - new property of the configuration object of the DataCollection [`group()`](data_collection/api/datacollection_group_method.md) method: `showEmptyGroups`
+    - service properties of a group header row: `$count`, `$totalCount`, `$by`
+- The ability to [define the options of a header/footer filter manually](grid/configuration.md#custom-options-of-headerfooter-filters) instead of building them from the column data
     - new property of the `filterConfig` object of **selectFilter** and **comboFilter**: `options`
-- DataCollection/TreeCollection. The ability to get the position of an item among the visible ones
-    - new methods: [`getVisibleIndex()`](data_collection/api/datacollection_getvisibleindex_method.md) (DataCollection), [`getVisibleIndex()`](tree_collection/api/treecollection_getvisibleindex_method.md) (TreeCollection)
 
 ### Updates
 
@@ -28,12 +40,25 @@ Released on September , 2026
 
 ### Fixes
 
+- DataCollection. Fixed removing a group row leaving its items behind and the counters of the groups above it short
+- DataCollection/TreeCollection. Fixed the `avg`, `min` and `max` methods of the [`dhx.methods`](helpers/data_calculation_functions.md#aggregating-an-empty-set-of-items) helper returning `NaN`, `Infinity` and `-Infinity` for an empty set of items instead of `null`
+- DataCollection/TreeCollection. Fixed the counter and the aggregated values of a group staying at the values they had when the grouping was applied. They now follow filtering, adding, removing and updating of items, on every level of a nested grouping
+- DataCollection/TreeCollection. Fixed the group summary rows (`summary: "top"` / `summary: "bottom"`) keeping the aggregates they had before filtering
+- DataCollection/TreeCollection. Fixed filtering breaking the group structure: a rule that did not match a group row dropped that row and its summary row, leaving the items of the group without a header
+- DataCollection/TreeCollection. Fixed a group staying in the collection with a non-zero counter after all its items were filtered out
+- DataCollection/TreeCollection. Fixed the group counters not returning to their original values after `resetFilter()`
+- DataCollection/TreeCollection. Fixed a group staying in the collection after all its items were removed
+- Grid. Fixed the summaries counting the group rows and the group summary rows as data, which doubled the column and common totals in a grouped grid
+- Grid. Fixed the group counters not being recalculated together with the tree structure of the grid
+- TreeCollection. Fixed filtering in an ungrouped tree: it skipped the items which carried a `$group` field
+
 ### New samples
 
 #### Grid
 
 - [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
 - [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
+- [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
 
 ## Version 9.3.10
 
