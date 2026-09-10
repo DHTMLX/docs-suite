@@ -6,16 +6,18 @@ description: You can learn about TypeScript support in the documentation of the 
 
 # TypeScript support
 
-The dhtmlxSuite library of version 6.5 and higher lets you work with DHTMLX components faster and more effectively by using TypeScript definitions.
+From v6.5, the DHTMLX Suite library includes TypeScript definitions that let you work with DHTMLX components faster and more effectively.
 
 ![Snippet Tool editor showing TypeScript autocompletion for a Colorpicker in DHTMLX Suite](/img/guides/typescript1.png)
 
-The library provides a built-in support of Typescript that should work out of the box.
+TypeScript support is built in and requires no extra setup.
 
-{{note You can try out the functionality directly in our <a href="https://snippet.dhtmlx.com/basic"  target="_blank">Snippet Tool</a>.}}
+:::info
+You can try out the functionality directly in the [Snippet Tool](https://snippet.dhtmlx.com/basic).
+:::
 
-### Benefits of using TypeScript 
+## Benefits of using TypeScript
 
-The main advantage of TypeScript is that the app development becomes much easier, safety, and productive. Checking the types together with autocompletion will help you to avoid common mistakes and, therefore, to write a more stable code.  
+The main advantage of TypeScript is that app development becomes much easier, safer, and more productive. Type checking and autocompletion help you avoid common mistakes and write more stable code.
 
-Moreover, using TypeScript is a good practice as all modern IDE will provide suggestions and type checking for your code created with DHTMLX.
+Using TypeScript is also a good practice: all modern IDEs offer suggestions and type checking for the DHTMLX code you write.
