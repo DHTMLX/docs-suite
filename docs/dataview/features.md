@@ -6,11 +6,11 @@ description: You can explore the features of DataView in the documentation of th
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX DataView and go into deep dive on its functionality.
+This page helps you start working with DHTMLX DataView and explore its functionality in depth.
 
 ## How to start with DHTMLX DataView
 
-In this section you can find out how to initialize DataView, how to load data into the component and how to integrate DataView into your applications.
+In this section you will learn how to initialize DataView, load data into it, and integrate it into your applications.
 
 ### Initialization
 
@@ -24,9 +24,9 @@ In this section you can find out how to initialize DataView, how to load data in
 
 | Topic                                                                              | Description                                                     |
 | ---------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [Loading data into DataView](dataview/data_loading.md)                                     | Read how to load the initial data into DataView                 |
+| [Loading data into DataView](dataview/data_loading.md)                                     | Learn how to load the initial data into DataView                 |
 | [Initialization with config.data](https://snippet.dhtmlx.com/s547z4xr)             | The example shows how to load data into DataView on the fly     |
-| [Initialization with data.load()](https://snippet.dhtmlx.com/7rjmp5ol)             | The example shows how to load data from external file           |
+| [Initialization with data.load()](https://snippet.dhtmlx.com/7rjmp5ol)             | The example shows how to load data from an external file           |
 | [Initialization with data.parse()](https://snippet.dhtmlx.com/shhsmgrq)            | The example shows how to load data from a local data source     |
 | [Initialization with external DataCollection](https://snippet.dhtmlx.com/t632x22i) | The example shows how to load data from external DataCollection |
 
@@ -34,8 +34,8 @@ In this section you can find out how to initialize DataView, how to load data in
 
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework to build DHTMLX-based apps <br>(the recommended framework for apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX DataView with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX DataView with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                         |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX DataView with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                              |
@@ -43,7 +43,7 @@ In this section you can find out how to initialize DataView, how to load data in
 
 ## How to configure DataView
 
-In this section you will know how to configure the drag-n-drop functionality, how to activate the ability to use key navigation, and more.
+In this section you will learn how to configure drag-n-drop, enable key navigation, and more.
 
 | Topic                                                                              | Description                                                                                                                            |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,47 +51,47 @@ In this section you will know how to configure the drag-n-drop functionality, ho
 | [Copying items during drag-n-drop](dataview/configuration.md#copying-dragged-item)         | Learn how to copy an item to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/h89c3gl3))                              |
 | [Enabling/disabling key navigation](dataview/configuration.md#arrow-keys-navigation)       | Learn how to enable/disable key navigation ([Example](https://snippet.dhtmlx.com/u7mgoly9))                                            |
 | [Activating inline editing](dataview/configuration.md#editing-items)                       | Learn how to enable inline editing on DataView initialization ([Example](https://snippet.dhtmlx.com/m8fbqcza))                         |
-| [Configuring amount of items in a row](dataview/configuration.md#number-of-items-in-a-row) | Learn how to define the number of items that should be displayed in a row of DataView ([Example](https://snippet.dhtmlx.com/de4r8km3)) |
+| [Configuring amount of items in a row](dataview/configuration.md#number-of-items-in-a-row) | Learn how to define the number of items in a DataView row ([Example](https://snippet.dhtmlx.com/de4r8km3)) |
 
 ## How to customize DataView and change its size
 
-In this section you can learn how to configure the height and style of DataView and its items.
+In this section you will learn how to configure the height and style of DataView and its items.
 
 | Topic                                                                                      | Description                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Height of DataView](dataview/configuration.md#height-of-the-dataview)                             | Learn how to set the height for DataView ([Example](https://snippet.dhtmlx.com/g1k2l4q0))                                                                                                                                                                                                                                        |
-| [Height of an item](dataview/configuration.md#height-of-an-item)                                   | Learn how to set the height for DataView items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
-| [Setting template for rendering items](dataview/configuration.md#template-for-dataview-items)      | Learn how [to define a template](dataview/configuration.md#template-for-dataview-items) for rendering items in a dataview ([Example](https://snippet.dhtmlx.com/d6l6grr7)) and add [event handlers](dataview/configuration.md#event-handlers-for-the-template) to HTML elements of the template ([Example](https://snippet.dhtmlx.com/26873eql)) |
+| [Height of DataView](dataview/configuration.md#height-of-the-dataview)                             | Learn how to set the height of a DataView ([Example](https://snippet.dhtmlx.com/g1k2l4q0))                                                                                                                                                                                                                                        |
+| [Height of an item](dataview/configuration.md#height-of-an-item)                                   | Learn how to set the height of DataView items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
+| [Setting template for rendering items](dataview/configuration.md#template-for-dataview-items)      | Learn how to [define a template](dataview/configuration.md#template-for-dataview-items) for items in a DataView ([Example](https://snippet.dhtmlx.com/d6l6grr7)) and add [event handlers](dataview/configuration.md#event-handlers-for-the-template) to the HTML elements in it ([Example](https://snippet.dhtmlx.com/26873eql)) |
 | [Setting margins for items](dataview/configuration.md#margins-around-dataview-items)               | Learn how to set margins around DataView items ([Example](https://snippet.dhtmlx.com/ozsuww1q))                                                                                                                                                                                                                                  |
 | [Styling DataView items](dataview/customization.md#custom-styling-of-items)                        | Learn how to customize DataView items ([Example](https://snippet.dhtmlx.com/kpnzizbf))                                                                                                                                                                                                                                           |
 | [Styling selected DataView items](dataview/customization.md#custom-styling-of-selection-and-focus) | Learn how to add custom style to the selected items ([Example](https://snippet.dhtmlx.com/n98tzmzp))                                                                                                                                                                                                                             |
 | [Styling DataView](dataview/customization.md#custom-styling-of-widget)                             | Learn how to customize DataView ([Example](https://snippet.dhtmlx.com/j1yv94o8))                                                                                                                                                                                                                                                 |
-| [CSS template A](https://snippet.dhtmlx.com/dataview_template_a)                           | The example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
-| [CSS template B](https://snippet.dhtmlx.com/dataview_template_b)                           | The example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
-| [CSS template C](https://snippet.dhtmlx.com/dataview_template_c)                           | The example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
-| [CSS template D](https://snippet.dhtmlx.com/dataview_template_d)                           | The example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
-| [CSS template E](https://snippet.dhtmlx.com/dataview_template_e)                           | The example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
-| [List of CSS classes](helpers/base_elements.md)                                        | A set of CSS classes provided by the DHTMLX library                                                                                                                                                                                                                                                                              |
+| [CSS template A](https://snippet.dhtmlx.com/dataview_template_a)                           | An example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
+| [CSS template B](https://snippet.dhtmlx.com/dataview_template_b)                           | An example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
+| [CSS template C](https://snippet.dhtmlx.com/dataview_template_c)                           | An example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
+| [CSS template D](https://snippet.dhtmlx.com/dataview_template_d)                           | An example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
+| [CSS template E](https://snippet.dhtmlx.com/dataview_template_e)                           | An example of a CSS template for DHTMLX DataView                                                                                                                                                                                                                                                                                |
+| [List of CSS classes](helpers/base_elements.md)                                        | The CSS classes included in the DHTMLX library                                                                                                                                                                                                                                                                              |
 
 ## How to work with data in DataView
 
-This section will tell you how to use [DataCollection API](guides/datacollection_guide.md) for working with data of DataView, i.e. edit, add, remove, sort data, etc.
+In this section you will learn how to use the [DataCollection API](guides/datacollection_guide.md) to work with DataView data — edit, add, remove, and sort it.
 
 ### How to edit, add, remove data
 
-In this section you may study how to add new data items into DataView, how to edit, update, or remove the items.
+In this section you will learn how to add new data items to DataView and how to edit, update, or remove them.
 
 | Topic                                                                  | Description                                                                                       |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [Editing item's data](dataview/manipulating_data.md#editing-items)             | Learn how to edit an item by its id ([Example](https://snippet.dhtmlx.com/i09isp2d))              |
-| [Adding an item](dataview/manipulating_data.md#adding-items-into-dataview)     | Learn how to add a new item into data collection ([Example](https://snippet.dhtmlx.com/k4sbj47b)) |
-| [Updating an item](dataview/manipulating_data.md#updating-dataview-items)      | Learn how to update data of an item ([Example](https://snippet.dhtmlx.com/we9vm6iz))          |
-| [Removing an item](dataview/manipulating_data.md#removing-items-from-dataview) | Learn how to remove an item from data collection ([Example](https://snippet.dhtmlx.com/i5cjuj2y)) |
-| [DataCollection API](/data_collection/)                                       | Check the list of all available DataCollection API|
+| [Editing item data](dataview/manipulating_data.md#editing-items)             | Learn how to edit an item by its id ([Example](https://snippet.dhtmlx.com/i09isp2d))              |
+| [Adding an item](dataview/manipulating_data.md#adding-items-into-dataview)     | Learn how to add a new item to the data collection ([Example](https://snippet.dhtmlx.com/k4sbj47b)) |
+| [Updating an item](dataview/manipulating_data.md#updating-dataview-items)      | Learn how to update item data ([Example](https://snippet.dhtmlx.com/we9vm6iz))          |
+| [Removing an item](dataview/manipulating_data.md#removing-items-from-dataview) | Learn how to remove an item from the data collection ([Example](https://snippet.dhtmlx.com/i5cjuj2y)) |
+| [DataCollection API](/data_collection/)                                       | Check the full DataCollection API reference |
 
 ### How to sort and filter data
 
-In this section you may study how to sort and filter data.
+In this section you will learn how to sort and filter data.
 
 | Topic                                                            | Description                                                                         |
 | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
@@ -101,56 +101,56 @@ In this section you may study how to sort and filter data.
 
 ## How to work with selection
 
-In this section you may study how to work with selection functionality.
+In this section you will learn how to work with selection.
 
 | Topic                                                                                  | Description                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Enabling/disabling selection](dataview/configuration.md#selection-of-items)                   | Learn how to enable/disable selection on DataView initialization                                                                                                                                                       |
 | [Enabling/disabling multiselection](dataview/configuration.md#multiple-selection-of-items)     | Learn how to enable/disable selection of multiple items ([Example](https://snippet.dhtmlx.com/g0xwdx10))                                                                                                               |
-| [Enabling/disabling selection](dataview/usage_selection.md#enablingdisabling-selection-object) | Learn how to enable/disable the ability to select items via the selection object ([Example](https://snippet.dhtmlx.com/kn42gb50))                                                                                      |
+| [Enabling/disabling the selection object](dataview/usage_selection.md#enablingdisabling-selection-object) | Learn how to enable or disable item selection through the selection object ([Example](https://snippet.dhtmlx.com/kn42gb50))                                                                                      |
 | [Setting selection](dataview/usage_selection.md#selecting-an-item)                             | Learn how to select a particular item or all items ([Example](https://snippet.dhtmlx.com/8li8wi20))                                                                                                                    |
-| Getting selection                                                                      | Learn how to get the [id](dataview/usage_selection.md#getting-id-of-a-selected-item) or an [object](dataview/usage_selection.md#getting-object-of-a-selected-item) of a selected item ([Example](https://snippet.dhtmlx.com/uop0vy8u)) |
-| [Removing selection](dataview/usage_selection.md#unselecting-an-item)                          | Learn how to remove selection from a selected item(s)                                                                                                                                                                  |
+| Getting selection                                                                      | Learn how to get the [id](dataview/usage_selection.md#getting-id-of-a-selected-item) or the [object](dataview/usage_selection.md#getting-object-of-a-selected-item) of a selected item ([Example](https://snippet.dhtmlx.com/uop0vy8u)) |
+| [Removing selection](dataview/usage_selection.md#unselecting-an-item)                          | Learn how to remove selection from selected items                                                                                                                                                                  |
 
 ## How to work with item in focus
 
-In this section you will learn how to set focus on an item and get the id/object of an item in focus.
+In this section you will learn how to set focus on an item and get the id or the object of an item in focus.
 
 | Topic                                                                | Description                                                                                                                          |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | [Setting focus on item](dataview/manipulating_data.md#setting-focus-on-item) | Learn how to set focus on an item ([Example](https://snippet.dhtmlx.com/4l38pct7))                                                   |
-| Getting an item in focus                                             | Learn how to get the [id](dataview/api/dataview_getfocus_method.md) or an [object](dataview/api/dataview_getfocusitem_method.md) of an item in focus |
+| Getting an item in focus                                             | Learn how to get the [id](dataview/api/dataview_getfocus_method.md) or the [object](dataview/api/dataview_getfocusitem_method.md) of an item in focus |
 
 ## How to work with DataView events
 
-This section explains how to work with DataView events.
+In this section you will learn how to work with DataView events.
 
 | Topic                                       | Description                                                                                               |
 | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
-| [Event handling](dataview/events.md)       | Learn how to attach, detach, or call the DataView events ([Example](https://snippet.dhtmlx.com/2d74uyoh)) |
+| [Event basic rules](guides/events_guide.md) | Learn the basic rules of event handling                                                              |
+| [Event handling](dataview/events.md)       | Learn how to attach, detach, or call DataView events ([Example](https://snippet.dhtmlx.com/2d74uyoh)) |
 
 ## API reference
 
-In this section you can find out corresponding references of DataView API.
+In this section you will find the DataView API reference.
 
 | Topic                                                      | Description                                                |
 | ---------------------------------------------------------- | ---------------------------------------------------------- |
 | [DataView methods](/category/dataview-methods/)       | Check the list of DataView methods                         |
 | [DataView events](/category/dataview-events/)         | Check the list of DataView events                          |
 | [DataView properties](/category/dataview-properties/) | Check the list of DataView properties                      |
-| [DataCollection API](/data_collection/)               | Check the API of DataCollection to work with DataView data |
+| [DataCollection API](/data_collection/)               | Check the DataCollection API for working with DataView data |
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with DataView.
+In this section you will learn about common library functionality that is useful when you work with DataView.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to use custom scroll in DataView                    |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run code after the component renders |
 
 ## Any questions left?
 
