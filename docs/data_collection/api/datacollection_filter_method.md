@@ -67,6 +67,8 @@ grid.data.filter({
 
 Unless `config.add` is set, the method replaces the currently applied filters; calling it without a rule at all drops all non-permanent filters and restores the unfiltered order. Permanent filters are the exception: they always survive and are reapplied first. The new rule then narrows their result further, so an item remains in the result only if it matches both the permanent filter and the new rule.
 
+When data is [grouped](data_collection/api/datacollection_group_method.md), the rule is matched against the data items only. Group headers and summary rows aren't checked against the rule, so a filtering function isn't called with a `$group` or a `$groupSummary` item. A group is kept or dropped by what is left inside it, and its [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) are recalculated.
+
 **Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
 
 

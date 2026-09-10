@@ -33,6 +33,8 @@ interface IGroup {
     panelHeight: number; // 40 by default
     hideableColumns?: boolean; // true by default
     showMissed?: boolean | string; // true by default
+    showEmptyGroups?: boolean; // false by default
+    counter?: boolean | ((row: IRow) => string); // true by default
     fields?: { [colId: string]: IGroupOrder };
     order?: IGroupOrderItem[];
     column?: string | ICol;
@@ -60,6 +62,13 @@ You can find the detailed description of the `group` object properties with exam
     - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
     - if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
     - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
+- `showEmptyGroups` - (optional) specifies whether a group that is left with no rows after filtering stays in the grid, *false* by default
+    - if set to *false*, such a group is removed from the view together with its summary row and its nested groups, and is restored by [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md)
+    - if set to *true*, such a group remains visible with the `$count: 0` value and emptied aggregates: the "sum" and "count" aggregations give *0*, while "avg", "min" and "max" give *null*, as described in the [Data calculation functions](helpers/data_calculation_functions.md#aggregating-an-empty-set-of-items) guide
+- `counter` - (optional) defines the text rendered next to the group name in the column with grouped data, *true* by default
+    - if set to *true*, the current number of rows of the group is rendered in brackets, e.g. *(2)*
+    - if set to *false*, only the group name is rendered
+    - if set to a *function*, it takes the group header row as a parameter and returns the string to render. The returned value is inserted as HTML, so it may contain markup; an empty string renders no counter. The row gives access to the `$count`, `$totalCount` and `$by` service properties and to every aggregated field of the `map` object of the level
 - `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation rules and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
     - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
         - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the [`dhx.methods`](helpers/data_calculation_functions.md) helper
@@ -93,5 +102,7 @@ const grid = new dhx.Grid("grid_container", {
 
 
 **Related article**: [Grouping data](grid/usage.md#grouping-data)
+
+**Related sample**: [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
 
 @changelog: added in v9.0

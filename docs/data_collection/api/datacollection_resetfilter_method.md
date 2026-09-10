@@ -36,6 +36,8 @@ component.data.resetFilter({ id: "filter_id" });
 
 @descr:    
 
+When data is [grouped](data_collection/api/datacollection_group_method.md), the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups are recalculated over the restored data, and the groups that were left with no items by the filter are brought back.
+
 **Related sample**: 
 - [Data. ResetFilter](https://snippet.dhtmlx.com/jg8wxfvc)
 - [Grid. ResetFilter](https://snippet.dhtmlx.com/15trblk2)

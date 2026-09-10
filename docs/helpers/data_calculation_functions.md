@@ -11,12 +11,38 @@ The following functors are available:
 - `min` - calculates the minimal value in the data
 - `sum` - calculates the sum of data values
 
+Each functor takes a set of items and the name of the field to calculate. The `sum` and `count` functors always return a number, while `avg`, `min` and `max` return *null* when there is nothing to calculate:
+
+~~~ts
+const methods: {
+    sum: (items: IDataItem[], field: string) => number;
+    count: (items: IDataItem[], field: string) => number;
+    avg: (items: IDataItem[], field: string) => number | null;
+    min: (items: IDataItem[], field: string) => number | null;
+    max: (items: IDataItem[], field: string) => number | null;
+};
+~~~
+
 For example, this is how the `sum` functor is called:
 
 ~~~jsx
 const rows = [{ value: 10 }, { value: 20 }, { value: 30 }];
 const sum = dhx.methods.sum(rows, "value"); // 60
 ~~~
+
+### Aggregating an empty set of items
+
+Called with an empty set of items, or with a field that none of the items has, `sum` and `count` return *0*, while `avg`, `min` and `max` return *null*:
+
+~~~jsx
+dhx.methods.sum([], "value"); // 0
+dhx.methods.count([], "value"); // 0
+dhx.methods.avg([], "value"); // null
+dhx.methods.min([], "value"); // null
+dhx.methods.max([], "value"); // null
+~~~
+
+A *null* value is rendered as an empty cell, so an `avg`, `min` or `max` cell with nothing to calculate stays empty. This is what the footer of a grid that has no rows shows, as well as the aggregates of a group that is kept in a grid by the [`showEmptyGroups`](grid/api/grid_group_config.md) property.
 
 ### Defining a custom functor
 
