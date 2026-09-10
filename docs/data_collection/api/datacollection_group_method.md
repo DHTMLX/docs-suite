@@ -173,7 +173,7 @@ wip.$count; // 2
 
 The aggregates of the header row and of the summary row are recomputed together, so the summary row of a group always matches its header.
 
-Filtering is applied to the data items only: a group is kept or dropped by what is left inside it, and a group all the items of which are filtered out is removed from the collection together with its summary row and its nested groups. Such a group is skipped by [`map()`](data_collection/api/datacollection_map_method.md) and isn't included into [`getLength()`](data_collection/api/datacollection_getlength_method.md) unless the `showEmptyGroups: true` config is passed to the method, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back either way.
+Filtering is applied to the data items only: a group is kept or dropped by what is left inside it, and a group is removed from the collection together with its summary row and its nested groups when all its items are filtered out. Such a group is skipped by [`map()`](data_collection/api/datacollection_map_method.md) and isn't included into [`getLength()`](data_collection/api/datacollection_getlength_method.md) unless the `showEmptyGroups: true` config is passed to the method, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back either way.
 
 A group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) has no filter to be restored from, so it leaves the collection for good, its summary row included, and [`getItem()`](data_collection/api/datacollection_getitem_method.md) called with the id of its header returns *undefined*.
 

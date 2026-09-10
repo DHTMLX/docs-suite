@@ -885,7 +885,7 @@ const grid = new dhx.Grid("grid_container", {
         { id: "price", header: [{ text: "Price" }] }
     ],
     group: {
-        order: [{ by: "status", map: { total: ["price", "sum"] } }],
+        order: [{ by: "status", map: { price: ["price", "sum"] } }],
         // the groups that lose all their rows after filtering
         // stay in the grid with the zero count and the zero total
         showEmptyGroups: true
@@ -1235,7 +1235,7 @@ After the filtering above a group renders the number of rows that passed the fil
 
 A filtering rule (or a filtering function) is matched against the data rows only. Group headers and summary rows aren't checked against the rule, so a custom filtering callback isn't called with a `$group` or a `$groupSummary` row. A group is kept or dropped by what is left inside it.
 
-A group all the rows of which are filtered out is removed from the grid together with its summary row and its nested groups, and comes back when the filter is reset. To keep such a group in the grid, set the [`showEmptyGroups`](grid/api/grid_group_config.md) property of the `group` configuration object to *true*.
+A group is removed from the grid together with its summary row and its nested groups when all its rows are filtered out, and comes back when the filter is reset. To keep such a group in the grid, set the [`showEmptyGroups`](grid/api/grid_group_config.md) property of the `group` configuration object to *true*.
 
 #### Removing a group
 

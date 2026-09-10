@@ -32,7 +32,7 @@ const sum = dhx.methods.sum(rows, "value"); // 60
 
 ### Aggregating an empty set of items
 
-Called with an empty set of items, or with a field that none of the items has, `sum` and `count` return *0*, while `avg`, `min` and `max` return *null*:
+Called with an empty or missing set of items, `sum` and `count` return *0*, while `avg`, `min` and `max` return *null*:
 
 ~~~jsx
 dhx.methods.sum([], "value"); // 0
