@@ -8,6 +8,38 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.11
+
+Released on September 11, 2026
+
+### Updates
+
+- Grid/Message/Popup. Modal Focus Trapping and Management:
+    - Implemented focus trapping for all modal windows, message dialogs, and popups compliant with **WCAG 2.4.3**.
+    - Opening a modal dialog moves keyboard focus to the first actionable element and keeps it within the dialog boundaries until the dialog closes.
+    - Closing a dialog restores focus to the previously active cell or trigger element.
+
+- Grid. Assistive Technology Support for Block Selection:
+    - The Grid exposes the block selection state to screen readers (**WCAG 1.3.1**, **WCAG 4.1.2**).
+    - Selected cell boundaries and multi-cell ranges reflect their `aria-selected` status in the accessibility tree, providing real-time feedback during keyboard and pointer selection.
+
+- Grid. Localization for ARIA Labels:
+    - Moved all hardcoded English accessible names and labels into the locale system.
+    - You can translate screen reader announcements, button descriptions, and status labels via the standard localization configuration.
+
+- Grid. Target Size Improvements for Interactive Controls:
+    - Enlarged hit areas for small interactive elements, including column resize handles and removal/action icons.
+    - Reduced accidental or missed clicks on touch-screen devices, accommodating users with motor precision needs.
+
+For additional information, refer to the [Grid accessibility](grid/accessibility.md) guide.
+
+### Fixes
+
+- Grid. Fixed a console error that occurred when starting a `blockSelection` in numeric columns or number-formatted cell ranges
+- Grid. Fixed broken `aria-labelledby` relationships in sub-rows, eliminating orphaned ID references
+- Grid. Corrected invalid ARIA attributes and roles, and fixed the `aria-rowindex` and `aria-rowcount` calculations so that they reflect the overall grid structure, including header rows
+- Grid. Fixed an issue where inline cell editors lost or failed to expose their accessible names on the first paint and on subsequent data updates
+
 ## Version 9.3.10
 
 Released on August 19, 2026
