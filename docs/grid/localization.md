@@ -23,6 +23,10 @@ const en = {
     aria_filterApplied: "{count} rows match the filter",
     aria_filterCleared: "Filter cleared, {count} rows",
     aria_rowsLoaded: "{count} rows loaded",
+    aria_valueOutOfRange: "Value must be between {min} and {max}",
+    aria_valueBelowMin: "Value must be greater than {min}",
+    aria_valueAboveMax: "Value must be less than {max}",
+    aria_valueClamped: "Value corrected to {value}",
     aria_filter: "Filter {column}",
     aria_filterByDate: "Filter by date: {column}",
     aria_sortBy: "Sort by {column}",
@@ -64,10 +68,12 @@ const grid = new dhx.Grid("grid_container");
 
 ## Announcements
 
-The Grid announces sorting, filtering, and data loading to screen readers. These announcements are part of the UI content, so you translate them through the locale like any other label.
+The Grid announces sorting, filtering, data loading, and editor validation to screen readers. These announcements are part of the UI content, so you translate them through the locale like any other label.
 
-| Key | Default | Used for |
-| --- | ------- | -------- |
+### Sorting, filtering and loading
+
+| Key | Default | Announced when |
+| --- | ------- | -------------- |
 | `aria_sortedAscending` | `Sorted by {column}, ascending` | After sorting |
 | `aria_sortedDescending` | `Sorted by {column}, descending` | After sorting |
 | `aria_filterApplied` | `{count} rows match the filter` | After a header or footer filter runs |
@@ -86,6 +92,32 @@ dhx.i18n.setLocale("grid", {
 });
 
 const grid = new dhx.Grid("grid_container", { columns, data });
+~~~
+
+### Validation messages
+
+| Key | Default | Announced when |
+| --- | ------- | -------------- |
+| `aria_valueOutOfRange` | `Value must be between {min} and {max}` | Both bounds are set |
+| `aria_valueBelowMin` | `Value must be greater than {min}` | Only `min` is set |
+| `aria_valueAboveMax` | `Value must be less than {max}` | Only `max` is set |
+| `aria_valueClamped` | `Value corrected to {value}` | The value was clamped on commit |
+
+The wording follows the bounds the editor actually applies: inclusive when both `min` and `max` are set, exclusive when only one of them is.
+
+~~~jsx
+dhx.i18n.setLocale("grid", {
+    aria_valueOutOfRange: "Wert muss zwischen {min} und {max} liegen",
+    aria_valueBelowMin: "Wert muss größer als {min} sein",
+    aria_valueAboveMax: "Wert muss kleiner als {max} sein",
+    aria_valueClamped: "Wert auf {value} korrigiert",
+});
+
+const grid = new dhx.Grid("grid_container", {
+    editable: true,
+    columns: [{ id: "price", header: [{ text: "Price" }], type: "number", editorConfig: { min: 0, max: 100 } }],
+    data,
+});
 ~~~
 
 ## Accessible names

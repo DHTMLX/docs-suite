@@ -42,7 +42,7 @@ The following table lists the container role and the grid-wide attributes applie
 | -------- | ---------------- | ------- |
 | `.dhx_grid` | `role="grid"` | Standard grid |
 | `.dhx_grid` | `role="treegrid"` | TreeGrid (`type: "tree"`) |
-| `.dhx_grid` | `aria-rowcount` | Total number of data rows |
+| `.dhx_grid` | `aria-rowcount` | Total number of rows, including header rows |
 | `.dhx_grid` | `aria-colcount` | Number of visible columns |
 | `.dhx_grid` | `aria-readonly` | `"true"` when the grid is not editable |
 | `.dhx_grid` | `aria-multiselectable` | `"true"` when multi-selection is enabled |
@@ -54,7 +54,7 @@ The following table lists the roles and the position and state attributes applie
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
 | Data row | `role="row"` | A row of the grid |
-| Data row | `aria-rowindex` | 1-based row position |
+| Data row | `aria-rowindex` | 1-based row position within the whole grid, including header rows |
 | Data cell | `role="gridcell"` | A data cell |
 | Data cell | `aria-colindex` | 1-based column position |
 | Data cell | `aria-readonly` | `"true"` when the cell is not editable |
@@ -196,7 +196,7 @@ Navigation is **span-aware**: movement across merged (colspan/rowspan) header an
 
 ## Assistive technology
 
-What the Grid exposes to assistive technology is driven entirely by the ARIA markup above. Rows and cells carry their position (`aria-rowindex` / `aria-colindex`) against the grid totals (`aria-rowcount` / `aria-colcount`), so position is announced even when rows are virtualized. Selection is exposed through `aria-selected`, editability through `aria-readonly`, sort state through `aria-sort`, and — in tree mode (`type: "tree"`) — hierarchy through `aria-level` and `aria-expanded`.
+What the Grid exposes to assistive technology is driven entirely by the ARIA markup above. Rows and cells carry their position (`aria-rowindex` / `aria-colindex`) against the grid totals (`aria-rowcount` / `aria-colcount`), so position is announced even when rows are virtualized. Selection is exposed through `aria-selected`, editability through `aria-readonly`, sort state through `aria-sort`, and, in TreeGrid mode (`type: "tree"`), hierarchy through `aria-level` and `aria-expanded`.
 
 ## High contrast and focus
 
