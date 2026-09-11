@@ -23,6 +23,22 @@ const en = {
     aria_filterApplied: "{count} rows match the filter",
     aria_filterCleared: "Filter cleared, {count} rows",
     aria_rowsLoaded: "{count} rows loaded",
+    aria_filter: "Filter {column}",
+    aria_filterByDate: "Filter by date: {column}",
+    aria_sortBy: "Sort by {column}",
+    aria_expandGroup: "Expand group",
+    aria_collapseGroup: "Collapse group",
+    aria_expandRow: "Expand row",
+    aria_collapseRow: "Collapse row",
+    aria_editContent: "Edit content",
+    aria_enterGrid: "Enter grid",
+    aria_exitGrid: "Exit grid",
+    aria_dragPanel: "Drag panel",
+    aria_panelHeader: "Panel header",
+    aria_panelFooter: "Panel footer",
+    aria_panelContent: "Panel content",
+    aria_draggableRows: "Draggable rows",
+    aria_rowId: "Row id {id}",
 }
 ~~~
 
@@ -45,7 +61,7 @@ dhx.i18n.setLocale("grid", de);
 const grid = new dhx.Grid("grid_container");
 ~~~
 
-## Accessible strings
+## Announcements
 
 The Grid announces sorting, filtering, and data loading to screen readers. These announcements are part of the UI content, so you translate them through the locale like any other label.
 
@@ -71,4 +87,45 @@ dhx.i18n.setLocale("grid", {
 const grid = new dhx.Grid("grid_container", { columns, data });
 ~~~
 
+## Accessible names
+
+The Grid gives its interactive controls accessible names, which screen readers read out instead of the visual icon. These names come from the locale as well.
+
+| Key | Default | Applied to |
+| --- | ------- | ---------- |
+| `aria_filter` | `Filter {column}` | Header and footer input and select filters |
+| `aria_filterByDate` | `Filter by date: {column}` | Header and footer date filter |
+| `aria_sortBy` | `Sort by {column}` | The sort trigger in a header cell |
+| `aria_expandGroup` | `Expand group` | Expand toggle of a collapsed grouping row |
+| `aria_collapseGroup` | `Collapse group` | Collapse toggle of an expanded grouping row |
+| `aria_expandRow` | `Expand row` | Expand toggle of a tree branch or a sub-row |
+| `aria_collapseRow` | `Collapse row` | Collapse toggle of a tree branch or a sub-row |
+| `aria_editContent` | `Edit content` | Content wrapper of an `htmlEnable` cell |
+| `aria_enterGrid` | `Enter grid` | Focus sentinel before the header |
+| `aria_exitGrid` | `Exit grid` | Focus sentinel after the footer |
+| `aria_dragPanel` | `Drag panel` | The drag panel region |
+| `aria_panelHeader` | `Panel header` | Drag panel header |
+| `aria_panelFooter` | `Panel footer` | Drag panel footer |
+| `aria_panelContent` | `Panel content` | Drag panel content area |
+| `aria_draggableRows` | `Draggable rows` | Drag panel row list |
+| `aria_rowId` | `Row id {id}` | A single drag panel item |
+
+The `{column}` and `{id}` placeholders are substituted when the name is built. Keep them in the translated string.
+
+~~~jsx
+dhx.i18n.setLocale("grid", {
+    aria_filter: "{column} filtern",
+    aria_filterByDate: "Nach Datum filtern: {column}",
+    aria_sortBy: "Nach {column} sortieren",
+    aria_expandGroup: "Gruppe aufklappen",
+    aria_collapseGroup: "Gruppe zuklappen",
+    aria_expandRow: "Zeile aufklappen",
+    aria_collapseRow: "Zeile zuklappen",
+    aria_editContent: "Inhalt bearbeiten",
+    aria_enterGrid: "Tabelle betreten",
+    aria_exitGrid: "Tabelle verlassen",
+});
+
+const grid = new dhx.Grid("grid_container", { columns, data });
+~~~
 For additional information, refer to the [Accessibility](grid/accessibility.md) guide.
