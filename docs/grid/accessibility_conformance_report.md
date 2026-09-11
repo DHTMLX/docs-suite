@@ -18,7 +18,7 @@ This report documents how DHTMLX Grid conforms to the major accessibility standa
 
 ## Notes
 
-- This report evaluates DHTMLX Grid in its **recommended accessibility configuration**: keyboard navigation enabled (`keyNavigation: true`, the default), WAI-ARIA output active (always on - there is no flag to disable it), and an AA-conformant colour scheme selected through `data-dhx-theme="contrast-light"` or `data-dhx-theme="contrast-dark"`. Where a conformance level depends on this configuration, the Remarks say so. See the [Accessibility](grid/accessibility.md) guide for setup instructions.
+- This report evaluates DHTMLX Grid in its **recommended accessibility configuration**: keyboard navigation enabled (`keyNavigation: true`, the default), one of the selection modules enabled (`selection` or `blockSelection`) so that the keyboard has an active cell to move, WAI-ARIA output active (enabled by default), and an AA-conformant colour scheme selected through `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or the equivalent `data-dhx-theme` attribute. Where a conformance level depends on this configuration, the Remarks say so. See the [Accessibility](grid/accessibility.md) guide for setup instructions.
 - DHTMLX Grid is **web content** rendered by a host application. Page-level responsibilities - the page title, `<html lang>`, skip/bypass mechanisms, and site-wide navigation - belong to the host application and are reported as *Not Applicable* with an explanation.
 - In the WCAG tables, only the **Web** response is populated. The *Electronic Docs*, *Software*, *Closed*, and *Authoring Tool* rows are *Not Applicable*: the product is not standalone (non-web) software, closed functionality, an authoring tool, or a piece of electronic documentation.
 
@@ -48,7 +48,8 @@ they are part of WCAG 2.2 and are referenced by EN 301 549.*
 ## WCAG 2.x report
 
 DHTMLX Grid is web content, so only the **Web** response is populated below. "Requires an AA-conformant
-theme" and "requires `keyNavigation`, on by default" are configuration dependencies, not defects.
+theme", "requires `keyNavigation`, on by default" and "requires a selection module (`selection` or
+`blockSelection`)" are configuration dependencies, not defects.
 
 ### Table 1: Success Criteria, Level A
 
@@ -61,9 +62,9 @@ theme" and "requires `keyNavigation`, on by default" are configuration dependenc
 | **1.3.1** Info and Relationships | Supports | The grid uses `grid` → `rowgroup` → `row` → `gridcell`/`columnheader` roles, and `treegrid` in tree mode. Position is exposed with `aria-rowindex`/`aria-colindex` against `aria-rowcount`/`aria-colcount`; editability with `aria-readonly`; multi-selection capability with `aria-multiselectable`; sort state with `aria-sort`; hierarchy with `aria-level` and `aria-expanded`. ARIA output is always on. |
 | **1.3.2** Meaningful Sequence | Supports | DOM and reading order follow the visual order. Rows and columns are virtualized, but `aria-rowindex`/`aria-colindex` carry the absolute position in the dataset rather than the position in the DOM, so sequence is preserved for assistive technology. |
 | **1.3.3** Sensory Characteristics | Supports | No instruction or label relies solely on shape, size, or spatial location; interactive elements carry text or an ARIA name. |
-| **1.4.1** Use of Color | Supports | Colour is never the only signal. Sort direction is carried by an arrow glyph and by `aria-sort`; selection by `aria-selected` alongside the highlight; editability by `aria-readonly`; hierarchy by `aria-level` and `aria-expanded`. |
+| **1.4.1** Use of Color | Supports | Colour is never the only signal. Sort direction is carried by an arrow glyph and by `aria-sort`; selection by `aria-selected` alongside the highlight; editability by `aria-readonly`; hierarchy by `aria-level` and `aria-expanded`. The `contrast-light` and `contrast-dark` themes are additionally colour-blind friendly; verified under protanopia / deuteranopia / tritanopia / achromatopsia emulation. |
 | **1.4.2** Audio Control | Not Applicable | The product produces no auto-playing audio. |
-| **2.1.1** Keyboard | Supports | Keyboard navigation is on by default (`keyNavigation: true`). The body, header and footer are each fully operable: arrow keys, `Home`/`End`, `Ctrl`+`Home`/`End` and `Page Up`/`Page Down` move the selection; `Shift` combinations extend it; `Enter`/`F2`/`Space` open editors and toggle boolean cells; `Escape` cancels; `Enter`/`Space` sort from the header; `Ctrl`+`Enter` and the arrow keys expand and collapse tree branches; `Ctrl`+`Z`/`Ctrl`+`Shift`+`Z` undo and redo. Column sizing and column and row order are also reachable without a pointer (see 2.5.7). |
+| **2.1.1** Keyboard | Supports | Keyboard navigation is on by default (`keyNavigation: true`); moving the selection with the arrow keys additionally requires one of the selection modules (`selection` or `blockSelection`), as described in the Accessibility guide. The body, header and footer are each fully operable: arrow keys, `Home`/`End`, `Ctrl`+`Home`/`End` and `Page Up`/`Page Down` move the selection; `Shift` combinations extend it; `Enter`/`F2`/`Space` open editors and toggle boolean cells; `Escape` cancels; `Enter`/`Space` sort from the header; `Ctrl`+`Enter` and the arrow keys expand and collapse tree branches; `Ctrl`+`Z`/`Ctrl`+`Shift`+`Z` undo and redo. Column sizing and column and row order are also reachable without a pointer (see 2.5.7). |
 | **2.1.2** No Keyboard Trap | Supports | Focus is never trapped. Each zone is entered and left with `Tab`/`Shift`+`Tab` through hidden focus sentinels, and `Escape` deactivates a header or footer filter control and returns focus to its cell. |
 | **2.1.4** Character Key Shortcuts | Supports | No shortcut uses a bare letter, digit or punctuation key. The only letter-based bindings are `Ctrl`+`Z` and `Ctrl`+`Shift`+`Z`; everything else uses arrows, `Enter`, `Escape`, `Tab`, `F2`, `Space`, `Delete`, `Home`/`End` or `Page Up`/`Page Down`. Handlers are additionally gated on the grid holding focus. |
 | **2.2.1** Timing Adjustable | Supports | The product sets no time limits: no session timeout, no auto-refresh and no polling. The header filter's 500 ms debounce delays applying a filter, not the user's input. |
@@ -95,7 +96,7 @@ theme" and "requires `keyNavigation`, on by default" are configuration dependenc
 | **1.2.5** Audio Description (Prerecorded) | Not Applicable | No prerecorded video. |
 | **1.3.4** Orientation | Supports | Content is not restricted to a single display orientation. |
 | **1.3.5** Identify Input Purpose | Not Applicable | The product's editors collect application data defined by the integrator's columns, not the user's own personal information covered by the WCAG input-purpose list. |
-| **1.4.3** Contrast (Minimum) | Supports | The `contrast-light` and `contrast-dark` themes meet AA out of the box: body text is about 8.5:1 and 13.2:1 against the cell background, secondary and additional text about 7.3:1 and 10.2:1, and both themes raise the base font size to 16px. The built-in dark theme also meets AA for body text. Meeting the criterion requires selecting one of these themes - one supported method meets it. |
+| **1.4.3** Contrast (Minimum) | Supports | The `contrast-light` and `contrast-dark` themes meet AA out of the box: body text is about 8.5:1 and 13.2:1 against the cell background, secondary and additional text about 7.3:1 and 10.2:1, and both themes raise the base font size to 16px and are colour-blind friendly. The built-in dark theme also meets AA for body text. Meeting the criterion requires selecting one of these themes - one supported method meets it. |
 | **1.4.4** Resize Text | Supports | Text can be resized to 200% without loss of content or functionality; the header, body and footer scale with it and the grid does not break. Typography and row geometry are token-driven (`--dhx-font-size-normal`, `--dhx-line-height-normal`, `--dhx-step-size`, `rowHeight`), and the contrast themes ship a 16px base. |
 | **1.4.5** Images of Text | Supports | All text is rendered as real text. Icons are font glyphs; the product uses no raster images. |
 | **1.4.10** Reflow | Supports | Content scrolls and remains operable at 400% zoom. As a data grid, two-dimensional layout is intrinsic to the content, for which the criterion permits two-dimensional scrolling. |
@@ -114,7 +115,7 @@ theme" and "requires `keyNavigation`, on by default" are configuration dependenc
 | **3.3.3** Error Suggestion | Supports | Where a correction is known, it is applied: numeric input outside the column's `min`/`max` bounds is corrected to the nearest valid value, so a valid value is always produced. Suggestion text for application-level validation is provided by the host application, through `beforeEditEnd`. |
 | **3.3.4** Error Prevention (Legal, Financial, Data) | Supports | Actions that change or remove data are reversible and guarded: the History module provides undo and redo for edits, range clearing and clipboard operations, and every such action can additionally be gated by the host through the cancelable `before*` events - among them `beforeEditEnd`, `beforeKeyDown`, `beforeSort`, `beforeResizeStart`, `beforeRowDrag`/`beforeRowDrop` and `beforeColumnDrag`/`beforeColumnDrop`. |
 | **3.3.8** Accessible Authentication (Minimum) (2.2 only) | Not Applicable | The product performs no authentication. |
-| **4.1.3** Status Messages | Supports | A visually-hidden `aria-live` region announces dynamic changes without moving focus - sort direction changes, filter results and completed loads. State that persists is additionally exposed on the elements themselves: sort direction through `aria-sort`, selection through `aria-selected`, dataset size through `aria-rowcount`/`aria-colcount`, and branch state through `aria-expanded`. |
+| **4.1.3** Status Messages | Supports | A visually-hidden polite live region (`role="status"`, `aria-live="polite"`, `aria-atomic="true"`) announces dynamic changes without moving focus - sort direction changes, filter results with the matching row count, completed loads, and numeric-editor range corrections. The same region is available to the host application through the public [`announce()`](grid/api/grid_announce_method.md) method, and every built-in message is localizable through the `aria_*` locale keys. State that persists is additionally exposed on the elements themselves: sort direction through `aria-sort`, selection through `aria-selected`, dataset size through `aria-rowcount`/`aria-colcount`, and branch state through `aria-expanded`. |
 
 ## Revised Section 508 report
 
@@ -127,7 +128,7 @@ is Not Applicable - DHTMLX Grid is a software component with no hardware or phys
 |---|---|---|
 | 302.1 Without Vision | Supports | Operable with a screen reader through the `grid`/`treegrid` model, the position and state attributes, the accessible names on editors and filters, and the keyboard model. See WCAG 1.3.1, 2.1.1, 4.1.2. |
 | 302.2 With Limited Vision | Supports | Zoom, text resize and reflow are supported, and AA contrast is met by the `contrast-light` / `contrast-dark` themes, which also raise the base font size to 16px. See WCAG 1.4.3, 1.4.4, 1.4.10, 1.4.11. |
-| 302.3 Without Perception of Color | Supports | No information is conveyed by colour alone: sort direction, selection, editability and hierarchy each carry a glyph or an ARIA state alongside the colour. See WCAG 1.4.1. |
+| 302.3 Without Perception of Color | Supports | No information is conveyed by colour alone: sort direction, selection, editability and hierarchy each carry a glyph or an ARIA state alongside the colour, and the `contrast-light` / `contrast-dark` themes are colour-blind friendly. See WCAG 1.4.1. |
 | 302.4 Without Hearing | Supports | No information is conveyed by sound. |
 | 302.5 With Limited Hearing | Supports | No information is conveyed by sound. |
 | 302.6 Without Speech | Supports | No speech input is required to operate the product. |
@@ -148,7 +149,7 @@ is Not Applicable - DHTMLX Grid is a software component with no hardware or phys
 
 | Criteria | Conformance level | Remarks and explanations |
 |---|---|---|
-| 602.2 Accessibility and Compatibility Features | Supports | The documentation describes the product's accessibility features: the [Accessibility](grid/accessibility.md) guide covers the WAI-ARIA model, the keyboard zones and shortcuts, the selection modes, the high-contrast themes and the focus model, together with the related configuration. |
+| 602.2 Accessibility and Compatibility Features | Supports | The documentation describes the product's accessibility features: the [Accessibility](grid/accessibility.md) guide covers the WAI-ARIA model, the keyboard zones and shortcuts, the selection modules, the high-contrast themes and the focus model, together with the related configuration, the [`announce()`](grid/api/grid_announce_method.md) API and the localizable `aria_*` strings. |
 | 602.3 Electronic Support Documentation | Supports (see WCAG 2.x section) | The documentation site is delivered as web content and is maintained to meet WCAG 2.2 AA. |
 | 602.4 Alternate Formats for Non-Electronic Support Documentation | Not Applicable | Documentation is delivered electronically only; there are no non-electronic (print) support documents. |
 | 603.2 Information on Accessibility and Compatibility Features | Supports | The product's accessibility features are documented publicly in the [Accessibility](grid/accessibility.md) guide and can be provided by the support channel on request. |
@@ -167,7 +168,7 @@ These mirror the Section 508 Chapter 3 results (same conclusions).
 |---|---|---|
 | 4.2.1 Usage without vision | Supports | See 508 302.1 (screen-reader operable through the grid/treegrid model, position and state attributes, and the keyboard model). |
 | 4.2.2 Usage with limited vision | Supports | See 508 302.2 (AA contrast and a 16px base through the contrast themes; zoom and reflow supported). |
-| 4.2.3 Usage without perception of colour | Supports | See 508 302.3 (glyphs and ARIA state accompany every colour cue). |
+| 4.2.3 Usage without perception of colour | Supports | See 508 302.3 (glyphs and ARIA state accompany every colour cue; the contrast themes are colour-blind friendly). |
 | 4.2.4 Usage without hearing | Supports | No information conveyed by sound. |
 | 4.2.5 Usage with limited hearing | Supports | No information conveyed by sound. |
 | 4.2.6 Usage with no or limited vocal capability | Supports | No speech input required. |
@@ -200,7 +201,7 @@ it is not non-web software. The WCAG-mapped software provisions (11.1.1.1-11.4.1
 
 | Criteria | Conformance level | Remarks and explanations |
 |---|---|---|
-| 12.1.1 Accessibility and compatibility features | Supports | The [Accessibility](grid/accessibility.md) guide documents the product's accessibility features - the WAI-ARIA model, the keyboard zones and shortcuts, the selection modes, the high-contrast themes and the focus model. |
+| 12.1.1 Accessibility and compatibility features | Supports | The [Accessibility](grid/accessibility.md) guide documents the product's accessibility features - the WAI-ARIA model, the keyboard zones and shortcuts, the selection modules, the high-contrast themes, the focus model, the [`announce()`](grid/api/grid_announce_method.md) API and the localizable `aria_*` strings. |
 | 12.1.2 Accessible documentation | Supports (see WCAG 2.x section) | The documentation site is delivered as web content and is maintained to meet WCAG 2.2 AA (see 508 602.3). |
 | 12.2.2 Information on accessibility and compatibility features | Supports | Accessibility features are documented publicly and can be surfaced by support on request. |
 | 12.2.3 Effective communication | Supports | Support is provided over a text-based email channel; users interact through their own assistive technology. |

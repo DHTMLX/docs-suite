@@ -32,14 +32,14 @@ There are special attributes used in the markup of DHTMLX Suite widgets that mak
 
 ### Grid
 
-There are **roles** and **attributes** for elements of grid, sorting, filters, editable cells to enable screen readers to interpret and navigate the columns and rows of the grid (enabled by default). The semantics are always present and there is no flag to disable them. Custom content should be marked manually.
+There are **roles** and **attributes** for elements of grid, sorting, filters, editable cells to enable screen readers to interpret and navigate the columns and rows of the grid (enabled by default). Custom content should be marked manually.
 
 You can find the following **roles** and **attributes** in the DOM:
 
 - role: *grid* (or *treegrid* in the `type: "tree"` mode), *rowgroup*, *row*, *columnheader*, *gridcell*, *button*
 - aria attributes: *label*, *rowcount*, *colcount*, *rowindex*, *colindex*, *aria-sort*, *aria-selected*, *aria-readonly*, *aria-multiselectable*, and — for tree rows — *aria-level* and *aria-expanded*.
 
-In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree.
+In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree. Dynamic changes - sorting, filtering, data loading - are read out through a visually hidden polite live region, which the application can write to itself; all the built-in screen-reader strings are stored in the `aria_*` locale keys and can be translated.
 
 :::info
 For the complete picture — the ARIA model, the keyboard zones (header/body/footer), the focus model, and configuration recipes — see the dedicated [Grid accessibility](grid/accessibility.md) guide. Criterion-by-criterion conformance with WCAG 2.2 AA, Section 508 and EN 301 549 is documented in the [Accessibility Conformance Report](grid/accessibility_conformance_report.md).

@@ -6,7 +6,7 @@ description: You can learn about accessibility and keyboard navigation in DHTMLX
 
 # Accessibility in DHTMLX Grid
 
-DHTMLX Grid is built to be operated entirely from the keyboard and to expose its structure and state to assistive technology. WAI-ARIA semantics are part of the rendered markup, and a single, coherent focus model spans the header, body, and footer. The semantics are always present — there is **no** configuration flag to disable them.
+DHTMLX Grid is built to be usable by everyone, including people who rely on keyboards, screen readers, screen magnification, or high-contrast display modes. WAI-ARIA semantics are part of the rendered markup, and a single, coherent focus model spans the header, body, and footer.
 
 :::info Target conformance
 DHTMLX Grid is designed to meet **WCAG 2.2 Level AA**, **Section 508** of the U.S. Rehabilitation Act, and **EN 301 549** (the technical baseline of the European Accessibility Act). Because WCAG 2.2 AA also satisfies ADA and Section 508 expectations, a single conformance target covers the major regulatory requirements.
@@ -14,22 +14,28 @@ DHTMLX Grid is designed to meet **WCAG 2.2 Level AA**, **Section 508** of the U.
 Conformance is reported criterion by criterion rather than as a blanket claim. The detailed **Accessibility Conformance Report (VPAT® 2.5)** is available: [Accessibility Conformance Report](grid/accessibility_conformance_report.md).
 :::
 
-<!-- TODO: link to the live Accessibility sample here, in the form:
-     To try it hands-on, see the live [Accessibility sample](<snippet url>). -->
-
-## Capabilities
+## At a glance
 
 | Area | Support |
 | ---- | ------- |
 | Keyboard operation | Full: cell navigation, editing, sorting, range selection, tree expand/collapse, and clipboard all have keyboard equivalents |
-| WAI-ARIA semantics | Built-in (`grid` / `treegrid` model), enabled always — no opt-in flag |
+| WAI-ARIA semantics | Built-in (`grid` / `treegrid` model), enabled by default |
 | Focus model | A single tab stop per zone; focus moves between header, body, and footer |
 | Selection model | Two modes: single-cell/row (`selection`) and spreadsheet-style range (`blockSelection`) |
-| High-contrast display | Light and dark high-contrast themes (`contrast-light` / `contrast-dark`) |
+| Screen readers | Tested with NVDA, JAWS and VoiceOver |
+| Visual accessibility | Dedicated light and dark high-contrast themes — colour-blind friendly, AA contrast, 16px base — and non-colour cues |
+| Text resize / zoom | Layout remains operable up to 400% zoom / text spacing overrides |
+| Customization | Public `announce()` API for dynamic messages, and localizable `aria_*` strings for every built-in screen-reader description |
+| Standards | WCAG 2.2 AA, Section 508, EN 301 549 |
 
-## Covered areas
+Use this page to verify the component against your own accessibility checklist, and to learn how to configure the Grid for an accessible deployment.
 
-This documentation covers the Grid widget:
+<!-- TODO: link to the live Accessibility sample here, in the form:
+     To try it hands-on, see the live [Accessibility sample](<snippet url>). -->
+
+## Scope
+
+This guide covers the Grid widget itself:
 
 - the **data body** — cells and rows, including tree mode (`type: "tree"`)
 - the **column header** — sortable headers and in-header filters
@@ -39,9 +45,98 @@ This documentation covers the Grid widget:
 
 As with any embeddable component, the accessibility of the final page also depends on the host application (see [Host-page responsibilities](#host-page-responsibilities)).
 
-## WAI-ARIA support
+## Setting up an accessible Grid {#recommendedconfiguration}
 
-WAI-ARIA roles and attributes are added to the component markup automatically and are **on by default** — there is no flag to turn them off. The Grid exposes itself to assistive technology as an interactive grid (or treegrid) of rows and cells, with a separate group for the header and footer. The semantics are applied per structural part of the widget, so each part is announced with the correct role and state.
+The Grid ships accessible by default — WAI-ARIA output is emitted automatically and keyboard navigation is on ([`keyNavigation: true`](grid/api/grid_keynavigation_config.md)) — but a fully WCAG 2.2 AA-compliant deployment needs two more things: one of the selection modules enabled, so that keyboard navigation has an active cell to move and to expose through `aria-selected`, and an AA-contrast theme selected. The recommended configuration is:
+
+~~~jsx
+// 1. WAI-ARIA output is enabled by default - no action needed.
+
+// 2. Enable a selection module so keyboard navigation has an active cell to move
+const grid = new dhx.Grid("grid_container", {
+    columns: [/* ... */],
+    data: dataset,
+    selection: "complex",  // or blockSelection: true for spreadsheet-style ranges
+    multiselection: true,  // enables Shift+Arrow multi-select
+    keyNavigation: true    // true - by default
+});
+
+// 3. Select an AA-conformant theme
+dhx.setTheme("contrast-light"); // or "contrast-dark"
+~~~
+
+The theme can also be applied through the `data-dhx-theme` attribute of the container or of the root element; see the [Themes overview](/themes/) for all the options.
+
+### Selection modules for keyboard operation {#selectionmodules}
+
+The keyboard behavior of the body depends on which selection system is enabled. The two are independent and drive different ARIA output and shortcut semantics.
+
+#### 1. Cell / row selection — selection
+
+A single active cell (or row) moves with the arrow keys. This populates `aria-selected` on the focused cell or row. Extending the selection with <kbd>Shift</kbd> is enabled only when `multiselection: true`; without it, <kbd>Shift</kbd>+arrow moves the active cell.
+
+~~~jsx
+// Single active cell, navigable with arrows / Tab / Home / End / Page Up·Down
+const grid = new dhx.Grid("grid_container", {
+    columns: [/* ... */],
+    data: dataset,
+    selection: "complex", // "cell" | "row" | "complex"
+    multiselection: true, // enables Shift+Arrow multi-select
+    keyNavigation: true,  // default
+    sortable: true        // default — keyboard sort in headers
+});
+~~~
+
+| `selection` value | Meaning |
+| --- | --- |
+| `"cell"` | One active cell; <kbd>Shift</kbd>+arrow extends when `multiselection: true` |
+| `"row"` | One active row; arrows move the whole row, `aria-selected` is on the row |
+| `"complex"` | Cell- and row-style selection combined |
+| `true` | Equivalent to cell selection |
+| *falsy / unset* | Selection (and `aria-selected`) disabled |
+
+#### 2. Range / block selection — blockSelection
+
+Spreadsheet-style rectangular ranges. The arrow keys move the range anchor; <kbd>Shift</kbd>+arrows grow or shrink the rectangle; <kbd>Delete</kbd> clears the range (when editing is enabled). This applies in **"range"** mode.
+
+~~~jsx
+// Google-Sheets-style range selection
+const grid = new dhx.Grid("grid_container", {
+    columns: [/* ... */],
+    data: dataset,
+    blockSelection: true, // range mode (Shift+Arrow grows the rectangle)
+    editable: true,       // allows Delete to clear the range
+    keyNavigation: true
+});
+~~~
+
+| `blockSelection` value | Mode | Keyboard effect |
+| ---------------------- | ---- | --------------- |
+| `true` | range | Arrows move the range; <kbd>Shift</kbd>+arrows extend the rectangle; <kbd>Delete</kbd> clears it |
+
+Both systems coexist with the same navigation keys; the Grid responds to whichever selection system is active.
+
+#### TreeGrid
+
+TreeGrid mode (`type: "tree"`) adds `role="treegrid"`, `aria-level` and `aria-expanded` on top of the selection module, and enables arrow-key expand/collapse:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [/* ... */],
+    data: dataset,
+    type: "tree",
+    selection: "complex"
+});
+~~~
+
+<!-- TODO: live demo iframe for the accessible grid setup, as:
+     <iframe src="https://snippet.dhtmlx.com/<id>?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe> -->
+
+The sections below describe each capability in detail.
+
+## WAI-ARIA Attributes
+
+WAI-ARIA roles and attributes are added to the component markup automatically and are **enabled by default**. The Grid exposes itself to assistive technology as an interactive grid (or treegrid) of rows and cells, with a separate group for the header and footer. The semantics are applied per structural part of the widget, so each part is announced with the correct role and state.
 
 ### Grid container
 
@@ -101,57 +196,73 @@ In-place editor inputs and header/footer filters receive an accessible name deri
 
 Resizer grips, sort icons, sort-order counters, drag ghosts, drop indicators, and the selection overlay are removed from the accessibility tree with `aria-hidden="true"` / `role="presentation"`, so screen readers are not cluttered with redundant markup.
 
-## Selection modes
+## Screen reader support
 
-The keyboard behavior of the body depends on which selection system is enabled. The two are independent and drive different ARIA output and shortcut semantics.
+DHTMLX Grid is tested against the most widely used assistive technologies:
 
-### 1. Cell / row selection — selection
+| Screen reader | Browser | Platform |
+| ------------- | ------- | -------- |
+| NVDA | Firefox | Windows |
+| JAWS | Chrome | Windows |
+| VoiceOver | Safari | macOS |
 
-A single active cell (or row) moves with the arrow keys. This populates `aria-selected` on the focused cell or row. Extending the selection with <kbd>Shift</kbd> is enabled only when `multiselection: true`; without it, <kbd>Shift</kbd>+arrow moves the active cell.
+Rows and cells carry their position (`aria-rowindex` / `aria-colindex`) against the grid totals (`aria-rowcount` / `aria-colcount`). Because these are absolute positions in the dataset rather than positions in the DOM, they stay correct while rows and columns are virtualized: a screen reader announces "row 4,812 of 50,000" even though only the visible window exists in the markup.
 
-~~~jsx
-// Single active cell, navigable with arrows / Tab / Home / End / Page Up·Down
-const grid = new dhx.Grid("grid_container", {
-    columns: [/* ... */],
-    data: dataset,
-    selection: "complex", // "cell" | "row" | "complex"
-    multiselection: true, // enables Shift+Arrow multi-select
-    keyNavigation: true   // default
-});
-~~~
+The rest of the state travels the same way, on the element it belongs to:
 
-| `selection` value | Meaning |
-| --- | --- |
-| `"cell"` | One active cell; <kbd>Shift</kbd>+arrow extends when `multiselection: true` |
-| `"row"` | One active row; arrows move the whole row, `aria-selected` is on the row |
-| `"complex"` | Cell- and row-style selection combined |
-| `true` | Equivalent to cell selection |
-| *falsy / unset* | Selection (and `aria-selected`) disabled |
+| State | Exposed through | Read on |
+| ------ | --------------- | ------- |
+| Selection | `aria-selected` | The focused cell, or the row in `selection: "row"` mode |
+| Editability | `aria-readonly` | The grid container and each cell |
+| Sort direction | `aria-sort` (`none` / `ascending` / `descending`) | The column header |
+| Hierarchy | `aria-level`, `aria-expanded` | Tree rows (`type: "tree"`) |
+| Multi-selection capability | `aria-multiselectable` | The grid container |
 
-### 2. Range / block selection — blockSelection
+Editors and filters take their accessible name from the column header text, so the user always hears which column is in play. Decorative markup — resizer grips, sort icons, drag ghosts, drop indicators, the selection overlay — is hidden from the accessibility tree, so nothing redundant is announced.
 
-Spreadsheet-style rectangular ranges. The arrow keys move the range anchor; <kbd>Shift</kbd>+arrows grow or shrink the rectangle; <kbd>Delete</kbd> clears the range (when editing is enabled). This applies in **"range"** mode.
+### Announcing dynamic changes
+
+For things that *happen* and have no permanent element to label — a completed load, a filter result, a corrected value — the Grid writes text into a visually hidden live region (`role="status"`, `aria-live="polite"`, `aria-atomic="true"`) that the screen reader reads aloud without moving focus. The region is available to your own code through the [`announce()`](grid/api/grid_announce_method.md) method:
 
 ~~~jsx
-// Google-Sheets-style range selection
-const grid = new dhx.Grid("grid_container", {
-    columns: [/* ... */],
-    data: dataset,
-    blockSelection: true, // range mode (Shift+Arrow grows the rectangle)
-    editable: true,       // allows Delete to clear the range
-    keyNavigation: true
-});
+grid.announce("5 rows imported");
 ~~~
 
-| `blockSelection` value | Mode | Keyboard effect |
-| ---------------------- | ---- | --------------- |
-| `true` | range | Arrows move the range; <kbd>Shift</kbd>+arrows extend the rectangle; <kbd>Delete</kbd> clears it |
+The message is always **polite**: the screen reader finishes its current sentence first, so an announcement never interrupts the user.
 
-Both systems coexist with the same navigation keys; the Grid responds to whichever selection system is active.
+The Grid already announces the following out of the box:
+
+| Event | Announced text |
+| ----- | -------------- |
+| Sorting by a column | `Sorted by {column}, ascending` / `Sorted by {column}, descending` |
+| Applying a filter | `{count} rows match the filter` |
+| Clearing the filter | `Filter cleared, {count} rows` |
+| Loading data | `{count} rows loaded` |
+| Entering an out-of-range number in an editor | `Value must be between {min} and {max}` and, once it is fixed, `Value corrected to {value}` |
+
+### Translatable screen-reader names
+
+The strings the screen reader hears live in the Grid locale, so they translate with the rest of the UI. They fall into two groups:
+
+- **announcements** — `aria_sortedAscending`, `aria_sortedDescending`, `aria_filterApplied`, `aria_filterCleared`, `aria_rowsLoaded`, `aria_valueOutOfRange`, `aria_valueBelowMin`, `aria_valueAboveMax`, `aria_valueClamped`;
+- **accessible names** — `aria_sortBy`, `aria_filter`, `aria_filterByDate`, `aria_expandGroup`, `aria_collapseGroup`, `aria_expandRow`, `aria_collapseRow`, `aria_editContent`, `aria_subRow`, `aria_enterGrid`, `aria_exitGrid`, `aria_rowId`, and the drag-panel names.
+
+Override them like any other locale label, before the Grid is initialized:
+
+~~~jsx
+dhx.i18n.setLocale("grid", {
+    aria_sortBy: "Sortieren nach {column}",
+    aria_rowsLoaded: "{count} Zeilen geladen"
+});
+
+const grid = new dhx.Grid("grid_container", config);
+~~~
+
+Placeholders in curly braces (`{column}`, `{count}`, `{min}`, `{max}`, `{value}`, `{id}`) are substituted at runtime and must be kept in the translated string. See the [Localization](grid/localization.md) article for the full locale workflow.
 
 ## Keyboard navigation
 
-Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there.
+Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. Moving the selection with the arrow keys additionally requires one of the selection modules — see [Setting up an accessible Grid](#recommendedconfiguration). Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there.
 
 Shortcuts are organized into **zones** — body, header, footer — and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
 
@@ -203,73 +314,22 @@ Shortcuts are organized into **zones** — body, header, footer — and resolved
 Navigation is **span-aware**: movement across merged (colspan/rowspan) header and footer cells stays predictable, and the logical navigation row is preserved. When focus reaches an off-screen (virtualized) column, the Grid scrolls it into view automatically.
 :::
 
-## Assistive technology
+## Low vision and colour
 
-DHTMLX Grid is tested against the most widely used assistive technologies:
+### High-contrast themes {#highcontrastthemes}
 
-| Screen reader | Browser | Platform |
-| ------------- | ------- | -------- |
-| NVDA | Firefox | Windows |
-| JAWS | Chrome | Windows |
-| VoiceOver | Safari | macOS |
+Light and dark high-contrast themes ship with the library — `contrast-light` and `contrast-dark` — activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are colour-blind friendly, and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
 
-What the Grid exposes to them is driven entirely by the ARIA markup above — there is no separate announcement layer to configure.
+<!-- TODO: screenshots of the grid under contrast-light and contrast-dark, as:
+     ![contrast_light_grid](/img/<file>.png) -->
 
-Rows and cells carry their position (`aria-rowindex` / `aria-colindex`) against the grid totals (`aria-rowcount` / `aria-colcount`). Because these are absolute positions in the dataset rather than positions in the DOM, they stay correct while rows and columns are virtualized: a screen reader announces "row 4,812 of 50,000" even though only the visible window exists in the markup.
+### Other low-vision support
 
-The rest of the state travels the same way, on the element it belongs to:
-
-| State | Exposed through | Read on |
-| ------ | --------------- | ------- |
-| Selection | `aria-selected` | The focused cell, or the row in `selection: "row"` mode |
-| Editability | `aria-readonly` | The grid container and each cell |
-| Sort direction | `aria-sort` (`none` / `ascending` / `descending`) | The column header |
-| Hierarchy | `aria-level`, `aria-expanded` | Tree rows (`type: "tree"`) |
-| Multi-selection capability | `aria-multiselectable` | The grid container |
-
-Editors and filters take their accessible name from the column header text, so the user always hears which column is in play. Decorative markup — resizer grips, sort icons, drag ghosts, drop indicators, the selection overlay — is hidden from the accessibility tree, so nothing redundant is announced.
-
-## High contrast and focus
-
-- **High-contrast themes.** Light and dark high-contrast themes ship with the library (`contrast-light` and `contrast-dark`), activated by setting `data-dhx-theme="contrast-light"` or `data-dhx-theme="contrast-dark"`. Both meet WCAG AA contrast and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
-
-  <!-- TODO: screenshots of the grid under contrast-light and contrast-dark, as:
-       ![contrast_light_grid](/img/<file>.png) -->
-- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so the active cell is the single tab stop and moves predictably with the arrow keys. The active cell is marked by a persistent 2px solid border in the theme primary color; header and footer cells show a 2px focus ring, and filter inputs and open editors an inset ring. Because keyboard navigation moves the selection, the focus position stays visible throughout arrow-key navigation.
+- **Colour is never the only signal.** Sort direction is carried by an arrow glyph and by `aria-sort`, selection by `aria-selected` alongside the highlight, editability by `aria-readonly`, and hierarchy by `aria-level` and `aria-expanded`.
+- **Zoom and reflow.** The grid layout remains operable when the page is zoomed up to 400%.
+- **Text spacing.** Applying WCAG text-spacing overrides does not clip or overlap text in grid cells, column headers or footer summaries.
+- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so the active cell is the single tab stop and moves predictably with the arrow keys. The active cell is marked by a persistent 2px solid border in the theme primary colour; header and footer cells show a 2px focus ring, and filter inputs and open editors an inset ring.
 - **Scrolling into view.** When focus reaches an off-screen row or column, the Grid scrolls it into view and compensates for frozen columns and rows and for the header height, so the focused cell is never left behind a frozen zone.
-
-## Configuration recipes
-
-~~~jsx
-// A. Cell navigation (single active cell)
-new dhx.Grid("grid_container", {
-    columns, data,
-    selection: "complex",
-    multiselection: true, // Shift+Arrow multi-select
-    keyNavigation: true,  // default
-    sortable: true        // default — keyboard sort in headers
-});
-
-// B. Spreadsheet-style range selection
-new dhx.Grid("grid_container", {
-    columns, data,
-    blockSelection: true, // range mode: Shift+Arrow grows the rectangle, Delete clears
-    editable: true
-});
-
-// C. TreeGrid (adds role="treegrid", aria-level, aria-expanded,
-//    and arrow-key expand/collapse)
-new dhx.Grid("grid_container", {
-    columns, data,
-    type: "tree",
-    selection: "complex"
-});
-
-// WAI-ARIA semantics are always emitted — there is no flag to toggle them.
-~~~
-
-<!-- TODO: live demo iframe for the accessible grid setup, as:
-     <iframe src="https://snippet.dhtmlx.com/<id>?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe> -->
 
 ## Host-page responsibilities
 
@@ -295,7 +355,10 @@ Accessibility is validated continuously, and against the component source rather
 - [keyNavigation](grid/api/grid_keynavigation_config.md)
 - [selection](grid/api/grid_selection_config.md)
 - [blockSelection](grid/api/grid_blockselection_config.md)
+- [announce()](grid/api/grid_announce_method.md)
+- [Localization](grid/localization.md)
 - [TreeGrid mode](grid/treegrid_mode.md)
+- [Themes overview](/themes/)
 - [Accessibility support across DHTMLX Suite](common_features/accessibility_support.md)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [WAI-ARIA Authoring Practices: Grid / Treegrid](https://www.w3.org/WAI/ARIA/apg/patterns/)
