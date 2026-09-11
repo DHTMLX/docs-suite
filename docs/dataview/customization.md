@@ -8,15 +8,15 @@ description: You can explore the customization of DataView in the documentation 
 
 ## Custom styling of widget
 
-There is a possibility to make changes in the look and feel of a dataview. 
+You can change the appearance of a DataView.
 
 ![DHTMLX DataView with a dark custom theme applied to item cards in DHTMLX Suite](/img/dataview/custom_widget_styles.png)
 
 **Related sample**: [Dataview. Styling (custom CSS)](https://snippet.dhtmlx.com/j1yv94o8)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case):
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet, and include that file on the page:
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](dataview/api/dataview_css_config.md) property in the DataView configuration:
+- Specify the name of the class you created (or several names separated by spaces) as the value of the [](dataview/api/dataview_css_config.md) property in the DataView configuration:
 
 ~~~js
 const dataview = new dhx.DataView("dataview_container", { 
@@ -64,7 +64,7 @@ For example:
 
 ## Custom styling of items
 
-You can style particular cells in the dataview. For example, apply some color to each even item, as in:
+You can style particular items in the dataview. For example, apply a color to every even item:
 
 ~~~html
 <style>
@@ -85,7 +85,7 @@ You can style particular cells in the dataview. For example, apply some color to
 </script>
 ~~~
 
-The image below and the related sample demonstrate another example of customization of Dataview items:
+The image below and the related sample show another way to customize DataView items:
 
 ![DHTMLX DataView with numbered item cards styled with custom green borders in DHTMLX Suite](/img/dataview/custom_items_styles.png)
 
@@ -93,8 +93,7 @@ The image below and the related sample demonstrate another example of customizat
 
 ## Custom styling of selection and focus
 
-You can apply your own styles for selection of items and focus with the help of the corresponding CSS classes: **.dhx_dataview-item--selected** and **.dhx_dataview-item--focus**. There is no need to use any
-additional custom classes.
+You can style selected and focused items with the `.dhx_dataview-item--selected` and `.dhx_dataview-item--focus` CSS classes. You do not need additional custom classes.
 
 ~~~html
 <style>

@@ -6,15 +6,15 @@ description: You can have an overview of DataView in the documentation of the DH
 
 # DataView overview
 
-DHTMLX DataView allows rendering a collection of objects according to a specified template. It will help you to organize data by arranging various objects with similar properties within a common container.
-This component is especially useful, if you're creating an online store or an image gallery, or just want to display a number of similar objects on a page.
-Check [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview). 
+DHTMLX DataView renders a collection of objects according to a specified template. The component arranges objects with similar properties in a common container and keeps your data organized.
+DataView is especially useful if you build an online store or an image gallery, or want to display a set of similar objects on a page.
+Check [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview).
 
 ![DHTMLX DataView showing animal cards with photos titles and descriptions in a grid in DHTMLX Suite](/img/dataview/dataview_front.png)
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX DataView:
+Check the following page to learn how to build a full-featured DHTMLX DataView:
 
 - [Features](dataview/features.md)
 
@@ -24,13 +24,13 @@ You can check the following page to learn how to build a full-featured DHTMLX Da
 
 ## Related resources
 
-- You can get DHTMLX DataView as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview)
-- To work with data of DataView check [DataCollection API](/data_collection/)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX DataView as part of the Suite library
+- Browse [online samples for DHTMLX DataView](https://snippet.dhtmlx.com/j1yv94o8?tag=dataview)
+- Check the [DataCollection API](/data_collection/) to work with DataView data
 
 ## Guides
 
-You can read the following articles to find out how to add DataView on the page and work with it.
+The following articles explain how to add DataView to a page and work with it.
 
 - [](dataview/initialization.md)
 - [](dataview/configuration.md)

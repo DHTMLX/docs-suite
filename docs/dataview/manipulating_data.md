@@ -8,7 +8,7 @@ description: You can explore how to work with DataView in the documentation of t
 
 ## Setting focus on item
 
-To set focus on a DataView item, make use of the [setFocus()](dataview/api/dataview_setfocus_method.md) method. It takes the id of an item as a parameter:
+Use the [`setFocus()`](dataview/api/dataview_setfocus_method.md) method to set focus on a DataView item. The method takes an item id as a parameter:
 
 ~~~js
 dataview.setFocus("7");
@@ -16,7 +16,7 @@ dataview.setFocus("7");
 
 ## Editing items
 
-You can edit a particular DataView item with the help of the [editItem()](dataview/api/dataview_edititem_method.md) method. It takes as a parameter the id of an item:
+You can edit a DataView item with the [`editItem()`](dataview/api/dataview_edititem_method.md) method. The method takes an item id as a parameter:
 
 ~~~js
 dataview.editItem("1");
@@ -26,25 +26,25 @@ dataview.editItem("1");
 
 ## Disabling and enabling selection of an item
 
-For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](dataview/usage_selection.md#enablingdisabling-selection-object).
+For details on how to disable and enable selection of an item, see [Enabling/Disabling Selection object](dataview/usage_selection.md#enablingdisabling-selection-object).
 
 ## Using Data Collection API
 
-You can manipulate DataView items with the help of the [Data Collection API](/data_collection/).
+You can manage DataView items with the [Data Collection API](/data_collection/).
 
 ### Adding items into DataView
 
-It is possible to add more items into the initialized DataView on the fly. Use the **add()** method of Data Collection. It takes two parameters:
+You can add more items to an initialized DataView on the fly. Use the `add()` method of Data Collection. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) the configuration object of the added item</td>
+            <td>(<i>object</i>) the configuration object of the new item</td>
         </tr>
         <tr>
             <td><b>index</b></td>
-            <td>(<i>number</i>) optional, the position to add an item at</td>
+            <td>(<i>number</i>) optional, the position for the new item</td>
         </tr>
     </tbody>
 </table>
@@ -62,7 +62,7 @@ dataview.data.add({
 
 ### Updating DataView items
 
-You can change config options of the item via the **update()** method of Data Collection. It takes two parameters:
+You can change item settings with the `update()` method of Data Collection. The method takes two parameters:
 
 <table>
     <tbody>
@@ -72,7 +72,7 @@ You can change config options of the item via the **update()** method of Data Co
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>an object with new configuration of the item</td>
+            <td>an object with the new item configuration</td>
         </tr>
     </tbody>
 </table>
@@ -90,7 +90,7 @@ dataview.data.update("item_id",{
 
 ### Removing items from DataView
 
-To remove an item, make use of the **remove()** method of Data Collection. Pass the id of the item that should be removed to the method:
+Use the `remove()` method of Data Collection to remove an item. Pass the item id to the method:
 
 ~~~js
 dataview.data.remove("id");
@@ -100,8 +100,7 @@ dataview.data.remove("id");
 
 ### Filtering DataView data
 
-You can filter DataView data by the specified criteria with the help of the [](data_collection/api/datacollection_filter_method.md) method of Data collection. Check all details on parameters of the method in the
-[Data Collection API](/data_collection/).
+You can filter DataView data by specified criteria with the [](data_collection/api/datacollection_filter_method.md) method of Data Collection. For details on the method parameters, see the [Data Collection API](/data_collection/).
 
 ~~~js
 dataview.data.filter({
@@ -115,9 +114,9 @@ dataview.data.filter({
 
 ### Sorting DataView data
 
-It is possible to sort data in DataView via the [](data_collection/api/datacollection_sort_method.md) method of Data Collection.
+You can sort data in DataView with the [](data_collection/api/datacollection_sort_method.md) method of Data Collection.
 
-Check all details on the parameters of the method in the [Data Collection API](/data_collection/).
+For details on the method parameters, see the [Data Collection API](/data_collection/).
 
 ~~~js
 dataview.data.sort({ 
@@ -130,4 +129,4 @@ dataview.data.sort({
 
 ## Using Selection API
 
-For information on using Selection API, read [Work with Selection Object](dataview/usage_selection.md).
+For details on the Selection API, see [Work with Selection object](dataview/usage_selection.md).

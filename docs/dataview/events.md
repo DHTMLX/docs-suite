@@ -8,17 +8,17 @@ description: You can explore the event handling of DataView in the documentation
 
 ## Attaching event listeners
 
-The user can add any user-defined handler to any of the available events. To do this, the user can use the **dataview.events.on()** method with the following parameters:
+You can add a custom handler to any available event with the `dataview.events.on()` method. The method takes the following parameters:
 
 <table>
     <tbody>
         <tr>
             <td><b>evName</b></td>
-            <td>name of the event</td>
+            <td>the event name</td>
         </tr>
         <tr>
             <td><b>evHandler</b></td>
-            <td>user-defined event handler</td>
+            <td>a custom event handler</td>
         </tr>
     </tbody>
 </table>
@@ -29,17 +29,17 @@ dataview.events.on("click", function(id, e){
 });
 ~~~
 
-Several handlers can be attached to one and the same event, and all of them will be executed.
+You can attach several handlers to the same event, and DataView runs all of them.
 
-{{note 
-The names of the events are case-insensitive.
-}}
+:::note
+Event names are case-insensitive.
+:::
 
 **Related sample**: [Dataview. Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 ## Detaching event listeners
 
-There is a simple way of removing an event handler via the **dataview.events.detach()** method:
+The `dataview.events.detach()` method removes an event handler:
 
 ~~~js
 dataview.events.on("click", function(id, e){
@@ -51,7 +51,7 @@ dataview.events.detach("click");
 
 ## Calling events
 
-To call events, use **dataview.events.fire()**:
+The `dataview.events.fire()` method calls an event:
 
 ~~~js
 dataview.events.fire("name",args);
@@ -60,4 +60,4 @@ dataview.events.fire("name",args);
 
 ## List of supported events
 
-You can find the full list of Dataview events in the [API Reference](dataview/api/api_overview.md#events).
+You can find the full list of DataView events in the [API Reference](dataview/api/api_overview.md#events).

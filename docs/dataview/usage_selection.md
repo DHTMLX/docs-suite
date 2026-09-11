@@ -6,17 +6,17 @@ description: You can explore how to work with Selection Object of DataView in th
 
 # Work with Selection object
 
-You can manipulate with DataView items via the API of the **selection** object. It is possible to select an item, remove selection, and get the id or even the object of a selected DataView item.
+The `selection` object API lets you manage DataView items: select an item, remove selection, and get the id or the object of a selected DataView item.
 
 ## Enabling/Disabling Selection object
 
-Starting from v7.0, you can activate selection of items via the [enable()](selection/api/selection_enable_method.md) method of the selection object.
+From v7.0, you can enable item selection with the [`enable()`](selection/api/selection_enable_method.md) method of the `selection` object:
 
 ~~~js
 dataview.selection.enable();
 ~~~
 
-To disable selection of items in DataView, make use of the [disable()](selection/api/selection_disable_method.md) method of the selection object:
+To disable item selection in DataView, use the [`disable()`](selection/api/selection_disable_method.md) method of the `selection` object:
 
 ~~~js
 dataview.selection.disable();
@@ -24,18 +24,20 @@ dataview.selection.disable();
 
 **Related sample**: [Dataview. Disable / enable selection](https://snippet.dhtmlx.com/kn42gb50)
 
-{{note To make the process of working with the selection of items more flexible, you can apply the [related](/selection/#events) events of the Selection object.}}
+:::note
+For finer control over item selection, apply the [Selection object events](/selection/#events).
+:::
 
 ## Selecting an item
 
-To select a particular DataView item, make use of the **add()** method of the **selection** object. As a parameter the method takes the id of an item. 
+To select a DataView item, use the `add()` method of the `selection` object. The method takes an item id as a parameter:
 
 ~~~js
 const id = dataview.selection.getId(); // -> "2"
 dataview.selection.add("2");
 ~~~
 
-Starting from v7.0, the method selects all unselected items when calling without parameters:
+From v7.0, the method selects all unselected items when you call it without parameters:
 
 ~~~js
 dataview.selection.add();
@@ -43,13 +45,13 @@ dataview.selection.add();
 
 ## Unselecting an item
 
-To remove selection from a selected item, apply the **remove()** method of the **selection** object. The method may take the id of an item as a parameter:
+To remove selection from a selected item, apply the `remove()` method of the `selection` object. The method can take an item id as a parameter:
 
 ~~~js
 dataview.selection.remove("2"); 
 ~~~
 
-Starting from v7.0, the method unselects all previously selected items when calling without parameters:
+From v7.0, the method unselects all previously selected items when you call it without parameters:
 
 ~~~js
 dataview.selection.remove();
@@ -57,20 +59,20 @@ dataview.selection.remove();
 
 ## Getting id of a selected item
 
-You can get the id of the currently selected item with the **getId()** method of the **selection** object:
+You can get the id of the currently selected item with the `getId()` method of the `selection` object:
 
 ~~~js
 const selected = dataview.selection.getId(); // -> "2"
 ~~~
 
-Starting from v7.0, the method can also return an array with ids of selected items if the [multiselection](dataview/api/dataview_multiselection_config.md) property of DataView is enabled.
+From v7.0, the method can also return an array of ids of selected items if the DataView [multiselection](dataview/api/dataview_multiselection_config.md) property is enabled.
 
 ## Getting object of a selected item
 
-It is also possible to get the object of a selected item using the **getItem()** method of the **selection** object:
+You can also get the object of a selected item with the `getItem()` method of the `selection` object:
 
 ~~~js
 const item = dataview.selection.getItem();
 ~~~
 
-Starting from v7.0, the method can also return an array of selected items if the [multiselection](dataview/api/dataview_multiselection_config.md) property of DataView is enabled.
+From v7.0, the method can also return an array of selected items if the DataView [multiselection](dataview/api/dataview_multiselection_config.md) property is enabled.
