@@ -30,6 +30,7 @@ const en = {
     aria_collapseGroup: "Collapse group",
     aria_expandRow: "Expand row",
     aria_collapseRow: "Collapse row",
+    aria_subRow: "Details for row {id}",
     aria_editContent: "Edit content",
     aria_enterGrid: "Enter grid",
     aria_exitGrid: "Exit grid",
@@ -91,6 +92,8 @@ const grid = new dhx.Grid("grid_container", { columns, data });
 
 The Grid gives its interactive controls accessible names, which screen readers read out instead of the visual icon. These names come from the locale as well.
 
+### Control names
+
 | Key | Default | Applied to |
 | --- | ------- | ---------- |
 | `aria_filter` | `Filter {column}` | Header and footer input and select filters |
@@ -128,4 +131,27 @@ dhx.i18n.setLocale("grid", {
 
 const grid = new dhx.Grid("grid_container", { columns, data });
 ~~~
+
+### Sub-row name
+
+The `aria_subRow` name applies to grids with the [`subRow`](grid/api/grid_subrow_config.md) configuration.
+
+| Key | Default | Applied to |
+| --- | ------- | ---------- |
+| `aria_subRow` | `Details for row {id}` | The sub-row region (`.dhx_grid_subrow__container`) |
+
+The `{id}` placeholder is the row id.
+
+~~~jsx
+dhx.i18n.setLocale("grid", {
+    aria_subRow: "Details zu Zeile {id}",
+});
+
+const grid = new dhx.Grid("grid_container", {
+    columns,
+    data,
+    subRow: row => `Details: ${row.company}`,
+});
+~~~
+
 For additional information, refer to the [Accessibility](grid/accessibility.md) guide.
