@@ -10,24 +10,24 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 ## Version 9.3.11
 
-Released on September 11, 2026
+Released on September 14, 2026
 
 ### Updates
 
-- Grid/Message/Popup. Modal Focus Trapping and Management:
+- Grid/Message/Popup. Modal focus trapping and management:
     - Implemented focus trapping for all modal windows, message dialogs, and popups compliant with **WCAG 2.4.3**.
     - Opening a modal dialog moves keyboard focus to the first actionable element and keeps it within the dialog boundaries until the dialog closes.
     - Closing a dialog restores focus to the previously active cell or trigger element.
 
-- Grid. Assistive Technology Support for Block Selection:
+- Grid. Assistive technology support for block selection:
     - The Grid exposes the block selection state to screen readers (**WCAG 1.3.1**, **WCAG 4.1.2**).
     - Selected cell boundaries and multi-cell ranges reflect their `aria-selected` status in the accessibility tree, providing real-time feedback during keyboard and pointer selection.
 
-- Grid. Localization for ARIA Labels:
+- Grid. Localization for ARIA labels:
     - Moved all hardcoded English accessible names and labels into the locale system.
-    - You can translate screen reader announcements, button descriptions, and status labels via the standard localization configuration.
+    - Screen reader announcements, button descriptions, and status labels that developers can translate via the standard [localization](grid/localization.md) configuration.
 
-- Grid. Target Size Improvements for Interactive Controls:
+- Grid. Target size improvements for interactive controls:
     - Enlarged hit areas for small interactive elements, including column resize handles and removal/action icons.
     - Reduced accidental or missed clicks on touch-screen devices, accommodating users with motor precision needs.
 
@@ -35,7 +35,7 @@ For additional information, refer to the [Grid accessibility](grid/accessibility
 
 ### Fixes
 
-- Grid. Fixed a console error that occurred when starting a `blockSelection` in numeric columns or number-formatted cell ranges
+- Grid. Fixed a console error that occurred when starting block selection in numeric columns or number-formatted cell ranges
 - Grid. Fixed broken `aria-labelledby` relationships in sub-rows, eliminating orphaned ID references
 - Grid. Corrected invalid ARIA attributes and roles, and fixed the `aria-rowindex` and `aria-rowcount` calculations so that they reflect the overall grid structure, including header rows
 - Grid. Fixed an issue where inline cell editors lost or failed to expose their accessible names on the first paint and on subsequent data updates
@@ -107,27 +107,27 @@ Released on July 1, 2026
 
 ### Updates
 
-- Grid. Full WAI-ARIA Accessibility Support:
+- Grid. Full WAI-ARIA accessibility support:
     - Implemented a comprehensive accessibility layer compliant with **WCAG 2.2**.
     - Added support for `role="grid"` and `role="treegrid"`, including proper hierarchical attributes: `aria-level`, `aria-expanded`, and `aria-rowindex/colindex`.
     - Added descriptive `aria-label` attributes for inline editors, filter controls (input, select, combo), and sort triggers.
     - Implemented **Roving Tabindex** and focus sentinels for seamless navigation between the Grid and other page elements.
     - Improved screen reader experience by hiding decorative elements (resizers, sort icons, drag ghosts) from the accessibility tree via `aria-hidden`.
 
-- Grid. Advanced Keyboard Navigation:
-    - Zone Navigation: Introduced three navigable focus zones: **Header**, **Body**, and **Footer**. Use <kbd>Up</kbd>/<kbd>Down</kbd> arrows or <kbd>Tab</kbd> to transition between zones.
-    - Global Shortcuts: Added support for <kbd>PageUp</kbd> / <kbd>PageDown</kbd> (page-wise movement), <kbd>Home</kbd> / <kbd>End</kbd> (first/last cell in a row), and <kbd>Ctrl+Home</kbd> / <kbd>Ctrl+End</kbd> (start/end of the grid).
-    - Selection & Range: Added <kbd>Shift</kbd> + navigation keys to extend selection in both `selection` and `blockSelection` modes.
-    - Editing & Interaction:
+- Grid. Advanced keyboard navigation:
+    - Zone navigation: Introduced three navigable focus zones: **Header**, **Body**, and **Footer**. Use <kbd>Up</kbd>/<kbd>Down</kbd> arrows or <kbd>Tab</kbd> to transition between zones.
+    - Global shortcuts: Added support for <kbd>PageUp</kbd> / <kbd>PageDown</kbd> (page-wise movement), <kbd>Home</kbd> / <kbd>End</kbd> (first/last cell in a row), and <kbd>Ctrl+Home</kbd> / <kbd>Ctrl+End</kbd> (start/end of the grid).
+    - Selection and range: Added <kbd>Shift</kbd> + navigation keys to extend selection in both `selection` and `blockSelection` modes.
+    - Editing and interaction:
         - Added <kbd>F2</kbd> as an alternative to <kbd>Enter</kbd> for opening editors.
         - Added <kbd>Space</kbd> / <kbd>Enter</kbd> to toggle boolean (checkbox) cells without opening a text editor.
         - Added <kbd>Delete</kbd> to clear content in `blockSelection` mode (when `editable: true`).
-    - Header/Footer Operations: Enabled column sorting via <kbd>Enter</kbd> / <kbd>Space</kbd> and multi-sorting via <kbd>Shift+Enter</kbd>. Filters can now be activated and navigated via keyboard.
+    - Header/Footer operations: Enabled column sorting via <kbd>Enter</kbd> / <kbd>Space</kbd> and multi-sorting via <kbd>Shift+Enter</kbd>. Filters can now be activated and navigated via keyboard.
 
-- Grid. TreeGrid Keyboard Patterns:
+- Grid. TreeGrid keyboard patterns:
     - Added standard tree navigation: <kbd>ArrowRight</kbd> to expand branches/move to children and <kbd>ArrowLeft</kbd> to collapse branches/move to parents.
 
-- Grid. Performance & Internal Optimization:
+- Grid. Performance and internal optimization:
     - Optimized selection state tracking by switching from $O(n)$ scans to $O(1)$ lookups.
     - Implemented caching for derived accessibility properties to maintain high rendering speeds in large datasets.
     - Improved focus restoration logic, ensuring focus returns to the correct cell after closing editors or switching zones.
