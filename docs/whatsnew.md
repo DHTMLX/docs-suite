@@ -24,14 +24,14 @@ Released on September 14, 2026
     - Selected cell boundaries and multi-cell ranges reflect their `aria-selected` status in the accessibility tree, providing real-time feedback during keyboard and pointer selection.
 
 - Grid. Localization for ARIA labels:
-    - Moved all hardcoded English accessible names and labels into the locale system.
-    - Screen reader announcements, button descriptions, and status labels that developers can translate via the standard [localization](grid/localization.md) configuration.
+    - Moved all hardcoded English [accessible names](grid/localization.md#accessible-names) and labels into the locale system.
+    - [Screen reader announcements](grid/localization.md#announcements), button descriptions, and status labels that developers can translate via the standard localization configuration.
 
 - Grid. Target size improvements for interactive controls:
     - Enlarged hit areas for small interactive elements, including column resize handles and removal/action icons.
     - Reduced accidental or missed clicks on touch-screen devices, accommodating users with motor precision needs.
 
-For additional information, refer to the [Grid accessibility](grid/accessibility.md) guide.
+For additional information, refer to the [Grid accessibility](grid/accessibility.md) and [Grid localization](grid/localization.md) guides.
 
 ### Fixes
 

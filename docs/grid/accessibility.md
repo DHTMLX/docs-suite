@@ -6,14 +6,14 @@ description: You can learn about accessibility and keyboard navigation in DHTMLX
 
 # Accessibility in DHTMLX Grid
 
-DHTMLX Grid is built to be operated entirely from the keyboard and to expose its structure and state to assistive technology. WAI-ARIA semantics are part of the rendered markup, and a single, coherent focus model spans the header, body, and footer. The semantics are always present — there is **no** configuration flag to disable them.
+DHTMLX Grid is built to be operated entirely from the keyboard and to expose its structure and state to assistive technology. WAI-ARIA semantics are part of the rendered markup, and a single, coherent focus model spans the header, body, and footer. The semantics are always present, and there is **no** configuration flag to disable them.
 
 ## Capabilities
 
 | Area | Support |
 | ---- | ------- |
 | Keyboard operation | Full: cell navigation, editing, sorting, range selection, tree expand/collapse, and clipboard all have keyboard equivalents |
-| WAI-ARIA semantics | Built-in (`grid` / `treegrid` model), enabled always — no opt-in flag |
+| WAI-ARIA semantics | Built-in (`grid` / `treegrid` model), enabled always, no opt-in flag |
 | Focus model | A single tab stop per zone; focus moves between header, body, and footer |
 | Selection model | Two modes: single-cell/row (`selection`) and spreadsheet-style range (`blockSelection`) |
 | High-contrast display | Light and dark high-contrast themes (`contrast-light` / `contrast-dark`) |
@@ -22,9 +22,9 @@ DHTMLX Grid is built to be operated entirely from the keyboard and to expose its
 
 This documentation covers the Grid widget:
 
-- the **data body** — cells and rows, including tree mode (`type: "tree"`)
-- the **column header** — sortable headers and in-header filters
-- the **footer** — summaries and footer filters
+- the **data body**: cells and rows, including tree mode (`type: "tree"`)
+- the **column header**: sortable headers and in-header filters
+- the **footer**: summaries and footer filters
 - the **inline editors**
 - the keyboard model that connects these zones.
 
@@ -32,7 +32,7 @@ As with any embeddable component, the accessibility of the final page also depen
 
 ## WAI-ARIA support
 
-WAI-ARIA roles and attributes are added to the component markup automatically and are **on by default** — there is no flag to turn them off. The Grid exposes itself to assistive technology as an interactive grid (or treegrid) of rows and cells, with a separate group for the header and footer. The semantics are applied per structural part of the widget, so each part is announced with the correct role and state.
+WAI-ARIA roles and attributes are added to the component markup automatically and are **on by default**. There is no flag to turn them off. The Grid exposes itself to assistive technology as an interactive grid (or treegrid) of rows and cells, with a separate group for the header and footer. The semantics are applied per structural part of the widget, so each part is announced with the correct role and state.
 
 ### Grid container
 
@@ -96,7 +96,7 @@ Resizer grips, sort icons, sort-order counters, drag ghosts, drop indicators, an
 
 The keyboard behavior of the body depends on which selection system is enabled. The two are independent and drive different ARIA output and shortcut semantics.
 
-### 1. Cell / row selection — selection
+### 1. Cell / row selection (`selection`)
 
 A single active cell (or row) moves with the arrow keys. This populates `aria-selected` on the focused cell or row. Extending the selection with <kbd>Shift</kbd> is enabled only when `multiselection: true`; without it, <kbd>Shift</kbd>+arrow moves the active cell.
 
@@ -119,7 +119,7 @@ const grid = new dhx.Grid("grid_container", {
 | `true` | Equivalent to cell selection |
 | *falsy / unset* | Selection (and `aria-selected`) disabled |
 
-### 2. Range / block selection — blockSelection
+### 2. Range / block selection (`blockSelection`)
 
 Spreadsheet-style rectangular ranges. The arrow keys move the range anchor; <kbd>Shift</kbd>+arrows grow or shrink the rectangle; <kbd>Delete</kbd> clears the range (when editing is enabled). This applies in **"range"** mode.
 
@@ -144,7 +144,7 @@ Both systems coexist with the same navigation keys; the Grid responds to whichev
 
 Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there.
 
-Shortcuts are organized into **zones** — body, header, footer — and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
+Shortcuts are organized into **zones** (body, header, footer) and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
 
 ### Grid body
 
@@ -212,7 +212,7 @@ new dhx.Grid("grid_container", {
     selection: "complex",
     multiselection: true, // Shift+Arrow multi-select
     keyNavigation: true,  // default
-    sortable: true        // default — keyboard sort in headers
+    sortable: true        // default, keyboard sort in headers
 });
 
 // B. Spreadsheet-style range selection
@@ -230,7 +230,7 @@ new dhx.Grid("grid_container", {
     selection: "complex"
 });
 
-// WAI-ARIA semantics are always emitted — there is no flag to toggle them.
+// WAI-ARIA semantics are always emitted; there is no flag to toggle them.
 ~~~
 
 Related articles:
