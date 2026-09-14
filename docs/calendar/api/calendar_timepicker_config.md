@@ -20,8 +20,14 @@ const calendar = new dhx.Calendar("calendar_container", {
 @descr:
 **Related sample**: [Calendar. Timepicker In Calendar](https://snippet.dhtmlx.com/jkbfb202)
 
-You can define the format of displaying time in a timepicker via the [](calendar/api/calendar_timeformat_config.md) property.
+You can define the format of displaying time in a timepicker via the [timeFormat](calendar/api/calendar_timeformat_config.md) property.
 
-[comment]: # (@relatedapi:calendar/api/calendar_timeformat_config.md)
+A timepicker can also be added as the **"timepicker"** entry of the [controls](calendar/api/calendar_controls_config.md) property. If both ways are used at once, the timepicker is rendered once.
 
-[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#timepicker)
+**Related API**: 
+- [timeFormat](calendar/api/calendar_timeformat_config.md)
+- [controls](calendar/api/calendar_controls_config.md)
+
+**Related articles**: 
+- [Initialize Calendar](calendar/how_to_start.md#initialize-calendar)
+- [Timepicker](calendar/configuring.md#timepicker)

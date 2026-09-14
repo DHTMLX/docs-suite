@@ -42,6 +42,45 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 You can also show the calendar in one of the modes using the [](calendar/api/calendar_showdate_method.md) method.
 
+## Controls
+
+You can add a toolbar with quick actions to the calendar via the [controls](calendar/api/calendar_controls_config.md) property. By default, the toolbar is not rendered.
+
+To render the default set of controls, set the property to *true*:
+
+~~~js
+const calendar = new dhx.Calendar("calendar_container", {
+    controls: true // the same as controls: ["spacer", "clear", "today"]
+});
+~~~
+
+To choose the controls and their order, pass an array of control names. The names are case-insensitive, and unknown names are ignored:
+
+~~~js
+const calendar = new dhx.Calendar("calendar_container", {
+    controls: ["clear", "spacer", "today", "timepicker"]
+});
+~~~
+
+The following controls are available:
+
+- **"clear"** - resets the selected date
+- **"today"** - sets the selected date to today and navigates the calendar to the current month
+- **"timepicker"** - shows the current time and opens the time selection view, which is equivalent to setting `timePicker: true`
+- **"spacer"** - fills in the empty space between the elements of the toolbar
+
+The **"clear"**, **"today"** and **"timepicker"** controls are rendered as buttons with the **"link"** view, the same look that the [`view`](toolbar/api/api_button_properties.md) property gives to a [Toolbar](toolbar/button.md) or [Form](form/button.md) button. The **"spacer"** control is a layout element that works like the [Toolbar spacer](toolbar/spacer.md).
+
+A timepicker can be added either through the `controls` array or through the [timePicker](calendar/api/calendar_timepicker_config.md) property. If you use both ways at once, the timepicker is rendered once. Listing the **"timepicker"** control also enables the `timePicker` property, so the time selection view stays available.
+
+The labels of the **"clear"** and **"today"** buttons are taken from the calendar locale. The default labels are **"Clear"** and **"Today"**, see the [Localization](calendar/localizing_calendar.md) article for details.
+
+The controls are placed in the toolbar from left to right in the order they are listed in the array. A timepicker enabled via the [timePicker](calendar/api/calendar_timepicker_config.md) property is placed at the beginning of the toolbar.
+
+A single control, except for a spacer, stretches to the full width of the calendar. If the toolbar contains several controls and no spacer, the controls keep their own width and are aligned to the left. Use the **"spacer"** control to push the controls that follow it to the right edge.
+
+**Related sample**: [Calendar. Controls](https://snippet.dhtmlx.com/guakfjw0?mode=wide)
+
 ## Date format
 
 There is a possibility to specify the format of dates in the calendar via the [](calendar/api/calendar_dateformat_config.md) property. The default format is "%d/%m/%y". 
@@ -238,7 +277,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 ## Timepicker
 
-You can add a timepicker into a calendar by enabling the [](calendar/api/calendar_timepicker_config.md) property. By default, a timepicker uses the 24-hour format.
+You can add a timepicker into a calendar by enabling the [](calendar/api/calendar_timepicker_config.md) property. The timepicker can also be added as the **"timepicker"** entry of the [controls](calendar/api/calendar_controls_config.md) property. By default, a timepicker uses the 24-hour format.
 You can change it to the 12-hour format via the [](calendar/api/calendar_timeformat_config.md) property. It accepts either 12 or 24 value to select the desired time format.
 
 ~~~js

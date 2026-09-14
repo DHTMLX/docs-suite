@@ -147,6 +147,7 @@ module.exports = {
                     id: "calendar/api/overview/properties_overview"
                   },*/
                   items: [
+                    "calendar/api/calendar_controls_config",
                     "calendar/api/calendar_css_config",
                     "calendar/api/calendar_date_config",
                     "calendar/api/calendar_dateformat_config",
