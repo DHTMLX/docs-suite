@@ -14,6 +14,11 @@ Released on September , 2026
 
 ### New functionality
 
+#### Calendar
+
+- The ability to [add a toolbar with the Clear, Today and Timepicker controls](calendar/configuring.md#controls) into the calendar
+    - new Calendar configuration property: [`controls`](calendar/api/calendar_controls_config.md)
+
 #### DataCollection/TreeCollection
 
 - The ability to get the position of an item among the visible ones
@@ -53,6 +58,10 @@ Released on September , 2026
 - TreeCollection. Fixed filtering in an ungrouped tree: it skipped the items which carried a `$group` field
 
 ### New samples
+
+#### Calendar
+
+- [Calendar. Controls](https://snippet.dhtmlx.com/guakfjw0?mode=wide)
 
 #### Grid
 
