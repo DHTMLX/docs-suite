@@ -6,7 +6,7 @@ description: The controls property adds a toolbar with the clear, today, and tim
 
 # controls
 
-@short: Optional. Adds a toolbar with the clear, today, and timepicker controls to the calendar
+@short: Optional. Adds a toolbar with the Clear, Today, and Timepicker controls to the calendar
 
 #### Usage
 
@@ -34,11 +34,11 @@ The property takes either a boolean value or an array of control names:
         </tr>
         <tr>
             <td><b>false</b></td>
-            <td>the controls are not rendered, no related markup is added to the DOM. The same applies when the property is not specified. A timepicker enabled via the <b>timePicker</b> property is still displayed</td>
+            <td>the calendar renders no controls and adds no related markup to the DOM. The same applies when you do not specify the property. A timepicker that the <code>timePicker</code> property enables still appears</td>
         </tr>
         <tr>
             <td><b>array</b></td>
-            <td>renders the listed controls in the specified order</td>
+            <td>renders the listed controls in the order you specify</td>
         </tr>
     </tbody>
 </table>
@@ -57,7 +57,7 @@ The array can include the following controls:
         </tr>
         <tr>
             <td><b>"timepicker"</b></td>
-            <td>shows the current time and opens the time selection view. It is equivalent to setting <b>timePicker: true</b></td>
+            <td>shows the current time and opens the time selection view. It is equivalent to setting <code>timePicker: true</code></td>
         </tr>
         <tr>
             <td><b>"spacer"</b></td>
@@ -66,10 +66,10 @@ The array can include the following controls:
     </tbody>
 </table>
 
-The names of controls are case-insensitive, so **"today"**, **"Today"** and **"TODAY"** are treated as the same control. Unknown names are ignored.
+The names of controls are case-insensitive, so the calendar treats **"today"**, **"Today"** and **"TODAY"** as the same control and ignores unknown names.
 
 :::note
-Listing the **"timepicker"** control enables the [timePicker](calendar/api/calendar_timepicker_config.md) property as well. If both ways of adding a timepicker are used at once, it is rendered once.
+Listing the **"Timepicker"** control enables the [`timePicker`](calendar/api/calendar_timepicker_config.md) property as well, so the calendar renders the timepicker once even if you use both ways.
 :::
 
 #### Example

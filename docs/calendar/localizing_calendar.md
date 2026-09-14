@@ -39,7 +39,7 @@ const en = {
 
 To use a different locale, your need to:
 
-- define necessary language settings: provide full and short names of months, full and short names of days of a week, and the labels of the buttons, including the ones of the [controls](calendar/api/calendar_controls_config.md), if you use them:
+- define necessary language settings: provide full and short names of months, full and short names of days of a week, and the labels of the buttons, including the ones of the [`controls`](calendar/api/calendar_controls_config.md), if you use them:
 
 ~~~js
 const de = {
@@ -62,15 +62,15 @@ const de = {
 };
 ~~~
 
-- apply the language settings by calling the **dhx.i18n.setLocale()** method before Calendar initialization:
+- apply the language settings by calling the `dhx.i18n.setLocale()` method before Calendar initialization:
 
 ~~~js
 dhx.i18n.setLocale("calendar", de);
 const calendar = new dhx.Calendar("calendar_container");
 ~~~
 
-The `cancel`, `today` and `clear` labels are optional. If they are not specified in a custom locale, the default values are applied.
+The `cancel`, `today` and `clear` labels are optional. If a custom locale does not specify them, the calendar applies the default values.
 
-The **Save** button of the timepicker is not a part of the calendar locale. Its label is defined by the `save` entry of the timepicker locale.
+The **Save** button of the timepicker is not a part of the calendar locale. The `save` entry of the [Timepicker locale](timepicker/localization.md) defines its label.
 
 **Related sample**: [Calendar. Localization](https://snippet.dhtmlx.com/tn40a0w8)

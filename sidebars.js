@@ -4282,6 +4282,7 @@ module.exports = {
             "timepicker/features",
             "timepicker/initialization",
             "timepicker/configuration",
+            "timepicker/localization",
             "timepicker/usage",
             "timepicker/customization",
             "timepicker/handling_events",
