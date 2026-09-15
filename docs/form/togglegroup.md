@@ -6,7 +6,7 @@ description: You can explore the ToggleGroup of Form in the documentation of the
 
 # ToggleGroup
 
-A control intended for creating groups of toggle buttons.
+A control that groups toggle buttons.
 
 ![ToggleGroup form controls with size buttons and text alignment icon buttons in DHTMLX Suite](/img/form/form_togglegroup.png)
 
@@ -16,13 +16,14 @@ A control intended for creating groups of toggle buttons.
 
 ## Adding ToggleGroup
 
-You can easily add a ToggleGroup control during initialization of a form:
+You can add a ToggleGroup control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", { 
     rows: [
            {
             type: "toggleGroup",
+            name: "togglegroup",
             full: true,
             gap: 4,
             options: [
@@ -46,22 +47,22 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the ToggleGroup control](form/api/togglegroup/api_togglegroup_properties.md).
+View [the full list of ToggleGroup configuration properties](form/api/togglegroup/api_togglegroup_properties.md).
 
 ## Working with ToggleGroup
 
-You can manipulate a ToggleGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a ToggleGroup control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
-For example, you can hide a control on a page:
+For example, you can hide the control:
 
 ~~~js
-const value = form.getItem("ToggleGroup").hide();
+form.getItem("togglegroup").hide();
 ~~~
 
 ### Methods
 
-Check [the full list of methods of the ToggleGroup control](form/api/api_overview.md#togglegroup-methods).
+Check [the full list of ToggleGroup methods](form/api/api_overview.md#togglegroup-methods).
 
 ### Events
 
-Check [the full list of events of the ToggleGroup control](form/api/api_overview.md#togglegroup-events).
+Check [the full list of ToggleGroup events](form/api/api_overview.md#togglegroup-events).
