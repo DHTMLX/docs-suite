@@ -1,7 +1,7 @@
 ---
 sidebar_label: controls
 title: JavaScript Calendar - controls Config 
-description: The controls property adds a toolbar with the clear, today, and timepicker controls to the DHTMLX JavaScript Calendar. Learn how to render the default set or list the controls in your own order, and check the code examples in the DHTMLX Suite docs.
+description: The controls property adds a toolbar with the Clear, Today, and Timepicker controls to the DHTMLX JavaScript Calendar. Learn how to render the default set or list the controls in your own order, and check the code examples in the DHTMLX Suite docs.
 ---
 
 # controls

@@ -52,7 +52,7 @@ You can add a toolbar with quick actions to the calendar via the [`controls`](ca
 
 To render the default set of controls, set the property to *true*:
 
-~~~js
+~~~jsx
 const calendar = new dhx.Calendar("calendar_container", {
     controls: true // the same as controls: ["spacer", "clear", "today"]
 });
@@ -60,7 +60,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 To choose the controls and their order, pass an array of control names. The names are case-insensitive, and the calendar ignores unknown names:
 
-~~~js
+~~~jsx
 const calendar = new dhx.Calendar("calendar_container", {
     controls: ["clear", "spacer", "today", "timepicker"]
 });
@@ -86,6 +86,8 @@ You can add a timepicker either through the `controls` array or through the [`ti
 The calendar places the controls in the toolbar from left to right in the order you list them in the array, and puts a timepicker that the [`timePicker`](calendar/api/calendar_timepicker_config.md) property enables at the beginning of the toolbar.
 
 A single control, except for a spacer, stretches to the full width of the calendar. If the toolbar contains several controls and no spacer, the controls keep their own width and line up on the left. Use the **"Spacer"** control to push the controls that follow it to the right edge.
+
+You can combine the controls in different ways to get the desired layout of the toolbar. For example:
 
 ![Calendars with different sets of controls showing how a spacer and a timepicker affect the position of the controls in DHTMLX Suite](/img/calendar/controls.png)
 

@@ -14,7 +14,7 @@ You can apply different languages to the interface of DHTMLX Timepicker. You jus
 
 The default locale for Timepicker looks like this:
 
-~~~js
+~~~jsx
 const en = {
     // labels of the sliders
     hours: "Hours",
@@ -32,7 +32,7 @@ To use a different locale, your need to:
 
 - define necessary language settings: provide the labels of the sliders and of the Save button:
 
-~~~js
+~~~jsx
 const de = {
     hours: "Stunden",
     minutes: "Minuten",
@@ -42,7 +42,7 @@ const de = {
 
 - apply the language settings by calling the `dhx.i18n.setLocale()` method before Timepicker initialization:
 
-~~~js
+~~~jsx
 dhx.i18n.setLocale("timepicker", de);
 const timepicker = new dhx.Timepicker("timepicker_container");
 ~~~
