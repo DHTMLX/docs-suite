@@ -6,7 +6,7 @@ description: You can explore the Text of Form in the documentation of the DHTMLX
 
 # Text
 
-A control for adding some text.
+A control for adding text to a form.
 
 ![Text form control displaying a static label and read-only text value in DHTMLX Suite](/img/form/form_text.png)
 
@@ -14,7 +14,7 @@ A control for adding some text.
 
 ## Adding Text
 
-You can easily add a Text control during initialization of a form:
+You can add a Text control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -31,11 +31,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Text control](form/api/text/api_text_properties.md).
+View [the full list of Text configuration properties](form/api/text/api_text_properties.md).
 
 ## Working with Text
 
-You can manipulate a Text control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Text control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
@@ -45,8 +45,8 @@ const value = form.getItem("text").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Text control](form/api/api_overview.md#text-methods).
+Check [the full list of Text methods](form/api/api_overview.md#text-methods).
 
 ### Events
 
-Check [the full list of events of the Text control](form/api/api_overview.md#text-events).
+Check [the full list of Text events](form/api/api_overview.md#text-events).
