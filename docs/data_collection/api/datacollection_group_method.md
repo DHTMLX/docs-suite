@@ -49,7 +49,7 @@ group(order: TGroupOrder[], config?: IGroupConfig): void;
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, the configuration of data grouping. The configuration object may include the following properties:<ul><li><b>`showMissed?: boolean | string`</b> - optional, specifies whether the elements that don't have the field for grouping should be displayed, *true* by default<ul><li>if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data</li><li>if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one</li><li>if set to *false*, the rows that don't suit the grouping criteria won't be rendered</li></ul></li><li><b>`showEmptyGroups?: boolean`</b> - optional, specifies whether a group that is left with no items after filtering stays in the collection, *false* by default<ul><li>if set to *false*, such a group is removed from the collection together with its summary row and its nested groups, so it is skipped by `map()` and isn't included into `getLength()`. A `resetFilter()` call brings it back</li><li>if set to *true*, such a group is kept with the `$count: 0` value and emptied aggregates: the "sum" and "count" aggregations give *0*, while "avg", "min" and "max" give *null*</li></ul></li><li><b>`field?: string`</b> - optional, the group field name, *"group"* by default</li></ul></td>
+            <td>(<i>object</i>) optional, the configuration of data grouping. The configuration object may include the following properties:<ul><li><b>`showMissed?: boolean | string`</b> - optional, specifies whether the elements that don't have the field for grouping should be displayed, *true* by default<ul><li>if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data</li><li>if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one</li><li>if set to *false*, the rows that don't suit the grouping criteria won't be rendered</li></ul></li><li><b>`showEmptyGroups?: boolean`</b> - optional, specifies whether a group that loses all its items to filtering stays in the collection, *false* by default<ul><li>if set to *false*, such a group leaves the collection together with its summary row and its nested groups, so `map()` skips it and `getLength()` leaves it out. A `resetFilter()` call brings it back</li><li>if set to *true*, such a group stays with the `$count: 0` value and emptied aggregates: the "sum" and "count" aggregations give *0*, while "avg", "min" and "max" give *null*</li></ul></li><li><b>`field?: string`</b> - optional, the group field name, *"group"* by default</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -133,14 +133,11 @@ grid.data.group(["city"], {
 
 ## Group counters and aggregates
 
-Group headers follow the data they hold. They are recalculated after every change of the collection content, that is after the [`filter()`](data_collection/api/datacollection_filter_method.md), [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md), [`add()`](data_collection/api/datacollection_add_method.md), [`remove()`](data_collection/api/datacollection_remove_method.md), [`update()`](data_collection/api/datacollection_update_method.md) and [`parse()`](data_collection/api/datacollection_parse_method.md) methods.
+Group headers follow the data they hold. DataCollection recalculates them after every change of the collection content, that is after the [`filter()`](data_collection/api/datacollection_filter_method.md), [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md), [`add()`](data_collection/api/datacollection_add_method.md), [`remove()`](data_collection/api/datacollection_remove_method.md), [`update()`](data_collection/api/datacollection_update_method.md) and [`parse()`](data_collection/api/datacollection_parse_method.md) methods.
 
-A header row provides the counters of the group in the following service properties:
-
-- `$count` - the number of data items that the group currently holds. For a nested grouping it is the size of the whole subtree of the group. Nested headers and summary rows aren't counted as data
-- `$totalCount` - the number of data items that the group holds ignoring the active filters. It is equal to `$count` when no filtering is applied
-
-Every field listed in the `map` object of a grouping level is recomputed over the items that are left, both on the header row and on the group summary row set by the `summary` property.
+:::note
+The same applies to TreeCollection, and thus to Grid in the [TreeGrid mode](grid/treegrid_mode.md): a counter covers the whole subtree of a header row, and an emptied header row disappears together with everything below it.
+:::
 
 Recalculation needs no configuration, it happens on every data change while the collection is grouped:
 
@@ -166,19 +163,34 @@ data.filter({
 wip.$count; // 1
 wip.$totalCount; // 2, the unfiltered number of items
 wip.total; // 30, recomputed over the items that are left
+data.getItem(`${wip.id}:summary`).total; // 30, the summary row follows
 
 data.resetFilter();
 wip.$count; // 2
 ~~~
 
-The aggregates of the header row and of the summary row are recomputed together, so the summary row of a group always matches its header.
+### Counters of a group
 
-Filtering is applied to the data items only: a group is kept or dropped by what is left inside it, and a group is removed from the collection together with its summary row and its nested groups when all its items are filtered out. Such a group is skipped by [`map()`](data_collection/api/datacollection_map_method.md) and isn't included into [`getLength()`](data_collection/api/datacollection_getlength_method.md) unless the `showEmptyGroups: true` config is passed to the method, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back either way.
+A group header row carries the following service properties:
 
-A group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) has no filter to be restored from, so it leaves the collection for good, its summary row included, and [`getItem()`](data_collection/api/datacollection_getitem_method.md) called with the id of its header returns *undefined*.
+- `$count` - the number of data items that the group currently holds. For a nested grouping it is the size of the whole subtree of the group. Nested headers and summary rows don't count as data
+- `$totalCount` - the number of data items that the group holds ignoring the active filters. It equals `$count` when no filter is active
 
-The same applies to TreeCollection, and thus to Grid in the [TreeGrid mode](grid/treegrid_mode.md): a counter covers the whole subtree of a header row, and an emptied header row is dropped together with everything below it.
+### Aggregated fields
+
+DataCollection recomputes every field listed in the `map` object of a grouping level over the items that are left, on the header row and on the group summary row that the `summary` property adds alike, so both rows show the same values.
+
+### Filtering grouped data
+
+DataCollection matches a filtering rule against the data items only: a group stays as long as any of its items match the rule, and a group that loses all of them leaves the collection together with its summary row and its nested groups. [`map()`](data_collection/api/datacollection_map_method.md) skips such a group and [`getLength()`](data_collection/api/datacollection_getlength_method.md) leaves it out, unless you pass the `showEmptyGroups: true` config to the method, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back either way.
+
+### Removing a group
+
+A group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) has no filter to bring it back, so it leaves the collection for good, its summary row included, and [`getItem()`](data_collection/api/datacollection_getitem_method.md) returns *undefined* for the id of its header.
 
 **Related sample**: [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
 
-@changelog: added in v9.0
+@changelog:
+- As of v9.4, DataCollection recalculates the counters and aggregated values of group headers after every change of the collection content
+- The `showEmptyGroups` property of the `config` parameter is added in v9.4
+- Added in v9.0

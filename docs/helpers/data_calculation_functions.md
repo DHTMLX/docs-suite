@@ -42,7 +42,7 @@ dhx.methods.min([], "value"); // null
 dhx.methods.max([], "value"); // null
 ~~~
 
-A *null* value is rendered as an empty cell, so an `avg`, `min` or `max` cell with nothing to calculate stays empty. This is what the footer of a grid that has no rows shows, as well as the aggregates of a group that is kept in a grid by the [`showEmptyGroups`](grid/api/grid_group_config.md) property.
+A *null* value renders as an empty cell, so an `avg`, `min` or `max` cell with nothing to calculate stays empty. This is what the footer of a grid that has no rows shows, as well as the aggregates of a group that is kept in a grid by the [`showEmptyGroups`](grid/api/grid_group_config.md) property.
 
 ### Defining a custom functor
 
