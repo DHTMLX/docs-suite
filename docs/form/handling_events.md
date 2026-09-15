@@ -8,40 +8,42 @@ description: You can explore the event handling of Form in the documentation of 
 
 ## Attaching event listeners
 
-You can add any handler to the events of Form. To do this, use the **form.events.on()** method with the following parameters:
+You can add a custom handler to any Form event with the `form.events.on()` method. The method takes the following parameters:
 
 <table>
     <tbody>
         <tr>
             <td><b>evName</b></td>
-            <td>name of the event</td>
+            <td>the event name</td>
         </tr>
         <tr>
             <td><b>evHandler</b></td>
-            <td>user-defined event handler</td>
+            <td>a custom event handler</td>
         </tr>
     </tbody>
 </table>
 
 ~~~js
 form.events.on("click", function(name,e){
-    console.log(id);
+    console.log(name);
 });
 ~~~
 
-Several handlers can be attached to one and the same event, and all of them will be executed.
+You can attach several handlers to the same event, and Form runs all of them.
 
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
-{{note  The names of the events are case-insensitive. }}
+:::note
+Event names are case-insensitive.
+:::
 
 ## Detaching event listeners
 
-There is a simple way of removing an event handler with the **form.events.detach()** method:
+The `form.events.detach()` method removes an event handler:
 
 ~~~js
 form.events.on("click", function(name,e){
-    console.log(id);
+    console.log(name);
 });
 
 form.events.detach("click"); 
@@ -49,7 +51,7 @@ form.events.detach("click");
 
 ## Calling events
 
-A custom event can be called with the **fire()** method of the **events** module:
+The `fire()` method of the `events` module calls a custom event:
 
 ~~~js
 form.events.fire(evName,[args]);

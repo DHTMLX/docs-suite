@@ -6,7 +6,7 @@ description: You can explore the CheckboxGroup of Form in the documentation of t
 
 # CheckboxGroup
 
-A control intended for creating groups of checkboxes.
+A control that groups checkboxes.
 
 ![CheckboxGroup form control with three checkbox options and the first one checked in DHTMLX Suite](/img/form/form_checkboxgroup.png)
 
@@ -14,7 +14,7 @@ A control intended for creating groups of checkboxes.
 
 ## Adding CheckboxGroup
 
-You can easily add a CheckboxGroup control during initialization of a form:
+You can add a CheckboxGroup control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", { 
@@ -55,26 +55,26 @@ const form = new dhx.Form("form_container", {
 
 ### Properties of CheckboxGroup
 
-View [the full list of configuration properties of the CheckboxGroup control](form/api/checkbox_group/api_checkboxgroup_properties.md).
+View [the full list of CheckboxGroup configuration properties](form/api/checkbox_group/api_checkboxgroup_properties.md).
 
-### Properties of Checkbox of CheckboxGroup control
+### Properties of a Checkbox in CheckboxGroup
 
-Check [the full list of configuration properties of a Checkbox of the CheckboxGroup control](form/api/checkbox_group/api_checkboxgroup_properties.md#properties-of-a-checkbox-of-checkboxgroup).
+View [the full list of configuration properties for a Checkbox in CheckboxGroup](form/api/checkbox_group/api_checkboxgroup_properties.md#properties-of-a-checkbox-of-checkboxgroup).
 
 ## Working with CheckboxGroup
 
-You can manipulate a CheckboxGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a CheckboxGroup control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
-For example, you can hide a control on a page:
+For example, you can hide the control:
 
 ~~~js
-const value = form.getItem("CheckboxGroup").hide();
+form.getItem("checkboxGroup").hide();
 ~~~
 
 ### Methods
 
-Check [the full list of methods of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-methods).
+Check [the full list of CheckboxGroup methods](form/api/api_overview.md#checkboxgroup-methods).
 
 ### Events
 
-Check [the full list of events of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-events).
+Check [the full list of CheckboxGroup events](form/api/api_overview.md#checkboxgroup-events).

@@ -6,7 +6,7 @@ description: You can explore the Button of Form in the documentation of the DHTM
 
 # Button
 
-A simple button that can have an icon. Button can be *twoState* and can have a badge with a number, which can be useful for displaying the number of new messages, etc.
+A simple button that can have an icon. A button can submit form data to a server.
 
 ![Button form control styled as a blue flat Send button in DHTMLX Suite](/img/form/form_button.png)
 
@@ -14,7 +14,7 @@ A simple button that can have an icon. Button can be *twoState* and can have a b
 
 ## Adding Button
 
-You can easily add a Button control during initialization of a form:
+You can add a Button control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -33,13 +33,13 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Button control](form/api/button/api_button_properties.md).
+View [the full list of Button configuration properties](form/api/button/api_button_properties.md).
 
 ## Working with Button
 
-You can manipulate a Button control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Button control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
-For example, you can disable a control on a page:
+For example, you can disable the control:
 
 ~~~js
 form.getItem("button").disable();
@@ -47,8 +47,8 @@ form.getItem("button").disable();
 
 ### Methods
 
-Check [the full list of methods of the Button control](form/api/api_overview.md#button-methods).
+Check [the full list of Button methods](form/api/api_overview.md#button-methods).
 
 ### Events
 
-Check [the full list of events of the Button control](form/api/api_overview.md#button-events).
+Check [the full list of Button events](form/api/api_overview.md#button-events).
