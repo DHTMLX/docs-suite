@@ -6,14 +6,14 @@ description: You can have an overview of Form in the documentation of the DHTMLX
 
 # Form overview
 
-DHTMLX Form is a typical form widget that can contain a number of adjustable and easy-to-use controls, supports data validation and localization of labels.
-Check [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=form). 
+DHTMLX Form is a form widget that can contain a set of adjustable controls. It supports data validation and label localization.
+Check [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=form).
 
 ![Form with Name Email and Password input fields a checked I agree checkbox and a Send button in DHTMLX Suite](/img/form/form_front.png)
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Form:
+Check the following page to learn how to build a full-featured DHTMLX Form:
 
 - [Features](form/features.md)
 
@@ -23,14 +23,14 @@ You can check the following page to learn how to build a full-featured DHTMLX Fo
 
 ## Related resources
 
-- You can get DHTMLX Form as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=form)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Form as part of the Suite library
+- Browse [online samples for DHTMLX Form](https://snippet.dhtmlx.com/ikyyekxq?tag=form)
 
 ## Guides
 
 ### Working with Form
 
-Guides you through common information you may need while working with Form.
+These guides cover what you need when you work with Form.
 
 - [](form/how_to_start.md)
 - [](form/localization.md)
@@ -39,9 +39,9 @@ Guides you through common information you may need while working with Form.
 - [](form/customization.md)
 - [](form/handling_events.md)
 
-### Form Controls
+### Form controls
 
-Discusses the creation of Form controls and the possibilities of manipulating them.
+These guides explain how to create Form controls and work with them.
 
 - [](form/avatar.md)
 - [](form/button.md)
