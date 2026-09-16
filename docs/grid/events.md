@@ -8,7 +8,7 @@ description: You can explore the event handling of Grid in the documentation of 
 
 ## Attaching event listeners
 
-You can attach event listeners with the **grid.events.on()** method:
+To attach event listeners, use the `grid.events.on()` method:
 
 ~~~js
 grid.events.on("scroll", function({top,left}){
@@ -16,13 +16,15 @@ grid.events.on("scroll", function({top,left}){
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
+:::note
+Event names are case-insensitive.
+:::
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 ## Detaching event listeners
 
-To detach events, use **grid.events.detach()**:
+To detach events, use the `grid.events.detach()` method:
 
 ~~~js
 grid.events.on("scroll", function({top,left}){
@@ -34,7 +36,7 @@ grid.events.detach("scroll");
 
 ## Calling events
 
-To call events, use **grid.events.fire()**:
+To call events, use the `grid.events.fire()` method:
 
 ~~~js
 grid.events.fire("name",args);
@@ -43,4 +45,4 @@ grid.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](grid/api/api_overview.md#grid-events).
+For the full list of events, see the related [API section](grid/api/api_overview.md#grid-events).
