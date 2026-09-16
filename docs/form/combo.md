@@ -6,7 +6,7 @@ description: You can explore the Combo of Form in the documentation of the DHTML
 
 # Combo
 
-An input that represents an advanced select box with a set of options. It is able to provide suggestions while a user is typing text.
+An input that works as an advanced select box with a set of options. It can show suggestions while the user types.
 
 ![Combo form control with an open dropdown list of numeric options in DHTMLX Suite](/img/form/form_combo.png)
 
@@ -16,7 +16,7 @@ An input that represents an advanced select box with a set of options. It is abl
 
 ## Adding Combo
 
-You can easily add a Combo control during initialization of a form:
+You can add a Combo control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -46,35 +46,35 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Combo control](form/api/combo/api_combo_properties.md).
+View [the full list of Combo configuration properties](form/api/combo/api_combo_properties.md).
 
 ## Working with Combo
 
-You can manipulate a Combo control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Combo control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
 ~~~js
-const value = form.getItem("Combo").getValue();
+const value = form.getItem("combo").getValue();
 ~~~
 
 ### Methods
 
-Check [the full list of methods of the Combo control](form/api/api_overview.md#combo-methods).
+Check [the full list of Combo methods](form/api/api_overview.md#combo-methods).
 
 ### Events
 
-Check [the full list of events of the Combo control](form/api/api_overview.md#combo-events).
+Check [the full list of Combo events](form/api/api_overview.md#combo-events).
 
 ### Working with the dhtmlxComboBox widget
 
-There is a possibility to use methods of DHTMLX Combobox via the [getWidget()](form/api/combo/combo_getwidget_method.md) method of a Combo control.
+You can use DHTMLX Combobox methods with the [`getWidget()`](form/api/combo/combo_getwidget_method.md) method of a Combo control.
 
-For example, you can set focus in the Combo input without opening a popup with options. To do this, you need to get the widget attached to the Combo control and then use the [focus()](combobox/api/combobox_focus_method.md) method of this widget.
+For example, to set focus in the Combo input without opening a popup with options, get the widget attached to the Combo control and call its [`focus()`](combobox/api/combobox_focus_method.md) method.
 
 ~~~js
 const combo = form.getItem("combo").getWidget();  // -> ComboBox
 combo.focus(); // sets focus in the input
 ~~~
 
-Check [the full list of methods of the DHTMLX Combobox component](combobox/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/combo/combo_getwidget_method.md) method.
+Check [the full list of DHTMLX Combobox methods](combobox/api/api_overview.md#methods) that you can apply with the [`getWidget()`](form/api/combo/combo_getwidget_method.md) method.
