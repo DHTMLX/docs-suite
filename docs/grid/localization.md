@@ -10,7 +10,7 @@ description: You can explore how to work with Grid in the documentation of the D
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can apply different languages to the interface of dhtmlxGrid. You just need to translate the corresponding strings for Grid labels and apply a ready locale to the component.
+You can apply different languages to the Grid interface. Translate the corresponding strings for Grid labels and apply the resulting locale to the component.
 
 ## Default locale
 
@@ -27,9 +27,9 @@ const en = {
 
 ## Custom locale
 
-To use a different locale, your need to:
+To use a different locale, do the following:
 
-- define the necessary language settings: provide translations for all text labels, e.g.:
+- define the necessary language settings: provide translations for all text labels, for example:
 
 ~~~jsx
 const de = {
@@ -37,7 +37,7 @@ const de = {
 };
 ~~~
 
-- apply the language settings calling the `dhx.i18n.setLocale()` method before Grid initialization:
+- apply the language settings with the `dhx.i18n.setLocale()` method before Grid initialization:
 
 ~~~jsx
 dhx.i18n.setLocale("grid", de);
