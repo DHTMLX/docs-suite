@@ -65,13 +65,14 @@ grid.data.filter({
 
 @descr:
 
-Unless `config.add` is set, the method replaces the currently applied filters; calling it without a rule at all drops all non-permanent filters and restores the unfiltered order. Permanent filters are the exception: they always survive and are reapplied first. The new rule then narrows their result further, so an item remains in the result only if it matches both the permanent filter and the new rule.
-
-When data is [grouped](data_collection/api/datacollection_group_method.md), DataCollection matches the rule against the data items only. It never checks group headers and summary rows against the rule, so a filtering function never receives a `$group` or a `$groupSummary` item. A group stays as long as any of its items match the rule, and DataCollection recalculates the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups that remain.
-
 **Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
 
-@changelog:
-- As of v9.4, the rule applies to the data items only: a filtering function never receives a `$group` or a `$groupSummary` item
+### Combining filters
+
+Unless `config.add` is set, the method replaces the currently applied filters; calling it without a rule at all drops all non-permanent filters and restores the unfiltered order. Permanent filters are the exception: they always survive and are reapplied first. The new rule then narrows their result further, so an item remains in the result only if it matches both the permanent filter and the new rule.
+
+### Filtering grouped data
+
+When data is [grouped](data_collection/api/datacollection_group_method.md), DataCollection matches the rule against the data items only. It never checks group headers and summary rows against the rule, so a filtering function never receives a `$group` or a `$groupSummary` item. A group stays as long as any of its items match the rule, and DataCollection recalculates the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups that remain.
 
 

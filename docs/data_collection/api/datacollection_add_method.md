@@ -54,8 +54,8 @@ component.data.add([
 
 When data is [grouped](data_collection/api/datacollection_group_method.md), DataCollection recalculates the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups over the resulting data.
 
+**Related article**: [Controls and operations](window/customization.md#controls-and-operations)
+
 **Related sample**: [Data. Add](https://snippet.dhtmlx.com/ktd8ks0m)
 
 @changelog: The possibility to pass an array of items is added in v6.1.
-
-[comment]: # (@related:window/customization.md#controls-and-operations)

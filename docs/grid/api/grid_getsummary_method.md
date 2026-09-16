@@ -63,6 +63,5 @@ In a grid with [grouped data](grid/usage.md#grouping-data), the method calculate
 **Related API**: [summary](grid/api/grid_summary_config.md)
 
 @changelog:
-- As of v9.4, the method calculates the returned values of a grid with grouped data over the data rows only
 - Added in v9.0
 

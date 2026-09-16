@@ -182,7 +182,7 @@ DataCollection recomputes every field listed in the `map` object of a grouping l
 
 ### Filtering grouped data
 
-DataCollection matches a filtering rule against the data items only: a group stays as long as any of its items match the rule, and a group that loses all of them leaves the collection together with its summary row and its nested groups. [`map()`](data_collection/api/datacollection_map_method.md) skips such a group and [`getLength()`](data_collection/api/datacollection_getlength_method.md) leaves it out, unless you pass the `showEmptyGroups: true` config to the method, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back either way.
+DataCollection matches a filtering rule against the data items only, so a filtering function never receives a `$group` or a `$groupSummary` item. A group stays as long as any of its items match the rule, and a group that loses all of them leaves the collection together with its summary row and its nested groups. [`map()`](data_collection/api/datacollection_map_method.md) skips such a group and [`getLength()`](data_collection/api/datacollection_getlength_method.md) leaves it out, unless you pass the `showEmptyGroups: true` config to the method, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back either way.
 
 ### Removing a group
 
