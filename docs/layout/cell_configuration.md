@@ -63,6 +63,91 @@ const layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
+## Custom content in a cell header
+
+Besides a text, the header of a cell can contain HTML markup or a DHTMLX widget. For this purpose, set the [`header`](layout/api/cell/layout_cell_header_config.md) property to a callback function. The component calls the function while it renders the cell. The function takes the configuration object of the cell as a parameter and returns the content for the header.
+
+The type of the value that you set for the `header` property defines the expected behavior:
+
+- a string always goes to the header as a plain text, with HTML tags displayed as a part of it
+- a callback function tells the component that the header supports HTML content
+
+### HTML markup in a header
+
+To render HTML markup in a header, return a string with the necessary tags from the callback:
+
+~~~jsx
+const layout = new dhx.Layout("layout_container", {
+    cols: [
+        {
+            id: "orders",
+            header: cell => `<b>Orders</b> <i>3 new</i>`
+        }
+    ]
+});
+~~~
+
+### A DHTMLX widget in a header
+
+To render a DHTMLX component in a header, return an initialized widget, the same object that you pass to the [`attach()`](layout/api/cell/layout_cell_attach_method.md) method of a cell. The name of a component doesn't work here, as the header treats any returned string as HTML:
+
+~~~jsx
+const toolbar = new dhx.Toolbar(null, {
+    data: [
+        { id: "add", type: "button", value: "Add", icon: "dxi dxi-plus" },
+        { id: "remove", type: "button", value: "Remove", icon: "dxi dxi-delete" }
+    ]
+});
+
+const layout = new dhx.Layout("layout_container", {
+    cols: [
+        { header: () => toolbar }
+    ]
+});
+~~~
+
+### Events of the header content
+
+To handle clicks and other DOM events of the markup that the callback returns, use the [`on`](layout/api/cell/layout_cell_on_config.md) property of the cell with the selector of the necessary element.
+
+The example below shows how to make a control inside a custom cell header interactive. The `header` callback returns markup with a "Check now" button, and a click on that button rebuilds the content of the cell:
+
+~~~jsx
+// builds the HTML content of the cell
+function metrics() {
+    return `<div>Checked at ${new Date().toLocaleTimeString()}</div>`;
+}
+
+const layout = new dhx.Layout("layout_container", {
+    rows: [
+        {
+            id: "service",
+            html: metrics(),
+            header: () => `<span>API service</span>
+                <button type="button">Check now</button>`,
+            on: {
+                click: {
+                    "button": function() {
+                        layout.getCell("service").attachHTML(metrics());
+                    }
+                }
+            }
+        }
+    ]
+});
+~~~
+
+The [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) call repaints the cell, so the component calls the `header` callback again and renders the header with the current data as well.
+
+### Collapsing a cell with a custom header
+
+A [`collapsable`](layout/api/cell/layout_cell_collapsable_config.md) cell keeps its collapse/expand icon when the header contains custom content. A click on the custom content itself calls no API of the cell, so buttons and other controls inside the header remain operable. A user collapses and expands the cell by clicking the collapse icon or the free space of the header.
+
+**Related samples**:
+- [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
+- [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
+- [Layout. Custom cell headers in a dashboard](https://snippet.dhtmlx.com/awwc1m4u?mode=wide)
+
 ## Height of a header cell
 
 You can specify the necessary height of the header of a cell using the [](layout/api/cell/layout_cell_headerheight_config.md) configuration option of the cell:
