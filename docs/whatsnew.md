@@ -38,6 +38,11 @@ Released on September , 2026
 - The ability to [define the options of a header/footer filter manually](grid/configuration.md#custom-options-of-headerfooter-filters) instead of building them from the column data
     - new property of the `filterConfig` object of **selectFilter** and **comboFilter**: `options`
 
+#### Layout
+
+- The ability to [render HTML content or a DHTMLX widget in the header of a cell](layout/cell_configuration.md#custom-content-in-a-cell-header)
+    - updated Layout cell configuration property: [`header`](layout/api/cell/layout_cell_header_config.md), which takes a callback function besides a string
+
 ### Updates
 
 - DataCollection. The [`changeId()`](data_collection/api/datacollection_changeid_method.md) method returns the new id of the item
@@ -68,6 +73,12 @@ Released on September , 2026
 - [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
 - [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
 - [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+
+#### Layout
+
+- [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
+- [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
+- [Layout. Custom cell headers in a dashboard](https://snippet.dhtmlx.com/awwc1m4u?mode=wide)
 
 ## Version 9.3.11
 
