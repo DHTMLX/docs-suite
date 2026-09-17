@@ -23,7 +23,7 @@ DHTMLX Chart includes several configuration options that are mostly common for a
 
 ### type
 
-- [](chart/api/chart_type_config.md) - (*string*) defines the [type of a chart](chart/charts_overview.md) to initialize; "bar", "x-bar" (for horizontal Bar chart), "line", "spline", "scatter", "area", 
+- [](chart/api/chart_type_config.md) - (*string*) defines the [type of a chart](chart/charts_overview.md) to initialize; "bar", "xbar" (for horizontal Bar chart), "line", "spline", "scatter", "area", 
 "splineArea", "donut", "pie", "pie3D", "radar", "treeMap", and "calendarHeatMap"
 
 ~~~js
@@ -236,7 +236,7 @@ chart.data.parse(dataset);
 
 The configuration object of [Bar and X-Bar chart](chart/charts_overview.md#bar-and-x-bar-chart) must include the following properties:
 
-- [type: "bar"](chart/api/chart_type_config.md) (or [type: "x-bar"](chart/api/chart_type_config.md))
+- [type: "bar"](chart/api/chart_type_config.md) (or [type: "xbar"](chart/api/chart_type_config.md))
 - [scales: {}](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales)
 - [series: []](chart/api/chart_series_config.md#the-list-of-config-options-for-series-for-charts-with-scales)
 - and, optionally, [legend: {}](chart/api/chart_legend_config.md#the-list-of-config-options-for-legend-for-charts-with-scales) 
@@ -245,7 +245,7 @@ For example:
 
 ~~~js
 const config = {
-    type: "bar", // or type: "x-bar"
+    type: "bar", // or type: "xbar"
     scales: {
         "bottom": {
             text: "month"

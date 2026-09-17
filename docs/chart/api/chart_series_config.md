@@ -53,7 +53,7 @@ const chart = new dhx.Chart("chart_container", {
 
 :::info
 You can apply the options below to configure series for charts with the following types: 
-["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["radar"](chart/charts_overview.md#radar-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
+["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "xbar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["radar"](chart/charts_overview.md#radar-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
 :::
 
 ### Usage
@@ -63,7 +63,7 @@ series: [
     {
         id: string,
         value: string,
-        type?: "line" | "spline" | "bar" | "x-bar" | "area" | "splineArea" | "radar"| "scatter",
+        type?: "line" | "spline" | "bar" | "xbar" | "area" | "splineArea" | "radar"| "scatter",
         label?: ((seria: ISeriaConfig) => string) | string,
 
         active?: boolean,

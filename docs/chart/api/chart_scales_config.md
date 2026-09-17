@@ -45,7 +45,7 @@ Two scales of the same direction can be used together, each with its own dimensi
 
 :::tip
 You can apply the options below to configure scales for charts with the following types: 
-["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
+["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "xbar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
 :::
 
 ### Usage
