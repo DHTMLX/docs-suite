@@ -10,11 +10,11 @@ description: You can explore how to work with History module of Grid in the docu
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can manage the history of actions in the Grid component via the API of the [`History`](grid/configuration.md#history-of-grid-actions) module. It allows tracking changes made by the user through the user interface, such as editing cells using the editor, clearing cells, or applying modifications via the handle in the `BlockSelection` mode. The module supports the `undo` and `redo` operations, as well as allows managing the history stack with the ability to limit its size.
+You can manage the history of actions in the Grid component with the API of the [`History`](grid/configuration.md#history-of-grid-actions) module. It allows you to track changes made by the user through the user interface, such as editing cells with the editor, clearing cells, or applying modifications with the handle in the `BlockSelection` mode. The module supports the `undo` and `redo` operations and allows you to manage the history stack, including a limit on its size.
 
 ## Initializing the History module
 
-To initialize the `History` module, use the [`history`](grid/api/grid_history_config.md) property in the configuration of the **dhx.Grid** component. When the Grid is created, the module is accessible through the `grid.history` property.
+To initialize the `History` module, use the [`history`](grid/api/grid_history_config.md) property in the configuration of the `dhx.Grid` component. After you create the Grid, you can access the module through the `grid.history` property.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -30,14 +30,14 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-The `history` property can also be set as an *object* to enable the module and provide additional configuration options.
-Learn about configuration possibilities of the `History` module in the [Configuration](grid/configuration.md#history-of-grid-actions) guide.
+The `history` property can also be set as an *object* to enable the module and specify additional configuration options.
+Learn how to configure the `History` module in the [Configuration](grid/configuration.md#history-of-grid-actions) guide.
 
 **Related sample:** [Grid. History. Configuration](https://snippet.dhtmlx.com/vznpyeit)
 
 ## Enabling/disabling History module
 
-You can activate the history module via the [`enable()`](grid/api/history/enable_method.md) method of the `history` object. The following example shows how the module is enabled after deactivation on initialization:
+You can activate the `History` module with the [`enable()`](grid/api/history/enable_method.md) method of the `history` object. The following example shows how to enable the module after it was disabled on initialization:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -67,7 +67,7 @@ grid.history.add({
 console.log(grid.history.getHistory().length); // -> 1
 ~~~
 
-To disable the management of the history of actions in Grid, use the [`disable()`](grid/api/rangeselection/disable_method.md) method of the `history` object. The following example shows disabling of the module after adding an action:
+To disable the management of the history of actions in Grid, use the [`disable()`](grid/api/rangeselection/disable_method.md) method of the `history` object. The following example shows how to disable the module after adding an action:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -102,7 +102,7 @@ console.log(grid.history.getHistory().length); // -> 1 (the new action hasn't be
 
 ### Checking History module state
 
-You can check whether the `History` module is disabled, using the [`isDisabled()`](grid/api/history/isdisabled_method.md) method of the `history` object. It returns `true`, if the module is disabled and `false`, if it is enabled. The following example shows checking the module's state after disabling it:
+You can check whether the `History` module is disabled with the [`isDisabled()`](grid/api/history/isdisabled_method.md) method of the `history` object. It returns `true` if the module is disabled and `false` if it is enabled. The following example shows checking the module's state after disabling it:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -134,7 +134,7 @@ The `History` module supports the following action types within the Grid compone
 - **"removeAll"** - clearing all the rows
 - **"change"** - modifying cell values (requires specifying an inverse action)
 
-For the "change" and "removeAll" actions, an `inverse` action is mandatory. Otherwise, [adding the action to the history](#adding-a-new-action) will trigger an error. 
+For the "change" and "removeAll" actions, an `inverse` action is mandatory. Otherwise, [adding the action to the history](#adding-a-new-action) triggers an error. 
 
 ### Adding a new action 
 
@@ -144,7 +144,7 @@ You can add a new action into the history of actions within the grid by using th
     <tbody>
         <tr>
             <td><b>action</b></td>
-            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)</li></ul></td>
+            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (for example, added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (mandatory for the "change" and "removeAll" types, not required for other types)</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -153,7 +153,7 @@ You can add a new action into the history of actions within the grid by using th
 The `action` argument must conform to the `IAction` interface. If the module is disabled, the action type is invalid, or the `inverse` property is missing (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered. 
 :::
 
-All the actions performed through the API (e.g., using `grid.data`) can be added to the history using the `add()` method. The following example shows adding a new row via `DataCollection`:
+You can add all the actions performed through the API (for example, with `grid.data`) to the history with the `add()` method. The following example shows adding a new row via `DataCollection`:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -184,13 +184,13 @@ console.log(history.length); // ->1
 
 **Related sample:** [Grid. History. Adding a custom action](https://snippet.dhtmlx.com/i9rm4vsd)
 
-To make the process of adding new actions into the Grid history more flexible, you can apply the related events of the `history` object: 
+To add new actions into the Grid history more flexibly, you can apply the related events of the `history` object: 
 - [`beforeAdd`](grid/api/history/beforeadd_event.md)
 - [`afterAdd`](grid/api/history/afteradd_event.md)
 
 ### Removing the last action 
 
-You can remove the last action from the Grid history using the [`remove()`](grid/api/history/remove_method.md) method of the `history` object. Note that if the history is empty or the module is disabled, the operation is ignored and the [`error`](grid/api/history/error_event.md) event is triggered (for a disabled module).
+You can remove the last action from the Grid history using the [`remove()`](grid/api/history/remove_method.md) method of the `history` object. Note that if the history is empty or the module is disabled, Grid ignores the operation; for a disabled module it also triggers the [`error`](grid/api/history/error_event.md) event.
 
 The following example shows removing the last action from the history after modifying a value:
 
@@ -260,7 +260,7 @@ console.log(grid.history.canRedo()); // -> false
 
 ### Applying the `undo` operation
 
-The Grid component allows applying the `undo` operation to the last action in the history via the [`undo()`](grid/api/history/undo_method.md) method of the `history` object. 
+The Grid component allows you to apply the `undo` operation to the last action in the history with the [`undo()`](grid/api/history/undo_method.md) method of the `history` object. 
 
 Depending on the [type of the action](#types-of-actions), the method either applies the inverse action (for the "change" and "removeAll" types) or restores data (for the "add" and "remove" types). Note that if the history is empty, the module is disabled, or no inverse action is available (for actions with the "change" and "removeAll" types), the [`error`](grid/api/history/error_event.md) event is triggered.
 
@@ -298,7 +298,7 @@ console.log(grid.history.canRedo()); // -> true
 
 You can reapply the last undone action in the Grid history using the [`redo()`](grid/api/history/redo_method.md) method of the `history` object. Note that if the redo stack is empty or the module is disabled, the [`error`](grid/api/history/error_event.md) event is triggered.
 
-The example below shows how the undone row addition can be re-applied:
+The example below shows how to reapply the undone row addition:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -362,7 +362,7 @@ if (grid.history.canUndo()) {
 
 ### Checking whether an action can be reapplied
 
-It is possible to check whether an action in the Grid history can be reapplied using the [`canRedo()`](grid/api/history/canredo_method.md) method of the `history` object. The method returns `true` if the redo stack contains actions and the module is not disabled.
+You can check whether an action in the Grid history can be reapplied using the [`canRedo()`](grid/api/history/canredo_method.md) method of the `history` object. The method returns `true` if the redo stack contains actions and the module is not disabled.
 
 The following example shows checking whether it is possible to redo an undone action:
 
@@ -395,19 +395,19 @@ if (grid.history.canRedo()) {
 }
 ~~~
 
-To make the process of working with the undo/redo operations more flexible, you can apply the related events of the `history` object: [`beforeUndo`](grid/api/history/beforeundo_event.md), [`afterUndo`](grid/api/history/afterundo_event.md), [`beforeRedo`](grid/api/history/beforeredo_event.md), [`afterRedo`](grid/api/history/afterredo_event.md).
+To work with the undo/redo operations more flexibly, you can apply the related events of the `history` object: [`beforeUndo`](grid/api/history/beforeundo_event.md), [`afterUndo`](grid/api/history/afterundo_event.md), [`beforeRedo`](grid/api/history/beforeredo_event.md), [`afterRedo`](grid/api/history/afterredo_event.md).
 
 ## Getting the history of Grid actions
 
-You can get a copy of the array of all actions in the Grid history using the [`getHistory()`](grid/api/history/gethistory_method.md) method of the `history` object to prevent accidental modification of the internal structure.
+To get the array of all actions in the Grid history, use the [`getHistory()`](grid/api/history/gethistory_method.md) method of the `history` object. It returns a copy, which prevents accidental modification of the internal structure.
 
-Each action in the returned array presents an object described below:
+Each action in the returned array is an object with the following properties:
 
 <table>
     <tbody>
         <tr>
             <td><b>action</b></td>
-            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (e.g., added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (for the "change" and "removeAll" types)</li></ul></td>
+            <td>(<i>object</i>) the action object that contains the following properties:<ul><li><b>`type`</b> - (<i>string</i>) the type of action: "add", "remove", "removeAll", or "change"</li><li><b>`batch`</b> - (<i>array</i>) an array of rows representing the data affected by the action (for example, added, removed, or modified rows)</li><li><b>`inverse`</b> - (<i>object</i>) optional, the inverse action required for undoing (for the "change" and "removeAll" types)</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -446,11 +446,11 @@ console.log(history.length); // -> 2
 
 The `History` module records actions performed through the user interface, including:
 
-- cells editing: changes made using the cell editor
-- cells clearing: clearing the contents of cells using keyboard navigation
+- cell editing: changes made with the cell editor
+- cell clearing: clearing the contents of cells with keyboard navigation
 - handle modifications: if the handle is used in the [`BlockSelection` mode](grid/configuration.md#managing-block-selection-in-grid) and the [`handler`](grid/api/grid_blockselection_config.md#parameters) function returns an object with the `prev` (the previous cell value) and `current` (the new cell value) fields, these changes are added to the history
 
-The actions not related to the UI (e.g., programmatic changes via `grid.data`) are not automatically recorded, but can be manually added using the [`add()`](grid/api/history/add_method.md) method.
+Grid does not record actions unrelated to the UI automatically (for example, programmatic changes with `grid.data`), but you can add them manually with the [`add()`](grid/api/history/add_method.md) method.
 
 ## History stack limitation
 
@@ -460,4 +460,4 @@ If the `limit` parameter is set in the [configuration of the `History` module](g
 
 ## Module disabling
 
-If the module is disabled (via [`disabled: true`](grid/api/grid_history_config.md) in the module configuration or the [`disable()`](grid/api/rangeselection/disable_method.md) method), all the operations ("add", "remove", "removeAll", "change", undo", "redo") are blocked, and the [`error`](grid/api/history/error_event.md) event is triggered.
+If the module is disabled (via [`disabled: true`](grid/api/grid_history_config.md) in the module configuration or the [`disable()`](grid/api/rangeselection/disable_method.md) method), all the operations ("add", "remove", "removeAll", "change", "undo", "redo") are blocked, and the [`error`](grid/api/history/error_event.md) event is triggered.
