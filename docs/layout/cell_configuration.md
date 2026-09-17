@@ -8,7 +8,7 @@ description: You can explore the configuration of a Cell of Layout in the docume
 
 ## HTML content
 
-A layout cell can have any HTML content inside it. You can set it with the [](layout/api/cell/layout_cell_html_config.md) attribute in the object of a cell.
+A layout cell can contain any HTML content. You can set it with the [](layout/api/cell/layout_cell_html_config.md) attribute in the object of a cell.
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -22,7 +22,7 @@ const layout = new dhx.Layout("layout_container", {
 
 ## Hidden cell
 
-It is possible to add the [](layout/api/cell/layout_cell_hidden_config.md) attribute into the the object of a cell(s) to render a layout with some cells hidden:
+You can add the [](layout/api/cell/layout_cell_hidden_config.md) attribute to the object of a cell to render a layout with hidden cells:
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -44,7 +44,7 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-You can also add an icon or an image into the header of a cell with the help of corresponding attributes - [](layout/api/cell/layout_cell_headericon_config.md) and [](layout/api/cell/layout_cell_headerimage_config.md).
+You can also add an icon or an image into the header of a cell with the corresponding attributes - [](layout/api/cell/layout_cell_headericon_config.md) and [](layout/api/cell/layout_cell_headerimage_config.md).
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -84,11 +84,11 @@ const layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
-If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the [](layout/api/cell/layout_cell_headerheight_config.md) option will add a header without text for a cell.
+If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the [](layout/api/cell/layout_cell_headerheight_config.md) option adds a header without text to a cell.
 
 ## Cell size
 
-You can easily control and change the size of a cell via the [](layout/api/cell/layout_cell_width_config.md) and [](layout/api/cell/layout_cell_height_config.md) attributes of the object of a cell.
+You can change the size of a cell with the [](layout/api/cell/layout_cell_width_config.md) and [](layout/api/cell/layout_cell_height_config.md) attributes of the object of a cell.
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {   
@@ -137,7 +137,9 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{note Note, that [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md) properties prevent [the width of a cell](layout/api/cell/layout_cell_width_config.md) from being less/greater than minWidth/maxWidth values accordingly. The [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) options work in the same way. }}
+:::note
+The [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md) properties prevent [the width of a cell](layout/api/cell/layout_cell_width_config.md) from becoming less or greater than the minWidth/maxWidth values. The [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) options work in the same way.
+:::
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -151,11 +153,11 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-As you can see from the code example above, the width of the cell occupies 50% of the parent container width but is not larger than 200px.
+In the example above, the width of the cell occupies 50% of the parent container width but is not larger than 200px.
 
 ### Autosize for cells
 
-Starting with v7.0, you can configure a cell so that its width/ height would automatically adjust to the width/ height of the cell content. For this purpose, you need to set the [width](layout/api/cell/layout_cell_width_config.md)/ [height](layout/api/cell/layout_cell_height_config.md) options to *"content"*:
+Starting with v7.0, you can configure a cell so that its width or height adjusts automatically to the width or height of the cell content. For this, set the [width](layout/api/cell/layout_cell_width_config.md)/[height](layout/api/cell/layout_cell_height_config.md) options to *"content"*:
 
 ~~~js {5}
 const layout = new dhx.Layout("layout_container", {
@@ -171,8 +173,7 @@ const layout = new dhx.Layout("layout_container", {
 
 ## Collapsibility
 
-There are two attributes of the object of a cell: [](layout/api/cell/layout_cell_collapsable_config.md) and [](layout/api/cell/layout_cell_collapsed_config.md). The first one defines whether a cell can be collapsed and expanded, and the second one checks whether a cell is collapsed during
-the initialization of a layout.
+The object of a cell has two related attributes: [](layout/api/cell/layout_cell_collapsable_config.md) and [](layout/api/cell/layout_cell_collapsed_config.md). The first defines whether a cell can be collapsed and expanded; the second defines whether a cell is collapsed when a layout is initialized.
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -188,7 +189,7 @@ const layout = new dhx.Layout("layout_container", {
 
 ## Progress bar
 
-You can configure a Layout cell so that it would render a progress bar (in other words, a loading spinner) if there is no any component or HTML content attached to the cell. To do that, enable the [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) attribute in the configuration object of the cell:
+You can configure a Layout cell to render a progress bar (in other words, a loading spinner) if no component or HTML content is attached to the cell. To do that, enable the [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) attribute in the configuration object of the cell:
 
 ~~~js {9,14}
 const layout = new dhx.Layout("layout_container", {
@@ -210,13 +211,13 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-Note, as soon as you attach a component or HTML content to the cell, the progress bar will be hidden.
+Note that as soon as you attach a component or HTML content to the cell, Layout hides the progress bar.
 
 By default, the [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) attribute is disabled.
 
 ## Resizability
 
-To allow resizing of a cell, make use of the [](layout/api/cell/layout_cell_resizable_config.md) option in the object of a cell. 
+To allow resizing of a cell, use the [](layout/api/cell/layout_cell_resizable_config.md) option in the object of a cell. 
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
@@ -228,11 +229,13 @@ const layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
 
-{{note Starting from v7.0, you can define the resizing limits by setting necessary values to the [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md), [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) properties in the config of a cell.}}
+:::note
+Starting from v7.0, you can define the resizing limits by setting the necessary values for the [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md) and [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) properties in the config of a cell.
+:::
 
 ## Setting borders for cells
 
-By default, there is no space and borders between cells inside a layout and the cells look like they are merged. Starting from v7.0, it is possible to split the cells by adding borders or space between them via the [](layout/api/cell/layout_cell_type_config.md) configuration property of a Layout cell:
+By default, there is no space or border between cells inside a layout, and the cells look merged. Starting from v7.0, it is possible to split the cells by adding borders or space between them via the [](layout/api/cell/layout_cell_type_config.md) configuration property of a Layout cell:
 
 ~~~js {2}
 const layout = new dhx.Layout("layout_container", {

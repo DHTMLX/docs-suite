@@ -51,10 +51,10 @@ To add DHTMLX Layout into an application, you need to take the following simple 
 
 Unpack the downloaded package into a folder of your project.
 
-After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
+After that, create an HTML file and place the full paths to the DHTMLX Suite JS and CSS files into the header of the file. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -63,7 +63,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Layout and give it an id, e.g. "layout_container":
+Add a container for Layout and give it an id, for example "layout_container":
 
 ~~~html
 <div id="layout_container"></div>
@@ -71,7 +71,7 @@ Add a container for the Layout and give it an id, e.g. "layout_container":
 
 ## Define Layout structure
 
-Layout consists of a set of cells arranged either into rows or into columns. The structure of a layout can be rather complex, since there can also be nested rows and columns.
+Layout consists of a set of cells arranged either into rows or into columns. A layout structure can be complex, because rows and columns can nest inside one another.
 
 For example, you can create a three-level layout structure:
 
@@ -109,7 +109,7 @@ const cols = [
 Initialize Layout with the `dhx.Layout` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the layout container
-- a configuration object which contains the structure of Layout 
+- a configuration object that contains the structure of Layout 
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {cols});
@@ -119,15 +119,15 @@ const layout = new dhx.Layout("layout_container", {cols});
 
 #### Layout object
 
-The properties of the configuration object of Layout allow you to define the structure of Layout.
+The properties of the Layout configuration object allow you to define its structure.
 
 See the list of Layout properties [here](layout/api/api_overview.md#layout-properties).
 
 #### Cell object
 
-There is also a set of properties you can specify for a Layout cell to configure it according to your needs. 
+You can also specify a set of properties for a Layout cell to configure it according to your needs. 
 
-You will find the detailed information on configuration options of the cell object in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.
+You can find detailed information on the cell object configuration options in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.
 
 ## Example
 
