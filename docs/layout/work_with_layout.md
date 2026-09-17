@@ -8,7 +8,7 @@ description: You can explore how to work with Layout in the documentation of the
 
 ## Removing cells
 
-To remove a certain cell from a layout, apply the [](layout/api/layout_removecell_method.md) method. As a parameter it takes the id of a cell to be removed:
+To remove a cell from a layout, apply the [](layout/api/layout_removecell_method.md) method. It takes as a parameter the id of a cell to be removed:
 
 ~~~js
 layout.removeCell(id);
@@ -18,7 +18,7 @@ layout.removeCell(id);
 
 ## Getting the object of a cell
 
-You can get the object of a cell by its id. Use the [](layout/api/layout_getcell_method.md) method for this purpose:
+You can get the object of a cell by its id. Use the [](layout/api/layout_getcell_method.md) method:
 
 ~~~js
 layout.getCell("header");
@@ -49,7 +49,9 @@ layout.getCell("list").attach(list);
 
 **Related sample**: [Layout. Attach widget](https://snippet.dhtmlx.com/6wuxj6sh)
 
-{{note The Message, Popup, Window components can't be attached to the Layout cell because these components can't have the parent container due to their architecture principles.}}
+:::note
+The Message, Popup, Window components can't be attached to the Layout cell because these components can't have the parent container due to their architecture principles.
+:::
 
 ### Detach a component
 
@@ -101,7 +103,7 @@ layout.getCell("toolbar").show();
 
 ## Checking visibility of a cell
 
-Since the object of a cell has the [hidden](layout/api/cell/layout_cell_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibility of a cell via the [](layout/api/cell/layout_cell_isvisible_method.md) method. It returns *true* if the cell is visible and *false* if it is hidden.
+Since the object of a cell has the [hidden](layout/api/cell/layout_cell_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibility of a cell via the [](layout/api/cell/layout_cell_isvisible_method.md) method. It returns `true` if the cell is visible and `false` if it is hidden.
 
 ~~~js
 layout.getCell("sidebar").isVisible(); // -> true|false
@@ -109,7 +111,7 @@ layout.getCell("sidebar").isVisible(); // -> true|false
 
 ## Collapsing/expanding a cell
 
-You can collapse/expand a specified cell using two corresponding methods of a Layout cell - [](layout/api/cell/layout_cell_collapse_method.md) and [](layout/api/cell/layout_cell_expand_method.md):
+You can collapse/expand a specified cell using two corresponding methods of a Layout cell, [](layout/api/cell/layout_cell_collapse_method.md) and [](layout/api/cell/layout_cell_expand_method.md):
 
 ~~~js
 // collapsing a cell by its id
@@ -133,10 +135,10 @@ layout.getCell("toolbar").toggle();
 
 ## Showing/hiding a progress bar
 
-A progress bar is a visual component which informs users that the content is loading or updating. 
-You may show or hide the component via API calls either in the [Layout container](#progress-bar-in-the-layout-container) or in a [separate cell](#progress-bar-in-a-layout-cell).
+A progress bar is a visual component that informs users that the content is loading or updating.
+You can show or hide the component via API calls either in the [Layout container](#progress-bar-in-the-layout-container) or in a [separate cell](#progress-bar-in-a-layout-cell).
 
-The progress bar can be also shown by default for cells without any attached component or HTML content. [Check the details](layout/cell_configuration.md#progress-bar).  
+The progress bar can also be shown by default for cells without any attached component or HTML content. [Check the details](layout/cell_configuration.md#progress-bar).
 
 ### Progress bar in the Layout container
 
@@ -166,4 +168,4 @@ To hide the component, apply the [progressHide()](layout/api/cell/layout_cell_pr
 layout.getCell("two").progressHide();
 ~~~
 
-**Related sample:** [Layout. Spinner (busy indicator/ progress bar) for Layout and its cells](https://snippet.dhtmlx.com/vzrvf4rm)
+**Related sample**: [Layout. Spinner (busy indicator/ progress bar) for Layout and its cells](https://snippet.dhtmlx.com/vzrvf4rm)
