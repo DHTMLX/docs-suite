@@ -10,13 +10,13 @@ description: You can explore how to work with Grid in the documentation of the D
 The TreeGrid mode of the Grid component is available in the **PRO** version only.
 :::
 
-TreeGrid mode of the Grid component allows showing the nested tabular data. 
+The TreeGrid mode of the Grid component allows you to show nested tabular data. 
 
 ![Grid in TreeGrid mode with expandable hierarchical book categories and nested rows in DHTMLX Suite](/img/treegrid/treegrid_front.png)
 
 ## Initialization
 
-To initialize Grid in the TreeGrid mode, make use of the [`type: "tree"`](grid/api/grid_type_config.md) configuration option.
+To initialize Grid in the TreeGrid mode, use the [`type: "tree"`](grid/api/grid_type_config.md) configuration option.
 
 ~~~jsx {2} title="index.js"
 const Grid = new dhx.Grid("grid_container", {
@@ -36,7 +36,7 @@ const Grid = new dhx.Grid("grid_container", {
 
 Grid in the TreeGrid mode uses all the same configuration options available in the [API of the default Grid](grid/configuration.md).
 
-There is also a set of properties you can provide for Grid in the TreeGrid mode to optimize its configuration for your needs. They are described below.
+You can also specify a set of properties for Grid in the TreeGrid mode to optimize its configuration for your needs. They are described below.
 
 ### Collapsed mode 
 
@@ -73,26 +73,26 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-When Grid is initialized in the TreeGrid mode, the root parent takes the id of the Grid container by default. If the id of the container is set to `null` or defined as an HTML element, the value of the root parent will be auto-generated.
+When you initialize Grid in the TreeGrid mode, the default root parent is the id of the Grid container. If the id of the container is set to `null` or defined as an HTML element, Grid generates the root parent value automatically.
 
 ## Data loading
 
-There are several simple ways of loading data into Grid in the TreeGrid mode:
+You can load data into Grid in the TreeGrid mode in several ways:
 
 - [on initialization of Grid](#loading-data-on-grid-initialization)
 - [after initialization of Grid](#loading-data-after-initialization)
 
-First, you need to prepare a data set that will be loaded into Grid in the TreeGrid mode.
+First, prepare the data set that you want to load into Grid in the TreeGrid mode.
 
 ### Preparing data set
 
-Grid in the TreeGrid mode expects loaded data in the JSON format. 
+Grid in the TreeGrid mode expects data in JSON format. 
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+If you specify the `id` fields in the tree collection, their values must be **unique**. You can also omit the `id` fields; in this case, Grid generates them automatically.
 :::
 
-Here is an example of an appropriate data set:
+The example below shows an appropriate data set:
 
 ~~~jsx
 const dataset = [
@@ -115,28 +115,28 @@ const dataset = [
 ];
 ~~~
 
-Each object in the data set contains configuration of a grid row. The structure of a row is rather flexible. It may include:
+Each object in the data set contains the configuration of a grid row and may include:
 
 <table>
     <tbody>
         <tr>
             <td><b>rowId</b></td>
-            <td>(<i>string | number</i>) optional, the id of a row. In case you haven't specified ids of rows, they will be auto-generated</td>
+            <td>(<i>string | number</i>) optional, the id of a row. If you don't specify row ids, Grid generates them automatically</td>
         </tr>
         <tr>
             <td><b>parent</b></td>
-            <td>(<i>string | number</i>) the ID of the parent row</td>
+            <td>(<i>string | number</i>) the id of the parent row</td>
         </tr>
         <tr>
             <td><b>columnContent</b></td>
-            <td>(<i>string | number</i>) content of a column as <i>key:value</i> pairs, where key is the id of a column and value is any content you want to add into the column</td>
+            <td>(<i>string | number</i>) content of a column as <i>key:value</i> pairs, where the key is the id of a column and the value is the content you want to add to the column</td>
         </tr>
     </tbody>
 </table>
 
 ### Loading data on Grid initialization
 
-You can specify data you want to load into Grid in the TreeGrid mode on the initialization stage. Make use of the [`data`](grid/api/grid_data_config.md) configuration property, as in:
+You can specify the data you want to load into Grid in the TreeGrid mode during initialization. Use the [`data`](grid/api/grid_data_config.md) configuration property, as in:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -175,7 +175,7 @@ grid.data.parse(dataset);
 
 #### External data loading
 
-To load data from an external file, make use of the [`load()`](tree_collection/api/treecollection_load_method.md) method of Tree Collection. It takes the URL of the file with data as a parameter:
+To load data from an external file, use the [`load()`](tree_collection/api/treecollection_load_method.md) method of Tree Collection. It takes the URL of the data file as a parameter:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -189,9 +189,9 @@ grid.data.load("../common/dataset.json");
 
 **Related sample**: [Grid (TreeGrid). Initialization with data.load()](https://snippet.dhtmlx.com/44rmxlmq)
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to provide valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Data loading is asynchronous, so wrap the code that runs after loading in a promise:
 
 ~~~jsx
 grid.data.load("/some/data").then(function(){
@@ -201,15 +201,15 @@ grid.data.load("/some/data").then(function(){
 
 ## Drag-n-drop
 
-The drag-n-drop functionality provides the possibility to reorder items inside the grid or between several grids in the TreeGrid mode. 
+The drag-n-drop functionality allows you to reorder items inside the grid or between several grids in the TreeGrid mode. 
 
-To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](grid/api/grid_dragitem_config.md) property, to enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](grid/api/grid_dragmode_config.md) property.
+To enable drag-n-drop within Grid in the TreeGrid mode (reorder the items), use the [`dragItem`](grid/api/grid_dragitem_config.md) property. To enable drag-n-drop between Grids in the TreeGrid mode, use the [`dragMode`](grid/api/grid_dragmode_config.md) property.
 
 ### Drop behaviour
 
 You can specify the drag-n-drop behaviour of items in the Grid in the TreeGrid mode with the [`dropBehaviour`](grid/api/grid_dropbehaviour_config.md) option in the configuration object of the component.
 
-There are three modes of behaviour of a dragged item:
+A dragged item supports three modes of behaviour:
 
 - "child" - a dragged item becomes a child of the item it is dragged to
 
@@ -248,7 +248,7 @@ const grid = new dhx.Grid("treegrid_container", {
 
 ### Expanding collapsed rows on drag-n-drop 
 
-If you have collapsed rows in your Grid in the TreeGrid mode, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [`dragExpand`](grid/api/grid_dragexpand_config.md) property to *false*:
+If you have collapsed rows in your Grid in the TreeGrid mode, they expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [`dragExpand`](grid/api/grid_dragexpand_config.md) property to *false*:
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -266,7 +266,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Work with Grid in the TreeGrid mode 
 
-While working with Grid in the TreeGrid mode, you can use the [API methods of DHTMLX Grid](/category/grid-methods/) which allow setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell. There are some methods specific for the TreeGrid mode of Grid. These are the methods for expanding/collapsing nodes.
+While working with Grid in the TreeGrid mode, you can use the [API methods of DHTMLX Grid](/category/grid-methods/) that allow you to set the configuration of columns, get an object of a particular column, and get the parameters of a cell. Some methods are specific to the TreeGrid mode of Grid: the methods for expanding and collapsing nodes.
 
 ### Expanding/collapsing nodes
 
@@ -290,7 +290,7 @@ const grid = new dhx.Grid("grid_container", {
 grid.expand("native");
 ~~~
 
-To collapse a grid node, make use of the [`collapse()`](grid/api/grid_collapse_method.md) method:
+To collapse a grid node, use the [`collapse()`](grid/api/grid_collapse_method.md) method:
 
 ~~~jsx {5,13}
 const grid = new dhx.Grid("grid_container", {
@@ -312,7 +312,7 @@ grid.collapse("native");
 
 #### Expanding/collapsing all nodes
 
-It is also possible to expand/collapse all the nodes of the Grid using the two corresponding methods - [`expandAll()`](grid/api/grid_expandall_method.md) and [`collapseAll()`](grid/api/grid_collapseall_method.md):
+You can also expand or collapse all the nodes of the Grid with two corresponding methods - [`expandAll()`](grid/api/grid_expandall_method.md) and [`collapseAll()`](grid/api/grid_collapseall_method.md):
 
 ~~~jsx {14,16}
 const grid = new dhx.Grid("grid_container", {
@@ -337,7 +337,7 @@ grid.collapseAll();
 
 ## Event handling 
 
-When you work with Grid in the TreeGrid mode, you can use the [API Events of DHTMLX Grid](/category/grid-events/). 
+When you work with Grid in the TreeGrid mode, you can use the [API events of DHTMLX Grid](/category/grid-events/). 
 
 You can learn how to work with Grid events in the [related guide](grid/events.md).
 
