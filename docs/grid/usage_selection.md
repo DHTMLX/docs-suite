@@ -6,17 +6,17 @@ description: You can explore how to work with Selection Object of Grid in the do
 
 # Work with Selection object
 
-You can manipulate with Grid cells via the API of the `selection` object. It is possible to get the object of one or more selected cells or rows, to set selection both to a single row or cell and to multiple rows or cells. The `selection` object also allows removing selection from previously selected cells.
+You can manipulate Grid cells with the API of the `selection` object. It lets you get the object of one or more selected cells or rows, and set selection to a single row or cell or to multiple rows or cells. The `selection` object also allows you to remove selection from previously selected cells.
 
 ## Enabling/disabling Selection object
 
-Starting from v7.0, you can activate selection of cells via the [`enable`](grid/api/selection/selection_enable_method.md) method of the `selection` object.
+Starting from v7.0, you can activate selection of cells with the [`enable()`](grid/api/selection/selection_enable_method.md) method of the `selection` object.
 
 ~~~jsx
 grid.selection.enable();
 ~~~
 
-To disable selection of cells in Grid, make use of the [`disable`](grid/api/selection/selection_disable_method.md) method of the `selection` object:
+To disable selection of cells in Grid, use the [`disable()`](grid/api/selection/selection_disable_method.md) method of the `selection` object:
 
 ~~~jsx
 grid.selection.disable();
@@ -101,7 +101,7 @@ It is also possible to select a range of cells at once:
 
 ![Grid with a continuous range of cells selected and highlighted across several rows in DHTMLX Suite](/img/grid/range_setcell.png)
 
-For that, manipulate the `ctrlUp` and `shiftUp` parameters accordingly:
+For that, set the `ctrlUp` and `shiftUp` parameters:
 
 ~~~jsx
 grid.selection.setCell(grid.data.getId(1),"yearlyChange");
@@ -111,10 +111,10 @@ grid.selection.setCell(grid.data.getId(3),"density", false, true);
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 :::note 
-Use the `selection:"rows"` property to be able to operate rows. 
+Use the `selection:"row"` property to operate rows. 
 :::
 
-To make the process of selecting cells more flexible, you can apply the related events of the `selection` object:
+To select cells more flexibly, you can apply the related events of the `selection` object:
 
 - [`afterSelect`](grid/api/selection/selection_afterselect_event.md)
 - [`beforeSelect`](grid/api/selection/selection_beforeselect_event.md)
@@ -156,7 +156,7 @@ console.log(selectedCell); // -> true
 
 ## Removing selection
 
-Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [`removeCell`](grid/api/selection/selection_removecell_method.md) method of the `selection` object. The method takes two parameters:
+Starting from v7.0, you can remove selection from one or more selected cells or rows with the [`removeCell()`](grid/api/selection/selection_removecell_method.md) method of the `selection` object. The method takes two parameters:
 
 <table>
     <tbody>
@@ -182,7 +182,7 @@ grid.selection.removeCell(rowId);
 grid.selection.removeCell(rowId, colId);
 ~~~
 
-To make the process of unselecting cells more flexible, you can apply the related events of the `selection` object:
+To unselect cells more flexibly, you can apply the related events of the `selection` object:
 
 - [`afterUnSelect`](grid/api/selection/selection_afterunselect_event.md) 
 - [`beforeUnSelect`](grid/api/selection/selection_beforeunselect_event.md)

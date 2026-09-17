@@ -49,24 +49,24 @@ To initialize DHTMLX Grid on a page, you need to take the following simple steps
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of DHTMLX Grid into the header of the created file. The Grid component can be used standalone or as a part of the Suite library.
+After that, create an HTML file and place the full paths to the DHTMLX Grid JS and CSS files into its header. You can use the Grid component standalone or as a part of the Suite library.
 
-**If you use DHTMLX Grid standalone**, you need to include 2 files:
+**If you use DHTMLX Grid standalone**, include 2 files:
 
-- *grid.js*
-- *grid.css*
+- `grid.js`
+- `grid.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/grid.js"></script>
 <link rel="stylesheet" href="../../codebase/grid.css">
 ~~~
 
-**If you use DHTMLX Grid as a part of the Suite package**, you need to include JS/CSS files of the DHTMLX Suite library:
+**If you use DHTMLX Grid as a part of the Suite package**, include the JS and CSS files of the DHTMLX Suite library:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <link type="text/css" href="../codebase/suite.css">
@@ -83,10 +83,10 @@ Add a container for Grid and give it an id, for example "grid_container":
 
 ## Initialize Grid
 
-Initialize Grid with the `dhx.Grid` object constructor. The constructor has two parameters:
+Initialize Grid with the `dhx.Grid` object constructor. The constructor takes two parameters:
 
-- the HTML container for Grid,
-- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
+- the HTML container for Grid
+- an object with configuration properties (optional). If you don't pass this argument, Grid applies the default settings.
 
 ~~~js
 // creating DHTMLX Grid
@@ -103,13 +103,13 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Configuration properties
 
-There is a set of properties you can specify for Grid to optimize its configuration for your needs.
+You can specify a set of properties for Grid to optimize its configuration for your needs.
 
-See the full list of properties that you can specify in the Grid configuration object (the second parameter of the constructor function) in the [Grid API overview](grid/api/api_overview.md#grid-properties) article.
+For the full list of properties that you can specify in the Grid configuration object (the second parameter of the constructor function), see the [Grid API overview](grid/api/api_overview.md#grid-properties) article.
 
 ## Load data into Grid
 
-Detailed information on loading data into Grid is given in the article [](grid/data_loading.md).
+For detailed information on loading data into Grid, see [](grid/data_loading.md).
 
 ## Example
 

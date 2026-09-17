@@ -6,7 +6,7 @@ description: You can have an overview of Grid in the documentation of the DHTMLX
 
 # Grid overview
 
-DHTMLX Grid is a flexible, smart, and easy-to-use JavaScript component which allows creating tables with fixed multi-line headers and footers, sortable columns, built-in filtering, and other useful features. DHTMLX Grid provides great possibilities for customizing its look and feel. Complete JavaScript API is provided to help users save time on configuring.
+DHTMLX Grid is a flexible, smart, and easy-to-use JavaScript component that allows you to create tables with fixed multi-line headers and footers, sortable columns, built-in filtering, and other useful features. You can customize its look and feel. A complete JavaScript API helps you save time on configuration.
 
 Check [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid).   
 
@@ -25,14 +25,14 @@ You can check the following page to learn how to build a full-featured DHTMLX Gr
 ## Related resources
 
 - To get just DHTMLX Grid, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml)
-- To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- To get the whole JavaScript library of UI components, [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid)
-- To work with data of Grid check [DataCollection API](/data_collection/)
-- To work with data of Grid in the TreeGrid mode check [TreeCollection API](/tree_collection/)
+- To work with Grid data, check [DataCollection API](/data_collection/)
+- To work with Grid data in the TreeGrid mode, check [TreeCollection API](/tree_collection/)
 
 ## Guides
 
-Says how to build a standard grid on a page and bring it to life: configure with specific settings, customize the appearance, attach events, etc.
+These guides explain how to build a standard grid on a page and bring it to life: configure it with specific settings, customize the appearance, and attach events.
 
 - [](grid/initialization.md)
 - [](grid/configuration.md)

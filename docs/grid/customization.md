@@ -8,15 +8,15 @@ description: You can explore the customization of Grid in the documentation of t
 
 ## Styling grid
 
-There is a possibility to make changes in the look and feel of a grid. 
+You can change the look and feel of a grid. 
 
 ![Grid styled with a custom dark theme applied to headers and rows in DHTMLX Suite](/img/grid/styling_grid.png)
 
 **Related sample**: [Grid. Styling (custom CSS)](https://snippet.dhtmlx.com/c5tr3s5r)
 
-For this you need to take the following steps:
+For this, take the following steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- add one or more CSS classes with the desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (in this case, don't forget to include the file on the page)
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](grid/api/grid_css_config.md) property in the Grid configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [`css`](grid/api/grid_css_config.md) property in the Grid configuration:
 
 ~~~js
 const grid = new dhx.Grid("grid_container", { 
@@ -73,7 +73,7 @@ For example:
 
 **Related sample**: [Grid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/xs7bixmg)
 
-Here is an example of how you can style selection in Grid:
+The example below shows how to style selection in Grid:
 
 ~~~html
 <style>
@@ -103,7 +103,7 @@ Here is an example of how you can style selection in Grid:
 
 ![Grid with custom styled header cells where the Population header is enlarged and colored in DHTMLX Suite](/img/grid/styling_header.png)
 
-You can easily set some styling to the text of header cells by applying some inline style or a CSS class to the **text** property of the header of a column:
+To style the text of header cells, apply an inline style or a CSS class to the `text` property of the column header:
 
 ~~~html
 <style>
@@ -133,7 +133,7 @@ You can easily set some styling to the text of header cells by applying some inl
 
 ## Styling footer cells
 
-You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the **text** property of the footer of a column:
+To style the text of footer cells, apply an inline style or a CSS class to the `text` property of the column footer:
 
 ~~~html
 <style>        
@@ -177,9 +177,9 @@ You can easily set some styling to the text of footer cells by applying some inl
 
 ![Grid with a single row highlighted in orange by a custom CSS class in DHTMLX Suite](/img/grid/rowcss.png)
 
-It is possible to change the appearance of grid rows by applying custom CSS styles to them. There are two ways to do it:
+You can apply custom CSS styles to change the appearance of grid rows. There are two ways to do it:
 
-- via the **rowCss** property in the configuration of Grid. As a value of property set a function that takes the id of a row as a parameter and returns a string with the name of a CSS class.
+- with the `rowCss` property in the Grid configuration. As the value of the property, set a function that takes the id of a row as a parameter and returns a string with the name of a CSS class:
 
 ~~~html {12}
 <style>
@@ -201,7 +201,7 @@ It is possible to change the appearance of grid rows by applying custom CSS styl
 
 **Related sample**: [Grid. Custom row style](https://snippet.dhtmlx.com/2dxtwf9n)
 
-- with the help of the **addRowCss()** method:
+- with the `addRowCss()` method:
 
 ~~~html {9}
 <style>
@@ -237,7 +237,7 @@ where:
 
 ![Grid with a single cell highlighted in green by a custom CSS class in DHTMLX Suite](/img/grid/cellcss.png)
 
-It is easy to style necessary cells using the **addCellCss()** method. It takes three parameters:
+To style the necessary cells, use the `addCellCss()` method. It takes three parameters:
 
 <table>
     <tbody>
@@ -274,7 +274,7 @@ It is easy to style necessary cells using the **addCellCss()** method. It takes 
 
     const rowId = grid.data.getId(1);
 
-    grid.addCellCss(rowId, "country", "my_сustom_сlass");
+    grid.addCellCss(rowId, "country", "myCustomClass");
 </script>
 ~~~
 
@@ -284,7 +284,7 @@ It is easy to style necessary cells using the **addCellCss()** method. It takes 
 
 ![Grid with conditionally marked cells in the Population column shaded red in DHTMLX Suite](/img/grid/markcells.png)
 
-You can mark particular cells in a grid using the **mark** property of a column configuration. You need to set its value as a function that takes the following parameters:
+You can mark particular cells in a grid with the `mark` property of a column configuration. Set its value as a function that takes the following parameters:
 
 <table>
     <tbody>
@@ -307,7 +307,7 @@ You can mark particular cells in a grid using the **mark** property of a column 
     </tbody>
 </table>
 
-The function should return a string with a custom CSS class for your mark.
+The function returns a string with a custom CSS class for the mark.
 
 ~~~html {17-19,24}
 <style>
@@ -343,7 +343,7 @@ The function should return a string with a custom CSS class for your mark.
 
 **Related sample**: [Grid. Conditional formatting. Marking cells with colors](https://snippet.dhtmlx.com/9whjve0v)
 
-It is also possible to highlight cells with minimum and (or) maximum values in a grid using the **mark** property of a column configuration. The property is an object which takes two optional parameters:
+You can also highlight cells with minimum and/or maximum values in a grid with the `mark` property of a column configuration. The property is an object that takes two optional parameters:
 
 <table>
     <tbody>
@@ -398,7 +398,7 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 
 ![Grid with a custom cell template rendering checkboxes in the Net Change column in DHTMLX Suite](/img/grid/cell_templates.png)
 
-It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/api/api_gridcolumn_properties.md). The template option is a function that takes three parameters:
+You can customize the content of Grid cells with the `template` property of a [column configuration](grid/api/api_gridcolumn_properties.md). The `template` option is a function that takes three parameters:
 
 <table>
     <tbody>
@@ -438,7 +438,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Event handlers for the template
 
-Starting from v7.0, you can assign event handlers to HTML elements of a custom template of Grid cells via using the [](grid/api/grid_eventhandlers_config.md) configuration property of Grid, for instance:
+Starting from v7.0, you can assign event handlers to HTML elements of a custom template of Grid cells with the [](grid/api/grid_eventhandlers_config.md) configuration property of Grid, for instance:
 
 ~~~js {7-10,15-21}
 const grid = new dhx.Grid("grid_container", {
@@ -471,7 +471,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ![Grid showing a custom rich tooltip with an avatar image and last edit time on cell hover in DHTMLX Suite](/img/grid/tooltip_template.png)
 
-Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
+Starting with v7.1, you can customize the content of a column tooltip with the [`tooltipTemplate`](grid/api/api_gridcolumn_properties.md) configuration option of the [column](grid/configuration.md#columns). The `tooltipTemplate` function takes three parameters:
 
 <table>
     <tbody>
@@ -489,7 +489,7 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
         </tr>
     </tbody>
 </table>
-<br>
+<br/>
 
 ~~~js {6-14}
 const grid = new dhx.Grid("grid_container", {
@@ -523,4 +523,6 @@ To prevent a tooltip from being shown, return `false` from the function (from v7
 
 **Related sample**: [Grid. Tooltip template](https://snippet.dhtmlx.com/954f7h9m)
 
-{{note You should enable the [htmlEnable](grid/configuration.md#html-content-of-grid-columns) option in the configuration of Grid (or configuration of the column) to activate HTML support for the tooltip.}}
+:::note
+Enable the [`htmlEnable`](grid/configuration.md#html-content-of-grid-columns) option in the configuration of Grid (or in the configuration of the column) to activate HTML support for the tooltip.
+:::

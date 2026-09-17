@@ -6,12 +6,12 @@ description: You can explore the data loading of Grid in the documentation of th
 
 # Data loading
 
-There are several ways of loading data into DHTMLX Grid:
+You can load data into DHTMLX Grid in several ways:
 
 - on initialization of Grid
 - after initialization of Grid
 
-First, you need to prepare a data set that will be loaded into Grid.
+First, prepare the data set that you want to load into Grid.
 
 :::note
 If you use the [TreeGrid mode of Grid](grid/treegrid_mode.md), check the [related guide on data loading](grid/treegrid_mode.md#data-loading).
@@ -19,13 +19,13 @@ If you use the [TreeGrid mode of Grid](grid/treegrid_mode.md), check the [relate
 
 ## Preparing data set
 
-DHTMLX Grid expects loaded data in the JSON format. 
+DHTMLX Grid expects data in JSON format. 
 
 :::info
-Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+If you specify the `id` fields in the data collection, their values must be **unique**. You can also omit the `id` fields; in this case, Grid generates them automatically.
 :::
 
-Here is an example of an appropriate data set:
+The example below shows an appropriate data set:
 
 ~~~jsx
 const dataset = [
@@ -49,24 +49,24 @@ const dataset = [
 
 **Related sample**: [Grid. Large dataset](https://snippet.dhtmlx.com/w3p07d6s)
 
-Each object in the data set contains configuration of a grid row. The structure of a row is rather flexible. It may include:
+Each object in the data set contains the configuration of a grid row and may include:
 
 <table>
     <tbody>
         <tr>
             <td><b>id</b></td>
-            <td>(<i>string | number</i>) optional, the id of a row. In case you haven't specified ids of rows, they will be auto-generated</td>
+            <td>(<i>string | number</i>) optional, the id of a row. If you don't specify row ids, Grid generates them automatically</td>
         </tr>
         <tr>
             <td><b>columnContent</b></td>
-            <td>(<i>string | number</i>) content of a column as <i>key:value</i> pairs, where key is the id of a column and value is any content you want to add into the column</td>
+            <td>(<i>string | number</i>) content of a column as <i>key:value</i> pairs, where the key is the id of a column and the value is the content you want to add to the column</td>
         </tr>
     </tbody>
 </table>
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Grid on the initialization stage. Use the [data](grid/api/grid_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Grid during initialization. Use the [`data`](grid/api/grid_data_config.md) configuration property, as in:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -87,12 +87,12 @@ There are two ways to load data into Grid after its initialization:
 - [from a local data source](#loading-from-local-source)
 
 :::note
-Calling `load()` or `parse()` resets the sorting and filtering applied to Grid: the sorting marks are cleared, and so are the values of the header filters. Filters applied with `permanent: true` are the exception: they are reapplied to the newly loaded data.
+Calling `load()` or `parse()` resets the sorting and filtering applied to Grid: the sorting marks are cleared, and so are the values of the header filters. Filters applied with `permanent: true` are the exception: Grid reapplies them to the newly loaded data.
 :::
 
 ### External data loading
 
-To load data from an external file, make use of the **load()** method of [Data Collection](/data_collection/). It takes the URL of the file with data as a parameter:
+To load data from an external file, use the `load()` method of [Data Collection](/data_collection/). It takes the URL of the data file as a parameter:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container");
@@ -101,9 +101,9 @@ grid.data.load("../common/dataset.json");
 
 **Related sample**: [Grid. Initialization with data.load()](https://snippet.dhtmlx.com/svkb27d5)
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to provide valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Data loading is asynchronous, so wrap the code that runs after loading in a promise:
 
 ~~~jsx
 grid.data.load("/some/data").then(function(){
@@ -122,9 +122,9 @@ grid.data.parse(dataset);
 
 **Related sample**: [Grid. Initialization with data.parse()](https://snippet.dhtmlx.com/pwzie5wz)
 
-Note that for loading data from a **CSV file** into a grid, you need to:
+To load data from a **CSV file** into a grid, do the following:
 
-- [create a data driver](helpers/datadrivers.md#csv-format) with the `nameByHeader: true` setting. Thus the data from the first data line will be used as keys of items
+- [create a data driver](helpers/datadrivers.md#csv-format) with the `nameByHeader: true` setting. The first data line then provides the item keys
 - pass the created driver as a second parameter to the `parse()` method
 
 Check the example below:
@@ -152,14 +152,14 @@ grid.data.parse(csvData, csvDataDriver);
 
 ## Saving and restoring state
 
-To save the current state of a grid, use the **serialize()** method of [Data Collection](/data_collection/). It converts the data of a grid into an array of JSON objects.
+To save the current state of a grid, use the `serialize()` method of [Data Collection](/data_collection/). It converts the grid data into an array of JSON objects.
 Each JSON object contains the configuration of a separate row.
 
 ~~~jsx
 const state = grid1.data.serialize();
 ~~~
 
-Then you can parse the data stored in the saved state array to a different grid. For example:
+You can then parse the data stored in the saved state array into a different grid. For example:
 
 ~~~jsx
 // creating a new grid
@@ -170,9 +170,11 @@ grid2.data.parse(state);
 
 ## Dynamic loading
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip Pro version only
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
-To enable dynamic data loading in Grid you need to:
+To enable dynamic data loading in Grid, do the following:
 
 - initialize `lazyDataProxy` as described in the [Dynamic Loading](helpers/lazydataproxy.md) article
 
@@ -185,7 +187,7 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 });
 ~~~
 
-- load data into Grid via the `load()` method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
+- load data into Grid with the `load()` method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container");
@@ -195,5 +197,5 @@ grid.data.load(lazyDataProxy);
 **Related sample**: [External data lazy load](https://snippet.dhtmlx.com/grid_lazy_loading)
 
 :::info
-The `sort()` method of Data Collection will not work until all data are loaded into Grid. Note that for correct work of lazy loading, you should send all changes in Data Collection to the server at the proper time.
+The `sort()` method of Data Collection does not work until all data is loaded into Grid. For lazy loading to work correctly, send all changes in Data Collection to the server at the proper time.
 :::

@@ -6,7 +6,7 @@ description: You can learn about accessibility and keyboard navigation in DHTMLX
 
 # Accessibility in DHTMLX Grid
 
-DHTMLX Grid is built to be operated entirely from the keyboard and to expose its structure and state to assistive technology. WAI-ARIA semantics are part of the rendered markup, and a single, coherent focus model spans the header, body, and footer. The semantics are always present — there is **no** configuration flag to disable them.
+You can operate DHTMLX Grid entirely from the keyboard, and the Grid exposes its structure and state to assistive technology. WAI-ARIA semantics are part of the rendered markup, and a single, coherent focus model spans the header, body, and footer. The semantics are always present — there is **no** configuration flag to disable them.
 
 ## Capabilities
 
@@ -26,13 +26,13 @@ This documentation covers the Grid widget:
 - the **column header** — sortable headers and in-header filters
 - the **footer** — summaries and footer filters
 - the **inline editors**
-- the keyboard model that connects these zones.
+- the keyboard model that connects these zones
 
 As with any embeddable component, the accessibility of the final page also depends on the host application (see [Host-page responsibilities](#host-page-responsibilities)).
 
 ## WAI-ARIA support
 
-WAI-ARIA roles and attributes are added to the component markup automatically and are **on by default** — there is no flag to turn them off. The Grid exposes itself to assistive technology as an interactive grid (or treegrid) of rows and cells, with a separate group for the header and footer. The semantics are applied per structural part of the widget, so each part is announced with the correct role and state.
+WAI-ARIA roles and attributes are added to the component markup automatically. The Grid exposes itself to assistive technology as an interactive grid (or treegrid) of rows and cells, with a separate group for the header and footer. The semantics are applied per structural part of the widget, so each part is announced with the correct role and state.
 
 ### Grid container
 
@@ -62,7 +62,7 @@ The following table lists the roles and the position and state attributes applie
 
 ### Tree (TreeGrid) rows
 
-The following table lists the hierarchy attributes applied to tree rows and the role on the expand/collapse toggle in TreeGrid mode (`type: "tree"`), which convey the row's depth and open/closed state:
+The following table lists the hierarchy attributes applied to tree rows and the role on the expand/collapse toggle in TreeGrid mode (`type: "tree"`), which convey the row depth and the open/closed state:
 
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
@@ -121,7 +121,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### 2. Range / block selection — blockSelection
 
-Spreadsheet-style rectangular ranges. The arrow keys move the range anchor; <kbd>Shift</kbd>+arrows grow or shrink the rectangle; <kbd>Delete</kbd> clears the range (when editing is enabled). This applies in **"range"** mode.
+Spreadsheet-style rectangular ranges. The arrow keys move the range anchor; <kbd>Shift</kbd>+arrows grow or shrink the rectangle; <kbd>Delete</kbd> clears the range (when editing is enabled). This applies in `"range"` mode.
 
 ~~~jsx
 // Google-Sheets-style range selection
@@ -142,7 +142,7 @@ Both systems coexist with the same navigation keys; the Grid responds to whichev
 
 ## Keyboard navigation
 
-Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there.
+Keyboard navigation is enabled by the default `keyNavigation: true`; set `keyNavigation: false` to opt out. Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there.
 
 Shortcuts are organized into **zones** — body, header, footer — and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
 
@@ -243,11 +243,11 @@ Related articles:
 
 ## Host-page responsibilities
 
-A few accessibility requirements live at the page level, not inside the component. Make sure the host document:
+A few accessibility requirements live at the page level, not inside the component. In the host page:
 
-- sets a document language, e.g. `<html lang="en">`;
-- provides a page `<h1>` and wraps the grid in an appropriate landmark (e.g. `<main>`);
-- gives the grid container an accessible name where multiple widgets share a page.
+- Set a document language, for example `<html lang="en">`.
+- Provide a page `<h1>` and wrap the grid in an appropriate landmark, such as `<main>`.
+- Give the grid container an accessible name when several widgets share a page.
 
 ## Reference
 
