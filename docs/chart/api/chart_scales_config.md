@@ -37,6 +37,8 @@ const chart = new dhx.Chart("chart_container", {
 The `scales` object can contain a set of `key:value` pairs where *key* is the type of a scale and *value* is an object with configuration options of the scale.
 
 There are the following *types* of the scales: "left","right","top","bottom","radial".
+
+Two scales of the same direction can be used together, each with its own dimension. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section for the details.
 :::
 
 ## The list of config options for scales
@@ -61,6 +63,7 @@ scales: {
         scalePadding?: number,
         hidden?: boolean,
         grid?: boolean,
+        alignTicks?: boolean | ScaleType,
         dashed?: boolean,
         targetLine?: number | string,
         targetValue?: number,
@@ -113,7 +116,11 @@ scales: {
         </tr>
         <tr>
             <td><b>grid</b></td>
-            <td>(optional) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Without grid (lines)</a></td>
+            <td>(optional) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale. <br/>If a chart has two scales of the same direction, the grid of this direction belongs to the first of them ("bottom" for the horizontal direction and "left" for the vertical one), and the second scale is rendered without the grid. Set <i>grid:true</i> for the second scale to show both grids, or <i>grid:false</i> for the first one to leave the grid to the second scale <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Without grid (lines)</a></td>
+        </tr>
+        <tr>
+            <td><b>alignTicks</b></td>
+            <td>(optional) makes the scale take the number of ticks from another scale of the same direction and spread its own range over them, so that both grids match. Set <i>true</i> to align the scale with the first scale of its direction ("left" for the vertical direction and "bottom" for the horizontal one), or name the reference scale, e.g. <i>alignTicks: "left"</i>. <a href="../../configuration_properties/#matching-the-ticks-of-the-two-scales">Read the details.</a></td>
         </tr>
         <tr>
             <td><b>dashed</b></td>

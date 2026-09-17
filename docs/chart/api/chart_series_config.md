@@ -72,6 +72,8 @@ series: [
         dashed?: boolean,
         pointColor?: string,
         pointType?: "rect" | "circle" | "triangle" | "rhombus" | "simpleRect" | "simpleCircle" | "empty",
+        scale?: "left" | "right" | "top" | "bottom",
+        scales?: ScaleType[],
         strokeWidth?: number,
         tooltip?: boolean,
         tooltipTemplate?: (points: any[]) => string,
@@ -122,6 +124,14 @@ series: [
         <tr>
             <td><b>pointType</b></td>
             <td>(optional) sets the type of the point of the data item. There are the following point types:"circle","rect","triangle","rhombus","simpleRect","simpleCircle","empty" <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cbj54wwu" target="_blank">Chart. Point types</a></td>
+        </tr>
+        <tr>
+            <td><b>scale</b></td>
+            <td>(optional) binds the series to the value scale its values are measured against; the argument scale is applied automatically. The direction of the value scale follows the type of the series: "left" or "right" for the Line, Spline, Bar, Area, SplineArea and Scatter series and "bottom" or "top" for the X-Bar ones. The default value scale is "left" ("bottom" for X-Bar); if a chart does not have it, the series is measured against the opposite scale. <br/>The property set to the position of the perpendicular scale, e.g. <i>scale: "top"</i> for a Bar series, throws a <b>TypeError</b> that specifies the type of the series and the positions it can be bound to. <a href="../../configuration_properties/#dual-axis-chart">Read the details.</a> <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/n25kiv0q" target="_blank">Chart. Dual axis</a></td>
+        </tr>
+        <tr>
+            <td><b>scales</b></td>
+            <td>(optional) the full form of the binding: sets the pair of scales a series is drawn against, e.g. <i>scales: ["top", "right"]</i>. It is needed when a series specifies not only its value scale, but also its argument scale. <br/>The order of the positions in the array does not matter, as the role of each of them is defined by its direction. The array has to name exactly one value scale of the series, otherwise a <b>TypeError</b> is thrown. If a series has both properties, <b>scale</b> takes priority and <b>scales</b> is ignored. <a href="../../configuration_properties/#naming-both-scales-of-a-series">Read the details.</a></td>
         </tr>
         <tr>
             <td><b>strokeWidth</b></td>
@@ -183,7 +193,7 @@ series: [
         showText?: boolean,
         showTextRotate?: number | string,
         showTextTemplate?: (points: any) => string,
-        stacked?: boolean,
+        stacked?: boolean | string,
     }
 ]
 ~~~
@@ -218,7 +228,7 @@ series: [
         </tr>
         <tr>
             <td><b>stacked</b></td>
-            <td>(optional) defines whether a stacked chart will be rendered  <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked chart</a></td>
+            <td>(optional) defines whether a stacked chart will be rendered. If the property is not set or set to <i>false</i>, the series is rendered as a separate layer. With <i>stacked:true</i> the stack is defined automatically by the value scale, so all the series with <i>stacked:true</i> bound to the same scale are put into one stack. <br/>Set the property to a string to name the group explicitly and build two or more independent stacks, including on one scale. The stacks of one direction are placed side by side, as usual bar series, and the <b>total</b> property is calculated separately for each group. <a href="../../configuration_properties/#stack-groups">Read the details.</a> <br/><br><b>Related Samples: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked chart</a>, <a href="https://snippet.dhtmlx.com/vcr5hf17" target="_blank">Chart. Independent stacks</a></td>
         </tr>
     </tbody>
 </table>
