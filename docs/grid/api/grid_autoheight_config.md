@@ -54,6 +54,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+The autoheight of a zone is ignored when [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md) is set as an array: in that case the height of each level is defined by the corresponding array item, and only the *"auto"* items fit their content.
+
 #### Take into account the information below:  
 
 - to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content
@@ -63,8 +65,16 @@ const grid = new dhx.Grid("grid_container", {
 - note that if you decide to change the font type, its size and offsets, correct calculation of the cell's autoHeight can't be ensured
 
 
-@changelog: added in v7.1
+@changelog: 
 
-[comment]: # (@relatedapi: grid/api/grid_data_config.md)
+- Since v9.4, the autoheight of the header/footer is ignored when `headerRowHeight`/`footerRowHeight` is set as an array
+- Added in v7.1
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#autoheight-for-rows)
+**Related API:**
+- [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md)
+- [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md)
+- [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)
+- [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+- [`data`](grid/api/grid_data_config.md)
+
+**Related article**: [Autoheight for rows](grid/configuration.md#autoheight-for-rows)
