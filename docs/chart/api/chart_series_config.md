@@ -45,7 +45,7 @@ const chart = new dhx.Chart("chart_container", {
             fill: "#5E83BA"
         }
     ]
-};
+});
 
 @descr:
 
@@ -127,11 +127,11 @@ series: [
         </tr>
         <tr>
             <td><b>scale</b></td>
-            <td>(optional) binds the series to the value scale its values are measured against; the argument scale is applied automatically. The direction of the value scale follows the type of the series: "left" or "right" for the Line, Spline, Bar, Area, SplineArea and Scatter series and "bottom" or "top" for the X-Bar ones. The default value scale is "left" ("bottom" for X-Bar); if a chart does not have it, the series is measured against the opposite scale. <br/>The property set to the position of the perpendicular scale, e.g. <i>scale: "top"</i> for a Bar series, throws a <b>TypeError</b> that specifies the type of the series and the positions it can be bound to. <a href="../../configuration_properties/#dual-axis-chart">Read the details.</a> <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/n25kiv0q" target="_blank">Chart. Dual axis</a></td>
+            <td>(optional) binds the series to the value scale its values are measured against. Check the <a href="#scale">scale</a> section</td>
         </tr>
         <tr>
             <td><b>scales</b></td>
-            <td>(optional) the full form of the binding: sets the pair of scales a series is drawn against, e.g. <i>scales: ["top", "right"]</i>. It is needed when a series specifies not only its value scale, but also its argument scale. <br/>The order of the positions in the array does not matter, as the role of each of them is defined by its direction. The array has to name exactly one value scale of the series, otherwise a <b>TypeError</b> is thrown. If a series has both properties, <b>scale</b> takes priority and <b>scales</b> is ignored. <a href="../../configuration_properties/#naming-both-scales-of-a-series">Read the details.</a></td>
+            <td>(optional) sets the pair of scales a series is drawn against. Check the <a href="#scales">scales</a> section</td>
         </tr>
         <tr>
             <td><b>strokeWidth</b></td>
@@ -148,6 +148,61 @@ series: [
     </tbody>
 </table>
 <br><br>
+
+## Options for a dual axis chart
+
+The `scale` and `scales` properties define the scales a series is drawn against, which allows a chart to render two value scales at once, each with its own dimension. They are applied to the series of the charts with scales: Line, Spline, Bar, X-Bar, Area, SplineArea and Scatter. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section of the guide for the details.
+
+### scale
+
+~~~jsx
+scale?: "left" | "right" | "top" | "bottom"
+~~~
+
+The `scale` property names the value scale only, as the argument scale is applied automatically. The direction of the value scale follows the type of the series:
+
+- "left" or "right" for the Line, Spline, Bar, Area, SplineArea and Scatter series
+- "bottom" or "top" for the X-Bar series
+
+The default value scale is "left" ("bottom" for X-Bar). If a chart does not have it, the series is measured against the opposite scale.
+
+~~~jsx
+const chart = new dhx.Chart("chart_container", {
+    scales: {
+        bottom: { text: "month" },
+        left:   { title: "Sales, $" },
+        right:  { title: "Profit ratio", min: 1.2, max: 1.45 }
+    },
+    series: [
+        { id: "S", type: "line", value: "sales",  color: "#2A9D8F" },
+        { id: "M", type: "line", value: "margin", color: "#E76F51", scale: "right" }
+    ]
+});
+~~~
+
+The property set to the position of the perpendicular scale, e.g. `scale: "top"` for a Bar series, throws a `TypeError` that specifies the type of the series and the positions it can be bound to.
+
+**Related sample**: [Chart. Dual axis](https://snippet.dhtmlx.com/n25kiv0q)
+
+**Related article**: [Value scale of a series](chart/configuration_properties.md#value-scale-of-a-series)
+
+### scales
+
+~~~jsx
+scales?: ScaleType[]
+~~~
+
+The `scales` property is the full form of the binding. It is needed when a series specifies not only its value scale, but also its argument scale:
+
+~~~jsx
+series: [
+    { type: "line", value: "ratio", scales: ["top", "right"] } // the categories on top, the values on the right
+]
+~~~
+
+The order of the positions in the array does not matter, as the role of each of them is defined by its direction. The array has to name exactly one value scale of the series, otherwise a `TypeError` is thrown. If a series has both properties, `scale` takes priority and `scales` is ignored.
+
+**Related article**: [Naming both scales of a series](chart/configuration_properties.md#naming-both-scales-of-a-series)
 
 ## Options specific for Area, Bar and Radar charts
 
@@ -228,11 +283,44 @@ series: [
         </tr>
         <tr>
             <td><b>stacked</b></td>
-            <td>(optional) defines whether a stacked chart will be rendered. If the property is not set or set to <i>false</i>, the series is rendered as a separate layer. With <i>stacked:true</i> the stack is defined automatically by the value scale, so all the series with <i>stacked:true</i> bound to the same scale are put into one stack. <br/>Set the property to a string to name the group explicitly and build two or more independent stacks, including on one scale. The stacks of one direction are placed side by side, as usual bar series, and the <b>total</b> property is calculated separately for each group. <a href="../../configuration_properties/#stack-groups">Read the details.</a> <br/><br><b>Related Samples: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked chart</a>, <a href="https://snippet.dhtmlx.com/vcr5hf17" target="_blank">Chart. Independent stacks</a></td>
+            <td>(optional) defines the stack a series belongs to. Check the <a href="#stacked">stacked</a> section</td>
         </tr>
     </tbody>
 </table>
 <br><br>
+
+### stacked
+
+~~~jsx
+stacked?: boolean | string
+~~~
+
+The property defines the stack a series belongs to:
+
+- not set or `false`: the series is rendered as a separate layer
+- `true`: the stack is defined automatically by the value scale, so all the series with `stacked: true` bound to the same scale are put into one stack
+- a *string*: the explicit name of the group, which allows building two or more independent stacks, including on one scale
+
+The stacks of one direction are placed side by side, as usual bar series, and the `total` property is calculated separately for each group.
+
+~~~jsx
+series: [
+    { type: "bar", value: "a", stacked: true },                  // the stack of the left scale
+    { type: "bar", value: "b", stacked: true },
+    { type: "bar", value: "x", stacked: true, scale: "right" },  // the independent stack of the right scale
+    { type: "bar", value: "y", stacked: true, scale: "right" },
+
+    { type: "bar", value: "plan", stacked: "plan" },             // two stacks on one scale,
+    { type: "bar", value: "fact", stacked: "fact" }              // drawn side by side
+]
+~~~
+
+**Related samples:**
+
+- [Chart. Stacked chart](https://snippet.dhtmlx.com/ilew1ds4)
+- [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
+
+**Related article**: [Stack groups](chart/configuration_properties.md#stack-groups)
 
 ## The list of config options for series (for charts without scales: Pie, Pie3D, Donut)
 
