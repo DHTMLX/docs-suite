@@ -19,6 +19,14 @@ Released on September , 2026
 - The ability to [add a toolbar with the Clear, Today and Timepicker controls](calendar/configuring.md#controls) into the calendar
     - new Calendar configuration property: [`controls`](calendar/api/calendar_controls_config.md)
 
+#### Chart
+
+- The ability to [use two value scales in one chart](chart/configuration_properties.md#dual-axis-chart), each with its own dimension, and to bind a series to the scale its values are measured against
+    - new properties of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `scale` and `scales`
+    - new property of the Chart [`scales`](chart/api/chart_scales_config.md) configuration object: `alignTicks`
+- The ability to [build several independent stacks in one chart](chart/configuration_properties.md#stack-groups), one per value scale or several named groups drawn side by side
+    - updated property of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `stacked`, which takes the name of a stack group besides a boolean
+
 #### DataCollection/TreeCollection
 
 - The ability to get the position of an item among the visible ones
@@ -28,11 +36,9 @@ Released on September , 2026
 #### Grid
 
 - The ability to [set an individual height for each row of the header/footer](grid/configuration.md#headerfooter-height), including the *"auto"* value that adjusts a row to its content (PRO version)
-    - updated Grid configuration property: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)
-    - updated Grid configuration property: [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+    - updated Grid configuration properties: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md) and [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
 - [Group counters](grid/usage.md#group-counters-and-aggregates) with the possibility to define the text rendered next to the group name and to keep the groups that are left with no rows after filtering (PRO version)
-    - new property of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `counter`
-    - new property of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `showEmptyGroups`
+    - new properties of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `counter` and `showEmptyGroups`
     - new property of the configuration object of the DataCollection [`group()`](data_collection/api/datacollection_group_method.md) method: `showEmptyGroups`
     - service properties of a group header row: `$count`, `$totalCount`, `$by`
 - The ability to [define the options of a header/footer filter manually](grid/configuration.md#custom-options-of-headerfooter-filters) instead of building them from the column data
@@ -67,6 +73,16 @@ Released on September , 2026
 #### Calendar
 
 - [Calendar. Controls](https://snippet.dhtmlx.com/guakfjw0?mode=wide)
+
+#### Chart
+
+- [Chart. Dual axis](https://snippet.dhtmlx.com/n25kiv0q)
+- [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
+- [Chart. Dual axis mixed series](https://snippet.dhtmlx.com/lzp4hcgb)
+- [Chart. Dual axis area](https://snippet.dhtmlx.com/hvkfz5aj)
+- [Chart. Dual axis x-bar](https://snippet.dhtmlx.com/y1td91hl)
+- [Chart. Dual axis stacks](https://snippet.dhtmlx.com/s9kunqvd)
+- [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
 
 #### Grid
 
