@@ -161,12 +161,14 @@ scale?: "left" | "right" | "top" | "bottom"
 
 The `scale` property names the value scale only, as the argument scale is applied automatically. The direction of the value scale follows the type of the series:
 
-- "left" or "right" for the Line, Spline, Bar, Area, SplineArea and Scatter series
-- "bottom" or "top" for the X-Bar series
+- `"left"` or `"right"` for the Line, Spline, Bar, Area, SplineArea and Scatter series
+- `"bottom"` or `"top"` for the X-Bar series
 
-The default value scale is "left" ("bottom" for X-Bar). If a chart does not have it, the series is measured against the opposite scale.
+The `"left"` and the `"right"` scales share the vertical direction, the `"bottom"` and the `"top"` ones the horizontal direction. A chart becomes a dual axis one when it declares both scales of a direction.
 
-~~~jsx
+The default value scale is `"left"` (`"bottom"` for X-Bar). If a chart does not have it, the series is measured against the opposite scale.
+
+~~~jsx {5,9}
 const chart = new dhx.Chart("chart_container", {
     scales: {
         bottom: { text: "month" },
@@ -182,7 +184,7 @@ const chart = new dhx.Chart("chart_container", {
 
 The property set to the position of the perpendicular scale, e.g. `scale: "top"` for a Bar series, throws a `TypeError` that specifies the type of the series and the positions it can be bound to.
 
-**Related sample**: [Chart. Dual axis](https://snippet.dhtmlx.com/n25kiv0q)
+**Related sample**: [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
 
 **Related article**: [Value scale of a series](chart/configuration_properties.md#value-scale-of-a-series)
 
@@ -194,13 +196,15 @@ scales?: ScaleType[]
 
 The `scales` property is the full form of the binding. It is needed when a series specifies not only its value scale, but also its argument scale:
 
-~~~jsx
+~~~jsx {2}
 series: [
     { type: "line", value: "ratio", scales: ["top", "right"] } // the categories on top, the values on the right
 ]
 ~~~
 
-The order of the positions in the array does not matter, as the role of each of them is defined by its direction. The array has to name exactly one value scale of the series, otherwise a `TypeError` is thrown. If a series has both properties, `scale` takes priority and `scales` is ignored.
+The order of the positions in the array does not matter, as the role of each of them is defined by its direction. The array has to name exactly one value scale of the series, and the remaining position is applied as the argument scale.
+
+If a series has both properties, `scale` takes priority and `scales` is ignored.
 
 **Related article**: [Naming both scales of a series](chart/configuration_properties.md#naming-both-scales-of-a-series)
 
@@ -295,15 +299,15 @@ series: [
 stacked?: boolean | string
 ~~~
 
-The property defines the stack a series belongs to:
+The property defines the stack a series belongs to. The accepted values of the property are:
 
-- not set or `false`: the series is rendered as a separate layer
-- `true`: the stack is defined automatically by the value scale, so all the series with `stacked: true` bound to the same scale are put into one stack
-- a *string*: the explicit name of the group, which allows building two or more independent stacks, including on one scale
+- `false/undefined` - the series is rendered as a separate layer
+- `true` - the stack is defined automatically by the value scale, so all the series with `stacked: true` bound to the same scale are put into one stack
+- `string` - the explicit name of the group, which allows building two or more independent stacks, including on one scale
 
 The stacks of one direction are placed side by side, as usual bar series, and the `total` property is calculated separately for each group.
 
-~~~jsx
+~~~jsx {4-5,7-8}
 series: [
     { type: "bar", value: "a", stacked: true },                  // the stack of the left scale
     { type: "bar", value: "b", stacked: true },

@@ -37,8 +37,6 @@ const chart = new dhx.Chart("chart_container", {
 The `scales` object can contain a set of `key:value` pairs where *key* is the type of a scale and *value* is an object with configuration options of the scale.
 
 There are the following *types* of the scales: `"left"`,`"right"`,`"top"`,`"bottom"`,`"radial"`.
-
-Two scales of the same direction can be used together, each with its own dimension. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section for the details.
 :::
 
 ## The list of config options for scales
@@ -168,7 +166,7 @@ scales: {
 
 ## Options for a dual axis chart
 
-The `grid` and `alignTicks` properties define how the grid is rendered when a chart has two scales of one direction, and `grid` shows and hides the grid lines of any chart. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section of the guide for the details.
+The `grid` and `alignTicks` properties define how the grid is rendered when a chart declares both scales of a direction: `"left"` and `"right"` or `"bottom"` and `"top"`. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section of the guide for the details.
 
 ### grid
 
@@ -178,7 +176,12 @@ grid?: boolean
 
 The `grid` property shows and hides the grid lines of a scale, `true` by default for both scales. To hide the grid completely, set `grid: false` in the configuration of each scale.
 
-If a chart has two scales of the same direction, the grid of this direction belongs to the first of them ("bottom" for the horizontal direction and "left" for the vertical one), and the second scale is rendered without the grid. Set `grid: true` for the second scale to render both grids, or `grid: false` for the first one to leave the grid to the second scale.
+If a chart has two scales of the same direction: 
+
+- the grid of this direction belongs to the first of them (`"bottom"` for the horizontal direction and `"left"` for the vertical one)
+- the second scale is rendered without the grid
+  
+Set `grid: true` for the second scale to render both grids, or `grid: false` for the first one to leave the grid to the second scale.
 
 **Related sample**: [Chart. Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)
 
@@ -190,17 +193,17 @@ If a chart has two scales of the same direction, the grid of this direction belo
 alignTicks?: boolean | ScaleType
 ~~~
 
-The `alignTicks` property makes the scale take the number of ticks from another scale of the same direction and spread its own range over them, so that both grids match:
+The `alignTicks` property makes the scale take the number of ticks from another scale of the same direction and spread its own range over them, so that both grids match. The accepted values of the property are: 
 
-- not set or `false`: the scale chooses the number of its ticks on its own
-- `true`: the number of ticks is taken from the main scale of the same direction ("left" for the vertical direction and "bottom" for the horizontal one), so the grid lines of both scales coincide
-- the position of a scale: the number of ticks is taken from the specified scale
+- `false/undefined` - the scale chooses the number of its ticks on its own
+- `true` - the number of ticks is taken from the main scale of the same direction (`"left"` for the vertical direction and `"bottom"` for the horizontal one), so the grid lines of both scales coincide
+- `string` - the position of the scale to take the number of ticks from (`"left"` | `"right"` | `"bottom"` | `"top"`), which has to be of the same direction
 
-~~~jsx
+~~~jsx {4}
 scales: {
     bottom: { text: "month" },
     left:   { title: "Volume, t" },
-    right:  { title: "Ratio, %", alignTicks: true }
+    right:  { title: "Share, %", alignTicks: true }
 }
 ~~~
 
