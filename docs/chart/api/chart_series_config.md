@@ -151,7 +151,7 @@ series: [
 
 ## Options for a dual axis chart
 
-The `scale` and `scales` properties define the scales a series is drawn against, which allows a chart to render two value scales at once, each with its own dimension. They apply to the series of the charts with scales: Line, Spline, Bar, X-Bar, Area, SplineArea and Scatter. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section of the guide for the details.
+The `scale` and `scales` properties name the scales of a series, which allows a chart to render two value scales at once, each with its own dimension. They apply to the series of the charts with scales: Line, Spline, Bar, X-Bar, Area, SplineArea and Scatter. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section of the guide for the details.
 
 ### scale
 
@@ -287,7 +287,7 @@ series: [
         </tr>
         <tr>
             <td><b>stacked</b></td>
-            <td>(optional) defines the stack a series belongs to. Check the <a href="#stacked">stacked</a> section</td>
+            <td>(optional) defines the stack a series belongs to. For details, including the use of the property in a dual axis chart, check the <a href="#stacked">stacked</a> section below <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked chart</a></td>
         </tr>
     </tbody>
 </table>
@@ -299,7 +299,7 @@ series: [
 stacked?: boolean | string
 ~~~
 
-The property defines the stack a series belongs to. The accepted values of the property are:
+The property defines the stack a series belongs to, including the separate stacks of a chart with two value scales. The accepted values of the property are:
 
 - `false/undefined` - the chart renders the series as a separate layer
 - `true` - the value scale defines the stack, so all the series with `stacked: true` bound to the same scale form one stack. For a chart with a single value scale, this is a plain stacked chart
@@ -319,10 +319,7 @@ series: [
 ]
 ~~~
 
-**Related samples:**
-
-- [Chart. Stacked chart](https://snippet.dhtmlx.com/ilew1ds4)
-- [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
+**Related sample**: [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
 
 **Related article**: [Stack groups](chart/configuration_properties.md#stack-groups)
 

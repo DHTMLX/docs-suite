@@ -950,7 +950,7 @@ series: [
 
 ### Naming both scales of a series
 
-The [`scales`](chart/api/chart_series_config.md#scales) property is the full form of the binding. It is needed when a series specifies not only its value scale, but also its argument scale, and it takes the pair of positions as an array:
+The [`scales`](chart/api/chart_series_config.md#scales) property is the full form of the binding. It is needed when a series specifies not only its value scale, but also its argument scale. It takes the pair of positions as an array:
 
 ~~~jsx {2}
 series: [
@@ -964,7 +964,7 @@ As the argument scale is resolved automatically, the `scale` property is enough 
 
 ### Grid of the second scale
 
-Two sets of grid lines placed at different heights are difficult to read, so the grid of a direction belongs to the first scale of this direction (`"bottom"` for the horizontal direction and `"left"` for the vertical one). The second scale renders its labels, its own scale line and its [`targetLine`](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales) and [`targetValue`](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales), if they are specified, but not the grid.
+Two sets of grid lines placed at different heights are difficult to read, so the grid of a direction belongs to the first scale of this direction (`"bottom"` for the horizontal direction and `"left"` for the vertical one).
 
 The [`grid`](chart/api/chart_scales_config.md#grid) property redistributes the grid between the two scales. Set `grid: true` for the second scale to render both grids:
 
@@ -982,7 +982,7 @@ To leave the grid to the second scale instead of rendering both, set `grid: fals
 
 As each scale builds its own range, the ticks of one scale rarely land at the height of the ticks of the other one. The [`alignTicks`](chart/api/chart_scales_config.md#alignticks) property of a scale makes the grids match: the scale takes the number of ticks from the reference scale and spreads its own range over them. The accepted values of the property are:
 
-- `false/undefined` - the scale chooses the number of its ticks on its own
+- `false/undefined` - the scale chooses the number of its ticks on its own. Only the first scale of the direction renders the grid, while the second one renders its labels, its own scale line and its [`targetLine`](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales) and [`targetValue`](chart/api/chart_scales_config.md#the-list-of-config-options-for-scales), if they are specified
 - `true` - the scale takes the number of ticks from the main scale of the same direction (`"left"` for the vertical direction and `"bottom"` for the horizontal one), so the grid lines of both scales coincide
 - `string` - the position of the scale to take the number of ticks from (`"left"` | `"right"` | `"bottom"` | `"top"`), which has to be of the same direction
 
