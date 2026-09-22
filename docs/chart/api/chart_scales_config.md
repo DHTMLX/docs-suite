@@ -179,7 +179,7 @@ The `grid` property shows and hides the grid lines of a scale, `true` by default
 If a chart has two scales of the same direction: 
 
 - the grid of this direction belongs to the first of them (`"bottom"` for the horizontal direction and `"left"` for the vertical one)
-- the second scale is rendered without the grid
+- the chart renders the second scale without the grid
   
 Set `grid: true` for the second scale to render both grids, or `grid: false` for the first one to leave the grid to the second scale.
 
@@ -196,7 +196,7 @@ alignTicks?: boolean | ScaleType
 The `alignTicks` property makes the scale take the number of ticks from another scale of the same direction and spread its own range over them, so that both grids match. The accepted values of the property are: 
 
 - `false/undefined` - the scale chooses the number of its ticks on its own
-- `true` - the number of ticks is taken from the main scale of the same direction (`"left"` for the vertical direction and `"bottom"` for the horizontal one), so the grid lines of both scales coincide
+- `true` - the scale takes the number of ticks from the main scale of the same direction (`"left"` for the vertical direction and `"bottom"` for the horizontal one), so the grid lines of both scales coincide
 - `string` - the position of the scale to take the number of ticks from (`"left"` | `"right"` | `"bottom"` | `"top"`), which has to be of the same direction
 
 ~~~jsx {4}

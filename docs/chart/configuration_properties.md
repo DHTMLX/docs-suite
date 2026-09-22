@@ -880,7 +880,7 @@ If the mixed graphs have different dimensions, each of them can be measured agai
 
 A chart can render two value scales at once, which allows showing series of different dimensions (for example, a volume in tons and a share in percent) against the same argument scale. The second of the value scales is also called a secondary axis.
 
-The value scale is a characteristic of a separate series rather than of the whole chart, so each series names the scale its values are measured against via the [`scale`](chart/api/chart_series_config.md#scale) property:
+The value scale is a characteristic of a separate series rather than of the whole chart, so each series names the scale that measures its values via the [`scale`](chart/api/chart_series_config.md#scale) property:
 
 ~~~jsx {5,9}
 const chart = new dhx.Chart("chart_container", {
@@ -898,13 +898,13 @@ const chart = new dhx.Chart("chart_container", {
 
 ![Dual axis chart with two line series of different magnitude in DHTMLX Suite](/img/chart/dual_axis_overview.png)
 
-**Related sample**: [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
-
 Each scale calculates its minimal and maximal values and its ticks by the series bound to it only, which keeps values of different magnitude readable in one chart.
+
+**Related sample**: [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
 
 ### Value scale of a series
 
-The `scale` property names the value scale only. The argument scale is applied automatically, which makes the property direction-agnostic: the direction of the value scale follows the type of the series.
+The `scale` property names the value scale only. The chart applies the argument scale automatically, which makes the property direction-agnostic: the direction of the value scale follows the type of the series.
 
 - the value scale of the Line, Spline, Bar, Area, SplineArea and Scatter series is vertical, so the property takes `"left"` or `"right"`
 - the value scale of the X-Bar series is horizontal, so the property takes `"bottom"` or `"top"`
@@ -932,7 +932,7 @@ const chart = new dhx.Chart("chart_container", {
 
 #### Default and incorrect scale positions
 
-A series without the `scale` property is measured against the `"left"` scale (`"bottom"` for X-Bar). If a chart does not have it, the series takes the opposite scale. Thus, a chart with the `"right"` scale alone is configured the same way as a chart with the `"left"` one.
+A series without the `scale` property takes the `"left"` scale (`"bottom"` for X-Bar). If a chart does not have it, the series falls back to the opposite scale. Thus, a chart with the `"right"` scale alone is configured the same way as a chart with the `"left"` one.
 
 If the `scale` property names the perpendicular scale, for example `"top"` for a Bar series, the chart throws a `TypeError` that specifies the type of the series and the positions it can be bound to:
 
@@ -948,10 +948,6 @@ series: [
 ]
 ~~~
 
-:::note
-A value scale with no series bound to it is rendered as a plain scale line without labels.
-:::
-
 ### Naming both scales of a series
 
 The [`scales`](chart/api/chart_series_config.md#scales) property is the full form of the binding. It is needed when a series specifies not only its value scale, but also its argument scale, and it takes the pair of positions as an array:
@@ -962,9 +958,9 @@ series: [
 ]
 ~~~
 
-The order of the positions in the array does not matter, as the role of each of them is defined by its direction. The array has to name exactly one value scale of the series, and the remaining position is applied as the argument scale. 
+The order of the positions in the array does not matter, as the direction of each position defines its role. The array has to name exactly one value scale of the series, and the remaining position becomes the argument scale.
 
-As the argument scale is resolved automatically, the `scale` property is enough in most cases. If a series has both properties, `scale` takes priority and `scales` is ignored.
+As the argument scale is resolved automatically, the `scale` property is enough in most cases. If a series has both properties, `scale` takes priority and the chart ignores `scales`.
 
 ### Grid of the second scale
 
@@ -987,7 +983,7 @@ To leave the grid to the second scale instead of rendering both, set `grid: fals
 As each scale builds its own range, the ticks of one scale rarely land at the height of the ticks of the other one. The [`alignTicks`](chart/api/chart_scales_config.md#alignticks) property of a scale makes the grids match: the scale takes the number of ticks from the reference scale and spreads its own range over them. The accepted values of the property are:
 
 - `false/undefined` - the scale chooses the number of its ticks on its own
-- `true` - the number of ticks is taken from the main scale of the same direction (`"left"` for the vertical direction and `"bottom"` for the horizontal one), so the grid lines of both scales coincide
+- `true` - the scale takes the number of ticks from the main scale of the same direction (`"left"` for the vertical direction and `"bottom"` for the horizontal one), so the grid lines of both scales coincide
 - `string` - the position of the scale to take the number of ticks from (`"left"` | `"right"` | `"bottom"` | `"top"`), which has to be of the same direction
 
 ~~~jsx {4}
@@ -1004,7 +1000,7 @@ Without `alignTicks` the right scale builds 7 ticks of its own against the 17 of
 
 ### Stack groups
 
-A chart can hold several stacks at once: one per value scale, or several named groups on one scale. In the example below the bars bound to the `"left"` scale are stacked together, while the line is measured against the `"right"` one:
+A chart can hold several stacks at once: one per value scale, or several named groups on one scale. In the example below the bars bound to the `"left"` scale form one stack, while the `"right"` scale measures the line:
 
 ~~~jsx {8-11}
 const chart = new dhx.Chart("chart_container", {
@@ -1029,11 +1025,11 @@ const chart = new dhx.Chart("chart_container", {
 
 The [`stacked`](chart/api/chart_series_config.md#stacked) property of a series defines the stack it belongs to. The accepted values of the property are:
 
-- `false/undefined` - the series is rendered as a separate layer
-- `true` - the stack is defined automatically by the value scale, so all the series with `stacked: true` bound to the same scale are put into one stack. For a chart with a single value scale, this is the plain stacked chart
+- `false/undefined` - the chart renders the series as a separate layer
+- `true` - the value scale defines the stack, so all the series with `stacked: true` bound to the same scale form one stack. For a chart with a single value scale, this is a plain stacked chart
 - `string` - the explicit name of the group, which allows building two or more independent stacks, including on one scale
 
-The stacks of one direction are placed side by side, as usual bar series, and the `total` property is calculated separately for each group.
+The chart places the stacks of one direction side by side, as usual bar series, and calculates the `total` property separately for each group.
 
 ~~~jsx {4-5,7-8}
 series: [
@@ -1047,7 +1043,7 @@ series: [
 ]
 ~~~
 
-The chart below stacks two series on the `"left"` scale and two more on the `"right"` one. The groups are drawn side by side, and the `total` over a stack counts that group only.
+The chart below stacks two series on the `"left"` scale and two more on the `"right"` one. The groups stand side by side, and the `total` over a stack counts that group only.
 
 ![Bar chart with a stack on each value scale, drawn side by side and totalled on its own, in DHTMLX Suite](/img/chart/dual_axis_independent_stacks.png)
 
@@ -1071,7 +1067,7 @@ Which positions the `scale` and `scales` properties accept depends on the type o
 | `treeMap`, `calendarHeatMap` | no scales, the properties are ignored | - |
 | `radar` | `"radial"` only | - |
 
-The types listed above can be mixed in one chart, which is the main purpose of a secondary scale: a bar and a line, a stack and a line, an area and a line, a bar and a spline. Check the [Mixed graphs in one chart](#mixed-graphs-in-one-chart) section for the details and the limitations.
+You can mix the types listed above in one chart (which is the main purpose of the second value scale): a bar and a line, a stack and a line, an area and a line, a bar and a spline. Check the [Mixed graphs in one chart](#mixed-graphs-in-one-chart) section for the details and the limitations.
 
 **Related samples:**
 
