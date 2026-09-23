@@ -3166,25 +3166,75 @@ DHTMLX Grid provides the keyboard navigation that will help you manipulate your 
 
 ### Default shortcut keys
 
+Keyboard navigation is enabled by default and does not require any selection module. The whole cell surface is a single tab stop: <kbd>Tab</kbd> enters Grid, the keys below move the active cell and scroll it into view, and <kbd>Tab</kbd> leaves Grid at its first or last cell. Without a selection module, moving the active cell does not select it and does not fire selection events.
+
 The navigation shortcut keys and keys combinations that Grid enables by default are provided below:
 
 <table>
     <tbody>
         <tr>
-            <td><kbd>PageUp</kbd></td>
-            <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
+            <td><kbd>ArrowUp</kbd></td>
+            <td>moves the active cell to the previous vertical cell</td>
         </tr>
         <tr>
-            <td><kbd>PageDown</kbd></td>
-            <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
+            <td><kbd>ArrowDown</kbd></td>
+            <td>moves the active cell to the next vertical cell</td>
+        </tr>
+        <tr>
+            <td><kbd>ArrowLeft</kbd></td>
+            <td>moves the active cell to the previous horizontal cell</td>
+        </tr>
+        <tr>
+            <td><kbd>ArrowRight</kbd></td>
+            <td>moves the active cell to the next horizontal cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
+            <td>moves the active cell to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
+            <td>moves the active cell to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
+            <td>moves the active cell to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
+            <td>moves the active cell to the last horizontal cell</td>
         </tr>
         <tr>
             <td><kbd>Home</kbd></td>
-            <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
+            <td>moves the active cell to the first column of the current row</td>
         </tr>
         <tr>
             <td><kbd>End</kbd></td>
-            <td>navigates to the end of the Grid content (without change of the selected cell)</td>
+            <td>moves the active cell to the last column of the current row</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>Home</kbd></td>
+            <td>moves the active cell to the first cell of Grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>End</kbd></td>
+            <td>moves the active cell to the last cell of Grid</td>
+        </tr>
+        <tr>
+            <td><kbd>PageUp</kbd></td>
+            <td>moves the active cell up by the height of the visible content</td>
+        </tr>
+        <tr>
+            <td><kbd>PageDown</kbd></td>
+            <td>moves the active cell down by the height of the visible content</td>
+        </tr>
+        <tr>
+            <td><kbd>Tab</kbd></td>
+            <td>moves the active cell to the next horizontal cell or the first cell of the next row; from the last cell of Grid, moves the focus out of Grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>moves the active cell to the previous horizontal cell or the last cell of the previous row; from the first cell of Grid, moves the focus out of Grid</td>
         </tr>
         <tr>
             <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
@@ -3207,9 +3257,11 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-### Shortcut keys for moving selection between cells
+For the accessibility aspects of keyboard navigation, see the [Grid accessibility](grid/accessibility.md#keyboard-navigation) guide.
 
-In case you want to enable the shortcut keys that allow moving the selection between cells, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
+### Shortcut keys for moving selection between cells {#shortcut-keys-for-moving-selection-between-cells}
+
+In case you want the default shortcut keys to move the selection together with the active cell, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
 
 ~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
@@ -3224,52 +3276,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-The list of the shortcut keys and their combinations used for moving selection between cells is the following:
-
-<table>
-    <tbody>
-        <tr>
-            <td><kbd>ArrowUp</kbd></td>
-            <td>moves selection to the previous vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowDown</kbd></td>
-            <td>moves selection to the next vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowLeft</kbd></td>
-            <td>moves selection to the previous horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowRight</kbd></td>
-            <td>moves selection to the next horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
-            <td>moves selection to the first vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
-            <td>moves selection to the last vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
-            <td> moves selection to the first horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
-            <td> moves selection to the last horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Tab</kbd></td>
-            <td> moves selection to the next horizontal cell or the first cell of the next row</td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
-            <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
-        </tr>
-    </tbody>
-</table>
+With the `selection` property specified, the arrow keys, their combinations with <kbd>Ctrl</kbd>, <kbd>Home</kbd>/<kbd>End</kbd>, <kbd>PageUp</kbd>/<kbd>PageDown</kbd> and <kbd>Tab</kbd>/<kbd>Shift</kbd>+<kbd>Tab</kbd> listed in the [Default shortcut keys](#default-shortcut-keys) section move the selection between cells.
 
 The combinations of the shortcut keys listed below do not work when the `selection` property is set to *"complex"*. Use another mode (*"cell" or "row"*) in case you want to activate these navigation keys:
 
@@ -3312,7 +3319,7 @@ The combinations of the shortcut keys listed below do not work when the `selecti
 
 ### Shortcut keys for editing
 
-It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid.
+It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid. No selection module is required: the editor opens in the active cell.
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {

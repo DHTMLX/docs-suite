@@ -18,10 +18,10 @@ Conformance is reported criterion by criterion rather than as a blanket claim. T
 
 | Area | Support |
 | ---- | ------- |
-| Keyboard operation | Full: cell navigation, editing, sorting, range selection, tree expand/collapse, and clipboard all have keyboard equivalents |
+| Keyboard operation | Full: cell navigation, editing, sorting, range selection, tree expand/collapse, and clipboard all have keyboard equivalents. Cell navigation works in every configuration, with or without a selection module |
 | WAI-ARIA semantics | Built-in (`grid` / `treegrid` model), enabled by default |
-| Focus model | A single tab stop per zone; focus moves between header, body, and footer |
-| Selection model | Two modes: single-cell/row (`selection`) and spreadsheet-style range (`blockSelection`) |
+| Focus model | A single tab stop for the whole cell surface; focus moves between header, body, and footer |
+| Selection model | Optional: single-cell/row (`selection`) or spreadsheet-style range (`blockSelection`), for selecting cells and ranges |
 | Screen readers | Tested with NVDA, JAWS and VoiceOver |
 | Visual accessibility | Dedicated light and dark high-contrast themes — colour-blind friendly, AA contrast, 16px base — and non-colour cues |
 | Text resize / zoom | Layout remains operable up to 400% zoom / text spacing overrides |
@@ -47,31 +47,47 @@ As with any embeddable component, the accessibility of the final page also depen
 
 ## Setting up an accessible Grid {#recommendedconfiguration}
 
-The Grid ships accessible by default — WAI-ARIA output is emitted automatically and keyboard navigation is on ([`keyNavigation: true`](grid/api/grid_keynavigation_config.md)) — but a fully WCAG 2.2 AA-compliant deployment needs two more things: one of the selection modules enabled, so that keyboard navigation has an active cell to move and to expose through `aria-selected`, and an AA-contrast theme selected. The recommended configuration is:
+The Grid ships accessible by default: WAI-ARIA output is emitted automatically, and keyboard navigation is on ([`keyNavigation: true`](grid/api/grid_keynavigation_config.md)), so the whole cell surface can be reached and walked with the keyboard in any configuration. For a fully WCAG 2.2 AA-compliant deployment, the only other thing you need is an AA-contrast theme. The recommended configuration is:
 
 ~~~jsx
-// 1. WAI-ARIA output is enabled by default - no action needed.
-
-// 2. Enable a selection module so keyboard navigation has an active cell to move
+// 1. WAI-ARIA output and keyboard navigation are enabled by default - no action needed
 const grid = new dhx.Grid("grid_container", {
     columns: [/* ... */],
     data: dataset,
-    selection: "complex",  // or blockSelection: true for spreadsheet-style ranges
-    multiselection: true,  // enables Shift+Arrow multi-select
-    keyNavigation: true    // true - by default
+    keyNavigation: true // true - by default
 });
 
-// 3. Select an AA-conformant theme
+// 2. Select an AA-conformant theme
 dhx.setTheme("contrast-light"); // or "contrast-dark"
 ~~~
 
 The theme can also be applied through the `data-dhx-theme` attribute of the container or of the root element; see the [Themes overview](/themes/) for all the options.
 
-### Selection modules for keyboard operation {#selectionmodules}
+Add a selection module only when users need to select cells or ranges; see the next section.
 
-The keyboard behavior of the body depends on which selection system is enabled. The two are independent and drive different ARIA output and shortcut semantics.
+### Keyboard navigation with and without selection {#selectionmodules}
 
-#### 1. Cell / row selection — selection
+#### Without a selection module
+
+A grid configured without `selection` and `blockSelection` is still fully navigable. The active cell moves with the arrow keys, <kbd>Home</kbd> / <kbd>End</kbd>, <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd>, <kbd>Page Up</kbd> / <kbd>Page Down</kbd> and <kbd>Tab</kbd>, and it is scrolled into view, including next to frozen columns and rows. Moving it selects nothing: `aria-selected` is not set, no selection event fires, and no selection styling is painted. This is the configuration to use for a read-only table:
+
+~~~jsx
+// A read-only grid that can still be walked cell by cell
+const grid = new dhx.Grid("grid_container", {
+    columns: [/* ... */],
+    data: dataset
+});
+~~~
+
+:::note
+Opening an editor from the keyboard (<kbd>Enter</kbd>, <kbd>F2</kbd>, <kbd>Space</kbd>) requires only `editable: true`; no selection module is needed.
+:::
+
+#### With a selection module
+
+When a selection module is enabled, the selection moves together with the active cell and is exposed through `aria-selected`. The two modules are independent and drive different ARIA output and shortcut semantics.
+
+##### 1. Cell / row selection — selection
 
 A single active cell (or row) moves with the arrow keys. This populates `aria-selected` on the focused cell or row. Extending the selection with <kbd>Shift</kbd> is enabled only when `multiselection: true`; without it, <kbd>Shift</kbd>+arrow moves the active cell.
 
@@ -93,9 +109,9 @@ const grid = new dhx.Grid("grid_container", {
 | `"row"` | One active row; arrows move the whole row, `aria-selected` is on the row |
 | `"complex"` | Cell- and row-style selection combined |
 | `true` | Equivalent to cell selection |
-| *falsy / unset* | Selection (and `aria-selected`) disabled |
+| *falsy / unset* | Selection (and `aria-selected`) disabled; keyboard navigation still works |
 
-#### 2. Range / block selection — blockSelection
+##### 2. Range / block selection — blockSelection
 
 Spreadsheet-style rectangular ranges. The arrow keys move the range anchor; <kbd>Shift</kbd>+arrows grow or shrink the rectangle; <kbd>Delete</kbd> clears the range (when editing is enabled). This applies in **"range"** mode.
 
@@ -114,11 +130,11 @@ const grid = new dhx.Grid("grid_container", {
 | ---------------------- | ---- | --------------- |
 | `true` | range | Arrows move the range; <kbd>Shift</kbd>+arrows extend the rectangle; <kbd>Delete</kbd> clears it |
 
-Both systems coexist with the same navigation keys; the Grid responds to whichever selection system is active.
+Both modules use the same navigation keys; the Grid responds to whichever module is active.
 
 #### TreeGrid
 
-TreeGrid mode (`type: "tree"`) adds `role="treegrid"`, `aria-level` and `aria-expanded` on top of the selection module, and enables arrow-key expand/collapse:
+TreeGrid mode (`type: "tree"`) adds `role="treegrid"`, `aria-level` and `aria-expanded`, and enables arrow-key expand/collapse:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -140,16 +156,16 @@ WAI-ARIA roles and attributes are added to the component markup automatically an
 
 ### Grid container
 
-The following table lists the container role and the grid-wide attributes applied to the root grid element, which describe the grid as a whole:
+The following table lists the container role and the grid-wide attributes, which describe the grid as a whole. They are applied to the content element of the grid, which holds the header, body, footer and frozen zones:
 
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
-| `.dhx_grid` | `role="grid"` | Standard grid |
-| `.dhx_grid` | `role="treegrid"` | TreeGrid (`type: "tree"`) |
-| `.dhx_grid` | `aria-rowcount` | Total number of data rows |
-| `.dhx_grid` | `aria-colcount` | Number of visible columns |
-| `.dhx_grid` | `aria-readonly` | `"true"` when the grid is not editable |
-| `.dhx_grid` | `aria-multiselectable` | `"true"` when multi-selection is enabled |
+| `.dhx_grid-content` | `role="grid"` | Standard grid |
+| `.dhx_grid-content` | `role="treegrid"` | TreeGrid (`type: "tree"`) |
+| `.dhx_grid-content` | `aria-rowcount` | Total number of data rows |
+| `.dhx_grid-content` | `aria-colcount` | Number of visible columns |
+| `.dhx_grid-content` | `aria-readonly` | `"true"` when the grid is not editable |
+| `.dhx_grid-content` | `aria-multiselectable` | `"true"` when multi-selection is enabled |
 
 ### Rows and cells
 
@@ -162,7 +178,9 @@ The following table lists the roles and the position and state attributes applie
 | Data cell | `role="gridcell"` | A data cell |
 | Data cell | `aria-colindex` | 1-based column position |
 | Data cell | `aria-readonly` | `"true"` when the cell is not editable |
-| Data cell | `aria-selected` | Selection state of the cell |
+| Data cell | `aria-selected` | Selection state of the cell, when a selection module is enabled |
+| Data cell | `tabindex` | `"0"` on exactly one cell (the active cell), `"-1"` on the rest, so the cell surface is a single tab stop |
+| Merged cell | `aria-colspan` / `aria-rowspan` | Number of columns / rows the merged cell covers |
 
 ### Tree (TreeGrid) rows
 
@@ -183,7 +201,7 @@ The following table lists the roles and attributes applied to the header and foo
 | -------- | ---------------- | ------- |
 | Header/footer group | `role="rowgroup"` | Groups the header or footer rows |
 | Header/footer row | `role="row"` + `aria-rowindex` | A header or footer row |
-| Header cell | `role="columnheader"` + `aria-sort` | Column header; `aria-sort` is `none` / `ascending` / `descending` |
+| Header cell | `role="columnheader"` + `aria-sort` | Column header; `aria-sort` is `none` / `ascending` / `descending` and is present only on sortable columns |
 | Footer cell | `role="gridcell"` + `aria-colindex` | A footer (summary) cell |
 | Content (filter) cell | `role="gridcell"` | Header/footer cell hosting a filter control |
 | Sort affordance | `role="button"` + `aria-label="Sort by …"` | Keyboard- and pointer-activatable sort trigger |
@@ -194,7 +212,7 @@ In-place editor inputs and header/footer filters receive an accessible name deri
 
 ### Hidden and decorative elements
 
-Resizer grips, sort icons, sort-order counters, drag ghosts, drop indicators, and the selection overlay are removed from the accessibility tree with `aria-hidden="true"` / `role="presentation"`, so screen readers are not cluttered with redundant markup.
+Resizer grips, sort icons, sort-order counters, drag ghosts, drop indicators, and the selection overlay are removed from the accessibility tree with `aria-hidden="true"` / `role="presentation"`, so screen readers are not cluttered with redundant markup. The hidden focus sentinels that let the keyboard enter and leave the widget are placed outside the grid role and are not exposed as controls.
 
 ## Screen reader support
 
@@ -212,10 +230,11 @@ The rest of the state travels the same way, on the element it belongs to:
 
 | State | Exposed through | Read on |
 | ------ | --------------- | ------- |
-| Selection | `aria-selected` | The focused cell, or the row in `selection: "row"` mode |
+| Selection | `aria-selected` | The selected cell, or the row in `selection: "row"` mode, when a selection module is enabled |
 | Editability | `aria-readonly` | The grid container and each cell |
-| Sort direction | `aria-sort` (`none` / `ascending` / `descending`) | The column header |
+| Sort direction | `aria-sort` (`none` / `ascending` / `descending`) | The header of a sortable column |
 | Hierarchy | `aria-level`, `aria-expanded` | Tree rows (`type: "tree"`) |
+| Merged cells | `aria-colspan`, `aria-rowspan` | The merged cell |
 | Multi-selection capability | `aria-multiselectable` | The grid container |
 
 Editors and filters take their accessible name from the column header text, so the user always hears which column is in play. Decorative markup — resizer grips, sort icons, drag ghosts, drop indicators, the selection overlay — is hidden from the accessibility tree, so nothing redundant is announced.
@@ -245,7 +264,7 @@ The Grid already announces the following out of the box:
 The strings the screen reader hears live in the Grid locale, so they translate with the rest of the UI. They fall into two groups:
 
 - **announcements** — `aria_sortedAscending`, `aria_sortedDescending`, `aria_filterApplied`, `aria_filterCleared`, `aria_rowsLoaded`, `aria_valueOutOfRange`, `aria_valueBelowMin`, `aria_valueAboveMax`, `aria_valueClamped`;
-- **accessible names** — `aria_sortBy`, `aria_filter`, `aria_filterByDate`, `aria_expandGroup`, `aria_collapseGroup`, `aria_expandRow`, `aria_collapseRow`, `aria_editContent`, `aria_subRow`, `aria_enterGrid`, `aria_exitGrid`, `aria_rowId`, and the drag-panel names.
+- **accessible names** — `aria_sortBy`, `aria_filter`, `aria_filterByDate`, `aria_expandGroup`, `aria_collapseGroup`, `aria_expandRow`, `aria_collapseRow`, `aria_editContent`, `aria_subRow`, `aria_rowId`, and the drag-panel names.
 
 Override them like any other locale label, before the Grid is initialized:
 
@@ -262,29 +281,29 @@ Placeholders in curly braces (`{column}`, `{count}`, `{min}`, `{max}`, `{value}`
 
 ## Keyboard navigation
 
-Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. Moving the selection with the arrow keys additionally requires one of the selection modules — see [Setting up an accessible Grid](#recommendedconfiguration). Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there.
+Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. It works in every configuration: without a selection module the keys move the active cell, and with one they move the selection as well — see [Keyboard navigation with and without selection](#selectionmodules). Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there. <kbd>Tab</kbd> at the first or the last cell leaves the Grid in every configuration, including one with frozen columns (`leftSplit` / `rightSplit`).
 
 Shortcuts are organized into **zones** — body, header, footer — and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
 
 ### Grid body
 
-| Keys | Action | Selection mode |
-| ---- | ------ | -------------- |
-| <kbd>↑</kbd> / <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd> | Move the selected cell one row/column (<kbd>↑</kbd> from the first row enters the header; <kbd>↓</kbd> from the last row enters the footer when a footer exists) | both |
-| <kbd>Ctrl</kbd> + arrow | Jump the selection to the first/last cell in that direction | both |
+| Keys | Action | Requires |
+| ---- | ------ | -------- |
+| <kbd>↑</kbd> / <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd> | Move the active cell one row/column (<kbd>↑</kbd> from the first row enters the header; <kbd>↓</kbd> from the last row enters the footer when a footer exists) | — |
+| <kbd>Ctrl</kbd> + arrow | Jump the active cell to the first/last cell in that direction | — |
 | <kbd>Shift</kbd> + arrow | Extend the selection by one cell | `selection` with `multiselection: true`, or `blockSelection` range |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + arrow | Extend the selection to the edge | as above |
-| <kbd>Home</kbd> / <kbd>End</kbd> | Move to the first / last column of the current row | both |
-| <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>End</kbd> | Move to the first / last cell of the grid | both |
+| <kbd>Home</kbd> / <kbd>End</kbd> | Move to the first / last column of the current row | — |
+| <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>End</kbd> | Move to the first / last cell of the grid | — |
 | <kbd>Shift</kbd> + <kbd>Home</kbd> / <kbd>End</kbd>, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> / <kbd>End</kbd> | Extend the selection to the row/grid extent | extend-capable modes |
-| <kbd>Page Up</kbd> / <kbd>Page Down</kbd> | Move the selected cell up / down by one page of visible rows | both |
+| <kbd>Page Up</kbd> / <kbd>Page Down</kbd> | Move the active cell up / down by one page of visible rows | — |
 | <kbd>Shift</kbd> + <kbd>Page Up</kbd> / <kbd>Page Down</kbd> | Extend the selection by one page | extend-capable modes |
-| <kbd>Enter</kbd> | Open the editor (or toggle a boolean cell); when editing, commit and close | requires `editable` |
-| <kbd>F2</kbd> | Open the editor of the selected cell (non-boolean) | requires `editable` |
-| <kbd>Space</kbd> | Toggle a boolean cell | requires `editable` |
-| <kbd>Escape</kbd> | Cancel editing without saving | requires `editable` |
-| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move to the next / previous cell, wrapping rows; exits to the footer / header at the ends | both |
-| <kbd>Delete</kbd> | Clear the selected range | `blockSelection` range mode + `editable` |
+| <kbd>Enter</kbd> | Open the editor (or toggle a boolean cell); when editing, commit and close | `editable` |
+| <kbd>F2</kbd> | Open the editor of the active cell (non-boolean) | `editable` |
+| <kbd>Space</kbd> | Toggle a boolean cell | `editable` |
+| <kbd>Escape</kbd> | Cancel editing without saving | `editable` |
+| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move to the next / previous cell, wrapping rows; exits to the footer / header at the ends | — |
+| <kbd>Delete</kbd> | Clear the selected range | `blockSelection` range mode and `editable` |
 | <kbd>Ctrl</kbd> + <kbd>Z</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> | Undo / Redo | History module |
 | <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | Expand / collapse the row (`type: "tree"`) | TreeGrid |
 | <kbd>→</kbd> / <kbd>←</kbd> (tree column) | Expand / collapse a branch, or move to first child / parent | TreeGrid |
@@ -328,8 +347,8 @@ Light and dark high-contrast themes ship with the library — `contrast-light` a
 - **Colour is never the only signal.** Sort direction is carried by an arrow glyph and by `aria-sort`, selection by `aria-selected` alongside the highlight, editability by `aria-readonly`, and hierarchy by `aria-level` and `aria-expanded`.
 - **Zoom and reflow.** The grid layout remains operable when the page is zoomed up to 400%.
 - **Text spacing.** Applying WCAG text-spacing overrides does not clip or overlap text in grid cells, column headers or footer summaries.
-- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so the active cell is the single tab stop and moves predictably with the arrow keys. The active cell is marked by a persistent 2px solid border in the theme primary colour; header and footer cells show a 2px focus ring, and filter inputs and open editors an inset ring.
-- **Scrolling into view.** When focus reaches an off-screen row or column, the Grid scrolls it into view and compensates for frozen columns and rows and for the header height, so the focused cell is never left behind a frozen zone.
+- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so the active cell is the single tab stop and moves predictably with the arrow keys. With `selection: "cell"` / `"complex"` or `blockSelection`, the active cell is marked by a persistent 2px solid selection border in the theme primary colour, and no second focus outline is drawn over it. With `selection: "row"`, and in a grid without a selection module, the focused cell is marked by a dashed focus outline. Header and footer cells show a 2px focus ring, and filter inputs and open editors an inset ring.
+- **Scrolling into view.** When focus reaches an off-screen row or column, the Grid scrolls it into view and compensates for frozen columns and rows and for the header and footer height, so the focused cell is never left behind a frozen zone.
 
 ## Host-page responsibilities
 
