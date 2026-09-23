@@ -8,6 +8,55 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.3.12
+
+Released on September 24, 2026
+
+### Updates
+
+- Colorpicker. Palette accessibility:
+    - The palette is exposed as a list of options, and each swatch is announced by its color name and its selected state (**WCAG 1.1.1**, **WCAG 1.4.1**, **WCAG 4.1.2**).
+    - The palette is entered with a single <kbd>Tab</kbd> press and browsed with the arrow keys, <kbd>Home</kbd> and <kbd>End</kbd>; focus is kept when the user switches to the custom color view and back.
+
+- Colorpicker/Message/Toolbar/Window. Localization of accessible names:
+    - Color names, the palette and its HEX and opacity fields, the dialog buttons of a message, the default toolbar name and the default dialog name moved into the locale system.
+    - All of them can now be translated through the standard localization configuration.
+
+- Grid. Keyboard access to the cell surface:
+    - The grid is entered with a single <kbd>Tab</kbd> press, the arrow keys move between cells, and <kbd>Tab</kbd> leaves the grid, as the WAI-ARIA Grid pattern specifies (**WCAG 2.1.1**, **WCAG 2.4.3**).
+    - Cells can now be reached with the keyboard in a grid configured without a selection module.
+
+- Grid. Structure reported to assistive technology:
+    - The row number column is announced as a row header, and the sort state is reported only for columns that can be sorted (**WCAG 1.3.1**, **WCAG 4.1.2**).
+    - A merged cell reports how many rows and columns it spans.
+
+- Toolbar/Menu/Sidebar/Ribbon. Keyboard navigation:
+    - A navigation bar is entered with a single <kbd>Tab</kbd> press, and the arrow keys, <kbd>Home</kbd> and <kbd>End</kbd> move between its controls (**WCAG 2.1.1**, **WCAG 2.4.3**).
+    - Menus open, move and close from the keyboard, and focus returns to the control that opened them.
+    - Returning to a bar puts focus on the control that was used last.
+
+- Toolbar/Menu/Sidebar/Ribbon. Names and states of controls:
+    - Buttons built from custom HTML now expose an accessible name (**WCAG 4.1.2**, **WCAG 2.5.3**).
+    - Two-state buttons report whether they are pressed, both in the bar and in a menu, and mutually exclusive choices are announced as a group (**WCAG 1.3.1**, **WCAG 3.2.4**).
+
+- Toolbar/Window. The `ariaLabel` configuration option:
+    - It sets the accessible name announced for a toolbar or a dialog (**WCAG 2.4.6**, **WCAG 4.1.2**).
+    - A Window without `ariaLabel` is named by its `title`; when neither is set, each widget falls back to its own locale key, `aria_toolbar` or `aria_dialog`.
+    - Dialog focus order and the reported modal state now follow the ARIA dialog pattern.
+
+### Fixes
+
+- Grid. Fixed <kbd>Tab</kbd> not leaving a grid that has frozen (`leftSplit` / `rightSplit`) columns
+- Grid. Fixed the focused cell being scrolled one column short of the viewport edge during horizontal keyboard navigation
+- Grid. Fixed the focused cell being scrolled behind the footer instead of above it
+- Grid. Fixed the doubled focus indicator on a cell that is both focused and selected
+- Grid. Fixed cells rendered with `htmlEnable` being announced as buttons in columns without interactive content
+- Grid. Corrected the ARIA structure of the grid so that rows and columns are reported reliably, and the focus helpers are no longer exposed as controls
+- Grid. Fixed a script error that occurred after closing an inline editor in a grid with column summaries
+- Layout. Removed the placeholder accessible name from a layout cell outside `views` mode
+- Menu. Fixed the accessible name of a menu popup and stopped menus from being announced as live regions every time they open
+- Message. Fixed a misspelled accessible name on a dialog button
+
 ## Version 9.3.11
 
 Released on September 14, 2026
