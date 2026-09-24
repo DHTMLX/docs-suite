@@ -310,6 +310,8 @@ const chart = new dhx.Chart("chart_container", {
 chart.data.parse(dataset);
 ~~~
 
+![Stacked Bar and X-Bar charts showing the sum of the values of all the series at the end of each bar in DHTMLX Suite](/img/chart/bar_total_values.png)
+
 To format the total values, set the `total` property as a *callback function*. The chart calls the function with the sum of the values of all the series of the current bar as a parameter and displays the returned *string* or *number* at the end of the bar:
 
 ~~~jsx
@@ -425,6 +427,46 @@ chart.data.parse(pie_dataset);
 ~~~
 
 **Related sample**: [Chart. Pie chart initialization](https://snippet.dhtmlx.com/jfbet749)
+
+### Total value of Donut chart
+
+To display the aggregated value of a series in the center of a Donut chart, use the [`total`](chart/api/chart_total_config.md) property. Set it to `true` to show the sum of the series values in the default format:
+
+~~~jsx
+const chart = new dhx.Chart("chart_container", {
+    type: "donut",
+    total: true,
+    series: [
+        {
+            value: "value",
+            color: "color",
+            text: "month",
+        }
+    ],
+});
+chart.data.parse(dataset);
+~~~
+
+![Donut chart showing the sum of the series values in its center in DHTMLX Suite](/img/chart/donut_total_value.png)
+
+To format the total value, set the `total` property as a *callback function*. The chart calls the function with the sum of all the values as a parameter and displays the returned *string* or *number* in its center:
+
+~~~jsx
+const chart = new dhx.Chart("chart_container", {
+    type: "donut",
+    total: (total) => `${total}$`,
+    series: [
+        {
+            value: "value",
+            color: "color",
+            text: "month",
+        }
+    ],
+});
+chart.data.parse(dataset);
+~~~
+
+**Related sample**: [Chart. Donut chart with total value](https://snippet.dhtmlx.com/cufn64vo)
 
 ## Radar chart
 
