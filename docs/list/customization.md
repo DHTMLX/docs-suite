@@ -12,9 +12,9 @@ description: You can explore the customization of List in the documentation of t
 
 **Related sample**: [List. Styling (custom CSS)](https://snippet.dhtmlx.com/s461f09w)
 
-There is a possibility to make changes in the look and feel of a list. For this you need to take the following steps:
+You can change the look and feel of a list. To do this, take the following steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case):
+- add a new CSS class (or classes) with the desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case):
 
 ~~~html
 <style>
@@ -59,7 +59,7 @@ For example:
 
 ## Styling items
 
-You can style particular cells in the list.
+You can style particular items in the list.
 
 ![List with custom CSS applied to alternating numbered book items in DHTMLX Suite](/img/list/custom_css.png)
 
@@ -88,7 +88,7 @@ For example, apply some color to each even item, as in:
 
 ## Adding custom selection
 
-It is also possible to customize selection of an item.
+It is also possible to customize the selection of an item.
 
 ![List with a custom highlighted selected book item in DHTMLX Suite](/img/list/custom_selection.png)
 

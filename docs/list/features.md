@@ -6,7 +6,7 @@ description: You can explore the features of List in the documentation of the DH
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX List and go into deep dive on its functionality.
+This page contains structured information that will help you to start working with DHTMLX List and dive deep into its functionality.
 
 ## How to start with DHTMLX List
 
@@ -24,10 +24,10 @@ In this section you can find out how to initialize List, how to load data into t
 | Topic                                                                              | Description                                                                                                        |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Loading data into List](list/load_data.md)                                            | Read how to load the initial data into List                                                                        |
-| [Initialization with config.data](https://snippet.dhtmlx.com/kzg2fza0)             | The example shows how to load data into List on the initialization stage                                           |
-| [Initialization with data.load()](https://snippet.dhtmlx.com/1it5kfhq)             | The example shows how to load data from external file                                                              |
+| [Initialization with config.data](https://snippet.dhtmlx.com/kzg2fza0)             | The example shows how to load data into List at the initialization stage                                           |
+| [Initialization with data.load()](https://snippet.dhtmlx.com/1it5kfhq)             | The example shows how to load data from an external file                                                              |
 | [Initialization with data.parse()](https://snippet.dhtmlx.com/anj2keoc)            | The example shows how to load data from a local data source                                                        |
-| [Initialization with external DataCollection](https://snippet.dhtmlx.com/20i6vbtj) | The example shows how to load data from external DataCollection                                                    |
+| [Initialization with external DataCollection](https://snippet.dhtmlx.com/20i6vbtj) | The example shows how to load data from an external DataCollection                                                    |
 | [Rendering a large data set](list/configuration.md#dynamic-rendering-of-items)         | Learn how to enable dynamic loading of data on scrolling the list ([Example](https://snippet.dhtmlx.com/x4gxy38e)) |
 | [Lazy loading](https://snippet.dhtmlx.com/list_lazy_loading)                       | The example shows how to render data dynamically                                                                   |
 
@@ -36,7 +36,7 @@ In this section you can find out how to initialize List, how to load data into t
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework for creating a DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX List with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                    |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX List with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX List with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
@@ -71,7 +71,7 @@ In this section you can learn how to configure the height and style of List and 
 
 ## How to work with data in List
 
-This section will tell you how to use [DataCollection API](guides/datacollection_guide.md) for working with data of List, i.e. edit, add, remove, sort data, etc.
+This section will tell you how to use [DataCollection API](guides/datacollection_guide.md) to work with List data, such as editing, adding, removing and sorting it.
 
 ### How to edit, add, remove data
 
@@ -106,7 +106,7 @@ In this section you may study how to work with selection functionality.
 | [Enabling/disabling selection](list/usage_selection.md#enablingdisabling-selection-object) | Learn how to enable/disable the ability to select items via the selection object                                                                                                                                       |
 | [Setting selection](list/usage_selection.md#selecting-an-item)                             | Learn how to select a particular item or all items ([Example](https://snippet.dhtmlx.com/io8oxxg2))                                                                                                                    |
 | Getting selection                                                                      | Learn how to get the [id](list/usage_selection.md#getting-id-of-a-selected-item) or [an object](list/usage_selection.md#getting-object-of-a-selected-item) of a selected item ([Example](https://snippet.dhtmlx.com/elonnovx)) |
-| [Removing selection](list/usage_selection.md#unselecting-an-item)                          | Learn how to remove selection from a selected item(s)                                                                                                                                                                  |
+| [Removing selection](list/usage_selection.md#unselecting-an-item)                          | Learn how to remove selection from a selected item (or items)                                                                                                                                                                  |
 
 
 ## How to work with item in focus
@@ -129,7 +129,7 @@ This section explains how to work with List events.
 
 ## API reference
 
-In this section you can find out corresponding references of List API.
+In this section you can find the corresponding List API references.
 
 | Topic                                              | Description                                            |
 | -------------------------------------------------- | ------------------------------------------------------ |
@@ -148,7 +148,7 @@ In this section you will learn about common functionality of the library which c
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to use custom scroll in List                        |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run the code after the component’s rendering |
 
 ## Any questions left?
 
