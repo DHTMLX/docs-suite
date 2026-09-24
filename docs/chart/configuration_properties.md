@@ -289,6 +289,48 @@ chart.data.parse(dataset);
 
 **Related sample**: [Chart. Bar chart initialization](https://snippet.dhtmlx.com/id9nbujd)
 
+### Total values of stacked bars
+
+To display the sum of the values of all the stacked series at the end of each bar (above the bar in a Bar chart and to the right of the bar in an X-Bar chart), use the [`total`](chart/api/chart_total_config.md) property in the root configuration of the chart. The property takes effect only when the `stacked` property is enabled in at least one of the series. Set `total` to `true` to show the sums in the default format:
+
+~~~jsx
+const chart = new dhx.Chart("chart_container", {
+    type: "bar",
+    total: true,
+    scales: {
+        bottom: { text: "month" },
+        left: { max: 170 }
+    },
+    series: [
+        { id: "A", value: "company A", fill: "#394E79", stacked: true },
+        { id: "B", value: "company B", fill: "#5E83BA", stacked: true },
+        { id: "C", value: "company C", fill: "#C2D2E9", stacked: true },
+    ],
+});
+chart.data.parse(dataset);
+~~~
+
+To format the total values, set the `total` property as a *callback function*. The chart calls the function with the sum of the values of all the series of the current bar as a parameter and displays the returned *string* or *number* at the end of the bar:
+
+~~~jsx
+const chart = new dhx.Chart("chart_container", {
+    type: "bar",
+    total: (total) => `${total}$`,
+    scales: {
+        bottom: { text: "month" },
+        left: { max: 170 }
+    },
+    series: [
+        { id: "A", value: "company A", fill: "#394E79", stacked: true },
+        { id: "B", value: "company B", fill: "#5E83BA", stacked: true },
+        { id: "C", value: "company C", fill: "#C2D2E9", stacked: true },
+    ],
+});
+chart.data.parse(dataset);
+~~~
+
+**Related sample**: [Chart. Stacked Bar and X-Bar charts with total values](https://snippet.dhtmlx.com/s0a5ctvq)
+
 ## Area and SplineArea chart
 
 The configuration object of [Area and SplineArea chart](chart/charts_overview.md#area-and-splinearea-chart) must include the following properties:
