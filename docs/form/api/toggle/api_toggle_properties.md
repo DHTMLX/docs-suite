@@ -12,7 +12,7 @@ description: You can explore the Properties of the Toggle control of Form in the
 {
     type: "toggle",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -36,7 +36,7 @@ description: You can explore the Properties of the Toggle control of Form in the
 
 - `type` - (required) the type of a control, set it to "toggle"
 - `name` - (optional) the name of a control
-- `id` - (optional) the id of a control, auto-generated if not set
+- `id` - (optional) the id of a control, must be **unique** if set, auto-generated if not set
 - `hidden`- (optional) defines whether a toggle is hidden, *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `selected` - (optional) defines the initial state of the toggle as selected (pressed), *false* by default

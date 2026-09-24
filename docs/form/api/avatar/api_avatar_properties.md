@@ -12,7 +12,7 @@ description: You can explore the Properties of the Avatar control of Form in the
 {
     type: "avatar",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
 
     target?: string,
     value?: object,
@@ -70,7 +70,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr id="target">
             <td><b>target</b></td>

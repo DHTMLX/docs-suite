@@ -64,9 +64,9 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-## Size of tabs
+## Sizing of tabs
 
-DHTMLX Tabbar allows you to control the height and width of tabs with the help of appropriate configuration options - [tabWidth](tabbar/api/tabbar_tabwidth_config.md) and [tabHeight](tabbar/api/tabbar_tabheight_config.md). By default, they are set to 200px and 45px, correspondingly. This is how you can change the default settings:
+DHTMLX Tabbar allows you to control the height and width of tabs with the help of the corresponding configuration options: [tabWidth](tabbar/api/tabbar_tabwidth_config.md) and [tabHeight](tabbar/api/tabbar_tabheight_config.md). By default, they are set to 200px and 45px, correspondingly. This is how you can change the default settings:
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -79,18 +79,22 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Structure of tabs
 
-The structure of Tabbar should be defined during initialization of the component. It is set within the [views](tabbar/api/tabbar_views_config.md) property. Each tab is an object with attributes, which are:
+The structure of Tabbar should be defined during initialization of the component. It is set within the 
+[`views`](tabbar/api/tabbar_views_config.md) property. Each tab is an object with attributes, which are:
 
-- **id** - the id of a tab
-- **tab** - the name of a tab
-- **tabCss** - the name of the CSS class used for a tab
-- **css** - the name of the CSS class used for a cell
-- **header** - the header of a cell
-- **html** - HTML content for a tab
-- **padding** - the distance between the content of a cell and the border of tabbar
-- **tabWidth** - the width of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
-- **tabHeight** - the height of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
+- `id` - the id of a tab
+- `tab` - the name of a tab
+- `tabCss` - the name of the CSS class used for a tab
+- `css` - the name of the CSS class used for a cell
+- `header` - the header of a cell
+- `html` - HTML content for a tab
+- `padding` - the distance between the content of a cell and the border of tabbar
+- `tabWidth` - the width of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
+- `tabHeight` - the height of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
 
+:::info
+Please note that if you specify the `id` fields for tabs, their values should be **unique**. You can also omit the `id` fields in the configuration of tabs. In this case they will be generated automatically.
+:::
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {

@@ -67,7 +67,8 @@ Add a container for the Tabbar and give it an id, e.g. "tabbar_container":
 ## Define Tabbar structure
 
 At this step you should specify the structure of your future Tabbar. Each tab represents an object with attributes, such as the name of a tab and a CSS class applied to a tab. 
-For example, Tabbar can have 4 tabs. You need to define their configuration objects and place them into the **views** array, like this:
+For example, Tabbar can have 4 tabs. You need to define their configuration objects and place them into the 
+[`views`](tabbar/api/tabbar_views_config.md) array, like this:
 
 ~~~js
 const views = [
@@ -77,6 +78,10 @@ const views = [
     { tab: "west" },
 ];
 ~~~
+
+:::info
+Please note that if you specify the `id` fields for tabs, their values should be **unique**. You can also omit the `id` fields in the configuration of tabs. In this case they will be generated automatically.
+:::
 
 ## Initialize Tabbar
 
