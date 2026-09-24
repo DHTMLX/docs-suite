@@ -43,6 +43,7 @@ Use [DataCollection events](/data_collection/#events) to work with data.
 | [](chart/api/chart_maxpoints_config.md)    | @getshort(chart/api/chart_maxpoints_config.md)    |
 | [](chart/api/chart_scales_config.md)       | @getshort(chart/api/chart_scales_config.md)       |
 | [](chart/api/chart_series_config.md)       | @getshort(chart/api/chart_series_config.md)       |
+| [](chart/api/chart_total_config.md)        | @getshort(chart/api/chart_total_config.md)        |
 | [](chart/api/chart_type_config.md)         | @getshort(chart/api/chart_type_config.md)         |
 
 ## Export methods
