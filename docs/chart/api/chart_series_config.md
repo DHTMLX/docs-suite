@@ -67,7 +67,7 @@ series: [
         label?: ((seria: ISeriaConfig) => string) | string,
 
         active?: boolean,
-        color?: string | ((item: any) => string), // a function is supported by Bar and X-Bar charts only
+        color?: string | ((item: any) => string), // only Bar and X-Bar charts accept a function
         css?: string,
         dashed?: boolean,
         pointColor?: string,
@@ -105,7 +105,7 @@ series: [
         </tr>
         <tr>
             <td><b>color</b></td>
-            <td>(optional) the color of the series outline. Bar and X-Bar charts don't draw an outline: in these charts, <b>color</b> sets the color of bars if <b>fill</b> isn't specified, and the outline of the series marker in the legend. For Bar and X-Bar charts, it can also be set as a function that takes a data item and returns the color of its bar. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/jlbn196p" target="_blank">Chart. Highlight the best month</a></td>
+            <td>(optional) the color of the series outline. Bar and X-Bar charts don't draw an outline: in these charts, <b>color</b> sets the color of bars if you don't specify <b>fill</b>, and the outline of the series marker in the legend. For Bar and X-Bar charts, you can also set it as a function that takes a data item and returns the color of its bar. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/jlbn196p" target="_blank">Chart. Highlight the best month</a></td>
         </tr>
         <tr>
             <td><b>css</b></td>
@@ -147,7 +147,7 @@ series: [
 series: [
     {
         ..., // config options for series (for charts with scales)
-        fill?: string | ((item: any) => string), // a function is supported by Bar and X-Bar charts only
+        fill?: string | ((item: any) => string), // only Bar and X-Bar charts accept a function
         alpha?: number,
     }
 ]
@@ -159,7 +159,7 @@ series: [
     <tbody>
         <tr>
             <td><b>fill</b></td>
-            <td>(optional) the color of the series filling in Hex format. For Bar and X-Bar charts, it can also be set as a function that takes a data item and returns the fill color of its bar. Area and Radar charts accept only a string. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Samples: </b><a href="https://snippet.dhtmlx.com/q7rufn33" target="_blank">Chart. Color by value</a>, <a href="https://snippet.dhtmlx.com/nwwi5dh1" target="_blank">Chart. Gradient by value</a></td>
+            <td>(optional) the color of the series filling in Hex format. For Bar and X-Bar charts, you can also set it as a function that takes a data item and returns the fill color of its bar. Area, SplineArea and Radar charts accept only a string. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Samples: </b><a href="https://snippet.dhtmlx.com/q7rufn33" target="_blank">Chart. Color by value</a>, <a href="https://snippet.dhtmlx.com/nwwi5dh1" target="_blank">Chart. Gradient by value</a></td>
         </tr>
         <tr>
             <td><b>alpha</b></td>
