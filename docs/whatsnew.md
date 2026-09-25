@@ -28,6 +28,8 @@ Released on September , 2026
     - updated property of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `stacked`, which takes the name of a stack group besides a boolean
 - The ability to display [the total values of stacked bars](chart/configuration_properties.md#total-values-of-stacked-bars) at the end of each bar of a Bar or X-Bar chart and [the total value of a Donut chart](chart/configuration_properties.md#total-value-of-donut-chart) in its center
     - new Chart configuration property: [`total`](chart/api/chart_total_config.md)
+- The ability to [set the color of each bar dynamically](chart/customization.md#setting-bar-colors-dynamically), based on its data item, in a Bar or X-Bar chart
+    - updated properties of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `fill` and `color`, which take a callback function besides a string
 
 #### DataCollection/TreeCollection
 
@@ -87,6 +89,9 @@ Released on September , 2026
 - [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
 - [Chart. Stacked Bar and X-Bar charts with total values](https://snippet.dhtmlx.com/s0a5ctvq)
 - [Chart. Donut chart with total value](https://snippet.dhtmlx.com/cufn64vo)
+- [Chart. Color by value](https://snippet.dhtmlx.com/q7rufn33)
+- [Chart. Highlight the best month](https://snippet.dhtmlx.com/jlbn196p)
+- [Chart. Gradient by value](https://snippet.dhtmlx.com/nwwi5dh1)
 
 #### Grid
 
