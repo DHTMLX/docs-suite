@@ -207,7 +207,7 @@ You can also set the `color` option as a function that takes a data item and ret
 Details on how the chart applies the colors:
 
 - The chart calls the `fill` or `color` function for each bar. When the data changes, the chart calls the function again and repaints the bars.
-- The legend can't show several colors for one series, so its marker takes the color that the function returns for the first data item. If the colors carry meaning (for example, value thresholds), explain them outside the legend or hide the legend.
+- The legend marker takes the color that the function returns for the first data item, so it doesn't reflect the other bar colors.
 - In a [stacked chart](chart/api/chart_series_config.md#options-specific-for-bar-charts), each series applies its own `fill` and `color`, so one series can use a function while another uses a fixed color.
 - The chart calls the [`gradient`](#adding-color-gradient-for-bars) function once for each distinct color that `fill` returns, so bars that share a color also share a gradient (see the [Chart. Gradient by value](https://snippet.dhtmlx.com/nwwi5dh1) sample).
 
