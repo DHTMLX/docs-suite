@@ -6,7 +6,7 @@ description: You can explore the localization of Calendar in the documentation o
 
 # Localization
 
-You can apply different languages to the interface of dhtmlxCalendar. You just need to translate the corresponding strings for Calendar labels and apply a ready locale to the component.
+You can apply different languages to the Calendar interface. Translate the strings for Calendar labels and apply the locale to the component.
 
 ![Calendar localized into German with translated month and day names in DHTMLX Suite](/img/calendar/locale.png)
 
@@ -32,9 +32,9 @@ const en = {
 
 ## Custom locale
 
-To use a different locale, your need to:
+To use a different locale, you need to do the following:
 
-- define necessary language settings: provide full and short names of months, as well as full and short names of days of a week:
+- Define necessary language settings: provide full and short names of months, as well as full and short names of days of the week:
 
 ~~~js
 const de = {
@@ -52,7 +52,7 @@ const de = {
 };
 ~~~
 
-- apply the language settings by calling the **dhx.i18n.setLocale()** method before Calendar initialization:
+- Apply the language settings by calling the `dhx.i18n.setLocale()` method before Calendar initialization:
 
 ~~~js
 dhx.i18n.setLocale("calendar", de);
