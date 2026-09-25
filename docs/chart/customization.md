@@ -155,6 +155,49 @@ const chart = new dhx.Chart("chart_container", {
 });
 ~~~
 
+## Setting bar colors dynamically
+
+By default, all bars of a series have the same color. To color each bar by its data, set the `fill` option of [series](chart/configuration_properties.md#series) as a function. The function takes a data item and returns the fill color of the bar that displays it:
+
+~~~jsx {16}
+const chart = new dhx.Chart("chart_container", {
+    type: "bar",
+    scales: {
+        "bottom": {
+            text: "month"
+        },
+        "left": {
+            max: 100
+        }
+    },
+    series: [
+        {
+            id: "A",
+            value: "company A",
+            color: "none",
+            fill: item => item["company A"] < 30 ? "#E76F51" : "#2A9D8F"
+        }
+    ]
+});
+~~~
+
+**Related sample**: [Chart. Color by value](https://snippet.dhtmlx.com/q7rufn33)
+
+The `color` option can also be set as a function that takes a data item and returns a color. If you set only `color`, its value colors the bars as well. If you set both options, the bars take the color returned by `fill`.
+
+**Related sample**: [Chart. Highlight the best month](https://snippet.dhtmlx.com/jlbn196p)
+
+Details on how the chart applies the colors:
+
+- the function is called for each bar. When the data changes, the chart calls it again and repaints the bars
+- the legend can't show several colors for one series, so its marker takes the color returned for the first data item. If the colors carry meaning (for example, value thresholds), explain them outside the legend or hide the legend
+- in a [stacked chart](chart/api/chart_series_config.md#options-specific-for-bar-charts), each series applies its own `fill`, so one series can use a function while another uses a fixed color
+- the [`gradient`](#adding-color-gradient-for-bars) function is called for each distinct color that `fill` returns, so bars that share a color also share a gradient (see the [Chart. Gradient by value](https://snippet.dhtmlx.com/nwwi5dh1) sample)
+
+:::note
+Only Bar and X-Bar charts accept a function in `fill` and `color`. Line, Spline, Area, SplineArea, Radar and Scatter charts draw a series as a single shape and throw a `TypeError` if `fill` or `color` is set as a function.
+:::
+
 ## Adding template to tooltips
 
 ![Scatter chart with a custom tooltip template showing x and y values in DHTMLX Suite](/img/chart/show_tooltip.png)
