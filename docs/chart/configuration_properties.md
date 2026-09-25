@@ -291,9 +291,15 @@ chart.data.parse(dataset);
 
 ### Total values of stacked bars
 
-To display the sum of the values of all the stacked series at the end of each bar (above the bar in a Bar chart and to the right of the bar in an X-Bar chart), use the [`total`](chart/api/chart_total_config.md) property in the root configuration of the chart. The property takes effect only when the `stacked` property is enabled in at least one of the series. Set `total` to `true` to show the sums in the default format:
+To display the sum of the values of all the stacked series at the end of each bar (above the bar in a Bar chart and to the right of the bar in an X-Bar chart), use the [`total`](chart/api/chart_total_config.md) property in the root configuration of the chart.
 
-~~~jsx
+:::note
+The property takes effect only when the `stacked` property is enabled in at least one of the series.
+:::
+
+Set `total` to `true` to show the sums in the default format:
+
+~~~jsx {3,9-11}
 const chart = new dhx.Chart("chart_container", {
     type: "bar",
     total: true,
@@ -314,7 +320,7 @@ chart.data.parse(dataset);
 
 To format the total values, set the `total` property as a *callback function*. The chart calls the function with the sum of the values of all the series of the current bar as a parameter and displays the returned *string* or *number* at the end of the bar:
 
-~~~jsx
+~~~jsx {3,9-11}
 const chart = new dhx.Chart("chart_container", {
     type: "bar",
     total: (total) => `${total}$`,
@@ -432,7 +438,7 @@ chart.data.parse(pie_dataset);
 
 To display the aggregated value of a series in the center of a Donut chart, use the [`total`](chart/api/chart_total_config.md) property. Set it to `true` to show the sum of the series values in the default format:
 
-~~~jsx
+~~~jsx {3}
 const chart = new dhx.Chart("chart_container", {
     type: "donut",
     total: true,
@@ -451,7 +457,7 @@ chart.data.parse(dataset);
 
 To format the total value, set the `total` property as a *callback function*. The chart calls the function with the sum of all the values as a parameter and displays the returned *string* or *number* in its center:
 
-~~~jsx
+~~~jsx {3}
 const chart = new dhx.Chart("chart_container", {
     type: "donut",
     total: (total) => `${total}$`,
