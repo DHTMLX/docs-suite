@@ -6,7 +6,7 @@ description: You can explore the Toggle of Form in the documentation of the DHTM
 
 # Toggle
 
-A special button control that changes its state from pressed to the unpressed one when clicked.
+A button control that switches between the pressed and unpressed states when the user clicks it.
 
 ![Toggle button form control shown with an eye icon in pressed and unpressed states in DHTMLX Suite](/img/form/form_toggle.png)
 
@@ -16,7 +16,7 @@ A special button control that changes its state from pressed to the unpressed on
 
 ## Adding Toggle
 
-You can easily add a Toggle control during initialization of a form:
+You can add a Toggle control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -35,11 +35,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Toggle control](form/api/toggle/api_toggle_properties.md).
+View [the full list of Toggle configuration properties](form/api/toggle/api_toggle_properties.md).
 
 ## Working with Toggle
 
-You can manipulate a Toggle control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Toggle control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
@@ -49,8 +49,8 @@ const value = form.getItem("toggle").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Toggle control](form/api/api_overview.md#toggle-methods).
+Check [the full list of Toggle methods](form/api/api_overview.md#toggle-methods).
 
 ### Events
 
-Check [the full list of events of the Toggle control](form/api/api_overview.md#toggle-events).
+Check [the full list of Toggle events](form/api/api_overview.md#toggle-events).
