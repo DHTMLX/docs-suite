@@ -26,9 +26,9 @@ DHTMLX Chart includes several configuration options that are mostly common for a
 - [](chart/api/chart_type_config.md) - (*string*) defines the [type of a chart](chart/charts_overview.md) to initialize; "bar", "x-bar" (for horizontal Bar chart), "line", "spline", "scatter", "area", 
 "splineArea", "donut", "pie", "pie3D", "radar", "treeMap", and "calendarHeatMap"
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
-    type:"bar"
+    type: "bar"
 });
 ~~~
 
@@ -36,9 +36,9 @@ const chart = new dhx.Chart("chart_container", {
 
 - [](chart/api/chart_scales_config.md) - (*object*) defines configuration of chart scales
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
-    scales:{}
+    scales: {}
 });
 ~~~
 
@@ -48,14 +48,14 @@ It is necessary to configure [](chart/api/chart_scales_config.md) for the Line, 
 
 There are "left","right","top","bottom" and "radial" (for Radar chart) types of [scales](chart/api/chart_scales_config.md). 
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
-    type:"area",
+    type: "area",
     scales: {
-        "bottom" : {
+        "bottom": {
             text: 'month'
         },
-        "left" : {
+        "left": {
             padding: 10,
             max: 90
         }
@@ -78,9 +78,9 @@ Scales have both common and specific options. Check the full list of the availab
 
 - [](chart/api/chart_series_config.md) - (*array*) defines configuration of chart series
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
-    series:[]
+    series: []
 });
 ~~~
 
@@ -90,14 +90,14 @@ The [](chart/api/chart_series_config.md) configuration option is required for al
 
 [Series](chart/api/chart_series_config.md) present an array of objects each of which contains a number of properties for rendering a separate [data set](chart/data_loading.md#preparing-data-set) on a chart.
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
-    type:"bar",
+    type: "bar",
     scales: {
-        "bottom" : {
+        "bottom": {
             text: "month"
         },
-        "left" : {}
+        "left": {}
     },
     series: [
         {
@@ -109,7 +109,7 @@ const chart = new dhx.Chart("chart_container", {
         },
         {
             id: "B",
-            value:"company B",
+            value: "company B",
             fill: "#5E83BA",
             stacked: stacked,
             color: "none"
@@ -126,9 +126,9 @@ See the full list of configuration options for chart series in the [API referenc
 
 - [](chart/api/chart_legend_config.md) - (*object*) defines the configuration of a chart legend
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
-    legend:{}
+    legend: {}
 });
 ~~~
 
@@ -138,7 +138,7 @@ The [](chart/api/chart_legend_config.md) configuration option is required for Tr
 
 The [](chart/api/chart_legend_config.md) object may contain a number of options that define its configuration.
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
     scales: {
         // scales config
@@ -166,10 +166,10 @@ You can view the full list of the configuration options of chart legends in the 
 
 - [](chart/api/chart_maxpoints_config.md) - (*number*) displays an average number of values in case a data set is too large to show all the values in the chart
 
-~~~js
+~~~jsx
 const chart = new dhx.Chart("chart_container", {
-    type:"line",
-    maxPoints:100
+    type: "line",
+    maxPoints: 100
 });
 ~~~
 
@@ -186,7 +186,7 @@ The configuration object of [Line and Spline chart](chart/charts_overview.md#lin
 
 For example:
 
-~~~js
+~~~jsx
 const config = {
     type: "line", // or "spline"
     scales: {
@@ -243,7 +243,7 @@ The configuration object of [Bar and X-Bar chart](chart/charts_overview.md#bar-a
 
 For example:
 
-~~~js
+~~~jsx
 const config = {
     type: "bar", // or type: "x-bar"
     scales: {
@@ -300,7 +300,7 @@ The configuration object of [Area and SplineArea chart](chart/charts_overview.md
 
 For example:
 
-~~~js
+~~~jsx
 const config = {
     type: "area", // or "splineArea"
     scales: {
@@ -356,7 +356,7 @@ The configuration object of [Pie, Pie 3D and Donut chart](chart/charts_overview.
 
 For example:
 
-~~~js
+~~~jsx
 const config = {
     type: "pie", // or type: "pie3D", or type: "donut"
     series: [
@@ -395,7 +395,7 @@ The configuration object of [Radar chart](chart/charts_overview.md#radar-chart) 
 
 For example:
 
-~~~js
+~~~jsx
 const config = {
     type: "radar",
     scales: {
@@ -448,7 +448,7 @@ The configuration object of [Scatter chart](chart/charts_overview.md#scatter-cha
 
 For example:
 
-~~~js
+~~~jsx
 const config = {
     type: "scatter",
     scales: {
@@ -501,7 +501,7 @@ The configuration object of [Treemap chart](chart/charts_overview.md#treemap-cha
 
 ### With groups
 
-~~~js
+~~~jsx
 const treeMapData = [
     { id: "2021", name: "2021" },
     { id: "100", value: 50, name: "Outsourcing team", parent: "2021" },
@@ -548,7 +548,7 @@ const chart = new dhx.Chart("chart_container", config);
 
 ### Without groups
 
-~~~js
+~~~jsx
 const treeMapData = [
        {
           "planet": "Mercury",
@@ -604,7 +604,7 @@ The configuration object of [Calendar heatmap chart](chart/charts_overview.md#ca
 
 For example
 
-~~~js
+~~~jsx
 const heatMapData = [
     { id: "100", value: 50, date: new Date(2022, 2, 2) },
     { id: "201", value: 4, date: new Date(2022, 6, 15) },
@@ -663,7 +663,7 @@ For this, use the **startDate** and **endDate** properties of the [series](chart
 
 Let's take the following data set:
 
-~~~js
+~~~jsx
 const heatMapData = [
     { id: "100", value: 50, date: new Date(2022, 2, 2) },
     { id: "101", value: 100, date: new Date(2022, 4, 1) },
@@ -681,7 +681,7 @@ and consider how the chart will be shown depending on the values of the start an
 
 - **One year**
 
-~~~js {7-8}
+~~~jsx {7-8}
 const config = {
     type: "calendarHeatMap",
     series: [
@@ -702,7 +702,7 @@ As a result, the chart will be displayed for the period from "15/03/22" to "15/0
 
 - **One month**
 
-~~~js {7-8}
+~~~jsx {7-8}
 const config = {
     type: "calendarHeatMap",
     series: [
@@ -723,7 +723,7 @@ As a result, the chart will be displayed for the period from "01/03/22" to "31/0
 
 - **Any other period**
 
-~~~js {7-8}
+~~~jsx {7-8}
 const config = {
     type: "calendarHeatMap",
     series: [
@@ -746,7 +746,7 @@ As a result, the chart will be displayed for the period from "01/03/22" to "01/0
 
 If you specify the start date but don't specify the end date, the period for which the chart will displayed depends both on the data set and the start date.
 
-~~~js title="Example 1. Data in the range less than a year" {16}
+~~~jsx title="Example 1. Data in the range less than a year" {16}
 const heatMapData = [
     { id: "100", value: 50, date: new Date(2022, 2, 2) },
     { id: "101", value: 100, date: new Date(2022, 4, 1) },
@@ -773,7 +773,7 @@ chart.data.parse(heatMapData);
 
 As a result, the chart will be displayed for the period from "15/03/22" to "14/03/23" inclusively (i.e. for one year).
 
-~~~js title="Example 2. Data in the range more than a year" {18}
+~~~jsx title="Example 2. Data in the range more than a year" {18}
 const heatMapData = [
     { id: "100", value: 50, date: new Date(2022, 2, 2) },
     { id: "101", value: 100, date: new Date(2022, 4, 1) },
@@ -806,7 +806,7 @@ As a result, the chart will be displayed for the period from "15/03/22" to "14/0
 
 If you specify the end date but don't specify the start date, the period for which the chart will displayed depends both on the data set and the end date. Note, that in this case the chart will start from the 1st of January of the minimal year found in the dataset.
 
-~~~js {18}
+~~~jsx {18}
 const heatMapData = [
     { id: "100", value: 50, date: new Date(2022, 2, 2) },
     { id: "101", value: 100, date: new Date(2022, 4, 1) },
