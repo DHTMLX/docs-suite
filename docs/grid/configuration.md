@@ -1214,7 +1214,7 @@ Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define 
 
 ### Column summary
 
-To form a summary list that will be available at the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
+To form a summary list that will be available at the column's level only, you should use the [`summary`](grid/api/gridcolumn_properties/gridcolumn_summary_property.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
 
 - a string with the name of the [applied functor](helpers/data_calculation_functions.md)
 
@@ -1347,7 +1347,7 @@ You can specify the text of the header/footer column via the `text` property. It
     - the *key* is either the key defined in the list or the functor name
     - the *value* can be a *string*, *number* or *null*
 
-The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/gridcolumn_properties/gridcolumn_summary_property.md) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -1816,7 +1816,7 @@ Each span object contains the following properties:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/gridcolumn_properties/gridcolumn_summary_property.md) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -2124,6 +2124,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     summary: { totalPopulation: ["population", "sum"] },
     data: dataset
+});
 ~~~
 
 **Related sample**: [Grid. Header/footer tooltip](https://snippet.dhtmlx.com/fgstf2mq)

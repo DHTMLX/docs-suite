@@ -39,7 +39,7 @@ Each object in the spans array contains the following properties:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/gridcolumn_properties/gridcolumn_summary_property.md) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 

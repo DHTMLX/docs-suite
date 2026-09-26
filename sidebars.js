@@ -2671,12 +2671,6 @@ module.exports = {
                   type: "category",
                   label: "Grid column properties",
                   link: {
-                    type: 'generated-index',
-                    title: "Grid column properties",
-                    keywords: ['grid column properties'],
-                    image: '/img/docusaurus.png'
-                  },
-                  link: {
                     type: 'doc',
                     id: "grid/api/api_gridcolumn_properties",
                   },
@@ -2693,7 +2687,29 @@ module.exports = {
                     "grid/api/gridcolumn_properties/gridcolumn_footer_property",
                     "grid/api/gridcolumn_properties/gridcolumn_gravity_property",
                     "grid/api/gridcolumn_properties/gridcolumn_groupable_property",
-                    "grid/api/gridcolumn_properties/gridcolumn_header_property",
+                    {
+                      type: "category",
+                      label: "header",
+                      link: {
+                        type: 'doc',
+                        id: "grid/api/gridcolumn_properties/api_gridcolumn_header_properties",
+                      },
+                      items: [
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/align",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/colspan",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/content",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/css",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/customfilter",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/filterconfig",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/headersort",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/htmlenable",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/rowspan",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/sortas",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/text",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/tooltip",
+                        "grid/api/gridcolumn_properties/gridcolumn_header_property/tooltiptemplate"
+                      ]
+                    },
                     "grid/api/gridcolumn_properties/gridcolumn_hidden_property",
                     "grid/api/gridcolumn_properties/gridcolumn_htmlenable_property",
                     "grid/api/gridcolumn_properties/gridcolumn_id_property",
