@@ -8,17 +8,17 @@ description: You can explore the event handling of Combo Box in the documentatio
 
 ## Attaching event listeners
 
-The user can add any user-defined handler to any of the available events. To do this, the user can use the **combo.events.on()** method with the following parameters:
+You can add a custom handler to any available event with the `combo.events.on()` method. The method takes the following parameters:
 
 <table>
     <tbody>
         <tr>
             <td><b>evName</b></td>
-            <td>name of the event</td>
+            <td>the event name</td>
         </tr>
         <tr>
             <td><b>evHandler</b></td>
-            <td>user-defined event handler</td>
+            <td>a custom event handler</td>
         </tr>
     </tbody>
 </table>
@@ -29,17 +29,17 @@ combo.events.on("open", function() {
 });
 ~~~
 
-Several handlers can be attached to one and the same event, and all of them will be executed.
+You can attach several handlers to the same event, and Combobox runs all of them.
 
-{{note 
-The names of the events are case-insensitive.
-}}
+:::note
+Event names are case-insensitive.
+:::
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 
 ## Detaching event listeners
 
-There is a simple way of removing an event handler via the **combo.events.detach()** method:
+The `combo.events.detach()` method removes an event handler:
 
 ~~~js
 combo.events.on("open", function() {
@@ -51,7 +51,7 @@ combo.events.detach("open");
 
 ## Calling events
 
-To call events, use **combo.events.fire()**:
+The `combo.events.fire()` method calls an event:
 
 ~~~js
 combo.events.fire("name",args);
@@ -60,4 +60,4 @@ combo.events.fire("name",args);
 
 ## List of supported events
 
-You can find the full list of ComboBox events in the [API Reference](combobox/api/api_overview.md#events).
+You can find the full list of Combobox events in the [API Reference](combobox/api/api_overview.md#events).

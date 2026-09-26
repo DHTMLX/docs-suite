@@ -6,40 +6,40 @@ description: You can learn about Accessibility support in the documentation of t
 
 # Accessibility support
 
-Accessibility is one of the key concepts in present-day web development. It presupposes equal access to web resources for people with diverse abilities.
+Accessibility is one of the key concepts in present-day web development. It gives people with diverse abilities equal access to web resources.
 
 ## Web Conformance Guidelines
 
-Even if you are not mandated to conform to any particular accessibility standard, it can be helpful to understand the guidelines outlined as they are generally good practices worth incorporating into your web based applications.
+Even if no accessibility standard is mandatory for you, the guidelines below are good practices worth applying to your web-based applications.
 
-Currently the most commonly encountered conformance guidelines and standards are:
+The most common conformance guidelines and standards are:
 
-- [ADA](https://www.ada.gov/) - US Department of Justice
-- [Section 508](https://www.section508.gov/) - US federal agencies
-- [WCAG 2.0](https://www.w3.org/WAI/standards-guidelines/wcag/) - globally accepted standard. WCAG 2.0 has 3 levels of conformance; A, AA and AAA (in order of conformance)
-- [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) - a standard that defines ways to make web content and web applications more accessible to people with disabilities
-- [WAI](https://www.w3.org/WAI/) - web accessibility standard
+- [ADA](https://www.ada.gov/) — US Department of Justice
+- [Section 508](https://www.section508.gov/) — US federal agencies
+- [WCAG 2.0](https://www.w3.org/WAI/standards-guidelines/wcag/) — a globally accepted standard with three conformance levels: A, AA, and AAA, in ascending order
+- [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) — a standard that defines ways to make web content and web applications more accessible to people with disabilities
+- [WAI](https://www.w3.org/WAI/) — a web accessibility standard
 
-The DHTMLX Suite library meets the main requirements of the WCAG 2.0 standards and provides support for the following accessibility components:
+The DHTMLX Suite library meets the main requirements of the WCAG 2.0 standard and supports the following accessibility components:
 
 - [WAI-ARIA Attributes](#wai-aria-attributes)
 - [Keyboard Navigation](#keyboard-navigation)
-- [High-Сontrast Themes](#high-contrast-themes)
+- [High-Contrast Themes](#high-contrast-themes)
 
 ## WAI-ARIA Attributes
 
-There are special attributes used in the markup of DHTMLX Suite widgets that make it possible for screen readers to recognize and interpret them to the user, namely:
+The markup of DHTMLX Suite widgets contains special attributes that let screen readers recognize the widgets and describe them to the user:
 
 ### Grid
 
-There are **roles** and **attributes** for elements of grid, sorting, filters, editable cells to enable screen readers to interpret and navigate the columns and rows of the grid (enabled by default). The semantics are always present and there is no flag to disable them. Custom content should be marked manually.
+Grid elements, sorting, filters, and editable cells have **roles** and **attributes** that let screen readers interpret and navigate grid columns and rows. The semantics are always present, and no flag disables them. Mark custom content manually.
 
 You can find the following **roles** and **attributes** in the DOM:
 
-- role: *grid* (or *treegrid* in the `type: "tree"` mode), *rowgroup*, *row*, *columnheader*, *gridcell*, *button*
-- aria attributes: *label*, *rowcount*, *colcount*, *rowindex*, *colindex*, *aria-sort*, *aria-selected*, *aria-readonly*, *aria-multiselectable*, and — for tree rows — *aria-level* and *aria-expanded*.
+- role: `grid` (or `treegrid` in the `type: "tree"` mode), `rowgroup`, `row`, `columnheader`, `gridcell`, `button`
+- aria attributes: `label`, `rowcount`, `colcount`, `rowindex`, `colindex`, `aria-sort`, `aria-selected`, `aria-readonly`, `aria-multiselectable`, and — for tree rows — `aria-level` and `aria-expanded`.
 
-In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree.
+In-place editors and header/footer filters get an accessible name derived from the column header text. The `presentation` role and `aria-hidden` hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree.
 
 :::info
 For the complete picture — the ARIA model, the keyboard zones (header/body/footer), the focus model, and configuration recipes — see the dedicated [Grid accessibility](grid/accessibility.md) guide.
@@ -47,39 +47,39 @@ For the complete picture — the ARIA model, the keyboard zones (header/body/foo
 
 ### Chart
 
-There are **aria** attributes for axes, lines, points, legends and general description of the chart (enabled by default). Points on charts like line, spline, area, spline area have aria attributes only when the **pointType** property is set. Information for attributes is taken from the chart config and property names. Currently, the ability to specify this information by yourself is not provided.
+**aria** attributes cover axes, lines, points, legends, and a general description of the chart. They are enabled by default. Points on line, spline, area, and spline area charts have aria attributes only when the `pointType` property is set. DHTMLX takes the attribute information from the chart config and property names. You cannot specify this information yourself.
 
 You can find the following **roles** and **attributes** in the DOM:
-- role: *graphics-document*, *graphics-object*, *graphics-symbol*, *button*
-- aria attributes: *label*,  *roledescription*.
+- role: `graphics-document`, `graphics-object`, `graphics-symbol`, `button`
+- aria attributes: `label`, `roledescription`.
 
-Role presentation and aria-hidden are used to hide redundant content from the accessibility tree.
+The `presentation` role and `aria-hidden` hide redundant content from the accessibility tree.
 
 ### List and DataView
 
-There are general description of the component, items and their states. All the **roles** and **attributes** are enabled by default You can find the following **roles** and **attributes** in the DOM:
-- role: *listbox*, *option*
-- aria attributes: *label*, *roledescription*, *grabbed*, *selected*, *multiselectable*, *readonly*.
+The component, its items, and their states have a general description. All **roles** and **attributes** are enabled by default. You can find the following **roles** and **attributes** in the DOM:
+- role: `listbox`, `option`
+- aria attributes: `label`, `roledescription`, `grabbed`, `selected`, `multiselectable`, `readonly`.
 
-Role presentation and aria-hidden are used to hide redundant markup from the accessibility tree.
+The `presentation` role and `aria-hidden` hide redundant markup from the accessibility tree.
 
-### Toolbar 
+### Toolbar
 
-There are general description of the component, items and their states. All the **roles** and **attributes** are enabled by default You can find the following **roles** and **attributes** in the DOM:
+The component, its items, and their states have a general description. All **roles** and **attributes** are enabled by default. You can find the following **roles** and **attributes** in the DOM:
 
-- role: *toolbar*, *button*, *combobox*, *menu*, *menuitem*
-- aria attributes: *label*, *labeledby*, *orientation*, *haspopup*, *expanded*, *disabled*, *pressed*.
+- role: `toolbar`, `button`, `combobox`, `menu`, `menuitem`
+- aria attributes: `label`, `labeledby`, `orientation`, `haspopup`, `expanded`, `disabled`, `pressed`.
 
-Role presentation and aria-hidden are used to hide redundant markup from the accessibility tree.
+The `presentation` role and `aria-hidden` hide redundant markup from the accessibility tree.
 
 ## Keyboard Navigation
 
-All DHTMLX Suite widgets are provided with a keyboard navigation support. It allows using a Suite-based app without a mouse pointer. Basic rules include:
+All DHTMLX Suite widgets support keyboard navigation, so you can use a Suite-based app without a mouse pointer. Basic rules include:
 
-- the <kbd>Tab</kbd> key is used to navigate between widgets and clickable areas of the widgets
-- the <kbd>Esc</kbd> key closes windows and editors
-- the <kbd>Enter</kbd> is used to open and hide drop-down lists of select controls
-- the <kbd>Arrow</kbd> keys are used to move selection or change active elements within widgets
+- The <kbd>Tab</kbd> key moves focus between widgets and their clickable areas
+- The <kbd>Esc</kbd> key closes windows and editors
+- The <kbd>Enter</kbd> key opens and closes drop-down lists of select controls
+- The <kbd>Arrow</kbd> keys move selection or change active elements within widgets
 
 :::info
 For the full list of built-in hotkeys, refer to the **Keyboard Navigation** articles of the following widgets:
@@ -91,9 +91,9 @@ For the full list of built-in hotkeys, refer to the **Keyboard Navigation** arti
 
 ## High-Contrast Themes
 
-For users that are visually impaired due to color deficiencies, care should be taken when using colors to provide information.
+For users who are visually impaired due to color deficiencies, choose colors carefully when you use them to convey information.
 
-Among various DHTMLX Suite themes there are the high-contrast ones:
+DHTMLX Suite includes two high-contrast themes:
 - **Light High Contrast**
 - **Dark High Contrast**
 
@@ -101,6 +101,6 @@ Among various DHTMLX Suite themes there are the high-contrast ones:
 The contrast themes correspond to the AAA level.
 :::
 
-Being rather attractive, it is also helpful for those users who have weak eye-sight.
+These themes also help users with poor eyesight.
 
 <iframe src="https://snippet.dhtmlx.com/85fbitnu?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>

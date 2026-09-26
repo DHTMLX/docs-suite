@@ -12,9 +12,9 @@ description: You can explore the customization of Combo Box in the documentation
 
 **Related sample**: [Combobox. Styling (custom CSS)](https://snippet.dhtmlx.com/lldd739i)
 
-There is a possibility to make changes in the look and feel of a combo box. For this you need to take the following steps:
+You can change the appearance of a Combobox. Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet, and include that file on the page.
 
 ~~~html
 <style>
@@ -28,7 +28,7 @@ There is a possibility to make changes in the look and feel of a combo box. For 
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](combobox/api/combobox_css_config.md) property in the ComboBox configuration:
+- Specify the name of the class you created (or several names separated by spaces) as the value of the [css](combobox/api/combobox_css_config.md) property in the Combobox configuration:
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
@@ -60,7 +60,7 @@ For example:
 
 ![DHTMLX ComboBox with a custom fuzzy filter showing options matching the typed letters in DHTMLX Suite](/img/combo/custom_filter.png)
 
-It is possible to set a custom filtering function for the options of ComboBox via the [](combobox/api/combobox_filter_config.md) option. A custom function takes two parameters:
+Use the [](combobox/api/combobox_filter_config.md) option to set a custom filtering function for Combobox options. The function takes two parameters:
 
 <table>
     <tbody>
@@ -75,7 +75,7 @@ It is possible to set a custom filtering function for the options of ComboBox vi
     </tbody>
 </table>
 
-and should return *true/false* to specify whether an item should be displayed in the filtered list of options.
+The function must return `true` or `false` to specify whether Combobox displays the item in the filtered list of options.
 
 ~~~js
 function fuzzySearch(item, target) {
@@ -104,4 +104,4 @@ const combo = new dhx.Combobox("combo_container", {
 
 **Related sample**: [Combobox. Custom filter](https://snippet.dhtmlx.com/791incm9)
 
-In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows all the words that contain entered letters independent of their order in a word in the popup list.
+In the above example, the custom filtering function compares the value you type with items of the data collection letter by letter. The popup list then shows every word that contains the typed letters, regardless of their order.
