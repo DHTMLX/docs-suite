@@ -36,14 +36,14 @@ const chart = new dhx.Chart("chart_container", {
 :::info
 The `scales` object can contain a set of `key:value` pairs where *key* is the type of a scale and *value* is an object with configuration options of the scale.
 
-There are the following *types* of the scales: "left","right","top","bottom","radial".
+There are the following *types* of the scales: `"left"`,`"right"`,`"top"`,`"bottom"`,`"radial"`.
 :::
 
 ## The list of config options for scales
 
 :::tip
 You can apply the options below to configure scales for charts with the following types: 
-["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
+["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "xbar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
 :::
 
 ### Usage
@@ -61,6 +61,7 @@ scales: {
         scalePadding?: number,
         hidden?: boolean,
         grid?: boolean,
+        alignTicks?: boolean | ScaleType,
         dashed?: boolean,
         targetLine?: number | string,
         targetValue?: number,
@@ -113,7 +114,11 @@ scales: {
         </tr>
         <tr>
             <td><b>grid</b></td>
-            <td>(optional) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Without grid (lines)</a></td>
+            <td>(optional) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale. <br/>For details on the use of the property in a dual axis chart, check the <a href="#grid">grid</a> section below <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Without grid (lines)</a></td>
+        </tr>
+        <tr>
+            <td><b>alignTicks</b></td>
+            <td>(optional) aligns the ticks of the scale with the ticks of another scale of the same direction. Check the <a href="#alignticks">alignTicks</a> section</td>
         </tr>
         <tr>
             <td><b>dashed</b></td>
@@ -158,6 +163,47 @@ scales: {
     </tbody>
 </table>
 <br><br>
+
+## Options for a dual axis chart
+
+The `grid` and `alignTicks` properties define how the grid is rendered when a chart declares both scales of a direction: `"left"` and `"right"` or `"bottom"` and `"top"`. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section of the guide for the details.
+
+### grid
+
+~~~jsx
+grid?: boolean
+~~~
+
+If a chart has two scales of the same direction: 
+
+- the grid of this direction belongs to the first of them (`"bottom"` for the horizontal direction and `"left"` for the vertical one)
+- the chart renders the second scale without the grid
+  
+Set `grid: true` for the second scale to render both grids, or `grid: false` for the first one to leave the grid to the second scale.
+
+**Related article**: [Grid of the second scale](chart/configuration_properties.md#grid-of-the-second-scale)
+
+### alignTicks
+
+~~~jsx
+alignTicks?: boolean | ScaleType
+~~~
+
+The `alignTicks` property makes the scale take the number of ticks from another scale of the same direction and spread its own range over them, so that both grids match. The accepted values of the property are: 
+
+- `false/undefined` - the scale chooses the number of its ticks on its own. Only the first scale of the direction renders the grid, while the second one renders its labels, its own scale line and its `targetLine` and `targetValue`, if they are specified
+- `true` - the scale takes the number of ticks from the main scale of the same direction (`"left"` for the vertical direction and `"bottom"` for the horizontal one), so the grid lines of both scales coincide
+- `string` - the position of the scale to take the number of ticks from (`"left"` | `"right"` | `"bottom"` | `"top"`), which has to be of the same direction
+
+~~~jsx {4}
+scales: {
+    bottom: { text: "month" },
+    left:   { title: "Volume, t" },
+    right:  { title: "Share, %", alignTicks: true }
+}
+~~~
+
+**Related article**: [Matching the ticks of the two scales](chart/configuration_properties.md#matching-the-ticks-of-the-two-scales)
 
 ## The list of config options for radial scales
 
