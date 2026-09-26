@@ -26,6 +26,7 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](data_collection/api/datacollection_getitem_method.md)          | @getshort(api/datacollection_getitem_method.md)         |
 | [](data_collection/api/datacollection_getlength_method.md)        | @getshort(api/datacollection_getlength_method.md)       |
 | [](data_collection/api/datacollection_getsortingstates_method.md) | @getshort(api/datacollection_getsortingstates_method.md)|
+| [](data_collection/api/datacollection_getvisibleindex_method.md)  | @getshort(api/datacollection_getvisibleindex_method.md)|
 | [](data_collection/api/datacollection_group_method.md)            | @getshort(api/datacollection_group_method.md)           |
 | [](data_collection/api/datacollection_isdataloaded_method.md)     | @getshort(api/datacollection_isdataloaded_method.md)    |
 | [](data_collection/api/datacollection_isgrouped_method.md)        | @getshort(api/datacollection_isgrouped_method.md)       |
