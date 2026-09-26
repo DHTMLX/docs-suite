@@ -8,7 +8,7 @@ description: You can explore the event handling of Layout in the documentation o
 
 ## Attaching event listeners
 
-The user can add any user-defined handler to any of the available events. To do this, the user can use the **layout.events.on()** method with the following parameters:
+You can add a user-defined handler to any of the available events. To do this, use the `layout.events.on()` method with the following parameters:
 
 <table>
     <tbody>
@@ -29,17 +29,17 @@ layout.events.on("beforeHide", function(id){
 });
 ~~~
 
-Several handlers can be attached to one and the same event, and all of them will be executed.
+You can attach several handlers to the same event, and Layout executes all of them.
 
-{{note 
-The names of the events are case-insensitive.
-}}
+:::note
+Event names are case-insensitive.
+:::
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)
 
 ## Detaching event listeners
 
-There is a simple way of removing an event handler via the **layout.events.detach()** method:
+To remove an event handler, use the `layout.events.detach()` method:
 
 ~~~js
 layout.events.on("beforeHide", function(id){
@@ -51,7 +51,7 @@ layout.events.detach("beforeHide");
 
 ## Calling events
 
-To call events, use **layout.events.fire()**:
+To call events, use the `layout.events.fire()` method:
 
 ~~~js
 layout.events.fire("beforeHide",args);
