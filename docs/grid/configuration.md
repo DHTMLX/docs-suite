@@ -1212,6 +1212,10 @@ It is also possible to [get the object with the calculated values](#getting-the-
 Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation while creating the summary list. 
 ::: 
 
+:::note
+In a grid with [grouped data](grid/usage.md#grouping-data), the summaries are calculated over the data rows only: the group header rows and the group summary rows aren't counted as data.
+:::
+
 ### Column summary
 
 To form a summary list that will be available at the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
