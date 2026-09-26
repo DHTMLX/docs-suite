@@ -1,0 +1,159 @@
+{
+  "fixture": "tier-a/17-long-sentences-repetition.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/usage.md",
+  "note": "Целевого файла правил нет: фикстура проверяет inline-секции SKILL.md «Long sentences» и «Repetition». Позитивы — предложения с несколькими парами подлежащее-сказуемое и цепочками глаголов, а также имя API и имя виджета, повторённые в соседних предложениях без нужды. Негативы проверяют, что скилл не трогает SEO-шаблон frontmatter, комментарий внутри ~~~-забора (где повторы и глаголы посеяны намеренно) и корректную прозу с одной парой подлежащее-сказуемое. Аудит: записи longrep-may-* — непосеянные, но законные находки других категорий (герундийные заголовки статьи и обеих секций); они нейтральны и не должны считаться ложными срабатываниями. Дополнительно в alt_categories позитивов добавлены категории, под которыми та же находка законна: пунктуация (пропущенная запятая после вводного оборота и запятая перед «then» в строке 33, отсутствие серийной запятой в строке 27), inversion (абзац строки 33 открывается оборотом «To store the value…»; строка 35 — монотонный ряд одинаковых зачинов) и text-that-explains-ui-or-code (описание последовательности вызовов и перерисовки).",
+  "word_count_prose": 148,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [15, 23] }
+  ],
+  "expected_total_range": [4, 9],
+  "records": [
+    {
+      "id": "longrep-01",
+      "polarity": "must_find",
+      "category": "repetition",
+      "alt_categories": ["long-sentences", "Repetition", "Long sentences", "wordiness"],
+      "span": "The `edit()` method also accepts a column id, and if the id is missing, the `edit()` method uses the first editable column.",
+      "line": 13,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Имя `edit()` повторено три раза в двух соседних предложениях. SKILL.md прямо требует флагать повтор API-имени в окружающей прозе и предлагать переписать так, чтобы имя несло смысл один раз: «Call the `edit()` method to open an editor. It accepts a column id and falls back to the first editable column.» Дополнительно второе предложение длинное и с четырьмя глаголами, поэтому long-sentences допустима как альтернативная категория.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "longrep-02",
+      "polarity": "must_find",
+      "category": "long-sentences",
+      "alt_categories": ["Long sentences", "sentence-length", "wordiness", "punctuation", "plain-text-description", "text-that-explains-ui-or-code", "explains-ui-or-code"],
+      "span": "the widget locks the row, the editor loads the value, the validator checks the input and the cell repaints when the user leaves the field",
+      "line": 27,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Четыре независимые пары подлежащее-сказуемое (widget locks, editor loads, validator checks, cell repaints) плюс придаточное «when the user leaves» в одном предложении. SKILL.md требует одну ясную пару подлежащее-сказуемое и предлагает разбить такое предложение или превратить его в список шагов. Аудит: тот же спан законно попадает и в другие разделы — перед финальным «and the cell repaints» нет серийной запятой (rules/punctuation.md#comma), это последовательность шагов, которую SKILL.md#plain-text-description-information-mapping требует оформить списком, и описание внутренней последовательности с перерисовкой ячейки по SKILL.md#text-that-explains-ui-or-code. Все эти категории перечислены в alt_categories.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "longrep-03",
+      "polarity": "must_find",
+      "category": "long-sentences",
+      "alt_categories": ["Long sentences", "sentence-length", "plain-text-description", "wordiness", "punctuation", "inversion", "text-that-explains-ui-or-code", "explains-ui-or-code"],
+      "span": "To store the value you call `endEdit()`, then the widget fires the `afterEditEnd` event, writes the record and sends the change to the backend.",
+      "line": 33,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Две пары подлежащее-сказуемое (you call, the widget fires) и пять глаголов подряд: store, call, fires, writes, sends. Это описание последовательности действий, которое SKILL.md предлагает разбить или оформить списком. Категория plain-text-description допустима как альтернативная, так как это action sequence. Аудит: в том же предложении есть ещё три законных повода, поэтому они добавлены в alt_categories — (1) пунктуация: после вводного оборота «To store the value» нет запятой и стоит запятая перед «then», соединяющая два независимых предложения (rules/punctuation.md#comma); (2) inversion: абзац открывается конструкцией «To do X, do Y», что rules/inversion.md#avoid-opening-a-section-or-paragraph-with-to-do-x запрещает делать первым предложением абзаца; (3) SKILL.md#text-that-explains-ui-or-code — проза пересказывает последовательность вызовов метода и события.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "longrep-04",
+      "polarity": "must_find",
+      "category": "repetition",
+      "alt_categories": ["Repetition", "pronouns", "wordiness", "inversion"],
+      "span": "Matrix stores the edited value in the data set. Matrix repaints the cell. Matrix keeps the editor open when validation fails.",
+      "line": 35,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Имя виджета «Matrix» открывает три подряд идущих предложения, хотя подлежащее не меняется. SKILL.md требует флагать слово, без нужды повторённое в пределах нескольких предложений; правка — объединить в одно предложение с однородными сказуемыми или назвать виджет один раз. Аудит: тот же ряд законно попадает и в rules/inversion.md#avoid-you-can-you-can-you-can-runs — правило прямо называет повтор одинакового зачина в идущих подряд предложениях той же проблемой шаблона; категория добавлена в alt_categories.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "longrep-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "long-sentences",
+      "alt_categories": ["repetition", "Long sentences", "Repetition", "wordiness"],
+      "span": "Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of Acme Suite.",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Предложение с тремя императивами подряд (Browse, try out, download) и повтором «Acme» из соседнего предложения — то есть выглядит одновременно как long sentence и как repetition. Но это SEO-шаблон description, идентичный во всех файлах корпуса: frontmatter не входит в область ревью прозы, правка ломает шаблон.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "longrep-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "repetition",
+      "alt_categories": ["long-sentences", "Repetition", "Long sentences"],
+      "span": "edit() locks the row, edit() loads the value, edit() validates the input",
+      "line": 20,
+      "occurrence": 1,
+      "rationale": "Комментарий внутри ~~~js-забора, куда намеренно посеяны сразу оба нарушения: имя `edit()` трижды в соседних клаузах и цепочка из пяти глаголов. Содержимое код-сниппетов не ревьюится, любая находка здесь — попадание в hard_gate findings_inside_code_fence.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "longrep-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "long-sentences",
+      "alt_categories": ["Long sentences", "sentence-length"],
+      "span": "The editor reads the value and shows it in the input field.",
+      "line": 31,
+      "occurrence": 1,
+      "rationale": "Near-miss к longrep-02: два глагола, но одно подлежащее «The editor» и одна пара подлежащее-сказуемое с однородными сказуемыми. SKILL.md требует одну ясную пару, а не один глагол, поэтому разбивать здесь нечего.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "longrep-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "repetition",
+      "alt_categories": ["Repetition", "wordiness"],
+      "span": "The row id and the column id identify the cell.",
+      "line": 25,
+      "occurrence": 1,
+      "rationale": "Near-miss к longrep-01 и longrep-04: слово «id» повторено, но каждое вхождение называет отдельный параметр (row id и column id). Замена одного из них местоимением или синонимом сделала бы предложение двусмысленным, поэтому повтор здесь несёт смысл и не является лишним.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "longrep-may-01",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Editing cells",
+      "line": 2,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Герундийный заголовок статьи стоит в sidebar_label (строка 2) и в title (строка 3: «JavaScript Matrix - Editing Cells» — дословный аналог примера «React Scheduler - Grouping» из rules/gerunds.md#gerunds-in-titles). Ожидаемая правка — глагольная форма «Edit cells». Цитата без «#» локализуется на первое вхождение, то есть внутрь frontmatter, поэтому запись помечена may_flag: законная находка по герундию в заголовке не должна превращаться в жёсткое зональное ложное срабатывание. Зональную проверку frontmatter продолжает держать longrep-neg-01 (строка 4, SEO-описание, спан с ним не пересекается).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "longrep-may-02",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "# Editing cells",
+      "line": 7,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Тот же герундийный заголовок в H1: rules/gerunds.md#gerunds-in-titles требует глагольную форму («Data Editing» → «Edit Data»), ожидаемая правка — «Edit cells». Спан включает «#», чтобы цитата, привязанная к строке 7, не смешивалась с тем же текстом во frontmatter (longrep-may-01).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "longrep-may-03",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Opening an editor",
+      "line": 11,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Заголовок секции — герундий, ожидаемая форма «Open an editor» (rules/gerunds.md#gerunds-in-titles, ср. «Data Binding» → «Bind to Data»).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "longrep-may-04",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Saving the value",
+      "line": 29,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Заголовок секции — герундий, ожидаемая форма «Save the value» (rules/gerunds.md#gerunds-in-titles).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    }
+  ]
+}

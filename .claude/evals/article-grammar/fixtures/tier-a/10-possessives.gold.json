@@ -1,0 +1,171 @@
+{
+  "fixture": "tier-a/10-possessives.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "note": "Целевая категория — possessives. Позитивы покрывают все четыре секции rules/possessives.md, кроме секции про \"of\". Негативы: забор кода, frontmatter и две формы из колонки Prefer самого правила. Аудит разметки добавил четыре may_flag: фикстура попутно содержит нарушения других разделов (запятая перед «otherwise», предложение с двумя действиями, местоимение «them» и «the template» без антецедента, повтор «folder»), и находка по ним не должна штрафоваться как ложное срабатывание.",
+  "word_count_prose": 121,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [11, 20] }
+  ],
+  "expected_total_range": [5, 11],
+  "records": [
+    {
+      "id": "poss-01",
+      "polarity": "must_find",
+      "category": "possessives",
+      "alt_categories": ["wordiness"],
+      "span": "the panel's layout",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Притяжательное существительное там, где нужно прилагательное: «the panel's layout» → «panel layout». Прямой аналог строки таблицы «the application's data» → «application data».",
+      "source": "rules/possessives.md#turn-possessive-nouns-into-adjectives"
+    },
+    {
+      "id": "poss-02",
+      "polarity": "must_find",
+      "category": "possessives",
+      "alt_categories": ["api-formatting"],
+      "span": "the fields collection",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Существительное во множественном числе в роли прилагательного. Правило требует единственное число: «the columns collection» → «the column collection», значит здесь «the field collection». Тот же спан законно попадает и в api-formatting: `fields` — имя опции из сниппета (строка 15), а в прозе оно без бэктиков, поэтому категория добавлена в alt_categories.",
+      "source": "rules/possessives.md#adjectives-use-singular-noun-form--never-plural"
+    },
+    {
+      "id": "poss-03",
+      "polarity": "must_find",
+      "category": "possessives",
+      "alt_categories": ["wordiness"],
+      "span": "the widget's appearance",
+      "line": 26,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Второй случай притяжательного вместо прилагательного: «the widget's appearance» → «widget appearance». Аналог «extend the application's functionality» → «extend application functionality».",
+      "source": "rules/possessives.md#turn-possessive-nouns-into-adjectives"
+    },
+    {
+      "id": "poss-04",
+      "polarity": "must_find",
+      "category": "possessives",
+      "alt_categories": ["punctuation"],
+      "span": "the saved rosters' column settings",
+      "line": 30,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Притяжательный апостроф на существительном во множественном числе, оканчивающемся на «s». Правило даёт ровно этот случай: «the saved dashboards' XML definitions» → «XML definitions for saved dashboards», то есть здесь «column settings for saved rosters».",
+      "source": "rules/possessives.md#avoid-possessives-when-a-noun-ends-with-s-or-x"
+    },
+    {
+      "id": "poss-05",
+      "polarity": "must_find",
+      "category": "possessives",
+      "alt_categories": ["wordiness", "repetition", "Repetition"],
+      "span": "matrix region header cell options",
+      "line": 24,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Именная цепочка из пяти слов подряд без предлога. Правило требует разбивать фразы от трёх слов: «scheduler appointment appearance properties» → «appearance properties for a scheduler appointment», то есть здесь «header cell options for a matrix region». Предложение начинается с «Header cells accept…», поэтому цитата шире спана законно приходит и под категорией repetition («header cell» дважды в одном предложении) — она добавлена в alt_categories.",
+      "source": "rules/possessives.md#break-down-noun-phrases-of-three-or-more-words"
+    },
+    {
+      "id": "poss-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "possessives",
+      "alt_categories": ["wordiness"],
+      "span": "apply the roster's saved filters",
+      "line": 13,
+      "occurrence": 1,
+      "rationale": "Главная приманка страницы: внутри забора ~~~js в комментарии стоит притяжательное «the roster's», которое в прозе было бы находкой. Содержимое сниппета — не проза статьи, скилл его не правит.",
+      "source": "rules/possessives.md#turn-possessive-nouns-into-adjectives"
+    },
+    {
+      "id": "poss-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "possessives",
+      "alt_categories": ["abbreviations"],
+      "span": "a free 30-day evaluation version",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон description, одинаковый во всех файлах корпуса. Плюс форма «30-day» уже единственного числа, то есть соответствует колонке Prefer («a 30 day trial version»), а не Avoid.",
+      "source": "rules/possessives.md#adjectives-use-singular-noun-form--never-plural"
+    },
+    {
+      "id": "poss-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "possessives",
+      "alt_categories": ["wordiness"],
+      "span": "appearance options for a matrix region",
+      "line": 24,
+      "occurrence": 1,
+      "rationale": "Это ровно та форма, которую правило объявляет правильной в колонке Prefer: «appearance properties for a scheduler appointment». Длинная цепочка уже разбита предлогом, флагать нечего.",
+      "source": "rules/possessives.md#break-down-noun-phrases-of-three-or-more-words"
+    },
+    {
+      "id": "poss-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "possessives",
+      "alt_categories": ["abbreviations"],
+      "span": "XML definitions for saved layouts",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Дословная конструкция из колонки Prefer: «XML definitions for saved dashboards». Апостроф уже убран, предлог на месте. Находка здесь означала бы, что скилл флагает собственную рекомендацию.",
+      "source": "rules/possessives.md#avoid-possessives-when-a-noun-ends-with-s-or-x"
+    },
+    {
+      "id": "poss-may-01",
+      "polarity": "may_flag",
+      "category": "punctuation",
+      "alt_categories": ["Punctuation", "long-sentences", "Long sentences", "wordiness"],
+      "span": "at run time, otherwise the panel keeps the previous markup",
+      "line": 26,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение, найденное аудитом. «Otherwise» — не сочинительный союз, поэтому запятая склеивает два независимых предложения (comma splice). punctuation.md в секции про точку с запятой даёт ровно эту конструкцию через «;»: «returns True if the expression is valid; otherwise, False», а список допустимых запятых перед союзом ограничен and/but/or/so. Находка здесь законна, но категория не possessives, поэтому may_flag, а не must_find.",
+      "source": "rules/punctuation.md#semicolon"
+    },
+    {
+      "id": "poss-may-02",
+      "polarity": "may_flag",
+      "category": "pronouns",
+      "alt_categories": ["Pronouns", "articles", "Articles"],
+      "span": "Roster applies them after the template runs",
+      "line": 24,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение, найденное аудитом. Два повода для законной находки в одном фрагменте: «them» отсылает через предложную вставку «for a matrix region» и вынуждает читателя возвращаться назад (pronouns.md требует заменить на явное «these options»); «the template» стоит с определённым артиклем, хотя шаблон в статье ни разу не упоминался (articles.md: «the» — для конкретного, ранее названного или единственного в контексте). Оба случая мягкие, поэтому may_flag.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "poss-may-03",
+      "polarity": "may_flag",
+      "category": "long-sentences",
+      "alt_categories": ["Long sentences", "sentence-length", "wordiness", "articles", "Articles"],
+      "span": "describes one column and sets the width, the header text, and the cell alignment",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение, найденное аудитом. Одно предложение несёт два действия (describes, sets) — SKILL.md в секции Long sentences требует одну пару подлежащее-сказуемое и предлагает разбить такие предложения. Дополнительно тройное «the» перед перечислением атрибутов колонки подпадает под articles.md (нулевой артикль в перечислениях), поэтому категория добавлена в alt_categories.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "poss-may-04",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": ["Repetition", "wordiness"],
+      "span": "in a separate folder, so check the folder name",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение, найденное аудитом. «Folder» повторяется дважды в одном предложении без нужды (SKILL.md, секция Repetition): «keep XML definitions for saved layouts in a separate folder, so check its name before you upgrade». Повтор слабый, поэтому may_flag.",
+      "source": "SKILL.md#repetition"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "suite": "article-grammar-eval",
+  "suite_version": "1.0.0",
+  "skill": {
+    "name": "article-grammar",
+    "version": "1.2.0",
+    "path": "/Users/DHX-XB/DOCS/skills/.claude/skills/article-grammar",
+    "repo": "/Users/DHX-XB/DOCS/skills",
+    "branch": "sp-grammar-check-skill",
+    "sha256": {
+      "SKILL.md": "a7edf0cfb1989c23b8b8ed9dfcc571af03e21a2ebb34436f3279ea612ab4c78b",
+      "rules/abbreviations.md": "922431b5997193bc25dd9ed5b506446cd93b90931cd2985eb05732c39f70b7e7",
+      "rules/api-formatting.md": "9d61f78c3c3e1694b3734007499a1d53fa4bbd1c9a1e44c69324ae907bf68026",
+      "rules/articles.md": "a65db1381fbddb35a85124d1dc2332d37ab296369b6d2671fba5a1bfb10dbf32",
+      "rules/gerunds.md": "a80b9ccfc953c14e15f2e7bbdf815eaa62618ffd7837706c6eb73c29b7ddaf94",
+      "rules/inversion.md": "d8be2e35102831cb9c1cfed3062d7ee4de879358384d5c475cfcf314d6f8a119",
+      "rules/misplaced-modifiers.md": "e4266e39ee20bffa53126d6a86bb5dd5b77b4d0405d0f2ef885a568377129de4",
+      "rules/misused-words.md": "7f8efe1fc1369d6cf451b859056a6a5d42f03487e60631598cde372c4f8ce9df",
+      "rules/overused-words.md": "1f2809c1b63a8b736d33507e4cfb0fe352d7d4503ef64e492d13da989a24ad4a",
+      "rules/passive-voice.md": "dd627b3a387287cc7e26d6cb9a9fe07e1a6d110495bcc8a5f95b3b3d216ba660",
+      "rules/possessives.md": "04a340ce56abb7f63728bef0b7ec8f77b2761167e56033b01dd2c271bed40cde",
+      "rules/pronouns.md": "362e31a13eb76c21ec1470734cf405250c7ac564af3685990b17e8d3a0a7fafe",
+      "rules/punctuation.md": "d4573fdad5de783d726421a6d59a9c0f055094442d0c09010165603554bf2221",
+      "rules/tenses.md": "59601fbf901fc81711703ffe298f72d8659992f7c827cee128322eddad8eec3f",
+      "rules/weak-verbs.md": "2006d128b903588d4975d2bfec505d8a66f1cbf456d7f7f6c479feee3b144924",
+      "rules/wordiness.md": "e4e282adb84c2635b363abb72d949c94161f1e73e24e23e3d6f683ad5921a549"
+    },
+    "rule_files_count": 15,
+    "helper_scripts": {
+      "prose-scan.sh": "62152063fddbaae478a439f2874c2dc9b390925ea544bddfb1300cc3f3929374"
+    }
+  },
+  "environment": {
+    "claude_cli_version": "2.1.74",
+    "node": "v24.9.0",
+    "jq_available": false,
+    "platform": "darwin 23.4.0"
+  },
+  "defaults": {
+    "model": "opus",
+    "effort": "high",
+    "max_budget_usd_per_invocation": 0.75,
+    "invocation_mode": "slash"
+  },
+  "corpus": {
+    "root": "/Users/DHX-XB/DOCS/docs-suite/docs",
+    "total_md_files": 1891,
+    "api_pages": 1600,
+    "prose_pages": 290,
+    "fence_style_primary": "~~~"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "fixture": "tier-a/15-api-formatting.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "note": "Фикстура сфокусирована на rules/api-formatting.md: имя API в жирном вместе с бэктиками, имя API в жирном без бэктиков, имя API в курсиве через звёздочки, имя API в курсиве через подчёркивания и голое имя API в явно кодовом контексте. Ловушки: голое имя API в комментарии внутри ~~~-забора, голое имя API в SEO-шаблоне frontmatter и два случая, прямо разрешённые секцией «What is fine» (жирный на обычном слове прозы и одиночные бэктики вокруг идентификатора). Аудит разметки: все пять позитивов и четыре негатива подтверждены по rules/api-formatting.md, спаны и номера строк сверены дословно; nonprose_ranges совпадают с выводом `score.mjs zones`. Добавлены четыре may_flag на непосеянные нарушения других разделов (значение свойства \"manual\" простым текстом, точка вместо двоеточия перед ~~~-забором и два предложения с несколькими действиями), чтобы законная находка по ним не штрафовалась как ложное срабатывание. Спан apifmt-pos-01 расширен с «**`autosave`**» до «Enable the **`autosave`** option», иначе после нормализации он схлопывался в «autosave» и локатор относил запись к строке 2 (sidebar_label). Остаточный риск фикстуры: если скилл процитирует только «**`autosave`**», score.mjs всё равно поместит цитату в frontmatter и засчитает жёсткое ложное срабатывание — это свойство нормализации, а не разметки.",
+  "word_count_prose": 120,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [11, 17] }
+  ],
+  "expected_total_range": [5, 10],
+  "records": [
+    {
+      "id": "apifmt-pos-01",
+      "polarity": "must_find",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "Enable the **`autosave`** option",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Имя опции обёрнуто одновременно в жирный и бэктики. Правило запрещает комбинировать бэктики с bold и приводит буквально эту пару в таблице: «**`autosave`**» → «`autosave`». Должно остаться только `autosave`. Спан расширен до «Enable the **`autosave`** option»: нормализация score.mjs выбрасывает `*` и бэктики, и голый спан «**`autosave`**» схлопывался в «autosave», который первым встречается в строке 2 (sidebar_label) — запись не находила собственную строку.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-pos-02",
+      "polarity": "must_find",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "**batchSize**",
+      "line": 19,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Имя свойства выделено жирным вместо бэктиков. Таблица правила даёт ровно этот случай: «**autosave**» → «`autosave`». Контекст («property») однозначно указывает на имя API, спорности нет.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-pos-03",
+      "polarity": "must_find",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "*onBeforeSave*",
+      "line": 19,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Имя события выделено курсивом через звёздочки вместо бэктиков: «*autosave*» → «`autosave`» в таблице правила. Слово «event» рядом снимает любую неоднозначность.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-pos-04",
+      "polarity": "must_find",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "Pass retryDelay in milliseconds",
+      "line": 25,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Голое имя параметра без бэктиков в явно кодовом контексте: его передают в вызов и измеряют в миллисекундах. Секция «What to flag» требует помечать имена API в обычном тексте, когда окружение прямо говорит о коде. Правка: `retryDelay`.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-pos-05",
+      "polarity": "must_find",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "_autosaveMode_",
+      "line": 25,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Имя свойства обёрнуто в подчёркивания. Правило перечисляет `_..._` среди запрещённых обёрток наравне с `**...**` и `*...*`. Нужно `autosaveMode`.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-may-01",
+      "polarity": "may_flag",
+      "category": "api-formatting",
+      "alt_categories": ["API name formatting", "punctuation"],
+      "span": "\"manual\"",
+      "line": 25,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Значение свойства `autosaveMode` записано обычными кавычками без обратных кавычек, хотя контекст прямо кодовый («switch the property to»). rules/api-formatting.md#what-to-flag, второй пункт: имена и литералы API простым текстом, когда окружение говорит о коде. Ожидаемая правка: `\"manual\"`. Спорно ровно настолько, насколько строковый литерал считается «API name», поэтому may_flag, а не must_find.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-may-02",
+      "polarity": "may_flag",
+      "category": "punctuation",
+      "alt_categories": ["Punctuation", "info-mapping"],
+      "span": "as soon as the editor closes.",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Вводный абзац перед примером кода (~~~js на строке 11) заканчивается точкой, а rules/punctuation.md#colon требует двоеточие: «Use a colon after an introductory sentence that precedes a list, image, table, or code snippet». Спан взят хвостом предложения, чтобы не пересекаться со спаном apifmt-pos-01 на той же строке.",
+      "source": "rules/punctuation.md#colon"
+    },
+    {
+      "id": "apifmt-may-03",
+      "polarity": "may_flag",
+      "category": "long-sentences",
+      "alt_categories": ["Long sentences", "sentence-length", "info-mapping", "wordiness"],
+      "span": "so you can cancel the transfer or attach an authorization token",
+      "line": 19,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Inline-проверка SKILL.md «Long sentences»: одно предложение несёт три действия (fires / cancel / attach) и две пары подлежащее-сказуемое — кандидат на разбиение или список. Спан взят второй половиной предложения, чтобы не пересекаться с apifmt-pos-03.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "apifmt-may-04",
+      "polarity": "may_flag",
+      "category": "long-sentences",
+      "alt_categories": ["Long sentences", "sentence-length", "info-mapping", "prose-should-be-code"],
+      "span": "to space the attempts out, and switch the",
+      "line": 25,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Предложение соединяет два императива и условие («Pass … , and switch … if …»): inline-проверки SKILL.md «Long sentences» и «Plain-text description» требуют списка или разбиения, а перечисление настроек свойств прозой попадает ещё и под «Text that explains UI or code». Спан намеренно не задевает apifmt-pos-04, apifmt-pos-05 и apifmt-may-01.",
+      "source": "SKILL.md#long-sentences"
+    },
+    {
+      "id": "apifmt-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "// dataFeed sends the payload to the endpoint below",
+      "line": 14,
+      "occurrence": 1,
+      "rationale": "Голое имя свойства без бэктиков в кодовом контексте — но это комментарий внутри ~~~js-забора. Бэктики внутри кода не ставят, содержимое забора не входит в область ревью прозы.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "api-formatting",
+      "alt_categories": ["articles"],
+      "span": "the autosave option of Matrix",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Имя опции без бэктиков рядом со словом «option» — формально шаблон нарушения. Но это SEO-описание во frontmatter, одинаковое во всех файлах корпуса; Markdown-разметка в YAML-поле description не рендерится и туда бэктики не ставят.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "apifmt-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "**Note:**",
+      "line": 23,
+      "occurrence": 1,
+      "rationale": "Правило прямо разрешает: «Plain bold or italic on regular prose words (not API names)». «Note» — обычное слово прозы, а не имя API, поэтому жирный здесь корректен.",
+      "source": "rules/api-formatting.md#what-is-fine"
+    },
+    {
+      "id": "apifmt-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "raises `onSaveError`",
+      "line": 25,
+      "occurrence": 1,
+      "rationale": "Правило прямо разрешает: «Backticks alone around any code identifier: `autosave`, `onChange`, `data-id`». Имя события оформлено канонически, флагать нечего.",
+      "source": "rules/api-formatting.md#what-is-fine"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "fixture": "tier-a/16-articles-boundary.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "note": "Граничная фикстура для дефекта N2: articles.md в колонке Prefer пишет имена API голым текстом («Use Width and Height properties», «Handle onRowUpdating and onRowInserting events»), тогда как api-formatting.md требует флагать любое имя API без бэктиков. Здесь посеяны три фрагмента, которые нарушают оба правила сразу, один — только api-formatting (артикль верный), и один — только articles (имени API нет вовсе). Ловушки: комментарий в ~~~-заборе, SEO-шаблон во frontmatter и два случая, прямо разрешённые articles.md.",
+  "word_count_prose": 137,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [11, 18] }
+  ],
+  "expected_total_range": [5, 12],
+  "records": [
+    {
+      "id": "artb-pos-01",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": ["api-formatting"],
+      "span": "Use the Width and Height properties",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Двойное нарушение. По articles.md список членов API во множественном числе идёт без артикля — это дословная строка Avoid «Use the Width and Height properties». По api-formatting.md голые Width и Height в явно кодовом контексте должны быть в бэктиках: «Use `Width` and `Height` properties». Правильная правка снимает оба: «Use `Width` and `Height` properties to define the initial size of a column». Ни одно из имён ранее не упоминалось, так что исключение про previously mentioned не действует.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "artb-pos-02",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": ["api-formatting", "misplaced-modifiers"],
+      "span": "Handle the onColumnResize and onColumnDrag events",
+      "line": 22,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Второе двойное нарушение, построенное на примере правила «Handle the onRowUpdating and onRowInserting events». Список событий во множественном числе требует нулевого артикля, а сами имена событий должны быть в бэктиках. Верно: «Handle `onColumnResize` and `onColumnDrag` events». Аудит: тот же фрагмент законно попадает и в misplaced-modifiers.md#ambiguous-modifier-at-the-end-of-a-list — предложение повторяет строку Avoid «Handle the `Click`, `DoubleClick`, and `RightClick` events to customize context menus», поэтому категория добавлена в alt_categories.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "artb-pos-03",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": ["api-formatting"],
+      "span": "Call the setColumnWidth and resetColumns methods",
+      "line": 28,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Третье двойное нарушение, теперь на методах. Секция про member name прямо говорит: «Use zero article in lists of members» (строка List: «Use `Width` and `Height` properties»). Плюс оба метода написаны голым текстом. Верно: «Call `setColumnWidth()` and `resetColumns()` methods».",
+      "source": "rules/articles.md#api-names--member-name--property--method--event"
+    },
+    {
+      "id": "artb-pos-04",
+      "polarity": "must_find",
+      "category": "api-formatting",
+      "alt_categories": [],
+      "span": "Set the rowHeight property",
+      "line": 28,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Здесь срабатывает только одно правило из двух. Артикль верен: articles.md для конкретного члена предписывает «the» и приводит образец «Set the `ShowPreview` property to `true`». Нарушено ровно api-formatting.md — имя свойства rowHeight записано голым текстом в кодовом контексте и должно быть в бэктиках. Находка по категории articles на этом спане была бы ложной.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "artb-pos-05",
+      "polarity": "must_find",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "validates the user input",
+      "line": 30,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Обратная граница: срабатывает только articles.md. «user input» — неисчисляемое, артикль лишний, и это дословная строка Avoid из таблицы mass nouns. Имени API в спане нет, поэтому api-formatting.md здесь неприменим, и конструкции «the X of Y» тоже нет.",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "artb-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "articles",
+      "alt_categories": ["api-formatting", "passive-voice"],
+      "span": "the Width and Height values are applied to every cell",
+      "line": 14,
+      "occurrence": 1,
+      "rationale": "Самая сильная приманка страницы: тот же самый шаблон «the Width and Height», что и в позитиве artb-pos-01, плюс голые имена API и пассив «are applied». Но это комментарий внутри ~~~js-забора. Код и комментарии в коде не входят в область грамматического ревью прозы, поэтому ни articles, ни api-formatting, ни passive-voice флагать нельзя.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "artb-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "articles",
+      "alt_categories": ["api-formatting", "wordiness"],
+      "span": "You can explore the column width of Matrix",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон описания, одинаковый во всех файлах корпуса. Формально можно придраться и к артиклю, и к голому имени компонента Matrix, но это frontmatter, а не проза статьи; вдобавок «the column width of Matrix» — разрешённая конструкция «the X of Y».",
+      "source": "rules/articles.md#mass-uncountable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "artb-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "articles",
+      "alt_categories": [],
+      "span": "Apply the following properties",
+      "line": 24,
+      "occurrence": 1,
+      "rationale": "Правило прямо разрешает: «Exception: use \"the\" when referring to previously mentioned or explicitly listed items (\"the following steps\", \"the specified values\")». Здесь члены API перечислены явно тут же после двоеточия и уже стоят в бэктиках, так что ни articles, ни api-formatting не нарушены.",
+      "source": "rules/articles.md#plural-countable-nouns--zero-article-by-default"
+    },
+    {
+      "id": "artb-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "articles",
+      "alt_categories": ["api-formatting"],
+      "span": "The `Matrix` component obtains column settings from a data source",
+      "line": 24,
+      "occurrence": 1,
+      "rationale": "Обобщающее высказывание о типе: articles.md приводит его как эталон в колонке Prefer — «The Menu component can obtain items from a data source». Артикль «the» здесь обязателен, а имя типа уже в бэктиках, поэтому api-formatting.md тоже удовлетворён. Дополнительно «obtains» — именно тот глагол, который weak-verbs.md рекомендует вместо «gets».",
+      "source": "rules/articles.md#api-names--type-name--object--class--control"
+    },
+    {
+      "id": "artb-may-01",
+      "polarity": "may_flag",
+      "category": "overused-words",
+      "alt_categories": ["Overused words"],
+      "span": "sets every column to 100 pixels by default",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). rules/overused-words.md прямо требует заменять «by default» прилагательным «default»: «A control's background is opaque by default» → «A control's default background style is opaque». Ожидаемая правка: «sets a default column width of 100 pixels». Спан лежит в первом предложении строки 9 и не пересекается с artb-pos-01 (перекрытие нормализованных строк заметно ниже порога 0.6).",
+      "source": "rules/overused-words.md#by-default--replace-with-adjective-default"
+    },
+    {
+      "id": "artb-may-02",
+      "polarity": "may_flag",
+      "category": "punctuation",
+      "alt_categories": ["Punctuation", "possessives", "Possessives"],
+      "span": "to define the initial size of a column.",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Предложение вводит пример кода (забор ~~~js на строке 11) и заканчивается точкой, тогда как rules/punctuation.md#colon требует двоеточия перед списком, изображением, таблицей или сниппетом; ровно этот случай размечен в 13-articles.gold.json (art-may-04). Побочно на том же спане законна находка по rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better: «the initial size of a column» сворачивается в «the initial column size». Оба повода слабее посеянных, поэтому полярность нейтральная. Спан начинается после «properties» и не пересекается с artb-pos-01.",
+      "source": "rules/punctuation.md#colon"
+    },
+    {
+      "id": "artb-may-03",
+      "polarity": "may_flag",
+      "category": "api-formatting",
+      "alt_categories": ["API name formatting", "pronouns", "Pronouns"],
+      "span": "Both handlers receive a column id and a pixel value",
+      "line": 22,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). `id` — ключ конфигурации колонки из соседнего примера (строка 15: `{ id: \"name\", width: 160 }`), но в прозе написан простым текстом, тогда как rules/api-formatting.md#what-to-flag требует обратных кавычек для имён свойств в кодовом контексте (ср. mw-may-06 в 14-misused-words.gold.json — «the tab id and header»). Побочно «Both handlers» отсылает к обработчикам, которые в тексте ни разу не названы — названы события, — то есть референт восстанавливается только додумыванием (rules/pronouns.md). Оба повода спорны: «column id» читается и как обычное существительное. Спан — второе предложение строки 22, с artb-pos-02 не пересекается.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "artb-may-04",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": ["Articles (a, an, the, zero)", "Articles"],
+      "span": "after the container changes its size",
+      "line": 28,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). «the container» появляется с определённым артиклем без предшествующего упоминания в прозе — контейнер фигурирует только в коде (`new acme.Matrix(\"#root\", …)`), а rules/articles.md#singular-countable-nouns отдаёт «the» лишь конкретному, ранее упомянутому или единственному в контексте объекту (ср. pron-may-02 в 05-pronouns.gold.json). Контейнер виджета можно счесть единственным в контексте, поэтому may_flag, а не must_find. Спан идёт после «methods» и не пересекается ни с artb-pos-03, ни с artb-pos-04.",
+      "source": "rules/articles.md#singular-countable-nouns"
+    },
+    {
+      "id": "artb-may-05",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": ["Articles (a, an, the, zero)", "Articles"],
+      "span": "The size editor",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Тот же случай, что и artb-may-04: «The size editor» — элемент интерфейса, впервые названный в последнем абзаце и сразу с определённым артиклем (rules/articles.md#singular-countable-nouns). Трактовка «единственный в контексте» здесь тоже возможна, поэтому полярность нейтральная. Перекрытие с artb-pos-05 («validates the user input») — 0.27, ниже порога 0.6, так что записи не конкурируют за находку.",
+      "source": "rules/articles.md#singular-countable-nouns"
+    }
+  ]
+}
