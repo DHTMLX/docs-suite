@@ -4152,6 +4152,7 @@ module.exports = {
                         "tabbar/api/tabbar_tabautoheight_config",
                         "tabbar/api/tabbar_tabautowidth_config",
                         "tabbar/api/tabbar_tabheight_config",
+                        "tabbar/api/tabbar_tabtemplate_config",
                         "tabbar/api/tabbar_tabwidth_config",
                         "tabbar/api/tabbar_views_config",
                       ],
