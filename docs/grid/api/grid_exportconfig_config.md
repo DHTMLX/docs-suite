@@ -31,14 +31,14 @@ exportConfig?: (config: IGridConfig, exportType: "pdf" | "png" | "csv" | "xlsx")
 
 #### Parameters
 
-The `exportConfig` property is a callback function that takes the following parameters:
+The `exportConfig` property is a callback function. Grid calls it with the following parameters:
 
 | Parameter         | Description                                                                       |
 |------------------ |---------------------------------------------------------------------------------- |
 |  `config`         | (*IGridConfig*) the current configuration of a Grid instance                      |
 |  `exportType`     | (*string*) the type of export being performed: "pdf", "png", "csv", or "xlsx"     |
 
-and returns a configuration object with export parameters. The returned configuration object may contain the following properties:
+The callback returns an object with export parameters, which may contain the following properties:
 
 - `columns` - (*function*) a function for column transformation; returning `null` excludes the column from the export
 - `data` - (*function*) a function for filtering or modifying row data; returning `null` excludes the row from the final file
@@ -47,7 +47,7 @@ and returns a configuration object with export parameters. The returned configur
 - **Grid properties** - any Grid property that should be overridden (e.g., `headerRowHeight`) set as a `key:value` pair, where the *key* is the property name and the *value* is the property value to be applied only to the exported state
 
 :::note
-In the callback, `config.headerRowHeight`/`config.footerRowHeight` can be a *number* or an *array*. Pass an array to keep individual level heights in the exported file, see [Header/footer height](grid/configuration.md#headerfooter-height).
+The `headerRowHeight` and `footerRowHeight` properties of the `config` parameter hold either a *number* or an *array*. When you override them, return an array to keep individual level heights in the exported file, see [Header/footer height](grid/configuration.md#headerfooter-height).
 :::
 
 #### Examples

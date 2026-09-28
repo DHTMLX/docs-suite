@@ -586,7 +586,7 @@ Unlike the standard export, [`exportConfig`](grid/api/grid_exportconfig_config.m
 - **define format-specific settings**: set delimiters for CSV, date masks for Excel, or visual themes for PDF
 - **adjust styling**: override Grid properties (such as row height) specifically for the exported file
 
-The `exportConfig` property is a callback function that takes the following parameters:
+The `exportConfig` property is a callback function. Grid calls it with the following parameters:
 
 | Parameter         | Description                                                                       |
 |------------------ |---------------------------------------------------------------------------------- |
