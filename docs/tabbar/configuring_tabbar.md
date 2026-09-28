@@ -107,6 +107,8 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## HTML content in tab titles
 
+![Tabbar with icons and temperature badges in tab titles in DHTMLX Suite](/img/tabbar/tab_template.png)
+
 You can render HTML content in the titles of tabs, for example, an icon next to the name of a tab. For this purpose, use the [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md) configuration option of Tabbar. The option is a callback function that defines the template for rendering the content of all the tabs.
 
 Tabbar calls the function for each tab with the following parameters:
