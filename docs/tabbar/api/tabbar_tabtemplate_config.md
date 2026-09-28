@@ -1,7 +1,7 @@
 ---
 sidebar_label: tabTemplate
 title: JavaScript Tabbar - tabTemplate Config
-description: The tabTemplate config of DHTMLX Tabbar sets a callback function that returns HTML content for the titles of all tabs, such as icons, badges and custom text formatting.
+description: The tabTemplate config of DHTMLX Tabbar sets a callback function that returns HTML content for the titles of all tabs, such as icons and badges.
 ---
 
 # tabTemplate
@@ -61,7 +61,5 @@ The `tab` property of a tab is always a string. Tabbar never interprets it as HT
 **Related API**:
 - [`views`](tabbar/api/tabbar_views_config.md)
 - [`activeTab`](tabbar/api/tabbar_activetab_config.md)
-- [`tabWidth`](tabbar/api/tabbar_tabwidth_config.md)
-- [`tabHeight`](tabbar/api/tabbar_tabheight_config.md)
 
 **Related article**: [HTML content in tab titles](tabbar/configuring_tabbar.md#html-content-in-tab-titles)

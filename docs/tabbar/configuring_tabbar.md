@@ -86,7 +86,7 @@ The structure of Tabbar should be defined during initialization of the component
 - `tabCss` - the name of the CSS class used for a tab
 - `css` - the name of the CSS class used for a cell
 - `header` - the header of a cell
-- `html` - HTML content for a tab
+- `html` - HTML content of a cell
 - `padding` - the distance between the content of a cell and the border of tabbar
 - `tabWidth` - the width of a tab (for more information, see [`views`](tabbar/api/tabbar_views_config.md))
 - `tabHeight` - the height of a tab (for more information, see [`views`](tabbar/api/tabbar_views_config.md))
@@ -109,7 +109,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ![Tabbar with icons and temperature badges in tab titles in DHTMLX Suite](/img/tabbar/tab_template.png)
 
-You can render HTML content in the titles of tabs, for example, an icon next to the name of a tab. For this purpose, use the [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md) configuration option of Tabbar. The option is a callback function that defines the template for rendering the content of all the tabs.
+You can render HTML content in the titles of tabs, for example, an icon next to the name of a tab. For this purpose, use the [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md) configuration option of Tabbar. The option is a callback function that defines the template for rendering HTML content in the titles of all tabs.
 
 Tabbar calls the function for each tab with the following parameters:
 
@@ -165,7 +165,9 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Tab auto height](https://snippet.dhtmlx.com/pqvycp1c)
 
-{{note The [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) configuration option is used when [`mode`](tabbar/api/tabbar_mode_config.md) is set to `"top"` or `"bottom"`, whereas [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) is applied when [`mode`](tabbar/api/tabbar_mode_config.md) is set to `"right"` or `"left"`.}}
+:::note 
+The [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) configuration option is used when [`mode`](tabbar/api/tabbar_mode_config.md) is set to `"top"` or `"bottom"`, whereas [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) is applied when [`mode`](tabbar/api/tabbar_mode_config.md) is set to `"right"` or `"left"`.
+:::
 
 ## Tabs without content
 
