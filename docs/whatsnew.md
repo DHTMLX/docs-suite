@@ -53,6 +53,11 @@ Released on September , 2026
 - The ability to [render HTML content or a DHTMLX widget in the header of a cell](layout/cell_configuration.md#custom-content-in-a-cell-header)
     - updated Layout cell configuration property: [`header`](layout/api/cell/layout_cell_header_config.md), which takes a callback function besides a string
 
+#### Tabbar
+
+- The ability to [render HTML content in the titles of tabs](tabbar/configuring_tabbar.md#html-content-in-tab-titles), for example, an icon or a badge next to the name of a tab
+    - new Tabbar configuration property: [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md)
+
 ### Updates
 
 - DataCollection. The [`changeId()`](data_collection/api/datacollection_changeid_method.md) method returns the new id of the item
@@ -104,6 +109,10 @@ Released on September , 2026
 - [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
 - [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
 - [Layout. Custom cell headers in a dashboard](https://snippet.dhtmlx.com/awwc1m4u?mode=wide)
+
+#### Tabbar
+
+- [Tabbar. Tab template](https://snippet.dhtmlx.com/01e3bo4z)
 
 ## Version 9.3.12
 
