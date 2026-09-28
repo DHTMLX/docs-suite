@@ -54,7 +54,7 @@ The way Tabbar renders tabs depends on the `tabTemplate` option:
 
 The `tab` property of a tab is always a string. Tabbar never interprets it as HTML, whether you use `tabTemplate` or not. The user-defined `tabTemplate` function controls the rendering of all the tabs of Tabbar and is fully responsible for forming their markup.
 
-**Related sample**: [Tabbar. Tab template](https://snippet.dhtmlx.com/ewmnyv3f)
+**Related sample**: [Tabbar. Tab template](https://snippet.dhtmlx.com/01e3bo4z)
 
 @changelog: added in v9.4
 
