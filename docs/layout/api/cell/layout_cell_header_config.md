@@ -16,17 +16,17 @@ type TCellHeaderTemplate = (cell: ICellConfig) => string | IView;
 header?: string | TCellHeaderTemplate;
 ~~~
 
-The type of the value defines the way the component renders the content of a header:
+The type of the value defines the way Layout renders the content of a header:
 
-- **a string** - defines the text the header shows. The component doesn't interpret HTML tags and displays them as a part of the text
-- **a callback function** - defines the way to render HTML content in a header. It takes the following parameter:
+- **a string** - defines the text the header shows. Layout doesn't interpret HTML tags and displays them as a part of the text
+- **a callback function** - defines the custom content the header shows. While rendering the cell, Layout calls the function with the following parameter:
 
     - `cell: ICellConfig` - the configuration object of the cell the header belongs to
 
-    The component calls the callback while it renders the cell and places the returned value into the DOM of the header:
+    Layout places the value that the function returns into the DOM of the header:
 
-    - *a string with HTML markup* - the component parses the markup and renders it
-    - *an object of a DHTMLX widget* - an initialized widget, the same object that you pass to the [`attach()`](layout/api/cell/layout_cell_attach_method.md) method of a cell. The name of a component doesn't work here, as the header treats any returned string as HTML
+    - *a string with HTML markup* - the header renders the tags as markup instead of showing them as text
+    - *an object of a DHTMLX widget* - an initialized widget, the same object that you pass to the [`attach()`](layout/api/cell/layout_cell_attach_method.md) method of a cell
 
 #### Example
 

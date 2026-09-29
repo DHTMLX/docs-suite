@@ -78,12 +78,14 @@ If the [`header`](layout/api/cell/layout_cell_header_config.md) property is not 
 
 ## Custom content in a cell header
 
-Besides a text, the header of a cell can contain HTML markup or a DHTMLX widget. For this purpose, set the [`header`](layout/api/cell/layout_cell_header_config.md) property to a callback function. The component calls the function while it renders the cell. The function takes the configuration object of the cell as a parameter and returns the content for the header.
+![Layout cell with a search toolbar in its header above a grid of names and addresses in DHTMLX Suite](/img/layout/widget_in_cell_header.png)
+
+Besides a text, the header of a cell can contain HTML markup or a DHTMLX widget. For this purpose, set the [`header`](layout/api/cell/layout_cell_header_config.md) property to a callback function. While rendering the cell, Layout calls the function with the configuration object of the cell and places the returned content into the header.
 
 The type of the value that you set for the `header` property defines the expected behavior:
 
-- *a string*: the header shows it as plain text, and the component doesn't interpret HTML tags, it displays them as part of the text
-- *a callback function*: tells the component that the header supports HTML content
+- *a string*: the header shows it as plain text, and Layout doesn't interpret HTML tags, it displays them as part of the text
+- *a callback function*: tells Layout that the header supports HTML content
 
 A cell with a custom header collapses and expands as any other cell, see the [Collapsibility](layout/cell_configuration.md#collapsibility) section.
 
@@ -164,7 +166,7 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-The [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) call repaints the cell, so the component calls the `header` callback again and renders the header with the current data as well.
+The [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) call repaints the cell, so Layout calls the `header` callback again and renders the header with the current data as well.
 
 **Related sample**: [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
 
