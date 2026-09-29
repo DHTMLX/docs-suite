@@ -29,6 +29,7 @@ A set of API methods and events that allow you to work with data of a component 
 | [](tree_collection/api/treecollection_getparent_method.md)        | @getshort(api/treecollection_getparent_method.md)         |
 | [](tree_collection/api/treecollection_getroot_method.md)          | @getshort(api/treecollection_getroot_method.md)           |
 | [](tree_collection/api/treecollection_getsortingstates_method.md) | @getshort(api/treecollection_getsortingstates_method.md)  |
+| [](tree_collection/api/treecollection_getvisibleindex_method.md)  | @getshort(api/treecollection_getvisibleindex_method.md)  |
 | [](tree_collection/api/treecollection_haveitems_method.md)        | @getshort(api/treecollection_haveitems_method.md)         |    
 | [](tree_collection/api/treecollection_issaved_method.md)          | @getshort(api/treecollection_issaved_method.md)           |
 | [](tree_collection/api/treecollection_load_method.md)             | @getshort(api/treecollection_load_method.md)              |
