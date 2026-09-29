@@ -14,6 +14,23 @@ Released on September , 2026
 
 ### New functionality
 
+#### Calendar
+
+- The ability to [add a toolbar with the Clear, Today and Timepicker controls](calendar/configuring.md#controls) into the calendar
+    - new Calendar configuration property: [`controls`](calendar/api/calendar_controls_config.md)
+
+#### Chart
+
+- The ability to [use two value scales in one chart](chart/configuration_properties.md#dual-axis-chart), each with its own dimension, and to bind a series to the scale its values are measured against
+    - new properties of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `scale` and `scales`
+    - new property of the Chart [`scales`](chart/api/chart_scales_config.md) configuration object: `alignTicks`
+- The ability to [build several independent stacks in one chart](chart/configuration_properties.md#stack-groups), one per value scale or several named groups drawn side by side
+    - updated property of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `stacked`, which takes the name of a stack group besides a boolean
+- The ability to display [the total values of stacked bars](chart/configuration_properties.md#total-values-of-stacked-bars) at the end of each bar of a Bar or X-Bar chart and [the total value of a Donut chart](chart/configuration_properties.md#total-value-of-donut-chart) in its center
+    - new Chart configuration property: [`total`](chart/api/chart_total_config.md)
+- The ability to [set the color of each bar dynamically](chart/customization.md#setting-bar-colors-dynamically), based on its data item, in a Bar or X-Bar chart
+    - updated properties of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `fill` and `color`, which take a callback function besides a string
+
 #### DataCollection/TreeCollection
 
 - The ability to get the position of an item among the visible ones
@@ -23,15 +40,23 @@ Released on September , 2026
 #### Grid
 
 - The ability to [set an individual height for each row of the header/footer](grid/configuration.md#headerfooter-height), including the *"auto"* value that adjusts a row to its content (PRO version)
-    - updated Grid configuration property: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)
-    - updated Grid configuration property: [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+    - updated Grid configuration properties: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md) and [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
 - [Group counters](grid/usage.md#group-counters-and-aggregates) with the possibility to define the text rendered next to the group name and to keep the groups that are left with no rows after filtering (PRO version)
-    - new property of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `counter`
-    - new property of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `showEmptyGroups`
+    - new properties of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `counter` and `showEmptyGroups`
     - new property of the configuration object of the DataCollection [`group()`](data_collection/api/datacollection_group_method.md) method: `showEmptyGroups`
     - service properties of a group header row: `$count`, `$totalCount`, `$by`
 - The ability to [define the options of a header/footer filter manually](grid/configuration.md#custom-options-of-headerfooter-filters) instead of building them from the column data
     - new property of the `filterConfig` object of **selectFilter** and **comboFilter**: `options`
+
+#### Layout
+
+- The ability to [render HTML content or a DHTMLX widget in the header of a cell](layout/cell_configuration.md#custom-content-in-a-cell-header)
+    - updated Layout cell configuration property: [`header`](layout/api/cell/layout_cell_header_config.md), which takes a callback function besides a string
+
+#### Tabbar
+
+- The ability to [render HTML content in the titles of tabs](tabbar/configuring_tabbar.md#html-content-in-tab-titles), for example, an icon or a badge next to the name of a tab
+    - new Tabbar configuration property: [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md)
 
 ### Updates
 
@@ -54,11 +79,121 @@ Released on September , 2026
 
 ### New samples
 
+#### Calendar
+
+- [Calendar. Controls](https://snippet.dhtmlx.com/guakfjw0?mode=wide)
+
+#### Chart
+
+- [Chart. Dual axis](https://snippet.dhtmlx.com/n25kiv0q)
+- [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
+- [Chart. Dual axis mixed series](https://snippet.dhtmlx.com/lzp4hcgb)
+- [Chart. Dual axis area](https://snippet.dhtmlx.com/hvkfz5aj)
+- [Chart. Dual axis x-bar](https://snippet.dhtmlx.com/y1td91hl)
+- [Chart. Dual axis stacks](https://snippet.dhtmlx.com/s9kunqvd)
+- [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
+- [Chart. Stacked Bar and X-Bar charts with total values](https://snippet.dhtmlx.com/s0a5ctvq)
+- [Chart. Donut chart with total value](https://snippet.dhtmlx.com/cufn64vo)
+- [Chart. Color by value](https://snippet.dhtmlx.com/q7rufn33)
+- [Chart. Highlight the best month](https://snippet.dhtmlx.com/jlbn196p)
+- [Chart. Gradient by value](https://snippet.dhtmlx.com/nwwi5dh1)
+
 #### Grid
 
 - [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
 - [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
 - [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+
+#### Layout
+
+- [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
+- [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
+- [Layout. Custom cell headers in a dashboard](https://snippet.dhtmlx.com/awwc1m4u?mode=wide)
+
+#### Tabbar
+
+- [Tabbar. Tab template](https://snippet.dhtmlx.com/01e3bo4z)
+
+## Version 9.3.12
+
+Released on September 24, 2026
+
+### Updates
+
+- Colorpicker. Palette accessibility:
+    - The palette is exposed as a list of options, and each swatch is announced by its color name and its selected state (**WCAG 1.1.1**, **WCAG 1.4.1**, **WCAG 4.1.2**).
+    - The palette is entered with a single <kbd>Tab</kbd> press and browsed with the arrow keys, <kbd>Home</kbd> and <kbd>End</kbd>; focus is kept when the user switches to the custom color view and back.
+
+- Colorpicker/Message/Toolbar/Window. Localization of accessible names:
+    - Color names, the palette and its HEX and opacity fields, the dialog buttons of a message, the default toolbar name and the default dialog name moved into the locale system.
+    - All of them can now be translated through the standard localization configuration.
+
+- Grid. Keyboard access to the cell surface:
+    - The grid is entered with a single <kbd>Tab</kbd> press, the arrow keys move between cells, and <kbd>Tab</kbd> leaves the grid, as the WAI-ARIA Grid pattern specifies (**WCAG 2.1.1**, **WCAG 2.4.3**).
+    - Cells can now be reached with the keyboard in a grid configured without a selection module.
+
+- Grid. Structure reported to assistive technology:
+    - The row number column is announced as a row header, and the sort state is reported only for columns that can be sorted (**WCAG 1.3.1**, **WCAG 4.1.2**).
+    - A merged cell reports how many rows and columns it spans.
+
+- Toolbar/Menu/Sidebar/Ribbon. Keyboard navigation:
+    - A navigation bar is entered with a single <kbd>Tab</kbd> press, and the arrow keys, <kbd>Home</kbd> and <kbd>End</kbd> move between its controls (**WCAG 2.1.1**, **WCAG 2.4.3**).
+    - Menus open, move and close from the keyboard, and focus returns to the control that opened them.
+    - Returning to a bar puts focus on the control that was used last.
+
+- Toolbar/Menu/Sidebar/Ribbon. Names and states of controls:
+    - Buttons built from custom HTML now expose an accessible name (**WCAG 4.1.2**, **WCAG 2.5.3**).
+    - Two-state buttons report whether they are pressed, both in the bar and in a menu, and mutually exclusive choices are announced as a group (**WCAG 1.3.1**, **WCAG 3.2.4**).
+
+- Toolbar/Window. The `ariaLabel` configuration option:
+    - It sets the accessible name announced for a toolbar or a dialog (**WCAG 2.4.6**, **WCAG 4.1.2**).
+    - A Window without `ariaLabel` is named by its `title`; when neither is set, each widget falls back to its own locale key, `aria_toolbar` or `aria_dialog`.
+    - Dialog focus order and the reported modal state now follow the ARIA dialog pattern.
+
+### Fixes
+
+- Grid. Fixed <kbd>Tab</kbd> not leaving a grid that has frozen (`leftSplit` / `rightSplit`) columns
+- Grid. Fixed the focused cell being scrolled one column short of the viewport edge during horizontal keyboard navigation
+- Grid. Fixed the focused cell being scrolled behind the footer instead of above it
+- Grid. Fixed the doubled focus indicator on a cell that is both focused and selected
+- Grid. Fixed cells rendered with `htmlEnable` being announced as buttons in columns without interactive content
+- Grid. Corrected the ARIA structure of the grid so that rows and columns are reported reliably, and the focus helpers are no longer exposed as controls
+- Grid. Fixed a script error that occurred after closing an inline editor in a grid with column summaries
+- Layout. Removed the placeholder accessible name from a layout cell outside `views` mode
+- Menu. Fixed the accessible name of a menu popup and stopped menus from being announced as live regions every time they open
+- Message. Fixed a misspelled accessible name on a dialog button
+
+## Version 9.3.11
+
+Released on September 14, 2026
+
+### Updates
+
+- Grid/Message/Popup. Modal focus trapping and management:
+    - Implemented focus trapping for all modal windows, message dialogs, and popups compliant with **WCAG 2.4.3**.
+    - Opening a modal dialog moves keyboard focus to the first actionable element and keeps it within the dialog boundaries until the dialog closes.
+    - Closing a dialog restores focus to the previously active cell or trigger element.
+
+- Grid. Assistive technology support for block selection:
+    - The Grid exposes the block selection state to screen readers (**WCAG 1.3.1**, **WCAG 4.1.2**).
+    - Selected cell boundaries and multi-cell ranges reflect their `aria-selected` status in the accessibility tree, providing real-time feedback during keyboard and pointer selection.
+
+- Grid. Localization for ARIA labels:
+    - Moved all hardcoded English [accessible names](grid/localization.md#accessible-names) and labels into the locale system.
+    - [Screen reader announcements](grid/localization.md#announcements), button descriptions, and status labels that developers can translate via the standard localization configuration.
+
+- Grid. Target size improvements for interactive controls:
+    - Enlarged hit areas for small interactive elements, including column resize handles and removal/action icons.
+    - Reduced accidental or missed clicks on touch-screen devices, accommodating users with motor precision needs.
+
+For additional information, refer to the [Grid accessibility](grid/accessibility.md) and [Grid localization](grid/localization.md) guides.
+
+### Fixes
+
+- Grid. Fixed a console error that occurred when starting block selection in numeric columns or number-formatted cell ranges
+- Grid. Fixed broken `aria-labelledby` relationships in sub-rows, eliminating orphaned ID references
+- Grid. Corrected invalid ARIA attributes and roles, and fixed the `aria-rowindex` and `aria-rowcount` calculations so that they reflect the overall grid structure, including header rows
+- Grid. Fixed an issue where inline cell editors lost or failed to expose their accessible names on the first paint and on subsequent data updates
 
 ## Version 9.3.10
 
@@ -127,27 +262,27 @@ Released on July 1, 2026
 
 ### Updates
 
-- Grid. Full WAI-ARIA Accessibility Support:
+- Grid. Full WAI-ARIA accessibility support:
     - Implemented a comprehensive accessibility layer compliant with **WCAG 2.2**.
     - Added support for `role="grid"` and `role="treegrid"`, including proper hierarchical attributes: `aria-level`, `aria-expanded`, and `aria-rowindex/colindex`.
     - Added descriptive `aria-label` attributes for inline editors, filter controls (input, select, combo), and sort triggers.
     - Implemented **Roving Tabindex** and focus sentinels for seamless navigation between the Grid and other page elements.
     - Improved screen reader experience by hiding decorative elements (resizers, sort icons, drag ghosts) from the accessibility tree via `aria-hidden`.
 
-- Grid. Advanced Keyboard Navigation:
-    - Zone Navigation: Introduced three navigable focus zones: **Header**, **Body**, and **Footer**. Use <kbd>Up</kbd>/<kbd>Down</kbd> arrows or <kbd>Tab</kbd> to transition between zones.
-    - Global Shortcuts: Added support for <kbd>PageUp</kbd> / <kbd>PageDown</kbd> (page-wise movement), <kbd>Home</kbd> / <kbd>End</kbd> (first/last cell in a row), and <kbd>Ctrl+Home</kbd> / <kbd>Ctrl+End</kbd> (start/end of the grid).
-    - Selection & Range: Added <kbd>Shift</kbd> + navigation keys to extend selection in both `selection` and `blockSelection` modes.
-    - Editing & Interaction:
+- Grid. Advanced keyboard navigation:
+    - Zone navigation: Introduced three navigable focus zones: **Header**, **Body**, and **Footer**. Use <kbd>Up</kbd>/<kbd>Down</kbd> arrows or <kbd>Tab</kbd> to transition between zones.
+    - Global shortcuts: Added support for <kbd>PageUp</kbd> / <kbd>PageDown</kbd> (page-wise movement), <kbd>Home</kbd> / <kbd>End</kbd> (first/last cell in a row), and <kbd>Ctrl+Home</kbd> / <kbd>Ctrl+End</kbd> (start/end of the grid).
+    - Selection and range: Added <kbd>Shift</kbd> + navigation keys to extend selection in both `selection` and `blockSelection` modes.
+    - Editing and interaction:
         - Added <kbd>F2</kbd> as an alternative to <kbd>Enter</kbd> for opening editors.
         - Added <kbd>Space</kbd> / <kbd>Enter</kbd> to toggle boolean (checkbox) cells without opening a text editor.
         - Added <kbd>Delete</kbd> to clear content in `blockSelection` mode (when `editable: true`).
-    - Header/Footer Operations: Enabled column sorting via <kbd>Enter</kbd> / <kbd>Space</kbd> and multi-sorting via <kbd>Shift+Enter</kbd>. Filters can now be activated and navigated via keyboard.
+    - Header/Footer operations: Enabled column sorting via <kbd>Enter</kbd> / <kbd>Space</kbd> and multi-sorting via <kbd>Shift+Enter</kbd>. Filters can now be activated and navigated via keyboard.
 
-- Grid. TreeGrid Keyboard Patterns:
+- Grid. TreeGrid keyboard patterns:
     - Added standard tree navigation: <kbd>ArrowRight</kbd> to expand branches/move to children and <kbd>ArrowLeft</kbd> to collapse branches/move to parents.
 
-- Grid. Performance & Internal Optimization:
+- Grid. Performance and internal optimization:
     - Optimized selection state tracking by switching from $O(n)$ scans to $O(1)$ lookups.
     - Implemented caching for derived accessibility properties to maintain high rendering speeds in large datasets.
     - Improved focus restoration logic, ensuring focus returns to the correct cell after closing editors or switching zones.

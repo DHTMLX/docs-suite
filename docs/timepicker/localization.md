@@ -28,9 +28,9 @@ Timepicker renders the **Save** button only if you enable the [`controls`](timep
 
 ## Custom locale
 
-To use a different locale, your need to:
+To use a different locale, you need to do the following:
 
-- define necessary language settings: provide the labels of the sliders and of the Save button:
+- Define necessary language settings: provide the labels of the sliders and of the Save button:
 
 ~~~jsx
 const de = {
@@ -40,7 +40,7 @@ const de = {
 };
 ~~~
 
-- apply the language settings by calling the `dhx.i18n.setLocale()` method before Timepicker initialization:
+- Apply the language settings by calling the `dhx.i18n.setLocale()` method before Timepicker initialization:
 
 ~~~jsx
 dhx.i18n.setLocale("timepicker", de);

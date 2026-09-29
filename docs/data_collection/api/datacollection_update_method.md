@@ -36,6 +36,8 @@ itemsForUpdate.forEach((item, index) => {
 });
 ~~~
 
-**Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)
+When data is [grouped](data_collection/api/datacollection_group_method.md), DataCollection recalculates the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups over the resulting data.
 
-[comment]: # (@related:window/customization.md#controls-and-operations)
+**Related article**: [Controls and operations](window/customization.md#controls-and-operations)
+
+**Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)
