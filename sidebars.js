@@ -2990,6 +2990,7 @@ module.exports = {
             "grid/usage_history",
             "grid/customization",
             "grid/accessibility",
+            "grid/accessibility_conformance_report",
             "grid/events"
           ],
         },

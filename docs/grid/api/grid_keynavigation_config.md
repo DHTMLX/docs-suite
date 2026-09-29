@@ -19,7 +19,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset,
     selection: "complex", 
-    editing: true, 
+    editable: true, 
     keyNavigation: false
 });
 
@@ -27,8 +27,8 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-You need to set the [selection](grid/api/grid_selection_config.md) and [editable](grid/api/grid_editable_config.md) properties in the configuration object of Grid to enable all available shortcut keys.  Read the details in the [Key Navigation](grid/configuration.md#keyboard-navigation) article and in the [Grid accessibility](grid/accessibility.md) guide.
+Keyboard navigation works without any selection module: the navigation keys move the active cell, but do not select it. Set the [selection](grid/api/grid_selection_config.md) property to move the selection with the keyboard, and set the [editable](grid/api/grid_editable_config.md) property to edit cells from the keyboard. Read the details in the [Key Navigation](grid/configuration.md#keyboard-navigation) article and in the [Grid accessibility](grid/accessibility.md) guide.
 
-@changelog: added in v6.3; the keyboard navigation model was extended in v9.3.5
+@changelog: added in v6.3; the keyboard navigation model was extended in v9.3.5; navigation and editing without a selection module were added in v9.3.12
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#keyboard-navigation)
