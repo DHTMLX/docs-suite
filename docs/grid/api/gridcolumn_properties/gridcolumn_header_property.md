@@ -11,8 +11,8 @@ description: You can explore the header config of Grid column in the documentati
 ### Usage
 
 ~~~jsx
-type TOption = { id: Id, value: string } | string;
 type IOption = { id: Id, value: string };
+type TOption = IOption | string;
 
 header: [
     {

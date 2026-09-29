@@ -1551,8 +1551,8 @@ By default, **selectFilter** and **comboFilter** build their list of options fro
 The `options` property of the `filterConfig` object lets you define that list yourself. It takes either a static array of options or a function that transforms the data-driven list:
 
 ~~~jsx
-type TOption = { id: Id, value: string } | string;
 type IOption = { id: Id, value: string };
+type TOption = IOption | string;
 
 options?: TOption[] | ((uniqueData: IOption[], col: ICol) => TOption[]);
 ~~~
@@ -1665,7 +1665,7 @@ A plain [`paint()`](grid/api/grid_paint_method.md) call does not re-evaluate it.
     }
     ~~~
 
-- **Columns without `options`.** A column that does not define the `options` property builds its filter list from the data, narrows it on cross-filtering, and reports the displayed text as the filter value.
+- **Columns without `options`.** A column that does not define the `options` property behaves as it did before v9.4: it builds its filter list from the data, narrows it on cross-filtering, and reports the displayed text as the filter value.
 
 ### Customizing header/footer filters
 
