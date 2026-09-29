@@ -6,9 +6,9 @@ description: You can explore the event handling of Calendar in the documentation
 
 # Event handling
 
-## Attaching event listeners
+## Attach event listeners
 
-You can attach event listeners with the **calendar.events.on()** method of the *events* module:
+Use the `calendar.events.on()` method to attach event listeners:
 
 ~~~js
 calendar.events.on("change",function(date, oldDate, byClick){
@@ -17,7 +17,7 @@ calendar.events.on("change",function(date, oldDate, byClick){
 });
 ~~~
 
-For example, Calendar can be attached to an input that will display the date selected in Calendar:
+For example, you can attach Calendar to an input that displays the selected date:
 
 ~~~html
 <input type="text" id="date" />
@@ -31,15 +31,15 @@ calendar.events.on("change",(date)=>{
 });
 ~~~
 
-Several handlers can be attached to one event, and all of them will be executed.
+You can attach several handlers to one event. Calendar executes all handlers.
 
-{{note The names of events are case-insensitive.}}
+{{note Event names are case-insensitive.}}
 
 **Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
-## Detaching event listeners
+## Detach event listeners
 
-To detach an event listener, use **calendar.events.detach()**:
+The `calendar.events.detach()` method removes an event listener:
 
 ~~~js
 calendar.events.on("change",function(date, oldDate, byClick){
@@ -49,15 +49,15 @@ calendar.events.on("change",function(date, oldDate, byClick){
 calendar.events.detach("change");
 ~~~
 
-## Calling events
+## Trigger events
 
-To call an event, use **calendar.events.fire()**:
+Call `calendar.events.fire()` to trigger an event manually:
 
 ~~~js
 calendar.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-## The list of events
+## Event list
 
-You can find the full list of events in the [Calendar API](calendar/api/api_overview.md#events).
+For the full event list, see the [Calendar API](calendar/api/api_overview.md#events).

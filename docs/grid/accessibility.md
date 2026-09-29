@@ -23,7 +23,7 @@ Conformance is reported criterion by criterion rather than as a blanket claim. T
 | Focus model | A single tab stop for the whole cell surface; focus moves between header, body, and footer |
 | Selection model | Optional: single-cell/row (`selection`) or spreadsheet-style range (`blockSelection`), for selecting cells and ranges |
 | Screen readers | Tested with NVDA, JAWS and VoiceOver |
-| Visual accessibility | Dedicated light and dark high-contrast themes — colour-blind friendly, AA contrast, 16px base — and non-colour cues |
+| Visual accessibility | Dedicated light and dark high-contrast themes (colour-blind friendly, AA contrast, 16px base) and non-colour cues |
 | Text resize / zoom | Layout remains operable up to 400% zoom / text spacing overrides |
 | Customization | Public `announce()` API for dynamic messages, and localizable `aria_*` strings for every built-in screen-reader description |
 | Standards | WCAG 2.2 AA, Section 508, EN 301 549 |
@@ -37,9 +37,9 @@ Use this page to verify the component against your own accessibility checklist, 
 
 This guide covers the Grid widget itself:
 
-- the **data body** — cells and rows, including tree mode (`type: "tree"`)
-- the **column header** — sortable headers and in-header filters
-- the **footer** — summaries and footer filters
+- the **data body**: cells and rows, including tree mode (`type: "tree"`)
+- the **column header**: sortable headers and in-header filters
+- the **footer**: summaries and footer filters
 - the **inline editors**
 - the keyboard model that connects these zones.
 
@@ -87,7 +87,7 @@ Opening an editor from the keyboard (<kbd>Enter</kbd>, <kbd>F2</kbd>, <kbd>Space
 
 When a selection module is enabled, the selection moves together with the active cell and is exposed through `aria-selected`. The two modules are independent and drive different ARIA output and shortcut semantics.
 
-##### 1. Cell / row selection — selection
+##### 1. Cell / row selection (`selection`)
 
 A single active cell (or row) moves with the arrow keys. This populates `aria-selected` on the focused cell or row. Extending the selection with <kbd>Shift</kbd> is enabled only when `multiselection: true`; without it, <kbd>Shift</kbd>+arrow moves the active cell.
 
@@ -99,7 +99,7 @@ const grid = new dhx.Grid("grid_container", {
     selection: "complex", // "cell" | "row" | "complex"
     multiselection: true, // enables Shift+Arrow multi-select
     keyNavigation: true,  // default
-    sortable: true        // default — keyboard sort in headers
+    sortable: true        // default, keyboard sort in headers
 });
 ~~~
 
@@ -111,7 +111,7 @@ const grid = new dhx.Grid("grid_container", {
 | `true` | Equivalent to cell selection |
 | *falsy / unset* | Selection (and `aria-selected`) disabled; keyboard navigation still works |
 
-##### 2. Range / block selection — blockSelection
+##### 2. Range / block selection (`blockSelection`)
 
 Spreadsheet-style rectangular ranges. The arrow keys move the range anchor; <kbd>Shift</kbd>+arrows grow or shrink the rectangle; <kbd>Delete</kbd> clears the range (when editing is enabled). This applies in **"range"** mode.
 
@@ -237,11 +237,11 @@ The rest of the state travels the same way, on the element it belongs to:
 | Merged cells | `aria-colspan`, `aria-rowspan` | The merged cell |
 | Multi-selection capability | `aria-multiselectable` | The grid container |
 
-Editors and filters take their accessible name from the column header text, so the user always hears which column is in play. Decorative markup — resizer grips, sort icons, drag ghosts, drop indicators, the selection overlay — is hidden from the accessibility tree, so nothing redundant is announced.
+Editors and filters take their accessible name from the column header text, so the user always hears which column is in play. Decorative markup (resizer grips, sort icons, drag ghosts, drop indicators, the selection overlay) is hidden from the accessibility tree, so nothing redundant is announced.
 
 ### Announcing dynamic changes
 
-For things that *happen* and have no permanent element to label — a completed load, a filter result, a corrected value — the Grid writes text into a visually hidden live region (`role="status"`, `aria-live="polite"`, `aria-atomic="true"`) that the screen reader reads aloud without moving focus. The region is available to your own code through the [`announce()`](grid/api/grid_announce_method.md) method:
+For things that *happen* and have no permanent element to label (a completed load, a filter result, a corrected value), the Grid writes text into a visually hidden live region (`role="status"`, `aria-live="polite"`, `aria-atomic="true"`) that the screen reader reads aloud without moving focus. The region is available to your own code through the [`announce()`](grid/api/grid_announce_method.md) method:
 
 ~~~jsx
 grid.announce("5 rows imported");
@@ -263,8 +263,8 @@ The Grid already announces the following out of the box:
 
 The strings the screen reader hears live in the Grid locale, so they translate with the rest of the UI. They fall into two groups:
 
-- **announcements** — `aria_sortedAscending`, `aria_sortedDescending`, `aria_filterApplied`, `aria_filterCleared`, `aria_rowsLoaded`, `aria_valueOutOfRange`, `aria_valueBelowMin`, `aria_valueAboveMax`, `aria_valueClamped`;
-- **accessible names** — `aria_sortBy`, `aria_filter`, `aria_filterByDate`, `aria_expandGroup`, `aria_collapseGroup`, `aria_expandRow`, `aria_collapseRow`, `aria_editContent`, `aria_subRow`, `aria_rowId`, and the drag-panel names.
+- **announcements**: `aria_sortedAscending`, `aria_sortedDescending`, `aria_filterApplied`, `aria_filterCleared`, `aria_rowsLoaded`, `aria_valueOutOfRange`, `aria_valueBelowMin`, `aria_valueAboveMax`, `aria_valueClamped`;
+- **accessible names**: `aria_sortBy`, `aria_filter`, `aria_filterByDate`, `aria_expandGroup`, `aria_collapseGroup`, `aria_expandRow`, `aria_collapseRow`, `aria_editContent`, `aria_subRow`, `aria_rowId`, and the drag-panel names.
 
 Override them like any other locale label, before the Grid is initialized:
 
@@ -281,9 +281,9 @@ Placeholders in curly braces (`{column}`, `{count}`, `{min}`, `{max}`, `{value}`
 
 ## Keyboard navigation
 
-Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. It works in every configuration: without a selection module the keys move the active cell, and with one they move the selection as well — see [Keyboard navigation with and without selection](#selectionmodules). Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there. <kbd>Tab</kbd> at the first or the last cell leaves the Grid in every configuration, including one with frozen columns (`leftSplit` / `rightSplit`).
+Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. It works in every configuration: without a selection module the keys move the active cell, and with one they move the selection as well; see [Keyboard navigation with and without selection](#selectionmodules). Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there. <kbd>Tab</kbd> at the first or the last cell leaves the Grid in every configuration, including one with frozen columns (`leftSplit` / `rightSplit`).
 
-Shortcuts are organized into **zones** — body, header, footer — and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
+Shortcuts are organized into **zones** (body, header, footer) and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
 
 ### Grid body
 
@@ -337,7 +337,7 @@ Navigation is **span-aware**: movement across merged (colspan/rowspan) header an
 
 ### High-contrast themes {#highcontrastthemes}
 
-Light and dark high-contrast themes ship with the library — `contrast-light` and `contrast-dark` — activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are colour-blind friendly, and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
+Light and dark high-contrast themes ship with the library, `contrast-light` and `contrast-dark`, activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are colour-blind friendly, and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
 
 <!-- TODO: screenshots of the grid under contrast-light and contrast-dark, as:
      ![contrast_light_grid](/img/<file>.png) -->
@@ -363,9 +363,9 @@ A few accessibility requirements live at the page level, not inside the componen
 Accessibility is validated continuously, and against the component source rather than a single demo page, so the results hold for every configuration the Grid can be put into:
 
 1. **Automated testing** with [axe-core](https://github.com/dequelabs/axe-core) across representative configurations, among them the plain grid, TreeGrid mode, header and footer filters, inline editing, frozen columns and rows, and the high-contrast themes.
-2. **Manual review** of the source: the roles, states and accessible names emitted per part of the widget; the shortcut registry and focus model — zones, the roving tab stop, the sentinels that enter and leave the widget, and the behavior of each binding in each selection mode; and the theme tokens, with contrast ratios computed for the default light, dark, `contrast-light` and `contrast-dark` themes.
+2. **Manual review** of the source: the roles, states and accessible names emitted per part of the widget; the shortcut registry and focus model (zones, the roving tab stop, the sentinels that enter and leave the widget, and the behavior of each binding in each selection mode); and the theme tokens, with contrast ratios computed for the default light, dark, `contrast-light` and `contrast-dark` themes.
 3. **Manual testing**: keyboard-only walkthroughs of every zone, screen-reader passes with NVDA, JAWS and VoiceOver, and checks under color-vision-deficiency emulation, 200% / 400% zoom and WCAG text-spacing overrides.
-4. **Conformance reporting**: results are published openly, criterion by criterion, in the [Accessibility Conformance Report](grid/accessibility_conformance_report.md) — including the criteria the Grid only partially meets.
+4. **Conformance reporting**: results are published openly, criterion by criterion, in the [Accessibility Conformance Report](grid/accessibility_conformance_report.md), including the criteria the Grid only partially meets.
 
 ## Resources
 

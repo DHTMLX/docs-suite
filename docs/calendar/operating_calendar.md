@@ -8,20 +8,20 @@ description: You can explore how to work with Calendar in the documentation of t
 
 ## Changing calendar mode
 
-You can show a particular date in the calendar and/or open Calendar in a certain mode via the [](calendar/api/calendar_showdate_method.md) method. It takes two parameters:
+Use the [](calendar/api/calendar_showdate_method.md) method to show a particular date in the calendar or open Calendar in a specific mode. It takes two parameters:
 
-- **date** - (*Date*) the date that should be shown in the calendar
-- **mode** - (*string*)    optional, the mode in which the calendar will be opened
+- `date` - (`Date`) the date that should be shown in the calendar
+- `mode` - (`string`) optional, the mode in which the calendar will be opened
 
 There are the following calendar modes available:
 
-- **"calendar"** - allows selecting among days of a month (default)
+- `"calendar"` - allows you to select a day of the month (default)
 
 ~~~js
 calendar.showDate(new Date(2020,11,12),"calendar");
 ~~~
 
-- **"month"** - allows selecting a month
+- `"month"` - allows you to select a month
 
 ~~~js
 calendar.showDate(new Date(2020,11,12),"month");
@@ -32,7 +32,7 @@ calendar.showDate(null,"month");
 
 **Related sample**: [Calendar. Showing particular calendar date and mode](https://snippet.dhtmlx.com/nyfzc8cl)
 
-- **"year"** - allows selecting a year
+- `"year"` - allows you to select a year
 
 ~~~js
 calendar.showDate(new Date(2020,11,12),"year");
@@ -41,7 +41,7 @@ calendar.showDate(new Date(2020,11,12),"year");
 calendar.showDate(null,"year");
 ~~~
 
-For example, Calendar can be attached to an input, a click on which will show Calendar in one of the modes:
+For example, you can attach Calendar to an input so that a click on the input shows Calendar in one of the modes:
 
 ~~~html
 <input type="text" onclick="showCalendar()" />
@@ -56,12 +56,12 @@ function showCalendar(){
 
 ## Getting current mode
 
-There is a possibility to get the current mode of displaying Calendar via the [getCurrentMode()](calendar/api/calendar_getcurrentmode_method.md) method. The method returns one of the available calendar modes:
+To get the current Calendar mode, call the [getCurrentMode()](calendar/api/calendar_getcurrentmode_method.md) method. It returns one of the available calendar modes:
 
-- month
-- year
-- calendar
-- timepicker
+- `"month"`
+- `"year"`
+- `"calendar"`
+- `"timepicker"`
 
 ~~~js
 const mode = calendar.getCurrentMode(); // -> "calendar"
@@ -71,7 +71,7 @@ const mode = calendar.getCurrentMode(); // -> "calendar"
 
 ## Getting selected date
 
-To get the selected date, call the [](calendar/api/calendar_getvalue_method.md) method. The method returns selected date either as a string (default) or as a Date object. To get a date as an object, pass the *true* parameter to the method.
+To get the selected date, call the [](calendar/api/calendar_getvalue_method.md) method. The method returns the selected date either as a string (default) or as a Date object. To get a date as an object, pass the `true` parameter to the method.
 
 ~~~js
 const date1 = calendar.getValue(); // -> "20/08/19"
@@ -81,7 +81,7 @@ const date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300
 
 **Related sample**: [Calendar. Getting selected date](https://snippet.dhtmlx.com/k2vrfqj0)
 
-If you work with a calendar in the [range mode](calendar/configuring.md#range-mode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
+If you work with a calendar in the [range mode](calendar/configuring.md#range-mode), the `getValue()` method returns either an array of Date values or an array of string values with the start and end dates of the range.
 
 ~~~js
 // for a range calendar as an array of Date values 
@@ -94,12 +94,11 @@ const date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 
 ## Linking two calendars
 
-You can create two calendars and link them to provide the ability of selecting a date range. The first calendar will be used for setting the start date of the range, while the end date of the range will be specified in the
-second calendar.
+You can create two calendars and link them to select a date range. The first calendar sets the start date, the second sets the end date.
 
 ![Two linked Calendars selecting a date range across July and August in DHTMLX Suite](/img/calendar/date_range.png)
 
-Use the [](calendar/api/calendar_link_method.md) method and pass as a parameter the object of the second calendar to link the first calendar to. In the example below the [Change](calendar/api/calendar_change_event.md) event is intended to output the start and end dates of the selected range:
+Call the [](calendar/api/calendar_link_method.md) method on the first calendar and pass the second calendar object as a parameter. In the example below, the [Change](calendar/api/calendar_change_event.md) event outputs the start and end dates of the selected range:
 
 ~~~js
 const calendar = new dhx.Calendar("calendar1", { css: "dhx_calendar--bordered" });
@@ -149,12 +148,11 @@ calendar.setValue([new Date(2019,05,03), new Date(2019,05,19)]);
 calendar.setValue(["03/06/19", "15/06/19"]);
 ~~~
 
-In case a date has been successfully added into the calendar, the method will return *true*.
+If the method adds the date to the calendar successfully, it returns `true`.
 
 **Related sample**: [Calendar. Preset selected date](https://snippet.dhtmlx.com/vmg11002)
 
-{{note Please note that the format of date in the Calendar is defined by the [](calendar/api/calendar_dateformat_config.md) option. So, check that you've set the format of date you want to use in the calendar both in the
-**setValue()** method and in the **dateFormat** property. Otherwise, the default format (**"%d/%m/%y"**) will be used.}}
+{{note The [](calendar/api/calendar_dateformat_config.md) option defines the date format in Calendar. Set the format you want both in the `setValue()` method and in the `dateFormat` property. Otherwise, Calendar uses the default format, `"%d/%m/%y"`.}}
 
 ## Showing tooltips
 

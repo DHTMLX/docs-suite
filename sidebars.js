@@ -147,6 +147,7 @@ module.exports = {
                     id: "calendar/api/overview/properties_overview"
                   },*/
                   items: [
+                    "calendar/api/calendar_controls_config",
                     "calendar/api/calendar_css_config",
                     "calendar/api/calendar_date_config",
                     "calendar/api/calendar_dateformat_config",
@@ -4282,6 +4283,7 @@ module.exports = {
             "timepicker/features",
             "timepicker/initialization",
             "timepicker/configuration",
+            "timepicker/localization",
             "timepicker/usage",
             "timepicker/customization",
             "timepicker/handling_events",
@@ -4772,6 +4774,7 @@ module.exports = {
               "data_collection/api/datacollection_getitem_method",
               "data_collection/api/datacollection_getlength_method",
               "data_collection/api/datacollection_getsortingstates_method",
+              "data_collection/api/datacollection_getvisibleindex_method",
               "data_collection/api/datacollection_group_method",
               "data_collection/api/datacollection_isdataloaded_method",
               "data_collection/api/datacollection_isgrouped_method",
@@ -4974,6 +4977,7 @@ module.exports = {
               "tree_collection/api/treecollection_getparent_method",
               "tree_collection/api/treecollection_getroot_method",
               "tree_collection/api/treecollection_getsortingstates_method",
+              "tree_collection/api/treecollection_getvisibleindex_method",
               "tree_collection/api/treecollection_haveitems_method",
               "tree_collection/api/treecollection_issaved_method",
               "tree_collection/api/treecollection_load_method",
