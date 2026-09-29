@@ -586,7 +586,7 @@ Unlike the standard export, [`exportConfig`](grid/api/grid_exportconfig_config.m
 - **define format-specific settings**: set delimiters for CSV, date masks for Excel, or visual themes for PDF
 - **adjust styling**: override Grid properties (such as row height) specifically for the exported file
 
-The `exportConfig` property is a callback function that takes the following parameters:
+The `exportConfig` property is a callback function. Grid calls it with the following parameters:
 
 | Parameter         | Description                                                                       |
 |------------------ |---------------------------------------------------------------------------------- |
@@ -600,6 +600,10 @@ The returned configuration object may contain the following properties:
 - `spans` - (*function*) a function to handle cell merging (spans); returning `null` ignores the span in the export
 - `typeConfig` - (*object*) an object containing unique settings for the specific format (filenames, delimiters, themes)
 - **Grid properties** - any Grid property that should be overridden (e.g., `headerRowHeight`) set as a `key:value` pair, where the *key* is the property name and the *value* is the property value to be applied only to the exported state
+
+:::note
+You can override `headerRowHeight`/`footerRowHeight` with an array, so that the individual level heights differ in the exported file, see [Header/footer height](grid/configuration.md#headerfooter-height). The callback receives `config.headerRowHeight`/`config.footerRowHeight` either as a *number* or as an *array*.
+:::
 
 #### Example 1: Conditional filtering and formatting 
 
