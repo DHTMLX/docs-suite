@@ -120,6 +120,18 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+### Custom announcements
+
+To announce a status change that your code makes, call the [`announce()`](grid/api/grid_announce_method.md) method.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", { columns, data });
+
+// announce the result of a filter applied outside the grid
+grid.data.filter(item => item.country === "Italy");
+grid.announce(`${grid.data.getLength()} rows match the filter`);
+~~~
+
 ## Accessible names
 
 The Grid gives its interactive controls accessible names, which screen readers read out instead of the visual icon. These names come from the locale as well.
