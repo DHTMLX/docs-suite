@@ -120,6 +120,18 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+### Custom announcements
+
+The keys above handle the events the Grid reports by itself: a new sort direction, a filter result with the number of matching rows, a finished load, and a value corrected to the range of a numeric editor. When your code changes the grid state in some other way, report the change with the [`announce()`](grid/api/grid_announce_method.md) method.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", { columns, data });
+
+// announce the result of a filter applied outside the grid
+grid.data.filter(item => item.country === "Italy");
+grid.announce(`${grid.data.getLength()} rows match the filter`);
+~~~
+
 ## Accessible names
 
 The Grid gives its interactive controls accessible names, which screen readers read out instead of the visual icon. These names come from the locale as well.
