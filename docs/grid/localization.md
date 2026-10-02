@@ -122,7 +122,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Custom announcements
 
-To announce a status change that your code makes, call the [`announce()`](grid/api/grid_announce_method.md) method.
+The keys above handle the events the Grid reports by itself: a new sort direction, a filter result with the number of matching rows, a finished load, and a value corrected to the range of a numeric editor. When your code changes the grid state in some other way, report the change with the [`announce()`](grid/api/grid_announce_method.md) method.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", { columns, data });
