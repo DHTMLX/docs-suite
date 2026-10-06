@@ -45,7 +45,7 @@ const chart = new dhx.Chart("chart_container", {
             fill: "#5E83BA"
         }
     ]
-};
+});
 
 @descr:
 
@@ -53,7 +53,7 @@ const chart = new dhx.Chart("chart_container", {
 
 :::info
 You can apply the options below to configure series for charts with the following types: 
-["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["radar"](chart/charts_overview.md#radar-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
+["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "xbar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["radar"](chart/charts_overview.md#radar-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
 :::
 
 ### Usage
@@ -63,7 +63,7 @@ series: [
     {
         id: string,
         value: string,
-        type?: "line" | "spline" | "bar" | "x-bar" | "area" | "splineArea" | "radar"| "scatter",
+        type?: "line" | "spline" | "bar" | "xbar" | "area" | "splineArea" | "radar"| "scatter",
         label?: ((seria: ISeriaConfig) => string) | string,
 
         active?: boolean,
@@ -72,6 +72,8 @@ series: [
         dashed?: boolean,
         pointColor?: string,
         pointType?: "rect" | "circle" | "triangle" | "rhombus" | "simpleRect" | "simpleCircle" | "empty",
+        scale?: "left" | "right" | "top" | "bottom",
+        scales?: ScaleType[],
         strokeWidth?: number,
         tooltip?: boolean,
         tooltipTemplate?: (points: any[]) => string,
@@ -124,6 +126,14 @@ series: [
             <td>(optional) sets the type of the point of the data item. There are the following point types:"circle","rect","triangle","rhombus","simpleRect","simpleCircle","empty" <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cbj54wwu" target="_blank">Chart. Point types</a></td>
         </tr>
         <tr>
+            <td><b>scale</b></td>
+            <td>(optional) binds the series to the value scale its values are measured against. Check the <a href="#scale">scale</a> section</td>
+        </tr>
+        <tr>
+            <td><b>scales</b></td>
+            <td>(optional) sets the pair of scales a series is drawn against. Check the <a href="#scales">scales</a> section</td>
+        </tr>
+        <tr>
             <td><b>strokeWidth</b></td>
             <td>(optional) the width of the chart outline </td>
         </tr>
@@ -138,6 +148,65 @@ series: [
     </tbody>
 </table>
 <br><br>
+
+## Options for a dual axis chart
+
+The `scale` and `scales` properties name the scales of a series, which allows a chart to render two value scales at once, each with its own dimension. They apply to the series of the charts with scales: Line, Spline, Bar, X-Bar, Area, SplineArea and Scatter. Check the [Dual axis chart](chart/configuration_properties.md#dual-axis-chart) section of the guide for the details.
+
+### scale
+
+~~~jsx
+scale?: "left" | "right" | "top" | "bottom"
+~~~
+
+The `scale` property names the value scale only, as the chart applies the argument scale automatically. The direction of the value scale follows the type of the series:
+
+- `"left"` or `"right"` for the Line, Spline, Bar, Area, SplineArea and Scatter series
+- `"bottom"` or `"top"` for the X-Bar series
+
+The `"left"` and the `"right"` scales share the vertical direction, the `"bottom"` and the `"top"` ones the horizontal direction. A chart becomes a dual axis one when it declares both scales of a direction.
+
+The default value scale is `"left"` (`"bottom"` for X-Bar). If a chart does not have it, the series falls back to the opposite scale.
+
+~~~jsx {5,9}
+const chart = new dhx.Chart("chart_container", {
+    scales: {
+        bottom: { text: "month" },
+        left:   { title: "Sales, $" },
+        right:  { title: "Profit ratio", min: 1.2, max: 1.45 }
+    },
+    series: [
+        { id: "S", type: "line", value: "sales",  color: "#2A9D8F" },
+        { id: "M", type: "line", value: "margin", color: "#E76F51", scale: "right" }
+    ]
+});
+~~~
+
+The property set to the position of the perpendicular scale, e.g. `scale: "top"` for a Bar series, throws a `TypeError` that specifies the type of the series and the positions it can be bound to.
+
+**Related sample**: [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
+
+**Related article**: [Value scale of a series](chart/configuration_properties.md#value-scale-of-a-series)
+
+### scales
+
+~~~jsx
+scales?: ScaleType[]
+~~~
+
+The `scales` property is the full form of the binding. It is needed when a series specifies not only its value scale, but also its argument scale:
+
+~~~jsx {2}
+series: [
+    { type: "line", value: "ratio", scales: ["top", "right"] } // the categories on top, the values on the right
+]
+~~~
+
+The order of the positions in the array does not matter, as the direction of each position defines its role. The array has to name exactly one value scale of the series, and the remaining position becomes the argument scale.
+
+If a series has both properties, `scale` takes priority and the chart ignores `scales`.
+
+**Related article**: [Naming both scales of a series](chart/configuration_properties.md#naming-both-scales-of-a-series)
 
 ## Options specific for Area, Bar and Radar charts
 
@@ -183,7 +252,7 @@ series: [
         showText?: boolean,
         showTextRotate?: number | string,
         showTextTemplate?: (points: any) => string,
-        stacked?: boolean,
+        stacked?: boolean | string,
     }
 ]
 ~~~
@@ -218,11 +287,41 @@ series: [
         </tr>
         <tr>
             <td><b>stacked</b></td>
-            <td>(optional) defines whether a stacked chart will be rendered  <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked chart</a></td>
+            <td>(optional) defines the stack a series belongs to. For details, including the use of the property in a dual axis chart, check the <a href="#stacked">stacked</a> section below <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked chart</a></td>
         </tr>
     </tbody>
 </table>
 <br><br>
+
+### stacked
+
+~~~jsx
+stacked?: boolean | string
+~~~
+
+The property defines the stack a series belongs to, including the separate stacks of a chart with two value scales. The accepted values of the property are:
+
+- `false/undefined` - the chart renders the series as a separate layer
+- `true` - the value scale defines the stack, so all the series with `stacked: true` bound to the same scale form one stack. For a chart with a single value scale, this is a plain stacked chart
+- `string` - the explicit name of the group, which allows building two or more independent stacks, including on one scale
+
+The chart places the stacks of one direction side by side, as usual bar series, and calculates the `total` property separately for each group.
+
+~~~jsx {4-5,7-8}
+series: [
+    { type: "bar", value: "a", stacked: true },                  // the stack of the left scale
+    { type: "bar", value: "b", stacked: true },
+    { type: "bar", value: "x", stacked: true, scale: "right" },  // the independent stack of the right scale
+    { type: "bar", value: "y", stacked: true, scale: "right" },
+
+    { type: "bar", value: "plan", stacked: "plan" },             // two stacks on one scale,
+    { type: "bar", value: "fact", stacked: "fact" }              // drawn side by side
+]
+~~~
+
+**Related sample**: [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
+
+**Related article**: [Stack groups](chart/configuration_properties.md#stack-groups)
 
 ## The list of config options for series (for charts without scales: Pie, Pie3D, Donut)
 
