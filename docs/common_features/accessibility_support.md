@@ -33,14 +33,14 @@ There are special attributes used in the markup of DHTMLX Suite widgets that mak
 
 ### Grid
 
-There are **roles** and **attributes** for elements of grid, sorting, filters, editable cells to enable screen readers to interpret and navigate the columns and rows of the grid (enabled by default). Custom content should be marked manually.
+There are **roles** and **attributes** for elements of grid, sorting, filters, editable cells to enable screen readers to interpret and navigate the columns and rows of the grid (always rendered). Custom content should be marked manually.
 
 You can find the following **roles** and **attributes** in the DOM:
 
 - role: *grid* (or *treegrid* in the `type: "tree"` mode), *rowgroup*, *row*, *columnheader*, *gridcell*, *button* (the sort control and the tree expand/collapse toggle)
 - aria attributes: *label*, *rowcount*, *colcount*, *rowindex*, *colindex*, *aria-sort* (on sortable columns), *aria-selected*, *aria-readonly*, *aria-multiselectable*, *aria-colspan* and *aria-rowspan* (on merged cells), and — for tree rows — *aria-level* and *aria-expanded*.
 
-The cell surface is a single tab stop, and the arrow keys move the active cell inside it, whether or not a selection module is enabled.
+The <kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd> keys move cell by cell through the header, the body and the footer and leave the grid at its ends. The arrow keys move the active cell within and between these zones, whether or not a selection module is enabled.
 
 In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree. Dynamic changes - sorting, filtering, data loading - are read out through a visually hidden polite live region, which the application can write to itself; all the built-in screen-reader strings are stored in the `aria_*` locale keys and can be translated.
 
@@ -122,7 +122,7 @@ The buttons of alert and confirmation dialogs take their accessible names from t
 
 All DHTMLX Suite widgets are provided with a keyboard navigation support. It allows using a Suite-based app without a mouse pointer. Basic rules include:
 
-- the <kbd>Tab</kbd> key is used to navigate between widgets and clickable areas of the widgets. A group of controls - a grid, a toolbar, a menu bar, a sidebar, a ribbon, a color palette - is a single tab stop
+- the <kbd>Tab</kbd> key is used to navigate between widgets and clickable areas of the widgets. A group of controls - a toolbar, a menu bar, a sidebar, a ribbon, a color palette - is a single tab stop. In a grid, <kbd>Tab</kbd> moves cell by cell, and leaves the grid at its ends
 - the <kbd>Arrow</kbd> keys are used to move selection or change active elements within widgets
 - the <kbd>Esc</kbd> key closes windows, menus and editors
 - the <kbd>Enter</kbd> is used to open and hide drop-down lists of select controls

@@ -183,6 +183,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | Name                                        | Description                                        |
 | ------------------------------------------- | -------------------------------------------------- |
 | [](grid/api/grid_adjust_config.md)          | @getshort(grid/api/grid_adjust_config.md)          |
+| [](grid/api/grid_arialabel_config.md)       | @getshort(grid/api/grid_arialabel_config.md)       |
 | [](grid/api/grid_autoemptyrow_config.md)    | @getshort(grid/api/grid_autoemptyrow_config.md)    |
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |

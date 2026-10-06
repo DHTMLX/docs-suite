@@ -36,8 +36,6 @@ const en = {
     aria_collapseRow: "Collapse row",
     aria_subRow: "Details for row {id}",
     aria_editContent: "Edit content",
-    aria_enterGrid: "Enter grid",
-    aria_exitGrid: "Exit grid",
     aria_dragPanel: "Drag panel",
     aria_panelHeader: "Panel header",
     aria_panelFooter: "Panel footer",
@@ -148,8 +146,6 @@ The Grid gives its interactive controls accessible names, which screen readers r
 | `aria_expandRow` | `Expand row` | Expand toggle of a tree branch or a sub-row |
 | `aria_collapseRow` | `Collapse row` | Collapse toggle of a tree branch or a sub-row |
 | `aria_editContent` | `Edit content` | Content wrapper of an `htmlEnable` cell |
-| `aria_enterGrid` | `Enter grid` | Focus sentinel before the header |
-| `aria_exitGrid` | `Exit grid` | Focus sentinel after the footer |
 | `aria_dragPanel` | `Drag panel` | The drag panel region |
 | `aria_panelHeader` | `Panel header` | Drag panel header |
 | `aria_panelFooter` | `Panel footer` | Drag panel footer |
@@ -169,8 +165,6 @@ dhx.i18n.setLocale("grid", {
     aria_expandRow: "Zeile aufklappen",
     aria_collapseRow: "Zeile zuklappen",
     aria_editContent: "Inhalt bearbeiten",
-    aria_enterGrid: "Tabelle betreten",
-    aria_exitGrid: "Tabelle verlassen",
 });
 
 const grid = new dhx.Grid("grid_container", { columns, data });

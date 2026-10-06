@@ -2614,6 +2614,7 @@ module.exports = {
                   },*/
                   items: [
                     "grid/api/grid_adjust_config",
+                    "grid/api/grid_arialabel_config",
                     "grid/api/grid_autoemptyrow_config",
                     "grid/api/grid_autoheight_config",
                     "grid/api/grid_autowidth_config",
