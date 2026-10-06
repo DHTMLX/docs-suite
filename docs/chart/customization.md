@@ -159,7 +159,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ![Bar chart with bars colored by value thresholds in green, yellow and red in DHTMLX Suite](/img/chart/bar_color_by_value.png)
 
-By default, all bars of a series have the same color. To color each bar by its data, set the `fill` option of [series](chart/configuration_properties.md#series) as a function. The function takes a data item and returns the fill color of the bar that displays it:
+By default, all bars of a series have the same color. To color each bar by its data, set the `fill` option of [series](chart/configuration_properties.md#series) as a function. The chart calls the function with a data item, and the function returns the fill color of the bar that displays it:
 
 ~~~jsx {19-24}
 const plan = 500;
@@ -200,7 +200,7 @@ const chart = new dhx.Chart("chart_container", {
 
 **Related sample**: [Chart. Color by value](https://snippet.dhtmlx.com/q7rufn33)
 
-You can also set the `color` option as a function that takes a data item and returns a color. If you set only `color` (and don't set `fill`), its value colors the bars as well. If you set both options, the bars take the color that `fill` returns.
+You can also set the `color` option as a function. The chart calls it with a data item, and the function returns a color. If you set only `color` (and don't set `fill`), its value colors the bars as well. If you set both options, the bars take the color that `fill` returns.
 
 **Related sample**: [Chart. Highlight the best month](https://snippet.dhtmlx.com/jlbn196p)
 
