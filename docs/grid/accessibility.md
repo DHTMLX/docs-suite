@@ -61,7 +61,7 @@ const grid = new dhx.Grid("grid_container", {
 dhx.setTheme("contrast-light"); // or "contrast-dark"
 ~~~
 
-The theme can also be applied through the `data-dhx-theme` attribute of the container or of the root element; see the [Themes overview](themes/themes.md) for all the options.
+The theme can also be applied through the `data-dhx-theme` attribute of the container or of the root element; see the [Themes overview](/themes/) for all the options.
 
 Add a selection module only when users need to select cells or ranges; see the next section.
 
@@ -344,7 +344,7 @@ Navigation is **span-aware**: movement across merged (colspan/rowspan) header an
 
 ### High-contrast themes {#highcontrastthemes}
 
-Light and dark high-contrast themes ship with the library, `contrast-light` and `contrast-dark`, activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are colour-blind friendly, and raise the base font size to 16px. See the [Themes](themes/themes.md) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
+Light and dark high-contrast themes ship with the library, `contrast-light` and `contrast-dark`, activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are colour-blind friendly, and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
 
 The `contrast-light` theme draws dark text and borders on a white background. In the grid below, `selection` and `multiselection` are enabled, so focus moves through the cells with <kbd>Tab</kbd> and the arrow keys, and <kbd>Shift</kbd> + arrow extends the selection from the focused cell. Each selected cell is marked by a solid border:
 
@@ -390,7 +390,7 @@ Accessibility is validated continuously, and against the component source rather
 - [ariaLabel](grid/api/grid_arialabel_config.md)
 - [Localization](grid/localization.md)
 - [TreeGrid mode](grid/treegrid_mode.md)
-- [Themes overview](themes/themes.md)
+- [Themes overview](/themes/)
 - [Accessibility support across DHTMLX Suite](common_features/accessibility_support.md)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [WAI-ARIA Authoring Practices: Grid / Treegrid](https://www.w3.org/WAI/ARIA/apg/patterns/)
