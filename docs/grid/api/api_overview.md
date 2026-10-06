@@ -14,6 +14,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_addrowcss_method.md)         | @getshort(grid/api/grid_addrowcss_method.md)         |
 | [](grid/api/grid_addspan_method.md)           | @getshort(grid/api/grid_addspan_method.md)           |
 | [](grid/api/grid_adjustcolumnwidth_method.md) | @getshort(grid/api/grid_adjustcolumnwidth_method.md) |
+| [](grid/api/grid_announce_method.md)          | @getshort(grid/api/grid_announce_method.md)          |
 | [](grid/api/grid_collapse_method.md) 			| @getshort(grid/api/grid_collapse_method.md) 		   |
 | [](grid/api/grid_collapseall_method.md) 		| @getshort(grid/api/grid_collapseall_method.md) 	   |
 | [](grid/api/grid_destructor_method.md)        | @getshort(grid/api/grid_destructor_method.md)        |
