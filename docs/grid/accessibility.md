@@ -283,6 +283,12 @@ Placeholders in curly braces (`{column}`, `{count}`, `{min}`, `{max}`, `{value}`
 
 Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. It works in every configuration: without a selection module the keys move the active cell, and with one they move the selection as well; see [Keyboard navigation with and without selection](#selectionmodules). Focus enters the Grid through hidden focus sentinels placed before the header and after the footer, which direct it into the correct zone. Within each zone a single cell is the tab stop, and the arrow keys move between cells from there. <kbd>Tab</kbd> at the first or the last cell leaves the Grid in every configuration, including one with frozen columns (`leftSplit` / `rightSplit`).
 
+In the grid below, no selection module is enabled, so the arrow keys move the active cell, which is marked only by the dashed focus outline:
+
+![Grid with focus and without selection](/img/grid/grid_focus_without_selection.png)
+
+The [High-contrast themes](#highcontrastthemes) section illustrates two more ways focus is indicated: the solid border of cells selected with the keyboard when `selection` is enabled, and the focus ring of a column header.
+
 Shortcuts are organized into **zones** (body, header, footer) and resolved by where focus currently is. The full reference is in the [Keyboard navigation](grid/configuration.md#keyboard-navigation) article; the tables below summarize it.
 
 ### Grid body
@@ -339,8 +345,13 @@ Navigation is **span-aware**: movement across merged (colspan/rowspan) header an
 
 Light and dark high-contrast themes ship with the library, `contrast-light` and `contrast-dark`, activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are colour-blind friendly, and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
 
-<!-- TODO: screenshots of the grid under contrast-light and contrast-dark, as:
-     ![contrast_light_grid](/img/<file>.png) -->
+The `contrast-light` theme draws dark text and borders on a white background. In the grid below, `selection` and `multiselection` are enabled, so focus moves through the cells with <kbd>Tab</kbd> and the arrow keys, and <kbd>Shift</kbd> + arrow extends the selection from the focused cell. Each selected cell is marked by a solid border:
+
+![Grid in the contrast-light theme](/img/grid/grid_contrast_light.png)
+
+The `contrast-dark` theme draws light text and borders on a dark background. When focus is on a column header, the header is marked by the focus ring:
+
+![Grid in the contrast-dark theme](/img/grid/grid_contrast_dark.png)
 
 ### Other low-vision support
 

@@ -140,6 +140,14 @@ The focus indicator stays visible during the whole keyboard interaction, includi
 
 A text field inside a bar keeps the arrow keys while the caret can move, and passes them to the bar when the caret is at the matching end of the text and nothing is selected.
 
+The *Skin* control of this Toolbar has its menu open, and a dashed outline shows which entry holds the keyboard focus:
+
+![Toolbar navigated with the keyboard](/img/toolbar/toolbar_keyboard_navigation.png)
+
+A Sidebar opens the menu of an item to the right of the bar. Here the menu of *Posts* is open, with its focused entry outlined:
+
+![Sidebar navigated with the keyboard](/img/sidebar/sidebar_keyboard_navigation.png)
+
 Inside an open menu:
 
 | Keys | Action |
@@ -152,6 +160,10 @@ Inside an open menu:
 | <kbd>Esc</kbd> | Close the menu and return focus to the control that opened it |
 | <kbd>Tab</kbd> | Close the menu and leave the bar |
 
+The next screenshot shows two open levels of a Menu, *Format* and its *Align* submenu. Focus is on an entry of the submenu, which carries the dashed outline:
+
+![Menu navigated with the keyboard](/img/menu/menu_keyboard_navigation.png)
+
 ### Colorpicker
 
 | Keys | Action |
@@ -162,6 +174,10 @@ Inside an open menu:
 | <kbd>Enter</kbd> | Select the focused color |
 
 Focus moves into the custom color view when it opens, and back to the palette when the view is closed.
+
+In a Colorpicker palette, the focused swatch and the selected one are marked differently: a dashed outline for focus and a frame for the selected color. In this example, they sit next to each other:
+
+![Colorpicker navigated with the keyboard](/img/colorpicker/colorpicker_keyboard_navigation.png)
 
 :::info
 For the full list of built-in hotkeys, refer to the **Keyboard Navigation** articles of the following widgets:
