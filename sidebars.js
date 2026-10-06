@@ -2476,6 +2476,7 @@ module.exports = {
                     "grid/api/grid_addrowcss_method",
                     "grid/api/grid_addspan_method",
                     "grid/api/grid_adjustcolumnwidth_method",
+                    "grid/api/grid_announce_method",
                     "grid/api/grid_collapse_method",
                     "grid/api/grid_collapseall_method",
                     "grid/api/grid_destructor_method",
