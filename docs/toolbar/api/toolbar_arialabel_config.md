@@ -30,4 +30,4 @@ The value is rendered as the `aria-label` attribute of the element with the `too
 - [Accessibility support: Toolbar, Menu, Sidebar and Ribbon](common_features/accessibility_support.md#toolbar-menu-sidebar-and-ribbon)
 - [Localization of screen-reader strings](common_features/accessibility_support.md#localization-of-screen-reader-strings)
 
-@changelog: added in v9.4
+@changelog: added in v9.3.12

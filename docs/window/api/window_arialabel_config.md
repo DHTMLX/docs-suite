@@ -40,4 +40,4 @@ Set `ariaLabel` explicitly when the visible title is not descriptive enough on i
 - [Accessibility support: Window](common_features/accessibility_support.md#window)
 - [Localization of screen-reader strings](common_features/accessibility_support.md#localization-of-screen-reader-strings)
 
-@changelog: added in v9.4
+@changelog: added in v9.3.12

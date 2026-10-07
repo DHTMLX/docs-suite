@@ -82,8 +82,6 @@ Released on October , 2026
     - A bar is a single tab stop. The arrow keys, <kbd>Home</kbd> and <kbd>End</kbd> move between its controls, and menus open and close from the keyboard, returning focus to the control that opened them.
     - Two-state and grouped buttons report their state, and a button built from custom HTML takes its accessible name from its tooltip.
 
-- Toolbar/Window. The `ariaLabel` configuration option of [Toolbar](toolbar/api/toolbar_arialabel_config.md) and [Window](window/api/window_arialabel_config.md) sets the accessible name of a toolbar or a window. A window without `ariaLabel` is named by its [`title`](window/api/window_title_config.md).
-
 For additional information, refer to the [Accessibility support](common_features/accessibility_support.md) and [Grid accessibility](grid/accessibility.md) guides, and to the Grid [Accessibility Conformance Report](grid/accessibility_conformance_report.md).
 
 ### Fixes
