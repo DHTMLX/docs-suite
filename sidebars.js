@@ -2615,6 +2615,7 @@ module.exports = {
                   },*/
                   items: [
                     "grid/api/grid_adjust_config",
+                    "grid/api/grid_arialabel_config",
                     "grid/api/grid_autoemptyrow_config",
                     "grid/api/grid_autoheight_config",
                     "grid/api/grid_autowidth_config",
@@ -2992,6 +2993,7 @@ module.exports = {
             "grid/usage_history",
             "grid/customization",
             "grid/accessibility",
+            "grid/accessibility_conformance_report",
             "grid/events"
           ],
         },
@@ -4376,6 +4378,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "toolbar/api/toolbar_arialabel_config",
                     "toolbar/api/toolbar_css_config",
                     "toolbar/api/toolbar_data_config",
                     "toolbar/api/toolbar_menucss_config",
@@ -4641,6 +4644,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "window/api/window_arialabel_config",
                     "window/api/window_closable_config",
                     "window/api/window_css_config",
                     "window/api/window_footer_config",
