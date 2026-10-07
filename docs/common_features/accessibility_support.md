@@ -1,14 +1,14 @@
 ---
 sidebar_label: Accessibility support
 title: JavaScript Guides - Accessibility Support 
-description: You can learn about Accessibility support in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how DHTMLX Suite widgets support accessibility, from WAI-ARIA roles and keyboard navigation in Grid, Toolbar, Menu, Sidebar, Ribbon and Colorpicker to translatable screen-reader strings and high-contrast themes.
 ---
 
 # Accessibility support
 
 Accessibility is one of the key concepts in present-day web development. It presupposes equal access to web resources for people with diverse abilities.
 
-## Web Conformance Guidelines
+## Web conformance guidelines
 
 Even if you are not mandated to conform to any particular accessibility standard, it can be helpful to understand the guidelines outlined as they are generally good practices worth incorporating into your web based applications.
 
@@ -22,12 +22,12 @@ Currently the most commonly encountered conformance guidelines and standards are
 
 The DHTMLX Suite library meets the main requirements of the WCAG standards and provides support for the following accessibility components:
 
-- [WAI-ARIA Attributes](#wai-aria-attributes)
-- [Keyboard Navigation](#keyboard-navigation)
+- [WAI-ARIA attributes](#wai-aria-attributes)
+- [Keyboard navigation](#keyboard-navigation)
 - [Localization of screen-reader strings](#localization-of-screen-reader-strings)
-- [High-Сontrast Themes](#high-contrast-themes)
+- [High-contrast themes](#high-contrast-themes)
 
-## WAI-ARIA Attributes
+## WAI-ARIA attributes
 
 There are special attributes used in the markup of DHTMLX Suite widgets that make it possible for screen readers to recognize and interpret them to the user, namely:
 
@@ -38,14 +38,14 @@ There are **roles** and **attributes** for elements of grid, sorting, filters, e
 You can find the following **roles** and **attributes** in the DOM:
 
 - role: *grid* (or *treegrid* in the `type: "tree"` mode), *rowgroup*, *row*, *columnheader*, *gridcell*, *button* (the sort control and the tree expand/collapse toggle)
-- aria attributes: *label*, *rowcount*, *colcount*, *rowindex*, *colindex*, *aria-sort* (on sortable columns), *aria-selected*, *aria-readonly*, *aria-multiselectable*, *aria-colspan* and *aria-rowspan* (on merged cells), and — for tree rows — *aria-level* and *aria-expanded*.
+- aria attributes: *label*, *rowcount*, *colcount*, *rowindex*, *colindex*, *aria-sort* (on sortable columns), *aria-selected*, *aria-readonly*, *aria-multiselectable*, *aria-colspan* and *aria-rowspan* (on merged cells), and *aria-level* and *aria-expanded* (on tree rows).
 
-The <kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd> keys move cell by cell through the header, the body and the footer and leave the grid at its ends. The arrow keys move the active cell within and between these zones, whether or not a selection module is enabled.
+The <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> keys move cell by cell through the header, the body and the footer and leave the grid at its ends. The arrow keys move the active cell within and between these zones, whether or not a selection module is enabled.
 
-In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree. Dynamic changes - sorting, filtering, data loading - are read out through a visually hidden polite live region, which the application can write to itself; all the built-in screen-reader strings are stored in the `aria_*` locale keys and can be translated.
+The accessible name of the grid is set with the [`ariaLabel`](grid/api/grid_arialabel_config.md) configuration option. In-place editors and header/footer filters get an accessible name derived from the column header text. Role presentation and aria-hidden are used to hide redundant content (resizers, sort icons, drag ghosts, the selection overlay) from the accessibility tree. Dynamic changes, such as sorting, filtering and data loading, are read out through a visually hidden polite live region, which the application can write to itself with the [`announce()`](grid/api/grid_announce_method.md) method; all the built-in screen-reader strings are stored in the `aria_*` locale keys and can be translated.
 
 :::info
-For the complete picture — the ARIA model, the keyboard zones (header/body/footer), the focus model, and configuration recipes — see the dedicated [Grid accessibility](grid/accessibility.md) guide. Criterion-by-criterion conformance with WCAG 2.2 AA, Section 508 and EN 301 549 is documented in the [Accessibility Conformance Report](grid/accessibility_conformance_report.md).
+For the complete picture, including the ARIA model, the keyboard zones (header/body/footer), the focus model, and configuration recipes, see the dedicated [Grid accessibility](grid/accessibility.md) guide. Criterion-by-criterion conformance with WCAG 2.2 AA, Section 508 and EN 301 549 is documented in the [Accessibility Conformance Report](grid/accessibility_conformance_report.md).
 :::
 
 ### Chart
@@ -80,7 +80,7 @@ A few details worth knowing:
 - a button built from custom HTML takes its accessible name from its `tooltip`, so give icon-only custom buttons a tooltip;
 - the toolbar is not a navigation landmark.
 
-The accessible name of a Toolbar is set with the `ariaLabel` configuration option. Set it whenever a page has more than one toolbar, so that users can tell them apart. Without it, the name falls back to the `aria_toolbar` locale string (`"Toolbar"`):
+The accessible name of a Toolbar is set with the [`ariaLabel`](toolbar/api/toolbar_arialabel_config.md) configuration option. Set it whenever a page has more than one toolbar, so that users can tell them apart. Without it, the name falls back to the `aria_toolbar` locale string (`"Toolbar"`):
 
 ~~~jsx
 const formatting = new dhx.Toolbar("formatting", {
@@ -93,7 +93,7 @@ Role presentation and aria-hidden are used to hide redundant markup from the acc
 
 ### Window
 
-A window is exposed with `role="dialog"`. Its accessible name is taken from the `ariaLabel` configuration option, then from `title`, and, when there is neither, from the `aria_dialog` locale string (`"Dialog"`). Use `ariaLabel` for a window without a visible title:
+A window is exposed with `role="dialog"`. Its accessible name is taken from the [`ariaLabel`](window/api/window_arialabel_config.md) configuration option, then from [`title`](window/api/window_title_config.md), and, when there is neither, from the `aria_dialog` locale string (`"Dialog"`). Use `ariaLabel` for a window without a visible title:
 
 ~~~jsx
 const search = new dhx.Window({
@@ -107,7 +107,7 @@ const search = new dhx.Window({
 
 ### Colorpicker
 
-The color palette is exposed as a list of options. You can find the following **roles** and **attributes** in the DOM:
+The color palette is exposed as a list of options, one per swatch (a single color cell of the palette) and one for the "Add new color" control. You can find the following **roles** and **attributes** in the DOM:
 
 - role: *listbox* (the palette), *option* (each swatch and the "Add new color" control), *group* (the custom colors)
 - aria attributes: *label*, *labelledby*, *selected*.
@@ -118,11 +118,11 @@ Each swatch is named by its color name, for example "dark green", rather than by
 
 The buttons of alert and confirmation dialogs take their accessible names from the `message` locale: `aria_confirm`, `aria_reject` and `aria_apply`.
 
-## Keyboard Navigation
+## Keyboard navigation
 
 All DHTMLX Suite widgets are provided with a keyboard navigation support. It allows using a Suite-based app without a mouse pointer. Basic rules include:
 
-- the <kbd>Tab</kbd> key is used to navigate between widgets and clickable areas of the widgets. A group of controls - a toolbar, a menu bar, a sidebar, a ribbon, a color palette - is a single tab stop. In a grid, <kbd>Tab</kbd> moves cell by cell, and leaves the grid at its ends
+- the <kbd>Tab</kbd> key is used to navigate between widgets and clickable areas of the widgets. A group of controls, such as a toolbar, a menu bar, a sidebar, a ribbon or a color palette, is a single tab stop. In a grid, <kbd>Tab</kbd> moves cell by cell, and leaves the grid at its ends
 - the <kbd>Arrow</kbd> keys are used to move selection or change active elements within widgets
 - the <kbd>Esc</kbd> key closes windows, menus and editors
 - the <kbd>Enter</kbd> is used to open and hide drop-down lists of select controls
@@ -180,7 +180,7 @@ In a Colorpicker palette, the focused swatch and the selected one are marked dif
 ![Colorpicker navigated with the keyboard](/img/colorpicker/colorpicker_keyboard_navigation.png)
 
 :::info
-For the full list of built-in hotkeys, refer to the **Keyboard Navigation** articles of the following widgets:
+For the full list of built-in hotkeys, refer to the **Keyboard navigation** articles of the following widgets:
 - [Grid](grid/configuration.md#keyboard-navigation) and the [Grid accessibility](grid/accessibility.md#keyboard-navigation) guide
 - [List](list/configuration.md#arrow-keys-navigation)
 - [Tree](tree/configuration.md#key-navigation)
@@ -189,7 +189,14 @@ For the full list of built-in hotkeys, refer to the **Keyboard Navigation** arti
 
 ## Localization of screen-reader strings
 
-The accessible names and announcements that the widgets generate are stored in the locale of each widget as keys with the `aria_` prefix, for example `aria_toolbar` in the `toolbar` locale, `aria_dialog` in the `window` locale, `aria_palette` and the color names in the `colorpicker` locale, and `aria_confirm` in the `message` locale. Translate them with the `dhx.i18n.setLocale()` method before the widget is initialized:
+The accessible names and announcements that the widgets generate are stored in the locale of each widget as keys with the `aria_` prefix. For example:
+
+- `aria_toolbar` in the `toolbar` locale
+- `aria_dialog` in the `window` locale
+- `aria_palette` and the color names in the `colorpicker` locale
+- `aria_confirm` in the `message` locale
+
+Translate them with the `dhx.i18n.setLocale()` method before the widget is initialized:
 
 ~~~jsx
 dhx.i18n.setLocale("toolbar", {
@@ -206,7 +213,7 @@ dhx.i18n.setLocale("colorpicker", {
 
 The locale keys are flat: pass each key at the top level of the object, not inside a nested object.
 
-## High-Contrast Themes
+## High-contrast themes
 
 For users that are visually impaired due to color deficiencies, care should be taken when using colors to provide information.
 

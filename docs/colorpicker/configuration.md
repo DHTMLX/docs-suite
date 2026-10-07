@@ -8,7 +8,7 @@ description: You can explore the configuration of Colorpicker in the documentati
 
 ## Custom colors in palette
 
-The palette of Colorpicker contains a set of default colors. They are enumerated below:
+The palette of Colorpicker contains a set of default colors. Each color is shown as a swatch, a single color cell of the palette. The default colors are enumerated below:
 
 ~~~js
 const palette = [

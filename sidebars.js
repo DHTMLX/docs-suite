@@ -4377,6 +4377,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "toolbar/api/toolbar_arialabel_config",
                     "toolbar/api/toolbar_css_config",
                     "toolbar/api/toolbar_data_config",
                     "toolbar/api/toolbar_menucss_config",
@@ -4642,6 +4643,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "window/api/window_arialabel_config",
                     "window/api/window_closable_config",
                     "window/api/window_css_config",
                     "window/api/window_footer_config",

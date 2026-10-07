@@ -1,7 +1,7 @@
 ---
 sidebar_label: Localization
 title: JavaScript Grid - Localization 
-description: You can explore how to work with Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Translate DHTMLX Grid with a custom locale, including the screen-reader announcements for sorting, filtering, loading and validation and the accessible names of its controls, and send your own announcements with the announce() method.
 ---
 
 # Localization

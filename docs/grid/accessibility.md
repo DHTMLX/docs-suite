@@ -1,7 +1,7 @@
 ---
 sidebar_label: Accessibility
 title: JavaScript Grid - Accessibility
-description: You can learn about accessibility and keyboard navigation in DHTMLX Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Make DHTMLX Grid accessible to keyboard and screen-reader users. Learn about the WAI-ARIA roles, keyboard navigation with and without selection, screen-reader announcements and high-contrast themes that target WCAG 2.2 AA in DHTMLX Suite.
 ---
 
 # Accessibility in DHTMLX Grid
@@ -23,7 +23,7 @@ Conformance is reported criterion by criterion rather than as a blanket claim. T
 | Focus model | <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> move cell by cell through the header, body, and footer and leave the grid at its ends; the arrow keys move within and between the zones |
 | Selection model | Optional: single-cell/row (`selection`) or spreadsheet-style range (`blockSelection`), for selecting cells and ranges |
 | Screen readers | Tested with NVDA, JAWS and VoiceOver |
-| Visual accessibility | Dedicated light and dark high-contrast themes (colour-blind friendly, AA contrast, 16px base) and non-colour cues |
+| Visual accessibility | Dedicated light and dark high-contrast themes (color-blind friendly, AA contrast, 16px base) and non-color cues |
 | Text resize / zoom | Layout remains operable up to 400% zoom / text spacing overrides |
 | Customization | Public `announce()` API for dynamic messages, and localizable `aria_*` strings for every built-in screen-reader description |
 | Standards | WCAG 2.2 AA, Section 508, EN 301 549 |
@@ -150,7 +150,7 @@ const grid = new dhx.Grid("grid_container", {
 
 The sections below describe each capability in detail.
 
-## WAI-ARIA Attributes
+## WAI-ARIA attributes
 
 WAI-ARIA roles and attributes are added to the component markup automatically; they are **always rendered** and cannot be turned off. The Grid exposes itself to assistive technology as an interactive grid (or treegrid) of rows and cells, with a separate group for the header and footer. The semantics are applied per structural part of the widget, so each part is announced with the correct role and state.
 
@@ -215,7 +215,7 @@ In-place editor inputs and header/footer filters receive an accessible name deri
 
 Resizer grips, sort icons, sort-order counters, drag ghosts, drop indicators, and the selection overlay are removed from the accessibility tree with `aria-hidden="true"` / `role="presentation"`, so screen readers are not cluttered with redundant markup. The hidden focus sentinels that let the keyboard enter and leave the widget are placed outside the grid role and are not exposed as controls.
 
-## Screen reader support
+## Screen-reader support
 
 DHTMLX Grid is tested against the most widely used assistive technologies:
 
@@ -262,7 +262,7 @@ The Grid already announces the following out of the box:
 
 ### Translatable screen-reader names
 
-The strings the screen reader hears live in the Grid locale, so they translate with the rest of the UI. They fall into two groups:
+The strings that a screen reader hears come from the Grid locale, so they are translated with the rest of the UI. They fall into two groups:
 
 - **announcements**: `aria_sortedAscending`, `aria_sortedDescending`, `aria_filterApplied`, `aria_filterCleared`, `aria_rowsLoaded`, `aria_valueOutOfRange`, `aria_valueBelowMin`, `aria_valueAboveMax`, `aria_valueClamped`;
 - **accessible names**: `aria_sortBy`, `aria_filter`, `aria_filterByDate`, `aria_expandGroup`, `aria_collapseGroup`, `aria_expandRow`, `aria_collapseRow`, `aria_editContent`, `aria_subRow`, `aria_rowId`, and the drag-panel names.
@@ -282,7 +282,11 @@ Placeholders in curly braces (`{column}`, `{count}`, `{min}`, `{max}`, `{value}`
 
 ## Keyboard navigation
 
-Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to opt out. It works in every configuration: without a selection module the keys move the active cell, and with one they move the selection as well; see [Keyboard navigation with and without selection](#selectionmodules). Focus enters the Grid through hidden focus sentinels placed before the header and after the footer: <kbd>Tab</kbd> from the page lands on the header, and <kbd>Shift</kbd> + <kbd>Tab</kbd> lands on the footer (or on the header, when there is no footer). Inside the Grid, <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> move cell by cell, wrapping rows, through the header, the body, and the footer, in visual order. <kbd>Tab</kbd> on the last cell of the Grid and <kbd>Shift</kbd> + <kbd>Tab</kbd> on the first header cell leave the Grid in every configuration, including one with frozen columns (`leftSplit` / `rightSplit`). The arrow keys move within a zone and between the zones: <kbd>↑</kbd> from the first body row enters the header, and <kbd>↓</kbd> from the last body row enters the footer.
+Keyboard navigation is on by default (`keyNavigation: true`); set `keyNavigation: false` to turn it off. It works with or without a selection module: without one, the navigation keys move only the active cell; with one, the selection moves together with the active cell. See [Keyboard navigation with and without selection](#selectionmodules).
+
+Focus enters the Grid through hidden focus sentinels placed before the header and after the footer: <kbd>Tab</kbd> from the page lands on the header, and <kbd>Shift</kbd> + <kbd>Tab</kbd> lands on the footer (or on the header, when there is no footer). Inside the Grid, <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> move cell by cell, wrapping rows, through the header, the body, and the footer, in visual order. <kbd>Tab</kbd> on the last cell of the Grid and <kbd>Shift</kbd> + <kbd>Tab</kbd> on the first header cell leave the Grid in every configuration, including one with frozen columns (`leftSplit` / `rightSplit`).
+
+The arrow keys move within a zone and between the zones: <kbd>↑</kbd> from the first body row enters the header, and <kbd>↓</kbd> from the last body row enters the footer.
 
 In the grid below, no selection module is enabled, so the arrow keys move the active cell, which is marked only by the dashed focus outline:
 
@@ -340,11 +344,11 @@ Shortcuts are organized into **zones** (body, header, footer) and resolved by wh
 Navigation is **span-aware**: movement across merged (colspan/rowspan) header and footer cells stays predictable, and the logical navigation row is preserved. When focus reaches an off-screen (virtualized) column, the Grid scrolls it into view automatically.
 :::
 
-## Low vision and colour
+## Low vision and color
 
 ### High-contrast themes {#highcontrastthemes}
 
-Light and dark high-contrast themes ship with the library, `contrast-light` and `contrast-dark`, activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are colour-blind friendly, and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
+Light and dark high-contrast themes ship with the library, `contrast-light` and `contrast-dark`, activated by `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or by setting `data-dhx-theme="contrast-light"` / `data-dhx-theme="contrast-dark"` on the container or the root element. Both meet WCAG AA contrast, are color-blind friendly, and raise the base font size to 16px. See the [Themes](/themes/) guide and the [Light High Contrast](themes/contrast_light_theme.md) / [Dark High Contrast](themes/contrast_dark_theme.md) pages for details.
 
 The `contrast-light` theme draws dark text and borders on a white background. In the grid below, `selection` and `multiselection` are enabled, so focus moves through the cells with <kbd>Tab</kbd> and the arrow keys, and <kbd>Shift</kbd> + arrow extends the selection from the focused cell. Each selected cell is marked by a solid border:
 
@@ -356,10 +360,10 @@ The `contrast-dark` theme draws light text and borders on a dark background. Whe
 
 ### Other low-vision support
 
-- **Colour is never the only signal.** Sort direction is carried by an arrow glyph and by `aria-sort`, selection by `aria-selected` alongside the highlight, editability by `aria-readonly`, and hierarchy by `aria-level` and `aria-expanded`.
+- **Color is never the only signal.** Sort direction is carried by an arrow glyph and by `aria-sort`, selection by `aria-selected` alongside the highlight, editability by `aria-readonly`, and hierarchy by `aria-level` and `aria-expanded`.
 - **Zoom and reflow.** The grid layout remains operable when the page is zoomed up to 400%.
 - **Text spacing.** Applying WCAG text-spacing overrides does not clip or overlap text in grid cells, column headers or footer summaries.
-- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so one body cell holds the roving tab stop and moves predictably with the arrow keys. With `selection: "cell"` / `"complex"` or `blockSelection`, the active cell is marked by a persistent 2px solid selection border in the theme primary colour, and no second focus outline is drawn over it. With `selection: "row"`, and in a grid without a selection module, the focused cell is marked by a dashed focus outline. Header and footer cells show a 2px focus ring, and filter inputs and open editors an inset ring.
+- **Visible focus.** Focus is tracked per zone by the roving-tabindex model, so one body cell holds the roving tab stop and moves predictably with the arrow keys. With `selection: "cell"` / `"complex"` or `blockSelection`, the active cell is marked by a persistent 2px solid selection border in the theme primary color, and no second focus outline is drawn over it. With `selection: "row"`, and in a grid without a selection module, the focused cell is marked by a dashed focus outline. Header and footer cells show a 2px focus ring, and filter inputs and open editors an inset ring.
 - **Scrolling into view.** When focus reaches an off-screen row or column, the Grid scrolls it into view and compensates for frozen columns and rows and for the header and footer height, so the focused cell is never left behind a frozen zone.
 
 ## Host-page responsibilities
@@ -383,11 +387,11 @@ Accessibility is validated continuously, and against the component source rather
 
 - [Accessibility Conformance Report (VPAT 2.5)](grid/accessibility_conformance_report.md)
 - [Keyboard navigation](grid/configuration.md#keyboard-navigation)
-- [keyNavigation](grid/api/grid_keynavigation_config.md)
-- [selection](grid/api/grid_selection_config.md)
-- [blockSelection](grid/api/grid_blockselection_config.md)
-- [announce()](grid/api/grid_announce_method.md)
-- [ariaLabel](grid/api/grid_arialabel_config.md)
+- [`keyNavigation`](grid/api/grid_keynavigation_config.md)
+- [`selection`](grid/api/grid_selection_config.md)
+- [`blockSelection`](grid/api/grid_blockselection_config.md)
+- [`announce()`](grid/api/grid_announce_method.md)
+- [`ariaLabel`](grid/api/grid_arialabel_config.md)
 - [Localization](grid/localization.md)
 - [TreeGrid mode](grid/treegrid_mode.md)
 - [Themes overview](/themes/)
