@@ -60,6 +60,16 @@ Released on October , 2026
 - The ability to [render HTML content in the titles of tabs](tabbar/configuring_tabbar.md#html-content-in-tab-titles), for example, an icon or a badge next to the name of a tab
     - new Tabbar configuration property: [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md)
 
+#### Toolbar
+
+- The ability to [give a toolbar an accessible name](common_features/accessibility_support.md#toolbar-menu-sidebar-and-ribbon), so that a screen reader can tell several toolbars on one page apart
+    - new Toolbar configuration property: [`ariaLabel`](toolbar/api/toolbar_arialabel_config.md)
+
+#### Window
+
+- The ability to [give a window an accessible name](common_features/accessibility_support.md#window) that differs from its [`title`](window/api/window_title_config.md), or to name a window that has no title
+    - new Window configuration property: [`ariaLabel`](window/api/window_arialabel_config.md)
+
 ### Updates
 
 - DataCollection. The [`changeId()`](data_collection/api/datacollection_changeid_method.md) method returns the new id of the item
@@ -166,10 +176,7 @@ Released on September 24, 2026
     - Buttons built from custom HTML now expose an accessible name (**WCAG 4.1.2**, **WCAG 2.5.3**).
     - Two-state buttons report whether they are pressed, both in the bar and in a menu, and mutually exclusive choices are announced as a group (**WCAG 1.3.1**, **WCAG 3.2.4**).
 
-- Toolbar/Window. The `ariaLabel` configuration option:
-    - It sets the accessible name announced for a toolbar or a dialog (**WCAG 2.4.6**, **WCAG 4.1.2**).
-    - A Window without `ariaLabel` is named by its `title`; when neither is set, each widget falls back to its own locale key, `aria_toolbar` or `aria_dialog`.
-    - Dialog focus order and the reported modal state now follow the ARIA dialog pattern.
+- Window. Dialog focus order and the reported modal state now follow the ARIA dialog pattern.
 
 ### Fixes
 
