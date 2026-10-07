@@ -147,6 +147,7 @@ module.exports = {
                     id: "calendar/api/overview/properties_overview"
                   },*/
                   items: [
+                    "calendar/api/calendar_controls_config",
                     "calendar/api/calendar_css_config",
                     "calendar/api/calendar_date_config",
                     "calendar/api/calendar_dateformat_config",
@@ -268,6 +269,7 @@ module.exports = {
                     "chart/api/chart_maxpoints_config",
                     "chart/api/chart_scales_config",
                     "chart/api/chart_series_config",
+                    "chart/api/chart_total_config",
                     "chart/api/chart_type_config",
                   ],
                 },
@@ -2475,6 +2477,7 @@ module.exports = {
                     "grid/api/grid_addrowcss_method",
                     "grid/api/grid_addspan_method",
                     "grid/api/grid_adjustcolumnwidth_method",
+                    "grid/api/grid_announce_method",
                     "grid/api/grid_collapse_method",
                     "grid/api/grid_collapseall_method",
                     "grid/api/grid_destructor_method",
@@ -2612,6 +2615,7 @@ module.exports = {
                   },*/
                   items: [
                     "grid/api/grid_adjust_config",
+                    "grid/api/grid_arialabel_config",
                     "grid/api/grid_autoemptyrow_config",
                     "grid/api/grid_autoheight_config",
                     "grid/api/grid_autowidth_config",
@@ -2989,6 +2993,7 @@ module.exports = {
             "grid/usage_history",
             "grid/customization",
             "grid/accessibility",
+            "grid/accessibility_conformance_report",
             "grid/events"
           ],
         },
@@ -4152,6 +4157,7 @@ module.exports = {
                         "tabbar/api/tabbar_tabautoheight_config",
                         "tabbar/api/tabbar_tabautowidth_config",
                         "tabbar/api/tabbar_tabheight_config",
+                        "tabbar/api/tabbar_tabtemplate_config",
                         "tabbar/api/tabbar_tabwidth_config",
                         "tabbar/api/tabbar_views_config",
                       ],
@@ -4281,6 +4287,7 @@ module.exports = {
             "timepicker/features",
             "timepicker/initialization",
             "timepicker/configuration",
+            "timepicker/localization",
             "timepicker/usage",
             "timepicker/customization",
             "timepicker/handling_events",
@@ -4371,6 +4378,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "toolbar/api/toolbar_arialabel_config",
                     "toolbar/api/toolbar_css_config",
                     "toolbar/api/toolbar_data_config",
                     "toolbar/api/toolbar_menucss_config",
@@ -4636,6 +4644,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "window/api/window_arialabel_config",
                     "window/api/window_closable_config",
                     "window/api/window_css_config",
                     "window/api/window_footer_config",
@@ -4771,6 +4780,7 @@ module.exports = {
               "data_collection/api/datacollection_getitem_method",
               "data_collection/api/datacollection_getlength_method",
               "data_collection/api/datacollection_getsortingstates_method",
+              "data_collection/api/datacollection_getvisibleindex_method",
               "data_collection/api/datacollection_group_method",
               "data_collection/api/datacollection_isdataloaded_method",
               "data_collection/api/datacollection_isgrouped_method",
@@ -4973,6 +4983,7 @@ module.exports = {
               "tree_collection/api/treecollection_getparent_method",
               "tree_collection/api/treecollection_getroot_method",
               "tree_collection/api/treecollection_getsortingstates_method",
+              "tree_collection/api/treecollection_getvisibleindex_method",
               "tree_collection/api/treecollection_haveitems_method",
               "tree_collection/api/treecollection_issaved_method",
               "tree_collection/api/treecollection_load_method",

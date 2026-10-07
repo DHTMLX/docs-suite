@@ -1212,6 +1212,10 @@ It is also possible to [get the object with the calculated values](#getting-the-
 Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation while creating the summary list. 
 ::: 
 
+:::note
+In a grid with [grouped data](grid/usage.md#grouping-data), the summaries are calculated over the data rows only: the group header rows and the group summary rows aren't counted as data.
+:::
+
 ### Column summary
 
 To form a summary list that will be available at the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
@@ -1418,6 +1422,12 @@ Allows end users to filter data of a column by choosing an option from a present
 }
 ~~~
 
+If you specify **selectFilter** as the header or footer content of a column, you can set a configuration object for it via the `filterConfig` property.
+
+#### The list of configuration properties for `selectFilter`
+
+- `options` - (*array | function*) - optional, sets the list of the filter options manually instead of building it from the column data, see [Custom options of header/footer filters](#custom-options-of-headerfooter-filters)
+
 **Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 :::note
@@ -1449,6 +1459,7 @@ If you specify **comboFilter** as the header or footer content of a column, you 
 - **placeholder** - (*string*) sets a placeholder in the input of ComboBox
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options, *true* by default
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
+- **options** - (*array | function*) sets the list of the filter options manually instead of building it from the column data, see [Custom options of header/footer filters](#custom-options-of-headerfooter-filters)
 ~~~jsx 
 {
     id: "category",
@@ -1533,6 +1544,133 @@ Calendar API configuration properties:
 
 **Related sample**: [Grid. Header filters (dateFilter, comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
+### Custom options of header/footer filters
+
+:::info
+The ability to manage the options of a filter manually is available starting from v9.4.
+:::
+
+By default, **selectFilter** and **comboFilter** build their list of options from the data of the column, and offer only the values that actually occur in the loaded rows. If a column holds *"KG"* in every row, the dropdown offers *"KG"* and nothing else, even when the valid values for the column come from a fixed reference list.
+
+The `options` property of the `filterConfig` object lets you define that list yourself. It takes either a static array of options or a function that transforms the data-driven list:
+
+~~~jsx
+type IOption = { id: Id, value: string };
+type TOption = IOption | string;
+
+options?: TOption[] | ((uniqueData: IOption[], col: ICol) => TOption[]);
+~~~
+
+| Form | Behavior |
+| ---- | -------- |
+| `TOption[]` | a static list. It fully replaces the data-driven one, and Grid does not scan the dataset for this column |
+| `(uniqueData, col) => TOption[]` | a callback function. It receives the data-driven list, already normalized to `{ id, value }` pairs, and returns the list to show |
+| *omitted* | the default. Grid builds the list from the column data |
+
+#### Option format
+
+An option is either an `{ id, value }` pair or a plain string. Grid converts both `id` and `value` to strings, because a header filter always reports its value as a string.
+
+- `id` - the value stored in the cell. This is what the filter compares against, and what the [`customFilter`](#customizing-headerfooter-filters) function receives as its `match` parameter
+- `value` - the label shown in the dropdown
+
+:::note
+The `id` of an option must match the value stored in the cell, not the formatted one. For example, in a column with `type: "number"` and a [`numberMask`](#numbermask), the cell holds *1000* while Grid displays *1,000*, so the option `id` must be *1000*.
+:::
+
+#### A static list of options
+
+Use a static list when the column's valid values come from a fixed reference list that must always be offered in full:
+
+~~~jsx {10-14}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            id: "unitMeasure",
+            header: [
+                { text: "Unit Measure" },
+                {
+                    content: "selectFilter",
+                    filterConfig: {
+                        options: [
+                            { id: "KG", value: "Kilogram" },
+                            { id: "L", value: "Liters" },
+                            { id: "PCS", value: "Pieces" }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    data: [
+        { id: 1, unitMeasure: "KG" },
+        { id: 2, unitMeasure: "KG" }
+    ]
+});
+~~~
+
+The dropdown shows *Kilogram*, *Liters* and *Pieces* regardless of what the dataset contains. Selecting *Liters* leaves Grid empty, which is the expected outcome: the option exists, while the matching rows do not.
+
+The property also accepts a list of plain strings. In this case each string becomes both the id and the label of an option:
+
+~~~jsx
+filterConfig: { options: ["KG", "L", "PCS"] }
+~~~
+
+#### A function for adjusting options
+
+Use a function when you want to keep the data-driven list and adjust it: add the options that the data does not contain yet, hide the ones users must never filter by, or reorder the list.
+
+~~~jsx
+// always offers "Liters" on top of whatever the data holds
+filterConfig: {
+    options: uniqueData => uniqueData.concat([{ id: "L", value: "Liters" }])
+}
+~~~
+
+~~~jsx
+// hides the technical "draft" status from the filter
+filterConfig: {
+    options: uniqueData => uniqueData.filter(option => option.id !== "draft")
+}
+~~~
+
+Grid normalizes the list to `{ id, value }` pairs before it calls the function, so `option.id` is always defined and safe to compare. The second argument is the configuration object of the column.
+
+The function runs whenever Grid recalculates the filter lists:
+
+- when Grid initializes
+- when a data event fires (`load`, `parse`, `add`, `remove`, `update`, `filter`)
+- when you call the [`setColumns()`](grid/api/grid_setcolumns_method.md) method
+- when you show or hide a column
+
+A plain [`paint()`](grid/api/grid_paint_method.md) call does not re-evaluate it.
+
+**Related sample**: [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
+
+#### Behavior notes
+
+- **The selected value is never dropped.** An option that no row matches stays selected, and Grid stays empty. A filter does not reset itself when its selected value is absent from the column data.
+
+- **Cross-filtering.** When several columns are filtered at once, Grid normally narrows the filter lists of the other columns to the values that are still reachable. The two forms of the `options` property differ here:
+
+    - Grid never narrows a static list, since it is a reference list and not a view of the data
+    - a callback function receives the narrowed list, so its result can reflect what is currently reachable
+
+- **The full list stays in the dropdown.** When the `options` property is defined, **selectFilter** renders its whole `<select>` list even while a value is selected, so users can switch straight to another option.
+
+- **Interaction with `customFilter`.** The [`customFilter`](#customizing-headerfooter-filters) function takes precedence over the built-in matching and receives `option.id` as its `match` argument:
+
+    ~~~jsx
+    {
+        content: "selectFilter",
+        filterConfig: { options: [{ id: "L", value: "Liters" }] },
+        customFilter: (cellValue, match) => cellValue === match // match === "L"
+    }
+    ~~~
+
+- **Columns without `options`.** A column that does not define the `options` property behaves as it did before v9.4: it builds its filter list from the data, narrows it on cross-filtering, and reports the displayed text as the filter value.
+
 ### Customizing header/footer filters
 
 To add a custom function with your you own logic for the filter of a Grid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md).
@@ -1572,28 +1710,92 @@ You can change the height of the header/footer in one of the following ways:
 
 1. Specify the necessary height of the rows in the header/footer via the related API options
 
-The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
-properties, correspondingly. The default value of the mentioned properties is 40.
+Grid renders the header and the footer as a stack of levels (rows). The number of levels is defined by the longest `header`/`footer` array among the columns:
 
 ~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // columns config
-    ],
-    footerRowHeight:50
-    headerRowHeight: 50
-});
+columns: [
+    {
+        id: "country",
+        header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }], // 3 levels in the header
+        footer: [{ text: "Total" }, { text: "The number of the listed countries" }] // 2 levels in the footer
+    },
+    {
+        id: "region",
+        header: ["", { text: "Region" }, { text: "Subregion of the world" }],
+        footer: [{ text: "Unique" }, { text: "The number of the distinct regions" }]
+    }
+]
+~~~
+
+The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md)/[`footerRowHeight`](grid/api/grid_footerrowheight_config.md) properties, correspondingly. Each of them can be set either as a **number**, which is applied to every level of the zone, or as an **array**, which sizes the levels individually.
+
+The default value of the mentioned properties is 40.
+
+~~~jsx
+// the same height for all the levels of the header/footer
+headerRowHeight: 50,
+footerRowHeight: 50
 ~~~
 
 **Related sample**: [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
 
+When the property is set as an array, the item at index *i* describes level *i*, counting from the topmost one. An item can be either a height in pixels or the *"auto"* keyword (**PRO version only**), which adjusts the level height to its content:
+
+~~~jsx
+// individual height for each level of the header/footer
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            id: "country", width: 200,
+            header: [{ text: "Location", colspan: 2 }, { text: "Country" }, { text: "ISO code" }],
+            footer: [{ text: "Total" }, { text: "The number of the listed countries" }],
+        },
+        {
+            id: "region", width: 200,
+            header: ["", { text: "Region" }, { text: "Subregion of the world" }],
+            footer: [{ text: "Unique" }, { text: "The number of the distinct regions" }],
+        },
+    ],
+    // level 0 -> 56px, level 1 -> adjusts to its content, level 2 -> 32px
+    headerRowHeight: [56, "auto", 32],
+    // level 0 -> 40px, level 1 -> adjusts to its content
+    footerRowHeight: [40, "auto"],
+    data: dataset
+});
+~~~
+
+The image below shows a Grid whose header and footer are sized level by level. In the header, the first level is 60px high, the second level keeps the default height of 40px, and the third level grows to fit the longest column description, which wraps to two lines. In the footer, the first level is 40px high, and the second level fits its wrapped text:
+
+![Grid with a header and a footer of individual heights, where the auto levels wrap the column descriptions, in DHTMLX Suite](/img/grid/header_footer_level_height.png)
+
+**Related sample**: [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
+
+:::tip pro version only
+Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
+
+In the GPL version, the array form still works: individual pixel heights per level are fully supported. An *"auto"* item is accepted without an error, but it has no effect: the level gets the default height of 40px and its text is not wrapped. Use explicit pixel values instead.
+:::
+
+The height of a level is resolved as follows:
+
+| `headerRowHeight` / `footerRowHeight` | Level | Height | Text wrapping |
+| -------- | ----- | ------ | ------------- |
+| *number* | any | the number | no |
+| *array*  | a *number* item | the item | no |
+| *array*  | an *"auto"* item (**PRO version only**) | fits the content, at least 40px | yes |
+| *array*  | beyond the array length | 40px | no |
+
+Extra array items are ignored: an array longer than the actual number of levels does not add levels. A non-positive or non-numeric item falls back to the default 40px.
+
+The per-level heights are carried over to the [export](grid/usage.md#exporting-data): the XLSX header and footer rows keep their individual heights, and the PDF/PNG snapshot uses the correct total height of the zone.
+
 2. Provide the automatic adjustment of the header/footer height for the content to fit in
 
-Use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to redefine the `autoHeight` config for the header and the footer, correspondingly:
+Use the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) and [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to redefine the `autoHeight` config for the header and the footer, correspondingly:
 
 ~~~jsx
 // enabling autoheight only in the content
-const grid1 = new dhx.Grid("grid", {
+const grid1 = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
@@ -1604,7 +1806,7 @@ const grid1 = new dhx.Grid("grid", {
 });
 
 // enabling autoheight only in the header
-const grid2 = new dhx.Grid("grid", {
+const grid2 = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
@@ -1615,6 +1817,13 @@ const grid2 = new dhx.Grid("grid", {
 ~~~
 
 **Related sample**: [Grid. Header/footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d?tag=grid)
+
+Both configuration options make **every** level of the zone fit its content. The array form of `headerRowHeight`/`footerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `headerAutoHeight`/`footerAutoHeight`:
+
+- if `headerRowHeight` is set as an **array**, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
+- if `headerRowHeight` is set as a **number**, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
+
+The same pair of rules applies to `footerRowHeight` and `footerAutoHeight`.
 
 ### Footer position
 
@@ -1747,8 +1956,8 @@ Please note that the `autoHeight` option does not adjust the height of the cells
 
 The option just makes their text split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you can:
 
-- use the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid to set specific values for the header/footer rows height
-- use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to enable autoheight for the header/footer rows
+- use the [`headerRowHeight`](grid/api/grid_headerrowheight_config.md) and [`footerRowHeight`](grid/api/grid_footerrowheight_config.md) configuration options of Grid to set specific values for the header/footer rows height, either the same one for all the rows (levels) or an individual one for each of them
+- use the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) and [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to enable autoheight for the header/footer rows
 
 ### Automatic adding of empty row into Grid
 
@@ -3166,25 +3375,75 @@ DHTMLX Grid provides the keyboard navigation that will help you manipulate your 
 
 ### Default shortcut keys
 
+Keyboard navigation is enabled by default and does not require any selection module. <kbd>Tab</kbd> enters Grid at the header, then <kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd> move cell by cell through the header, the body and the footer. <kbd>Tab</kbd> on the last cell of Grid and <kbd>Shift</kbd>+<kbd>Tab</kbd> on the first header cell move the focus out of Grid. The keys below move the active cell and scroll it into view; the arrow keys also move the focus between the header, the body and the footer. Without a selection module, moving the active cell does not select it and does not fire selection events.
+
 The navigation shortcut keys and keys combinations that Grid enables by default are provided below:
 
 <table>
     <tbody>
         <tr>
-            <td><kbd>PageUp</kbd></td>
-            <td>scrolls Grid up to the height of the visible content (without change of the selected cell)</td>
+            <td><kbd>ArrowUp</kbd></td>
+            <td>moves the active cell to the previous vertical cell; from the first row of the body, moves the focus to the header</td>
         </tr>
         <tr>
-            <td><kbd>PageDown</kbd></td>
-            <td>scrolls Grid down to the height of the visible content (without change of the selected cell)</td>
+            <td><kbd>ArrowDown</kbd></td>
+            <td>moves the active cell to the next vertical cell; from the last row of the body, moves the focus to the footer (if any)</td>
+        </tr>
+        <tr>
+            <td><kbd>ArrowLeft</kbd></td>
+            <td>moves the active cell to the previous horizontal cell</td>
+        </tr>
+        <tr>
+            <td><kbd>ArrowRight</kbd></td>
+            <td>moves the active cell to the next horizontal cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
+            <td>moves the active cell to the first vertical cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
+            <td>moves the active cell to the last vertical cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
+            <td>moves the active cell to the first horizontal cell</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
+            <td>moves the active cell to the last horizontal cell</td>
         </tr>
         <tr>
             <td><kbd>Home</kbd></td>
-            <td>navigates to the beginning of the Grid content (without change of the selected cell)</td>
+            <td>moves the active cell to the first column of the current row</td>
         </tr>
         <tr>
             <td><kbd>End</kbd></td>
-            <td>navigates to the end of the Grid content (without change of the selected cell)</td>
+            <td>moves the active cell to the last column of the current row</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>Home</kbd></td>
+            <td>moves the active cell to the first cell of Grid</td>
+        </tr>
+        <tr>
+            <td><kbd>Ctrl</kbd>+<kbd>End</kbd></td>
+            <td>moves the active cell to the last cell of Grid</td>
+        </tr>
+        <tr>
+            <td><kbd>PageUp</kbd></td>
+            <td>moves the active cell up by the height of the visible content</td>
+        </tr>
+        <tr>
+            <td><kbd>PageDown</kbd></td>
+            <td>moves the active cell down by the height of the visible content</td>
+        </tr>
+        <tr>
+            <td><kbd>Tab</kbd></td>
+            <td>moves the active cell to the next horizontal cell or the first cell of the next row; from the last cell of the body, moves the focus to the footer, or out of Grid when there is no footer</td>
+        </tr>
+        <tr>
+            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>moves the active cell to the previous horizontal cell or the last cell of the previous row; from the first cell of the body, moves the focus to the header</td>
         </tr>
         <tr>
             <td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
@@ -3207,71 +3466,29 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-### Shortcut keys for moving selection between cells
+For the accessibility aspects of keyboard navigation, see the [Grid accessibility](grid/accessibility.md#keyboard-navigation) guide.
 
-In case you want to enable the shortcut keys that allow moving the selection between cells, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
+### Shortcut keys for moving selection between cells {#shortcut-keys-for-moving-selection-between-cells}
 
-~~~jsx {6}
+In case you want the default shortcut keys to move the selection together with the active cell, you need to specify the [`selection`](grid/api/grid_selection_config.md) property for Grid.
+
+~~~jsx {6-7}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
     data: dataset,
     selection: "complex",
+    multiselection: true, // enables the Shift+Arrow combinations
     keyNavigation: true // true - by default
 });
 ~~~
 
 **Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-The list of the shortcut keys and their combinations used for moving selection between cells is the following:
+With the `selection` property specified, the arrow keys, their combinations with <kbd>Ctrl</kbd>, <kbd>Home</kbd>/<kbd>End</kbd>, <kbd>PageUp</kbd>/<kbd>PageDown</kbd> and <kbd>Tab</kbd>/<kbd>Shift</kbd>+<kbd>Tab</kbd> listed in the [Default shortcut keys](#default-shortcut-keys) section move the selection between cells.
 
-<table>
-    <tbody>
-        <tr>
-            <td><kbd>ArrowUp</kbd></td>
-            <td>moves selection to the previous vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowDown</kbd></td>
-            <td>moves selection to the next vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowLeft</kbd></td>
-            <td>moves selection to the previous horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>ArrowRight</kbd></td>
-            <td>moves selection to the next horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowUp</kbd></td>
-            <td>moves selection to the first vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowDown</kbd></td>
-            <td>moves selection to the last vertical cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowLeft</kbd></td>
-            <td> moves selection to the first horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>ArrowRight</kbd></td>
-            <td> moves selection to the last horizontal cell</td>
-        </tr>
-        <tr>
-            <td><kbd>Tab</kbd></td>
-            <td> moves selection to the next horizontal cell or the first cell of the next row</td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
-            <td> moves selection to the previous horizontal cell or to the first cell of the previous row</td>
-        </tr>
-    </tbody>
-</table>
-
-The combinations of the shortcut keys listed below do not work when the `selection` property is set to *"complex"*. Use another mode (*"cell" or "row"*) in case you want to activate these navigation keys:
+The combinations of the shortcut keys listed below extend the selection and work only when the [`multiselection`](grid/api/grid_multiselection_config.md) property is enabled. Without it, they move the active cell as the plain arrow keys do:
 
 <table>
     <tbody>
@@ -3312,15 +3529,14 @@ The combinations of the shortcut keys listed below do not work when the `selecti
 
 ### Shortcut keys for editing
 
-It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid.
+It is possible to use shortcut keys for editing a cell in Grid by setting the [`editable:true`](grid/api/grid_editable_config.md) property in the configuration object of Grid. No selection module is required: the editor opens in the active cell.
 
-~~~jsx {7}
+~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
     data: dataset,
-    selection: "complex",
     editable: true,
     keyNavigation: true // true - by default
 });
@@ -3334,11 +3550,19 @@ The list of the shortcut keys for editing is given below:
     <tbody>
         <tr>
             <td><kbd>Enter</kbd></td>
-            <td>opens the editor in the selected cell. If the editor is currently opened - closes the editor and saves changes</td>
+            <td>opens the editor in the active cell or toggles a boolean cell. If the editor is currently opened - closes the editor and saves changes</td>
+        </tr>
+        <tr>
+            <td><kbd>F2</kbd></td>
+            <td>opens the editor in the active cell (not for boolean columns)</td>
+        </tr>
+        <tr>
+            <td><kbd>Space</kbd></td>
+            <td>toggles the value of a boolean cell</td>
         </tr>
         <tr>
             <td><kbd>Escape</kbd></td>
-            <td>closes the editor of the selected cell without saving</td>
+            <td>closes the editor of the active cell without saving</td>
         </tr>
         <tr>
             <td><kbd>Delete</kbd></td>
@@ -3352,7 +3576,7 @@ The list of the shortcut keys for editing is given below:
 If you need to use the keyboard navigation for selecting ranges of cells via the user interface, you should enable the [`BlockSelection` module](grid/usage_blockselection.md) in the Grid configuration.
 
 :::note
-Keyboard navigation works in both the `"range"` and `"manual"` modes. In the `"manual"` mode, applying the selection (e.g., after `Enter`) requires handling via the events, such as [`beforeBlockSelectionApply`](grid/api/blockselection/beforeblockselectionapply_event.md) and [`afterBlockSelectionApply`](grid/api/blockselection/afterblockselectionapply_event.md).
+Keyboard navigation for ranges works in the `"range"` mode.
 :::
 
 The module supports keyboard navigation for selecting and managing ranges, similar to keyboard navigation used in Google Spreadsheets. The following shortcut keys and their combinations are available: 
