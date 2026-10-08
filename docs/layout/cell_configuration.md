@@ -104,7 +104,7 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-**Related sample**: [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
+**Related sample**: [Layout. Cell header with HTML template](https://snippet.dhtmlx.com/6xy6mrpq)
 
 ### A DHTMLX widget in a header
 
@@ -126,8 +126,8 @@ const layout = new dhx.Layout("layout_container", {
 ~~~
 
 **Related samples**:
-- [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
-- [Layout. Custom cell headers in a dashboard](https://snippet.dhtmlx.com/awwc1m4u?mode=wide)
+- [Layout. Cell header with widget](https://snippet.dhtmlx.com/j4ihnbch)
+- [Layout. Cell headers with widget and HTML template](https://snippet.dhtmlx.com/n0vvj5o3)
 
 ### Icon, image and height of a custom header
 
@@ -168,7 +168,7 @@ const layout = new dhx.Layout("layout_container", {
 
 The [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) call repaints the cell, so Layout calls the `header` callback again and renders the header with the current data as well.
 
-**Related sample**: [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
+**Related sample**: [Layout. Cell header with HTML template](https://snippet.dhtmlx.com/6xy6mrpq)
 
 ## Cell size
 
@@ -299,7 +299,7 @@ A [`collapsable`](layout/api/cell/layout_cell_collapsable_config.md) cell keeps 
 **Related samples**:
 - [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
 - [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
-- [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
+- [Layout. Cell header with widget](https://snippet.dhtmlx.com/j4ihnbch)
 
 ## Progress bar
 

@@ -107,7 +107,7 @@ series: [
         </tr>
         <tr>
             <td><b>color</b></td>
-            <td>(optional) the color of the series outline. Bar and X-Bar charts don't draw an outline: in these charts, <b>color</b> sets the color of bars if you don't specify <b>fill</b>, and the outline of the series marker in the legend. For Bar and X-Bar charts, you can also set it as a function: the chart calls it with a data item, and the function returns the color of the bar for that item. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/jlbn196p" target="_blank">Chart. Highlight the best month</a></td>
+            <td>(optional) the color of the series outline. Bar and X-Bar charts don't draw an outline: in these charts, <b>color</b> sets the color of bars if you don't specify <b>fill</b>, and the outline of the series marker in the legend. For Bar and X-Bar charts, you can also set it as a function: the chart calls it with a data item, and the function returns the color of the bar for that item. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/fbinubou" target="_blank">Chart. Dynamic colors. Highlight highest and lowest</a></td>
         </tr>
         <tr>
             <td><b>css</b></td>
@@ -184,7 +184,7 @@ const chart = new dhx.Chart("chart_container", {
 
 The property set to the position of the perpendicular scale, e.g. `scale: "top"` for a Bar series, throws a `TypeError` that specifies the type of the series and the positions it can be bound to.
 
-**Related sample**: [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
+**Related sample**: [Chart. Dual axis. Two line series](https://snippet.dhtmlx.com/6g8lka1v)
 
 **Related article**: [Value scale of a series](chart/configuration_properties.md#value-scale-of-a-series)
 
@@ -228,7 +228,7 @@ series: [
     <tbody>
         <tr>
             <td><b>fill</b></td>
-            <td>(optional) the color of the series filling in Hex format. For Bar and X-Bar charts, you can also set it as a function: the chart calls it with a data item, and the function returns the fill color of the bar for that item. Area, SplineArea and Radar charts accept only a string. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Samples: </b><a href="https://snippet.dhtmlx.com/q7rufn33" target="_blank">Chart. Color by value</a>, <a href="https://snippet.dhtmlx.com/nwwi5dh1" target="_blank">Chart. Gradient by value</a></td>
+            <td>(optional) the color of the series filling in Hex format. For Bar and X-Bar charts, you can also set it as a function: the chart calls it with a data item, and the function returns the fill color of the bar for that item. Area, SplineArea and Radar charts accept only a string. <a href="../../customization/#setting-bar-colors-dynamically">Read the details</a> <br/><br><b>Related Samples: </b><a href="https://snippet.dhtmlx.com/rj0zi16z" target="_blank">Chart. Dynamic colors. Conditional fill by value</a>, <a href="https://snippet.dhtmlx.com/4p88y2mg" target="_blank">Chart. Dynamic colors. Gradient fill</a></td>
         </tr>
         <tr>
             <td><b>alpha</b></td>
@@ -319,7 +319,7 @@ series: [
 ]
 ~~~
 
-**Related sample**: [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
+**Related sample**: [Chart. Grouped stacks (plan vs fact)](https://snippet.dhtmlx.com/8pu8uthc)
 
 **Related article**: [Stack groups](chart/configuration_properties.md#stack-groups)
 

@@ -904,7 +904,7 @@ grid.data.filter({
 });
 ~~~
 
-**Related sample:** [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+**Related sample:** [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
 
 - `counter` - (optional) defines the text rendered next to the group name in the column with grouped data, *true* by default
     - if set to *true*, Grid renders the current number of rows of the group in brackets, e.g. *(2)*
@@ -928,7 +928,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample:** [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+**Related sample:** [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
 
 - `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation rules and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
     - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
@@ -1223,7 +1223,7 @@ grid.data.filter({
 
 After the filtering above a group renders the number of rows that passed the filter, while `$totalCount` keeps the unfiltered number of rows of the group.
 
-**Related sample:** [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+**Related sample:** [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
 
 #### Counters of a group
 

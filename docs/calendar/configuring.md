@@ -46,7 +46,7 @@ Call the [](calendar/api/calendar_showdate_method.md) method to show the calenda
 
 You can add a toolbar with quick actions to the calendar via the [`controls`](calendar/api/calendar_controls_config.md) property. By default, the calendar does not render the toolbar.
 
-**Related sample**: [Calendar. Controls](https://snippet.dhtmlx.com/guakfjw0?mode=wide)
+**Related sample**: [Calendar. Controls configuration](https://snippet.dhtmlx.com/6s97hj24)
 
 ### Adding controls
 

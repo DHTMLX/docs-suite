@@ -337,7 +337,7 @@ const chart = new dhx.Chart("chart_container", {
 chart.data.parse(dataset);
 ~~~
 
-**Related sample**: [Chart. Stacked Bar and X-Bar charts with total values](https://snippet.dhtmlx.com/s0a5ctvq)
+**Related sample**: [Chart. Stacked bar chart. Show total](https://snippet.dhtmlx.com/t1j8t7pi)
 
 ## Area and SplineArea chart
 
@@ -472,7 +472,7 @@ const chart = new dhx.Chart("chart_container", {
 chart.data.parse(dataset);
 ~~~
 
-**Related sample**: [Chart. Donut chart with total value](https://snippet.dhtmlx.com/cufn64vo)
+**Related sample**: [Chart. Donut chart. Show total](https://snippet.dhtmlx.com/kx7zmnf9)
 
 ## Radar chart
 
@@ -990,7 +990,7 @@ const chart = new dhx.Chart("chart_container", {
 
 Each scale calculates its minimal and maximal values and its ticks by the series bound to it only, which keeps values of different magnitude readable in one chart.
 
-**Related sample**: [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
+**Related sample**: [Chart. Dual axis. Two line series](https://snippet.dhtmlx.com/6g8lka1v)
 
 ### Value scale of a series
 
@@ -1018,7 +1018,7 @@ const chart = new dhx.Chart("chart_container", {
 });
 ~~~
 
-**Related sample**: [Chart. Dual axis x-bar](https://snippet.dhtmlx.com/y1td91hl)
+**Related sample**: [Chart. Dual axis. Horizontal bars (X-Bar)](https://snippet.dhtmlx.com/gmetbkcl)
 
 #### Default and incorrect scale positions
 
@@ -1111,7 +1111,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ![Stacked bar chart with a ratio line on the second value scale in DHTMLX Suite](/img/chart/dual_axis_stacks.png)
 
-**Related sample**: [Chart. Dual axis](https://snippet.dhtmlx.com/n25kiv0q)
+**Related sample**: [Chart. Dual axis. Stacked bars and a spline](https://snippet.dhtmlx.com/bsinbn1t)
 
 The [`stacked`](chart/api/chart_series_config.md#stacked) property of a series defines the stack it belongs to. The accepted values of the property are:
 
@@ -1139,8 +1139,8 @@ The chart below stacks two series on the `"left"` scale and two more on the `"ri
 
 **Related samples:**
 
-- [Chart. Dual axis stacks](https://snippet.dhtmlx.com/s9kunqvd)
-- [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
+- [Chart. Dual axis. A stack on each axis](https://snippet.dhtmlx.com/e46fqamn)
+- [Chart. Grouped stacks (plan vs fact)](https://snippet.dhtmlx.com/8pu8uthc)
 
 ### Supported series types
 
@@ -1161,5 +1161,5 @@ You can mix the types listed above in one chart (which is the main purpose of th
 
 **Related samples:**
 
-- [Chart. Dual axis mixed series](https://snippet.dhtmlx.com/lzp4hcgb)
-- [Chart. Dual axis area](https://snippet.dhtmlx.com/hvkfz5aj)
+- [Chart. Dual axis. Grouped bars and a line](https://snippet.dhtmlx.com/alg54k2w)
+- [Chart. Dual axis. Area and spline](https://snippet.dhtmlx.com/jmdubo1x)

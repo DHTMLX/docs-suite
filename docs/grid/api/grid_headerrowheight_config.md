@@ -110,4 +110,4 @@ The per-level heights are carried over to the [export](grid/usage.md#exporting-d
 
 **Related samples**:
 - [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
-- [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
+- [Grid. Flexible header and footer row height](https://snippet.dhtmlx.com/bq7koy9z)

@@ -188,7 +188,7 @@ DataCollection matches a filtering rule against the data items only, so a filter
 
 A group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) has no filter to bring it back, so it leaves the collection for good, its summary row included, and [`getItem()`](data_collection/api/datacollection_getitem_method.md) returns *undefined* for the id of its header.
 
-**Related sample**: [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+**Related sample**: [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
 
 @changelog:
 - As of v9.4, DataCollection recalculates the counters and aggregated values of group headers after every change of the collection content

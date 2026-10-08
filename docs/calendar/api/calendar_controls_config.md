@@ -108,7 +108,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-**Related sample**: [Calendar. Controls](https://snippet.dhtmlx.com/guakfjw0?mode=wide)
+**Related sample**: [Calendar. Controls configuration](https://snippet.dhtmlx.com/6s97hj24)
 
 **Related article**: [Controls](calendar/configuring.md#controls)
 

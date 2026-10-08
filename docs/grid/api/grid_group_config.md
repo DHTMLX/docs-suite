@@ -105,7 +105,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related article**: [Grouping data](grid/usage.md#grouping-data)
 
-**Related sample**: [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+**Related sample**: [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
 
 @changelog:
 - The `counter` and `showEmptyGroups` properties are added in v9.4

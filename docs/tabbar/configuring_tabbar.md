@@ -142,7 +142,7 @@ The function returns an HTML string, and Tabbar inserts it into the DOM of the t
 
 Without the `tabTemplate` option, Tabbar renders each tab as plain text. The `tab` property of a tab is always a string, and Tabbar never interprets it as HTML, whether you use `tabTemplate` or not. When set, the user-defined `tabTemplate` function controls the rendering of all the tabs of Tabbar and is fully responsible for forming their markup.
 
-**Related sample**: [Tabbar. Tab template](https://snippet.dhtmlx.com/01e3bo4z)
+**Related sample**: [Tabbar. Tab with HTML template](https://snippet.dhtmlx.com/3jb49vcx)
 
 ## Autosize for tabs
 
