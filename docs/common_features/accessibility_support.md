@@ -77,7 +77,7 @@ A few details worth knowing:
 
 - a button reports its pressed state (`aria-pressed`) in both positions when the item is declared as a toggle, with `twoState: true`, or as a member of a set, with `group`. Inside a menu, such items are exposed as `menuitemcheckbox` / `menuitemradio` with `aria-checked`;
 - a menu is named after the text (or the tooltip) of the control that opens it;
-- a button built from custom HTML takes its accessible name from its `tooltip`, so give icon-only custom buttons a tooltip;
+- a button without text, such as an icon button or a button built from custom HTML, takes its accessible name from its `tooltip`, so give such buttons a tooltip;
 - the toolbar is not a navigation landmark.
 
 The accessible name of a Toolbar is set with the [`ariaLabel`](toolbar/api/toolbar_arialabel_config.md) configuration option. Set it whenever a page has more than one toolbar, so that users can tell them apart. Without it, the name falls back to the `aria_toolbar` locale string (`"Toolbar"`):
@@ -86,6 +86,15 @@ The accessible name of a Toolbar is set with the [`ariaLabel`](toolbar/api/toolb
 const formatting = new dhx.Toolbar("formatting", {
     ariaLabel: "Formatting",
     data: formattingItems
+});
+~~~
+
+A context menu has no control to take the name of its root menu from, so the root menu is named with the [`ariaLabel`](menu/api/menu_arialabel_config.md) configuration option of ContextMenu. Without it, the root menu has no accessible name:
+
+~~~jsx
+const cmenu = new dhx.ContextMenu(null, {
+    ariaLabel: "File actions",
+    data: menuItems
 });
 ~~~
 
@@ -113,6 +122,17 @@ The color palette is exposed as a list of options, one per swatch (a single colo
 - aria attributes: *label*, *labelledby*, *selected*.
 
 Each swatch is named by its color name, for example "dark green", rather than by its HEX value, and the selected swatch reports `aria-selected="true"`.
+
+### Combobox
+
+The input of a combo box is exposed with `role="combobox"`. Its accessible name is set with the [`ariaLabel`](combobox/api/combobox_arialabel_config.md) configuration option. Without it, the input is named *"Select value"* in the [`readOnly`](combobox/api/combobox_readonly_config.md) mode and *"Type or select value"* otherwise:
+
+~~~jsx
+const combo = new dhx.Combobox("combo_container", {
+    ariaLabel: "Country",
+    data: countries
+});
+~~~
 
 ### Message
 
@@ -156,13 +176,17 @@ Inside an open menu:
 | <kbd>Home</kbd> / <kbd>End</kbd> | Move to the first / last entry |
 | <kbd>→</kbd> | Open a submenu and move focus into it |
 | <kbd>←</kbd> | Go one level back: to the entry that opened the submenu, or to the control of the bar |
-| <kbd>Enter</kbd> / <kbd>Space</kbd> | Activate the entry, close the menu and return focus to the control that opened it |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | On an entry with a submenu, open the submenu and move focus into it. On any other entry, activate the entry, close the menu and return focus to the control that opened it |
 | <kbd>Esc</kbd> | Close the menu and return focus to the control that opened it |
 | <kbd>Tab</kbd> | Close the menu and leave the bar |
+
+<kbd>→</kbd>, <kbd>Enter</kbd> and <kbd>Space</kbd> move focus into a submenu also when the submenu is already open, for example, after it was opened with the pointer.
 
 The next screenshot shows two open levels of a Menu, *Format* and its *Align* submenu. Focus is on an entry of the submenu, which carries the dashed outline:
 
 ![Menu navigated with the keyboard](/img/menu/menu_keyboard_navigation.png)
+
+A context menu uses the same keys. No control of a bar opens it, so focus moves to its first entry when it opens, whether from the keyboard or with the pointer. When the context menu closes, focus returns to the element that held it before the context menu opened.
 
 ### Colorpicker
 

@@ -511,6 +511,7 @@ module.exports = {
                     id: "combobox/api/overview/properties_overview",
                   },*/
                   items: [
+                    "combobox/api/combobox_arialabel_config",
                     "combobox/api/combobox_css_config",
                     "combobox/api/combobox_data_config",
                     "combobox/api/combobox_disabled_config",
@@ -3437,6 +3438,7 @@ module.exports = {
                     id: "menu/api/overview/properties_overview",
                   },*/
                   items: [
+                    "menu/api/menu_arialabel_config",
                     "menu/api/menu_css_config",
                     "menu/api/menu_data_config",
                     "menu/api/menu_menucss_config",
