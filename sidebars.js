@@ -4111,6 +4111,7 @@ module.exports = {
                         "tabbar/api/tabbar_destructor_method",
                         "tabbar/api/tabbar_disabletab_method",
                         "tabbar/api/tabbar_enabletab_method",
+                        "tabbar/api/tabbar_foreach_method",
                         "tabbar/api/tabbar_getactive_method",
                         "tabbar/api/tabbar_getcell_method",
                         "tabbar/api/tabbar_getid_method",
