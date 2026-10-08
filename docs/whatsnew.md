@@ -126,38 +126,38 @@ For additional information, refer to the [Accessibility support](common_features
 
 #### Calendar
 
-- [Calendar. Controls](https://snippet.dhtmlx.com/guakfjw0?mode=wide)
+- [Calendar. Controls configuration](https://snippet.dhtmlx.com/6s97hj24)
 
 #### Chart
 
-- [Chart. Dual axis](https://snippet.dhtmlx.com/n25kiv0q)
-- [Chart. Dual axis lines](https://snippet.dhtmlx.com/53xee7cq)
-- [Chart. Dual axis mixed series](https://snippet.dhtmlx.com/lzp4hcgb)
-- [Chart. Dual axis area](https://snippet.dhtmlx.com/hvkfz5aj)
-- [Chart. Dual axis x-bar](https://snippet.dhtmlx.com/y1td91hl)
-- [Chart. Dual axis stacks](https://snippet.dhtmlx.com/s9kunqvd)
-- [Chart. Independent stacks](https://snippet.dhtmlx.com/vcr5hf17)
-- [Chart. Stacked Bar and X-Bar charts with total values](https://snippet.dhtmlx.com/s0a5ctvq)
-- [Chart. Donut chart with total value](https://snippet.dhtmlx.com/cufn64vo)
-- [Chart. Color by value](https://snippet.dhtmlx.com/q7rufn33)
-- [Chart. Highlight the best month](https://snippet.dhtmlx.com/jlbn196p)
-- [Chart. Gradient by value](https://snippet.dhtmlx.com/nwwi5dh1)
+- [Chart. Dual axis. Stacked bars and a spline](https://snippet.dhtmlx.com/bsinbn1t)
+- [Chart. Dual axis. Two line series](https://snippet.dhtmlx.com/6g8lka1v)
+- [Chart. Dual axis. Grouped bars and a line](https://snippet.dhtmlx.com/alg54k2w)
+- [Chart. Dual axis. Area and spline](https://snippet.dhtmlx.com/jmdubo1x)
+- [Chart. Dual axis. Horizontal bars (X-Bar)](https://snippet.dhtmlx.com/gmetbkcl)
+- [Chart. Dual axis. A stack on each axis](https://snippet.dhtmlx.com/e46fqamn)
+- [Chart. Grouped stacks (plan vs fact)](https://snippet.dhtmlx.com/8pu8uthc)
+- [Chart. Stacked bar chart. Show total](https://snippet.dhtmlx.com/t1j8t7pi)
+- [Chart. Donut chart. Show total](https://snippet.dhtmlx.com/kx7zmnf9)
+- [Chart. Dynamic colors. Conditional fill by value](https://snippet.dhtmlx.com/rj0zi16z)
+- [Chart. Dynamic colors. Highlight highest and lowest](https://snippet.dhtmlx.com/fbinubou)
+- [Chart. Dynamic colors. Gradient fill](https://snippet.dhtmlx.com/4p88y2mg)
 
 #### Grid
 
-- [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
-- [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
-- [Grid. Grouping counters and empty groups](https://snippet.dhtmlx.com/f4a5voun?mode=wide)
+- [Grid. Flexible header and footer row height](https://snippet.dhtmlx.com/bq7koy9z)
+- [Grid. Custom options for header filters](https://snippet.dhtmlx.com/pcrjqux0)
+- [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
 
 #### Layout
 
-- [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
-- [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
-- [Layout. Custom cell headers in a dashboard](https://snippet.dhtmlx.com/awwc1m4u?mode=wide)
+- [Layout. Cell header with HTML template](https://snippet.dhtmlx.com/6xy6mrpq)
+- [Layout. Cell header with widget](https://snippet.dhtmlx.com/j4ihnbch)
+- [Layout. Cell headers with widget and HTML template](https://snippet.dhtmlx.com/n0vvj5o3)
 
 #### Tabbar
 
-- [Tabbar. Tab template](https://snippet.dhtmlx.com/01e3bo4z)
+- [Tabbar. Tab with HTML template](https://snippet.dhtmlx.com/3jb49vcx)
 
 ## Version 9.3.12
 

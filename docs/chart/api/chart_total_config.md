@@ -114,8 +114,8 @@ chart.data.parse(dataset);
 ~~~
 
 **Related samples**:
-- [Chart. Stacked Bar and X-Bar charts with total values](https://snippet.dhtmlx.com/s0a5ctvq)
-- [Chart. Donut chart with total value](https://snippet.dhtmlx.com/cufn64vo)
+- [Chart. Stacked bar chart. Show total](https://snippet.dhtmlx.com/t1j8t7pi)
+- [Chart. Donut chart. Show total](https://snippet.dhtmlx.com/kx7zmnf9)
 
 **Related articles**:
 - [Total values of stacked bars](chart/configuration_properties.md#total-values-of-stacked-bars)

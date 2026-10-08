@@ -83,9 +83,9 @@ A *header with custom content* has the following specifics:
 
 **Related samples**:
 - [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
-- [Layout. HTML content in a cell header](https://snippet.dhtmlx.com/lromzzkx)
-- [Layout. Toolbar in a cell header](https://snippet.dhtmlx.com/iyci7xt2?mode=wide)
-- [Layout. Custom cell headers in a dashboard](https://snippet.dhtmlx.com/awwc1m4u?mode=wide)
+- [Layout. Cell header with HTML template](https://snippet.dhtmlx.com/6xy6mrpq)
+- [Layout. Cell header with widget](https://snippet.dhtmlx.com/j4ihnbch)
+- [Layout. Cell headers with widget and HTML template](https://snippet.dhtmlx.com/n0vvj5o3)
 
 **Related API**:
 - [`attach()`](layout/api/cell/layout_cell_attach_method.md)

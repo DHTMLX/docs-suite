@@ -1646,7 +1646,7 @@ The function runs whenever Grid recalculates the filter lists:
 
 A plain [`paint()`](grid/api/grid_paint_method.md) call does not re-evaluate it.
 
-**Related sample**: [Grid. Custom options of the header filter](https://snippet.dhtmlx.com/pcrjqux0)
+**Related sample**: [Grid. Custom options for header filters](https://snippet.dhtmlx.com/pcrjqux0)
 
 #### Behavior notes
 
@@ -1768,7 +1768,7 @@ The image below shows a Grid whose header and footer are sized level by level. I
 
 ![Grid with a header and a footer of individual heights, where the auto levels wrap the column descriptions, in DHTMLX Suite](/img/grid/header_footer_level_height.png)
 
-**Related sample**: [Grid. Individual height of the header/footer rows](https://snippet.dhtmlx.com/1hf173dk)
+**Related sample**: [Grid. Flexible header and footer row height](https://snippet.dhtmlx.com/bq7koy9z)
 
 :::tip pro version only
 Measuring the content is available in the PRO version of the DHTMLX Grid (or DHTMLX Suite) package only, exactly like the [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties.
