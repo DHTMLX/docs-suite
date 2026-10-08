@@ -208,7 +208,7 @@ Details on how the chart applies the colors:
 
 - The chart calls the `fill` or `color` function for each bar. When the data changes, the chart calls the function again and repaints the bars.
 - The legend marker takes the color that the function returns for the first data item, so it doesn't reflect the other bar colors.
-- In a [stacked chart](chart/api/chart_series_config.md#options-specific-for-bar-charts), each series applies its own `fill` and `color`, so one series can use a function while another uses a fixed color.
+- In a [stacked chart](chart/api/chart_series_config.md#stacked), each series applies its own `fill` and `color`, so one series can use a function while another uses a fixed color.
 - The chart calls the [`gradient`](#adding-color-gradient-for-bars) function once for each distinct color that `fill` returns, so bars that share a color also share a gradient (see the [Chart. Dynamic colors. Gradient fill](https://snippet.dhtmlx.com/4p88y2mg) sample).
 
 :::note

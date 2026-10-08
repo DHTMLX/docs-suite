@@ -1119,7 +1119,7 @@ The [`stacked`](chart/api/chart_series_config.md#stacked) property of a series d
 - `true` - the value scale defines the stack, so all the series with `stacked: true` bound to the same scale form one stack. For a chart with a single value scale, this is a plain stacked chart
 - `string` - the explicit name of the group, which allows building two or more independent stacks, including on one scale
 
-The chart places the stacks of one direction side by side, as usual bar series, and calculates the `total` property separately for each group.
+The chart places the stacks of one direction side by side, as usual bar series, and calculates the [`total`](chart/api/chart_total_config.md) property separately for each group.
 
 ~~~jsx {4-5,7-8}
 series: [
