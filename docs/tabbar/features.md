@@ -67,7 +67,7 @@ In this section you can learn how to customize a Tabbar and configure the size o
 
 ## How to work with tabs
 
-In this section you will learn how to add or remove, enable or disable a tab, how to set and get the active tab.
+In this section you will learn how to add or remove, enable or disable a tab, how to set and get the active tab, and how to iterate over the cells of Tabbar.
 
 | Topic                                                                        | Description                                                                                               |
 | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -76,6 +76,7 @@ In this section you will learn how to add or remove, enable or disable a tab, ho
 | [Is disabled tab](tabbar/work_with_tabbar.md#checking-if-a-tab-is-disabled)        | Learn how to check whether a tab is disabled on the page ([Example](https://snippet.dhtmlx.com/86er2y7m)) |
 | [Setting the active tab](tabbar/work_with_tabbar.md#settinggetting-the-active-tab) | Learn how to set the active tab ([Example](https://snippet.dhtmlx.com/u9ryz38f))                          |
 | [Getting the active tab](tabbar/work_with_tabbar.md#settinggetting-the-active-tab) | Learn how get the currently active tab ([Example](https://snippet.dhtmlx.com/xpvkcwiu))                   |
+| [Iterating over cells](tabbar/work_with_tabbar.md#iterating-over-cells)            | Learn how to iterate over the cells of Tabbar                                                             |
 
 ## How to work with Tabbar events
 
