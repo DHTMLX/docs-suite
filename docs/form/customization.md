@@ -8,15 +8,15 @@ description: You can explore the customization of Form in the documentation of t
 
 ## Styling Form
 
-There is a possibility to make changes in the look and feel of a form. 
+You can change the appearance of a Form.
 
 ![Form with a custom teal color theme on input fields and a Send button in DHTMLX Suite](/img/form/custom_style.png)
 
 **Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet, and include that file on the page:
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](form/api/form_css_config.md) property in the Form configuration:
+- Specify the name of the class you created (or several names separated by spaces) as the value of the [](form/api/form_css_config.md) property in the Form configuration:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -78,7 +78,7 @@ For example:
 
 **Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 
-You can modify styling of Form controls as well using the **css** option inside the object of a related control.
+You can also style individual Form controls with the `css` option in the control configuration object.
 
 ~~~html
 <style>

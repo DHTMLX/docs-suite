@@ -6,7 +6,7 @@ description: You can explore the Checkbox of Form in the documentation of the DH
 
 # Checkbox
 
-A control that allows displaying the specified value or change it to the opposite one.
+A control that displays the specified value and allows you to switch it to the opposite one.
 
 ![Checkbox form control shown in unchecked and checked states in DHTMLX Suite](/img/form/form_checkbox.png)
 
@@ -16,7 +16,7 @@ A control that allows displaying the specified value or change it to the opposit
 
 ## Adding Checkbox
 
-You can easily add a Checkbox control during initialization of a form:
+You can add a Checkbox control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -34,22 +34,22 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Checkbox control](form/api/checkbox/api_checkbox_properties.md).
+View [the full list of Checkbox configuration properties](form/api/checkbox/api_checkbox_properties.md).
 
 ## Working with Checkbox
 
-You can manipulate a Checkbox control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Checkbox control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
 ~~~js
-const value = form.getItem("checkbox").getValue();
+const value = form.getItem("agree").getValue();
 ~~~
 
 ### Methods
 
-Check [the full list of methods of the Checkbox control](form/api/api_overview.md#checkbox-methods).
+Check [the full list of Checkbox methods](form/api/api_overview.md#checkbox-methods).
 
 ### Events
 
-Check [the full list of events of the Checkbox control](form/api/api_overview.md#checkbox-events).
+Check [the full list of Checkbox events](form/api/api_overview.md#checkbox-events).
