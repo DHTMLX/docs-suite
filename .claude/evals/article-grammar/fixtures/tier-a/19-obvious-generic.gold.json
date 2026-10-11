@@ -1,0 +1,161 @@
+{
+  "fixture": "tier-a/19-obvious-generic.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/usage_sorting.md",
+  "note": "Фикстура сфокусирована на двух inline-проверках из SKILL.md, у которых нет отдельного файла правил: «Obvious concepts» (объяснение того, что разработчик и так знает) и «Generic descriptions» (обобщение сценариев использования вместо описания того, что делает пример). Негативы проверяют, что скилл не трогает содержимое ~~~-забора, SEO-шаблон во frontmatter и определение термина, специфичного для библиотеки. Аудит: (1) obvgen-neg-03 переведён из must_not_flag в may_flag — предложение корректно как описание сниппета, но содержит независимое нарушение «enables sorting» (verb + ING), из-за чего законная находка по герундию механически считалась бы жёстким ложным срабатыванием; (2) добавлены may_flag на непосеянные нарушения (три заголовка-герундия и неопределённое «any column»), чтобы верные находки скилла не штрафовались; (3) расширены alt_categories там, где та же находка законно попадает в «Long sentences» и «Pronouns».",
+  "word_count_prose": 142,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [15, 23] },
+    { "kind": "code_fence", "lines": [31, 33] }
+  ],
+  "expected_total_range": [4, 9],
+  "records": [
+    {
+      "id": "obvgen-01",
+      "polarity": "must_find",
+      "category": "obvious-concepts",
+      "alt_categories": ["obvious-concept", "generic-descriptions", "wordiness", "long-sentences"],
+      "span": "Ascending order means that the smallest value comes first and the largest value comes last.",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Прямое объяснение общеизвестного понятия: любой разработчик знает, что такое сортировка по возрастанию. Предложение не добавляет ничего о поведении Matrix и должно быть удалено целиком. Аудит: в alt_categories добавлен «long-sentences» — в предложении три глагола (means / comes / comes), и репорт под этим заголовком остаётся той же самой находкой.",
+      "source": "SKILL.md#obvious-concepts"
+    },
+    {
+      "id": "obvgen-02",
+      "polarity": "must_find",
+      "category": "obvious-concepts",
+      "alt_categories": ["obvious-concept", "wordiness", "long-sentences"],
+      "span": "A function is a named block of code that you call with arguments and that returns a value.",
+      "line": 29,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Определение функции в документации JavaScript-виджета — эталонный пример «obvious concept». Аудитория страницы уже пишет функции; строка занимает место, которое должно объяснять сигнатуру компаратора. Аудит: добавлен alt «long-sentences» (три глагола и две придаточные подряд).",
+      "source": "SKILL.md#obvious-concepts"
+    },
+    {
+      "id": "obvgen-03",
+      "polarity": "must_find",
+      "category": "generic-descriptions",
+      "alt_categories": ["generic-description", "wordiness", "overused-words", "long-sentences"],
+      "span": "This pattern fits any project, from a small internal admin page to a large enterprise reporting portal, and it adapts to whatever data your team stores.",
+      "line": 35,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Обобщение сценариев использования вместо описания примера. После сниппета с компаратором читателю нужно знать, что именно делает `sortBy()` в этом вызове (сортировка по длине строки статуса), а не перечень воображаемых проектов. Аудит: добавлен alt «long-sentences» — две независимые клаузы («fits» и «adapts»), соединённые «and», подпадают под inline-проверку SKILL.md#long-sentences.",
+      "source": "SKILL.md#generic-descriptions"
+    },
+    {
+      "id": "obvgen-04",
+      "polarity": "must_find",
+      "category": "generic-descriptions",
+      "alt_categories": ["generic-description", "wordiness", "pronouns"],
+      "span": "Sorting works for every use case, so adapt it to your own workflow.",
+      "line": 41,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Завершающая фраза-обобщение без фактического содержания: не называет ни одного ограничения или настройки. Правило прямо говорит, что пользователи адаптируют пример сами и такие абзацы нужно убирать. Аудит: добавлен alt «pronouns» — «adapt it» стоит после «use case», и репорт по неясному референту «it» указывает на тот же спан.",
+      "source": "SKILL.md#generic-descriptions"
+    },
+    {
+      "id": "obvgen-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "obvious-concepts",
+      "alt_categories": ["obvious-concept", "generic-descriptions"],
+      "span": "a header is the cell at the top of a column, and a user can click it",
+      "line": 19,
+      "occurrence": 1,
+      "rationale": "Главная приманка страницы: комментарий внутри ~~~js-забора объясняет очевидное понятие ровно так же, как obvgen-01 и obvgen-02. Но содержимое код-сниппетов не ревьюится — находка здесь попадает в hard_gate findings_inside_code_fence. Аудит: строка 19 подтверждена внутри диапазона code_fence [15, 23], спан присутствует в фикстуре дословно.",
+      "source": "SKILL.md#obvious-concepts"
+    },
+    {
+      "id": "obvgen-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "generic-descriptions",
+      "alt_categories": ["generic-description", "overused-words", "wordiness"],
+      "span": "download a free 30-day evaluation version of Acme Suite",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Обобщённая маркетинговая формулировка, не описывающая ни одного примера, — то есть внешне ровно то, что ловит «Generic descriptions». Но это SEO-шаблон description, идентичный во всех 1891 файлах корпуса, и он не входит в область ревью прозы. Аудит: строка 4 внутри диапазона frontmatter [1, 5]; «30-day» уже в правильной форме единственного числа (rules/possessives.md), отдельного нарушения в спане нет.",
+      "source": "SKILL.md#generic-descriptions"
+    },
+    {
+      "id": "obvgen-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "obvious-concepts",
+      "alt_categories": ["obvious-concept"],
+      "span": "a span is a rectangle of merged cells that takes the id of its top-left cell",
+      "line": 39,
+      "occurrence": 1,
+      "rationale": "Near-miss к obvgen-01/02: синтаксически это тоже определение вида «X is a Y». Но «span» — термин, специфичный для Matrix, а не общеизвестное понятие; без этого определения читатель не поймёт следующее предложение о значении, которое получает компаратор. Правило запрещает объяснять только то, что разработчик уже знает. Аудит: хвост «takes the id of its top-left cell» проверен отдельно — `id` без бэктиков формально подпадает под rules/api-formatting.md#what-to-flag (в заборе на строке 18 `id` — именно ключ конфигурации), но «the id of …» — устойчивая идиома прозы корпуса (docs/sidebar/title.md:30, docs/migration.md:685, docs/sidebar/work_with_sidebar.md:124), где имя свойства не подразумевается. Полярность и исходный спан сохранены сознательно: это единственная оставшаяся приманка «корректная проза», и она проверяет целевую inline-проверку. Остаточный риск: скилл цитирует предложениями целиком, поэтому находка по api-formatting на строке 39 станет жёстким ложным срабатыванием. Если прогон её покажет, запись нужно переводить в may_flag с category «api-formatting» — сдвинуть спан не поможет, ничьи в score.mjs разрешаются в пользу первой записи.",
+      "source": "SKILL.md#obvious-concepts"
+    },
+    {
+      "id": "obvgen-neg-03",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["ING words (gerunds)", "Gerunds"],
+      "span": "The snippet above enables sorting for the **Status** column.",
+      "line": 25,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Аудит изменил полярность: было must_not_flag (приманка «корректная проза» для Generic descriptions). Как описание сниппета предложение эталонно — оно называет, что делает пример, и конкретную колонку, поэтому репорт под «Generic descriptions» здесь был бы ложным. Но в спане есть независимое законное нарушение: «enables sorting» — конструкция verb + ING, которую rules/gerunds.md#verb--ing требует переписать («enable sorting report data» → «sort report data»); тождественный шаблон «supports displaying a custom footer» размечен как must_find в 02-gerunds.gold.json, а baseline-прогон (runs/baseline-tier-a) показывает, что скилл ловит его и цитирует предложение целиком. При must_not_flag такая законная находка механически превращалась бы в жёсткое ложное срабатывание (score.mjs: matched + must_not_flag → hard_fp, категория не проверяется). may_flag — единственная честная полярность для спана, корректного в одной категории и нарушающего в другой: находка не требуется и не штрафуется. Ценой этого приманка на generic-descriptions в строке 25 больше не работает; чтобы вернуть её, нужно переписать саму фикстуру («The snippet above makes the **Status** column sortable.»), а правка фикстуры вне полномочий аудита.",
+      "source": "rules/gerunds.md#verb--ing"
+    },
+    {
+      "id": "obvgen-may-01",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["ING words (gerunds)", "Gerunds"],
+      "span": "# Sorting columns",
+      "line": 7,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Заголовок H1 построен на герундии, тогда как rules/gerunds.md#gerunds-in-titles требует глагольную форму («Data Editing» → «Edit Data»), то есть «Sort columns». may_flag: примеры правила — герундий-существительное, а не герундий с прямым дополнением, поэтому находка законна, но не обязательна. Спан не пересекается с другими записями.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "obvgen-may-02",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["ING words (gerunds)", "Gerunds"],
+      "span": "## Enabling sorting",
+      "line": 11,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Тот же дефект, что и в obvgen-may-01, вдвойне: и герундий в заголовке (rules/gerunds.md#gerunds-in-titles), и связка verb + ING внутри («Enable sorting» → «Make a column sortable»). Спан не пересекается с записями на строке 9 (разница строк больше LINE_TOLERANCE).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "obvgen-may-03",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": ["ING words (gerunds)", "Gerunds"],
+      "span": "## Sorting spans",
+      "line": 37,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Третий заголовок-герундий статьи, ожидаемая форма — «Sort spans». Общая подстрока с obvgen-neg-04 («span») даёт перекрытие 0.27 < 0.6, ничьи при сопоставлении не возникает.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "obvgen-may-04",
+      "polarity": "may_flag",
+      "category": "pronouns",
+      "alt_categories": ["Pronouns", "vague-words"],
+      "span": "by any column that carries the `sortable` flag",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Непосеянное нарушение (найдено аудитом). Неопределённое местоимение «any»: rules/pronouns.md#indefinite-pronouns-any-some-such-something требует заменить его определённым существительным или убрать («by a column that carries the `sortable` flag»). may_flag, потому что «any» здесь несёт реальный смысл «любая из колонок с флагом», и правило приводит только пример со списком элементов. Спан не пересекается с obvgen-01: общая подстрока « that » даёт 0.14 < 0.6, а находка по целому первому предложению строки 9 матчится только с этой записью.",
+      "source": "rules/pronouns.md#indefinite-pronouns-any-some-such-something"
+    }
+  ]
+}

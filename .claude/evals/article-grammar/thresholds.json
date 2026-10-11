@@ -1,0 +1,152 @@
+{
+  "_comment": "Единственный источник истины по порогам. Тип gate = провал сьюты, hard_gate = провал независимо от прочих цифр, warn = отмечается в отчёте.",
+  "gates": [
+    {
+      "name": "tier_a_recall_micro",
+      "op": ">=",
+      "value": 0.8,
+      "type": "gate"
+    },
+    {
+      "name": "tier_a_recall_min_category",
+      "op": ">=",
+      "value": 0.6,
+      "type": "gate"
+    },
+    {
+      "name": "findings_inside_code_fence",
+      "op": "==",
+      "value": 0,
+      "type": "hard_gate"
+    },
+    {
+      "name": "fixture_31_total_findings",
+      "op": "==",
+      "value": 0,
+      "type": "hard_gate"
+    },
+    {
+      "name": "unlocatable_rate",
+      "op": "<=",
+      "value": 0.02,
+      "type": "hard_gate"
+    },
+    {
+      "name": "tier_b_hard_fp_total",
+      "op": "<=",
+      "value": 1,
+      "type": "gate"
+    },
+    {
+      "name": "precision_strict",
+      "op": ">=",
+      "value": 0.75,
+      "type": "gate"
+    },
+    {
+      "name": "category_accuracy",
+      "op": ">=",
+      "value": 0.85,
+      "type": "gate"
+    },
+    {
+      "name": "duplicate_rate",
+      "op": "<=",
+      "value": 0.1,
+      "type": "gate"
+    },
+    {
+      "name": "volume_tier_c_per_1000w",
+      "op": "<=",
+      "value": 25,
+      "type": "gate"
+    },
+    {
+      "name": "volume_max_per_fixture",
+      "op": "<=",
+      "value": 40,
+      "type": "gate"
+    },
+    {
+      "name": "behavioral_B1",
+      "op": "==",
+      "value": "pass",
+      "type": "hard_gate"
+    },
+    {
+      "name": "behavioral_B2",
+      "op": "==",
+      "value": "pass",
+      "type": "hard_gate"
+    },
+    {
+      "name": "format_conformance",
+      "op": ">=",
+      "value": 0.95,
+      "type": "gate"
+    },
+    {
+      "name": "severity_selfcons",
+      "op": ">=",
+      "value": 0.7,
+      "type": "warn"
+    },
+    {
+      "name": "cross_cat_dupe",
+      "op": "<=",
+      "value": 0.15,
+      "type": "warn"
+    },
+    {
+      "name": "stability_jaccard_gold",
+      "op": ">=",
+      "value": 0.6,
+      "type": "warn"
+    },
+    {
+      "name": "rule_files_loaded_on_nonprose",
+      "op": "==",
+      "value": 0,
+      "type": "gate",
+      "_comment": "на странице без прозы правила не читаются вовсе"
+    },
+    {
+      "name": "prose_scan_executed",
+      "op": "==",
+      "value": true,
+      "type": "gate",
+      "_comment": "скилл обязан вызвать prose-scan.sh — иначе область проверки не задана"
+    }
+  ],
+  "matching": {
+    "min_overlap_ratio": 0.6,
+    "line_tolerance": 1,
+    "normalize": [
+      "collapse_whitespace",
+      "strip_emphasis",
+      "strip_backticks",
+      "lowercase",
+      "trim_edge_punctuation"
+    ]
+  },
+  "stability": {
+    "reps": 5,
+    "fixtures": [
+      "tier-a/01-passive-voice.md",
+      "tier-b/31-api-reference-page.md",
+      "tier-c/41-guide-overlap.md",
+      "tier-c/43-long-form.md"
+    ],
+    "core_min_runs": 4,
+    "flaky_range": [
+      2,
+      3
+    ]
+  },
+  "corpus_run": {
+    "sample_size": 30,
+    "max_findings_verified_per_article": 12,
+    "refuters_per_finding": 3,
+    "refute_majority": 2
+  }
+}

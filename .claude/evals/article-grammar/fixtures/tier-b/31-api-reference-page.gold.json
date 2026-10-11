@@ -1,0 +1,104 @@
+{
+  "fixture": "tier-b/31-api-reference-page.md",
+  "tier": "B",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/api/grid_addspan_method.md",
+  "note": "Форму этой страницы имеют ~1600 из 1891 файлов корпуса. Прозы здесь нет вообще: всё содержимое — frontmatter, @-макросы и comment-макросы. Любая находка означает, что скилл проверяет не-прозу.",
+  "word_count_prose": 0,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "macro", "lines": [9, 9], "macro": "@short:" },
+    { "kind": "macro", "lines": [11, 11], "macro": "@signature:" },
+    { "kind": "macro", "lines": [13, 20], "macro": "@params:" },
+    { "kind": "macro", "lines": [22, 28], "macro": "@example:" },
+    { "kind": "macro", "lines": [30, 30], "macro": "@descr:" },
+    { "kind": "comment_macro", "lines": [32, 34] }
+  ],
+  "expected_total_range": [0, 1],
+  "records": [
+    {
+      "id": "api-neg-01",
+      "polarity": "may_flag",
+      "trap": "macro",
+      "category": "articles",
+      "alt_categories": ["passive-voice", "weak-verbs", "punctuation"],
+      "span": "adds a rows/cols region",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Двойственный случай, выявленный прогоном B0. Фрагмент без подлежащего в @short: — это формат, а не ошибка (weak-verbs.md допускает такой стиль в summary-полях). Но «a rows/cols» действительно рассогласовано по числу, и это дословная формулировка из реального корпуса (docs/grid/api/grid_addspan_method.md). Поэтому may_flag: находка не штрафуется как ложное срабатывание, но и не требуется."
+    },
+    {
+      "id": "api-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "punctuation",
+      "span": "mandatory, the id of a row",
+      "line": 15,
+      "occurrence": 1,
+      "rationale": "Пункты @params: генерируются по шаблону. Правила punctuation.md о капитализации и точках в списках к ним не применяются."
+    },
+    {
+      "id": "api-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "articles",
+      "span": "optional, the number of rows in a region",
+      "line": 17,
+      "occurrence": 1,
+      "rationale": "Конструкция «the X of Y» разрешена articles.md; плюс это внутри @params:."
+    },
+    {
+      "id": "api-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "tenses",
+      "alt_categories": ["passive-voice"],
+      "span": "the name of the CSS class that will be applied to a region",
+      "line": 20,
+      "occurrence": 1,
+      "rationale": "Будущее время плюс пассив — самая вероятная приманка на этой странице. Но это @params:, а не проза, и формулировка одинакова во всех API-страницах корпуса."
+    },
+    {
+      "id": "api-neg-05",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "inversion",
+      "alt_categories": ["overused-words", "wordiness"],
+      "span": "You can explore the addRegion method",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон, идентичный во всех 1891 файлах корпуса. Правка здесь бессмысленна и не входит в область ревью статьи."
+    },
+    {
+      "id": "api-neg-06",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "possessives",
+      "alt_categories": ["abbreviations"],
+      "span": "a free 30-day evaluation version",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Тот же SEO-шаблон. Форма «30-day» уже соответствует possessives.md, флагать нечего."
+    },
+    {
+      "id": "api-neg-07",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "api-formatting",
+      "span": "regionObj: object",
+      "line": 14,
+      "occurrence": 1,
+      "rationale": "Внутри @params: имя уже в бэктиках и записано в канонической форме сигнатуры."
+    },
+    {
+      "id": "api-neg-08",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "weak-verbs",
+      "span": "The object contains the following properties",
+      "line": 14,
+      "occurrence": 1,
+      "rationale": "«contains» — именно тот глагол, который weak-verbs.md рекомендует вместо «has». Флагать его было бы прямым противоречием собственному правилу."
+    }
+  ]
+}
