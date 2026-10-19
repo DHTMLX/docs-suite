@@ -1050,7 +1050,7 @@ series: [
 
 The order of the positions in the array does not matter, as the direction of each position defines its role. The array has to name exactly one value scale of the series, and the remaining position becomes the argument scale.
 
-As the argument scale is resolved automatically, the `scale` property is enough in most cases. If a series has both properties, `scale` takes priority and the chart ignores `scales`.
+As the argument scale is resolved automatically, the `scale` property is enough in most cases. If a series has both properties, `scales` takes priority and the chart ignores `scale`.
 
 ### Grid of the second scale
 

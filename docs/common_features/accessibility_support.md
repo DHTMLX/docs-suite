@@ -70,7 +70,7 @@ Role presentation and aria-hidden are used to hide redundant markup from the acc
 
 These widgets are built on the same navigation bar and share one accessibility model. All the **roles** and **attributes** are enabled by default. You can find the following **roles** and **attributes** in the DOM:
 
-- role: *toolbar* (Toolbar, Ribbon, and Sidebar with the vertical orientation), *menubar* (Menu), *menu*, *menuitem*, *menuitemcheckbox*, *menuitemradio*, *button*, *combobox*
+- role: *toolbar* (Toolbar, Ribbon, and Sidebar with the vertical orientation), *menubar* (Menu), *menu* (the dropdowns and submenus of all four widgets, and the root of a context menu), *menuitem*, *menuitemcheckbox*, *menuitemradio*, *button*, *combobox*
 - aria attributes: *label*, *orientation*, *haspopup*, *expanded*, *disabled*, *pressed*, *checked*.
 
 A few details worth knowing:
@@ -88,6 +88,8 @@ const formatting = new dhx.Toolbar("formatting", {
     data: formattingItems
 });
 ~~~
+
+Menu, Sidebar and Ribbon are named in the same way, with the [`ariaLabel`](menu/api/menu_arialabel_config.md) option of Menu, the [`ariaLabel`](sidebar/api/sidebar_arialabel_config.md) option of Sidebar and the [`ariaLabel`](ribbon/api/ribbon_arialabel_config.md) option of Ribbon. These widgets have no locale fallback, so without the option the bar has no accessible name.
 
 A context menu has no control to take the name of its root menu from, so the root menu is named with the [`ariaLabel`](menu/api/menu_arialabel_config.md) configuration option of ContextMenu. Without it, the root menu has no accessible name:
 
