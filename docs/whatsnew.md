@@ -126,6 +126,7 @@ For additional information, refer to the [Accessibility support](common_features
 - Grid. Fixed the `avg`, `min` and `max` summaries of a grid without rows being calculated as `NaN`, `Infinity` and `-Infinity` instead of `null`
 - List/DataView. Fixed the keyboard focus and the selection of an item being lost after the id of the item was changed via `changeId()`
 - List. Fixed the keyboard focus outline of the list and its items not being displayed
+- Message. Fixed the alert being declared with the `alert` role instead of the `alertdialog` one, and an alert without a header having no accessible name
 - Tabbar. Fixed the back scroll arrow getting stuck in a horizontal or vertical tab bar with many tabs of different sizes, which made it impossible to scroll back to the first tabs
 - Tabbar. Fixed the width or height of the tab bar header collapsing when the [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) or [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) property was used
 - Tabbar. Fixed a script error in the top and bottom modes when a tab had no `tab` property

@@ -138,7 +138,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 ### Message
 
-The buttons of alert and confirmation dialogs take their accessible names from the `message` locale: `aria_confirm`, `aria_reject` and `aria_apply`.
+The buttons of alert and confirmation dialogs take their accessible names from the `message` locale: `aria_confirm`, `aria_reject` and `aria_apply`. An alert without a header is named by the `aria_alert` key (`"message"`).
 
 ## Keyboard navigation
 
