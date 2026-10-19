@@ -204,7 +204,7 @@ series: [
 
 The order of the positions in the array does not matter, as the direction of each position defines its role. The array has to name exactly one value scale of the series, and the remaining position becomes the argument scale.
 
-If a series has both properties, `scale` takes priority and the chart ignores `scales`.
+If a series has both properties, `scales` takes priority and the chart ignores `scale`.
 
 **Related article**: [Naming both scales of a series](chart/configuration_properties.md#naming-both-scales-of-a-series)
 

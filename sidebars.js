@@ -3773,6 +3773,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "ribbon/api/ribbon_arialabel_config",
                     "ribbon/api/ribbon_css_config",
                     "ribbon/api/ribbon_data_config",
                     "ribbon/api/ribbon_menucss_config",
@@ -3910,6 +3911,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "sidebar/api/sidebar_arialabel_config",
                     "sidebar/api/sidebar_collapsed_config",
                     "sidebar/api/sidebar_css_config",
                     "sidebar/api/sidebar_data_config",

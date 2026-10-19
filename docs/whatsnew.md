@@ -64,6 +64,9 @@ Released on October , 2026
     - [Combobox](combobox/api/combobox_arialabel_config.md) - names the input of a combo box
     - [ContextMenu](menu/api/menu_arialabel_config.md) - names a context menu, since its root menu has no control to take a name from
     - [Grid](grid/api/grid_arialabel_config.md) - names a grid, so that several grids on one page can be told apart
+    - [Menu](menu/api/menu_arialabel_config.md) - names a menu, so that several menus on one page can be told apart
+    - [Ribbon](ribbon/api/ribbon_arialabel_config.md) - names a ribbon, so that several ribbons on one page can be told apart
+    - [Sidebar](sidebar/api/sidebar_arialabel_config.md) - names a sidebar, so that several sidebars on one page can be told apart
     - [Toolbar](toolbar/api/toolbar_arialabel_config.md) - names a toolbar, so that several toolbars on one page can be told apart
     - [Window](window/api/window_arialabel_config.md) - names a window whose [`title`](window/api/window_title_config.md) is not descriptive enough or that has no title
 
@@ -101,6 +104,10 @@ For additional information, refer to the [Accessibility support](common_features
 
 ### Fixes
 
+- Chart. Fixed the position of the tooltip and of the highlighted grid line for the first point of a Line/Spline/Area chart that has the `"right"` scale
+- Chart. Fixed series being bound to the missing `"left"` scale in a chart that declares the `"right"` value scale instead
+- Chart. Fixed the `targetValue` property of the `"top"` and `"right"` scales being ignored, and the target lines of the `"bottom"` and `"top"` scales being hidden when `grid: false` was set
+- Chart. Fixed the `baseLine` property of a series being checked against the `min` value of another scale and being reset in the original series configuration
 - ContextMenu. Fixed a closed context menu reopening as an invisible copy and losing the keyboard focus when a handler of the hide event changed the menu entries
 - DataCollection. Fixed removing a group row leaving its items behind and the counters of the groups above it short
 - DataCollection. Fixed changing the id of an item between adding the item and saving the changes, which produced a second save request for the item
@@ -115,9 +122,15 @@ For additional information, refer to the [Accessibility support](common_features
 - Grid. Fixed the group counters not being recalculated together with the tree structure of the grid
 - Grid. Fixed the spans, the CSS classes added with [`addCellCss()`](grid/api/grid_addcellcss_method.md) and the selection of a row being lost after the id of the row was changed via [`changeId()`](data_collection/api/datacollection_changeid_method.md)
 - Grid. Fixed the undo/redo actions of the History module referring to the old id of a row after the id was changed via `changeId()`
+- Grid. Fixed the keyboard focus being moved back to the active cell after editing ended, when the focus had already gone to the header, the footer or outside the grid
+- Grid. Fixed the `avg`, `min` and `max` summaries of a grid without rows being calculated as `NaN`, `Infinity` and `-Infinity` instead of `null`
 - List/DataView. Fixed the keyboard focus and the selection of an item being lost after the id of the item was changed via `changeId()`
+- List. Fixed the keyboard focus outline of the list and its items not being displayed
+- Message. Fixed the alert being declared with the `alert` role instead of the `alertdialog` one, and an alert without a header having no accessible name
 - Tabbar. Fixed the back scroll arrow getting stuck in a horizontal or vertical tab bar with many tabs of different sizes, which made it impossible to scroll back to the first tabs
 - Tabbar. Fixed the width or height of the tab bar header collapsing when the [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) or [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) property was used
+- Tabbar. Fixed a script error in the top and bottom modes when a tab had no `tab` property
+- Tabbar. Added the missing `forEach()` method to the `ITabbar` TypeScript interface
 - Tree. Fixed the keyboard focus and the selection of an item being lost after the id of the item was changed via `changeId()`
 - TreeCollection. Fixed filtering in an ungrouped tree: it skipped the items which carried a `$group` field
 - TreeCollection. Fixed `changeId()` detaching the child items of an item from it, also when a filter was applied
