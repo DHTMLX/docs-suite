@@ -6,7 +6,7 @@ description: The total config of DHTMLX Chart shows the sum of the values at the
 
 # total
 
-@short: Optional. Displays the sum of the values of all the stacked series for each bar of a Bar or X-Bar chart, or the aggregated value of a series in the center of a Donut chart
+@short: Optional. Displays the sum of the values of the stacked series for each bar of a Bar or X-Bar chart, or the aggregated value of a series in the center of a Donut chart
 
 ### Usage
 
@@ -20,17 +20,17 @@ The `total` property belongs to the root configuration of the chart rather than 
 
 - `false` - the chart doesn't render the total values
 - `true` - the chart calculates the sum automatically and displays it in the default format:
-    - in a Bar or X-Bar chart, the sum of the values of all the series for each bar is displayed at the end of the bar (above the bar in a Bar chart and to the right of the bar in an X-Bar chart)
-    - in a Donut chart, the sum of the series values is displayed in the center of the chart
+    - in a Bar or X-Bar chart, the sum of the values of the visible series stacked in each bar is displayed at the end of the bar (above the bar in a Bar chart and to the right of the bar in an X-Bar chart)
+    - in a Donut chart, the sum of the values of the visible sectors is displayed in the center of the chart
 - a callback function `((total: number) => string | number)` - the chart calculates the sum and calls the function with the following parameter:
     - `total` - (*number*) the sum calculated by the component:
-        - in a Bar or X-Bar chart, the sum of the values of all the series of the current bar
-        - in a Donut chart, the sum of all the series values
+        - in a Bar or X-Bar chart, the sum of the values of the visible series of the current bar
+        - in a Donut chart, the sum of the values of the visible sectors
 
       and returns a *string* or a *number* that the chart displays at the end of the bar or in the center of the Donut chart
 
 :::note
-For Bar and X-Bar charts, the property takes effect only when the [`stacked`](chart/api/chart_series_config.md) property is enabled in at least one of the series.
+For Bar and X-Bar charts, the property takes effect only when the [`stacked`](chart/api/chart_series_config.md) property is enabled in at least one of the series. If a chart has several [stack groups](chart/configuration_properties.md#stack-groups), the chart calculates the total separately for each group.
 :::
 
 ### Default config

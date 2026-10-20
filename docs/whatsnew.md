@@ -76,7 +76,7 @@ For additional information, refer to the [Accessibility support](common_features
 
 - DataCollection. The [`changeId()`](data_collection/api/datacollection_changeid_method.md) method returns the new id of the item
 - DataCollection. The `changeId()` method doesn't change the id of an item while the data is grouped. It returns the original id and shows a warning in the browser console
-- Grid. The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties are ignored when `headerRowHeight`/`footerRowHeight` is set as an array
+- Grid. The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) and [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) properties, and the header/footer part of [`autoHeight`](grid/api/grid_autoheight_config.md), are ignored for a zone whose `headerRowHeight`/`footerRowHeight` is set as an array
 
 #### Accessibility updates
 

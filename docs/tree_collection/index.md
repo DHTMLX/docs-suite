@@ -14,6 +14,7 @@ A set of API methods and events that allow you to work with data of a component 
 | ------------------------------------------------- | --------------------------------------------------------- |
 | [](tree_collection/api/treecollection_add_method.md)              | @getshort(api/treecollection_add_method.md)               |
 | [](tree_collection/api/treecollection_cancopy_method.md)          | @getshort(api/treecollection_cancopy_method.md)           |
+| [](tree_collection/api/treecollection_changeid_method.md)         | @getshort(api/treecollection_changeid_method.md)          |
 | [](tree_collection/api/treecollection_copy_method.md)             | @getshort(api/treecollection_copy_method.md)              |
 | [](tree_collection/api/treecollection_eachchild_method.md)        | @getshort(api/treecollection_eachchild_method.md)         |
 | [](tree_collection/api/treecollection_eachparent_method.md)       | @getshort(api/treecollection_eachparent_method.md)        |

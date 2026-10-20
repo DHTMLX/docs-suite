@@ -291,7 +291,7 @@ chart.data.parse(dataset);
 
 ### Total values of stacked bars
 
-To display the sum of the values of all the stacked series at the end of each bar (above the bar in a Bar chart and to the right of the bar in an X-Bar chart), use the [`total`](chart/api/chart_total_config.md) property in the root configuration of the chart.
+To display the sum of the values of the visible stacked series at the end of each bar (above the bar in a Bar chart and to the right of the bar in an X-Bar chart), use the [`total`](chart/api/chart_total_config.md) property in the root configuration of the chart.
 
 :::note
 The property takes effect only when the `stacked` property is enabled in at least one of the series.
@@ -318,7 +318,9 @@ chart.data.parse(dataset);
 
 ![Stacked Bar and X-Bar charts showing the sum of the values of all the series at the end of each bar in DHTMLX Suite](/img/chart/bar_total_values.png)
 
-To format the total values, set the `total` property as a *callback function*. The chart calls the function with the sum of the values of all the series of the current bar as a parameter and displays the returned *string* or *number* at the end of the bar:
+The series hidden via the legend are not counted, so the total values change when you hide or show a series.
+
+To format the total values, set the `total` property as a *callback function*. The chart calls the function with the sum of the values of the visible series of the current bar as a parameter and displays the returned *string* or *number* at the end of the bar:
 
 ~~~jsx {3,9-11}
 const chart = new dhx.Chart("chart_container", {
@@ -455,7 +457,9 @@ chart.data.parse(dataset);
 
 ![Donut chart showing the sum of the series values in its center in DHTMLX Suite](/img/chart/donut_total_value.png)
 
-To format the total value, set the `total` property as a *callback function*. The chart calls the function with the sum of all the values as a parameter and displays the returned *string* or *number* in its center:
+The sectors hidden via the legend are not counted, so the total value changes when you hide or show a sector.
+
+To format the total value, set the `total` property as a *callback function*. The chart calls the function with the sum of the values of the visible sectors as a parameter and displays the returned *string* or *number* in its center:
 
 ~~~jsx {3}
 const chart = new dhx.Chart("chart_container", {
@@ -1155,7 +1159,7 @@ Which positions the `scale` and `scales` properties accept depends on the type o
 | `scatter` | `"left"` / `"right"` | `"bottom"` / `"top"` |
 | `pie`, `pie3D`, `donut` | no scales, the properties are ignored | - |
 | `treeMap`, `calendarHeatMap` | no scales, the properties are ignored | - |
-| `radar` | `"radial"` only | - |
+| `radar` | the `"radial"` scale, the properties are ignored | - |
 
 You can mix the types listed above in one chart (which is the main purpose of the second value scale): a bar and a line, a stack and a line, an area and a line, a bar and a spline. Check the [Mixed graphs in one chart](#mixed-graphs-in-one-chart) section for the details and the limitations.
 

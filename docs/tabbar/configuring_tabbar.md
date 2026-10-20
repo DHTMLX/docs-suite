@@ -127,14 +127,14 @@ The function returns an HTML string, and Tabbar inserts it into the DOM of the t
             const isActive = cell.id === activeTab;
             return `
                 <i class="icon icon-${cell.icon}"></i>
-                <span>${cell.tab}</span>
+                <span class="${isActive ? "tab-title tab-title--active" : "tab-title"}">${cell.tab}</span>
             `;
         },
         views: [
-            { id: "vilnius", tab: "Vilnius", html: "..." },
-            { id: "paris",   tab: "Paris",   html: "..." },
-            { id: "london",  tab: "London",  html: "..." },
-            { id: "rome",    tab: "Rome",    html: "..." }
+            { id: "vilnius", tab: "Vilnius", icon: "cloud", html: "..." },
+            { id: "paris",   tab: "Paris",   icon: "sun",   html: "..." },
+            { id: "london",  tab: "London",  icon: "rain",  html: "..." },
+            { id: "rome",    tab: "Rome",    icon: "sun",   html: "..." }
         ]
     });
 </script>

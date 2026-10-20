@@ -4973,6 +4973,7 @@ module.exports = {
             items: [
               "tree_collection/api/treecollection_add_method",
               "tree_collection/api/treecollection_cancopy_method",
+              "tree_collection/api/treecollection_changeid_method",
               "tree_collection/api/treecollection_copy_method",
               "tree_collection/api/treecollection_eachchild_method",
               "tree_collection/api/treecollection_eachparent_method",

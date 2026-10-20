@@ -39,7 +39,7 @@ You can also add an icon or an image into the header of a cell with the help of 
 ~~~jsx
 const layout = new dhx.Layout("layout_container", {
     cols: [
-        { header: "Cell header", headerIcon:"/icon.png"}
+        { header: "Cell header", headerIcon: "dxi dxi-check" }
     ]
 });
 
