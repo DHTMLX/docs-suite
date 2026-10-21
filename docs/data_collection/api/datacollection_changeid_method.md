@@ -34,9 +34,14 @@ const generatedId = component.data.changeId("22");
 component.data.changeId(generatedId, "33", true);
 
 @descr:
-The method doesn't change the id of an item while the data is [grouped](data_collection/api/datacollection_group_method.md). In this case, it leaves the item as is, shows a warning in the browser console and returns the original id.
+The method leaves the item as is, shows a warning in the browser console and returns the original id in the following cases:
+
+- the collection has no item with the `id` id
+- an item with the `newId` id already exists
+- `newId` is not a valid id, that is, neither a number nor a non-empty string
+- the data is [grouped](data_collection/api/datacollection_group_method.md)
 
 @changelog:
 
-- The return value and the restriction for grouped data were added in v9.4
+- The return value and the checks for grouped data and an invalid new id were added in v9.4
 - The method was added in v6.4

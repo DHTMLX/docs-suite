@@ -13,14 +13,18 @@ description: The controls property adds a toolbar with the Clear, Today, and Tim
 ~~~ts
 type TCalendarControls = "clear" | "today" | "timepicker" | "spacer";
 
-export interface ICalendarConfig {
-  // ... existing config
-  timePicker?: boolean;
-  controls?: boolean | TCalendarControls[];
+interface ICalendarConfig {
+    ...
+    controls?: boolean | TCalendarControls[];
+    ...
 }
 ~~~
 
-@default: false
+#### Default config
+
+~~~jsx
+controls: false
+~~~
 
 @descr:
 
@@ -53,7 +57,7 @@ The array can include the following controls:
         </tr>
         <tr>
             <td><b>"today"</b></td>
-            <td>sets the selected date to today and navigates the calendar to the current month</td>
+            <td>sets the selected date to today and navigates the calendar to the current month. If the calendar has a timepicker, the selected time stays the same</td>
         </tr>
         <tr>
             <td><b>"timepicker"</b></td>
@@ -69,7 +73,7 @@ The array can include the following controls:
 The names of controls are case-insensitive, so the calendar treats **"today"**, **"Today"** and **"TODAY"** as the same control and ignores unknown names.
 
 :::note
-Listing the **"Timepicker"** control enables the [`timePicker`](calendar/api/calendar_timepicker_config.md) property as well, so the calendar renders the timepicker once even if you use both ways.
+Listing the **"timepicker"** control enables the [`timePicker`](calendar/api/calendar_timepicker_config.md) property as well, so the calendar renders the timepicker once even if you use both ways.
 :::
 
 #### Example

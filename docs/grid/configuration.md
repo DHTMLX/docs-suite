@@ -1552,7 +1552,7 @@ The ability to manage the options of a filter manually is available starting fro
 
 By default, **selectFilter** and **comboFilter** build their list of options from the data of the column, and offer only the values that actually occur in the loaded rows. If a column holds *"KG"* in every row, the dropdown offers *"KG"* and nothing else, even when the valid values for the column come from a fixed reference list.
 
-The `options` property of the `filterConfig` object lets you define that list yourself. It takes either a static array of options or a function that transforms the data-driven list:
+The `options` property of the `filterConfig` object lets you define that list yourself. Grid reads the property from the filters in the header of a column. It takes either a static array of options or a function that transforms the data-driven list:
 
 ~~~jsx
 type IOption = { id: Id, value: string };
@@ -1564,7 +1564,7 @@ options?: TOption[] | ((uniqueData: IOption[], col: ICol) => TOption[]);
 | Form | Behavior |
 | ---- | -------- |
 | `TOption[]` | a static list. It fully replaces the data-driven one, and Grid does not scan the dataset for this column |
-| `(uniqueData, col) => TOption[]` | a callback function. It receives the data-driven list, already normalized to `{ id, value }` pairs, and returns the list to show |
+| `(uniqueData, col) => TOption[]` | a callback function. Grid calls it with the data-driven list, already normalized to `{ id, value }` pairs, and the function returns the list to show |
 | *omitted* | the default. Grid builds the list from the column data |
 
 #### Option format
@@ -1821,7 +1821,7 @@ const grid2 = new dhx.Grid("grid_container", {
 Both configuration options make **every** level of the zone fit its content. The array form of `headerRowHeight`/`footerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `headerAutoHeight`/`footerAutoHeight`:
 
 - if `headerRowHeight` is set as an **array**, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
-- if `headerRowHeight` is set as a **number**, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
+- if `headerRowHeight` is set as a **number**, `headerAutoHeight` applies to the header: every level fits its content but is never shorter than `headerRowHeight`
 
 The same pair of rules applies to `footerRowHeight` and `footerAutoHeight`.
 

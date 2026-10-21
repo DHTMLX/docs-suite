@@ -31,6 +31,6 @@ The value is rendered as the `aria-label` attribute of the element with the `gri
 
 An `aria-label` attribute set on the container of the grid does not name the grid, because the element with the `grid` role is nested inside the container.
 
-**Related articles**: [Grid accessibility](grid/accessibility.md)
+**Related article**: [Grid accessibility](grid/accessibility.md)
 
 @changelog: added in v9.4

@@ -878,8 +878,8 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid. Grouping missing data](https://snippet.dhtmlx.com/0geopa0v)
 
-- `showEmptyGroups` - (optional) specifies whether a group that loses all its rows to filtering stays in the grid, *false* by default
-    - if set to *false*, such a group leaves the view together with its summary row and its nested groups, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back
+- `showEmptyGroups` - (optional) specifies whether a group that loses all its rows stays in the grid, *false* by default
+    - if set to *false*, such a group leaves the view together with its summary row and its nested groups. [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings back a group emptied by filtering, while a group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) leaves the grid for good
     - if set to *true*, such a group remains visible with the `$count: 0` value and emptied aggregates: the "sum" and "count" aggregations give *0*, while "avg", "min" and "max" give *null*, as described in the [Data calculation functions](helpers/data_calculation_functions.md#aggregating-an-empty-set-of-items) guide
 
 ~~~jsx {8-10}
@@ -909,7 +909,7 @@ grid.data.filter({
 - `counter` - (optional) defines the text rendered next to the group name in the column with grouped data, *true* by default
     - if set to *true*, Grid renders the current number of rows of the group in brackets, e.g. *(2)*
     - if set to *false*, Grid renders only the group name
-    - if set to a *function*, it takes the group header row as a parameter and returns the string to render. Grid inserts the returned value as HTML, so it may contain markup; an empty string renders no counter. The row gives access to the `$count`, `$totalCount` and `$by` service properties and to every aggregated field of the `map` object of the level
+    - if set to a *function*, Grid calls it with the group header row, and the function returns the string to render. Grid inserts the returned value as HTML, so it may contain markup; an empty string renders no counter. The row gives access to the `$count`, `$totalCount` and `$by` service properties and to every aggregated field of the `map` object of the level
 
 The counter is a part of the default template of the column with grouped data, so Grid ignores it when the [`column`](#configuration-of-the-column-property-of-the-group-object) object carries a custom `template`. The default tooltip of that column shows the counter as well, and a custom `tooltipTemplate` drops it there in the same way.
 
@@ -1192,7 +1192,7 @@ Note that the `column` object of the `group` configuration option has some prope
 
 Group headers follow the data they hold. Grid recalculates them after every change of the collection content, that is after the [`filter()`](data_collection/api/datacollection_filter_method.md), [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md), [`add()`](data_collection/api/datacollection_add_method.md), [`remove()`](data_collection/api/datacollection_remove_method.md), [`update()`](data_collection/api/datacollection_update_method.md) and [`parse()`](data_collection/api/datacollection_parse_method.md) methods of DataCollection.
 
-In the snippet below the [`counter`](#configuring-data-grouping) function renders the current number of rows of a group against the initial one, while the `map` object puts the recalculated total of the group into the "price" cell of the header row and of the summary row:
+In the snippet below the [`counter`](#configuring-data-grouping) function renders the current number of rows of a group against the unfiltered one, while the `map` object puts the recalculated total of the group into the "price" cell of the header row and of the summary row:
 
 ~~~jsx {8-15}
 const grid = new dhx.Grid("grid_container", {
@@ -1325,8 +1325,8 @@ The method takes the following parameters:
         - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
         - if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
         - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
-    - `showEmptyGroups` - (optional) specifies whether a group that loses all its rows to filtering stays in the grid, *false* by default
-        - if set to *false*, such a group leaves the view together with its summary row and its nested groups, and [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings it back
+    - `showEmptyGroups` - (optional) specifies whether a group that loses all its rows stays in the grid, *false* by default
+        - if set to *false*, such a group leaves the view together with its summary row and its nested groups. [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) brings back a group emptied by filtering, while a group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) leaves the grid for good
         - if set to *true*, such a group remains visible with the `$count: 0` value and emptied aggregates
     - `field` - (optional) the group field name, *"group"* by default
 

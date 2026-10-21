@@ -76,7 +76,7 @@ For additional information, refer to the [Accessibility support](common_features
 
 - DataCollection. The [`changeId()`](data_collection/api/datacollection_changeid_method.md) method returns the new id of the item
 - DataCollection. The `changeId()` method doesn't change the id of an item while the data is grouped. It returns the original id and shows a warning in the browser console
-- Grid. The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md), [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) and [`autoHeight`](grid/api/grid_autoheight_config.md) properties are ignored when `headerRowHeight`/`footerRowHeight` is set as an array
+- Grid. The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) and [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) properties, and the header/footer part of [`autoHeight`](grid/api/grid_autoheight_config.md), are ignored for a zone whose `headerRowHeight`/`footerRowHeight` is set as an array
 
 #### Accessibility updates
 
@@ -128,7 +128,7 @@ For additional information, refer to the [Accessibility support](common_features
 - List. Fixed the keyboard focus outline of the list and its items not being displayed
 - Message. Fixed the alert being declared with the `alert` role instead of the `alertdialog` one, and an alert without a header having no accessible name
 - Tabbar. Fixed the back scroll arrow getting stuck in a horizontal or vertical tab bar with many tabs of different sizes, which made it impossible to scroll back to the first tabs
-- Tabbar. Fixed the width or height of the tab bar header collapsing when the [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) or [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) property was used
+- Tabbar. Fixed the tab bar header collapsing when the [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) property was used in the `"left"`/`"right"` mode or the [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) property in the `"top"`/`"bottom"` mode
 - Tabbar. Fixed a script error in the top and bottom modes when a tab had no `tab` property
 - Tabbar. Added the missing `forEach()` method to the `ITabbar` TypeScript interface
 - Tree. Fixed the keyboard focus and the selection of an item being lost after the id of the item was changed via `changeId()`

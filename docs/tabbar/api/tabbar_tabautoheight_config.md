@@ -23,11 +23,12 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 });
 
 @descr:
+:::note
+The property takes effect when [`mode`](tabbar/api/tabbar_mode_config.md) is set to `"left"` or `"right"`, and is ignored in the `"top"` and `"bottom"` modes.
+:::
 
 **Related sample**: [Tabbar. Tab auto height](https://snippet.dhtmlx.com/pqvycp1c)
 
-{{note The property can be applicable when [mode](tabbar/api/tabbar_mode_config.md) is set to "right" or "left". }}
+**Related article**: [Autosize for tabs](tabbar/configuring_tabbar.md#autosize-for-tabs)
 
 @changelog: added in v7.0
-
-[comment]: # (@related: tabbar/configuring_tabbar.md#autosize-for-tabs)

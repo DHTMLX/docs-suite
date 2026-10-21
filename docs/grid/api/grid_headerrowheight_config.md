@@ -91,7 +91,7 @@ The height of the header is calculated as a sum of all row heights in it.
 The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md), which turns it on for the whole component, makes **every** level of the header fit its content. The array form of `headerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `headerAutoHeight`:
 
 - if `headerRowHeight` is set as an **array**, `headerAutoHeight` is ignored for the header entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
-- if `headerRowHeight` is set as a **number**, `headerAutoHeight` works as before: every level fits its content but is never shorter than `headerRowHeight`
+- if `headerRowHeight` is set as a **number**, `headerAutoHeight` applies to the header: every level fits its content but is never shorter than `headerRowHeight`
 
 ### Level heights in the export
 

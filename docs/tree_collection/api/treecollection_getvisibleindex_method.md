@@ -91,7 +91,10 @@ tree.collapse("3");
 tree.data.getVisibleIndex("3.2"); // -> -1
 ~~~
 
-**Related API**: [`getIndex()`](tree_collection/api/treecollection_getindex_method.md), [`getId()`](tree_collection/api/treecollection_getid_method.md), [`mapVisible()`](tree_collection/api/treecollection_mapvisible_method.md)
+**Related API**:
+- [`getIndex()`](tree_collection/api/treecollection_getindex_method.md)
+- [`getId()`](tree_collection/api/treecollection_getid_method.md)
+- [`mapVisible()`](tree_collection/api/treecollection_mapvisible_method.md)
 
 @changelog:
 added in v9.4

@@ -93,7 +93,7 @@ The height of the footer is calculated as a sum of all row heights in it.
 The [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) config, as well as [`autoHeight`](grid/api/grid_autoheight_config.md), which turns it on for the whole component, makes **every** level of the footer fit its content. The array form of `footerRowHeight` defines the height of each level explicitly, therefore it takes precedence over `footerAutoHeight`:
 
 - if `footerRowHeight` is set as an **array**, `footerAutoHeight` is ignored for the footer entirely, including the levels which the array does not cover. Use the *"auto"* items to opt individual levels in
-- if `footerRowHeight` is set as a **number**, `footerAutoHeight` works as before: every level fits its content but is never shorter than `footerRowHeight`
+- if `footerRowHeight` is set as a **number**, `footerAutoHeight` applies to the footer: every level fits its content but is never shorter than `footerRowHeight`
 
 ### Level heights in the export
 

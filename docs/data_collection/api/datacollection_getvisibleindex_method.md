@@ -57,7 +57,10 @@ grid.data.getVisibleIndex("2"); // -> -1
 grid.data.getVisibleIndex("3"); // -> 1
 ~~~
 
-**Related API**: [`getIndex()`](data_collection/api/datacollection_getindex_method.md), [`getId()`](data_collection/api/datacollection_getid_method.md), [`getLength()`](data_collection/api/datacollection_getlength_method.md)
+**Related API**:
+- [`getIndex()`](data_collection/api/datacollection_getindex_method.md)
+- [`getId()`](data_collection/api/datacollection_getid_method.md)
+- [`getLength()`](data_collection/api/datacollection_getlength_method.md)
 
 @changelog:
 added in v9.4
