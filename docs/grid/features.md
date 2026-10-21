@@ -366,6 +366,16 @@ In this section you will get to know how to localize the interface of Grid.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Localizing Grid](grid/localization.md) | Learn how to apply different languages to the interface of dhtmlxGrid |
 
+## How to make Grid accessible
+
+In this section you will learn about the accessibility support in Grid and its conformance with accessibility standards.
+
+| Topic                                                                       | Description                                                                                                                                           |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Accessibility in Grid](grid/accessibility.md) | Learn about the WAI-ARIA attributes, keyboard navigation, screen-reader support and high-contrast themes of Grid |
+| [Setting up an accessible Grid](grid/accessibility.md#recommendedconfiguration) | Learn how to configure Grid for keyboard and screen-reader users |
+| [Accessibility Conformance Report](grid/accessibility_conformance_report.md) | Check how Grid conforms to WCAG 2.2 AA, Section 508 and EN 301 549 |
+
 ## How to work with Grid events
 
 This section explains how to work with Grid events.
@@ -404,6 +414,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
+| [Accessibility support](common_features/accessibility_support.md) | Learn about the accessibility support common to the Suite widgets, such as the high-contrast themes |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to enable custom scroll in Grid                     |
 | [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
 

@@ -91,7 +91,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support ([Example](https://snippet.dhtmlx.com/q3cu6x1a)) |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                                                     |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering                         |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering                         |
 
 ## Any questions left?
 
