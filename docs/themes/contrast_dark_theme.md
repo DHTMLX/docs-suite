@@ -44,7 +44,7 @@ The ["contrast-dark"](/themes/#suite-themes) theme is configured both on the bas
     --dhx-background-secondary: hsl(var(--dhx-h-background), var(--dhx-s-background), calc(var(--dhx-l-background) + 8%));
     --dhx-background-additional: hsl(var(--dhx-h-background), var(--dhx-s-background), calc(var(--dhx-l-background) + 12%));
 
-    --dhx-color-focused: hsl(calc(var(--dhx-h-primary) + 10), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 24% - var(--dhx-l-contrast-offset))); /* 3:1 on every background, including --dhx-background-additional */
+    --dhx-color-focused: hsl(calc(var(--dhx-h-primary) + 10), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 24% - var(--dhx-l-contrast-offset)));
     /* end theme colors */
 
     /* DHTMLX Toolbar service variables*/

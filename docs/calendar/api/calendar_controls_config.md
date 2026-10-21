@@ -12,14 +12,10 @@ description: The controls property adds a toolbar with the Clear, Today, and Tim
 
 ~~~ts
 type TCalendarControls = "clear" | "today" | "timepicker" | "spacer";
-type TCalendarControlsInput =
-    | TCalendarControls
-    | Uppercase<TCalendarControls>
-    | Capitalize<TCalendarControls>;
 
 interface ICalendarConfig {
     ...
-    controls?: boolean | TCalendarControlsInput[];
+    controls?: boolean | TCalendarControls[];
     ...
 }
 ~~~
