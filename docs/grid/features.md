@@ -271,6 +271,7 @@ In this section you will find the ways of filtering data in Grid.
 | [Setting the type of a filter in the header/footer](grid/configuration.md#headerfooter-filters)    | Learn how to specify the type of the filter in the header/footer of a Grid column ([Example](https://snippet.dhtmlx.com/4qz8ng3c))                           |
 | [Filtering data](grid/usage.md#filtering-data)                                                     | Learn how to filter grid data by the specified criteria ([Example 1](https://snippet.dhtmlx.com/g0zpjqi1), [Example 2](https://snippet.dhtmlx.com/12suognm)) |
 | [Customizing filters in the header/footer](grid/configuration.md#customizing-headerfooter-filters) | Learn how to add a custom function with your own logic for filtering data in a Grid column ([Example](https://snippet.dhtmlx.com/gcidkxjg))                  |
+| [Custom options of header/footer filters](grid/configuration.md#custom-options-of-headerfooter-filters) | Learn how to define the options of `selectFilter` and `comboFilter` manually instead of building them from the column data ([Example](https://snippet.dhtmlx.com/pcrjqux0)) |
 | [Getting the header filter](grid/api/grid_getheaderfilter_method.md)                               | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/n8srjle3))                                                     |
 
 ### How to group data
@@ -281,6 +282,7 @@ In this section you will get to know how to group row data in Grid.
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Enabling data grouping](grid/usage.md#enabling-data-grouping)                               | Learn how to enable row data grouping ([Example](https://snippet.dhtmlx.com/dvqy4ewe))                                                     |
 | [Configuring data grouping](grid/usage.md#configuring-data-grouping)                               | Learn how to configure row data grouping ([Example](https://snippet.dhtmlx.com/z3iw2p3k))                                                     |
+| [Group counters and aggregates](grid/usage.md#group-counters-and-aggregates) | Learn how to define the text rendered next to the group name and keep the groups that are left with no rows after filtering ([Example](https://snippet.dhtmlx.com/sbynrizv)) |
 | [Making group panel elements closable](grid/usage.md#making-group-panel-elements-closable)       | Learn how to make elements of the group panel closable  ([Example](https://snippet.dhtmlx.com/z3iw2p3k))                                                     |
 | [Using DataCollection API for data grouping](grid/usage.md#using-datacollection-api-for-data-grouping)       | Learn how to group Grid data with DataCollection API   ([Example](https://snippet.dhtmlx.com/vo3pgkgh))                                                     |
 
