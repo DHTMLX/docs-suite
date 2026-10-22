@@ -52,6 +52,7 @@ Use [TreeCollection events](/tree_collection/#events) to work with data.
 
 | Name                                      	   | Description                                      		 |
 | ------------------------------------------------ | ------------------------------------------------------- |
+| [](toolbar/api/toolbar_arialabel_config.md)      | @getshort(toolbar/api/toolbar_arialabel_config.md)      |
 | [](toolbar/api/toolbar_css_config.md)     	   | @getshort(toolbar/api/toolbar_css_config.md)     		 |
 | [](toolbar/api/toolbar_data_config.md)    	   | @getshort(toolbar/api/toolbar_data_config.md)    		 |
 | [](toolbar/api/toolbar_menucss_config.md) 	   | @getshort(toolbar/api/toolbar_menucss_config.md) 		 |

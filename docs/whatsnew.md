@@ -8,6 +8,170 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.4
+
+Released on October 22, 2026
+
+### New functionality
+
+#### Calendar
+
+- The ability to [add a toolbar with the Clear, Today and Timepicker controls](calendar/configuring.md#controls) into the calendar
+    - new Calendar configuration property: [`controls`](calendar/api/calendar_controls_config.md)
+
+#### Chart
+
+- The ability to [use two value scales in one chart](chart/configuration_properties.md#dual-axis-chart), each with its own dimension, and to bind a series to the scale its values are measured against
+    - new properties of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `scale` and `scales`
+    - new property of the Chart [`scales`](chart/api/chart_scales_config.md) configuration object: `alignTicks`
+- The ability to [build several independent stacks in one chart](chart/configuration_properties.md#stack-groups), one per value scale or several named groups drawn side by side
+    - updated property of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `stacked`, which takes the name of a stack group besides a boolean
+- The ability to display [the total values of stacked bars](chart/configuration_properties.md#total-values-of-stacked-bars) at the end of each bar of a Bar or X-Bar chart and [the total value of a Donut chart](chart/configuration_properties.md#total-value-of-donut-chart) in its center
+    - new Chart configuration property: [`total`](chart/api/chart_total_config.md)
+- The ability to [set the color of each bar dynamically](chart/customization.md#setting-bar-colors-dynamically), based on its data item, in a Bar or X-Bar chart
+    - updated properties of the Chart [`series`](chart/api/chart_series_config.md) configuration object: `fill` and `color`, which take a callback function besides a string
+
+#### DataCollection/TreeCollection
+
+- The ability to get the position of an item among the visible ones
+    - new DataCollection method: [`getVisibleIndex()`](data_collection/api/datacollection_getvisibleindex_method.md) 
+    - new TreeCollection method: [`getVisibleIndex()`](tree_collection/api/treecollection_getvisibleindex_method.md) 
+
+#### Grid
+
+- The ability to [set an individual height for each row of the header/footer](grid/configuration.md#headerfooter-height), including the *"auto"* value that adjusts a row to its content (PRO version)
+    - updated Grid configuration properties: [`headerRowHeight`](grid/api/grid_headerrowheight_config.md) and [`footerRowHeight`](grid/api/grid_footerrowheight_config.md)
+- [Group counters](grid/usage.md#group-counters-and-aggregates) with the possibility to define the text rendered next to the group name and to keep the groups that are left with no rows after filtering (PRO version)
+    - new properties of the Grid [`group`](grid/api/grid_group_config.md) configuration object: `counter` and `showEmptyGroups`
+    - new property of the configuration object of the DataCollection [`group()`](data_collection/api/datacollection_group_method.md) method: `showEmptyGroups`
+    - service properties of a group header row: `$count`, `$totalCount`, `$by`
+- The ability to [define the options of a header/footer filter manually](grid/configuration.md#custom-options-of-headerfooter-filters) instead of building them from the column data
+    - new property of the `filterConfig` object of **selectFilter** and **comboFilter**: `options`
+
+#### Layout
+
+- The ability to [render HTML content or a DHTMLX widget in the header of a cell](layout/cell_configuration.md#custom-content-in-a-cell-header)
+    - updated Layout cell configuration property: [`header`](layout/api/cell/layout_cell_header_config.md), which takes a callback function besides a string
+
+#### Tabbar
+
+- The ability to [render HTML content in the titles of tabs](tabbar/configuring_tabbar.md#html-content-in-tab-titles), for example, an icon or a badge next to the name of a tab
+    - new Tabbar configuration property: [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md)
+
+#### Accessibility
+
+- The ability to set the accessible name of a widget, which a screen reader announces to the user, with the new `ariaLabel` configuration property of the following widgets:
+    - [Combobox](combobox/api/combobox_arialabel_config.md) - names the input of a combo box
+    - [ContextMenu](menu/api/menu_arialabel_config.md) - names a context menu, since its root menu has no control to take a name from
+    - [Grid](grid/api/grid_arialabel_config.md) - names a grid, so that several grids on one page can be told apart
+    - [Menu](menu/api/menu_arialabel_config.md) - names a menu, so that several menus on one page can be told apart
+    - [Ribbon](ribbon/api/ribbon_arialabel_config.md) - names a ribbon, so that several ribbons on one page can be told apart
+    - [Sidebar](sidebar/api/sidebar_arialabel_config.md) - names a sidebar, so that several sidebars on one page can be told apart
+    - [Toolbar](toolbar/api/toolbar_arialabel_config.md) - names a toolbar, so that several toolbars on one page can be told apart
+    - [Window](window/api/window_arialabel_config.md) - names a window whose [`title`](window/api/window_title_config.md) is not descriptive enough or that has no title
+
+For additional information, refer to the [Accessibility support](common_features/accessibility_support.md#wai-aria-attributes) and [Grid accessibility](grid/accessibility.md#host-page-responsibilities) guides.
+
+### Updates
+
+- DataCollection. The [`changeId()`](data_collection/api/datacollection_changeid_method.md) method returns the new id of the item
+- DataCollection. The `changeId()` method doesn't change the id of an item while the data is grouped. It returns the original id and shows a warning in the browser console
+- Grid. The [`headerAutoHeight`](grid/api/grid_headerautoheight_config.md) and [`footerAutoHeight`](grid/api/grid_footerautoheight_config.md) properties, and the header/footer part of [`autoHeight`](grid/api/grid_autoheight_config.md), are ignored for a zone whose `headerRowHeight`/`footerRowHeight` is set as an array
+
+#### Accessibility updates
+
+- Colorpicker. The palette is a single tab stop browsed with the arrow keys, <kbd>Home</kbd> and <kbd>End</kbd>, and each swatch is named by its color name.
+
+- Colorpicker/Message/Toolbar/Window. The accessible names generated by the widgets are stored in the locale and can be [translated](common_features/accessibility_support.md#localization-of-screen-reader-strings).
+
+- Grid. Keyboard navigation:
+    - <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> move cell by cell through the header, the body and the footer and leave the grid at its ends, and the arrow keys move within and between these zones whether or not a selection module is enabled.
+    - In a grid without a footer, <kbd>Tab</kbd> from the last body cell leaves the grid.
+    - <kbd>Tab</kbd> in the header and the footer reaches the columns scrolled out of view instead of skipping them.
+    - <kbd>Enter</kbd>, <kbd>Space</kbd> and <kbd>Shift</kbd> + <kbd>Enter</kbd> on a footer cell don't sort the column.
+    - In the selection and block selection modes, the keyboard focus moves to the cells of the frozen columns.
+
+- Grid. Screen-reader announcements:
+    - The new [`announce()`](grid/api/grid_announce_method.md) method sends a message to the live region of the grid, so a screen reader announces a status change without moving focus.
+    - Sorting, filtering, data loading and the range corrections of a numeric editor are [announced through the same live region](grid/accessibility.md#announcing-dynamic-changes), and the announced texts are [translated through the locale](grid/localization.md#announcements).
+
+- Toolbar/Menu/Sidebar/Ribbon. Keyboard navigation and accessible names:
+    - A bar is a single tab stop. The arrow keys, <kbd>Home</kbd> and <kbd>End</kbd> move between its controls, and menus open and close from the keyboard, returning focus to the control that opened them.
+    - <kbd>→</kbd>, <kbd>Enter</kbd> and <kbd>Space</kbd> on an entry move focus into its submenu, also when the submenu is already open, for example, after it was opened with the pointer. A context menu takes focus when it opens and returns it to where it was when it closes.
+    - Two-state and grouped buttons report their state, and a button without text, such as an icon button or a button built from custom HTML, takes its accessible name from its tooltip.
+
+For additional information, refer to the [Accessibility support](common_features/accessibility_support.md) and [Grid accessibility](grid/accessibility.md) guides, and to the Grid [Accessibility Conformance Report](grid/accessibility_conformance_report.md).
+
+### Fixes
+
+- Chart. Fixed the position of the tooltip and of the highlighted grid line for the first point of a Line/Spline/Area chart that has the `"right"` scale
+- Chart. Fixed series being bound to the missing `"left"` scale in a chart that declares the `"right"` value scale instead
+- Chart. Fixed the `targetValue` property of the `"top"` and `"right"` scales being ignored, and the target lines of the `"bottom"` and `"top"` scales being hidden when `grid: false` was set
+- Chart. Fixed the `baseLine` property of a series being checked against the `min` value of another scale and being reset in the original series configuration
+- ContextMenu. Fixed a closed context menu reopening as an invisible copy and losing the keyboard focus when a handler of the hide event changed the menu entries
+- DataCollection. Fixed removing a group row leaving its items behind and the counters of the groups above it short
+- DataCollection. Fixed changing the id of an item between adding the item and saving the changes, which produced a second save request for the item
+- DataCollection/TreeCollection. Fixed the `avg`, `min` and `max` methods of the [`dhx.methods`](helpers/data_calculation_functions.md#aggregating-an-empty-set-of-items) helper returning `NaN`, `Infinity` and `-Infinity` for an empty set of items instead of `null`
+- DataCollection/TreeCollection. Fixed the counter and the aggregated values of a group staying at the values they had when the grouping was applied. They now follow filtering, adding, removing and updating of items, on every level of a nested grouping
+- DataCollection/TreeCollection. Fixed the group summary rows (`summary: "top"` / `summary: "bottom"`) keeping the aggregates they had before filtering
+- DataCollection/TreeCollection. Fixed filtering breaking the group structure: a rule that did not match a group row dropped that row and its summary row, leaving the items of the group without a header
+- DataCollection/TreeCollection. Fixed a group staying in the collection with a non-zero counter after all its items were filtered out
+- DataCollection/TreeCollection. Fixed the group counters not returning to their original values after `resetFilter()`
+- DataCollection/TreeCollection. Fixed a group staying in the collection after all its items were removed
+- Grid. Fixed the summaries counting the group rows and the group summary rows as data, which doubled the column and common totals in a grouped grid
+- Grid. Fixed the group counters not being recalculated together with the tree structure of the grid
+- Grid. Fixed the spans, the CSS classes added with [`addCellCss()`](grid/api/grid_addcellcss_method.md) and the selection of a row being lost after the id of the row was changed via [`changeId()`](data_collection/api/datacollection_changeid_method.md)
+- Grid. Fixed the undo/redo actions of the History module referring to the old id of a row after the id was changed via `changeId()`
+- Grid. Fixed the keyboard focus being moved back to the active cell after editing ended, when the focus had already gone to the header, the footer or outside the grid
+- Grid. Fixed the `avg`, `min` and `max` summaries of a grid without rows being calculated as `NaN`, `Infinity` and `-Infinity` instead of `null`
+- List/DataView. Fixed the keyboard focus and the selection of an item being lost after the id of the item was changed via `changeId()`
+- List. Fixed the keyboard focus outline of the list and its items not being displayed
+- Message. Fixed the alert being declared with the `alert` role instead of the `alertdialog` one, and an alert without a header having no accessible name
+- Tabbar. Fixed the back scroll arrow getting stuck in a horizontal or vertical tab bar with many tabs of different sizes, which made it impossible to scroll back to the first tabs
+- Tabbar. Fixed the tab bar header collapsing when the [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) property was used in the `"left"`/`"right"` mode or the [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) property in the `"top"`/`"bottom"` mode
+- Tabbar. Fixed a script error in the top and bottom modes when a tab had no `tab` property
+- Tabbar. Added the missing `forEach()` method to the `ITabbar` TypeScript interface
+- Tree. Fixed the keyboard focus and the selection of an item being lost after the id of the item was changed via `changeId()`
+- TreeCollection. Fixed filtering in an ungrouped tree: it skipped the items which carried a `$group` field
+- TreeCollection. Fixed `changeId()` detaching the child items of an item from it, also when a filter was applied
+
+### New samples
+
+#### Calendar
+
+- [Calendar. Controls configuration](https://snippet.dhtmlx.com/6s97hj24)
+
+#### Chart
+
+- [Chart. Dual axis. Stacked bars and a spline](https://snippet.dhtmlx.com/bsinbn1t)
+- [Chart. Dual axis. Two line series](https://snippet.dhtmlx.com/6g8lka1v)
+- [Chart. Dual axis. Grouped bars and a line](https://snippet.dhtmlx.com/alg54k2w)
+- [Chart. Dual axis. Area and spline](https://snippet.dhtmlx.com/jmdubo1x)
+- [Chart. Dual axis. Horizontal bars (X-Bar)](https://snippet.dhtmlx.com/gmetbkcl)
+- [Chart. Dual axis. A stack on each axis](https://snippet.dhtmlx.com/e46fqamn)
+- [Chart. Grouped stacks (plan vs fact)](https://snippet.dhtmlx.com/8pu8uthc)
+- [Chart. Stacked bar chart. Show total](https://snippet.dhtmlx.com/t1j8t7pi)
+- [Chart. Donut chart. Show total](https://snippet.dhtmlx.com/kx7zmnf9)
+- [Chart. Dynamic colors. Conditional fill by value](https://snippet.dhtmlx.com/rj0zi16z)
+- [Chart. Dynamic colors. Highlight highest and lowest](https://snippet.dhtmlx.com/fbinubou)
+- [Chart. Dynamic colors. Gradient fill](https://snippet.dhtmlx.com/4p88y2mg)
+
+#### Grid
+
+- [Grid. Flexible header and footer row height](https://snippet.dhtmlx.com/bq7koy9z)
+- [Grid. Custom options for header filters](https://snippet.dhtmlx.com/pcrjqux0)
+- [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
+
+#### Layout
+
+- [Layout. Cell header with HTML template](https://snippet.dhtmlx.com/6xy6mrpq)
+- [Layout. Cell header with widget](https://snippet.dhtmlx.com/j4ihnbch)
+- [Layout. Cell headers with widget and HTML template](https://snippet.dhtmlx.com/n0vvj5o3)
+
+#### Tabbar
+
+- [Tabbar. Tab with HTML template](https://snippet.dhtmlx.com/3jb49vcx)
+
 ## Version 9.3.12
 
 Released on September 24, 2026
@@ -39,10 +203,7 @@ Released on September 24, 2026
     - Buttons built from custom HTML now expose an accessible name (**WCAG 4.1.2**, **WCAG 2.5.3**).
     - Two-state buttons report whether they are pressed, both in the bar and in a menu, and mutually exclusive choices are announced as a group (**WCAG 1.3.1**, **WCAG 3.2.4**).
 
-- Toolbar/Window. The `ariaLabel` configuration option:
-    - It sets the accessible name announced for a toolbar or a dialog (**WCAG 2.4.6**, **WCAG 4.1.2**).
-    - A Window without `ariaLabel` is named by its `title`; when neither is set, each widget falls back to its own locale key, `aria_toolbar` or `aria_dialog`.
-    - Dialog focus order and the reported modal state now follow the ARIA dialog pattern.
+- Window. Dialog focus order and the reported modal state now follow the ARIA dialog pattern.
 
 ### Fixes
 
@@ -1948,7 +2109,7 @@ Released on January 19, 2022
 - Layout. Fix the issue which caused the cells without the height/width specified initially cannot be reverted to the original state after they've been resized and collapsed several times
 - Layout. Fix the issue with collapsing and resizing a cell after it has been resized
 - LazyDataProxy in Grid. Fix the issue with the [`loadError`](data_collection/api/datacollection_loaderror_event.md) event
-- Menu. ContextMenu. Fix the issue with the self-generated "–context-menu" postfix for the name of the custom CSS class
+- Menu. ContextMenu. Fix the issue with the self-generated "--context-menu" postfix for the name of the custom CSS class
 - Menu. Fix the issue which caused the menu to close after hovering over the first item which is disabled
 - Ribbon. Fix the issue with calculation of the widget's height when some items are hidden
 - Toolbar. Datepicker control. Fix the issue which caused the same date to be shown in different Datepickers (two or more)

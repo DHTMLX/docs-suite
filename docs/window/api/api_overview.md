@@ -44,6 +44,7 @@ description: You can explore the API of Window in the documentation of the DHTML
 
 | Name                                             | Description                                             |
 | ------------------------------------------------ | ------------------------------------------------------- |
+| [](window/api/window_arialabel_config.md)        | @getshort(window/api/window_arialabel_config.md)        |
 | [](window/api/window_closable_config.md)         | @getshort(window/api/window_closable_config.md)         |
 | [](window/api/window_css_config.md)              | @getshort(window/api/window_css_config.md)              |
 | [](window/api/window_footer_config.md)           | @getshort(window/api/window_footer_config.md)           |

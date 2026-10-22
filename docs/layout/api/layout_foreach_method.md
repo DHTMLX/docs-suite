@@ -29,4 +29,6 @@ layout.forEach(function(cell, index, array) {
 
 **Related sample**: [Layout. ForEach](https://snippet.dhtmlx.com/9hfntqpy)
 
+**Related article**: [Iterating over cells](layout/work_with_layout.md#iterating-over-cells)
+
 @changelog: added in v6.4

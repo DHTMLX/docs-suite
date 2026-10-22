@@ -151,8 +151,9 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
+| [Accessibility support](common_features/accessibility_support.md) | Learn about accessibility support in Ribbon                   |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to enable custom scroll in Ribbon                     |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 
