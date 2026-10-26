@@ -8,6 +8,14 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.4.1
+
+Released on October 26, 2026
+
+### Fixes
+
+- Tabbar. Fixed the issue where hiding a nested Layout cell during a tab switch caused a TypeError (`Cannot set properties of null`) and left the tab blank when reopened
+
 ## Version 9.4
 
 Released on October 22, 2026
