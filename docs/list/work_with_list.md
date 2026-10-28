@@ -16,7 +16,7 @@ list.setFocus("7");
 
 **Related sample**: [List. Set active index](https://snippet.dhtmlx.com/ermcjx3d)
 
-To get the id of a List item in focus, use the [](list/api/list_getfocus_method.md) method. It will return the id of an item in focus:
+To get the id of a List item in focus, use the [](list/api/list_getfocus_method.md) method. It returns the id of an item in focus:
 
 ~~~js
 list.getFocus(); // -> "6"
@@ -76,7 +76,7 @@ You can change config options of the item via the [update()](data_collection/api
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>an object with new configuration of the item</td>
+            <td>an object with the new configuration of the item</td>
         </tr>
     </tbody>
 </table>
@@ -93,7 +93,7 @@ list.data.update("option_id",{
 
 ### Removing items from List
 
-To remove an item, make use of the [remove()](data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass the id of the item that should be removed to the method:
+To remove an item, make use of the [remove()](data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass to the method the id of the item that should be removed:
 
 ~~~js
 list.data.remove("option_id");
