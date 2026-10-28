@@ -14,7 +14,7 @@ Check [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Tabbar:
+Learn how to build a full-featured DHTMLX Tabbar:
 
 - [Features](tabbar/features.md)
 
@@ -24,8 +24,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Ta
 
 ## Related resources
 
-- You can get DHTMLX Tabbar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Tabbar as part of the Suite library
+- Try the [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar)
 
 ## Guides
 

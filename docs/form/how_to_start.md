@@ -7,15 +7,15 @@ description: You can explore the initialization of Form in the documentation of 
 # Initialization
 
 :::info
-[Download the DHTMLX Form package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Form package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Form into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Form to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Define Form structure](#define-form-structure)
-- [Initialize Form](#initialize-form) with the object constructor
+- [Initialize Form](#initialize-form) with the constructor
 
 ~~~html
 <!DOCTYPE html>
@@ -37,12 +37,12 @@ To add DHTMLX Form into an application, you need to take the following simple st
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -51,7 +51,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Form and give it an id, e.g. "form_container":
+Add a container for a Form and give it an id, for example `form_container`:
 
 ~~~html
 <div id="form_container"></div>
@@ -59,10 +59,9 @@ Add a container for the Form and give it an id, e.g. "form_container":
 
 ## Define Form structure
 
-Now you need to specify the list of Form controls. For example, you can create a form with two text fields for entering a name and an email, a checkbox for the user to give consent to data processing and a button to 
-send a form to a server.
+Specify the list of Form controls. For example, you can create a form with two text fields for a name and an email, a checkbox for consent to data processing, and a button that sends the form to a server.
 
-Thus, the structure of your form will look like this:
+The structure of your form then looks like this:
 
 - a Name input
 - an Email input
@@ -71,8 +70,7 @@ Thus, the structure of your form will look like this:
 
 ![Form with Name and Email input fields an I agree checkbox and a Send button in DHTMLX Suite](/img/form/form_init.png)
 
-To add controls inside a form, you should put them into a layout, either a vertical one (the **rows** attribute), or a horizontal one (the **cols** attribute). In the example below controls are arranged vertically, one under
-another:
+To add controls to a form, put them into a layout: either a vertical one (the `rows` property) or a horizontal one (the `cols` property). The example below arranges controls vertically, one under another:
 
 ~~~js
 rows: [
@@ -116,10 +114,10 @@ rows: [
 
 ## Initialize Form
 
-Initialize Form with the `dhx.Form` object constructor. The constructor takes two parameters:
+Initialize Form with the `dhx.Form` constructor. The constructor takes two parameters:
 
-- the HTML object on the page that serves as the form container. 
-- a configuration object which (besides config options) contains an array of form controls defined as objects with a set of attributes 
+- The HTML object on the page that serves as the form container.
+- A configuration object that contains config options and an array of form controls defined as objects.
 
 ~~~js
 const form = new dhx.Form("form_container", {

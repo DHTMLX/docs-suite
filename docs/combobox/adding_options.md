@@ -6,22 +6,22 @@ description: You can explore the data loading of Combo Box in the documentation 
 
 # Data loading
 
-There are several ways of loading Combo options:
+You can load Combobox options in two ways:
 
-- on initialization of ComboBox
-- after initialization of ComboBox
+- During Combobox initialization
+- After Combobox initialization
 
-First, you need to prepare a data set that will be loaded into Combo.
+Both ways start from a prepared data set.
 
 ## Preparing data set
 
-DHTMLX Combo expects loaded data in the JSON format. 
+DHTMLX Combobox expects data in JSON format.
 
 :::info
-Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+If you specify `id` fields in the data collection, their values must be **unique**. You can also omit these fields. In this case Combobox generates the values automatically.
 :::
 
-Here is an example of an appropriate data set:
+The following data set is valid:
 
 ~~~js
 const dataset = [
@@ -44,15 +44,17 @@ const dataset = [
 ]
 ~~~
 
-Each object in the data set contains a number of *key:value* pairs that represent attributes of Combo options. [Check the details](combobox/api/combobox_data_config.md).
+Each object in the data set contains `key:value` pairs that define Combobox option attributes. [Check the details](combobox/api/combobox_data_config.md).
 
-You can specify your own template of rendering Combo options with the help of the [template](combobox/api/combobox_template_config.md) configuration option.
+Use the [template](combobox/api/combobox_template_config.md) configuration option to define your own template for Combobox options.
 
-{{note Note, until you use the [template](combobox/api/combobox_template_config.md) option, the **value** is a mandatory property for a dataset item and **src** is a reserved one.}}
+:::note
+Unless you apply the [template](combobox/api/combobox_template_config.md) option, `value` is a mandatory property of a data set item, and `src` is a reserved one.
+:::
 
 ## Loading data on initialization
 
-You can load [a predefined data set](#preparing-data-set) into Combobox on the initialization stage. Use the [data](combobox/api/combobox_data_config.md) configuration property, as in:
+You can load [a predefined data set](#preparing-data-set) into Combobox during initialization. Use the [data](combobox/api/combobox_data_config.md) configuration property:
 
 ~~~js
 const combo = new dhx.Combobox("combo_container",{
@@ -64,25 +66,25 @@ const combo = new dhx.Combobox("combo_container",{
 
 ## Loading data after initialization
 
-There are two ways to load data into Combobox after its initialization:
+You can load data into Combobox after initialization in two ways:
 
-- [from an external file](#external-data-loading)
-- [from a local data source](#loading-from-local-source)
+- [From an external file](#external-data-loading)
+- [From a local data source](#loading-from-local-source)
 
 ### External data loading
 
-To load data from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](/data_collection/). It takes the URL of the file with data as a parameter:
+The [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](/data_collection/) loads data from an external file. The method takes the URL of the data file as a parameter:
 
 ~~~js
-const combo = new dhx.Combo("combo_container");
+const combo = new dhx.Combobox("combo_container");
 combo.data.load("../common/dataset.json");
 ~~~
 
 **Related sample**: [Combobox. Initialization with data.load()](https://snippet.dhtmlx.com/69jnq5cn)
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to return valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Combobox loads data asynchronously, so place the code that depends on the loaded data into the `then()` callback:
 
 ~~~js
 combo.data.load("/some/data").then(function(){
@@ -92,10 +94,10 @@ combo.data.load("/some/data").then(function(){
 
 ### Loading from local source
 
-To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](/data_collection/). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+The [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](/data_collection/) loads data from a local data source. Pass [a predefined data set](#preparing-data-set) to this method:
 
 ~~~js
-const combo = new dhx.Combo("combo_container");
+const combo = new dhx.Combobox("combo_container");
 combo.data.parse(dataset);
 ~~~
 
@@ -103,28 +105,29 @@ combo.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a combo box (in other words, the current list of Combobox options), use the **serialize()** method of [DataCollection](/data_collection/). It converts the data of a combo box into an array of JSON objects.
-Each JSON object contains a set of *key:value* pairs that represent attributes of ComboBox options.
+The `serialize()` method of [DataCollection](/data_collection/) saves the current state of Combobox — the current list of its options. The method converts Combobox data into an array of JSON objects. Each JSON object contains `key:value` pairs that define Combobox option attributes.
 
 ~~~js
-const state = combo1.data.serialize();
+const state = combo.data.serialize();
 
 // -> [{…}, {…}, {…}, {…}, {…}, {…}, {…}, …]
 ~~~
 
 :::note
-If you just call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return the list of all Combobox options.
+The value returned by the [serialize()](data_collection/api/datacollection_serialize_method.md) method depends on the Combobox state:
 
-If you select an option in the Combobox and call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return only this option.
-
-If you enable the [multi-selection mode](combobox/configuration.md#selection-of-multiple-options) of Combobox, then select one or several options in the Combobox and call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return the list of all Combobox options.
+| Combobox state | `serialize()` returns |
+| --- | --- |
+| No option selected | All Combobox options |
+| One option selected | The selected option only |
+| [Multi-selection mode](combobox/configuration.md#selection-of-multiple-options) enabled, one or several options selected | All Combobox options |
 :::
 
-Then you can parse the data stored in the saved state array to a different combo box. For example:
+You can parse the saved state array into a different Combobox:
 
 ~~~js
 // creating a new combo
-const combo2 = new dhx.Combo(document.body);
-// parsing the state of combo1 into combo2
+const combo2 = new dhx.Combobox(document.body);
+// parsing the state of combo into combo2
 combo2.data.parse(state);
 ~~~

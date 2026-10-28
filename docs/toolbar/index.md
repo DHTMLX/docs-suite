@@ -13,7 +13,7 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Toolbar:
+Learn how to build a full-featured DHTMLX Toolbar:
 
 - [Features](toolbar/features.md)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX To
 
 ## Related resources
 
-- You can get DHTMLX Toolbar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Toolbar as part of the Suite library
+- Try the [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar)
 - To work with data of Toolbar check [TreeCollection API](/tree_collection/)
 
 ## Guides

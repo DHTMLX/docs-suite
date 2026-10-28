@@ -4,17 +4,16 @@ title: JavaScript Combo Box - Combo Box Overview
 description: You can have an overview of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# ComboBox overview
+# Combobox overview
 
-DHTMLX ComboBox is an advanced select box that provides the ability to show suggestions while a user is entering text in the input. The component allows you to set custom filtering rules and specify templates of 
-displaying options in the list. Among other nice features there are tuning of the list of options and Combo Box input, selection of multiple options and data loading on request.
-Check [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox).
+DHTMLX Combobox is an advanced select box that shows suggestions while the user types in the input. The component allows you to set custom filtering rules and specify templates for options in the list. Other features include configuration of the option list and the input, multiple selection, and data loading on demand.
+Check [online samples for DHTMLX Combobox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox).
 
 ![DHTMLX ComboBox with typed text and a dropdown of country options with flag icons in DHTMLX Suite](/img/combo/combo_front.png)
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Combobox:
+Check the following page to learn how to build a full-featured DHTMLX Combobox:
 
 - [Features](combobox/features.md)
 
@@ -24,9 +23,9 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## Related resources
 
-- You can get DHTMLX ComboBox as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX ComboBox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox)
-- To work with data of ComboBox check [DataCollection API](/data_collection/)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Combobox as part of the Suite library
+- Browse [online samples for DHTMLX Combobox](https://snippet.dhtmlx.com/ui7pi7ty?tag=combobox)
+- Check the [DataCollection API](/data_collection/) to work with Combobox data
 
 ## Guides
 

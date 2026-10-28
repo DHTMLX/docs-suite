@@ -7,14 +7,14 @@ description: You can explore the initialization of DataView in the documentation
 # Initialization
 
 :::info
-[Download the DHTMLX DataView package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX DataView package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To initialize DHTMLX DataView on a page, you need to take the following simple steps:
+Follow these steps to initialize DHTMLX DataView on a page:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
-- [Initialize DataView](#initialize-dataview) with the object constructor
+- [Initialize DataView](#initialize-dataview) with the constructor
 - [Load data into DataView](#load-data-into-dataview)
 
 ~~~html title="index.html"
@@ -39,12 +39,12 @@ To initialize DHTMLX DataView on a page, you need to take the following simple s
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html title="index.html"
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -53,7 +53,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for DataView and give it an id, for example "dataview_container":
+Add a container for DataView and give it an id, for example `dataview_container`:
 
 ~~~html title="index.html"
 <div id="dataview_container"></div>
@@ -61,10 +61,10 @@ Add a container for DataView and give it an id, for example "dataview_container"
 
 ## Initialize DataView
 
-Initialize DataView with the `dhx.DataView` object constructor. The constructor has two parameters:
+Initialize DataView with the `dhx.DataView` constructor. The constructor takes two parameters:
 
-- the HTML container for DataView,
-- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
+- The HTML container for DataView.
+- An object with configuration properties (optional). If you omit this argument, DataView uses the default settings.
 
 ~~~js title="index.js"
 // creating DHTMLX DataView
@@ -74,20 +74,18 @@ const dataview = new dhx.DataView("dataview_container", {
 ~~~
 
 :::info
-To display data in DataView you should define a [template](dataview/configuration.md#template-for-dataview-items) via the [template](dataview/api/dataview_template_config.md) configuration property.
+To display data in DataView, define a [custom template](dataview/configuration.md#template-for-dataview-items) with the [template](dataview/api/dataview_template_config.md) configuration property.
 
-Another way to display data in DataView is to prepare a data set with the ["value"](dataview/data_loading.md#preparing-data-set) attribute.
+Another way to display data in DataView is to prepare a data set with the [`value`](dataview/data_loading.md#preparing-data-set) attribute.
 :::
 
 ### Configuration properties
 
-There is a set of properties you can specify for DataView to optimize its configuration for your needs.
-
-The detailed information on DataView configuration options can be found in the [Dataview API overview](dataview/api/api_overview.md#properties) article.
+The [DataView API overview](dataview/api/api_overview.md#properties) article describes the properties you can specify to adapt DataView to your needs.
 
 ## Load data into DataView
 
-Detailed information on how to load data into DHTMLX DataView is given in the [Data loading](dataview/data_loading.md) article.
+The [Data loading](dataview/data_loading.md) article explains how to load data into DHTMLX DataView.
 
 ## Example
 

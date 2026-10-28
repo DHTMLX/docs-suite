@@ -6,13 +6,13 @@ description: You can explore the Spacer of Form in the documentation of the DHTM
 
 # Spacer
 
-This item takes space on the form and is used for aligning controls.
+A control that takes up space in a form to align other controls.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 ## Adding Spacer
 
-You can easily add a Spacer control during initialization of a form:
+You can add a Spacer control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -37,22 +37,22 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Spacer control](form/api/spacer/api_spacer_properties.md).
+View [the full list of Spacer configuration properties](form/api/spacer/api_spacer_properties.md).
 
 ## Working with Spacer
 
-You can manipulate a Spacer control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Spacer control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can hide the control:
 
 ~~~js
-const value = form.getItem("spacer").hide();
+form.getItem("spacer").hide();
 ~~~
 
 ### Methods
 
-Check [the full list of methods of the Spacer control](form/api/api_overview.md#spacer-methods).
+Check [the full list of Spacer methods](form/api/api_overview.md#spacer-methods).
 
 ### Events
 
-Check [the full list of events of the Spacer control](form/api/api_overview.md#spacer-events).
+Check [the full list of Spacer events](form/api/api_overview.md#spacer-events).

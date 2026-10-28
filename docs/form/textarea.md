@@ -6,7 +6,7 @@ description: You can explore the Textarea of Form in the documentation of the DH
 
 # Textarea
 
-A control that allows a user to enter a simple multi-line text.
+A control that allows users to enter multi-line text.
 
 ![Textarea form control with a label and a multi-line text value in DHTMLX Suite](/img/form/form_textarea.png)
 
@@ -16,7 +16,7 @@ A control that allows a user to enter a simple multi-line text.
 
 ## Adding Textarea
 
-You can easily add a Textarea control during initialization of a form:
+You can add a Textarea control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -35,11 +35,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Textarea control](form/api/textarea/api_textarea_properties.md).
+View [the full list of Textarea configuration properties](form/api/textarea/api_textarea_properties.md).
 
 ## Working with Textarea
 
-You can manipulate a Textarea control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Textarea control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
@@ -49,8 +49,8 @@ const value = form.getItem("textarea").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Textarea control](form/api/api_overview.md#textarea-methods).
+Check [the full list of Textarea methods](form/api/api_overview.md#textarea-methods).
 
 ### Events
 
-Check [the full list of events of the Textarea control](form/api/api_overview.md#textarea-events).
+Check [the full list of Textarea events](form/api/api_overview.md#textarea-events).
