@@ -6,31 +6,30 @@ description: You can have an overview of various Chart types in the documentatio
 
 # Overview of Chart types
 
-DHTMLX Chart provides a variety of charts types that will help you to represent you data in the most suitable way. Each type of chart is easily configurable and can be adjusted according to your preferences.
-All in all there are 11 types of chart, in the list below they are combined into groups for the sake of convenience:
+DHTMLX Chart includes 13 chart types, so you can display your data in the best way. Every type is fully configurable.
 
-- Overview of Chart types
-  - [Line and Spline chart](#line-and-spline-chart)
-    - [Line chart](#line-chart)
-    - [Spline chart](#spline-chart)
-  - [Bar and X-Bar chart](#bar-and-x-bar-chart)
-    - [Bar chart](#bar-chart)
-    - [X-Bar chart](#x-bar-chart)
-  - [Area and SplineArea chart](#area-and-splinearea-chart)
-    - [Area chart](#area-chart)
-    - [SplineArea chart](#splinearea-chart)
-  - [Pie, Pie 3D and Donut chart](#pie-pie-3d-and-donut-chart)
-    - [Pie and Pie 3D chart](#pie-and-pie-3d-chart)
-    - [Donut chart](#donut-chart)
-  - [Radar chart](#radar-chart)
-  - [Scatter chart](#scatter-chart)
-  - [Treemap chart](#treemap-chart)
-  - [Calendar heatmap chart](#calendar-heatmap-chart)
+The list below groups the types by kind:
+
+- [Line and Spline chart](#line-and-spline-chart)
+  - [Line chart](#line-chart)
+  - [Spline chart](#spline-chart)
+- [Bar and X-Bar chart](#bar-and-x-bar-chart)
+  - [Bar chart](#bar-chart)
+  - [X-Bar chart](#x-bar-chart)
+- [Area and SplineArea chart](#area-and-splinearea-chart)
+  - [Area chart](#area-chart)
+  - [SplineArea chart](#splinearea-chart)
+- [Pie, Pie 3D and Donut chart](#pie-pie-3d-and-donut-chart)
+  - [Pie and Pie 3D chart](#pie-and-pie-3d-chart)
+  - [Donut chart](#donut-chart)
+- [Radar chart](#radar-chart)
+- [Scatter chart](#scatter-chart)
+- [Treemap chart](#treemap-chart)
+- [Calendar heatmap chart](#calendar-heatmap-chart)
 
 ## Line and Spline chart
 
-This is a basic chart type that shows changes of trends in progress over a period of time. Thus it will help you to display the dynamics of prices over a year or
-how the number of staff has increased over several years. Choose this variant when your data has **more than 10 items**. 
+A basic chart type that shows how trends change over time. Use it to display price dynamics over a year or staff growth over several years. Choose this type when your data has **more than 10 items**.
 
 ### Line chart
 
@@ -50,7 +49,7 @@ how the number of staff has increased over several years. Choose this variant wh
 
 ## Bar and X-Bar chart
 
-The same as Line chart it displays data for certain periods. It greatly suits you if there are **less than 10 items** in your data set.
+Like the Line chart, the Bar chart displays data for a set of periods. It works best when your data set has **fewer than 10 items**.
 
 ### Bar chart
 
@@ -70,7 +69,7 @@ The same as Line chart it displays data for certain periods. It greatly suits yo
 
 ## Area and SplineArea chart
 
-Area chart is based on the Line chart. The difference is that areas below lines are filled with color. This type of chart allows you to provide visual comparison of two or more values over time.
+The Area chart builds on the Line chart, but fills the areas below the lines with color. Use it to compare two or more values over time.
 
 ### Area chart
 
@@ -90,7 +89,7 @@ Area chart is based on the Line chart. The difference is that areas below lines 
 
 ## Pie, Pie 3D and Donut chart
 
-Pie chart and its variations are the best choice when you deal with proportions and percentages. It is a circular chart divided into proportional parts that illustrate relations between items in a data set.
+The Pie chart and its variations are the best choice for proportions and percentages. Each chart splits a circle into parts that show how items in a data set relate to each other.
 
 ### Pie and Pie 3D chart
 
@@ -112,8 +111,7 @@ Pie chart and its variations are the best choice when you deal with proportions 
 
 ## Radar chart
 
-This one is a two-dimensional chart that allows placing one or several series of values over multiple numerical variables. For example, Radar chart will help you to study how a number of parameters 
-relate to one item (the center point of a chart) and compare their values.
+A two-dimensional chart that places one or more series of values over multiple numerical variables. Use the Radar chart to study how several parameters relate to one item (the center point of the chart) and to compare parameter values.
 
 ![Radar chart plotting two data series across multiple axes in DHTMLX Suite](/img/chart/radar_overview.png)
 
@@ -123,7 +121,7 @@ relate to one item (the center point of a chart) and compare their values.
 
 ## Scatter chart
 
-The peculiarity of Scatter Chart is that it allows exploring relations between two sets of data in order to find out possible dependencies or patterns.
+The Scatter chart explores relations between two sets of data to reveal dependencies or patterns.
 
 ![Scatter chart plotting two value series as points on XY axes in DHTMLX Suite](/img/chart/scatter_overview.png)
 
@@ -133,7 +131,7 @@ The peculiarity of Scatter Chart is that it allows exploring relations between t
 
 ## Treemap chart
 
-A treemap chart presents a hierarchical visualization of data as a set of rectangular tiles and makes it easy to spot patterns. Several tiles can be collected into a group. The sizes of tiles are proportional to the values of the data items they represent.
+The Treemap chart displays hierarchical data as a set of rectangular tiles, which makes patterns easy to spot. You can collect several tiles into a group. The size of each tile is proportional to the value of its data item.
 
 ![Treemap chart sizing planets by value with a color legend in DHTMLX Suite](/img/chart/treemap.png)
 
@@ -143,15 +141,15 @@ A treemap chart presents a hierarchical visualization of data as a set of rectan
 
 **Related article:** [Treemap chart configuration](chart/configuration_properties.md#treemap-chart)
 
-## Calendar heatmap chart 
+## Calendar heatmap chart
 
 :::tip PRO VERSION ONLY
-The calendar heatmap chart is available only in the PRO version of the DHTMLX Chart (or DHTMLX Suite).
+The Calendar heatmap chart is available only in the PRO version of DHTMLX Chart (or DHTMLX Suite).
 :::
 
-The calendar heatmap chart is a two dimensional calendar view that uses graduated colors to visualize certain number of events for specific days during a year or other specified period of time. The whole time period in the chart is divided into years and years into months. Each cell in a column corresponds to a day of the week.
+This chart is a two-dimensional calendar view. It uses graduated colors to show how many events fall on each day of a year or another period. The chart divides the period into years, and each year into months. Each cell in a column corresponds to a day of the week.
 
-The chart helps to display and identify daily patterns or anomalies over the necessary period.
+The chart helps you identify daily patterns and anomalies over the chosen period.
 
 ![Calendar heatmap chart showing daily profit values by color over a year in DHTMLX Suite](/img/chart/heatmap_overview.png)
 
@@ -162,6 +160,4 @@ The chart helps to display and identify daily patterns or anomalies over the nec
 - [Event Calendar. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/0n3ta0je)
 - [Scheduler. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/tlfazogt)
 
-
 **Related article:** [Calendar heatmap chart configuration](chart/configuration_properties.md#calendar-heatmap-chart)
-
