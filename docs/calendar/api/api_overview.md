@@ -35,6 +35,7 @@ description: You can explore the API of Calendar in the documentation of the DHT
 
 | Name                                              | Description                                              |
 | ------------------------------------------------- | -------------------------------------------------------- |
+| [](calendar/api/calendar_controls_config.md)      | @getshort(calendar/api/calendar_controls_config.md)      |
 | [](calendar/api/calendar_css_config.md)           | @getshort(calendar/api/calendar_css_config.md)           |
 | [](calendar/api/calendar_date_config.md)          | @getshort(calendar/api/calendar_date_config.md)          |
 | [](calendar/api/calendar_dateformat_config.md)    | @getshort(calendar/api/calendar_dateformat_config.md)    |

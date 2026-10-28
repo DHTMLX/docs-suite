@@ -11,9 +11,9 @@ description: You can explore the beforeChange event of Calendar in the documenta
 @signature: {'beforeChange: (date: Date, oldDate: Date, byClick: boolean) => boolean | void;'}
 
 @params:
-- `date: Date` - the newly selected date
+- `date: Date` - the newly selected date. If the selection is about to be cleared, an empty string
 - `oldDate: Date` - the previously selected date
-- `byClick: boolean` - defines whether the change happened because of a click on a date  - *true*, or due to an API call - *false*
+- `byClick: boolean` - defines whether the change happened because of a click on a date or on the `"today"` or `"clear"` [control](calendar/api/calendar_controls_config.md) - *true*, or due to an API call - *false*
 
 @returns:
 Return `true` to allow changing date selection, `false` to prevent changing date selection.
@@ -26,9 +26,13 @@ calendar.events.on("beforeChange",function(date, oldDate, byClick){
 
 @descr:
 
-**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
-
 You can block selection of particular dates by returning *false* from the event handler.
 
-[comment]: # (@related:calendar/handling_events.md) 
-[comment]: # (@relatedapi:calendar/api/calendar_change_event.md)
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
+
+**Related API**:
+- [`change`](calendar/api/calendar_change_event.md)
+- [`controls`](calendar/api/calendar_controls_config.md)
+- [`clear()`](calendar/api/calendar_clear_method.md)
+
+**Related article**: [Event handling](calendar/handling_events.md)
