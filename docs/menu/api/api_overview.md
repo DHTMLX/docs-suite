@@ -45,6 +45,7 @@ Use [TreeCollection events](/tree_collection/#events) to work with data.
 
 | Name                                       | Description                                       |
 | ------------------------------------------ | ------------------------------------------------- |
+| [](menu/api/menu_arialabel_config.md)      | @getshort(menu/api/menu_arialabel_config.md)      |
 | [](menu/api/menu_css_config.md)            | @getshort(menu/api/menu_css_config.md)            |
 | [](menu/api/menu_data_config.md)           | @getshort(menu/api/menu_data_config.md)           |
 | [](menu/api/menu_menucss_config.md)        | @getshort(menu/api/menu_menucss_config.md)        |

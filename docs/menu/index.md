@@ -6,7 +6,7 @@ description: You can have an overview of Menu in the documentation of the DHTMLX
 
 # Menu overview
 
-DHTMLX Menu is a component that provides an easy way to add a drop down menu to user's projects. This component is highly customizable and supports a wide range of features. DHTMLX Menu component can be a good navigation aid to web sites, help systems, etc. Check [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu).
+DHTMLX Menu is a component that provides an easy way to add a drop-down menu to your projects. This component is highly customizable and supports a wide range of features. The DHTMLX Menu component can be a good navigation aid to web sites and help systems. Check [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu).
 
 ![Horizontal menu bar with an open Format dropdown and Align submenu in DHTMLX Suite](/img/menu/menu_front.png)
 
@@ -28,7 +28,7 @@ Learn how to build a full-featured DHTMLX Menu:
 
 ## Guides
 
-You can read the following articles to find out how to add Menu on the page and work with it.
+You can read the following articles to find out how to add Menu to the page and work with it.
 
 - [](menu/how_to_start.md)
 - [](menu/configuring_menu_items.md)

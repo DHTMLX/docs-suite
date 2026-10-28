@@ -18,7 +18,7 @@ const chart = new dhx.Chart("chart_container", {
 @descr:
 ## Available types of charts 
 
-- "bar", "x-bar"
+- "bar", "xbar"
 - "line", "spline"
 - "scatter"
 - "area", "splineArea"

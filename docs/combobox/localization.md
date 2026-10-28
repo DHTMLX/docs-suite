@@ -45,7 +45,7 @@ const de = {
 - apply the language settings by calling the **dhx.i18n.setLocale()** method before Combobox initialization:
 
 ~~~js
-dhx.i18n.setLocale("combo_container", de);
+dhx.i18n.setLocale("combobox", de);
 const combo = new dhx.Combobox("combo_container");
 ~~~
 

@@ -30,6 +30,7 @@ Learn how to build a full-featured DHTMLX Timepicker:
 
 - [](timepicker/initialization.md)
 - [](timepicker/configuration.md)
+- [](timepicker/localization.md)
 - [](timepicker/usage.md)
 - [](timepicker/customization.md)
 - [](timepicker/handling_events.md)

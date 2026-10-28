@@ -8,7 +8,7 @@ description: You can explore the list of Menu controls of Menu in the documentat
 
 In this article you'll find the controls you can use in DHTMLX Menu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
 
-To operate Menu controls, you can use Menu API and [Tree Collection API](/tree_collection/). Check the [related article](menu/work_with_menu.md).
+To operate Menu controls, you can use the Menu API and [Tree Collection API](/tree_collection/). Check the [related article](menu/work_with_menu.md).
 
 ## MenuItem
 
@@ -18,7 +18,7 @@ MenuItem is a drop-down list of options.
 
 ### Adding menuItem
 
-You can add a MenuItem control into the menu with the help of the **add()** method of Tree Collection:
+You can add a MenuItem control into the menu with the help of the `add()` method of Tree Collection:
 
 ~~~js
 menu.data.add({
@@ -45,7 +45,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ### Adding Custom HTML
 
-Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Any custom HTML content can be easily added to a menu with the help of the `add()` method of [Tree Collection](/tree_collection/):
 
 ~~~js
 menu.data.add({
@@ -71,7 +71,7 @@ This is a horizontal (between menu options) or vertical (between menu items) lin
 
 ### Adding Separator
 
-A new Separator can be created with the help of the **add()** method of Tree Collection:
+A new Separator can be created with the help of the `add()` method of Tree Collection:
 
 ~~~js
 menu.data.add({
@@ -87,13 +87,13 @@ See [the full list of properties](menu/api/api_separator_properties.md) that you
 
 ## Spacer
 
-This item takes space on the toolbar and is used for aligning controls.
+This item takes space on the menu and is used for aligning controls.
 
 ![Menu bar with a spacer pushing the Edit item and its dropdown to the right in DHTMLX Suite](/img/menu/spacer.png)
 
 ### Adding Spacer
 
-A new Spacer can be created with the help of the **add()** method of Tree Collection:
+A new Spacer can be created with the help of the `add()` method of Tree Collection:
 
 ~~~js
 menu.data.add({
