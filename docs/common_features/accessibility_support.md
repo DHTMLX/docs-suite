@@ -6,13 +6,13 @@ description: Learn how DHTMLX Suite widgets support accessibility, from WAI-ARIA
 
 # Accessibility support
 
-Accessibility is one of the key concepts in present-day web development. It presupposes equal access to web resources for people with diverse abilities.
+Accessibility is one of the key concepts in present-day web development. It gives people with diverse abilities equal access to web resources.
 
 ## Web conformance guidelines
 
-Even if you are not mandated to conform to any particular accessibility standard, it can be helpful to understand the guidelines outlined as they are generally good practices worth incorporating into your web based applications.
+Even if no accessibility standard is mandatory for you, the guidelines below are good practices worth applying to your web-based applications.
 
-Currently the most commonly encountered conformance guidelines and standards are:
+The most common conformance guidelines and standards are:
 
 - [ADA](https://www.ada.gov/) - US Department of Justice
 - [Section 508](https://www.section508.gov/) - US federal agencies
@@ -29,7 +29,7 @@ The DHTMLX Suite library meets the main requirements of the WCAG standards and p
 
 ## WAI-ARIA attributes
 
-There are special attributes used in the markup of DHTMLX Suite widgets that make it possible for screen readers to recognize and interpret them to the user, namely:
+The markup of DHTMLX Suite widgets contains special attributes that let screen readers recognize the widgets and describe them to the user:
 
 ### Grid
 
@@ -50,21 +50,21 @@ For the complete picture, including the ARIA model, the keyboard zones (header/b
 
 ### Chart
 
-There are **aria** attributes for axes, lines, points, legends and general description of the chart (enabled by default). Points on charts like line, spline, area, spline area have aria attributes only when the **pointType** property is set. Information for attributes is taken from the chart config and property names. Currently, the ability to specify this information by yourself is not provided.
+**aria** attributes cover axes, lines, points, legends, and a general description of the chart. They are enabled by default. Points on line, spline, area, and spline area charts have aria attributes only when the `pointType` property is set. DHTMLX takes the attribute information from the chart config and property names. You cannot specify this information yourself.
 
 You can find the following **roles** and **attributes** in the DOM:
-- role: *graphics-document*, *graphics-object*, *graphics-symbol*, *button*
-- aria attributes: *label*,  *roledescription*.
+- role: `graphics-document`, `graphics-object`, `graphics-symbol`, `button`
+- aria attributes: `label`, `roledescription`.
 
-Role presentation and aria-hidden are used to hide redundant content from the accessibility tree.
+The `presentation` role and `aria-hidden` hide redundant content from the accessibility tree.
 
 ### List and DataView
 
-There are general description of the component, items and their states. All the **roles** and **attributes** are enabled by default You can find the following **roles** and **attributes** in the DOM:
-- role: *listbox*, *option*
-- aria attributes: *label*, *roledescription*, *grabbed*, *selected*, *multiselectable*, *readonly*.
+The component, its items, and their states have a general description. All **roles** and **attributes** are enabled by default. You can find the following **roles** and **attributes** in the DOM:
+- role: `listbox`, `option`
+- aria attributes: `label`, `roledescription`, `grabbed`, `selected`, `multiselectable`, `readonly`.
 
-Role presentation and aria-hidden are used to hide redundant markup from the accessibility tree.
+The `presentation` role and `aria-hidden` hide redundant markup from the accessibility tree.
 
 ### Toolbar, Menu, Sidebar and Ribbon
 
@@ -100,7 +100,7 @@ const cmenu = new dhx.ContextMenu(null, {
 });
 ~~~
 
-Role presentation and aria-hidden are used to hide redundant markup from the accessibility tree.
+The `presentation` role and `aria-hidden` hide redundant markup from the accessibility tree.
 
 ### Window
 
@@ -142,7 +142,7 @@ The buttons of alert and confirmation dialogs take their accessible names from t
 
 ## Keyboard navigation
 
-All DHTMLX Suite widgets are provided with a keyboard navigation support. It allows using a Suite-based app without a mouse pointer. Basic rules include:
+All DHTMLX Suite widgets support keyboard navigation, so you can use a Suite-based app without a mouse pointer. Basic rules include:
 
 - the <kbd>Tab</kbd> key is used to navigate between widgets and clickable areas of the widgets. A group of controls, such as a toolbar, a menu bar, a sidebar, a ribbon or a color palette, is a single tab stop. In a grid, <kbd>Tab</kbd> moves cell by cell, and leaves the grid at its ends
 - the <kbd>Arrow</kbd> keys are used to move selection or change active elements within widgets
@@ -241,9 +241,9 @@ The locale keys are flat: pass each key at the top level of the object, not insi
 
 ## High-contrast themes
 
-For users that are visually impaired due to color deficiencies, care should be taken when using colors to provide information.
+For users who are visually impaired due to color deficiencies, choose colors carefully when you use them to convey information.
 
-Among various DHTMLX Suite themes there are the high-contrast ones:
+DHTMLX Suite includes two high-contrast themes:
 - **Light High Contrast**
 - **Dark High Contrast**
 
@@ -251,6 +251,6 @@ Among various DHTMLX Suite themes there are the high-contrast ones:
 The contrast themes correspond to the AAA level.
 :::
 
-Being rather attractive, it is also helpful for those users who have weak eye-sight.
+These themes also help users with poor eyesight.
 
 <iframe src="https://snippet.dhtmlx.com/85fbitnu?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>

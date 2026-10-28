@@ -6,15 +6,17 @@ description: You can learn about custom scroll in the documentation of the DHTML
 
 # Custom scroll
 
-{{pronote This functionality requires PRO version of the DHTMLX Suite package.}}
+:::info
+This functionality requires the PRO version of the DHTMLX Suite package.
+:::
 
-From v7.2, DHTMLX includes neat custom scrollbars with a thin grey semi-transparent design to replace the standard browser scrollbars. The custom bars come with the auto-hide behavior, i.e., they are initially hidden and shown only when the user hovers the mouse over the page. 
+From v7.2, DHTMLX includes custom scrollbars with a thin, grey, semi-transparent design that replace the standard browser scrollbars. The custom bars hide automatically: they stay hidden until the user hovers the mouse over the page.
 
 <iframe src="https://snippet.dhtmlx.com/gjsbvzdk?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
-The custom scroll is available for the following DHTMLX components: List, DataView, Grid, Grid in the TreeGrid mode, Layout cell, Toolbar, Ribbon, Sidebar, Window.
+The custom scroll is available for the following DHTMLX components: List, DataView, Grid, Grid in the TreeGrid mode, Layout cell, Toolbar, Ribbon, Sidebar, and Window.
 
-To add the feature into your application, you need to set the **enable** property of the **dhx.scrollViewConfig** global variable to *true* before initialization of the widgets:
+Set the `enable` property of the `dhx.scrollViewConfig` global variable to `true` before you initialize the widgets:
 
 ~~~js
 // enable the custom scroll for all available widgets
@@ -26,7 +28,7 @@ const list = new dhx.List("list_container", {
 });
 ~~~
 
-or apply the **enable()** method of the **scrollView** object after initialization of the widget:
+To enable the custom scroll after initialization, apply the `enable()` method of the `scrollView` object:
 
 ~~~js
 // initialize the widget
@@ -42,11 +44,11 @@ list.data.load(data);
 list.scrollView.enable();
 ~~~
 
-For more details on the custom scroll configuration, read [this article](helpers/custom_scroll.md). 
+For more details, read the [custom scroll configuration](helpers/custom_scroll.md) article.
 
 ## Custom scroll in Optimus demos
 
-You may notice, that all DHTMLX demos built with Optimus have the custom scroll enabled. 
+All DHTMLX demos built with Optimus have the custom scroll enabled.
 
 ![Hospital management demo grid with thin custom scrollbars enabled in DHTMLX Suite](/img/integration/custom_scroll_optimus.png)
 
@@ -54,10 +56,10 @@ You may notice, that all DHTMLX demos built with Optimus have the custom scroll 
 
 | Demo                                                                                    | Related article                                                             |
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)      | learn more in [the related article](optimus_guides/filemanager_demo.md) |
-| [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)       | learn more in [the related article](optimus_guides/dashboard_demo.md)   |
-| [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/) | learn more in [the related article](optimus_guides/hotel_demo.md)       |
-| [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/)            | learn more in [the related article](optimus_guides/geotracking_demo.md) |
-| [Hospital Management](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/)        | learn more in [the related article](optimus_guides/hospital_demo.md)    |
-| [Sales KPI Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/)              | learn more in [the related article](optimus_guides/kpi_demo.md)         |
-| [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/)             | learn more in [the related article](optimus_guides/exam_demo.md)        |
+| [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)      | [File Explorer guide](optimus_guides/filemanager_demo.md)       |
+| [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)       | [UI Dashboard guide](optimus_guides/dashboard_demo.md)          |
+| [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/) | [Hotel Management guide](optimus_guides/hotel_demo.md)          |
+| [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/)            | [Geo Tracking guide](optimus_guides/geotracking_demo.md)        |
+| [Hospital Management](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/)        | [Hospital Management guide](optimus_guides/hospital_demo.md)    |
+| [Sales KPI Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/)              | [Sales KPI Tracking guide](optimus_guides/kpi_demo.md)          |
+| [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/)             | [Online Exam System guide](optimus_guides/exam_demo.md)         |
