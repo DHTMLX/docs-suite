@@ -55,6 +55,7 @@ Use [TreeCollection events](/tree_collection/#events) to work with data.
 
 | Name                                        | Description                                        |
 | ------------------------------------------- | -------------------------------------------------- |
+| [](sidebar/api/sidebar_arialabel_config.md) | @getshort(sidebar/api/sidebar_arialabel_config.md) |
 | [](sidebar/api/sidebar_collapsed_config.md) | @getshort(sidebar/api/sidebar_collapsed_config.md) |
 | [](sidebar/api/sidebar_css_config.md)       | @getshort(sidebar/api/sidebar_css_config.md)       |
 | [](sidebar/api/sidebar_data_config.md)      | @getshort(sidebar/api/sidebar_data_config.md)      |

@@ -17,7 +17,7 @@ The component is easy-to-use and provides handy navigation that allows you to qu
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Pagination:
+Learn how to build a full-featured DHTMLX Pagination:
 
 - [Features](pagination/features.md)
 
@@ -27,8 +27,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Pa
 
 ## Related resources
 
-- You can get DHTMLX Pagination as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Pagination](https://snippet.dhtmlx.com/05r4s63b?tag=pagination)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Pagination as part of the Suite library
+- Try the [online samples for DHTMLX Pagination](https://snippet.dhtmlx.com/05r4s63b?tag=pagination)
 
 ## Guides
 

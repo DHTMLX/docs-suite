@@ -6,7 +6,7 @@ description: You can explore the Context Menu in the documentation of the DHTMLX
 
 # Context menu
 
-dhtmlxContextMenu is a component that provides an easy way to add a contextual menu to projects. It will be of great help for frequently used actions in web sites, help systems, etc.
+dhtmlxContextMenu is a component that provides an easy way to add a contextual menu to projects. It is useful for frequently used actions in web sites and help systems.
 
 ![Context menu with Add, Rename, Delete options and a nested submenu in DHTMLX Suite](/img/menu/context_menu.png)
 
@@ -27,8 +27,8 @@ It takes two parameters:
     - `css` -  adds style classes to ContextMenu
     - `data` - specifies an array of data objects to set into ContextMenu
     - `navigationType` - defines the action that opens context menu options:
-        - "click" - displays the context menu option when a user clicks on it
-        - "pointer" - displays the context menu option when a user hovers the mouse pointer over it
+        - `click` - displays the context menu option when a user clicks on it
+        - `pointer` - displays the context menu option when a user hovers the mouse pointer over it
 
 ## Loading menu options
 
@@ -61,13 +61,13 @@ const dataset = [
 
 A data set consists of objects with configurations of context menu controls.
 
-Like with [DHTMLX Menu](menu/data_loading.md), options can be:
+As with [DHTMLX Menu](menu/data_loading.md), options can be:
 
-- either loaded into the ContextMenu on initialization via the `data` configuration property:
+- loaded into the ContextMenu on initialization via the `data` configuration property:
 
 ~~~jsx
 const cmenu = new dhx.ContextMenu(null, {
-    css: "dhx_widget--bg_gray"
+    css: "dhx_widget--bg_gray",
     data: dataset
 });
 ~~~
@@ -86,7 +86,7 @@ cmenu.data.load("[path_to_file]/file.json");
 
 ## Showing dhtmlxContextMenu
 
-dhtmlxContextMenu is attached to a context zone, and can be shown with the `showAt()` method. It takes two parameters:
+dhtmlxContextMenu is attached to a context zone and can be shown with the `showAt()` method. It takes two parameters:
 
 <table>
     <tbody>
@@ -96,7 +96,7 @@ dhtmlxContextMenu is attached to a context zone, and can be shown with the `show
         </tr>
         <tr>
             <td><b>mode</b></td>
-            <td>(<i>string</i>) optional, the position of showing a context menu relative to the context zone: "bottom"|"right". By default a context menu is shown at the point where the mouse pointer is.</td>
+            <td>(<i>string</i>) optional, the position at which a context menu is shown relative to the context zone: "bottom"|"right". By default, a context menu is shown at the point where the mouse pointer is.</td>
         </tr>
     </tbody>
 </table>
@@ -118,7 +118,7 @@ document.querySelector('#menu').oncontextmenu = function(e) {
 }
 ~~~
 
-- **e** is the mouse event.
+- `e` is the mouse event.
 
 ### Attaching to a mouse event
 

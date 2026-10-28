@@ -47,6 +47,7 @@ In this section you can find out how to configure the size and visibility of cel
 | [Making a cell resizable](layout/cell_configuration.md#resizability)                         | Learn how to configure the ability to change the size of a cell by dragging its borders ([Example](https://snippet.dhtmlx.com/f1f49n35))                                            |
 | [Making cells hidden](layout/cell_configuration.md#hidden-cell)                                     | Learn how to render a layout with some hidden cells                                                                                                                                 |
 | [Adding the header to a cell](layout/cell_configuration.md#cell-header)                      | Learn how to add a header for a cell ([Example](https://snippet.dhtmlx.com/bxqnzesl))                                                                                               |
+| [Adding custom content to a cell header](layout/cell_configuration.md#custom-content-in-a-cell-header) | Learn how to render HTML markup or a DHTMLX widget in the header of a cell ([Example](https://snippet.dhtmlx.com/6xy6mrpq))                                                          |
 | [Configuring content alignment](layout/api/cell/layout_cell_align_config.md)                 | Learn how to set the alignment of content inside a cell ([Example](https://snippet.dhtmlx.com/4w1033c9))                                                                            |
 | [Configuring paddings](layout/api/cell/layout_cell_padding_config.md)                        | Learn how to configure the distance between a cell and the Layout border ([Example](https://snippet.dhtmlx.com/tk6tpwwv))                                                           |
 | [Initializing a collapsed cell](layout/cell_configuration.md#collapsibility)                 | Learn how to initialize a collapsed cell and provide the ability to expand it ([Example 1](https://snippet.dhtmlx.com/f1f49n35), [Example 2](https://snippet.dhtmlx.com/r2e0y6n7)) |
@@ -81,7 +82,7 @@ In this section you will learn how to get a cell object, how to add or remove, h
 | Topic                                                                            | Description                                                                                                                             |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | [Removing a cell](layout/work_with_layout.md#removing-cells)                           | Learn how to remove a cell from Layout ([Example](https://snippet.dhtmlx.com/tnujp7jk))                                                 |
-| [Iterating over all cells](layout/api/layout_foreach_method.md)                        | Learn how to iterate over Layout cells ([Example](https://snippet.dhtmlx.com/9hfntqpy))                                                 |
+| [Iterating over all cells](layout/work_with_layout.md#iterating-over-cells)            | Learn how to iterate over Layout cells ([Example](https://snippet.dhtmlx.com/9hfntqpy))                                                 |
 | [Getting a cell object](layout/api/layout_getcell_method.md)                           | Learn how to get a configuration object of a particular cell                                                                            |
 | [Showing/hiding a cell](layout/work_with_layout.md#hidingshowing-a-cell)               | Learn how to hide/show a cell ([Example 1](https://snippet.dhtmlx.com/v0q7gq26), [Example](https://snippet.dhtmlx.com/u0jd8ah3))        |
 | [Checking visibility of a cell](layout/work_with_layout.md#checking-visibility-of-a-cell)                 | Learn how to check whether a Layout cell is visible                                                                                     |
@@ -165,7 +166,7 @@ In this section you will learn about common functionality of the library which c
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to enable custom scroll in Layout cells                       |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 

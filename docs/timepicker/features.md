@@ -10,9 +10,9 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX Timepicker
 
-In this section you can find out the ways of Timepicker initialization, and learn how to integrate Timepicker into your applications.
+In this section you can find out the ways of Timepicker initialization and localization, and learn how to integrate Timepicker into your applications.
 
-### Initialization
+### Initialization and localization
 
 | Topic                                                                                                                  | Description                                                                                      |
 | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -20,6 +20,7 @@ In this section you can find out the ways of Timepicker initialization, and lear
 | Timepicker inside a Popup                                                                                                | Learn how to initialize a Timepicker in a popup ([Example](https://snippet.dhtmlx.com/7x6hlbqx)) |
 | [Timepicker in Calendar](https://snippet.dhtmlx.com/jkbfb202)                                                          | Check the example of Timepicker as a part of Calendar                                            |
 | Timepicker in Form: [example 1](https://snippet.dhtmlx.com/4k3o8p7b), [example 2](https://snippet.dhtmlx.com/ikyyekxq) | Check the examples of Timepicker as Form controls                                                |
+| [Localization](timepicker/localization.md)                                                                             | Learn how to localize a Timepicker                                                               |
 
 
 ### Integration
@@ -90,7 +91,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support ([Example](https://snippet.dhtmlx.com/q3cu6x1a)) |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                                                     |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering                         |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering                         |
 
 ## Any questions left?
 

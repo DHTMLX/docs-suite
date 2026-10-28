@@ -6,7 +6,7 @@ description: You can explore the Fieldset of Form in the documentation of the DH
 
 # Fieldset
 
-A control that allows arranging the elements of the form controls into groups.
+A control that arranges Form controls into groups.
 
 ![Fieldset form control grouping Personal info and Contact info input fields in DHTMLX Suite](/img/form/form_fieldset.png)
 
@@ -18,7 +18,7 @@ A control that allows arranging the elements of the form controls into groups.
 
 ## Adding Fieldset
 
-You can easily add a Fieldset control during initialization of a form:
+You can add a Fieldset control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -54,27 +54,23 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Fieldset control](form/api/fieldset/api_fieldset_properties.md).
+View [the full list of Fieldset configuration properties](form/api/fieldset/api_fieldset_properties.md).
 
 ## Working with Fieldset
 
-You can manipulate a Fieldset control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a Fieldset control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
-For example, you can disable a control on a page:
+For example, you can disable the control:
 
 ~~~js
-form.getItem("fieldset").disable();
+form.getItem("f1").disable();
 ~~~
 
 ### Methods
 
-Check [the full list of methods of the Fieldset control](form/api/api_overview.md#fieldset-methods).
+Check [the full list of Fieldset methods](form/api/api_overview.md#fieldset-methods).
 
 ### Events
 
-Check [the full list of events of the Fieldset control](form/api/api_overview.md#fieldset-events).
-
-
-
-
+Check [the full list of Fieldset events](form/api/api_overview.md#fieldset-events).
 

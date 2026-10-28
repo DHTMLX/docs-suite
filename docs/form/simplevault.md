@@ -6,7 +6,7 @@ description: You can explore the Simple Vault of Form in the documentation of th
 
 # SimpleVault
 
-A handy control for quick and easy uploading of a file or a set of files.
+A control for uploading a file or a set of files.
 
 ![SimpleVault form control with a drag and drop upload area and an uploaded file in DHTMLX Suite](/img/form/form_simplevault.png)
 
@@ -16,7 +16,7 @@ A handy control for quick and easy uploading of a file or a set of files.
 
 ## Adding SimpleVault
 
-You can easily add a SimpleVault control during initialization of a form:
+You can add a SimpleVault control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -36,38 +36,38 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the SimpleVault control](form/api/simplevault/api_simplevault_properties.md).
+View [the full list of SimpleVault configuration properties](form/api/simplevault/api_simplevault_properties.md).
 
 ## Working with SimpleVault
 
-You can manipulate a SimpleVault control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a SimpleVault control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
 ~~~js
-const value = form.getItem("simpleVault").getValue();
+const value = form.getItem("simplevault").getValue();
 ~~~
 
 ### Methods
 
-Check [the full list of methods of the SimpleVault control](form/api/api_overview.md#simple-vault-methods).
+Check [the full list of SimpleVault methods](form/api/api_overview.md#simple-vault-methods).
 
 ### Events
 
-Check [the full list of events of the SimpleVault control](form/api/api_overview.md#simple-vault-events).
+Check [the full list of SimpleVault events](form/api/api_overview.md#simple-vault-events).
 
 ## Using DataCollection API
 
-You can manipulate a SimpleVault control with the help of the [DataCollection API](https://docs.dhtmlx.com/vault/api__refs__data_methods.html).
+You can manage a SimpleVault control with the [DataCollection API](https://docs.dhtmlx.com/vault/api__refs__data_methods.html).
 
-For example, you can remove one or all files from the list. To do that, you need to apply the [remove](https://docs.dhtmlx.com/vault/api__data__remove.html), or [removeAll](https://docs.dhtmlx.com/vault/api__data__removeall.html) method of DataCollection to the object returned by the [getItem()](form/api/form_getitem_method.md) method as follows:
+For example, you can remove one or all files from the list. Apply the [remove](https://docs.dhtmlx.com/vault/api__data__remove.html) or [removeAll](https://docs.dhtmlx.com/vault/api__data__removeall.html) method of DataCollection to the object that the [`getItem()`](form/api/form_getitem_method.md) method returns:
 
 ~~~js
-form.getItem("simpleVault").data.remove("file_id");
+form.getItem("simplevault").data.remove("file_id");
 
-form.getItem("simpleVault").data.removeAll();
+form.getItem("simplevault").data.removeAll();
 ~~~
 
 ## Uploading files
 
-You can read about uploading files into a SimpleVault control in the [related article](https://docs.dhtmlx.com/vault/uploading_files.html).
+You can read about uploading files to a SimpleVault control in the [Vault documentation](https://docs.dhtmlx.com/vault/uploading_files.html).

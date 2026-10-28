@@ -17,7 +17,7 @@ menu.show(id);
 
 **Related sample**: [Menu. Show / hide menu item](https://snippet.dhtmlx.com/a9vbhxgd)
 
-Both methods can take one parameter - the ID of a menu item or an array with IDs of menu items.
+Both methods can take one parameter: the ID of a menu item or an array with IDs of menu items.
 
 Starting from v7.0, it is possible to hide/show all Menu items on the page at once by using the methods without parameters:
 
@@ -150,11 +150,11 @@ menu.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 ## Using Tree collection API
 
-You can manipulate the controls of Menu with the help of the [Tree collection API](/tree_collection/). 
+You can manipulate Menu controls with the help of the [Tree collection API](/tree_collection/).
 
 ### Adding menu items
 
-You can add menu items with the **add()** method of tree collection:
+You can add menu items with the `add()` method of tree collection:
 
 ~~~js
 menu.data.add({
@@ -173,29 +173,29 @@ menu.data.add({
 
 ### Rearranging menu items
 
-You can move menu items to different positions with the **move()** method. For example, this is how you can move an item with ID "2" to the left edge of the menu:
+You can move menu items to different positions with the `move()` method. For example, this is how you can move an item with ID "2" to the left edge of the menu:
 
 ~~~js
 menu.data.move("2",0);
 ~~~
 
-{{note
-The ID should always be a string, even if in menu item configuration you set it as a number.
-}}
+:::note
+The ID should always be a string, even if you set it as a number in the menu item configuration.
+:::
 
-To get the current position, use the **getIndex()** method of TreeCollection:
+To get the current position, use the `getIndex()` method of TreeCollection:
 
 ~~~js
 menu.data.getIndex("id");
 ~~~
 
-{{note
+:::note
 Indexes are counted from 0.
-}}
+:::
 
 ### Iterating menu items
 
-You can work with all (or some) menu items with the help of the **forEach()** method of TreeCollection:
+You can work with all (or some) menu items with the help of the `forEach()` method of TreeCollection:
 
 ~~~js
 // remove all icons from the menu
@@ -207,7 +207,7 @@ menu.paint();
 
 ### Setting item text 
 
-You can set text labels for any menu item. Access the needed item with the **getItem()** method of the TreeCollection:
+You can set text labels for any menu item. Access the needed item with the `getItem()` method of the TreeCollection:
 
 ~~~js
 menu.data.getItem("id").value = "Open";
@@ -216,7 +216,7 @@ menu.paint();
 
 ### Setting item hotkey
 
-You can add a shortcut to a menu option by accessing it with the help of the **getItem()** method. After you add a hotkey, a label with the keys will be added to the option.
+You can add a shortcut to a menu option by accessing it with the help of the `getItem()` method. After you add a hotkey, a label with the keys will be added to the option.
 
 ~~~js
 menu.data.getItem("id").hotkey = "Ctrl+N";
@@ -225,7 +225,7 @@ menu.paint();
 
 ### Removing menu items  
 
-You can remove any item from a menu with the **remove()** method. The item will be removed with all its sub-items.
+You can remove any item from a menu with the `remove()` method. The item will be removed with all its sub-items.
 
 ~~~js
 menu.data.remove("id");
@@ -233,11 +233,13 @@ menu.data.remove("id");
 
 **Related sample**: [Menu. Add / remove Item](https://snippet.dhtmlx.com/nood4bfx)
 
-To remove all items from Menu, call the **removeAll()** method. Afterwards, you can load other options.
+To remove all items from Menu, call the `removeAll()` method. Afterwards, you can load other options.
 
 ~~~js
 menu.data.removeAll();
 menu.data.parse(new_options);
 ~~~
 
-{{note Check the full list of [Tree collection API](/tree_collection/).}}
+:::note
+Check the full list of [Tree collection API](/tree_collection/).
+:::

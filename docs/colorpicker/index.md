@@ -6,8 +6,8 @@ description: You can have an overview of Colorpicker in the documentation of the
 
 # Colorpicker overview
 
-DHTMLX Colorpicker is a smart component for selecting colors that can be used both as an inline control and as a popup dialog box. 
-It possesses easy-to-configure interface that can be simply localized and customized depending on the need of the project and complete API for handy control over the behavior of the component. 
+DHTMLX Colorpicker is a component for selecting colors. It works both as an inline control and as a popup dialog box.
+You can localize and customize the Colorpicker interface for your project. The complete API gives you control over the component behavior.
 
 Check [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb8?tag=colorpicker).
 
@@ -15,7 +15,7 @@ Check [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Colorpicker:
+Learn how to build a full-featured DHTMLX Colorpicker:
 
 - [Features](colorpicker/features.md)
 
@@ -25,12 +25,12 @@ You can check the following page to learn how to build a full-featured DHTMLX Co
 
 ## Related resources
 
-- You can get DHTMLX Colorpicker as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb8?tag=colorpicker)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Colorpicker as part of the Suite library
+- Try the [online samples for DHTMLX Colorpicker](https://snippet.dhtmlx.com/097jjhb8?tag=colorpicker)
 
 ## Guides
 
-Covers the processes of creating, configuring, localizing, customizing ColorPicker, and working with it.
+These guides explain how to create, configure, localize, and customize Colorpicker, and how to work with it.
 
 - [](colorpicker/how_to_start.md)
 - [](colorpicker/configuration.md)
