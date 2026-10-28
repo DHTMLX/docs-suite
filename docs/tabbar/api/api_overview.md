@@ -14,6 +14,7 @@ description: You can explore the API of Tabbar in the documentation of the DHTML
 | [](tabbar/api/tabbar_destructor_method.md) | @getshort(tabbar/api/tabbar_destructor_method.md) |
 | [](tabbar/api/tabbar_disabletab_method.md) | @getshort(tabbar/api/tabbar_disabletab_method.md) |
 | [](tabbar/api/tabbar_enabletab_method.md)  | @getshort(tabbar/api/tabbar_enabletab_method.md)  |
+| [](tabbar/api/tabbar_foreach_method.md)    | @getshort(tabbar/api/tabbar_foreach_method.md)    |
 | [](tabbar/api/tabbar_getactive_method.md)  | @getshort(tabbar/api/tabbar_getactive_method.md)  |
 | [](tabbar/api/tabbar_getcell_method.md)    | @getshort(tabbar/api/tabbar_getcell_method.md)    |
 | [](tabbar/api/tabbar_getid_method.md)      | @getshort(tabbar/api/tabbar_getid_method.md)      |
@@ -46,5 +47,6 @@ description: You can explore the API of Tabbar in the documentation of the DHTML
 | [](tabbar/api/tabbar_tabautoheight_config.md) | @getshort(tabbar/api/tabbar_tabautoheight_config.md) |
 | [](tabbar/api/tabbar_tabautowidth_config.md)  | @getshort(tabbar/api/tabbar_tabautowidth_config.md)  |
 | [](tabbar/api/tabbar_tabheight_config.md)     | @getshort(tabbar/api/tabbar_tabheight_config.md)     |
+| [](tabbar/api/tabbar_tabtemplate_config.md)   | @getshort(tabbar/api/tabbar_tabtemplate_config.md)   |
 | [](tabbar/api/tabbar_tabwidth_config.md)      | @getshort(tabbar/api/tabbar_tabwidth_config.md)      |
 | [](tabbar/api/tabbar_views_config.md)         | @getshort(tabbar/api/tabbar_views_config.md)         |

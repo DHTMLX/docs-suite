@@ -39,7 +39,7 @@ To add DHTMLX Menu into an application, you need to take the following simple st
 
 Unpack the downloaded package into a folder of your project.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+After that, create an HTML file and place the full paths to the dhtmlxSuite JS and CSS files into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -51,7 +51,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Menu and give it an id, e.g. "menu_container":
+Add a container for Menu and give it an id, for example "menu_container":
 
 ~~~html
 <div id="menu_container"></div>

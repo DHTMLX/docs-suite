@@ -47,11 +47,12 @@ Use [TreeCollection events](/tree_collection/#events) to work with data.
 
 ## Ribbon properties
 
-| Name                                    | Description                                    |
-| --------------------------------------- | ---------------------------------------------- |
-| [](ribbon/api/ribbon_css_config.md)     | @getshort(ribbon/api/ribbon_css_config.md)     |
-| [](ribbon/api/ribbon_data_config.md)    | @getshort(ribbon/api/ribbon_data_config.md)    |
-| [](ribbon/api/ribbon_menucss_config.md) | @getshort(ribbon/api/ribbon_menucss_config.md) |
+| Name                                      | Description                                      |
+| ----------------------------------------- | ------------------------------------------------ |
+| [](ribbon/api/ribbon_arialabel_config.md) | @getshort(ribbon/api/ribbon_arialabel_config.md) |
+| [](ribbon/api/ribbon_css_config.md)       | @getshort(ribbon/api/ribbon_css_config.md)       |
+| [](ribbon/api/ribbon_data_config.md)      | @getshort(ribbon/api/ribbon_data_config.md)      |
+| [](ribbon/api/ribbon_menucss_config.md)   | @getshort(ribbon/api/ribbon_menucss_config.md)   |
 
 ## Ribbon Block properties
 

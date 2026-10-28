@@ -6,22 +6,22 @@ description: You can explore the data loading of Chart in the documentation of t
 
 # Data loading
 
-There are two ways of loading data into DHTMLX Chart:
+DHTMLX Chart supports two ways to load data:
 
-- on initialization of Chart
-- after initialization of Chart
+- On initialization
+- After initialization
 
-First, you need to prepare a data set that will be loaded into Chart.
+First, prepare a data set to load into Chart.
 
 ## Preparing data set
 
-DHTMLX Chart expects loaded data in the JSON format. 
+DHTMLX Chart expects data in JSON format. 
 
 :::info
-Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+If you specify the `id` fields in the data collection, their values must be **unique**. You can also omit these fields; Chart then generates the ids automatically.
 :::
 
-Here are examples of appropriate data sets for different chart types:
+The following examples show data sets for different chart types:
 
 - **Line, Spline, Bar, X-Bar, Area, Spline Area, Radar, Scatter charts**
 
@@ -42,11 +42,11 @@ const dataset = [
 ]
 ~~~
 
-Each object in the data set contains a number of *key:value* pairs for data titles and values.
+Each object in the data set contains `key:value` pairs for data titles and values.
 
 - **Pie, Pie3D and Donut charts**
 
-A data set for Pie, Pie3D and Donut charts differs a little bit and includes the following properties:
+A data set for Pie, Pie3D, and Donut charts includes the following properties:
 
 <table>
     <tbody>
@@ -64,13 +64,13 @@ A data set for Pie, Pie3D and Donut charts differs a little bit and includes the
         </tr>
         <tr>
             <td><b>color</b></td>
-            <td>(<i>string</i>) points to the property in a data set that defines the color of a pie/donut sector</td>
+            <td>(<i>string</i>) points to the data set property that defines the color of a pie/donut sector</td>
         </tr>
     </tbody>
 </table>
 <br/>
 
-You need to provide the "color":"value" properties to color the sections of these types of Chart. For example:
+Set the `"color": "value"` properties to color the sections of these chart types. For example:
 
 ~~~js
 const pie_dataset = [
@@ -84,7 +84,7 @@ const pie_dataset = [
 
 - **Treemap chart**
 
-A data set for Treemap chart has also another structure and may include the following properties:
+A data set for the Treemap chart has a different structure and can include the following properties:
 
 <table>
     <tbody>
@@ -122,7 +122,7 @@ const treeMapData = [
 
 - **Calendar heatmap chart**
 
-A data set for Heatmap chart should include the following properties:
+A data set for the Calendar heatmap chart must include the following properties:
 
 <table>
     <tbody>
@@ -157,7 +157,7 @@ const heatMapData = [
 
 ## Loading data on initialization
 
-You can load [a predefined data set](#preparing-data-set) into Chart on the initialization stage. Use the [data](chart/api/chart_data_config.md) configuration property, as in:
+You can load [a predefined data set](#preparing-data-set) into Chart during initialization. Use the [data](chart/api/chart_data_config.md) configuration property:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -203,14 +203,14 @@ const chart = new dhx.Chart("chart_container", {
 
 ## Loading data after initialization
 
-There are two ways to load data into Chart after its initialization:
+You can load data into Chart after initialization in two ways:
 
-- [from an external file](#external-data-loading)
-- [from a local data source](#loading-from-local-source)
+- [From an external file](#external-data-loading)
+- [From a local data source](#loading-from-local-source)
 
 ### External data loading
 
-To load data from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](/data_collection/). It takes the URL of the file with data as a parameter:
+To load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](/data_collection/). The method takes the data file URL as a parameter:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -228,9 +228,9 @@ const chart = new dhx.Chart("chart_container", {
 chart.data.load("../common/dataset.json");
 ~~~
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to return valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Data loading is asynchronous, so wrap in a promise any code that runs after loading:
 
 ~~~js
 chart.data.load("/some/data").then(function(){
@@ -242,7 +242,7 @@ chart.data.load("/some/data").then(function(){
 
 ### Loading from local source
 
-To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](/data_collection/). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](/data_collection/). Pass [a predefined data set](#preparing-data-set) to the method:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -264,14 +264,14 @@ chart.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a chart, use the **serialize()** method of [DataCollection](/data_collection/). It converts the data of a chart into an array of JSON objects. 
-Each JSON object contains a set of *key:value* pairs for data titles and values.
+To save the current state of a chart, use the `serialize()` method of [DataCollection](/data_collection/). The method converts the chart data into an array of JSON objects.
+Each JSON object contains `key:value` pairs that match the original data set structure.
 
 ~~~js
 const state = chart1.data.serialize();
 ~~~
 
-Then you can parse the data stored in the saved state array to a different chart. For example:
+You can then parse the saved state into a different chart. For example:
 
 ~~~js
 // creating a new chart

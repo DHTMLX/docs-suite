@@ -41,7 +41,7 @@ const de = {
 - apply the language settings by calling the **dhx.i18n.setLocale()** method before Colorpicker initialization:
 
 ~~~js
-dhx.i18n.setLocale("colorpicker_container", de);
+dhx.i18n.setLocale("colorpicker", de);
 const colorpicker = new dhx.Colorpicker("colorpicker_container");
 ~~~
 

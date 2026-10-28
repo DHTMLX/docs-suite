@@ -8,7 +8,7 @@ description: You can explore the event handling of Colorpicker in the documentat
 
 ## Attaching event listeners
 
-You can attach event listeners with the **colorpicker.events.on()** method:
+You can attach event listeners with the `colorpicker.events.on()` method:
 
 ~~~js
 colorpicker.events.on("modeChange", function(view) {
@@ -16,13 +16,13 @@ colorpicker.events.on("modeChange", function(view) {
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
+{{note Event names are case-insensitive.}}
 
 **Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)
 
 ## Detaching event listeners
 
-To detach events, use **colorpicker.events.detach()**:
+You can detach event listeners with the `colorpicker.events.detach()` method:
 
 ~~~js
 colorpicker.events.on("modeChange", function(view) {
@@ -34,7 +34,7 @@ colorpicker.events.detach("modeChange");
 
 ## Calling events
 
-To call events, use **colorpicker.events.fire()**:
+You can call events with the `colorpicker.events.fire()` method:
 
 ~~~js
 colorpicker.events.fire("name",args);
@@ -43,4 +43,4 @@ colorpicker.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](colorpicker/api/api_overview.md#events).
+The [API section](colorpicker/api/api_overview.md#events) lists all Colorpicker events.

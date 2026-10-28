@@ -8,15 +8,15 @@ description: You can explore the customization of Colorpicker in the documentati
 
 ## Styling
 
-There is a possibility to make changes in the look and feel of a colorpicker. 
+You can change the look and feel of Colorpicker.
 
 ![ColorPicker palette customized with circular color cells via custom CSS in DHTMLX Suite](/img/colorpicker/colorpicker_css.png)
 
 **Related sample**: [Colorpicker. Styling (custom CSS)](https://snippet.dhtmlx.com/mnwi3sp0)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add new CSS classes with the styles you need to the `<style>` section of your HTML page or to your stylesheet (remember to link the stylesheet on the page):
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](colorpicker/api/colorpicker_css_config.md) property in the Colorpicker configuration:
+- Specify the class name (or several names separated by spaces) as the value of the [](colorpicker/api/colorpicker_css_config.md) property:
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
