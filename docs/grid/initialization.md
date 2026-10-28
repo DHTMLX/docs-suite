@@ -51,7 +51,7 @@ To initialize DHTMLX Grid on a page, you need to take the following simple steps
 
 Unpack the downloaded package into a folder of your project.
 
-After that, create an HTML file and place full paths to JS and CSS files of DHTMLX Grid into the header of the created file. The Grid component can be used standalone or as a part of the Suite library.
+After that, create an HTML file and place full paths to JS and CSS files of DHTMLX Grid into the header of the created file. The Grid component can be used standalone or as part of the Suite library.
 
 **If you use DHTMLX Grid standalone**, you need to include 2 files:
 

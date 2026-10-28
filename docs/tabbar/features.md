@@ -59,6 +59,7 @@ In this section you can learn how to customize a Tabbar and configure the size o
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [Width and height of tabs](tabbar/configuring_tabbar.md#size-of-tabs)                          | Learn how to configure the width and height for tabs ([Example](https://snippet.dhtmlx.com/yy841z3j))                                                         |
 | [Auto-width and auto-height for tabs](tabbar/configuring_tabbar.md#autosize-for-tabs) | Learn how to configure autoheight and autowidth for tabs ([Example 1](https://snippet.dhtmlx.com/mlzko8am),[Example 2](https://snippet.dhtmlx.com/pqvycp1c))|
+| [HTML content in tab titles](tabbar/configuring_tabbar.md#html-content-in-tab-titles) | Learn how to render HTML content, such as icons, in the titles of tabs ([Example](https://snippet.dhtmlx.com/3jb49vcx)) |
 | [Adding tooltips for tabs](https://snippet.dhtmlx.com/o5x1e3i8)  | The example shows how to add tooltips for Tabbar tabs  |
 | [Styling Tabbar](tabbar/customization.md#styling-tabbar)  | Learn how to change the look and feel of Tabbar  ([Example](https://snippet.dhtmlx.com/47en9f0a)) |
 | [List of CSS classes](helpers/base_elements.md) | A set of CSS classes provided by the DHTMLX library                                               |
@@ -66,7 +67,7 @@ In this section you can learn how to customize a Tabbar and configure the size o
 
 ## How to work with tabs
 
-In this section you will learn how to add or remove, enable or disable a tab, how to set and get the active tab.
+In this section you will learn how to add or remove, enable or disable a tab, how to set and get the active tab, and how to iterate over the cells of Tabbar.
 
 | Topic                                                                        | Description                                                                                               |
 | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -75,6 +76,7 @@ In this section you will learn how to add or remove, enable or disable a tab, ho
 | [Is disabled tab](tabbar/work_with_tabbar.md#checking-if-a-tab-is-disabled)        | Learn how to check whether a tab is disabled on the page ([Example](https://snippet.dhtmlx.com/86er2y7m)) |
 | [Setting the active tab](tabbar/work_with_tabbar.md#settinggetting-the-active-tab) | Learn how to set the active tab ([Example](https://snippet.dhtmlx.com/u9ryz38f))                          |
 | [Getting the active tab](tabbar/work_with_tabbar.md#settinggetting-the-active-tab) | Learn how get the currently active tab ([Example](https://snippet.dhtmlx.com/xpvkcwiu))                   |
+| [Iterating over cells](tabbar/work_with_tabbar.md#iterating-over-cells)            | Learn how to iterate over the cells of Tabbar                                                             |
 
 ## How to work with Tabbar events
 
@@ -105,7 +107,7 @@ In this section you will learn about common functionality of the library which c
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support   ([Example](https://snippet.dhtmlx.com/q3cu6x1a)) |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                                                       |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to enable custom scroll in Layout cells                                       |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering                           |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering                           |
 
 ## Any questions left?
 

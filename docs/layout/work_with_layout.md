@@ -16,6 +16,30 @@ layout.removeCell(id);
 
 **Related sample**: [Layout. Remove cell](https://snippet.dhtmlx.com/tnujp7jk)
 
+## Iterating over cells
+
+To iterate over the cells of Layout, use the [`forEach()`](layout/api/layout_foreach_method.md) method. Layout calls the passed callback function for each cell with the following parameters:
+
+- `cell` - the object of a cell
+- `index` - the index of a cell
+- `array` - an array with the cells
+
+~~~jsx
+layout.forEach((cell, index, array) => {
+    console.log(index, cell.id);
+});
+~~~
+
+By default, the method starts iterating from the root cell and visits each nested level. To limit the iteration, pass the id of the parent cell as the second parameter and the number of levels to iterate over as the third parameter:
+
+~~~jsx
+layout.forEach((cell, index, array) => {
+    console.log(index, cell.id);
+}, parentID, level);
+~~~
+
+**Related sample**: [Layout. ForEach](https://snippet.dhtmlx.com/9hfntqpy)
+
 ## Getting the object of a cell
 
 You can get the object of a cell by its id. Use the [](layout/api/layout_getcell_method.md) method for this purpose:

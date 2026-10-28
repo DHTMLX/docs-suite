@@ -14,7 +14,7 @@ Check [online samples for DHTMLX Window](https://snippet.dhtmlx.com/nthbfzfr?tag
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Window:
+Learn how to build a full-featured DHTMLX Window:
 
 - [Features](window/features.md)
 
@@ -24,8 +24,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Wi
 
 ## Related resources
 
-- You can get DHTMLX Window as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Window](https://snippet.dhtmlx.com/nthbfzfr?tag=window)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Window as part of the Suite library
+- Try the [online samples for DHTMLX Window](https://snippet.dhtmlx.com/nthbfzfr?tag=window)
 
 ## Guides
 

@@ -10,7 +10,7 @@ description: You can explore the customization of Menu in the documentation of t
 
 DHTMLX Menu uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons for Menu controls.
 
-For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Menu as follows:
+For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [a link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Menu as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/menu.js"></script>
@@ -21,7 +21,7 @@ For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack 
     crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](menu/data_loading.md#json-format-templates) for menu:
+Then you can use the name of the icon as the value of the `icon` property in the [object with the control parameters](menu/data_loading.md#json-format-templates) for menu:
 
 ~~~js
 const dataset = [
@@ -44,27 +44,29 @@ const dataset = [
 
 **Related sample**: [Menu. Custom icons](https://snippet.dhtmlx.com/nkmz6ilv)
 
-{{note You can use the [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
+:::note
+You can use the [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon pack by including [a link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.
+:::
 
 ## Styling
 
-There is a possibility to make changes in the look and feel of a menu. 
+You can change the look and feel of a menu.
 
 ![Dark-themed menu with a custom-styled File dropdown of file options in DHTMLX Suite](/img/menu/custom_menu.png)
 
 **Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)
 
-For this you need to take the following steps:
+To do this, take the following steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- add a new CSS class (or classes) with the desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
 
 ~~~html
 <style>
-    .my-first-class {
+    .my_first_class {
         /*some styles*/
     }
     
-    .my-second-class {
+    .my_second_class {
         /*some styles*/
     }
 </style>

@@ -149,6 +149,7 @@ In this section you will learn about common library functionality that is useful
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
+| [Accessibility support](common_features/accessibility_support.md) | Learn about accessibility support in DataView                 |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to use custom scroll in DataView                    |
 | [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run code after the component renders |
 

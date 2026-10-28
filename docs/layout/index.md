@@ -13,7 +13,7 @@ Check [online samples for DHTMLX Layout](https://snippet.dhtmlx.com/f1f49n35?tag
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Layout:
+Learn how to build a full-featured DHTMLX Layout:
 
 - [Features](layout/features.md)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX La
 
 ## Related resources
 
-- You can get DHTMLX Layout as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Layout](https://snippet.dhtmlx.com/f1f49n35?tag=layout)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Layout as part of the Suite library
+- Try the [online samples for DHTMLX Layout](https://snippet.dhtmlx.com/f1f49n35?tag=layout)
 
 ## Guides
 

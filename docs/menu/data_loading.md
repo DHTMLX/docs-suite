@@ -15,10 +15,10 @@ First, you need to prepare a data set that will be loaded into Menu.
 
 ## Preparing data set
 
-DHTMLX Menu expects loaded data in the JSON format. 
+DHTMLX Menu expects loaded data in the JSON format.
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+If you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
 :::
 
 Here is an example of an appropriate data set:
@@ -64,7 +64,7 @@ A data set consists of objects with configurations of menu controls. Templates f
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Menu on the initialization stage. Use the [data](menu/api/menu_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Menu at the initialization stage. Use the [data](menu/api/menu_data_config.md) configuration property, as in:
 
 ~~~jsx
 const menu = new dhx.Menu("menu_container", {
@@ -83,7 +83,7 @@ There are two ways to load data into Menu after its initialization:
 
 ### External data loading
 
-The **load** method of Tree Collection loads menu data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
+The `load` method of Tree Collection loads menu data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 
 ~~~jsx
 menu.data.load("[path to this file]/file.json");
@@ -93,7 +93,7 @@ menu.data.load("[path to this file]/file.json");
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Data loading is asynchronous, so you need to wrap any after-loading code in a promise:
 
 ~~~jsx
 menu.data.load("/some/data").then(function(){
@@ -103,7 +103,7 @@ menu.data.load("/some/data").then(function(){
 
 ### Loading from a local source
 
-You can load data to a menu from a local data source via the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+You can load data to a menu from a local data source via the `parse()` method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~jsx
 menu.data.parse(data);
@@ -113,13 +113,13 @@ menu.data.parse(data);
 
 ## Saving and restoring state
 
-To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a menu into an array of JSON objects. Each JSON object contains the configuration of a separate Menu item.
+To save the current state of a menu, use the `serialize()` method of Tree Collection. It converts the data of a menu into an array of JSON objects. Each JSON object contains the configuration of a separate Menu item.
 
 ~~~jsx
 const state = menu1.data.serialize();
 ~~~
 
-Then you can parse the data stored in the saved state array to a different menu. For example:
+Then you can parse the data stored in the saved state array into a different menu. For example:
 
 ~~~jsx
 // creating a new menu
@@ -130,7 +130,7 @@ menu2.data.parse(state);
 
 ## JSON format templates
 
-This section will give you the idea of JSON format templates for separate Menu controls.
+This section gives you an idea of the JSON format templates for separate Menu controls.
 
 ### MenuItem template
 
@@ -157,7 +157,7 @@ This section will give you the idea of JSON format templates for separate Menu c
 ~~~
 
 :::tip
-You can find the full list of properties of the **menuItem** object [here](menu/api/api_menuitem_properties.md).
+You can find the full list of properties of the `menuItem` object [here](menu/api/api_menuitem_properties.md).
 :::
 
 ### Custom HTML template
@@ -174,12 +174,12 @@ You can find the full list of properties of the **menuItem** object [here](menu/
 ~~~
 
 :::tip
-You will find the full list of properties of the **customHTML** object [here](menu/api/api_customhtml_properties.md).
+You can find the full list of properties of the `customHTML` object [here](menu/api/api_customhtml_properties.md).
 :::
 
 ### Separator template
 
-You can add separators that will draw horizontal lines between menu options or vertical lines between menu items. 
+You can add separators that draw horizontal lines between menu options or vertical lines between menu items.
 
 ~~~jsx 
 // separator
@@ -190,7 +190,7 @@ You can add separators that will draw horizontal lines between menu options or v
 ~~~
 
 :::tip
-You will find the full list of properties of the **separator** object [here](menu/api/api_separator_properties.md).
+You can find the full list of properties of the `separator` object [here](menu/api/api_separator_properties.md).
 :::
 
 ### Spacer template
@@ -204,5 +204,5 @@ You will find the full list of properties of the **separator** object [here](men
 ~~~
 
 :::tip
-You will find the full list of properties of the **spacer** object [here](menu/api/api_spacer_properties.md).
+You can find the full list of properties of the `spacer` object [here](menu/api/api_spacer_properties.md).
 :::

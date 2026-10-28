@@ -6,7 +6,7 @@ description: You can explore the RadioGroup of Form in the documentation of the 
 
 # RadioGroup
 
-A control intended for creating groups of Radio buttons.
+A control that groups Radio buttons.
 
 ![RadioGroup form control with three radio button options and the second one selected in DHTMLX Suite](/img/form/form_radio.png)
 
@@ -18,7 +18,7 @@ A control intended for creating groups of Radio buttons.
 
 ## Adding RadioGroup
 
-You can easily add a RadioGroup control during initialization of a form:
+You can add a RadioGroup control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {    
@@ -54,15 +54,15 @@ const form = new dhx.Form("form_container", {
 
 ### Properties of RadioGroup
 
-View [the full list of configuration properties of the RadioGroup control](form/api/radiogroup/api_radiogroup_properties.md).
+View [the full list of RadioGroup configuration properties](form/api/radiogroup/api_radiogroup_properties.md).
 
 ### Properties of RadioButton
 
-View [the full list of properties](form/api/radiogroup/api_radiogroup_properties.md#radiobutton-properties) that you can provide in the configuration object of a RadioButton of the RadioGroup control.
+View [the full list of properties](form/api/radiogroup/api_radiogroup_properties.md#radiobutton-properties) that you can set for a RadioButton in RadioGroup.
 
 ## Working with RadioGroup
 
-You can manipulate a RadioGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a RadioGroup control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
@@ -72,8 +72,8 @@ const value = form.getItem("radiogroup").getValue();
 
 ### Methods
 
-Check [the full list of methods of the RadioGroup control](form/api/api_overview.md#radiogroup-methods).
+Check [the full list of RadioGroup methods](form/api/api_overview.md#radiogroup-methods).
 
 ### Events
 
-Check [the full list of events of the RadioGroup control](form/api/api_overview.md#radiogroup-events).
+Check [the full list of RadioGroup events](form/api/api_overview.md#radiogroup-events).
