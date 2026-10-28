@@ -53,6 +53,20 @@ In order to get the id of a tab, make use of the [`getId()`](tabbar/api/tabbar_g
 const id = tabbar.getId(0);
 ~~~
 
+## Iterating over cells
+
+To iterate over the cells of Tabbar, use the [`forEach()`](tabbar/api/tabbar_foreach_method.md) method. Tabbar calls the passed callback function for each cell with the following parameters:
+
+- `cell` - the object of a cell
+- `index` - the index of a cell
+- `array` - an array with the cells
+
+~~~jsx
+tabbar.forEach((cell, index, array) => {
+    console.log(index, cell.id);
+});
+~~~
+
 ## Setting/getting the active tab
 
 It is possible to set the active tab via Tabbar API, i.e. with the help of the [`setActive()`](tabbar/api/tabbar_setactive_method.md) method. It takes the id of a tab as a parameter:

@@ -8,7 +8,7 @@ description: You can explore the event handling of Menu in the documentation of 
 
 ## Attaching event listeners
 
-You can add any handler to the events of Menu. To do this, use the **menu.events.on()** method with the following parameters:
+You can add any handler to the events of Menu. To do this, use the `menu.events.on()` method with the following parameters:
 
 <table>
     <tbody>
@@ -32,13 +32,15 @@ menu.events.on("click", function(id,e){
 
 Several handlers can be attached to one and the same event, and all of them will be executed.
 
-{{note  The names of the events are case-insensitive. }}
+:::note
+The names of the events are case-insensitive.
+:::
 
 **Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k)
 
 ## Detaching event listeners
 
-There is a simple way of removing an event handler with the **menu.events.detach()** method:
+There is a simple way of removing an event handler with the `menu.events.detach()` method:
 
 ~~~js
 menu.events.on("click", function(id, e){
@@ -50,7 +52,7 @@ menu.events.detach("click");
 
 ## Calling events
 
-A custom event can be called with the **fire()** method of the **events** module:
+A custom event can be called with the `fire()` method of the `events` module:
 
 ~~~js
 menu.events.fire(evName,[args]);

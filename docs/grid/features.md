@@ -271,6 +271,7 @@ In this section you will find the ways of filtering data in Grid.
 | [Setting the type of a filter in the header/footer](grid/configuration.md#headerfooter-filters)    | Learn how to specify the type of the filter in the header/footer of a Grid column ([Example](https://snippet.dhtmlx.com/4qz8ng3c))                           |
 | [Filtering data](grid/usage.md#filtering-data)                                                     | Learn how to filter grid data by the specified criteria ([Example 1](https://snippet.dhtmlx.com/g0zpjqi1), [Example 2](https://snippet.dhtmlx.com/12suognm)) |
 | [Customizing filters in the header/footer](grid/configuration.md#customizing-headerfooter-filters) | Learn how to add a custom function with your own logic for filtering data in a Grid column ([Example](https://snippet.dhtmlx.com/gcidkxjg))                  |
+| [Custom options of header/footer filters](grid/configuration.md#custom-options-of-headerfooter-filters) | Learn how to define the options of `selectFilter` and `comboFilter` manually instead of building them from the column data ([Example](https://snippet.dhtmlx.com/pcrjqux0)) |
 | [Getting the header filter](grid/api/grid_getheaderfilter_method.md)                               | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/n8srjle3))                                                     |
 
 ### How to group data
@@ -281,6 +282,7 @@ In this section you will get to know how to group row data in Grid.
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Enabling data grouping](grid/usage.md#enabling-data-grouping)                               | Learn how to enable row data grouping ([Example](https://snippet.dhtmlx.com/dvqy4ewe))                                                     |
 | [Configuring data grouping](grid/usage.md#configuring-data-grouping)                               | Learn how to configure row data grouping ([Example](https://snippet.dhtmlx.com/z3iw2p3k))                                                     |
+| [Group counters and aggregates](grid/usage.md#group-counters-and-aggregates) | Learn how to define the text rendered next to the group name and keep the groups that are left with no rows after filtering ([Example](https://snippet.dhtmlx.com/sbynrizv)) |
 | [Making group panel elements closable](grid/usage.md#making-group-panel-elements-closable)       | Learn how to make elements of the group panel closable  ([Example](https://snippet.dhtmlx.com/z3iw2p3k))                                                     |
 | [Using DataCollection API for data grouping](grid/usage.md#using-datacollection-api-for-data-grouping)       | Learn how to group Grid data with DataCollection API   ([Example](https://snippet.dhtmlx.com/vo3pgkgh))                                                     |
 
@@ -366,6 +368,16 @@ In this section you will get to know how to localize the interface of Grid.
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Localizing Grid](grid/localization.md) | Learn how to apply different languages to the interface of dhtmlxGrid |
 
+## How to make Grid accessible
+
+In this section you will learn about the accessibility support in Grid and its conformance with accessibility standards.
+
+| Topic                                                                       | Description                                                                                                                                           |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Accessibility in Grid](grid/accessibility.md) | Learn about the WAI-ARIA attributes, keyboard navigation, screen-reader support and high-contrast themes of Grid |
+| [Setting up an accessible Grid](grid/accessibility.md#recommendedconfiguration) | Learn how to configure Grid for keyboard and screen-reader users |
+| [Accessibility Conformance Report](grid/accessibility_conformance_report.md) | Check how Grid conforms to WCAG 2.2 AA, Section 508 and EN 301 549 |
+
 ## How to work with Grid events
 
 This section explains how to work with Grid events.
@@ -404,6 +416,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
+| [Accessibility support](common_features/accessibility_support.md) | Learn about the accessibility support common to the Suite widgets, such as the high-contrast themes |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to enable custom scroll in Grid                     |
 | [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
 

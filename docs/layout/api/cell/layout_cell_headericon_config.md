@@ -21,6 +21,11 @@ const layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
-[comment]: # (@related: layout/initialization.md#initialize-layout layout/cell_configuration.md#cellheader)
+**Related API**:
+- [`header`](layout/api/cell/layout_cell_header_config.md)
+- [`headerImage`](layout/api/cell/layout_cell_headerimage_config.md)
+- [`headerHeight`](layout/api/cell/layout_cell_headerheight_config.md)
 
-[comment]: # (@relatedapi: layout/api/layout_header_config.md layout/api/layout_headerheight_config.md layout/api/layout_headerimage_config.md)
+**Related articles**:
+- [Layout initialization](layout/initialization.md#initialize-layout)
+- [Cell header](layout/cell_configuration.md#cell-header)

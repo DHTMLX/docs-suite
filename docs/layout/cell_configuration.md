@@ -6,11 +6,13 @@ description: You can explore the configuration of a Cell of Layout in the docume
 
 # Configuration of a Cell
 
+Each cell of a layout takes a configuration object that defines what the cell shows and how it behaves. The properties of this object set the content and the header of a cell, its size and borders, and the ability of a user to collapse, hide or resize the cell. The sections below go through these settings one by one, while the full list of the available properties is in the [Cell API](layout/api/api_overview.md#cell-api) overview.
+
 ## HTML content
 
 A layout cell can contain any HTML content. You can set it with the [](layout/api/cell/layout_cell_html_config.md) attribute in the object of a cell.
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {
     cols: [
         { header: "Cell header", html: "Hello world"}
@@ -36,7 +38,7 @@ const layout = new dhx.Layout("layout_container", {
 
 Each layout cell can have a header with some text that describes the content of this cell.
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {
     cols: [
         { header: "Perfect cell header"}
@@ -46,10 +48,10 @@ const layout = new dhx.Layout("layout_container", {
 
 You can also add an icon or an image into the header of a cell with the corresponding attributes - [](layout/api/cell/layout_cell_headericon_config.md) and [](layout/api/cell/layout_cell_headerimage_config.md).
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {
     cols: [
-        { header: "Cell header", headerIcon:"/icon.png"}
+        { header: "Cell header", headerIcon: "dxi dxi-check" }
     ]
 });
 
@@ -63,11 +65,11 @@ const layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
-## Height of a header cell
+### Height of a header cell
 
-You can specify the necessary height of the header of a cell using the [](layout/api/cell/layout_cell_headerheight_config.md) configuration option of the cell:
+You can specify the necessary height of the header of a cell using the [`headerHeight`](layout/api/cell/layout_cell_headerheight_config.md) configuration option of the cell:
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {
     rows: [
         {
@@ -90,7 +92,7 @@ If the [](layout/api/cell/layout_cell_header_config.md) property is not set in t
 
 You can change the size of a cell with the [](layout/api/cell/layout_cell_width_config.md) and [](layout/api/cell/layout_cell_height_config.md) attributes of the object of a cell.
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {   
     rows: [
         {
@@ -121,9 +123,9 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-Starting from v7.0, you can define the maximal and minimal sizes for a cell by using its corresponding configuration properties: [](layout/api/cell/layout_cell_maxheight_config.md), [](layout/api/cell/layout_cell_maxwidth_config.md), [](layout/api/cell/layout_cell_minheight_config.md), [](layout/api/cell/layout_cell_minwidth_config.md).
+Starting from v7.0, you can define the maximal and minimal sizes for a cell by using its corresponding configuration properties: [`maxHeight`](layout/api/cell/layout_cell_maxheight_config.md), [`maxWidth`](layout/api/cell/layout_cell_maxwidth_config.md), [`minHeight`](layout/api/cell/layout_cell_minheight_config.md), [`minWidth`](layout/api/cell/layout_cell_minwidth_config.md).
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {
     cols: [
         { 
@@ -141,7 +143,7 @@ const layout = new dhx.Layout("layout_container", {
 The [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md) properties prevent [the width of a cell](layout/api/cell/layout_cell_width_config.md) from becoming less or greater than the minWidth/maxWidth values. The [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) options work in the same way.
 :::
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {
     cols: [
         { 
@@ -171,11 +173,39 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
+## Resizability
+
+To allow resizing of a cell, make use of the [`resizable`](layout/api/cell/layout_cell_resizable_config.md) option in the object of a cell. 
+
+~~~jsx
+const layout = new dhx.Layout("layout_container", {
+    cols: [
+        { header: "Cell header", resizable:true}
+    ]
+});
+~~~
+
+**Related sample**: [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
+
+{{note Starting from v7.0, you can define the resizing limits by setting necessary values to the [`minWidth`](layout/api/cell/layout_cell_minwidth_config.md)/[`maxWidth`](layout/api/cell/layout_cell_maxwidth_config.md), [`minHeight`](layout/api/cell/layout_cell_minheight_config.md)/[`maxHeight`](layout/api/cell/layout_cell_maxheight_config.md) properties in the config of a cell.}}
+
+## Hidden cell
+
+It is possible to add the [`hidden`](layout/api/cell/layout_cell_hidden_config.md) attribute into the the object of a cell(s) to render a layout with some cells hidden:
+
+~~~jsx
+const layout = new dhx.Layout("layout_container", {
+    cols: [
+        { header: "Cell header", hidden:true}
+    ]
+});
+~~~
+
 ## Collapsibility
 
 The object of a cell has two related attributes: [](layout/api/cell/layout_cell_collapsable_config.md) and [](layout/api/cell/layout_cell_collapsed_config.md). The first defines whether a cell can be collapsed and expanded; the second defines whether a cell is collapsed when a layout is initialized.
 
-~~~js
+~~~jsx
 const layout = new dhx.Layout("layout_container", {
     cols: [
         { header: "Cell header", collapsable:true, collapsed:false}
@@ -183,9 +213,12 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-**Related sample**: [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
+A [`collapsable`](layout/api/cell/layout_cell_collapsable_config.md) cell keeps its collapse/expand icon when the header contains custom content. A click on the custom content itself calls no API of the cell, so buttons and other controls inside the header remain operable. A user collapses and expands the cell by clicking the collapse icon or the free space of the header.
 
-**Related sample**: [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
+**Related samples**:
+- [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
+- [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
+- [Layout. Cell header with widget](https://snippet.dhtmlx.com/j4ihnbch)
 
 ## Progress bar
 
