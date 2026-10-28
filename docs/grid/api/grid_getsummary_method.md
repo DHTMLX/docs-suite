@@ -56,6 +56,8 @@ console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the val
 - When called without parameters, the method returns an object with the calculated values defined in the configuration of the component. 
 - When the `id` parameter is passed to the method, it returns an object with the calculated values defined in the column's configuration together with the calculated values defined in the component's configuration.
 
+In a grid with [grouped data](grid/usage.md#grouping-data), the method calculates the returned values over the data rows only: the group header rows and the group summary rows don't count as data.
+
 **Related article:** [Getting the summary object](grid/configuration.md#getting-the-summary-object)
 
 **Related API**: [summary](grid/api/grid_summary_config.md)

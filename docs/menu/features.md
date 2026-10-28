@@ -6,7 +6,7 @@ description: You can explore the features of Menu in the documentation of the DH
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX Menu and go into deep dive on its functionality.
+This page contains structured information that will help you to start working with DHTMLX Menu and dive deep into its functionality.
 
 ## How to start with DHTMLX Menu
 
@@ -24,10 +24,10 @@ In this section you can find out how to initialize Menu, how to add controls ins
 | Topic                                                                              | Description                                                              |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | [Loading data into Menu](menu/data_loading.md)                                         | Read how to load the initial data into Menu                              |
-| [Initialization with config.data](https://snippet.dhtmlx.com/cg62qa9v)             | The example shows how to load data into Menu on the initialization stage |
-| [Initialization with data.load()](https://snippet.dhtmlx.com/wjqno7xq)             | The example shows how to load data from external file                    |
+| [Initialization with config.data](https://snippet.dhtmlx.com/cg62qa9v)             | The example shows how to load data into Menu at the initialization stage |
+| [Initialization with data.load()](https://snippet.dhtmlx.com/wjqno7xq)             | The example shows how to load data from an external file                    |
 | [Initialization with data.parse()](https://snippet.dhtmlx.com/8y2b1zqm)            | The example shows how to load data from a local data source              |
-| [Initialization with external TreeCollection](https://snippet.dhtmlx.com/1mkjgqo3) | The example shows how to load data from external TreeCollection          |
+| [Initialization with external TreeCollection](https://snippet.dhtmlx.com/1mkjgqo3) | The example shows how to load data from an external TreeCollection          |
 
 
 ### Context Menu initialization
@@ -45,14 +45,14 @@ In this section you can find out how to initialize Menu, how to add controls ins
 | [Custom HTML](menu/configuring_menu_items.md#custom-html) | Learn how to add an item with custom HTML content into the menu ([Example](https://snippet.dhtmlx.com/nk65jfmx)) |
 | [Spacer](menu/configuring_menu_items.md#spacer)           | Learn how to add a Spacer control into the menu ([Example](https://snippet.dhtmlx.com/fjaolual))                 |
 | [Separator](menu/configuring_menu_items.md#separator)     | Learn how to add a Separator control into the menu ([Example](https://snippet.dhtmlx.com/71tybx5j))              |
-  
+
 
 ### Integration
 
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework for creating a DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Menu with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                    |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Menu with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Menu with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
@@ -72,13 +72,13 @@ In this section you can learn how to configure the style of Menu and its control
 
 ## How to work with data in Menu
 
-This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Menu, i.e. edit, add, remove, rearrange items, etc.
+This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) to work with Menu data, such as editing, adding, removing and rearranging items.
 
 | Topic                                                                                                     | Description                                                                                                                                                      |
 | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Adding](menu/work_with_menu.md#adding-menu-items) / [removing items](menu/work_with_menu.md#removing-menu-items) | Learn how to add and remove items in Menu ([Example](https://snippet.dhtmlx.com/nood4bfx))                                                                       |
 | [Updating an item](tree_collection/api/treecollection_update_method.md)                               | Learn how to update items in Menu ([Example](https://snippet.dhtmlx.com/321il6oc))                                                                               |
-| Setting item's configuration                                                                              | Learn how to [set a text label for menu item](menu/work_with_menu.md#setting-item-text) or [add a shortcut to a menu option](menu/work_with_menu.md#setting-item-hotkey) |
+| Setting item's configuration                                                                              | Learn how to [set a text label for a menu item](menu/work_with_menu.md#setting-item-text) or [add a shortcut to a menu option](menu/work_with_menu.md#setting-item-hotkey) |
 | [Rearranging items](menu/work_with_menu.md#rearranging-menu-items)                                            | Learn how to move menu items to another position                                                                                                                 |
 | [Iterating items](menu/work_with_menu.md#iterating-menu-items)                                                | Learn how to apply the necessary logic to all (or some) menu items                                                                                               |
 | [TreeCollection API](/tree_collection/)                                       | Check the list of all available TreeCollection API|
@@ -95,7 +95,7 @@ In this section you may study how to hide and show, enable and disable Menu item
 
 ## How to work with selection
 
-In this section you will find the ways of work with selection functionality.
+In this section you will find the ways to work with selection functionality.
 
 | Topic                                                                 | Description                                                                            |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
@@ -115,7 +115,7 @@ This section explains how to work with Menu events.
 
 ## API reference
 
-In this section you can find out corresponding references of Menu and Menu controls API.
+In this section you can find the corresponding Menu and Menu control API references.
 
 | Topic                                                       | Description                                             |
 | ----------------------------------------------------------- | ------------------------------------------------------- |
@@ -137,7 +137,8 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component’s rendering |
+| [Accessibility support](common_features/accessibility_support.md) | Learn about accessibility support in Menu                     |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run the code after the component's rendering |
 
 ## Any questions left?
 
