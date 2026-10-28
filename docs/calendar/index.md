@@ -12,7 +12,7 @@ DHTMLX Calendar is a component that allows users to view and select dates. You c
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Calendar:
+Learn how to build a full-featured DHTMLX Calendar:
 
 - [Features](calendar/features.md)
 
@@ -24,7 +24,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ca
 
 - To get just DHTMLX Calendar, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml)
 - To get the whole JavaScript library of UI components, [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Calendar](https://snippet.dhtmlx.com/jkbfb202?tag=calendar)  
+- Try the [online samples for DHTMLX Calendar](https://snippet.dhtmlx.com/jkbfb202?tag=calendar)
   
 ## Guides
 

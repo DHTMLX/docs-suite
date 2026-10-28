@@ -13,7 +13,7 @@ Check [online samples for DHTMLX TimePicker](https://snippet.dhtmlx.com/u9ge1a4z
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Timepicker:
+Learn how to build a full-featured DHTMLX Timepicker:
 
 - [Features](timepicker/features.md)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Ti
 
 ## Related resources
 
-- You can get DHTMLX TimePicker as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX TimePicker](https://snippet.dhtmlx.com/u9ge1a4z?tag=timepicker)  
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX TimePicker as part of the Suite library
+- Try the [online samples for DHTMLX TimePicker](https://snippet.dhtmlx.com/u9ge1a4z?tag=timepicker)
 
 ## Guides
 

@@ -13,7 +13,7 @@ Check [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?ta
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Sidebar:
+Learn how to build a full-featured DHTMLX Sidebar:
 
 - [Features](sidebar/features.md)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Si
 
 ## Related resources
 
-- You can get DHTMLX Sidebar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?tag=sidebar)
+- [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Sidebar as part of the Suite library
+- Try the [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?tag=sidebar)
 - To work with data of Sidebar check [TreeCollection API](/tree_collection/)
 
 ## Guides

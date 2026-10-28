@@ -14,7 +14,7 @@ Check [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=
 
 ## Features
 
-You can check the following page to learn how to build a full-featured DHTMLX Chart:
+Learn how to build a full-featured DHTMLX Chart:
 
 - [Features](chart/features.md)
 
@@ -26,7 +26,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ch
 
 - To get just DHTMLX Chart, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml)
 - To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=chart)
+- Try the [online samples for DHTMLX Chart](https://snippet.dhtmlx.com/bo82km4n?tag=chart)
 - To work with data of Chart check [DataCollection API](/data_collection/)
 
 ## Guides
