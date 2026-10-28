@@ -6,11 +6,11 @@ description: You can explore the localization of Form in the documentation of th
 
 # Localization
 
-You can apply different languages to the interface of DHTMLX Form, specifically to its SimpleVault control. You just need to translate the corresponding strings for Form labels and apply a ready locale to the component.
+You can apply different languages to the DHTMLX Form interface, specifically to its SimpleVault control. Translate the label strings and apply the resulting locale to the component.
 
 ## Default locale
 
-The default (English) locale for Form SimpleVault control looks like this:
+The Form SimpleVault control uses the following default (English) locale:
 
 ~~~js
 const en = {
@@ -21,9 +21,9 @@ const en = {
 
 ## Custom locale
 
-To use a different locale, your need to:
+Follow these steps to use a different locale:
 
-- define necessary language settings: provide translation for all text labels, e.g. the German locale for the SimpleVault control looks like this:
+- Define the language settings: translate all text labels. For example, the German locale for the SimpleVault control is:
 
 ~~~js
 const de = {
@@ -32,7 +32,7 @@ const de = {
 };
 ~~~
 
-- apply the language settings by calling the **dhx.i18n.setLocale()** method before Form initialization:
+- Call the `dhx.i18n.setLocale()` method before Form initialization to apply the settings:
 
 ~~~js
 dhx.i18n.setLocale("form", de);
@@ -41,7 +41,7 @@ const form = new dhx.Form("form_container");
 
 **Related sample**: [Form. Localization](https://snippet.dhtmlx.com/x8n18cr4)
 
-- apply the language settings by calling the **dhx.i18n.setLocale()** method with the name of the control as a parameter for ColorPicker, DatePicker, Combo, TimePicker controls before Form initialization:
+- For ColorPicker, DatePicker, Combo, and TimePicker controls, call the `dhx.i18n.setLocale()` method with the control name as a parameter, also before Form initialization:
 
 ~~~js {2}
 dhx.i18n.setLocale("form", de);
@@ -50,5 +50,5 @@ const form = new dhx.Form("form_container");
 ~~~
 
 :::tip
-The localization of the ColorPicker, DatePicker, Combo controls is the same as the localization of the widgets: [ColorPicker](colorpicker/localizing_colorpicker.md), [Calendar](calendar/localizing_calendar.md) and [Combo](combobox/localization.md).
+You localize the ColorPicker, DatePicker, and Combo controls the same way as the [ColorPicker](colorpicker/localizing_colorpicker.md), [Calendar](calendar/localizing_calendar.md), and [Combo](combobox/localization.md) widgets.
 :::

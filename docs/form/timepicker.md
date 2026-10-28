@@ -6,7 +6,7 @@ description: You can explore the TimePicker of Form in the documentation of the 
 
 # TimePicker
 
-A control that allows a user to select time value either by moving handles along track bars or by entering hour and minutes values directly into related inputs.
+A control that allows users to select a time value: either move handles along track bars or enter hour and minute values directly in the related inputs.
 
 ![TimePicker form control with hours and minutes slider track bars for selecting time in DHTMLX Suite](/img/form/form_timepicker.png)
 
@@ -16,7 +16,7 @@ A control that allows a user to select time value either by moving handles along
 
 ## Adding TimePicker
 
-You can easily add a TimePicker control during initialization of a form:
+You can add a TimePicker control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -36,11 +36,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the TimePicker control](form/api/timepicker/api_timepicker_properties.md).
+View [the full list of TimePicker configuration properties](form/api/timepicker/api_timepicker_properties.md).
 
 ## Working with TimePicker
 
-You can manipulate a TimePicker control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage a TimePicker control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
@@ -48,19 +48,19 @@ For example, you can get the value of the control:
 const value = form.getItem("timepicker").getValue();
 ~~~
 
-### Methods:
+### Methods
 
-Check [the full list of methods of the Timepicker control](form/api/api_overview.md#timepicker-methods).
+Check [the full list of TimePicker methods](form/api/api_overview.md#timepicker-methods).
 
-### Events:
+### Events
 
-Check [the full list of events of the Timepicker control](form/api/api_overview.md#timepicker-events).
+Check [the full list of TimePicker events](form/api/api_overview.md#timepicker-events).
 
 ### Working with the dhtmlxTimePicker widget
 
-There is a possibility to use methods of DHTMLX TimePicker via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method of a TimePicker control.
+You can use DHTMLX TimePicker methods with the [`getWidget()`](form/api/timepicker/timepicker_getwidget_method.md) method of a TimePicker control.
 
-For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
+For example, to set a value for a TimePicker control, get the widget attached to it and call its [`setValue()`](timepicker/api/timepicker_setvalue_method.md) method.
 
 ~~~js
 const timepicker = form.getItem("timepicker").getWidget();  // -> TimePicker
@@ -69,4 +69,4 @@ timepicker.setValue("00:39"); //set the value as a string
 
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
-Check [the full list of methods of the DHTMLX Timepicker component](timepicker/api/api_overview.md#methods) which you can apply via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method.
+Check [the full list of DHTMLX TimePicker methods](timepicker/api/api_overview.md#methods) that you can apply with the [`getWidget()`](form/api/timepicker/timepicker_getwidget_method.md) method.
