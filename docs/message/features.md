@@ -6,41 +6,41 @@ description: You can explore the features of Message in the documentation of the
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX Message and go into deep dive on its functionality.
+This page helps you start working with DHTMLX Message and explore its functionality in depth.
 
 ## How to start with DHTMLX Message
 
-In this section you can find out how to initialize and show different types of Message on a page, and how to integrate a Message into your applications.
+In this section you will learn how to initialize and show different types of message boxes on a page and how to integrate Message into your applications.
 
 ### Message initialization
 
 | Topic                                        | Description                                |
 | -------------------------------------------- | ------------------------------------------ |
-| [Basic initialization](message/creating_message.md) | Read how to initialize a message on a page |
+| [Basic initialization](message/creating_message.md) | Learn how to initialize a message on a page |
 
 
 ### Types of DHTMLX Message
 
 | Topic                                          | Description                                                  |
 | ---------------------------------------------- | ------------------------------------------------------------ |
-| [Message](https://snippet.dhtmlx.com/rsxdlicg) | Check the example to learn how to show a message             |
-| [Alert](https://snippet.dhtmlx.com/m4xka888)   | Check the example to learn how to show an alert message box  |
-| [Confirm](https://snippet.dhtmlx.com/iss7twe6) | Check the example to learn how to show a confirm message box |
-| [Tooltip](https://snippet.dhtmlx.com/c6jm8if6) | Check the example to learn how to show a tooltip             |
+| [Message](https://snippet.dhtmlx.com/rsxdlicg) | The example shows how to display a message                   |
+| [Alert](https://snippet.dhtmlx.com/m4xka888)   | The example shows how to display an alert box                |
+| [Confirm](https://snippet.dhtmlx.com/iss7twe6) | The example shows how to display a confirm box               |
+| [Tooltip](https://snippet.dhtmlx.com/c6jm8if6) | The example shows how to display a tooltip                   |
 
 ### Integration
 
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework to build DHTMLX-based apps <br>(the recommended framework for apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Message with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                 |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Message with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                          |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Message with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                               |
 
 ## How to configure Message
 
-In this section you will find the examples of how to configure an alert and confirm box, how to configure the position of a message box and tooltip, and more.
+In this section you will learn how to configure alert and confirm boxes, set the position of a message box and a tooltip, and more.
 
 | Topic                                        | Description                                                                                                                                |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -52,30 +52,30 @@ In this section you will find the examples of how to configure an alert and conf
 
 ## How to customize Message
 
-In this section you can learn how to customize different types of DHTMLX Message.
+In this section you will learn how to customize different types of message boxes.
 
 | Topic                                                                 | Description                                                                                             |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [DHTMLX Message customization](message/customization.md)                     | Read how to customize DHTMLX Message                                                                    |
-| [Message with HTML content](message/api/api_message_properties.md)           | Learn how to display the HTML content in a message box ([Example](https://snippet.dhtmlx.com/1stqqejp)) |
+| [DHTMLX Message customization](message/customization.md)                     | Learn how to customize DHTMLX Message                                                                   |
+| [Message with HTML content](message/api/api_message_properties.md)           | Learn how to display HTML content in a message box ([Example](https://snippet.dhtmlx.com/1stqqejp)) |
 | [Message system colors](https://snippet.dhtmlx.com/tfiqt79l)          | The example shows how to change the color of a message box                                              |                                                                                                         
 | [Styling a message (custom CSS)](https://snippet.dhtmlx.com/7s6p67ht) | The example shows how to apply custom styles to a message box                                           |                                                                                                         
 | [Styling an alert (custom CSS)](https://snippet.dhtmlx.com/g9tba9xi)  | The example shows how to apply custom styles to an alert box                                            |                                                                                                         
 | [Styling a confirm (custom CSS)](https://snippet.dhtmlx.com/x0barf98) | The example shows how to apply custom styles to a confirm box                                           |                                                                                                         
 | [Tooltip in light (white) color](https://snippet.dhtmlx.com/ivec9yxi) | The example shows how to customize a tooltip                                                            |
-| [List of CSS classes](helpers/base_elements.md)                   | A set of CSS classes provided by the DHTMLX library                                                     |
+| [List of CSS classes](helpers/base_elements.md)                   | The CSS classes included in the DHTMLX library                                                          |
 
-## How to work with message box
+## How to work with a message box {#how-to-work-with-message-box}
 
-In this section you can learn how to work with a message box via API.
+In this section you will learn how to use the message box API.
 
 | Topic                                                                        | Description                     |
 | ---------------------------------------------------------------------------- | ------------------------------- |
-| [Closing the message box](message/configuration.md#working-with-message-box) | Read how to close a message box |
+| [Closing the message box](message/configuration.md#working-with-message-box) | Learn how to close a message box |
 
 ## API reference
 
-In this section you can find out corresponding references of Message API.
+In this section you will find the Message API reference.
 
 | Topic                                                                | Description                                   |
 | -------------------------------------------------------------------- | --------------------------------------------- |
@@ -87,14 +87,14 @@ In this section you can find out corresponding references of Message API.
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Message.
+In this section you will learn about common library functionality that is useful when you work with Message.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
 | [Accessibility support](common_features/accessibility_support.md) | Learn about accessibility support in Message                  |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run code after the component renders |
 
 ## Any questions left?
 
