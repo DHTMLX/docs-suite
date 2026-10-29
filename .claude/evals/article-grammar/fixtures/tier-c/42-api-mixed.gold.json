@@ -1,0 +1,390 @@
+{
+  "fixture": "tier-c/42-api-mixed.md",
+  "tier": "C",
+  "skill_version": "1.1.0",
+  "template_source": "docs/grid/api/grid_addspan_method.md",
+  "gold_exhaustive": false,
+  "note": "Гибрид: шапка API-страницы (frontmatter, @short:, @signature:, @params:, @example:) плюс живой прозаический раздел под @descr: с подзаголовками и ~~~js-примером. Такую форму имеет меньшинство API-страниц корпуса, но именно она задаёт главный вопрос к скиллу: граница ревью проходит по строке @descr:. Всё выше неё — не-проза (шаблон, генерируемые пункты параметров, код примера), любая находка там идёт в hard_fp. Всё ниже неё — обычная проза, и посеянные в ней пять нарушений скилл обязан найти. Приманки специально сделаны сильнее позитивов: пассив в @short:, будущее время с пассивом в @params:, «settings of a filter» в @params:, имя метода без бэктиков и дефис вместо тире в title, SEO-шаблон в description. gold_exhaustive=false: проза содержит и другие законные поводы для находки, они не штрафуются. Независимый аудит разметки: 17 из 18 записей прошли без правок. Спаны сверены дословно (grep -F, по одному вхождению на каждый), номера строк — по cat -n, все совпали. Автоматические зоны score.mjs совпали с nonprose_ranges запись в запись (граница ревью проходит по строке 26: сама «@descr:» — не-проза, текст ниже — проза). Пять позитивов подтверждены по точным пунктам правил: «prior to» есть и в таблице Word choice в SKILL.md, и в padded phrases в wordiness.md; «is applied … by the widget» — шаблон «to be» + причастие из passive-voice.md с прямо названным исполнителем; «It» указывает на «the internal state object» вместо правила (pronouns.md); «by setting» — секция «By -ing Link» в gerunds.md; «Finally,» — parenthetical opener из filler words в overused-words.md. Все пять приманок лежат в не-прозе (frontmatter, @short:, @params:), то есть штрафуются зональным правилом MATCHING.md независимо от records, — понижать их в must_find оснований нет. Правки аудита: добавлена mix-may-08 на непосеянный повод — H1 «# setFilter()» в строке 7. Это имя метода без бэктиков (api-formatting.md, «What to flag»), и, в отличие от приманки mix-neg-04 с той же претензией во frontmatter, строка 7 не входит ни в один автоматический диапазон и считается прозой, поэтому находка по ней не получает зонального штрафа и без якоря ушла бы в unscored_extra. expected_total_range расширен с [5, 11] до [5, 13], чтобы верхняя граница покрывала пять must_find плюс все восемь may_flag.",
+  "word_count_prose": 109,
+  "nonprose_ranges": [
+    {
+      "kind": "frontmatter",
+      "lines": [
+        1,
+        5
+      ]
+    },
+    {
+      "kind": "macro",
+      "lines": [
+        9,
+        9
+      ],
+      "macro": "@short:"
+    },
+    {
+      "kind": "macro",
+      "lines": [
+        11,
+        11
+      ],
+      "macro": "@signature:"
+    },
+    {
+      "kind": "macro",
+      "lines": [
+        13,
+        18
+      ],
+      "macro": "@params:"
+    },
+    {
+      "kind": "macro",
+      "lines": [
+        20,
+        24
+      ],
+      "macro": "@example:"
+    },
+    {
+      "kind": "macro",
+      "lines": [
+        26,
+        26
+      ],
+      "macro": "@descr:"
+    },
+    {
+      "kind": "code_fence",
+      "lines": [
+        32,
+        38
+      ]
+    },
+    {
+      "kind": "comment_macro",
+      "lines": [
+        46,
+        46
+      ]
+    },
+    {
+      "kind": "comment_macro",
+      "lines": [
+        48,
+        48
+      ]
+    }
+  ],
+  "expected_total_range": [
+    5,
+    13
+  ],
+  "records": [
+    {
+      "id": "mix-01",
+      "polarity": "must_find",
+      "category": "word-choice",
+      "alt_categories": [
+        "wordiness",
+        "overused-words",
+        "info-mapping",
+        "information-mapping",
+        "plain-text-description"
+      ],
+      "span": "Prior to the first call",
+      "line": 30,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«prior to» стоит и в таблице Word choice в SKILL.md, и в списке padded phrases в rules/wordiness.md; замена одна — «before». Фрагмент открывает первое предложение прозаического раздела, то есть находится на самом заметном месте страницы. Правка: «Before the first call, the roster displays every loaded row». Аудит: SKILL.md в секции information mapping прямо называет контраст вида «Prior to / Now» поводом для таблицы, поэтому находка под info-mapping по этому же спану законна — категория добавлена в alt_categories.",
+      "source": "SKILL.md#word-choice"
+    },
+    {
+      "id": "mix-02",
+      "polarity": "must_find",
+      "category": "passive-voice",
+      "alt_categories": [
+        "weak-verbs",
+        "long-sentences",
+        "Long sentences",
+        "wordiness",
+        "repetition"
+      ],
+      "span": "The rule is applied to all loaded rows by the widget",
+      "line": 30,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«is applied» — «to be» + причастие из детектора rules/passive-voice.md, причём исполнитель действия назван прямо в том же предложении («by the widget»), поэтому оправдания «сложный или неважный субъект» здесь нет: «The widget applies the rule to all loaded rows». Категория weak-verbs законна как альтернативная (weak-verbs.md разбирает ровно такой шаблон «The event is fired» → «fires»), long-sentences — тоже: в предложении две независимые клаузы, соединённые «and». Аудит: внутри спана стоит «all loaded rows», повторяющее «every loaded row» из предыдущего предложения, поэтому repetition добавлен в alt_categories.",
+      "source": "rules/passive-voice.md#how-to-detect-it"
+    },
+    {
+      "id": "mix-03",
+      "polarity": "must_find",
+      "category": "pronouns",
+      "alt_categories": [
+        "misused-words"
+      ],
+      "span": "It survives a page reload.",
+      "line": 42,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«It» по правилу rules/pronouns.md указывает на ближайшее существительное в единственном числе — «the internal state object», тогда как по смыслу переживает перезагрузку сохранённое правило. Читателю приходится возвращаться назад и выбирать антецедент самому. Правка: назвать сущность явно — «The saved rule survives a page reload» — или слить с предыдущим предложением.",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "mix-04",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": [
+        "wordiness",
+        "repetition"
+      ],
+      "span": "You can match a range of values by setting the `mode` property",
+      "line": 44,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "Связка «by -ing» из секции «By -ing Link» в rules/gerunds.md: два действия склеены герундием вместо прямого указания. Правило даёт готовую замену — вынести действие в императив: «Set the `mode` property to `\"between\"` to match a range of values». Аудит: в этом же спане стоит второе упоминание `mode` (первое — в строке 30), поэтому находка по этому спану под категорией repetition тоже законна — категория добавлена в alt_categories.",
+      "source": "rules/gerunds.md#by--ing-link"
+    },
+    {
+      "id": "mix-05",
+      "polarity": "must_find",
+      "category": "overused-words",
+      "alt_categories": [
+        "info-mapping",
+        "plain-text-description",
+        "information-mapping",
+        "wordiness",
+        "word-choice"
+      ],
+      "span": "Finally, call `refresh()` to repaint the rows",
+      "line": 44,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": [
+        "suggestion",
+        "issue"
+      ],
+      "rationale": "«Finally,» — parenthetical opener из списка filler words в rules/overused-words.md, и одновременно transitional phrase, который SKILL.md требует флагать в секции information mapping: последовательность шагов должна быть списком, а не нарративом со связками. Слово ничего не добавляет: «Call `refresh()` to repaint the rows without a request to the server».",
+      "source": "rules/overused-words.md#filler-words--remove-them"
+    },
+    {
+      "id": "mix-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "passive-voice",
+      "alt_categories": [
+        "weak-verbs",
+        "misused-words"
+      ],
+      "span": "sets a rule that is applied to roster rows",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Самая сильная приманка страницы: «is applied» — дословный шаблон из детектора passive-voice.md, и он стоит буквально в двадцати строках от такого же пассива в прозе (mix-02), который флагать нужно. Но @short: — это summary-поле: passive-voice.md прямо разрешает пассив в коротких описаниях, а сам блок относится к не-прозе, одинаковой для всех API-страниц корпуса.",
+      "source": "rules/passive-voice.md#when-passive-voice-is-acceptable"
+    },
+    {
+      "id": "mix-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "tenses",
+      "alt_categories": [
+        "passive-voice",
+        "misused-words"
+      ],
+      "span": "the value that will be compared with cell values",
+      "line": 16,
+      "occurrence": 1,
+      "rationale": "Будущее время плюс пассив в одном фрагменте — формально попадание сразу в tenses.md и passive-voice.md. Но это пункт @params:, генерируемый по общему шаблону: формулировка одинакова во всех страницах корпуса, правка здесь ломает шаблон, а не улучшает статью.",
+      "source": "rules/tenses.md#basic-narrative--replace-pastfuture-with-present-simple"
+    },
+    {
+      "id": "mix-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "macro",
+      "category": "possessives",
+      "alt_categories": [
+        "articles",
+        "wordiness"
+      ],
+      "span": "an object with additional settings of a filter",
+      "line": 18,
+      "occurrence": 1,
+      "rationale": "«settings of a filter» — точный аналог примера «settings of the editor» → «editor settings» из rules/possessives.md, поэтому приманка выглядит бесспорной. Однако строка принадлежит @params:, а не прозе: описания параметров не ревьюятся.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    },
+    {
+      "id": "mix-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "api-formatting",
+      "alt_categories": [
+        "punctuation",
+        "articles"
+      ],
+      "span": "JavaScript Roster - setFilter Method",
+      "line": 3,
+      "occurrence": 1,
+      "rationale": "Имя метода без бэктиков (api-formatting.md требует бэктики для имён API) и дефис там, где punctuation.md ожидал бы тире. Но это поле title: у всех 1891 файла корпуса оно имеет вид «JavaScript <Widget> - <Тема>», бэктики и тире в нём сломали бы заголовок вкладки и хлебные крошки. Frontmatter не входит в область ревью прозы.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    },
+    {
+      "id": "mix-neg-05",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "wordiness",
+      "alt_categories": [
+        "possessives",
+        "inversion",
+        "overused-words",
+        "api-formatting"
+      ],
+      "span": "You can explore the setFilter method of Roster in the documentation",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "SEO-шаблон description, идентичный во всех файлах корпуса: «of Roster» тянет на possessives, «You can explore» — на inversion, длина — на wordiness, «setFilter» без бэктиков — на api-formatting. Любая правка здесь меняет метатег, а не статью.",
+      "source": "rules/wordiness.md#padded-phrases--replace-with-a-single-word"
+    },
+    {
+      "id": "mix-may-01",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [
+        "overused-words"
+      ],
+      "span": "### Filtering rows",
+      "line": 28,
+      "occurrence": 1,
+      "rationale": "Двойственный случай. Секция «Gerunds in Titles» в rules/gerunds.md требует глагольной фразы вместо герундия («Data Editing» → «Edit Data»), так что находка законна. Но заголовок стоит в прозе, а такой стиль заголовков — норма всего корпуса, и правка затрагивает якорь ссылки. Поэтому находка не требуется и не штрафуется.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "mix-may-02",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [
+        "overused-words"
+      ],
+      "span": "### Combining rules",
+      "line": 40,
+      "occurrence": 1,
+      "rationale": "Тот же случай, что и mix-may-01: герундий в заголовке раздела. Запись добавлена, чтобы находка по второму заголовку не выглядела лишней относительно первого.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "mix-may-03",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": [
+        "tenses",
+        "wordiness",
+        "long-sentences",
+        "info-mapping"
+      ],
+      "span": "the roster displays every loaded row",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Аудит: непосеянный повод. «every loaded row» в первом предложении и «all loaded rows» во втором называют одно и то же множество подряд и в разных числах. Инлайновая проверка Repetition в SKILL.md («тот же оборот повторяется в пределах нескольких предложений») и секция «Consistent noun numbers» в rules/tenses.md дают законное основание для находки. Случай двойственный: повтор несёт уточнение «every → all», поэтому находка не требуется и не штрафуется.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "mix-may-04",
+      "polarity": "may_flag",
+      "category": "text-that-explains-ui-or-code",
+      "alt_categories": [
+        "explains-ui-or-code",
+        "prose-should-be-code",
+        "info-mapping",
+        "information-mapping",
+        "plain-text-description",
+        "articles",
+        "wordiness"
+      ],
+      "span": "the footer counter shows the new total",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Аудит: непосеянный повод. SKILL.md в секции «Text that explains UI or code» требует флагать прозу, описывающую изменения в интерфейсе; здесь это счётчик в футере и его значение после фильтрации — такое обычно показывают скриншотом или примером, а не текстом. Дополнительно «the footer counter» вводится с определённым артиклем при первом упоминании (rules/articles.md), поэтому articles добавлен в alt_categories. Находка законна, но не обязательна: фраза короткая и фактическая.",
+      "source": "SKILL.md#text-that-explains-ui-or-code"
+    },
+    {
+      "id": "mix-may-05",
+      "polarity": "may_flag",
+      "category": "info-mapping",
+      "alt_categories": [
+        "information-mapping",
+        "plain-text-description",
+        "repetition",
+        "wordiness"
+      ],
+      "span": "The `mode` property accepts `\"equal\"`, `\"contains\"`, and `\"between\"`.",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Аудит: непосеянный повод. Три допустимых значения перечислены нарративом, тогда как SKILL.md в секции «Plain-text description (information mapping)» требует списка или таблицы для параллельных конструкций и многовариантных описаний. Это же первое из двух упоминаний `mode` (второе — в строке 44), поэтому repetition законен как альтернативная категория. Спорно: перечисление короткое и читается без таблицы, поэтому may_flag, а не must_find.",
+      "source": "SKILL.md#plain-text-description-information-mapping"
+    },
+    {
+      "id": "mix-may-06",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": [
+        "articles",
+        "wordiness",
+        "weak-verbs",
+        "long-sentences",
+        "text-that-explains-ui-or-code"
+      ],
+      "span": "The second call replaces the previous rule. The widget keeps the rule in the internal state object.",
+      "line": 42,
+      "occurrence": 1,
+      "rationale": "Аудит: непосеянный повод. «rule» повторяется в двух соседних предложениях («the previous rule» → «the rule»), что подпадает под инлайновую проверку Repetition в SKILL.md. Кроме того, «the internal state object» вводится с определённым артиклем при первом упоминании, хотя rules/articles.md для ещё не названного объекта требует «a/an» — категория добавлена в alt_categories, чтобы находка по этому же спану не выглядела чужой. Обе претензии слабее посеянных позитивов, поэтому may_flag.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "mix-may-07",
+      "polarity": "may_flag",
+      "category": "possessives",
+      "alt_categories": [
+        "wordiness",
+        "info-mapping",
+        "information-mapping",
+        "plain-text-description",
+        "articles"
+      ],
+      "span": "the id of a target view",
+      "line": 44,
+      "occurrence": 1,
+      "rationale": "Аудит: непосеянный повод, причём сильный. «the id of a target view» — тот же шаблон «X of Y», что и приманка mix-neg-03 («settings of a filter»), но он стоит в прозе, а не в @params:, и rules/possessives.md прямо предлагает свернуть его в именную группу («target view id»). Рядом две настройки перечислены нарративом вместо списка, поэтому info-mapping добавлен в alt_categories. Запись оставлена may_flag, а не must_find, чтобы не менять посеянный автором состав обязательных позитивов; штрафовать скилл за эту находку нельзя.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    },
+    {
+      "id": "mix-may-08",
+      "polarity": "may_flag",
+      "category": "api-formatting",
+      "alt_categories": [
+        "gerunds",
+        "word-choice"
+      ],
+      "span": "# setFilter()",
+      "line": 7,
+      "occurrence": 1,
+      "rationale": "Аудит: непосеянный повод, единственный пробел в исходной разметке. Заголовок H1 — имя метода в открытом тексте, без бэктиков; rules/api-formatting.md в секции «What to flag» требует флагать «API names written in plain text (no backticks) when the surrounding context clearly refers to code», а контекст здесь однозначно кодовый. Ключевое отличие от приманки mix-neg-04: та же претензия во frontmatter лежит в не-прозе и штрафуется как hard_fp, а строка 7 по расчёту score.mjs попадает в зону prose (диапазоны 1-5, 9, 11, 13-18, 20-24, 26, 32-38, 46, 48 её не покрывают), поэтому находка по ней зонального штрафа не получает. Случай двойственный: H1 API-страницы совпадает с именем метода во всём корпусе, бэктики в нём сломали бы хлебные крошки, — поэтому may_flag, а не must_find. Запись нужна именно на Tier C: без якоря верная находка ушла бы в unscored_extra и выглядела бы лишней.",
+      "source": "rules/api-formatting.md#what-to-flag"
+    }
+  ]
+}

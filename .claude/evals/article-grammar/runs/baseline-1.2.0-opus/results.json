@@ -1,0 +1,95 @@
+{
+  "baseline": "1.2.0-opus",
+  "date": "2026-08-30",
+  "cli": "2.1.74",
+  "model": "claude-opus-4-6",
+  "effort": "high",
+  "compared_to": "baseline-1.1.0-opus",
+  "tier_a": {
+    "fixtures": 21,
+    "findings": 144,
+    "must_find": 98,
+    "matched": 96,
+    "recall": 0.98,
+    "hard_fp": 4,
+    "findings_in_nonprose": 1,
+    "unlocatable": 0,
+    "precision_adjusted": 0.958
+  },
+  "tier_bc": {
+    "fixtures": 9,
+    "findings": 61,
+    "must_find": 45,
+    "matched": 43,
+    "recall": 0.956,
+    "hard_fp": 2,
+    "findings_in_nonprose": 0,
+    "unlocatable": 1,
+    "precision_adjusted": 0.869,
+    "fixture_30_findings": 0,
+    "fixture_31_findings": 0,
+    "fixture_32_findings": 7,
+    "fixture_32_in_nonprose": 0,
+    "fixture_33_findings": 1,
+    "fixture_43_recall": 0.944,
+    "fixture_41_recall": 0.923
+  },
+  "combined": {
+    "findings": 205,
+    "recall": 0.972,
+    "in_nonprose": 1,
+    "in_code_fence": 0,
+    "unlocatable": 1,
+    "unlocatable_rate": 0.005,
+    "hard_fp": 6,
+    "precision_strict": 0.971,
+    "category_accuracy": 0.946,
+    "duplicate_rate": 0.078
+  },
+  "control_events_guide": {
+    "api_formatting_section": true,
+    "abbreviations_section": true,
+    "occurrences_reported": 22,
+    "baseline_was": 0
+  },
+  "behavioral": {
+    "B1": "pass",
+    "B2": "pass",
+    "B5a": "pass",
+    "B5b": "pass",
+    "B5c": "pass",
+    "B5d": "pass",
+    "B5e": "pass",
+    "B6": "invalid — скилл не активируется при теге после команды; меряет агента без скилла",
+    "N8_status": "не проверен: сценарий не воспроизводит условие"
+  },
+  "rule_loading": {
+    "prose_pages": 15,
+    "nonprose_pages": 0,
+    "prose_scan_executed": "29/30"
+  },
+  "cost": {
+    "prose_page_usd": 0.4,
+    "api_page_usd": 0.12,
+    "baseline_prose_page_usd": 0.15
+  },
+  "gates": {
+    "passed": [
+      "recall",
+      "findings_inside_code_fence",
+      "fixture_31_zero",
+      "unlocatable_rate",
+      "precision_strict",
+      "category_accuracy",
+      "duplicate_rate",
+      "B1",
+      "B2",
+      "rule_files_loaded_on_nonprose"
+    ],
+    "failed": [],
+    "not_measured": [
+      "corpus_run",
+      "stability"
+    ]
+  }
+}
