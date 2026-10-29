@@ -6,15 +6,15 @@ description: You can explore the customization of Message in the documentation o
 
 # Customization
 
-There is a possibility to make changes in the look and feel of a message box or a tooltip. You can either create a new CSS class or use a CSS class that DHTMLX library provides.
+You can change the appearance of a message box or a tooltip. Create a custom CSS class or apply a built-in one from the DHTMLX library.
 
-## Using new CSS classes
+## Use custom CSS classes {#using-new-css-classes}
 
-![Notification message box with a blue custom CSS style and close icon in DHTMLX Suite](/img/message/custom_style.png)
+![Notification message box with a blue custom CSS style and a close icon in DHTMLX Suite](/img/message/custom_style.png)
 
-To use a new CSS class you need to take the following steps:
+Follow these steps to apply a custom CSS class:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet. If you use a stylesheet, include it on the page.
 
 ~~~js
 <style>
@@ -28,7 +28,7 @@ To use a new CSS class you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the **css** property in the [message box](message/configuration.md#message-box) ([alert](message/configuration.md#alert-box), [confirm](message/configuration.md#confirm-box)), [tooltip](message/configuration.md#tooltip) configuration:
+- Specify the name of the created CSS class (or names of classes separated by spaces) as the value of the `css` property in the configuration of a [message box](message/configuration.md#message-box), [alert box](message/configuration.md#alert-box), [confirm box](message/configuration.md#confirm-box), or [tooltip](message/configuration.md#tooltip):
 
 ~~~js
 dhx.message({
@@ -62,9 +62,9 @@ For example:
 
 **Related sample**: [Message. Confirm styling (custom CSS)](https://snippet.dhtmlx.com/x0barf98)
 
-## Using default CSS classes
+## Use built-in CSS classes {#using-default-css-classes}
 
-The DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can apply to change the appearance either of a message box or a tooltip.
+The DHTMLX library includes [a set of built-in CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can apply to change the appearance of either a message box or a tooltip:
 
 ~~~js
 dhx.message({
