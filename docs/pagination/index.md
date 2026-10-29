@@ -10,8 +10,8 @@ description: You can have an overview of Pagination in the documentation of the 
 The Pagination component is available in the **PRO** version only.
 }}
 
-DHTMLX Pagination helps to divide large amount of data into groups and display them on discrete pages. 
-The component is easy-to-use and provides handy navigation that allows you to quickly jump to a desired page. DHTMLX Pagination is available in combination with data components like DataView, List, Grid, Tree, Grid in the TreeGrid mode. Check [online samples for DHTMLX Pagination](https://snippet.dhtmlx.com/05r4s63b?tag=pagination).
+DHTMLX Pagination helps to divide a large amount of data into groups and display them on discrete pages.
+The component includes a navigation bar that allows users to jump to any page. DHTMLX Pagination works with data components such as DataView, List, Tree, and Grid (including the TreeGrid mode). Check [online samples for DHTMLX Pagination](https://snippet.dhtmlx.com/05r4s63b?tag=pagination).
 
 ![DHTMLX Pagination navigation bar with page input and arrows below a list of items in DHTMLX Suite](/img/pagination/init.png)
 
@@ -21,7 +21,7 @@ Learn how to build a full-featured DHTMLX Pagination:
 
 - [Features](pagination/features.md)
 
-## API Reference
+## API reference
 
 - [](pagination/api/api_overview.md)
 
@@ -32,7 +32,7 @@ Learn how to build a full-featured DHTMLX Pagination:
 
 ## Guides
 
-Covers the initialization of Pagination on a page and the ways of configuring and operating the component.
+The following articles explain how to add Pagination to a page, configure it, and work with it:
 
 - [](pagination/init.md)
 - [](pagination/configuration.md)
