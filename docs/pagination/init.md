@@ -7,10 +7,10 @@ description: You can explore the initialization of Pagination in the documentati
 # Initialization
 
 :::info
-[Download the DHTMLX Pagination package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Pagination package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Pagination into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Pagination to an application:
 
 - [Include source files](#include-source-files)
 - [Create two containers](#create-containers)
@@ -59,12 +59,12 @@ To add DHTMLX Pagination into an application, you need to take the following sim
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -73,10 +73,10 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create containers
 
-Add two containers:
+Add two containers and give each of them an id:
 
-- for a related component and give it an id, e.g. "widget_container"
-- for Pagination and give it an id, e.g. "pagination_container":
+- A container for the related widget, for example `widget_container`
+- A container for Pagination, for example `pagination_container`
 
 ~~~html title="index.html"
 <div id="widget_container"></div>
@@ -86,7 +86,7 @@ Add two containers:
 ## Initialize a related widget
 
 :::note 
-DHTMLX Pagination can be used in conjunction with data components like [List](/list/), [DataView](/dataview/), [Tree](/tree/), [Grid](/grid/), or [Grid in the TreeGrid mode](grid/treegrid_mode.md).
+DHTMLX Pagination works with data components such as [List](/list/), [DataView](/dataview/), [Tree](/tree/), [Grid](/grid/), or [Grid in the TreeGrid mode](grid/treegrid_mode.md).
 :::
 
 Choose the widget you want to link to the Pagination component, for example, DHTMLX List. 
@@ -101,10 +101,10 @@ const widget = new dhx.List("widget_container", {
 });
 ~~~
 
-The constructor has two parameters:
+The constructor takes two parameters:
 
-- the HTML container for List,
-- an object with the List configuration properties (see the full list [here](list/api/api_overview.md#properties)). 
+- The HTML container for List.
+- An object with List configuration properties (see the [full list of properties](list/api/api_overview.md#properties)).
 
 2\. Load data into the widget:
 
@@ -115,10 +115,10 @@ widget.data.parse(widget_data);
 
 ## Initialize Pagination
 
-Initialize pagination with the *dhx.Pagination* object constructor. The constructor takes two parameters:
+Initialize Pagination with the `dhx.Pagination` object constructor. The constructor takes two parameters:
 
-- the HTML container for Pagination, 
-- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
+- The HTML container for Pagination.
+- An object with configuration properties (optional). If you omit this argument, Pagination uses the default settings.
 
 ~~~jsx title="index.js"
 // creating DHTMLX Pagination
@@ -130,7 +130,5 @@ const pagination = new dhx.Pagination("pagination_container", {
 
 ### Configuration properties
 
-There is a set of properties you can specify in the Pagination configuration object (the second parameter of the constructor function). 
-
-See the detailed information on configuration properties of Pagination in the [Pagination API overview](pagination/api/api_overview.md#properties) article.
+The [Pagination API overview](pagination/api/api_overview.md#properties) article describes the properties you can specify in the Pagination configuration object (the second parameter of the constructor).
 
