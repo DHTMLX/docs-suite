@@ -6,19 +6,19 @@ description: You can explore the features of Popup in the documentation of the D
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX Popup and go into deep dive on its functionality.
+This page helps you start working with DHTMLX Popup and explore its functionality in depth.
 
 ## How to start with DHTMLX Popup
 
-In this section you can find out how to initialize Popup with different data components, and how to integrate a Popup into your applications.
+In this section you will learn how to initialize Popup, attach DHTMLX components or HTML content to it, and integrate it into your applications.
 
 ### Initialization
 
 | Topic                                                                | Description                                                                                                                                                       |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Basic initialization](popup/initialization.md)                           | Read how to initialize a Popup on a page                                                                                                                          |
-| [Attaching widgets](popup/work_with_popup.md#attaching-dhtmlx-components) | Learn how to attach a DHTMLX component to a Popup ([Example 1](https://snippet.dhtmlx.com/7x6hlbqx), [Example 2](https://snippet.dhtmlx.com/kw3e0h4j?tag=popup)) |
-| [Attaching HTML content](popup/work_with_popup.md#attaching-content)      | Learn how to attach some HTML content to a Popup ([Example](https://snippet.dhtmlx.com/ajv5qqxq))                                                                 |
+| [Basic initialization](popup/initialization.md)                           | Learn how to initialize Popup on a page                                                                                                                          |
+| [Attaching widgets](popup/work_with_popup.md#attaching-dhtmlx-components) | Learn how to attach a DHTMLX component to Popup ([Example 1](https://snippet.dhtmlx.com/7x6hlbqx), [Example 2](https://snippet.dhtmlx.com/kw3e0h4j?tag=popup)) |
+| [Attaching HTML content](popup/work_with_popup.md#attaching-content)      | Learn how to attach HTML content to Popup ([Example](https://snippet.dhtmlx.com/ajv5qqxq))                                                                 |
 
 
 ### Integration
@@ -26,43 +26,43 @@ In this section you can find out how to initialize Popup with different data com
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework to build DHTMLX-based apps <br>(the recommended framework for apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Popup with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                   |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Popup with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                            |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Popup with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                 |
 
 ## How to customize Popup
 
-In this section you may study how to change the style of Popup.
+In this section you will learn how to change the style of Popup.
 
 | Topic                                               | Description                                                                     |
 | --------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [Styling Popup](popup/customization.md)                  | Learn how to customize a Popup ([Example](https://snippet.dhtmlx.com/rd8zfw5h)) |
-| [List of CSS classes](helpers/base_elements.md) | A set of CSS classes provided by the DHTMLX library                             |
+| [Styling Popup](popup/customization.md)                  | Learn how to customize Popup ([Example](https://snippet.dhtmlx.com/rd8zfw5h)) |
+| [List of CSS classes](helpers/base_elements.md) | The CSS classes included in the DHTMLX library                                  |
 
 ## How to work with Popup
 
-In this section you may learn how to show or hide a popup, how to check its visibility, how to configure the position of the component, and more.
+In this section you will learn how to show or hide Popup, check its visibility, configure its position, and more.
 
 | Topic                                                                              | Description                                                                                                                                                                         |
 | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Showing / hiding a Popup](popup/work_with_popup.md#hidingshowing-popup)                | Learn how to show a Popup at the specified position or hide a Popup ([Example 1](https://snippet.dhtmlx.com/aqzy536h), [Example 2](https://snippet.dhtmlx.com/bu4uj2ik))            |
-| [Auto positioning](https://snippet.dhtmlx.com/bz1ekc71)                            | The example shows how to configure the auto positioning for Popup                                                                                                                   |
-| Prevent showing or hiding of a Popup                                               | The example helps to understand how to prevent a Popup from being shown ([Example](https://snippet.dhtmlx.com/z788l8r7)) or hidden ([Example](https://snippet.dhtmlx.com/aocef9cv)) |
-| [Checking visibility of a Popup](popup/work_with_popup.md#checking-visibility-of-popup) | Learn how to check whether a Popup is visible ([Example](https://snippet.dhtmlx.com/f614sdm3))                                                                                      |
+| [Showing / hiding Popup](popup/work_with_popup.md#hidingshowing-popup)                  | Learn how to show Popup at the specified position or hide it ([Example 1](https://snippet.dhtmlx.com/aqzy536h), [Example 2](https://snippet.dhtmlx.com/bu4uj2ik))            |
+| [Auto positioning](https://snippet.dhtmlx.com/bz1ekc71)                            | The example shows how to configure auto positioning of Popup                                                                                                                         |
+| Preventing Popup from showing or hiding                                            | Learn how to prevent Popup from showing ([Example](https://snippet.dhtmlx.com/z788l8r7)) or hiding ([Example](https://snippet.dhtmlx.com/aocef9cv))                          |
+| [Checking visibility of Popup](popup/work_with_popup.md#checking-visibility-of-popup)   | Learn how to check whether Popup is visible ([Example](https://snippet.dhtmlx.com/f614sdm3))                                                                                        |
 
 ## How to work with Popup events
 
-This section explains how to work with Popup events.
+In this section you will learn how to work with Popup events.
 
 | Topic                                       | Description                                                                                            |
 | :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event basic rules](guides/events_guide.md) | Learn the basic rules of event handling                                                                |
 | [Event handling](popup/event_handling.md)        | Learn how to attach, detach, or call the Popup events ([Example](https://snippet.dhtmlx.com/ro2lza9t)) |
 
 ## API reference
 
-In this section you can find out corresponding references of Popup API.
+In this section you will find the Popup API reference.
 
 | Topic                                                | Description                        |
 | ---------------------------------------------------- | ---------------------------------- |
@@ -72,13 +72,13 @@ In this section you can find out corresponding references of Popup API.
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Popup.
+In this section you will learn about common library functionality that is useful when you work with Popup.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run code after the component renders             |
 
 ## Any questions left?
 
