@@ -6,17 +6,17 @@ description: You can explore the customization of Pagination in the documentatio
 
 # Customization
 
-## Styling
+## Use custom CSS classes {#styling}
 
-There is a possibility to make changes in the look and feel of a pagination. 
+You can change the look and feel of a pagination.
 
 ![DHTMLX Pagination with a purple custom-styled navigation bar below a grid of sections in DHTMLX Suite](/img/pagination/styling.png)
 
 **Related sample**: [Pagination. Styling (custom CSS)](https://snippet.dhtmlx.com/e7bujtsu)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case):
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet. If you use a stylesheet, include it on the page:
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](pagination/api/pagination_css_config.md) property in the Pagination configuration:
+- Specify the name of the class you created (or several class names separated by spaces) as the value of the [`css`](pagination/api/pagination_css_config.md) property in the Pagination configuration:
 
 ~~~js
 const pagination = new dhx.Pagination("pagination_container",{

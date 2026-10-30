@@ -6,7 +6,12 @@ description: You can have an overview of Message in the documentation of the DHT
 
 # Message overview
 
-DHTMLX Message is a tiny but useful component that helps you to interact with a user of your application. Depending on the type of a message, you can inform a user about some processes taking place in the app, ask for confirmation of some action, warn against some steps that may result in unwanted effects, or simply give a hint about the purpose of a certain element of an app.
+DHTMLX Message is a component that helps you interact with the users of your application. It includes four message types, each with its own purpose:
+
+- Message box — informs users about processes in the app
+- Confirm box — asks users to confirm an action
+- Alert box — warns users against steps that may result in unwanted effects
+- Tooltip — gives a hint about the purpose of an element in the app
 
 Check [online samples for DHTMLX Message](https://snippet.dhtmlx.com/tfiqt79l?tag=message). 
 

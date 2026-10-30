@@ -7,14 +7,14 @@ description: You can explore the initialization of Message in the documentation 
 # Initialization
 
 :::info
-[Download the DHTMLX Message package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Message package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add a message on a page, you should take the following simple steps:
+Follow these steps to add a message box to a page:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
-- [Create necessary message box](#create-necessary-message-box)
+- [Create a message box](#create-necessary-message-box)
 
 ~~~html
 <!DOCTYPE html>
@@ -42,12 +42,12 @@ To add a message on a page, you should take the following simple steps:
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the paths to the following DHTMLX Suite files in its header:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -57,20 +57,20 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 ## Create a container
 
 :::info
-This is an optional step. By default a message appears in the top right corner of the screen.
+This is an optional step. The default message position is the top-right corner of the screen.
 :::
 
-Add a container for Message and give it an id, for example "message_container":
+Add a container for Message and give it an id, for example `message_container`:
 
 ~~~html title="index.html"
 <div id="message_container"></div>
 ~~~
 
-## Create necessary message box
+## Create a message box {#create-necessary-message-box}
 
-Create a desired message box with the corresponding constructors. The listed constructors take an [**object with configuration options of message boxes**](message/configuration.md) as a parameter.
+Each message box has its own constructor that takes an [**object with configuration options of message boxes**](message/configuration.md) as a parameter. Use one of the following constructors to create a message box:
 
-- `dhx.message(): {close() => void};` - to create a message. The constructor returns an object with the `close()` method:
+- `dhx.message(): {close() => void};` — to create a message. The constructor returns an object with the `close()` method:
 
 ~~~js
 const message = dhx.message({
@@ -85,7 +85,7 @@ console.log(message); // -> {close: function}
 
 **Related sample**: [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
-- `dhx.alert()` - to create an alert message box
+- `dhx.alert()` — to create an alert message box:
 
 ~~~js
 dhx.alert({
@@ -97,7 +97,7 @@ dhx.alert({
 
 **Related sample**: [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
-- `dhx.confirm()` - to create a confirm message box
+- `dhx.confirm()` — to create a confirm message box:
 
 ~~~js
 dhx.confirm({
@@ -110,9 +110,9 @@ dhx.confirm({
 
 **Related sample**: [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
-- `dhx.tooltip()` - to create a tooltip. The constructor takes two parameters:
-    - **text** - (*string*) a string with the text of tooltip
-    - **config** - (*object*) an object with [tooltip configuration properties](message/configuration.md#tooltip)
+- `dhx.tooltip()` — to create a tooltip. The constructor takes two parameters:
+    - `text` — (`string`) the text of the tooltip
+    - `config` — (`object`) an object with [tooltip configuration properties](message/configuration.md#tooltip)
         
 ~~~js
 dhx.tooltip("Current Value 1", {node: "first", position: "center"});
@@ -122,4 +122,4 @@ dhx.tooltip("Current Value 1", {node: "first", position: "center"});
 
 ### Configuration properties
 
-There is a set of properties you can specify for message boxes to optimize their configuration for your needs. Read details in the [related article](message/configuration.md).
+The [Configuration](message/configuration.md) article describes the properties that you can specify for message boxes and tooltips.

@@ -6,29 +6,28 @@ description: You can explore the Message Boxes of Message in the documentation o
 
 # Overview of Message boxes
 
-DHTMLX Message component provides a set of helper message boxes: message, alert, confirm, and the tooltip component. Message boxes are easily configurable, so that you can achieve the best look and feel for 
-interaction with the users of your app or web-site.
+The DHTMLX Message component includes a set of helper message boxes: message, alert, confirm, and tooltip. You can configure message boxes to match the appearance of your app or website.
 
 ## Message
 
 ![Notification message box with the dhtmlxMessage logo and text in DHTMLX Suite](/img/message/message.png)
 
-A simple message box to inform a user about processes occurring in the application in this or that moment.
+A message box is a simple notification that informs users about current processes in the application.
 
 ## Alert
 
 ![Modal alert box with a warning message and an OK button in DHTMLX Suite](/img/message/dhx_alert.png)
 
-This type of message box allows warning a user against taking some steps that may lead to unexpected or undesirable result.
+An alert box allows you to warn users against steps that may lead to unexpected or undesirable results.
 
 ## Confirm
 
 ![Modal confirm box with a question and Decline and Accept buttons in DHTMLX Suite](/img/message/dhx_confirm.png)
 
-This type of message box is useful when you need to ask a user to confirm some action to proceed to next steps.
+A confirm box asks users to confirm an action before they proceed to the next step.
 
 ## Tooltip
 
 ![Dark tooltip displayed when hovering over an element in DHTMLX Suite](/img/message/show_tooltip.png)
 
-Tooltip is a great helper for giving information about an element a user is hovering over.
+A tooltip shows information about the element that the user hovers over.

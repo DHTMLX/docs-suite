@@ -6,7 +6,7 @@ description: You can explore the configuration of Message in the documentation o
 
 # Configuration
 
-In this article you will find the detailed list of properties that you can use inside the constructors of message boxes and tooltip to adjust their configuration.
+This article describes how to configure message boxes, alert boxes, confirm boxes, and tooltips.
 
 ## Message box
 
@@ -14,7 +14,7 @@ In this article you will find the detailed list of properties that you can use i
 
 **Related sample**: [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
-You can configure a message box on its initialization:
+You can configure a message box when you create it with `dhx.message()`:
 
 ~~~js
 dhx.message({
@@ -27,11 +27,11 @@ dhx.message({
 
 **Related sample**: [Message. Message Configuration](https://snippet.dhtmlx.com/qfmd877x)
 
-{{note You will find the list of configuration properties the constructor of the message box may take [in the related article](message/api/api_message_properties.md).}}
+{{note See the [full list of configuration properties](message/api/api_message_properties.md) that the message box constructor accepts.}}
 
 ### Working with message box
 
-From v8.0, you can close a message box via the [close()](message/api/message_close_method.md) method of the message box API:
+From v8.0, `dhx.message()` returns an object with the [`close()`](message/api/message_close_method.md) method. Call this method to close the message box:
 
 ~~~html
 <section class="dhx_sample-controls">
@@ -54,11 +54,11 @@ From v8.0, you can close a message box via the [close()](message/api/message_clo
 
 ## Alert box
 
-![Modal alert box with a header, body text and an OK button in DHTMLX Suite](/img/message/show_alert.png)
+![Modal alert box with a header, body text, and an OK button in DHTMLX Suite](/img/message/show_alert.png)
 
 **Related sample**: [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
-You can define the configuration of an alert box on its initialization:
+You can configure an alert box when you create it with `dhx.alert()`:
 
 ~~~js
 dhx.alert({
@@ -70,15 +70,15 @@ dhx.alert({
 
 **Related sample**: [Message. Alert and confirm configuration](https://snippet.dhtmlx.com/dk4a7959)
 
-{{note See the list of configuration properties the constructor of the alert box may take [here](message/api/api_message_properties.md#alert-box).}}
+{{note See the [full list of configuration properties](message/api/api_message_properties.md#alert-box) that the alert box constructor accepts.}}
 
 ## Confirm box
 
-![Modal confirm box with header, text and Reject and Apply buttons in DHTMLX Suite](/img/message/show_confirm.png)
+![Modal confirm box with a header, text, and Reject and Apply buttons in DHTMLX Suite](/img/message/show_confirm.png)
 
 **Related sample**: [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
-You can configure a confirm box on its initialization:
+You can configure a confirm box when you create it with `dhx.confirm()`:
 
 ~~~js
 dhx.confirm({
@@ -91,11 +91,11 @@ dhx.confirm({
 
 **Related sample**: [Message. Alert and confirm configuration](https://snippet.dhtmlx.com/dk4a7959)
 
-{{note You can find the list of configuration properties the constructor of the confirm box may take [in the related article](message/api/api_message_properties.md#confirm-box).}}
+{{note See the [full list of configuration properties](message/api/api_message_properties.md#confirm-box) that the confirm box constructor accepts.}}
 
 ### Working with confirm
 
-To find out which button was pressed, use the callback function that returns a Promise:
+`dhx.confirm()` returns a Promise. Pass a callback to its `then()` method to find out which button the user clicked:
 
 ~~~js
 dhx.confirm({
@@ -118,7 +118,7 @@ dhx.confirm({
 
 **Related sample**: [Message. Show Tooltip](https://snippet.dhtmlx.com/c6jm8if6)
 
-You can configure a tooltip on its initialization:
+You can configure a tooltip when you create it with `dhx.tooltip()`:
 
 ~~~js
 dhx.tooltip("Tooltip From Right", {
@@ -133,27 +133,27 @@ dhx.tooltip("Tooltip From Right", {
 - [Message. Tooltip position](https://snippet.dhtmlx.com/4wrrsr67)
 - [Message. Tooltip configuration](https://snippet.dhtmlx.com/zts0avym)
 
-{{note See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).}}
+{{note See the [full list of configuration properties](message/api/api_message_properties.md#tooltip) that the tooltip constructor accepts.}}
 
 ### Smart positioning
 
-{{note If the target of the tooltip is placed close to some edge of the browser, the tooltip will be shown from the opposite side of the target.}}
+{{note If the tooltip target is close to an edge of the browser window, the tooltip appears on the opposite side of the target.}}
 
-In the image below the target is adjacent to the right side of screen. Its tooltip that has the *position:"right"* attribute in the config object appears from the left side of the target.
+In the image below, the target is adjacent to the right side of the screen. The tooltip has the `position:"right"` property in its configuration object but appears to the left of the target.
 
 ![Tooltip with smart positioning appearing to the left of an edge element in DHTMLX Suite](/img/message/smart_tooltip.png)
 
 ### Tooltip API
 
-You can control the activity of the Tooltip via the pair of methods.
+Use the following methods to switch tooltips off and on:
 
-- to switch the tooltip off, use the **disableTooltip()** method:
+- To switch tooltips off, call the `disableTooltip()` method:
 
 ~~~js
 dhx.disableTooltip();
 ~~~
 
-- to switch the tooltip on again, apply the **enableTooltip()** method:
+- To switch tooltips on again, call the `enableTooltip()` method:
 
 ~~~js
 dhx.enableTooltip();
