@@ -8,7 +8,7 @@ description: You can explore the event handling of Popup in the documentation of
 
 ## Attaching event listeners
 
-You can attach event listeners with the **popup.events.on()** method:
+You can attach event listeners with the `popup.events.on()` method:
 
 ~~~js
 popup.events.on("click", function(e){
@@ -16,13 +16,13 @@ popup.events.on("click", function(e){
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
+{{note Event names are case-insensitive.}}
 
 **Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 
 ## Detaching event listeners
 
-To detach events, use **popup.events.detach()**:
+The `popup.events.detach()` method removes event listeners:
 
 ~~~js
 popup.events.on("click", function(e){
@@ -34,13 +34,13 @@ popup.events.detach("click");
 
 ## Calling events
 
-To call events, use **popup.events.fire()**:
+The `popup.events.fire()` method calls an event:
 
 ~~~js
 popup.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-## The list of events
+## List of events {#the-list-of-events}
 
-The full list of events is available in the related [API section](popup/api/api_overview.md#events).
+The [API section](popup/api/api_overview.md#events) lists all Popup events.

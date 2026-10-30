@@ -6,9 +6,9 @@ description: You can have an overview of Popup in the documentation of the DHTML
 
 # Popup overview
 
-DHTMLX Popup is a pop-up window that can contain various content. It allows attaching other DHTMLX components and different HTML content.
+DHTMLX Popup is a pop-up window that can contain various content. You can attach other DHTMLX components or HTML content to it.
 
-Mainly, the component is applied for showing a pop-up content on some action, such as a button click. Check [online samples for DHTMLX Popup](https://snippet.dhtmlx.com/bz1ekc71?tag=popup).
+The component mostly shows pop-up content in response to a user action, such as a button click. Check [online samples for DHTMLX Popup](https://snippet.dhtmlx.com/bz1ekc71?tag=popup).
 
 ![Popup with a welcome message opened below a Show Popup button in DHTMLX Suite](/img/popup/popup_front.png)
 
@@ -29,7 +29,7 @@ Learn how to build a full-featured DHTMLX Popup:
 
 ## Guides
 
-Guides you through the information about possibilities of working with Popup.
+The following articles explain how to add Popup to a page, work with it, customize it, and handle its events:
 
 - [](popup/initialization.md)
 - [](popup/work_with_popup.md)
