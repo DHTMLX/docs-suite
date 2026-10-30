@@ -6,41 +6,39 @@ description: You can have an overview of Optimus Framework in the documentation 
 
 # DHTMLX Optimus framework
 
-DHTMLX Optimus is a component-oriented framework for building DHTMLX-based apps. The framework is intended to simplify the app building process, namely:
+DHTMLX Optimus is a component-oriented framework for building DHTMLX-based apps. The framework simplifies app development in the following ways:
 
-- helps to organize application code in a single, structured, intuitive style;
-- provides tools for exchanging data and events between application parts and an external environment (server, external services, etc.); 
-- can automatically adjust the life cycle of components of the app (for example, free up the unused memory and so on).
+- It helps you organize application code in a single, structured, intuitive style.
+- It provides tools to exchange data and events between application parts and the external environment, such as a server or external services.
+- It can automatically manage the life cycle of app components, for example, free up unused memory.
 
-The framework enforces consistent application structure by breaking a monolithic application into a set of reusable classes. 
-As a result, each part of an app can be developed and tested independently and used in various combinations.
+The framework enforces consistent application structure by breaking a monolithic application into a set of reusable classes. As a result, you can develop and test each part of an app independently and use the parts in various combinations.
 
-DHTMLX Optimus is a fully client-side solution. There aren't any special requirements to the server. You can use any data REST backend (PHP, Nodejs, .Net, Java, etc.)
+DHTMLX Optimus is a fully client-side solution with no special server requirements. You can use any REST backend, such as PHP, Node.js, .NET, or Java.
 
 General idea
 ------------
 
-DHTMLX Optimus is based on the modern approaches of web development:
+DHTMLX Optimus uses the following modern approaches to web development:
 
-- ES6 classes and JavaScript modules;
-- dividing the application into Views;
-- data transfer and the life cycle of a View 
+- ES6 classes and JavaScript modules
+- Splitting the application into views
+- Data transfer and the view life cycle
 
-Each module describes a part of UI (a single view). You can use normal DHTMLX code inside of the module to initialize a single component. 
-Top level modules can combine multiple views. The app itself can be used as a view. 
+Each module describes a part of the UI (a single view). You can use regular DHTMLX code inside the module to initialize a single component. Top-level modules can combine multiple views. You can also use the app itself as a view.
 
-The framework provides a common event bus to allow communication between the views and some other helpers for common DHTMLX tasks.
+The framework provides a common event bus for communication between views, as well as helpers for common DHTMLX tasks.
 
 How to start
 -----------
 
 The best way to start working with the DHTMLX Optimus framework is to create a simple application. 
 
-### Running the environment 
+### Set up the environment {#running-the-environment}
 
-To begin with, you should configure the environment for your project. 
+Configure the environment for your project.
 
-You can use a ready project with configured settings from <a href="https://github.com/DHTMLX/optimus-starter-app/tree/main" target="_blank">GitHub</a>. To run the project on the local server, use:
+You can use a ready-made project with preconfigured settings from <a href="https://github.com/DHTMLX/optimus-starter-app/tree/main" target="_blank">GitHub</a>. To run the project on the local server, use the following commands:
 
 ~~~js
 npm install
@@ -49,33 +47,33 @@ npm start
 
 <br>
 
-*In other cases*, DHTMLX Optimus can be added into your own project via the `npm` package manager. For that, run the following commands in your project directory:
+*In other cases*, add DHTMLX Optimus to your own project with the `npm` package manager. Run the following commands in your project directory:
 
-- to install "dhx-optimus":
+- Install `dhx-optimus`:
 
 ~~~js
 npm i dhx-optimus
 ~~~
 
-- to install the "dhx-optimus-store" state manager:
+- Install the `dhx-optimus-store` state manager:
 
 ~~~js
 npm i dhx-optimus-store
 ~~~
 
 :::note
-DHTMLX Optimus requires the files of the DHTMLX Suite library as dependencies. Thus, you'll need to add js/css files of DHTMLX Suite to provide the correct work of DHTMLX Optimus.
+DHTMLX Optimus requires the DHTMLX Suite library files as dependencies. Add the JS and CSS files of DHTMLX Suite to your project so that DHTMLX Optimus works correctly.
 :::
 
-### Creating an application
+### Create an application {#creating-an-application}
 
-After running the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/main" target="_blank">project</a> on the local server and opening `http://localhost:8080/` in your browser, you will see the following result:
+Run the <a href="https://github.com/DHTMLX/optimus-starter-app/tree/main" target="_blank">project</a> on the local server and open `http://localhost:8080/` in your browser. You see the following result:
 
 ![Browser showing the Hello Optimus starter app running on localhost in DHTMLX Suite](/img/optimus/start_optimus.png)
 
-Let's consider how we've created our demo application:
+We've created the demo application in the following steps:
 
-1\. First, we've created a new *index.html* file in the *src* folder and defined a container to render our app there: 
+1\. We've created a new `index.html` file in the `src` folder and defined a container to render the app in:
 
 ~~~html title="src/index.html"
 <!DOCTYPE html>
@@ -90,7 +88,7 @@ Let's consider how we've created our demo application:
 </html>
 ~~~
 
-2\. Next, we've created an *index.js* file - the entry point of the app. 
+2\. We've created an `index.js` file, the entry point of the app:
 
 ~~~js title="src/index.js"
 import "./assets/css/index.css"; // import css styles
@@ -99,12 +97,12 @@ import { App } from "dhx-optimus";
 export class MyApp extends App {}
 ~~~
 
-Here we've created the MyApp class that renders our application. The MyApp class is inherited from the App class included from the "dhx-optimus" library. 
+The `MyApp` class extends the `App` class imported from the `dhx-optimus` library and renders the application.
 
-3\. After that, we've added our first View. For that, we've created the *TopLayout.js* file in the *views* folder. 
+3\. We've added the first view. For that, we've created the `TopLayout.js` file in the `views` folder:
 
 :::note 
-We recommend that you use the capital letter at the beginning of the name of the file that have a view => TopLayout.js. This is the common practice.
+We recommend starting the name of a view file with a capital letter, for example, `TopLayout.js`. This is common practice.
 :::
 
 ~~~js title="src/views/TopLayout.js"
@@ -117,9 +115,9 @@ export class TopLayout extends View {
 }
 ~~~
 
-As you can see, we've created the TopLayout class that is inherited from the View class included from the "dhx-optimus" library. To create the initial view, we've returned an HTML element in the `init()` method. 
+The `TopLayout` class extends the `View` class imported from the `dhx-optimus` library. To create the initial view, the `init()` method returns an HTML element.
 
-4\. Then, to render the just created view, we've included the view into the *index.js* file and rendered it via the `show()` method:
+4\. To render the new view, we've imported it into the `index.js` file and rendered it with the `show()` method:
 
 ~~~js title="src/index.js" {4,7-9}
 import "./assets/css/index.css";
@@ -134,9 +132,9 @@ export class MyApp extends App {
 }
 ~~~
 
-You can find more details on API methods [below](/optimus_guides/#api).
+For more details, see the [API methods](/optimus_guides/#api) below.
 
-5\. Finally, we've initialized our application via updating the code of the *index.html* file with the following:
+5\. We've initialized the application in the `index.html` file:
 
 ~~~html
 <!DOCTYPE html>
@@ -160,34 +158,32 @@ You can find more details on API methods [below](/optimus_guides/#api).
 </html>
 ~~~
 
-Everything is pretty straightforward here:
+This code does the following:
 
-- we've included a free version of DHTMLX from our CDN. It is necessary to include files of DHTMLX Suite as dependencies for correct work of DHTMLX Optimus;
-- we've included the *app.js* and *app.css* files to configure webpack;
-- we've initialized the app via the `render()` method that takes the ID of the container as a parameter.
+- We've included a free version of DHTMLX from our CDN. DHTMLX Optimus needs the DHTMLX Suite files as dependencies to work correctly.
+- We've included the `app.js` and `app.css` files to configure webpack.
+- We've initialized the app with the `render()` method, which takes the ID of the container as a parameter.
 
-That's all! 
-
-To get acquainted with the principles of developing with DHTMLX Optimus at a professional level, follow our [step-by-step guide](optimus_guides/how_to_start_optimus.md). The guide is suitable for both experienced users and beginners in the world of JavaScript and DHTMLX.
+To learn the principles of development with DHTMLX Optimus in depth, follow the [step-by-step guide](optimus_guides/how_to_start_optimus.md). The guide suits both experienced developers and beginners in JavaScript and DHTMLX.
 
 Application structure
 --------------
 
 To create a structure of your own app, extend the existing classes. DHTMLX Optimus contains three main classes:
 
-- [App class](#app-class)
-- [View class](#view-class)
-- [Component class](#component-class)
+- [`App` class](#app-class)
+- [`View` class](#view-class)
+- [`Component` class](#component-class)
 
 ### App class
 
-The App class is the main class of the application. 
+The `App` class is the main class of the application.
 
-Note, that:
+Note the following:
 
-- A new app class is created via extending the App class;
-- The `init()` method defines the initial view to show;
-- The `show()` method allows rendering the main View of the app
+- To create a new app class, extend the `App` class.
+- The `init()` method defines the initial view to show.
+- The `show()` method renders the main view of the app.
 
 ~~~js
 import { App } from "dhx-optimus";
@@ -202,20 +198,20 @@ export class MyApp extends App {
 
 ### View class
 
-View class ia a base class intended to create and hierarchically arrange different visual components, to add widgets of Suite, and also to pass data to child components.
+The `View` class is a base class that lets you create visual components and arrange them hierarchically, add Suite widgets, and pass data to child components.
 
-To create an application of the desired structure you need to be able to connect different views and set hierarchy of components on a page.
+To build an application with the structure you need, connect different views and set the hierarchy of components on a page.
 
-Note, that:
+Note the following:
 
-- A new view class is inherited from the View class;
-- The `init()` method returns a View either as an HTML element or as a DHTMLX widget;
-- The `ready()` method allows you to create the necessary logic after rendering the View to the DOM and to get an HTML container of the rendered View as a parameter of the method
-- The `destroy()` method allows you to destroy your own views. DHTMLX Optimus destroys views automatically. The method can be useful for destroying the parts of your own logic.
+- A new view class extends the `View` class.
+- The `init()` method returns a view either as an HTML element or as a DHTMLX widget.
+- Optimus calls the `ready()` method after it renders the view to the DOM. Use this method to add your own logic. The method gets the HTML container of the rendered view as a parameter.
+- DHTMLX Optimus destroys views automatically. Use the `destroy()` method to clean up your own logic when Optimus destroys a view.
 
-Here are some examples:
+The following examples show different kinds of views:
 
-- the example of the View returned as an HTML element:
+- A view returned as an HTML element:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -230,7 +226,7 @@ export class TopLayout extends View {
 }
 ~~~
 
-As a result, the parent container of the View will be returned to the console, as in:
+As a result, the console shows the parent container of the view:
 
 ~~~html
 <section id="app" class="main__container">
@@ -238,7 +234,7 @@ As a result, the parent container of the View will be returned to the console, a
 </section>
 ~~~
 
-- the example of the View returned as a DHTMLX widget:
+- A view returned as a DHTMLX widget:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -263,9 +259,9 @@ export class DataView extends View {
 }
 ~~~
 
-The example is pretty simple. We've just initialized the DHTMLX DataView widget and returned it as a view.
+This example initializes the DHTMLX DataView widget and returns it as a view.
 
-- the example of the View returned as a DHTMLX widget that contains several Views:
+- A view returned as a DHTMLX widget that contains several views:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -295,21 +291,21 @@ export class TopLayout extends View {
 }
 ~~~
 
-The above sample shows that the DHTMLX Layout component possesses the *init* property. The property allows you to display the View in the specified cell of the layout via the *show()* method in a short form.
+The DHTMLX Layout component has the `init` property. This property lets you show a view in the specified layout cell with the `show()` method in a short form.
 
-You can create any number of Views for your app and render them via the cells of DHTMLX Layout. For more details on API and useful properties of the DHTMLX widgets, see below. 
+You can create any number of views for your app and render them in DHTMLX Layout cells. For details on the API and useful properties of DHTMLX widgets, see below.
 
 ### Component class
 
-Component class is a service class that intended to create additional logic of the app without its further rendering. A new component class is inherited from the Component class. 
+The `Component` class is a service class for additional app logic that does not render anything. A new component class extends the `Component` class.
 
-The advantages of the class inherited from the Component class are:
+A class that extends the `Component` class can do the following:
 
-- the ability to use the event bus of the app;
-- the ability to exchange data;
-- the ability to destroy events automatically.
+- Use the event bus of the app
+- Exchange data
+- Destroy events automatically
 
-Let's consider the Component class on the example of DHTMLX Uploader:
+The following example shows a component based on DHTMLX Uploader:
 
 ~~~js
 import { Component } from "dhx-optimus";
@@ -324,15 +320,15 @@ export default class Uploader extends Component {
 }
 ~~~
 
-The above code shows that:
+In this code:
 
-- the `init()` method does not return anything;
-- we've passed the additional parameter (*this.params.target*) via the parent component.
+- The `init()` method returns nothing.
+- The parent component passes the additional `this.params.target` parameter.
 
-The Component class also provides access to the events of the app via the `fire()`, `on()` methods. See more details below.
+The `Component` class also provides access to app events with the `fire()` and `on()` methods. See more details below.
 
 
-The following example shows that it is possible to use the class inherited from the Component class by calling it in the class inherited from the App class via the [`use()`](/optimus_guides/#api) method.
+The following example shows how to use a class that extends the `Component` class. Call it in a class that extends the `App` class with the [`use()`](/optimus_guides/#api) method:
 
 ~~~js
 import { App } from "dhx-optimus";
@@ -352,13 +348,13 @@ export class FileExplorer extends App {
 }
 ~~~
 
-## Subscribing to global events
+## Subscribe to global events {#subscribing-to-global-events}
 
-Subscribing to a global event allows tracking changes made in a component. You can register an event handler in the global event bus and define a function to be triggered when the event is fired.
+Subscribe to a global event to track changes made in a component. Register an event handler in the global event bus and define a function that runs when the event fires.
 
-Let's consider an example. We want to display different content in the View, based on the button selected in the toolbar. For that, we will use the global event bus.
+In the following example, the view shows different content depending on the button selected in the toolbar. The example uses the global event bus for that.
 
-To subscribe to the global `viewChange` event, we'll apply the `this.on()` method:
+To subscribe to the global `viewChange` event, use the `this.on()` method:
 
 ~~~js {24-26}
 import { View } from "dhx-optimus";
@@ -391,9 +387,9 @@ export class TopLayout extends View {
 }
 ~~~
 
-The event will change the views via the `this.show()` method.
+The event handler changes the views with the `this.show()` method.
 
-To call the `viewChange` event, we'll use the `this.fire()` API:
+To call the `viewChange` event, use the `this.fire()` method:
 
 ~~~js {35}
 import { View } from "dhx-optimus";
@@ -436,9 +432,9 @@ export class ToolbarView extends View {
 }
 ~~~
 
-As you can see, whenever the user clicks the button in the toolbar, the `this.fire()` method will be called and the handler will be executed.
+Whenever the user clicks a toolbar button, the code calls the `this.fire()` method, and the handler runs.
 
-We should also pass the changed state to the child component:  
+Also pass the changed state to the child component:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -453,10 +449,10 @@ export class EmptyView extends View {
 }
 ~~~
 
-Here we are! After clicking the button in the toolbar, the necessary content will be displayed in the View. 
+Now, when the user clicks a toolbar button, the view displays the related content.
 
 <br/>
-The following code sample shows that the global event, defined in the App class, is available from any point of the application:
+Global events are available from any point of the application. For example, the `App` class can also handle the `viewChange` event:
 
 ~~~js
 import { App } from "dhx-optimus";
@@ -475,9 +471,9 @@ export class MyApp extends App {
 
 ## Passing data to child components
 
-There is a possibility to pass data from parent components to the child components. It allows configuring the child components within the context of the parent ones or changing configuration of the child depending on the parent's state.
+You can pass data from parent components to child components. This lets you configure child components in the context of their parents or change the child configuration depending on the parent state.
 
-Let's take a look at the code snippet from the previous point:
+Consider the code snippet from the previous section:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -497,13 +493,13 @@ export class TopLayout extends View {
 }
 ~~~
 
-We've added an event handler to the `viewChange` event of the global event bus. When the id is changed, the `show(target, view, params)` method is called. The method takes 3 parameters, but we're interested in the last one. It allows passing an object with the necessary parameters. For instance:
+We've added a handler for the `viewChange` event of the global event bus. When the id changes, the handler calls the `show(target, view, params)` method. The method takes three parameters. The last one passes an object with the necessary parameters to the child view. For example:
 
 ~~~js
 this.show(this.layout.getCell("content"), EmptyView, { content: id });
 ~~~
 
-It is possible to get this parameter in the child component:
+The child component gets this parameter from `this.params`:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -518,17 +514,17 @@ export class EmptyView extends View {
 }
 ~~~
 
-## Initializing the app's global state
+## Initialize the global app state {#initializing-the-apps-global-state}
 
-It is also possible to use the App class for exchanging data between the components via initializing *Observable Store* which allows managing the global state of the application. To be able to access the state, you need to create a global store and subscribe to its changes.
+You can also use the `App` class to exchange data between components. For that, initialize *Observable Store*, which manages the global state of the application. To access the state, create a global store and subscribe to its changes.
 
-Let's consider how you can create a global store, retrieve the state of the store and use it in your app.
+The following example shows how to create a global store, retrieve its state, and use it in your app.
 
 :::note
-The below code example demonstrates the part of the application sample. The full code is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-3" target="_blank">GitHub</a>.
+The code below is part of the application sample. The full code is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-3" target="_blank">GitHub</a>.
 :::
 
-At first, we've initialized the global state of the app in the App class via creating the global store and subscribing to the changes of the store. To retrieve the current state of the store, we've used the `getState()` method.
+First, we've initialized the global state of the app in the `App` class: we've created the global store and subscribed to its changes. To retrieve the current state of the store, we've used the `getState()` method.
 
 ~~~js
 import { App } from "dhx-optimus";
@@ -557,7 +553,7 @@ export class MyApp extends App {
 }
 ~~~
 
-Then, we've used the toolbar component to generate the changes of the state there. The `fire()` method calls the handler each time the user clicks the button in the toolbar:
+Then, we've used the toolbar view to change the state. The `fire()` method calls the handler each time the user clicks a toolbar button:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -582,14 +578,14 @@ export class ToolbarView extends View {
 }
 ~~~
 
-The above code implements the following logic:
+This code works as follows:
 
-- each time the user clicks the button in the toolbar, the `viewChange` event is called in the ToolbarView class via the `fire()` method;
-- the id of the button pressed in the toolbar is passed to the `fire()` method;
-- the state of the app changes on triggering of the global `viewChange` event in the MyApp class;
-- the *active* global state gets the current state of the app via the id of the toolbar button.
+- Each time the user clicks a toolbar button, the `fire()` method calls the `viewChange` event in the `ToolbarView` class.
+- The `fire()` method receives the id of the clicked toolbar button.
+- The `MyApp` class changes the app state when the global `viewChange` event fires.
+- The `active` global state gets the id of the toolbar button as the current state of the app.
 
-Using the `observe()` method helps to asynchronously observe the changes made to the global store from any point of the application:
+The `observe()` method lets you asynchronously observe changes made to the global store from any point of the application:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -613,21 +609,21 @@ export class TopLayout extends View {
 }
 ~~~
 
-## Working with widgets of Suite
+## Work with Suite widgets {#working-with-widgets-of-suite}
 
-You can easily build your app based on the components of DHTMLX Suite by using Optimus. 
+With Optimus, you can build your app based on DHTMLX Suite components.
 
 :::note
-You can create your first app with DHTMLX Optimus with the help of our [step-by-step](optimus_guides/how_to_start_optimus.md) guide.
+To create your first app with DHTMLX Optimus, follow the [step-by-step guide](optimus_guides/how_to_start_optimus.md).
 :::
 
-DHTMLX Optimus automatically destroys components and events, so you can not worry about the life cycle of the component.
+DHTMLX Optimus destroys components and events automatically, so you don't need to manage the component life cycle.
 
-The small and fast microframework is intended to build DHTMLX-based apps easier and faster. Thus, you just need to follow the main principles of the work with Optimus that are given below.
+This small and fast microframework makes building DHTMLX-based apps easier and faster. Follow the main principles of working with Optimus described below.
 
 ### Initialization of the DHTMLX Suite components
 
-In most cases creating a View based on the component of the Suite library is pretty simple:
+In most cases, a view based on a Suite component looks like this:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -647,21 +643,21 @@ export class CalendarView extends View {
 }
 ~~~
 
-In the above example, we've initialized the view that returns DHTMLX Calendar. 
+In this example, we've initialized a view that returns DHTMLX Calendar.
 
-Let's consider the code in detail:
+This code works as follows:
 
-- the `init()` method returns the configured DHTMLX Calendar;
-- the `ready()` method will be called after the View is rendered in a DOM tree. You can implement your own logic and don't be afraid that the component has not been rendered yet;
-- the `destroy()` method will be called after the View is deleted from the DOM tree. At this moment, Optimus destroys as the DHTMLX components as events related to the View. You can also describe your own logic here, if needed. 
+- The `init()` method returns the configured DHTMLX Calendar.
+- Optimus calls the `ready()` method after it renders the view in the DOM tree. You can implement your own logic there: the component is already rendered.
+- Optimus calls the `destroy()` method after it removes the view from the DOM tree. At this moment, Optimus destroys both the DHTMLX components and the events related to the view. You can also add your own logic here, if needed.
 
 ### Initialization of the DHTMLX Window component 
 
-Creating a view based on DHTMLX Window is similar to creating a View based on the other components of Suite. The only difference is rendering of the View. 
+A view based on DHTMLX Window is similar to views based on other Suite components. The only difference is how you render the view.
 
-Let's create the view based on DHTMLX Window and then render it in the TopLayout view.
+The following example creates a view based on DHTMLX Window and renders it in the `TopLayout` view.
 
-The initialization of the DHTMLX Window component is the same as initialization of the other components:
+Initialize the DHTMLX Window component in the same way as other components:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -683,7 +679,7 @@ export class WindowView extends View {
 }
 ~~~
 
-But rendering of the View based on DHTMLX Window will look like this:
+To render the view based on DHTMLX Window, pass `null` as the first parameter of the `show()` method:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -702,7 +698,7 @@ export class TopLayout extends View {
 }
 ~~~
 
-To listen to the changes made to the global state, we should update the code of *WindowView* and apply the `observe()` method.  As a result, the *WindowView* will be rendered when switching to the second page of the app:  
+To listen to changes in the global state, update the `WindowView` code and use the `observe()` method. As a result, the window appears when the user switches to the second page of the app:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -728,13 +724,13 @@ export class WindowView extends View {
 }
 ~~~
 
-Thus, it is possible to display the DHTMLX Window based View in any necessary View.
+This way, you can display a view based on DHTMLX Window in any other view.
 
 ### Initialization of the DHTMLX Layout component
 
-Let's consider 3 methods of rendering a View via the `show()` method, one of which implies rendering of the View directly in the DHTMLX Layout component:
+You can render a view with the `show()` method in three ways. One of them renders the view directly in the DHTMLX Layout component:
 
-1\. It is possible to render views with the help of the `show()` method:
+1\. Call the `show()` method for each layout cell:
 
 ~~~js {20-21}
 import { View } from "dhx-optimus";
@@ -764,7 +760,7 @@ export class TopLayout extends View {
 }
 ~~~
 
-2\. It is possible to call the `show()` method right in the layout via the *init* option. The option returns the current Layout cell as a parameter. You can use this way when you need to get the static layout without changing the view.
+2\. Call the `show()` method right in the layout configuration with the `init` option. The option gets the current Layout cell as a parameter. Use this way for a static layout where views do not change.
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -791,7 +787,7 @@ export class TopLayout extends View {
 }
 ~~~
 
-3\. You can also combine the above two methods if you need to change views in the Layout cell:
+3\. Combine the two ways above if you need to change views in a Layout cell:
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -840,90 +836,90 @@ export class TopLayout extends View {
 
 ## API
 
-The DHTMLX Optimus provides the following API methods that are available from any point of the app:
+DHTMLX Optimus provides the following API methods, available from any point of the app:
 
 <table>
     <tbody>
          <tr>
-            <td><b>show()</b></td>
-            <td>shows the specified view in a cell of the app. It takes three parameters:<ul><li><b>cell</b> - (<i>object|null</i>) a reference to the cell to render the view inside, or the unique selector of the container element </li><li><b>view</b> - constructor of the view to show</li><li><b>params</b> - (<i>object</i>) optional, parameters to pass from the parent view to the child view</li></ul></td>
+            <td><code>show()</code></td>
+            <td>shows the specified view in a cell of the app. It takes three parameters:<ul><li><code>cell</code> - (<code>object|null</code>) a reference to the cell to render the view inside, or the unique selector of the container element</li><li><code>view</code> - the constructor of the view to show</li><li><code>params</code> - (<code>object</code>) optional, parameters to pass from the parent view to the child view</li></ul></td>
         </tr>
         <tr>
-            <td><b>use()</b></td>
-            <td>initializes Component. It takes 2 parameters:<ul><li><b>component</b> - constructor of the component</li><li><b>params</b> - (<i>object</i>) optional, an object with additional parameters</li></ul></td>
+            <td><code>use()</code></td>
+            <td>initializes a component. It takes two parameters:<ul><li><code>component</code> - the constructor of the component</li><li><code>params</code> - (<code>object</code>) optional, an object with additional parameters</li></ul></td>
         </tr>
         <tr>
-            <td><b>on()</b></td>
-            <td>registers an event handler in the global event bus. It takes 2 parameters:<ul><li><b>name</b> - (<i>string</i>) the name of the event</li><li><b>handler</b> - (<i>function</i>) a user-defined event handler</li></ul></td>
+            <td><code>on()</code></td>
+            <td>registers an event handler in the global event bus. It takes two parameters:<ul><li><code>name</code> - (<code>string</code>) the name of the event</li><li><code>handler</code> - (<code>function</code>) a user-defined event handler</li></ul></td>
         </tr>
         <tr>
-            <td><b>fire()</b></td>
-            <td>calls an event handler of the global event bus. It takes 2 parameters:<ul><li><b>name</b> - (<i>string</i>) the name of the event</li><li><b>params</b> - (<i>array</i>) an array of the related data of the event</li></ul></td>
+            <td><code>fire()</code></td>
+            <td>calls an event handler of the global event bus. It takes two parameters:<ul><li><code>name</code> - (<code>string</code>) the name of the event</li><li><code>params</code> - (<code>array</code>) an array of event data</li></ul></td>
         </tr>
         <tr>
-            <td><b>detach()</b></td>
-            <td>unsubscribes an event handler from the global event bus. It takes one parameter:<ul><li><b>name</b> - (<i>string</i>) the event name</li></ul></td>
+            <td><code>detach()</code></td>
+            <td>unsubscribes an event handler from the global event bus. It takes one parameter:<ul><li><code>name</code> - (<code>string</code>) the event name</li></ul></td>
         </tr>
     </tbody>
 </table>
 
 ### Methods used inside the classes
 
-- The *App's* constructor provides the following method:
+- The `App` class provides the following method:
 
 <table>
     <tbody>
          <tr>
-            <td><b>init()</b></td>
-            <td>mandatory, allows initializing available views and logic of the components. <br>For more details, see the <a href="#app-class">App class</a>.</td>
+            <td><code>init()</code></td>
+            <td>mandatory. Initializes the available views and component logic. <br>For more details, see the <a href="#app-class">App class</a>.</td>
         </tr>
     </tbody>
 </table>
 <br/>
 
-- The <i>Component's</i> constructor provides the following methods:
+- The `Component` class provides the following methods:
 
 <table>
     <tbody>
          <tr>
-            <td><b>init()</b></td>
-            <td>mandatory, allows initializing the logic of the Component. This logic will be called on  initialization of the Component. For more details, see the <a href="#component-class">Component class</a>.</td>
+            <td><code>init()</code></td>
+            <td>mandatory. Initializes the component logic. Optimus calls this method on component initialization. For more details, see the <a href="#component-class">Component class</a>.</td>
         </tr>
         <tr>
-            <td><b>destroy()</b></td>
-            <td>the method is called on destroying the Component</td>
+            <td><code>destroy()</code></td>
+            <td>Optimus calls this method when it destroys the component</td>
         </tr>
     </tbody>
 </table>
 <br/>
 
-- The <i>View's</i> constructor provides the following methods:
+- The `View` class provides the following methods:
 
 <table>
     <tbody>
         <tr>
-            <td><b>init(): string|DHXWidget</b></td>
-            <td>obligatory, allows initializing and returning the view. For more details, see the <a href="#view-class">View class</a>.</td>
+            <td><code>init(): string|DHXWidget</code></td>
+            <td>mandatory. Initializes and returns the view. For more details, see the <a href="#view-class">View class</a>.</td>
         </tr>
         <tr>
-            <td><b>ready()</b></td>
-            <td>allows implementing an additional logic after rendering View to DOM. It takes one parameter:<ul><li><b>root</b> - (<i>HTMLElement</i>) returns an HTML element of the parent container of the view </li></ul></td>
+            <td><code>ready()</code></td>
+            <td>implements additional logic after Optimus renders the view to the DOM. It takes one parameter:<ul><li><code>root</code> - (<code>HTMLElement</code>) the HTML element of the parent container of the view</li></ul></td>
         </tr>
         <tr>
-            <td><b>destroy()</b></td>
-            <td>allows implementing an additional logic on destroying the component, and unmounts the View from DOM. In most cases, you don't need to use this method, as the views based on the DHTMLX widgets are destroyed automatically.</td>
+            <td><code>destroy()</code></td>
+            <td>implements additional logic when Optimus destroys the component and unmounts the view from the DOM. In most cases, you don't need this method, because Optimus destroys views based on DHTMLX widgets automatically.</td>
         </tr>
     </tbody>
 </table>
 <br/>
 
-- The <i>App's</i> constructor also provides the method that can be called outside the application:
+- The `App` class also provides a method that you can call outside the application:
 
 <table>
     <tbody>
          <tr>
-            <td><b>render()</b></td>
-            <td>renders an application inside the specified container. It takes one parameter:<ul><li><b>container</b> - (<i>string|cell|HTMLElement</i>) the container where the app will be rendered</li></ul></td>
+            <td><code>render()</code></td>
+            <td>renders an application inside the specified container. It takes one parameter:<ul><li><code>container</code> - (<code>string|cell|HTMLElement</code>) the container to render the app in</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -934,7 +930,7 @@ Other materials
 
 - [](optimus_guides/how_to_start_optimus.md) step-by-step guide
 - <a href="https://github.com/DHTMLX/optimus-starter-app/" target="_blank">DHTMLX Optimus</a> demo on GitHub
-- Other demos build with Optimus: 
+- Other demos built with Optimus:
     - [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)
     - [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/)
     - [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxHotelManagement/)
