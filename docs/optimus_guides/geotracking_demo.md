@@ -10,39 +10,40 @@ description: You can explore how to work with Geo Tracking Demo using Optimus Fr
 
 ![Geo tracking demo app showing courier cards beside a city map with delivery locations in DHTMLX Suite](/img/optimus/demo/geotracking_demo.png)
 
-This demo shows how to create a geo tracking application for delivery management. It is developed using DHTMLX Suite widgets: Layout, Sidebar, Tabbar, Form, and Dataview.
+This demo shows how to create a geo tracking application for delivery management. The demo uses the following DHTMLX Suite widgets: Layout, Sidebar, Tabbar, Form, and DataView.
 
 ## How to download
 
 Open the [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/) demo and click the Download Demo button in the bottom right corner of the page.
 
-Complete the form to start the download. The email with the download link will be sent to you.
+Complete the form to start the download. You then receive an email with the download link.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the geo tracking demo. Save the file and unpack it into your working directory.
+Follow the link in the email to get a free 30-day trial version. You receive a `.zip` file with the geo tracking demo. Save the file and unpack it into your working directory.
 
-You will find more demos on the [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page. To view the desired one, just click on it.
+The [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page contains more demos.
 
 ## How to start
 
-To run the demo, follow the instructions given in the README.md file.
+To run the demo, follow the instructions given in the `README.md` file.
 
 ## Demo overview
 
-The geo tracking demo is a nice and easy solution for business. It is created to check and manage the delivery process in real-time. The Tracking system is integrated with Google Maps and shows the real-time geolocation of couriers. You can visualize the information you need with the help of a Form.
+The geo tracking demo lets you check and manage the delivery process in real time. The tracking system integrates with Google Maps and shows the real-time geolocation of couriers. Use the Form to visualize the information you need.
 
-The geo tracking demo is developed on the base of the DHTMLX Optimus framework. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
+The geo tracking demo uses the DHTMLX Optimus framework and organizes its components into Views. You can initialize, modify, or remove each component separately. You can also use the whole demo as a View and add it to another app as a component.
 
-There are no specific backend requirements. The demo is based on the REST API and you can use any backend platform which supports it (PHP, Nodejs, .Net, Java, etc.).
+There are no specific backend requirements. The demo is based on the REST API, and you can use any backend platform that supports it, such as PHP, Node.js, .NET, or Java.
 
 For more details, check [Courier Tracking HTML Template](https://dhtmlx.com/docs/products/dhtmlxGeoTracking/).
+
 ## License
 
-A free 30-day trial version is provided to you only for evaluation purposes. You can learn more about *Evaluation License Terms* while filling the form to download the demo.
+A free 30-day trial version is for evaluation only. You can read the *Evaluation License Terms* when you fill in the download form.
 
-After the trial period is over, you will receive messages about using an unlicensed product.
+After the trial period is over, you receive messages about using an unlicensed product.
 
-### How to start with license
+### How to start with a license {#how-to-start-with-license}
 
-If you want to continue usage of the demo in your project after the evaluation period expires, you will need to purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
+If you want to continue to use the demo in your project after the evaluation period expires, you need to purchase the DHTMLX Suite PRO Edition license. See the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
-You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
+After the purchase, replace the `.js` and `.css` files of the evaluation version with the licensed DHTMLX Suite files to keep using the demo.

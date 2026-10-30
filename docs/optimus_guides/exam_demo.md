@@ -10,40 +10,40 @@ description: You can explore how to work with Online Exam Demo using Optimus Fra
 
 ![Online Exam System demo showing an exams TreeGrid grouped by subject with filters and sidebar in DHTMLX Suite](/img/optimus/demo/examsystem_demo.png)
 
-This demo application shows how to create an online examination system for an educational project with subjects, exams, and students' results. It is developed using DHTMLX Suite widgets: Grid in the TreeGrid mode, Form, Sidebar, and Toolbar.
+This demo application shows how to create an online examination system for an educational project with subjects, exams, and student results. The demo uses the following DHTMLX Suite widgets: Grid in the TreeGrid mode, Form, Sidebar, and Toolbar.
 
 ## How to download
 
 Open the [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/#exams) demo and click the Download Demo button in the bottom right corner of the page.
 
-Complete the form to start the download. The email with the download link will be sent to you.
+Complete the form to start the download. You then receive an email with the download link.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the online exam system demo. Save the file and unpack it into your working directory.
+Follow the link in the email to get a free 30-day trial version. You receive a `.zip` file with the online exam system demo. Save the file and unpack it into your working directory.
 
-You will find more demos on the [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page. To view the desired one, just click on it.
+The [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page contains more demos.
 
 ## How to start
 
-To run the demo, follow the instructions in the README.md file.
+To run the demo, follow the instructions in the `README.md` file.
 
 ## Demo overview
 
-The online exam system is a ready-to-use tool for online examination. You can create an online exam using the Form in the demo app in several steps. Also, it is possible to modify the Form easily as you need. The Grid in the TreeGrid mode widget is used to manage the examination process.
+The online exam system is a ready-to-use tool for online examination. Use the Form in the demo app to create an online exam in several steps. You can modify the Form as you need. The Grid widget in the TreeGrid mode manages the examination process.
 
-The online exam system demo is built with the help of the DHTMLX Optimus framework. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
+The online exam system demo uses the DHTMLX Optimus framework and organizes its components into Views. You can initialize, modify, or remove each component separately. You can also use the whole demo as a View and add it to another app as a component.
 
-The solution you can see has no requirements for the backend. It is based on the REST API and you can use any backend platform which supports it (PHP, Nodejs, .Net, Java, etc.).
+The demo has no backend requirements. It is based on the REST API, and you can use any backend platform that supports it, such as PHP, Node.js, .NET, or Java.
 
 For more information, check [Online Examination System Project in JavaScript](https://dhtmlx.com/docs/products/dhtmlxOnlineExam/).
 
 ## License
 
-A free 30-day trial version of the demo is given to you only for evaluation purposes. You can read more about *Evaluation License Terms* when filling the form to download the demo.
+A free 30-day trial version of the demo is for evaluation only. You can read the *Evaluation License Terms* when you fill in the download form.
 
-After the trial period is over, you will receive messages about using an unlicensed product.
+After the trial period is over, you receive messages about using an unlicensed product.
 
-### How to start with license
+### How to start with a license {#how-to-start-with-license}
 
-If you want to continue usage of the demo in your project after the evaluation, you should purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
+If you want to continue to use the demo in your project after the evaluation, you should purchase the DHTMLX Suite PRO Edition license. See the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
-You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
+After the purchase, replace the `.js` and `.css` files of the evaluation version with the licensed DHTMLX Suite files to keep using the demo.
