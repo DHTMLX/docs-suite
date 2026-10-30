@@ -10,40 +10,40 @@ description: You can explore how to work with Sales KPI Tracking Demo using Opti
 
 ![Sales KPI tracking demo with donut, bar and area charts and a sales reps list in DHTMLX Suite](/img/optimus/demo/kpi_demo.png)
 
-This demo application shows how to create a Sales KPI tracking system based on the DHTMLX Suite widgets: Layout, List, Toolbar, and Charts.
+This demo application shows how to create a Sales KPI tracking system based on the DHTMLX Suite widgets: Layout, List, Toolbar, and Chart.
 
 ## How to download
 
 Open the [KPI Tracking System](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/) demo and click the Download Demo button in the bottom right corner of the page.
 
-Complete the form to start the download. The email with the download link will be sent to you.
+Complete the form to start the download. You then receive an email with the download link.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the KPI tracking system demo. Save the file and unpack it into your working directory.
+Follow the link in the email to get a free 30-day trial version. You receive a `.zip` file with the KPI tracking system demo. Save the file and unpack it into your working directory.
 
-You will find more demos on the [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page. To view the desired one, just click on it.
+The [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page contains more demos.
 
 ## How to start
 
-To run the demo, follow the instructions in the README.md file.
+To run the demo, follow the instructions in the `README.md` file.
 
 ## Demo overview
 
-DHTMLX Chart from the Suite package is the core component of the demo. It provides various types of charts for visualizing complex data. The KPI tracking system is an interactive demo. You can change the parameters and see the results immediately.
+DHTMLX Chart from the Suite package is the core component of the demo. It offers various chart types to visualize complex data. The demo is interactive: you can change the parameters and see the results immediately.
 
-The KPI demo is built with the help of the DHTMLX Optimus framework. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
+The KPI demo uses the DHTMLX Optimus framework and organizes its components into Views. You can initialize, modify, or remove each component separately. You can also use the whole demo as a View and add it to another app as a component.
 
-The solution you can see has no requirements for the backend. It is based on the REST API and you can use any backend platform which supports it (PHP, Nodejs, .Net, Java, etc.).
+The demo has no backend requirements. It is based on the REST API, and you can use any backend platform that supports it, such as PHP, Node.js, .NET, or Java.
 
 For more details, check [JavaScript KPI Dashboard](https://dhtmlx.com/docs/products/dhtmlxKPITracking/).
 
 ## License
 
-A free 30-day trial version of the demo is given to you only for evaluation purposes. You can read more about *Evaluation License Terms* when filling the form to download the demo.
+A free 30-day trial version of the demo is for evaluation only. You can read the *Evaluation License Terms* when you fill in the download form.
 
-After the trial period is over, you will receive messages about using an unlicensed product.
+After the trial period is over, you receive messages about using an unlicensed product.
 
-### How to start with license
+### How to start with a license {#how-to-start-with-license}
 
-If you want to continue usage of the demo in your project after the evaluation period expires, you need to purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
+If you want to continue to use the demo in your project after the evaluation period expires, you need to purchase the DHTMLX Suite PRO Edition license. See the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
-You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
+After the purchase, replace the `.js` and `.css` files of the evaluation version with the licensed DHTMLX Suite files to keep using the demo.
