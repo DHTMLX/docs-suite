@@ -10,7 +10,7 @@ description: You can explore the configuration of Pagination in the documentatio
 
 ![DHTMLX Pagination control with a widened page number input and navigation arrows in DHTMLX Suite](/img/pagination/combo_width.png)
 
-By default, the input of a pagination takes the auto-width that fits its maximum content. You can change the input width and set any other value via the [inputWidth](pagination/api/pagination_inputwidth_config.md) property, for example:
+The default width of the pagination input fits its maximum content. Set the [`inputWidth`](pagination/api/pagination_inputwidth_config.md) property to change this width:
 
 ~~~js
 const pagination = new dhx.Pagination("pagination_container", {
@@ -23,7 +23,7 @@ const pagination = new dhx.Pagination("pagination_container", {
 
 ## Initial page
 
-It is possible to specify any page of the pagination as initial page by setting its index as a value for the [page](pagination/api/pagination_page_config.md) configuration property:
+Use the [`page`](pagination/api/pagination_page_config.md) configuration property to set the initial page. The property takes the zero-based index of the page:
 
 ~~~js
 const pagination = new dhx.Pagination("pagination_container", {
@@ -32,13 +32,13 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 ~~~
 
-The default value of the attribute is 0.
+The default value `0` sets the first page as the initial one.
 
 ## Number of items per page
 
 ![DHTMLX Pagination showing nine items per page in a grid above the navigation bar in DHTMLX Suite](/img/pagination/page_size.png)
 
-You can define the number of items that should be displayed per page of the related widget with the help of the [pageSize](pagination/api/pagination_pagesize_config.md) configuration property. The default value is 10. This is how you can change the default settings:
+Use the [`pageSize`](pagination/api/pagination_pagesize_config.md) configuration property to define the number of items that the related widget displays per page. The default value is `10`. For example, the following code sets 9 items per page:
 
 ~~~js
 const pagination = new dhx.Pagination("pagination_container", {

@@ -8,7 +8,7 @@ description: You can explore the event handling of Pagination in the documentati
 
 ## Attaching event listeners
 
-You can attach event listeners with the **pagination.events.on()** method:
+You can attach event listeners with the `pagination.events.on()` method:
 
 ~~~js
 pagination.events.on("change", function(index, previousIndex){
@@ -16,13 +16,13 @@ pagination.events.on("change", function(index, previousIndex){
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
+{{note Event names are case-insensitive.}}
 
 **Related sample**: [Pagination. Events](https://snippet.dhtmlx.com/mlrtmj7p)
 
 ## Detaching event listeners
 
-To detach events, use **pagination.events.detach()**:
+The `pagination.events.detach()` method removes event listeners:
 
 ~~~js
 pagination.events.on("change", function(index, previousIndex){
@@ -34,13 +34,13 @@ pagination.events.detach("change");
 
 ## Calling events
 
-To call events, use **pagination.events.fire()**:
+The `pagination.events.fire()` method calls an event:
 
 ~~~js
 pagination.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-## The list of events
+## List of events {#the-list-of-events}
 
-The full list of events is available in the related [API section](pagination/api/api_overview.md#events).
+The [API section](pagination/api/api_overview.md#events) lists all Pagination events.
