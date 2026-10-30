@@ -6,30 +6,30 @@ description: You can explore how to work with Popup in the documentation of the 
 
 #  Work with Popup
 
-## Hiding/showing Popup
+## Show and hide Popup {#hidingshowing-popup}
 
-You can hide and show a popup using the [`hide()`](popup/api/popup_hide_method.md) and [`show()`](popup/api/popup_show_method.md) methods. The `show()` method takes the following parameters:
+Use the [`show()`](popup/api/popup_show_method.md) and [`hide()`](popup/api/popup_hide_method.md) methods to show and hide a popup. The `show()` method takes the following parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>element</b></td>
-            <td>(<i>HTMLElement</i>) mandatory, the container to place a popup in</td>
+            <td><code>element</code></td>
+            <td>(<code>HTMLElement</code>) mandatory, the container to place a popup in</td>
         </tr>
         <tr>
-            <td><b>config</b></td>
-            <td>(<i>object</i>) optional, the configuration object of a popup. Can contain the properties below:<ul><li><b>centering</b> - (<i>boolean</i>) defines whether a popup should be centered relative to the element, <i>true</i> by default</li><li><b>auto</b> - (<i>boolean</i>) enables auto-positioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup</li><li><b>mode</b> - (<i>string</i>) the position relative to the element to show a popup at:"left","right","bottom" (default),"top"</li><li><b>indent</b> - (<i>number</i>) the offset of a popup relative to the element</li></ul></td>
+            <td><code>config</code></td>
+            <td>(<code>object</code>) optional, the configuration object of a popup. It can contain the following properties:<ul><li><code>centering</code> - (<code>boolean</code>) defines whether a popup is centered relative to the element (default: <code>true</code>)</li><li><code>auto</code> - (<code>boolean</code>) enables auto-positioning of a popup, that is, the popup appears on the side of the element that has enough space for it</li><li><code>mode</code> - (<code>string</code>) the position of a popup relative to the element: <code>"left"</code>, <code>"right"</code>, <code>"bottom"</code> (default), <code>"top"</code></li><li><code>indent</code> - (<code>number</code>) the offset of a popup relative to the element</li></ul></td>
         </tr>
     </tbody>
 </table> 
 
-This method should be called each time you need to render a popup on a page.
+Call the `show()` method each time you need to render a popup on a page:
 
 ~~~js
 popup.show("popup_container");
 ~~~
 
-This is how you can hide a popup:
+To hide a popup, call the `hide()` method:
 
 ~~~js
 popup.hide();
@@ -37,9 +37,9 @@ popup.hide();
 
 **Related sample**: [Popup. Show/Hide](https://snippet.dhtmlx.com/aqzy536h)
 
-## Checking visibility of Popup
+## Check Popup visibility {#checking-visibility-of-popup}
 
-You can easily check whether a popup is visible with the help of the [`isVisible()`](popup/api/popup_isvisible_method.md) method. It returns *true*, if a popup is visible.
+The [`isVisible()`](popup/api/popup_isvisible_method.md) method checks whether a popup is visible. It returns `true` if the popup is visible and `false` otherwise.
 
 ~~~js
 popup.isVisible(); // -> true/false
@@ -47,9 +47,9 @@ popup.isVisible(); // -> true/false
 
 **Related sample**: [Popup. Is visible](https://snippet.dhtmlx.com/f614sdm3)
 
-## Attaching content
+## Attach HTML content {#attaching-content}
 
-You can easily attach some HTML content to a popup via the [`attachHTML()`](popup/api/popup_attachhtml_method.md) method. It takes as a parameter a string with HTML.
+Use the [`attachHTML()`](popup/api/popup_attachhtml_method.md) method to attach HTML content to a popup. The method takes a string with HTML as a parameter.
 
 ~~~js
 const popup = new dhx.Popup();
@@ -59,19 +59,19 @@ popup.show("popup");
 
 **Related sample**: [Popup. HTML content](https://snippet.dhtmlx.com/ajv5qqxq)
 
-## Attaching DHTMLX components
+## Attach DHTMLX components {#attaching-dhtmlx-components}
 
-DHTMLX Popup allows attaching other components of the library using the [`attach()`](popup/api/popup_attach_method.md) method. It takes two parameters:
+Use the [`attach()`](popup/api/popup_attach_method.md) method to attach other DHTMLX components to a popup. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>name</b></td>
-            <td>(<i>string</i>) the name of a component</td>
+            <td><code>name</code></td>
+            <td>(<code>string</code>) the name of a component</td>
         </tr>
         <tr>
-            <td><b>config</b></td>
-            <td>(<i>object</i>) optional, the configuration settings of a component</td>
+            <td><code>config</code></td>
+            <td>(<code>object</code>) optional, the configuration settings of a component</td>
         </tr>
     </tbody>
 </table>

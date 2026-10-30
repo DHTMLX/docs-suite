@@ -7,14 +7,14 @@ description: You can explore the initialization of Popup in the documentation of
 # Initialization
 
 :::info
-[Download the DHTMLX Popup package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Popup package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Popup into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Popup to an application:
 
 - [Include source files](#include-source-files)
 - [Initialize Popup](#initialize-popup) with the object constructor
-- [Set content into Popup](#set-content)
+- [Add content to Popup](#set-content)
 
 ~~~html
 <!DOCTYPE html>
@@ -35,12 +35,12 @@ To add DHTMLX Popup into an application, you need to take the following simple s
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -62,16 +62,16 @@ const popup = new dhx.Popup();
 popup.show("popup_container");
 ~~~
 
-To show a created popup on a page, you should call the [](popup/api/popup_show_method.md) method after initialization of the component.
+To show the popup on a page, call the [](popup/api/popup_show_method.md) method after you initialize the component.
 
 ### Set content
 
-There are several ways of adding content into DHTMLX Popup:
+You can add content to DHTMLX Popup in the following ways:
 
-- by using [attachHTML()](popup/api/popup_attachhtml_method.md) to attach some HTML content into a popup 
+- Use the [`attachHTML()`](popup/api/popup_attachhtml_method.md) method to attach HTML content to Popup:
 
 <iframe src="https://snippet.dhtmlx.com/ajv5qqxq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
 
-- by calling [attach()](popup/api/popup_attach_method.md) to add other DHTMLX components into a popup
+- Use the [`attach()`](popup/api/popup_attach_method.md) method to attach other DHTMLX components to Popup:
 
 <iframe src="https://snippet.dhtmlx.com/7x6hlbqx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
