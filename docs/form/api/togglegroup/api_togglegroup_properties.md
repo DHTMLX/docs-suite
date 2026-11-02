@@ -20,6 +20,7 @@ description: You can explore the Properties of the Toggle Group control of Form 
     full?: boolean, // false by default
     gap?: number, // 0 by default
     multiselect?: boolean, // false by default
+    ariaLabel?: string,
 
     options: [
         {
@@ -58,6 +59,7 @@ description: You can explore the Properties of the Toggle Group control of Form 
 - `full` - (optional) defines whether the ToggleGroup will be extended to the width specified by the **width** property, *false* by default
 - `gap` - (optional) sets an offset between the elements (buttons) of an option, *0* by default
 - `multiselection` - (optional) defines the behavior that allows a multiple choice, *false* by default
+- `ariaLabel` - (optional) the accessible name of a group, which a screen reader announces. If not set, the group has no accessible name
 - `options` - (required) an array of ToggleGroup elements. An object of an element can contain the following attributes:
     - `id` - (optional) the id of a control, auto-generated if not set
     - `hidden`- (optional) defines whether a toggle button is hidden, *false* by default

@@ -50,6 +50,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
     validation?: (value: object[]) => boolean;
     required?: boolean, // false by default
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -145,6 +146,10 @@ description: You can explore the Properties of the Simple Vault control  of Form
         <tr>
             <td><b>required</b></td>
             <td>(optional) <a href="../../../work_with_form/#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

@@ -31,6 +31,7 @@ description: You can explore the Properties of the Timepicker control of Form in
     timeFormat?: 12 | 24, // 24 by default
     valueFormat?: "string" | "timeObject", // "string" by default
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default 
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -71,6 +72,7 @@ description: You can explore the Properties of the Timepicker control of Form in
 - `placeholder` - (optional) a tip for the input
 - `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to 12 or 24 (default) value, correspondingly, *24* by default
 - `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: "string" (default), "timeObject"
+- `ariaLabel` - (optional) the accessible name of a control, which a screen reader announces. If not set, the **label** is used
 - `hiddenLabel` - (optional)  makes the label invisible, *false* by default
 - `label` - (optional) specifies a label for a control
 - `labelPosition` - (optional) defines the position of a label: "left" | "top" (default)

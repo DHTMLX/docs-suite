@@ -8,6 +8,55 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.4.2
+
+Released on November 2, 2026
+
+### Updates
+
+- Calendar. <kbd>Space</kbd> selects a date, a month or a year, as <kbd>Enter</kbd> does (**WCAG 2.1.1**).
+
+- Combobox. While the list is open, the input tells a screen reader which option is highlighted, so the option is announced as the user moves through the list with the arrow keys (**WCAG 4.1.2**).
+
+- Form. Accessible names of the form and its controls:
+    - Every control is named by one rule: the new `ariaLabel` property of the control, otherwise the `label` (also with `hiddenLabel`), otherwise the visible text of the control (**WCAG 1.3.1**, **WCAG 2.5.3**, **WCAG 4.1.2**).
+    - The form is named by the new [`ariaLabel`](form/api/form_arialabel_config.md) property, otherwise by its `title`.
+    - Generated names such as "type text" or "select color" are no longer used, and `helpMessage` is announced as the description of a control, not as its name.
+    - A checkbox group and a radio group are announced as named groups.
+
+- Form. States and errors:
+    - A toggle reports its pressed state (**WCAG 4.1.2**).
+    - A control in the error state is reported as invalid, and its error message is announced as its description (**WCAG 3.3.1**).
+
+- Form. Colorpicker, Datepicker and Timepicker:
+    - The colorpicker field reports that it opens a palette and whether the palette is open (**WCAG 4.1.2**).
+    - <kbd>→</kbd> moves focus to the selected color, the selected date or the hour input; after a choice focus returns to the field (**WCAG 2.1.1**, **WCAG 2.4.3**).
+
+- Form. Avatar:
+    - The upload and remove controls are reachable from the keyboard and are shown while the field has focus (**WCAG 2.1.1**).
+    - The remove button has a name that can be translated through the locale (**WCAG 4.1.2**).
+
+- List. Every option has an element id, so the option can be referenced from outside the list, for example, by the input of a combo box.
+
+- Toolbar/Sidebar. A `menuItem` control with nested items is announced as a button that opens a menu, and it reports whether its menu is open. The top-level items of the Menu bar keep the menu item role (**WCAG 4.1.2**).
+
+- Toolbar/Sidebar/Ribbon/Menu. <kbd>Enter</kbd> and <kbd>Space</kbd> on a control that opens a menu move focus to the first item of the menu, and <kbd>↑</kbd> on a control whose menu opens below it moves focus to the last item (**WCAG 2.1.1**, **WCAG 2.4.3**).
+
+### Fixes
+
+- Calendar. Fixed a script error (`Cannot read properties of undefined`) that occurred when a calendar was destroyed right after its value had been set
+- Calendar. Fixed the arrow keys scrolling the page while moving between dates
+- Colorpicker. Fixed a script error (`Cannot read properties of null`) that occurred when a colorpicker was destroyed right after its value had been set
+- Combobox. Fixed a script error (`Cannot read properties of undefined`) that occurred when the `clear()`, `focus()` or `blur()` method was called before the combobox was rendered
+- ContextMenu. Fixed an issue where the first menu item got stuck when selected using the mouse
+- Form. Fixed a script error that occurred when a form with the Colorpicker, Datepicker or Timepicker control was destroyed or rebuilt right after the value of the control had been set
+- Form. Fixed <kbd>Enter</kbd> not working on the buttons inside the popup of the Colorpicker, Datepicker and Timepicker fields
+- Form. Fixed the keyboard focus being lost after a choice in the popup of the Colorpicker, Datepicker and Timepicker fields
+- Form. Fixed <kbd>Tab</kbd> leaving the page with the popup of the Colorpicker, Datepicker or Timepicker field still open
+- Form. Fixed <kbd>Enter</kbd> not applying the value typed in an editable Colorpicker, Datepicker or Timepicker field
+- Layout. Fixed a script error (`Cannot set properties of null`) that occurred when a layout attached to a popup or to another widget was destroyed before it had been rendered
+- Timepicker. Fixed a script error (`Cannot read properties of null`) that occurred when a timepicker was destroyed right after its value had been set
+
 ## Version 9.4.1
 
 Released on October 26, 2026

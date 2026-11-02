@@ -20,6 +20,7 @@ description: You can explore the Properties of the Toggle control of Form in the
 
     full?: boolean, // false by default
     text?: string,
+    ariaLabel?: string,
     icon?: string,
     offText?: string,
     offIcon?: string,
@@ -42,6 +43,7 @@ description: You can explore the Properties of the Toggle control of Form in the
 - `selected` - (optional) defines the initial state of the toggle as selected (pressed), *false* by default
 - `full` - (optional) defines whether the toggle will be extended to the width specified by the **width** property, *false* by default
 - `text` - (optional) sets a text inside the toggle. When initialized together with the **offText** property, the specified text will be rendered in the selected (pressed) state
+- `ariaLabel` - (optional) the accessible name of a control, which a screen reader announces. If not set, the **text** is used
 - `offText` - (optional) sets the text that will be rendered in the unselected (unpressed) state of the toggle
 - `icon` - (optional) sets the CSS class of an icon displayed inside the toggle. When initialized together with the **offIcon** property, the specified classes of icons will be rendered in the selected (pressed) state of the toggle
 - `offIcon` - (optional) sets the CSS class of an icon that will be rendered in the unselected (unpressed) state of the toggle

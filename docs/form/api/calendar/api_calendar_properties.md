@@ -39,6 +39,7 @@ description: You can explore the Properties of the Datepicker control of Form in
     weekNumbers?: boolean, // false by default
     weekStart?: "saturday" | "sunday" | "monday", // "sunday" by default
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -158,6 +159,10 @@ description: You can explore the Properties of the Datepicker control of Form in
         <tr>
             <td><b>weekStart</b></td>
             <td>(optional) sets the starting day of the week: "saturday", "monday" or "sunday" (default) </td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
