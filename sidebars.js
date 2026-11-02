@@ -802,6 +802,7 @@ module.exports = {
                     },*/
                     items: [
                       "form/api/form_align_config",
+                      "form/api/form_arialabel_config",
                       "form/api/form_cols_config",
                       "form/api/form_css_config",
                       "form/api/form_disabled_config",

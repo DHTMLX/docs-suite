@@ -58,6 +58,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | Name                                 | Description                                 |
 | ------------------------------------ | ------------------------------------------- |
 | [](form/api/form_align_config.md)    | @getshort(form/api/form_align_config.md)    |
+| [](form/api/form_arialabel_config.md) | @getshort(form/api/form_arialabel_config.md) |
 | [](form/api/form_cols_config.md)     | @getshort(form/api/form_cols_config.md)     |
 | [](form/api/form_css_config.md)      | @getshort(form/api/form_css_config.md)      |
 | [](form/api/form_disabled_config.md) | @getshort(form/api/form_disabled_config.md) |

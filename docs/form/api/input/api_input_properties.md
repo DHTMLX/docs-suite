@@ -54,6 +54,7 @@ description: You can explore the Properties of the Input control of Form in the 
     placeholder?: string,
     readOnly?: boolean, // false by default
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -173,6 +174,10 @@ description: You can explore the Properties of the Input control of Form in the 
         <tr>
             <td><b>readOnly</b></td>
             <td>(optional) defines whether an input is readonly, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

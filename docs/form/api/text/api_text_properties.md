@@ -24,6 +24,7 @@ description: You can explore the Properties of the Text control of Form in the d
 
     inputType?: "text" | "password" | "number", // "text" by default
     
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -83,6 +84,10 @@ description: You can explore the Properties of the Text control of Form in the d
         <tr>
             <td><b>inputType</b></td>
             <td>(optional) sets the type of an input: "text", "password", "number". <br />Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br />Use the "password" value to specify a field for entering a password. <i>"text"</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used, or the value of the control if there is no label</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

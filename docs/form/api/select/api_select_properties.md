@@ -34,6 +34,7 @@ description: You can explore the Properties of the Select control of Form in the
     
     icon?: string,
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -105,6 +106,10 @@ description: You can explore the Properties of the Select control of Form in the
         <tr>
             <td><b>icon</b></td>
             <td>(optional) the CSS class name of an <a href="../../../../helpers/icon/">icon</a> from the used icon font</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

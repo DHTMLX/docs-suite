@@ -34,6 +34,7 @@ description: You can explore the Properties of the Avatar control of Form in the
     height?: string | number | "content", // "content" by default
     padding?: string | number, 
 
+    ariaLabel?: string,
     label?: string,
     labelWidth?: string | number,
     labelPosition?: "left" | "top", // "top" by default
@@ -135,6 +136,10 @@ description: You can explore the Properties of the Avatar control of Form in the
         <tr>
             <td><b>padding</b></td>
             <td>(optional) sets padding between a cell and a border of the Avatar control</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>label</b></td>

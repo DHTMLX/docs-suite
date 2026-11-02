@@ -50,6 +50,7 @@ description: You can explore the Properties of the Textarea control of Form in t
     readOnly?: boolean, // false by default
     resizable?: boolean, // false by default
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -153,6 +154,10 @@ description: You can explore the Properties of the Textarea control of Form in t
         <tr>
             <td><b>resizable</b></td>
             <td>(optional) adds a resizer icon into a textarea, if set to <i>true</i>, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

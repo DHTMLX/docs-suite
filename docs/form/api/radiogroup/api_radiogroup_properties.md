@@ -61,6 +61,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
     required?: boolean, // false by default
     width?: string | number | "content", // "content" by default
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -126,6 +127,10 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
         <tr>
             <td><b>width</b></td>
             <td>(optional) the width of a control, <i>"content"</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a group, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
