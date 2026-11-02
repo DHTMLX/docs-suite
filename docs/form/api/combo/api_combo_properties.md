@@ -42,6 +42,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
     template?: (item: any) => string,
     virtual?: boolean, // false by default
     
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -157,6 +158,10 @@ description: You can explore the Properties of the Combo Box control of Form in 
         <tr>
             <td><b>virtual</b></td>
             <td>(optional) enables dynamic loading of data on scrolling the list of options, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

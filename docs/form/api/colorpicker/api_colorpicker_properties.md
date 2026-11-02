@@ -34,6 +34,7 @@ description: You can explore the Properties of the Colorpicker control of Form i
     pickerOnly?: boolean, // false by default
     placeholder?: string,
 
+    ariaLabel?: string,
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
@@ -133,6 +134,10 @@ description: You can explore the Properties of the Colorpicker control of Form i
         <tr>
             <td><b>placeholder</b></td>
             <td>(optional) a tip for the input</td>
+        </tr>
+        <tr>
+            <td><b>ariaLabel</b></td>
+            <td>(optional) the accessible name of a control, which a screen reader announces. If not set, the <b>label</b> is used</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
