@@ -218,6 +218,11 @@ module.exports = {
                             position: 'right'
                         },
                         {
+                            label: 'Product page',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/',
+                            position: 'right'
+                        },
+                        {
                             label: 'Examples',
                             href: 'https://snippet.dhtmlx.com/cwiuna9l?tag=suite',
                             position: 'right'
