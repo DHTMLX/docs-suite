@@ -6,15 +6,15 @@ description: You can explore the custom HTML button of Ribbon in the documentati
 
 # Custom HTML
 
-This is an item that contains any custom HTML content (for example, an image, icon or other element).
+The Custom HTML control displays custom HTML content, such as an image, an icon, or another element.
 
 ![Ribbon custom HTML item showing a user avatar and name label in DHTMLX Suite](/img/ribbon/custom_html.png)
 
 **Related sample**: [Ribbon. Custom HTML](https://snippet.dhtmlx.com/c0i0q3cu)
 
-## Adding Custom HTML
+## Add a Custom HTML control {#adding-custom-html}
 
-Any custom HTML content can be easily added to a ribbon with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add custom HTML content to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -27,8 +27,8 @@ ribbon.data.add({
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_customhtml_properties.md) in the configuration object of a Custom HTML control.
+Check the [list of properties](ribbon/api/api_customhtml_properties.md) that you can set in the configuration object of a Custom HTML control.
 
-## Working with Custom HTML
+## Work with a Custom HTML control {#working-with-custom-html}
 
-You can perform operations over the **Custom HTML** item with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Use the [Ribbon API](ribbon/api/api_overview.md) and the [TreeCollection API](/tree_collection/) to work with a **Custom HTML** control.
