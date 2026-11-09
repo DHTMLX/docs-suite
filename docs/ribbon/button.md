@@ -6,15 +6,15 @@ description: You can explore the Button of Ribbon in the documentation of the DH
 
 # Button
 
-This is a simple button that can have an icon. Button can be *twoState* and can have a badge with a number, which can be useful for displaying the number of new messages, etc.
+The Button control displays a button with a text label and an optional icon. A button can switch between two states (`twoState`) and show a badge with a number, for example, to count new messages.
 
 ![Ribbon with File, folder, cloud and Save buttons with icons in DHTMLX Suite](/img/ribbon/ribbon_button.png)
 
 **Related sample**: [Ribbon. Group buttons](https://snippet.dhtmlx.com/nlviu82g)
 
-## Creating Buttons
+## Create a button {#creating-buttons}
 
-This is the basic syntax of a button:
+The following example shows the basic configuration of a button:
 
 ~~~js
 {
@@ -24,11 +24,11 @@ This is the basic syntax of a button:
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_button_properties.md) in the configuration object of a Button control.
+Check the [list of properties](ribbon/api/api_button_properties.md) that you can set in the configuration object of a Button control.
 
-## Adding Buttons
+## Add a button {#adding-buttons}
 
-Button can be easily added to a ribbon block with the help of the **add()** method of TreeCollection:
+Use the `add()` method of TreeCollection to add a button to a ribbon block:
 
 ~~~js
 ribbon.data.add({
@@ -36,9 +36,9 @@ ribbon.data.add({
 },-1,"blockId");
 ~~~
 
-## Adding HTML content
+## Add HTML content {#adding-html-content}
 
-You can add a custom element to a button with the help of the **html** property:
+Use the `html` property to add a custom element to a button:
 
 ~~~js
 {
@@ -50,27 +50,27 @@ You can add a custom element to a button with the help of the **html** property:
 
 **Related sample**: [Ribbon. Item HTML content](https://snippet.dhtmlx.com/3djaib6o)
 
-## Showing/hiding Button
+## Show and hide a button {#showinghiding-button}
 
-To hide/show a button, you should pass the ID of the button to the **hide()/show()** methods:
+The `show()` and `hide()` methods show and hide a button by its ID:
 
 ~~~js
 ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Enabling/disabling Button
+## Enable and disable a button {#enablingdisabling-button}
 
-Any button in the ribbon can be enabled/disabled:
+The `enable()` and `disable()` methods enable and disable a button by its ID:
 
 ~~~js
 ribbon.enable(id);
 ribbon.disable(id);
 ~~~
 
-## Adding an icon
+## Add an icon {#adding-an-icon}
 
-A button can have an [icon](ribbon/customization.md#icons):
+Use the `icon` property to add an [icon](ribbon/customization.md#icons) to a button:
 
 ~~~js
 {
@@ -79,9 +79,9 @@ A button can have an [icon](ribbon/customization.md#icons):
 }
 ~~~
 
-## Adding a badge with a number
+## Add a badge with a number {#adding-a-badge-with-a-number}
 
-You can add a number badge to the button to display information like the number of new messages. Set the **count** property:
+Set the `count` property to add a badge with a number to a button:
 
 ~~~js
 {
@@ -93,9 +93,9 @@ You can add a number badge to the button to display information like the number 
 
 **Related sample**: [Ribbon. Buttons configuration](https://snippet.dhtmlx.com/trli6sq7)
 
-## Styling buttons
+## Style buttons {#styling-buttons}
 
-You can style Button by adding custom CSS classes in the **css** property:
+Specify custom CSS classes in the `css` property to style a button:
 
 ~~~js
 {
@@ -103,7 +103,7 @@ You can style Button by adding custom CSS classes in the **css** property:
 }
 ~~~
 
-Where "best_button" can be a CSS class like this:
+Define the `best_button` class in your CSS:
 
 ~~~html
 .best_button{
@@ -116,7 +116,7 @@ Where "best_button" can be a CSS class like this:
 
 ## TwoState Buttons
 
-You can create buttons with two states: active (pressed) and inactive (unpressed).
+Set the `twoState` property to create a button with two states: active (pressed) and inactive (unpressed). The `active` property sets the initial state:
 
 ~~~js
 {
@@ -124,9 +124,9 @@ You can create buttons with two states: active (pressed) and inactive (unpressed
 }
 ~~~
 
-### Changing the state of Button
+### Change the button state {#changing-the-state-of-button}
 
-The state of a TwoState button or values of controls can be changed programmatically with the **setState()** method of ribbon:
+Use the `setState()` method of Ribbon to change the state of a TwoState button or the values of other controls:
 
 ~~~js
 {
@@ -138,11 +138,11 @@ ribbon.setState({check:true});  // active:true
 ribbon.setState({check:false});  // active:false
 ~~~
 
-**setState()** accepts one parameter - a key-value pair with the ID of the button and the new value.
+The `setState()` method takes one parameter: a key-value pair with the ID of the button and the new value.
 
-### Accessing the state of Button
+### Get the button state {#accessing-the-state-of-button}
 
-The current state of a TwoState button and values of controls can be checked with the **getValues()** method:
+Use the `getValues()` method to get the current state of a TwoState button or the values of other controls:
 
 ~~~js
 {
