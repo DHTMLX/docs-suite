@@ -8,7 +8,11 @@ description: You can explore the load event of DataCollection in the documentati
 
 @short: fires when items are loaded in a data collection
 
-@signature: {'load: () => void;'}
+#### Usage
+
+~~~ts
+load: () => void;
+~~~
 
 @example:
 component.data.events.on("load", function(){

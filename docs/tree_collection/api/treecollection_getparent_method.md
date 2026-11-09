@@ -8,13 +8,18 @@ description: You can explore the getParent method of TreeCollection in the docum
 
 @short: gets the ID of the parent of the control
 
-@signature: {'getParent(id: string | number): string | number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getParent(id: Id): Id;
+~~~
 
 @params:
-- `id: string | number` - the ID of a control
+- `id: Id` - the id of the item
 
 @returns:
-A string with the ID of the parent of the control.
+The id of the parent item.
 
 @example:
 const parentId = toolbar.data.getParent("add_btn");

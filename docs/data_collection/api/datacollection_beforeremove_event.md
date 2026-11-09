@@ -8,11 +8,15 @@ description: You can explore the beforeRemove event of DataCollection in the doc
 
 @short: fires before removing an item/items from a data collection
 
-@signature: {'beforeRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;'}
+#### Usage
+
+~~~ts
+beforeRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;
+~~~
 
 @params:
-- `removedItem: object` - the object of an item to remove
-- `batch: array` - an array of removed items
+- `removedItem: IDataItem` - the object of an item to remove
+- `batch: IDataItem[]` - an array of removed items
 - `index: number` - the index of the removed item within the batch
 
 @returns:

@@ -8,7 +8,11 @@ description: You can explore the removeAll event of DataCollection in the docume
 
 @short: fires when all items are removed from a data collection
 
-@signature: {'removeAll: () => void;'}
+#### Usage
+
+~~~ts
+removeAll: () => void;
+~~~
 
 @example:
 component.data.events.on("removeAll", function(){

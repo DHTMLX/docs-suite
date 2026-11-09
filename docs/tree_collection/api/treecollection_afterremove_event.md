@@ -8,10 +8,16 @@ description: You can explore the afterRemove event of TreeCollection in the docu
 
 @short: fires after removing a new item from a tree collection
 
-@signature: {'afterRemove: (removedItem: object) => void;'}
+#### Usage
+
+~~~ts
+afterRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => void;
+~~~
 
 @params:
-- `removedItem: object` - the object of a removed item
+- `removedItem: IDataItem` - the object of a removed item
+- `batch: IDataItem[]` - an array of removed items
+- `index: number` - the index of the removed item within the batch
 
 @example:
 component.data.events.on("afterRemove", function(removedItem){

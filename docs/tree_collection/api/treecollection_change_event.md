@@ -8,12 +8,19 @@ description: You can explore the change event of TreeCollection in the documenta
 
 @short: fires when a tree collection is modified
 
-@signature: {'change: (id?: string | number, status?: string, updatedItem?: object) => void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+type Statuses = "add" | "update" | "remove" | string;
+
+change: (id?: Id, status?: Statuses, updatedItem?: IDataItem) => void;
+~~~
 
 @params:
-- `id: string | number` - the id of an item
-- `status: string` - the status of the operation:"add", "update", "remove"
-- `updatedItem: object` - the object of an updated item
+- `id?: Id` - optional, the id of an item
+- `status?: Statuses` - optional, the status of the operation: "add", "update", "remove"
+- `updatedItem?: IDataItem` - optional, the object of an updated item
 
 @example:
 component.data.events.on("change", function(id,status,updatedItem){

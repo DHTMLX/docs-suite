@@ -15,7 +15,7 @@ Please note that data should be loaded into DataCollection via the `parse()` met
 #### Usage
 
 ~~~ts
-type Id = string | number; 
+type Id = string | number;
 add(newItem: IDataItem | IDataItem[], index?: number): Id | Id[];
 ~~~
 

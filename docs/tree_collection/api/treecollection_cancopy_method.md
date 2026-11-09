@@ -8,11 +8,16 @@ description: You can explore the canCopy method of TreeCollection in the documen
 
 @short: checks whether it is possible to copy a control into some other control
 
-@signature: {'canCopy(id: string | number, target: string | number): boolean;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+canCopy(id: Id, target: Id): boolean;
+~~~
 
 @params:
-- `id: string` - the ID of the source control
-- `target: string` - the ID of the target control
+- `id: Id` - the id of the source item
+- `target: Id` - the id of the target item
 
 @returns:
 `true` if the control can be copied into another control; otherwise, `false`.

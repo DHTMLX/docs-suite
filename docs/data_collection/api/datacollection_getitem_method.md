@@ -8,10 +8,15 @@ description: You can explore the getItem method of DataCollection in the documen
 
 @short: returns the object of an item by its id
 
-@signature: {'getItem(id: string | number): object;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getItem(id: Id): IDataItem;
+~~~
 
 @params:
-- `id: string | number` - the id of a selected item
+- `id: Id` - the id of the item
 
 @returns:
 The object of an item.

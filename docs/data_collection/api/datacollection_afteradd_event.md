@@ -8,11 +8,15 @@ description: You can explore the afterAdd event of DataCollection in the documen
 
 @short: fires after adding a new item/items into a data collection
 
-@signature: {'afterAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => void;'}
+#### Usage
+
+~~~ts
+afterAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => void;
+~~~
 
 @params:
-- `newItem: object` - the object of an added item
-- `batch: array` - an array of added items
+- `newItem: IDataItem` - the object of an added item
+- `batch: IDataItem[]` - an array of added items
 - `index: number` - the index of the added item within the batch
 
 @example:

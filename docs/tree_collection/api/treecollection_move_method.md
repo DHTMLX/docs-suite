@@ -8,13 +8,19 @@ description: You can explore the move method of TreeCollection in the documentat
 
 @short: moves items to different positions
 
-@signature: {'move(id: (string | number) | (string | number)[], index: number, target?: object, targetId?: (string | number) | (string | number)[]): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+move(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
+~~~
 
 @params:
-- `id: (string | number) | (string | number)[]` - the ids of items to move
-- `index: number` - the index to move items to
-- `target?: object` - optional, the target tree collection object
-- `targetId?: (string | number) | (string | number)[]` - optional, the id of the parent item where the moved items will be placed
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to move
+- `index: number` - the index to move the items to
+- `target?: IDataCollection | ITreeCollection` - optional, the target collection object
+- `targetId?: Id` - optional, the id of the parent item the moved items will be placed into
 
 @returns:
 The item's id or an array with ids of items.
@@ -24,4 +30,6 @@ toolbar.data.move("profile_btn", -1);
 
 @descr:
 
-{{note The ID should always be a string, even if in the control configuration you've set it as a number.}}
+:::note 
+The id should always be a string, even if in the control configuration you've set it as a number.
+:::

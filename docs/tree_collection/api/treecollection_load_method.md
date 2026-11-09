@@ -8,11 +8,17 @@ description: You can explore the load method of TreeCollection in the documentat
 
 @short: loads items from a file
 
-@signature: {'load(url: string | IDataProxy, driver?: object | string): Promise<any>'}
+#### Usage
+
+~~~ts
+type DataDriver = "json" | "csv" | "xml";
+
+load(url: string | IDataProxy, driver?: DataDriver | IDataDriver): Promise<any>;
+~~~
 
 @params:
-- `url: string | IDataProxy` - the URL of an external file or DataProxy object with the URL configured
-- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `url: string | IDataProxy` - the URL of an external file or DataProxy with the URL configured
+- `driver?: DataDriver | IDataDriver` - optional, the type of data ("json", "csv", "xml") or a DataDriver object, "json" by default
 
 @returns:
 A promise of data loading.

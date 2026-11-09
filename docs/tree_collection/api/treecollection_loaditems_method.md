@@ -8,11 +8,18 @@ description: You can explore the loadItems method of TreeCollection in the docum
 
 @short: loads child items of a control from a file
 
-@signature: {'loadItems(id: string | number, driver?: object | string): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+type DataDriver = "json" | "csv" | "xml";
+
+loadItems(id: Id, driver?: DataDriver | IDataDriver): void;
+~~~
 
 @params:
-- `id: string | number` - the ID of a control
-- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `id: Id` - the id of the item to load the child items of
+- `driver?: DataDriver | IDataDriver` - optional, the type of data ("json", "csv", "xml") or a DataDriver object, "json" by default
 
 @example:
 myToolbar.data.loadItems("menu_id");

@@ -8,7 +8,12 @@ description: You can explore the getId method of DataCollection in the documenta
 
 @short: returns the id of the item by its index
 
-@signature: {'getId(index: number): string | number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getId(index: number): Id;
+~~~
 
 @params:
 - `index: number` - the index of the item

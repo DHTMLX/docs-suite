@@ -8,12 +8,18 @@ description: You can explore the copy method of DataCollection in the documentat
 
 @short: creates a copy of an item at the defined position
 
-@signature: {'copy(id: (string | number) | (string | number)[], index: number, target?: object): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection): Id | Id[];
+~~~
 
 @params:
-- `id: (string | number) | (string | number)[]` - the id of an item or an array with ids of items to copy
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to copy
 - `index: number` - the index to create a copy at
-- `target?: object` - optional, the target data collection object
+- `target?: IDataCollection | ITreeCollection` - optional, the target data collection object
 
 @returns:
 The item's id or an array with ids of items.

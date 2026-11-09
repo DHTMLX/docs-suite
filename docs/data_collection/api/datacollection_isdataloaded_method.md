@@ -12,7 +12,11 @@ The method works with the [Dynamic loading](helpers/lazydataproxy.md) functional
 
 @short: checks whether the specified data range is loaded from the server
 
-@signature: {'isDataLoaded(from?: number, to?: number): boolean;'}
+#### Usage
+
+~~~ts
+isDataLoaded(from?: number, to?: number): boolean;
+~~~
 
 @params:
 - `from?: number` - optional, the index of the first element of the data range to be checked

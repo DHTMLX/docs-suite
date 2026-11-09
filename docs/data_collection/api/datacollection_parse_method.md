@@ -8,11 +8,17 @@ description: You can explore the parse method of DataCollection in the documenta
 
 @short: loads data from a local data source
 
-@signature: {'parse(data: object[] | string, driver?: object | string): void;'}
+#### Usage
+
+~~~ts
+type DataDriver = "json" | "csv" | "xml";
+
+parse(data: IDataItem[] | string, driver?: DataDriver | IDataDriver): void;
+~~~
 
 @params:
-- `data: array | string` - the data to load
-- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `data: IDataItem[] | string` - the data to load: an array of item objects or a string
+- `driver?: DataDriver | IDataDriver` - optional, the type of data ("json", "csv", "xml") or a DataDriver object, "json" by default
 
 @example:
 const dataset = [

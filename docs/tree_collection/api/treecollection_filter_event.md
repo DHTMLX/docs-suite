@@ -8,12 +8,23 @@ description: You can explore the filter event of TreeCollection in the documenta
 
 @short: fires after filtering a tree collection 
 
-@signature: {'filter: (filter?: object) => void;'}
+#### Usage
+
+~~~ts
+interface IFilter {
+    [filterId: string]: {
+        rule: IFilterMode | IFilterCallback;
+        config: ITreeFilterConfig;
+    };
+}
+
+filter: (filter?: IFilter) => void;
+~~~
 
 @params:
-- `object: { [key: string]: object }` - an object with all the active filters, where
-    - `key: string` - the id of an active filter
-    - `object` - an object with the [rule](tree_collection/api/treecollection_filter_method.md) and [config](tree_collection/api/treecollection_filter_method.md) properties
+- `filter?: IFilter` - optional, an object with all the active filters, where
+    - the key is the id of an active filter
+    - the value is an object with the `rule` and `config` properties passed to the [`filter()`](tree_collection/api/treecollection_filter_method.md) method
 
 @example:
 component.data.events.on("filter", function(filter) {

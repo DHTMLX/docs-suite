@@ -8,10 +8,16 @@ description: You can explore the beforeAdd event of TreeCollection in the docume
 
 @short: fires before adding a new item into a tree collection
 
-@signature: {'beforeAdd: (newItem: object) => boolean | void;'}
+#### Usage
+
+~~~ts
+beforeAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;
+~~~
 
 @params:
-- `newItem: object` - the object of an added item
+- `newItem: IDataItem` - the object of an item to add
+- `batch: IDataItem[]` - an array of added items
+- `index: number` - the index of the added item within the batch
 
 @returns:
 Return `false` to prevent adding of an item; otherwise, `true`.

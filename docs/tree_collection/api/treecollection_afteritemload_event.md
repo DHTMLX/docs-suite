@@ -6,27 +6,31 @@ description: You can explore the afterItemLoad event of TreeCollection in the do
 
 # afterItemLoad
 
-@short: fires after loading an item
+@short: fires after the child items of an item are loaded
 
-@descr:
-:::info
-The event fires when you load items via the <a href="../treecollection_loaditems_method/">loadItems()</a> method of Tree Collection. The method also fires if you enable the <a href="../../../tree/api/tree_autoload_config/">autoload</a> property of Tree.
-:::
+#### Usage
 
-@signature: {'afterItemLoad:({ id: string | number }) => void;'}
+~~~ts
+type Id = string | number;
+afterItemLoad: (id: Id) => void;
+~~~
 
 @params:
-- `id: string | number` - the id of the loaded item
+- `id: Id` - the id of the item the child items of which are loaded
 
 @example:
 component.data.events.on("afterItemLoad", function(id){
-    console.log("An ", id, " item is loaded");
+    console.log("The child items of the " + id + " item are loaded");
 });
 
-@descr: 
+@descr:
 
 :::info
-In case of error, the [loadError](tree_collection/api/treecollection_loaderror_event.md) event will fire.
+The event fires when you load child items via the [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md) method of TreeCollection. The event also fires if you enable the [`autoload`](tree/api/tree_autoload_config.md) property of Tree.
+:::
+
+:::info
+In case of error, the [`loadError`](tree_collection/api/treecollection_loaderror_event.md) event will fire.
 :::
 
 @changelog: added in v8.0

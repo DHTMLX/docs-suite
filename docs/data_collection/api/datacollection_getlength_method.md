@@ -8,7 +8,11 @@ description: You can explore the getLength method of DataCollection in the docum
 
 @short: returns the number of all elements of a data collection
 
-@signature: {'getLength(): number;'}
+#### Usage
+
+~~~ts
+getLength(): number;
+~~~
 
 @returns:
 The number of elements of a data collection.

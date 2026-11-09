@@ -8,10 +8,14 @@ description: You can explore the save method of DataCollection in the documentat
 
 @short: saves changes made in a data collection to the server side
 
-@signature: {'save(url: IDataProxy | string): void;'}
+#### Usage
+
+~~~ts
+save(url: string | IDataProxy): void;
+~~~
 
 @params:
-- `url: IDataProxy | string` - the URL of a server side or DataProxy with the URL configured
+- `url: string | IDataProxy` - the URL of a server side or DataProxy with the URL configured
 
 @example:
 grid.data.save("http://userurl/");

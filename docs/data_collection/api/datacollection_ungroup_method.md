@@ -8,7 +8,11 @@ description: You can explore the ungroup method of DataCollection in the documen
 
 @short: resets the applied data grouping
 
-@signature: {'ungroup(): void;'}
+#### Usage
+
+~~~ts
+ungroup(): void;
+~~~
 
 @example:
 const grid = new dhx.Grid("grid_container", {

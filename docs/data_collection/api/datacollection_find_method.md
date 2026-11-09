@@ -8,17 +8,23 @@ description: You can explore the find method of DataCollection in the documentat
 
 @short: finds the item that corresponds to the specified rule
 
-@signature: {'find(rule: object | (item: object, index: number, array: object[]) => any): object;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+find(rule: { by: Id; match: string | number | boolean } | ((item: IDataItem, index?: number, array?: IDataItem[]) => any)): IDataItem;
+~~~
 
 @params:
 - `rule: object | function` - the search criteria:
     - if set as an object, the parameter contains the following attributes:
-        - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
-        - `match: string` - the value of the item attribute
-    - if set as a function, the search will be applied by the rule specified in the function. The function takes three parameters:
-        - `item: object` - the object of an item
-        - `index: number` - the index of an item
-        - `array: object[]` - an array of items the method was called upon
+        - `by: Id` - the key of the item attribute
+        - `match: string | number | boolean` - the value of the item attribute
+    - if set as a function, the search will be applied by the rule specified in the function. The function is called with the following parameters:
+        - `item: IDataItem` - the object of an item
+        - `index?: number` - optional, the index of the item
+        - `array?: IDataItem[]` - optional, the array of items the method was called upon
 
 @returns:
 The object of the matching item.

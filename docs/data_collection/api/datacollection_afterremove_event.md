@@ -8,11 +8,15 @@ description: You can explore the afterRemove event of DataCollection in the docu
 
 @short: Fires after removing an item/items from a data collection
 
-@signature: {'afterRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => void;'}
+#### Usage
+
+~~~ts
+afterRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => void;
+~~~
 
 @params:
-- `removedItem: object` - the object of a removed item
-- `batch: array` - an array of removed items
+- `removedItem: IDataItem` - the object of a removed item
+- `batch: IDataItem[]` - an array of removed items
 - `index: number` - the index of the removed item within the batch
 
 @example:

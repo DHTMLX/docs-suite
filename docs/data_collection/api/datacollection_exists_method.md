@@ -8,10 +8,15 @@ description: You can explore the exists method of DataCollection in the document
 
 @short: checks whether the specified item exists in the component
 
-@signature: {'exists(id: string | number): boolean;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+exists(id: Id): boolean;
+~~~
 
 @params:
-- `id: string | number` - the id of the item in question
+- `id: Id` - the id of the item in question
 
 @returns:
 `true`, if the item exists; otherwise, `false`.

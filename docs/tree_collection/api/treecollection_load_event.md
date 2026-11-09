@@ -8,7 +8,11 @@ description: You can explore the load event of TreeCollection in the documentati
 
 @short: fires when items are loaded in a tree collection
 
-@signature: {'load: () => void;'}
+#### Usage
+
+~~~ts
+load: () => void;
+~~~
 
 @example:
 component.data.events.on("load", function(){

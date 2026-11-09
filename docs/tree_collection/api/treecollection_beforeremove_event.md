@@ -8,10 +8,16 @@ description: You can explore the beforeRemove event of TreeCollection in the doc
 
 @short: fires before removing an item from a tree collection
 
-@signature: {'beforeRemove: (removedItem: object) => boolean | void;'}
+#### Usage
+
+~~~ts
+beforeRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;
+~~~
 
 @params:
-- `removedItem: object `- the object of an item to remove
+- `removedItem: IDataItem` - the object of an item to remove
+- `batch: IDataItem[]` - an array of removed items
+- `index: number` - the index of the removed item within the batch
 
 @returns:
 Return `false` to prevent removing of an item from a data collection; otherwise `true.`

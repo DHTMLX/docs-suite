@@ -8,7 +8,11 @@ description: You can explore the isSaved method of DataCollection in the documen
 
 @short: checks whether the changes made in a data collection are saved
 
-@signature: {'isSaved(): boolean;'}
+#### Usage
+
+~~~ts
+isSaved(): boolean;
+~~~
 
 @returns:
 `true`, if the changes are saved; otherwise, `false`.

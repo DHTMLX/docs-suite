@@ -8,11 +8,18 @@ description: You can explore the refreshItems method of TreeCollection in the do
 
 @short: refreshes child items of a control
 
-@signature: {'refreshItems(id: string | number, driver?: object | string): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+type DataDriver = "json" | "csv" | "xml";
+
+refreshItems(id: Id, driver?: DataDriver | IDataDriver): void;
+~~~
 
 @params:
-- `id: string | number` - the ID of a control
-- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `id: Id` - the id of the item to refresh the child items of
+- `driver?: DataDriver | IDataDriver` - optional, the type of data ("json", "csv", "xml") or a DataDriver object, "json" by default
 
 @example:
 toolbar.data.refreshItems("menu_id");

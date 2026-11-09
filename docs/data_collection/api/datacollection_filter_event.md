@@ -8,12 +8,23 @@ description: You can explore the filter event of DataCollection in the documenta
 
 @short: fires after filtering a data collection 
 
-@signature: {'filter: (filter?: object) => void;'}
+#### Usage
+
+~~~ts
+interface IFilter {
+    [filterId: string]: {
+        rule: IFilterMode | IFilterCallback;
+        config: IFilterConfig;
+    };
+}
+
+filter: (filter?: IFilter) => void;
+~~~
 
 @params:
-- `object: { [key: string]: object }` - an object with all the active filters, where
-    - `key: string` - the id of an active filter
-    - `object` - an object with the [rule](data_collection/api/datacollection_filter_method.md) and [config](data_collection/api/datacollection_filter_method.md) properties
+- `filter?: IFilter` - optional, an object with all the active filters, where
+    - the key is the id of an active filter
+    - the value is an object with the `rule` and `config` properties passed to the [`filter()`](data_collection/api/datacollection_filter_method.md) method
 
 @example:
 component.data.events.on("filter", function(filter) {

@@ -8,7 +8,11 @@ description: You can explore the getInitialData method of DataCollection in the 
 
 @short: returns the initial values of the items of a widget initialized in a data collection
 
-@signature: {'getInitialData(): object[];'}
+#### Usage
+
+~~~ts
+getInitialData(): IDataItem[];
+~~~
 
 @returns:
 An array of item objects with initial values.

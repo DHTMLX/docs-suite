@@ -8,12 +8,18 @@ description: You can explore the move method of DataCollection in the documentat
 
 @short: moves an item to the defined position
 
-@signature: {'move(id: (string | number) | (string | number)[], index: number, target?: object): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+move(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection): Id | Id[];
+~~~
 
 @params:
-- `id: string | string[]` - the ids of items to move
-- `index: number` - the index to move items to
-- `target?: object` - optional, the target data collection object
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to move
+- `index: number` - the index to move the items to
+- `target?: IDataCollection | ITreeCollection` - optional, the target data collection object
 
 @returns:
 Either the item's id or an array with ids of items.

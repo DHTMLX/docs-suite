@@ -8,13 +8,19 @@ description: You can explore the copy method of TreeCollection in the documentat
 
 @short: adds a copy of an item and places it in the specified position
 
-@signature: {'copy(id: (string | number) | (string | number)[], index: number, target?: object, targetId?: string | number): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
+~~~
 
 @params:
-- `id: (string | number) | (string | number)[]` - the ids of the items to copy
-- `index: number` - the position of a copy
-- `target?: object` - optional, a tree collection where the copy will be stored
-- `targetId?: string | number` - optional (for menu options), the ID of a menuItem to which a copy of the menu option will be placed
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to copy
+- `index: number` - the index to create a copy at
+- `target?: IDataCollection | ITreeCollection` - optional, the target collection object
+- `targetId?: Id` - optional, the id of the parent item the copies will be placed into
 
 @returns:
 The item's id or an array with ids of items.

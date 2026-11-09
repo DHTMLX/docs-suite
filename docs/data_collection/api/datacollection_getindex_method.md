@@ -8,10 +8,15 @@ description: You can explore the getIndex method of DataCollection in the docume
 
 @short: returns the index of the item by its id
 
-@signature: {'getIndex(id: string | number): number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getIndex(id: Id): number;
+~~~
 
 @params:
-- `id: string | number` - the id of the item
+- `id: Id` - the id of the item
 
 @returns:
 The index of the item.

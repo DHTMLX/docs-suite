@@ -8,10 +8,15 @@ description: You can explore the getItem method of TreeCollection in the documen
 
 @short: gets an item by its ID
 
-@signature: {'getItem(id: string | number): object;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getItem(id: Id): IDataItem;
+~~~
 
 @params:
-- `id: string | number` - the ID of an item
+- `id: Id` - the id of the item
 
 @returns:
 An item object.

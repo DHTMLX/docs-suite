@@ -8,7 +8,12 @@ description: You can explore the getRoot method of TreeCollection in the documen
 
 @short: returns the ID of the master component
 
-@signature: {'getRoot(): string | number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getRoot(): Id;
+~~~
 
 @returns:
 The id of the root element.

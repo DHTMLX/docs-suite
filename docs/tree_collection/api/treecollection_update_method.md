@@ -8,11 +8,16 @@ description: You can explore the update method of TreeCollection in the document
 
 @short: updates properties of the item
 
-@signature: {'update(id: string | number, item: object, silent?: boolean): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+update(id: Id, newItem: IDataItem, silent?: boolean): void;
+~~~
 
 @params:
-- `id: string | number` - the ID of an item
-- `item: object` - new properties for an item
+- `id: Id` - the id of the item to update
+- `newItem: IDataItem` - an object with the properties of the item to update
 - `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
 
 :::info

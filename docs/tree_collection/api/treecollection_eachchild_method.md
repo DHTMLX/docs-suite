@@ -8,16 +8,22 @@ description: You can explore the eachChild method of TreeCollection in the docum
 
 @short: iterates through child items of a control
 
-@signature: {'eachChild(id: string | number, callback: function, direct?: boolean, checkItem?: (item: object) => boolean): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+eachChild(id: Id, callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any, direct?: boolean, checkItem?: (item: IDataItem) => boolean): void;
+~~~
 
 @params:
-- `id: string` - the ID of a control
-- `callback: function` - the function that will be applied to every child of the item. The function takes three parameters:
-    - `item: object` - required, the object of an item
-    - `index?: number` - optional, the index of an item
-    - `array?: object[]` - optional, an array with items  
-- `direct?: boolean` - optional, defines whether the function should iterate through all children (of any level) of the specified item. If *false*, the function will iterate only through the first-level children of the item; *true* by default.
-- `checkItem?: function` - optional, the function that defines whether the callback function can be applied to the item. The function takes an object of a data item as a parameter and returns a *boolean* value. 
+- `id: Id` - the id of the item
+- `callback: function` - the function that will be applied to every child of the item. The function is called with the following parameters:
+    - `item: IDataItem` - the object of an item
+    - `index?: number` - optional, the index of the item
+    - `array?: IDataItem[]` - optional, the array of items the method was called upon
+- `direct?: boolean` - optional, defines whether the function should iterate through all children (of any level) of the specified item. If *false*, the function will iterate only through the first-level children of the item; *true* by default
+- `checkItem?: function` - optional, the function that defines whether the callback function can be applied to the item. The function is called with the object of a data item and returns a *boolean* value
 
 @example:
 toolbar.data.eachChild("menu_1", item => {

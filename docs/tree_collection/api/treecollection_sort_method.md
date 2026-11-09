@@ -8,15 +8,29 @@ description: You can explore the sort method of TreeCollection in the documentat
 
 @short: sorts controls according to some criteria
 
-@signature: {'sort(rule?: object, config?: object): void;'}
+#### Usage
+
+~~~ts
+interface ISortMode {
+    by?: string | number;
+    dir?: "asc" | "desc";
+    as?: (value: any) => any;
+    rule?: (a: IDataItem, b: IDataItem) => number;
+}
+interface ISortConfig {
+    smartSorting?: boolean;
+}
+
+sort(rule?: ISortMode, config?: ISortConfig): void;
+~~~
 
 @params:
-- `rule?: object` - optional, an object with parameters for sorting. The object has the following attributes:
-    - `by?: string | number` - optional, the id of a data field 
-    - `dir?: string` - optional, the direction of sorting: "asc" or "desc"
-    - `as?: function` -  optional, a function that specifies the type to sort data as
-    - `rule?: function` -  optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
-- `config?: object` - optional, defines the parameter of sorting. It may contain one property:
+- `rule?: ISortMode` - optional, an object with parameters for sorting. The object has the following attributes:
+    - `by?: string | number` - optional, the id of a data field
+    - `dir?: "asc" | "desc"` - optional, the direction of sorting, *"asc"* by default
+    - `as?: function` - optional, a function that specifies the type to sort data as. It is called with the value of the field and returns the value to compare
+    - `rule?: function` - optional, a sorting rule. It is called with two data items and returns a number (-1, 0, 1)
+- `config?: ISortConfig` - optional, defines the parameters of sorting. It may contain one property:
     - `smartSorting?: boolean` - optional, specifies whether a sorting rule should be applied each time after changing the data set
 
 @example:

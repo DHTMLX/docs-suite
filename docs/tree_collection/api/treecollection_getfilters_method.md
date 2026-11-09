@@ -8,14 +8,25 @@ description: You can explore the getFilters method of TreeCollection in the docu
 
 @short: returns an object with the applied filters 
 
-@signature: {'getFilters({ permanent?: boolean }): { [key: string]: { rule: object | callback, config: object } }; '}
+#### Usage
 
-@params: 
+~~~ts
+interface IFilter {
+    [filterId: string]: {
+        rule: IFilterMode | IFilterCallback;
+        config: ITreeFilterConfig;
+    };
+}
 
-- `permanent?: boolean` - optional, <i>false</i> by default. Allows getting the list of permanent filters
+getFilters(config?: { permanent?: boolean }): IFilter;
+~~~
+
+@params:
+- `config?: object` - optional, an object with the following property:
+    - `permanent?: boolean` - optional, *false* by default. Allows getting the list of permanent filters
 
 @returns:
-- `filters: object` - an object with the applied filters, where the key is the id of a filter and the value is an object with the [`rule` and `config` properties](tree_collection/api/treecollection_filter_method.md)
+- `filters: IFilter` - an object with the applied filters, where the key is the id of a filter and the value is an object with the [`rule` and `config` properties](tree_collection/api/treecollection_filter_method.md)
 
 @example:
 const grid = new dhx.Grid("grid_container", {

@@ -8,7 +8,11 @@ description: You can explore the restoreOrder method of TreeCollection in the do
 
 @short: restores the component to the state previous to sorting / filtering
 
-@signature: {'restoreOrder(): void;'}
+#### Usage
+
+~~~ts
+restoreOrder(): void;
+~~~
 
 @example:
 toolbar.data.restoreOrder();

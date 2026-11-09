@@ -8,7 +8,11 @@ description: You can explore the isGrouped method of DataCollection in the docum
 
 @short: checks whether a data collection is grouped at the moment
 
-@signature: {'isGrouped(): boolean;'}
+#### Usage
+
+~~~ts
+isGrouped(): boolean;
+~~~
 
 @returns:
 `true`, if the data is grouped; otherwise, `false`.

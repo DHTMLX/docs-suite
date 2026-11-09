@@ -8,7 +8,11 @@ description: You can explore the removeAll method of DataCollection in the docum
 
 @short: deletes all items from the component
 
-@signature: {'removeAll(): void;'}
+#### Usage
+
+~~~ts
+removeAll(): void;
+~~~
 
 @example:
 component.data.removeAll();

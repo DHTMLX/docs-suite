@@ -8,10 +8,15 @@ description: You can explore the remove method of DataCollection in the document
 
 @short: deletes the specified item from the component
 
-@signature: {'remove(id: (string | number) | (string | number)[]): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+remove(id: Id | Id[]): void;
+~~~
 
 @params:
-- `id: string | string[]` - the ids of the items that should be deleted 
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to remove
 
 @example:
 component.data.remove("2");

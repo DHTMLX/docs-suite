@@ -8,15 +8,21 @@ description: You can explore the map method of TreeCollection in the documentati
 
 @short: iterates through all the items of the component
 
-@signature: {'map(callback: function, id?: string | number, direct?: boolean): any;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+map(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any, parent?: Id, direct?: boolean): any[];
+~~~
 
 @params:
 - `callback: function` - the function that will be applied to every item. The function is called with the following parameters:
-    - `item: object` - the object of an item
-    - `index: number` - the index of an item
-    - `array: object[]` - an array of items the method was called upon  
-- `id?: string | number` - optional, the ID of a control the child items of which will be included
-- `direct?: boolean` - optional, defines whether only direct children of the control will be included in the iteration
+    - `item: IDataItem` - the object of an item
+    - `index?: number` - optional, the index of the item
+    - `array?: IDataItem[]` - optional, the array of items the method was called upon
+- `parent?: Id` - optional, the id of the item the child items of which will be included; the root item by default
+- `direct?: boolean` - optional, defines whether only direct children of the item will be included in the iteration, *true* by default
 
 @example:
 toolbar.data.map ((item) => {

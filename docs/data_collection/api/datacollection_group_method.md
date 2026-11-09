@@ -18,13 +18,13 @@ Grouped data can be serialized. After serialization data is available for render
 
 #### Usage
 
-~~~ts {16}
+~~~ts {17}
 type TGroupOrderFunc = (item: IDataItem) => string;
 type TAggregate = "sum" | "count" | "min" | "max" | "avg" | string;
 interface IGroupOrder {
     by: string | TGroupOrderFunc;
     map?: {
-        [field: string]: [string, TAggregate] | ((item: IDataItem[]) => string | number)
+        [field: string]: [string, TAggregate] | ((items: IDataItem[]) => string | number)
     };
     summary?: "top" | "bottom";
 }

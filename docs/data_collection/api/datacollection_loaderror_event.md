@@ -8,14 +8,19 @@ description: You can explore the loadError event of DataCollection in the docume
 
 @short: fires when loading of data fails
 
-@signature: {'loadError: (response: string | object) => void;'}
+#### Usage
+
+~~~ts
+loadError: (response: string | { status: number; statusText: string; message?: string }) => void;
+~~~
 
 @params:
 - `response: string | object` - info about the error. It can be:
     - a string with the text of an error
-    - or an object with two properties:
-        - `status` - the code of an error
-        - `text` - the text of an error
+    - or an object with the following properties:
+        - `status: number` - the HTTP status code of the response
+        - `statusText: string` - the HTTP status text of the response
+        - `message?: string` - optional, the text of the server response
 
 @example:
 component.data.events.on("loadError", function(error){

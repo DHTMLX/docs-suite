@@ -8,11 +8,16 @@ description: You can explore the getId method of TreeCollection in the documenta
 
 @short: gets the ID of an item
 
-@signature: {'getId(index: number, parentId?: string | number): string | number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getId(index: number, parent?: Id): Id;
+~~~
 
 @params:
 - `index: number` - the index of the item
-- `parentId?: string | number` - optional, the id of the parent of an item
+- `parent?: Id` - optional, the id of the parent of the item
 
 @returns:
 The id of the item.

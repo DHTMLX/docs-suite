@@ -8,11 +8,15 @@ description: You can explore the removeAll method of TreeCollection in the docum
 
 @short: removes all items in the target branch or all items of the component
 
-@signature: {'removeAll(id?: string | number): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+removeAll(id?: Id): void;
+~~~
 
 @params:
-
-- `id?: string | number` - optional, the id of the branch
+- `id?: Id` - optional, the id of the branch; if not set, all the items of the collection are removed
 
 @example:
 toolbar.data.removeAll(id);
