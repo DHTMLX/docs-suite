@@ -8,7 +8,7 @@ description: You can explore the configuration of Sidebar in the documentation o
 
 ## Collapsed mode
 
-To initialize a sidebar in the collapsed state, make use of the [](sidebar/api/sidebar_collapsed_config.md) property. This is what Sidebar looks like in the collapsed mode:
+Set the [](sidebar/api/sidebar_collapsed_config.md) property to `true` to initialize a sidebar in the collapsed state:
 
 ~~~js
 const sidebar = new dhx.Sidebar("sidebar_container", {
@@ -21,7 +21,7 @@ const sidebar = new dhx.Sidebar("sidebar_container", {
 
 ## Minimal width
 
-In order to set the minimal width of a sidebar in the collapsed state, you can use the [](sidebar/api/sidebar_minwidth_config.md) property. By default it is set to 69px. 
+Use the [](sidebar/api/sidebar_minwidth_config.md) property to set the minimal width of a sidebar in the collapsed state (the default value is 69px):
 
 ~~~js
 const sidebar = new dhx.Sidebar("sidebar_container", {
@@ -31,9 +31,9 @@ const sidebar = new dhx.Sidebar("sidebar_container", {
 });
 ~~~
 
-## Width 
+## Width
 
-It is easy to change the width of a sidebar with the help of the [](sidebar/api/sidebar_width_config.md) configuration option. By default it is set to 200px. Set the desired value in the configuration object of the component:
+Use the [](sidebar/api/sidebar_width_config.md) property to change the width of a sidebar (the default value is 200px). Set the value you need in the configuration object of the component:
 
 ~~~js
 const sidebar = new dhx.Sidebar("sidebar_container", {
