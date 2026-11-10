@@ -18,6 +18,9 @@ interface IFilterMode {
     compare?: (value: any, match: any, item: IDataItem, multi?: boolean) => boolean;
     multi?: boolean;
 }
+interface IFilterComplexMode {
+    [key: string]: IFilterMode;
+}
 type IFilterCallback = (item: IDataItem) => boolean;
 interface ITreeFilterConfig {
     id?: string;
@@ -27,11 +30,11 @@ interface ITreeFilterConfig {
     level?: number;
 }
 
-filter(rule?: IFilterMode | IFilterCallback, config?: ITreeFilterConfig, silent?: boolean): string;
+filter(rule?: IFilterMode | IFilterComplexMode | IFilterCallback, config?: ITreeFilterConfig, silent?: boolean): string;
 ~~~
 
 @params:
-- `rule?: IFilterMode | IFilterCallback` - optional, the filtering criteria
+- `rule?: IFilterMode | IFilterComplexMode | IFilterCallback` - optional, the filtering criteria
     - if set as a *function*, filtering is applied by the rule specified in the function. The function is called with a data item and returns *true* to keep the item or *false* to filter it out
     - if set as an *object*, the parameter has the following attributes:
         - `by?: Id` - optional, the id of a data field
@@ -42,6 +45,7 @@ filter(rule?: IFilterMode | IFilterCallback, config?: ITreeFilterConfig, silent?
             - `item: IDataItem` - a data item the values of which should be compared
             - `multi?: boolean` - optional, the value of the `multi` attribute of the rule
         - `multi?: boolean` - optional, marks the field as holding several values at once (e.g. a multiselect column stores them as a comma-separated string). Passed to `compare` as its last argument
+    - if set as an *object with several rules* (`IFilterComplexMode`), the parameter is an object where each key is an arbitrary name of a rule and its value is a rule object with the attributes described above. An item is kept only if it matches all the rules
 - `config?: ITreeFilterConfig` - optional, an object with the following properties:
     - `type?: "all" | "level" | "leafs"` - optional, defines the area the filtering will be applied to: all the items, the items of the specified level, or the items without children
     - `level?: number` - optional, the level the filtering will be applied to, if `type` is set to *"level"*
@@ -87,6 +91,22 @@ const grid = new dhx.Grid("grid_container", {
 grid.data.filter({
     by: "name",
     match: "Angola"
+});
+~~~
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+});
+
+// filtering data by several rules at once
+grid.data.filter({
+    name: { by: "name", match: "an" },
+    population: { by: "population", match: "000" }
 });
 ~~~
 

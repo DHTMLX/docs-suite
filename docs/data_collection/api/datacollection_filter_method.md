@@ -18,6 +18,9 @@ interface IFilterMode {
     compare?: (value: any, match: any, item: IDataItem, multi?: boolean) => boolean;
     multi?: boolean;
 }
+interface IFilterComplexMode {
+    [key: string]: IFilterMode;
+}
 type IFilterCallback = (item: IDataItem) => boolean;
 interface IFilterConfig {
     id?: string;
@@ -25,11 +28,11 @@ interface IFilterConfig {
     permanent?: boolean;
 }
 
-filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig, silent?: boolean): string;
+filter(rule?: IFilterMode | IFilterComplexMode | IFilterCallback, config?: IFilterConfig, silent?: boolean): string;
 ~~~
 
 @params:
-- `rule?: IFilterMode | IFilterCallback` - optional, the filtering criteria
+- `rule?: IFilterMode | IFilterComplexMode | IFilterCallback` - optional, the filtering criteria
     - if set as a *function*, filtering is applied by the rule specified in the function. The function is called with a data item and returns *true* to keep the item or *false* to filter it out
     - if set as an *object*, the parameter has the following attributes:
         - `by?: Id` - optional, the id of a data field
@@ -40,6 +43,7 @@ filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig, silent?: bo
             - `item: IDataItem` - a data item the values of which should be compared
             - `multi?: boolean` - optional, the value of the `multi` attribute of the rule
         - `multi?: boolean` - optional, marks the field as holding several values at once (e.g. a multiselect column stores them as a comma-separated string). Passed to `compare` as its last argument
+    - if set as an *object with several rules* (`IFilterComplexMode`), the parameter is an object where each key is an arbitrary name of a rule and its value is a rule object with the attributes described above. An item is kept only if it matches all the rules
 - `config?: IFilterConfig` - optional, an object with the following properties:
     - `id?: string` - optional, the id of the filter
     - `add?: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (*true*), or to the initial data (*false*, default)
@@ -78,6 +82,12 @@ grid.data.filter({
     }
 }, {
     add: true,
+});
+
+// filtering data by several rules at once
+grid.data.filter({
+    country: { by: "country", match: "France" },
+    year: { by: "year", match: 2024 }
 });
 
 @descr:

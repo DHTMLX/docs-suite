@@ -13,7 +13,7 @@ description: You can explore the filter event of DataCollection in the documenta
 ~~~ts
 interface IFilter {
     [filterId: string]: {
-        rule: IFilterMode | IFilterCallback;
+        rule: IFilterMode | IFilterComplexMode | IFilterCallback;
         config: IFilterConfig;
     };
 }

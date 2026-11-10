@@ -32,6 +32,7 @@ An array of `ISortingState` objects with the current parameters of sorting appli
 
 @example:
 const state = component.data.getSortingStates(); 
+// -> [{ by: "country", dir: "desc" }, { by: "population", dir: "desc" }]
 
 @descr:
 

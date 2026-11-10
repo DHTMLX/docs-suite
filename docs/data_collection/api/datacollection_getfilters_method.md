@@ -13,7 +13,7 @@ description: You can explore the getFilters method of DataCollection in the docu
 ~~~ts
 interface IFilter {
     [filterId: string]: {
-        rule: IFilterMode | IFilterCallback;
+        rule: IFilterMode | IFilterComplexMode | IFilterCallback;
         config: IFilterConfig;
     };
 }

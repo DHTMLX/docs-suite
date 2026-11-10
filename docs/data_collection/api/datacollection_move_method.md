@@ -13,13 +13,14 @@ description: You can explore the move method of DataCollection in the documentat
 ~~~ts
 type Id = string | number;
 
-move(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection): Id | Id[];
+move(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
 ~~~
 
 @params:
 - `id: Id | Id[]` - the id of the item or an array with ids of the items to move
 - `index: number` - the index to move the items to
 - `target?: IDataCollection | ITreeCollection` - optional, the collection to move the items to; the current collection by default
+- `targetId?: Id` - optional, the id of the parent item to place the moved items into, if `target` is a TreeCollection
 
 @returns:
 The id of the moved item or an array with the ids of the moved items.
