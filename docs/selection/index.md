@@ -6,13 +6,13 @@ description: You can have an overview of the Selection object in the documentati
 
 # Selection overview
 
-A set of APIs that allow you to work with the Selection object. You can use the API of the Selection object when working with the following components: DataView, List, Tree, Grid, Grid in the TreeGrid mode.
+The API of the Selection object allows you to manage selection in the following components: DataView, List, Tree, Grid, and Grid in the TreeGrid mode.
 
-## DataView, List, Tree
+## DataView, List, and Tree {#dataview-list-tree}
 
 ### Methods
 
-You can apply the following methods of the Selection object to manage the selection of items in  **DataView**, **List**, **Tree**:
+Use the following methods of the Selection object to manage the selection of items in **DataView**, **List**, and **Tree**:
 
 | Name                                          | Description                                          |
 | --------------------------------------------- | ---------------------------------------------------- |
@@ -25,7 +25,7 @@ You can apply the following methods of the Selection object to manage the select
 
 ### Events
 
-You can apply the following events of the Selection object when working with the selection of items in **DataView**, **List**, **Tree**:
+The Selection object fires the following events when it selects or unselects items in **DataView**, **List**, and **Tree**:
 
 | Name                                                | Description                                                |
 | --------------------------------------------------- | ---------------------------------------------------------- |
@@ -34,11 +34,11 @@ You can apply the following events of the Selection object when working with the
 | [](selection/api/selection_beforeselect_event.md)   | @getshort(selection/api/selection_beforeselect_event.md)   |
 | [](selection/api/selection_beforeunselect_event.md) | @getshort(selection/api/selection_beforeunselect_event.md) |
 
-## Grid, Grid in the TreeGrid mode
+## Grid and Grid in the TreeGrid mode {#grid-grid-in-the-treegrid-mode}
 
 ### Methods
 
-See the full lists of the methods of the Selection object you can use to manage the selection of cells in **Grid**, **Grid in the TreeGrid mode**:
+Check the methods of the Selection object that manage the selection of cells in **Grid** and **Grid in the TreeGrid mode**:
 
 - [Grid. Selection methods](grid/api/api_overview.md#selection-methods)
 
@@ -46,7 +46,7 @@ See the full lists of the methods of the Selection object you can use to manage 
 
 ### Events
 
-See the full lists of the events of the Selection object you can use while working with the selection of cells in **Grid**, **Grid in the TreeGrid mode**:
+Check the events that the Selection object fires when it selects or unselects cells in **Grid** and **Grid in the TreeGrid mode**:
 
 - [Grid. Selection events](grid/api/api_overview.md#selection-events)
 
