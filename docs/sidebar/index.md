@@ -6,8 +6,7 @@ description: You can have an overview of Sidebar in the documentation of the DHT
 
 # Sidebar overview
 
-DHTMLX Sidebar is a component that provides means for comfy vertical navigation. Sidebar can contain any Toolbar controls that can be controlled via a handy API.
-Check [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?tag=sidebar).  
+DHTMLX Sidebar is a component for vertical navigation. Sidebar can contain Toolbar controls, and you can manage them with the Sidebar API. Check [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?tag=sidebar).
 
 ![Sidebar with navigation items, icons, badges and an open submenu beside page content in DHTMLX Suite](/img/sidebar/sidebar_front.png)
 
@@ -25,13 +24,13 @@ Learn how to build a full-featured DHTMLX Sidebar:
 
 - [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Sidebar as part of the Suite library
 - Try the [online samples for DHTMLX Sidebar](https://snippet.dhtmlx.com/3mhhvvcr?tag=sidebar)
-- To work with data of Sidebar check [TreeCollection API](/tree_collection/)
+- Check the [TreeCollection API](/tree_collection/) to work with Sidebar data
 
 ## Guides
 
 ### Sidebar settings
 
-Tells about creation of Sidebar and shows all available ways of data loading, configuring and styling the component, and working with controls.
+The following articles explain how to add Sidebar to a page, load data into it, configure it, work with it, customize it, and handle its events:
 
 - [](sidebar/initialization.md)
 - [](sidebar/data_loading.md)
@@ -42,7 +41,7 @@ Tells about creation of Sidebar and shows all available ways of data loading, co
 
 ### Sidebar controls
 
-Dwells on the creation of Sidebar controls and the possibilities of manipulating them.
+The following articles describe the main Sidebar controls and their attributes:
 
 - [](sidebar/customhtmlbutton.md)
 - [](sidebar/menuitem.md)
