@@ -6,7 +6,7 @@ description: You can explore the getLength method of DataCollection in the docum
 
 # getLength()
 
-@short: returns the number of all elements of a data collection
+@short: returns the number of the items of the collection
 
 #### Usage
 
@@ -15,7 +15,7 @@ getLength(): number;
 ~~~
 
 @returns:
-The number of elements of a data collection.
+The number of the items of the collection. The items left out by the applied filters are not counted.
 
 @example:
 const dataLength = component.data.getLength();

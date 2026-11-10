@@ -6,7 +6,7 @@ description: You can explore the sort method of DataCollection in the documentat
 
 # sort()
 
-@short: sorts data items in a component
+@short: sorts the items of the collection by the specified criteria
 
 #### Usage
 

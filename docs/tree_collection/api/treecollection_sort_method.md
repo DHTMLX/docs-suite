@@ -6,7 +6,7 @@ description: You can explore the sort method of TreeCollection in the documentat
 
 # sort()
 
-@short: sorts controls according to some criteria
+@short: sorts the items of the collection by the specified criteria
 
 #### Usage
 

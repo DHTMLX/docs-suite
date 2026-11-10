@@ -6,7 +6,7 @@ description: You can explore the mapRange method of DataCollection in the docume
 
 # mapRange()
 
-@short: returns a new array of the items according to the specified parameters
+@short: iterates through the items of the specified range and returns an array of the callback results
 
 #### Usage
 
@@ -15,15 +15,15 @@ mapRange(from: number, to: number, callback: (item: IDataItem, index?: number, a
 ~~~
 
 @params:
-- `from: number` - the initial position of an item in the range
-- `to: number` - the final position of an item in the range
+- `from: number` - the index of the first item of the range
+- `to: number` - the index of the last item of the range
 - `callback: function` - a function that will be called for each item from the specified range. The function is called with the following parameters:
     - `item: IDataItem` - the object of an item
     - `index?: number` - optional, the index of the item
     - `array?: IDataItem[]` - optional, the array of items the method was called upon
 
 @returns:
-A new array of matching item objects.
+A new array with the results of calling the callback function for each item of the range.
 
 @example:
 const result = component.data.mapRange(0, 20, function (item, index, array) {

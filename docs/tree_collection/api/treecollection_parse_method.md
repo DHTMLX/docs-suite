@@ -6,7 +6,7 @@ description: You can explore the parse method of TreeCollection in the documenta
 
 # parse()
 
-@short: loads a collection of items from a local source
+@short: loads items into the collection from a local data source
 
 #### Usage
 
@@ -63,7 +63,7 @@ toolbar.data.parse("<root>"
 @descr:
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+Please note that if you specify the `id` fields in the data, their values should be **unique**. You can also omit the `id` fields in the data. In this case they will be generated automatically.
 :::
 
 The method resets the applied sorting and filtering: the sorting is dropped, and so are all the filters except those applied with `permanent: true`, which are reapplied to the new data.

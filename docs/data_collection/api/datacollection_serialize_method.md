@@ -6,7 +6,7 @@ description: You can explore the serialize method of DataCollection in the docum
 
 # serialize()
 
-@short: serializes the component data into JSON, XML or CSV format
+@short: serializes the data of the collection into JSON, XML or CSV format
 
 #### Usage
 
@@ -20,7 +20,7 @@ serialize(driver?: DataDriver): IDataItem[] | string;
 - `driver?: DataDriver` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
 
 @returns:
-Returns serialized data for each item of the component either as an array of JSON objects or as a CSV/XML string. 
+The serialized data of the collection: either an array of JSON objects or a CSV/XML string.
 
 @example:
 const data = component.data.serialize("csv");

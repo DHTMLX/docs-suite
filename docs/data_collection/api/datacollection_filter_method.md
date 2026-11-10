@@ -6,7 +6,7 @@ description: You can explore the filter method of DataCollection in the document
 
 # filter()
 
-@short: filters data items in a component
+@short: filters the items of the collection by the specified criteria
 
 #### Usage
 
@@ -47,7 +47,7 @@ filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig, silent?: bo
 - `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
 
 :::info
-Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component that uses the collection with its `paint()` method.
 :::
     
 @returns:

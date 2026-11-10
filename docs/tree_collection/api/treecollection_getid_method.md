@@ -6,7 +6,7 @@ description: You can explore the getId method of TreeCollection in the documenta
 
 # getId()
 
-@short: gets the ID of an item
+@short: returns the id of an item by its index
 
 #### Usage
 
@@ -16,13 +16,13 @@ getId(index: number, parent?: Id): Id;
 ~~~
 
 @params:
-- `index: number` - the index of the item
-- `parent?: Id` - optional, the id of the parent of the item
+- `index: number` - the index of the item among the child items of its parent
+- `parent?: Id` - optional, the id of the parent item; the root of the collection by default
 
 @returns:
 The id of the item.
 
 @example:
-const id = tree.data.getId(2, "1"); -> returns "3"
+const id = tree.data.getId(2, "1"); // -> "3"
 
 @descr:

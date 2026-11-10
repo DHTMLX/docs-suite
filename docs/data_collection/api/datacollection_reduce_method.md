@@ -6,7 +6,7 @@ description: You can explore the reduce method of DataCollection in the document
 
 # reduce()
 
-@short: reduces the array to a single value
+@short: reduces the items of the collection to a single value
 
 #### Usage
 
@@ -17,9 +17,9 @@ reduce<A>(callback: ReduceCallBack<IDataItem, A>, acc: A): A;
 
 @params:
 
-- `callback: function` - a function that will be called for each item in the array. The function is called with the following parameters:
+- `callback: function` - a function that will be called for each item of the collection. The function is called with the following parameters:
     - `acc: any` - the *initialValue*, or the previously returned value of the function
-    - `item: IDataItem` - the current item of a data collection
+    - `item: IDataItem` - the current item of the collection
     - `index: number` - the index of the item 
 - `acc: any` - a value to be passed to the function as the initial value
 

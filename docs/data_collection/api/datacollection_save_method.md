@@ -6,7 +6,7 @@ description: You can explore the save method of DataCollection in the documentat
 
 # save()
 
-@short: saves changes made in a data collection to the server side
+@short: saves the changes made in the collection to the server side
 
 #### Usage
 
@@ -25,11 +25,11 @@ grid.data.save(new DataProxy({ url:"http://userurl/" }));
 
 @descr:
 
-Each time the user changes data of the component, the `save()` method will make an AJAX call and expect the remote URL to save data changes.
+Each time the data of the collection changes, the `save()` method makes an AJAX call and expects the remote URL to save the data changes.
 The method will send one of the following requests to the backend:
 
-- `POST` - after adding new data into the component;
-- `PUT` - after editing data of the component;
+- `POST` - after adding new data into the collection;
+- `PUT` - after editing data of the collection;
 - `DELETE` - after deleting data.
 
 Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the `saveData` property that returns a "promise" object:

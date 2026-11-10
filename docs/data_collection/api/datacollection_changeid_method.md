@@ -6,7 +6,7 @@ description: You can explore the changeId method of DataCollection in the docume
 
 # changeId()
 
-@short: changes the id of an element of a data collection
+@short: changes the id of an item of the collection
 
 #### Usage
 

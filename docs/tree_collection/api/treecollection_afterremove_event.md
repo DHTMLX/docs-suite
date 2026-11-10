@@ -6,7 +6,7 @@ description: You can explore the afterRemove event of TreeCollection in the docu
 
 # afterRemove
 
-@short: fires after removing a new item from a tree collection
+@short: fires after an item is removed from the collection
 
 #### Usage
 

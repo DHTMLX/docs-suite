@@ -19,8 +19,8 @@ isDataLoaded(from?: number, to?: number): boolean;
 ~~~
 
 @params:
-- `from?: number` - optional, the index of the first element of the data range to be checked
-- `to?: number` - optional, the index of the last element of the data range to be checked
+- `from?: number` - optional, the index of the first item of the data range to be checked
+- `to?: number` - optional, the index of the last item of the data range to be checked
 
 @returns:
 `true`, if a range of data is loaded; otherwise, `false`.

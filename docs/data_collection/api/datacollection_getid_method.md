@@ -6,7 +6,7 @@ description: You can explore the getId method of DataCollection in the documenta
 
 # getId()
 
-@short: returns the id of the item by its index
+@short: returns the id of an item by its index
 
 #### Usage
 

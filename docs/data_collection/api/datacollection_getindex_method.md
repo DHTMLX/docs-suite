@@ -6,7 +6,7 @@ description: You can explore the getIndex method of DataCollection in the docume
 
 # getIndex()
 
-@short: returns the index of the item by its id
+@short: returns the index of an item by its id
 
 #### Usage
 
@@ -19,7 +19,7 @@ getIndex(id: Id): number;
 - `id: Id` - the id of the item
 
 @returns:
-The index of the item.
+The index of the item, or `-1` if the item doesn't exist.
 
 @example:
 const index = component.data.getIndex("1"); // -> returns 0

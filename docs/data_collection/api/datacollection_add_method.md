@@ -6,10 +6,10 @@ description: You can explore the add method of DataCollection in the documentati
 
 # add()
 
-@short: adds a new item to the component
+@short: adds a new item or several items to the collection
 
 :::note
-Please note that data should be loaded into DataCollection via the `parse()` method. The `add()` method is primarily intended for loading standalone elements or small groups of elements, so its loads data slower than the `parse()` method.
+Please note that data should be loaded into DataCollection via the `parse()` method. The `add()` method is primarily intended for loading standalone items or small groups of items, so it loads data slower than the `parse()` method.
 :::
 
 #### Usage
@@ -24,7 +24,7 @@ add(newItem: IDataItem | IDataItem[], index?: number): Id | Id[];
 - `index?: number` - optional, the index of the position starting from which new items will be added
 
 @returns:
-Either item's id or an array with ids of items.
+The id of the added item or an array with the ids of the added items.
 
 @example:
 // adding a new item into the beginning of a data collection 

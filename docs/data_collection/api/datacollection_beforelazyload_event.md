@@ -6,7 +6,7 @@ description: You can explore the beforeLazyLoad event of DataCollection in the d
 
 # beforeLazyLoad
 
-@short: fires before sending a request to the server
+@short: fires before the collection sends a request to the server
 
 #### Usage
 

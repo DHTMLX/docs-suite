@@ -6,7 +6,7 @@ description: You can explore the findAll method of DataCollection in the documen
 
 # findAll()
 
-@short: finds all the items that correspond to the specified rule
+@short: returns all the items of the collection that match the specified rule
 
 #### Usage
 
@@ -27,7 +27,7 @@ findAll(rule: { by: Id; match: string | number | boolean } | ((item: IDataItem, 
         - `array?: IDataItem[]` - optional, the array of items the method was called upon
 
 @returns:
-An array of matching item objects.
+An array with the objects of the matching items; an empty array if no item matches the rule.
 
 @example:
 // searching for items by the function

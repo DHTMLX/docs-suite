@@ -6,7 +6,7 @@ description: You can explore the afterAdd event of TreeCollection in the documen
 
 # afterAdd
 
-@short: fires after adding a new item into a tree collection
+@short: fires after an item is added to the collection
 
 #### Usage
 
@@ -17,7 +17,7 @@ afterAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => void;
 @params:
 - `newItem: IDataItem` - the object of an added item
 - `batch: IDataItem[]` - an array of added items
-- `index: number` - the index of the added item within the batch
+- `index: number` - the index of the added item within the batch; `undefined` if a single item (not an array) is added
 
 @example:
 component.data.events.on("afterAdd", function(newItem){

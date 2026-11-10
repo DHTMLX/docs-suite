@@ -6,7 +6,7 @@ description: You can explore the getInitialData method of DataCollection in the 
 
 # getInitialData()
 
-@short: returns the initial values of the items of a widget initialized in a data collection
+@short: returns all the items of the collection, including the filtered-out ones
 
 #### Usage
 
@@ -15,7 +15,7 @@ getInitialData(): IDataItem[];
 ~~~
 
 @returns:
-An array of item objects with initial values.
+An array with all the items of the collection, including the ones the applied filters leave out, or `null` if no filter is applied.
 
 @example:
 const startingData = component.data.getInitialData();

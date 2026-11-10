@@ -6,7 +6,7 @@ description: You can explore the getLength method of TreeCollection in the docum
 
 # getLength()
 
-@short: counts child items of a control
+@short: returns the number of the child items of an item
 
 #### Usage
 
@@ -16,10 +16,10 @@ getLength(id?: Id): number;
 ~~~
 
 @params:
-- `id?: Id` - optional, the id of the parent item
+- `id?: Id` - optional, the id of the parent item; the root of the collection by default
 
 @returns:
-A number of the child items of the control.
+The number of the child items of the item, or of the top-level items if `id` is not set.
 
 @example:
 const itemsLength = toolbar.data.getLength("menu1");

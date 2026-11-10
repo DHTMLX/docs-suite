@@ -6,7 +6,7 @@ description: You can explore the haveItems method of TreeCollection in the docum
 
 # haveItems()
 
-@short: checks whether an item has children
+@short: checks whether an item has child items
 
 #### Usage
 
@@ -19,10 +19,11 @@ haveItems(id: Id): boolean;
 - `id: Id` - the id of the item
 
 @returns:
-`true`, if the control has children; otherwise, `false`.
+`true`, if the item has child items; otherwise, `false`.
 
 @example:
-if (toolbar.data.haveItems("menu1"))
-    //do something;
+if (toolbar.data.haveItems("menu1")) {
+    // do something
+}
 
 @descr:

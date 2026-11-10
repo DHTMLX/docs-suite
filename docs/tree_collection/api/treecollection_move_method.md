@@ -6,7 +6,7 @@ description: You can explore the move method of TreeCollection in the documentat
 
 # move()
 
-@short: moves items to different positions
+@short: moves an item or several items to the specified position
 
 #### Usage
 
@@ -19,11 +19,11 @@ move(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, t
 @params:
 - `id: Id | Id[]` - the id of the item or an array with ids of the items to move
 - `index: number` - the index to move the items to
-- `target?: IDataCollection | ITreeCollection` - optional, the target collection object
+- `target?: IDataCollection | ITreeCollection` - optional, the collection to move the items to; the current collection by default
 - `targetId?: Id` - optional, the id of the parent item the moved items will be placed into
 
 @returns:
-The item's id or an array with ids of items.
+The id of the moved item or an array with the ids of the moved items.
 
 @example:
 toolbar.data.move("profile_btn", -1);
@@ -31,5 +31,5 @@ toolbar.data.move("profile_btn", -1);
 @descr:
 
 :::note 
-The id should always be a string, even if in the control configuration you've set it as a number.
+Pass the id of the item with the same type as it has in the item configuration. For example, if the id is set as the number `1`, the method doesn't move the item when it gets the string `"1"`.
 :::

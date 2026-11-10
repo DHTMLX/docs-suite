@@ -6,7 +6,7 @@ description: You can explore the getIndex method of TreeCollection in the docume
 
 # getIndex()
 
-@short: gets the current position of an item
+@short: returns the index of an item by its id
 
 #### Usage
 
@@ -19,7 +19,7 @@ getIndex(id: Id): number;
 - `id: Id` - the id of the item
 
 @returns:
-The current position of the item.
+The index of the item among the child items of its parent, or `-1` if the item doesn't exist.
 
 @example:
 const index = toolbar.data.getIndex("add_btn");

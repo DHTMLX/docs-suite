@@ -6,7 +6,7 @@ description: You can explore the getParent method of TreeCollection in the docum
 
 # getParent()
 
-@short: gets the ID of the parent of the control
+@short: returns the id of the parent of an item
 
 #### Usage
 

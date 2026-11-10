@@ -6,7 +6,7 @@ description: You can explore the copy method of DataCollection in the documentat
 
 # copy()
 
-@short: creates a copy of an item at the defined position
+@short: copies an item or several items to the specified position
 
 #### Usage
 
@@ -18,11 +18,11 @@ copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection): 
 
 @params:
 - `id: Id | Id[]` - the id of the item or an array with ids of the items to copy
-- `index: number` - the index to create a copy at
-- `target?: IDataCollection | ITreeCollection` - optional, the target data collection object
+- `index: number` - the index to place the copy at
+- `target?: IDataCollection | ITreeCollection` - optional, the collection to place the copy into; the current collection by default
 
 @returns:
-The item's id or an array with ids of items.
+The id of the copy or an array with the ids of the copies.
 
 @example:
 component.data.copy("4", 5); // copies the item with id:4 to the position with index 5

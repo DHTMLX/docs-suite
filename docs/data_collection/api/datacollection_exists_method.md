@@ -6,7 +6,7 @@ description: You can explore the exists method of DataCollection in the document
 
 # exists()
 
-@short: checks whether the specified item exists in the component
+@short: checks whether the specified item exists in the collection
 
 #### Usage
 

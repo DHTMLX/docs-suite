@@ -6,7 +6,7 @@ description: You can explore the load event of TreeCollection in the documentati
 
 # load
 
-@short: fires when items are loaded in a tree collection
+@short: fires when items are loaded into the collection
 
 #### Usage
 

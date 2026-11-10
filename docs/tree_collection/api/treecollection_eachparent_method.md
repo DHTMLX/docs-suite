@@ -6,7 +6,7 @@ description: You can explore the eachParent method of TreeCollection in the docu
 
 # eachParent()
 
-@short: iterates through all the parent items (the immediate parent and its parent, etc until the parent is the component itself)
+@short: iterates through the parent items of an item: its parent, the parent of the parent, and so on up to the top-level item
 
 #### Usage
 

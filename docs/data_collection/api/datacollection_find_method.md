@@ -6,7 +6,7 @@ description: You can explore the find method of DataCollection in the documentat
 
 # find()
 
-@short: finds the item that corresponds to the specified rule
+@short: returns the first item of the collection that matches the specified rule
 
 #### Usage
 
@@ -27,7 +27,7 @@ find(rule: { by: Id; match: string | number | boolean } | ((item: IDataItem, ind
         - `array?: IDataItem[]` - optional, the array of items the method was called upon
 
 @returns:
-The object of the matching item.
+The object of the first matching item, or `null` if no item matches the rule.
 
 @example:
 // searching for an item by the function

@@ -6,7 +6,7 @@ description: You can explore the change event of DataCollection in the documenta
 
 # change
 
-@short: fires when a data collection is modified
+@short: fires when the collection is modified
 
 #### Usage
 

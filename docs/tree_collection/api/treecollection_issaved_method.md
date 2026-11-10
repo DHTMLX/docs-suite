@@ -6,7 +6,7 @@ description: You can explore the isSaved method of TreeCollection in the documen
 
 # isSaved()
 
-@short: checks whether the changes made in a tree collection are saved
+@short: checks whether the changes made in the collection are saved
 
 #### Usage
 

@@ -6,7 +6,7 @@ description: You can explore the canCopy method of TreeCollection in the documen
 
 # canCopy()
 
-@short: checks whether it is possible to copy a control into some other control
+@short: checks whether an item can be copied into another item of the collection
 
 #### Usage
 
@@ -16,11 +16,11 @@ canCopy(id: Id, target: Id): boolean;
 ~~~
 
 @params:
-- `id: Id` - the id of the source item
-- `target: Id` - the id of the target item
+- `id: Id` - the id of the item to copy
+- `target: Id` - the id of the item the copy should be placed into
 
 @returns:
-`true` if the control can be copied into another control; otherwise, `false`.
+`true` if the item can be copied into the target item; otherwise, `false`. An item can't be copied into itself or into any of its child items.
 
 @example:
 component.data.canCopy(from.id, id);

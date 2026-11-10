@@ -16,7 +16,7 @@ getVisibleIndex(id: Id): number;
 ~~~
 
 @params:
-- `id: Id` - the id of the item (row) the index is requested for
+- `id: Id` - the id of the item the index is requested for
 
 @returns:
 The zero-based index of the item among the visible ones, or `-1` if the item:

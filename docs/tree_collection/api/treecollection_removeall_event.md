@@ -6,7 +6,7 @@ description: You can explore the removeAll event of TreeCollection in the docume
 
 # removeAll
 
-@short: fires when all items are removed from a tree collection
+@short: fires when all items are removed from the collection
 
 #### Usage
 

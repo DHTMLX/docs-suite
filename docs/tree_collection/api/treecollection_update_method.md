@@ -6,7 +6,7 @@ description: You can explore the update method of TreeCollection in the document
 
 # update()
 
-@short: updates properties of the item
+@short: updates the properties of an item
 
 #### Usage
 
@@ -21,14 +21,14 @@ update(id: Id, newItem: IDataItem, silent?: boolean): void;
 - `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
 
 :::info
-Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component that uses the collection with its `paint()` method.
 :::
 
 @example:
 toolbar.data.update("add_btn", { value:"Add new" });
 
 @descr:
-Also note, that for correct work of the method the last update of a data collection should be done with the `silent:false` setting applied, for example:
+Also note, that for correct work of the method the last update of the collection should be done with the `silent:false` setting applied, for example:
 
 ~~~jsx
 const itemsForUpdate = [...]; // items { ... }

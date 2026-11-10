@@ -6,7 +6,7 @@ description: You can explore the load method of TreeCollection in the documentat
 
 # load()
 
-@short: loads items from a file
+@short: loads items into the collection from an external source
 
 #### Usage
 
@@ -29,10 +29,10 @@ toolbar.data.load("[path to this file]/file.xml", "xml");
 @descr:
 
 :::info
-Please note that if you specify the `id` fields in the loaded tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+Please note that if you specify the `id` fields in the loaded data, their values should be **unique**. You can also omit the `id` fields in the data. In this case they will be generated automatically.
 :::
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The collection makes an AJAX call and expects the remote URL to provide valid data in the specified format.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 

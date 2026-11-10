@@ -6,7 +6,7 @@ description: You can explore the load event of DataCollection in the documentati
 
 # load
 
-@short: fires when items are loaded in a data collection
+@short: fires when items are loaded into the collection
 
 #### Usage
 

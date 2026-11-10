@@ -6,7 +6,7 @@ description: You can explore the forEach method of DataCollection in the documen
 
 # forEach()
 
-@short: iterates over all items of a data collection
+@short: iterates over the items of the collection
 
 #### Usage
 
@@ -15,7 +15,7 @@ forEach(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any)
 ~~~
 
 @params:
-- `callback: function` - a function that will iterate over items of a data collection. The function is called with the following parameters:
+- `callback: function` - a function that will iterate over the items of the collection. The function is called with the following parameters:
     - `item: IDataItem` - the object of an item
     - `index?: number` - optional, the index of the item
     - `array?: IDataItem[]` - optional, the array of items the method was called upon

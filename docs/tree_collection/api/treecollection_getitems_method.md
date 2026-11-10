@@ -6,7 +6,7 @@ description: You can explore the getItems method of TreeCollection in the docume
 
 # getItems()
 
-@short: gets the child items of a control
+@short: returns the child items of an item
 
 #### Usage
 
@@ -19,7 +19,7 @@ getItems(id: Id): IDataItem[];
 - `id: Id` - the id of the parent item
 
 @returns:
-The child items of the control.
+An array with the child items of the item.
 
 @example:
 const items = toolbar.data.getItems("menu1");

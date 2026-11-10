@@ -6,7 +6,7 @@ description: You can explore the getRoot method of TreeCollection in the documen
 
 # getRoot()
 
-@short: returns the ID of the master component
+@short: returns the id of the root of the collection
 
 #### Usage
 
@@ -16,7 +16,7 @@ getRoot(): Id;
 ~~~
 
 @returns:
-The id of the root element.
+The id of the root of the collection, which is the parent of the top-level items.
 
 @example:
 const rootId = toolbar.data.getRoot();

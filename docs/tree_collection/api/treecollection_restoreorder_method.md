@@ -6,7 +6,7 @@ description: You can explore the restoreOrder method of TreeCollection in the do
 
 # restoreOrder()
 
-@short: restores the component to the state previous to sorting / filtering
+@short: restores the order the items of the collection had before sorting and filtering
 
 #### Usage
 

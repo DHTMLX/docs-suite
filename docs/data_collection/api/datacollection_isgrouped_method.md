@@ -6,7 +6,7 @@ description: You can explore the isGrouped method of DataCollection in the docum
 
 # isGrouped()
 
-@short: checks whether a data collection is grouped at the moment
+@short: checks whether the data of the collection is grouped at the moment
 
 #### Usage
 

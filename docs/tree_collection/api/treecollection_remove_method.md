@@ -6,7 +6,7 @@ description: You can explore the remove method of TreeCollection in the document
 
 # remove()
 
-@short: removes an item
+@short: removes an item or several items from the collection
 
 #### Usage
 

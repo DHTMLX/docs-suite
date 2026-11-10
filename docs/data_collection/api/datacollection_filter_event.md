@@ -6,7 +6,7 @@ description: You can explore the filter event of DataCollection in the documenta
 
 # filter
 
-@short: fires after filtering a data collection 
+@short: fires after the collection is filtered
 
 #### Usage
 

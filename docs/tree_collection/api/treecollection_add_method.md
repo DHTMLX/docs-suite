@@ -6,7 +6,7 @@ description: You can explore the add method of TreeCollection in the documentati
 
 # add()
 
-@short: adds an item to a component
+@short: adds a new item or several items to the collection
 
 #### Usage
 
@@ -21,7 +21,7 @@ add(newItem: IDataItem | IDataItem[], index?: number, parent?: Id): Id | Id[];
 - `parent?: Id` - optional, the id of the parent item; if not set, the item is added to the root
 
 @returns:
-The item's id or an array with ids of items.
+The id of the added item or an array with the ids of the added items.
 
 @example:
 toolbar.data.add({

@@ -6,7 +6,7 @@ description: You can explore the removeAll method of DataCollection in the docum
 
 # removeAll()
 
-@short: deletes all items from the component
+@short: removes all the items from the collection
 
 #### Usage
 

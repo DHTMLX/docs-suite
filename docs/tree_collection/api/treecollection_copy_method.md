@@ -6,7 +6,7 @@ description: You can explore the copy method of TreeCollection in the documentat
 
 # copy()
 
-@short: adds a copy of an item and places it in the specified position
+@short: copies an item or several items to the specified position
 
 #### Usage
 
@@ -18,16 +18,18 @@ copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, t
 
 @params:
 - `id: Id | Id[]` - the id of the item or an array with ids of the items to copy
-- `index: number` - the index to create a copy at
-- `target?: IDataCollection | ITreeCollection` - optional, the target collection object
+- `index: number` - the index to place the copy at
+- `target?: IDataCollection | ITreeCollection` - optional, the collection to place the copy into; the current collection by default
 - `targetId?: Id` - optional, the id of the parent item the copies will be placed into
 
 @returns:
-The item's id or an array with ids of items.
+The id of the copy or an array with the ids of the copies.
 
 @example:
-toolbar.data.copy("print_btn", 2)
-// another toolbar
+// copies an item within the toolbar
+toolbar.data.copy("print_btn", 2);
+
+// copies an item to another toolbar
 toolbar2.data.copy("save_btn", 1, toolbar1.data);
 
 @descr:

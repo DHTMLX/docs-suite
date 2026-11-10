@@ -6,7 +6,7 @@ description: You can explore the map method of DataCollection in the documentati
 
 # map()
 
-@short: iterates through all the items of the component
+@short: iterates through the items of the collection and returns an array of the callback results
 
 #### Usage
 
@@ -15,13 +15,13 @@ map(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any): an
 ~~~
 
 @params:
-- `callback: function` - a function that will be called for each item of a component. The function is called with the following parameters:
+- `callback: function` - a function that will be called for each item of the collection. The function is called with the following parameters:
     - `item: IDataItem` - the object of an item
     - `index?: number` - optional, the index of the item
     - `array?: IDataItem[]` - optional, the array of items the method was called upon
 
 @returns:
-A new array of items where each item is the result of the callback function.
+A new array with the results of calling the callback function for each item.
 
 @example:
 // getting the ids of all items of the component

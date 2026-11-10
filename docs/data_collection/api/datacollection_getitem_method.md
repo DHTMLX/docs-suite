@@ -19,7 +19,7 @@ getItem(id: Id): IDataItem;
 - `id: Id` - the id of the item
 
 @returns:
-The object of an item.
+The object of the item.
 
 @example:
 

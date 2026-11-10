@@ -6,7 +6,7 @@ description: You can explore the map method of TreeCollection in the documentati
 
 # map()
 
-@short: iterates through all the items of the component
+@short: iterates through the items of the collection and returns an array of the callback results
 
 #### Usage
 
@@ -21,32 +21,35 @@ map(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any, par
     - `item: IDataItem` - the object of an item
     - `index?: number` - optional, the index of the item
     - `array?: IDataItem[]` - optional, the array of items the method was called upon
-- `parent?: Id` - optional, the id of the item the child items of which will be included; the root item by default
-- `direct?: boolean` - optional, defines whether only direct children of the item will be included in the iteration, *true* by default
+- `parent?: Id` - optional, the id of the item the child items of which will be included; the root of the collection by default
+- `direct?: boolean` - optional, defines whether the method iterates through the child items of all levels (*true*) or only through the direct child items of the parent item (*false*); *true* by default
+
+@returns:
+A new array with the results of calling the callback function for each item.
 
 @example:
-toolbar.data.map ((item) => {
-    //remove all icons
+toolbar.data.map((item) => {
+    // remove all icons
     item.icon = "";
 });
 toolbar.paint();
 
 @descr:
 
-To work with all children of a particular control, pass one more parameter to **map()** - the ID of the control:
+To work with the child items of a particular item, pass the id of the item as the second parameter of `map()`:
 
 ~~~jsx
-toolbar.data.map ((item) => {
+toolbar.data.map((item) => {
     // disable items
     item.disabled = true;
 }, "menu_1");
 toolbar.paint();
 ~~~
 
-If you want to iterate only through immediate children, set the third parameter to *false*:
+To iterate only through the direct child items, set the third parameter to *false*:
 
 ~~~jsx
-toolbar.data.map ((item) => {
+toolbar.data.map((item) => {
     // add a css class to each item
     item.css = "highlight";
 }, "menu_1", false);

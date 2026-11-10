@@ -6,7 +6,7 @@ description: You can explore the getItem method of TreeCollection in the documen
 
 # getItem()
 
-@short: gets an item by its ID
+@short: returns the object of an item by its id
 
 #### Usage
 
@@ -19,7 +19,7 @@ getItem(id: Id): IDataItem;
 - `id: Id` - the id of the item
 
 @returns:
-An item object.
+The object of the item.
 
 @example:
 const item = toolbar.data.getItem("add_btn");

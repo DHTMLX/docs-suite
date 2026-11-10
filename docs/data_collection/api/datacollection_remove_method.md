@@ -6,7 +6,7 @@ description: You can explore the remove method of DataCollection in the document
 
 # remove()
 
-@short: deletes the specified item from the component
+@short: removes an item or several items from the collection
 
 #### Usage
 

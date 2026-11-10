@@ -6,7 +6,7 @@ description: You can explore the afterLazyLoad event of DataCollection in the do
 
 # afterLazyLoad
 
-@short: fires after getting a response from the server
+@short: fires after the collection gets a response from the server
 
 #### Usage
 

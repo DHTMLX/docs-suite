@@ -6,7 +6,7 @@ description: You can explore the beforeRemove event of DataCollection in the doc
 
 # beforeRemove
 
-@short: fires before removing an item/items from a data collection
+@short: fires before an item or several items are removed from the collection
 
 #### Usage
 
@@ -20,7 +20,7 @@ beforeRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => boo
 - `index: number` - the index of the removed item within the batch
 
 @returns:
-Return `false` to block removing an item from a data collection; otherwise, `true`.
+Return `false` to prevent removing of the item from the collection; otherwise, `true`.
 
 @example:
 component.data.events.on("beforeRemove", function(removedItem, batch, index){

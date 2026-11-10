@@ -6,7 +6,7 @@ description: You can explore the removeAll method of TreeCollection in the docum
 
 # removeAll()
 
-@short: removes all items in the target branch or all items of the component
+@short: removes all the items of a branch or of the whole collection
 
 #### Usage
 
@@ -22,4 +22,4 @@ removeAll(id?: Id): void;
 toolbar.data.removeAll(id);
 
 @descr:
-When called without the parameter, the method removes all items of the component.
+When called without the parameter, the method removes all the items of the collection.

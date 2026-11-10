@@ -6,7 +6,7 @@ description: You can explore the removeAll event of DataCollection in the docume
 
 # removeAll
 
-@short: fires when all items are removed from a data collection
+@short: fires when all items are removed from the collection
 
 #### Usage
 

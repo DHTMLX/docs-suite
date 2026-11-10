@@ -6,7 +6,7 @@ description: You can explore the afterRemove event of DataCollection in the docu
 
 # afterRemove
 
-@short: Fires after removing an item/items from a data collection
+@short: fires after an item or several items are removed from the collection
 
 #### Usage
 

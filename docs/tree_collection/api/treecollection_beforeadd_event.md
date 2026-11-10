@@ -6,7 +6,7 @@ description: You can explore the beforeAdd event of TreeCollection in the docume
 
 # beforeAdd
 
-@short: fires before adding a new item into a tree collection
+@short: fires before an item is added to the collection
 
 #### Usage
 
@@ -17,10 +17,10 @@ beforeAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => boolean | 
 @params:
 - `newItem: IDataItem` - the object of an item to add
 - `batch: IDataItem[]` - an array of added items
-- `index: number` - the index of the added item within the batch
+- `index: number` - the index of the added item within the batch; `undefined` if a single item (not an array) is added
 
 @returns:
-Return `false` to prevent adding of an item; otherwise, `true`.
+Return `false` to prevent adding of the item to the collection; otherwise, `true`.
 
 @example:
 component.data.events.on("beforeAdd", function(newItem){

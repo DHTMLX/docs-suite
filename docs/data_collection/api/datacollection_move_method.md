@@ -6,7 +6,7 @@ description: You can explore the move method of DataCollection in the documentat
 
 # move()
 
-@short: moves an item to the defined position
+@short: moves an item or several items to the specified position
 
 #### Usage
 
@@ -19,10 +19,10 @@ move(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection): 
 @params:
 - `id: Id | Id[]` - the id of the item or an array with ids of the items to move
 - `index: number` - the index to move the items to
-- `target?: IDataCollection | ITreeCollection` - optional, the target data collection object
+- `target?: IDataCollection | ITreeCollection` - optional, the collection to move the items to; the current collection by default
 
 @returns:
-Either the item's id or an array with ids of items.
+The id of the moved item or an array with the ids of the moved items.
 
 @example:
 component.data.move("4", 5); // moves the item with id:4 to the position with index 5
