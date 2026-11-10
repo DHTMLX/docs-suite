@@ -6,75 +6,75 @@ description: You can explore the features of Sidebar in the documentation of the
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX Sidebar and go into deep dive on its functionality.
+This page helps you start working with DHTMLX Sidebar and explore its functionality in depth.
 
 ## How to start with DHTMLX Sidebar
 
-In this section you can find out how to initialize Sidebar, how to load data into the component and how to integrate Sidebar into your applications.
+In this section you will learn how to initialize Sidebar, load data into it, and integrate it into your applications.
 
 ### Initialization
 
 | Topic                                                                      | Description                                                                                               |
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Basic initialization](sidebar/initialization.md)                                 | Learn how to initialize a Sidebar                                                                         |
-| [Initialization of a collapsed Sidebar](sidebar/sidebar_config.md#collapsed-mode) | Learn how to initialize a Sidebar in the collapsed state ([Example](https://snippet.dhtmlx.com/bkh54ir7)) |
+| [Basic initialization](sidebar/initialization.md)                                 | Learn how to initialize Sidebar                                                                         |
+| [Initialization of a collapsed Sidebar](sidebar/sidebar_config.md#collapsed-mode) | Learn how to initialize Sidebar in the collapsed state ([Example](https://snippet.dhtmlx.com/bkh54ir7)) |
 
 ### Loading data into Sidebar
 
 | Topic                                                                              | Description                                                                 |
 | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| [Loading data into Sidebar](sidebar/data_loading.md)                                      | Read how to load the initial data into Sidebar                              |
-| [Initialization with config.data](https://snippet.dhtmlx.com/y8y7iw42)             | The example shows how to load data into Sidebar on the initialization stage |
+| [Loading data into Sidebar](sidebar/data_loading.md)                                      | Learn how to load the initial data into Sidebar                              |
+| [Initialization with config.data](https://snippet.dhtmlx.com/y8y7iw42)             | The example shows how to load data into Sidebar during initialization |
 | [Initialization with data.load()](https://snippet.dhtmlx.com/mq4ggjmm)             | The example shows how to load data from an external file                    |
 | [Initialization with data.parse()](https://snippet.dhtmlx.com/x0qpt7pk)            | The example shows how to load data from a local data source                 |
-| [Initialization with external TreeCollection](https://snippet.dhtmlx.com/f4wo06yo) | The example shows how to load data from external TreeCollection             |
+| [Initialization with external TreeCollection](https://snippet.dhtmlx.com/f4wo06yo) | The example shows how to load data from an external TreeCollection             |
  
 ### Sidebar controls
 
 | Topic                               | Description                                                                                                         |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| [Custom HTML](sidebar/customhtmlbutton.md) | Learn how to add an item with custom HTML content into the sidebar ([Example](https://snippet.dhtmlx.com/26ds0gxp)) |
-| [MenuItem](sidebar/menuitem.md)            | Learn how to add a MenuItem control into the sidebar                                                                |
-| [NavItem](sidebar/navitem.md)              | Learn how to add a NavItem control into the sidebar ([Example](https://snippet.dhtmlx.com/potv580p))                |
-| [Separator](sidebar/separator.md)          | Learn how to add a Separator control into the sidebar ([Example](https://snippet.dhtmlx.com/aq2l1z5n))              |
-| [Spacer](sidebar/spacer.md)                | Learn how to add a Spacer control into the sidebar ([Example](https://snippet.dhtmlx.com/wk50830i))                 |
-| [Title](sidebar/title.md)                  | Learn how to add a Title control into the sidebar                                                                   |
+| [Custom HTML](sidebar/customhtmlbutton.md) | Learn how to add an item with custom HTML content to the sidebar ([Example](https://snippet.dhtmlx.com/26ds0gxp)) |
+| [MenuItem](sidebar/menuitem.md)            | Learn how to add a MenuItem control to the sidebar                                                                |
+| [NavItem](sidebar/navitem.md)              | Learn how to add a NavItem control to the sidebar ([Example](https://snippet.dhtmlx.com/potv580p))                |
+| [Separator](sidebar/separator.md)          | Learn how to add a Separator control to the sidebar ([Example](https://snippet.dhtmlx.com/aq2l1z5n))              |
+| [Spacer](sidebar/spacer.md)                | Learn how to add a Spacer control to the sidebar ([Example](https://snippet.dhtmlx.com/wk50830i))                 |
+| [Title](sidebar/title.md)                  | Learn how to add a Title control to the sidebar                                                                   |
 
 ### Integration
 
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework to build DHTMLX-based apps <br>(the recommended framework for apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Sidebar with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                 |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Sidebar with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                          |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Sidebar with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                               |
 
 ## How to customize Sidebar and change its size
 
-In this section you can learn how to customize a Sidebar and configure its size.
+In this section you will learn how to customize Sidebar and configure its size.
 
 | Topic                                                                 | Description                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [Width of Sidebar](sidebar/api/sidebar_width_config.md)                      | Learn how to set the necessary width of Sidebar                                   |
+| [Width of Sidebar](sidebar/api/sidebar_width_config.md)                      | Learn how to set the width of Sidebar                                   |
 | [Minimal width of Sidebar](sidebar/api/sidebar_minwidth_config.md)           | Learn how to set the minimal width of Sidebar in the collapsed state              |
-| [Adding HTML content into items](https://snippet.dhtmlx.com/xb6av4qj) | The example shows how to add custom element into the Sidebar items                |
+| [Adding HTML content into items](https://snippet.dhtmlx.com/xb6av4qj) | The example shows how to add custom elements to Sidebar items                |
 | [Applying custom icons](sidebar/customization.md#icons)                      | Learn how to add custom icons to Sidebar items                                    |
-| [Styling Sidebar](sidebar/customization.md#styling)                          | Learn how to customize a Sidebar ([Example](https://snippet.dhtmlx.com/3mhhvvcr)) |
+| [Styling Sidebar](sidebar/customization.md#styling)                          | Learn how to customize Sidebar ([Example](https://snippet.dhtmlx.com/3mhhvvcr)) |
 | [CSS template A](https://snippet.dhtmlx.com/sidebar_template_a)       | The example of a CSS template for DHTMLX Sidebar                                  |
-| [List of CSS classes](helpers/base_elements.md)                   | A set of CSS classes provided by the DHTMLX library                               |
+| [List of CSS classes](helpers/base_elements.md)                   | The CSS classes included in the DHTMLX library                               |
 
 ## How to work with Sidebar
 
-In this section you may study how to expand or collapse a Sidebar, how to disable and enable, hide and show Sidebar controls.
+In this section you will learn how to expand and collapse Sidebar, and how to disable, enable, hide, and show Sidebar controls.
 
 ### How to collapse and expand Sidebar
 
 | Topic                                                                                    | Description                                                                                            |
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [Expanding / collapsing Sidebar](sidebar/work_with_sidebar.md#expanding-and-collapsing-sidebar) | Learn how to expand or collapse a Sidebar dynamically ([Example](https://snippet.dhtmlx.com/ydlltdq6)) |
-| [Toggling Sidebar](sidebar/work_with_sidebar.md#toggling-sidebar)                               | Learn how to toggle a Sidebar ([Example](https://snippet.dhtmlx.com/wll2h9nd))                         |
-| [Is collapsed](sidebar/work_with_sidebar.md#checking-if-sidebar-is-collapsed)                   | Learn how to check whether a Sidebar is collapsed                                                      |
+| [Expanding / collapsing Sidebar](sidebar/work_with_sidebar.md#expanding-and-collapsing-sidebar) | Learn how to expand or collapse Sidebar dynamically ([Example](https://snippet.dhtmlx.com/ydlltdq6)) |
+| [Toggling Sidebar](sidebar/work_with_sidebar.md#toggling-sidebar)                               | Learn how to toggle Sidebar ([Example](https://snippet.dhtmlx.com/wll2h9nd))                         |
+| [Is collapsed](sidebar/work_with_sidebar.md#checking-if-sidebar-is-collapsed)                   | Learn how to check whether Sidebar is collapsed                                                      |
 
 
 ### How to work with Sidebar controls
@@ -88,40 +88,40 @@ In this section you may study how to expand or collapse a Sidebar, how to disabl
 
 ## How to work with data in Sidebar
 
-This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Sidebar, i.e. add, update, remove, rearrange controls, etc.
+In this section you will learn how to use the [TreeCollection API](guides/datacollection_guide.md) to work with Sidebar data — add, update, remove, and rearrange controls.
 
 | Topic                                                                     | Description                                                                                                                                               |
 | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Adding controls](sidebar/work_with_sidebar.md#adding-new-controls-into-sidebar) | Learn how to add new controls into Sidebar dynamically ([Example](https://snippet.dhtmlx.com/jcnw95ac))                                                   |
+| [Adding controls](sidebar/work_with_sidebar.md#adding-new-controls-into-sidebar) | Learn how to add new controls to Sidebar dynamically ([Example](https://snippet.dhtmlx.com/jcnw95ac))                                                   |
 | [Updating controls](sidebar/work_with_sidebar.md#updating-config-of-controls)    | Learn how to update config options of a Sidebar control (for example, to change the icon of the control) ([Example](https://snippet.dhtmlx.com/p1zu63le)) |
 | [Rearranging controls](sidebar/work_with_sidebar.md#rearranging-controls)        | Learn how to move Sidebar controls to another position                                                                                                    |
-| [Removing controls](sidebar/work_with_sidebar.md#removing-controls-from-sidebar) | Learn how to remove a control from Sidebar   ([Example](https://snippet.dhtmlx.com/ecp3etuf))                                                             |
-| [TreeCollection API](/tree_collection/)                                       | Check the list of all available TreeCollection API|
+| [Removing controls](sidebar/work_with_sidebar.md#removing-controls-from-sidebar) | Learn how to remove a control from Sidebar ([Example](https://snippet.dhtmlx.com/ecp3etuf))                                                             |
+| [TreeCollection API](/tree_collection/)                                       | Check the full TreeCollection API reference|
 
 
 ## How to work with selection
 
-In this section you can learn how to work with selection functionality.
+In this section you will learn how to work with selection.
 
 | Topic                                                                       | Description                                                                                            |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [Setting selection](sidebar/work_with_sidebar.md#selectingunselecting-an-item)     | Learn how to select a particular Sidebar item ([Example](https://snippet.dhtmlx.com/3odod5v1))         |
 | [Is selected](sidebar/work_with_sidebar.md#checking-if-a-sidebar-item-is-selected) | Learn how to check whether a Sidebar item is selected ([Example](https://snippet.dhtmlx.com/3odod5v1)) |
 | [Getting selected items](sidebar/work_with_sidebar.md#getting-selected-items)      | Learn how to get the selected items                                                                    |
-| [Removing selection](sidebar/work_with_sidebar.md#selectingunselecting-an-item)    | Learn how to remove selection from a selected item  ([Example](https://snippet.dhtmlx.com/3odod5v1))   |
+| [Removing selection](sidebar/work_with_sidebar.md#selectingunselecting-an-item)    | Learn how to remove selection from a selected item ([Example](https://snippet.dhtmlx.com/3odod5v1))   |
 
 ## How to work with Sidebar events
 
-This section explains how to work with Sidebar events.
+In this section you will learn how to work with Sidebar events.
 
 | Topic                                       | Description                                                                                            |
 | :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
-| [Event handling](sidebar/events.md)        | Learn how to attach, detach, or call the Sidebar events ([Example](https://snippet.dhtmlx.com/qfddiu3i)) |
+| [Event basic rules](guides/events_guide.md) | Learn the basic rules of event handling                                                           |
+| [Event handling](sidebar/events.md)        | Learn how to attach, detach, or call Sidebar events ([Example](https://snippet.dhtmlx.com/qfddiu3i)) |
 
 ## API reference
 
-In this section you can find out corresponding references of Sidebar and its controls API.
+In this section you will find the API reference for Sidebar and its controls.
 
 ### Sidebar API
 
@@ -130,7 +130,7 @@ In this section you can find out corresponding references of Sidebar and its con
 | [Sidebar methods](/category/sidebar-methods/)          | Check the list of Sidebar methods                         |
 | [Sidebar events](/category/sidebar-events/)            | Check the list of Sidebar events                          |
 | [Sidebar properties](/category/sidebar-properties/)    | Check the list of Sidebar properties                      |
-| [TreeCollection API](/tree_collection/)                | Check the API of TreeCollection to work with Sidebar data |
+| [TreeCollection API](/tree_collection/)                | Check the TreeCollection API for working with Sidebar data |
 
 ### Sidebar controls API
 
@@ -146,7 +146,7 @@ In this section you can find out corresponding references of Sidebar and its con
   
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Sidebar.
+In this section you will learn about common library functionality that is useful when you work with Sidebar.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -154,7 +154,7 @@ In this section you will learn about common functionality of the library which c
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
 | [Accessibility support](common_features/accessibility_support.md) | Learn about accessibility support in Sidebar                  |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to enable custom scroll in Sidebar                      |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run code after the component renders |
 
 ## Any questions left?
 
