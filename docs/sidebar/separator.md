@@ -6,13 +6,13 @@ description: You can explore the Separator of Sidebar in the documentation of th
 
 # Separator
 
-This is a line separating items/groups of items from each other.
+The Separator control displays a line between items or groups of items.
 
 ![Sidebar Separator lines dividing navigation items with icons in DHTMLX Suite](/img/sidebar/separator.png)
 
-## Adding Separator
+## Add Separator {#adding-separator}
 
-A new Separator can be created with the help of the **add()** method of Tree Collection:
+Use the `add()` method of TreeCollection to add a Separator control to a sidebar:
 
 ~~~js
 sidebar.data.add({
@@ -24,15 +24,15 @@ sidebar.data.add({
 
 ### Properties
 
-You can provide the [following properties](sidebar/api/api_separator_properties.md) in the configuration object of a Separator control.
+Check the [list of properties](sidebar/api/api_separator_properties.md) that you can set in the configuration object of a Separator control.
 
-## Showing/hiding Separator
+## Show and hide Separator {#showinghiding-separator}
 
-You can hide and show Separator with the methods of Sidebar by passing the control's id to them:
+The `show()` and `hide()` methods of Sidebar show and hide a Separator control by its ID:
 
 ~~~js
 sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Check the full list of operations in the [Sidebar API](sidebar/api/api_overview.md) and the [TreeCollection API](/tree_collection/).
