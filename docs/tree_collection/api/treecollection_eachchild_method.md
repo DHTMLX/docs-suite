@@ -32,6 +32,8 @@ toolbar.data.eachChild("menu_1", item => {
 });
 toolbar.paint();
 
+@descr:
+
 **Related API**:
 - [`eachParent()`](tree_collection/api/treecollection_eachparent_method.md)
 - [`getItems()`](tree_collection/api/treecollection_getitems_method.md)

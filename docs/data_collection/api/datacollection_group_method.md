@@ -6,7 +6,7 @@ description: Learn how the group method of DataCollection groups the items of a 
 
 # group()
 
-@short: groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration
+@short: groups the data of the collection into a plain tree-like structure according to the specified order and additional configuration
 
 :::info important
 Data grouping isn't intended for working with [`lazyDataProxy`](helpers/lazydataproxy.md)
