@@ -6,22 +6,22 @@ description: You can explore the data loading of Sidebar in the documentation of
 
 # Data loading
 
-There are several simple ways of loading data into DHTMLX Sidebar:
+You can load data into DHTMLX Sidebar in two ways:
 
-- on initialization of Sidebar
-- after initialization of Sidebar
+- During Sidebar initialization
+- After Sidebar initialization
 
-First, you need to prepare a data set that will be loaded into Sidebar.
+Both ways start from a prepared data set.
 
 ## Preparing data set
 
-DHTMLX Sidebar expects loaded data in the JSON format. 
+DHTMLX Sidebar expects data in JSON format.
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+If you specify `id` fields in the tree collection, their values must be **unique**. You can also omit these fields. In this case Sidebar generates the values automatically.
 :::
 
-Here is an example of an appropriate data set:
+The following data set is valid:
 
 ~~~js
 const data = [
@@ -43,11 +43,11 @@ const data = [
 ];
 ~~~
 
-A data set consists of objects with configurations of sidebar controls. Templates for Sidebar controls in JSON format are given [below](#json-format-templates).
+Each object in the data set configures a Sidebar control. The [JSON format templates](#json-format-templates) section lists templates for all Sidebar controls.
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Sidebar on the initialization stage. Use the [data](sidebar/api/sidebar_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Sidebar during initialization. Use the [`data`](sidebar/api/sidebar_data_config.md) configuration property:
 
 ~~~js
 const sidebar = new dhx.Sidebar("sidebar_container", {
@@ -60,14 +60,14 @@ const sidebar = new dhx.Sidebar("sidebar_container", {
 
 ## Loading data after initialization
 
-There are two ways to load data into Sidebar after its initialization:
+You can load data into Sidebar after initialization in two ways:
 
-- [from a local data source](#loading-from-a-local-source)
-- [from an external file](#loading-from-an-external-file)
+- [From a local data source](#loading-from-a-local-source)
+- [From an external file](#loading-from-an-external-file)
 
 ### Loading from a local source
 
-You can load data to a sidebar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+The `parse()` method of TreeCollection loads data into a sidebar from an array. Pass [a predefined data set](#preparing-data-set) to this method:
 
 ~~~js
 sidebar.data.parse(data);
@@ -77,7 +77,7 @@ sidebar.data.parse(data);
 
 ### Loading from an external file
 
-The **load** method loads the sidebar data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
+The `load()` method of TreeCollection loads all sidebar data from an external JSON file at once. The method takes the path to the file as a parameter:
 
 ~~~js
 sidebar.data.load("[path to this file]/file.json");
@@ -85,9 +85,9 @@ sidebar.data.load("[path to this file]/file.json");
 
 **Related sample**: [Sidebar. Initialization with data.load()](https://snippet.dhtmlx.com/mq4ggjmm)
     
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to return valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Sidebar loads data asynchronously, so place the code that depends on the loaded data into the `then()` callback:
 
 ~~~js
 sidebar.data.load("/some/data").then(function(){
@@ -97,14 +97,13 @@ sidebar.data.load("/some/data").then(function(){
 
 ## Saving and restoring state
 
-To save the current state of a sidebar, use the **serialize()** method of Tree Collection. It converts the data of a sidebar into an array of JSON objects. 
-Each JSON object contains the configuration of a separate Sidebar control.
+The `serialize()` method of TreeCollection saves the current state of a sidebar. The method converts sidebar data into an array of JSON objects. Each JSON object contains the configuration of a separate Sidebar control.
 
 ~~~js
 const state = sidebar1.data.serialize();
 ~~~
 
-Then you can parse the data stored in the saved state array to a different sidebar. For example:
+You can parse the saved state array into a different sidebar:
 
 ~~~js
 // creating a new sidebar
@@ -115,7 +114,7 @@ sidebar2.data.parse(state);
 
 ## JSON format templates
 
-This section will give you the idea of JSON format templates for separate Sidebar controls.
+This section shows JSON format templates for Sidebar controls.
 
 ### Common template
 
@@ -139,7 +138,7 @@ This section will give you the idea of JSON format templates for separate Sideba
 }
 ~~~
 
-{{note Take a look at the full list of properties of the **customHTML** object [in the related article](sidebar/api/api_customhtml_properties.md).}}
+{{note View the full list of properties of the `customHTML` object in the [related article](sidebar/api/api_customhtml_properties.md).}}
 
 ### MenuItem template
 
@@ -152,7 +151,7 @@ This section will give you the idea of JSON format templates for separate Sideba
 }
 ~~~
 
-{{note Take a look at the full list of properties of the **menuItem** object [in the related article](sidebar/api/api_menuitem_properties.md).}}
+{{note View the full list of properties of the `menuItem` object in the [related article](sidebar/api/api_menuitem_properties.md).}}
 
 ### NavItem template
 
@@ -166,9 +165,9 @@ This section will give you the idea of JSON format templates for separate Sideba
 }
 ~~~
 
-{{note You can find the full list of properties of the **navItem** object [in the related article](sidebar/api/api_navitem_properties.md).}}
+{{note View the full list of properties of the `navItem` object in the [related article](sidebar/api/api_navitem_properties.md).}}
 
-###  Separator template
+### Separator template
 
 ~~~js
 // separator
@@ -178,7 +177,7 @@ This section will give you the idea of JSON format templates for separate Sideba
 }
 ~~~
 
-{{note You can check the full list of properties of the **separator** object [in the related article](sidebar/api/api_separator_properties.md).}}
+{{note View the full list of properties of the `separator` object in the [related article](sidebar/api/api_separator_properties.md).}}
 
 ### Spacer template
 
@@ -190,7 +189,7 @@ This section will give you the idea of JSON format templates for separate Sideba
 }
 ~~~
 
-{{note You can find the full list of properties of the **spacer** object [in the related article](sidebar/api/api_spacer_properties.md).}}
+{{note View the full list of properties of the `spacer` object in the [related article](sidebar/api/api_spacer_properties.md).}}
 
 ### Title template
 
@@ -204,4 +203,4 @@ This section will give you the idea of JSON format templates for separate Sideba
 }
 ~~~
 
-{{note Take a look at the full list of properties of the **title** object [in the related article](sidebar/api/api_title_properties.md).}}
+{{note View the full list of properties of the `title` object in the [related article](sidebar/api/api_title_properties.md).}}

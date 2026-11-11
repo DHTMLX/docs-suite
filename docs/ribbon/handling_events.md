@@ -6,21 +6,21 @@ description: You can explore the event handling of Ribbon in the documentation o
 
 # Event handling
 
-To handle events of Ribbon and its TreeCollection, use the methods of the **events** module.
+Use the methods of the `events` module to handle Ribbon and TreeCollection events.
 
 ## Attaching event handlers
 
-You can add any handler to the events of Ribbon and its TreeCollection. To do this, use the **ribbon.events.on()**  method with the following parameters:
+You can add a custom handler to any event of Ribbon and its TreeCollection with the `ribbon.events.on()` method. The method takes the following parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>evName</b></td>
-            <td>name of the event</td>
+            <td><code>evName</code></td>
+            <td>the event name</td>
         </tr>
         <tr>
-            <td><b>evHandler</b></td>
-            <td>user-defined event handler</td>
+            <td><code>evHandler</code></td>
+            <td>a custom event handler</td>
         </tr>
     </tbody>
 </table>
@@ -32,17 +32,17 @@ ribbon.events.on("click", function(id,e){
 });
 ~~~
 
-Several handlers can be attached to one and the same event, and all of them will be executed.
+You can attach several handlers to the same event, and Ribbon runs all of them.
 
 {{note 
-The names of the events are case-insensitive.
+Event names are case-insensitive.
 }}
 
 **Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
 ## Detaching event handlers
 
-There is a simple way of removing an event-handler. Call the **ribbon.events.detach()** method:
+The `ribbon.events.detach()` method removes an event handler:
 
 ~~~js
 ribbon.events.on("click", function(id,e){
@@ -54,7 +54,7 @@ ribbon.events.detach("click");
 
 ## Calling events
 
-You do not need to call events of Ribbon and its TreeCollection. Yet, you can call any custom event with the **fire()** method of the **events** module:
+Ribbon and its TreeCollection fire their events automatically. To call a custom event, use the `fire()` method of the `events` module:
 
 ~~~js
 ribbon.events.fire(evName,[parameters]);

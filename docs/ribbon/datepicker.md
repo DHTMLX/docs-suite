@@ -6,13 +6,13 @@ description: You can explore the Datepicker of Ribbon in the documentation of th
 
 # Datepicker
 
-This is a control of Ribbon intended for date selection. Check the article below to see how to add and customize the Datepicker control in an easy and convenient way.
+The Datepicker control lets users select a date in a ribbon. The sections below show how to add and customize the control.
 
 <iframe src="https://snippet.dhtmlx.com/50chb61i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
-## Adding Datepicker
+## Add Datepicker {#adding-datepicker}
 
-The Datepicker control can be easily added to a ribbon with the help of the [add()](tree_collection/api/treecollection_add_method.md) method of Tree Collection.
+Use the [`add()`](tree_collection/api/treecollection_add_method.md) method of TreeCollection to add a Datepicker control to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -22,11 +22,11 @@ ribbon.data.add({
 
 ## Properties
 
-You can provide the [following properties](ribbon/api/api_datepicker_properties.md) in the configuration object of a Datepicker control.
+Check the [list of properties](ribbon/api/api_datepicker_properties.md) that you can set in the configuration object of a Datepicker control.
 
-## Adding an icon
+## Add an icon {#adding-an-icon}
 
-The Datepicker control can have an icon which is set through the corresponding option [icon](ribbon/customization.md).
+Use the [`icon`](ribbon/customization.md) property to add an icon to a Datepicker control:
 
 ~~~js
 {
@@ -35,18 +35,18 @@ The Datepicker control can have an icon which is set through the corresponding o
 }
 ~~~
 
-## Showing/hiding Datepicker
+## Show and hide Datepicker {#showinghiding-datepicker}
 
-To hide/show Datepicker, you should pass the ID of Datepicker to the [hide()](ribbon/api/ribbon_hide_method.md) / [show()](ribbon/api/ribbon_show_method.md) methods of Ribbon:
+The [`show()`](ribbon/api/ribbon_show_method.md) and [`hide()`](ribbon/api/ribbon_hide_method.md) methods of Ribbon show and hide a Datepicker control by its ID:
 
 ~~~js
 ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Enabling/disabling Datepicker
+## Enable and disable Datepicker {#enablingdisabling-datepicker}
 
-It is possible to enable or disable Datepicker by the [enable()](ribbon/api/ribbon_enable_method.md) / [disable()](ribbon/api/ribbon_disable_method.md) methods:
+The [`enable()`](ribbon/api/ribbon_enable_method.md) and [`disable()`](ribbon/api/ribbon_disable_method.md) methods enable and disable a Datepicker control by its ID:
 
 ~~~js
 ribbon.enable(id);

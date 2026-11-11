@@ -6,15 +6,15 @@ description: You can explore the custom HTML button of Sidebar in the documentat
 
 # Custom HTML
 
-This is an item that contains any custom HTML content (for example, an image, icon or other element).
+The Custom HTML control displays custom HTML content, such as an image, an icon, or another element.
 
 ![Sidebar Custom HTML item showing a user avatar, name and handle in DHTMLX Suite](/img/sidebar/htmlcontent.png)
 
 **Related sample**: [Sidebar. Custom HTML](https://snippet.dhtmlx.com/26ds0gxp)
 
-## Adding Custom HTML
+## Add a Custom HTML control {#adding-custom-html}
 
-Any custom HTML content can be easily added to a sidebar with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add custom HTML content to a sidebar:
 
 ~~~js
 sidebar.data.add({
@@ -35,8 +35,8 @@ sidebar.data.add({
 
 ### Properties
 
-You can provide the [following properties](sidebar/api/api_customhtml_properties.md) in the configuration object of a Custom HTML control.
+Check the [list of properties](sidebar/api/api_customhtml_properties.md) that you can set in the configuration object of a Custom HTML control.
 
-##  Working with Custom HTML
+## Work with a Custom HTML control {#working-with-custom-html}
 
-You can perform operations over the **Custom HTML** item with the help of the available [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Use the [Sidebar API](sidebar/api/api_overview.md) and the [TreeCollection API](/tree_collection/) to work with a **Custom HTML** control.

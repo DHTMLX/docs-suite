@@ -7,10 +7,10 @@ description: You can explore the initialization of Ribbon in the documentation o
 # Initialization
 
 :::info
-[Download the DHTMLX Ribbon package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Ribbon package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Ribbon into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Ribbon to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -37,12 +37,12 @@ To add DHTMLX Ribbon into an application, you need to take the following simple 
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -51,7 +51,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Ribbon and give it an id, e.g. "ribbon_container":
+Add a container for Ribbon and give it an id, for example `ribbon_container`:
 
 ~~~html
 <div id="ribbon_container"></div>
@@ -61,8 +61,8 @@ Add a container for the Ribbon and give it an id, e.g. "ribbon_container":
 
 Initialize Ribbon with the `dhx.Ribbon` object constructor. The constructor takes two parameters:
 
-- the HTML object on the page that serves as the toolbar container
-- an object with configuration properties
+- The HTML container for Ribbon
+- An object with configuration properties
 
 ~~~js
 const ribbon = new dhx.Ribbon("ribbon_container", {
@@ -72,11 +72,11 @@ const ribbon = new dhx.Ribbon("ribbon_container", {
 
 ### Configuration properties
 
-The detailed information on Ribbon configuration options can be found in the [Ribbon API overview](ribbon/api/api_overview.md) article.
+The [Ribbon API overview](ribbon/api/api_overview.md) article describes the properties you can specify to adapt Ribbon to your needs.
 
 ## Load data into Ribbon
 
-Detailed information on loading data into Ribbon is given in the article [](ribbon/data_loading.md).
+The [](ribbon/data_loading.md) article explains how to load data into DHTMLX Ribbon.
 
 ## Example
 

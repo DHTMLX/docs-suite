@@ -6,11 +6,11 @@ description: You can explore how to work with Ribbon in the documentation of the
 
 # Work with Ribbon
 
-## Setting/getting values and states
+## Set and get values and states {#settinggetting-values-and-states}
 
-You can change the value or state (for a TwoState button) of a control with the help of the [setState()](ribbon/api/ribbon_setstate_method.md) method. It takes one parameter: a *key-value* pair with the ID of the control and its new value (state).
+Use the [`setState()`](ribbon/api/ribbon_setstate_method.md) method to change the value of a control or the state of a `twoState` button. The method takes one parameter: an object with *key-value* pairs, where the key is the ID of a control and the value is its new value or state.
 
-This is how you can set the state of a twoState button:
+The following code sets the state of a `twoState` button:
 
 ~~~js
 { type:"button", twoState:true, id:"check" }
@@ -21,7 +21,7 @@ ribbon.setState({"check":false});
 
 **Related sample**: [Ribbon. Set state](https://snippet.dhtmlx.com/i7kabram)
 
-And this is how you can change the value of an input:
+The following code changes the value of an input:
 
 ~~~js
 { type:"input", id: "file_name" }
@@ -29,9 +29,9 @@ And this is how you can change the value of an input:
 ribbon.setState({"file_name":"My file"});
 ~~~
 
-To get the current value of the control, use the [getState()](ribbon/api/ribbon_getstate_method.md) method. 
+Use the [`getState()`](ribbon/api/ribbon_getstate_method.md) method to get the current values and states of controls.
 
-This is what the method returns for a TwoState button:
+The method returns the following object for a `twoState` button:
 
 ~~~js
 { type:"button", twoState:true, id:"check" }
@@ -44,7 +44,7 @@ ribbon.getState();
 
 **Related sample**: [Ribbon. Get state](https://snippet.dhtmlx.com/coei9fys)
 
-And this is how you can get the current value of an input:
+The method returns the following object for an input:
 
 ~~~js
 { type:"input", id:"file_name", value:"My file" }
@@ -54,9 +54,9 @@ ribbon.getState();
 // {"file_name":"My file"}
 ~~~
 
-## Hiding and showing controls
+## Show and hide controls {#hiding-and-showing-controls}
 
-You can show or hide controls by their IDs. Pass them to the corresponding methods - [show()](ribbon/api/ribbon_show_method.md) and [hide()](ribbon/api/ribbon_hide_method.md):
+The [`show()`](ribbon/api/ribbon_show_method.md) and [`hide()`](ribbon/api/ribbon_hide_method.md) methods show and hide controls by their IDs. Pass the ID of a control or an array of IDs to the methods:
 
 ~~~js
 ribbon.hide("add_btn");
@@ -65,7 +65,7 @@ ribbon.show(["save_btn","del_btn"]);
 
 **Related sample**: [Ribbon. Show/hide Ribbon item](https://snippet.dhtmlx.com/1jkf7954)
 
-Starting from v7.0, it is possible to hide/show all Ribbon controls on the page at once by using the methods without parameters:
+Starting from v7.0, you can call the methods without parameters to hide or show all Ribbon controls at once:
 
 ~~~js
 // hides all Ribbon controls
@@ -74,9 +74,9 @@ ribbon.hide();
 ribbon.show();
 ~~~
 
-## Disabling and enabling controls
+## Enable and disable controls {#disabling-and-enabling-controls}
 
-You can disable or enable controls. The related methods - [enable()](ribbon/api/ribbon_enable_method.md) and [disable()](ribbon/api/ribbon_disable_method.md) - take the IDs of controls as parameters:
+The [`enable()`](ribbon/api/ribbon_enable_method.md) and [`disable()`](ribbon/api/ribbon_disable_method.md) methods enable and disable controls by their IDs. Pass the ID of a control or an array of IDs to the methods:
 
 ~~~js
 ribbon.disable("add_btn");
@@ -85,7 +85,7 @@ ribbon.enable(["save_btn","del_btn"]);
 
 **Related sample**: [Ribbon. Enable / disable Ribbon item](https://snippet.dhtmlx.com/l3f8pq2g)
 
-Starting from v7.0, it is possible to disable/enable all Ribbon controls on the page at once by using the methods without parameters:
+Starting from v7.0, you can call the methods without parameters to disable or enable all Ribbon controls at once:
 
 ~~~js
 // disables all Ribbon controls
@@ -94,15 +94,15 @@ ribbon.disable();
 ribbon.enable();
 ~~~
 
-## Checking if a Ribbon item is disabled
+## Check if a Ribbon item is disabled {#checking-if-a-ribbon-item-is-disabled}
 
-To check if an item of Ribbon is disabled, call the [isDisabled()](ribbon/api/ribbon_isdisabled_method.md) method. The method takes one parameter:
+The [`isDisabled()`](ribbon/api/ribbon_isdisabled_method.md) method checks whether a Ribbon item is disabled. The method takes one parameter:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) an id of an item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of an item</td>
         </tr>
     </tbody>
 </table>
@@ -114,21 +114,21 @@ ribbon.isDisabled("1"); // -> true/false
 
 **Related sample**: [Ribbon. Enable / disable Ribbon item](https://snippet.dhtmlx.com/l3f8pq2g)
 
-## Selecting/Unselecting an item
+## Select and unselect an item {#selectingunselecting-an-item}
 
-### Selecting a ribbon item
+### Select a Ribbon item {#selecting-a-ribbon-item}
 
-To select a particular Ribbon item, make use of the [select()](ribbon/api/ribbon_select_method.md) method of Ribbon. The method takes two parameters:
+The [`select()`](ribbon/api/ribbon_select_method.md) method of Ribbon selects a particular item. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) an id of an item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of an item</td>
         </tr>
         <tr>
-            <td><b>unselect</b></td>
-            <td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
+            <td><code>unselect</code></td>
+            <td>(<code>boolean</code>) optional, <code>true</code> to unselect previously selected items, otherwise <code>false</code> (default: <code>true</code>)</td>
         </tr>
     </tbody>
 </table>
@@ -140,16 +140,16 @@ ribbon.select("print");
 
 **Related sample**: [Ribbon. Select / unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
-### Unselecting a ribbon item
+### Unselect a Ribbon item {#unselecting-a-ribbon-item}
 
-To remove selection from a selected item, apply the [unselect()](ribbon/api/ribbon_unselect_method.md) method of Ribbon. The method may take the id of an item as a parameter:
+The [`unselect()`](ribbon/api/ribbon_unselect_method.md) method of Ribbon removes selection from a selected item. The method takes the ID of an item as an optional parameter:
 
 ~~~js
 // unselects a specified selected item
 ribbon.unselect("print");
 ~~~
 
-It is also possible to remove selection from all previously selected items of Ribbon via the [unselect()](ribbon/api/ribbon_unselect_method.md) method:
+Call the method without parameters to remove selection from all selected Ribbon items:
 
 ~~~js
 // unselects all previously selected items
@@ -158,15 +158,15 @@ ribbon.unselect();
 
 **Related sample**: [Ribbon. Select / unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
-## Checking if a ribbon item is selected
+## Check if a Ribbon item is selected {#checking-if-a-ribbon-item-is-selected}
 
-To check if an item of Ribbon is selected, call the [isSelected()](ribbon/api/ribbon_isselected_method.md) method. The method takes one parameter:
+The [`isSelected()`](ribbon/api/ribbon_isselected_method.md) method checks whether a Ribbon item is selected. The method takes one parameter:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) an id of a ribbon item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of a Ribbon item</td>
         </tr>
     </tbody>
 </table>
@@ -178,19 +178,19 @@ ribbon.isSelected("print"); // -> returns true/false
 
 **Related sample**: [Ribbon. Select / unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
-## Getting selected items
+## Get selected items {#getting-selected-items}
 
-To get the selected items, call the [getSelected()](ribbon/api/ribbon_getselected_method.md) method. The method returns an array of IDs of selected items:
+The [`getSelected()`](ribbon/api/ribbon_getselected_method.md) method returns an array with the IDs of selected items:
 
 ~~~js
 ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
 
-## Using Tree collection API
+## Use the TreeCollection API {#using-tree-collection-api}
 
-### Adding controls
+### Add controls {#adding-controls}
 
-You can add controls dynamically with the **add()** method of [TreeCollection](/tree_collection/).
+Use the `add()` method of [TreeCollection](/tree_collection/) to add controls dynamically:
 
 ~~~js
 ribbon.data.add({
@@ -225,35 +225,35 @@ ribbon.data.add({
 });
 ~~~
 
-### Getting controls by IDs
+### Get controls by IDs {#getting-controls-by-ids}
 
-You can get a particular Ribbon control by its ID via the **getItem()** method:
+Use the `getItem()` method to get a Ribbon control by its ID:
 
 ~~~js
 const add_btn = ribbon.data.getItem("add_btn");
 ~~~
 
-To get the ID of the parent of the control, call the **getParent()** method:
+To get the ID of the parent of a control, call the `getParent()` method:
 
 ~~~js
 const parentId = ribbon.data.getParent("add_btn");
 ~~~
 
-You can also access the children of a control with the **getItems()** method:
+The `getItems()` method returns the children of a control:
 
 ~~~js
 const items = ribbon.data.getItems("block1");
 ~~~
 
-You can use the **getLength()** method of TreeCollection to count children of a control:
+The `getLength()` method of TreeCollection counts the children of a control:
 
 ~~~js
 ribbon.data.getLength("block1");
 ~~~
 
-### Iterating through controls
+### Iterate through controls {#iterating-through-controls}
 
-You can work with all (or some) Ribbon controls with the help of the **forEach()** method of TreeCollection:
+Use the `forEach()` method of TreeCollection to work with all (or some) Ribbon controls:
 
 ~~~js
 ribbon.data.forEach(function(item){
@@ -263,9 +263,9 @@ ribbon.data.forEach(function(item){
 ribbon.paint();
 ~~~
 
-### Iterating through children
+### Iterate through children {#iterating-through-children}
 
-To iterate through all controls in a particular block, pass one more parameter to **forEach()** - the ID of the block:
+The `forEach()` method can also iterate through all controls of a block. Pass the ID of the block as the second parameter:
 
 ~~~js
 ribbon.data.forEach(function(item){
@@ -275,7 +275,7 @@ ribbon.data.forEach(function(item){
 ribbon.paint();
 ~~~
 
-If you want to iterate only through immediate children, pass a third parameter - *1*:
+To iterate only through the immediate children, pass `1` as the third parameter:
 
 ~~~js
 ribbon.data.forEach(function(item){
@@ -285,7 +285,7 @@ ribbon.data.forEach(function(item){
 ribbon.paint();
 ~~~
 
-Iterating through children is also can be done with the **eachChild()** method of TreeCollection:
+The `eachChild()` method of TreeCollection also iterates through the children of a control:
 
 ~~~js
 ribbon.data.eachChild("bl_1",function(item){
@@ -295,7 +295,7 @@ ribbon.data.eachChild("bl_1",function(item){
 ribbon.paint();
 ~~~
 
-To access only the immediate children, add the **direct** parameter and set it to _false_:
+To iterate only through the immediate children, set the `direct` parameter to `false`:
 
 ~~~js
 ribbon.data.eachChild("bl_1", function(item){
@@ -305,16 +305,16 @@ ribbon.data.eachChild("bl_1", function(item){
 ribbon.paint();
 ~~~
 
-To check whether an item has childs, use the **haveItems()** method of TreeCollection:
+To check whether an item has children, use the `haveItems()` method of TreeCollection:
 
 ~~~js
 ribbon.data.haveItems("block1");
 // -> true
 ~~~
 
-### Iterating through parents
+### Iterate through parents {#iterating-through-parents}
 
-To iterate through all the parent items (the immediate parent and its parent, etc. until the parent is the ribbon itself), use the **eachParent()** method of TreeCollection:
+The `eachParent()` method of TreeCollection iterates through all parents of an item, from the immediate parent up to the ribbon itself:
 
 ~~~js
 ribbon.data.eachParent("new_btn",function(item){
@@ -322,9 +322,9 @@ ribbon.data.eachParent("new_btn",function(item){
 });
 ~~~
 
-### Rearranging Ribbon controls
+### Rearrange Ribbon controls {#rearranging-ribbon-controls}
 
-You can move Ribbon items to different positions with the **move()** method of TreeCollection. For example, this is how you can move a block with ID "bl_2" to the right edge of the Ribbon:
+Use the `move()` method of TreeCollection to move Ribbon items to different positions. For example, the following code moves the block with the `"bl_2"` ID to the right edge of the ribbon:
 
 ~~~js
 ribbon.data.move("bl_2",-1);
@@ -334,35 +334,35 @@ ribbon.data.move("bl_2",-1);
 Pass the ID of the item with the same type as it has in the item configuration. For example, if the ID is set as the number `2`, the method doesn't move the item when it gets the string `"2"`.
 :::
 
-To get the current position of a block, use the **getIndex()** method of TreeCollection:
+To get the current position of a block, use the `getIndex()` method of TreeCollection:
 
 ~~~js
 ribbon.data.getIndex("bl_2");
 ~~~
 
-### Making copies of controls
+### Copy controls {#making-copies-of-controls}
 
-You can add a copy of a control and place it in the specified position on the ribbon with the **copy()** method of TreeCollection:
+Use the `copy()` method of TreeCollection to add a copy of a control and place it at the specified position on the ribbon:
 
 ~~~js
 ribbon.data.copy("block1",2);
 ~~~
 
-You can copy a control into a block of the same ribbon:
+The following code copies a control into a block of the same ribbon:
 
 ~~~js
 ribbon.data.copy("save_btn",1,ribbon.data,"block2");
 ~~~
 
-You can also copy a control and place it into another ribbon:
+The following code copies a control into a block of another ribbon:
 
 ~~~js
 ribbon1.data.copy("save_btn",1,ribbon2.data,"block3");
 ~~~
 
-### Clearing Ribbon
+### Clear Ribbon {#clearing-ribbon}
 
-To remove all controls from Ribbon, users should call the **removeAll()** method of TreeCollection. Afterwards, you can load other items.
+The `removeAll()` method of TreeCollection removes all controls from Ribbon. After that, you can load other controls:
 
 ~~~js
 ribbon.data.removeAll();

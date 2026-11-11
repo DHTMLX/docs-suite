@@ -6,22 +6,22 @@ description: You can explore the data loading of Ribbon in the documentation of 
 
 # Data loading
 
-There are several simple ways of loading data into DHTMLX Ribbon:
+You can load data into DHTMLX Ribbon in two ways:
 
-- on initialization of Ribbon
-- after initialization of Ribbon
+- During Ribbon initialization
+- After Ribbon initialization
 
-First, you need to prepare a data set that will be loaded into Ribbon.
+Both ways start from a prepared data set.
 
 ## Preparing data set
 
-DHTMLX Ribbon expects loaded data in the JSON format. 
+DHTMLX Ribbon expects data in JSON format.
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+If you specify `id` fields in the tree collection, their values must be **unique**. You can also omit these fields. In this case Ribbon generates the values automatically.
 :::
 
-Here is an example of an appropriate data set:
+The following data set is valid:
 
 ~~~js
 const data = [
@@ -54,11 +54,11 @@ const data = [
 ];
 ~~~
 
-A data set consists of objects with configurations of Ribbon controls. Templates for Ribbon controls in JSON format are given [below](#json-format-templates).
+Each object in the data set configures a Ribbon control. The [JSON format templates](#json-format-templates) section lists templates for all Ribbon controls.
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Ribbon on the initialization stage. Use the [data](ribbon/api/ribbon_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Ribbon during initialization. Use the [`data`](ribbon/api/ribbon_data_config.md) configuration property:
 
 ~~~js
 const ribbon = new dhx.Ribbon("ribbon_container", {
@@ -71,14 +71,14 @@ const ribbon = new dhx.Ribbon("ribbon_container", {
 
 ## Loading data after initialization
 
-There are two ways to load data into Ribbon after its initialization:
+You can load data into Ribbon after initialization in two ways:
 
-- [from a local data source](#loading-from-a-local-source)
-- [from an external file](#loading-from-an-external-file)
+- [From a local data source](#loading-from-a-local-source)
+- [From an external file](#loading-from-an-external-file)
 
 ### Loading from a local source
 
-You can load data to a ribbon from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+The `parse()` method of TreeCollection loads data into a ribbon from an array. Pass [a predefined data set](#preparing-data-set) to this method:
 
 ~~~js
 ribbon.data.parse(data);
@@ -88,7 +88,7 @@ ribbon.data.parse(data);
 
 ### Loading from an external file
 
-The **load** method loads the ribbon data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
+The `load()` method of TreeCollection loads all ribbon data from an external JSON file at once. The method takes the path to the file as a parameter:
 
 ~~~js
 ribbon.data.load("[path to this file]/file.json");
@@ -96,9 +96,9 @@ ribbon.data.load("[path to this file]/file.json");
 
 **Related sample**: [Ribbon. Initialization with data.load()](https://snippet.dhtmlx.com/1gd5tbcf)
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to return valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Ribbon loads data asynchronously, so place the code that depends on the loaded data into the `then()` callback:
 
 ~~~js
 ribbon.data.load("/some/data").then(function(){
@@ -108,14 +108,13 @@ ribbon.data.load("/some/data").then(function(){
 
 ## Saving and restoring state
 
-To save the current state of a ribbon, use the **serialize()** method of Tree Collection. It converts the data of a ribbon into an array of JSON objects. 
-Each JSON object contains the configuration of a separate Ribbon control.
+The `serialize()` method of TreeCollection saves the current state of a ribbon. The method converts ribbon data into an array of JSON objects. Each JSON object contains the configuration of a separate Ribbon control.
 
 ~~~js
 const state = ribbon1.data.serialize();
 ~~~
 
-Then you can parse the data stored in the saved state array to a different ribbon. For example:
+You can parse the saved state array into a different ribbon:
 
 ~~~js
 // creating a new ribbon
@@ -126,7 +125,7 @@ ribbon2.data.parse(state);
 
 ## JSON format templates
 
-This section will give you the idea of JSON format templates for separate Ribbon controls.
+This section shows JSON format templates for Ribbon controls.
 
 ### Common template
 
@@ -156,7 +155,7 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~
 
 :::note 
-View the full list of properties of the **block** object in the [related article](ribbon/api/api_block_properties.md). 
+View the full list of properties of the `block` object in the [related article](ribbon/api/api_block_properties.md).
 :::
 
 ### Button template
@@ -174,7 +173,7 @@ View the full list of properties of the **block** object in the [related article
 ~~~
 
 :::note
-View the full list of properties of the **button** object in the [related article](ribbon/api/api_button_properties.md).
+View the full list of properties of the `button` object in the [related article](ribbon/api/api_button_properties.md).
 :::
 
 ### Custom HTML template
@@ -189,7 +188,7 @@ View the full list of properties of the **button** object in the [related articl
 ~~~
 
 :::note
-You can view the full list of properties of the **customHTML** object in the [related article](ribbon/api/api_customhtml_properties.md). 
+View the full list of properties of the `customHTML` object in the [related article](ribbon/api/api_customhtml_properties.md).
 :::
 
 ### ImageButton template
@@ -204,7 +203,7 @@ You can view the full list of properties of the **customHTML** object in the [re
 ~~~
 
 :::note
-You can find the full list of properties of the **imageButton** object in the [related article](ribbon/api/api_imagebutton_properties.md). 
+View the full list of properties of the `imageButton` object in the [related article](ribbon/api/api_imagebutton_properties.md).
 :::
 
 ### Input template
@@ -222,7 +221,7 @@ You can find the full list of properties of the **imageButton** object in the [r
 ~~~
 
 :::note
-View the full list of properties of the **input** object in the [related article](ribbon/api/api_input_properties.md). 
+View the full list of properties of the `input` object in the [related article](ribbon/api/api_input_properties.md).
 :::
 
 ### NavItem template
@@ -237,7 +236,7 @@ View the full list of properties of the **input** object in the [related article
 ~~~
 
 :::note 
-Check the full list of properties of the **navItem** object in the [related article](ribbon/api/api_navitem_properties.md). 
+View the full list of properties of the `navItem` object in the [related article](ribbon/api/api_navitem_properties.md).
 :::
 
 ### SelectButton template
@@ -253,7 +252,7 @@ Check the full list of properties of the **navItem** object in the [related arti
 ~~~
 
 :::note
-You will find the full list of properties of the **selectButton** object in the [related article](ribbon/api/api_selectbutton_properties.md). 
+View the full list of properties of the `selectButton` object in the [related article](ribbon/api/api_selectbutton_properties.md).
 :::
 
 ###  Separator template
@@ -267,7 +266,7 @@ You will find the full list of properties of the **selectButton** object in the 
 ~~~
 
 :::note
-You can find the full list of properties of the **separator** object in the [related article](ribbon/api/api_separator_properties.md). 
+View the full list of properties of the `separator` object in the [related article](ribbon/api/api_separator_properties.md).
 :::
 
 ### Spacer template
@@ -281,7 +280,7 @@ You can find the full list of properties of the **separator** object in the [rel
 ~~~
 
 :::note
-View the full list of properties of the **spacer** object in the [related article](ribbon/api/api_spacer_properties.md).
+View the full list of properties of the `spacer` object in the [related article](ribbon/api/api_spacer_properties.md).
 :::
 
 ### Title template
@@ -297,5 +296,5 @@ View the full list of properties of the **spacer** object in the [related articl
 ~~~
 
 :::note
-Check the full list of properties of the **title** object in the [related article](ribbon/api/api_title_properties.md).
+View the full list of properties of the `title` object in the [related article](ribbon/api/api_title_properties.md).
 :::
