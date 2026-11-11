@@ -6,7 +6,7 @@ description: You can have an overview of Slider in the documentation of the DHTM
 
 # Slider overview
 
-DHTMLX Slider allows adding handy slider bars into web pages and applications. The component is rather flexible and easily adjustable. It is available in several modes and provides simple and convenient API.
+DHTMLX Slider is a component that adds slider bars to web pages and applications. You can use it in the horizontal, vertical, inverse, or range mode and configure its scale, label, and tooltip. The Slider API gives you control over the component behavior.
 
 Check [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider).
 
@@ -28,6 +28,8 @@ Learn how to build a full-featured DHTMLX Slider:
 - Try the [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider)
 
 ## Guides
+
+The following articles explain how to add Slider to a page, configure it, use the range mode, work with it, customize it, and handle its events:
 
 - [](slider/initializing_slider.md)
 - [](slider/configuring_slider.md)
