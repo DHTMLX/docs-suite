@@ -20,7 +20,7 @@ afterAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => void;
 - `index: number` - the index of the added item within the batch; `undefined` if a single item (not an array) is added
 
 @example:
-component.data.events.on("afterAdd", function(newItem, batch, index){
+component.data.events.on("afterAdd", (newItem, batch, index) => {
     console.log("New items are added");
 });
 

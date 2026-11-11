@@ -25,7 +25,7 @@ forEach(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any,
 - `level?: number` - optional, the number of levels to be iterated over. If not specified, each nested level will be visited
 
 @example:
-component.data.forEach(function (element, index, array) {
+component.data.forEach((element, index, array) => {
     console.log("This is an item of treeCollection: ", element);
     console.log("This is an index of the element: ", index);
     console.log("This is an array of the elements: ", array);

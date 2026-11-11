@@ -72,7 +72,7 @@ You can attach a handler to an event of TreeCollection in either of the two ways
 - via the `data` object of the widget
 
 ~~~jsx
-menu.data.events.on("afterAdd", function(newItem){
+menu.data.events.on("afterAdd", (newItem) => {
     console.log("A new item is added");
 });
 ~~~
@@ -80,7 +80,7 @@ menu.data.events.on("afterAdd", function(newItem){
 - or directly via the `events` object of the widget
 
 ~~~jsx
-menu.events.on("afterAdd", function(newItem){
+menu.events.on("afterAdd", (newItem) => {
     console.log("A new item is added");
 });
 ~~~

@@ -23,7 +23,7 @@ loadError: (response: string | { status: number; statusText: string; message?: s
         - `message?: string` - optional, the text of the server response
 
 @example:
-component.data.events.on("loadError", function(error){
+component.data.events.on("loadError", (response) => {
     // your code here
 });
 

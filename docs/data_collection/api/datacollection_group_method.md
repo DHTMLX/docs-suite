@@ -71,7 +71,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.data.group([
-    function(row) {
+    (row) => {
         if (row.salary < 30000) return "Low income";
         if (row.salary >= 30000 && row.salary < 70000) return "Medium income";
         return "High income";

@@ -38,7 +38,7 @@ Data saving is asynchronous, so you need to return a promise - the result of the
 ~~~jsx
 const data = new TreeCollection();
 data.save(loader);
-return data.saveData.then(function () {
+return data.saveData.then(() => {
     // now your data is saved
 });
 ~~~
@@ -46,7 +46,7 @@ return data.saveData.then(function () {
 Use the [`isSaved()`](tree_collection/api/treecollection_issaved_method.md) method to check whether the changes are saved:
 
 ~~~jsx
-toolbar.data.saveData.then(function () {
+toolbar.data.saveData.then(() => {
     console.log(toolbar.data.isSaved());
 });
 ~~~

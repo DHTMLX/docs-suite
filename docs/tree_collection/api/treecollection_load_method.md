@@ -37,7 +37,7 @@ The collection makes an AJAX call and expects the remote URL to provide valid da
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
 ~~~jsx
-toolbar.data.load(url).then(function () {
+toolbar.data.load(url).then(() => {
     //do something after load;
 });
 ~~~
@@ -46,7 +46,7 @@ or
 
 ~~~jsx
 toolbar.data.load(url);
-toolbar.data.loadData.then(function () {
+toolbar.data.loadData.then(() => {
     //do something after load;
 });
 // loadData executes a callback function after an asynchronous

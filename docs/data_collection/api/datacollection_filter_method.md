@@ -59,12 +59,12 @@ Note that after calling the method with the `silent:true` parameter, you may nee
 
 @example:
 // filtering data by a function
-grid.data.filter(function (item) {
+grid.data.filter((item) => {
     return item.a > 0 && item.b !== "Apple";
 });
 
 // or
-grid.data.filter(function (item) {
+grid.data.filter((item) => {
     return item.a > 0 && item.b !== "Apple";
 }, {
     add: true,
@@ -74,11 +74,11 @@ grid.data.filter(function (item) {
 grid.data.filter({
     by: "a",
     match: "Orange",
-    compare: function (value, match, item) {
+    compare: (value, match, item) => {
         if (item.a !== "Some") {
-            return val === "New";
+            return value === "New";
         }
-    return false;
+        return false;
     }
 }, {
     add: true,

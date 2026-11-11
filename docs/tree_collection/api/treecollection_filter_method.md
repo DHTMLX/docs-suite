@@ -73,7 +73,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 // filtering data by a function
-grid.data.filter(function (item) {
+grid.data.filter((item) => {
     return item.value.toLowerCase().indexOf("a") !== -1;
 });
 ~~~

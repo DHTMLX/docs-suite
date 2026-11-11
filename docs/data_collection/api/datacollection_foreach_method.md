@@ -21,7 +21,7 @@ forEach(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any)
     - `array?: IDataItem[]` - optional, the array of items the method was called upon
 
 @example:
-component.data.forEach(function (item, index, array) {
+component.data.forEach((item, index, array) => {
     console.log("This is an item of dataCollection: ", item);
     console.log("This is an index of the element: ", index);
     console.log("This is an array of the elements: ", array);

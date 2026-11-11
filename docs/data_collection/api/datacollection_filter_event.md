@@ -27,7 +27,7 @@ filter: (filter?: IFilter) => void;
     - the value is an object with the `rule` and `config` properties passed to the [`filter()`](data_collection/api/datacollection_filter_method.md) method
 
 @example:
-component.data.events.on("filter", function(filter) {
+component.data.events.on("filter", (filter) => {
     console.log("Items were filtered");
 });
 

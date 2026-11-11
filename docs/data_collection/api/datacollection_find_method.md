@@ -31,7 +31,7 @@ The object of the first matching item, or `null` if no item matches the rule.
 
 @example:
 // searching for an item by the function
-const item = component.data.find(function (item) {
+const item = component.data.find((item) => {
     if (item.text === "Manager" || item.text === "Marketer") {
         return true
     }

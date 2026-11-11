@@ -15,7 +15,7 @@ removeAll: () => void;
 ~~~
 
 @example:
-component.data.events.on("removeAll", function(){
+component.data.events.on("removeAll", () => {
     console.log("Items are removed");
 });
 

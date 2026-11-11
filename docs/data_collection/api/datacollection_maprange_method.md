@@ -26,7 +26,7 @@ mapRange(from: number, to: number, callback: (item: IDataItem, index?: number, a
 A new array with the results of calling the callback function for each item of the range.
 
 @example:
-const result = component.data.mapRange(0, 20, function (item, index, array) {
+const result = component.data.mapRange(0, 20, (item, index, array) => {
     console.log(item.id, index);
 });
 

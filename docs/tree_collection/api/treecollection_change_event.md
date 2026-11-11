@@ -23,7 +23,7 @@ change: (id?: Id, status?: Statuses, updatedItem?: IDataItem) => void;
 - `updatedItem?: IDataItem` - optional, the object of an updated item
 
 @example:
-component.data.events.on("change", function(id,status,updatedItem){
+component.data.events.on("change", (id, status, updatedItem) => {
     console.log("An item is updated");
 });
 

@@ -31,9 +31,9 @@ An array with the objects of the matching items; an empty array if no item match
 
 @example:
 // searching for items by the function
-const items = component.data.findAll(function (items) {
-    if (items.text === "Manager" || items.text === "Marketer") {
-        return true
+const items = component.data.findAll((item) => {
+    if (item.text === "Manager" || item.text === "Marketer") {
+        return true;
     }
 });
 

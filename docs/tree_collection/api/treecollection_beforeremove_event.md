@@ -23,7 +23,7 @@ beforeRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => boo
 Return `false` to prevent removing of the item from the collection; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeRemove", function(removedItem){
+component.data.events.on("beforeRemove", (removedItem) => {
     console.log("An item will be removed");
     return true;
 });

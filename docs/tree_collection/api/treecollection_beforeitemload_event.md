@@ -22,7 +22,7 @@ beforeItemLoad: (id: Id) => boolean | void;
 Return `false` to prevent loading of the child items; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeItemLoad", function(id){
+component.data.events.on("beforeItemLoad", (id) => {
     console.log("The child items of the " + id + " item will be loaded");
     // return false to prevent loading of the child items
     return false;

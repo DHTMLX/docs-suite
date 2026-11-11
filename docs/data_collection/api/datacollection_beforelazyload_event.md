@@ -18,7 +18,7 @@ beforeLazyLoad: () => boolean | void;
 Return `false` to block sending a request to the server; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeLazyLoad", function () {
+component.data.events.on("beforeLazyLoad", () => {
     // your code here
     return false;
 });

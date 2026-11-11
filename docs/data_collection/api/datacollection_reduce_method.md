@@ -27,8 +27,8 @@ reduce<A>(callback: ReduceCallBack<IDataItem, A>, acc: A): A;
 A single output value.
 
 @example:
-const total = component.data.reduce(function (acc, IDataItem, index) {
-    return acc + IDataItem.value;
+const total = component.data.reduce((acc, item, index) => {
+    return acc + item.value;
 }, 0);
 
 @descr:

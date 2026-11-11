@@ -20,7 +20,7 @@ afterRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => void
 - `index: number` - the index of the removed item within the batch
 
 @example:
-component.data.events.on("afterRemove", function(removedItem, batch, index){
+component.data.events.on("afterRemove", (removedItem, batch, index) => {
     console.log("Items are removed");
 });
 

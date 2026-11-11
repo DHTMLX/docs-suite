@@ -19,7 +19,7 @@ afterItemLoad: (id: Id) => void;
 - `id: Id` - the id of the item the child items of which are loaded
 
 @example:
-component.data.events.on("afterItemLoad", function(id){
+component.data.events.on("afterItemLoad", (id) => {
     console.log("The child items of the " + id + " item are loaded");
 });
 

@@ -19,7 +19,7 @@ afterLazyLoad: (from: number, count: number) => void;
 - `count: number` - the count of records loaded from the server
 
 @example:
-component.data.events.on("afterLazyLoad", function (from, count) {
+component.data.events.on("afterLazyLoad", (from, count) => {
     // your code here
 });
 

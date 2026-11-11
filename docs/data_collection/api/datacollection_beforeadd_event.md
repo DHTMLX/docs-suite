@@ -23,7 +23,7 @@ beforeAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => boolean | 
 Return `false` to prevent adding of the item to the collection; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeAdd", function(newItem, batch, index){
+component.data.events.on("beforeAdd", (newItem, batch, index) => {
     console.log("New items will be added");
     return true;
 });

@@ -25,7 +25,7 @@ A new array with the results of calling the callback function for each item.
 
 @example:
 // getting the ids of all items of the component
-component.data.map(function (item, index, array) {
+component.data.map((item, index, array) => {
     return item.id;
 });
 

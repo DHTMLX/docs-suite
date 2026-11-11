@@ -74,7 +74,7 @@ You can attach a handler to an event of DataCollection in either of the two ways
 - via the `data` object of the widget
 
 ~~~jsx
-chart.data.events.on("afterAdd", function(newItem){
+chart.data.events.on("afterAdd", (newItem) => {
     console.log("A new item is added");
 });
 ~~~
@@ -82,7 +82,7 @@ chart.data.events.on("afterAdd", function(newItem){
 - or directly via the `events` object of the widget
 
 ~~~jsx
-chart.events.on("afterAdd", function(newItem){
+chart.events.on("afterAdd", (newItem) => {
     console.log("A new item is added");
 });
 ~~~

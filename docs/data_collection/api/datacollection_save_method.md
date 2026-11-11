@@ -37,7 +37,7 @@ Data saving is asynchronous, so you need to return a promise - the result of the
 ~~~jsx
 const data = new DataCollection();
 data.save(loader);
-return data.saveData.then(function () {
+return data.saveData.then(() => {
     // now your data is saved
 });
 ~~~
@@ -45,7 +45,7 @@ return data.saveData.then(function () {
 Use the [`isSaved`](data_collection/api/datacollection_issaved_method.md) method to check whether the changes are saved:
 
 ~~~jsx
-grid.data.saveData.then(function () {
+grid.data.saveData.then(() => {
     console.log(grid.data.isSaved());
 });
 ~~~

@@ -15,7 +15,7 @@ load: () => void;
 ~~~
 
 @example:
-component.data.events.on("load", function(){
+component.data.events.on("load", () => {
     console.log("Items are loaded.");
 });
 
