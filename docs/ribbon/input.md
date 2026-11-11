@@ -6,13 +6,13 @@ description: You can explore the Input of Ribbon in the documentation of the DHT
 
 # Input
 
-A text input field with an icon.
+The Input control displays a text input field with an icon.
 
 ![Ribbon search input field with a magnifier icon and placeholder text in DHTMLX Suite](/img/ribbon/input.png)
 
-## Adding Input
+## Add Input {#adding-input}
 
-The following syntax shows how an Input control can be easily added to a ribbon:
+The following code adds an Input control to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -26,31 +26,31 @@ ribbon.data.add({
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_input_properties.md) in the configuration object of an Input control.
+Check the [list of properties](ribbon/api/api_input_properties.md) that you can set in the configuration object of an Input control.
 
-## Showing/hiding Input
+## Show and hide Input {#showinghiding-input}
 
-You can show or hide Input with the methods of Ribbon:
+The `show()` and `hide()` methods of Ribbon show and hide an Input control by its ID:
 
 ~~~js
 ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Enabling/disabling Input
+## Enable and disable Input {#enablingdisabling-input}
 
-You can also disable and enable inputs:
+The `enable()` and `disable()` methods enable and disable an Input control by its ID:
 
 ~~~js
 ribbon.enable(id);
 ribbon.disable(id);
 ~~~
 
-## Setting/getting Input value
+## Set and get the Input value {#settinggetting-input-value}
 
-You can use the **setState()** and **getState()** methods of Ribbon to change and access the value of Input.
+Use the `setState()` and `getState()` methods of Ribbon to set and get the value of an Input control.
 
-To fill in Input with text, call **setState()** with a key-value pair as a parameter, where the key is the ID of the input and the value is the text:
+To fill an Input control with text, pass a key-value pair to the `setState()` method. The key is the ID of the input, and the value is the text:
 
 ~~~js
 {
@@ -62,7 +62,7 @@ To fill in Input with text, call **setState()** with a key-value pair as a param
 ribbon.setState({search:"Summer"});
 ~~~
 
-To get the text that is currently inside the Input control, call **getState()**:
+To get the current text of an Input control, call the `getState()` method:
 
 ~~~js
 ribbon.getState();

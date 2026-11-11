@@ -6,13 +6,13 @@ description: You can explore the Separator of Ribbon in the documentation of the
 
 # Separator
 
-This is a control that adds a line separating items/groups of items from each other.
+The Separator control displays a line between items or groups of items.
 
 ![Ribbon with vertical separators dividing grouped button sections in DHTMLX Suite](/img/ribbon/separator.png)
 
-## Adding Separator
+## Add Separator {#adding-separator}
 
-A separator can be added between menu options:
+Use the `add()` method of TreeCollection to add a separator between Ribbon controls:
 
 ~~~js
 ribbon.data.add({
@@ -24,11 +24,11 @@ ribbon.data.add({
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_separator_properties.md) in the configuration object of a Separator control.
+Check the [list of properties](ribbon/api/api_separator_properties.md) that you can set in the configuration object of a Separator control.
 
-## Showing/hiding Separator
+## Show and hide Separator {#showinghiding-separator}
 
-You can hide and show Separator with the methods of Ribbon:
+Use the methods of Ribbon to show and hide a Separator control by its ID:
 
 ~~~js
 ribbon.showItem(id);

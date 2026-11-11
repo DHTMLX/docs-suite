@@ -6,13 +6,13 @@ description: You can explore the SelectButton of Ribbon in the documentation of 
 
 # SelectButton
 
-This is a button that contains a drop-down list of options.
+The SelectButton control displays a button with a drop-down list of options.
 
 ![Ribbon select button with a dropdown list of file format options in DHTMLX Suite](/img/ribbon/select_button.png)
 
-## Adding SelectButton
+## Add SelectButton {#adding-selectbutton}
 
-A new SelectButton can be created with the help of the **add()** method of Tree Collection:
+Use the `add()` method of TreeCollection to add a SelectButton control to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -42,8 +42,8 @@ ribbon.data.add({
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_selectbutton_properties.md) in the configuration object of a SelectButton control.
+Check the [list of properties](ribbon/api/api_selectbutton_properties.md) that you can set in the configuration object of a SelectButton control.
 
-## Operations with a button
+## Work with SelectButton {#operations-with-a-button}
 
-You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Use the [Ribbon API](ribbon/api/api_overview.md) and the [TreeCollection API](/tree_collection/) to work with a SelectButton control.

@@ -6,13 +6,13 @@ description: You can explore the MenuItem of Sidebar in the documentation of the
 
 # MenuItem
 
-MenuItem is a drop-down list of options, can contain its own sub-menu. 
+The MenuItem control displays a drop-down list of options. It can contain its own submenu.
 
 ![Sidebar MenuItem with an expanded drop-down list of options in DHTMLX Suite](/img/sidebar/menuitem.png)
 
-## Adding MenuItem
+## Add MenuItem {#adding-menuitem}
 
-A menuItem can be easily added to a sidebar with the help of the **add()** method of Tree Collection:
+Use the `add()` method of TreeCollection to add a MenuItem control to a sidebar:
 
 ~~~js
 sidebar.data.add({
@@ -27,11 +27,11 @@ sidebar.data.add({
 
 ### Properties
 
-You can provide the [following properties](sidebar/api/api_menuitem_properties.md) in the configuration object of a MenuItem control.
+Check the [list of properties](sidebar/api/api_menuitem_properties.md) that you can set in the configuration object of a MenuItem control.
 
-## Adding an icon
+## Add an icon {#adding-an-icon}
 
-A menuItem can have an icon which is set through the corresponding option **icon**:
+Use the `icon` property to add an icon to a MenuItem control:
 
 ~~~js
 {
@@ -40,9 +40,9 @@ A menuItem can have an icon which is set through the corresponding option **icon
 }
 ~~~
 
-## Adding a badge with a number
+## Add a badge with a number {#adding-a-badge-with-a-number}
 
-You can add a number badge to the menuItem to display information like the number of new messages. The badge is set via the **count** property:
+Use the `count` property to add a badge with a number to a MenuItem control, for example, to count new messages:
 
 ~~~js
 {
@@ -52,9 +52,9 @@ You can add a number badge to the menuItem to display information like the numbe
 }
 ~~~
 
-## Adding HTML content
+## Add HTML content {#adding-html-content}
 
-You can add any custom HTML content to a menuItem with the help of the **html** property:
+Use the `html` property to add custom HTML content to a MenuItem control:
 
 ~~~js
 {
@@ -63,27 +63,27 @@ You can add any custom HTML content to a menuItem with the help of the **html** 
 }
 ~~~
 
-## Showing/hiding a menuItem
+## Show and hide a MenuItem {#showinghiding-a-menuitem}
 
-To hide/show a menuItem, you should pass the ID of the menuItem to the **hide() / show()** Sidebar methods:
+The `show()` and `hide()` methods of Sidebar show and hide a MenuItem control by its ID:
 
 ~~~js
 sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-## Enabling/disabling a menuItem
+## Enable and disable a MenuItem {#enablingdisabling-a-menuitem}
 
-Any menuItem in the sidebar can be enabled/disabled:
+The `enable()` and `disable()` methods enable and disable a MenuItem control by its ID:
 
 ~~~js
 sidebar.enable(id);
 sidebar.disable(id);
 ~~~
 
-## Setting tooltip
+## Add a tooltip {#setting-tooltip}
 
-You can add a tooltip to a menuItem:
+Use the `tooltip` property to add a tooltip to a MenuItem control:
 
 ~~~js {4}
 {

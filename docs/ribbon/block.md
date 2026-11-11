@@ -6,13 +6,13 @@ description: You can explore the Block of Ribbon in the documentation of the DHT
 
 # Block
 
-The Block control is used for grouping related controls.
+The Block control groups related controls.
 
 ![Ribbon with color-highlighted blocks grouping related buttons in DHTMLX Suite](/img/ribbon/ribbon_block.png)
 
-## Creating a Block
+## Create a block {#creating-a-block}
 
-This is the basic syntax of a block with two buttons in a row:
+The following example configures a block with two buttons in a row:
 
 ~~~js
 {
@@ -27,11 +27,11 @@ This is the basic syntax of a block with two buttons in a row:
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_block_properties.md) in the configuration object of a Block control.
+Check the [list of properties](ribbon/api/api_block_properties.md) that you can set in the configuration object of a Block control.
 
-## Adding a Block
+## Add a block {#adding-a-block}
 
-A block can be added to a ribbon with the help of the **add()** method of TreeCollection:
+Use the `add()` method of TreeCollection to add a block to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -42,7 +42,7 @@ ribbon.data.add({
 });
 ~~~
 
-Controls for this block can be added afterwards with the same method:
+Use the same method to add controls to the block:
 
 ~~~js
 ribbon.data.add({
@@ -57,28 +57,28 @@ ribbon.data.add({
 },-1,"files");
 ~~~
 
-**add()** in this case receives three parameters:
+In these calls, the `add()` method takes three parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>item</b></td>
+            <td><code>item</code></td>
             <td>the configuration of the added item</td>
         </tr>
         <tr>
-            <td><b>index</b></td>
-            <td>defines the position of the item in the block (-1 will place it after the last control)</td>
+            <td><code>index</code></td>
+            <td>defines the position of the item in the block (<code>-1</code> places the item after the last control)</td>
         </tr>
         <tr>
-            <td><b>blockId</b></td>
+            <td><code>blockId</code></td>
             <td>the ID of the block</td>
         </tr>
     </tbody>
 </table>
 
-## Adding HTML content
+## Add HTML content {#adding-html-content}
 
-You can add any custom HTML content to an item of the block with the help of the **html** property:
+Use the `html` property to add custom HTML content to a block item:
 
 ~~~js
 {
@@ -95,9 +95,9 @@ You can add any custom HTML content to an item of the block with the help of the
 
 **Related sample**: [Ribbon. Item HTML content](https://snippet.dhtmlx.com/3djaib6o)
 
-## Nesting blocks
+## Nest blocks {#nesting-blocks}
 
-You can add blocks inside blocks to create complex blocks with several rows and columns, e.g.:
+You can put blocks inside other blocks to arrange controls in several rows and columns, for example:
 
 ~~~js
 {
@@ -129,18 +129,18 @@ You can add blocks inside blocks to create complex blocks with several rows and 
 }
 ~~~
 
-## Hiding/showing blocks
+## Show and hide blocks {#hidingshowing-blocks}
 
-To hide/show a block, you should pass its ID to the **hide() / show()** methods:
+The `show()` and `hide()` methods show and hide a block by its ID:
 
 ~~~js
 ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Disabling/enabling blocks
+## Enable and disable blocks {#disablingenabling-blocks}
 
-A block can be enabled/disabled:
+The `enable()` and `disable()` methods enable and disable a block by its ID:
 
 ~~~js
 ribbon.enable(id);

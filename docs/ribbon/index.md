@@ -6,7 +6,7 @@ description: You can have an overview of Ribbon in the documentation of the DHTM
 
 # Ribbon overview
 
-DHTMLX Ribbon is an advanced version of DHTMLX Toolbar. It aggregates commands and tools used in an application or in a website into logical blocks thus providing a handy navigation bar. Check [online samples for DHTMLX Ribbon](https://snippet.dhtmlx.com/3djaib6o?tag=ribbon).
+DHTMLX Ribbon is an advanced version of DHTMLX Toolbar. Ribbon groups the commands and tools of an application or website into logical blocks and works as a navigation bar. Check [online samples for DHTMLX Ribbon](https://snippet.dhtmlx.com/3djaib6o?tag=ribbon).
 
 ![Ribbon toolbar with grouped File, Action, Text and Output buttons in DHTMLX Suite](/img/ribbon/ribbon_front.png)
 
@@ -24,13 +24,13 @@ Learn how to build a full-featured DHTMLX Ribbon:
 
 - [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Ribbon as part of the Suite library
 - Try the [online samples for DHTMLX Ribbon](https://snippet.dhtmlx.com/3djaib6o?tag=ribbon)
-- To work with data of Ribbon check [TreeCollection API](/tree_collection/)
+- Check the [TreeCollection API](/tree_collection/) to work with Ribbon data
 
 ## Guides
 
 ### Ribbon settings
 
-Introduces the steps of creating Ribbon and discusses the ways of customizing and manipulating this component.
+The following articles explain how to add Ribbon to a page, load data into it, work with it, customize it, and handle its events:
 
 - [](ribbon/how_to_start.md)
 - [](ribbon/data_loading.md)
@@ -40,7 +40,7 @@ Introduces the steps of creating Ribbon and discusses the ways of customizing an
 
 ### Ribbon controls
 
-Includes the overview of main Ribbon controls and their attributes.
+The following articles describe the main Ribbon controls and their attributes:
 
 - [](ribbon/block.md)
 - [](ribbon/button.md)

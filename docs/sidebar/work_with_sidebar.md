@@ -6,9 +6,9 @@ description: You can explore how to work with Sidebar in the documentation of th
 
 # Work with Sidebar
 
-## Expanding and collapsing Sidebar
+## Expand and collapse Sidebar {#expanding-and-collapsing-sidebar}
 
-It is possible to expand/collapse a sidebar using two corresponding methods - [expand()](sidebar/api/sidebar_expand_method.md) and [collapse()](sidebar/api/sidebar_collapse_method.md):
+The [`expand()`](sidebar/api/sidebar_expand_method.md) and [`collapse()`](sidebar/api/sidebar_collapse_method.md) methods expand and collapse a sidebar:
 
 ~~~js
 sidebar.expand(); // expands a sidebar
@@ -17,9 +17,9 @@ sidebar.collapse(); // collapses a sidebar
 
 **Related sample**: [Sidebar. Collapse/expand](https://snippet.dhtmlx.com/ydlltdq6)
 
-## Toggling Sidebar
+## Toggle Sidebar {#toggling-sidebar}
 
-You can collapse and expand a sidebar with the help of the [toggle()](sidebar/api/sidebar_toggle_method.md) method as easy as that:
+The [`toggle()`](sidebar/api/sidebar_toggle_method.md) method collapses an expanded sidebar and expands a collapsed one:
 
 ~~~js
 sidebar.toggle();
@@ -27,17 +27,17 @@ sidebar.toggle();
 
 **Related sample**: [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
 
-## Checking if Sidebar is collapsed
+## Check if Sidebar is collapsed {#checking-if-sidebar-is-collapsed}
 
-To check whether Sidebar is collapsed, make use of the [isCollapsed()](sidebar/api/sidebar_iscollapsed_method.md) method of the Sidebar API. The method returns *true*, if a sidebar is collapsed, and *false* if it's expanded.
+The [`isCollapsed()`](sidebar/api/sidebar_iscollapsed_method.md) method checks whether a sidebar is collapsed. The method returns `true` if the sidebar is collapsed and `false` if it is expanded:
 
 ~~~js
 sidebar.isCollapsed(); // -> true/false
 ~~~
 
-## Hiding and showing controls
+## Show and hide controls {#hiding-and-showing-controls}
 
-You can show or hide controls by their IDs. Pass them to the corresponding methods - [show()](sidebar/api/sidebar_show_method.md) and [hide()](sidebar/api/sidebar_hide_method.md):
+The [`show()`](sidebar/api/sidebar_show_method.md) and [`hide()`](sidebar/api/sidebar_hide_method.md) methods show and hide controls by their IDs:
 
 ~~~js
 sidebar.hide(id); // hides a control
@@ -46,7 +46,7 @@ sidebar.show(id); // shows a control
 
 **Related sample**: [Sidebar. Show/hide](https://snippet.dhtmlx.com/5hsowdoy)
 
-Starting from v7.0, it is possible to hide/show all Sidebar controls on the page at once by using the methods without parameters:
+Starting from v7.0, you can call the methods without parameters to hide or show all Sidebar controls at once:
 
 ~~~js
 // hides all Sidebar controls
@@ -55,9 +55,9 @@ sidebar.hide();
 sidebar.show();
 ~~~
 
-## Disabling and enabling controls
+## Enable and disable controls {#disabling-and-enabling-controls}
 
-You can disable or enable controls. The related methods - [enable()](sidebar/api/sidebar_enable_method.md) and [disable()](sidebar/api/sidebar_disable_method.md) - take the IDs of controls as parameters:
+The [`enable()`](sidebar/api/sidebar_enable_method.md) and [`disable()`](sidebar/api/sidebar_disable_method.md) methods enable and disable controls by their IDs:
 
 ~~~js
 sidebar.disable(id); // disables a control
@@ -66,7 +66,7 @@ sidebar.enable(id);  // enables a control
 
 **Related sample**: [Sidebar. Enable/disable](https://snippet.dhtmlx.com/ea9fywne)
 
-Starting from v7.0, it is possible to disable/enable all Sidebar controls on the page at once by using the methods without parameters:
+Starting from v7.0, you can call the methods without parameters to disable or enable all Sidebar controls at once:
 
 ~~~js
 // disables all Sidebar controls
@@ -75,15 +75,15 @@ sidebar.disable();
 sidebar.enable();
 ~~~
 
-## Checking if a Sidebar item is disabled
+## Check if a Sidebar item is disabled {#checking-if-a-sidebar-item-is-disabled}
 
-To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/sidebar_isdisabled_method.md) method. The method takes one parameter:
+The [`isDisabled()`](sidebar/api/sidebar_isdisabled_method.md) method checks whether a Sidebar item is disabled. The method takes one parameter:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) an id of a sidebar item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of a Sidebar item</td>
         </tr>
     </tbody>
 </table>
@@ -94,21 +94,21 @@ sidebar.isDisabled("1"); // -> true/false
 
 **Related sample**: [Sidebar. Enable/disable](https://snippet.dhtmlx.com/ea9fywne)
 
-## Selecting/Unselecting an item
+## Select and unselect an item {#selectingunselecting-an-item}
 
-### Selecting a Sidebar item
+### Select a Sidebar item {#selecting-a-sidebar-item}
 
-To select a particular Sidebar item, make use of the [select()](sidebar/api/sidebar_select_method.md) method of Sidebar. The method takes two parameters:
+The [`select()`](sidebar/api/sidebar_select_method.md) method of Sidebar selects a particular item. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) the id of an item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of an item</td>
         </tr>
         <tr>
-            <td><b>unselect</b></td>
-            <td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
+            <td><code>unselect</code></td>
+            <td>(<code>boolean</code>) optional, <code>true</code> to unselect previously selected items, otherwise <code>false</code> (default: <code>true</code>)</td>
         </tr>
     </tbody>
 </table>
@@ -119,16 +119,16 @@ sidebar.select("categoryPost");
 
 **Related sample**: [Sidebar. Select / unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-### Unselecting a Sidebar item
+### Unselect a Sidebar item {#unselecting-a-sidebar-item}
 
-To remove selection from a selected item, apply the [unselect()](sidebar/api/sidebar_unselect_method.md) method of Sidebar. The method may take the id of an item as a parameter:
+The [`unselect()`](sidebar/api/sidebar_unselect_method.md) method of Sidebar removes selection from a selected item. The method takes the ID of an item as an optional parameter:
 
 ~~~js
 // unselects a specified selected item
 sidebar.unselect("categoryPost");
 ~~~
 
-It is also possible to remove selection from all previously selected items of Sidebar via the [unselect()](sidebar/api/sidebar_unselect_method.md) method:
+Call the method without parameters to remove selection from all selected Sidebar items:
 
 ~~~js
 // unselects all previously selected items
@@ -137,15 +137,15 @@ sidebar.unselect();
 
 **Related sample**: [Sidebar. Select / unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-## Checking if a Sidebar item is selected
+## Check if a Sidebar item is selected {#checking-if-a-sidebar-item-is-selected}
 
-To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/sidebar_isselected_method.md) method. The method takes one parameter:
+The [`isSelected()`](sidebar/api/sidebar_isselected_method.md) method checks whether a Sidebar item is selected. The method takes one parameter:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) an id of a sidebar item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of a Sidebar item</td>
         </tr>
     </tbody>
 </table>
@@ -157,35 +157,35 @@ sidebar.isSelected("categoryPost"); // -> returns true/false
 
 **Related sample**: [Sidebar. Select / unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-## Getting selected items
+## Get selected items {#getting-selected-items}
 
-To get the selected items, call the [getSelected()](sidebar/api/sidebar_getselected_method.md) method. The method returns an array of IDs of selected items:
+The [`getSelected()`](sidebar/api/sidebar_getselected_method.md) method returns an array with the IDs of selected items:
 
 ~~~js
 sidebar.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
 
-## Using Tree collection API
+## Use the TreeCollection API {#using-tree-collection-api}
 
-You can manipulate the controls of Sidebar with the help of the [Tree collection API](/tree_collection/). 
+You can manipulate Sidebar controls with the [TreeCollection API](/tree_collection/).
 
-### Adding new controls into Sidebar
+### Add new controls to Sidebar {#adding-new-controls-into-sidebar}
 
-It is possible to add more controls into the initialized Sidebar on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
+Use the `add()` method of TreeCollection to add controls to an initialized sidebar. The method takes three parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>config</b></td>
-            <td>(<i>object</i>) the configuration object of the added control</td>
+            <td><code>config</code></td>
+            <td>(<code>object</code>) the configuration object of the added control</td>
         </tr>
         <tr>
-            <td><b>index</b></td>
-            <td>(<i>number</i>) optional, the position to add a control at</td>
+            <td><code>index</code></td>
+            <td>(<code>number</code>) optional, the position to add a control at</td>
         </tr>
         <tr>
-            <td><b>parent</b></td>
-            <td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
+            <td><code>parent</code></td>
+            <td>(<code>string</code>) optional, the ID of a parent control (for the <code>menuItem</code> control type)</td>
         </tr>
     </tbody>
 </table>
@@ -205,21 +205,21 @@ sidebar.data.add({
 
 **Related sample**: [Sidebar. Data add](https://snippet.dhtmlx.com/jcnw95ac)
 
-Templates for Sidebar controls in the JSON format are given [here](sidebar/data_loading.md#json-format-templates).
+Check the [JSON format templates](sidebar/data_loading.md#json-format-templates) for Sidebar controls.
 
-### Updating config of controls
+### Update the configuration of controls {#updating-config-of-controls}
 
-You can change config options of the control via the **update()** method of Tree Collection. It takes two parameters:
+The `update()` method of TreeCollection changes the configuration options of a control. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>the id of the control</td>
+            <td><code>id</code></td>
+            <td>the ID of a control</td>
         </tr>
         <tr>
-            <td><b>config</b></td>
-            <td>an object with new configuration of the control</td>
+            <td><code>config</code></td>
+            <td>an object with the new configuration of the control</td>
         </tr>
     </tbody>
 </table>
@@ -234,9 +234,9 @@ sidebar.data.update("add", {
 
 **Related sample**: [Sidebar. Data update](https://snippet.dhtmlx.com/p1zu63le)
 
-### Removing controls from Sidebar
+### Remove controls from Sidebar {#removing-controls-from-sidebar}
 
-To remove a control, make use of the **remove()** method of Tree Collection. Pass the id of the control that should be removed to the method:
+The `remove()` method of TreeCollection removes a control. Pass the ID of the control to the method:
 
 ~~~js
 sidebar.data.remove("control-id");
@@ -244,12 +244,12 @@ sidebar.data.remove("control-id");
 
 **Related sample**: [Sidebar. Data remove](https://snippet.dhtmlx.com/ecp3etuf)
 
-### Rearranging controls
+### Rearrange controls {#rearranging-controls}
 
-You can move menu controls to different positions with the **move()** method of Tree Collection. For example, this is how you can move an item with ID "2" to the left edge of the sidebar:
+Use the `move()` method of TreeCollection to move Sidebar controls to different positions. For example, the following code moves the item with the `"2"` ID to the top of the sidebar:
 
 ~~~js
 sidebar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](/tree_collection/).}} 
+{{note Check the full [TreeCollection API](/tree_collection/) reference.}}
