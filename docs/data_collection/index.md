@@ -1,12 +1,13 @@
 ---
 sidebar_label: Overview
 title: JavaScript DataCollection - DataCollection Overview 
-description: You can have an overview of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Get an overview of the DataCollection API, the methods and events that add, find, filter, sort, group, load and save the items of a flat collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # DataCollection overview
 
-A set of APIs that allow you to work with data of a component. Applicable to Chart, Combobox, DataView, Grid, List.
+DataCollection is a set of methods and events for working with plain (non-hierarchical) data. Chart, Combobox, DataView, Grid and List keep their data in a DataCollection, which is available via the `data` property of the widget.
+
 ## Methods
 
 | Name                                              | Description                                             |
@@ -66,23 +67,25 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](data_collection/api/datacollection_loaderror_event.md)      | @getshort(api/datacollection_loaderror_event.md)      |
 | [](data_collection/api/datacollection_removeall_event.md)      | @getshort(api/datacollection_removeall_event.md)      |
 
-:::info Ways of applying events
+:::info Ways of attaching event handlers
 
-To call the event of DataCollection, you may use either of the two syntaxes:
+You can attach a handler to an event of DataCollection in either of the two ways:
 
-- common syntax (via the **data** object of the component)
+- via the `data` object of the widget
 
-~~~js
+~~~jsx
 chart.data.events.on("afterAdd", function(newItem){
     console.log("A new item is added");
 });
 ~~~
 
-- or short syntax (right through the component)
+- or directly via the `events` object of the widget
 
-~~~js
+~~~jsx
 chart.events.on("afterAdd", function(newItem){
     console.log("A new item is added");
 });
 ~~~
+
+The second way isn't available for Combobox: its `events` object doesn't receive the events of its collection, so use `combo.data.events` instead.
 :::

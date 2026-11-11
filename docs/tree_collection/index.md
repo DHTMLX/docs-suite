@@ -1,12 +1,12 @@
 ---
 sidebar_label: Overview
 title: JavaScript TreeCollection - TreeCollection Overview 
-description: You can have an overview of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Get an overview of the TreeCollection API, the methods and events that add, find, move, filter, sort and load the items of a hierarchical collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # TreeCollection overview
 
-A set of API methods and events that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode.
+TreeCollection is a set of methods and events for working with hierarchical data. Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode and the [Treemap chart](chart/charts_overview.md#treemap-chart) keep their data in a TreeCollection, which is available via the `data` property of the widget.
 
 ## Methods
 
@@ -31,10 +31,11 @@ A set of API methods and events that allow you to work with data of a component 
 | [](tree_collection/api/treecollection_getroot_method.md)          | @getshort(api/treecollection_getroot_method.md)           |
 | [](tree_collection/api/treecollection_getsortingstates_method.md) | @getshort(api/treecollection_getsortingstates_method.md)  |
 | [](tree_collection/api/treecollection_getvisibleindex_method.md)  | @getshort(api/treecollection_getvisibleindex_method.md)  |
-| [](tree_collection/api/treecollection_haveitems_method.md)        | @getshort(api/treecollection_haveitems_method.md)         |    
+| [](tree_collection/api/treecollection_haveitems_method.md)        | @getshort(api/treecollection_haveitems_method.md)         |
 | [](tree_collection/api/treecollection_issaved_method.md)          | @getshort(api/treecollection_issaved_method.md)           |
 | [](tree_collection/api/treecollection_load_method.md)             | @getshort(api/treecollection_load_method.md)              |
 | [](tree_collection/api/treecollection_loaditems_method.md)        | @getshort(api/treecollection_loaditems_method.md)         |
+| [](tree_collection/api/treecollection_map_method.md)              | @getshort(api/treecollection_map_method.md)               |
 | [](tree_collection/api/treecollection_mapvisible_method.md)       | @getshort(api/treecollection_mapvisible_method.md)        |
 | [](tree_collection/api/treecollection_move_method.md)             | @getshort(api/treecollection_move_method.md)              |
 | [](tree_collection/api/treecollection_parse_method.md)            | @getshort(api/treecollection_parse_method.md)             |
@@ -64,11 +65,11 @@ A set of API methods and events that allow you to work with data of a component 
 | [](tree_collection/api/treecollection_loaderror_event.md)      | @getshort(api/treecollection_loaderror_event.md)      |
 | [](tree_collection/api/treecollection_removeall_event.md)      | @getshort(api/treecollection_removeall_event.md)      |
 
-:::info Ways of applying events
+:::info Ways of attaching event handlers
 
-To call the event of TreeCollection, you may use either of the two syntaxes:
+You can attach a handler to an event of TreeCollection in either of the two ways:
 
-- common syntax (via the `data` object of the component)
+- via the `data` object of the widget
 
 ~~~jsx
 menu.data.events.on("afterAdd", function(newItem){
@@ -76,7 +77,7 @@ menu.data.events.on("afterAdd", function(newItem){
 });
 ~~~
 
-- or short syntax (right through the component)
+- or directly via the `events` object of the widget
 
 ~~~jsx
 menu.events.on("afterAdd", function(newItem){
