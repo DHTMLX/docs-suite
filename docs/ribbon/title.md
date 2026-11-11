@@ -6,11 +6,11 @@ description: You can explore the Title of Ribbon in the documentation of the DHT
 
 # Title
 
-This is an item that contains some text.
+The Title control displays text on a ribbon.
 
-## Adding Title control
+## Add Title {#adding-title-control}
 
-A Title control can be added to a ribbon with the help of the **add()** method of TreeCollection:
+Use the `add()` method of TreeCollection to add a Title control to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -21,11 +21,11 @@ ribbon.data.add({
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_title_properties.md) in the configuration object of a Title control.
+Check the [list of properties](ribbon/api/api_title_properties.md) that you can set in the configuration object of a Title control.
 
-## Showing/hiding Title
+## Show and hide Title {#showinghiding-title}
 
-Title can be hidden and shown with the help of the related methods. Pass the id of a Title control as a parameter.
+The `show()` and `hide()` methods of Ribbon show and hide a Title control by its ID:
 
 ~~~js
 ribbon.show(id);

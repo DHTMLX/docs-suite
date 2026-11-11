@@ -6,13 +6,13 @@ description: You can explore the NavItem of Ribbon in the documentation of the D
 
 # NavItem
 
-This is a default control for navigation-related components, can contain any other controls as nested items. 
+The NavItem control is the default control of navigation-related components. It can contain other controls as nested items.
 
 ![Ribbon nav item with a save icon and a red counter badge in DHTMLX Suite](/img/ribbon/navitem.png)
 
-## Adding NavItem
+## Add NavItem {#adding-navitem}
 
-A navItem can be easily added to a ribbon with the help of the **add()** method of Tree Collection:
+Use the `add()` method of TreeCollection to add a NavItem control to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -24,11 +24,11 @@ ribbon.data.add({
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_navitem_properties.md) in the configuration object of a NavItem control.
+Check the [list of properties](ribbon/api/api_navitem_properties.md) that you can set in the configuration object of a NavItem control.
 
-## Adding an icon
+## Add an icon {#adding-an-icon}
 
-A navItem can have an icon which is set through the corresponding option **icon**:
+Use the `icon` property to add an icon to a NavItem control:
 
 ~~~js
 {
@@ -37,9 +37,9 @@ A navItem can have an icon which is set through the corresponding option **icon*
 }
 ~~~
 
-## Adding a badge with a number
+## Add a badge with a number {#adding-a-badge-with-a-number}
 
-You can add a number badge to the navItem to display information like the number of new messages. The badge is set via the **count** property:
+Use the `count` property to add a badge with a number to a NavItem control, for example, to count new messages:
 
 ~~~js
 {
@@ -49,9 +49,9 @@ You can add a number badge to the navItem to display information like the number
 }
 ~~~
 
-## Adding HTML content
+## Add HTML content {#adding-html-content}
 
-You can add a custom HTML content to a navItem with the help of the **html** property:
+Use the `html` property to add custom HTML content to a NavItem control:
 
 ~~~js
 {
@@ -62,27 +62,27 @@ You can add a custom HTML content to a navItem with the help of the **html** pro
 
 **Related sample**: [Ribbon. Item HTML content](https://snippet.dhtmlx.com/3djaib6o)
 
-## Showing/hiding a navItem
+## Show and hide a NavItem {#showinghiding-a-navitem}
 
-To hide/show a navItem, you should pass the ID of the navItem to the **hide() / show()** Ribbon methods:
+The `show()` and `hide()` methods of Ribbon show and hide a NavItem control by its ID:
 
 ~~~js
 ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Enabling/disabling a navItem
+## Enable and disable a NavItem {#enablingdisabling-a-navitem}
 
-Any navItem in the ribbon can be enabled/disabled:
+The `enable()` and `disable()` methods enable and disable a NavItem control by its ID:
 
 ~~~js
 ribbon.enable(id);
 ribbon.disable(id);
 ~~~
 
-## Setting tooltip
+## Add a tooltip {#setting-tooltip}
 
-You can add a tooltip to a navItem:
+Use the `tooltip` property to add a tooltip to a NavItem control:
 
 ~~~js {4}
 {

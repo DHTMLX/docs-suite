@@ -6,13 +6,13 @@ description: You can explore the Title of Sidebar in the documentation of the DH
 
 # Title
 
-This is an item that contains some text.
+The Title control displays text on a sidebar.
 
 ![Sidebar Title control displaying an app name text label in DHTMLX Suite](/img/sidebar/title.png)
 
-## Adding Title control
+## Add Title {#adding-title-control}
 
-A Title control can be added to a sidebar with the help of the **add()** method of TreeCollection:
+Use the `add()` method of TreeCollection to add a Title control to a sidebar:
 
 ~~~js
 sidebar.data.add({
@@ -23,20 +23,20 @@ sidebar.data.add({
 
 ### Properties
 
-You can provide the [following properties](sidebar/api/api_title_properties.md) in the configuration object of a Title control.
+Check the [list of properties](sidebar/api/api_title_properties.md) that you can set in the configuration object of a Title control.
 
-## Showing/hiding Title
+## Show and hide Title {#showinghiding-title}
 
-Title can be hidden and shown with the help of the related methods. Pass the id of a Title control as a parameter.
+The `show()` and `hide()` methods of Sidebar show and hide a Title control by its ID:
 
 ~~~js
 sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-## Adding a tooltip
+## Add a tooltip {#adding-a-tooltip}
 
-You can add a tooltip to a Title control:
+Use the `tooltip` property to add a tooltip to a Title control:
 
 ~~~js
 {

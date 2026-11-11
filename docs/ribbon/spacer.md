@@ -6,13 +6,13 @@ description: You can explore the Spacer of Ribbon in the documentation of the DH
 
 # Spacer
 
-This item takes space on the ribbon and is used for aligning controls.
+The Spacer control adds empty space on the ribbon and helps you align controls.
 
 ![Ribbon with a spacer adding empty space between button groups in DHTMLX Suite](/img/ribbon/spacer.png)
 
-## Adding Spacer
+## Add Spacer {#adding-spacer}
 
-A new Spacer can be created with the help of the **add()** method of Tree Collection:
+Use the `add()` method of TreeCollection to add a Spacer control to a ribbon:
 
 ~~~js
 ribbon.data.add({
@@ -24,11 +24,11 @@ ribbon.data.add({
 
 ### Properties
 
-You can provide the [following properties](ribbon/api/api_spacer_properties.md) in the configuration object of a Spacer control.
+Check the [list of properties](ribbon/api/api_spacer_properties.md) that you can set in the configuration object of a Spacer control.
 
-## Showing/hiding spacer
+## Show and hide Spacer {#showinghiding-spacer}
 
-You can hide and show Spacer with the methods of ribbon:
+The `show()` and `hide()` methods of Ribbon show and hide a Spacer control by its ID:
 
 ~~~js
 ribbon.show(id);

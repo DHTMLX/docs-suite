@@ -7,10 +7,10 @@ description: You can explore the initialization of Sidebar in the documentation 
 # Initialization
 
 :::info
-[Download the DHTMLX Sidebar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Sidebar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Sidebar into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Sidebar to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -39,12 +39,12 @@ To add DHTMLX Sidebar into an application, you need to take the following simple
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -53,7 +53,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Sidebar and give it an id, e.g. "sidebar_container":
+Add a container for Sidebar and give it an id, for example `sidebar_container`:
 
 ~~~html
 <div id="sidebar_container"></div>
@@ -63,8 +63,8 @@ Add a container for the Sidebar and give it an id, e.g. "sidebar_container":
 
 Initialize Sidebar with the `dhx.Sidebar` object constructor. The constructor takes two parameters:
 
-- the HTML object on the page that serves as the sidebar container
-- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
+- The HTML container for Sidebar
+- An object with [configuration properties](#configuration-properties) (optional). If you omit this argument, Sidebar uses the default settings.
 
 ~~~js
 const sidebar = new dhx.Sidebar("sidebar_container", {
@@ -74,11 +74,11 @@ const sidebar = new dhx.Sidebar("sidebar_container", {
 
 ### Configuration properties
 
-The detailed information on Sidebar configuration options can be found in the [Sidebar API overview](sidebar/api/api_overview.md) article.
+The [Sidebar API overview](sidebar/api/api_overview.md) article describes the properties you can specify to adapt Sidebar to your needs.
 
 ## Load data into Sidebar
 
-Detailed information on loading data into Sidebar is given in the article [](sidebar/data_loading.md).
+The [](sidebar/data_loading.md) article explains how to load data into DHTMLX Sidebar.
 
 ## Example
 

@@ -6,13 +6,13 @@ description: You can explore the Spacer of Sidebar in the documentation of the D
 
 # Spacer
 
-This item takes space on the sidebar and is used for aligning controls.
+The Spacer control adds empty space on the sidebar and helps you align controls.
 
 ![Sidebar Spacer adding empty space between navigation items in DHTMLX Suite](/img/sidebar/spacer.png)
 
-## Adding Spacer
+## Add Spacer {#adding-spacer}
 
-A new Spacer can be created with the help of the **add()** method of Tree Collection:
+Use the `add()` method of TreeCollection to add a Spacer control to a sidebar:
 
 ~~~js
 sidebar.data.add({
@@ -24,15 +24,15 @@ sidebar.data.add({
 
 ### Properties
 
-You can provide the [following properties](sidebar/api/api_spacer_properties.md) in the configuration object of a Spacer control.
+Check the [list of properties](sidebar/api/api_spacer_properties.md) that you can set in the configuration object of a Spacer control.
 
-## Showing/hiding Spacer
+## Show and hide Spacer {#showinghiding-spacer}
 
-You can hide and show Spacer with the methods of sidebar:
+The `show()` and `hide()` methods of Sidebar show and hide a Spacer control by its ID:
 
 ~~~js
 sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Check the full list of operations in the [Sidebar API](sidebar/api/api_overview.md) and the [TreeCollection API](/tree_collection/).
