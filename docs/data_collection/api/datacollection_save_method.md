@@ -1,7 +1,7 @@
 ---
 sidebar_label: save()
 title: JavaScript DataCollection - save Method 
-description: You can explore the save method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the save method of DataCollection sends the changes made in a flat collection to the server with POST, PUT and DELETE requests. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # save()
@@ -49,6 +49,10 @@ grid.data.saveData.then(function () {
     console.log(grid.data.isSaved());
 });
 ~~~
+
+**Related API**:
+- [`isSaved()`](data_collection/api/datacollection_issaved_method.md)
+- [`load()`](data_collection/api/datacollection_load_method.md)
 
 @changelog:
 Before v7.2, the method sent the `POST` request to the backend on each change of data. <br>

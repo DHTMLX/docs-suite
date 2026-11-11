@@ -1,7 +1,7 @@
 ---
 sidebar_label: reduce()
 title: JavaScript DataCollection - reduce Method 
-description: You can explore the reduce method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the reduce method of DataCollection calls a reducer function for each item of a flat collection to calculate a single value, such as a sum of the values. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # reduce()
@@ -34,3 +34,7 @@ const total = component.data.reduce(function (acc, IDataItem, index) {
 @descr:
 
 **Related sample**: [Data. Reduce](https://snippet.dhtmlx.com/pv7hewc7)
+
+**Related API**:
+- [`map()`](data_collection/api/datacollection_map_method.md)
+- [`forEach()`](data_collection/api/datacollection_foreach_method.md)

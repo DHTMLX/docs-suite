@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterAdd
 title: JavaScript TreeCollection - afterAdd Event 
-description: You can explore the afterAdd event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterAdd event of TreeCollection fires once an item is added to a tree collection, and which item and index the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterAdd
@@ -26,4 +26,6 @@ component.data.events.on("afterAdd", function(newItem){
 
 @descr:
 
-[comment]: # (@relatedapi:tree_collection/api/beforeadd_event.md)
+**Related API**:
+- [`add()`](tree_collection/api/treecollection_add_method.md)
+- [`beforeAdd`](tree_collection/api/treecollection_beforeadd_event.md)

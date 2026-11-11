@@ -1,7 +1,7 @@
 ---
 sidebar_label: getSortingStates()
 title: JavaScript DataCollection - getSortingStates Method 
-description: You can explore the getSortingStates method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getSortingStates method of DataCollection lists the sorting rules applied to a flat collection at the moment, with the field, the direction and custom functions. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getSortingStates()
@@ -35,6 +35,9 @@ const state = grid.data.getSortingStates();
 // -> [{ by: "country", dir: "desc" }, { by: "population", dir: "desc" }]
 
 @descr:
+
+**Related API**:
+- [`sort()`](data_collection/api/datacollection_sort_method.md)
 
 @changelog:
 added in v9.1

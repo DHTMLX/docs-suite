@@ -1,7 +1,7 @@
 ---
 sidebar_label: sort()
 title: JavaScript DataCollection - sort Method 
-description: You can explore the sort method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the sort method of DataCollection orders the items of a flat collection by a field, by a custom rule or by several rules at once. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # sort()
@@ -63,6 +63,9 @@ grid.data.sort({
     rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
 });
 ~~~
+
+**Related API**:
+- [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md)
 
 @changelog:
 

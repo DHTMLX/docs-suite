@@ -1,7 +1,7 @@
 ---
 sidebar_label: save()
 title: JavaScript TreeCollection - save Method 
-description: You can explore the save method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the save method of TreeCollection sends the changes made in a tree collection to the server with POST, PUT and DELETE requests. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # save()
@@ -50,3 +50,7 @@ toolbar.data.saveData.then(function () {
     console.log(toolbar.data.isSaved());
 });
 ~~~
+
+**Related API**:
+- [`isSaved()`](tree_collection/api/treecollection_issaved_method.md)
+- [`load()`](tree_collection/api/treecollection_load_method.md)

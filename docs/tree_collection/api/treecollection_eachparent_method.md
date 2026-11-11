@@ -1,7 +1,7 @@
 ---
 sidebar_label: eachParent()
 title: JavaScript TreeCollection - eachParent Method 
-description: You can explore the eachParent method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the eachParent method of TreeCollection calls a function for the parent of an item, the parent of that parent and so on up to the top level. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # eachParent()
@@ -28,3 +28,7 @@ eachParent(id: Id, callback: (item: IDataItem, index?: number, array?: IDataItem
 toolbar.data.eachParent("new_btn", item => console.log(item));
 
 @descr:
+
+**Related API**:
+- [`eachChild()`](tree_collection/api/treecollection_eachchild_method.md)
+- [`getParent()`](tree_collection/api/treecollection_getparent_method.md)

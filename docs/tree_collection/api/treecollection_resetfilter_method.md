@@ -1,7 +1,7 @@
 ---
 sidebar_label: resetFilter()
 title: JavaScript TreeCollection - resetFilter Method 
-description: You can explore the resetFilter method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the resetFilter method of TreeCollection removes the filters applied to a tree collection, either one filter by its id or all of them, permanent ones included. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # resetFilter()
@@ -43,5 +43,9 @@ component.data.resetFilter({ permanent: true });
 // resets the filter with the specified id
 component.data.resetFilter({ id: "filter_id" });
 
-@descr:    
+@descr:
 
+**Related API**:
+- [`filter()`](tree_collection/api/treecollection_filter_method.md)
+- [`getFilters()`](tree_collection/api/treecollection_getfilters_method.md)
+- [`filter`](tree_collection/api/treecollection_filter_event.md)

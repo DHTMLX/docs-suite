@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterItemLoad
 title: JavaScript TreeCollection - afterItemLoad Event 
-description: You can explore the afterItemLoad event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterItemLoad event of TreeCollection fires once the child items of an item are loaded with loadItems or refreshItems and added to the collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterItemLoad
@@ -32,5 +32,10 @@ The event fires when you load child items via the [`loadItems()`](tree_collectio
 :::info
 In case of error, the [`loadError`](tree_collection/api/treecollection_loaderror_event.md) event will fire.
 :::
+
+**Related API**:
+- [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md)
+- [`refreshItems()`](tree_collection/api/treecollection_refreshitems_method.md)
+- [`beforeItemLoad`](tree_collection/api/treecollection_beforeitemload_event.md)
 
 @changelog: added in v8.0

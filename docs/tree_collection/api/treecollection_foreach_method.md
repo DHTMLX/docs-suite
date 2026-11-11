@@ -1,7 +1,7 @@
 ---
 sidebar_label: forEach()
 title: JavaScript TreeCollection - forEach Method 
-description: You can explore the forEach method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the forEach method of TreeCollection calls a function for every item of a branch of a tree collection, down to the specified number of levels. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # forEach()
@@ -32,5 +32,9 @@ component.data.forEach(function (element, index, array) {
 });
 
 @descr:
+
+**Related API**:
+- [`map()`](tree_collection/api/treecollection_map_method.md)
+- [`eachChild()`](tree_collection/api/treecollection_eachchild_method.md)
 
 @changelog: added in v6.4

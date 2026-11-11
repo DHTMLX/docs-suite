@@ -1,7 +1,7 @@
 ---
 sidebar_label: filter()
 title: JavaScript DataCollection - filter Method 
-description: You can explore the filter method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the filter method of DataCollection narrows a flat collection down by a rule object, several combined rules or a function, with options to add up and keep filters. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # filter()
@@ -102,4 +102,8 @@ Unless `config.add` is set, the method replaces the currently applied filters; c
 
 When data is [grouped](data_collection/api/datacollection_group_method.md), DataCollection matches the rule against the data items only. It never checks group headers and summary rows against the rule, so a filtering function never receives a `$group` or a `$groupSummary` item. A group stays as long as any of its items match the rule, and DataCollection recalculates the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups that remain.
 
-
+**Related API**:
+- [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md)
+- [`getFilters()`](data_collection/api/datacollection_getfilters_method.md)
+- [`filter`](data_collection/api/datacollection_filter_event.md)
+- [`getInitialData()`](data_collection/api/datacollection_getinitialdata_method.md)

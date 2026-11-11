@@ -1,7 +1,7 @@
 ---
 sidebar_label: removeAll()
 title: JavaScript DataCollection - removeAll Method 
-description: You can explore the removeAll method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the removeAll method of DataCollection clears a flat collection by removing all of its items at once with a single call. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # removeAll()
@@ -20,3 +20,7 @@ component.data.removeAll();
 @descr:
 
 **Related sample**: [Data. Remove all](https://snippet.dhtmlx.com/ykk2ne82)
+
+**Related API**:
+- [`removeAll`](data_collection/api/datacollection_removeall_event.md)
+- [`remove()`](data_collection/api/datacollection_remove_method.md)

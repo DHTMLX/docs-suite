@@ -1,7 +1,7 @@
 ---
 sidebar_label: copy()
 title: JavaScript TreeCollection - copy Method 
-description: You can explore the copy method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the copy method of TreeCollection copies one or several items together with their children to a new position or parent, in the same or another collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # copy()
@@ -33,3 +33,7 @@ toolbar.data.copy("print_btn", 2);
 toolbar2.data.copy("save_btn", 1, toolbar1.data);
 
 @descr:
+
+**Related API**:
+- [`canCopy()`](tree_collection/api/treecollection_cancopy_method.md)
+- [`move()`](tree_collection/api/treecollection_move_method.md)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: copy()
 title: JavaScript DataCollection - copy Method 
-description: You can explore the copy method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the copy method of DataCollection copies one or several items to a new position in the same or another collection and returns the ids of the copies. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # copy()
@@ -30,3 +30,7 @@ component.data.copy("4", 5); // copies the item with id:4 to the position with i
 @descr:
 
 **Related sample**: [Data. Copy](https://snippet.dhtmlx.com/9rws8r05)
+
+**Related API**:
+- [`move()`](data_collection/api/datacollection_move_method.md)
+- [`add()`](data_collection/api/datacollection_add_method.md)

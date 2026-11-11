@@ -1,7 +1,7 @@
 ---
 sidebar_label: loadError
 title: JavaScript DataCollection - loadError Event 
-description: You can explore the loadError event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the loadError event of DataCollection fires when data fails to load into a flat collection, and what the server response passed to the handler holds. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # loadError
@@ -28,3 +28,6 @@ component.data.events.on("loadError", function(error){
 });
 
 @descr:
+
+**Related API**:
+- [`load()`](data_collection/api/datacollection_load_method.md)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: parse()
 title: JavaScript TreeCollection - parse Method 
-description: You can explore the parse method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the parse method of TreeCollection loads hierarchical data into a tree collection from a local array of nested items or a data string. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # parse()
@@ -67,3 +67,8 @@ Please note that if you specify the `id` fields in the data, their values should
 :::
 
 The method resets the applied sorting and filtering: the sorting is dropped, and so are all the filters except those applied with `permanent: true`, which are reapplied to the new data.
+
+**Related API**:
+- [`load()`](tree_collection/api/treecollection_load_method.md)
+- [`serialize()`](tree_collection/api/treecollection_serialize_method.md)
+- [`load`](tree_collection/api/treecollection_load_event.md)

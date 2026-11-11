@@ -1,7 +1,7 @@
 ---
 sidebar_label: refreshItems()
 title: JavaScript TreeCollection - refreshItems Method 
-description: You can explore the refreshItems method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the refreshItems method of TreeCollection removes the child items of an item and loads them again from the autoload URL of a tree collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # refreshItems()
@@ -37,3 +37,8 @@ Loading fires the following events:
 - [`beforeItemLoad`](tree_collection/api/treecollection_beforeitemload_event.md) - before the request is sent; return `false` from the handler to cancel loading. The removed child items are not restored in this case
 - [`afterItemLoad`](tree_collection/api/treecollection_afteritemload_event.md) - after the loaded items are added to the collection
 - [`loadError`](tree_collection/api/treecollection_loaderror_event.md) - if loading fails
+
+**Related API**:
+- [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md)
+- [`beforeItemLoad`](tree_collection/api/treecollection_beforeitemload_event.md)
+- [`afterItemLoad`](tree_collection/api/treecollection_afteritemload_event.md)

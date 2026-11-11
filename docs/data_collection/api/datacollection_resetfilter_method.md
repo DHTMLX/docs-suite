@@ -1,7 +1,7 @@
 ---
 sidebar_label: resetFilter()
 title: JavaScript DataCollection - resetFilter Method 
-description: You can explore the resetFilter method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the resetFilter method of DataCollection removes the filters applied to a flat collection, either one filter by its id or all of them, permanent ones included. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # resetFilter()
@@ -50,3 +50,8 @@ When data is [grouped](data_collection/api/datacollection_group_method.md), Data
 **Related sample**: 
 - [Data. ResetFilter](https://snippet.dhtmlx.com/jg8wxfvc)
 - [Grid. ResetFilter](https://snippet.dhtmlx.com/15trblk2)
+
+**Related API**:
+- [`filter()`](data_collection/api/datacollection_filter_method.md)
+- [`getFilters()`](data_collection/api/datacollection_getfilters_method.md)
+- [`filter`](data_collection/api/datacollection_filter_event.md)

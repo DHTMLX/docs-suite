@@ -1,7 +1,7 @@
 ---
 sidebar_label: load()
 title: JavaScript DataCollection - load Method 
-description: You can explore the load method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the load method of DataCollection loads items into a flat collection from a URL or a data proxy in JSON, CSV, XML or a custom format and returns a promise. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # load()
@@ -57,3 +57,8 @@ component.data.loadData.then(function () {
 
 The method resets the applied sorting and filtering: the sorting is dropped, and so are all the filters except those applied with `permanent: true`, which are reapplied to the new data.
 
+**Related API**:
+- [`parse()`](data_collection/api/datacollection_parse_method.md)
+- [`load`](data_collection/api/datacollection_load_event.md)
+- [`loadError`](data_collection/api/datacollection_loaderror_event.md)
+- [`save()`](data_collection/api/datacollection_save_method.md)

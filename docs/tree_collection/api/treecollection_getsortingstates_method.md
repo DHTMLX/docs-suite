@@ -1,7 +1,7 @@
 ---
 sidebar_label: getSortingStates()
 title: JavaScript TreeCollection - getSortingStates Method 
-description: You can explore the getSortingStates method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getSortingStates method of TreeCollection lists the sorting rules applied to a tree collection at the moment, with the field, the direction and custom functions. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getSortingStates()
@@ -36,6 +36,9 @@ const state = component.data.getSortingStates();
 
 @descr:
 
+**Related API**:
+- [`sort()`](tree_collection/api/treecollection_sort_method.md)
+- [`restoreOrder()`](tree_collection/api/treecollection_restoreorder_method.md)
 
 @changelog:
 added in v9.1

@@ -1,7 +1,7 @@
 ---
 sidebar_label: group()
 title: JavaScript DataCollection - group Method 
-description: You can explore the group method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the group method of DataCollection groups the items of a collection by one or several fields or functions, with options for missed values and group summaries. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # group()
@@ -189,6 +189,12 @@ DataCollection matches a filtering rule against the data items only, so a filter
 A group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) has no filter to bring it back, so it leaves the collection for good, its summary row included, and [`getItem()`](data_collection/api/datacollection_getitem_method.md) returns *undefined* for the id of its header. If the data is grouped with the `showEmptyGroups: true` config, the group stays in the collection with the `$count: 0` value instead.
 
 **Related sample**: [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
+
+**Related API**:
+- [`ungroup()`](data_collection/api/datacollection_ungroup_method.md)
+- [`isGrouped()`](data_collection/api/datacollection_isgrouped_method.md)
+- [`beforeGroup`](data_collection/api/datacollection_beforegroup_event.md)
+- [`afterGroup`](data_collection/api/datacollection_aftergroup_event.md)
 
 @changelog:
 - As of v9.4, DataCollection recalculates the counters and aggregated values of group headers after every change of the collection content

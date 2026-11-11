@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterRemove
 title: JavaScript TreeCollection - afterRemove Event 
-description: You can explore the afterRemove event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterRemove event of TreeCollection fires once an item is removed from a tree collection, and which item the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterRemove
@@ -26,4 +26,6 @@ component.data.events.on("afterRemove", function(removedItem){
 
 @descr:
 
-[comment]: # (@relatedapi:tree_collection/api/beforeremove_event.md)
+**Related API**:
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)
+- [`beforeRemove`](tree_collection/api/treecollection_beforeremove_event.md)

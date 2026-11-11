@@ -1,7 +1,7 @@
 ---
 sidebar_label: map()
 title: JavaScript TreeCollection - map Method
-description: You can explore the map method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the map method of TreeCollection calls a function for the items of a branch, on all levels or for the direct children only, and returns the results. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # map()
@@ -55,3 +55,7 @@ toolbar.data.map((item) => {
 }, "menu_1", false);
 toolbar.paint();
 ~~~
+
+**Related API**:
+- [`forEach()`](tree_collection/api/treecollection_foreach_method.md)
+- [`mapVisible()`](tree_collection/api/treecollection_mapvisible_method.md)

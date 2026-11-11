@@ -1,7 +1,7 @@
 ---
 sidebar_label: remove()
 title: JavaScript TreeCollection - remove Method 
-description: You can explore the remove method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the remove method of TreeCollection removes one item or an array of items from a tree collection together with their child items. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # remove()
@@ -22,3 +22,9 @@ remove(id: Id | Id[]): void;
 toolbar.data.remove("id");
 
 @descr:
+
+**Related API**:
+- [`beforeRemove`](tree_collection/api/treecollection_beforeremove_event.md)
+- [`afterRemove`](tree_collection/api/treecollection_afterremove_event.md)
+- [`removeAll()`](tree_collection/api/treecollection_removeall_method.md)
+- [`add()`](tree_collection/api/treecollection_add_method.md)

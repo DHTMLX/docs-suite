@@ -1,7 +1,7 @@
 ---
 sidebar_label: haveItems()
 title: JavaScript TreeCollection - haveItems Method 
-description: You can explore the haveItems method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the haveItems method of TreeCollection checks whether an item of a tree collection has child items and returns true or false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # haveItems()
@@ -27,3 +27,7 @@ if (toolbar.data.haveItems("menu1")) {
 }
 
 @descr:
+
+**Related API**:
+- [`getItems()`](tree_collection/api/treecollection_getitems_method.md)
+- [`getLength()`](tree_collection/api/treecollection_getlength_method.md)

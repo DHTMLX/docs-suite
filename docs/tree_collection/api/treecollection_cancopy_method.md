@@ -1,7 +1,7 @@
 ---
 sidebar_label: canCopy()
 title: JavaScript TreeCollection - canCopy Method 
-description: You can explore the canCopy method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the canCopy method of TreeCollection checks whether an item can be copied into another item, which is impossible for the item itself and its children. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # canCopy()
@@ -26,3 +26,7 @@ canCopy(id: Id, target: Id): boolean;
 component.data.canCopy(from.id, id);
 
 @descr:
+
+**Related API**:
+- [`copy()`](tree_collection/api/treecollection_copy_method.md)
+- [`move()`](tree_collection/api/treecollection_move_method.md)

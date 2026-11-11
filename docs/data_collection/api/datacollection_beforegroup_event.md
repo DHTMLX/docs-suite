@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeGroup
 title: JavaScript DataCollection - beforeGroup Event 
-description: You can explore the beforeGroup event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeGroup event of DataCollection fires before the data of a collection is grouped and how to cancel the grouping by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeGroup
@@ -39,5 +39,9 @@ component.data.events.on("beforeGroup", (config) => {
 });
 
 @descr:
+
+**Related API**:
+- [`group()`](data_collection/api/datacollection_group_method.md)
+- [`afterGroup`](data_collection/api/datacollection_aftergroup_event.md)
 
 @changelog: added in v9.0

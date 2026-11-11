@@ -1,7 +1,7 @@
 ---
 sidebar_label: mapVisible()
 title: JavaScript TreeCollection - mapVisible Method 
-description: You can explore the mapVisible method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the mapVisible method of TreeCollection calls a function for the visible items of a tree collection and returns an array with the results of the calls. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # mapVisible()
@@ -38,5 +38,9 @@ The method is available in TreeGridCollection only.
 :::note
 The method iterates through the visible items, i.e. through the items that are not hidden or collapsed.
 :::
+
+**Related API**:
+- [`map()`](tree_collection/api/treecollection_map_method.md)
+- [`getVisibleIndex()`](tree_collection/api/treecollection_getvisibleindex_method.md)
 
 @changelog: added in v7.2

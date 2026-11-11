@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterLazyLoad
 title: JavaScript DataCollection - afterLazyLoad Event 
-description: You can explore the afterLazyLoad event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterLazyLoad event of DataCollection fires once the server responds to a dynamic loading request, with the start index and the number of items. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterLazyLoad
@@ -25,6 +25,8 @@ component.data.events.on("afterLazyLoad", function (from, count) {
 
 @descr:
 
-[comment]: # (@related: helpers/lazydataproxy.md)
+**Related article**: [Dynamic loading](helpers/lazydataproxy.md)
 
-[comment]: # (@relatedapi:data_collection/api/datacollection_beforelazyload_event.md)
+**Related API**:
+- [`beforeLazyLoad`](data_collection/api/datacollection_beforelazyload_event.md)
+- [`isDataLoaded()`](data_collection/api/datacollection_isdataloaded_method.md)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: filter()
 title: JavaScript TreeCollection - filter Method 
-description: You can explore the filter method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the filter method of TreeCollection narrows a tree collection down by a rule, several rules or a function, on all levels, on one level or for leaf items only. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # filter()
@@ -115,3 +115,9 @@ grid.data.filter({
 Unless `config.add` is set, the method replaces the currently applied filters; calling it without a rule at all drops all non-permanent filters and restores the unfiltered order. Permanent filters are the exception: they always survive and are reapplied first. The new rule then narrows their result further, so an item remains in the result only if it matches both the permanent filter and the new rule.
 
 **Related sample**: [Grid (TreeGrid). Filter](https://snippet.dhtmlx.com/epsslwcd)
+
+**Related API**:
+- [`resetFilter()`](tree_collection/api/treecollection_resetfilter_method.md)
+- [`getFilters()`](tree_collection/api/treecollection_getfilters_method.md)
+- [`filter`](tree_collection/api/treecollection_filter_event.md)
+- [`restoreOrder()`](tree_collection/api/treecollection_restoreorder_method.md)

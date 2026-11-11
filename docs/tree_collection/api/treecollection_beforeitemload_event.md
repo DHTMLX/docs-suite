@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeItemLoad
 title: JavaScript TreeCollection - beforeItemLoad Event 
-description: You can explore the beforeItemLoad event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeItemLoad event of TreeCollection fires before the child items of an item are requested from the server and how to cancel loading by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeItemLoad
@@ -50,5 +50,10 @@ const tree = new dhx.Tree("tree_container", {
 });
 ~~~
 :::
+
+**Related API**:
+- [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md)
+- [`refreshItems()`](tree_collection/api/treecollection_refreshitems_method.md)
+- [`afterItemLoad`](tree_collection/api/treecollection_afteritemload_event.md)
 
 @changelog: added in v8.0

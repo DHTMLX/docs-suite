@@ -1,7 +1,7 @@
 ---
 sidebar_label: update()
 title: JavaScript DataCollection - update Method 
-description: You can explore the update method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the update method of DataCollection changes the properties of an item of a flat collection by its id, with an option to skip the events. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # update()
@@ -46,3 +46,7 @@ When data is [grouped](data_collection/api/datacollection_group_method.md), Data
 **Related article**: [Controls and operations](window/customization.md#controls-and-operations)
 
 **Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)
+
+**Related API**:
+- [`getItem()`](data_collection/api/datacollection_getitem_method.md)
+- [`change`](data_collection/api/datacollection_change_event.md)

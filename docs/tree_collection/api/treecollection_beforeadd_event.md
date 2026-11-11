@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeAdd
 title: JavaScript TreeCollection - beforeAdd Event 
-description: You can explore the beforeAdd event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeAdd event of TreeCollection fires before an item is added to a tree collection and how to cancel the adding by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeAdd
@@ -30,4 +30,6 @@ component.data.events.on("beforeAdd", function(newItem){
 
 @descr:
 
-[comment]: # (@relatedapi: tree_collection/api/afteradd_event.md)
+**Related API**:
+- [`add()`](tree_collection/api/treecollection_add_method.md)
+- [`afterAdd`](tree_collection/api/treecollection_afteradd_event.md)

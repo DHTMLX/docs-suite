@@ -1,7 +1,7 @@
 ---
 sidebar_label: filter
 title: JavaScript TreeCollection - filter Event 
-description: You can explore the filter event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the filter event of TreeCollection fires after a tree collection is filtered, and how the handler receives all the active filters with their configs. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # filter
@@ -32,3 +32,8 @@ component.data.events.on("filter", function(filter) {
 });
 
 @descr:
+
+**Related API**:
+- [`filter()`](tree_collection/api/treecollection_filter_method.md)
+- [`resetFilter()`](tree_collection/api/treecollection_resetfilter_method.md)
+- [`getFilters()`](tree_collection/api/treecollection_getfilters_method.md)

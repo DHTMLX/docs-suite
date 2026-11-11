@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeRemove
 title: JavaScript TreeCollection - beforeRemove Event 
-description: You can explore the beforeRemove event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeRemove event of TreeCollection fires before an item is removed from a tree collection and how to keep the item by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeRemove
@@ -30,4 +30,6 @@ component.data.events.on("beforeRemove", function(removedItem){
 
 @descr:
 
-[comment]: # (@relatedapi:tree_collection/api/afterremove_event.md)
+**Related API**:
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)
+- [`afterRemove`](tree_collection/api/treecollection_afterremove_event.md)

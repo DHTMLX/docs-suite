@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFilters()
 title: JavaScript DataCollection - getFilters Method 
-description: You can explore the getFilters method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getFilters method of DataCollection returns the filters applied to a flat collection, keyed by filter id, optionally limited to the permanent ones. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getFilters()
@@ -32,3 +32,7 @@ getFilters(config?: { permanent?: boolean }): IFilter;
 const filters = grid.data.getFilters();
 
 @descr:
+
+**Related API**:
+- [`filter()`](data_collection/api/datacollection_filter_method.md)
+- [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md)

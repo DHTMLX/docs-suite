@@ -1,7 +1,7 @@
 ---
 sidebar_label: serialize()
 title: JavaScript TreeCollection - serialize Method 
-description: You can explore the serialize method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the serialize method of TreeCollection converts the hierarchical data of a tree collection into JSON objects with nested items or into a CSV or XML string. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # serialize()
@@ -33,3 +33,7 @@ const xmlData = component.data.serialize("xml");
 const csvData = component.data.serialize("csv");
 
 @descr:
+
+**Related API**:
+- [`parse()`](tree_collection/api/treecollection_parse_method.md)
+- [`load()`](tree_collection/api/treecollection_load_method.md)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: load
 title: JavaScript TreeCollection - load Event 
-description: You can explore the load event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the load event of TreeCollection fires when hierarchical data is loaded into a tree collection from a local data source or from the server. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # load
@@ -20,3 +20,7 @@ component.data.events.on("load", function(){
 });
 
 @descr:
+
+**Related API**:
+- [`load()`](tree_collection/api/treecollection_load_method.md)
+- [`parse()`](tree_collection/api/treecollection_parse_method.md)

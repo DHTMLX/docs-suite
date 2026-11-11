@@ -1,7 +1,7 @@
 ---
 sidebar_label: loadError
 title: JavaScript TreeCollection - loadError Event 
-description: You can explore the loadError event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the loadError event of TreeCollection fires when loading of data or child items into a tree collection fails, and what the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # loadError
@@ -28,3 +28,7 @@ component.data.events.on("loadError", function(response){
 });
 
 @descr:
+
+**Related API**:
+- [`load()`](tree_collection/api/treecollection_load_method.md)
+- [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md)

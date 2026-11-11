@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterAdd
 title: JavaScript DataCollection - afterAdd Event 
-description: You can explore the afterAdd event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterAdd event of DataCollection fires once an item or a batch of items is added, and which item and index the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterAdd
@@ -26,4 +26,6 @@ component.data.events.on("afterAdd", function(newItem, batch, index){
 
 @descr:
 
-[comment]: # (@relatedapi:data_collection/api/datacollection_beforeadd_event.md)
+**Related API**:
+- [`add()`](data_collection/api/datacollection_add_method.md)
+- [`beforeAdd`](data_collection/api/datacollection_beforeadd_event.md)

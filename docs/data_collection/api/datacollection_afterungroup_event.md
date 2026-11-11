@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterUnGroup
 title: JavaScript DataCollection - afterUnGroup Event 
-description: You can explore the afterUnGroup event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterUnGroup event of DataCollection fires once the grouping of the data is reset, and which grouping configuration the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterUnGroup
@@ -36,5 +36,9 @@ grid.data.events.on("afterUnGroup", (grouped, config) => {
 });
 
 @descr:
+
+**Related API**:
+- [`ungroup()`](data_collection/api/datacollection_ungroup_method.md)
+- [`beforeUnGroup`](data_collection/api/datacollection_beforeungroup_event.md)
 
 @changelog: added in v9.0

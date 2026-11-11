@@ -1,7 +1,7 @@
 ---
 sidebar_label: exists()
 title: JavaScript TreeCollection - exists Method 
-description: You can explore the exists method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the exists method of TreeCollection checks whether an item with the specified id is present at any level of a tree collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # exists()
@@ -25,3 +25,7 @@ exists(id: Id): boolean;
 const item = component.data.exists("1"); 
 
 @descr:
+
+**Related API**:
+- [`getItem()`](tree_collection/api/treecollection_getitem_method.md)
+- [`getParent()`](tree_collection/api/treecollection_getparent_method.md)

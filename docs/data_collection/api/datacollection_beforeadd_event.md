@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeAdd
 title: JavaScript DataCollection - beforeAdd Event 
-description: You can explore the beforeAdd event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeAdd event of DataCollection fires before items are added to a flat collection and how to cancel the adding by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeAdd
@@ -30,4 +30,6 @@ component.data.events.on("beforeAdd", function(newItem, batch, index){
 
 @descr:
 
-[comment]: # (@relatedapi: data_collection/api/datacollection_afteradd_event.md)
+**Related API**:
+- [`add()`](data_collection/api/datacollection_add_method.md)
+- [`afterAdd`](data_collection/api/datacollection_afteradd_event.md)

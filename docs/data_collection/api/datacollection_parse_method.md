@@ -1,7 +1,7 @@
 ---
 sidebar_label: parse()
 title: JavaScript DataCollection - parse Method 
-description: You can explore the parse method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the parse method of DataCollection loads items into a flat collection from a local array or a string in JSON, CSV or XML format. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # parse()
@@ -55,3 +55,8 @@ The method resets the applied sorting and filtering: the sorting is dropped, and
 When data is [grouped](data_collection/api/datacollection_group_method.md), DataCollection recalculates the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups over the new data.
 
 **Related sample**: [Data. Parse](https://snippet.dhtmlx.com/0zrxtmvi)
+
+**Related API**:
+- [`load()`](data_collection/api/datacollection_load_method.md)
+- [`serialize()`](data_collection/api/datacollection_serialize_method.md)
+- [`load`](data_collection/api/datacollection_load_event.md)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFilters()
 title: JavaScript TreeCollection - getFilters Method 
-description: You can explore the getFilters method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getFilters method of TreeCollection returns the filters applied to a tree collection, keyed by filter id, with their rules and tree filtering configs. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getFilters()
@@ -40,3 +40,7 @@ const grid = new dhx.Grid("grid_container", {
 const filters = grid.data.getFilters();
 
 @descr:
+
+**Related API**:
+- [`filter()`](tree_collection/api/treecollection_filter_method.md)
+- [`resetFilter()`](tree_collection/api/treecollection_resetfilter_method.md)

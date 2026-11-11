@@ -1,7 +1,7 @@
 ---
 sidebar_label: move()
 title: JavaScript DataCollection - move Method 
-description: You can explore the move method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the move method of DataCollection moves one or several items to another position in the same collection or to another collection and returns their ids. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # move()
@@ -31,3 +31,7 @@ component.data.move("4", 5); // moves the item with id:4 to the position with in
 @descr:
 
 **Related sample**: [Data. Move](https://snippet.dhtmlx.com/fi66bi8h)
+
+**Related API**:
+- [`copy()`](data_collection/api/datacollection_copy_method.md)
+- [`getIndex()`](data_collection/api/datacollection_getindex_method.md)

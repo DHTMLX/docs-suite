@@ -1,7 +1,7 @@
 ---
 sidebar_label: find()
 title: JavaScript DataCollection - find Method 
-description: You can explore the find method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the find method of DataCollection searches a flat collection for the first item that matches a rule object or a function and returns the item or null. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # find()
@@ -44,4 +44,6 @@ const item = component.data.find({ by: "text", match: "Manager" });
 
 **Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)
 
-
+**Related API**:
+- [`findAll()`](data_collection/api/datacollection_findall_method.md)
+- [`filter()`](data_collection/api/datacollection_filter_method.md)

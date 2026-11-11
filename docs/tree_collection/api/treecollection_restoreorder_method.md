@@ -1,7 +1,7 @@
 ---
 sidebar_label: restoreOrder()
 title: JavaScript TreeCollection - restoreOrder Method 
-description: You can explore the restoreOrder method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the restoreOrder method of TreeCollection brings back the order the items of a tree collection had before they were sorted and filtered. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # restoreOrder()
@@ -18,3 +18,8 @@ restoreOrder(): void;
 toolbar.data.restoreOrder();
 
 @descr:
+
+**Related API**:
+- [`sort()`](tree_collection/api/treecollection_sort_method.md)
+- [`filter()`](tree_collection/api/treecollection_filter_method.md)
+- [`resetFilter()`](tree_collection/api/treecollection_resetfilter_method.md)

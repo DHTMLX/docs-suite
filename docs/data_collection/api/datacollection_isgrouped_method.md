@@ -1,7 +1,7 @@
 ---
 sidebar_label: isGrouped()
 title: JavaScript DataCollection - isGrouped Method 
-description: You can explore the isGrouped method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the isGrouped method of DataCollection checks whether the data of a flat collection is grouped at the moment and returns true or false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # isGrouped()
@@ -23,5 +23,9 @@ if (component.data.isGrouped()) {
 }
 
 @descr:
+
+**Related API**:
+- [`group()`](data_collection/api/datacollection_group_method.md)
+- [`ungroup()`](data_collection/api/datacollection_ungroup_method.md)
 
 @changelog: added in v9.0

@@ -1,7 +1,7 @@
 ---
 sidebar_label: removeAll
 title: JavaScript TreeCollection - removeAll Event 
-description: You can explore the removeAll event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the removeAll event of TreeCollection fires after all the items are removed from a tree collection at once with the removeAll method. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # removeAll
@@ -20,3 +20,6 @@ component.data.events.on("removeAll", function(){
 });
 
 @descr:
+
+**Related API**:
+- [`removeAll()`](tree_collection/api/treecollection_removeall_method.md)

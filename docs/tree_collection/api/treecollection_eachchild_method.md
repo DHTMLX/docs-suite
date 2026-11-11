@@ -1,7 +1,7 @@
 ---
 sidebar_label: eachChild()
 title: JavaScript TreeCollection - eachChild Method 
-description: You can explore the eachChild method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the eachChild method of TreeCollection calls a function for every descendant of an item, with an option to skip the child items of particular items. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # eachChild()
@@ -31,3 +31,8 @@ toolbar.data.eachChild("menu_1", item => {
     item.$disabled = true;
 });
 toolbar.paint();
+
+**Related API**:
+- [`eachParent()`](tree_collection/api/treecollection_eachparent_method.md)
+- [`getItems()`](tree_collection/api/treecollection_getitems_method.md)
+- [`haveItems()`](tree_collection/api/treecollection_haveitems_method.md)

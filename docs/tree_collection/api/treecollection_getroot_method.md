@@ -1,7 +1,7 @@
 ---
 sidebar_label: getRoot()
 title: JavaScript TreeCollection - getRoot Method 
-description: You can explore the getRoot method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getRoot method of TreeCollection gets the id of the root that holds the top-level items of a tree collection and serves as their parent. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getRoot()
@@ -22,3 +22,7 @@ The id of the root of the collection, which is the parent of the top-level items
 const rootId = toolbar.data.getRoot();
 
 @descr:
+
+**Related API**:
+- [`getParent()`](tree_collection/api/treecollection_getparent_method.md)
+- [`getItems()`](tree_collection/api/treecollection_getitems_method.md)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterRemove
 title: JavaScript DataCollection - afterRemove Event 
-description: You can explore the afterRemove event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterRemove event of DataCollection fires once an item or several items are removed from a flat collection, and what the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterRemove
@@ -26,4 +26,6 @@ component.data.events.on("afterRemove", function(removedItem, batch, index){
 
 @descr:
 
-[comment]: # (@relatedapi:data_collection/api/datacollection_beforeremove_event.md)
+**Related API**:
+- [`remove()`](data_collection/api/datacollection_remove_method.md)
+- [`beforeRemove`](data_collection/api/datacollection_beforeremove_event.md)

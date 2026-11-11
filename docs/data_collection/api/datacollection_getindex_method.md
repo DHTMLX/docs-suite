@@ -1,7 +1,7 @@
 ---
 sidebar_label: getIndex()
 title: JavaScript DataCollection - getIndex Method 
-description: You can explore the getIndex method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getIndex method of DataCollection gets the position of an item in a flat collection by its id and returns -1 if there is no such item. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getIndex()
@@ -27,3 +27,7 @@ const index = component.data.getIndex("1"); // -> returns 0
 @descr:
 
 **Related sample**: [Data. Get index](https://snippet.dhtmlx.com/1ottirdt)
+
+**Related API**:
+- [`getId()`](data_collection/api/datacollection_getid_method.md)
+- [`getVisibleIndex()`](data_collection/api/datacollection_getvisibleindex_method.md)

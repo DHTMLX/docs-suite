@@ -1,7 +1,7 @@
 ---
 sidebar_label: findAll()
 title: JavaScript DataCollection - findAll Method 
-description: You can explore the findAll method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the findAll method of DataCollection collects all the items of a flat collection that match a rule object or a function and returns them in an array. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # findAll()
@@ -43,3 +43,7 @@ const items = component.data.findAll({ by: "text", match: "Manager" });
 @descr:
 
 **Related sample**: [Data. Find all](https://snippet.dhtmlx.com/kvemrz93)
+
+**Related API**:
+- [`find()`](data_collection/api/datacollection_find_method.md)
+- [`filter()`](data_collection/api/datacollection_filter_method.md)

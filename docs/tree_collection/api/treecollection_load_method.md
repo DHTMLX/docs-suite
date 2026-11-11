@@ -1,7 +1,7 @@
 ---
 sidebar_label: load()
 title: JavaScript TreeCollection - load Method 
-description: You can explore the load method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the load method of TreeCollection loads hierarchical data into a tree collection from a URL or a data proxy and returns a promise. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # load()
@@ -54,3 +54,9 @@ toolbar.data.loadData.then(function () {
 ~~~
 
 The method resets the applied sorting and filtering: the sorting is dropped, and so are all the filters except those applied with `permanent: true`, which are reapplied to the new data.
+
+**Related API**:
+- [`parse()`](tree_collection/api/treecollection_parse_method.md)
+- [`load`](tree_collection/api/treecollection_load_event.md)
+- [`loadError`](tree_collection/api/treecollection_loaderror_event.md)
+- [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md)

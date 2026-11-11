@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterGroup
 title: JavaScript DataCollection - afterGroup Event 
-description: You can explore the afterGroup event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterGroup event of DataCollection fires once the data of a collection is grouped, and which grouping configuration the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterGroup
@@ -36,5 +36,9 @@ component.data.events.on("afterGroup", (grouped, config) => {
 });
 
 @descr:
+
+**Related API**:
+- [`group()`](data_collection/api/datacollection_group_method.md)
+- [`beforeGroup`](data_collection/api/datacollection_beforegroup_event.md)
 
 @changelog: added in v9.0

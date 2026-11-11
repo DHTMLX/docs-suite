@@ -1,7 +1,7 @@
 ---
 sidebar_label: mapRange()
 title: JavaScript DataCollection - mapRange Method 
-description: You can explore the mapRange method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the mapRange method of DataCollection calls a function for the items between two indexes of a flat collection and returns an array with the results. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # mapRange()
@@ -31,3 +31,7 @@ const result = component.data.mapRange(0, 20, function (item, index, array) {
 });
 
 @descr:
+
+**Related API**:
+- [`map()`](data_collection/api/datacollection_map_method.md)
+- [`forEach()`](data_collection/api/datacollection_foreach_method.md)

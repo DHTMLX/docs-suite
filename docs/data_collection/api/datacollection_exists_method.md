@@ -1,7 +1,7 @@
 ---
 sidebar_label: exists()
 title: JavaScript DataCollection - exists Method 
-description: You can explore the exists method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the exists method of DataCollection checks whether an item with the specified id is present in a flat collection and returns true or false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # exists()
@@ -27,3 +27,7 @@ const item = component.data.exists("1");
 @descr:
 
 **Related sample**: [Data. Exists](https://snippet.dhtmlx.com/2ekntrbk)
+
+**Related API**:
+- [`getItem()`](data_collection/api/datacollection_getitem_method.md)
+- [`getIndex()`](data_collection/api/datacollection_getindex_method.md)

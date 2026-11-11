@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeUnGroup
 title: JavaScript DataCollection - beforeUnGroup Event 
-description: You can explore the beforeUnGroup event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeUnGroup event of DataCollection fires before the grouping of the data is reset and how to cancel the ungrouping by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeUnGroup
@@ -40,5 +40,9 @@ grid.data.events.on("beforeUnGroup", (grouped, config) => {
 });
 
 @descr:
+
+**Related API**:
+- [`ungroup()`](data_collection/api/datacollection_ungroup_method.md)
+- [`afterUnGroup`](data_collection/api/datacollection_afterungroup_event.md)
 
 @changelog: added in v9.0

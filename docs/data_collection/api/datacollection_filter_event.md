@@ -1,7 +1,7 @@
 ---
 sidebar_label: filter
 title: JavaScript DataCollection - filter Event 
-description: You can explore the filter event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the filter event of DataCollection fires after a flat collection is filtered, and how the handler receives all the active filters. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # filter
@@ -34,3 +34,8 @@ component.data.events.on("filter", function(filter) {
 @descr:
 
 **Related sample**: [DataCollection. Filter event](https://snippet.dhtmlx.com/yerog2b5)
+
+**Related API**:
+- [`filter()`](data_collection/api/datacollection_filter_method.md)
+- [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md)
+- [`getFilters()`](data_collection/api/datacollection_getfilters_method.md)

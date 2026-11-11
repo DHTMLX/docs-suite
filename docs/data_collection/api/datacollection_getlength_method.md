@@ -1,7 +1,7 @@
 ---
 sidebar_label: getLength()
 title: JavaScript DataCollection - getLength Method 
-description: You can explore the getLength method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getLength method of DataCollection counts the items of a flat collection, leaving out the ones that the applied filters hide. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getLength()
@@ -23,3 +23,7 @@ const dataLength = component.data.getLength();
 @descr:
 
 **Related sample**: [Data. Get length](https://snippet.dhtmlx.com/4weiba8i)
+
+**Related API**:
+- [`getIndex()`](data_collection/api/datacollection_getindex_method.md)
+- [`getInitialData()`](data_collection/api/datacollection_getinitialdata_method.md)

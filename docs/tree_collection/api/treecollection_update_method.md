@@ -1,7 +1,7 @@
 ---
 sidebar_label: update()
 title: JavaScript TreeCollection - update Method 
-description: You can explore the update method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the update method of TreeCollection changes the properties of an item at any level of a tree collection by the id of the item. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # update()
@@ -40,3 +40,7 @@ itemsForUpdate.forEach((item, index) => {
     }, index != lastIndex); // the last update isn't silent, as the `silent:false` parameter is set
 });
 ~~~
+
+**Related API**:
+- [`getItem()`](tree_collection/api/treecollection_getitem_method.md)
+- [`change`](tree_collection/api/treecollection_change_event.md)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: sort()
 title: JavaScript TreeCollection - sort Method 
-description: You can explore the sort method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the sort method of TreeCollection orders the items on every level of a tree collection by a field, by a custom rule or by several rules. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # sort()
@@ -61,6 +61,10 @@ component.data.sort({
     rule: (a,b) => (a.type < b.type) ? -1 : ( (a.type > b.type) ? 1 : 0 )
 });
 ~~~
+
+**Related API**:
+- [`getSortingStates()`](tree_collection/api/treecollection_getsortingstates_method.md)
+- [`restoreOrder()`](tree_collection/api/treecollection_restoreorder_method.md)
 
 @changelog:
 

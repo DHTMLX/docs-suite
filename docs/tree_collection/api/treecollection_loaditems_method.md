@@ -1,7 +1,7 @@
 ---
 sidebar_label: loadItems()
 title: JavaScript TreeCollection - loadItems Method 
-description: You can explore the loadItems method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the loadItems method of TreeCollection requests the child items of an item from the autoload URL and adds them to a tree collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # loadItems()
@@ -38,4 +38,7 @@ The method fires the following events:
 - [`afterItemLoad`](tree_collection/api/treecollection_afteritemload_event.md) - after the loaded items are added to the collection
 - [`loadError`](tree_collection/api/treecollection_loaderror_event.md) - if loading fails
 
-**Related API**: [`refreshItems()`](tree_collection/api/treecollection_refreshitems_method.md)
+**Related API**:
+- [`refreshItems()`](tree_collection/api/treecollection_refreshitems_method.md)
+- [`beforeItemLoad`](tree_collection/api/treecollection_beforeitemload_event.md)
+- [`afterItemLoad`](tree_collection/api/treecollection_afteritemload_event.md)

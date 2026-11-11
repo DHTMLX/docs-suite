@@ -1,7 +1,7 @@
 ---
 sidebar_label: getItems()
 title: JavaScript TreeCollection - getItems Method 
-description: You can explore the getItems method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getItems method of TreeCollection gets the array of the child items of an item, or of the top-level items when called for the root. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getItems()
@@ -25,3 +25,8 @@ An array with the child items of the item.
 const items = toolbar.data.getItems("menu1");
 
 @descr:
+
+**Related API**:
+- [`haveItems()`](tree_collection/api/treecollection_haveitems_method.md)
+- [`getLength()`](tree_collection/api/treecollection_getlength_method.md)
+- [`eachChild()`](tree_collection/api/treecollection_eachchild_method.md)

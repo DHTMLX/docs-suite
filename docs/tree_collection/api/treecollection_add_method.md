@@ -1,7 +1,7 @@
 ---
 sidebar_label: add()
 title: JavaScript TreeCollection - add Method 
-description: You can explore the add method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the add method of TreeCollection adds an item or an array of items to the top level or into a parent item at the specified index. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # add()
@@ -31,3 +31,9 @@ toolbar.data.add({
 }, 1);
 
 @descr:
+
+**Related API**:
+- [`beforeAdd`](tree_collection/api/treecollection_beforeadd_event.md)
+- [`afterAdd`](tree_collection/api/treecollection_afteradd_event.md)
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)
+- [`update()`](tree_collection/api/treecollection_update_method.md)

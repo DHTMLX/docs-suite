@@ -1,7 +1,7 @@
 ---
 sidebar_label: change
 title: JavaScript TreeCollection - change Event 
-description: You can explore the change event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the change event of TreeCollection fires whenever the items of a tree collection are added, updated or removed, and what the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # change
@@ -28,3 +28,8 @@ component.data.events.on("change", function(id,status,updatedItem){
 });
 
 @descr:
+
+**Related API**:
+- [`add()`](tree_collection/api/treecollection_add_method.md)
+- [`update()`](tree_collection/api/treecollection_update_method.md)
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)
