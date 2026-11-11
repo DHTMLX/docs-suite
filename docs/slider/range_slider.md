@@ -6,11 +6,11 @@ description: You can explore the range mode of Slider in the documentation of th
 
 # Range mode
 
-The range mode of slider presupposes the usage of two thumbs for selecting the starting and ending values of a range. 
+In the range mode, the slider displays two thumbs to select the start and end values of a range.
 
 ![Range slider with two thumbs labeled 25 and 75 selecting a value interval in DHTMLX Suite](/img/slider/range_mode.png)
 
-To enable the range mode, you need to set the [](slider/api/slider_range_config.md) property to *true* and specify an array of two values - min and max values of the range:
+To enable the range mode, set the [](slider/api/slider_range_config.md) property to `true` and pass an array with the start and end values of the range to the `value` property:
 
 ~~~js {5-6}
 const slider = new dhx.Slider("slider_container", {
@@ -24,18 +24,18 @@ const slider = new dhx.Slider("slider_container", {
 
 **Related sample**: [Slider. Range mode of the Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
-The same as the default slider, a slider in the range mode works smoothly both in the horizontal and vertical modes, as well as in the inverse mode.
-You can manipulate the scale settings by adjusting the ticks-related options and use labels for its thumbs. 
+Like the default slider, a range slider works in the horizontal, vertical, and inverse modes.
+You can configure the scale with the tick options and add labels to the slider thumbs.
 
-In short, the full set of [Slider configuration properties](slider/configuring_slider.md) can be applied to the range slider. All the standard [Slider API](slider/api/api_overview.md) is supported.
+The range slider supports all [Slider configuration properties](slider/configuring_slider.md) and the standard [Slider API](slider/api/api_overview.md).
 
 ## API specificity
 
 ### Configuration
 
-Note that the **value** option should have the *array* type and contain a pair of values for both thumbs.
+In the range mode, the `value` option must be an array with two values, one for each thumb.
 
 ### Get/set value
 
-- The **getValue()** method returns an array with a pair of values for a slider in the range mode. 
-- The **setValue()** method takes as a first parameter an array, respectively.
+- The `getValue()` method returns an array with a pair of values for a slider in the range mode.
+- The `setValue()` method takes an array as the first parameter.
