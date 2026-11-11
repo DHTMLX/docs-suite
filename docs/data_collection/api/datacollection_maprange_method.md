@@ -19,8 +19,8 @@ mapRange(from: number, to: number, callback: (item: IDataItem, index?: number, a
 - `to: number` - the index of the last item of the range
 - `callback: function` - a function that will be called for each item from the specified range. The function is called with the following parameters:
     - `item: IDataItem` - the object of an item
-    - `index?: number` - optional, the index of the item
-    - `array?: IDataItem[]` - optional, the array of items the method was called upon
+    - `index?: number` - optional, the index of the item in the collection
+    - `array?: IDataItem[]` - optional, the array of the items of the range. Note that `index` is counted within the whole collection, so it matches the position of the item in this array only if `from` is `0`
 
 @returns:
 A new array with the results of calling the callback function for each item of the range.

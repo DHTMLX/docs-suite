@@ -13,14 +13,13 @@ description: Learn how the map method of TreeCollection calls a function for the
 ~~~ts
 type Id = string | number;
 
-map(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any, parent?: Id, direct?: boolean): any[];
+map(callback: (item: IDataItem, index?: number) => any, parent?: Id, direct?: boolean): any[];
 ~~~
 
 @params:
 - `callback: function` - the function that will be applied to every item. The function is called with the following parameters:
     - `item: IDataItem` - the object of an item
-    - `index?: number` - optional, the index of the item
-    - `array?: IDataItem[]` - optional, the array of items the method was called upon
+    - `index?: number` - optional, the index of the item among the child items of its parent
 - `parent?: Id` - optional, the id of the item the child items of which will be included; the root of the collection by default
 - `direct?: boolean` - optional, defines whether the method iterates through the child items of all levels (*true*) or only through the direct child items of the parent item (*false*); *true* by default
 

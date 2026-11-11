@@ -17,8 +17,8 @@ map(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any): an
 @params:
 - `callback: function` - a function that will be called for each item of the collection. The function is called with the following parameters:
     - `item: IDataItem` - the object of an item
-    - `index?: number` - optional, the index of the item
-    - `array?: IDataItem[]` - optional, the array of items the method was called upon
+    - `index?: number` - optional, the index of the item in the collection
+    - `array?: IDataItem[]` - optional, the array of the items of the collection
 
 @returns:
 A new array with the results of calling the callback function for each item.
