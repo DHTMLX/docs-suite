@@ -6,7 +6,7 @@ description: You can explore the custom theme of DHTMLX Suite in the documentati
 
 # Custom theme
 
-You can easily configure your own theme via overriding values of the internal CSS variables:
+A custom theme overrides the values of the internal CSS variables. The following example defines the `custom-theme-dark` theme in a `data-dhx-theme` attribute selector:
 
 ~~~html
 <style>
