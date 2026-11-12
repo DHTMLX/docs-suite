@@ -1,21 +1,32 @@
 ---
 sidebar_label: getFilters()
 title: JavaScript TreeCollection - getFilters Method 
-description: You can explore the getFilters method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getFilters method of TreeCollection returns the filters applied to a tree collection, keyed by filter id, with their rules and tree filtering configs. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getFilters()
 
 @short: returns an object with the applied filters 
 
-@signature: {'getFilters({ permanent?: boolean }): { [key: string]: { rule: object | callback, config: object } }; '}
+#### Usage
 
-@params: 
+~~~ts
+interface IFilter {
+    [filterId: string]: {
+        rule: IFilterMode | IFilterComplexMode | IFilterCallback;
+        config: ITreeFilterConfig;
+    };
+}
 
-- `permanent?: boolean` - optional, <i>false</i> by default. Allows getting the list of permanent filters
+getFilters(config?: { permanent?: boolean }): IFilter;
+~~~
+
+@params:
+- `config?: object` - optional, an object with the following property:
+    - `permanent?: boolean` - optional, *false* by default. Allows getting the list of permanent filters
 
 @returns:
-- `filters: object` - an object with the applied filters, where the key is the id of a filter and the value is an object with the [`rule` and `config` properties](tree_collection/api/treecollection_filter_method.md)
+- `filters: IFilter` - an object with the applied filters, where the key is the id of a filter and the value is an object with the [`rule` and `config` properties](tree_collection/api/treecollection_filter_method.md)
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -29,3 +40,7 @@ const grid = new dhx.Grid("grid_container", {
 const filters = grid.data.getFilters();
 
 @descr:
+
+**Related API**:
+- [`filter()`](tree_collection/api/treecollection_filter_method.md)
+- [`resetFilter()`](tree_collection/api/treecollection_resetfilter_method.md)

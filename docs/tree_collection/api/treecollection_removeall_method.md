@@ -1,21 +1,29 @@
 ---
 sidebar_label: removeAll()
 title: JavaScript TreeCollection - removeAll Method 
-description: You can explore the removeAll method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the removeAll method of TreeCollection removes all the child items of the specified item or clears the whole tree collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # removeAll()
 
-@short: removes all items in the target branch or all items of the component
+@short: removes all the items of a branch or of the whole collection
 
-@signature: {'removeAll(id?: string | number): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+removeAll(id?: Id): void;
+~~~
 
 @params:
-
-- `id?: string | number` - optional, the id of the branch
+- `id?: Id` - optional, the id of the branch; if not set, all the items of the collection are removed
 
 @example:
 toolbar.data.removeAll(id);
 
 @descr:
-When called without the parameter, the method removes all items of the component.
+When called without the parameter, the method removes all the items of the collection.
+
+**Related API**:
+- [`removeAll`](tree_collection/api/treecollection_removeall_event.md)
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)

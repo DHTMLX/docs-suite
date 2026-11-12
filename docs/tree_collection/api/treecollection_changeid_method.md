@@ -6,7 +6,7 @@ description: Learn how the changeId method of TreeCollection changes the id of a
 
 # changeId()
 
-@short: changes the id of an item of a tree collection
+@short: changes the id of an item of the collection
 
 #### Usage
 

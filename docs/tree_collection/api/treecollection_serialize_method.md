@@ -1,20 +1,26 @@
 ---
 sidebar_label: serialize()
 title: JavaScript TreeCollection - serialize Method 
-description: You can explore the serialize method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the serialize method of TreeCollection converts the hierarchical data of a tree collection into JSON objects with nested items or into a CSV or XML string. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # serialize()
 
-@short: serializes the component data into JSON, XML or CSV format
+@short: serializes the data of the collection into JSON, XML or CSV format
 
-@signature: {'serialize(driver?: string): object[] | string;'}
+#### Usage
+
+~~~ts
+type DataDriver = "json" | "csv" | "xml";
+
+serialize(driver?: DataDriver): IDataItem[] | string;
+~~~
 
 @params:
-- `driver?: string` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
+- `driver?: DataDriver` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
 
 @returns:
-Serialized data of the component either as an array of JSON objects or as a CSV/XML string.
+The serialized data of the collection: either an array of JSON objects or a CSV/XML string.
 
 @example:
 // serialize data into an array of JSON objects
@@ -27,3 +33,7 @@ const xmlData = component.data.serialize("xml");
 const csvData = component.data.serialize("csv");
 
 @descr:
+
+**Related API**:
+- [`parse()`](tree_collection/api/treecollection_parse_method.md)
+- [`load()`](tree_collection/api/treecollection_load_method.md)

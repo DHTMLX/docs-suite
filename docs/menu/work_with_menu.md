@@ -180,7 +180,7 @@ menu.data.move("2",0);
 ~~~
 
 :::note
-The ID should always be a string, even if you set it as a number in the menu item configuration.
+Pass the ID of the item with the same type as it has in the menu item configuration. For example, if the ID is set as the number `2`, the method doesn't move the item when it gets the string `"2"`.
 :::
 
 To get the current position, use the `getIndex()` method of TreeCollection:

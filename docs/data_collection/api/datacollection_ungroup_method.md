@@ -1,14 +1,18 @@
 ---
 sidebar_label: ungroup()
 title: JavaScript DataCollection - ungroup Method 
-description: You can explore the ungroup method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the ungroup method of DataCollection removes the grouping applied to the data of a collection and brings back the plain list of items. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # ungroup()
 
 @short: resets the applied data grouping
 
-@signature: {'ungroup(): void;'}
+#### Usage
+
+~~~ts
+ungroup(): void;
+~~~
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -31,5 +35,11 @@ grid.data.group([
 grid.data.ungroup();
 
 @descr:
+
+**Related API**:
+- [`group()`](data_collection/api/datacollection_group_method.md)
+- [`isGrouped()`](data_collection/api/datacollection_isgrouped_method.md)
+- [`beforeUnGroup`](data_collection/api/datacollection_beforeungroup_event.md)
+- [`afterUnGroup`](data_collection/api/datacollection_afterungroup_event.md)
 
 @changelog: added in v9.0

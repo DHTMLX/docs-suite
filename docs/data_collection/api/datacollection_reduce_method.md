@@ -1,12 +1,12 @@
 ---
 sidebar_label: reduce()
 title: JavaScript DataCollection - reduce Method 
-description: You can explore the reduce method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the reduce method of DataCollection calls a reducer function for each item of a flat collection to calculate a single value, such as a sum of the values. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # reduce()
 
-@short: reduces the array to a single value
+@short: reduces the items of the collection to a single value
 
 #### Usage
 
@@ -17,9 +17,9 @@ reduce<A>(callback: ReduceCallBack<IDataItem, A>, acc: A): A;
 
 @params:
 
-- `callback: function` - a function that will be called for each item in the array. The function is called with the following parameters:
+- `callback: function` - a function that will be called for each item of the collection. The function is called with the following parameters:
     - `acc: any` - the *initialValue*, or the previously returned value of the function
-    - `item: IDataItem` - the current item of a data collection
+    - `item: IDataItem` - the current item of the collection
     - `index: number` - the index of the item 
 - `acc: any` - a value to be passed to the function as the initial value
 
@@ -27,10 +27,14 @@ reduce<A>(callback: ReduceCallBack<IDataItem, A>, acc: A): A;
 A single output value.
 
 @example:
-const total = component.data.reduce(function (acc, IDataItem, index) {
-    return acc + IDataItem.value;
+const total = component.data.reduce((acc, item, index) => {
+    return acc + item.value;
 }, 0);
 
 @descr:
 
 **Related sample**: [Data. Reduce](https://snippet.dhtmlx.com/pv7hewc7)
+
+**Related API**:
+- [`map()`](data_collection/api/datacollection_map_method.md)
+- [`forEach()`](data_collection/api/datacollection_foreach_method.md)

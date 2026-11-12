@@ -1,23 +1,32 @@
 ---
 sidebar_label: getId()
 title: JavaScript TreeCollection - getId Method 
-description: You can explore the getId method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getId method of TreeCollection gets the id of the item placed at the specified index among the child items of a parent in a tree collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getId()
 
-@short: gets the ID of an item
+@short: returns the id of an item by its index
 
-@signature: {'getId(index: number, parentId?: string | number): string | number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getId(index: number, parent?: Id): Id;
+~~~
 
 @params:
-- `index: number` - the index of the item
-- `parentId?: string | number` - optional, the id of the parent of an item
+- `index: number` - the index of the item among the child items of its parent
+- `parent?: Id` - optional, the id of the parent item; the root of the collection by default
 
 @returns:
 The id of the item.
 
 @example:
-const id = tree.data.getId(2, "1"); -> returns "3"
+const id = tree.data.getId(2, "1"); // -> "3"
 
 @descr:
+
+**Related API**:
+- [`getIndex()`](tree_collection/api/treecollection_getindex_method.md)
+- [`getItem()`](tree_collection/api/treecollection_getitem_method.md)

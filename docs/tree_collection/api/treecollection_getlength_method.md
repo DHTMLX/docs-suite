@@ -1,22 +1,31 @@
 ---
 sidebar_label: getLength()
 title: JavaScript TreeCollection - getLength Method 
-description: You can explore the getLength method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getLength method of TreeCollection counts the child items of an item, or the top-level items of a tree collection when called for the root. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getLength()
 
-@short: counts child items of a control
+@short: returns the number of the child items of an item
 
-@signature: {'getLength(id?: string | number): number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getLength(id?: Id): number;
+~~~
 
 @params:
-- `id?: string | number` - optional, the ID of a control
+- `id?: Id` - optional, the id of the parent item; the root of the collection by default
 
 @returns:
-A number of the child items of the control.
+The number of the child items of the item, or of the top-level items if `id` is not set.
 
 @example:
 const itemsLength = toolbar.data.getLength("menu1");
 
 @descr:
+
+**Related API**:
+- [`getItems()`](tree_collection/api/treecollection_getitems_method.md)
+- [`haveItems()`](tree_collection/api/treecollection_haveitems_method.md)

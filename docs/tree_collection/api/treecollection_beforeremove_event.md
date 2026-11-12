@@ -1,27 +1,35 @@
 ---
 sidebar_label: beforeRemove
 title: JavaScript TreeCollection - beforeRemove Event 
-description: You can explore the beforeRemove event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeRemove event of TreeCollection fires before an item is removed from a tree collection and how to keep the item by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeRemove
 
-@short: fires before removing an item from a tree collection
+@short: fires before an item is removed from the collection
 
-@signature: {'beforeRemove: (removedItem: object) => boolean | void;'}
+#### Usage
+
+~~~ts
+beforeRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;
+~~~
 
 @params:
-- `removedItem: object `- the object of an item to remove
+- `removedItem: IDataItem` - the object of an item to remove
+- `batch: IDataItem[]` - an array of removed items
+- `index: number` - the index of the removed item within the batch
 
 @returns:
-Return `false` to prevent removing of an item from a data collection; otherwise `true.`
+Return `false` to prevent removing of the item from the collection; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeRemove", function(removedItem){
+component.data.events.on("beforeRemove", (removedItem) => {
     console.log("An item will be removed");
     return true;
 });
 
 @descr:
 
-[comment]: # (@relatedapi:tree_collection/api/afterremove_event.md)
+**Related API**:
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)
+- [`afterRemove`](tree_collection/api/treecollection_afterremove_event.md)

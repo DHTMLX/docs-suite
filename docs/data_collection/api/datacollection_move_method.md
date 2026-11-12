@@ -1,22 +1,29 @@
 ---
 sidebar_label: move()
 title: JavaScript DataCollection - move Method 
-description: You can explore the move method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the move method of DataCollection moves one or several items to another position in the same collection or to another collection and returns their ids. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # move()
 
-@short: moves an item to the defined position
+@short: moves an item or several items to the specified position
 
-@signature: {'move(id: (string | number) | (string | number)[], index: number, target?: object): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+move(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
+~~~
 
 @params:
-- `id: string | string[]` - the ids of items to move
-- `index: number` - the index to move items to
-- `target?: object` - optional, the target data collection object
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to move
+- `index: number` - the index to move the items to
+- `target?: IDataCollection | ITreeCollection` - optional, the collection to move the items to; the current collection by default
+- `targetId?: Id` - optional, the id of the parent item to place the moved items into, if `target` is a TreeCollection
 
 @returns:
-Either the item's id or an array with ids of items.
+The id of the moved item or an array with the ids of the moved items.
 
 @example:
 component.data.move("4", 5); // moves the item with id:4 to the position with index 5
@@ -24,3 +31,7 @@ component.data.move("4", 5); // moves the item with id:4 to the position with in
 @descr:
 
 **Related sample**: [Data. Move](https://snippet.dhtmlx.com/fi66bi8h)
+
+**Related API**:
+- [`copy()`](data_collection/api/datacollection_copy_method.md)
+- [`getIndex()`](data_collection/api/datacollection_getindex_method.md)

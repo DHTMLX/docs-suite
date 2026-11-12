@@ -1,20 +1,26 @@
 ---
 sidebar_label: serialize()
 title: JavaScript DataCollection - serialize Method 
-description: You can explore the serialize method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the serialize method of DataCollection converts the data of a flat collection into an array of JSON objects or into a CSV or XML string. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # serialize()
 
-@short: serializes the component data into JSON, XML or CSV format
+@short: serializes the data of the collection into JSON, XML or CSV format
 
-@signature: {'serialize(driver?: string): object[];'}
+#### Usage
+
+~~~ts
+type DataDriver = "json" | "csv" | "xml";
+
+serialize(driver?: DataDriver): IDataItem[] | string;
+~~~
 
 @params:
-- `driver?: string` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
+- `driver?: DataDriver` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
 
 @returns:
-Returns serialized data for each item of the component either as an array of JSON objects or as a CSV/XML string. 
+The serialized data of the collection: either an array of JSON objects or a CSV/XML string.
 
 @example:
 const data = component.data.serialize("csv");
@@ -22,3 +28,7 @@ const data = component.data.serialize("csv");
 @descr:
 
 **Related sample**: [Data. Serialize](https://snippet.dhtmlx.com/7c35n4uf)
+
+**Related API**:
+- [`parse()`](data_collection/api/datacollection_parse_method.md)
+- [`load()`](data_collection/api/datacollection_load_method.md)

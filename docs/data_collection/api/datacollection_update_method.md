@@ -1,29 +1,34 @@
 ---
 sidebar_label: update()
 title: JavaScript DataCollection - update Method 
-description: You can explore the update method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the update method of DataCollection changes the properties of an item of a flat collection by its id, with an option to skip the events. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # update()
 
-@short: updates properties of the item
+@short: updates the properties of an item
 
-@signature: {'update(id: string | number, newItem: object, silent?: boolean): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+update(id: Id, newItem: IDataItem, silent?: boolean): void;
+~~~
 
 @params:
-- `id: string | number` - the id of the item which needs to be updated
-- `newItem: object` - a hash of properties which need to be updated
+- `id: Id` - the id of the item to update
+- `newItem: IDataItem` - an object with the properties of the item to update
 - `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
 
 :::info
-Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component that uses the collection with its `paint()` method.
 :::
 
 @example:
 component.data.update(123, { text:"New text" });
 
 @descr:
-Also note, that for correct work of the method the last update of a data collection should be done with the `silent:false` setting applied, for example:
+Also note, that for correct work of the method the last update of the collection should be done with the `silent:false` setting applied, for example:
 
 ~~~jsx
 const itemsForUpdate = [...]; // items { ... }
@@ -41,3 +46,7 @@ When data is [grouped](data_collection/api/datacollection_group_method.md), Data
 **Related article**: [Controls and operations](window/customization.md#controls-and-operations)
 
 **Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)
+
+**Related API**:
+- [`getItem()`](data_collection/api/datacollection_getitem_method.md)
+- [`change`](data_collection/api/datacollection_change_event.md)

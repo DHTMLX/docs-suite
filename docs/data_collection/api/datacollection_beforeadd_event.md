@@ -1,29 +1,35 @@
 ---
 sidebar_label: beforeAdd
 title: JavaScript DataCollection - beforeAdd Event 
-description: You can explore the beforeAdd event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeAdd event of DataCollection fires before items are added to a flat collection and how to cancel the adding by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeAdd
 
-@short: fires before adding a new item/items into a data collection
+@short: fires before an item or several items are added to the collection
 
-@signature: {'beforeAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;'}
+#### Usage
+
+~~~ts
+beforeAdd: (newItem: IDataItem, batch: IDataItem[], index: number) => boolean | void;
+~~~
 
 @params:
-- `newItem: object` - the object of an added item
-- `batch: array` - an array of added items
-- `index: number` - the index of the added item within the batch
+- `newItem: IDataItem` - the object of an item to add
+- `batch: IDataItem[]` - an array of added items
+- `index: number` - the index of the added item within the batch; `undefined` if a single item (not an array) is added
 
 @returns:
-Return `false` to prevent an item adding into a data collection; otherwise, `true`.
+Return `false` to prevent adding of the item to the collection; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeAdd", function(newItem, batch, index){
+component.data.events.on("beforeAdd", (newItem, batch, index) => {
     console.log("New items will be added");
     return true;
 });
 
 @descr:
 
-[comment]: # (@relatedapi: data_collection/api/datacollection_afteradd_event.md)
+**Related API**:
+- [`add()`](data_collection/api/datacollection_add_method.md)
+- [`afterAdd`](data_collection/api/datacollection_afteradd_event.md)

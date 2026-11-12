@@ -1,29 +1,34 @@
 ---
 sidebar_label: update()
 title: JavaScript TreeCollection - update Method 
-description: You can explore the update method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the update method of TreeCollection changes the properties of an item at any level of a tree collection by the id of the item. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # update()
 
-@short: updates properties of the item
+@short: updates the properties of an item
 
-@signature: {'update(id: string | number, item: object, silent?: boolean): void;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+update(id: Id, newItem: IDataItem, silent?: boolean): void;
+~~~
 
 @params:
-- `id: string | number` - the ID of an item
-- `item: object` - new properties for an item
+- `id: Id` - the id of the item to update
+- `newItem: IDataItem` - an object with the properties of the item to update
 - `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
 
 :::info
-Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component that uses the collection with its `paint()` method.
 :::
 
 @example:
 toolbar.data.update("add_btn", { value:"Add new" });
 
 @descr:
-Also note, that for correct work of the method the last update of a data collection should be done with the `silent:false` setting applied, for example:
+Also note, that for correct work of the method the last update of the collection should be done with the `silent:false` setting applied, for example:
 
 ~~~jsx
 const itemsForUpdate = [...]; // items { ... }
@@ -35,3 +40,7 @@ itemsForUpdate.forEach((item, index) => {
     }, index != lastIndex); // the last update isn't silent, as the `silent:false` parameter is set
 });
 ~~~
+
+**Related API**:
+- [`getItem()`](tree_collection/api/treecollection_getitem_method.md)
+- [`change`](tree_collection/api/treecollection_change_event.md)

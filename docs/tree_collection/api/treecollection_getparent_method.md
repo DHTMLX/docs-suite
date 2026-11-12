@@ -1,22 +1,32 @@
 ---
 sidebar_label: getParent()
 title: JavaScript TreeCollection - getParent Method 
-description: You can explore the getParent method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getParent method of TreeCollection gets the id of the parent of an item in a tree collection, or the id of the root for a top-level item. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getParent()
 
-@short: gets the ID of the parent of the control
+@short: returns the id of the parent of an item
 
-@signature: {'getParent(id: string | number): string | number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getParent(id: Id): Id;
+~~~
 
 @params:
-- `id: string | number` - the ID of a control
+- `id: Id` - the id of the item
 
 @returns:
-A string with the ID of the parent of the control.
+The id of the parent item.
 
 @example:
 const parentId = toolbar.data.getParent("add_btn");
 
 @descr:
+
+**Related API**:
+- [`getRoot()`](tree_collection/api/treecollection_getroot_method.md)
+- [`eachParent()`](tree_collection/api/treecollection_eachparent_method.md)
+- [`getItems()`](tree_collection/api/treecollection_getitems_method.md)

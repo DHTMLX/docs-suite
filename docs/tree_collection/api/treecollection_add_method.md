@@ -1,22 +1,27 @@
 ---
 sidebar_label: add()
 title: JavaScript TreeCollection - add Method 
-description: You can explore the add method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the add method of TreeCollection adds an item or an array of items to the top level or into a parent item at the specified index. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # add()
 
-@short: adds an item to a component
+@short: adds a new item or several items to the collection
 
-@signature: {'add(obj: object | object[], index?: number, parent?: string | number): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+add(newItem: IDataItem | IDataItem[], index?: number, parent?: Id): Id | Id[];
+~~~
 
 @params:
-- `obj: object | array` - the configuration of the added item
-- `index?: number` - optional, defines the position of the item in the component
-- `parent: string | number` - the ID of the future parent item
+- `newItem: IDataItem | IDataItem[]` - the object of a new item or an array of item objects
+- `index?: number` - optional, the position of the item among the children of the parent item
+- `parent?: Id` - optional, the id of the parent item; if not set, the item is added to the root
 
 @returns:
-The item's id or an array with ids of items.
+The id of the added item or an array with the ids of the added items.
 
 @example:
 toolbar.data.add({
@@ -26,3 +31,9 @@ toolbar.data.add({
 }, 1);
 
 @descr:
+
+**Related API**:
+- [`beforeAdd`](tree_collection/api/treecollection_beforeadd_event.md)
+- [`afterAdd`](tree_collection/api/treecollection_afteradd_event.md)
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)
+- [`update()`](tree_collection/api/treecollection_update_method.md)

@@ -1,12 +1,12 @@
 ---
 sidebar_label: group()
 title: JavaScript DataCollection - group Method 
-description: You can explore the group method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the group method of DataCollection groups the items of a collection by one or several fields or functions, with options for missed values and group summaries. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # group()
 
-@short: groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration
+@short: groups the data of the collection into a plain tree-like structure according to the specified order and additional configuration
 
 :::info important
 Data grouping isn't intended for working with [`lazyDataProxy`](helpers/lazydataproxy.md)
@@ -18,13 +18,13 @@ Grouped data can be serialized. After serialization data is available for render
 
 #### Usage
 
-~~~ts {16}
+~~~ts {17}
 type TGroupOrderFunc = (item: IDataItem) => string;
 type TAggregate = "sum" | "count" | "min" | "max" | "avg" | string;
 interface IGroupOrder {
     by: string | TGroupOrderFunc;
     map?: {
-        [field: string]: [string, TAggregate] | ((item: IDataItem[]) => string | number)
+        [field: string]: [string, TAggregate] | ((items: IDataItem[]) => string | number)
     };
     summary?: "top" | "bottom";
 }
@@ -49,7 +49,7 @@ group(order: TGroupOrder[], config?: IGroupConfig): void;
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, the configuration of data grouping. The configuration object may include the following properties:<ul><li><b>`showMissed?: boolean | string`</b> - optional, specifies whether the elements that don't have the field for grouping should be displayed, *true* by default<ul><li>if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data</li><li>if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one</li><li>if set to *false*, the rows that don't suit the grouping criteria won't be rendered</li></ul></li><li><b>`showEmptyGroups?: boolean`</b> - optional, specifies whether a group that loses all its items stays in the collection, *false* by default<ul><li>if set to *false*, such a group leaves the collection together with its summary row and its nested groups, so `map()` skips it and `getLength()` leaves it out. A group emptied by filtering comes back after a `resetFilter()` call</li><li>if set to *true*, such a group stays with the `$count: 0` value and emptied aggregates: the "sum" and "count" aggregations give *0*, while "avg", "min" and "max" give *null*</li></ul></li><li><b>`field?: string`</b> - optional, the group field name, *"group"* by default</li></ul></td>
+            <td>(<i>object</i>) optional, the configuration of data grouping. The configuration object may include the following properties:<ul><li><b>`showMissed?: boolean | string`</b> - optional, specifies whether the items that don't have the field for grouping are kept in the grouped data, *true* by default<ul><li>if set to *true*, the items that don't have values for grouping are placed one by one after all the data</li><li>if a *string* value is set, e.g. "Missed", the items that don't have values for grouping are placed into a separate group the name of which will have the specified string value. This group will be placed as the last one</li><li>if set to *false*, the items that don't suit the grouping criteria are left out of the grouped data</li></ul></li><li><b>`showEmptyGroups?: boolean`</b> - optional, specifies whether a group that loses all its items stays in the collection, *false* by default<ul><li>if set to *false*, such a group leaves the collection together with its summary row and its nested groups, so `map()` skips it and `getLength()` leaves it out. A group emptied by filtering comes back after a `resetFilter()` call</li><li>if set to *true*, such a group stays with the `$count: 0` value and emptied aggregates: the "sum" and "count" aggregations give *0*, while "avg", "min" and "max" give *null*</li></ul></li><li><b>`field?: string`</b> - optional, the group field name, *"group"* by default</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -71,7 +71,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.data.group([
-    function(row) {
+    (row) => {
         if (row.salary < 30000) return "Low income";
         if (row.salary >= 30000 && row.salary < 70000) return "Medium income";
         return "High income";
@@ -189,6 +189,12 @@ DataCollection matches a filtering rule against the data items only, so a filter
 A group emptied by [`remove()`](data_collection/api/datacollection_remove_method.md) has no filter to bring it back, so it leaves the collection for good, its summary row included, and [`getItem()`](data_collection/api/datacollection_getitem_method.md) returns *undefined* for the id of its header. If the data is grouped with the `showEmptyGroups: true` config, the group stays in the collection with the `$count: 0` value instead.
 
 **Related sample**: [Grid. Group counter after filtering](https://snippet.dhtmlx.com/sbynrizv)
+
+**Related API**:
+- [`ungroup()`](data_collection/api/datacollection_ungroup_method.md)
+- [`isGrouped()`](data_collection/api/datacollection_isgrouped_method.md)
+- [`beforeGroup`](data_collection/api/datacollection_beforegroup_event.md)
+- [`afterGroup`](data_collection/api/datacollection_aftergroup_event.md)
 
 @changelog:
 - As of v9.4, DataCollection recalculates the counters and aggregated values of group headers after every change of the collection content

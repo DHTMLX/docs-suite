@@ -1,21 +1,21 @@
 ---
 sidebar_label: add()
 title: JavaScript DataCollection - add Method 
-description: You can explore the add method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the add method of DataCollection adds a single item or an array of items to a flat collection at the specified index and returns the ids of the added items. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # add()
 
-@short: adds a new item to the component
+@short: adds a new item or several items to the collection
 
 :::note
-Please note that data should be loaded into DataCollection via the `parse()` method. The `add()` method is primarily intended for loading standalone elements or small groups of elements, so its loads data slower than the `parse()` method.
+Please note that data should be loaded into DataCollection via the `parse()` method. The `add()` method is primarily intended for loading standalone items or small groups of items, so it loads data slower than the `parse()` method.
 :::
 
 #### Usage
 
 ~~~ts
-type Id = string | number; 
+type Id = string | number;
 add(newItem: IDataItem | IDataItem[], index?: number): Id | Id[];
 ~~~
 
@@ -24,7 +24,7 @@ add(newItem: IDataItem | IDataItem[], index?: number): Id | Id[];
 - `index?: number` - optional, the index of the position starting from which new items will be added
 
 @returns:
-Either item's id or an array with ids of items.
+The id of the added item or an array with the ids of the added items.
 
 @example:
 // adding a new item into the beginning of a data collection 
@@ -57,5 +57,11 @@ When data is [grouped](data_collection/api/datacollection_group_method.md), Data
 **Related article**: [Controls and operations](window/customization.md#controls-and-operations)
 
 **Related sample**: [Data. Add](https://snippet.dhtmlx.com/ktd8ks0m)
+
+**Related API**:
+- [`beforeAdd`](data_collection/api/datacollection_beforeadd_event.md)
+- [`afterAdd`](data_collection/api/datacollection_afteradd_event.md)
+- [`remove()`](data_collection/api/datacollection_remove_method.md)
+- [`update()`](data_collection/api/datacollection_update_method.md)
 
 @changelog: The possibility to pass an array of items is added in v6.1.

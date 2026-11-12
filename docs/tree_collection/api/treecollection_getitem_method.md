@@ -1,22 +1,32 @@
 ---
 sidebar_label: getItem()
 title: JavaScript TreeCollection - getItem Method 
-description: You can explore the getItem method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getItem method of TreeCollection gets the data object of an item at any level of a tree collection by the id of the item. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getItem()
 
-@short: gets an item by its ID
+@short: returns the object of an item by its id
 
-@signature: {'getItem(id: string | number): object;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getItem(id: Id): IDataItem;
+~~~
 
 @params:
-- `id: string | number` - the ID of an item
+- `id: Id` - the id of the item
 
 @returns:
-An item object.
+The object of the item.
 
 @example:
 const item = toolbar.data.getItem("add_btn");
 
 @descr:
+
+**Related API**:
+- [`exists()`](tree_collection/api/treecollection_exists_method.md)
+- [`getItems()`](tree_collection/api/treecollection_getitems_method.md)
+- [`update()`](tree_collection/api/treecollection_update_method.md)

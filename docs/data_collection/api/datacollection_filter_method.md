@@ -1,36 +1,57 @@
 ---
 sidebar_label: filter()
 title: JavaScript DataCollection - filter Method 
-description: You can explore the filter method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the filter method of DataCollection narrows a flat collection down by a rule object, several combined rules or a function, with options to add up and keep filters. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # filter()
 
-@short: filters data items in a component
+@short: filters the items of the collection by the specified criteria
 
-@signature: {'filter(rule?: function | object, config?: object, silent?: boolean): string;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+interface IFilterMode {
+    by?: Id;
+    match?: string | number | boolean | Array<string | number | boolean>;
+    compare?: (value: any, match: any, item: IDataItem, multi?: boolean) => boolean;
+    multi?: boolean;
+}
+interface IFilterComplexMode {
+    [key: string]: IFilterMode;
+}
+type IFilterCallback = (item: IDataItem) => boolean;
+interface IFilterConfig {
+    id?: string;
+    add?: boolean;
+    permanent?: boolean;
+}
+
+filter(rule?: IFilterMode | IFilterComplexMode | IFilterCallback, config?: IFilterConfig, silent?: boolean): string;
+~~~
 
 @params:
-
-- `rule?: function | object` - optional, the filtering criteria
-    - If set as a *function*, filtering will be applied by the rule specified in the function. It takes as a parameter a data item and returns *true/false*
-    - If set as an *object*, the parameter has the following attributes:
-        - `by?: string | number` - optional, the id of a data field 
-        - `match?: string` - optional, a pattern to match
-        - `compare?: function` - optional, a function for extended filtering that takes the following parameters:
-            - `value` - the value to compare 
-            - `match` - a pattern to match
-            - `item` - a data item the values of which should be compared 
-            - `multi` - the value of the `multi` attribute of the rule
+- `rule?: IFilterMode | IFilterComplexMode | IFilterCallback` - optional, the filtering criteria
+    - if set as a *function*, filtering is applied by the rule specified in the function. The function is called with a data item and returns *true* to keep the item or *false* to filter it out
+    - if set as an *object*, the parameter has the following attributes:
+        - `by?: Id` - optional, the id of a data field
+        - `match?: string | number | boolean | array` - optional, a pattern to match
+        - `compare?: function` - optional, a function for extended filtering. It is called with the following parameters:
+            - `value: any` - the value to compare
+            - `match: any` - a pattern to match
+            - `item: IDataItem` - a data item the values of which should be compared
+            - `multi?: boolean` - optional, the value of the `multi` attribute of the rule
         - `multi?: boolean` - optional, marks the field as holding several values at once (e.g. a multiselect column stores them as a comma-separated string). Passed to `compare` as its last argument
-- `config?: object` - optional, an object with the following properties:
+    - if set as an *object with several rules* (`IFilterComplexMode`), the parameter is an object where each key is an arbitrary name of a rule and its value is a rule object with the attributes described above. An item is kept only if it matches all the rules
+- `config?: IFilterConfig` - optional, an object with the following properties:
     - `id?: string` - optional, the id of the filter
-    - `add?: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-    - `permanent?: boolean` - optional, *true* to make the current filter permanent. It is applied even if the next filtering doesn't have the `add:true` property in its configuration object. It is not dropped by a plain `resetFilter()` call and is reapplied to the data after `parse()` or `load()`; pass `permanent:true` to [resetFilter()](data_collection/api/datacollection_resetfilter_method.md) to remove it as well
-- `silent?: boolean` - optional, if set to <i>true</i>, the method will be called without triggering events, <i>false</i> by default
+    - `add?: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (*true*), or to the initial data (*false*, default)
+    - `permanent?: boolean` - optional, *true* to make the current filter permanent. It is applied even if the next filtering doesn't have the `add:true` property in its configuration object. It is not dropped by a plain `resetFilter()` call and is reapplied to the data after `parse()` or `load()`; pass `permanent:true` to [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) to remove it as well
+- `silent?: boolean` - optional, if set to *true*, the method will be called without triggering events, *false* by default
 
 :::info
-Note that after calling the method with the `silent:true` parameter, you may need to repaint the component with the `paint()` method.
+Note that after calling the method with the `silent:true` parameter, you may need to repaint the component that uses the collection with its `paint()` method.
 :::
     
 @returns:
@@ -38,12 +59,12 @@ Note that after calling the method with the `silent:true` parameter, you may nee
 
 @example:
 // filtering data by a function
-grid.data.filter(function (item) {
+grid.data.filter((item) => {
     return item.a > 0 && item.b !== "Apple";
 });
 
 // or
-grid.data.filter(function (item) {
+grid.data.filter((item) => {
     return item.a > 0 && item.b !== "Apple";
 }, {
     add: true,
@@ -53,14 +74,20 @@ grid.data.filter(function (item) {
 grid.data.filter({
     by: "a",
     match: "Orange",
-    compare: function (value, match, item) {
+    compare: (value, match, item) => {
         if (item.a !== "Some") {
-            return val === "New";
+            return value === "New";
         }
-    return false;
+        return false;
     }
 }, {
     add: true,
+});
+
+// filtering data by several rules at once
+grid.data.filter({
+    country: { by: "country", match: "France" },
+    year: { by: "year", match: 2024 }
 });
 
 @descr:
@@ -75,4 +102,8 @@ Unless `config.add` is set, the method replaces the currently applied filters; c
 
 When data is [grouped](data_collection/api/datacollection_group_method.md), DataCollection matches the rule against the data items only. It never checks group headers and summary rows against the rule, so a filtering function never receives a `$group` or a `$groupSummary` item. A group stays as long as any of its items match the rule, and DataCollection recalculates the [counters and aggregated values](data_collection/api/datacollection_group_method.md#group-counters-and-aggregates) of the groups that remain.
 
-
+**Related API**:
+- [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md)
+- [`getFilters()`](data_collection/api/datacollection_getfilters_method.md)
+- [`filter`](data_collection/api/datacollection_filter_event.md)
+- [`getInitialData()`](data_collection/api/datacollection_getinitialdata_method.md)

@@ -1,23 +1,31 @@
 ---
 sidebar_label: afterRemove
 title: JavaScript TreeCollection - afterRemove Event 
-description: You can explore the afterRemove event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterRemove event of TreeCollection fires once an item is removed from a tree collection, and which item the handler receives. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterRemove
 
-@short: fires after removing a new item from a tree collection
+@short: fires after an item is removed from the collection
 
-@signature: {'afterRemove: (removedItem: object) => void;'}
+#### Usage
+
+~~~ts
+afterRemove: (removedItem: IDataItem, batch: IDataItem[], index: number) => void;
+~~~
 
 @params:
-- `removedItem: object` - the object of a removed item
+- `removedItem: IDataItem` - the object of a removed item
+- `batch: IDataItem[]` - an array of removed items
+- `index: number` - the index of the removed item within the batch
 
 @example:
-component.data.events.on("afterRemove", function(removedItem){
+component.data.events.on("afterRemove", (removedItem) => {
     console.log("An item is removed");
 });
 
 @descr:
 
-[comment]: # (@relatedapi:tree_collection/api/beforeremove_event.md)
+**Related API**:
+- [`remove()`](tree_collection/api/treecollection_remove_method.md)
+- [`beforeRemove`](tree_collection/api/treecollection_beforeremove_event.md)

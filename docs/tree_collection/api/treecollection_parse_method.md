@@ -1,18 +1,24 @@
 ---
 sidebar_label: parse()
 title: JavaScript TreeCollection - parse Method 
-description: You can explore the parse method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the parse method of TreeCollection loads hierarchical data into a tree collection from a local array of nested items or a data string. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # parse()
 
-@short: loads a collection of items from a local source
+@short: loads items into the collection from a local data source
 
-@signature: {'parse(data: object[] | string, driver?: object | string): void;'}
+#### Usage
+
+~~~ts
+type DataDriver = "json" | "csv" | "xml";
+
+parse(data: IDataItem[] | string, driver?: DataDriver | IDataDriver): void;
+~~~
 
 @params:
-- `data: array | string` - the data to load
-- `driver?: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `data: IDataItem[] | string` - the data to load: an array of item objects or a string
+- `driver?: DataDriver | IDataDriver` - optional, the type of data ("json", "csv", "xml") or a DataDriver object, "json" by default
 
 @example:
 // loads data into the toolbar from the JSON array
@@ -57,7 +63,12 @@ toolbar.data.parse("<root>"
 @descr:
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+Please note that if you specify the `id` fields in the data, their values should be **unique**. You can also omit the `id` fields in the data. In this case they will be generated automatically.
 :::
 
 The method resets the applied sorting and filtering: the sorting is dropped, and so are all the filters except those applied with `permanent: true`, which are reapplied to the new data.
+
+**Related API**:
+- [`load()`](tree_collection/api/treecollection_load_method.md)
+- [`serialize()`](tree_collection/api/treecollection_serialize_method.md)
+- [`load`](tree_collection/api/treecollection_load_event.md)

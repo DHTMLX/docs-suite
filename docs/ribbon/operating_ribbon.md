@@ -330,9 +330,9 @@ Use the `move()` method of TreeCollection to move Ribbon items to different posi
 ribbon.data.move("bl_2",-1);
 ~~~
 
-{{note
-The ID should always be a string, even if you set it as a number in the control configuration.
-}}
+:::note
+Pass the ID of the item with the same type as it has in the item configuration. For example, if the ID is set as the number `2`, the method doesn't move the item when it gets the string `"2"`.
+:::
 
 To get the current position of a block, use the `getIndex()` method of TreeCollection:
 

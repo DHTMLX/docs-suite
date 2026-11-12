@@ -1,32 +1,41 @@
 ---
 sidebar_label: afterItemLoad
 title: JavaScript TreeCollection - afterItemLoad Event 
-description: You can explore the afterItemLoad event of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the afterItemLoad event of TreeCollection fires once the child items of an item are loaded with loadItems or refreshItems and added to the collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # afterItemLoad
 
-@short: fires after loading an item
+@short: fires after the child items of an item are loaded
 
-@descr:
-:::info
-The event fires when you load items via the <a href="../treecollection_loaditems_method/">loadItems()</a> method of Tree Collection. The method also fires if you enable the <a href="../../../tree/api/tree_autoload_config/">autoload</a> property of Tree.
-:::
+#### Usage
 
-@signature: {'afterItemLoad:({ id: string | number }) => void;'}
+~~~ts
+type Id = string | number;
+afterItemLoad: (id: Id) => void;
+~~~
 
 @params:
-- `id: string | number` - the id of the loaded item
+- `id: Id` - the id of the item the child items of which are loaded
 
 @example:
-component.data.events.on("afterItemLoad", function(id){
-    console.log("An ", id, " item is loaded");
+component.data.events.on("afterItemLoad", (id) => {
+    console.log("The child items of the " + id + " item are loaded");
 });
 
-@descr: 
+@descr:
 
 :::info
-In case of error, the [loadError](tree_collection/api/treecollection_loaderror_event.md) event will fire.
+The event fires when you load child items via the [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md) method of TreeCollection. The event also fires if you enable the [`autoload`](tree/api/tree_autoload_config.md) property of Tree.
 :::
+
+:::info
+In case of error, the [`loadError`](tree_collection/api/treecollection_loaderror_event.md) event will fire.
+:::
+
+**Related API**:
+- [`loadItems()`](tree_collection/api/treecollection_loaditems_method.md)
+- [`refreshItems()`](tree_collection/api/treecollection_refreshitems_method.md)
+- [`beforeItemLoad`](tree_collection/api/treecollection_beforeitemload_event.md)
 
 @changelog: added in v8.0

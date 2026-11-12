@@ -1,30 +1,39 @@
 ---
 sidebar_label: map()
 title: JavaScript DataCollection - map Method 
-description: You can explore the map method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the map method of DataCollection calls a function for each item of a flat collection and returns a new array with the results of the calls. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # map()
 
-@short: iterates through all the items of the component
+@short: iterates through the items of the collection and returns an array of the callback results
 
-@signature: {'map(callback: (item: object, index: number, array: object[]) => any): object[];'}
+#### Usage
+
+~~~ts
+map(callback: (item: IDataItem, index?: number, array?: IDataItem[]) => any): any[];
+~~~
 
 @params:
-- `callback: function` - a function that will be called for each item of a component. The function is called with the following parameters:
-    - `item: object` - the object of an item
-    - `index: number` - the index of an item
-    - `array: object[]` - an array of items the method was called upon
+- `callback: function` - a function that will be called for each item of the collection. The function is called with the following parameters:
+    - `item: IDataItem` - the object of an item
+    - `index?: number` - optional, the index of the item in the collection
+    - `array?: IDataItem[]` - optional, the array of the items of the collection
 
 @returns:
-A new array of items where each item is the result of the callback function.
+A new array with the results of calling the callback function for each item.
 
 @example:
 // getting the ids of all items of the component
-component.data.map(function (item, index, array) {
+component.data.map((item, index, array) => {
     return item.id;
 });
 
 @descr:
 
 **Related sample**: [Data. Map](https://snippet.dhtmlx.com/louctp61)
+
+**Related API**:
+- [`forEach()`](data_collection/api/datacollection_foreach_method.md)
+- [`mapRange()`](data_collection/api/datacollection_maprange_method.md)
+- [`reduce()`](data_collection/api/datacollection_reduce_method.md)

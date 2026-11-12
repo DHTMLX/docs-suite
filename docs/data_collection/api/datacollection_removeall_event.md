@@ -1,18 +1,25 @@
 ---
 sidebar_label: removeAll
 title: JavaScript DataCollection - removeAll Event 
-description: You can explore the removeAll event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the removeAll event of DataCollection fires after all the items are removed from a flat collection at once with the removeAll method. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # removeAll
 
-@short: fires when all items are removed from a data collection
+@short: fires when all items are removed from the collection
 
-@signature: {'removeAll: () => void;'}
+#### Usage
+
+~~~ts
+removeAll: () => void;
+~~~
 
 @example:
-component.data.events.on("removeAll", function(){
+component.data.events.on("removeAll", () => {
     console.log("Items are removed");
 });
 
 @descr:
+
+**Related API**:
+- [`removeAll()`](data_collection/api/datacollection_removeall_method.md)

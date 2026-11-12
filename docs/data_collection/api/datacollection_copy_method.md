@@ -1,22 +1,28 @@
 ---
 sidebar_label: copy()
 title: JavaScript DataCollection - copy Method 
-description: You can explore the copy method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the copy method of DataCollection copies one or several items to a new position in the same or another collection and returns the ids of the copies. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # copy()
 
-@short: creates a copy of an item at the defined position
+@short: copies an item or several items to the specified position
 
-@signature: {'copy(id: (string | number) | (string | number)[], index: number, target?: object): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection): Id | Id[];
+~~~
 
 @params:
-- `id: (string | number) | (string | number)[]` - the id of an item or an array with ids of items to copy
-- `index: number` - the index to create a copy at
-- `target?: object` - optional, the target data collection object
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to copy
+- `index: number` - the index to place the copy at
+- `target?: IDataCollection | ITreeCollection` - optional, the collection to place the copy into; the current collection by default
 
 @returns:
-The item's id or an array with ids of items.
+The id of the copy or an array with the ids of the copies.
 
 @example:
 component.data.copy("4", 5); // copies the item with id:4 to the position with index 5
@@ -24,3 +30,7 @@ component.data.copy("4", 5); // copies the item with id:4 to the position with i
 @descr:
 
 **Related sample**: [Data. Copy](https://snippet.dhtmlx.com/9rws8r05)
+
+**Related API**:
+- [`move()`](data_collection/api/datacollection_move_method.md)
+- [`add()`](data_collection/api/datacollection_add_method.md)

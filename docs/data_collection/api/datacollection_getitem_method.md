@@ -1,20 +1,25 @@
 ---
 sidebar_label: getItem()
 title: JavaScript DataCollection - getItem Method 
-description: You can explore the getItem method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getItem method of DataCollection gets the data object of an item of a flat collection by the id of the item to read or check its properties. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getItem()
 
 @short: returns the object of an item by its id
 
-@signature: {'getItem(id: string | number): object;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getItem(id: Id): IDataItem;
+~~~
 
 @params:
-- `id: string | number` - the id of a selected item
+- `id: Id` - the id of the item
 
 @returns:
-The object of an item.
+The object of the item.
 
 @example:
 
@@ -30,3 +35,8 @@ You can access the original properties of an item like this:
 const item = component.data.getItem(123);
 const text = item.text;
 ~~~
+
+**Related API**:
+- [`exists()`](data_collection/api/datacollection_exists_method.md)
+- [`getId()`](data_collection/api/datacollection_getid_method.md)
+- [`update()`](data_collection/api/datacollection_update_method.md)

@@ -1,27 +1,39 @@
 ---
 sidebar_label: copy()
 title: JavaScript TreeCollection - copy Method 
-description: You can explore the copy method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the copy method of TreeCollection copies one or several items together with their children to a new position or parent, in the same or another collection. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # copy()
 
-@short: adds a copy of an item and places it in the specified position
+@short: copies an item or several items to the specified position
 
-@signature: {'copy(id: (string | number) | (string | number)[], index: number, target?: object, targetId?: string | number): (string | number) | (string | number)[];'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+
+copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
+~~~
 
 @params:
-- `id: (string | number) | (string | number)[]` - the ids of the items to copy
-- `index: number` - the position of a copy
-- `target?: object` - optional, a tree collection where the copy will be stored
-- `targetId?: string | number` - optional (for menu options), the ID of a menuItem to which a copy of the menu option will be placed
+- `id: Id | Id[]` - the id of the item or an array with ids of the items to copy
+- `index: number` - the index to place the copy at
+- `target?: IDataCollection | ITreeCollection` - optional, the collection to place the copy into; the current collection by default
+- `targetId?: Id` - optional, the id of the parent item the copies will be placed into
 
 @returns:
-The item's id or an array with ids of items.
+The id of the copy or an array with the ids of the copies.
 
 @example:
-toolbar.data.copy("print_btn", 2)
-// another toolbar
+// copies an item within the toolbar
+toolbar.data.copy("print_btn", 2);
+
+// copies an item to another toolbar
 toolbar2.data.copy("save_btn", 1, toolbar1.data);
 
 @descr:
+
+**Related API**:
+- [`canCopy()`](tree_collection/api/treecollection_cancopy_method.md)
+- [`move()`](tree_collection/api/treecollection_move_method.md)

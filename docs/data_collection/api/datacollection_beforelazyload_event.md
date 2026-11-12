@@ -1,29 +1,35 @@
 ---
 sidebar_label: beforeLazyLoad
 title: JavaScript DataCollection - beforeLazyLoad Event 
-description: You can explore the beforeLazyLoad event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the beforeLazyLoad event of DataCollection fires before a dynamic loading request is sent to the server and how to block it by returning false. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # beforeLazyLoad
 
-@short: fires before sending a request to the server
+@short: fires before the collection sends a request to the server
 
-@signature: {'beforeLazyLoad: () => boolean | void;'}
+#### Usage
+
+~~~ts
+beforeLazyLoad: () => boolean | void;
+~~~
 
 @returns:
 Return `false` to block sending a request to the server; otherwise, `true`.
 
 @example:
-component.data.events.on("beforeLazyLoad", function () {
+component.data.events.on("beforeLazyLoad", () => {
     // your code here
     return false;
 });
 
 @descr:
 
+**Related article**: [Dynamic loading](helpers/lazydataproxy.md)
+
+**Related API**:
+- [`afterLazyLoad`](data_collection/api/datacollection_afterlazyload_event.md)
+- [`isDataLoaded()`](data_collection/api/datacollection_isdataloaded_method.md)
+
 @changelog:
 added in v6.4
-
-[comment]: # (@relatedapi: data_collection/api/datacollection_afterlazyload_event.md)
-
-[comment]: # (@related: helpers/lazydataproxy.md)

@@ -1,18 +1,26 @@
 ---
 sidebar_label: load
 title: JavaScript DataCollection - load Event 
-description: You can explore the load event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn when the load event of DataCollection fires when items are loaded into a flat collection from a local data source or from the server. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # load
 
-@short: fires when items are loaded in a data collection
+@short: fires when items are loaded into the collection
 
-@signature: {'load: () => void;'}
+#### Usage
+
+~~~ts
+load: () => void;
+~~~
 
 @example:
-component.data.events.on("load", function(){
+component.data.events.on("load", () => {
     console.log("Items are loaded.");
 });
 
 @descr:
+
+**Related API**:
+- [`load()`](data_collection/api/datacollection_load_method.md)
+- [`parse()`](data_collection/api/datacollection_parse_method.md)

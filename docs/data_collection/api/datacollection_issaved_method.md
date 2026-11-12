@@ -1,14 +1,18 @@
 ---
 sidebar_label: isSaved()
 title: JavaScript DataCollection - isSaved Method
-description: You can explore the isSaved method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the isSaved method of DataCollection checks whether all the changes made in a flat collection are already saved to the server. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # isSaved()
 
-@short: checks whether the changes made in a data collection are saved
+@short: checks whether the changes made in the collection are saved
 
-@signature: {'isSaved(): boolean;'}
+#### Usage
+
+~~~ts
+isSaved(): boolean;
+~~~
 
 @returns:
 `true`, if the changes are saved; otherwise, `false`.
@@ -18,4 +22,5 @@ component.data.isSaved();
 
 @descr:
 
-[comment]: # (@relatedapi: data_collection/api/datacollection_save_method.md)
+**Related API**:
+- [`save()`](data_collection/api/datacollection_save_method.md)

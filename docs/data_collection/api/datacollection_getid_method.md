@@ -1,14 +1,19 @@
 ---
 sidebar_label: getId()
 title: JavaScript DataCollection - getId Method 
-description: You can explore the getId method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the getId method of DataCollection gets the id of the item placed at the specified index of a flat collection, taking the current order into account. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # getId()
 
-@short: returns the id of the item by its index
+@short: returns the id of an item by its index
 
-@signature: {'getId(index: number): string | number;'}
+#### Usage
+
+~~~ts
+type Id = string | number;
+getId(index: number): Id;
+~~~
 
 @params:
 - `index: number` - the index of the item
@@ -22,3 +27,8 @@ const id = component.data.getId(0); // -> returns "1"
 @descr:
 
 **Related sample**: [Data. Get Id](https://snippet.dhtmlx.com/8e02xliz)
+
+**Related API**:
+- [`getIndex()`](data_collection/api/datacollection_getindex_method.md)
+- [`getItem()`](data_collection/api/datacollection_getitem_method.md)
+- [`getVisibleIndex()`](data_collection/api/datacollection_getvisibleindex_method.md)

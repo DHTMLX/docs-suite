@@ -1,12 +1,12 @@
 ---
 sidebar_label: changeId()
 title: JavaScript DataCollection - changeId Method 
-description: You can explore the changeId method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: Learn how the changeId method of DataCollection replaces the id of an item of a flat collection with the specified id or an automatically generated one. Explore the API reference and code examples of the DHTMLX JavaScript Suite library.
 ---
 
 # changeId()
 
-@short: changes the id of an element of a data collection
+@short: changes the id of an item of the collection
 
 #### Usage
 
@@ -40,6 +40,11 @@ The method leaves the item as is, shows a warning in the browser console and ret
 - an item with the `newId` id already exists
 - `newId` is not a valid id, that is, neither a number nor a non-empty string
 - the data is [grouped](data_collection/api/datacollection_group_method.md)
+
+**Related API**:
+- [`exists()`](data_collection/api/datacollection_exists_method.md)
+- [`getItem()`](data_collection/api/datacollection_getitem_method.md)
+- [`update()`](data_collection/api/datacollection_update_method.md)
 
 @changelog:
 
