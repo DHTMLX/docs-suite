@@ -6,11 +6,11 @@ description: You can explore the features of Slider in the documentation of the 
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX Slider and go into deep dive on its functionality.
+This page helps you start working with DHTMLX Slider and explore its functionality in depth.
 
 ## How to start with DHTMLX Slider
 
-In this section you can find out how to initialize Slider in different modes and how to integrate Slider into your applications.
+In this section you will learn how to initialize Slider in different modes and integrate it into your applications.
 
 ### Initialization
 
@@ -25,40 +25,40 @@ In this section you can find out how to initialize Slider in different modes and
 
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework to build DHTMLX-based apps <br>(the recommended framework for apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Slider with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                  |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Slider with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                           |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Slider with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                |
 
 ## How to configure Slider
 
-In this section you can find out how to set the initial value of Slider, how to specify the minimal and maximal values, how to configure the step, scale, label, and tooltip of Slider.
+In this section you will learn how to set the initial value of Slider, specify the minimal and maximal values, and configure the step, scale, label, and tooltip of Slider.
 
 | Topic                                                                              | Description                                                                                      |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | [Setting initial value](slider/api/slider_value_config.md)                               | Learn how to specify the initial value of a Slider                                               |
 | [Specifying the min/max values](slider/configuring_slider.md#minimal-and-maximal-values) | Learn how to define the start and end points of a Slider                                         |
-| [Configuring Slider step](slider/configuring_slider.md#step)                             | Learn how to configure the step the slider thumb will be moved with                              |
+| [Configuring Slider step](slider/configuring_slider.md#step)                             | Learn how to configure the step at which the slider thumb moves                              |
 | [Configuring Slider scale](slider/configuring_slider.md#scale-settings)                  | Learn how to configure the scale of a Slider ([Example](https://snippet.dhtmlx.com/4a6l7cyy))    |
 | [Configuring Slider label](slider/configuring_slider.md#slider-label)                    | Learn how to configure the label of a Slider ([Example](https://snippet.dhtmlx.com/4o7yttam))    |
-| [Making a label hidden](slider/api/slider_hiddenlabel_config.md)                         | Learn how to initialize a Slider with hidden label                                               |
+| [Making a label hidden](slider/api/slider_hiddenlabel_config.md)                         | Learn how to initialize a Slider with a hidden label                                               |
 | [Configuring a tooltip](slider/configuring_slider.md#tooltip)                            | Learn how to configure the tooltip for a Slider ([Example](https://snippet.dhtmlx.com/sxh66mnu)) |
 
 
 ## How to customize Slider
 
-In this section you can learn how to customize a Slider.
+In this section you will learn how to customize Slider.
 
 | Topic                                               | Description                                                                                      |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | [Custom scale](https://snippet.dhtmlx.com/jsfxnplp) | The example shows how to customize the Slider scale                                              |
 | [Styling Slider](slider/customization.md)                 | Learn how to change the look and feel of Slider ([Example](https://snippet.dhtmlx.com/ewizud5e)) |
-| [List of CSS classes](helpers/base_elements.md) | A set of CSS classes provided by the DHTMLX library                                              |
+| [List of CSS classes](helpers/base_elements.md) | The CSS classes included in the DHTMLX library                                              |
 
 ## How to work with Slider
 
-In this section you can learn how to set, get the value of the Slider, how to disable and enable the Slider, and more.
+In this section you will learn how to set and get the value of Slider, disable and enable it, and manage focus on its thumb.
 
 | Topic                                                             | Description                                                                                         |
 | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -67,20 +67,20 @@ In this section you can learn how to set, get the value of the Slider, how to di
 | [Disabling / enabling Slider](slider/usage.md#disablingenabling-slider) | Learn how to disable and enable a Slider on the page ([Example](https://snippet.dhtmlx.com/po9hsc2l)) |
 | [Is disabled](slider/usage.md#checking-if-a-slider-is-disabled)         | Learn how to check whether a Slider is disabled ([Example](https://snippet.dhtmlx.com/fbo18fue))    |
 | [Setting focus on a Slider thumb](slider/api/slider_focus_method.md)    | Learn how to set focus on a Slider thumb                                                            |
-| [Removing focus](slider/api/slider_blur_method.md)                      | Learn how remove focus from a Slider thumb                                                          |
+| [Removing focus](slider/api/slider_blur_method.md)                      | Learn how to remove focus from a Slider thumb                                                          |
 
 ## How to work with Slider events
 
-This section explains how to work with Slider events.
+In this section you will learn how to work with Slider events.
 
 | Topic                                       | Description                                                                                            |
 | :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
-| [Event handling](slider/handling_events.md)        | Learn how to attach, detach, or call the Slider events ([Example](https://snippet.dhtmlx.com/sc7ov54z)) |
+| [Event basic rules](guides/events_guide.md) | Learn the basic rules of event handling                                                           |
+| [Event handling](slider/handling_events.md)        | Learn how to attach, detach, or call Slider events ([Example](https://snippet.dhtmlx.com/sc7ov54z)) |
 
 ## API reference
 
-In this section you can find out corresponding references of Slider API.
+In this section you will find the Slider API reference.
 
 | Topic                                                  | Description                         |
 | ------------------------------------------------------ | ----------------------------------- |
@@ -90,13 +90,13 @@ In this section you can find out corresponding references of Slider API.
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Slider.
+In this section you will learn about common library functionality that is useful when you work with Slider.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run code after the component renders |
 
 ## Any questions left?
 

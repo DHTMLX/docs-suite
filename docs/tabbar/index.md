@@ -6,8 +6,8 @@ description: You can have an overview of Tabbar in the documentation of the DHTM
 
 # Tabbar overview
 
-DHTMLX Tabbar component allows a user to keep several groups of content together and navigate between them with in a handy way.
-Being highly configurable, the component can be easily adjusted to your requirements and will provide quick switching between parts of your app. 
+The DHTMLX Tabbar component groups content into tabs and lets users switch between them.
+You can place the tabs on the top, bottom, left, or right side, attach DHTMLX components or HTML content to them, and add close buttons to tabs.
 Check [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar).
 
 ![Tabbar with three tabs and the active Dynamic Interface tab showing its content in DHTMLX Suite](/img/tabbar/tabbar_front.png)
@@ -28,6 +28,8 @@ Learn how to build a full-featured DHTMLX Tabbar:
 - Try the [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar)
 
 ## Guides
+
+The following articles explain how to add Tabbar to a page, configure it, work with it, customize it, and handle its events:
 
 - [](tabbar/init.md)
 - [](tabbar/configuring_tabbar.md)
