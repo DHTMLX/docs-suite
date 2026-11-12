@@ -8,7 +8,7 @@ description: You can explore the event handling of Slider in the documentation o
 
 ## Attaching event listeners
 
-You can attach event listeners with the **slider.events.on()** method:
+You can attach event listeners with the `slider.events.on()` method:
 
 ~~~js
 slider.events.on("change", function(newValue, oldValue, isRange){
@@ -16,13 +16,13 @@ slider.events.on("change", function(newValue, oldValue, isRange){
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
+{{note Event names are case-insensitive.}}
 
 **Related sample**: [Slider. Events](https://snippet.dhtmlx.com/sc7ov54z)
 
 ## Detaching event listeners
 
-To detach events, use **slider.events.detach()**:
+You can detach event listeners with the `slider.events.detach()` method:
 
 ~~~js
 slider.events.on("change", function(newValue, oldValue, isRange) {
@@ -34,7 +34,7 @@ slider.events.detach("change");
 
 ## Calling events
 
-To call events, use **slider.events.fire()**:
+You can call events with the `slider.events.fire()` method:
 
 ~~~js
 slider.events.fire("name",args);
@@ -43,4 +43,4 @@ slider.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](slider/api/api_overview.md#events).
+The [API section](slider/api/api_overview.md#events) lists all Slider events.

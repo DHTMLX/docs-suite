@@ -6,17 +6,17 @@ description: You can explore the customization of Tabbar in the documentation of
 
 # Customization
 
-## Styling Tabbar
+## Use custom CSS classes {#styling-tabbar}
 
-There is a possibility to make changes in the look and feel of a tabbar.
+You can change the look and feel of a tabbar.
 
 ![Custom styled Tabbar with a red active VILNIUS tab and city tabs in DHTMLX Suite](/img/tabbar/custom_style.png)
 
 **Related sample**: [Tabbar. Styling (custom CSS)](https://snippet.dhtmlx.com/47en9f0a)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet. If you use a stylesheet, include it on the page:
 
 ~~~js
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](tabbar/api/tabbar_css_config.md) property in the Tabbar configuration:
+- Specify the name of the class you created (or several class names separated by spaces) as the value of the [`css`](tabbar/api/tabbar_css_config.md) property in the Tabbar configuration:
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {

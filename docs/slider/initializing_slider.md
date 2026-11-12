@@ -7,10 +7,10 @@ description: You can explore the initialization of Slider in the documentation o
 # Initialization
 
 :::info
-[Download the DHTMLX Slider package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Slider package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To initialize DHTMLX Slider on a page, you need to take the following simple steps:
+Follow these steps to add DHTMLX Slider to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -41,12 +41,12 @@ To initialize DHTMLX Slider on a page, you need to take the following simple ste
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -55,7 +55,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for Slider and give it an id, for example "slider_container":
+Add a container for Slider and give it an id, for example `slider_container`:
 
 ~~~html title="index.html"
 <div id="slider_container"></div>
@@ -63,10 +63,10 @@ Add a container for Slider and give it an id, for example "slider_container":
 
 ## Initialize Slider
 
-Initialize Slider with the `dhx.Slider` object constructor. The constructor has two parameters:
+Initialize Slider with the `dhx.Slider` object constructor. The constructor takes two parameters:
 
-- the HTML container for Slider,
-- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
+- The HTML container for Slider
+- An object with [configuration properties](#configuration-properties) (optional). If you omit this argument, Slider uses the default settings.
 
 ~~~js title="index.js"
 // creating DHTMLX Slider
@@ -79,9 +79,7 @@ const slider = new dhx.Slider("slider_container", {
 
 ### Configuration properties
 
-There is a set of properties you can specify for Slider to optimize its configuration for your needs.
-
-See the detailed information on configuration properties of Slider in the [Slider API overview](slider/api/api_overview.md#properties) article.
+The [Slider API overview](slider/api/api_overview.md#properties) article describes the properties you can specify to adapt Slider to your needs.
 
 ## Example
 

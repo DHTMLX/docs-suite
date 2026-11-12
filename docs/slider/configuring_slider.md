@@ -8,7 +8,7 @@ description: You can explore the configuration of Slider in the documentation of
 
 ## Initial value
 
-It is possible to define the value the thumb of the slider will be set at on the initialization of the component:
+Use the `value` property to set the position of the slider thumb on initialization:
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -18,11 +18,11 @@ const slider = new dhx.Slider("slider_container", {
 
 ## Inverse mode
 
-You can adjust the configuration of Slider so that its scale would render values in the reverse order, i.e. from the maximal value to the minimal one.
+In the inverse mode, the slider scale displays values in the reverse order, that is, from the maximal value to the minimal one.
 
 ![Inverse mode slider with the thumb near the right end showing tooltip value 86 in DHTMLX Suite](/img/slider/inverse_mode.png)
 
-To launch this mode, make use of the [](slider/api/slider_inverse_config.md) property set to *true*:
+To enable this mode, set the [](slider/api/slider_inverse_config.md) property to `true`:
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -37,7 +37,7 @@ const slider = new dhx.Slider("slider_container", {
 
 ## Minimal and maximal values
 
-The minimal and maximal values define the start and end points of the slider. You can specify them via the corresponding configuration properties - [](slider/api/slider_min_config.md) and [](slider/api/slider_max_config.md). The default values are 0 and 100, correspondingly.
+The minimal and maximal values define the start and end points of the slider. The default values are 0 and 100, respectively. Use the [](slider/api/slider_min_config.md) and [](slider/api/slider_max_config.md) properties to change them:
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -48,8 +48,7 @@ const slider = new dhx.Slider("slider_container", {
 
 ## Range mode
 
-Besides the standard slider with one thumb, you can create a slider with two thumbs, that is a range slider. For this, you need to use the [range:true](slider/api/slider_range_config.md) option in the slider configuration object and
-define an array with the min and max values for the range:
+Besides the standard slider with one thumb, you can create a range slider with two thumbs. Set the [](slider/api/slider_range_config.md) property to `true` and pass an array with the start and end values of the range to the `value` property:
 
 ~~~js {6,7}
 const slider = new dhx.Slider("slider_container", {
@@ -64,15 +63,15 @@ const slider = new dhx.Slider("slider_container", {
 
 **Related sample**: [Slider. Range mode of the Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
-There are more details given in the [](slider/range_slider.md) article.
+For more details, see the [](slider/range_slider.md) article.
 
 ## Scale settings
 
-You can configure the look and feel of the Slider scale via the corresponding properties of the Slider configuration object:
+Use the following properties of the Slider configuration object to configure the look and feel of the scale:
 
-- [](slider/api/slider_tick_config.md) - (<i>number</i>) sets the interval of steps for rendering the slider scale
-- [](slider/api/slider_majortick_config.md) - (<i>number</i>) sets interval of rendering numeric values on the slider scale
-- [](slider/api/slider_ticktemplate_config.md) - (<i>function</i>) sets a template for rendering values on the slider scale
+- [](slider/api/slider_tick_config.md) — (`number`) sets the interval of steps for rendering the slider scale
+- [](slider/api/slider_majortick_config.md) — (`number`) sets the interval for rendering numeric values on the slider scale
+- [](slider/api/slider_ticktemplate_config.md) — (`function`) sets a template for rendering values on the slider scale
 
 ![Slider with a scale of ticks and degree labels at 0, 50 and 100 in DHTMLX Suite](/img/slider/scale.png)
 
@@ -90,12 +89,12 @@ const slider = new dhx.Slider("slider_container", {
 
 **Related sample**: [Slider. Slider with a scale](https://snippet.dhtmlx.com/4a6l7cyy)
 
-### Showing only the first and the last ticks
+### Show only the first and last ticks {#showing-only-the-first-and-the-last-ticks}
 
-In case you want to mark just the minimal and maximal values with ticks, you need to: 
+Use the following settings to mark only the minimal and maximal values with ticks:
 
-- set the value of the [](slider/api/slider_tick_config.md) property equal to the value of the [](slider/api/slider_max_config.md) property
-- set the [](slider/api/slider_majortick_config.md) property to 1
+- Set the [](slider/api/slider_tick_config.md) property to the value of the [](slider/api/slider_max_config.md) property
+- Set the [](slider/api/slider_majortick_config.md) property to `1`
 
 ![Slider showing only the first and last ticks labeled 0 and 100 in DHTMLX Suite](/img/slider/min_max_ticks_only.png)
 
@@ -107,14 +106,14 @@ const slider = new dhx.Slider("slider_container", {
 
 ## Slider label
 
-There is a possibility to show a label next to the slider. 
+You can show a label next to the slider.
 
 ![Slider with a Volume label placed to the left of the trackbar in DHTMLX Suite](/img/slider/slider_label.png)
 
-There are two properties that allow manipulating the label of the slider: 
+Use the following properties to set the label and its position:
 
-- [](slider/api/slider_label_config.md) - specifies the label of a slider
-- [](slider/api/slider_labelposition_config.md) - defines the position of a label of a slider: "left"|"top"
+- [](slider/api/slider_label_config.md) — specifies the label of a slider
+- [](slider/api/slider_labelposition_config.md) — defines the position of the label: `"left"` or `"top"`
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -128,7 +127,7 @@ const slider = new dhx.Slider("slider_container", {
 
 ## Step
 
-The [](slider/api/slider_step_config.md) option defines the size of each jump between values of the slider. By default, the value of the step is set to 1. You can change this property via the Slider configuration object:
+The [](slider/api/slider_step_config.md) option defines the size of each jump between values of the slider. The default step is 1. Set a different value in the Slider configuration object:
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -138,11 +137,11 @@ const slider = new dhx.Slider("slider_container", {
 
 ## Tooltip
 
-You can specify a tooltip that will display changeable values of the slider when the user moves the slider's thumb. 
+A tooltip displays the current value of the slider when the user moves the slider thumb.
 
 ![Slider showing a tooltip with the value 0 above the dragged thumb in DHTMLX Suite](/img/slider/tooltip.png)
 
-There is the [](slider/api/slider_tooltip_config.md) property that enables rendering the slider value over the thumb:
+Use the [](slider/api/slider_tooltip_config.md) property to render the slider value over the thumb:
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 
@@ -154,7 +153,7 @@ const slider = new dhx.Slider("slider_container", {
 
 ## Vertical mode
 
-By default, a slider scale is placed horizontally, but you can arrange it vertically via the [](slider/api/slider_mode_config.md) property of the Slider configuration object:
+The default orientation of the slider scale is horizontal. Set the [](slider/api/slider_mode_config.md) property to `"vertical"` to arrange the scale vertically:
 
 ~~~js
 const slider = new dhx.Slider("slider_container", { 

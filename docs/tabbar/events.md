@@ -8,17 +8,17 @@ description: You can explore the event handling of Tabbar in the documentation o
 
 ## Attaching event listeners
 
-You can add any handler to the events of Tabbar. To do this, use the **tabbar.events.on()** method with the following parameters:
+You can add a custom handler to any event of Tabbar with the `tabbar.events.on()` method. The method takes the following parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>evName</b></td>
-            <td>name of the event</td>
+            <td><code>evName</code></td>
+            <td>the event name</td>
         </tr>
         <tr>
-            <td><b>evHandler</b></td>
-            <td>user-defined event handler</td>
+            <td><code>evHandler</code></td>
+            <td>a custom event handler</td>
         </tr>
     </tbody>
 </table>
@@ -30,15 +30,15 @@ tabbar.events.on("afterClose", function(id){
 });
 ~~~
 
-Several handlers can be attached to one and the same event, and all of them will be executed.
+You can attach several handlers to the same event, and Tabbar runs all of them.
 
-{{note  The names of the events are case-insensitive. }}
+{{note Event names are case-insensitive.}}
 
 **Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
 
 ## Detaching event listeners
 
-There is a simple way of removing an event handler with the **tabbar.events.detach()** method:
+The `tabbar.events.detach()` method removes an event handler:
 
 ~~~js
 tabbar.events.on("afterClose", function(id){
@@ -50,7 +50,7 @@ tabbar.events.detach("afterClose");
 
 ## Calling events
 
-A custom event can be called with the **fire()** method of the **events** module:
+The `fire()` method of the `events` module calls a custom event:
 
 ~~~js
 tabbar.events.fire(evName,[args]);

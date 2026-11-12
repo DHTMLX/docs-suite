@@ -7,10 +7,10 @@ description: You can explore the initialization of Tabbar in the documentation o
 # Initialization
 
 :::info
-[Download the DHTMLX Tabbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Tabbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Tabbar into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Tabbar to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -44,12 +44,12 @@ To add DHTMLX Tabbar into an application, you need to take the following simple 
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -58,7 +58,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Tabbar and give it an id, e.g. "tabbar_container":
+Add a container for Tabbar and give it an id, for example `tabbar_container`:
 
 ~~~html
 <div id="tabbar_container"></div>
@@ -66,8 +66,8 @@ Add a container for the Tabbar and give it an id, e.g. "tabbar_container":
 
 ## Define Tabbar structure
 
-At this step you should specify the structure of your future Tabbar. Each tab represents an object with attributes, such as the name of a tab and a CSS class applied to a tab. 
-For example, Tabbar can have 4 tabs. You need to define their configuration objects and place them into the **views** array, like this:
+Specify the structure of the Tabbar. Each tab is an object with attributes, such as the tab name and the CSS class of the tab.
+For example, to create a Tabbar with four tabs, put their configuration objects into the `views` array:
 
 ~~~js
 const views = [
@@ -82,8 +82,8 @@ const views = [
 
 Initialize Tabbar with the `dhx.Tabbar` object constructor. The constructor takes two parameters:
 
-- the HTML object on the page that serves as the Tabbar container
-- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
+- The HTML container for Tabbar
+- An object with [configuration properties](#configuration-properties) (optional). If you omit this argument, Tabbar uses the default settings.
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container",{
