@@ -6,15 +6,15 @@ description: You can explore the Custom HTML of Toolbar in the documentation of 
 
 # Custom HTML
 
-This is an item that contains any custom HTML content (for example, an image, icon or other element).
+The Custom HTML control displays custom HTML content, such as an image, an icon, or another element.
 
 ![Toolbar custom HTML item displaying a DHX logo image in DHTMLX Suite](/img/toolbar/htmlcontent.png)
 
 **Related sample**: [Toolbar. Custom HTML](https://snippet.dhtmlx.com/rv3gq5qe)
 
-## Adding Custom HTML
+## Add a Custom HTML control {#adding-custom-html}
 
-Any custom HTML content can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add custom HTML content to a toolbar:
 
 ~~~js
 toolbar.data.add({
@@ -26,8 +26,8 @@ toolbar.data.add({
 
 ### Properties
 
-You can provide the [following properties](toolbar/api/api_customhtmlbutton_properties.md) in the configuration object of a Custom HTML control.
+Check the [list of properties](toolbar/api/api_customhtmlbutton_properties.md) that you can set in the configuration object of a Custom HTML control.
 
-## Working with Custom HTML
+## Work with a Custom HTML control {#working-with-custom-html}
 
-You can perform operations over the **Custom HTML** item with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Use the [Toolbar API](toolbar/api/api_overview.md) and the [TreeCollection API](/tree_collection/) to work with a **Custom HTML** control.
