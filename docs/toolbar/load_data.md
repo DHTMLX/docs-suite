@@ -6,19 +6,19 @@ description: You can explore the data loading of Toolbar in the documentation of
 
 # Data loading
 
-There are several simple ways of loading data into DHTMLX Toolbar:
+You can load data into DHTMLX Toolbar in two ways:
 
-- on initialization of Toolbar
-- after initialization of Toolbar
+- During Toolbar initialization
+- After Toolbar initialization
 
-First, you need to prepare a data set that will be loaded into Toolbar.
+Both ways start from a prepared data set.
 
 ## Preparing data set
 
 DHTMLX Toolbar expects loaded data in the JSON format. 
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+If you specify `id` fields in the tree collection, their values must be **unique**. You can also omit these fields. In this case Toolbar generates the values automatically.
 :::
 
 Here is an example of an appropriate data set:
@@ -54,11 +54,11 @@ const dataset = [
 ];
 ~~~
 
-A data set consists of objects with configurations of toolbar controls. Templates for Toolbar controls in JSON format are given [below](#json-format-templates).
+Each object in the data set configures a Toolbar control. The [JSON format templates](#json-format-templates) section lists templates for all Toolbar controls.
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Toolbar on the initialization stage. Use the [data](toolbar/api/toolbar_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Toolbar during initialization. Use the [`data`](toolbar/api/toolbar_data_config.md) configuration property:
 
 ~~~jsx
 const toolbar = new dhx.Toolbar("toolbar_container", {
@@ -71,14 +71,14 @@ const toolbar = new dhx.Toolbar("toolbar_container", {
 
 ## Loading data after initialization
 
-There are two ways to load data into Sidebar after its initialization:
+You can load data into Toolbar after initialization in two ways:
 
-- [from a local data source](#loading-from-a-local-source)
-- [from an external file](#loading-from-an-external-file)
+- [From a local data source](#loading-from-a-local-source)
+- [From an external file](#loading-from-an-external-file)
 
 ### Loading from a local source
 
-You can load data to a toolbar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+The `parse()` method of TreeCollection loads data into a toolbar from an array. Pass [a predefined data set](#preparing-data-set) to this method:
 
 ~~~jsx
 toolbar.data.parse(dataset);
@@ -88,7 +88,7 @@ toolbar.data.parse(dataset);
 
 ### Loading from an external file
 
-The **load** method loads the toolbar data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
+The `load()` method of TreeCollection loads all toolbar data from an external JSON file at once. The method takes the path to the file as a parameter:
 
 ~~~jsx
 toolbar.data.load("[path to this file]/file.json");
@@ -96,9 +96,9 @@ toolbar.data.load("[path to this file]/file.json");
 
 **Related sample**: [Toolbar. Initialization with data.load()](https://snippet.dhtmlx.com/i5a9mx2i)
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to return valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Toolbar loads data asynchronously, so place the code that depends on the loaded data into the `then()` callback:
 
 ~~~jsx
 toolbar.data.load("/some/data").then(function(){
@@ -108,8 +108,7 @@ toolbar.data.load("/some/data").then(function(){
 
 ## Saving and restoring state
 
-To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a toolbar into an array of JSON objects. 
-Each JSON object contains the configuration of a separate Toolbar control.
+The `serialize()` method of TreeCollection saves the current state of a toolbar. The method converts toolbar data into an array of JSON objects. Each JSON object contains the configuration of a separate Toolbar control.
 
 ~~~jsx
 const state = toolbar1.data.serialize();
@@ -126,7 +125,7 @@ toolbar2.data.parse(state);
 
 ## JSON format templates
 
-This section will give you the idea of JSON format templates for separate Toolbar controls.
+This section shows JSON format templates for Toolbar controls.
 
 ### Common template
 
@@ -153,7 +152,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note View the full list of properties of the **button** object in the [related article](toolbar/api/api_button_properties.md). }}
+{{note View the full list of properties of the `button` object in the [related article](toolbar/api/api_button_properties.md).}}
 
 ### Custom HTML template
 
@@ -166,7 +165,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note Check the full list of properties of the **customHTML** object in the [related article](toolbar/api/api_customhtmlbutton_properties.md). }}
+{{note View the full list of properties of the `customHTML` object in the [related article](toolbar/api/api_customhtmlbutton_properties.md).}}
 
 ### ImageButton template
 
@@ -179,7 +178,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note You can view the full list of properties of the **imageButton** object in the [related article](toolbar/api/api_imagebutton_properties.md). }}
+{{note View the full list of properties of the `imageButton` object in the [related article](toolbar/api/api_imagebutton_properties.md).}}
 
 ### Input template
 
@@ -195,7 +194,8 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note You can check the full list of properties of the **input** object in the [related article](toolbar/api/api_input_properties.md). }}
+{{note View the full list of properties of the `input` object in the [related article](toolbar/api/api_input_properties.md).}}
+
 ### MenuItem template
 
 ~~~jsx
@@ -208,7 +208,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note You can find the full list of properties of the **menuItem** object in the [related article](toolbar/api/api_menuitem_properties.md). }}
+{{note View the full list of properties of the `menuItem` object in the [related article](toolbar/api/api_menuitem_properties.md).}}
 
 ### NavItem template
 
@@ -221,7 +221,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note You can take a look at the full list of properties of the **navItem** object in the [related article](toolbar/api/api_navitem_properties.md). }}
+{{note View the full list of properties of the `navItem` object in the [related article](toolbar/api/api_navitem_properties.md).}}
 
 ### SelectButton template
 
@@ -235,7 +235,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note View the full list of properties of the **selectButton** object in the [related article](toolbar/api/api_selectbutton_properties.md). }}
+{{note View the full list of properties of the `selectButton` object in the [related article](toolbar/api/api_selectbutton_properties.md).}}
 
 ### Separator template
 
@@ -247,7 +247,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note Check the full list of properties of the **separator** object in the [related article](toolbar/api/api_separator_properties.md). }}
+{{note View the full list of properties of the `separator` object in the [related article](toolbar/api/api_separator_properties.md).}}
 
 ### Spacer template
 
@@ -259,7 +259,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note You can find the full list of properties of the **spacer** object in the [related article](toolbar/api/api_spacer_properties.md). }}
+{{note View the full list of properties of the `spacer` object in the [related article](toolbar/api/api_spacer_properties.md).}}
 
 ### Title template
 
@@ -273,4 +273,4 @@ This section will give you the idea of JSON format templates for separate Toolba
 }
 ~~~
 
-{{note Take a look at the full list of properties of the **title** object in the [related article](toolbar/api/api_title_properties.md). }}
+{{note View the full list of properties of the `title` object in the [related article](toolbar/api/api_title_properties.md).}}
