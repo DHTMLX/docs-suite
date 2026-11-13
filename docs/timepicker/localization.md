@@ -6,9 +6,9 @@ description: The Timepicker locale holds the labels of the hours and minutes sli
 
 # Localization
 
-You can apply different languages to the interface of DHTMLX Timepicker. You just need to translate the corresponding strings for the labels of Timepicker and apply a ready locale to the component.
+You can apply different languages to the DHTMLX Timepicker interface. Translate the strings for the Timepicker labels and apply the locale to the component.
 
-![Timepicker localized into German with translated labels of the hours and minutes sliders in DHTMLX Suite](/img/timepicker/locale.png)
+![Timepicker localized into German with translated labels of the hour and minute sliders in DHTMLX Suite](/img/timepicker/locale.png)
 
 ## Default locale
 
@@ -28,9 +28,9 @@ Timepicker renders the **Save** button only if you enable the [`controls`](timep
 
 ## Custom locale
 
-To use a different locale, you need to do the following:
+Follow these steps to use a different locale:
 
-- Define necessary language settings: provide the labels of the sliders and of the Save button:
+- Define the language settings. Provide the labels of the sliders and of the Save button:
 
 ~~~jsx
 const de = {
@@ -40,15 +40,15 @@ const de = {
 };
 ~~~
 
-- Apply the language settings by calling the `dhx.i18n.setLocale()` method before Timepicker initialization:
+- Call the `dhx.i18n.setLocale()` method before you initialize Timepicker:
 
 ~~~jsx
 dhx.i18n.setLocale("timepicker", de);
 const timepicker = new dhx.Timepicker("timepicker_container");
 ~~~
 
-The method merges the passed labels into the current locale, so you can redefine just some of them.
+The method merges the passed labels into the current locale, so you can redefine only the labels you need.
 
 :::note
-A timepicker inside a calendar takes its labels from the locale of Timepicker as well. The calendar locale defines the rest of the labels, see the [Localization](calendar/localizing_calendar.md) guide of Calendar.
+A timepicker inside a calendar takes its labels from the Timepicker locale as well. The calendar locale defines the other labels. For details, read the Calendar [Localization](calendar/localizing_calendar.md) guide.
 :::
