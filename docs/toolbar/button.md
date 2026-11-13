@@ -6,15 +6,15 @@ description: You can explore the Button of Toolbar in the documentation of the D
 
 # Button
 
-This is a simple button that can have an icon. Button can have two states and a badge with a number, which can be useful for displaying the number of new messages, etc.
+The Button control displays a button with a text label and an optional icon. A button can have two states and show a badge with a number, for example, to count new messages.
 
 ![Toolbar button with an icon, label, and a number badge in DHTMLX Suite](/img/toolbar/buttons.png)
 
 **Related sample**: [Toolbar. Button](https://snippet.dhtmlx.com/7aysw3gb)
 
-## Adding Button
+## Add a button {#adding-button}
 
-A button can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add a button to a toolbar:
 
 ~~~js
 toolbar.data.add({
@@ -24,11 +24,11 @@ toolbar.data.add({
 
 ### Properties
 
-You can provide the [following properties](toolbar/api/api_button_properties.md) in the configuration object of a Button control.
+Check the [list of properties](toolbar/api/api_button_properties.md) that you can set in the configuration object of a Button control.
 
-## Adding an icon
+## Add an icon {#adding-an-icon}
 
-A button can have an icon which is set through the corresponding option [icon](toolbar/customization.md#icons):
+Use the `icon` property to add an [icon](toolbar/customization.md#icons) to a button:
 
 ~~~js
 {
@@ -37,9 +37,9 @@ A button can have an icon which is set through the corresponding option [icon](t
 }
 ~~~
 
-## Adding a badge with a number
+## Add a badge with a number {#adding-a-badge-with-a-number}
 
-You can add a number badge to the button to display information like the number of new messages. The badge is set via the **count** property:
+Set the `count` property to add a badge with a number to a button, for example, to show the number of new messages:
 
 ~~~js
 {
@@ -49,9 +49,9 @@ You can add a number badge to the button to display information like the number 
 }
 ~~~
 
-## Adding HTML content
+## Add HTML content {#adding-html-content}
 
-You can add any custom HTML content to a button with the help of the **html** property:
+Use the `html` property to add custom HTML content to a button:
 
 ~~~js
 {
@@ -62,9 +62,9 @@ You can add any custom HTML content to a button with the help of the **html** pr
 
 **Related sample**: [Toolbar. Item HTML content](https://snippet.dhtmlx.com/5n2b8x84)
 
-## Showing/hiding a button
+## Show and hide a button {#showinghiding-a-button}
 
-To hide/show a button, you should pass the ID of the button to the [hide()](toolbar/api/toolbar_hide_method.md) / [show()](toolbar/api/toolbar_show_method.md) Toolbar methods:
+The [`show()`](toolbar/api/toolbar_show_method.md) and [`hide()`](toolbar/api/toolbar_hide_method.md) methods show and hide a button by its ID:
 
 ~~~js
 toolbar.show(id);
@@ -73,9 +73,9 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
-## Enabling/disabling a button
+## Enable and disable a button {#enablingdisabling-a-button}
 
-Any button in the toolbar can be [enabled](toolbar/api/toolbar_enable_method.md)/[disabled](toolbar/api/toolbar_disable_method.md):
+The [`enable()`](toolbar/api/toolbar_enable_method.md) and [`disable()`](toolbar/api/toolbar_disable_method.md) methods enable and disable a button by its ID:
 
 ~~~js
 toolbar.enable(id);
@@ -84,9 +84,9 @@ toolbar.disable(id);
 
 **Related sample**: [Toolbar. Enable / disable items](https://snippet.dhtmlx.com/ovblenaf)
 
-## Setting tooltip
+## Add a tooltip {#setting-tooltip}
 
-You can add a tooltip to a button:
+Use the `tooltip` property to add a tooltip to a button:
 
 ~~~js {4}
 {
