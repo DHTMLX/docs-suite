@@ -7,10 +7,10 @@ description: You can explore the initialization of Toolbar in the documentation 
 # Initialization
 
 :::info
-[Download the DHTMLX Toolbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Toolbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Toolbar into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Toolbar to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -37,12 +37,12 @@ To add DHTMLX Toolbar into an application, you need to take the following simple
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -51,7 +51,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Toolbar and give it an id, e.g. "toolbar_container":
+Add a container for Toolbar and give it an id, for example `toolbar_container`:
 
 ~~~html
 <div id="toolbar_container"></div>
@@ -61,8 +61,8 @@ Add a container for the Toolbar and give it an id, e.g. "toolbar_container":
 
 Initialize Toolbar with the `dhx.Toolbar` object constructor. The constructor takes two parameters:
 
-- the HTML object on the page that serves as the toolbar container
-- an object with [configuration properties](#configuration-properties)
+- The HTML container for Toolbar
+- An object with [configuration properties](#configuration-properties)
 
 ~~~js
 const toolbar = new dhx.Toolbar("toolbar_container", {
@@ -72,11 +72,11 @@ const toolbar = new dhx.Toolbar("toolbar_container", {
 
 ### Configuration properties
 
-See the detailed information on configuration properties of Toolbar in the [Toolbar API overview](toolbar/api/api_overview.md#toolbar-properties) article.
+The [Toolbar API overview](toolbar/api/api_overview.md#toolbar-properties) article describes the properties you can specify to adapt Toolbar to your needs.
 
 ## Load data into Toolbar
 
-Detailed information on loading data into Toolbar is given in the [](toolbar/load_data.md) article.
+The [](toolbar/load_data.md) article explains how to load data into DHTMLX Toolbar.
 
 ## Example
 
