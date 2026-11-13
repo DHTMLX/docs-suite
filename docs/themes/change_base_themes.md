@@ -6,9 +6,9 @@ description: You can explore how to change DHTMLX Suite themes in the documentat
 
 # Changing Suite themes
 
-## Changing all themes
+## Change all themes {#changing-all-themes}
 
-You may notice that CSS variables of the [default](themes/default_theme.md) theme include variables of the color scheme:
+The CSS variables of the [default](themes/default_theme.md) theme include the color scheme variables:
 
 ~~~js
 --dhx-h-primary: 200;
@@ -34,16 +34,16 @@ You may notice that CSS variables of the [default](themes/default_theme.md) them
 ~~~
 
 :::tip
-Color values are specified in the [HSL](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl) format, where:
+The color values use the [HSL](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl) format, which has three components:
 
-- *hue* is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, 240 is blue;
-- *saturation* is a percentage value; 0% means completely unsaturated (gray) and 100% is completely saturated;
-- *lightness* is a percentage value; 100% is white, 0% is black, and 50% is "normal".
+- *Hue* is a degree on the color wheel from 0 to 360: 0 is red, 120 is green, and 240 is blue.
+- *Saturation* is a percentage value: 0% means completely unsaturated (gray), and 100% means completely saturated.
+- *Lightness* is a percentage value: 100% is white, 0% is black, and 50% is "normal".
 :::
 
-Due to the use of these CSS variables, color scheme is calculated automatically. It means, that if you change some value for the variable from the color scheme in the root, values for the *"contrast-light"*, *"dark"*, and *"contrast-dark"* themes will be recalculated automatically in real time. 
+Suite calculates the color scheme from these CSS variables. If you change a color scheme variable in the `:root` selector, the `"contrast-light"`, `"dark"`, and `"contrast-dark"` themes recalculate their colors automatically.
 
-For instance, you can override the primary colors for all Suite themes at once in the following way:
+The following example overrides the primary colors for all Suite themes at once:
 
 ~~~html
 <style>
@@ -54,15 +54,15 @@ For instance, you can override the primary colors for all Suite themes at once i
 </style>
 ~~~
 
-In addition, values of variables, which are calculated on the base of the primary color, will be recalculated accordingly. For example, the value of the focused color is calculated as follows:
+The values of variables that depend on the primary color change accordingly. For example, the `--dhx-color-focused` variable takes its value from the primary color variables:
 
 ~~~js
 --dhx-color-focused: hsl(calc(var(--dhx-h-primary) + 10), var(--dhx-s-primary), var(--dhx-l-primary));
 ~~~
 
-## Changing a separate theme
+## Change a specific theme {#changing-a-separate-theme}
 
-If you want to override some color values for a separate [Suite theme](/themes/#suite-themes), you need to do this in the 'data-dhx-theme' attribute:
+You can override color values for a specific [Suite theme](/themes/#suite-themes) in the `data-dhx-theme` attribute selector. The following example changes the colors of the `"light"` theme:
 
 ~~~html {1-27,39}
 <style>

@@ -8,7 +8,7 @@ description: You can explore the event handling of Timepicker in the documentati
 
 ## Attaching event listeners
 
-You can attach event listeners with the **timepicker.events.on()** method:
+You can attach event listeners with the `timepicker.events.on()` method:
 
 ~~~js
 timepicker.events.on("change", function(value){
@@ -18,11 +18,11 @@ timepicker.events.on("change", function(value){
 
 **Related sample**: [Timepicker. Events](https://snippet.dhtmlx.com/5ccptwy7)
 
-{{note The names of events are case-insensitive.}}
+{{note Event names are case-insensitive.}}
 
 ## Detaching event listeners
 
-To detach events, use **timepicker.events.detach()**:
+You can detach event listeners with the `timepicker.events.detach()` method:
 
 ~~~js
 timepicker.events.on("change", function(value){
@@ -33,11 +33,11 @@ timepicker.events.detach("Change");
 
 ## Calling events
 
-To call events, use **timepicker.events.fire()**:
+You can call events with the `timepicker.events.fire()` method:
 
 ~~~js
 timepicker.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-The list of events is available in the [API section](timepicker/api/api_overview.md#events).
+The [API section](timepicker/api/api_overview.md#events) lists all Timepicker events.

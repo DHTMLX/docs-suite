@@ -6,14 +6,14 @@ description: You can explore the configuration of Timepicker in the documentatio
 
 # Configuration
 
-## Actions buttons
+## Action buttons {#actions-buttons}
 
-The default TimePicker doesn't have any buttons. However, you can add two buttons that will allow you to close the timepicker after selecting necessary time or save the values selected for hour and minutes.
-These controls are helpful if you attach TimePicker to an input or a calendar, for example.
+The default Timepicker has no buttons. However, you can add two buttons that let you close the timepicker after you select the time or save the selected hours and minutes.
+These controls help when you attach Timepicker to an input or a calendar, for example.
 
-![TimePicker with Save and Close action buttons enabled in DHTMLX Suite](/img/timepicker/dhx_timepicker.png)
+![Timepicker with Save and Close action buttons enabled in DHTMLX Suite](/img/timepicker/dhx_timepicker.png)
 
-There's the [](timepicker/api/timepicker_controls_config.md) property in the timepicker configuration that while set to *true* enables rendering of the Save button and the Close icon button in the top right corner of the component.
+Set the [](timepicker/api/timepicker_controls_config.md) property to `true` to display the Close icon button in the top-right corner of the component and the Save button at the bottom:
 
 ~~~js {2}
 const timepicker = new dhx.Timepicker("timepicker_container", {
@@ -26,12 +26,12 @@ const timepicker = new dhx.Timepicker("timepicker_container", {
 
 ## Time format
 
-By default TimePicker displays time in the 24-hour clock format. You can switch to the 12-hour format by setting the [](timepicker/api/timepicker_timeformat_config.md) option to *12* in the configuration object of the component.
-In this mode the clock inside the timepicker will be shown together with the AM/DM identifier depending on the selected time of the day. 
+The default time format of Timepicker is 24-hour. To switch to the 12-hour format, set the [](timepicker/api/timepicker_timeformat_config.md) property to `12` in the Timepicker configuration.
+In this mode, the timepicker shows the clock together with the AM/PM identifier that matches the selected time of day.
 
 - 24-hour clock:
 
-![TimePicker in 24-hour format showing 20:33 with hour and minute sliders in DHTMLX Suite](/img/timepicker/amdm_false.png)
+![Timepicker in 24-hour format showing 20:33 with hour and minute sliders in DHTMLX Suite](/img/timepicker/amdm_false.png)
 
 ~~~js
 const timepicker = new dhx.Timepicker("timepicker_container");
@@ -39,7 +39,7 @@ const timepicker = new dhx.Timepicker("timepicker_container");
 
 - 12-hour clock:
 
-![TimePicker in 12-hour format showing 08:33 PM with hour and minute sliders in DHTMLX Suite](/img/timepicker/amdm_true.png)
+![Timepicker in 12-hour format showing 08:33 PM with hour and minute sliders in DHTMLX Suite](/img/timepicker/amdm_true.png)
 
 ~~~js {2}
 const timepicker = new dhx.Timepicker("timepicker_container",{
@@ -51,7 +51,7 @@ const timepicker = new dhx.Timepicker("timepicker_container",{
 
 ## Initial value
 
-Starting with v7.0, you can set the time value that will appear on initialization of the timepicker. To do that, specify the [value](timepicker/api/timepicker_value_config.md) property in the configuration object of the timepicker. The property can accept a value in the following formats: Date, string, number, array, object. For instance:
+Starting with v7.0, you can set the time value that the timepicker shows on initialization. To do that, specify the [`value`](timepicker/api/timepicker_value_config.md) property in the Timepicker configuration. The property accepts a value of the following types: `Date`, string, number, array, or object. For instance:
 
 ~~~js
 // the value as a Date 

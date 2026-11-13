@@ -6,9 +6,9 @@ description: You can explore the dark theme of DHTMLX Suite in the documentation
 
 # Dark theme
 
-![Sidebar, toolbar and grid widgets rendered with the dark theme in DHTMLX Suite](/img/themes/dark_theme.png)
+![Sidebar, toolbar, and grid widgets rendered with the dark theme in DHTMLX Suite](/img/themes/dark_theme.png)
 
-The ["dark"](/themes/#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
+The [`"dark"`](/themes/#suite-themes) theme uses the [root CSS variables](themes/default_theme.md) and sets the following variables:
 
 ~~~css
 [data-dhx-theme='dark'] {
