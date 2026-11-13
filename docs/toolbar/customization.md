@@ -8,10 +8,9 @@ description: You can explore the customization of Toolbar in the documentation o
 
 ## Icons
 
-DHTMLX Toolbar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
-a page and apply icons for Toolbar controls.
+DHTMLX Toolbar uses the [default icons of the DHTMLX library](helpers/icon.md). However, you can use another icon font pack. To do this, include the icon font on the page and assign its icons to Toolbar controls.
 
-For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Toolbar as follows:
+For example, to use the [Font Awesome](https://fontawesome.com/) icon pack, include a [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Toolbar:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/toolbar.js"></script>
@@ -22,7 +21,7 @@ For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack 
     crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](toolbar/load_data.md#json-format-templates) for toolbar:
+Then set an icon name as the value of the `icon` property in the [object with the control parameters](toolbar/load_data.md#json-format-templates):
 
 ~~~js
 const toolbarData = [
@@ -37,19 +36,19 @@ const toolbarData = [
 
 **Related sample**: [Toolbar. Custom icons](https://snippet.dhtmlx.com/4aiwvow7)
 
-{{note You can use the [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
+{{note You can add the [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon pack in the same way: include a [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) on the page.}}
 
-## Styling 
+## Use custom CSS classes {#styling}
 
-There is a possibility to make changes in the look and feel of a toolbar. 
+You can change the look and feel of a toolbar.
 
 ![Dark-themed Toolbar with custom CSS styling for buttons, search, and login links in DHTMLX Suite](/img/toolbar/custom_style.png)
 
 **Related sample**: [Toolbar. Styling (custom CSS)](https://snippet.dhtmlx.com/uekgjwsi)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet. If you use a stylesheet, include it on the page:
 
 ~~~html
 <style>
@@ -63,7 +62,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](toolbar/api/toolbar_css_config.md) property in the Toolbar configuration:
+- Specify the name of the class you created (or several class names separated by spaces) as the value of the [`css`](toolbar/api/toolbar_css_config.md) property in the Toolbar configuration:
 
 ~~~js
  
