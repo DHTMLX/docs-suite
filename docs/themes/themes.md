@@ -8,14 +8,14 @@ description: You can explore themes of DHTMLX Suite in the documentation of the 
 
 ## Suite themes
 
-DHTMLX Suite library provides 4 predefined themes:
+The DHTMLX Suite library includes four predefined themes:
 
-- [default theme](themes/default_theme.md) ("light")
-- [dark theme](themes/dark_theme.md) ("dark")
-- [light high contrast theme](themes/contrast_light_theme.md) ("contrast-light")
-- [dark high contrast theme](themes/contrast_dark_theme.md) ("contrast-dark")
+- [Default theme](themes/default_theme.md) (`"light"`)
+- [Dark theme](themes/dark_theme.md) (`"dark"`)
+- [Light high contrast theme](themes/contrast_light_theme.md) (`"contrast-light"`)
+- [Dark high contrast theme](themes/contrast_dark_theme.md) (`"contrast-dark"`)
 
-The Suite themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. For more detail, read the [Accessibility support](common_features/accessibility_support.md) article.
+The Suite themes follow international accessibility standards. The high contrast themes help users with vision impairments. For more detail, read the [Accessibility support](common_features/accessibility_support.md) article.
 
 You can try all themes in the example below:
 
@@ -25,18 +25,18 @@ You can try all themes in the example below:
 
 If the base Suite themes don't fit your project, you can configure your own color theme. For more information, read the [Custom theme](themes/custom_theme.md) article.
 
-## Setting themes
+## Set a theme {#setting-themes}
 
-To set the necessary theme, be it a Suite theme or a custom one, use one of the ways described below:
+You can apply a Suite theme or a custom theme in one of the following ways:
 
-- change the 'data-dhx-theme' attribute for the chosen container:
+- Change the `data-dhx-theme` attribute of the component container:
 
 ~~~html title="index.html"
 <!-- component container -->
 <div data-dhx-theme="dark" style="height: 100%" id="chart"></div>
 ~~~
 
-- change the 'data-dhx-theme' attribute for the root element:
+- Change the `data-dhx-theme` attribute of the root element:
 
 ~~~js title="index.js"
 // your code here
@@ -44,7 +44,7 @@ To set the necessary theme, be it a Suite theme or a custom one, use one of the 
 document.documentElement.setAttribute("data-dhx-theme", "dark");
 ~~~
 
-- or apply the [dhx.setTheme()](themes/api/themes_settheme_method.md) method 
+- Call the [`dhx.setTheme()`](themes/api/themes_settheme_method.md) method:
 
 <iframe src="https://snippet.dhtmlx.com/d2she1z9?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="800"></iframe>
 

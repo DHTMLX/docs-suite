@@ -6,6 +6,9 @@ description: You can explore the theme configurator of DHTMLX Suite in the docum
 
 # Theme configurator
 
-We have prepared for you a neat theme configurator with several custom themes. You can switch between them, choose the desired one, copy it and paste into your project.
+The theme configurator below contains several custom themes. To add one of them to your project, follow these steps:
+
+1. Switch between the themes and choose the one you need.
+2. Copy the selected theme and paste it into your project.
 
 <iframe src="https://snippet.dhtmlx.com/kw89q481?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="800"></iframe>

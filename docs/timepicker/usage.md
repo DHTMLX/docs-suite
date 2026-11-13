@@ -4,22 +4,21 @@ title: JavaScript Timepicker - Work with TimePicker
 description: You can explore how to work with TimePicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Work with TimePicker
+# Work with Timepicker
 
-You can change the value of the TimePicker or get its current value via the related API methods.
+The Timepicker API lets you set the value of the component and get its current value.
 
-## Setting value
+## Set the value {#setting-value}
 
-There is the [setValue()](timepicker/api/timepicker_setvalue_method.md) method that makes it easy to change the value of the timepicker on the fly. The method takes as a parameter the value which can be passed in several formats:
+The [`setValue()`](timepicker/api/timepicker_setvalue_method.md) method changes the value of a timepicker. The method takes the value as a parameter in one of the following formats:
 
-- as a Date object
-- as a string
-- as an array with the following elements:
-  - the hour value
-  - the minutes value
-  - the "AM/PM" identifier for 12-hour format as a string
-- as a number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
-method of the **Date** object
+- A `Date` object
+- A string
+- An array with the following elements:
+  - The hour value
+  - The minute value
+  - The "AM/PM" identifier for the 12-hour format, as a string
+- The number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [`getTime()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) method of the `Date` object
 
 For example:
 
@@ -39,11 +38,11 @@ timepicker.setValue(1559288966422);
 
 **Related sample**: [Timepicker. Set Timepicker value](https://snippet.dhtmlx.com/6r8lkhbg)
 
-## Getting value
+## Get the value {#getting-value}
 
-You can get the value of TimePicker either as an object or as a string via the [getValue()](timepicker/api/timepicker_getvalue_method.md) method. It takes one parameter: 
+The [`getValue()`](timepicker/api/timepicker_getvalue_method.md) method returns the value of a timepicker as a string or as an object. The method takes one parameter:
 
-- **asObject** - (*boolean*) optional, specifies that the value will be returned as an object, false by default
+- `asObject` — (`boolean`) optional. If `true`, the method returns the value as an object. The default value is `false`.
 
 ~~~js
 // return value as a string in the 24-hour format
@@ -61,9 +60,9 @@ const val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 
 **Related sample**: [Timepicker. Get Timepicker value](https://snippet.dhtmlx.com/k4atpgnd)
 
-The returned value can be of several types, depending on the passed parameter and the applied time format:
+The format of the returned value depends on the passed parameter and the time format:
 
-- for the 24-hour format a return string value will include just the hour and minutes: "00:39"
-- for the 12-hour format a return string value will include hour, minutes, and am/pm identifiers: "06:00AM"
-- for the 24-hour format a return object value will contain key:value pairs for hours, minutes and their values
-- for the 12-hour format a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values
+| Time format | String value | Object value |
+| --- | --- | --- |
+| 24-hour | The hour and minutes, for example `"00:39"` | The `hour` and `minute` keys with their values |
+| 12-hour | The hour, minutes, and AM/PM identifier, for example `"06:00AM"` | The `hour`, `minute`, and `AM` keys with their values |

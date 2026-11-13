@@ -7,15 +7,15 @@ description: You can explore the initialization of Timepicker in the documentati
 # Initialization
 
 :::info
-[Download the DHTMLX TimePicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Timepicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To initialize DHTMLX TimePicker on a page, you need to take the following simple steps:
+Follow these steps to add DHTMLX Timepicker to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
-- [Initialize TimePicker](#initialize-timepicker) with the object constructor
-- [Set initial value (optional)](#set-initial-value-optional)
+- [Initialize Timepicker](#initialize-timepicker) with the object constructor
+- [Set the initial value (optional)](#set-initial-value-optional)
 
 ~~~html
 <!DOCTYPE html>
@@ -39,32 +39,32 @@ To initialize DHTMLX TimePicker on a page, you need to take the following simple
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the full paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-## Create container
+## Create a container {#create-container}
 
-Add a container for TimePicker and give it an id, for example "timepicker_container":
+Add a container for Timepicker and give it an id, for example `timepicker_container`:
 
 ~~~html title="index.html"
 <div id="timepicker_container"></div>
 ~~~
 
-## Initialize TimePicker
+## Initialize Timepicker
 
-Initialize TimePicker with the **`dhx.Timepicker`** object constructor. The constructor has two parameters:
+Initialize Timepicker with the `dhx.Timepicker` object constructor. The constructor takes two parameters:
 
-- the HTML container for TimePicker,
-- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
+- The HTML container for Timepicker
+- An object with [configuration properties](#configuration-properties) (optional). If you omit this argument, Timepicker uses the default settings.
 
 ~~~js title="index.js"
 // creating DHTMLX TimePicker
@@ -75,13 +75,11 @@ const timepicker = new dhx.Timepicker("timepicker_container", {
 
 ### Configuration properties
 
-There is a set of properties you can specify for TimePicker to optimize its configuration for your needs. 
+The [Timepicker API overview](timepicker/api/api_overview.md#properties) article describes the properties you can specify to adapt Timepicker to your needs.
 
-The detailed information on TimePicker configuration options can be found in the [TimePicker API overview](timepicker/api/api_overview.md#properties) article.
+## Set the initial value (optional) {#set-initial-value-optional}
 
-## Set initial value (optional)
-
-You can set initial value for TimePicker before initialization of the component via the [value](timepicker/api/timepicker_value_config.md) configuration option:
+You can set the initial value of Timepicker in the [`value`](timepicker/api/timepicker_value_config.md) configuration property:
 
 ~~~js {4}
 const timepicker = new dhx.Timepicker("timepicker_container", {
@@ -91,7 +89,7 @@ const timepicker = new dhx.Timepicker("timepicker_container", {
 });
 ~~~
 
-If you need to set a specific value after initialization of TimePicker, use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method:
+To change the value after you initialize Timepicker, use the [`setValue()`](timepicker/api/timepicker_setvalue_method.md) method:
 
 ~~~js
 // set the value as a string
