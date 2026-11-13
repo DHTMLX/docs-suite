@@ -6,15 +6,15 @@ description: You can explore the NavItem of Toolbar in the documentation of the 
 
 # NavItem
 
-This is a default control for navigation-related components, can contain any other controls as nested items. 
+The NavItem control is the default control of navigation-related components. It can contain other controls as nested items.
 
 ![Toolbar navItem with an icon, NAV ITEM label, and a number badge in DHTMLX Suite](/img/toolbar/navitem.png)
 
 **Related sample**: [Toolbar. NavItem](https://snippet.dhtmlx.com/os48cj6x)
 
-## Adding NavItem
+## Add NavItem {#adding-navitem}
 
-A navItem can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/).
+Use the `add()` method of [TreeCollection](/tree_collection/) to add a NavItem control to a toolbar:
 
 ~~~js
 toolbar.data.add({
@@ -24,11 +24,11 @@ toolbar.data.add({
 
 ### Properties
 
-You can provide [the following properties](toolbar/api/api_navitem_properties.md) in the configuration object of a NavItem control.
+Check the [list of properties](toolbar/api/api_navitem_properties.md) that you can set in the configuration object of a NavItem control.
 
-## Adding an icon
+## Add an icon {#adding-an-icon}
 
-A navItem can have an icon which is set through the corresponding option **icon**:
+Use the `icon` property to add an icon to a NavItem control:
 
 ~~~js
 {
@@ -37,9 +37,9 @@ A navItem can have an icon which is set through the corresponding option **icon*
 }
 ~~~
 
-## Adding a badge with a number
+## Add a badge with a number {#adding-a-badge-with-a-number}
 
-You can add a number badge to the navItem to display information like the number of new messages. The badge is set via the **count** property:
+Use the `count` property to add a badge with a number to a NavItem control, for example, to count new messages:
 
 ~~~js
 {
@@ -49,9 +49,9 @@ You can add a number badge to the navItem to display information like the number
 }
 ~~~
 
-## Adding HTML content
+## Add HTML content {#adding-html-content}
 
-You can add any custom HTML content to a navItem with the help of the **html** property:
+Use the `html` property to add custom HTML content to a NavItem control:
 
 ~~~js
 {
@@ -62,9 +62,9 @@ You can add any custom HTML content to a navItem with the help of the **html** p
 
 **Related sample**: [Toolbar. Item HTML content](https://snippet.dhtmlx.com/5n2b8x84)
 
-## Showing/hiding a navItem
+## Show and hide a NavItem {#showinghiding-a-navitem}
 
-To hide/show a navItem, you should pass the ID of the navItem to the [hide()](toolbar/api/toolbar_hide_method.md) / [show()](toolbar/api/toolbar_show_method.md) Toolbar methods:
+The [`show()`](toolbar/api/toolbar_show_method.md) and [`hide()`](toolbar/api/toolbar_hide_method.md) methods of Toolbar show and hide a NavItem control by its ID:
 
 ~~~js
 toolbar.show(id);
@@ -73,9 +73,9 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
-## Enabling/disabling a navItem
+## Enable and disable a NavItem {#enablingdisabling-a-navitem}
 
-You can also enable and disable any navItem with the [enable()](toolbar/api/toolbar_enable_method.md)/[disable()](toolbar/api/toolbar_disable_method.md) methods of Toolbar:
+The [`enable()`](toolbar/api/toolbar_enable_method.md) and [`disable()`](toolbar/api/toolbar_disable_method.md) methods of Toolbar enable and disable a NavItem control by its ID:
 
 ~~~js
 toolbar.enable(id);
@@ -84,9 +84,9 @@ toolbar.disable(id);
 
 **Related sample**: [Toolbar. Enable / disable items](https://snippet.dhtmlx.com/ovblenaf)
 
-## Setting tooltip
+## Add a tooltip {#setting-tooltip}
 
-You can add a tooltip to a navItem:
+Use the `tooltip` property to add a tooltip to a NavItem control:
 
 ~~~js {4}
 {
@@ -98,9 +98,9 @@ You can add a tooltip to a navItem:
 
 **Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
-## Two state NavItems
+## Two-state NavItems {#two-state-navitems}
 
-You can create navItems with two states: active (pressed) and inactive (unpressed). The activity of a two state navItem is controlled via the **active** attribute of the navItem object:
+Set the `twoState` property to create a NavItem with two states: active (pressed) and inactive (unpressed). The `active` property sets the initial state:
 
 ~~~js {5}
 {
@@ -113,9 +113,9 @@ You can create navItems with two states: active (pressed) and inactive (unpresse
 
 **Related sample**: [Toolbar. TwoState](https://snippet.dhtmlx.com/1pj4eqw0)
 
-### Changing state of a two state navItem on the fly
+### Change the state of a two-state NavItem {#changing-state-of-a-two-state-navitem-on-the-fly}
 
-The state of a two state item can be changed programmatically with the [setState()](toolbar/api/toolbar_setstate_method.md) method of Toolbar as in:
+The [`setState()`](toolbar/api/toolbar_setstate_method.md) method of Toolbar changes the state of a two-state NavItem:
 
 ~~~js {7,9}
 {
@@ -129,11 +129,11 @@ toolbar.setState({"bold":true});    // active:true
 toolbar.setState({"bold":false});   // active:false
 ~~~
 
-**setState()** accepts one parameter: a key-value pair with the ID of the item and the new value.
+The `setState()` method takes one parameter: a key-value pair with the ID of the item and the new value.
 
-### Accessing current state of a two state navItem
+### Get the state of a two-state NavItem {#accessing-current-state-of-a-two-state-navitem}
 
-The current state of a two state item can be checked with the [getState()](toolbar/api/toolbar_getstate_method.md) method:
+The [`getState()`](toolbar/api/toolbar_getstate_method.md) method returns the current state of a two-state NavItem:
 
 ~~~js {7}
 {
