@@ -26,7 +26,7 @@ tree.uncheckItem("history");
 
 **Related sample**: [Tree. Check / uncheck Item](https://snippet.dhtmlx.com/uzz6uknx)
 
-### Get checked checkboxes
+### Get checked items {#get-checked-checkboxes}
 
 The [](tree/api/tree_getchecked_method.md) method returns an array with the ids of all checked items in a tree, for example:
 
@@ -129,7 +129,7 @@ The `treeState` object contains `key:value` pairs, where `key` is the id of a tr
     <tbody>
         <tr>
             <td><b>selected</b></td>
-            <td>(<i>number</i>) the status of a checkbox of an item:<ul><li>0 - unselected </li><li>1 - selected  </li><li>2 - indeterminate (for a parent item if only some of its children are checked) </li></ul></td>
+            <td>(<i>number</i>) the status of a checkbox of an item:<ul><li>0 — unchecked</li><li>1 — checked</li><li>2 — indeterminate (for a parent item if only some of its children are checked)</li></ul></td>
         </tr>
         <tr>
             <td><b>open</b></td>
@@ -241,7 +241,7 @@ tree.data.update("Books", {checkbox:false});
 
 ### Get the parent of an item {#getting-parent-of-item}
 
-The [`getItem()`](tree_collection/api/treecollection_getitem_method.md) method of TreeCollection returns an item object. Its `parent` property contains the id of the parent item:
+The [`getItem()`](tree_collection/api/treecollection_getitem_method.md) method of TreeCollection returns an item object. Its `parent` property (`string`) contains the id of the parent item:
 
 ~~~js
 tree.data.getItem("Thrillers").parent
@@ -250,10 +250,6 @@ tree.data.getItem("Thrillers").parent
 tree.data.getItem("Books").parent
 // "_ROOT_u1574768464563"
 ~~~
-
-where
-
-- `parent` — (`string`) the id of the parent of a tree item
 
 **Related sample**: [Tree. Data update](https://snippet.dhtmlx.com/e0vgry6n)
 
