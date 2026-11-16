@@ -5,11 +5,11 @@ title: Step 7. Display Data in the Chart
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-Before displaying data in the chart we need to process grid data.
+Before we display data in the chart, we process the grid data.
 
 ## Process grid data
 
-To do that, we'll create a  <b>getCountUsers()</b> function given below:
+To do that, we'll create the `getCountUsers()` function:
 
 ~~~js
 function getCountUsers(){     
@@ -34,7 +34,7 @@ function getCountUsers(){
 
 Let's look at its logic in detail.
 
-First, we count the number of VIP users through the <b>reduce()</b> method of Data Collection:
+First, we count the number of VIP users with the `reduce()` method of DataCollection:
 
 ~~~js
 vipUser = grid.data.reduce(function(acc, item) {    
@@ -42,13 +42,13 @@ vipUser = grid.data.reduce(function(acc, item) {
 }, 0);
 ~~~
 
-After that we determine the total number of users by using the <b>getLength()</b> method of Tree Collection and then calculate the number of default users.
+After that, we get the total number of users with the `getLength()` method of DataCollection and calculate the number of default users:
 
 ~~~js
 defUser = grid.data.getLength() - vipUser;
 ~~~
 
-Finally, we create an array to add data about the number of default and vip users with the help of the **push()** operation. 
+Finally, we create an array and add data about the number of default and VIP users to it with the `push()` method:
 
 ~~~js
 var pieData = []; // create an array
@@ -63,13 +63,13 @@ if  (defUser > 0) {
 };           
 ~~~
 
-As a result of the <b>getCountUsers()</b> function call we get a dataset for the chart.
+The `getCountUsers()` function returns a dataset for the chart.
 
-##Display data in the chart
+## Display data in the chart
 
-After processing grid data, we need to show it in the chart.
+Next, we show the processed data in the chart.
 
-To display the data loaded in the chart, we will use the <b>Load</b> event of data_collection/api/refs/datacollection.md. Inside the event handler we'll call the <b>parse()</b> method to parse data in the chart.
+To display the data in the chart when it loads into the grid, we use the `Load` event of [DataCollection](/data_collection/). Inside the event handler, we call the `parse()` method to load the data into the chart:
 
 ~~~js
 grid.data.events.on("Load", function(){
@@ -77,7 +77,7 @@ grid.data.events.on("Load", function(){
 });
 ~~~
 
-When data is changed in the grid, we should update the chart data as well. For this purpose we'll use the <b>Change</b> event of data_collection/api/refs/datacollection.md.
+When grid data changes, we should update the chart data as well. For this, we use the `Change` event of [DataCollection](/data_collection/):
 
 ~~~js
 grid.data.events.on("Change", function(id,status,updatedItem){
@@ -85,9 +85,9 @@ grid.data.events.on("Change", function(id,status,updatedItem){
 });
 ~~~
 
-##Get the result
+## Get the result
 
-After finishing all the steps described in the tutorial, you get a mini app that looks like this:
+After you complete all the steps of the tutorial, you get a mini app that looks like this:
 
 <div className={styles.image}>
 
