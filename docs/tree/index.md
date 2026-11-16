@@ -6,8 +6,8 @@ description: You can have an overview of Tree in the documentation of the DHTMLX
 
 # Tree overview
 
-DHTMLX Tree is a nice JavaScript tree component intended for making intuitive hierarchical navigation interfaces for web applications. 
-The component provides smart drag-and-drop, dynamic rendering of items, handy key navigation, customizable appearance, and other useful features. 
+DHTMLX Tree is a JavaScript component that lets you build hierarchical navigation interfaces for web applications.
+The component supports drag-n-drop, dynamic rendering of items, key navigation, customizable appearance, and more.
 Check [online samples for DHTMLX Tree](https://snippet.dhtmlx.com/hg3f50td?tag=tree).
 
 ![DHTMLX Tree with expandable folders and nested file items in DHTMLX Suite](/img/tree/tree_front.png)
@@ -18,18 +18,20 @@ Learn how to build a full-featured DHTMLX Tree:
 
 - [Features](tree/features.md)
 
-## API Reference
+## API reference
 
 - [](tree/api/api_overview.md)
 
 ## Related resources
 
 - To get just DHTMLX Tree, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml)
-- To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- To get the whole JavaScript library of UI components, [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - Try the [online samples for DHTMLX Tree](https://snippet.dhtmlx.com/hg3f50td?tag=tree)
-- To work with data of Tree check [TreeCollection API](/tree_collection/)
+- Check the [TreeCollection API](/tree_collection/) to work with Tree data
   
 ## Guides
+
+The following articles explain how to add Tree to a page, configure it, work with its data, and handle its events:
 
 - [](tree/initialization_of_dhtmlxtree.md)
 - [](tree/configuration.md)
