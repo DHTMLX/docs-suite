@@ -6,15 +6,15 @@ description: You can explore the ImageButton of Toolbar in the documentation of 
 
 # ImageButton
 
-This is a button with an image. Unlike a [button](toolbar/button.md), it does not have a text label, but can also have a badge with a number and can be two state.
+The ImageButton control displays a button with an image. Unlike a [button](toolbar/button.md), it has no text label, but it can also show a badge with a number and switch between two states.
 
 ![Toolbar image button showing a round avatar photo with a number badge in DHTMLX Suite](/img/toolbar/image_button.png)
 
 **Related sample**: [Toolbar. ImageButton](https://snippet.dhtmlx.com/vdiha09g)
 
-## Adding ImageButton
+## Add ImageButton {#adding-imagebutton}
 
-ImageButton can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add an ImageButton control to a toolbar:
 
 ~~~js
 toolbar.data.add({
@@ -26,10 +26,10 @@ toolbar.data.add({
 
 ### Properties
 
-You can provide [the following properties](toolbar/api/api_imagebutton_properties.md) in the configuration object of an ImageButton control.
+Check the [list of properties](toolbar/api/api_imagebutton_properties.md) that you can set in the configuration object of an ImageButton control.
 
-## Working with ImageButton
+## Work with ImageButton {#working-with-imagebutton}
 
-Just like a [button](toolbar/button.md), imageButton can be hidden, disabled and can have a tooltip. You can also manipulate the states of a two state imageButton.
+You can hide and disable an ImageButton control and add a tooltip to it, as you can with a [button](toolbar/button.md). You can also change the state of a two-state ImageButton.
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and the [TreeCollection API](/tree_collection/).

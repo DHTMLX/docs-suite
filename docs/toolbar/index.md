@@ -6,8 +6,8 @@ description: You can have an overview of Toolbar in the documentation of the DHT
 
 # Toolbar overview
 
-DHTMLX Toolbar is a JavaScript component that allows you to keep all main commands and tools of the app in one place and define their look and feel.
-Being a great tool for fast and handy navigation, it will make work with your app or website clear and easy. Check [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar).
+DHTMLX Toolbar is a JavaScript component that keeps the main commands and tools of an application in one place and lets you define their look and feel.
+Toolbar works as a navigation bar of an application or website. Check [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar).
 
 ![Toolbar with New dropdown, undo and redo, print, search input, login links, and an avatar badge in DHTMLX Suite](/img/toolbar/toolbar_front.png)
 
@@ -25,13 +25,13 @@ Learn how to build a full-featured DHTMLX Toolbar:
 
 - [Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to get DHTMLX Toolbar as part of the Suite library
 - Try the [online samples for DHTMLX Toolbar](https://snippet.dhtmlx.com/nie9tuks?tag=toolbar)
-- To work with data of Toolbar check [TreeCollection API](/tree_collection/)
+- Check the [TreeCollection API](/tree_collection/) to work with Toolbar data
 
 ## Guides
 
-### Working with Toolbar
+### Work with Toolbar {#working-with-toolbar}
 
-Describes the steps of initializing Toolbar and working with it.
+The following articles explain how to add Toolbar to a page, load data into it, work with it, customize it, and handle its events:
 
 - [](toolbar/how_to_start.md)
 - [](toolbar/load_data.md)
@@ -41,7 +41,7 @@ Describes the steps of initializing Toolbar and working with it.
 
 ### Toolbar controls
 
-Discusses the creation of Toolbar controls and the possibilities of manipulating them.
+The following articles explain how to create Toolbar controls and work with them:
 
 - [](toolbar/button.md)
 - [](toolbar/customhtmlbutton.md)

@@ -6,13 +6,13 @@ description: You can explore how to work with Toolbar in the documentation of th
 
 # Work with Toolbar
 
-## Setting/getting values and states
+## Set and get values and states {#settinggetting-values-and-states}
 
-### Setting values/states
+### Set values and states {#setting-valuesstates}
 
-You can change the value or state (for a TwoState navItem) of a control with the help of the [setState()](toolbar/api/toolbar_setstate_method.md) method. It takes one parameter: a *key-value* pair with the ID of the control and its new value (state).
+The [`setState()`](toolbar/api/toolbar_setstate_method.md) method changes the value of a control or the state of a TwoState navItem. The method takes one parameter: a key-value pair with the ID of the control and its new value or state.
 
-Here is how you can use it to change the state of a TwoState navItem:
+The following example changes the state of a TwoState navItem:
 
 ~~~js
 {type:"navItem", twoState:true, id:"check"}
@@ -22,7 +22,7 @@ toolbar.setState({"check":true});
 toolbar.setState({"check":false});
 ~~~
 
-And this is how you can change the value of an input:
+The following example changes the value of an input:
 
 ~~~js
 {type:"input", id:"name", value:""}
@@ -32,13 +32,13 @@ toolbar.setState({"name":"Maintenance"});
 
 **Related sample**: [Toolbar. Set state](https://snippet.dhtmlx.com/h34uh1dr)
 
-### Getting values/states
+### Get values and states {#getting-valuesstates}
 
-To get the current value of the control, use the [getState()](toolbar/api/toolbar_getstate_method.md) method. 
+The [`getState()`](toolbar/api/toolbar_getstate_method.md) method returns the current value or state of a control.
 
-Starting from v7.0, the method can take the id of a Toolbar control as a parameter and return the value/state of the control. If id is not specified, the method returns an object with IDs of controls and their values/states.
+Starting from v7.0, the method takes the ID of a Toolbar control as an optional parameter and returns the value or state of this control. If you omit the `id` parameter, the method returns an object with the IDs of all controls and their values or states.
 
-This is what the method returns for a TwoState navItem:
+The method returns the following values for a TwoState navItem:
 
 ~~~js
 {type:"navItem", twoState:true, id:"check"}
@@ -48,7 +48,7 @@ toolbar.getState("check"); // -> true/false
 toolbar.getState(); // -> { "check":true } or { "check":false }
 ~~~
 
-And this is a possible return value for an input:
+The method returns the following values for an input:
 
 ~~~js
 {type:"input", id:"name", value:"Maintenance"}
@@ -60,9 +60,9 @@ toolbar.getState(); // -> {"name":"Maintenance"}
 
 **Related sample**: [Toolbar. Get state](https://snippet.dhtmlx.com/kvttdgad)
 
-## Hiding and showing controls
+## Show and hide controls {#hiding-and-showing-controls}
 
-You can show or hide controls by their IDs. Pass them to the corresponding methods - [show()](toolbar/api/toolbar_show_method.md) and [hide()](toolbar/api/toolbar_hide_method.md):
+The [`show()`](toolbar/api/toolbar_show_method.md) and [`hide()`](toolbar/api/toolbar_hide_method.md) methods show and hide controls by their IDs:
 
 ~~~js
 toolbar.hide(id); // hides a control
@@ -71,7 +71,7 @@ toolbar.show(id); // shows a control
 
 **Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
-Starting from v7.0, it is possible to hide/show all Toolbar controls on the page at once by using the methods without parameters:
+Starting from v7.0, you can call the methods without parameters to hide or show all Toolbar controls at once:
 
 ~~~js
 // hides all Toolbar controls
@@ -80,9 +80,9 @@ toolbar.hide();
 toolbar.show();
 ~~~
 
-## Disabling and enabling controls
+## Enable and disable controls {#disabling-and-enabling-controls}
 
-You can disable or enable controls. The related methods - [enable()](toolbar/api/toolbar_enable_method.md) and [disable()](toolbar/api/toolbar_disable_method.md) - take the IDs of controls as parameters:
+The [`enable()`](toolbar/api/toolbar_enable_method.md) and [`disable()`](toolbar/api/toolbar_disable_method.md) methods enable and disable controls by their IDs:
 
 ~~~js
 toolbar.disable(id); // disables a control
@@ -91,7 +91,7 @@ toolbar.enable(id);  // enables a control
 
 **Related sample**: [Toolbar. Enable / disable items](https://snippet.dhtmlx.com/ovblenaf)
 
-Starting from v7.0, it is possible to disable/enable all Toolbar controls on the page at once by using the methods without parameters:
+Starting from v7.0, you can call the methods without parameters to disable or enable all Toolbar controls at once:
 
 ~~~js
 // disables all Toolbar controls
@@ -100,15 +100,15 @@ toolbar.disable();
 toolbar.enable();
 ~~~
 
-## Checking if a Toolbar item is disabled
+## Check if a Toolbar item is disabled {#checking-if-a-toolbar-item-is-disabled}
 
-To check if an item of Toolbar is disabled, call the [isDisabled()](toolbar/api/toolbar_isdisabled_method.md) method. The method takes one parameter:
+The [`isDisabled()`](toolbar/api/toolbar_isdisabled_method.md) method checks whether a Toolbar item is disabled. The method takes one parameter:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) an id of a toolbar item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of a Toolbar item</td>
         </tr>
     </tbody>
 </table>
@@ -120,9 +120,9 @@ menu.isDisabled("1"); // -> true/false
 
 **Related sample**: [Toolbar. Enable / disable items](https://snippet.dhtmlx.com/ovblenaf)
 
-## Adding a tooltip to a control
+## Add a tooltip to a control {#adding-a-tooltip-to-a-control}
 
-You can attach a tooltip to a control. For this you need to provide the **tooltip** property with the tooltip text in the control object before the toolbar initialization:
+You can attach a tooltip to a control. Specify the tooltip text in the `tooltip` property of the control before you initialize the toolbar:
 
 ~~~js
 {
@@ -132,21 +132,21 @@ You can attach a tooltip to a control. For this you need to provide the **toolti
 }
 ~~~
 
-## Selecting/unselecting an item
+## Select and unselect an item {#selectingunselecting-an-item}
 
-### Selecting a toolbar item
+### Select a Toolbar item {#selecting-a-toolbar-item}
 
-To select a particular Toolbar item, make use of the [select()](toolbar/api/toolbar_select_method.md) method of Toolbar. The method takes two parameters:
+The [`select()`](toolbar/api/toolbar_select_method.md) method of Toolbar selects a particular item. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) the id of an item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of an item</td>
         </tr>
         <tr>
-            <td><b>unselect</b></td>
-            <td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
+            <td><code>unselect</code></td>
+            <td>(<code>boolean</code>) optional, <code>true</code> to unselect previously selected items, otherwise <code>false</code> (default: <code>true</code>)</td>
         </tr>
     </tbody>
 </table>
@@ -157,16 +157,16 @@ toolbar.select("web");
 
 **Related sample**: [Toolbar. Select / unselect items](https://snippet.dhtmlx.com/mi7qjwg2)
 
-### Unselecting a toolbar item
+### Unselect a Toolbar item {#unselecting-a-toolbar-item}
 
-To remove selection from a selected item, apply the [unselect()](toolbar/api/toolbar_unselect_method.md) method of Toolbar. The method may take the id of an item as a parameter:
+The [`unselect()`](toolbar/api/toolbar_unselect_method.md) method of Toolbar removes selection from a selected item. The method takes the ID of an item as an optional parameter:
 
 ~~~js
 // unselects a specified selected item
 toolbar.unselect("web");
 ~~~
 
-It is also possible to remove selection from all previously selected items of Toolbar via the [unselect()](toolbar/api/toolbar_unselect_method.md) method:
+Call the method without parameters to remove selection from all selected Toolbar items:
 
 ~~~js
 // unselects all previously selected items
@@ -175,15 +175,15 @@ toolbar.unselect();
 
 **Related sample**: [Toolbar. Select / unselect items](https://snippet.dhtmlx.com/mi7qjwg2)
 
-## Checking if a toolbar item is selected
+## Check if a Toolbar item is selected {#checking-if-a-toolbar-item-is-selected}
 
-To check if an item of Toolbar is selected, call the [isSelected()](toolbar/api/toolbar_isselected_method.md) method. The method takes one parameter:
+The [`isSelected()`](toolbar/api/toolbar_isselected_method.md) method checks whether a Toolbar item is selected. The method takes one parameter:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>(<i>string, number</i>) an id of a toolbar item</td>
+            <td><code>id</code></td>
+            <td>(<code>string | number</code>) the ID of a Toolbar item</td>
         </tr>
     </tbody>
 </table>
@@ -195,9 +195,9 @@ toolbar.isSelected("web"); // -> returns true/false
 
 **Related sample**: [Toolbar. Select / unselect items](https://snippet.dhtmlx.com/mi7qjwg2)
 
-## Getting selected items
+## Get selected items {#getting-selected-items}
 
-To get the selected items, call the [getSelected()](toolbar/api/toolbar_getselected_method.md) method. The method returns an array of IDs of selected items:
+The [`getSelected()`](toolbar/api/toolbar_getselected_method.md) method returns an array with the IDs of selected items:
 
 ~~~js
 toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
@@ -205,27 +205,27 @@ toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 **Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
-## Using Tree Collection API
+## Use the TreeCollection API {#using-tree-collection-api}
 
-You can manipulate the controls of Toolbar with the help of the [Tree collection API](/tree_collection/). 
+You can manipulate Toolbar controls with the [TreeCollection API](/tree_collection/).
 
-### Adding new controls into Toolbar
+### Add new controls to Toolbar {#adding-new-controls-into-toolbar}
 
-It is possible to add more controls into the initialized Toolbar on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
+Use the `add()` method of TreeCollection to add controls to an initialized toolbar. The method takes three parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>config</b></td>
-            <td>(<i>object</i>) the configuration object of the added control</td>
+            <td><code>config</code></td>
+            <td>(<code>object</code>) the configuration object of the added control</td>
         </tr>
         <tr>
-            <td><b>index</b></td>
-            <td>(<i>number</i>) optional, the position to add a control at</td>
+            <td><code>index</code></td>
+            <td>(<code>number</code>) optional, the position to add a control at</td>
         </tr>
         <tr>
-            <td><b>parent</b></td>
-            <td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
+            <td><code>parent</code></td>
+            <td>(<code>string</code>) optional, the ID of a parent control (for the <code>menuItem</code> control type)</td>
         </tr>
     </tbody>
 </table>
@@ -245,21 +245,21 @@ toolbar.data.add({
 
 **Related sample**: [Toolbar. Add new item](https://snippet.dhtmlx.com/r6jv9kk2)
 
-Templates for Toolbar controls in the JSON format are given [here](toolbar/load_data.md#json-format-templates).
+Check the [JSON format templates](toolbar/load_data.md#json-format-templates) for Toolbar controls.
 
-### Updating config of controls
+### Update the configuration of controls {#updating-config-of-controls}
 
-You can change config options of the control via the **update()** method of Tree Collection. It takes two parameters:
+The `update()` method of TreeCollection changes the configuration options of a control. The method takes two parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>id</b></td>
-            <td>the id of the control</td>
+            <td><code>id</code></td>
+            <td>the ID of a control</td>
         </tr>
         <tr>
-            <td><b>config</b></td>
-            <td>an object with new configuration of the control</td>
+            <td><code>config</code></td>
+            <td>an object with the new configuration of the control</td>
         </tr>
     </tbody>
 </table>
@@ -274,9 +274,9 @@ toolbar.data.update("edit", {
 
 **Related sample**: [Toolbar. Update item](https://snippet.dhtmlx.com/xfs5gh5t)
 
-### Removing controls from Toolbar
+### Remove controls from Toolbar {#removing-controls-from-toolbar}
 
-To remove a control, make use of the **remove()** method of Tree Collection. Pass the id of the control that should be removed to the method:
+The `remove()` method of TreeCollection removes a control. Pass the ID of the control to the method:
 
 ~~~js
 toolbar.data.remove("control-id");
@@ -284,12 +284,12 @@ toolbar.data.remove("control-id");
 
 **Related sample**: [Toolbar. Remove item](https://snippet.dhtmlx.com/w8jcn1t2)
 
-### Rearranging controls
+### Rearrange controls {#rearranging-controls}
 
-You can move menu controls to different positions with the **move()** method of Tree Collection. For example, this is how you can move an item with ID "2" to the left edge of the toolbar:
+Use the `move()` method of TreeCollection to move Toolbar controls to different positions. For example, the following code moves the item with the `"2"` ID to the left edge of the toolbar:
 
 ~~~js
 toolbar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](/tree_collection/).}}
+{{note Check the full [TreeCollection API](/tree_collection/) reference.}}

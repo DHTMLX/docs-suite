@@ -6,15 +6,15 @@ description: You can explore the SelectButton of Toolbar in the documentation of
 
 # SelectButton
 
-This is a button that contains a drop-down list of options.
+The SelectButton control displays a button with a drop-down list of options.
 
 ![Toolbar select button with an expanded dropdown of options and hotkeys in DHTMLX Suite](/img/toolbar/selectbutton.png)
 
 **Related sample**: [Toolbar. SelectButton](https://snippet.dhtmlx.com/nqq5ej8w)
 
-## Adding SelectButton
+## Add SelectButton {#adding-selectbutton}
 
-A new SelectButton can be created with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add a SelectButton control to a toolbar:
 
 ~~~js
 toolbar.data.add(
@@ -50,8 +50,8 @@ toolbar.data.add(
 
 ### Properties
 
-The configuration object of the SelectButton control can have [the following properties](toolbar/api/api_selectbutton_properties.md).
+Check the [list of properties](toolbar/api/api_selectbutton_properties.md) that you can set in the configuration object of a SelectButton control.
 
-## Operations with a button
+## Work with SelectButton {#operations-with-a-button}
 
-You can perform operations over the SelectButton control with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Use the [Toolbar API](toolbar/api/api_overview.md) and the [TreeCollection API](/tree_collection/) to work with a SelectButton control.
