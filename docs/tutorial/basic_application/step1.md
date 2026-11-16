@@ -5,11 +5,11 @@ title: Step 1. Include DHTMLX Files
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-Let's start our tutorial with preparing a file for our future app: 
+Let's create a folder and a file for the app:
 
-1\. Create  a folder with the name <i>"contact_manager"</i> in the root directory of your local web server.
+1\. Create a folder named `contact_manager` in the root directory of your local web server.
 
-2\. Create the <i>"index.html" </i> file in the "contact_manager" folder.
+2\. Create the `index.html` file in the `contact_manager` folder.
 
 <div className={styles.image}>
 
@@ -17,8 +17,8 @@ Let's start our tutorial with preparing a file for our future app:
 
 </div>
 
-Now we need to include ".js" and ".css" files of the DHTMLX Suite library to the main file of our future app.
-You can use CDN links to do this.
+Include the `.js` and `.css` files of the DHTMLX Suite library in the main file of the app.
+You can use CDN links to do this:
 
 ~~~html
 <!DOCTYPE html>
