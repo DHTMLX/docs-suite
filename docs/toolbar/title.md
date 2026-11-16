@@ -6,15 +6,15 @@ description: You can explore the Title of Toolbar in the documentation of the DH
 
 # Title
 
-This is an item that contains some text.
+The Title control displays text on a toolbar.
 
 ![Toolbar title text controls showing My profile and a welcome label with badges in DHTMLX Suite](/img/toolbar/title.png)
 
 **Related sample**: [Toolbar. Title](https://snippet.dhtmlx.com/dwynhb7o)
 
-## Adding Title control
+## Add Title {#adding-title-control}
 
-A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add a Title control to a toolbar:
 
 ~~~js
 toolbar.data.add({
@@ -25,11 +25,11 @@ toolbar.data.add({
 
 ### Properties
 
-You can provide [the following properties](toolbar/api/api_title_properties.md) in the configuration object of a Title control.
+Check the [list of properties](toolbar/api/api_title_properties.md) that you can set in the configuration object of a Title control.
 
-## Showing/hiding Title
+## Show and hide Title {#showinghiding-title}
 
-Title can be hidden and shown with the help of the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md)  methods. Pass the id of a Title control as a parameter.
+The [`show()`](toolbar/api/toolbar_show_method.md) and [`hide()`](toolbar/api/toolbar_hide_method.md) methods of Toolbar show and hide a Title control by its ID:
 
 ~~~js
 toolbar.show(id);
@@ -38,9 +38,9 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
-## Adding a tooltip
+## Add a tooltip {#adding-a-tooltip}
 
-You can add a tooltip to a Title control:
+Use the `tooltip` property to add a tooltip to a Title control:
 
 ~~~js
 {

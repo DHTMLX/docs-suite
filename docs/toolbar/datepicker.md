@@ -6,13 +6,13 @@ description: You can explore the Datepicker of Toolbar in the documentation of t
 
 # Datepicker
 
-This is a control of Toolbar to select a date. Check the article below to see how easy and convenient to add and customize the Datepicker control.
+The Datepicker control lets users select a date in a toolbar. The sections below show how to add and customize the control.
 
 <iframe src="https://snippet.dhtmlx.com/3rotluou?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
-## Adding Datepicker
+## Add Datepicker {#adding-datepicker}
 
-The Datepicker control can be easily added to a toolbar with the help of the [add()](tree_collection/api/treecollection_add_method.md) method of Tree Collection.
+Use the [`add()`](tree_collection/api/treecollection_add_method.md) method of TreeCollection to add a Datepicker control to a toolbar:
 
 ~~~js
 toolbar.data.add({
@@ -22,11 +22,11 @@ toolbar.data.add({
 
 ## Properties
 
-You can provide the [following properties](toolbar/api/api_datepicker_properties.md) in the configuration object of a Datepicker control.
+Check the [list of properties](toolbar/api/api_datepicker_properties.md) that you can set in the configuration object of a Datepicker control.
 
-## Adding an icon
+## Add an icon {#adding-an-icon}
 
-The Datepicker control can have an icon which is set through the corresponding option [icon](toolbar/customization.md).
+Use the [`icon`](toolbar/customization.md) property to add an icon to a Datepicker control:
 
 ~~~js
 {
@@ -35,18 +35,18 @@ The Datepicker control can have an icon which is set through the corresponding o
 }
 ~~~
 
-## Showing/hiding Datepicker
+## Show and hide Datepicker {#showinghiding-datepicker}
 
-To hide/show Datepicker, you should pass the ID of Datepicker to the [hide()](toolbar/api/toolbar_hide_method.md) / [show()](toolbar/api/toolbar_show_method.md) methods of Toolbar:
+The [`show()`](toolbar/api/toolbar_show_method.md) and [`hide()`](toolbar/api/toolbar_hide_method.md) methods of Toolbar show and hide a Datepicker control by its ID:
 
 ~~~js
 toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-## Enabling/disabling Datepicker
+## Enable and disable Datepicker {#enablingdisabling-datepicker}
 
-It is possible to enable or disable Datepicker by the [enable()](toolbar/api/toolbar_enable_method.md) / [disable()](toolbar/api/toolbar_disable_method.md) methods:
+The [`enable()`](toolbar/api/toolbar_enable_method.md) and [`disable()`](toolbar/api/toolbar_disable_method.md) methods enable and disable a Datepicker control by its ID:
 
 ~~~js
 toolbar.enable(id);

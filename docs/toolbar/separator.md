@@ -6,15 +6,15 @@ description: You can explore the Separator of Toolbar in the documentation of th
 
 # Separator
 
-This is a horizontal (between menu options) or vertical (between toolbar controls) line separating items/groups of items from each other.
+The Separator control displays a line between items or groups of items: a horizontal line between menu options or a vertical line between toolbar controls.
 
 ![Toolbar with vertical separator lines dividing groups of controls in DHTMLX Suite](/img/toolbar/separator.png)
 
 **Related sample**: [Toolbar. Separator](https://snippet.dhtmlx.com/sguwr3m9)
 
-## Adding Separator
+## Add Separator {#adding-separator}
 
-A new Separator can be created with the help of the **add()** method of [Tree Collection](/tree_collection/):
+Use the `add()` method of [TreeCollection](/tree_collection/) to add a separator between Toolbar controls:
 
 ~~~js
 toolbar.data.add({
@@ -24,11 +24,11 @@ toolbar.data.add({
 
 ### Properties
 
-The configuration object of the Separator control can have [the following properties](toolbar/api/api_separator_properties.md).
+Check the [list of properties](toolbar/api/api_separator_properties.md) that you can set in the configuration object of a Separator control.
 
-## Showing/hiding Separator
+## Show and hide Separator {#showinghiding-separator}
 
-You can hide and show Separator with the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md) methods of Toolbar by passing the control's id to them:
+The [`show()`](toolbar/api/toolbar_show_method.md) and [`hide()`](toolbar/api/toolbar_hide_method.md) methods of Toolbar show and hide a Separator control by its ID:
 
 ~~~js
 toolbar.show(id);
@@ -37,4 +37,4 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](/tree_collection/).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and the [TreeCollection API](/tree_collection/).
