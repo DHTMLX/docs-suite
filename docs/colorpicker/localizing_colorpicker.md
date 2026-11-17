@@ -6,11 +6,11 @@ description: You can explore the localization of Colorpicker in the documentatio
 
 # Localization
 
-DHTMLX Colorpicker allows you to apply different languages to its interface. You just need to translate the corresponding strings for Colorpicker labels and tooltips and apply a ready locale to the component.
+DHTMLX Colorpicker allows you to apply different languages to its interface. Translate the strings for Colorpicker labels and tooltips and apply the resulting locale to the component.
 
 ## Default locale
 
-The default locale for Colorpicker looks like this:
+Colorpicker uses the following default locale:
 
 ~~~js
 const en = {
@@ -24,9 +24,9 @@ const en = {
 
 ## Custom locale
 
-To use a different locale, your need to:
+Follow these steps to use a different locale:
 
-- define necessary language settings: provide translations for the labels of colors' elements in all available formats as well as for the buttons:
+- Define the language settings: translate the button labels, the labels of the custom colors section, and the tooltip:
 
 ~~~js
 const de = {
@@ -38,7 +38,7 @@ const de = {
 }
 ~~~
 
-- apply the language settings by calling the **dhx.i18n.setLocale()** method before Colorpicker initialization:
+- Call the `dhx.i18n.setLocale()` method before Colorpicker initialization to apply the settings:
 
 ~~~js
 dhx.i18n.setLocale("colorpicker", de);
