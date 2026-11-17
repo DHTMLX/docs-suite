@@ -6,8 +6,8 @@ description: You can have an overview of Window in the documentation of the DHTM
 
 # Window overview
 
-DHTMLX Window allows working with several windows and their content at the same time. The component provides means for performing standard operations with windows, 
-such as moving/resizing a window, sending a window to the foreground/background, making a window modal, changing position and size of a window, setting content inside a window, etc.
+DHTMLX Window is a JavaScript component that lets you work with several windows and their content at the same time.
+You can move and resize windows, bring a window to the front or send it to the back, make a window modal, and set its content.
 Check [online samples for DHTMLX Window](https://snippet.dhtmlx.com/nthbfzfr?tag=window).
 
 ![DHTMLX Window titled WINDOW showing a scrollable list of dhtmlx components in DHTMLX Suite](/img/window/window_front.png)
