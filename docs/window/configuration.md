@@ -6,14 +6,20 @@ description: You can explore the configuration of Window in the documentation of
 
 # Configuration
 
-DHTMLX Window provides a set of configuration options you can define in the constructor of the component before its initialization. It's possible to set a title into the header of a window, add a footer with controls,
-specify the sizes of a window and decide whether it should be resizable, movable or modal, set some HTML content and define other useful settings to adapt the component to your needs.
+This article describes the configuration options of DHTMLX Window. Set them in the configuration object that you pass to the window constructor. The options let you do the following:
+
+- Add a title and a footer to a window
+- Set the window size
+- Make a window closable, movable, resizable, or modal
+- Let a window cross the borders of the browser window
+- Place a window into a custom container
+- Set the HTML content of a window
 
 ## Closability
 
 ![Closable Window with a header, Close button, text and an illustration in DHTMLX Suite](/img/window/closable.png)
 
-There is the [](window/api/window_closable_config.md) property that adds a Close button into the right top part of a window to allow a user to close a window on clicking it. This option is set to *true* by default.
+The [](window/api/window_closable_config.md) property adds a Close button to the top right corner of a window. Users can click this button to close the window. The default value of the property is `false`.
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -25,7 +31,7 @@ const dhxWindow = new dhx.Window({
 
 ## Custom node
 
-To place a window into a custom node you need to specify the container for a window via the [](window/api/window_node_config.md) property:
+Use the [](window/api/window_node_config.md) property to place a window into a custom container:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -35,13 +41,15 @@ const dhxWindow = new dhx.Window({
 
 **Related sample**: [Window. Window container](https://snippet.dhtmlx.com/2rrclo09)
 
-{{note If no HTML container is specified, the window will be placed in the body.}}
+:::note
+If you don't specify a container, the window appears in the document body.
+:::
 
 ## Footer
 
 ![Window with a footer holding Decline and Accept buttons below the content in DHTMLX Suite](/img/window/with_footer.png)
 
-You can provide a window with a footer that will include some additional controls for manipulating the content.
+Add a footer to a window to hold controls that work with the window content. Set the [](window/api/window_footer_config.md) property to `true`:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -51,13 +59,13 @@ const dhxWindow = new dhx.Window({
 
 **Related sample**: [Window. Window with footer](https://snippet.dhtmlx.com/qu5j85ag)
 
-By default a footer is initialized with no controls. To add a control into the footer, you need to manipulate the [](window/api/window_footer_config.md) object of the toolbar. Follow the instructions given in the [](window/customization.md) article.
+The default footer has no controls. To add controls to the footer, use the [](window/api/window_footer_config.md) object of the window. Follow the instructions in the [](window/customization.md) article.
 
 ## Modality
 
 ![Modal Window over a grayed out blocked background page in DHTMLX Suite](/img/window/modal_window.png)
 
-It is possible to make a window modal, if there's a necessity. Use the [](window/api/window_modal_config.md) property to turn this functionality on:
+Set the [](window/api/window_modal_config.md) property to `true` to make a window modal:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -67,13 +75,13 @@ const dhxWindow = new dhx.Window({
 
 **Related sample**: [Window. Modal Window](https://snippet.dhtmlx.com/ioejsm4e)
 
-A modal window blocks the main window on its calling. It means that only the modal window remains active, while the main window becomes gray and unresponsive.
+A modal window blocks the rest of the page when it opens. Only the modal window stays active, while the page behind it turns gray and stops responding.
 
 ## Movability
 
 ![Movable Window with a drag move cursor icon above its header in DHTMLX Suite](/img/window/movable.png)
 
-To equip a window with the ability to be moved around the screen, you should set the [](window/api/window_movable_config.md) property to *true*:
+Set the [](window/api/window_movable_config.md) property to `true` to let users move a window around the screen:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -85,7 +93,7 @@ const dhxWindow = new dhx.Window({
 
 ## Overflowing browser window
 
-By default, a window can't cross the borders of a browser window. To enable such a possibility, make use of the [](window/api/window_viewportoverflow_config.md) configuration property.
+A default window can't cross the borders of the browser window. To let a window cross them, set the [](window/api/window_viewportoverflow_config.md) configuration property to `true`:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -95,13 +103,15 @@ const dhxWindow = new dhx.Window({
 
 **Related sample**: [Window. Viewport overflow](https://snippet.dhtmlx.com/qfhdlzri)
 
-{{note The property makes sense when set together with the [](window/api/window_movable_config.md) property.}}
+:::note
+Use the property together with the [](window/api/window_movable_config.md) property.
+:::
 
 ## Resizing
 
 ![Resizable Window with a diagonal resize handle in the top right corner in DHTMLX Suite](/img/window/resizable.png)
 
-The default window has fixed sizes with no possibility to change them from UI. You can switch on the corresponding configuration option to make a window resizable. 
+The default window has a fixed size that users can't change in the UI. Set the [](window/api/window_resizable_config.md) property to `true` to make a window resizable:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -111,13 +121,15 @@ const dhxWindow = new dhx.Window({
 
 **Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
-Then you will be able to regulate the sizes of a window by dragging resizers that appear on hovering sides of a window. 
+When users hover over an edge of the window, a resizer appears. Users can drag it to change the window size.
 
-{{note To define the resizing limits, set necessary values to the [](window/api/window_minwidth_config.md) / [](window/api/window_minheight_config.md) properties.}}
+:::note
+To limit resizing, set the [](window/api/window_minwidth_config.md) and [](window/api/window_minheight_config.md) properties.
+:::
 
-## Setting HTML content
+## HTML content {#setting-html-content}
 
-You can set some HTML content into a window via the [](window/api/window_html_config.md) configuration option, as in:
+Pass HTML content to the [](window/api/window_html_config.md) configuration option to display it in a window:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -127,7 +139,7 @@ const dhxWindow = new dhx.Window({
 
 ## Sizing
 
-You can adjust the size of a window via a set of options that define both the initial width and height of a window and the minimal dimensions of the component.
+Use the following options to set the initial width and height of a window and its minimum size:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -140,16 +152,16 @@ const dhxWindow = new dhx.Window({
 
 **Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
-Default values of the size-related properties are:
+The size options have the following default values:
 
-- [minWidth](window/api/window_minwidth_config.md) - 100
-- [minHeight](window/api/window_minheight_config.md) - 100
-- [width](window/api/window_width_config.md) -  50% of the browser window's width
-- [height](window/api/window_height_config.md) - 50% of the browser window's height 
+- [`minWidth`](window/api/window_minwidth_config.md) — `100`
+- [`minHeight`](window/api/window_minheight_config.md) — `100`
+- [`width`](window/api/window_width_config.md) — 50% of the browser window width
+- [`height`](window/api/window_height_config.md) — 50% of the browser window height
 
 ## Title
 
-DHTMLX Window is initialized with an empty header. You can provide some text label for the header of the window via the [](window/api/window_title_config.md) property.
+A new window has an empty header. Set the [](window/api/window_title_config.md) property to add a text label to the header:
 
 ~~~js
 const dhxWindow = new dhx.Window({
@@ -157,4 +169,4 @@ const dhxWindow = new dhx.Window({
 });
 ~~~
 
-The header can also contain some buttons. You can control them via the [](window/api/window_header_config.md) object of the window. Check details in the [](window/customization.md) article.
+The header can also contain buttons. Use the [](window/api/window_header_config.md) object of the window to manage them. For details, check the [](window/customization.md) article.
