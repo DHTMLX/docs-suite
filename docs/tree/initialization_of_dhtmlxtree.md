@@ -10,10 +10,10 @@ description: You can explore the initialization of Tree in the documentation of 
 Download the DHTMLX Tree package:
 
 - [as a separate component](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml)
-- [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- [as part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 :::
 
-To initialize DHTMLX Tree on a page, you need to take the following simple steps:
+Follow these steps to initialize DHTMLX Tree in an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -42,24 +42,24 @@ To initialize DHTMLX Tree on a page, you need to take the following simple steps
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of DHTMLX Tree into the header of the created file. The Tree component can be used standalone or as part of the Suite library.
+Create an HTML file and add the paths to the library JS and CSS files in its header. You can use DHTMLX Tree standalone or as part of the Suite library.
 
-**If you use DHTMLX Tree standalone**, you need to include 2 files:
+**If you use DHTMLX Tree standalone**, include these JS/CSS files:
 
-- *tree.js*
-- *tree.css*
+- `tree.js`
+- `tree.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/tree.js"></script>
 <link rel="stylesheet" href="../../codebase/tree.css">
 ~~~
 
-**If you use DHTMLX Tree as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
+**If you use DHTMLX Tree as part of the Suite package**, include these JS/CSS files:
 
-- suite.js
-- suite.css
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <link type="text/css" href="../codebase/suite.css">
@@ -68,7 +68,7 @@ After that, create an HTML file and place full paths to JS and CSS files of DHTM
 
 ## Create a container
 
-Add a container for Tree and give it an id, for example "tree_container":
+Add a container for Tree and give it an `id`, for example `tree_container`:
 
 ~~~html title="index.html"
 <div id="tree_container"></div>
@@ -76,10 +76,10 @@ Add a container for Tree and give it an id, for example "tree_container":
 
 ## Initialize Tree
 
-Initialize Tree with the `dhx.Tree` object constructor. The constructor has two parameters:
+Initialize Tree with the `dhx.Tree` object constructor. The constructor takes two parameters:
 
-- the HTML container for Tree,
-- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
+- The HTML container for Tree. You created it in the previous step.
+- An object with [configuration properties](#configuration-properties) (optional). If you omit this argument, Tree uses the default settings.
 
 ~~~js title="index.js"
 // creating DHTMLX Tree
@@ -90,13 +90,11 @@ const tree = new dhx.Tree("tree_container", {
 
 ### Configuration properties
 
-There is a set of properties you can specify for Tree to optimize its configuration for your needs.
-
-See the detailed information on configuration properties of Tree in the [Tree API overview](tree/api/api_overview.md#properties) article.
+The [Tree API overview](tree/api/api_overview.md#properties) article describes the properties you can specify to adapt Tree to your needs.
 
 ## Load data into Tree
 
-Detailed information on loading data into Tree is given in the [](tree/loading_data.md) article.
+The [](tree/loading_data.md) article describes how to load data into Tree.
 
 ## Example
 
