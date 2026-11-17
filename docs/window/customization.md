@@ -6,14 +6,13 @@ description: You can explore the customization of Window in the documentation of
 
 # Customization
 
-You can customize the look and feel of the header and footer of Window together with their functionality.
+This article describes how to change icons, manage controls in the header and footer, and apply custom styles to a window.
 
 ## Default and custom icons
 
-DHTMLX Window uses the [Material Design](https://pictogrammers.com/library/mdi/?welcome)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
-a page and apply icons in any possible part of the window: in the header or the footer.
+DHTMLX Window uses default icons based on [Material Design](https://pictogrammers.com/library/mdi/?welcome). However, you can use another icon font pack. To do this, include the icon font on the page and assign its icons to controls in the header or footer.
 
-For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Window as follows:
+For example, to use the [Font Awesome](https://fontawesome.com/) icon pack, include a [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Window:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/window.js"></script>
@@ -24,22 +23,22 @@ For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack 
   crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the object with the control parameters for the header or the footer. [See details below](window/customization.md).
+Then set an icon name as the value of the `icon` property in the object with the control parameters for the header or footer. [See details below](window/customization.md).
 
 **Related sample**: [Window. Custom icons](https://snippet.dhtmlx.com/ucozvx01)
 
 ## Controls and operations
 
-It is possible to add any Toolbar controls into the header/footer of a window.
-You can work with controls in the header/footer of a window in the same way as with [Toolbar](/toolbar/) controls, i.e. add new controls, delete unnecessary ones and update the settings of controls, e.g. labels and icons.
+The header and footer of a window can contain any Toolbar controls.
+You can manage them in the same way as [Toolbar](/toolbar/) controls: add new controls, update control settings such as labels and icons, and delete controls you don't need.
 
-### Adding controls
+### Add controls {#adding-controls}
 
-Besides initial controls, you can add other controls into the header/footer on the fly. 
+You can add more controls to the header or footer at runtime.
 
 ![Window with custom thumb up and thumb down buttons added to the footer in DHTMLX Suite](/img/window/custom_buttons.png)
 
-For this, you should apply the [](data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
+Use the [](data_collection/api/datacollection_add_method.md) method of TreeCollection. The method takes the following parameters:
 
 <table>
     <tbody>
@@ -53,7 +52,7 @@ For this, you should apply the [](data_collection/api/datacollection_add_method.
         </tr>
         <tr>
             <td><b>parent</b></td>
-            <td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
+            <td>(<i>string</i>) optional, the id of a parent control (for the <code>menuItem</code> control type)</td>
         </tr>
     </tbody>
 </table>
@@ -68,12 +67,12 @@ dhxWindow.footer.data.add({icon: "mdi mdi-thumb-down", id: "dislike"})
 
 **Related sample**: [Window. Custom buttons](https://snippet.dhtmlx.com/o7xlvvv3)
 
-### Updating controls
+### Update controls {#updating-controls}
 
-You can change the icon of the Window control and its other config options with the help of the [](data_collection/api/datacollection_update_method.md) method of Data Collection. It takes two parameters: 
+Use the [](data_collection/api/datacollection_update_method.md) method of TreeCollection to change the icon or other settings of a control in the header or footer. The method takes two parameters:
 
-- the id of an icon button
-- an object with a new configuration of the control
+- The id of the control
+- An object with the new configuration of the control
 
 ~~~js
 dhxWindow.header.data.update("close", {
@@ -84,25 +83,25 @@ dhxWindow.header.data.update("close", {
 
 **Related sample**: [Window. Custom icons](https://snippet.dhtmlx.com/ucozvx01)
 
-### Deleting controls
+### Delete controls {#deleting-controls}
 
-To remove a control from the header/footer, make use of the [](data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass the id of the control that should be removed to the method:
+Use the [](data_collection/api/datacollection_remove_method.md) method of TreeCollection to remove a control from the header or footer. Pass the id of the control to the method:
 
 ~~~js
 dhxWindow.footer.data.remove("accept");
 ~~~
 
-## Styling
+## Use custom CSS classes {#styling}
 
-There is a possibility to make changes in the look and feel of a window. 
+You can change the look and feel of a window.
 
 ![Custom styled Window with fullscreen and Close header buttons and footer icons in DHTMLX Suite](/img/window/custom_style.png)
 
 **Related sample**: [Window. Styling (custom CSS)](https://snippet.dhtmlx.com/t5mvhwx8)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet. If you use a stylesheet, include it on the page:
 
 ~~~html
 <style>
@@ -116,7 +115,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](window/api/window_css_config.md) property in the Window configuration:
+- Specify the name of the class you created (or several class names separated by spaces) as the value of the [](window/api/window_css_config.md) property in the Window configuration:
 
 ~~~js
 const dhxWindow = new dhx.Window({
