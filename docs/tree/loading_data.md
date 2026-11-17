@@ -6,19 +6,19 @@ description: You can explore the data loading of Tree in the documentation of th
 
 # Data loading
 
-There are several simple ways of loading data into DHTMLX Tree:
+You can load data into DHTMLX Tree in two ways:
 
-- on initialization of Tree
-- after initialization of Tree
+- During Tree initialization
+- After Tree initialization
 
-First, you need to prepare a data set that will be loaded into Tree.
+Both ways start from a prepared data set.
 
 ## Preparing data set
 
 DHTMLX Tree expects loaded data in the JSON format. 
 
 :::info
-Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+If you specify `id` fields in the tree collection, their values must be **unique**. You can also omit these fields. In this case Tree generates the values automatically.
 :::
 
 Here is an example of an appropriate data set:
@@ -90,7 +90,7 @@ const tree = new dhx.Tree("tree", {
 tree.data.parse(dataset);
 ~~~
 
-Each object in the data set contains configuration of a tree item. The structure of an item is rather flexible. It may include:
+Each object in the data set configures a tree item. An item object can include the following properties:
 
 <table>
     <tbody>
@@ -104,15 +104,15 @@ Each object in the data set contains configuration of a tree item. The structure
         </tr>
         <tr>
             <td><b>opened</b></td>
-            <td>(<i>boolean</i>) optional, defines whether an item is opened by default</td>
+            <td>(<i>boolean</i>) optional, defines whether an item is initially open</td>
         </tr>
         <tr>
             <td><b>checkbox</b></td>
-            <td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
+            <td>(<i>boolean</i>) optional, shows or hides the checkbox of a tree item</td>
         </tr>
         <tr>
             <td><b>checked</b></td>
-            <td>(<i>boolean</i>) optional, checks/unchecks a checkbox of a tree item, works when the <b>checkbox</b> property is set to <i>true</i></td>
+            <td>(<i>boolean</i>) optional, checks or unchecks the checkbox of a tree item; works when the <code>checkbox</code> property is <code>true</code></td>
         </tr>
         <tr>
             <td><b>items</b></td>
@@ -120,14 +120,14 @@ Each object in the data set contains configuration of a tree item. The structure
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(<i>object</i>) allows adding <a href="../api/tree_icon_config/">custom icons</a> for a tree item</td>
+            <td>(<i>object</i>) adds <a href="../api/tree_icon_config/">custom icons</a> to a tree item</td>
         </tr>
     </tbody>
 </table>
 
 ## Loading data on initialization
 
-You can load a [predefined data set](#preparing-data-set) into Tree on the initialization stage. Use the [data](tree/api/tree_data_config.md) configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Tree during initialization. Use the [`data`](tree/api/tree_data_config.md) configuration property:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", {
@@ -139,14 +139,14 @@ const tree = new dhx.Tree("tree_container", {
 
 ## Loading data after initialization
 
-There are two ways to load data into Sidebar after its initialization:
+You can load data into Tree after initialization in two ways:
 
-- [from a local data source](#loading-from-local-source)
-- [from an external file](#external-data-loading)
+- [From a local data source](#loading-from-local-source)
+- [From an external file](#external-data-loading)
 
-### Loading from local source
+### Loading from a local source {#loading-from-local-source}
 
-To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+The `parse()` method of TreeCollection loads data into a tree from an array. Pass [a predefined data set](#preparing-data-set) to this method:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container");
@@ -155,9 +155,9 @@ tree.data.parse(dataset);
 
 **Related sample**: [Tree. Initialization with data.parse()](https://snippet.dhtmlx.com/orm283hq)
 
-### External data loading
+### Loading from an external file {#external-data-loading}
 
-To load data from an external file, make use of the `load` method of Tree Collection. It takes the URL of the file with data as a parameter:
+The `load()` method of TreeCollection loads tree data from an external file. The method takes the URL of the data file as a parameter:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container");
@@ -166,9 +166,9 @@ tree.data.load("../common/dataset.json");
 
 **Related sample**: [Tree. Initialization with data.load()](https://snippet.dhtmlx.com/oz4jd5hc)
 
-The component will make an AJAX call and expect the remote URL to provide valid JSON data.
+The component makes an AJAX call and expects the remote URL to return valid JSON data.
 
-Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
+Tree loads data asynchronously, so place the code that depends on the loaded data into the `then()` callback:
 
 ~~~jsx
 tree.data.load("/some/data").then(function(){
@@ -179,8 +179,7 @@ tree.data.load("/some/data").then(function(){
 
 ## Saving and restoring state
 
-To save the current state of a tree, use the `serialize` method of Tree Collection. It converts the data of a tree into an array of JSON objects. 
-Each JSON object contains the configuration of a separate row.
+The `serialize()` method of TreeCollection saves the current state of a tree. The method converts tree data into an array of JSON objects. Each JSON object contains the configuration of a tree item.
 
 ~~~jsx
 const state = tree1.data.serialize();

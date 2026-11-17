@@ -5,23 +5,23 @@ title: Step 6. Edit data in the Grid
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-We've already studied how to add and display components on the page. 
+We already know how to add components to the page and display them.
 
-The last part of this tutorial will teach you how to bind Grid to Toolbar, Window and ContextMenu to make it possible to edit data of the grid. 
+This last step shows how to bind Grid to Toolbar, Window, and ContextMenu so that users can edit grid data.
 
-To implement interaction between Grid and other components we will use custom functions described below.
+To implement interaction between Grid and the other components, we use the custom functions described below.
 
-## Creating custom functions
+## Create custom functions {#creating-custom-functions}
 
-In this step we consider how to perform particular tasks, such as adding, editing and removing tasks. As we will need these solutions in several occasions, it is convenient to use functions.
+In this step, we create functions that add, edit, and remove grid rows. We need this logic in several places, so we wrap it in functions.
 
 ### openAddWindow() function
 
-The first function we will describe is used for adding a new item. The function will perform the following actions:
+The first function adds a new item. It performs the following actions:
 
-- assign the "Adding item" title to the window
-- clear the form
-- show a window on a page
+- Assign the "Adding item" title to the window
+- Clear the form
+- Show the window on the page
 
 ~~~js
 function openAddWindow(){
@@ -39,13 +39,13 @@ function openAddWindow(){
 
 ### openEditWindow() function
 
-In our app we consider several ways to open the editing window. They are:
+Our app opens the editing window in three ways:
 
-- double-clicking on a row in the grid
-- pressing the "Edit" button in the toolbar
-- pressing the "Edit" item in the ContextMenu
+- Double-clicking a row in the grid
+- Clicking the "Edit" button in the toolbar
+- Clicking the "Edit" item in the context menu
 
-In all these cases we'll call the **openEditWindow** function to display the edit window on the page. 
+In all these cases, we call the `openEditWindow()` function to display the editing window on the page.
 
 <div className={styles.image}>
 
@@ -53,7 +53,7 @@ In all these cases we'll call the **openEditWindow** function to display the edi
 
 </div>
 
-All fields of the form inside the window will be filled with data from a selected grid row. If no row is selected in the grid, all data for the window will be selected from the 1st row of the grid.
+The function fills the form fields with data from the selected grid row. If no row is selected, the function selects the first grid row and takes the data from it.
 
 ~~~js
 function openEditWindow(row){
@@ -74,7 +74,7 @@ function openEditWindow(row){
 
 ### deleteItem() function
 
-Now, let's add a function to remove rows from the grid. The logic of the function is shown below:
+Let's add a function that removes rows from the grid:
 
 ~~~js
 function deleteItem() {
@@ -91,19 +91,19 @@ function deleteItem() {
 };
 ~~~
 
-{{note
-To make sure that after deleting the item, selection is automatically set to the next item, we need to check whether the deleted item was the last one in the array. 
-}}
+:::note
+To move the selection to the next item after deletion, the function checks whether the deleted item was the last one in the array.
+:::
 
-With the help of the **getLength()** method we find out the length of the array. After that we compare the array length and the deleted item index.
-If it was the last item, selection is set to the new item, which is currently the last item in the array. Otherwise, we set selection to the new item, which replaces the deleted item.
+The `getLength()` method returns the length of the array. Then we compare the array length with the index of the deleted item.
+If the deleted item was the last one, the selection moves to the new last item. Otherwise, the selection moves to the item that takes the place of the deleted one.
 
-**The custom functions, that we've described above, will be used below to edit grid with the help of other components.**
+**Below, we use these custom functions to edit the grid with the other components.**
 
-## Linking Toolbar Buttons and Grid
+## Link Toolbar buttons and Grid {#linking-toolbar-buttons-and-grid}
 
-We've [already discussed](tutorial/basic_application/step5.md) how to bind Toolbar to Grid via the **Click** event of the Toolbar. 
-So we suggest to bind the buttons added in the [previous step](tutorial/binding_components/step5.md) to Grid in the same way.
+We [already discussed](tutorial/basic_application/step5.md) how to bind Toolbar to Grid with the `Click` event of Toolbar.
+Bind the buttons added in the [previous step](tutorial/binding_components/step5.md) to Grid in the same way:
 
 ~~~js
 // id - the Id of the toolbar button, 
@@ -130,9 +130,9 @@ toolbar.events.on("Click", function(id,e){
 
 For details about Toolbar events, see the [Event Handling](toolbar/handling_events.md) article.  
 
-## Linking Window and Grid
+## Link Window and Grid {#linking-window-and-grid}
 
-After double-click on a cell in the grid the editing window will appear. To call it, we will use the <b>CellDblClick()</b> event of the Grid:
+When a user double-clicks a grid cell, the editing window opens. To open it, we use the `CellDblClick` event of Grid:
 
 ~~~js
 grid.events.on("CellDblClick", function(row,column,e){
@@ -140,9 +140,9 @@ grid.events.on("CellDblClick", function(row,column,e){
 });
 ~~~
 
-## Linking Context Menu and Grid
+## Link ContextMenu and Grid {#linking-context-menu-and-grid}
 
-When you press the "Edit" item in the ContextMenu the editing window will appear as well. To implement this, we need to bind the context menu and the grid by using the <b>Click()</b> event of ContextMenu:
+When a user clicks the "Edit" item in the context menu, the editing window opens as well. To implement this, we bind the context menu to the grid with the `Click` event of ContextMenu:
 
 ~~~js
 contextMenu.events.on("Click", function(id,e){
@@ -161,10 +161,9 @@ contextMenu.events.on("Click", function(id,e){
 });
 ~~~
 
-Getting the result
---------------------
+## Get the result {#getting-the-result}
 
-When you complete the steps described in this tutorial, you'll get an advanced demo application that allows editing data in the grid in several ways. This is how the ready app looks like:
+When you complete the steps of this tutorial, you get a demo application that lets users edit grid data in several ways. This is what the finished app looks like:
 
 <div className={styles.image}>
 

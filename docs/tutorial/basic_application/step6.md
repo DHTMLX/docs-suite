@@ -3,13 +3,13 @@ sidebar_label: Step 6. Add a Chart
 title: Step 6. Add a Chart
 ---          
 
-It's time to add a chart on the page. 
+It's time to add a chart to the page.
 
-The process of initializing a chart is similar to creating a grid or a toolbar.
+You initialize a chart the same way as the grid and the toolbar.
 
-<div style="font-weight:bold; color: rgb(65, 65, 65); padding-top: 10px; font-size: 15px;">To add a Chart on the page:</div>
+<div style="font-weight:bold; color: rgb(65, 65, 65); padding-top: 10px; font-size: 15px;">To add a chart to the page:</div>
 
-1\. First, initialize the chart with the dhx.Chart object constructor in the following way:  
+1\. First, initialize the chart with the `dhx.Chart` object constructor:
 
 ~~~js
 var chart = new dhx.Chart(null, { 
@@ -40,7 +40,7 @@ var chart = new dhx.Chart(null, {
 });
 ~~~
 
-2\. Then attach the chart to the "chart-cell" of Layout as in:
+2\. Then attach the chart to the `"chart-cell"` cell of the layout:
 
 ~~~js
 // attaching the chart to the "chart-cell" of the layout

@@ -3,11 +3,11 @@ sidebar_label: Step 2. Bind Window to Grid
 title: Step 2. Bind Window to Grid
 ---          
 
-To apply changes made in a grid row through the form in the window we need to process clicking on the "Apply" or "Cancel" buttons.
+To apply changes that a user makes to a grid row in the window form, we need to handle clicks on the "Apply" and "Cancel" buttons.
 
-##Checking the clicked button
+## Check the clicked button
 
-First we need to check which one of the footer buttons was clicked. We can use the <b>Click</b> event handler of the window footer to do this.
+First, we check which footer button is clicked. For this, we use the `Click` event of the window footer:
 
 ~~~js
 dhxWindow.footer.events.on("Click", function(id, e){
@@ -38,11 +38,11 @@ dhxWindow.footer.events.on("Click", function(id, e){
 });
 ~~~
 
-##Adding functionality to the Apply button
+## Handle the Apply button
 
-Now let's describe the steps we need to take to provide the possibility to edit grid rows or add new ones after pressing the "Apply" button:
+When a user clicks the "Apply" button, the handler either edits a grid row or adds a new one. It takes the following steps:
 
-1\. Check whether the form is filled out correctly by using the <b>validate()</b> method of the Form component:
+1\. Check whether the form is filled out correctly with the `validate()` method of the Form component:
 
 ~~~js
 case 'apply': {
@@ -52,9 +52,9 @@ case 'apply': {
 }
 ~~~
 
-2\. Define what to do with a grid row - either to add or edit it - check whether its id is empty:
+2\. Check whether the item id is empty to decide whether to add a new row or edit an existing one:
 
-- if the item Id is empty, we will add a new item into the grid:
+- If the item id is empty, we will add a new item to the grid:
 
 ~~~js
 if (item.id == ""){
@@ -68,7 +68,7 @@ if (item.id == ""){
 }
 ~~~
 
-- If the Id isn't empty, we will update the current row in the grid via the <b>update()</b> method of Data Collection:
+- If the id isn't empty, we will update the current row in the grid with the `update()` method of DataCollection:
 
 ~~~js
 else {                       

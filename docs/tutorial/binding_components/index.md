@@ -5,11 +5,11 @@ title: Binding Components
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-In the [previous tutorial](/tutorial/basic_application/) we've considered how to add a Layout, a Grid, a Toolbar and a Chart on the page. 
-We've also shown you how to load the data into the Grid and the Chart and remove it.
+In the [previous tutorial](/tutorial/basic_application/), we added a Layout, a Grid, a Toolbar, and a Chart to the page.
+We also showed how to load data into the Grid and the Chart and how to remove the data.
 
-We suggest that you won't stop at the basic lesson and will learn more about the work of individual components, such as a Window, a Form, a Context menu. 
-Besides, this tutorial will help you to learn how to edit data in the Grid, add or delete them.
+This tutorial goes beyond the basics and shows how to work with individual components, such as Window, Form, and ContextMenu.
+It also shows how to edit, add, and delete data in the Grid.
 
 <div className={styles.image}>
 
@@ -17,13 +17,11 @@ Besides, this tutorial will help you to learn how to edit data in the Grid, add 
 
 </div>
 
-If you are ready to move on, [download the demo app](https://dhtmlx.com/x/download/docs/binding_components.zip) of the "binding_components" tutorial and continue exploring the possibilities of the DHTMLX Suite library with us.
+If you are ready to move on, [download the demo app](https://dhtmlx.com/x/download/docs/binding_components.zip) of the `binding_components` tutorial and continue exploring DHTMLX Suite with us.
 
 <div id="tutorial_step">
     <a id="get_started" href="tutorial/binding_components/step1.md"></a>
 </div>
-
-
 
 @index:
 - tutorial/binding_components/step1.md
@@ -32,11 +30,3 @@ If you are ready to move on, [download the demo app](https://dhtmlx.com/x/downlo
 - tutorial/binding_components/step4.md
 - tutorial/binding_components/step5.md
 - tutorial/binding_components/step6.md
-
-
-
-
-
-
-
-

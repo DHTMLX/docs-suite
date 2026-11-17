@@ -5,9 +5,9 @@ title: Step 3. Add a Toolbar
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-To present Toolbar on the page we should take 3 simple steps:
+To add a toolbar to the page, we take three steps:
 
-1\. To add a toolbar on the page we need to use the constructor, like this:
+1\. Create a toolbar with the constructor:
 
 ~~~js
 const toolbar = new dhx.Toolbar(null, {css: "dhx_widget--bordered dhx_widget--bg_gray"});
@@ -15,11 +15,11 @@ const toolbar = new dhx.Toolbar(null, {css: "dhx_widget--bordered dhx_widget--bg
 
 The constructor function takes two parameters: 
 
-- the first one - is the toolbar container, which is `null`, as we are attaching a toolbar to the layout, not to an HTML container
+- The first parameter is the toolbar container. It is `null` because we attach the toolbar to the layout, not to an HTML container.
 
-- the second one is the configuration object of the widget, where we set the CSS classes to make the background gray and add  borders to the components.
+- The second parameter is the configuration object of the toolbar. Here we set CSS classes that make the background gray and add a border to the toolbar.
 
-2\. To configure buttons on Toolbar we need to define a related JSON structure and use the <b>.parse()</b> API of the widget:
+2\. To configure the toolbar buttons, we define a JSON structure for them and pass it to the `toolbar.data.parse()` method:
 
 ~~~js
 const toolbar = new dhx.Toolbar();
@@ -39,9 +39,9 @@ toolbar.data.parse([
 ]); 
 ~~~
 
-You can add other buttons in a similar manner. 
+You can add other buttons the same way.
 
-3\. Now, we can easily attach a toolbar to the "toolbar-cell" of Layout using the <b>attach()</b> method of a cell, as in:
+3\. Attach the toolbar to the `"toolbar-cell"` cell of the layout with the `attach()` method of the cell:
 
 ~~~js
 layout.cell("toolbar-cell").attach(toolbar);

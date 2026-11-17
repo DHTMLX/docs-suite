@@ -17,11 +17,11 @@ Our application will have the following structure:
 
 </div>
 
-To set the main scheme of our app we should start by initializing the Layout. Later we will attach the rest of the components to it.
+To set the main scheme of our app, we initialize the Layout first. Later we will attach the rest of the components to it.
 
-<div style="font-weight:bold; color: rgb(65, 65, 65); padding-top: 10px; font-size: 15px;">To specify the app's layout:</div>
+<div style="font-weight:bold; color: rgb(65, 65, 65); padding-top: 10px; font-size: 15px;">To specify the app layout:</div>
 
-1\. Create an HTML container where the layout will be placed later.
+1\. Create an HTML container for the layout.
 
 ~~~html title="index.html"
 <div id="layout"></div>
@@ -57,8 +57,8 @@ var layout = new dhx.Layout("layout", {
 });
 ~~~
 
-*We divide the layout into two rows. The first row will contain a toolbar. The second row will be divided into two columns: one for Grid and another for Chart.*
+*We divide the layout into two rows. The first row contains a toolbar. The second row has two columns: one for the grid and one for the chart.*
 
-You can read more information about [Configuration of a cell](layout/cell_configuration.md) and  about [Styling of Layout cells](layout/customization.md).
+Read more about [Configuration of a cell](layout/cell_configuration.md) and [Styling of Layout cells](layout/customization.md).
 
 <div id="tutorial_step"><a id="next_step" href="tutorial/basic_application/step3.md"></a></div>

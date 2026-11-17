@@ -5,9 +5,9 @@ title: Step 5. Add buttons to Toolbar
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-We've already placed the "Load" and "Clear" buttons into Toolbar in the [previous tutorial](tutorial/basic_application/step3.md). 
+In the [previous tutorial](tutorial/basic_application/step3.md), we added the "Load" and "Clear" buttons to the toolbar.
 
-Now we need to add other buttons to Toolbar in order to edit, add or delete rows in the grid. This is how we add them:
+Now we add buttons to edit, add, and delete rows in the grid. This is how we add them:
 
 ~~~js
 toolbar.data.parse([
