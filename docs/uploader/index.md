@@ -6,9 +6,9 @@ description: You can have an overview of Uploader in the documentation of the DH
 
 # Uploader overview
 
-The API set for controlling the work of the Uploader object.
+The API of the Uploader object lets you control file uploads to a server.
 
-### Methods
+## Methods
 
 | Name                                               | Description                                               |
 | -------------------------------------------------- | --------------------------------------------------------- |
@@ -18,7 +18,7 @@ The API set for controlling the work of the Uploader object.
 | [](uploader/api/uploader_selectfile_method.md)     | @getshort(uploader/api/uploader_selectfile_method.md)     |
 | [](uploader/api/uploader_send_method.md)           | @getshort(uploader/api/uploader_send_method.md)           |
 
-### Properties
+## Properties
 
 | Name                                                   | Description                                                   |
 | ------------------------------------------------------ | ------------------------------------------------------------- |
