@@ -5,19 +5,19 @@ title: Basic Application
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-This tutorial describes how to create a basic application and helps to understand the main principles of working with DHTMLX components.
+This tutorial describes how to create a basic application and helps you understand the main principles of working with DHTMLX components.
 
-It covers a number of issues related to adding components on a page, displaying data on a page, interaction of components with each other.
+It shows how to add components to a page, display data in them, and make the components interact with each other.
 
-After you finish this tutorial, you'll have a simple app consisting of:
+After you finish this tutorial, you'll have a simple app with the following components:
 
-- a layout that will contain a grid, a toolbar and a chart
+- A layout that contains a grid, a toolbar, and a chart
 
-- a grid with a list of users and their personal data (first name, last name, email and etc.)
+- A grid with a list of users and their personal data (first name, last name, email, and other personal details)
 
-- a chart for displaying the number of vip and default users in percentage terms
+- A chart that shows the percentage of premium and default users
 
-- a toolbar for loading users data in the grid and the chart or removing it
+- A toolbar that loads user data into the grid and the chart or removes it
 
 :::note
 Download the demo app [here](https://dhtmlx.com/x/download/docs/basic_application.zip).

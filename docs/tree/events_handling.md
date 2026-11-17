@@ -4,11 +4,11 @@ title: JavaScript Tree - Event Handling
 description: You can explore the event handling of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
-You can attach event listeners with the **tree.events.on()** method:
+You can attach event listeners with the `tree.events.on()` method:
 
 ~~~js
 tree.events.on("itemClick", function(id, e){
@@ -16,13 +16,15 @@ tree.events.on("itemClick", function(id, e){
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
+:::note
+Event names are case-insensitive.
+:::
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 ## Detaching event listeners
 
-To detach events, use **tree.events.detach()**:
+The `tree.events.detach()` method removes an event handler:
 
 ~~~js
 tree.events.on("itemClick", function(id, e){
@@ -34,13 +36,13 @@ tree.events.detach("itemClick");
 
 ## Calling events
 
-To call events, use **tree.events.fire()**:
+The `tree.events.fire()` method calls an event:
 
 ~~~js
 tree.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-## The list of events
+## List of events {#the-list-of-events}
 
-The full list of events is available in the related [API section](tree/api/api_overview.md#events).
+You can find the full list of Tree events in the [API section](tree/api/api_overview.md#events).

@@ -6,17 +6,17 @@ description: You can explore the customization of Tree in the documentation of t
 
 # Customization
 
-## Styling
+## Use custom CSS classes {#styling}
 
-There is a possibility to make changes in the look and feel of a tree. 
+You can change the look and feel of a tree.
 
 ![Tree styled with custom CSS using colored folders and item text in DHTMLX Suite](/img/tree/custom_style.png)
 
 **Related sample**: [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case):
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet. If you use a stylesheet, include it on the page:
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](tree/api/tree_css_config.md) property in the Tree configuration:
+- Specify the name of the class you created (or several class names separated by spaces) as the value of the [`css`](tree/api/tree_css_config.md) property in the Tree configuration:
 
 ~~~js
 const tree = new dhx.Tree("tree_container", { 
@@ -60,16 +60,16 @@ For example:
 </script>
 ~~~
 
-## Changing icons
+## Change icons {#changing-icons}
 
 ![Tree with custom book icons for folders and file items in DHTMLX Suite](/img/tree/custom_icons.png)
 
 **Related sample**: [Tree. Custom icons](https://snippet.dhtmlx.com/lpsgn3j7)
 
-You can change the default icons used for tree items. DHTMLX Tree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 
-For this, you need to include the desired icon font on a page and apply icons to necessary items.
+DHTMLX Tree uses the [default icons of the DHTMLX library](helpers/icon.md) for tree items. However, you can use another icon font pack.
+To do this, include the icon font on the page and assign its icons to tree items.
 
-For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Tree as follows:
+For example, to use the [Font Awesome](https://fontawesome.com/) icon pack, include a [link to its CDN](https://docs.fontawesome.com/web/setup/get-started) after the source files of DHTMLX Tree:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/tree.js"></script>
@@ -80,8 +80,7 @@ For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack 
   crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the object with the configuration of an item. To use a new icon for a tree item, use the **tree.data.update()** method. Pass as parameters the
-id of an item and its config object:
+Then set the icon name as the value of the `icon` property in the item configuration object. To change the icon of an existing tree item, call the `tree.data.update()` method and pass the item ID and the new configuration object to it:
 
 ~~~js
 tree.data.update("history", {
@@ -93,20 +92,20 @@ tree.data.update("history", {
 });
 ~~~
 
-{{note You can use the [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
+:::note
+You can add the [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon pack in the same way: include a [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) on the page.
+:::
 
-## Adding template to items
+## Add a template to items {#adding-template-to-items}
 
 <iframe src="https://snippet.dhtmlx.com/hg3f50td?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-It is possible to customize Tree items via the [template property](tree/api/tree_template_config.md). The template option is a function that takes two parameters:
+You can customize Tree items with the [`template`](tree/api/tree_template_config.md) property. Set it to a function that takes two parameters and returns either a string or `null`:
 
-- `item` - *object*, an object of a Tree item
-- `isFolder` - *boolean*, defines whether an item is a folder
+- `item` — (`object`) the object of a Tree item
+- `isFolder` — (`boolean`) defines whether an item is a folder
 
-and returns either a string or null.
-
-**Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
+**Tip.** Use the `isFolder` parameter to apply the template only to items that are not folders, as the example below does.
 
 ~~~js
 const tree = new dhx.Tree("tree_container", {
@@ -128,7 +127,7 @@ const tree = new dhx.Tree("tree_container", {
 
 ### Event handlers for the template
 
-You can assign event handlers to HTML elements of a custom template via using the [eventHandlers](tree/api/tree_eventhandlers_config.md)  configuration property of Tree, for instance:
+You can assign event handlers to the HTML elements of a custom template. Use the [`eventHandlers`](tree/api/tree_eventhandlers_config.md) configuration property of Tree:
 
 ~~~js
 const tree = new dhx.Tree("tree_container", {

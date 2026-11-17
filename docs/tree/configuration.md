@@ -10,10 +10,9 @@ description: You can explore the configuration of Tree in the documentation of t
 
 ![Tree with three-state checkboxes showing checked and intermediate states in DHTMLX Suite](/img/tree/checkbox.png)
 
-DHTMLX Tree provides enhanced system of checkbox manipulations. In addition to standard two-state checkboxes that allow check/uncheck tree items, it also uses three-state checkboxes that include an intermediate state, 
-when just some children of a parent item are checked.
+DHTMLX Tree supports two-state and three-state checkboxes. A two-state checkbox lets users check and uncheck a tree item. A three-state checkbox also has an intermediate state that appears when only some children of a parent item are checked.
 
-In order to enable checkboxes for items, make use of the [`checkbox`](tree/api/tree_checkbox_config.md) configuration option:
+Set the [`checkbox`](tree/api/tree_checkbox_config.md) configuration option to `true` to enable checkboxes for items:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", { checkbox: true });
@@ -37,7 +36,7 @@ const tree = new dhx.Tree("tree_container", {
 
 ![Tree item being edited inline with an active text editor in DHTMLX Suite](/img/tree/editable.png)
 
-It is possible to enable editing of the text of Tree items before initialization of the component using the [`editable`](tree/api/tree_editable_config.md) configuration property:
+Set the [`editable`](tree/api/tree_editable_config.md) configuration property to `true` to let users edit the text of Tree items:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", { editable: true });
@@ -47,31 +46,31 @@ const tree = new dhx.Tree("tree_container", { editable: true });
 
 ## Key navigation
 
-You can switch on key navigation in a tree with the [`keyNavigation`](tree/api/tree_keynavigation_config.md) property before initialization of the component: 
+Set the [`keyNavigation`](tree/api/tree_keynavigation_config.md) property to `true` to enable key navigation in a tree:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", { keyNavigation: true });
 ~~~
 
-After that you need to select any item and then apply the Arrow keys:
+After you select an item, use the arrow keys to navigate the tree:
 
 <table>
     <tbody>
         <tr>
             <td><b>Up arrow key</b></td>
-            <td>to move selection to the item above the currently selected one</td>
+            <td>moves the selection to the item above</td>
         </tr>
         <tr>
             <td><b>Down arrow key</b></td>
-            <td>to move selection to the item below the currently selected one</td>
+            <td>moves the selection to the item below</td>
         </tr>
         <tr>
             <td><b>Right arrow key</b></td>
-            <td>to open a selected folder</td>
+            <td>opens the selected folder</td>
         </tr>
         <tr>
             <td><b>Left arrow key</b></td>
-            <td>to close a selected opened folder</td>
+            <td>closes the selected open folder</td>
         </tr>
     </tbody>
 </table>
@@ -84,7 +83,7 @@ After that you need to select any item and then apply the Arrow keys:
 
 **Related sample**: [Tree. Disable selection](https://snippet.dhtmlx.com/2x9htpke)
 
-The default configuration of Tree provides you with the selection feature that allows highlighting a Tree item. To disable selection in a Tree you need to set the [`selection`](tree/api/tree_selection_config.md) configuration property to `false`:
+The default Tree configuration lets users select and highlight an item. To disable selection, set the [`selection`](tree/api/tree_selection_config.md) configuration property to `false`:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", {
@@ -94,9 +93,9 @@ const tree = new dhx.Tree("tree_container", {
 
 ## Tooltips for items
 
-You can add tooltips for Tree items via the [`tooltip`](tree/api/tree_tooltip_config.md) configuration option. It is possible to use the default tooltips, provide a template function to render a custom content in the tooltips, or apply extended options to get the desired tooltip configuration. Check the following examples:
+Use the [`tooltip`](tree/api/tree_tooltip_config.md) configuration option to add tooltips to Tree items. You can enable the default tooltips, pass a template function that renders custom content in the tooltips, or pass an object with extended tooltip options. Check the following examples:
 
-- using the tooltip configuration with a custom template and a display delay:
+- A configuration object with a custom template and a display delay:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", {
@@ -118,7 +117,7 @@ const tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-- defining the content of tooltip via a function:
+- A function that defines the tooltip content:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", {
@@ -131,17 +130,17 @@ const tree = new dhx.Tree("tree_container", {
 
 The [`tooltip`](tree/api/tree_tooltip_config.md) property can have the following types of values:
 
-- *boolean* — if `true`, enables the standard tooltip (the value is taken from the [`value`](tree/api/tree_data_config.md) property of the item)
-- *function* — a template function that returns the string content of the tooltip
-- *object* — a configuration object for detailed customization of the tooltip's behavior and appearance. The available properties are given below:
+- `boolean` — if `true`, enables the standard tooltip that shows the [`value`](tree/api/tree_data_config.md) property of the item
+- `function` — a template function that returns the string content of the tooltip
+- `object` — a configuration object for detailed customization of tooltip behavior and appearance. The object can contain the following properties:
     - `template` - (optional) a function that determines the content of the tooltip. It takes two arguments:
-        - `item` - (*object*) the data object of a tree item.
-        - `event` - (*object*) the native mouse event (MouseEvent). 
+        - `item` - (`object`) the data object of a tree item.
+        - `event` - (`object`) the native mouse event (`MouseEvent`). 
         The template function must return a string.
-    - `force` - (optional) if `true`, forces the tooltip to appear without delays. In this case, the `showDelay` and `hideDelay` settings are ignored. The default value is `false`.
+    - `force` - (optional) if `true`, forces the tooltip to appear without delays. In this case, the tooltip ignores the `showDelay` and `hideDelay` settings. The default value is `false`.
     - `showDelay` - (optional) the delay before the tooltip appears (in milliseconds).
     - `hideDelay` - (optional) the delay before the tooltip hides (in milliseconds).
-    - `htmlEnable` - (optional) specifies whether the use of HTML markup inside the tooltip is allowed.
+    - `htmlEnable` - (optional) specifies whether the tooltip can contain HTML markup.
     - `margin` - (optional) the margin between the tree item and the tooltip (in pixels). The default value is `8`.
     - `position` - (optional) the position of the tooltip relative to the item. The possible values are: `"right"`, `"bottom"`, `"center"`, `"left"`, `"top"`. The default value is `"bottom"`.
     - `css` - (optional) the name of the CSS class for customizing the style of the tooltip container.

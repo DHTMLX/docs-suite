@@ -5,9 +5,9 @@ title: Step 1. Add a Window
 
 import styles from '@site/src/css/tutorial.module.scss';
 
-Let’s see how to add a window on the page in two steps: 
+Let’s see how to add a window to the page in two steps:
 
-1\. At first, we need to initialize a Window with the dhx.Window object constructor:
+1\. First, initialize a window with the `dhx.Window` object constructor:
 
 ~~~~js
 const dhxWindow = new dhx.Window(
@@ -25,9 +25,9 @@ const dhxWindow = new dhx.Window(
 
 The constructor takes one parameter:
 
-- an object with a set of Window properties
+- An object with a set of Window properties
 
-2\. Then we need to add the "Apply" and "Cancel" controls into the footer of the window by specifying objects with their attributes and passing them to the <b>add()</b> method of data_collection/api/refs/datacollection.md:
+2\. Then add the "Apply" and "Cancel" buttons to the window footer. Pass an array of their configuration objects to the `add()` method of [TreeCollection](/tree_collection/):
 
 ~~~~js
 dhxWindow.footer.data.add([
@@ -39,8 +39,8 @@ dhxWindow.footer.data.add([
 
 We pass two parameters to the method:
 
-- the first is an array of item objects,
-- the second is the index of the position starting from which new items will be added
+- The first parameter is an array of item objects.
+- The second parameter is the index of the position to insert the new items at.
  
 <div className={styles.image}>
 
@@ -48,8 +48,7 @@ We pass two parameters to the method:
 
 </div>
  
-You can find out more about Window properties in the [Configuration](window/configuration.md) article. The possibilities of adjusting the look and feel of the Window header and footer are described in the
-[Customization](window/customization.md) article.
+Read more about Window properties in the [Configuration](window/configuration.md) article. The [Customization](window/customization.md) article explains how to change the look and feel of the Window header and footer.
 
 
 <div id="tutorial_step">

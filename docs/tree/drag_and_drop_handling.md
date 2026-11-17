@@ -6,7 +6,7 @@ description: You can explore the drag-n-drop of Tree in the documentation of the
 
 # Drag-n-Drop
 
-DHTMLX Tree possesses an advanced drag-n-drop functionality. With this feature, it is possible to reorder items in a tree and drag items between trees. To enable drag-n-drop, you should define the drag mode.
+DHTMLX Tree supports drag-n-drop. Users can reorder items within a tree and drag items between trees. To enable drag-n-drop, set the `dragMode` property:
 
 ~~~js
 const source = new dhx.Tree("tree-source", { dragMode: "source", dropBehaviour: "complex" });
@@ -15,13 +15,13 @@ const target = new dhx.Tree("tree-target", { dragMode: "target", dropBehaviour: 
 
 ## Drag mode
 
-There are three modes of drag-n-drop available in a tree:
+The `dragMode` property defines one of three drag-n-drop modes:
 
-- "target" - a tree takes items from other trees, while its items can't be dragged out of it
-- "source" - a tree allows dragging its items out and can't take items from other trees
-- "both" - a tree both takes items from other trees and allows dragging its items out as well
+- `target` — a tree takes items from other trees but doesn't let you drag its items out
+- `source` — a tree lets you drag its items out but can't take items from other trees
+- `both` — a tree takes items from other trees and lets you drag its items out
 
-By setting the drag mode, you automatically enable the drag-n-drop functionality.
+For example, the following tree works in the `source` mode:
 
 ~~~jsx
 const tree = new dhx.Tree("tree_container", { 
@@ -32,28 +32,28 @@ const tree = new dhx.Tree("tree_container", {
 **Related sample**: [Tree. Drag modes](https://snippet.dhtmlx.com/7idtw7i4)
 
 :::note 
-Please note that drag-n-drop within a tree works, if it has `dragMode:"both"` setting in its configuration object.
+Drag-n-drop within a tree works only if the tree has the `dragMode:"both"` setting in its configuration object.
 :::
 
 ## Drop behaviour
 
 You can specify the drag-n-drop behaviour of tree items with the [`dropBehaviour`](tree/api/tree_dropbehaviour_config.md) property in the configuration object of a tree. 
 
-There are three modes of behaviour of a dragged tree item:
+The property supports three modes:
 
-- "child" - a dragged item becomes a child of the item it is dragged to
+- `child` — a dragged item becomes a child of the target item
 
 ![Tree drag-and-drop dropping an item as a child of the target folder in DHTMLX Suite](/img/tree/drag_behaviour_child.png)
 
-- "sibling" - a dragged item becomes a sibling of the item it is dragged to
+- `sibling` — a dragged item becomes a sibling of the target item
 
 ![Tree drag-and-drop dropping an item as a sibling of the target item in DHTMLX Suite](/img/tree/drag_behaviour_sibling.png)
 
-- "complex" - a dragged item can become both a child and a sibling of a target item, depending on the position specified by highlighting (check the above images)
+- `complex` — a dragged item becomes either a child or a sibling of the target item, depending on the drop position that the highlighting shows (see the images above)
 
 ## Copying dragged item
 
-Instead of moving a dragged item to a new position in the same or a different tree, you can copy it. Use the [`dragCopy`](tree/api/tree_dragcopy_config.md) option in the configuration object of a tree.
+Instead of moving a dragged item to a new position in the same or a different tree, you can copy it. Set the [`dragCopy`](tree/api/tree_dragcopy_config.md) option to `true` in the configuration object of a tree:
 
 ~~~jsx
 const treeSource = new dhx.Tree("tree-source", { dragMode: "source", dragCopy: true });
