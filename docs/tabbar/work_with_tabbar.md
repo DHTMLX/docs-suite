@@ -6,23 +6,23 @@ description: You can explore how to work with Tabbar in the documentation of the
 
 # Work with Tabbar
 
-DHTMLX Tabbar inherits its API from dhtmlxLayout. So, you can apply any methods of Layout to manipulate Tabbar.
+DHTMLX Tabbar inherits its API from DHTMLX Layout, so you can manage Tabbar with Layout methods.
 
-## Adding/removing tabs
+## Add and remove tabs {#addingremoving-tabs}
 
-You can quickly add/remove tabs of Tabbar on the fly with the help of the corresponding methods - [](tabbar/api/tabbar_addtab_method.md) and [](tabbar/api/tabbar_removetab_method.md).
+Use the [](tabbar/api/tabbar_addtab_method.md) and [](tabbar/api/tabbar_removetab_method.md) methods to add and remove tabs.
 
 The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 
 <table>
     <tbody>
         <tr>
-            <td><b>view</b></td>
-            <td>(<i>object</i>) an object of a tab. It may include the following properties:<ul><li>tab - the name of a tab</li><li>tabCss - the name of the CSS class used for a tab</li><li>css - the name of the CSS class used for a cell</li><li>header - the header of a cell</li></ul></td>
+            <td><code>view</code></td>
+            <td>(<code>object</code>) an object of a tab. It may include the following properties:<ul><li><code>tab</code> — the name of a tab</li><li><code>tabCss</code> — the name of the CSS class used for a tab</li><li><code>css</code> — the name of the CSS class used for a cell</li><li><code>header</code> — the header of a cell</li></ul></td>
         </tr>
         <tr>
-            <td><b>index</b></td>
-            <td>(<i>number</i>) the position to add a tab into</td>
+            <td><code>index</code></td>
+            <td>(<code>number</code>) the position to add a tab into</td>
         </tr>
     </tbody>
 </table>
@@ -35,7 +35,7 @@ tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
 **Related sample**: [Tabbar. Add / remove tab](https://snippet.dhtmlx.com/z5vjj83y)
 
-The [`removeTab()`](tabbar/api/tabbar_removetab_method.md) method expects the id of a tab you want to remove as its parameter. You can get the id of a tab via the [`getId()`](tabbar/api/tabbar_getid_method.md) method:
+The [`removeTab()`](tabbar/api/tabbar_removetab_method.md) method takes the id of the tab to remove as a parameter. Call the [`getId()`](tabbar/api/tabbar_getid_method.md) method to get the id of a tab:
 
 ~~~js
 // removing a tab
@@ -45,21 +45,21 @@ tabbar.removeTab(id);
 
 **Related sample**: [Tabbar. Add / remove tab](https://snippet.dhtmlx.com/z5vjj83y)
 
-## Getting the id of a tab
+## Get the id of a tab {#getting-the-id-of-a-tab}
 
-In order to get the id of a tab, make use of the [`getId()`](tabbar/api/tabbar_getid_method.md) method. It takes the index of the tab in question as a parameter:
+The [`getId()`](tabbar/api/tabbar_getid_method.md) method returns the id of a tab. It takes the index of the tab as a parameter:
 
 ~~~js
 const id = tabbar.getId(0);
 ~~~
 
-## Iterating over cells
+## Iterate over cells {#iterating-over-cells}
 
-To iterate over the cells of Tabbar, use the [`forEach()`](tabbar/api/tabbar_foreach_method.md) method. Tabbar calls the passed callback function for each cell with the following parameters:
+The [`forEach()`](tabbar/api/tabbar_foreach_method.md) method iterates over the cells of Tabbar. Tabbar calls the passed callback function for each cell with the following parameters:
 
-- `cell` - the object of a cell
-- `index` - the index of a cell
-- `array` - an array with the cells
+- `cell` — the object of a cell
+- `index` — the index of a cell
+- `array` — an array with the cells
 
 ~~~jsx
 tabbar.forEach((cell, index, array) => {
@@ -67,9 +67,9 @@ tabbar.forEach((cell, index, array) => {
 });
 ~~~
 
-## Setting/getting the active tab
+## Set and get the active tab {#settinggetting-the-active-tab}
 
-It is possible to set the active tab via Tabbar API, i.e. with the help of the [`setActive()`](tabbar/api/tabbar_setactive_method.md) method. It takes the id of a tab as a parameter:
+The [`setActive()`](tabbar/api/tabbar_setactive_method.md) method sets the active tab. It takes the id of a tab as a parameter:
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -87,7 +87,7 @@ tabbar.setActive("2");
 
 **Related sample**: [Tabbar. Set active](https://snippet.dhtmlx.com/u9ryz38f)
 
-To identify what tab is currently active, apply the [`getActive()`](tabbar/api/tabbar_getactive_method.md) method. It will return the id of the active tab.
+The [`getActive()`](tabbar/api/tabbar_getactive_method.md) method returns the id of the active tab:
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -105,9 +105,9 @@ const active = tabbar.getActive(); // -> "2"
 
 **Related sample**: [Tabbar. Get active](https://snippet.dhtmlx.com/xpvkcwiu)
 
-## Enabling/disabling a tab
+## Enable and disable a tab {#enablingdisabling-a-tab}
 
-To enable a tab, use the [`enableTab()`](tabbar/api/tabbar_enabletab_method.md) method:
+The [`enableTab()`](tabbar/api/tabbar_enabletab_method.md) method enables a tab:
 
 ~~~js
 tabbar.enableTab("London");
@@ -122,15 +122,15 @@ tabbar.disableTab("London");
 
 **Related sample**: [Tabbar. Disable tab](https://snippet.dhtmlx.com/9l3egq3z)
 
-## Checking if a tab is disabled
+## Check if a tab is disabled {#checking-if-a-tab-is-disabled}
 
-To check if a tab is disabled, pass the id of the tab as an argument to the [`isDisabled()`](tabbar/api/tabbar_isdisabled_method.md) method:
+The [`isDisabled()`](tabbar/api/tabbar_isdisabled_method.md) method checks whether a tab is disabled. It takes the id of the tab as a parameter:
 
 ~~~js
 tabbar.isDisabled("London"); // -> returns true/false
 ~~~
 
-To check if a currently active tab is disabled, call the [`isDisabled()`](tabbar/api/tabbar_isdisabled_method.md) method without parameters:
+To check whether the active tab is disabled, call the [`isDisabled()`](tabbar/api/tabbar_isdisabled_method.md) method without parameters:
 
 ~~~js
 tabbar.isDisabled(); // -> returns true/false
@@ -138,9 +138,9 @@ tabbar.isDisabled(); // -> returns true/false
 
 **Related sample**: [Tabbar. Is disabled tab](https://snippet.dhtmlx.com/86er2y7m)
 
-## Attaching a component to a cell
+## Attach a component to a cell {#attaching-a-component-to-a-cell}
 
-You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Tabbar using the attach method of a cell:
+Call the [`attach()`](tabbar/api/cell/tabbar_cell_attach_method.md) method of a Tabbar cell to attach a DHTMLX component to the cell:
 
 ~~~js
 const dataview = new dhx.DataView(null, {
@@ -157,12 +157,12 @@ tabbar.getCell("dataview").attach(dataview);
 **Related sample**: [Tabbar. Attach widget](https://snippet.dhtmlx.com/o1jwmw1l)
 
 :::note
-The Message, Popup, Window components can't be attached to the Tabbar cell because these components can't have the parent container due to their architecture principles.
+You can't attach Message, Popup, or Window to a Tabbar cell: these components can't have a parent container.
 :::
 
-## Attaching an HTML content to a cell
+## Attach HTML content to a cell {#attaching-an-html-content-to-a-cell}
 
-You can easily attach some HTML content to a cell of Tabbar via the [](tabbar/api/cell/tabbar_cell_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
+Call the [](tabbar/api/cell/tabbar_cell_attachhtml_method.md) method of a Tabbar cell to attach HTML content to the cell. The method takes a string with HTML as a parameter.
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {
