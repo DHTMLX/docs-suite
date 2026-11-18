@@ -6,11 +6,11 @@ description: You can explore the features of Layout in the documentation of the 
 
 # Features
 
-This page contains structured information that will help you to start working with DHTMLX Layout and go into deep dive on its functionality.
+This page helps you start working with DHTMLX Layout and explore its functionality in depth.
 
 ## How to start with DHTMLX Layout
 
-In this section you can find out how to initialize Layout, how to attach the necessary components to its cells, and how to integrate a Layout into your applications.
+In this section you will learn how to initialize Layout, attach DHTMLX components to its cells, and integrate Layout into your applications.
 
 ### Initialization
 
@@ -23,71 +23,71 @@ In this section you can find out how to initialize Layout, how to attach the nec
 
 | Topic                                                   | Description                                                                                                                                  |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
-| [Optimus](/optimus_guides/)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
+| [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
+| [Optimus](/optimus_guides/)                            | Learn how to use the DHTMLX Optimus framework to build DHTMLX-based apps <br>(the recommended framework for apps with Suite components) |
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Layout with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                  |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Layout with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                           |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Layout with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                |
 
 ## How to configure Layout
 
-In this section you will know how to build a horizontal, vertical, or mixed layout, and how to add borders or space between cells.
+In this section you will learn how to build a horizontal, vertical, or mixed layout, and how to add borders or space between cells.
 
 | Topic                                                                        | Description                                                                                                                                                     |
 | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Defining Layout structure](layout/layout_structure.md)                            | Learn how to create a Layout of the necessary structure                                                                                                         |
-| [Adding borders to cells ](layout/cell_configuration.md#setting-borders-for-cells) | Learn how to configure the borders or add space between cells in Layout ([Example 1](https://snippet.dhtmlx.com/9ge1a4zx), [Example 2](https://snippet.dhtmlx.com/w00fgl57)) |
+| [Adding borders to cells](layout/cell_configuration.md#setting-borders-for-cells) | Learn how to configure the borders or add space between cells in Layout ([Example 1](https://snippet.dhtmlx.com/9ge1a4zx), [Example 2](https://snippet.dhtmlx.com/w00fgl57)) |
 
 ## How to configure Layout cells
 
-In this section you can find out how to configure the size and visibility of cells, how to add a cell header and configure its height, and more.
+In this section you will learn how to make cells resizable, hidden, or collapsed, add a cell header, and configure the content alignment, padding, and progress bar of a cell.
 
 | Topic                                                                                  | Description                                                                                                                                                                         |
 | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Making a cell resizable](layout/cell_configuration.md#resizability)                         | Learn how to configure the ability to change the size of a cell by dragging its borders ([Example](https://snippet.dhtmlx.com/f1f49n35))                                            |
-| [Making cells hidden](layout/cell_configuration.md#hidden-cell)                                     | Learn how to render a layout with some hidden cells                                                                                                                                 |
-| [Adding the header to a cell](layout/cell_configuration.md#cell-header)                      | Learn how to add a header for a cell ([Example](https://snippet.dhtmlx.com/bxqnzesl))                                                                                               |
+| [Making a cell resizable](layout/cell_configuration.md#resizability)                         | Learn how to let users resize a cell by dragging its borders ([Example](https://snippet.dhtmlx.com/f1f49n35))                                            |
+| [Making cells hidden](layout/cell_configuration.md#hidden-cell)                                     | Learn how to render a layout with hidden cells                                                                                                                                 |
+| [Adding a header to a cell](layout/cell_configuration.md#cell-header)                      | Learn how to add a header to a cell ([Example](https://snippet.dhtmlx.com/bxqnzesl))                                                                                               |
 | [Adding custom content to a cell header](layout/cell_configuration.md#custom-content-in-a-cell-header) | Learn how to render HTML markup or a DHTMLX widget in the header of a cell ([Example](https://snippet.dhtmlx.com/6xy6mrpq))                                                          |
 | [Configuring content alignment](layout/api/cell/layout_cell_align_config.md)                 | Learn how to set the alignment of content inside a cell ([Example](https://snippet.dhtmlx.com/4w1033c9))                                                                            |
-| [Configuring paddings](layout/api/cell/layout_cell_padding_config.md)                        | Learn how to configure the distance between a cell and the Layout border ([Example](https://snippet.dhtmlx.com/tk6tpwwv))                                                           |
-| [Initializing a collapsed cell](layout/cell_configuration.md#collapsibility)                 | Learn how to initialize a collapsed cell and provide the ability to expand it ([Example 1](https://snippet.dhtmlx.com/f1f49n35), [Example 2](https://snippet.dhtmlx.com/r2e0y6n7)) |
-|[Showing a progress bar by default](layout/cell_configuration.md#progress-bar)|Learn how to render the progress bar in a cell in the absence of the component/HTML content in the cell|
+| [Configuring padding](layout/api/cell/layout_cell_padding_config.md)                        | Learn how to configure the distance between a cell and the Layout border ([Example](https://snippet.dhtmlx.com/tk6tpwwv))                                                           |
+| [Initializing a collapsed cell](layout/cell_configuration.md#collapsibility)                 | Learn how to initialize a collapsed cell and let users expand it ([Example 1](https://snippet.dhtmlx.com/f1f49n35), [Example 2](https://snippet.dhtmlx.com/r2e0y6n7)) |
+|[Showing the default progress bar](layout/cell_configuration.md#progress-bar)|Learn how to show a progress bar in a cell that has no attached component or HTML content|
 
 ## How to configure sizes of Layout cells
 
-In this section you will learn how to configure sizes of Layout cells and their headers.
+In this section you will learn how to configure the sizes of Layout cells and their headers.
 
 | Topic                                                                | Description                                                                                                           |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | [Width and height of a cell](layout/cell_configuration.md#cell-size)                        | Learn how to configure the width and height of a cell ([Example](https://snippet.dhtmlx.com/miej9gb9))                                                                              |
 | [Size of a cell within a row](layout/api/cell/layout_cell_gravity_config.md) | Learn how to define the "weight" of a cell in relation to other cells placed in the same row and within one parent ([Example](https://snippet.dhtmlx.com/1u521djj))                 |
-| [Height of the cell's header](layout/cell_configuration.md#height-of-a-header-cell)        | Learn how to configure the height of the header of a cell                                                                                                                           |
+| [Height of a cell header](layout/cell_configuration.md#height-of-a-header-cell)        | Learn how to configure the height of a cell header                                                                                                                           |
 
 ## How to customize Layout and its cells
 
-In this section you can learn how to configure the style of Layout and its cells.
+In this section you will learn how to add HTML content to cells and change the look and feel of Layout.
 
 | Topic                                                                | Description                                                                                                           |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| [Rendering HTML content](layout/api/cell/layout_cell_html_config.md)       | Learn how to render HTML content in a cell on Layout initialization  ([Example](https://snippet.dhtmlx.com/6x76kgyq)) |
-| [Attaching HTML content](layout/work_with_layout.md#attaching-an-html-content-to-a-cell) | Learn how to attach HTML content into a cell dynamically or detach it                                                                 |
+| [Rendering HTML content](layout/api/cell/layout_cell_html_config.md)       | Learn how to render HTML content in a cell on Layout initialization ([Example](https://snippet.dhtmlx.com/6x76kgyq)) |
+| [Attaching HTML content](layout/work_with_layout.md#attaching-an-html-content-to-a-cell) | Learn how to attach HTML content to a cell dynamically or detach it                                                                 |
 | [Styling (custom CSS)](layout/customization.md)                            | Learn how to apply custom styles to a Layout cell ([Example](https://snippet.dhtmlx.com/pwxmf0lx))                    |
-| [List of CSS classes](helpers/base_elements.md)                  | A set of CSS classes provided by the DHTMLX library                                                                   |
+| [List of CSS classes](helpers/base_elements.md)                  | The CSS classes included in the DHTMLX library                                                                   |
 
 
 ## How to work with Layout cells
 
-In this section you will learn how to get a cell object, how to add or remove, hide or show, expand or collapse a cell, etc. 
+In this section you will learn how to get a cell object, iterate over cells, and remove, hide, show, collapse, or expand a cell. You will also learn how to show or hide a progress bar.
 
 | Topic                                                                            | Description                                                                                                                             |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | [Removing a cell](layout/work_with_layout.md#removing-cells)                           | Learn how to remove a cell from Layout ([Example](https://snippet.dhtmlx.com/tnujp7jk))                                                 |
 | [Iterating over all cells](layout/work_with_layout.md#iterating-over-cells)            | Learn how to iterate over Layout cells ([Example](https://snippet.dhtmlx.com/9hfntqpy))                                                 |
-| [Getting a cell object](layout/api/layout_getcell_method.md)                           | Learn how to get a configuration object of a particular cell                                                                            |
-| [Showing/hiding a cell](layout/work_with_layout.md#hidingshowing-a-cell)               | Learn how to hide/show a cell ([Example 1](https://snippet.dhtmlx.com/v0q7gq26), [Example](https://snippet.dhtmlx.com/u0jd8ah3))        |
+| [Getting a cell object](layout/api/layout_getcell_method.md)                           | Learn how to get the configuration object of a cell                                                                            |
+| [Showing/hiding a cell](layout/work_with_layout.md#hidingshowing-a-cell)               | Learn how to hide or show a cell ([Example 1](https://snippet.dhtmlx.com/v0q7gq26), [Example 2](https://snippet.dhtmlx.com/u0jd8ah3))        |
 | [Checking visibility of a cell](layout/work_with_layout.md#checking-visibility-of-a-cell)                 | Learn how to check whether a Layout cell is visible                                                                                     |
-| [Expanding/collapsing a cell](layout/work_with_layout.md#collapsingexpanding-a-cell) | Learn how to collapse/expand a cell ([Example 1](https://snippet.dhtmlx.com/h0wtlpyk), [Example 2](https://snippet.dhtmlx.com/t38tqk0k)) |
-|[Showing/hiding a progress bar](layout/work_with_layout.md#showinghiding-a-progress-bar)|Learn how to show/hide the progress bar in a Layout container or in a cell ([Example](https://snippet.dhtmlx.com/vzrvf4rm))|
+| [Expanding/collapsing a cell](layout/work_with_layout.md#collapsingexpanding-a-cell) | Learn how to collapse or expand a cell ([Example 1](https://snippet.dhtmlx.com/h0wtlpyk), [Example 2](https://snippet.dhtmlx.com/t38tqk0k)) |
+|[Showing/hiding a progress bar](layout/work_with_layout.md#showinghiding-a-progress-bar)|Learn how to show or hide the progress bar in a Layout container or in a cell ([Example](https://snippet.dhtmlx.com/vzrvf4rm))|
 
 
 ## Layout patterns
@@ -131,16 +131,16 @@ In this section you will learn how to get a cell object, how to add or remove, h
 
 ## How to work with Layout events
 
-This section explains how to work with Layout events.
+In this section you will learn how to work with Layout events.
 
 | Topic                                       | Description                                                                                               |
 | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
-| [Event handling](layout/events.md)       | Learn how to attach, detach, or call the Layout events ([Example](https://snippet.dhtmlx.com/fyxw0map)) |
+| [Event basic rules](guides/events_guide.md) | Learn the basic rules of event handling                                                              |
+| [Event handling](layout/events.md)       | Learn how to attach, detach, or call Layout events ([Example](https://snippet.dhtmlx.com/fyxw0map)) |
 
 ## API reference
 
-In this section you can find out corresponding references of Layout and Layout cells API.
+In this section you will find the Layout and Layout cell API reference.
 
 ### Layout API
 
@@ -154,19 +154,19 @@ In this section you can find out corresponding references of Layout and Layout c
 
 | Topic                                                | Description                                   |
 | ---------------------------------------------------- | --------------------------------------------- |
-| [Layout cell methods](/category/layout-cell-methods/)       | Check the list of methods of a Layout cell    |
-| [Layout cell properties](/category/layout-cell-properties/) | Check the list of properties of a Layout cell |
+| [Layout cell methods](/category/layout-cell-methods/)       | Check the list of Layout cell methods    |
+| [Layout cell properties](/category/layout-cell-properties/) | Check the list of Layout cell properties |
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Layout.
+In this section you will learn about common library functionality that is useful when you work with Layout.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](common_features/touch_support.md)         | Learn how to work with touch support                          |
 | [TypeScript support](common_features/using_typescript.md) | Learn how to work with TypeScript                             |
 | [Custom scroll](common_features/custom_scroll.md)         | Learn how to enable custom scroll in Layout cells                       |
-| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to perform the code after the component's rendering |
+| [AwaitRedraw](helpers/await_redraw.md)                    | Learn how to run code after the component renders |
 
 ## Any questions left?
 
