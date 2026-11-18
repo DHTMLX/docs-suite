@@ -215,10 +215,10 @@ For the full list of built-in hotkeys, refer to the **Keyboard navigation** arti
 
 ## Localization of screen-reader strings
 
-The accessible names and announcements that the widgets generate are stored in the locale of each widget as keys with the `aria_` prefix. For example:
+The accessible names and announcements that the widgets generate are stored in the locale of each widget, mostly as keys with the `aria_` prefix. For example:
 
 - `aria_toolbar` in the `toolbar` locale
-- `aria_dialog` in the `window` locale
+- `aria_dialog` and `close` (the name and tooltip of the close button in the header) in the `window` locale
 - `aria_palette` and the color names in the `colorpicker` locale
 - `aria_confirm` in the `message` locale
 
@@ -229,7 +229,8 @@ dhx.i18n.setLocale("toolbar", {
     aria_toolbar: "Symbolleiste"
 });
 dhx.i18n.setLocale("window", {
-    aria_dialog: "Dialogfeld"
+    aria_dialog: "Dialogfeld",
+    close: "Schließen"
 });
 dhx.i18n.setLocale("colorpicker", {
     aria_palette: "Farbpalette",
