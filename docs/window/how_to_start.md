@@ -7,14 +7,14 @@ description: You can explore the initialization of Window in the documentation o
 # Initialization
 
 :::info
-[Download the DHTMLX Window package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Window package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To initialize DHTMLX Window on a page, you need to take the following simple steps:
+Follow these steps to add DHTMLX Window to an application:
 
 - [Include source files](#include-source-files)
 - [Initialize Window](#initialize-window) with the object constructor
-- [Set content](#set-content) into a created window
+- [Add content to Window](#set-content)
 
 ~~~html title="index.html"
 <!DOCTYPE html>
@@ -40,12 +40,12 @@ To initialize DHTMLX Window on a page, you need to take the following simple ste
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Create an HTML file and add the paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html title="index.html"
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -56,9 +56,11 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 Initialize Window with the `dhx.Window` object constructor. The constructor takes an optional parameter:
 
-- an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- An object with [configuration properties](#configuration-properties) (optional). If you omit this argument, Window uses the default settings.
 
-{{note Don't use **window** as a variable name for dhxWindow object, since it is reserved for the browser window.}}
+:::note
+Don't use `window` as the variable name of a Window instance. The browser reserves this name for the global `window` object.
+:::
 
 ~~~js title="index.js"
 // creating DHTMLX Window
@@ -71,27 +73,26 @@ dhxWindow.show();
 ~~~
 
 
-{{note To show a created window on a page, you should call the [show()](window/api/window_show_method.md) method after initialization of the component.}}
+:::note
+To show a window on a page, call the [`show()`](window/api/window_show_method.md) method after you initialize the component.
+:::
 
 ### Configuration properties
 
-There is a set of properties you can specify for Window to optimize its configuration for your needs.
-
-The detailed information on Window configuration options can be found in the [Window API overview](window/api/api_overview.md#properties) article.
+The [Window API overview](window/api/api_overview.md#properties) article describes the properties you can specify to adapt Window to your needs.
 
 ## Set content
 
-There are several ways of adding content into the DHTMLX Window:
+You can add content to DHTMLX Window in the following ways:
 
-- via the [](window/api/window_html_config.md) property to attach some HTML content into a window before initialization
+- Use the [](window/api/window_html_config.md) property to set the HTML content of a window on initialization:
 
 <iframe src="https://snippet.dhtmlx.com/6qqezjxe?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
-- by using [](window/api/window_attachhtml_method.md) to attach some HTML content into a window on the fly
+- Use the [](window/api/window_attachhtml_method.md) method to attach HTML content to a window dynamically:
 
 <iframe src="https://snippet.dhtmlx.com/6uelt44m?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
-- by calling [](window/api/window_attach_method.md) to attach other DHTMLX components
+- Use the [](window/api/window_attach_method.md) method to attach other DHTMLX components to a window:
 
 <iframe src="https://snippet.dhtmlx.com/t9ncuuou?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
-

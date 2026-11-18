@@ -6,7 +6,7 @@ description: description
 
 # Work with Form
 
-## Getting values of controls
+## Get control values {#getting-values-of-controls}
 
 The [](form/api/form_getvalue_method.md) method returns the current values or states of Form controls. The default return value is an object with control names (or ids, if a control has no `name`) and their values or states.
 
@@ -27,9 +27,9 @@ const state = form.getValue(true);
 
 **Related sample**: [Form. Get value](https://snippet.dhtmlx.com/odod5v12)
 
-## Setting new values for controls
+## Set new control values {#setting-new-values-for-controls}
 
-To set new values or states for Form controls on the fly, use the [](form/api/form_setvalue_method.md) method. The method takes an object with `key:value` pairs as a parameter, where `key` is the control name (or id, if the control has no `name`) and `value` is the new value or state of the control:
+To set new values or states for Form controls, use the [](form/api/form_setvalue_method.md) method. The method takes an object with `key:value` pairs as a parameter, where `key` is the control name (or id, if the control has no `name`) and `value` is the new value or state of the control:
 
 ~~~jsx
 form.setValue({
@@ -41,9 +41,9 @@ form.setValue({
 
 **Related sample**: [Form. Set value](https://snippet.dhtmlx.com/7nxbtlzs)
 
-## Enabling/Disabling a form
+## Enable and disable a form {#enablingdisabling-a-form}
 
-To enable a form, use the [`enable()`](form/api/form_enable_method.md) method:
+The [`enable()`](form/api/form_enable_method.md) method enables a form:
 
 ~~~jsx
 form.enable();
@@ -57,9 +57,9 @@ form.disable();
 
 **Related sample**: [Form. Disable/enable](https://snippet.dhtmlx.com/few71nk2)
 
-## Checking if a form is disabled
+## Check if a form is disabled {#checking-if-a-form-is-disabled}
 
-To check if a form is disabled, call the [`isDisabled()`](form/api/form_isdisabled_method.md) method:
+The [`isDisabled()`](form/api/form_isdisabled_method.md) method checks whether a form is disabled:
 
 ~~~jsx
 form.isDisabled(); // -> true/false
@@ -73,9 +73,9 @@ form.isDisabled("input"); // -> returns true/false
 
 **Related sample**: [Form. Is disabled](https://snippet.dhtmlx.com/lthu8p6p)
 
-## Hiding/Showing a form
+## Hide and show a form {#hidingshowing-a-form}
 
-To hide a form, use the [`hide()`](form/api/form_hide_method.md) method:
+The [`hide()`](form/api/form_hide_method.md) method hides a form:
 
 ~~~jsx
 form.hide();
@@ -89,9 +89,9 @@ form.show();
 
 **Related sample**: [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
 
-## Checking if a form is visible
+## Check if a form is visible {#checking-if-a-form-is-visible}
 
-To check if a form is visible, call the [`isVisible()`](form/api/form_isvisible_method.md) method:
+The [`isVisible()`](form/api/form_isvisible_method.md) method checks whether a form is visible:
 
 ~~~jsx
 form.isVisible(); // -> true/false
@@ -103,7 +103,7 @@ To check whether a form control is visible, pass the control name (or id, if the
 form.isVisible("input"); // -> returns true/false
 ~~~
 
-## Using input masks
+## Use input masks {#using-input-masks}
 
 Input masks control how users enter values in the [Input](form/input.md) and [Textarea](form/textarea.md) Form controls. To work with input masks, use the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options and the [`getText()`](#getting-the-text-value-of-an-input-or-a-textarea) method of these controls.
 
@@ -141,7 +141,7 @@ With this config, the value *1000000.0000* becomes *$1,000,000*.
 
 #### Default `numberMask` configs depending on the input type
 
-When an input has `inputType:"number"`, the resulting value is converted to the `number` type. The default config for this input type is:
+When an input has `inputType:"number"`, Form converts the resulting value to the `number` type. The default config for this input type is:
 
 ~~~jsx
 {
@@ -165,7 +165,7 @@ The default config for `inputType: "text"` (the default input type) is:
 }
 ~~~
 
-When an input has `inputType:"text"`, the resulting number is converted to the `string` type without the mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the [`getValue()`](form/api/input/input_getvalue_method.md) method returns *"1000000"*.
+When an input has `inputType:"text"`, the [`getValue()`](form/api/input/input_getvalue_method.md) method returns the number as a string without the mask. For example, if the input value is *"$ 1,000,000"*, the method returns *"1000000"*.
 
 - As a boolean value, the `numberMask` property converts the number displayed in the input field to one of the predefined templates, depending on the specified `inputType`:
 
@@ -201,9 +201,9 @@ The `patternMask` property sets an input mask for entering number and string val
 
 |  Symbol| Description            |
 | -------|----------------------- |
-| "0"    | any number from **0** to **9** |
+| "0"    | any digit from **0** to **9** |
 | "a"    | a single letter of the Roman alphabet, including all capital letters from **A** to **Z** and all lowercase letters from **a** to **z** |
-| "#"    | a single letter of the Roman alphabet (either an uppercase or a lowercase one) or a single number from **0** to **9** |
+| "#"    | a single letter of the Roman alphabet (either an uppercase or a lowercase one) or a single digit from **0** to **9** |
 | "*"    | any symbol |
 
 :::note
@@ -242,7 +242,7 @@ An SSN that matches this mask: *123-41-1234*.
 
 **Related sample**: [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z)
 
-#### Selecting the suitable data format
+#### Select a data format {#selecting-the-suitable-data-format}
 
 You can specify different mask patterns depending on the type of data entered in an input. The examples below show common data formats:
 
@@ -317,7 +317,7 @@ In the example above:
 
 **Related sample**: [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z)
 
-### Getting the text value of an input or a textarea
+### Get the text value of an input or a textarea {#getting-the-text-value-of-an-input-or-a-textarea}
 
 To get the value of an input or a textarea with the applied mask, use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input control or the [`getText()`](form/api/textarea/textarea_gettext_method.md) method of the Textarea control.
 The method returns the control value as a string and works with the `numberMask` and `patternMask` properties.
@@ -332,7 +332,7 @@ input.getValue(); // "1000.01" for the input type string
 input.getText(); // "1,000.01" with the applied numberMask/patternMask
 ~~~
 
-## Validating form
+## Validate a form {#validating-form}
 
 Form validation covers required fields, minimum and maximum values, the number of allowed characters, and validation rules.
 
@@ -359,7 +359,7 @@ When you set `required:true` for a field, an asterisk appears next to its label:
 
 The property applies to input fields with the `number`, `text`, and `password` input types.
 
-### Minimal and maximal values
+### Minimum and maximum values {#minimal-and-maximal-values}
 
 From v7.0, you can validate number values entered in an input field.
 
@@ -494,11 +494,11 @@ Along with validation rules, you can define messages that tell users whether the
         </tr>
         <tr>
             <td><b>successMessage</b></td>
-            <td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
+            <td>(<i>string</i>) a message that appears when the control value passes validation</td>
         </tr>
         <tr>
             <td><b>errorMessage</b></td>
-            <td>(<i>string</i>) a message that appears in case of error during validation of the control value</td>
+            <td>(<i>string</i>) a message that appears when the control value fails validation</td>
         </tr>
     </tbody>
 </table>
@@ -520,7 +520,7 @@ For example, the following configuration object defines an email input:
 
 ### Validation API
 
-After a user fills out the form, check whether it is filled out correctly.
+After a user fills out the form, check whether the values are valid.
 To validate a form, use the [](form/api/form_validate_method.md) method:
 
 ~~~jsx
@@ -531,7 +531,7 @@ The method returns `true` if all fields are filled as required, or `false` if so
 
 **Related sample**: [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
-## Sending form to server
+## Send a form to the server {#sending-form-to-server}
 
 To send a form to the server, use the [](form/api/form_send_method.md) method. The method takes three parameters:
 
@@ -547,7 +547,7 @@ To send a form to the server, use the [](form/api/form_send_method.md) method. T
         </tr>
         <tr>
             <td><b>asFormData</b></td>
-            <td>(<i>boolean</i>) optional, defines whether values of Form controls should be sent as Form Data</td>
+            <td>(<i>boolean</i>) optional, defines whether the method sends the values of Form controls as FormData</td>
         </tr>
     </tbody>
 </table>
@@ -572,7 +572,7 @@ form.events.on("AfterSend", function(){
 });
 ~~~
 
-## Clearing form
+## Clear a form {#clearing-form}
 
 The [](form/api/form_clear_method.md) method clears a form fully or partially, depending on the parameter you pass:
 
@@ -593,7 +593,7 @@ form.clear();
 
 **Related sample**: [Form. Clear form](https://snippet.dhtmlx.com/a64ih4ih)
 
-## Setting focus to a control
+## Set focus to a control {#setting-focus-to-a-control}
 
 ![Form with various controls and focus set on the Name input field in DHTMLX Suite](/img/form/set_focus.png)
 
