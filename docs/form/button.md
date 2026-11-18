@@ -6,7 +6,7 @@ description: You can explore the Button of Form in the documentation of the DHTM
 
 # Button
 
-A simple button that can have an icon. A button can submit form data to a server.
+A button that can have an icon and submit form data to a server.
 
 ![Button form control styled as a blue flat Send button in DHTMLX Suite](/img/form/form_button.png)
 

@@ -8,7 +8,7 @@ description: You can explore the event handling of Window in the documentation o
 
 ## Attaching event listeners
 
-You can attach event listeners with the **dhxWindow.events.on()** method:
+You can attach event listeners with the `dhxWindow.events.on()` method:
 
 ~~~js
 dhxWindow.events.on("move", function(position, oldPosition, side) {
@@ -16,13 +16,15 @@ dhxWindow.events.on("move", function(position, oldPosition, side) {
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
+:::note
+Event names are case-insensitive.
+:::
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 ## Detaching event listeners
 
-To detach events, use **dhxWindow.events.detach()**:
+The `dhxWindow.events.detach()` method removes an event handler:
 
 ~~~js
 dhxWindow.events.on("move", function(position, oldPosition, side) {
@@ -34,13 +36,13 @@ dhxWindow.events.detach("move");
 
 ## Calling events
 
-To call events, use **dhxWindow.events.fire()**:
+The `dhxWindow.events.fire()` method calls an event:
 
 ~~~js
 dhxWindow.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-## The list of events
+## List of events {#the-list-of-events}
 
-The full list of events is available in the related [API section](window/api/api_overview.md#events).
+You can find the full list of Window events in the [API section](window/api/api_overview.md#events).

@@ -6,7 +6,7 @@ description: You can explore the Input of Form in the documentation of the DHTML
 
 # Input
 
-An input field for typing some text inside.
+A single-line field that allows users to enter text, a password, or a number.
 
 ![Input form control with a Name label and a placeholder text in DHTMLX Suite](/img/form/form_input.png)
 
@@ -16,7 +16,7 @@ An input field for typing some text inside.
 
 ## Adding Input
 
-You can easily add an Input control during initialization of a form:
+You can add an Input control during form initialization:
 
 ~~~js
 const form = new dhx.Form("form_container", {
@@ -34,11 +34,11 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Input control](form/api/input/api_input_properties.md).
+View [the full list of Input configuration properties](form/api/input/api_input_properties.md).
 
 ## Working with Input
 
-You can manipulate an Input control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manage an Input control with the methods and events of the object that the [`getItem()`](form/api/form_getitem_method.md) method returns.
 
 For example, you can get the value of the control:
 
@@ -48,8 +48,8 @@ const value = form.getItem("input").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Input control](form/api/api_overview.md#input-methods).
+Check [the full list of Input methods](form/api/api_overview.md#input-methods).
 
 ### Events
 
-Check [the full list of events of the Input control](form/api/api_overview.md#input-events).
+Check [the full list of Input events](form/api/api_overview.md#input-events).

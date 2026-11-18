@@ -12,8 +12,7 @@ description: You can explore the configuration of Tabbar in the documentation of
 
 **Related sample**: [Tabbar. Close button](https://snippet.dhtmlx.com/cysre4v8)
 
-You can equip each Tabbar tab with a close button to make it easily closable via interface. To enable close buttons in all tabs at once, make use of the 
-[`closable`](tabbar/api/tabbar_closable_config.md) configuration property:
+The [`closable`](tabbar/api/tabbar_closable_config.md) property adds close buttons to tabs. Users can click a close button to close the tab. Set the property to `true` to add close buttons to all tabs:
 
 ~~~jsx
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -21,7 +20,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-You can also add close buttons for separate tabs by setting an array with ids of the tabs as a value for the [`closable`](tabbar/api/tabbar_closable_config.md) property:
+To add close buttons only to specific tabs, set the [`closable`](tabbar/api/tabbar_closable_config.md) property to an array of tab ids:
 
 ~~~jsx
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -33,7 +32,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ![Tabbar with grayed out disabled Paris and Rome tabs and active London tab in DHTMLX Suite](/img/tabbar/disabled_tab.png)
 
-By default, all tabs in Tabbar are enabled. It is possible to make one or several tabs disabled using the [`disabled`](tabbar/api/tabbar_disabled_config.md) configuration property:
+If you don't set the [`disabled`](tabbar/api/tabbar_disabled_config.md) property, all tabs are enabled. Set the property to disable one or several tabs:
 
 ~~~jsx
 // make one tab disabled
@@ -55,8 +54,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Mode: top, left, right, bottom](https://snippet.dhtmlx.com/xq6k0tts)
 
-When initialized with default settings, Tabbar is located at the top of a page. You can locate DHTMLX Tabbar at any desired side of your application by using any other value of the [`mode`](tabbar/api/tabbar_mode_config.md) property. 
-Besides `"top"`, it can also take the `"bottom"`, `"left"` or `"right"` values, e.g.:
+The [`mode`](tabbar/api/tabbar_mode_config.md) property sets the side of Tabbar where tabs appear. The default value is `"top"`. You can also set the property to `"bottom"`, `"left"`, or `"right"`:
 
 ~~~jsx
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -66,7 +64,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Size of tabs
 
-DHTMLX Tabbar allows you to control the height and width of tabs with the help of appropriate configuration options - [`tabWidth`](tabbar/api/tabbar_tabwidth_config.md) and [`tabHeight`](tabbar/api/tabbar_tabheight_config.md). By default, they are set to 200px and 45px, correspondingly. This is how you can change the default settings:
+The [`tabWidth`](tabbar/api/tabbar_tabwidth_config.md) and [`tabHeight`](tabbar/api/tabbar_tabheight_config.md) properties set the width and height of tabs. The default width is 200px, and the default height is 45px. Set the properties to change the default tab size:
 
 ~~~jsx
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -79,17 +77,17 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Structure of tabs
 
-The structure of Tabbar should be defined during initialization of the component. It is set within the [`views`](tabbar/api/tabbar_views_config.md) property. Each tab is an object with attributes, which are:
+Define the structure of Tabbar in the [`views`](tabbar/api/tabbar_views_config.md) property when you initialize the component. Each tab is an object that can include the following properties:
 
-- `id` - the id of a tab
-- `tab` - the name of a tab
-- `tabCss` - the name of the CSS class used for a tab
-- `css` - the name of the CSS class used for a cell
-- `header` - the header of a cell
-- `html` - HTML content of a cell
-- `padding` - the distance between the content of a cell and the border of tabbar
-- `tabWidth` - the width of a tab (for more information, see [`views`](tabbar/api/tabbar_views_config.md))
-- `tabHeight` - the height of a tab (for more information, see [`views`](tabbar/api/tabbar_views_config.md))
+- `id` — the id of a tab
+- `tab` — the name of a tab
+- `tabCss` — the name of the CSS class used for a tab
+- `css` — the name of the CSS class used for a cell
+- `header` — the header of a cell
+- `html` — HTML content of a cell
+- `padding` — the distance between the content of a cell and the border of tabbar
+- `tabWidth` — the width of a tab (for more information, see [`views`](tabbar/api/tabbar_views_config.md))
+- `tabHeight` — the height of a tab (for more information, see [`views`](tabbar/api/tabbar_views_config.md))
 
 
 ~~~jsx
@@ -109,12 +107,12 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ![Tabbar with icons and temperature badges in tab titles in DHTMLX Suite](/img/tabbar/tab_template.png)
 
-You can render HTML content in the titles of tabs, for example, an icon next to the name of a tab. For this purpose, use the [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md) configuration option of Tabbar. The option is a callback function that defines the template for rendering HTML content in the titles of all tabs.
+Use the [`tabTemplate`](tabbar/api/tabbar_tabtemplate_config.md) option to render HTML content in tab titles, for example, an icon next to the tab name. The option is a callback function that defines the template for the titles of all tabs.
 
 Tabbar calls the function for each tab with the following parameters:
 
-- `cell` - (*object*) the configuration object of the current tab (`id`, `tab`, `html`, etc.)
-- `activeTab` - (*string*) the id of the currently active tab
+- `cell` — (`object`) the configuration object of the current tab (`id`, `tab`, `html`, and other tab properties)
+- `activeTab` — (`string`) the id of the active tab
 
 The function returns an HTML string, and Tabbar inserts it into the DOM of the tab:
 
@@ -140,13 +138,13 @@ The function returns an HTML string, and Tabbar inserts it into the DOM of the t
 </script>
 ~~~
 
-Without the `tabTemplate` option, Tabbar renders each tab as plain text. The `tab` property of a tab is always a string, and Tabbar never interprets it as HTML, whether you use `tabTemplate` or not. When set, the user-defined `tabTemplate` function controls the rendering of all the tabs of Tabbar and is fully responsible for forming their markup.
+Without the `tabTemplate` option, Tabbar renders each tab as plain text. The `tab` property of a tab is always a string, and Tabbar never interprets it as HTML, whether you use `tabTemplate` or not. If you set `tabTemplate`, your function controls the rendering of all tabs and builds their entire markup.
 
 **Related sample**: [Tabbar. Tab with HTML template](https://snippet.dhtmlx.com/3jb49vcx)
 
 ## Autosize for tabs
 
-When the width or height of tabs are not specified, you can configure the tabs so that their width/height would automatically adjust to the size of the container of Tabbar. For this purpose, make use of the [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md)/[`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) properties of Tabbar.
+If you don't set the width or height of tabs, you can make the tabs adjust automatically to the size of the Tabbar container. Set the [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) or [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) property to `true`:
 
 ~~~jsx
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -166,14 +164,14 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 **Related sample**: [Tabbar. Tab auto height](https://snippet.dhtmlx.com/pqvycp1c)
 
 :::note 
-The [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) configuration option is used when [`mode`](tabbar/api/tabbar_mode_config.md) is set to `"top"` or `"bottom"`, whereas [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) is applied when [`mode`](tabbar/api/tabbar_mode_config.md) is set to `"right"` or `"left"`.
+The [`tabAutoWidth`](tabbar/api/tabbar_tabautowidth_config.md) option takes effect when [`mode`](tabbar/api/tabbar_mode_config.md) is `"top"` or `"bottom"`. The [`tabAutoHeight`](tabbar/api/tabbar_tabautoheight_config.md) option takes effect when [`mode`](tabbar/api/tabbar_mode_config.md) is `"left"` or `"right"`.
 :::
 
 ## Tabs without content
 
 ![Tabbar rendered with tabs only and an empty content area below in DHTMLX Suite](/img/tabbar/no_content.png)
 
-It is possible to render a tabbar without any content. Use the [`noContent`](tabbar/api/tabbar_nocontent_config.md) option for this purpose:
+Set the [`noContent`](tabbar/api/tabbar_nocontent_config.md) option to `true` to render tabs without content:
 
 ~~~jsx
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -187,7 +185,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ![Tabbar with center aligned tabs and the active VILNIUS tab showing content in DHTMLX Suite](/img/tabbar/tabbar_align.png)
 
-Starting from v7.0, there is the ability to set alignment for tabs via the [`tabAlign`](tabbar/api/tabbar_tabalign_config.md) configuration option of Tabbar:
+From v7.0, you can align tabs with the [`tabAlign`](tabbar/api/tabbar_tabalign_config.md) option:
 
 ~~~jsx
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -203,4 +201,4 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Tab align](https://snippet.dhtmlx.com/bctscs71)
 
-The available values of the option are `"left" | "start"`, `"center" | "middle"`, `"right" | "end"`.
+The option takes the following values: `"left"` or `"start"`, `"center"` or `"middle"`, and `"right"` or `"end"`.
