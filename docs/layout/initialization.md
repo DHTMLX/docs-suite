@@ -7,10 +7,10 @@ description: You can explore the initialization of Layout in the documentation o
 # Initialization
 
 :::info
-[Download the DHTMLX Layout package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+[Download the DHTMLX Layout package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as part of the DHTMLX Suite library.
 :::
 
-To add DHTMLX Layout into an application, you need to take the following simple steps:
+Follow these steps to add DHTMLX Layout to an application:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -49,12 +49,12 @@ To add DHTMLX Layout into an application, you need to take the following simple 
 
 ## Include source files
 
-Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into your project folder.
 
-After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
+Create an HTML file and add the paths to the JS and CSS files of the DHTMLX Suite library in its header. The files are:
 
-- *suite.js*
-- *suite.css*
+- `suite.js`
+- `suite.css`
 
 ~~~html
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -63,7 +63,7 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-Add a container for the Layout and give it an id, e.g. "layout_container":
+Add a container for Layout and give it an id, for example `layout_container`:
 
 ~~~html
 <div id="layout_container"></div>
@@ -71,7 +71,7 @@ Add a container for the Layout and give it an id, e.g. "layout_container":
 
 ## Define Layout structure
 
-Layout consists of a set of cells arranged either into rows or into columns. The structure of a layout can be rather complex, since there can also be nested rows and columns.
+Layout consists of cells arranged in rows or columns. Rows and columns can be nested, so you can build a complex structure.
 
 For example, you can create a three-level layout structure:
 
@@ -108,8 +108,8 @@ const cols = [
 
 Initialize Layout with the `dhx.Layout` object constructor. The constructor takes two parameters:
 
-- the HTML object on the page that serves as the layout container
-- a configuration object which contains the structure of Layout 
+- The HTML container for Layout
+- A configuration object that contains the structure of Layout
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {cols});
@@ -119,15 +119,15 @@ const layout = new dhx.Layout("layout_container", {cols});
 
 #### Layout object
 
-The properties of the configuration object of Layout allow you to define the structure of Layout.
+The properties of the Layout configuration object define the structure of Layout.
 
-See the list of Layout properties [here](layout/api/api_overview.md#layout-properties).
+You can find the full list of Layout properties in the [Layout API overview](layout/api/api_overview.md#layout-properties) article.
 
 #### Cell object
 
-There is also a set of properties you can specify for a Layout cell to configure it according to your needs. 
+Each Layout cell has its own set of configuration properties.
 
-You will find the detailed information on configuration options of the cell object in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.
+You can find the full list of cell properties in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.
 
 ## Example
 
