@@ -8,6 +8,38 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.4.3
+
+Released on November 18, 2026
+
+### Updates
+
+- Form. Colorpicker, Datepicker and Timepicker:
+    - The popup of the field is exposed as a dialog named after the field (**WCAG 4.1.2**).
+    - The Datepicker and Timepicker fields report that they open a dialog, whether the dialog is open and which dialog they control, as the Colorpicker field does (**WCAG 1.3.1**, **WCAG 4.1.2**).
+
+- Form. A fieldset without [`label`](form/api/fieldset/api_fieldset_properties.md) is no longer announced as an unnamed group (**WCAG 1.3.1**).
+
+- Popup. Screen-reader behavior:
+    - The popup is no longer a live region, so a screen reader does not read its whole content each time it opens (**WCAG 4.1.3**).
+    - The content container of the popup is no longer a separate stop in the tab order (**WCAG 2.4.3**, **WCAG 4.1.2**).
+
+- Window. The close button of the header has the "Close" name and tooltip; the text can be [translated](common_features/accessibility_support.md#localization-of-screen-reader-strings) through the new `close` key of the `window` locale (**WCAG 4.1.2**).
+
+### Fixes
+
+- ContextMenu. Fixed the context menu running its internal close handler once more after every close, and [`showAt()`](menu/api/menu_showat_method.md) not opening the menu when called in an [`afterHide`](menu/api/menu_afterhide_event.md) event handler
+- Form. Fixed the popup of the Colorpicker, Datepicker and Timepicker fields not opening when the field was clicked after a choice was made or the popup was closed with <kbd>Esc</kbd>
+- Form. Fixed the Colorpicker field reporting its palette as closed after the palette was opened with <kbd>Enter</kbd> or a click
+- Form. Fixed <kbd>Shift</kbd>+<kbd>Tab</kbd> on the popup of the Colorpicker, Datepicker and Timepicker fields moving focus to the end of the page instead of back to the field
+- Form. Fixed the form losing its `form` role and accessible name after it was redrawn
+- Popup. Fixed a script error (`Cannot read properties of null`) that occurred when a popup was destroyed right after the [`show()`](popup/api/popup_show_method.md) method had been called
+- Popup. Fixed the [`afterShow`](popup/api/popup_aftershow_event.md) event firing twice when [`show()`](popup/api/popup_show_method.md) was called again before the popup appeared
+- Toolbar/Sidebar/Ribbon/Menu/ContextMenu. Fixed a `hotkey` written with `cmd` or `meta`, such as `"cmd+s"`, being bound to the letter key alone; `cmd` and `meta` now work as <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>
+- Toolbar/Sidebar/Ribbon/Menu/ContextMenu. Fixed a click listener left on the document after a menu was closed or the widget was destroyed, which kept the destroyed widget in memory
+- Toolbar/Sidebar/Ribbon/Menu/ContextMenu. Fixed timers that kept running after the widget was destroyed
+- Toolbar/Sidebar/Ribbon/Menu/ContextMenu. Fixed a button with neither text nor tooltip being announced by its `id`
+
 ## Version 9.4.2
 
 Released on November 2, 2026
