@@ -6,17 +6,17 @@ description: You can explore the customization of Layout in the documentation of
 
 # Customization
 
-## Styling Layout cells
+## Use custom CSS classes {#styling-layout-cells}
 
-There is a possibility to make changes in the look and feel of a layout by styling its cells. 
+You can change the look and feel of a layout by styling its cells.
 
 ![Layout styled with custom CSS showing a dark header and pink, teal, and orange colored cells in DHTMLX Suite](/img/layout/custom_css.png)
 
 **Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)
 
-For this you need to take the following steps:
+Follow these steps:
 
-- add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case):
+- Add one or more CSS classes with the settings you need. Place them in the `<style>` section of your HTML page or in a separate stylesheet. If you use a stylesheet, include it on the page:
 
 ~~~html
 <style>
@@ -30,7 +30,7 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](layout/api/cell/layout_cell_css_config.md) property in the configuration of a Layout cell:
+- Specify the name of the class you created (or several class names separated by spaces) as the value of the [`css`](layout/api/cell/layout_cell_css_config.md) property in the configuration of a Layout cell:
 
 ~~~js
 const layout = new dhx.Layout("layout_container",{
