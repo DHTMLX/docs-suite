@@ -6,11 +6,11 @@ description: You can explore the structure of Layout in the documentation of the
 
 # Layout structure
 
-You can use DHTMLX Layout to build the necessary composition of blocks to arrange parts of your application. There are three common types of layout:
+DHTMLX Layout arranges the parts of your application into blocks. You can build three types of layout: horizontal, vertical, and mixed.
 
-- horizontal layout
+## Horizontal layout
 
-This type of layout contains several [](layout/api/layout_rows_config.md) of cells which are placed horizontally.
+A horizontal layout consists of [](layout/api/layout_rows_config.md) of cells placed one under another:
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {                                  
@@ -23,9 +23,9 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-- vertical layout
+## Vertical layout
 
-This type of layout includes a set of [columns](layout/api/layout_cols_config.md) of cells that are located vertically. 
+A vertical layout consists of [columns](layout/api/layout_cols_config.md) of cells placed side by side:
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {   
@@ -38,9 +38,9 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-- mixed layout
+## Mixed layout
 
-In this layout type **both rows and columns** are used, i.e. a row may include several columns and a column may have rows inside.
+A mixed layout combines rows and columns. A row can include several columns, and a column can contain rows:
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {   
