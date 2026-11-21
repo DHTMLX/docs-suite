@@ -1,0 +1,157 @@
+{
+  "fixture": "tier-a/04-misplaced-modifiers.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "note": "Страница про выделение регионов в Matrix. Посеяны нарушения трёх подпунктов misplaced-modifiers.md: длинное имя продукта разрывает связанные слова, модификатор прилипает не к тому существительному, неоднозначный модификатор после списка. Негативные контроли: комментарий в ~~~js-заборе, SEO-шаблон в frontmatter и конструкция из колонки Prefer того же правила (mm-neg-03). Аудит разметки: спаны и строки проверены дословно, nonprose_ranges полны (frontmatter 1-5, забор 23-28, @-макросов нет); mm-neg-04 понижен с must_not_flag до may_flag, mm-pos-04 получил alt-категорию articles, добавлены четыре непосеянных may_flag.",
+  "word_count_prose": 132,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [23, 28] }
+  ],
+  "expected_total_range": [4, 9],
+  "records": [
+    {
+      "id": "mm-pos-01",
+      "polarity": "must_find",
+      "category": "misplaced-modifiers",
+      "alt_categories": ["weak-verbs"],
+      "span": "Selection and focus are cornerstone Acme JavaScript Matrix Suite entities.",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Длинное имя продукта «Acme JavaScript Matrix Suite» вклинено между «cornerstone» и «entities», разрывая связанные слова. Правило требует выносить длинные имена продуктов в конец предложения: «cornerstone entities in the Acme JavaScript Matrix Suite». Структура один в один повторяет пример из колонки Avoid.",
+      "source": "rules/misplaced-modifiers.md#long-modifier-or-product-name-separates-related-words"
+    },
+    {
+      "id": "mm-pos-02",
+      "polarity": "must_find",
+      "category": "misplaced-modifiers",
+      "alt_categories": ["possessives"],
+      "span": "The Acme Matrix Panel extension's export routine writes the current range to a file.",
+      "line": 15,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Притяжательная форма длинного имени продукта отделяет определяемое «export routine» от начала предложения. Правило прямо даёт этот шаблон в колонке Avoid («The Acme WPF Grid control's filtering feature...») и требует «The export routine of the Acme Matrix Panel extension writes...». Допустимо также засчитать как possessives, если скилл разбирает 's у неодушевлённого продукта.",
+      "source": "rules/misplaced-modifiers.md#long-modifier-or-product-name-separates-related-words"
+    },
+    {
+      "id": "mm-pos-03",
+      "polarity": "must_find",
+      "category": "misplaced-modifiers",
+      "alt_categories": ["inversion"],
+      "span": "Users can select the cells that match a saved filter in the toolbar and the context menu.",
+      "line": 17,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Модификатор «in the toolbar and the context menu» стоит рядом с «a saved filter» и читается как место хранения фильтра, хотя относится к действию выделения. Это ровно случай из колонки Avoid; правило требует перестройки вида «The toolbar and the context menu allow users to select the cells that match a saved filter».",
+      "source": "rules/misplaced-modifiers.md#modifier-seems-to-attach-to-the-wrong-noun"
+    },
+    {
+      "id": "mm-pos-04",
+      "polarity": "must_find",
+      "category": "misplaced-modifiers",
+      "alt_categories": ["inversion", "articles"],
+      "span": "Handle the `beforeSelect`, `afterSelect`, and `afterUnSelect` events to update a custom status bar.",
+      "line": 21,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Цель «to update a custom status bar» стоит после списка из трёх событий и неоднозначно относится либо ко всему списку, либо только к последнему элементу. Правило требует вынести модификатор в начало: «To update a custom status bar, handle the `beforeSelect`, `afterSelect`, and `afterUnSelect` events». Аудит: тот же спан дословно повторяет строку Avoid из rules/articles.md#plural-countable-nouns--zero-article-by-default («Handle the onRowUpdating and onRowInserting events»), поэтому находка по этому спану под категорией articles тоже засчитывается — отсюда alt-категория.",
+      "source": "rules/misplaced-modifiers.md#ambiguous-modifier-at-the-end-of-a-list"
+    },
+    {
+      "id": "mm-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "misplaced-modifiers",
+      "alt_categories": ["inversion"],
+      "span": "// Attach the beforeSelect, afterSelect, and afterUnSelect handlers to refresh the panel",
+      "line": 24,
+      "occurrence": 1,
+      "rationale": "Приманка: тот же самый шаблон «список + модификатор в конце», что и в mm-pos-04, но внутри забора ~~~js. Комментарий в коде не является прозой статьи и не подлежит грамматическому ревью.",
+      "source": "rules/misplaced-modifiers.md#ambiguous-modifier-at-the-end-of-a-list"
+    },
+    {
+      "id": "mm-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "misplaced-modifiers",
+      "alt_categories": ["wordiness", "overused-words"],
+      "span": "You can explore the region selection in the documentation of the Acme JavaScript UI library",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "Модификатор «in the documentation of the Acme JavaScript UI library» формально можно прочитать как относящийся к «the region selection», но это неизменяемый SEO-шаблон description, идентичный во всех файлах корпуса. Frontmatter не входит в область ревью статьи.",
+      "source": "rules/misplaced-modifiers.md#modifier-seems-to-attach-to-the-wrong-noun"
+    },
+    {
+      "id": "mm-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "misplaced-modifiers",
+      "alt_categories": [],
+      "span": "The `selection` property of the Acme JavaScript Matrix widget accepts three values",
+      "line": 13,
+      "occurrence": 1,
+      "rationale": "Это ровно форма из колонки Prefer: «The filtering feature of the Acme WPF Grid control supports multiple modes». Длинное имя продукта вынесено в оборот «of the ...» после определяемого слова, поэтому конструкция допустима, несмотря на разрыв между подлежащим «property» и сказуемым «accepts».",
+      "source": "rules/misplaced-modifiers.md#long-modifier-or-product-name-separates-related-words"
+    },
+    {
+      "id": "mm-neg-04",
+      "polarity": "may_flag",
+      "category": "articles",
+      "alt_categories": ["inversion", "misplaced-modifiers", "explains-ui-or-code"],
+      "span": "To highlight related rows, call the `setStyle()` and `paint()` methods in the handler.",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Аудит: запись понижена с must_not_flag (trap rule_exception) до may_flag. По misplaced-modifiers это действительно форма из колонки Prefer («To customize context menus, handle the `Click`, `DoubleClick`, and `RightClick` events»), но сопоставление в runner/MATCHING.md идёт по спану, а не по категории, и на этом же спане лежат три законные претензии: (1) rules/articles.md требует нулевой артикль в перечислении членов («Use `Width` and `Height` properties»), а здесь «call the `setStyle()` and `paint()` methods»; (2) rules/inversion.md запрещает открывать абзац оборотом «To do X,...», а это первое предложение абзаца; (3) хвост «in the handler» сам читается как модификатор при «methods», то есть спорен даже внутри misplaced-modifiers. Жёсткое ложное срабатывание за любую из них было бы нечестным, поэтому спан выведён из метрик.",
+      "source": "rules/articles.md#api-names--member-name--property--method--event"
+    },
+    {
+      "id": "mm-may-01",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "# Region selection",
+      "line": 7,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). rules/gerunds.md#gerunds-in-titles требует в заголовках глагольную форму: «Data Binding» → «Bind to Data», «Data Editing» → «Edit Data». H1 «Region selection» — отглагольная именная группа того же типа, ожидаемая правка «Select a region». ING-формы здесь нет, поэтому запись нейтральная. Спан включает «#», чтобы цитата не смешивалась с тем же текстом в строке 2 (sidebar_label, frontmatter).",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "mm-may-02",
+      "polarity": "may_flag",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Tracking changes",
+      "line": 19,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Заголовок H2 построен на герундии «Tracking» — прямой случай rules/gerunds.md#gerunds-in-titles («React Scheduler - Grouping» → «Group Data»); ожидаемая правка «Track changes». Спан не пересекается с mm-pos-04 (строка 21) и отстоит от него больше чем на ±1 строку.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "mm-may-03",
+      "polarity": "may_flag",
+      "category": "repetition",
+      "alt_categories": ["articles"],
+      "span": "The selected range stays in the store until the next selection.",
+      "line": 17,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Inline-проверка SKILL.md#repetition: корень select повторяется трижды в двух соседних предложениях строки 17 («can select» → «The selected range» → «the next selection») на фоне «Selection and focus» и «The selection state» в строке 9. Дополнительно «the store» вводится определённым артиклем без предшествующего упоминания (rules/articles.md#singular-countable-nouns). Спан — второе предложение строки, он не пересекается с mm-pos-03.",
+      "source": "SKILL.md#repetition"
+    },
+    {
+      "id": "mm-may-04",
+      "polarity": "may_flag",
+      "category": "possessives",
+      "alt_categories": ["repetition", "long-sentences"],
+      "span": "The handler receives the ids of the row and the column",
+      "line": 30,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better: «settings of the editor» → «editor settings», то есть «the ids of the row and the column» → «row and column ids». Дополнительно «the handler» повторяется из предыдущего предложения (SKILL.md#repetition), а само предложение несёт две связки действий (receives / can render) — кандидат на SKILL.md#long-sentences. Спан обрезан по «the column», чтобы не пересекаться с mm-neg-04.",
+      "source": "rules/possessives.md#replace-of-with-noun-phrases-where-it-reads-better"
+    }
+  ]
+}

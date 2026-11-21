@@ -1,0 +1,151 @@
+{
+  "fixture": "tier-a/02-gerunds.md",
+  "tier": "A",
+  "skill_version": "1.1.0",
+  "focus": "gerunds: unclear subject, \"by -ing\" link, \"using/via\", verb+ING, gerund as feature name",
+  "note": "Прозаическая guide-страница. Посеяно 5 нарушений gerunds.md — по одному на каждый подраздел правила. Негативы проверяют, что скилл не лезет в код-забор, во frontmatter и не правит форму, которую само правило объявляет предпочтительной. Аудит: записи ger-may-* — непосеянные, но законные находки других категорий (местоимение «them», артикль перед именем типа, тавтология про locked header); они нейтральны и не должны считаться ложными срабатываниями.",
+  "word_count_prose": 104,
+  "nonprose_ranges": [
+    { "kind": "frontmatter", "lines": [1, 5] },
+    { "kind": "code_fence", "lines": [11, 13] },
+    { "kind": "code_fence", "lines": [19, 25] }
+  ],
+  "expected_total_range": [5, 9],
+  "records": [
+    {
+      "id": "ger-01",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Enabling group footers requires you to load the extension package first",
+      "line": 9,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Герундий в позиции подлежащего скрывает исполнителя действия — точная копия строки правила «Running web reporting controls on Azure requires you to install...». Нужно «Before you enable group footers, load the extension package».",
+      "source": "rules/gerunds.md#unclear-subject"
+    },
+    {
+      "id": "ger-02",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": ["wordiness"],
+      "span": "Use the data grouping feature to combine rows",
+      "line": 17,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Герундий как название фичи: «data grouping feature» — прямой аналог «data filtering feature» из таблицы правила. Нужно «Group Roster rows to combine...». Может законно попасть и в wordiness (слово «feature» — пустое).",
+      "source": "rules/gerunds.md#gerund-as-feature-name"
+    },
+    {
+      "id": "ger-03",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "The Roster supports displaying a custom footer under each group",
+      "line": 17,
+      "occurrence": 1,
+      "expected_severity": "suggestion",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Конструкция «verb + ING»: правило содержит буквально «The TrackBarEdit control supports displaying a custom set of ticks» → «can display». Здесь нужно «The Roster can display a custom footer».",
+      "source": "rules/gerunds.md#verb--ing"
+    },
+    {
+      "id": "ger-04",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "You can change the sort order using the `sortDirection` property",
+      "line": 29,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Расплывчатое «using» там, где есть точный глагол — дословный аналог строки «You can change the operation mode using the StyleSettings property» → «Set the sortDirection property to change the sort order».",
+      "source": "rules/gerunds.md#using-and-similar-prepositions"
+    },
+    {
+      "id": "ger-05",
+      "polarity": "must_find",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "You can lock the header row by setting the `fixedHeader` property to `true`",
+      "line": 33,
+      "occurrence": 1,
+      "expected_severity": "issue",
+      "severity_tolerance": ["suggestion", "issue"],
+      "rationale": "Связка «by -ing» склеивает две идеи — копия строки «You need to enable the grid's footer by setting the ShowFooter property to true». Нужно «Set the fixedHeader property to true to lock the header row».",
+      "source": "rules/gerunds.md#by--ing-link"
+    },
+    {
+      "id": "ger-neg-01",
+      "polarity": "must_not_flag",
+      "trap": "code_fence",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "enabling group footers by setting the flag below",
+      "line": 21,
+      "occurrence": 1,
+      "rationale": "Самая жирная приманка страницы: комментарий в JS-коде совмещает герундий-подлежащее и связку «by setting». Но это содержимое ~~~-забора, а не проза статьи; находка здесь ломает hard_gate findings_inside_code_fence.",
+      "source": "rules/gerunds.md#unclear-subject"
+    },
+    {
+      "id": "ger-neg-02",
+      "polarity": "must_not_flag",
+      "trap": "frontmatter",
+      "category": "gerunds",
+      "alt_categories": ["wordiness", "inversion"],
+      "span": "You can explore data grouping in the Roster",
+      "line": 4,
+      "occurrence": 1,
+      "rationale": "«data grouping» — герундий как название фичи, но внутри SEO-шаблона description, одинакового во всех 1891 файлах корпуса. Frontmatter не входит в область ревью статьи.",
+      "source": "rules/gerunds.md#gerund-as-feature-name"
+    },
+    {
+      "id": "ger-neg-03",
+      "polarity": "must_not_flag",
+      "trap": "rule_exception",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "Use the `sortBy` handler to define a comparison function for a column",
+      "line": 29,
+      "occurrence": 1,
+      "rationale": "Правило прямо разрешает: «\"Using\", \"via\", and \"with the help of\" are vague when a more specific verb exists. Prefer a precise verb. If \"use\" is already the clearest verb, keep it.» Более того, форма «Use X to do Y» — это ровно колонка Prefer («Use the following two methods to populate the control with items»). Флагать это значит править текст в сторону, противоположную правилу.",
+      "source": "rules/gerunds.md#using-and-similar-prepositions"
+    },
+    {
+      "id": "ger-neg-04",
+      "polarity": "must_not_flag",
+      "trap": "correct_prose",
+      "category": "gerunds",
+      "alt_categories": [],
+      "span": "## Group Data",
+      "line": 15,
+      "occurrence": 1,
+      "rationale": "Заголовок уже в форме глагольной фразы: «Group Data» дословно стоит в колонке Prefer раздела «Gerunds in Titles» (Avoid: «React Scheduler - Grouping»). Флагать нечего.",
+      "source": "rules/gerunds.md#gerunds-in-titles"
+    },
+    {
+      "id": "ger-may-01",
+      "polarity": "may_flag",
+      "category": "pronouns",
+      "alt_categories": ["articles", "long-sentences"],
+      "span": "The Roster arranges rows into groups and sorts them by any column",
+      "line": 9,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Три законных повода в одном предложении: (1) «them» по rules/pronouns.md#personal-pronouns-it-they-its указывает на ближайшее существительное во множественном числе — «groups», а не «rows»; (2) «The Roster» — имя типа целиком, для которого rules/articles.md требует нулевой артикль («DxDataGrid ships with an integrated filter editor») или родового слова («The Roster component»); (3) inline-проверка SKILL.md#long-sentences — два действия (arranges + sorts) в одном предложении. Спан намеренно не пересекается со вторым предложением строки 9 (ger-01).",
+      "source": "rules/pronouns.md#personal-pronouns-it-they-its"
+    },
+    {
+      "id": "ger-may-02",
+      "polarity": "may_flag",
+      "category": "obvious-concepts",
+      "alt_categories": ["wordiness", "repetition"],
+      "span": "A locked header stays visible when you scroll a long data set",
+      "line": 33,
+      "occurrence": 1,
+      "rationale": "Аудит (непосеянное нарушение). Предложение пересказывает смысл предыдущего: «остаётся видимым при прокрутке» — это определение зафиксированного заголовка, о котором читатель уже знает из «lock the header row» (SKILL.md#obvious-concepts, rules/wordiness.md#unnecessary-repetition-of-meaning). Спан не пересекается с ger-05, который покрывает первое предложение строки 33.",
+      "source": "SKILL.md#obvious-concepts"
+    }
+  ]
+}
